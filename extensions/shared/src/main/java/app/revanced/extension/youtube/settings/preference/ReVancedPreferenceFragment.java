@@ -17,7 +17,6 @@ import static app.revanced.extension.youtube.settings.Settings.HIDE_PREVIEW_COMM
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -37,8 +36,10 @@ import android.preference.SwitchPreference;
 import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.text.style.BackgroundColorSpan;
+import android.util.Pair;
 import android.view.ViewGroup;
 import android.view.WindowInsets;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
@@ -157,9 +158,7 @@ public class ReVancedPreferenceFragment extends PreferenceFragment {
                     listPreference.setEntries(SpoofStreamingDataPatch.getEntries());
                     listPreference.setEntryValues(SpoofStreamingDataPatch.getEntryValues());
                 }
-                if (!(mPreference instanceof app.revanced.extension.youtube.settings.preference.SegmentCategoryListPreference)) {
-                    updateListPreferenceSummary(listPreference, setting);
-                }
+                updateListPreferenceSummary(listPreference, setting);
             } else {
                 Logger.printException(() -> "Setting cannot be handled: " + mPreference.getClass() + " " + mPreference);
                 return;
@@ -208,15 +207,19 @@ public class ReVancedPreferenceFragment extends PreferenceFragment {
         if (context != null && userDialogMessage != null) {
             showingUserDialogMessage = true;
 
-            new AlertDialog.Builder(context)
-                    .setTitle(str("revanced_extended_confirm_user_dialog_title"))
-                    .setMessage(userDialogMessage.toString())
-                    .setPositiveButton(android.R.string.ok, (dialog, id) -> {
+            Pair<Dialog, LinearLayout> dialogPair = Utils.createCustomDialog(
+                    context,
+                    str("revanced_extended_confirm_user_dialog_title"), // Title.
+                    userDialogMessage.toString(), // No message.
+                    null, // No EditText.
+                    null, // OK button text.
+                    () -> {
                         if (setting.rebootApp) {
                             showRestartDialog(context);
                         }
-                    })
-                    .setNegativeButton(android.R.string.cancel, (dialog, id) -> {
+                    },
+                    () -> {
+                        // Cancel button action. Restore whatever the setting was before the change.
                         // Restore whatever the setting was before the change.
                         if (setting instanceof BooleanSetting booleanSetting &&
                                 pref instanceof SwitchPreference switchPreference) {
@@ -226,10 +229,15 @@ public class ReVancedPreferenceFragment extends PreferenceFragment {
                             listPreference.setValue(enumSetting.defaultValue.toString());
                             updateListPreferenceSummary(listPreference, setting);
                         }
-                    })
-                    .setOnDismissListener(dialog -> showingUserDialogMessage = false)
-                    .setCancelable(false)
-                    .show();
+                    },
+                    null, // No Neutral button.
+                    null, // No Neutral button action.
+                    true  // Dismiss dialog when onNeutralClick.
+            );
+
+            Dialog dialog = dialogPair.first;
+            dialog.setOnShowListener(d -> showingUserDialogMessage = false);
+            dialog.show();
         }
     }
 
@@ -289,9 +297,7 @@ public class ReVancedPreferenceFragment extends PreferenceFragment {
                         listPreference.setEntries(SpoofStreamingDataPatch.getEntries());
                         listPreference.setEntryValues(SpoofStreamingDataPatch.getEntryValues());
                     }
-                    if (!(preference instanceof app.revanced.extension.youtube.settings.preference.SegmentCategoryListPreference)) {
-                        updateListPreferenceSummary(listPreference, setting);
-                    }
+                    updateListPreferenceSummary(listPreference, setting);
                 }
             }
 
@@ -463,7 +469,7 @@ public class ReVancedPreferenceFragment extends PreferenceFragment {
                             TextView toolbarTextView = Utils.getChildView(toolbar,
                                     true, TextView.class::isInstance);
                             if (toolbarTextView != null) {
-                                toolbarTextView.setTextColor(ThemeUtils.getForegroundColor());
+                                toolbarTextView.setTextColor(ThemeUtils.getAppForegroundColor());
                             }
 
                             setToolbarLayoutParams(toolbar);
@@ -707,7 +713,7 @@ class AbstractPreferenceSearchData<T extends Preference> {
             return text;
         }
 
-        final int baseColor = ThemeUtils.getBackgroundColor();
+        final int baseColor = ThemeUtils.getAppBackgroundColor();
         final int adjustedColor = ThemeUtils.isDarkModeEnabled()
                 ? ThemeUtils.adjustColorBrightness(baseColor, 1.20f)  // Lighten for dark theme.
                 : ThemeUtils.adjustColorBrightness(baseColor, 0.95f); // Darken for light theme.
