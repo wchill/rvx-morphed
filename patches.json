@@ -1320,7 +1320,7 @@
         "description": "Patch all permissions, intents and content provider authorities supported by GmsCore.",
         "required": true,
         "type": "kotlin.Boolean",
-        "default": true,
+        "default": false,
         "values": null
       }
     ]
@@ -1393,7 +1393,7 @@
         "description": "Patch all permissions, intents and content provider authorities supported by GmsCore.",
         "required": true,
         "type": "kotlin.Boolean",
-        "default": true,
+        "default": false,
         "values": null
       }
     ]
