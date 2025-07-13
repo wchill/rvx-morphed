@@ -599,9 +599,7 @@ Changes include:
 This will change the appearance and features of the app, but unknown side effects may occur.
 
 If later turned off, it is recommended to clear the app data to prevent UI bugs."</string>
-    <string name="revanced_spoof_app_version_target_title">Edit spoof app version</string>
-    <string name="revanced_spoof_app_version_target_summary">Type the spoof app version target.</string>
-    <string name="revanced_spoof_app_version_target_entry_title">Spoof app version target</string>
+    <string name="revanced_spoof_app_version_target_title">Spoof app version target</string>
     <string name="revanced_spoof_app_version_target_entry_17_41_37">17.41.37 - Restore old playlist shelf</string>
     <string name="revanced_spoof_app_version_target_entry_18_05_40">18.05.40 - Restore old comment input box</string>
     <string name="revanced_spoof_app_version_target_entry_18_17_43">18.17.43 - Restore old player flyout panel</string>
@@ -1508,7 +1506,9 @@ This feature works best with a very fast internet connection."</string>
     <string name="revanced_preference_category_shorts_shelf">Shorts shelves</string>
 
     <string name="revanced_hide_shorts_shelf_title">Enable Shorts shelves hiding</string>
-    <string name="revanced_hide_shorts_shelf_summary">Enables hiding Shorts shelves.</string>
+    <string name="revanced_hide_shorts_shelf_summary">"Enables hiding Shorts shelves.
+
+Side effect: Official headers in search results will be hidden."</string>
     <string name="revanced_hide_shorts_shelf_channel_title">Hide in channel page</string>
     <string name="revanced_hide_shorts_shelf_channel_summary_on">"Hidden in channel page.
 
