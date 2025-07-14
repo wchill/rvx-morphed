@@ -35,11 +35,11 @@ See the [documentation](https://github.com/inotia00/revanced-documentation#readm
 | `Disable resuming Shorts on startup` | Adds an option to disable the Shorts player from resuming on app startup when Shorts were last being watched. | 19.05.36 ~ 19.47.53 |
 | `Disable splash animation` | Adds an option to disable the splash animation on app startup. | 19.05.36 ~ 19.47.53 |
 | `Enable OPUS codec` | Adds an option to enable the OPUS audio codec if the player response includes it. | 19.05.36 ~ 19.47.53 |
-| `Enable debug logging` | Adds an option to enable debug logging. | 19.05.36 ~ 19.47.53 |
+| `Enable debug logging` | Adds an option for debugging and exporting RVX logs to the clipboard. | 19.05.36 ~ 19.47.53 |
 | `Enable gradient loading screen` | Adds an option to enable the gradient loading screen. | 19.05.36 ~ 19.47.53 |
 | `Force hide player buttons background` | Removes, at compile time, the dark background surrounding the video player controls. | 19.05.36 ~ 19.47.53 |
 | `Fullscreen components` | Adds options to hide or change components related to fullscreen. | 19.05.36 ~ 19.47.53 |
-| `GmsCore support` | Allows patched Google apps to run without root and under a different package name by using GmsCore instead of Google Play Services. | 19.05.36 ~ 19.47.53 |
+| `GmsCore support` | Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services. | 19.05.36 ~ 19.47.53 |
 | `Hide Shorts dimming` | Removes, at compile time, the dimming effect at the top and bottom of Shorts videos. | 19.05.36 ~ 19.47.53 |
 | `Hide accessibility controls dialog` | Removes, at compile time, accessibility controls dialog 'Turn on accessibility controls for the video player?'. | 19.05.36 ~ 19.47.53 |
 | `Hide action buttons` | Adds options to hide action buttons under videos. | 19.05.36 ~ 19.47.53 |
@@ -101,10 +101,10 @@ See the [documentation](https://github.com/inotia00/revanced-documentation#readm
 | `Disable forced auto captions` | Adds an option to disable captions from being automatically enabled. | 6.20.51 ~ 8.12.53 |
 | `Disable music video in album` | Adds option to redirect music videos from albums for non-premium users. | 6.20.51 ~ 8.12.53 |
 | `Enable OPUS codec` | Adds an option to enable the OPUS audio codec if the player response includes it. | 6.20.51 ~ 8.12.53 |
-| `Enable debug logging` | Adds an option to enable debug logging. | 6.20.51 ~ 8.12.53 |
+| `Enable debug logging` | Adds an option for debugging. | 6.20.51 ~ 8.12.53 |
 | `Enable landscape mode` | Adds an option to enable landscape mode when rotating the screen on phones. | 6.20.51 ~ 8.12.53 |
 | `Flyout menu components` | Adds options to hide or change flyout menu components. | 6.20.51 ~ 8.12.53 |
-| `GmsCore support` | Allows patched Google apps to run without root and under a different package name by using GmsCore instead of Google Play Services. | 6.20.51 ~ 8.12.53 |
+| `GmsCore support` | Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services. | 6.20.51 ~ 8.12.53 |
 | `Hide account components` | Adds options to hide components related to the account menu. | 6.20.51 ~ 8.12.53 |
 | `Hide action bar components` | Adds options to hide action bar components and replace the offline download button with an external download button. | 6.20.51 ~ 8.12.53 |
 | `Hide ads` | Adds options to hide ads. | 6.20.51 ~ 8.12.53 |
@@ -121,7 +121,7 @@ See the [documentation](https://github.com/inotia00/revanced-documentation#readm
 | `Sanitize sharing links` | Adds an option to sanitize sharing links by removing tracking query parameters. | 6.20.51 ~ 8.12.53 |
 | `Settings for YouTube Music` | Applies mandatory patches to implement ReVanced Extended settings into the application. | 6.20.51 ~ 8.12.53 |
 | `SponsorBlock` | Adds options to enable and configure SponsorBlock, which can skip undesired video segments, such as non-music sections. | 6.20.51 ~ 8.12.53 |
-| `Spoof app version` | Adds options to spoof the YouTube Music client version. This can be used to restore old UI elements and features. | 6.51.53 ~ 8.10.52 |
+| `Spoof app version` | Adds options to spoof the YouTube Music client version. This can be used to restore old UI elements and features. | 6.51.53 ~ 8.12.53 |
 | `Spoof player parameter` | Adds options to spoof player parameter to allow playback. | 6.20.51 ~ 8.12.53 |
 | `Translations for YouTube Music` | Add translations or remove string resources. | 6.20.51 ~ 8.12.53 |
 | `Video playback` | Adds options to customize settings related to video playback, such as default video quality and playback speed. | 6.20.51 ~ 8.12.53 |

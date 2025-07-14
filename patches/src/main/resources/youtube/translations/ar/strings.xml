@@ -8,9 +8,22 @@
     <string name="revanced_extended_settings_search_title">بحث %s</string>
     <string name="revanced_extended_reset_to_default_toast">إعادة التعيين إلى القيم الافتراضية.</string>
     <string name="revanced_preference_category_experimental_flag">تعديلات تجريبية</string>
-    <string name="revanced_extended_confirm_user_dialog_title">هل ترغب في المتابعة؟</string>
+    <string name="revanced_extended_confirm_user_dialog_title">هل انت متاكد انك تريد المتابعة؟</string>
     <string name="revanced_extended_restart_first_run">إعادة التشغيل لتحميل التخطيط بشكل طبيعي</string>
-    <string name="revanced_extended_restart_message">تحديث وإعادة تشغيل</string>
+    <string name="revanced_extended_restart_title">يلزم إعادة التشغيل</string>
+    <string name="revanced_extended_restart_dialog_message">أعد تشغيل التطبيق ليُفعّل هذا التغيير.</string>
+    <string name="revanced_extended_restart">إعادة التشغيل</string>
+    <string name="revanced_extended_settings_color_invalid">لون غير صالح.</string>
+    <string name="revanced_extended_settings_color_picker">منتقي الألوان</string>
+    <string name="revanced_extended_settings_reset">إعادة تعيين</string>
+    <string name="revanced_extended_settings_reset_color">إعادة تعيين اللون</string>
+    <string name="revanced_extended_settings_search_history_title">عرض سجل بحث الإعدادات</string>
+    <string name="revanced_extended_settings_search_history_summary_on">يتم عرض سجل البحث في الإعدادات.</string>
+    <string name="revanced_extended_settings_search_history_summary_off">لا يتم عرض سجل البحث في الإعدادات.</string>
+    <string name="revanced_extended_settings_search_hint">إعدادات البحث</string>
+    <string name="revanced_extended_settings_search_no_results_title">لم يتم العثور على نتائج لـ \'%s\'.</string>
+    <string name="revanced_extended_settings_search_no_results_summary">جرب كلمة مفتاحية أخرى.</string>
+    <string name="revanced_extended_settings_search_remove_message">إزالة من سجل البحث؟</string>
     <string name="revanced_playback_speed_normal">عادي</string>
     <string name="revanced_external_downloader_package_name_video_title">اسم حزمة تنزيل الفيديو</string>
     <string name="revanced_external_downloader_package_name_video_summary">اسم الحزمة لتطبيق التنزيل الخارجي المثبت لديك، مثل NewPipe أو YTDLnis.</string>
@@ -89,6 +102,8 @@
 <small>Suomi</small>"</string>
     <string name="revanced_language_FR">"الفرنسية
 <small>Français</small>"</string>
+    <string name="revanced_language_GA">"الأيرلندية
+<small>Gaeilge</small>"</string>
     <string name="revanced_language_GU">"الغوجاراتية
 <small>ગુજરાતી</small>"</string>
     <string name="revanced_language_HE">"العبرية
@@ -167,9 +182,12 @@
 <small>中文</small>"</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">الإعلانات</string>
+    <string name="revanced_hide_creator_store_shelf_title">إخفاء رف متجر المنشئ</string>
+    <string name="revanced_hide_creator_store_shelf_summary_on">تم إخفاء رف متجر المنشئ أسفل الفيديوهات.</string>
+    <string name="revanced_hide_creator_store_shelf_summary_off">يتم عرض رف متجر المنشئ أسفل الفيديوهات.</string>
     <string name="revanced_hide_end_screen_store_banner_title">إخفاء لافتة شاشة المتجر النهائية</string>
-    <string name="revanced_hide_end_screen_store_banner_summary_on">تم إخفاء لافتة المتجر.</string>
-    <string name="revanced_hide_end_screen_store_banner_summary_off">يتم عرض لافتة المتجر.</string>
+    <string name="revanced_hide_end_screen_store_banner_summary_on">تم إخفاء لافتة متجر بالشاشة النهائية.</string>
+    <string name="revanced_hide_end_screen_store_banner_summary_off">يتم عرض لافتة متجر بالشاشة النهائية.</string>
     <string name="revanced_hide_fullscreen_ads_title">إخفاء إعلانات ملء الشاشة</string>
     <string name="revanced_hide_fullscreen_ads_summary_on">تم إخفاء إعلانات ملء الشاشة.</string>
     <string name="revanced_hide_fullscreen_ads_summary_off">يتم عرض إعلانات ملء الشاشة.</string>
@@ -183,21 +201,21 @@
     <string name="revanced_hide_paid_promotion_label_title">إخفاء تصنيف الترويج المدفوع</string>
     <string name="revanced_hide_paid_promotion_label_summary_on">تم إخفاء تصنيف الترويج المدفوع.</string>
     <string name="revanced_hide_paid_promotion_label_summary_off">يتم عرض تصنيف الترويج المدفوع.</string>
-    <string name="revanced_hide_player_store_shelf_title">إخفاء رف مشغل التسوق</string>
-    <string name="revanced_hide_player_store_shelf_summary_on">تم إخفاء رف التسوق.</string>
-    <string name="revanced_hide_player_store_shelf_summary_off">يتم عرض رف التسوق.</string>
     <string name="revanced_hide_promotion_alert_banner_title">إخفاء لافتة تنبيه الترقية</string>
     <string name="revanced_hide_promotion_alert_banner_summary_on">تم إخفاء لافتة تنبيه الترقية.</string>
     <string name="revanced_hide_promotion_alert_banner_summary_off">يتم عرض لافتة تنبيه الترقية.</string>
     <string name="revanced_hide_self_sponsor_cards_title">إخفاء بطاقات الرعاية الذاتية</string>
     <string name="revanced_hide_self_sponsor_cards_summary_on">تم إخفاء بطاقات الرعاية الذاتية.</string>
     <string name="revanced_hide_self_sponsor_cards_summary_off">يتم عرض بطاقات الرعاية الذاتية.</string>
+    <string name="revanced_hide_shopping_links_title">إخفاء روابط التسوق</string>
+    <string name="revanced_hide_shopping_links_summary_on">تم إخفاء روابط التسوق في وصف الفيديو.</string>
+    <string name="revanced_hide_shopping_links_summary_off">يتم عرض روابط التسوق في وصف الفيديو.</string>
     <string name="revanced_hide_video_ads_title">إخفاء إعلانات الفيديو</string>
     <string name="revanced_hide_video_ads_summary_on">تم إخفاء إعلانات الفيديو.</string>
     <string name="revanced_hide_video_ads_summary_off">يتم عرض إعلانات الفيديو.</string>
     <string name="revanced_hide_view_products_title">إخفاء لافتة عرض المنتجات</string>
-    <string name="revanced_hide_view_products_summary_on">تم إخفاء لافتة عرض المنتجات.</string>
-    <string name="revanced_hide_view_products_summary_off">يتم عرض لافتة عرض المنتجات.</string>
+    <string name="revanced_hide_view_products_summary_on">تم إخفاء لافتة عرض المنتجات في واجهة الفيديو.</string>
+    <string name="revanced_hide_view_products_summary_off">يتم عرض لافتة عرض المنتجات في واجهة الفيديو.</string>
     <string name="revanced_hide_web_search_results_title">إخفاء نتائج بحث الويب</string>
     <string name="revanced_hide_web_search_results_summary_on">تم إخفاء نتائج البحث على الويب.</string>
     <string name="revanced_hide_web_search_results_summary_off">يتم عرض نتائج البحث على الويب.</string>
@@ -207,7 +225,7 @@
     <!-- PreferenceScreen: Alternative thumbnails -->
     <string name="revanced_preference_screen_alt_thumbnails_title">مصغرات فيديو بديلة</string>
     <string name="revanced_alt_thumbnail_home_title">علامة تبويب الصفحة الرئيسية</string>
-    <string name="revanced_alt_thumbnail_player_title">قوائم تشغيل المشغل، التوصيات</string>
+    <string name="revanced_alt_thumbnail_player_title">قوائم تشغيل المشغل &amp; التوصيات</string>
     <string name="revanced_alt_thumbnail_search_title">نتائج البحث</string>
     <string name="revanced_alt_thumbnail_subscriptions_title">علامة تبويب الاشتراكات</string>
     <string name="revanced_alt_thumbnail_library_title">علامة التبويب أنت</string>
@@ -256,16 +274,17 @@
 • أخبار عاجلة
 • متابعة المشاهدة
 • اكتشف المزيد من القنوات
-• استمع مجددا
+• استمع مجددًا
+• الأكثر صلة
 • التسوق
 • مشاهده مرة أخرى"</string>
     <string name="revanced_hide_carousel_shelf_summary_off">يتم عرض الرفوف الدوارة.</string>
     <string name="revanced_hide_chips_shelf_title">إخفاء رف الشرائح</string>
     <string name="revanced_hide_chips_shelf_on">تم إخفاء رف الشرائح.</string>
     <string name="revanced_hide_chips_shelf_off">يتم عرض رف الشرائح.</string>
-    <string name="revanced_hide_expandable_chip_title">إخفاء الشرائح القابلة للتوسع تحت الفيديوهات</string>
-    <string name="revanced_hide_expandable_chip_summary_on">تم إخفاء الرقائق القابلة للتوسيع.</string>
-    <string name="revanced_hide_expandable_chip_summary_off">يتم عرض الرقائق القابلة للتوسيع.</string>
+    <string name="revanced_hide_expandable_card_title">إخفاء البطاقة القابلة للتوسع</string>
+    <string name="revanced_hide_expandable_card_summary_on">تم إخفاء البطاقة القابلة للتوسع تحت الفيديو.</string>
+    <string name="revanced_hide_expandable_card_summary_off">يتم عرض البطاقة القابلة للتوسع تحت الفيديو.</string>
     <string name="revanced_hide_expandable_shelf_title">إخفاء الرفوف القابلة للتوسع</string>
     <string name="revanced_hide_expandable_shelf_summary_on">تم إخفاء الرفوف القابلة للتوسع.</string>
     <string name="revanced_hide_expandable_shelf_summary_off">يتم عرض الرفوف القابلة للتوسع.</string>
@@ -299,18 +318,18 @@
     <string name="revanced_hide_show_more_button_title">إخفاء زر عرض المزيد</string>
     <string name="revanced_hide_show_more_button_summary_on">تم إخفاء زر عرض المزيد.</string>
     <string name="revanced_hide_show_more_button_summary_off">يتم عرض زر عرض المزيد.</string>
-    <string name="revanced_hide_subscriptions_carousel_title">إخفاء دوائر الاشتراكات</string>
-    <string name="revanced_hide_subscriptions_carousel_summary_on">تم إخفاء دوائر الاشتراكات.</string>
-    <string name="revanced_hide_subscriptions_carousel_summary_off">يتم عرض دوائر الاشتراكات.</string>
-    <string name="revanced_hide_feed_survey_title">إخفاء الاستبيانات</string>
-    <string name="revanced_hide_feed_survey_summary_on">تم إخفاء الاستبيانات.</string>
-    <string name="revanced_hide_feed_survey_summary_off">يتم عرض الاستبيانات الموجز.</string>
+    <string name="revanced_hide_subscribed_channels_bar_title">إخفاء شريط القنوات المشترك بها</string>
+    <string name="revanced_hide_subscribed_channels_bar_summary_on">تم إخفاء شريط القنوات المشترك بها.</string>
+    <string name="revanced_hide_subscribed_channels_bar_summary_off">يتم عرض شريط القنوات المشترك بها.</string>
+    <string name="revanced_hide_surveys_title">إخفاء الاستبيانات</string>
+    <string name="revanced_hide_surveys_summary_on">تم إخفاء الاستبيانات.</string>
+    <string name="revanced_hide_surveys_summary_off">يتم عرض الاستبيانات.</string>
     <string name="revanced_hide_ticket_shelf_title">إخفاء رفوف التذاكر</string>
     <string name="revanced_hide_ticket_shelf_summary_on">تم إخفاء رفوف التذاكر.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">يتم عرض رفوف التذاكر.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">شريط الفئة</string>
-    <string name="revanced_preference_screen_category_bar_summary">إخفاء شريط الفئة أو عرضه في الموجز والبحث والفيديوهات ذات الصلة.</string>
+    <string name="revanced_preference_screen_category_bar_summary">إخفاء شريط الفئة أو عرضه في الموجز، الفيديوهات ذات الصلة، نتائج البحث، والسجلّ.</string>
     <string name="revanced_hide_category_bar_in_feed_title">إخفاء في الموجز</string>
     <string name="revanced_hide_category_bar_in_feed_summary_on">مخفي في الموجز.</string>
     <string name="revanced_hide_category_bar_in_feed_summary_off">يُعرض في الموجز.</string>
@@ -320,9 +339,12 @@
     <string name="revanced_hide_category_bar_in_search_title">إخفاء في نتائج البحث</string>
     <string name="revanced_hide_category_bar_in_search_summary_on">مخفي في نتائج البحث.</string>
     <string name="revanced_hide_category_bar_in_search_summary_off">يُعرض في نتائج البحث.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Channel profile -->
-    <string name="revanced_preference_screen_channel_profile_title">ملف القناة</string>
-    <string name="revanced_preference_screen_channel_profile_summary">إخفاء أو عرض المكونات في الملف الشخصي للقناة.</string>
+    <string name="revanced_hide_category_bar_in_history_title">إخفاء في السجلّ</string>
+    <string name="revanced_hide_category_bar_in_history_summary_on">مخفي في السجلّ.</string>
+    <string name="revanced_hide_category_bar_in_history_summary_off">يُعرض في السجلّ.</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Channel page -->
+    <string name="revanced_preference_screen_channel_page_title">صفحة القناة</string>
+    <string name="revanced_preference_screen_channel_page_summary">إخفاء أو عرض المكونات في صفحة القناة.</string>
     <string name="revanced_hide_channel_tab_title">تمكين فلتر علامة تبويب القناة</string>
     <string name="revanced_hide_channel_tab_summary_on">تم تمكين فلتر علامة تبويب القناة.</string>
     <string name="revanced_hide_channel_tab_summary_off">تم تعطيل فلتر علامة تبويب القناة.</string>
@@ -331,24 +353,24 @@
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 قوائم التشغيل
 المتجر"</string>
-    <string name="revanced_hide_channel_member_shelf_title">إخفاء رف أعضاء القناة</string>
-    <string name="revanced_hide_channel_member_shelf_summary_on">تم إخفاء رف أعضاء القناة.</string>
-    <string name="revanced_hide_channel_member_shelf_summary_off">يتم عرض رف أعضاء القناة.</string>
-    <string name="revanced_hide_channel_profile_links_title">إخفاء روابط ملف تعريف القناة</string>
-    <string name="revanced_hide_channel_profile_links_summary_on">تم إخفاء الروابط في أعلى ملفات القناة الشخصية.</string>
-    <string name="revanced_hide_channel_profile_links_summary_off">يتم عرض الروابط في أعلى ملفات القناة الشخصية.</string>
-    <string name="revanced_hide_for_you_shelf_title">إخفاء رف لـك</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">تم إخفاء رف لـك.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">يتم عرض رف لـك.</string>
-    <string name="revanced_hide_browse_store_button_title">إخفاء زر زيارة المتجر</string>
-    <string name="revanced_hide_browse_store_button_summary_on">تم إخفاء زر زيارة المتجر.</string>
-    <string name="revanced_hide_browse_store_button_summary_off">يتم عرض زر زيارة المتجر.</string>
+    <string name="revanced_hide_for_you_shelf_title">إخفاء رف مُقترَح لك</string>
+    <string name="revanced_hide_for_you_shelf_summary_on">تم إخفاء رف مُقترَح لك.</string>
+    <string name="revanced_hide_for_you_shelf_summary_off">يتم عرض رف مُقترَح لك.</string>
+    <string name="revanced_hide_links_preview_title">إخفاء معاينة الروابط</string>
+    <string name="revanced_hide_links_preview_summary_on">تم إخفاء معاينة الروابط.</string>
+    <string name="revanced_hide_links_preview_summary_off">يتم عرض معاينة الروابط.</string>
+    <string name="revanced_hide_members_shelf_title">إخفاء رف الأعضاء</string>
+    <string name="revanced_hide_members_shelf_summary_on">تم إخفاء رف الأعضاء.</string>
+    <string name="revanced_hide_members_shelf_summary_off">يتم عرض رف الأعضاء.</string>
+    <string name="revanced_hide_visit_store_button_title">إخفاء زر زيارة المتجر</string>
+    <string name="revanced_hide_visit_store_button_summary_on">تم إخفاء زر زيارة المتجر.</string>
+    <string name="revanced_hide_visit_store_button_summary_off">يتم عرض زر زيارة المتجر.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">مشاركات المجتمع</string>
-    <string name="revanced_preference_screen_community_posts_summary">إخفاء أو عرض مشاركات المجتمع في الموجز والقناة.</string>
-    <string name="revanced_hide_community_posts_channel_title">إخفاء في القناة</string>
-    <string name="revanced_hide_community_posts_channel_summary_on">مخفي في القناة.</string>
-    <string name="revanced_hide_community_posts_channel_summary_off">يُعرض في القناة.</string>
+    <string name="revanced_preference_screen_community_posts_summary">إخفاء أو عرض مشاركات المجتمع في صفحة القناة، الموجز، والفيديوهات ذات الصلة.</string>
+    <string name="revanced_hide_community_posts_channel_title">إخفاء في صفحة القناة</string>
+    <string name="revanced_hide_community_posts_channel_summary_on">مخفي في صفحة القناة.</string>
+    <string name="revanced_hide_community_posts_channel_summary_off">يُعرض في صفحة القناة.</string>
     <string name="revanced_hide_community_posts_home_related_videos_title">إخفاء في موجز الصفحة الرئيسية والفيديوهات ذات الصلة</string>
     <string name="revanced_hide_community_posts_home_related_videos_summary_on">مخفي في موجز الصفحة الرئيسية والفيديوهات ذات الصلة.</string>
     <string name="revanced_hide_community_posts_home_related_videos_summary_off">يُعرض في موجز الصفحة الرئيسية والفيديوهات ذات الصلة.</string>
@@ -380,7 +402,7 @@
     <string name="revanced_hide_keyword_content_search_title">إخفاء نتائج البحث عن طريق الكلمات المفتاحية</string>
     <string name="revanced_hide_keyword_content_search_summary_on">يتم تصفية نتائج البحث.</string>
     <string name="revanced_hide_keyword_content_search_summary_off">لا يتم تصفية نتائج البحث.</string>
-    <string name="revanced_hide_keyword_content_subscriptions_title">إخفاء الفيديوهات الخاصة بالاشتراك عن طريق الكلمات المفتاحية</string>
+    <string name="revanced_hide_keyword_content_subscriptions_title">إخفاء الفيديوهات الخاصة بالاشتراكات عن طريق الكلمات المفتاحية</string>
     <string name="revanced_hide_keyword_content_subscriptions_summary_on">يتم تصفية الفيديوهات في موجز الاشتراكات.</string>
     <string name="revanced_hide_keyword_content_subscriptions_summary_off">لا يتم تصفية الفيديوهات في موجز الاشتراكات.</string>
     <string name="revanced_hide_keyword_content_phrases_title">الكلمات المفتاحية المراد إخفاؤها</string>
@@ -392,7 +414,7 @@
     <string name="revanced_hide_keyword_content_about_title">حول تصفية الكلمات المفتاحية</string>
     <string name="revanced_hide_keyword_content_about_summary">"الصفحة الرئيسية / الاشتراكات / يتم تصفية نتائج البحث لإخفاء المحتوى الذي يطابق عبارات الكلمات المفتاحية.
 
- القيود:
+ القيود: 
  • لا يمكن إخفاء فيديوهات Shorts حسب اسم القناة.
  • قد لا تكون بعض مكونات واجهة المستخدم مخفية.
  • قد لا يؤدي البحث عن كلمة مفتاحية إلى ظهور أية نتائج."</string>
@@ -434,7 +456,7 @@
     <string name="revanced_hide_video_by_view_counts_about_title">حول تصفية عدد المشاهدات</string>
     <string name="revanced_hide_video_by_view_counts_about_summary">"الصفحة الرئيسية / الاشتراكات / تتم تصفية نتائج البحث لإخفاء الفيديوهات التي حصلت على عدد مشاهدات أقل أو أكبر من عدد محدد.
 
-القيود:
+القيود: 
 • لا يمكن إخفاء فيديوهات Shorts.
 • لا تتم تصفية الفيديوهات التي حصلت على 0 مشاهدة."</string>
     <string name="revanced_hide_related_videos_title">إخفاء الفيديوهات ذات الصلة</string>
@@ -481,9 +503,10 @@
     <string name="revanced_disable_auto_audio_tracks_title">تعطيل المقطع الصوتي التلقائي المفروض</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">تم تعطيل المقطع الصوتي التلقائي المفروض.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">تم تمكين المقطع الصوتي التلقائي المفروض.</string>
-    <string name="revanced_disable_auto_captions_title">تعطيل التَّرْجَمَة التلقائية المفروضة</string>
-    <string name="revanced_disable_auto_captions_summary_on">تم تعطيل التَّرْجَمَة التلقائية المفروضة.</string>
-    <string name="revanced_disable_auto_captions_summary_off">تم تمكين التَّرْجَمَة التلقائية المفروضة.</string>
+    <string name="revanced_disable_auto_audio_tracks_not_available">لاستخدام هذه الميزة، قم بتغيير \'العميل الافتراضي (Spoof Streaming Data)\' إلى iOS TV.</string>
+    <string name="revanced_disable_auto_captions_title">تعطيل الترجمة التلقائية المفروضة</string>
+    <string name="revanced_disable_auto_captions_summary_on">تم تعطيل الترجمة التلقائية المفروضة.</string>
+    <string name="revanced_disable_auto_captions_summary_off">تم تمكين الترجمة التلقائية المفروضة.</string>
     <string name="revanced_disable_splash_animation_title">تعطيل تأثيرات الحركة</string>
     <string name="revanced_disable_splash_animation_summary_on">تم تعطيل تأثيرات الحركة.</string>
     <string name="revanced_disable_splash_animation_summary_off">تم تمكين تأثيرات الحركة.</string>
@@ -493,9 +516,9 @@
     <string name="revanced_hide_floating_microphone_title">إخفاء زر الميكروفون العائم</string>
     <string name="revanced_hide_floating_microphone_summary_on">تم إخفاء زر الميكروفون العائم.</string>
     <string name="revanced_hide_floating_microphone_summary_off">يتم عرض زر الميكروفون العائم.</string>
-    <string name="revanced_hide_gray_separator_title">إخفاء الفواصل الرمادية</string>
-    <string name="revanced_hide_gray_separator_summary_on">تم إخفاء الفواصل الرمادية.</string>
-    <string name="revanced_hide_gray_separator_summary_off">يتم عرض الفواصل الرمادية.</string>
+    <string name="revanced_hide_visual_spacers_title">إخفاء الفواصل المرئية</string>
+    <string name="revanced_hide_visual_spacers_summary_on">تم إخفاء الفواصل المرئية.</string>
+    <string name="revanced_hide_visual_spacers_summary_off">يتم عرض الفواصل المرئية.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">إزالة مربع حوار تقدير المشاهد</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"يزيل مربع حوار تقدير المشاهد. هذا لا يتجاوز القيود العمرية. إنه يقبل ذلك تلقائيًا."</string>
     <string name="revanced_change_live_ring_click_action_title">تغيير إجراء النقر على البث المباشر</string>
@@ -544,9 +567,7 @@
 سيؤدي هذا إلى تغيير مظهر ومميزات التطبيق، ولكن قد تحدث تأثيرات جانبية غير معروفة.
 
 إذا تم إيقاف تشغيله لاحقا، من المستحسن مسح بيانات التطبيق لمنع حدوث أخطاء في واجهة المستخدم."</string>
-    <string name="revanced_spoof_app_version_target_title">تعديل إصدار التطبيق الوهمي</string>
-    <string name="revanced_spoof_app_version_target_summary">اكتب هدف إصدار التطبيق الوهمي.</string>
-    <string name="revanced_spoof_app_version_target_entry_title">الهدف من خِداع إصدار التطبيق</string>
+    <string name="revanced_spoof_app_version_target_title">الهدف من خِداع إصدار التطبيق</string>
     <string name="revanced_spoof_app_version_target_entry_17_41_37">17.41.37 - استعادة رف قائمة التشغيل القديم</string>
     <string name="revanced_spoof_app_version_target_entry_18_05_40">18.05.40 - استعادة مربع إدخال التعليقات القديم</string>
     <string name="revanced_spoof_app_version_target_entry_18_17_43">18.17.43 - استعادة لوحة المشغل المنبثقة القديمة</string>
@@ -555,6 +576,7 @@
     <string name="revanced_spoof_app_version_target_entry_18_48_39">18.48.39 - تعطيل تحديث المشاهدات والإعجابات في الوقت الفعلي</string>
     <string name="revanced_spoof_app_version_target_entry_19_01_34">19.01.34 - تعطيل تفاعل وصف الفيديو</string>
     <string name="revanced_spoof_app_version_target_entry_19_26_42">19.26.42 - تعطيل أيقونة Cairo في شريط التنقل وشريط الأدوات</string>
+    <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - استعادة علامة قائمة التشغيل القديمة</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - استعادة لوحة التحكم القديمة لسرعة التشغيل</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">إصدار التطبيق الوهمي غير صالح: %s.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
@@ -588,6 +610,9 @@
     <string name="revanced_preference_category_download_button">زر التنزيل</string>
     <string name="revanced_override_playlist_download_button_title">تجاوز زر تنزيل قائمة التشغيل</string>
     <string name="revanced_override_playlist_download_button_summary_on">يتم دائمًا عرض زر تنزيل قائمة التشغيل الأصلية، وفي قوائم التشغيل العامة، يتم فتح أداة التنزيل الخارجية لديك.</string>
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer">"إذا ظهر زر تنزيل قائمة التشغيل الأصلية، فسيفتح برنامج التنزيل الخارجي.
+
+لعرض زر تنزيل قائمة التشغيل الأصلي، فعّل 'إصدار تطبيق وهمي' وغيّر 'الهدف من خِداع إصدار التطبيق' إلى '19.28.42' أو إصدار أقدم."</string>
     <string name="revanced_override_playlist_download_button_summary_off">زر تنزيل قائمة التشغيل الأصلية، إذا ظهر، يفتح أداة التنزيل الأصلية داخل التطبيق.</string>
     <string name="revanced_override_video_download_button_title">تجاوز زر تنزيل الفيديو</string>
     <string name="revanced_override_video_download_button_summary_on">يفتح زر تنزيل الفيديو الأصلي أداة التنزيل الخارجية.</string>
@@ -747,15 +772,15 @@
     <string name="revanced_enable_wide_search_bar_with_header_summary_on">تم تمكين شريط البحث العريض جنبًا إلى جنب مع علامة YouTube.</string>
     <string name="revanced_enable_wide_search_bar_with_header_summary_off">يؤدي شريط البحث العريض إلى تعطيل مساحة علامة YouTube واستخدامها.</string>
     <string name="revanced_enable_wide_search_bar_in_you_tab_title">تمكين شريط البحث العريض في علامة التبويب أنت</string>
-    <string name="revanced_enable_wide_search_bar_in_you_tab_summary_on">"تم تمكين شريط البحث العريض في علامة التبويب \"أنت\".
+    <string name="revanced_enable_wide_search_bar_in_you_tab_summary_on">"تم تمكين شريط البحث العريض في علامة التبويب'أنت'.
 
 للوصول إلى الإعدادات، يرجى استخدام المسار التالي:
-علامة التبويب \"أنت\" ← عرض القناة ← القائمة ← الإعدادات"</string>
-    <string name="revanced_enable_wide_search_bar_in_you_tab_summary_off">تم تعطيل شريط البحث العريض في علامة التبويب \"أنت\".</string>
-    <string name="revanced_enable_wide_search_bar_in_you_tab_user_dialog_message">"سيؤدي تمكين هذا الإعداد إلى تعطيل زر \"الإعدادات\" في علامة التبويب \"أنت\".
+علامة التبويب 'أنت' ← عرض القناة ← القائمة ← الإعدادات"</string>
+    <string name="revanced_enable_wide_search_bar_in_you_tab_summary_off">تم تعطيل شريط البحث العريض في علامة التبويب \'أنت\'.</string>
+    <string name="revanced_enable_wide_search_bar_in_you_tab_user_dialog_message">"سيؤدي تمكين هذا الإعداد إلى تعطيل زر الإعدادات في علامة التبويب 'أنت'.
 
 في هذه الحالة، قد تحتاج إلى استخدام المسار التالي للوصول إلى الإعدادات:
-علامة التبويب \"أنت\" ← عرض القناة ← القائمة ← الإعدادات"</string>
+علامة التبويب 'أنت' ← عرض القناة ← القائمة ← الإعدادات"</string>
     <string name="revanced_hide_toolbar_cast_button_title">إخفاء زر البث</string>
     <string name="revanced_hide_toolbar_cast_button_summary_on">تم إخفاء زر البث.</string>
     <string name="revanced_hide_toolbar_cast_button_summary_off">يتم عرض زر البث.</string>
@@ -802,15 +827,15 @@
     <string name="revanced_disable_auto_player_popup_panels_title">تعطيل لوحات المشغل المنبثقة</string>
     <string name="revanced_disable_auto_player_popup_panels_summary_on">تم تعطيل لوحات المشغل المنبثقة تلقائيًا.</string>
     <string name="revanced_disable_auto_player_popup_panels_summary_off">تم تمكين لوحات المشغل المنبثقة تلقائيًا.</string>
-    <string name="revanced_disable_speed_overlay_title">تعطيل تراكب السرعة</string>
+    <string name="revanced_disable_speed_overlay_title">تعطيل واجهة السرعة</string>
     <string name="revanced_disable_speed_overlay_summary">"تعطيل '2x&gt;&gt;' أثناء الضغط باستمرار.
 
 ملحوظة:
-• يؤدي تعطيل تراكب السرعة إلى استعادة سلوك \"التمرير للتقديم أو الترجيع\" للتخطيط القديم.
- • لا يؤدي تعطيل هذا الإعداد إلى فرض تمكين تراكب السرعة بالقوة."</string>
-    <string name="revanced_speed_overlay_value_title">قيمة تراكب السرعة</string>
-    <string name="revanced_speed_overlay_value_summary">قيمة تراكب السرعة بين 0-8.0.</string>
-    <string name="revanced_speed_overlay_value_invalid_toast">يجب أن تكون قيمة تراكب السرعة بين 0-8.0.</string>
+• يؤدي تعطيل واجهة السرعة إلى استعادة سلوك \"التمرير للتقديم أو الترجيع\" للتخطيط القديم.
+ • لا يؤدي تعطيل هذا الإعداد إلى فرض تمكين واجهة السرعة بالقوة."</string>
+    <string name="revanced_speed_overlay_value_title">قيمة واجهة السرعة</string>
+    <string name="revanced_speed_overlay_value_summary">قيمة واجهة السرعة بين 0-8.0.</string>
+    <string name="revanced_speed_overlay_value_invalid_toast">يجب أن تكون قيمة واجهة السرعة بين 0-8.0.</string>
     <string name="revanced_hide_channel_watermark_title">إخفاء العلامة المائية للقناة</string>
     <string name="revanced_hide_channel_watermark_summary_on">تم إخفاء علامة الفيديو المائية.</string>
     <string name="revanced_hide_channel_watermark_summary_off">يتم عرض علامة الفيديو المائية.</string>
@@ -824,8 +849,8 @@
     <string name="revanced_hide_end_screen_cards_summary_on">تم إخفاء بطاقات شاشة النهاية.</string>
     <string name="revanced_hide_end_screen_cards_summary_off">يتم عرض بطاقات شاشة النهاية.</string>
     <string name="revanced_hide_filmstrip_overlay_title">إخفاء واجهة شريط الفيلم</string>
-    <string name="revanced_hide_filmstrip_overlay_summary_on">تم إخفاء تراكب شريط الفيلم.</string>
-    <string name="revanced_hide_filmstrip_overlay_summary_off">يتم عرض تراكب شريط الفيلم.</string>
+    <string name="revanced_hide_filmstrip_overlay_summary_on">تم إخفاء واجهة شريط الفيلم.</string>
+    <string name="revanced_hide_filmstrip_overlay_summary_off">يتم عرض واجهة شريط الفيلم.</string>
     <string name="revanced_hide_info_cards_title">إخفاء بطاقات المعلومات</string>
     <string name="revanced_hide_info_cards_summary_on">تم إخفاء بطاقات المعلومات.</string>
     <string name="revanced_hide_info_cards_summary_off">يتم عرض بطاقات المعلومات.</string>
@@ -856,18 +881,21 @@
     <string name="revanced_hide_timed_reactions_title">إخفاء ردود الفعل المؤقتة</string>
     <string name="revanced_hide_timed_reactions_summary_on">تم إخفاء ردود الفعل المؤقتة.</string>
     <string name="revanced_hide_timed_reactions_summary_off">يتم عرض ردود الفعل المؤقتة.</string>
-    <string name="revanced_hide_zoom_overlay_title">إخفاء تراكب التكبير</string>
-    <string name="revanced_hide_zoom_overlay_summary_on">يتم عرض تراكب التكبير.</string>
-    <string name="revanced_hide_zoom_overlay_summary_off">تم إخفاء تراكب التكبير.</string>
+    <string name="revanced_hide_zoom_overlay_title">إخفاء نمط التكبير</string>
+    <string name="revanced_hide_zoom_overlay_summary_on">يتم عرض نمط التكبير.</string>
+    <string name="revanced_hide_zoom_overlay_summary_off">تم إخفاء نمط التكبير.</string>
     <string name="revanced_sanitize_video_subtitle_title">تطهير ترجمة الفيديو</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"تم إخفاء عبارات مثل '#'، 'جمع التبرعات'، 'المتجر' و 'المنتجات' من ترجمات الفيديو."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"يتم عرض عبارات مثل '#'، 'جمع التبرعات'، 'المتجر' و 'المنتجات' من ترجمات الفيديو."</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">أزرار الإجراء</string>
     <string name="revanced_preference_screen_action_buttons_summary">إخفاء أو عرض أزرار الإجراءات تحت الفيديو.</string>
-    <string name="revanced_disable_like_dislike_glow_title">تعطيل توهج زر أعجبني ولم يعجبني</string>
+    <string name="revanced_disable_like_dislike_glow_title">تعطيل توهج أزرار أعجبني ولم يعجبني</string>
     <string name="revanced_disable_like_dislike_glow_summary_on">لن تتوهج أزرار أعجبني و لم يعجبني عند ذكرها.</string>
     <string name="revanced_disable_like_dislike_glow_summary_off">ستتوهج أزرار أعجبني و لم يعجبني عند ذكرها.</string>
+    <string name="revanced_hide_ask_button_title">إخفاء زر طرح سؤال</string>
+    <string name="revanced_hide_ask_button_summary_on">تم إخفاء زر طرح سؤال.</string>
+    <string name="revanced_hide_ask_button_summary_off">يتم عرض زر طرح سؤال.</string>
     <string name="revanced_hide_clip_button_title">إخفاء زر إنشاء مقطع</string>
     <string name="revanced_hide_clip_button_summary_on">تم إخفاء زر إنشاء مقطع.</string>
     <string name="revanced_hide_clip_button_summary_off">يتم عرض زر إنشاء مقطع.</string>
@@ -895,6 +923,9 @@
     <string name="revanced_hide_shop_button_title">إخفاء زر التسوق</string>
     <string name="revanced_hide_shop_button_summary_on">تم إخفاء زر المتجر.</string>
     <string name="revanced_hide_shop_button_summary_off">يتم عرض زر المتجر.</string>
+    <string name="revanced_hide_stop_ads_button_title">إخفاء إيقاف الإعلانات</string>
+    <string name="revanced_hide_stop_ads_button_summary_on">تم إخفاء زر إيقاف الإعلانات.</string>
+    <string name="revanced_hide_stop_ads_button_summary_off">يتم عرض زر إيقاف الإعلانات.</string>
     <string name="revanced_hide_thanks_button_title">إخفاء زر شكرًا</string>
     <string name="revanced_hide_thanks_button_summary_on">تم إخفاء زر شكرًا.</string>
     <string name="revanced_hide_thanks_button_summary_off">يتم عرض زر شكرًا.</string>
@@ -935,6 +966,9 @@
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Comments -->
     <string name="revanced_preference_screen_comments_title">التعليقات</string>
     <string name="revanced_preference_screen_comments_summary">إخفاء أو عرض مكونات قسم التعليقات.</string>
+    <string name="revanced_hide_ai_chat_summary_title">إخفاء ملخص محادثات الذكاء الاصطناعي</string>
+    <string name="revanced_hide_ai_chat_summary_summary_on">تم إخفاء ملخص محادثة الذكاء الاصطناعي.</string>
+    <string name="revanced_hide_ai_chat_summary_summary_off">يتم عرض ملخص محادثة الذكاء الاصطناعي.</string>
     <string name="revanced_hide_channel_guidelines_title">إخفاء إرشادات القناة</string>
     <string name="revanced_hide_channel_guidelines_summary_on">تم إخفاء إرشادات القناة.</string>
     <string name="revanced_hide_channel_guidelines_summary_off">يتم عرض إرشادات القناة.</string>
@@ -958,10 +992,7 @@
     <string name="revanced_hide_comment_highlighted_search_links_summary_off">يتم عرض روابط البحث المميزة.</string>
     <string name="revanced_hide_live_chat_messages_title">إخفاء رسائل المحادثات المباشرة</string>
     <string name="revanced_hide_live_chat_messages_summary_on">تم إخفاء رسائل المحادثات المباشرة.\n\nينطبق هذا الإعداد على فيديوهات بث Shorts المباشر أيضًا.</string>
-    <string name="revanced_hide_live_chat_messages_summary_off">يتم عرض رسائل المحادثات المباشرة.\n\nينطبق هذا الإعداد على فيديوهات بث Shorts المباشر أيضًا.</string>
-    <string name="revanced_hide_live_chat_summary_title">إخفاء ملخص المحادثات المباشرة</string>
-    <string name="revanced_hide_live_chat_summary_summary_on">تم إخفاء ملخص المحادثات المباشرة.</string>
-    <string name="revanced_hide_live_chat_summary_summary_off">يتم عرض ملخص المحادثات المباشرة.</string>
+    <string name="revanced_hide_live_chat_messages_summary_off">يتم عرض رسائل المحادثات المباشرة.</string>
     <string name="revanced_hide_preview_comment_title">إخفاء تعليق المعاينة</string>
     <string name="revanced_hide_preview_comment_on">تم إخفاء تعليق المعاينة.</string>
     <string name="revanced_hide_preview_comment_off">يتم عرض تعليق المعاينة.</string>
@@ -983,6 +1014,9 @@
     <string name="revanced_hide_player_flyout_menu_audio_track_title">إخفاء قائمة المقطع الصوتي</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">تم إخفاء قائمة المقطع الصوتي.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">يتم عرض قائمة المقطع الصوتي.</string>
+    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"قائمة المقطع الصوتي مخفية.
+
+لإظهار قائمة المقطع الصوتي، قم بتغيير 'العميل الافتراضي (Spoof Streaming Data)' إلى iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">إخفاء قائمة الترجمة</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">تم إخفاء قائمة الترجمة.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">يتم عرض قائمة الترجمة.</string>
@@ -1065,9 +1099,9 @@
     <string name="revanced_hide_live_chat_replay_button_title">إخفاء زر إعادة عرض المحادثات المباشرة</string>
     <string name="revanced_hide_live_chat_replay_button_summary_on">تم إخفاء زر إعادة تشغيل المحادثات المباشرة.\n\nيظهر في وضع ملء الشاشة عند إغلاق المحادثات المباشرة.</string>
     <string name="revanced_hide_live_chat_replay_button_summary_off">يتم عرض زر إعادة تشغيل المحادثات المباشرة.\n\nيظهر في وضع ملء الشاشة عند إغلاق المحادثات المباشرة.</string>
-    <string name="revanced_hide_related_video_overlay_title">إخفاء تراكب الفيديو ذي الصلة</string>
-    <string name="revanced_hide_related_video_overlay_summary_on">تم إخفاء قسم المزيد من الفيديوهات في حاوية الإجراءات السريعة وواجهة الفيديو ذي الصلة.</string>
-    <string name="revanced_hide_related_video_overlay_summary_off">يتم عرض قسم المزيد من الفيديوهات في حاوية الإجراءات السريعة وواجهة الفيديو ذي الصلة.</string>
+    <string name="revanced_hide_related_videos_overlay_title">إخفاء واجهة الفيديوهات ذات الصلة</string>
+    <string name="revanced_hide_related_videos_overlay_summary_on">تم إخفاء قسم المزيد من الفيديوهات في حاوية الإجراءات السريعة وواجهة الفيديو ذي الصلة.</string>
+    <string name="revanced_hide_related_videos_overlay_summary_off">يتم عرض قسم المزيد من الفيديوهات في حاوية الإجراءات السريعة وواجهة الفيديو ذي الصلة.</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Fullscreen, PreferenceCategory: Quick actions -->
     <string name="revanced_preference_category_quick_actions">الإجراءات السريعة</string>
     <string name="revanced_hide_quick_actions_title">إخفاء حاوية الإجراءات السريعة</string>
@@ -1107,9 +1141,9 @@
     <string name="revanced_disable_landscape_mode_title">تعطيل الوضع الأفقي</string>
     <string name="revanced_disable_landscape_mode_summary_on">اتجاه الفيديو هو وضع عمودي في ملء الشاشة.</string>
     <string name="revanced_disable_landscape_mode_summary_off">اتجاه الفيديو يتبع إعدادات ملء الشاشة في الجهاز.</string>
-    <string name="revanced_enable_compact_controls_overlay_title">تمكين تراكب التحكم المدمج</string>
-    <string name="revanced_enable_compact_controls_overlay_summary_on">لا يملأ تراكب عناصر التحكم الشاشة الكاملة.</string>
-    <string name="revanced_enable_compact_controls_overlay_summary_off">يملأ تراكب عناصر التحكم الشاشة الكاملة.</string>
+    <string name="revanced_enable_compact_controls_overlay_title">تمكين نمط التحكم المدمج</string>
+    <string name="revanced_enable_compact_controls_overlay_summary_on">لا يملأ نمط عناصر التحكم الشاشة الكاملة.</string>
+    <string name="revanced_enable_compact_controls_overlay_summary_off">يملأ نمط عناصر التحكم الشاشة الكاملة.</string>
     <string name="revanced_keep_landscape_mode_title">الإبقاء على الوضع الأفقي</string>
     <string name="revanced_keep_landscape_mode_summary_on">تستمر مقاطع الفيديو في التشغيل في الوضع الأفقي بعد إيقاف تشغيل الشاشة وتشغيلها.</string>
     <string name="revanced_keep_landscape_mode_summary_off">يتم تشغيل مقاطع الفيديو في الوضع الطولي بعد إيقاف تشغيل الشاشة وتشغيلها.</string>
@@ -1206,8 +1240,8 @@
     <string name="revanced_hide_player_fullscreen_button_summary_on">تم إخفاء زر ملء الشاشة.</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">يتم عرض زر ملء الشاشة.</string>
     <string name="revanced_hide_player_previous_next_button_title">إخفاء أزرار السابق &amp; التالي</string>
-    <string name="revanced_hide_player_previous_next_button_summary_on">تم إخفاء الأزرار.</string>
-    <string name="revanced_hide_player_previous_next_button_summary_off">يتم عرض الأزرار.</string>
+    <string name="revanced_hide_player_previous_next_button_summary_on">تم إخفاء أزرار السابق &amp; التالي.</string>
+    <string name="revanced_hide_player_previous_next_button_summary_off">يتم عرض أزرار السابق &amp; التالي.</string>
     <string name="revanced_hide_player_youtube_music_button_title">إخفاء زر موسيقى YouTube</string>
     <string name="revanced_hide_player_youtube_music_button_summary_on">تم إخفاء زر موسيقى YouTube.</string>
     <string name="revanced_hide_player_youtube_music_button_summary_off">يتم عرض زر موسيقى YouTube.</string>
@@ -1231,6 +1265,7 @@
     <string name="revanced_overlay_button_speed_dialog_title">عرض مربع زر حوار السرعة</string>
     <string name="revanced_overlay_button_speed_dialog_summary">"انقر لفتح مربع حوار السرعة.
 انقر مع الاستمرار لضبط سرعة التشغيل على 1.0x. انقر مع الاستمرار مرة أخرى لإعادة ضبط السرعة الافتراضية."</string>
+    <string name="revanced_overlay_button_speed_dialog_type_title">نوع مربع حوار السرعة</string>
     <string name="revanced_overlay_button_whitelist_title">عرض زر القائمة البيضاء</string>
     <string name="revanced_overlay_button_whitelist_summary">\"انقر لفتح مربع حوار القائمة البيضاء.
 انقر مع الاستمرار لفتح مربع حوار إعداد القائمة البيضاء.</string>
@@ -1285,6 +1320,10 @@
     <string name="revanced_append_time_stamp_information_type_title">إضافة نوع المعلومات</string>
     <string name="revanced_append_time_stamp_information_type_summary_on">إضافة جودة الفيديو.</string>
     <string name="revanced_append_time_stamp_information_type_summary_off">إضافة سرعة التشغيل.</string>
+    <string name="revanced_append_time_stamp_information_playback_speed_menu_type_title">نوع قائمة سرعة التشغيل</string>
+    <string name="revanced_append_time_stamp_information_video_quality_menu_type_title">نوع قائمة جودة الفيديو</string>
+    <string name="revanced_append_time_stamp_information_video_quality_menu_type_summary_on">يتم استخدام مربع حوار مخصص.</string>
+    <string name="revanced_append_time_stamp_information_video_quality_menu_type_summary_off">يتم استخدام القائمة المنبثقة على الطراز القديم.</string>
     <string name="revanced_replace_time_stamp_action_title">استبدال إجراء الطابع الزمني</string>
     <string name="revanced_replace_time_stamp_action_summary_on">انقر لفتح القائمة المنبثقة لسرعة التشغيل أو جودة الفيديو.</string>
     <string name="revanced_replace_time_stamp_action_summary_off">انقر لعرض الوقت المتبقي.</string>
@@ -1308,9 +1347,9 @@
     <string name="revanced_hide_seekbar_title">إخفاء شريط التقدم في مشغل الفيديو</string>
     <string name="revanced_hide_seekbar_summary_on">تم إخفاء شريط تقدم الفيديو.</string>
     <string name="revanced_hide_seekbar_summary_off">يتم عرض شريط تقدم الفيديو.</string>
-    <string name="revanced_hide_seekbar_thumbnail_title">إخفاء شريط التقدم في مُصَّغَرات الفيديو</string>
-    <string name="revanced_hide_seekbar_thumbnail_summary_on">تم إخفاء مُصَّغَرة الفيديو بشريط التقدم.</string>
-    <string name="revanced_hide_seekbar_thumbnail_summary_off">يتم عرض مُصَّغَرة الفيديو بشريط التقدم.</string>
+    <string name="revanced_hide_seekbar_thumbnail_title">إخفاء شريط التقدم في مصغرات الفيديو</string>
+    <string name="revanced_hide_seekbar_thumbnail_summary_on">تم إخفاء مصغرة الفيديو بشريط التقدم.</string>
+    <string name="revanced_hide_seekbar_thumbnail_summary_off">يتم عرض مصغرة الفيديو بشريط التقدم.</string>
     <string name="revanced_hide_time_stamp_title">إخفاء طابع الوقت</string>
     <string name="revanced_hide_time_stamp_summary_on">تم إخفاء طابع الوقت.</string>
     <string name="revanced_hide_time_stamp_summary_off">يتم عرض طابع الوقت.</string>
@@ -1335,12 +1374,12 @@
     <string name="revanced_hide_ai_generated_video_summary_section_summary_on">تم إخفاء قسم ملخص الفيديو الذي تم إنشاؤه بواسطة AI.</string>
     <string name="revanced_hide_ai_generated_video_summary_section_summary_off">يتم عرض قسم ملخص الفيديو الذي تم إنشاؤه بواسطة AI.</string>
     <string name="revanced_hide_attributes_section_title">إخفاء قسم الصفات</string>
-    <string name="revanced_hide_attributes_section_summary_on">تم إخفاء أقسام الأماكن المميزة، الألعاب، الموسيقى والأشخاص المذكورون.</string>
-    <string name="revanced_hide_attributes_section_summary_off">يتم عرض أقسام الأماكن المميزة، الألعاب، الموسيقى والأشخاص المذكورون.</string>
+    <string name="revanced_hide_attributes_section_summary_on">تم إخفاء أقسام الأماكن المميزة، الألعاب، الموسيقى، والأشخاص المذكورون.</string>
+    <string name="revanced_hide_attributes_section_summary_off">يتم عرض أقسام الأماكن المميزة، الألعاب، الموسيقى، والأشخاص المذكورون.</string>
     <string name="revanced_hide_chapters_section_title">إخفاء قسم الفصول</string>
     <string name="revanced_hide_chapters_section_summary_on">تم إخفاء قسم الفصول.</string>
     <string name="revanced_hide_chapters_section_summary_off">يتم عرض قسم الفصول.</string>
-    <string name="revanced_hide_contents_section_title">إخفاء قسم المحتوى</string>
+    <string name="revanced_hide_contents_section_title">إخفاء قسم كيف تم إنشاء هذا المحتوى</string>
     <string name="revanced_hide_contents_section_summary_on">تم إخفاء قسم كيفية إنشاء هذا المحتوى.</string>
     <string name="revanced_hide_contents_section_summary_off">يتم عرض قسم كيفية إنشاء هذا المحتوى.</string>
     <string name="revanced_hide_podcast_section_title">إخفاء استكشاف قسم البودكاست</string>
@@ -1352,9 +1391,6 @@
     <string name="revanced_hide_key_concepts_section_title">إخفاء قسم المفاهيم الأساسية</string>
     <string name="revanced_hide_key_concepts_section_summary_on">تم إخفاء قسم المفاهيم الأساسية.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">يتم عرض قسم المفاهيم الأساسية.</string>
-    <string name="revanced_hide_shopping_links_title">إخفاء روابط التسوق</string>
-    <string name="revanced_hide_shopping_links_summary_on">تم إخفاء روابط التسوق.</string>
-    <string name="revanced_hide_shopping_links_summary_off">يتم عرض روابط التسوق.</string>
     <string name="revanced_hide_transcript_section_title">إخفاء قسم النص</string>
     <string name="revanced_hide_transcript_section_summary_on">تم إخفاء قسم النص.</string>
     <string name="revanced_hide_transcript_section_summary_off">يتم عرض قسم النص.</string>
@@ -1380,21 +1416,22 @@
     <string name="revanced_hide_shorts_floating_button_summary_off">"يتم عرض الأزرار العائمة مثل 'استخدام هذا الصوت' في علامة تبويب قناة Shorts."</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts shelves -->
     <string name="revanced_preference_category_shorts_shelf">رفوف Shorts</string>
-    <string name="revanced_hide_shorts_shelf_title">إخفاء رفوف Shorts</string>
-    <string name="revanced_hide_shorts_shelf_summary">"إخفاء رفوف Shorts
+    <string name="revanced_hide_shorts_shelf_title">تمكين إخفاء رفوف Shorts</string>
+    <string name="revanced_hide_shorts_shelf_summary">"يتيح إخفاء رفوف Shorts.
 
-التأثير الجانبي: سيتم إخفاء الرؤوس الرسمية في نتائج البحث."</string>
-    <string name="revanced_hide_shorts_shelf_channel_title">إخفاء في القناة</string>
-    <string name="revanced_hide_shorts_shelf_channel_summary_on">"مخفي في القناة.
+الأثر جانبي: سيتم إخفاء العناوين الرسمية في نتائج البحث."</string>
+    <string name="revanced_hide_shorts_shelf_channel_title">إخفاء في صفحة القناة</string>
+    <string name="revanced_hide_shorts_shelf_channel_summary_on">"مخفي في صفحة القناة.
 
-معلومة:
-• فقط الأرفف التي تحتوي على عنوان Shorts في علامة تبويب الصفحة الرئيسية تكون مخفية."</string>
-    <string name="revanced_hide_shorts_shelf_channel_summary_off">يُعرض في القناة.</string>
+معلومة: فقط الأرفف التي تحتوي على علامة Shorts في علامة تبويب الصفحة الرئيسية تكون مخفية."</string>
+    <string name="revanced_hide_shorts_shelf_channel_summary_off">يُعرض في صفحة القناة.</string>
     <string name="revanced_hide_shorts_shelf_home_related_videos_title">إخفاء في موجز الصفحة الرئيسية والفيديوهات ذات الصلة</string>
     <string name="revanced_hide_shorts_shelf_home_related_videos_summary_on">مخفي في موجز الصفحة الرئيسية والفيديوهات ذات الصلة.</string>
     <string name="revanced_hide_shorts_shelf_home_related_videos_summary_off">يُعرض في موجز الصفحة الرئيسية والفيديوهات ذات الصلة.</string>
     <string name="revanced_hide_shorts_shelf_search_title">إخفاء في نتائج البحث</string>
-    <string name="revanced_hide_shorts_shelf_search_summary_on">مخفي في نتائج البحث.</string>
+    <string name="revanced_hide_shorts_shelf_search_summary_on">"مخفي في نتائج البحث.
+
+التأثير الجانبي: سيتم إخفاء العناوين الرسمية في نتائج البحث."</string>
     <string name="revanced_hide_shorts_shelf_search_summary_off">يُعرض في نتائج البحث.</string>
     <string name="revanced_hide_shorts_shelf_subscriptions_title">إخفاء في موجز الاشتراكات</string>
     <string name="revanced_hide_shorts_shelf_subscriptions_summary_on">مخفي في موجز الاشتراكات.</string>
@@ -1418,18 +1455,15 @@
     <string name="revanced_hide_shorts_channel_bar_title">إخفاء شريط القناة</string>
     <string name="revanced_hide_shorts_channel_bar_summary_on">تم إخفاء شريط القناة.</string>
     <string name="revanced_hide_shorts_channel_bar_summary_off">يتم عرض شريط القناة.</string>
-    <string name="revanced_hide_shorts_full_video_link_label_title">إخفاء تسمية رابط الفيديو الكامل</string>
-    <string name="revanced_hide_shorts_full_video_link_label_summary_on">تم إخفاء تسمية رابط الفيديو الكامل.</string>
-    <string name="revanced_hide_shorts_full_video_link_label_summary_off">يتم عرض تسمية رابط الفيديو الكامل.</string>
     <string name="revanced_hide_shorts_info_panel_title">إخفاء لوحات المعلومات</string>
     <string name="revanced_hide_shorts_info_panel_summary_on">تم إخفاء لوحات المعلومات.</string>
     <string name="revanced_hide_shorts_info_panel_summary_off">يتم عرض لوحات المعلومات.</string>
     <string name="revanced_hide_shorts_join_button_title">إخفاء زر الانضمام</string>
     <string name="revanced_hide_shorts_join_button_summary_on">تم إخفاء زر الانضمام.</string>
     <string name="revanced_hide_shorts_join_button_summary_off">يتم عرض زر الانضمام.</string>
-    <string name="revanced_hide_shorts_live_header_title">إخفاء Header المحادثات المباشرة</string>
-    <string name="revanced_hide_shorts_live_header_summary_on">تم إخفاء Header المحادثات المباشرة.\n\nزر رجوع في Header لن يتم إخفاؤه.</string>
-    <string name="revanced_hide_shorts_live_header_summary_off">يتم عرض Header المحادثات المباشرة.\n\nزر رجوع في Header لن يتم إخفاؤه.</string>
+    <string name="revanced_hide_shorts_live_header_title">إخفاء علامة المحادثات المباشرة</string>
+    <string name="revanced_hide_shorts_live_header_summary_on">تم إخفاء علامة المحادثات المباشرة.\n\nزر رجوع في العلامة لن يتم إخفاؤه.</string>
+    <string name="revanced_hide_shorts_live_header_summary_off">يتم عرض علامة المحادثات المباشرة.</string>
     <string name="revanced_hide_shorts_paid_promotion_label_title">إخفاء تصنيف الترويج المدفوع</string>
     <string name="revanced_hide_shorts_paid_promotion_label_summary_on">تم إخفاء تصنيف الترويج المدفوع.</string>
     <string name="revanced_hide_shorts_paid_promotion_label_summary_off">يتم عرض تصنيف الترويج المدفوع.</string>
@@ -1437,8 +1471,8 @@
     <string name="revanced_hide_shorts_paused_header_summary_on">تم إخفاء علامة Shorts عند توقف الفيديو.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">يتم عرض علامة Shorts عند توقف الفيديو.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_title">إخفاء أزرار واجهة التوقف</string>
-    <string name="revanced_hide_shorts_paused_overlay_buttons_summary_on">تم إخفاء أزرار تراكب التوقف.</string>
-    <string name="revanced_hide_shorts_paused_overlay_buttons_summary_off">يتم عرض أزرار تراكب التوقف.</string>
+    <string name="revanced_hide_shorts_paused_overlay_buttons_summary_on">تم إخفاء أزرار واجهة التوقف.</string>
+    <string name="revanced_hide_shorts_paused_overlay_buttons_summary_off">يتم عرض أزرار واجهة التوقف.</string>
     <string name="revanced_hide_shorts_shopping_button_title">إخفاء زر التسوق</string>
     <string name="revanced_hide_shorts_shopping_button_summary_on">تم إخفاء زر التسوق.</string>
     <string name="revanced_hide_shorts_shopping_button_summary_off">يتم عرض زر التسوق.</string>
@@ -1454,11 +1488,17 @@
     <string name="revanced_hide_shorts_trends_button_title">إخفاء زر الرائجة</string>
     <string name="revanced_hide_shorts_trends_button_summary_on">تم إخفاء زر الرائجة.</string>
     <string name="revanced_hide_shorts_trends_button_summary_off">يتم عرض زر الرائجة.</string>
+    <string name="revanced_hide_shorts_video_link_label_title">إخفاء تسمية رابط الفيديو</string>
+    <string name="revanced_hide_shorts_video_link_label_summary_on">تم إخفاء تسمية رابط الفيديو.</string>
+    <string name="revanced_hide_shorts_video_link_label_summary_off">يتم عرض تسمية رابط الفيديو.</string>
     <string name="revanced_hide_shorts_video_title_title">إخفاء عنوان الفيديو</string>
     <string name="revanced_hide_shorts_video_title_summary_on">تم إخفاء عنوان الفيديو.</string>
     <string name="revanced_hide_shorts_video_title_summary_off">يتم عرض عنوان الفيديو.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player, PreferenceCategory: Suggested actions -->
     <string name="revanced_preference_category_suggested_actions">الإجراءات المقترحة</string>
+    <string name="revanced_hide_shorts_buy_super_thanks_button_title">إخفاء زر شراء Super Thanks</string>
+    <string name="revanced_hide_shorts_buy_super_thanks_button_summary_on">تم إخفاء زر شراء Super Thanks.</string>
+    <string name="revanced_hide_shorts_buy_super_thanks_button_summary_off">يتم عرض زر شراء Super Thanks.</string>
     <string name="revanced_hide_shorts_green_screen_button_title">إخفاء زر الشاشة الأخضر</string>
     <string name="revanced_hide_shorts_green_screen_button_summary_on">تم إخفاء زر الشاشة الخضراء.</string>
     <string name="revanced_hide_shorts_green_screen_button_summary_off">يتم عرض زر الشاشة الخضراء.</string>
@@ -1474,15 +1514,12 @@
     <string name="revanced_hide_shorts_shop_button_title">إخفاء زر التسوق</string>
     <string name="revanced_hide_shorts_shop_button_summary_on">تم إخفاء زر المتجر.</string>
     <string name="revanced_hide_shorts_shop_button_summary_off">يتم عرض زر المتجر.</string>
-    <string name="revanced_hide_shorts_super_thanks_button_title">إخفاء زر Super Thanks</string>
-    <string name="revanced_hide_shorts_super_thanks_button_summary_on">تم إخفاء زر Super Thanks.</string>
-    <string name="revanced_hide_shorts_super_thanks_button_summary_off">يتم عرض زر Super Thanks.</string>
     <string name="revanced_hide_shorts_tagged_products_title">إخفاء المنتجات الموسومة</string>
     <string name="revanced_hide_shorts_tagged_products_summary_on">تم إخفاء المنتجات المعلمة.</string>
     <string name="revanced_hide_shorts_tagged_products_summary_off">يتم عرض المنتجات المعلمة.</string>
-    <string name="revanced_hide_shorts_use_template_button_title">إخفاء زر استخدام القالب</string>
-    <string name="revanced_hide_shorts_use_template_button_summary_on">تم إخفاء زر القالب.</string>
-    <string name="revanced_hide_shorts_use_template_button_summary_off">يتم عرض زر القالب.</string>
+    <string name="revanced_hide_shorts_use_this_template_button_title">إخفاء زر استخدام النموذج</string>
+    <string name="revanced_hide_shorts_use_this_template_button_summary_on">تم إخفاء زر استخدم هذا النموذج.</string>
+    <string name="revanced_hide_shorts_use_this_template_button_summary_off">يتم عرض زر استخدم هذا النموذج.</string>
     <string name="revanced_hide_shorts_use_this_sound_button_title">إخفاء زر استخدام هذا الصوت</string>
     <string name="revanced_hide_shorts_use_this_sound_button_summary_on">تم إخفاء زر استخدام هذا الصوت.</string>
     <string name="revanced_hide_shorts_use_this_sound_button_summary_off">يتم عرض زر استخدام هذا الصوت.</string>
@@ -1555,6 +1592,8 @@
     <string name="revanced_shorts_custom_actions_speed_dialog_title">عرض قائمة مربع حوار السرعة</string>
     <string name="revanced_shorts_custom_actions_speed_dialog_summary_on">يتم عرض قائمة حوار السرعة.</string>
     <string name="revanced_shorts_custom_actions_speed_dialog_summary_off">تم إخفاء قائمة حوار السرعة.</string>
+    <string name="revanced_shorts_custom_actions_speed_dialog_type_title">نوع مربع حوار السرعة</string>
+    <string name="revanced_shorts_custom_actions_speed_dialog_type_user_dialog_message">قد لا يعمل مربع حوار السرعة الحديث على YouTube 19.01-19.34.</string>
     <string name="revanced_shorts_custom_actions_repeat_state_label">حالة التكرار</string>
     <string name="revanced_shorts_custom_actions_repeat_state_title">عرض قائمة حالة التكرار</string>
     <string name="revanced_shorts_custom_actions_repeat_state_summary_on">يتم عرض قائمة حالة التكرار.</string>
@@ -1565,17 +1604,17 @@
 لا يمكن إصلاح معظم الأخطاء بسبب القيود المفروضة على جانب العميل، لذا استخدمها لأغراض الاختبار فقط."</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player, PreferenceCategory: Experimental flags -->
     <string name="revanced_enable_shorts_time_stamp_title">تمكين الطوابع الزمنية</string>
-    <string name="revanced_enable_shorts_time_stamp_summary_on">"تم تمكين الطابع الزمني.
+    <string name="revanced_enable_shorts_time_stamp_summary_on">"تم تفعيل الطابع الزمني.
 
 القيود:
-• لا يعمل هذا الإعداد على تمكين الطوابع الزمنية فحسب، بل يسمح أيضًا للمستخدمين بإخفاء واجهة المستخدم من خلال النقر على خلفية المشغل.
-• بما أن هذه ميزة في مرحلة التطوير بواسطة Google، فقد يكون التخطيط معطلاً."</string>
+• يؤدي تفعيل الطابع الزمني إلى ترك مساحة فارغة أسفل شريط الإجراءات.
+• بما أن هذه الميزة قيد التطوير من قِبل Google، فقد يكون التخطيط معطلاً."</string>
     <string name="revanced_enable_shorts_time_stamp_summary_off">تم تعطيل الطابع الزمني.</string>
-    <string name="revanced_shorts_time_stamp_change_repeat_state_title">إجراء الضغط المطول على الوقت</string>
-    <string name="revanced_shorts_time_stamp_change_repeat_state_summary">اضغط مع الاستمرار على الطابع الزمني لتغيير حالة تكرار فيديوهات Shorts.</string>
-    <string name="revanced_shorts_meta_panel_bottom_margin_title">الهامش السفلي للوحة التعريف</string>
-    <string name="revanced_shorts_meta_panel_bottom_margin_summary">تكوين التباعد من شريط التقدم إلى لوحة التعريف، بين 0-64.</string>
-    <string name="revanced_shorts_meta_panel_bottom_margin_invalid_toast">يجب أن يكون الهامش السفلي للوحة التعريف بين 0-64.</string>
+    <string name="revanced_enable_shorts_clear_mode_title">تمكين الوضع الواضح</string>
+    <string name="revanced_enable_shorts_clear_mode_summary_on">"تم تمكين الوضع الواضح.
+
+انقر على خلفية المشغل لإخفاء واجهة المستخدم."</string>
+    <string name="revanced_enable_shorts_clear_mode_summary_off">تم تعطيل الوضع الواضح.</string>
     <string name="revanced_hide_shorts_navigation_bar_title">إخفاء شريط التنقل</string>
     <string name="revanced_hide_shorts_navigation_bar_summary_on">تم إخفاء شريط التنقل.</string>
     <string name="revanced_hide_shorts_navigation_bar_summary_off">يتم عرض شريط التنقل.</string>
@@ -1594,58 +1633,61 @@
     <string name="revanced_restore_shorts_old_player_layout_summary_off">لا يتم استخدام تصميم المشغل القديم.</string>
     <!-- PreferenceScreen: Swipe controls -->
     <string name="revanced_preference_screen_swipe_controls_title">التحكم عبر إيماءة التمرير</string>
-    <string name="revanced_enable_swipe_lowest_value_auto_brightness_title">تمكين التحكم بالسطوع عن طريق إيماءة التمرير</string>
-    <string name="revanced_enable_swipe_lowest_value_auto_brightness_summary_on">أدنى قيمة لإيماءة السطوع تعمل على تنشيط السطوع التلقائي.</string>
-    <string name="revanced_enable_swipe_lowest_value_auto_brightness_summary_off">أدنى قيمة لإيماءة السطوع لا تعمل على تنشيط السطوع التلقائي.</string>
-    <string name="revanced_enable_swipe_brightness_title">تمكين التحكم بالسطوع عن طريق إيماءة التمرير</string>
-    <string name="revanced_enable_swipe_brightness_summary_on">"تم تمكين ميزة التمرير السريع لضبط سطوع الشاشة بالكامل.
- 
- اضبط السطوع بالتمرير عموديًا على يسار الشاشة."</string>
-    <string name="revanced_enable_swipe_brightness_summary_off">تم تعطيل التحكم بمستوى السطوع عن طريق الإيماءة.</string>
-    <string name="revanced_enable_swipe_volume_title">تمكين التحكم بالصوت عن طريق إيماءة التمرير</string>
-    <string name="revanced_enable_swipe_volume_summary_on">"تم تمكين ميزة التمرير على كامل الشاشة للتحكم في مستوى الصوت.
+    <string name="revanced_swipe_lowest_value_enable_auto_brightness_title">تمكين إيماءة السطوع التلقائي</string>
+    <string name="revanced_swipe_lowest_value_enable_auto_brightness_summary_on">يتم تنشيط السطوع التلقائي عند أقل قيمة للسطوع.</string>
+    <string name="revanced_swipe_lowest_value_enable_auto_brightness_summary_off">أقل قيمة لإيماءة السطوع لا تؤدي إلى تنشيط السطوع التلقائي.</string>
+    <string name="revanced_swipe_lowest_value_enable_auto_brightness_overlay_text">تلقائي</string>
+    <string name="revanced_swipe_brightness_title">تمكين إيماءة السطوع</string>
+    <string name="revanced_swipe_brightness_summary_on">"تم تمكين ميزة إيماءة مستوى السطوع بوضع ملء الشاشة.
 
-اضبط مستوى الصوت بالتمرير عموديًا على يمين الشاشة."</string>
-    <string name="revanced_enable_swipe_volume_summary_off">تم تعطيل التحكم بمستوى الصوت عن طريق الإيماءة.</string>
-    <string name="revanced_enable_save_and_restore_brightness_title">تمكين حفظ واستعادة السطوع</string>
-    <string name="revanced_enable_save_and_restore_brightness_summary_on">حفظ واستعادة السطوع عند الخروج أو الدخول إلى وضع ملء الشاشة.</string>
-    <string name="revanced_enable_save_and_restore_brightness_summary_off">لا تقم بحفظ واستعادة السطوع عند الخروج أو الدخول إلى وضع ملء الشاشة.</string>
-    <string name="revanced_enable_swipe_press_to_engage_title">الضغط للتمرير</string>
-    <string name="revanced_enable_swipe_press_to_engage_summary_on">المس مع الاستمرار لتنشيط إيماءة التمرير.</string>
-    <string name="revanced_enable_swipe_press_to_engage_summary_off">المس لتنشيط إيماءة التمرير.</string>
-    <string name="revanced_enable_swipe_haptic_feedback_title">تمكين ردود الفعل اللمسية</string>
-    <string name="revanced_enable_swipe_haptic_feedback_summary_on">تم تمكين الاهتزاز.</string>
-    <string name="revanced_enable_swipe_haptic_feedback_summary_off">تم تعطيل الاهتزاز.</string>
+اضبط مستوى السطوع بالتمرير عموديًا على يسار الشاشة."</string>
+    <string name="revanced_swipe_brightness_summary_off">تم تعطيل إيماءة مستوى السطوع بوضع ملء الشاشة.</string>
+    <string name="revanced_swipe_volume_title">تمكين إيماءة الصوت</string>
+    <string name="revanced_swipe_volume_summary_on">"تم تمكين إيماءة مستوى الصوت في وضع ملء الشاشة.
+
+اضبط مستوى الصوت عن طريق التمرير عموديًا على الجانب الأيمن من الشاشة."</string>
+    <string name="revanced_swipe_volume_summary_off">تم تعطيل إيماءة مستوى الصوت في وضع ملء الشاشة.</string>
+    <string name="revanced_swipe_press_to_engage_title">تمكين الضغط لتمرير الإيماءة</string>
+    <string name="revanced_swipe_press_to_engage_summary_on">تم تمكين الضغط لتمرير الإيماءة.</string>
+    <string name="revanced_swipe_press_to_engage_summary_off">تم تعطيل الضغط لتمرير الإيماءة.</string>
+    <string name="revanced_swipe_haptic_feedback_title">تمكين ردود الفعل اللمسية</string>
+    <string name="revanced_swipe_haptic_feedback_summary_on">تم تمكين الاهتزاز.</string>
+    <string name="revanced_swipe_haptic_feedback_summary_off">تم تعطيل الاهتزاز.</string>
+    <string name="revanced_swipe_save_and_restore_brightness_title">حفظ واستعادة السطوع</string>
+    <string name="revanced_swipe_save_and_restore_brightness_summary_on">حفظ واستعادة مستوى السطوع عند الخروج أو الدخول إلى وضع ملء الشاشة.</string>
+    <string name="revanced_swipe_save_and_restore_brightness_summary_off">لا تقم بحفظ واستعادة مستوى السطوع عند الخروج أو الدخول إلى وضع ملء الشاشة.</string>
     <string name="revanced_swipe_gestures_lock_mode_title">إيماءات التمرير في وضع قفل الشاشة</string>
     <string name="revanced_swipe_gestures_lock_mode_summary_on">تم تمكين إيماءات التمرير في وضع شاشة القفل.</string>
     <string name="revanced_swipe_gestures_lock_mode_summary_off">تم تعطيل إيماءات التمرير في وضع شاشة القفل.</string>
-    <string name="revanced_swipe_magnitude_threshold_title">مقدار حد التمرير</string>
-    <string name="revanced_swipe_magnitude_threshold_summary">الحد الأقصى للتمرير قبل اكتشاف الإيماءة.</string>
-    <string name="revanced_swipe_overlay_alternative_ui_title">واجهة التمرير السريع البديلة</string>
-    <string name="revanced_swipe_overlay_alternative_ui_summary_on">يتم استخدام واجهة المستخدم البديلة.</string>
-    <string name="revanced_swipe_overlay_alternative_ui_summary_off">يتم استخدام واجهة المستخدم القديمة.</string>
-    <string name="revanced_swipe_overlay_minimal_style_title">تمكين النمط البسيط</string>
-    <string name="revanced_swipe_overlay_minimal_style_summary_on">تم تمكين نمط الواجهة البسيط.</string>
-    <string name="revanced_swipe_overlay_minimal_style_summary_off">تم تعطيل نمط الواجهة الأدنى.</string>
-    <string name="revanced_swipe_show_circular_overlay_title">عرض الواجهة الدائرية</string>
-    <string name="revanced_swipe_show_circular_overlay_summary_on">يتم عرض الواجهة الدائرية.</string>
-    <string name="revanced_swipe_show_circular_overlay_summary_off">يتم عرض الواجهة الأفقية.</string>
+    <string name="revanced_swipe_threshold_title">مقدار حد التمرير</string>
+    <string name="revanced_swipe_threshold_summary">مقدار الحد الأقصى لحدوث التمرير.</string>
+    <string name="revanced_swipe_overlay_style_title">نمط واجهة التمرير</string>
+    <string name="revanced_swipe_overlay_style_entry_0">النمط القديم</string>
+    <string name="revanced_swipe_overlay_style_entry_1">النمط الافقي</string>
+    <string name="revanced_swipe_overlay_style_entry_2">النمط الأفقي (الأدنى - الأعلى)</string>
+    <string name="revanced_swipe_overlay_style_entry_3">النمط الأفقي (الأدنى - المنتصف)</string>
+    <string name="revanced_swipe_overlay_style_entry_4">النمط الدائري</string>
+    <string name="revanced_swipe_overlay_style_entry_5">النمط الدائري (الأدنى)</string>
+    <string name="revanced_swipe_overlay_style_entry_6">النمط العمودي</string>
+    <string name="revanced_swipe_overlay_style_entry_7">النمط العمودي (الأدنى)</string>
+    <string name="revanced_swipe_overlay_progress_brightness_color_title">لون نمط إيماءة السطوع</string>
+    <string name="revanced_swipe_overlay_progress_brightness_color_summary">لون شريط عناصر التحكم في مستوى السطوع.</string>
+    <string name="revanced_swipe_overlay_progress_volume_color_title">لون نمط إيماءة الصوت</string>
+    <string name="revanced_swipe_overlay_progress_volume_color_summary">لون شريط عناصر التحكم في مستوى الصوت.</string>
     <string name="revanced_swipe_overlay_background_opacity_title">تعتيم خلفية واجهة التمرير السريع</string>
     <string name="revanced_swipe_overlay_background_opacity_summary">قيمة الشفافية بين 0-100.</string>
     <string name="revanced_swipe_overlay_background_opacity_invalid_toast">يجب أن تكون شفافية التمرير بين 0-100.</string>
-    <string name="revanced_swipe_overlay_text_size_title">حجم نص واجهة إيماءة التمرير</string>
-    <string name="revanced_swipe_overlay_text_size_summary">حجم النص في واجهة التمرير.</string>
     <string name="revanced_swipe_overlay_rect_size_title">حجم واجهة إيماءة التمرير</string>
     <string name="revanced_swipe_overlay_rect_size_summary">النسبة المئوية لمساحة الشاشة القابلة للتمرير السريع.\n\nملاحظة: سيؤدي هذا أيضًا إلى تغيير حجم مساحة الشاشة لإيماءة النقر المزدوج للتقديم أو التأخير.</string>
     <string name="revanced_swipe_overlay_rect_size_invalid_toast">لا يمكن أن يزيد حجم المنطقة القابلة للتمرير السريع عن 50.</string>
+    <string name="revanced_swipe_text_overlay_size_title">حجم نص نمط إيماءة التمرير</string>
+    <string name="revanced_swipe_text_overlay_size_summary">حجم النص لنمط التمرير بين 1-30.</string>
+    <string name="revanced_swipe_text_overlay_size_invalid_toast">يجب أن يكون حجم النص بين 1-30.</string>
     <string name="revanced_swipe_overlay_timeout_title">مهلة واجهة إيماءة التمرير</string>
     <string name="revanced_swipe_overlay_timeout_summary">أجزاء الثانية التي تكون فيها الواجهة مرئية.</string>
-    <string name="revanced_swipe_brightness_sensitivity_title">حساسية تمرير مستوى السطوع</string>
-    <string name="revanced_swipe_brightness_sensitivity_summary">تكوين الحد الأدنى للمسافة لتمرير السطوع بين 1 و1000 (%).\nكلما كانت المسافة الدنيا أقصر، كلما تغيرت مستويات السطوع بشكل أسرع.</string>
-    <string name="revanced_swipe_brightness_sensitivity_invalid_toast">يجب أن تكون حساسية تمرير مستوى السطوع بين 1-1000 (%).</string>
     <string name="revanced_swipe_volume_sensitivity_title">حساسية تمرير مستوى الصوت</string>
-    <string name="revanced_swipe_volume_sensitivity_summary" formatted="false">تكوين الحد الأدنى للمسافة لتمرير مستوى الصوت بين 1 و1000 (%).\n\nكلما كانت المسافة الدنيا أقصر، كانت تغييرات مستوى الصوت أسرع.\n\nحساسية التمرير الموصى بها لمستوى الصوت هي 100% عند 15 خطوة لمستوى الصوت و10% عند 150 خطوة لمستوى الصوت.</string>
-    <string name="revanced_swipe_volume_sensitivity_invalid_toast">يجب أن تكون حساسية تمرير مستوى الصوت بين 1-1000 (%).</string>
+    <string name="revanced_swipe_volume_sensitivity_summary">مقدار تغير مستوى الصوت لكل تمريرة.</string>
+    <string name="revanced_swipe_volume_sensitivity_invalid_toast">يجب أن تكون حساسية إيماءة الصوت بين 1-1000.</string>
     <string name="revanced_disable_hdr_auto_brightness_title">تعطيل سطوع HDR التلقائي</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_on">تم تعطيل سطوع HDR التلقائي.</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_off">تم تمكين سطوع HDR التلقائي.</string>
@@ -1677,8 +1719,6 @@
 • سيستهلك تشغيل الفيديو بيانات إنترنت أكثر من VP9.
 • لا يزال برنامج ترميز VP9 مستخدمًا لفيديو HDR."</string>
     <string name="revanced_disable_vp9_codec_summary_off">تم تمكين ترميز VP9.</string>
-    <string name="revanced_replace_av1_codec_title">استبدال برنامج الترميز AV1</string>
-    <string name="revanced_replace_av1_codec_summary">يستبدل برنامج الترميز AV1 ببرنامج الترميز VP9.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">سرعة التشغيل</string>
     <string name="revanced_default_playback_speed_title">سرعة التشغيل الافتراضية</string>
@@ -1705,8 +1745,10 @@
     <string name="revanced_enable_custom_playback_speed_summary_on">تم تمكين سرعة التشغيل المخصصة.</string>
     <string name="revanced_enable_custom_playback_speed_summary_off">تم تعطيل سرعة التشغيل المخصصة.</string>
     <string name="revanced_custom_playback_speed_menu_type_title">نوع قائمة سرعة التشغيل المخصصة</string>
-    <string name="revanced_custom_playback_speed_menu_type_summary_on">يتم استخدام مربع الحوار المخصص.</string>
-    <string name="revanced_custom_playback_speed_menu_type_summary_off">يتم استخدام القائمة المنبثقة بالمظهر القديم.</string>
+    <string name="revanced_custom_playback_speed_menu_type_entry_custom_legacy">مخصص (Legacy)</string>
+    <string name="revanced_custom_playback_speed_menu_type_entry_custom_modern">مخصص (حديث)</string>
+    <string name="revanced_custom_playback_speed_menu_type_entry_custom_no_theme">مخصص (بدون ثيم)</string>
+    <string name="revanced_custom_playback_speed_menu_type_entry_youtube_legacy">YouTube Legacy</string>
     <string name="revanced_custom_playback_speeds_title">تعديل سرعة التشغيل المخصصة</string>
     <string name="revanced_custom_playback_speeds_summary">إضافة أو تغيير سرعات التشغيل المتاحة.</string>
     <string name="revanced_custom_playback_speeds_invalid">يجب أن تكون السرعات المخصصة أقل من %sx.</string>
@@ -1733,9 +1775,12 @@
     <string name="revanced_remember_video_quality_wifi">Wi-Fi</string>
     <string name="revanced_remember_video_quality_toast">تم تغيير جودة %1$s الافتراضية إلى: %2$s.</string>
     <string name="revanced_remember_video_quality_toast_shorts">تم تغيير جودة Shorts %1$s الافتراضية إلى: %2$s.</string>
-    <string name="revanced_restore_old_video_quality_menu_title">استعادة قائمة جودة الفيديو القديمة</string>
-    <string name="revanced_restore_old_video_quality_menu_summary_on">يتم عرض قائمة جودة الفيديو القديمة.</string>
-    <string name="revanced_restore_old_video_quality_menu_summary_off">لا يتم عرض قائمة جودة الفيديو القديمة.</string>
+    <string name="revanced_advanced_video_quality_menu_title">عرض قائمة جودة الفيديو المتقدمة</string>
+    <string name="revanced_advanced_video_quality_menu_summary_on">يتم عرض قائمة جودة الفيديو المتقدمة.</string>
+    <string name="revanced_advanced_video_quality_menu_summary_off">لا يتم عرض قائمة جودة الفيديو المتقدمة.</string>
+    <string name="revanced_advanced_video_quality_menu_type_title">نوع قائمة جودة الفيديو المتقدمة في Shorts</string>
+    <string name="revanced_advanced_video_quality_menu_type_summary_on">يتم استخدام مربع حوار مخصص.</string>
+    <string name="revanced_advanced_video_quality_menu_type_summary_off">يتم استخدام القائمة المنبثقة على الطراز القديم.</string>
     <string name="revanced_skipped_preloaded_buffer">تم تخطي التخزين المؤقت الذي تم تحميله مسبقًا.</string>
     <string name="revanced_skip_preloaded_buffer_title">تخطي التخزين المؤقت المحمل مسبقًا</string>
     <string name="revanced_skip_preloaded_buffer_summary">"لتخطي التخزين المؤقت المحمل مسبقًا في بداية الفيديوهات لتطبيق جودة الفيديو الافتراضية على الفور.
@@ -1780,8 +1825,8 @@
     <string name="revanced_ryd_compact_layout_summary_on">زر أعجبني مصمم لأدنى عرض.</string>
     <string name="revanced_ryd_compact_layout_summary_off">زر أعجبني مصمم لأفضل مظهر.</string>
     <string name="revanced_ryd_estimated_like_title">عرض الإعجابات المقدرة</string>
-    <string name="revanced_ryd_estimated_like_summary_on">يتم عرض الإعجابات المقدرة.</string>
-    <string name="revanced_ryd_estimated_like_summary_off">تم إخفاء الإعجابات المقدرة.</string>
+    <string name="revanced_ryd_estimated_like_summary_on">يتم عرض عدد تقديري للإعجابات في الفيديوهات التي تم تعطيل الإعجابات فيها.</string>
+    <string name="revanced_ryd_estimated_like_summary_off">لا يتم عرض الإعجابات المقدرة.</string>
     <string name="revanced_ryd_toast_on_connection_error_title">عرض ملاحظة إذا كان API غير متوفر</string>
     <string name="revanced_ryd_toast_on_connection_error_summary_on">يتم عرض الملاحظة في حالة عدم توفر Return YouTube Dislike.</string>
     <string name="revanced_ryd_toast_on_connection_error_summary_off">لا يتم عرض الملاحظة في حالة عدم توفر Return YouTube Dislike.</string>
@@ -1816,6 +1861,7 @@
     <string name="revanced_return_youtube_username_youtube_data_api_v3_dialog_message">1. Go to &lt;a href=%1$s&gt;Create a new project&lt;/a&gt;.&lt;br&gt;2. Click the &lt;b&gt;CREATE&lt;/b&gt; button.&lt;br&gt;3. Go to &lt;a href=%2$s&gt;YouTube Data API v3&lt;/a&gt;.&lt;br&gt;4. Click the &lt;b&gt;ENABLE&lt;/b&gt; button.&lt;br&gt;5. Click the &lt;b&gt;CREATE CREDENTIALS&lt;/b&gt; button.&lt;br&gt;6. Select the &lt;b&gt;Public data&lt;/b&gt; option.&lt;br&gt;7. Click the &lt;b&gt;NEXT&lt;/b&gt; button.&lt;br&gt;8. Copy the API key.&lt;br&gt;&lt;br&gt;※ لا ينبغي مشاركة مفتاح API مع الآخرين مطلقًا، لذا فهو غير مدرج في إعدادات الاستيراد / التصدير.</string>
     <!-- PreferenceScreen: SponsorBlock -->
     <string name="revanced_preference_screen_sb_title">SponsorBlock</string>
+    <string name="revanced_preference_group_sb_title">SponsorBlock</string>
     <string name="revanced_sb_enable_sb">تمكين SponsorBlock</string>
     <string name="revanced_sb_enable_sb_sum">مانِع الرُعَاة هو نظام جماعي لتخطي الأجزاء المزعجة من فيديوهات YouTube.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Appearance -->
@@ -1823,6 +1869,9 @@
     <string name="revanced_sb_enable_voting">عرض زر التصويت</string>
     <string name="revanced_sb_enable_voting_sum_on">يتم عرض زر التصويت على المقطع.</string>
     <string name="revanced_sb_enable_voting_sum_off">لا يتم عرض زر التصويت على المقطع.</string>
+    <string name="revanced_sb_square_layout">استخدام التخطيط المربع</string>
+    <string name="revanced_sb_square_layout_sum_on">الأزرار وعناصر التحكم مربعة.</string>
+    <string name="revanced_sb_square_layout_sum_off">الأزرار وعناصر التحكم دائرية.</string>
     <string name="revanced_sb_enable_compact_skip_button">استخدام زر التخطي المُصَغَّر</string>
     <string name="revanced_sb_enable_compact_skip_button_sum_on">زر التخطي مصمم لأدنى عرض.</string>
     <string name="revanced_sb_enable_compact_skip_button_sum_off">زر التخطي مصمم لأفضل مظهر.</string>
@@ -1893,11 +1942,6 @@
     <string name="revanced_sb_skip_ignore">تعطيل</string>
     <string name="revanced_sb_color_opacity_label">الشفافية:</string>
     <string name="revanced_sb_color_dot_label">اللون:</string>
-    <string name="revanced_sb_color_changed">تم تغيير اللون.</string>
-    <string name="revanced_sb_color_reset">إعادة ضبط اللون.</string>
-    <string name="revanced_sb_color_invalid">رمز اللون غير صالح.</string>
-    <string name="revanced_sb_reset">إعادة تعيين</string>
-    <string name="revanced_sb_reset_color">إعادة تعيين اللون</string>
     <string name="revanced_sb_share_copy_settings_success">تم نسخ الإعدادات إلى الحافظة.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->
     <string name="revanced_sb_create_segment_category">إنشاء مقاطع جديدة</string>
@@ -2010,15 +2054,10 @@
     <string name="revanced_bypass_url_redirects_summary_off">لا يتم تجاوز عمليات إعادة توجيه عناوين URL.</string>
     <string name="revanced_disable_quic_protocol_title">تعطيل بروتوكول QUIC</string>
     <string name="revanced_disable_quic_protocol_summary">"تم تعطيل بروتوكول QUIC الخاص بـ CronetEngine."</string>
-    <string name="revanced_enable_debug_logging_title">تمكين سجلات التصحيح</string>
-    <string name="revanced_enable_debug_logging_summary_on">تم تمكين Debug Logs.</string>
-    <string name="revanced_enable_debug_logging_summary_off">تم تعطيل Debug Logs.</string>
-    <string name="revanced_enable_debug_buffer_logging_title">تمكين تسجيل تصحيح المخزن المؤقت</string>
-    <string name="revanced_enable_debug_buffer_logging_summary_on">سجلات التصحيح تشمل التخزين المؤقت.</string>
-    <string name="revanced_enable_debug_buffer_logging_summary_off">سجلات التصحيح لا تشمل التخزين المؤقت.</string>
+    <string name="revanced_litho_layout_thread_pool_max_size_entry_0">لم يتم تجاوزها</string>
     <string name="revanced_open_links_externally_title">فتح الروابط خارجيًا</string>
     <string name="revanced_open_links_externally_summary_on">يفتح الروابط في المتصفح الخارجي.</string>
-    <string name="revanced_open_links_externally_summary_off">يفتح الروابط في متصفح التطبيق.</string>
+    <string name="revanced_open_links_externally_summary_off">يفتح الروابط في المتصفح داخل التطبيق.</string>
     <string name="revanced_sanitize_sharing_links_title">تطهير روابط المشاركة</string>
     <string name="revanced_sanitize_sharing_links_summary">يزيل معلمات استعلام التتبع من عناوين URL عند مشاركة الروابط.</string>
     <string name="revanced_default_app_settings_title">فتح إعدادات التطبيق الافتراضية</string>
@@ -2039,11 +2078,39 @@
 
 انقر فوق زر الاستمرار واسمح بتغييرات التحسين."</string>
     <string name="gms_core_dialog_continue_text">استمرار</string>
+    <string name="gms_core_offline_account_login_error">إذا قمت مؤخرًا بتغيير تفاصيل تسجيل الدخول إلى حسابك، فقم بإلغاء تثبيت GmsCore وإعادة تثبيته.</string>
     <string name="revanced_change_share_sheet_title">تغيير لوح مشاركة</string>
     <string name="revanced_change_share_sheet_summary_on">يتم استخدام لوح مشاركة النظام.</string>
     <string name="revanced_change_share_sheet_summary_off">يتم استخدام لوح مشاركة داخل التطبيق.</string>
     <string name="revanced_enable_opus_codec_title">تمكين ترميز OPUS</string>
     <string name="revanced_enable_opus_codec_summary">يقوم بتمكين ترميز OPUS إذا كانت استجابة المشغل تتضمن برنامج ترميز OPUS.</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
+    <string name="revanced_preference_screen_debugging_title">تسجيل الأخطاء</string>
+    <string name="revanced_preference_screen_debugging_summary">تمكين أو تعطيل خيارات تصحيح الأخطاء.</string>
+    <string name="revanced_debug_title">تمكين سجلات التصحيح</string>
+    <string name="revanced_debug_summary_on">تم تمكين سجلات التصحيح.</string>
+    <string name="revanced_debug_summary_off">تم تعطيل سجلات التصحيح.</string>
+    <string name="revanced_debug_protobuffer_title">سجل بروتوكول التخزين المؤقت</string>
+    <string name="revanced_debug_protobuffer_summary_on">تتضمن سجلات التصحيح التخزين المؤقت.</string>
+    <string name="revanced_debug_protobuffer_summary_off">لا تتضمن سجلات التصحيح التخزين المؤقت.</string>
+    <string name="revanced_debug_spannable_title">سجل قابل للامتداد</string>
+    <string name="revanced_debug_spannable_summary_on">تتضمن سجلات التصحيح Spannable.</string>
+    <string name="revanced_debug_spannable_summary_off">لا تتضمن سجلات التصحيح Spannable.</string>
+    <string name="revanced_debug_toast_on_error_title">عرض ملاحظة في حالة حدوث خطأ RVX</string>
+    <string name="revanced_debug_toast_on_error_summary_on">يتم عرض ملاحظة في حالة حدوث خطأ.</string>
+    <string name="revanced_debug_toast_on_error_summary_off">لا يتم عرض ملاحظة في حالة حدوث خطأ.</string>
+    <string name="revanced_debug_export_logs_to_clipboard_title">نسخ سجلات التصحيح</string>
+    <string name="revanced_debug_export_logs_to_clipboard_summary">نسخ سجلات تصحيح أخطاء RVX إلى الحافظة.</string>
+    <string name="revanced_debug_export_logs_to_file_title">تصدير سجلات تصحيح الأخطاء</string>
+    <string name="revanced_debug_export_logs_to_file_summary">تصدير سجلات تصحيح أخطاء RVX إلى ملف.</string>
+    <string name="revanced_debug_logs_disabled">تم تعطيل تسجيل التصحيح.</string>
+    <string name="revanced_debug_logs_none_found">لم يتم العثور على سجلات.</string>
+    <string name="revanced_debug_logs_copied_to_clipboard">تم نسخ السجلات.</string>
+    <string name="revanced_debug_logs_failed_to_export">فشل تصدير السجلات: $s.</string>
+    <string name="revanced_debug_logs_clear_buffer_title">مسح سجلات تصحيح الأخطاء</string>
+    <string name="revanced_debug_logs_clear_buffer_summary">مسح جميع سجلات تصحيح أخطاء RVX المخزنة.</string>
+    <string name="revanced_debug_logs_clear_toast">تم مسح السجلات.</string>
+    <string name="revanced_debug_logs_export_success">تم تصدير السجلات بنجاح.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">استيراد / تصدير الإعدادات</string>
     <string name="revanced_preference_screen_import_export_summary">إستيراد \ تصدير إعدادات RVX.</string>
@@ -2064,7 +2131,6 @@
     <string name="revanced_extended_settings_import_failed">فشل استيراد الإعدادات.</string>
     <string name="revanced_extended_settings_import_reset">إعادة تعيين الإعدادات إلى الافتراضي.</string>
     <string name="revanced_extended_settings_import_success">تم استيراد الإعدادات بنجاح.</string>
-    <string name="revanced_extended_settings_reset">إعادة تعيين</string>
     <string name="revanced_share_copy_settings_success">تم نسخ الإعدادات إلى الحافظة.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <string name="revanced_preference_screen_spoof_streaming_data_title">Spoof Streaming Data</string>
@@ -2102,12 +2168,28 @@
 هذا يعني أن طلبات البث عبر iOS ستفتقد رموز المصادقة ورموز PoTokens، وقد يعتبر الخادم المستخدم برنامجًا آليًا بوت ويحظر نطاق ASN/IP بالكامل.
 
 استخدمه على مسؤوليتك الخاصة!"</string>
+    <string name="revanced_spoof_streaming_data_vr_disable_av1_title">تعطيل VR AV1</string>
+    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">ترميز الفيديو هو AVC (H.264) أو VP9.</string>
+    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">يتم تحديد ترميز الفيديو تلقائيًا.</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_title">فرض iOS AVC (H.264)</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_summary_on">يتم فرض ترميز الفيديو على AVC (H.264).</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_summary_off">يتم تحديد ترميز الفيديو تلقائيًا.</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"قد يؤدي تمكين هذا إلى تحسين عمر البطارية وإصلاح تقطيع التشغيل.
 
 AVC لديه حد أقصى للدقة 1080p، لا يتوفر ترميز الصوت Opus، وسوف يستخدم تشغيل الفيديو بيانات إنترنت أكثر من VP9 أو AV1."</string>
+    <string name="revanced_spoof_streaming_data_vr_audio_track_button_title">عرض زر المقطع الصوتي VR</string>
+    <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_on">يتم عرض زر المقطع الصوتي VR.</string>
+    <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_off">لا يتم عرض زر المقطع الصوتي VR.</string>
+    <string name="revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message">"المتطلبات الأساسية:
+• العميل المُستخدم لجلب بيانات البث هو 'Android VR (بدون مصادقة)'.
+• يتم تشغيل فيديو يحتوي على مقاطع صوتية متعددة.
+
+المشاكل المعروفة:
+• في حال تغيير لغة التطبيق في إعدادات YouTube وعدم إعادة تشغيل التطبيق، فقد لا تتغير اللغة المستخدمة في مربع حوار المقطع الصوتي.
+• أحيانًا يتم اختيار لغة خاطئة في مربع حوار المقطع الصوتي.
+• بعض مقاطع الصوت، مثل 'الوصفية الإنجليزية'، غير مدعومة.
+
+هذه الميزة لا تزال قيد التطوير، لذا قد تتوقف في أي وقت بسبب تغييرات من جانب الخادم."</string>
     <string name="revanced_spoof_streaming_data_skip_response_encryption_title">تخطي تشفير استجابة Onesie</string>
     <string name="revanced_spoof_streaming_data_skip_response_encryption_summary_on">"تخطي تشفير استجابة Onesie.
 
@@ -2120,7 +2202,7 @@ AVC لديه حد أقصى للدقة 1080p، لا يتوفر ترميز الص�
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">عرض في إحصاءات تقنية</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">يتم عرض العميل المستخدم لجلب بيانات البث في إحصاءات تقنية.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">تم إخفاء العميل المستخدم لجلب بيانات البث في إحصاءات تقنية.</string>
-    <string name="revanced_spoof_streaming_data_language_title">لغة البث الصوتي الافتراضية للواقع الافتراضي VR</string>
+    <string name="revanced_spoof_streaming_data_vr_language_title">لغة المقطع الصوتي الافتراضي VR</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">لم يتمكن من جلب أي تدفقات عميل.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">ربما لم تتمكن من تسجيل الدخول.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: PoToken / VisitorData -->

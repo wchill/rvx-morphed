@@ -10,7 +10,6 @@
     <string name="revanced_preference_category_experimental_flag">Fitur Experimental</string>
     <string name="revanced_extended_confirm_user_dialog_title">Apakah Anda ingin melanjutkan?</string>
     <string name="revanced_extended_restart_first_run">Mulai ulang aplikasi untuk memuat tata ruang dengan normal</string>
-    <string name="revanced_extended_restart_message">Perbarui tampilan dan mulai ulang</string>
     <string name="revanced_playback_speed_normal">Biasa</string>
     <string name="revanced_external_downloader_package_name_video_title">Nama paket pengunduh video</string>
     <string name="revanced_external_downloader_package_name_video_summary">Nama paket aplikasi pengunduh eksternal yang dipasang, misalnya NewPipe atau YTDLnis.</string>
@@ -19,8 +18,54 @@
     <string name="revanced_external_downloader_not_installed_dialog_message">"%1$s tidak terpasang
 Silahkan unduh %2$s dari situs web."</string>
     <string name="revanced_external_downloader_not_installed_warning">%s tidak terpasang. Silakan pasang.</string>
+    <string name="revanced_queue_manager_add_to_queue">Tambahkan ke antrean</string>
+    <string name="revanced_queue_manager_add_to_queue_and_open_queue">Tambahkan ke antrean dan buka antrean</string>
+    <string name="revanced_queue_manager_add_to_queue_and_play_video">Tambahkan ke antrean dan putar video</string>
+    <string name="revanced_queue_manager_add_to_queue_and_reload_video">Tambahkan ke antrean dan muat ulang video</string>
+    <string name="revanced_queue_manager_external_downloader">Pengunduh eksternal</string>
+    <string name="revanced_queue_manager_open_queue">Buka antrean</string>
+    <string name="revanced_queue_manager_queue">Antrean</string>
+    <string name="revanced_queue_manager_remove_from_queue">Hapus dari antrean</string>
+    <string name="revanced_queue_manager_remove_from_queue_and_open_queue">Hapus dari antrean dan buka antrean</string>
+    <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Hapus dari antrean dan buka antrean</string>
+    <string name="revanced_queue_manager_remove_queue">Hapus antrean</string>
+    <string name="revanced_queue_manager_save_queue">Simpan antrean</string>
+    <string name="revanced_queue_manager_user_dialog_message">"Daripada membuka pengunduh eksternal, buka dialog pengelola antrean.
+
+Anda juga dapat membuka pengelola antrean dengan menekan dan menahan tombol kembali pada bilah navigasi.
+
+Fitur ini masih dalam tahap pengembangan, sehingga sebagian besar fitur mungkin tidak berfungsi.
+
+Harap gunakan untuk tujuan debugging saja."</string>
+    <string name="revanced_queue_manager_check_failed_auth">Login diperlukan</string>
+    <string name="revanced_queue_manager_check_failed_generic">Pengelola antrean tidak tersedia (%s).</string>
+    <string name="revanced_queue_manager_check_failed_playlist_id">Tidak dapat mengidentifikasi daftar putar</string>
+    <string name="revanced_queue_manager_check_failed_queue">Antrean kosong</string>
+    <string name="revanced_queue_manager_check_failed_video_id">Tidak dapat mengidentifikasi video</string>
+    <string name="revanced_queue_manager_fetch_failed_add">Gagal menambahkan video.</string>
+    <string name="revanced_queue_manager_fetch_failed_create">Gagal membuat antrean.</string>
+    <string name="revanced_queue_manager_fetch_failed_delete">Gagal menghapus antrean.</string>
+    <string name="revanced_queue_manager_fetch_failed_remove">Gagal menyingkirkan video.</string>
+    <string name="revanced_queue_manager_fetch_failed_save">Gagal menyimpan antrean.</string>
+    <string name="revanced_queue_manager_fetch_succeeded_add">Video berhasil ditambahkan.</string>
+    <string name="revanced_queue_manager_fetch_succeeded_create">Antrean berhasil dibuat.</string>
+    <string name="revanced_queue_manager_fetch_succeeded_delete">Antrean berhasil dihapus.</string>
+    <string name="revanced_queue_manager_fetch_succeeded_remove">Video berhasil disingkirkan.</string>
+    <string name="revanced_queue_manager_fetch_succeeded_save">Antrean berhasil disimpan ke \'%s\'.</string>
     <string name="revanced_language_title">Bahasa RVX</string>
     <string name="revanced_language_DEFAULT">Bahasa Aplikasi</string>
+    <string name="revanced_language_AM">"Amharik
+<small>አማርኛ</small>"</string>
+    <string name="revanced_language_AR">"Arab
+<small>العربية</small>"</string>
+    <string name="revanced_language_AZ">"Azerbaijan
+<small>Azərbaycan</small>"</string>
+    <string name="revanced_language_BE">"Belarusia
+<small>беларуская</small>"</string>
+    <string name="revanced_language_BG">"Bulgaria
+<small>Български</small>"</string>
+    <string name="revanced_language_BN">"Bengali
+<small>বাংলা</small>"</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Iklan</string>
     <string name="revanced_hide_end_screen_store_banner_title">Sembunyikan spanduk toko di layar akhir</string>
@@ -39,9 +84,6 @@ Silahkan unduh %2$s dari situs web."</string>
     <string name="revanced_hide_paid_promotion_label_title">Sembunyikan label promosi berbayar</string>
     <string name="revanced_hide_paid_promotion_label_summary_on">Label promosi berbayar disembunyikan.</string>
     <string name="revanced_hide_paid_promotion_label_summary_off">Label promosi berbayar dotunjukkan.</string>
-    <string name="revanced_hide_player_store_shelf_title">Sembunyikan rak belanja pemutar</string>
-    <string name="revanced_hide_player_store_shelf_summary_on">Rak belanja disembunyikan.</string>
-    <string name="revanced_hide_player_store_shelf_summary_off">Rak belanja ditampilkan.</string>
     <string name="revanced_hide_promotion_alert_banner_title">Sembunyikan spanduk peringatan promosi</string>
     <string name="revanced_hide_promotion_alert_banner_summary_on">Spanduk peringatan promosi disembunyikan.</string>
     <string name="revanced_hide_promotion_alert_banner_summary_off">Spanduk peringatan promosi ditampilkan.</string>
@@ -119,9 +161,6 @@ Ketuk di sini untuk mempelajari lebih lanjut tentang DeArrow."</string>
     <string name="revanced_hide_chips_shelf_title">Sembunyikan kepingan rak</string>
     <string name="revanced_hide_chips_shelf_on">Kepingan rak disembunyikan.</string>
     <string name="revanced_hide_chips_shelf_off">Kepingan rak ditampilkan.</string>
-    <string name="revanced_hide_expandable_chip_title">Sembunyikan kepingan yang dapat diperluas di bawah video</string>
-    <string name="revanced_hide_expandable_chip_summary_on">Kepingan yang dapat diperluas disembunyikan.</string>
-    <string name="revanced_hide_expandable_chip_summary_off">Kepingan yang dapat diperluas ditampilkan.</string>
     <string name="revanced_hide_expandable_shelf_title">Sembunyikan rak yang dapat diperluas</string>
     <string name="revanced_hide_expandable_shelf_summary_on">Rak yang dapat diperluas disembunyikan.</string>
     <string name="revanced_hide_expandable_shelf_summary_off">Rak yang dapat diperluas ditampilkan.</string>
@@ -155,12 +194,6 @@ Ketuk di sini untuk mempelajari lebih lanjut tentang DeArrow."</string>
     <string name="revanced_hide_show_more_button_title">Sembunyikan tombol \'Tunjukkan lebih banyak\'</string>
     <string name="revanced_hide_show_more_button_summary_on">Tombol \'Tunjukkan lebih banyak disembunyikan.</string>
     <string name="revanced_hide_show_more_button_summary_off">Tombol \'Tunjukkan lebih banyak\' ditunjukkan.</string>
-    <string name="revanced_hide_subscriptions_carousel_title">Sembunyikan carousel langganan</string>
-    <string name="revanced_hide_subscriptions_carousel_summary_on">Carousel langganan disembunyikan.</string>
-    <string name="revanced_hide_subscriptions_carousel_summary_off">Carousel langganan ditampilkan.</string>
-    <string name="revanced_hide_feed_survey_title">Sembunyikan survei</string>
-    <string name="revanced_hide_feed_survey_summary_on">Survey disembunyikan.</string>
-    <string name="revanced_hide_feed_survey_summary_off">Survey ditampilkan.</string>
     <string name="revanced_hide_ticket_shelf_title">Sembunyikan rak tiket</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Rak tiket disembunyikan.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Rak tiket ditunjukkan.</string>
@@ -176,9 +209,7 @@ Ketuk di sini untuk mempelajari lebih lanjut tentang DeArrow."</string>
     <string name="revanced_hide_category_bar_in_search_title">Sembunyikan di hasil pencarian</string>
     <string name="revanced_hide_category_bar_in_search_summary_on">Disembunyikan di hasil pencarian.</string>
     <string name="revanced_hide_category_bar_in_search_summary_off">Ditampilkan di hasil pencarian.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Channel profile -->
-    <string name="revanced_preference_screen_channel_profile_title">Profil saluran</string>
-    <string name="revanced_preference_screen_channel_profile_summary">Sembunyikan atau tampilkan komponen dalam profil saluran.</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Channel page -->
     <string name="revanced_hide_channel_tab_title">Aktifkan bilah saring saluran</string>
     <string name="revanced_hide_channel_tab_summary_on">Bilah saring saluran diaktikan.</string>
     <string name="revanced_hide_channel_tab_summary_off">Bilah saring saluran dinonaktifkan.</string>
@@ -187,18 +218,9 @@ Ketuk di sini untuk mempelajari lebih lanjut tentang DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Daftar putar
 Toko"</string>
-    <string name="revanced_hide_channel_member_shelf_title">Sembunyikan rak anggota channel</string>
-    <string name="revanced_hide_channel_member_shelf_summary_on">Rak anggota channel disembunyikan.</string>
-    <string name="revanced_hide_channel_member_shelf_summary_off">Rak anggota channel ditampilkan.</string>
-    <string name="revanced_hide_channel_profile_links_title">Sembunyikan tautan profil saluran</string>
-    <string name="revanced_hide_channel_profile_links_summary_on">Tautan di bagian atas profil saluran disembunyikan.</string>
-    <string name="revanced_hide_channel_profile_links_summary_off">Tautan di bagian atas profil saluran ditampilkan.</string>
     <string name="revanced_hide_for_you_shelf_title">Sembunyikan rak Untuk Anda</string>
     <string name="revanced_hide_for_you_shelf_summary_on">Rak Untuk Anda disembunyikan.</string>
     <string name="revanced_hide_for_you_shelf_summary_off">Rak Untuk Anda ditampilkan.</string>
-    <string name="revanced_hide_browse_store_button_title">Sembunyikan tombol Kunjungi toko</string>
-    <string name="revanced_hide_browse_store_button_summary_on">Tombol kunjungi toko disembunyikan.</string>
-    <string name="revanced_hide_browse_store_button_summary_off">Tombol kunjungi toko ditampilkan.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Postingan Komunitas</string>
     <string name="revanced_preference_screen_community_posts_summary">Sembunyikan atau tampilkan postingan komunitas di feed dan saluran.</string>
@@ -392,6 +414,7 @@ Keterbatasan: Tombol Kembali pada bilah alat mungkin tidak berfungsi."</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Stats -->
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: About -->
     <!-- PreferenceScreen: Miscellaneous -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as file -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as text -->

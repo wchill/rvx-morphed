@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -80,11 +79,7 @@ public final class CustomActionsPatch {
     }
 
     private static void showMoreButtonDialog(Context mContext) {
-        ScrollView mScrollView = new ScrollView(mContext);
-        LinearLayout mLinearLayout = new LinearLayout(mContext);
-        mLinearLayout.setOrientation(LinearLayout.VERTICAL);
-        mLinearLayout.setPadding(0, 0, 0, 0);
-
+        LinearLayout mainLayout = ExtendedUtils.prepareMainLayout(mContext, false);
         Map<LinearLayout, Runnable> actionsMap = new LinkedHashMap<>(arrSize);
 
         for (CustomAction customAction : CustomAction.values()) {
@@ -94,13 +89,11 @@ public final class CustomActionsPatch {
                 Runnable action = customAction.getOnClickAction();
                 LinearLayout itemLayout = ExtendedUtils.createItemLayout(mContext, title, iconId);
                 actionsMap.putIfAbsent(itemLayout, action);
-                mLinearLayout.addView(itemLayout);
+                mainLayout.addView(itemLayout);
             }
         }
 
-        mScrollView.addView(mLinearLayout);
-
-        ExtendedUtils.showBottomSheetDialog(mContext, mScrollView, actionsMap);
+        ExtendedUtils.showBottomSheetDialog(mContext, mainLayout, actionsMap);
     }
 
     private static boolean isMoreButton(String enumString) {
@@ -328,7 +321,7 @@ public final class CustomActionsPatch {
         SPEED_DIALOG(
                 Settings.SHORTS_CUSTOM_ACTIONS_SPEED_DIALOG,
                 "yt_outline_play_arrow_half_circle_black_24",
-                () -> VideoUtils.showPlaybackSpeedDialog(contextRef.get())
+                () -> VideoUtils.showPlaybackSpeedDialog(contextRef.get(), Settings.SHORTS_CUSTOM_ACTIONS_SPEED_DIALOG_TYPE)
         ),
         REPEAT_STATE(
                 Settings.SHORTS_CUSTOM_ACTIONS_REPEAT_STATE,

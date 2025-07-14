@@ -1,16 +1,16 @@
 package app.revanced.patches.youtube.utils.settings
 
+import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
-import app.revanced.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.revanced.patcher.patch.BytecodePatchContext
 import app.revanced.patcher.patch.bytecodePatch
 import app.revanced.patcher.patch.resourcePatch
 import app.revanced.patcher.patch.stringOption
-import app.revanced.patcher.util.proxy.mutableTypes.encodedValue.MutableLongEncodedValue
+import app.revanced.patches.shared.extension.Constants.EXTENSION_THEME_UTILS_CLASS_DESCRIPTOR
 import app.revanced.patches.shared.extension.Constants.EXTENSION_UTILS_CLASS_DESCRIPTOR
-import app.revanced.patches.shared.extension.Constants.EXTENSION_UTILS_PATH
 import app.revanced.patches.shared.mainactivity.injectConstructorMethodCall
 import app.revanced.patches.shared.mainactivity.injectOnCreateMethodCall
+import app.revanced.patches.shared.settings.baseSettingsPatch
 import app.revanced.patches.youtube.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.revanced.patches.youtube.utils.extension.Constants.PATCH_STATUS_CLASS_DESCRIPTOR
 import app.revanced.patches.youtube.utils.extension.Constants.UTILS_PATH
@@ -21,33 +21,41 @@ import app.revanced.patches.youtube.utils.fix.playbackspeed.playbackSpeedWhilePl
 import app.revanced.patches.youtube.utils.fix.splash.darkModeSplashScreenPatch
 import app.revanced.patches.youtube.utils.mainactivity.mainActivityResolvePatch
 import app.revanced.patches.youtube.utils.patch.PatchList.SETTINGS_FOR_YOUTUBE
+import app.revanced.patches.youtube.utils.playservice.is_19_15_or_greater
 import app.revanced.patches.youtube.utils.playservice.versionCheckPatch
 import app.revanced.patches.youtube.utils.resourceid.sharedResourceIdPatch
 import app.revanced.util.ResourceGroup
 import app.revanced.util.addInstructionsAtControlFlowLabel
+import app.revanced.util.className
 import app.revanced.util.copyResources
 import app.revanced.util.copyXmlNode
+import app.revanced.util.findFreeRegister
 import app.revanced.util.findInstructionIndicesReversedOrThrow
 import app.revanced.util.findMethodOrThrow
 import app.revanced.util.fingerprint.methodOrThrow
+import app.revanced.util.fingerprint.mutableClassOrThrow
+import app.revanced.util.hookClassHierarchy
+import app.revanced.util.indexOfFirstInstruction
 import app.revanced.util.removeStringsElements
+import app.revanced.util.returnEarly
 import app.revanced.util.valueOrThrow
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
-import com.android.tools.smali.dexlib2.immutable.value.ImmutableLongEncodedValue
+import com.android.tools.smali.dexlib2.util.MethodUtil
 import org.w3c.dom.Element
 import java.nio.file.Files
-import java.util.jar.Manifest
 
 private const val EXTENSION_INITIALIZATION_CLASS_DESCRIPTOR =
     "$UTILS_PATH/InitializationPatch;"
 
 private const val EXTENSION_THEME_METHOD_DESCRIPTOR =
-    "$EXTENSION_UTILS_PATH/BaseThemeUtils;->setTheme(Ljava/lang/Enum;)V"
+    "$EXTENSION_THEME_UTILS_CLASS_DESCRIPTOR->updateLightDarkModeStatus(Ljava/lang/Enum;)V"
 
 private lateinit var bytecodeContext: BytecodePatchContext
 
 internal fun getBytecodeContext() = bytecodeContext
+
+private var targetActivityClassName = ""
 
 private val settingsBytecodePatch = bytecodePatch(
     description = "settingsBytecodePatch"
@@ -57,10 +65,52 @@ private val settingsBytecodePatch = bytecodePatch(
         sharedResourceIdPatch,
         mainActivityResolvePatch,
         versionCheckPatch,
+        baseSettingsPatch,
     )
 
     execute {
         bytecodeContext = this
+
+        val targetActivityFingerprint = if (is_19_15_or_greater)
+            proxyBillingActivityV2OnCreateFingerprint
+        else
+            licenseMenuActivityOnCreateFingerprint
+
+        val hostActivityClass = settingsHostActivityOnCreateFingerprint.mutableClassOrThrow()
+        val targetActivityClass = targetActivityFingerprint.mutableClassOrThrow()
+
+        hookClassHierarchy(
+            hostActivityClass,
+            targetActivityClass
+        )
+
+        targetActivityClass.methods.forEach { method ->
+            method.apply {
+                if (!MethodUtil.isConstructor(method) && returnType == "V") {
+                    val insertIndex =
+                        indexOfFirstInstruction(Opcode.INVOKE_SUPER) + 1
+                    if (insertIndex > 0) {
+                        val freeRegister = findFreeRegister(insertIndex)
+
+                        addInstructionsWithLabels(
+                            insertIndex, """
+                                invoke-virtual {p0}, ${hostActivityClass.type}->isInitialized()Z
+                                move-result v$freeRegister
+                                if-eqz v$freeRegister, :ignore
+                                return-void
+                                :ignore
+                                nop
+                                """
+                        )
+                    }
+                }
+            }
+        }
+
+        targetActivityClassName = targetActivityClass.type.className
+        findMethodOrThrow(PATCH_STATUS_CLASS_DESCRIPTOR) {
+            name == "TargetActivityClass"
+        }.returnEarly(targetActivityClassName)
 
         // apply the current theme of the settings page
         themeSetterSystemFingerprint.methodOrThrow().apply {
@@ -76,22 +126,11 @@ private val settingsBytecodePatch = bytecodePatch(
 
         injectOnCreateMethodCall(
             EXTENSION_INITIALIZATION_CLASS_DESCRIPTOR,
-            "setExtendedUtils"
-        )
-        injectOnCreateMethodCall(
-            EXTENSION_INITIALIZATION_CLASS_DESCRIPTOR,
             "onCreate"
         )
         injectConstructorMethodCall(
             EXTENSION_UTILS_CLASS_DESCRIPTOR,
             "setActivity"
-        )
-
-        findMethodOrThrow(PATCH_STATUS_CLASS_DESCRIPTOR) {
-            name == "PatchedTime"
-        }.replaceInstruction(
-            0,
-            "const-wide v0, ${MutableLongEncodedValue(ImmutableLongEncodedValue(System.currentTimeMillis()))}L"
         )
     }
 }
@@ -215,12 +254,27 @@ val settingsPatch = resourcePatch(
         arrayOf(
             ResourceGroup(
                 "drawable",
-                "revanced_cursor.xml",
+                "revanced_settings_arrow_time.xml",
+                "revanced_settings_circle_background.xml",
+                "revanced_settings_cursor.xml",
+                "revanced_settings_custom_checkmark.xml",
+                "revanced_settings_rounded_corners_background.xml",
+                "revanced_settings_search_icon.xml",
+                "revanced_settings_toolbar_arrow_left.xml",
             ),
             ResourceGroup(
                 "layout",
+                "revanced_color_dot_widget.xml",
+                "revanced_color_picker.xml",
+                "revanced_custom_list_item_checked.xml",
+                "revanced_preference_with_icon_no_search_result.xml",
+                "revanced_search_suggestion_item.xml",
                 "revanced_settings_preferences_category.xml",
                 "revanced_settings_with_toolbar.xml",
+            ),
+            ResourceGroup(
+                "menu",
+                "revanced_search_menu.xml",
             ),
             ResourceGroup(
                 "xml",
@@ -235,7 +289,8 @@ val settingsPatch = resourcePatch(
          */
         ResourceUtils.addPreferenceFragment(
             "revanced_extended_settings",
-            insertKey
+            insertKey,
+            targetActivityClassName,
         )
 
         /**
@@ -260,18 +315,6 @@ val settingsPatch = resourcePatch(
                 }
             }
         }
-
-        /**
-         * set revanced-patches version
-         */
-        val patchManifest = object {}.javaClass.classLoader.getResources("META-INF/MANIFEST.MF")
-        while (patchManifest.hasMoreElements())
-            ResourceUtils.updatePatchStatusSettings(
-                "ReVanced Patches",
-                Manifest(patchManifest.nextElement().openStream())
-                    .mainAttributes
-                    .getValue("Version") + ""
-            )
     }
 
     finalize {

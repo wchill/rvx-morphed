@@ -255,6 +255,7 @@
     "dependencies": [
       "Settings for YouTube",
       "BytecodePatch",
+      "BytecodePatch",
       "ResourcePatch"
     ],
     "compatiblePackages": {
@@ -737,6 +738,7 @@
       "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
+      "BytecodePatch",
       "ResourcePatch",
       "ResourcePatch"
     ],
@@ -869,7 +871,8 @@
     "description": "Adds an option to disable audio tracks from being automatically enabled.",
     "use": true,
     "dependencies": [
-      "Settings for YouTube"
+      "Settings for YouTube",
+      "BytecodePatch"
     ],
     "compatiblePackages": {
       "com.google.android.youtube": [
@@ -1097,8 +1100,8 @@
   },
   {
     "name": "Enable debug logging",
-    "description": "Adds an option to enable debug logging.",
-    "use": true,
+    "description": "Adds an option for debugging.",
+    "use": false,
     "dependencies": [
       "Settings for YouTube Music"
     ],
@@ -1118,7 +1121,7 @@
   },
   {
     "name": "Enable debug logging",
-    "description": "Adds an option to enable debug logging.",
+    "description": "Adds an option for debugging and exporting RVX logs to the clipboard.",
     "use": true,
     "dependencies": [
       "Settings for YouTube"
@@ -1231,6 +1234,7 @@
       "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
+      "BytecodePatch",
       "ResourcePatch",
       "ResourcePatch"
     ],
@@ -1247,7 +1251,7 @@
   },
   {
     "name": "GmsCore support",
-    "description": "Allows patched Google apps to run without root and under a different package name by using GmsCore instead of Google Play Services.",
+    "description": "Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services.",
     "use": true,
     "dependencies": [
       "ResourcePatch",
@@ -1316,14 +1320,14 @@
         "description": "Patch all permissions, intents and content provider authorities supported by GmsCore.",
         "required": true,
         "type": "kotlin.Boolean",
-        "default": true,
+        "default": false,
         "values": null
       }
     ]
   },
   {
     "name": "GmsCore support",
-    "description": "Allows patched Google apps to run without root and under a different package name by using GmsCore instead of Google Play Services.",
+    "description": "Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services.",
     "use": true,
     "dependencies": [
       "ResourcePatch",
@@ -1389,7 +1393,7 @@
         "description": "Patch all permissions, intents and content provider authorities supported by GmsCore.",
         "required": true,
         "type": "kotlin.Boolean",
-        "default": true,
+        "default": false,
         "values": null
       }
     ]
@@ -1502,6 +1506,7 @@
       "Settings for YouTube",
       "BytecodePatch",
       "BytecodePatch",
+      "BytecodePatch",
       "BytecodePatch"
     ],
     "compatiblePackages": {
@@ -1541,7 +1546,17 @@
         "8.12.53"
       ]
     },
-    "options": []
+    "options": [
+      {
+        "key": "hideFullscreenAds",
+        "title": "Hide fullscreen ads",
+        "description": "Add an option to hide fullscreen ads.\n\nThis setting may not completely hide fullscreen ads due to server-side changes, and support for this is not provided.\n\nThis setting may cause the app to become unusable, and users may need to clear app data.",
+        "required": true,
+        "type": "kotlin.Boolean",
+        "default": false,
+        "values": null
+      }
+    ]
   },
   {
     "name": "Hide ads",
@@ -1568,8 +1583,7 @@
       "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
-      "ResourcePatch",
-      "BytecodePatch"
+      "ResourcePatch"
     ],
     "compatiblePackages": {
       "com.google.android.youtube": [
@@ -1588,6 +1602,7 @@
     "use": true,
     "dependencies": [
       "Settings for YouTube",
+      "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
       "ResourcePatch"
@@ -1679,6 +1694,7 @@
     "dependencies": [
       "Settings for YouTube",
       "BytecodePatch",
+      "BytecodePatch",
       "ResourcePatch",
       "BytecodePatch",
       "BytecodePatch",
@@ -1761,6 +1777,7 @@
     "use": true,
     "dependencies": [
       "Settings for YouTube",
+      "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
       "ResourcePatch",
@@ -2151,6 +2168,7 @@
       "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
+      "BytecodePatch",
       "ResourcePatch",
       "BytecodePatch",
       "BytecodePatch",
@@ -2334,6 +2352,7 @@
       "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
+      "BytecodePatch",
       "BytecodePatch"
     ],
     "compatiblePackages": {
@@ -2395,7 +2414,8 @@
     "use": true,
     "dependencies": [
       "BytecodePatch",
-      "Settings for YouTube Music"
+      "Settings for YouTube Music",
+      "ResourcePatch"
     ],
     "compatiblePackages": {
       "com.google.android.apps.youtube.music": [
@@ -2617,6 +2637,7 @@
       "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
+      "BytecodePatch",
       "ResourcePatch",
       "BytecodePatch",
       "ResourcePatch",
@@ -2799,7 +2820,7 @@
         "7.16.53",
         "7.25.53",
         "8.05.51",
-        "8.10.52"
+        "8.12.53"
       ]
     },
     "options": []
@@ -2857,7 +2878,13 @@
       "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
-      "ResourcePatch"
+      "ResourcePatch",
+      "ResourcePatch",
+      "BytecodePatch",
+      "BytecodePatch",
+      "BytecodePatch",
+      "BytecodePatch",
+      "BytecodePatch"
     ],
     "compatiblePackages": {
       "com.google.android.youtube": [
@@ -2869,6 +2896,15 @@
       ]
     },
     "options": [
+      {
+        "key": "outlineIcon",
+        "title": "Outline icons",
+        "description": "Apply the outline icon.",
+        "required": true,
+        "type": "kotlin.Boolean",
+        "default": false,
+        "values": null
+      },
       {
         "key": "useIOSClient",
         "title": "Use iOS client",
@@ -3115,6 +3151,7 @@
       "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
+      "BytecodePatch",
       "ResourcePatch"
     ],
     "compatiblePackages": {
@@ -3156,9 +3193,11 @@
           "Custom branding icon": "custom_branding_icon",
           "Extension": "extension",
           "Gear": "gear",
-          "YT alt": "yt_alt",
           "ReVanced": "revanced",
-          "ReVanced Colored": "revanced_colored"
+          "ReVanced Colored": "revanced_colored",
+          "RVX Letters": "rvx_letters",
+          "RVX Letters Bold": "rvx_letters_bold",
+          "YT alt": "yt_alt"
         }
       },
       {
@@ -3204,7 +3243,10 @@
           "Extension": "extension",
           "Gear": "gear",
           "ReVanced": "revanced",
-          "ReVanced Colored": "revanced_colored"
+          "ReVanced Colored": "revanced_colored",
+          "RVX Letters": "rvx_letters",
+          "RVX Letters Bold": "rvx_letters_bold",
+          "YT alt": "yt_alt"
         }
       }
     ]

@@ -18,12 +18,12 @@ abstract class BaseGestureController(
         controller.config.swipeMagnitudeThreshold.toDouble(),
     ),
     VolumeAndBrightnessScroller by VolumeAndBrightnessScrollerImpl(
-        controller,
         controller.audio,
         controller.screen,
         controller.overlay,
-        controller.config.volumeDistance,
-        controller.config.brightnessDistance,
+        10f,
+        1f,
+        controller.config.volumeSwipeSensitivity,
     ) {
 
     /**
@@ -87,7 +87,9 @@ abstract class BaseGestureController(
         distanceX: Float,
         distanceY: Float,
     ): Boolean {
-        if (from == null) return false
+        if (from == null) {
+            return false
+        }
 
         // submit to swipe detector
         submitForSwipe(from, to, distanceX, distanceY)

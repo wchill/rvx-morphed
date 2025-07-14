@@ -8,9 +8,22 @@
     <string name="revanced_extended_settings_search_title">Tìm kiếm trong %s</string>
     <string name="revanced_extended_reset_to_default_toast">Đã đặt lại giá trị về mặc định.</string>
     <string name="revanced_preference_category_experimental_flag">Tính năng thử nghiệm</string>
-    <string name="revanced_extended_confirm_user_dialog_title">Bạn có muốn tiếp tục không?</string>
+    <string name="revanced_extended_confirm_user_dialog_title">Bạn có chắc chắn muốn tiếp tục không?</string>
     <string name="revanced_extended_restart_first_run">Vui lòng khởi động lại ứng dụng trong lần đầu khởi chạy để các tính năng hoạt động bình thường</string>
-    <string name="revanced_extended_restart_message">Làm mới và khởi động lại</string>
+    <string name="revanced_extended_restart_title">Cần khởi động lại</string>
+    <string name="revanced_extended_restart_dialog_message">Khởi động lại ứng dụng để thay đổi này có hiệu lực.</string>
+    <string name="revanced_extended_restart">Khởi động lại</string>
+    <string name="revanced_extended_settings_color_invalid">Màu không hợp lệ.</string>
+    <string name="revanced_extended_settings_color_picker">Bộ chọn màu</string>
+    <string name="revanced_extended_settings_reset">Đặt lại</string>
+    <string name="revanced_extended_settings_reset_color">Đặt lại màu</string>
+    <string name="revanced_extended_settings_search_history_title">Lịch sử tìm kiếm cài đặt</string>
+    <string name="revanced_extended_settings_search_history_summary_on">Lịch sử tìm kiếm cài đặt đã được hiển thị.</string>
+    <string name="revanced_extended_settings_search_history_summary_off">Lịch sử tìm kiếm cài đặt không được hiển thị.</string>
+    <string name="revanced_extended_settings_search_hint">Tìm kiếm cài đặt</string>
+    <string name="revanced_extended_settings_search_no_results_title">Không tìm thấy kết quả nào cho \'%s\'.</string>
+    <string name="revanced_extended_settings_search_no_results_summary">Hãy thử từ khóa khác.</string>
+    <string name="revanced_extended_settings_search_remove_message">Xoá khỏi lịch sử tìm kiếm?</string>
     <string name="revanced_playback_speed_normal">Bình thường</string>
     <string name="revanced_external_downloader_package_name_video_title">Tên gói trình tải xuống video</string>
     <string name="revanced_external_downloader_package_name_video_summary">Chọn hoặc nhập tên gói ứng dụng trình tải xuống đã được cài đặt trên thiết bị của bạn, chẳng hạn như NewPipe hoặc YTDLnis.</string>
@@ -89,6 +102,8 @@ Vui lòng chỉ sử dụng cho mục đích gỡ lỗi."</string>
 <small>Suomi</small>"</string>
     <string name="revanced_language_FR">"French
 <small>Français</small>"</string>
+    <string name="revanced_language_GA">"Gaeilge
+<small>Gaeilge</small>"</string>
     <string name="revanced_language_GU">"Gujarati
 <small>ગુજરાતી</small>"</string>
     <string name="revanced_language_HE">"Hebrew
@@ -167,9 +182,12 @@ Vui lòng chỉ sử dụng cho mục đích gỡ lỗi."</string>
 <small>中文</small>"</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Quảng cáo</string>
+    <string name="revanced_hide_creator_store_shelf_title">Ẩn kệ cửa hàng của nhà sáng tạo</string>
+    <string name="revanced_hide_creator_store_shelf_summary_on">Kệ cửa hàng của nhà sáng tạo bên dưới video đã ẩn.</string>
+    <string name="revanced_hide_creator_store_shelf_summary_off">Kệ cửa hàng của nhà sáng tạo bên dưới video được hiển thị.</string>
     <string name="revanced_hide_end_screen_store_banner_title">Ẩn dải quảng cáo cửa hàng ở cuối video</string>
-    <string name="revanced_hide_end_screen_store_banner_summary_on">Dải quảng cáo cửa hàng đã ẩn.</string>
-    <string name="revanced_hide_end_screen_store_banner_summary_off">Dải quảng cáo cửa hàng được hiển thị.</string>
+    <string name="revanced_hide_end_screen_store_banner_summary_on">Dải quảng cáo cửa hàng ở cuối video đã ẩn.</string>
+    <string name="revanced_hide_end_screen_store_banner_summary_off">Dải quảng cáo cửa hàng ở cuối video được hiển thị.</string>
     <string name="revanced_hide_fullscreen_ads_title">Ẩn quảng cáo toàn màn hình</string>
     <string name="revanced_hide_fullscreen_ads_summary_on">Quảng cáo toàn màn hình đã ẩn.</string>
     <string name="revanced_hide_fullscreen_ads_summary_off">Quảng cáo toàn màn hình được hiển thị.</string>
@@ -183,21 +201,21 @@ Vui lòng chỉ sử dụng cho mục đích gỡ lỗi."</string>
     <string name="revanced_hide_paid_promotion_label_title">Ẩn nhãn nội dung được trả tiền để quảng cáo</string>
     <string name="revanced_hide_paid_promotion_label_summary_on">Nhãn nội dung được trả tiền để quảng cáo đã ẩn.</string>
     <string name="revanced_hide_paid_promotion_label_summary_off">Nhãn nội dung được trả tiền để quảng cáo được hiển thị.</string>
-    <string name="revanced_hide_player_store_shelf_title">Ẩn kệ Cửa hàng bên dưới trình phát</string>
-    <string name="revanced_hide_player_store_shelf_summary_on">Kệ Cửa hàng đã ẩn.</string>
-    <string name="revanced_hide_player_store_shelf_summary_off">Kệ Cửa hàng đã hiển thị.</string>
     <string name="revanced_hide_promotion_alert_banner_title">Ẩn biểu ngữ thông báo khuyến mãi</string>
     <string name="revanced_hide_promotion_alert_banner_summary_on">Biểu ngữ thông báo khuyến mãi đã ẩn.</string>
     <string name="revanced_hide_promotion_alert_banner_summary_off">Biểu ngữ thông báo khuyến mãi được hiển thị.</string>
     <string name="revanced_hide_self_sponsor_cards_title">Ẩn thẻ được tài trợ</string>
     <string name="revanced_hide_self_sponsor_cards_summary_on">Thẻ được tài trợ đã ẩn.</string>
     <string name="revanced_hide_self_sponsor_cards_summary_off">Thẻ được tài trợ được hiển thị.</string>
+    <string name="revanced_hide_shopping_links_title">Ẩn liên kết sản phẩm</string>
+    <string name="revanced_hide_shopping_links_summary_on">Liên kết sản phẩm trong mô tả video đã ẩn.</string>
+    <string name="revanced_hide_shopping_links_summary_off">Liên kết sản phẩm trong mô tả video được hiển thị.</string>
     <string name="revanced_hide_video_ads_title">Ẩn quảng cáo dạng video</string>
     <string name="revanced_hide_video_ads_summary_on">Quảng cáo dạng video đã ẩn.</string>
     <string name="revanced_hide_video_ads_summary_off">Quảng cáo dạng video được hiển thị.</string>
     <string name="revanced_hide_view_products_title">Ẩn nhãn Xem sản phẩm</string>
-    <string name="revanced_hide_view_products_summary_on">Nhãn Xem sản phẩm đã ẩn.</string>
-    <string name="revanced_hide_view_products_summary_off">Nhãn Xem sản phẩm được hiển thị.</string>
+    <string name="revanced_hide_view_products_summary_on">Nhãn Xem sản phẩm trên lớp phủ video đã ẩn.</string>
+    <string name="revanced_hide_view_products_summary_off">Nhãn Xem sản phẩm trên lớp phủ video được hiển thị.</string>
     <string name="revanced_hide_web_search_results_title">Ẩn kết quả tìm kiếm từ web</string>
     <string name="revanced_hide_web_search_results_summary_on">Kết quả tìm kiếm từ web đã ẩn.</string>
     <string name="revanced_hide_web_search_results_summary_off">Kết quả tìm kiếm từ web được hiển thị.</string>
@@ -207,7 +225,7 @@ Vui lòng chỉ sử dụng cho mục đích gỡ lỗi."</string>
     <!-- PreferenceScreen: Alternative thumbnails -->
     <string name="revanced_preference_screen_alt_thumbnails_title">Hình thu nhỏ thay thế</string>
     <string name="revanced_alt_thumbnail_home_title">Thẻ Trang chủ</string>
-    <string name="revanced_alt_thumbnail_player_title">Danh sách phát của trình phát, video đề xuất</string>
+    <string name="revanced_alt_thumbnail_player_title">Danh sách phát &amp; đề xuất của trình phát</string>
     <string name="revanced_alt_thumbnail_search_title">Kết quả tìm kiếm</string>
     <string name="revanced_alt_thumbnail_subscriptions_title">Thẻ Kênh đăng ký</string>
     <string name="revanced_alt_thumbnail_library_title">Thẻ Bạn</string>
@@ -244,7 +262,7 @@ Nhấn vào đây để tìm hiểu thêm về DeArrow."</string>
     <string name="revanced_bypass_image_region_restrictions_summary_on">Sử dụng máy chủ hình ảnh yt4.ggpht.com.</string>
     <string name="revanced_bypass_image_region_restrictions_summary_off">Sử dụng máy chủ lưu trữ hình ảnh gốc.\n\nBật tính năng này có thể khắc phục tình trạng hình ảnh bị chặn ở một số khu vực.</string>
     <!-- PreferenceScreen: Feed -->
-    <string name="revanced_preference_screen_feed_title">Bảng tin</string>
+    <string name="revanced_preference_screen_feed_title">Trang video</string>
     <string name="revanced_hide_album_card_title">Ẩn thẻ Đĩa nhạc</string>
     <string name="revanced_hide_album_card_summary_on">Thẻ đĩa nhạc đã ẩn khỏi kết quả tìm kiếm.</string>
     <string name="revanced_hide_album_card_summary_off">Thẻ đĩa nhạc được hiển thị trong kết quả tìm kiếm.</string>
@@ -252,20 +270,21 @@ Nhấn vào đây để tìm hiểu thêm về DeArrow."</string>
     <string name="revanced_hide_feed_captions_button_on">Nút Phụ đề đã ẩn.</string>
     <string name="revanced_hide_feed_captions_button_off">Nút Phụ đề được hiển thị.</string>
     <string name="revanced_hide_carousel_shelf_title">Ẩn các kệ được cá nhân hoá</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Các kệ đã ẩn, chẳng hạn như:
+    <string name="revanced_hide_carousel_shelf_summary_on">"Các kệ ngang đã ẩn, chẳng hạn như:
 • Tin nổi bật
 • Tiếp tục xem
-• Khám phá thêm
+• Khám phá các chủ đề khác
 • Nghe lại
+• Phù hợp nhất
 • Mua sắm
 • Xem lại"</string>
     <string name="revanced_hide_carousel_shelf_summary_off">Các kệ được hiển thị.</string>
     <string name="revanced_hide_chips_shelf_title">Ẩn kệ danh mục được đề xuất</string>
     <string name="revanced_hide_chips_shelf_on">Kệ danh mục được đề xuất đã ẩn.</string>
     <string name="revanced_hide_chips_shelf_off">Kệ danh mục được đề xuất được hiển thị.</string>
-    <string name="revanced_hide_expandable_chip_title">Ẩn bảng giới thiệu mở rộng bên dưới video</string>
-    <string name="revanced_hide_expandable_chip_summary_on">Bảng giới thiệu mở rộng bên dưới video đã ẩn.</string>
-    <string name="revanced_hide_expandable_chip_summary_off">Bảng giới thiệu mở rộng bên dưới video được hiển thị.</string>
+    <string name="revanced_hide_expandable_card_title">Ẩn thẻ mở rộng</string>
+    <string name="revanced_hide_expandable_card_summary_on">Thẻ mở rộng bên dưới video đã ẩn.</string>
+    <string name="revanced_hide_expandable_card_summary_off">Thẻ mở rộng bên dưới video được hiển thị.</string>
     <string name="revanced_hide_expandable_shelf_title">Ẩn kệ mở rộng</string>
     <string name="revanced_hide_expandable_shelf_summary_on">Kệ mở rộng đã ẩn.</string>
     <string name="revanced_hide_expandable_shelf_summary_off">Kệ mở rộng được hiển thị.</string>
@@ -299,30 +318,33 @@ Nhấn vào đây để tìm hiểu thêm về DeArrow."</string>
     <string name="revanced_hide_show_more_button_title">Ẩn nút Hiện thêm</string>
     <string name="revanced_hide_show_more_button_summary_on">Nút Hiện thêm đã ẩn.</string>
     <string name="revanced_hide_show_more_button_summary_off">Nút Hiện thêm được hiển thị.</string>
-    <string name="revanced_hide_subscriptions_carousel_title">Ẩn băng chuyền Kênh đăng ký</string>
-    <string name="revanced_hide_subscriptions_carousel_summary_on">Băng chuyền Kênh đăng ký đã ẩn.</string>
-    <string name="revanced_hide_subscriptions_carousel_summary_off">Băng chuyền Kênh đăng ký được hiển thị.</string>
-    <string name="revanced_hide_feed_survey_title">Ẩn khảo sát</string>
-    <string name="revanced_hide_feed_survey_summary_on">Khảo sát đã ẩn.</string>
-    <string name="revanced_hide_feed_survey_summary_off">Khảo sát được hiển thị.</string>
+    <string name="revanced_hide_subscribed_channels_bar_title">Ẩn thanh kênh đã đăng ký</string>
+    <string name="revanced_hide_subscribed_channels_bar_summary_on">Thanh kênh đã đăng ký đã ẩn.</string>
+    <string name="revanced_hide_subscribed_channels_bar_summary_off">Thanh kênh đã đăng ký được hiển thị.</string>
+    <string name="revanced_hide_surveys_title">Ẩn khảo sát</string>
+    <string name="revanced_hide_surveys_summary_on">Khảo sát đã ẩn.</string>
+    <string name="revanced_hide_surveys_summary_off">Khảo sát được hiển thị.</string>
     <string name="revanced_hide_ticket_shelf_title">Ẩn kệ bán vé</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Kệ bán vé đã ẩn.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Kệ bán vé được hiển thị.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Thanh danh mục</string>
-    <string name="revanced_preference_screen_category_bar_summary">Ẩn hoặc hiển thị thanh danh mục trong bảng tin, kết quả tìm kiếm và khi lướt xem các video có liên quan.</string>
-    <string name="revanced_hide_category_bar_in_feed_title">Ẩn trên bảng tin</string>
-    <string name="revanced_hide_category_bar_in_feed_summary_on">Thanh danh mục đã ẩn trong bảng tin.</string>
-    <string name="revanced_hide_category_bar_in_feed_summary_off">Thanh danh mục được hiển thị trong bảng tin.</string>
+    <string name="revanced_preference_screen_category_bar_summary">Ẩn hoặc hiển thị thanh danh mục trong các trang video, video liên quan, kết quả tìm kiếm và video đã xem.</string>
+    <string name="revanced_hide_category_bar_in_feed_title">Ẩn trên các trang video</string>
+    <string name="revanced_hide_category_bar_in_feed_summary_on">Đã ẩn trên các trang video.</string>
+    <string name="revanced_hide_category_bar_in_feed_summary_off">Đã hiển thị trên các trang video.</string>
     <string name="revanced_hide_category_bar_in_related_videos_title">Ẩn khi lướt xem các video có liên quan</string>
     <string name="revanced_hide_category_bar_in_related_videos_summary_on">Thanh danh mục đã ẩn khi lướt xem các video có liên quan.</string>
     <string name="revanced_hide_category_bar_in_related_videos_summary_off">Thanh danh mục được hiển thị khi lướt xem các video có liên quan.</string>
     <string name="revanced_hide_category_bar_in_search_title">Ẩn trong kết quả tìm kiếm</string>
-    <string name="revanced_hide_category_bar_in_search_summary_on">Thanh danh mục đã ẩn trong kết quả tìm kiếm.</string>
+    <string name="revanced_hide_category_bar_in_search_summary_on">Đã ẩn trong kết quả tìm kiếm.</string>
     <string name="revanced_hide_category_bar_in_search_summary_off">Thanh danh mục được hiển thị trong kết quả tìm kiếm.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Channel profile -->
-    <string name="revanced_preference_screen_channel_profile_title">Hồ sơ kênh</string>
-    <string name="revanced_preference_screen_channel_profile_summary">Ẩn hoặc hiển thị các thành phần trong hồ sơ kênh.</string>
+    <string name="revanced_hide_category_bar_in_history_title">Ẩn trong nhật ký xem</string>
+    <string name="revanced_hide_category_bar_in_history_summary_on">Đã ẩn trong nhật ký xem.</string>
+    <string name="revanced_hide_category_bar_in_history_summary_off">Đã hiển thị trong nhật ký xem.</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Channel page -->
+    <string name="revanced_preference_screen_channel_page_title">Trang kênh</string>
+    <string name="revanced_preference_screen_channel_page_summary">Ẩn hoặc hiển thị các thành phần trong trang kênh.</string>
     <string name="revanced_hide_channel_tab_title">Bộ lọc thẻ kênh</string>
     <string name="revanced_hide_channel_tab_summary_on">Bộ lọc thẻ kênh đã bật.</string>
     <string name="revanced_hide_channel_tab_summary_off">Bộ lọc thẻ kênh đã tắt.</string>
@@ -331,41 +353,41 @@ Nhấn vào đây để tìm hiểu thêm về DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Danh sách phát
 Cửa hàng"</string>
-    <string name="revanced_hide_channel_member_shelf_title">Ẩn kệ ghi nhận hội viên của kênh</string>
-    <string name="revanced_hide_channel_member_shelf_summary_on">Kệ ghi nhận hội viên của kênh đã ẩn.</string>
-    <string name="revanced_hide_channel_member_shelf_summary_off">Kệ ghi nhận hội viên của kênh được hiển thị.</string>
-    <string name="revanced_hide_channel_profile_links_title">Ẩn đường liên kết trên hồ sơ kênh</string>
-    <string name="revanced_hide_channel_profile_links_summary_on">Các đường liên kết ở đầu hồ sơ kênh đã ẩn.</string>
-    <string name="revanced_hide_channel_profile_links_summary_off">Các đường liên kết ở đầu hồ sơ kênh được hiển thị.</string>
     <string name="revanced_hide_for_you_shelf_title">Ẩn kệ Dành cho bạn</string>
     <string name="revanced_hide_for_you_shelf_summary_on">Kệ Dành cho bạn đã ẩn.</string>
     <string name="revanced_hide_for_you_shelf_summary_off">Kệ Dành cho bạn được hiển thị.</string>
-    <string name="revanced_hide_browse_store_button_title">Ẩn nút Chuyển đến cửa hàng</string>
-    <string name="revanced_hide_browse_store_button_summary_on">Nút Chuyển đến cửa hàng đã ẩn.</string>
-    <string name="revanced_hide_browse_store_button_summary_off">Nút Chuyển đến cửa hàng được hiển thị.</string>
+    <string name="revanced_hide_links_preview_title">Ẩn xem trước liên kết</string>
+    <string name="revanced_hide_links_preview_summary_on">Xem trước liên kết đã ẩn.</string>
+    <string name="revanced_hide_links_preview_summary_off">Xem trước liên kết được hiển thị.</string>
+    <string name="revanced_hide_members_shelf_title">Ẩn kệ thành viên</string>
+    <string name="revanced_hide_members_shelf_summary_on">Kệ thành viên đã ẩn.</string>
+    <string name="revanced_hide_members_shelf_summary_off">Kệ thành viên được hiển thị.</string>
+    <string name="revanced_hide_visit_store_button_title">Ẩn nút Chuyển đến cửa hàng</string>
+    <string name="revanced_hide_visit_store_button_summary_on">Nút Chuyển đến cửa hàng đã ẩn.</string>
+    <string name="revanced_hide_visit_store_button_summary_off">Nút Chuyển đến cửa hàng được hiển thị.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Bài đăng cộng đồng</string>
-    <string name="revanced_preference_screen_community_posts_summary">Ẩn hoặc hiển thị bài đăng cộng đồng trong bảng tin và trong hồ sơ kênh.</string>
-    <string name="revanced_hide_community_posts_channel_title">Ẩn trong hồ sơ kênh</string>
-    <string name="revanced_hide_community_posts_channel_summary_on">Bài đăng cộng đồng đã ẩn trong hồ sơ kênh.</string>
-    <string name="revanced_hide_community_posts_channel_summary_off">Bài đăng cộng đồng được hiển thị trong hồ sơ kênh.</string>
+    <string name="revanced_preference_screen_community_posts_summary">Ẩn hoặc hiển thị bài đăng cộng đồng trên trang kênh, các trang video và video liên quan.</string>
+    <string name="revanced_hide_community_posts_channel_title">Ẩn trong trang kênh</string>
+    <string name="revanced_hide_community_posts_channel_summary_on">Đã ẩn trong trang kênh.</string>
+    <string name="revanced_hide_community_posts_channel_summary_off">Đã hiển thị trong trang kênh.</string>
     <string name="revanced_hide_community_posts_home_related_videos_title">Ẩn trên thẻ Trang chủ và các video liên quan</string>
-    <string name="revanced_hide_community_posts_home_related_videos_summary_on">Bài đăng cộng đồng đã ẩn trên bảng tin và khi lướt xem các video có liên quan.</string>
-    <string name="revanced_hide_community_posts_home_related_videos_summary_off">Bài đăng cộng đồng được hiển thị trên bảng tin và khi lướt xem các video có liên quan.</string>
+    <string name="revanced_hide_community_posts_home_related_videos_summary_on">Đã ẩn trên thẻ Trang chủ và các video liên quan.</string>
+    <string name="revanced_hide_community_posts_home_related_videos_summary_off">Đã hiển thị trên thẻ Trang chủ và các video liên quan.</string>
     <string name="revanced_hide_community_posts_subscriptions_title">Ẩn trên thẻ Kênh đăng ký</string>
-    <string name="revanced_hide_community_posts_subscriptions_summary_on">Bài đăng cộng đồng đã ẩn trên thẻ Kênh đăng ký.</string>
-    <string name="revanced_hide_community_posts_subscriptions_summary_off">Bài đăng cộng đồng được hiển thị trên thẻ Kênh đăng ký.</string>
+    <string name="revanced_hide_community_posts_subscriptions_summary_on">Đã ẩn trên thẻ Kênh đăng ký.</string>
+    <string name="revanced_hide_community_posts_subscriptions_summary_off">Đã hiển thị trên thẻ Kênh đăng ký.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_feed_flyout_menu_title">Trình đơn tuỳ chọn</string>
-    <string name="revanced_preference_screen_feed_flyout_menu_summary">Ẩn hoặc hiển thị thành phần của trình đơn tuỳ chọn trên bảng tin.</string>
-    <string name="revanced_hide_feed_flyout_menu_title">Bộ lọc trình đơn tuỳ chọn trên bảng tin</string>
-    <string name="revanced_hide_feed_flyout_menu_summary_on">Bộ lọc trình đơn tuỳ chọn trên bảng tin đã bật.</string>
-    <string name="revanced_hide_feed_flyout_menu_summary_off">Bộ lọc trình đơn tuỳ chọn trên bảng tin đã tắt.</string>
+    <string name="revanced_preference_screen_feed_flyout_menu_summary">Ẩn hoặc hiển thị thành phần của trình đơn tuỳ chọn trên các trang video.</string>
+    <string name="revanced_hide_feed_flyout_menu_title">Bộ lọc trình đơn tuỳ chọn trên các trang video</string>
+    <string name="revanced_hide_feed_flyout_menu_summary_on">Bộ lọc trình đơn tuỳ chọn trên các trang video đã được bật.</string>
+    <string name="revanced_hide_feed_flyout_menu_summary_off">Bộ lọc trình đơn tuỳ chọn trên các trang video đã tắt.</string>
     <string name="revanced_hide_feed_flyout_menu_filter_type_title">Cài đặt kiểu lọc</string>
     <string name="revanced_hide_feed_flyout_menu_filter_type_summary_on">Lọc nếu trong đó có chứa từ khoá đã nhập.&lt;br&gt;&lt;br&gt;Để ẩn mục &lt;b&gt;\"Phát tiếp theo trong hàng chờ\"&lt;/b&gt;, bạn có thể sử dụng từ khoá &lt;b&gt;\"Phát tiếp theo\"&lt;/b&gt; hoặc &lt;b&gt;\"hàng chờ\"&lt;/b&gt;.</string>
     <string name="revanced_hide_feed_flyout_menu_filter_type_summary_off">Lọc nếu khớp toàn bộ từ khoá đã nhập.&lt;br&gt;&lt;br&gt;Để ẩn mục &lt;b&gt;\"Phát tiếp theo trong hàng chờ\"&lt;/b&gt;, bạn chỉ có thể sử dụng từ khoá &lt;b&gt;\"Phát tiếp theo trong hàng chờ\"&lt;/b&gt;.</string>
     <string name="revanced_hide_feed_flyout_menu_filter_strings_title">Cài đặt bộ lọc</string>
-    <string name="revanced_hide_feed_flyout_menu_filter_strings_summary">Nhập tên các mục thành phần của trình đơn tuỳ chọn mà bạn muốn lọc được phân cách bằng dòng.</string>
+    <string name="revanced_hide_feed_flyout_menu_filter_strings_summary">Nhập tên trình đơn tuỳ chọn mà bạn muốn lọc, được phân cách bằng dòng.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter -->
     <string name="revanced_preference_screen_video_filter_title">Bộ lọc video</string>
     <string name="revanced_preference_screen_video_filter_summary">Ẩn video theo từ khoá hoặc số lượt xem.</string>
@@ -375,14 +397,14 @@ Cửa hàng"</string>
     <string name="revanced_hide_keyword_content_comments_summary_on">Các bình luận đã được lọc theo từ khoá đã đặt.</string>
     <string name="revanced_hide_keyword_content_comments_summary_off">Các bình luận không được lọc theo từ khoá đã đặt.</string>
     <string name="revanced_hide_keyword_content_home_title">Ẩn video trên thẻ Trang chủ theo từ khoá</string>
-    <string name="revanced_hide_keyword_content_home_summary_on">Các Video trên thẻ Trang chủ đã được lọc theo từ khoá đã đặt.</string>
-    <string name="revanced_hide_keyword_content_home_summary_off">Các Video trên thẻ Trang chủ không được lọc theo từ khoá đã đặt.</string>
+    <string name="revanced_hide_keyword_content_home_summary_on">Các video trên thẻ Trang chủ đã được lọc.</string>
+    <string name="revanced_hide_keyword_content_home_summary_off">Các video trên thẻ Trang chủ không được lọc.</string>
     <string name="revanced_hide_keyword_content_search_title">Ẩn kết quả tìm kiếm theo từ khóa</string>
     <string name="revanced_hide_keyword_content_search_summary_on">Kết quả tìm kiếm đã được lọc theo từ khoá đã đặt.</string>
     <string name="revanced_hide_keyword_content_search_summary_off">Kết quả tìm kiếm không được lọc theo từ khoá đã đặt.</string>
     <string name="revanced_hide_keyword_content_subscriptions_title">Ẩn video trên thẻ Kênh đăng ký theo từ khoá</string>
-    <string name="revanced_hide_keyword_content_subscriptions_summary_on">Các Video trên thẻ Kênh đăng ký đã được lọc theo từ khoá đã đặt.</string>
-    <string name="revanced_hide_keyword_content_subscriptions_summary_off">Các Video trên thẻ Kênh đăng ký không được lọc theo từ khoá đã đặt.</string>
+    <string name="revanced_hide_keyword_content_subscriptions_summary_on">Các video trên thẻ Kênh đăng ký đã được lọc.</string>
+    <string name="revanced_hide_keyword_content_subscriptions_summary_off">Các video trên thẻ Kênh đăng ký không được lọc.</string>
     <string name="revanced_hide_keyword_content_phrases_title">Bộ lọc từ khoá</string>
     <string name="revanced_hide_keyword_content_phrases_summary">"Nhập từ hoặc cụm từ cần ẩn được phân cách bằng dòng.
 
@@ -404,11 +426,11 @@ Bộ lọc có phân biệt chữ hoa chữ thường, vì vậy bạn cần nh�
     <string name="revanced_hide_keyword_toast_invalid_length">Từ khóa quá ngắn và cần phải có dấu ngoặc kép: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">Từ khóa sẽ ẩn tất cả video: %s.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">Video được đề xuất</string>
+    <string name="revanced_preference_category_recommended_video">Video đề xuất</string>
     <string name="revanced_hide_low_views_video_title">Ẩn video có lượt xem thấp</string>
     <string name="revanced_hide_low_views_video_summary">"Ẩn các video có dưới 1.000 lượt xem được tải lên từ các kênh bạn không đăng ký khỏi thẻ Trang chủ.
 
-Bộ lọc này có thể không còn hoạt động nữa, thay vào đó, hãy sử dụng tính năng \"Bộ lọc số lượt xem\"."</string>
+Bộ lọc này có thể không còn hoạt động nữa, thay vào đó, hãy sử dụng \"Bộ lọc số lượt xem\"."</string>
     <string name="revanced_hide_recommended_video_title">Ẩn video được đề xuất</string>
     <string name="revanced_hide_recommended_video_summary">"Ẩn các video đề xuất sau:
 
@@ -416,14 +438,14 @@ Bộ lọc này có thể không còn hoạt động nữa, thay vào đó, hãy
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">Bộ lọc số lượt xem</string>
     <string name="revanced_hide_video_by_view_counts_home_title">Ẩn video trên thẻ Trang chủ theo số lượt xem</string>
-    <string name="revanced_hide_video_by_view_counts_home_summary_on">Các Video trên thẻ Trang chủ được lọc theo số lượt xem đã đặt.</string>
-    <string name="revanced_hide_video_by_view_counts_home_summary_off">Các Video trên thẻ Trang chủ không được lọc theo số lượt xem đã đặt.</string>
+    <string name="revanced_hide_video_by_view_counts_home_summary_on">Các video trên thẻ Trang chủ đã được lọc.</string>
+    <string name="revanced_hide_video_by_view_counts_home_summary_off">Các video trên thẻ Trang chủ không được lọc.</string>
     <string name="revanced_hide_video_by_view_counts_search_title">Ẩn các video trong kết quả tìm kiếm theo số lượt xem</string>
     <string name="revanced_hide_video_by_view_counts_search_summary_on">Các video trong kết quả tìm kiếm được lọc theo số lượt xem đã đặt.</string>
     <string name="revanced_hide_video_by_view_counts_search_summary_off">Các video trong kết quả tìm kiếm không được lọc theo số lượt xem đã đặt.</string>
     <string name="revanced_hide_video_by_view_counts_subscriptions_title">Ẩn video trên thẻ Kênh đăng ký theo số lượt xem</string>
-    <string name="revanced_hide_video_by_view_counts_subscriptions_summary_on">Các video trên thẻ Kênh đăng ký đã được lọc theo số lượt xem đã đặt.</string>
-    <string name="revanced_hide_video_by_view_counts_subscriptions_summary_off">Các video trên thẻ Kênh đăng ký không được lọc theo số lượt xem đã đặt.</string>
+    <string name="revanced_hide_video_by_view_counts_subscriptions_summary_on">Các video trên thẻ Kênh đăng ký đã được lọc.</string>
+    <string name="revanced_hide_video_by_view_counts_subscriptions_summary_off">Các video trên thẻ Kênh đăng ký không được lọc.</string>
     <string name="revanced_hide_video_view_counts_greater_than_title">Cao hơn</string>
     <string name="revanced_hide_video_view_counts_greater_than_summary">Nhập số lượt xem. Video có số lượt xem cao hơn mức này sẽ bị ẩn.</string>
     <string name="revanced_hide_video_view_counts_less_than_title">Thấp hơn</string>
@@ -481,6 +503,7 @@ Hạn chế: Nút Quay lại trên thanh công cụ có thể không hoạt đ�
     <string name="revanced_disable_auto_audio_tracks_title">Tắt tự động phát bản âm thanh</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Tự động phát bản âm thanh khi phát video có bản âm thanh đã tắt.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Tự động phát bản âm thanh khi phát video có bản âm thanh đã bật.</string>
+    <string name="revanced_disable_auto_audio_tracks_not_available">Để sử dụng tính năng này, hãy thay đổi \'Ứng dụng khách mặc định (Giả mạo dữ liệu phát trực tuyến)\' sang iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Tắt tự động hiển thị phụ đề</string>
     <string name="revanced_disable_auto_captions_summary_on">Tự động hiển thị phụ đề khi phát video có phụ đề đã tắt.</string>
     <string name="revanced_disable_auto_captions_summary_off">Tự động hiển thị phụ đề khi phát video có phụ đề đã bật.</string>
@@ -493,9 +516,9 @@ Hạn chế: Nút Quay lại trên thanh công cụ có thể không hoạt đ�
     <string name="revanced_hide_floating_microphone_title">Ẩn nút Tìm kiếm bằng giọng nói</string>
     <string name="revanced_hide_floating_microphone_summary_on">Nút Tìm kiếm bằng giọng nói đã ẩn khi tìm kiếm.</string>
     <string name="revanced_hide_floating_microphone_summary_off">Nút Tìm kiếm bằng giọng nói được hiển thị khi tìm kiếm.</string>
-    <string name="revanced_hide_gray_separator_title">Ẩn các dải phân cách màu xám</string>
-    <string name="revanced_hide_gray_separator_summary_on">Các dải phân cách màu xám đã ẩn.</string>
-    <string name="revanced_hide_gray_separator_summary_off">Các dải phân cách màu xám được hiển thị.</string>
+    <string name="revanced_hide_visual_spacers_title">Ẩn khoảng cách giữa các mục</string>
+    <string name="revanced_hide_visual_spacers_summary_on">Ẩn khoảng cách giữa các mục đã ẩn.</string>
+    <string name="revanced_hide_visual_spacers_summary_off">Ẩn khoảng cách giữa các mục được hiển thị.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Loại bỏ hộp thoại cảnh báo trước khi xem</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Loại bỏ hộp thoại cảnh báo nội dung cần cân nhắc trước khi xem.
 Tuỳ chọn này chỉ tự động chấp nhận hộp thoại cảnh báo, chứ không thể bỏ qua giới hạn về độ tuổi."</string>
@@ -517,8 +540,8 @@ Bố cục máy tính bảng
 • Bài đăng cộng đồng bị ẩn.
 
 Bố cục màn hình ô tô
-• Video ngắn sẽ được mở trong trình phát thông thường.
-• Bảng tin được sắp xếp theo chủ đề và kênh.
+• Video ngắn được mở trong trình phát thông thường.
+• Trang video được sắp xếp theo chủ đề và kênh.
 • Không thể mở mô tả video khi cài đặt \"Giả mạo dữ liệu phát trực tuyến\" đang tắt."</string>
     <string name="revanced_disable_layout_updates_title">Tắt cập nhật bố cục</string>
     <string name="revanced_disable_layout_updates_summary_on">Bố cục sẽ không được máy chủ cập nhật.</string>
@@ -545,9 +568,7 @@ Các thay đổi bao gồm:
 Điều này sẽ làm thay đổi giao diện và tính năng của ứng dụng, nhưng đồng thời cũng có thể xảy ra một số lỗi không xác định.
 
 Nếu muốn tắt tính năng này sau đó, bạn nên xóa dữ liệu ứng dụng để tránh phát sinh lỗi giao diện."</string>
-    <string name="revanced_spoof_app_version_target_title">Tuỳ chọn phiên bản giả mạo</string>
-    <string name="revanced_spoof_app_version_target_summary">Nhập phiên bản giả mạo mà bạn muốn hướng tới.</string>
-    <string name="revanced_spoof_app_version_target_entry_title">Phiên bản giả mạo</string>
+    <string name="revanced_spoof_app_version_target_title">Phiên bản giả mạo ứng dụng mục tiêu</string>
     <string name="revanced_spoof_app_version_target_entry_17_41_37">17.41.37 - Khôi phục kệ Danh sách phát kiểu cũ</string>
     <string name="revanced_spoof_app_version_target_entry_18_05_40">18.05.40 - Khôi phục hộp nhập bình luận kiểu cũ</string>
     <string name="revanced_spoof_app_version_target_entry_18_17_43">18.17.43 - Khôi phục trình đơn Cài đặt trình phát kiểu cũ</string>
@@ -556,6 +577,7 @@ Nếu muốn tắt tính năng này sau đó, bạn nên xóa dữ liệu ứng 
     <string name="revanced_spoof_app_version_target_entry_18_48_39">18.48.39 - Vô hiệu hoá cập nhật số \"lượt xem\" và \"lượt thích\" theo thời gian thực</string>
     <string name="revanced_spoof_app_version_target_entry_19_01_34">19.01.34 - Tắt tương tác với mô tả video</string>
     <string name="revanced_spoof_app_version_target_entry_19_26_42">19.26.42 - Tắt biểu tượng Cairo trong thanh điều hướng và thanh công cụ</string>
+    <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Khôi phục tiêu đề danh sách phát kiểu cũ</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Khôi phục bảng trình đơn tốc độ phát kiểu cũ</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Phiên bản ứng dụng đã chọn không hợp lệ: %s.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
@@ -589,6 +611,7 @@ Một số mục có thể không bị ẩn."</string>
     <string name="revanced_preference_category_download_button">Nút tải xuống</string>
     <string name="revanced_override_playlist_download_button_title">Ghi đè nút tải xuống danh sách phát</string>
     <string name="revanced_override_playlist_download_button_summary_on">Nút tải xuống danh sách phát sẽ luôn được hiển thị, và đối với danh sách phát công khai, khi thao tác với nút sẽ mở trình tải xuống bên ngoài của bạn.</string>
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer">"Nút tải xuống danh sách phát gốc, nếu được hiển thị, sẽ mở trình tải xuống bên ngoài của bạn."</string>
     <string name="revanced_override_playlist_download_button_summary_off">Nếu nút tải xuống danh sách phát được hiển thị, khi thao tác với nút sẽ mở trình tải xuống được tích hợp sẵn của Youtube.</string>
     <string name="revanced_override_video_download_button_title">Ghi đè nút tải xuống video</string>
     <string name="revanced_override_video_download_button_summary_on">Khi thao tác với nút tải xuống video sẽ mở trình tải xuống bên ngoài của bạn.</string>
@@ -867,6 +890,9 @@ Cài đặt → Tự động phát/Phát → Tự động phát video tiếp the
     <string name="revanced_disable_like_dislike_glow_title">Tắt hoạt ảnh các nút Thích và Không thích</string>
     <string name="revanced_disable_like_dislike_glow_summary_on">Các nút Thích và Không thích sẽ không sáng lên khi nhấn vào.</string>
     <string name="revanced_disable_like_dislike_glow_summary_off">Các nút Thích và Không thích sẽ sáng lên khi nhấn vào.</string>
+    <string name="revanced_hide_ask_button_title">Ẩn nút Hỏi</string>
+    <string name="revanced_hide_ask_button_summary_on">Nút Hỏi đã ẩn.</string>
+    <string name="revanced_hide_ask_button_summary_off">Nút Hỏi được hiển thị.</string>
     <string name="revanced_hide_clip_button_title">Ẩn nút Tạo đoạn video</string>
     <string name="revanced_hide_clip_button_summary_on">Nút Tạo đoạn video đã ẩn.</string>
     <string name="revanced_hide_clip_button_summary_off">Nút Tạo đoạn video được hiển thị.</string>
@@ -894,6 +920,9 @@ Cài đặt → Tự động phát/Phát → Tự động phát video tiếp the
     <string name="revanced_hide_shop_button_title">Ẩn nút Cửa hàng</string>
     <string name="revanced_hide_shop_button_summary_on">Nút Cửa hàng đã ẩn.</string>
     <string name="revanced_hide_shop_button_summary_off">Nút Cửa hàng được hiển thị.</string>
+    <string name="revanced_hide_stop_ads_button_title">Ẩn Ngừng quảng cáo</string>
+    <string name="revanced_hide_stop_ads_button_summary_on">Nút Ngừng quảng cáo đã ẩn.</string>
+    <string name="revanced_hide_stop_ads_button_summary_off">Nút Ngừng quảng cáo được hiển thị.</string>
     <string name="revanced_hide_thanks_button_title">Ẩn nút Cảm ơn</string>
     <string name="revanced_hide_thanks_button_summary_on">Nút Cảm ơn đã ẩn.</string>
     <string name="revanced_hide_thanks_button_summary_off">Nút Cảm ơn được hiển thị.</string>
@@ -934,6 +963,9 @@ Chi tiết:
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Comments -->
     <string name="revanced_preference_screen_comments_title">Bình luận</string>
     <string name="revanced_preference_screen_comments_summary">Ẩn hoặc hiển thị các thành phần của phần Bình luận.</string>
+    <string name="revanced_hide_ai_chat_summary_title">Ẩn Tóm tắt cuộc trò chuyện AI</string>
+    <string name="revanced_hide_ai_chat_summary_summary_on">Tóm tắt cuộc trò chuyện AI đã ẩn.</string>
+    <string name="revanced_hide_ai_chat_summary_summary_off">Tóm tắt cuộc trò chuyện AI được hiển thị.</string>
     <string name="revanced_hide_channel_guidelines_title">Ẩn các nhãn nguyên tắc</string>
     <string name="revanced_hide_channel_guidelines_summary_on">Các nhãn nguyên tắc (Nguyên tắc cộng đồng, Nguyên tắc của kênh, Trở thành hội viên,...) đã ẩn.</string>
     <string name="revanced_hide_channel_guidelines_summary_off">Các nhãn nguyên tắc (Nguyên tắc cộng đồng, Nguyên tắc của kênh, Trở thành hội viên,...) được hiển thị.</string>
@@ -957,16 +989,13 @@ Chi tiết:
     <string name="revanced_hide_comment_highlighted_search_links_summary_off">Các bình luận chữ xanh được hiển thị.</string>
     <string name="revanced_hide_live_chat_messages_title">Ẩn tin nhắn Trò chuyện trực tiếp</string>
     <string name="revanced_hide_live_chat_messages_summary_on">Tin nhắn Trò chuyện trực tiếp đã ẩn.\n\nTuỳ chọn này cũng áp dụng cho video phát trực tiếp trên Shorts.</string>
-    <string name="revanced_hide_live_chat_messages_summary_off">Tin nhắn Trò chuyện trực tiếp được hiển thị.\n\nTuỳ chọn này cũng áp dụng cho video phát trực tiếp trên Shorts.</string>
-    <string name="revanced_hide_live_chat_summary_title">Ẩn phần \"Tóm tắt cuộc trò chuyện\" trong cuộc Trò chuyện trực tiếp</string>
-    <string name="revanced_hide_live_chat_summary_summary_on">Phần Tóm tắt cuộc trò chuyện đã ẩn.</string>
-    <string name="revanced_hide_live_chat_summary_summary_off">Phần Tóm tắt cuộc trò chuyện được hiển thị.</string>
+    <string name="revanced_hide_live_chat_messages_summary_off">Tin nhắn trò chuyện trực tiếp được hiển thị.</string>
     <string name="revanced_hide_preview_comment_title">Ẩn phần Xem trước bình luận</string>
     <string name="revanced_hide_preview_comment_on">Phần Xem trước bình luận đã ẩn.</string>
     <string name="revanced_hide_preview_comment_off">Phần Xem trước bình luận được hiển thị.</string>
-    <string name="revanced_hide_preview_comment_type_title">Ẩn nội dung bình luận</string>
-    <string name="revanced_hide_preview_comment_type_on">Tuỳ chọn này sẽ không làm thay đổi kích thước của phần bình luận, vì vậy, bạn có thể phát lại cuộc Trò chuyện trực tiếp trong phần bình luận.</string>
-    <string name="revanced_hide_preview_comment_type_off">Tuỳ chọn này sẽ làm thay đổi kích thước của phần bình luận, vì vậy, bạn không thể phát lại cuộc Trò chuyện trực tiếp trong phần bình luận.</string>
+    <string name="revanced_hide_preview_comment_type_title">Ẩn kiểu xem trước bình luận</string>
+    <string name="revanced_hide_preview_comment_type_on">Kích thước của phần bình luận không thay đổi, cho phép mở Phát lại cuộc trò chuyện trực tiếp.</string>
+    <string name="revanced_hide_preview_comment_type_off">Kích thước của phần bình luận đã thay đổi, không thể mở Phát lại cuộc trò chuyện trực tiếp.</string>
     <string name="revanced_hide_comment_thanks_button_title">Ẩn nút Cảm ơn</string>
     <string name="revanced_hide_comment_thanks_button_summary_on">Nút Cảm ơn đã ẩn.</string>
     <string name="revanced_hide_comment_thanks_button_summary_off">Nút Cảm ơn được hiển thị.</string>
@@ -982,6 +1011,9 @@ Chi tiết:
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Ẩn mục Bản âm thanh</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Mục Bản âm thanh đã ẩn.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Mục Bản âm thanh được hiển thị.</string>
+    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Trình đơn bản âm thanh đã ẩn.
+
+Để hiển thị trình đơn bản âm thanh, hãy thay đổi 'Ứng dụng khách mặc định (Giả mạo dữ liệu phát trực tuyến)' sang iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Ẩn mục Phụ đề</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Mục Phụ đề đã ẩn.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Mục Phụ đề được hiển thị.</string>
@@ -1064,9 +1096,9 @@ Hạn chế: Tiêu đề video sẽ biến mất khi nhấn vào."</string>
     <string name="revanced_hide_live_chat_replay_button_title">Ẩn nút Trò chuyện trực tiếp</string>
     <string name="revanced_hide_live_chat_replay_button_summary_on">Nút phát lại Trò chuyện trực tiếp đã ẩn.\n\nNút sẽ xuất hiện ở chế độ toàn màn hình khi bạn đóng cuộc Trò chuyện trực tiếp.</string>
     <string name="revanced_hide_live_chat_replay_button_summary_off">Nút phát lại Trò chuyện trực tiếp được hiển thị.\n\nNút sẽ xuất hiện ở chế độ toàn màn hình khi bạn đóng cuộc Trò chuyện trực tiếp.</string>
-    <string name="revanced_hide_related_video_overlay_title">Ẩn lớp phủ video liên quan</string>
-    <string name="revanced_hide_related_video_overlay_summary_on">Phần video thêm trong bảng nút thao tác nhanh và lớp phủ video liên quan đã ẩn.</string>
-    <string name="revanced_hide_related_video_overlay_summary_off">Phần video thêm trong bảng nút thao tác nhanh và lớp phủ video liên quan được hiển thị.</string>
+    <string name="revanced_hide_related_videos_overlay_title">Ẩn lớp phủ các video liên quan</string>
+    <string name="revanced_hide_related_videos_overlay_summary_on">Phần video thêm trong bảng nút thao tác nhanh và lớp phủ video liên quan đã ẩn.</string>
+    <string name="revanced_hide_related_videos_overlay_summary_off">Phần video thêm trong bảng nút thao tác nhanh và lớp phủ video liên quan đã ẩn.</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Fullscreen, PreferenceCategory: Quick actions -->
     <string name="revanced_preference_category_quick_actions">Thao tác nhanh</string>
     <string name="revanced_hide_quick_actions_title">Ẩn bảng nút thao tác nhanh</string>
@@ -1198,15 +1230,15 @@ Vuốt trình phát thu nhỏ để mở rộng hoặc đóng."</string>
     <string name="revanced_hide_player_cast_button_title">Ẩn nút Truyền</string>
     <string name="revanced_hide_player_cast_button_summary_on">Nút Truyền đã ẩn.</string>
     <string name="revanced_hide_player_cast_button_summary_off">Nút Truyền được hiển thị.</string>
-    <string name="revanced_hide_player_collapse_button_title">Ẩn nút thu gọn</string>
+    <string name="revanced_hide_player_collapse_button_title">Ẩn nút Thu gọn</string>
     <string name="revanced_hide_player_collapse_button_summary_on">Nút thu gọn đã ẩn.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">Nút thu gọn được hiển thị.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Ẩn nút Toàn màn hình</string>
     <string name="revanced_hide_player_fullscreen_button_summary_on">Nút Toàn màn hình đã ẩn.</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">Nút Toàn màn hình được hiển thị.</string>
     <string name="revanced_hide_player_previous_next_button_title">Ẩn các nút Chuyển đến video trước đó/tiếp theo</string>
-    <string name="revanced_hide_player_previous_next_button_summary_on">Các nút đã ẩn.</string>
-    <string name="revanced_hide_player_previous_next_button_summary_off">Các nút được hiển thị.</string>
+    <string name="revanced_hide_player_previous_next_button_summary_on">Nút Trước đó &amp; Tiếp theo đã ẩn.</string>
+    <string name="revanced_hide_player_previous_next_button_summary_off">Nút Trước đó &amp; Tiếp theo được hiển thị.</string>
     <string name="revanced_hide_player_youtube_music_button_title">Ẩn nút YouTube Music</string>
     <string name="revanced_hide_player_youtube_music_button_summary_on">Nút YouTube Music đã ẩn.</string>
     <string name="revanced_hide_player_youtube_music_button_summary_off">Nút YouTube Music được hiển thị.</string>
@@ -1230,6 +1262,7 @@ Nhấn và giữ để sao chép dấu thời gian."</string>
     <string name="revanced_overlay_button_speed_dialog_title">Nút Tốc độ phát</string>
     <string name="revanced_overlay_button_speed_dialog_summary">"Nhấn để mở hộp thoại Tốc độ phát.
 Nhấn và giữ để đặt lại tốc độ phát video (1.0x). Nhấn và giữ lần nữa để đặt lại về tốc độ mặc định đã đặt."</string>
+    <string name="revanced_overlay_button_speed_dialog_type_title">Kiểu hộp thoại tốc độ phát</string>
     <string name="revanced_overlay_button_whitelist_title">Nút Danh sách trắng</string>
     <string name="revanced_overlay_button_whitelist_summary">Nhấn để mở hộp thoại Danh sách trắng.
 Nhấn và giữ để mở hộp thoại cài đặt Danh sách trắng.</string>
@@ -1284,6 +1317,10 @@ Nhấn và giữ để chuyển loại thông tin cần thêm vào."</string>
     <string name="revanced_append_time_stamp_information_type_title">Loại thông tin cần thêm</string>
     <string name="revanced_append_time_stamp_information_type_summary_on">Thêm Chất lượng video.</string>
     <string name="revanced_append_time_stamp_information_type_summary_off">Thêm Tốc độ phát.</string>
+    <string name="revanced_append_time_stamp_information_playback_speed_menu_type_title">Kiểu trình đơn tốc độ phát</string>
+    <string name="revanced_append_time_stamp_information_video_quality_menu_type_title">Kiểu trình đơn chất lượng video</string>
+    <string name="revanced_append_time_stamp_information_video_quality_menu_type_summary_on">Hộp thoại tuỳ chỉnh được sử dụng.</string>
+    <string name="revanced_append_time_stamp_information_video_quality_menu_type_summary_off">Trình đơn tuỳ chọn kiểu cũ được sử dụng.</string>
     <string name="revanced_replace_time_stamp_action_title">Thay thế chức năng của dấu thời gian</string>
     <string name="revanced_replace_time_stamp_action_summary_on">Nhấn để mở mục Tốc độ phát hoặc Chất lượng video.</string>
     <string name="revanced_replace_time_stamp_action_summary_off">Nhấn để hiển thị thời gian còn lại.</string>
@@ -1334,14 +1371,14 @@ Vì vậy, bạn nên bật tính năng này khi có kết nối mạng ổn đ�
     <string name="revanced_hide_ai_generated_video_summary_section_summary_on">Phần \"Bản tóm tắt video do AI tạo\" đã ẩn.</string>
     <string name="revanced_hide_ai_generated_video_summary_section_summary_off">Phần \"Bản tóm tắt video do AI tạo\" được hiển thị.</string>
     <string name="revanced_hide_attributes_section_title">Ẩn phần Thuộc tính</string>
-    <string name="revanced_hide_attributes_section_summary_on">Phần Địa điểm nổi bật, Trò chơi, Âm nhạc và Người được đề cập đã ẩn.</string>
-    <string name="revanced_hide_attributes_section_summary_off">Phần Địa điểm nổi bật, Trò chơi, Âm nhạc và Người được đề cập được hiển thị.</string>
+    <string name="revanced_hide_attributes_section_summary_on">Phần Địa điểm nổi bật, Trò chơi, Âm nhạc, và Người được đề cập đã ẩn.</string>
+    <string name="revanced_hide_attributes_section_summary_off">Phần Địa điểm nổi bật, Trò chơi, Âm nhạc, và Người được đề cập được hiển thị.</string>
     <string name="revanced_hide_chapters_section_title">Ẩn phần Phân cảnh</string>
     <string name="revanced_hide_chapters_section_summary_on">Phần Phân cảnh đã ẩn.</string>
     <string name="revanced_hide_chapters_section_summary_off">Phần Phân cảnh được hiển thị.</string>
-    <string name="revanced_hide_contents_section_title">Ẩn phần Nội dung</string>
-    <string name="revanced_hide_contents_section_summary_on">Phần \"Cách nội dung này được tạo ra\" đã ẩn.</string>
-    <string name="revanced_hide_contents_section_summary_off">Phần \"Cách nội dung này được tạo ra\" được hiển thị.</string>
+    <string name="revanced_hide_contents_section_title">Ẩn phần Cách nội dung này được tạo ra</string>
+    <string name="revanced_hide_contents_section_summary_on">Phần Cách nội dung này được tạo ra đã ẩn.</string>
+    <string name="revanced_hide_contents_section_summary_off">Phần Cách nội dung này được tạo ra được hiển thị.</string>
     <string name="revanced_hide_podcast_section_title">Ẩn phần Khám phá podcast</string>
     <string name="revanced_hide_podcast_section_summary_on">Phần Khám phá podcast đã ẩn.</string>
     <string name="revanced_hide_podcast_section_summary_off">Phần Khám phá podcast được hiển thị.</string>
@@ -1351,9 +1388,6 @@ Vì vậy, bạn nên bật tính năng này khi có kết nối mạng ổn đ�
     <string name="revanced_hide_key_concepts_section_title">Ẩn phần Khái niệm chính</string>
     <string name="revanced_hide_key_concepts_section_summary_on">Phần Khái niệm chính đã ẩn.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Phần Khái niệm chính được hiển thị.</string>
-    <string name="revanced_hide_shopping_links_title">Ẩn phần Sản phẩm</string>
-    <string name="revanced_hide_shopping_links_summary_on">Phần Sản phẩm đã ẩn.</string>
-    <string name="revanced_hide_shopping_links_summary_off">Phần Sản phẩm được hiển thị.</string>
     <string name="revanced_hide_transcript_section_title">Ẩn phần Bản chép lời</string>
     <string name="revanced_hide_transcript_section_summary_on">Phần Bản chép lời đã ẩn.</string>
     <string name="revanced_hide_transcript_section_summary_off">Phần Bản chép lời được hiển thị.</string>
@@ -1364,8 +1398,8 @@ Vì vậy, bạn nên bật tính năng này khi có kết nối mạng ổn đ�
  • Nhấn để cuộn.
  • Nhấn và giữ để chọn văn bản."</string>
     <string name="revanced_expand_video_description_title">Mở rộng mô tả video</string>
-    <string name="revanced_expand_video_description_summary_on">Mô tả video được mở rộng tự động.</string>
-    <string name="revanced_expand_video_description_summary_off">Mô tả video được mở rộng thủ công.</string>
+    <string name="revanced_expand_video_description_summary_on">Mô tả video tự động mở rộng.</string>
+    <string name="revanced_expand_video_description_summary_off">Mô tả video không tự động mở rộng.</string>
     <!-- PreferenceScreen: Shorts -->
     <string name="revanced_preference_screen_shorts_title">Shorts</string>
     <string name="revanced_disable_shorts_background_playback_title">Tắt tính năng phát trong nền cho trình Shorts</string>
@@ -1380,25 +1414,28 @@ Vì vậy, bạn nên bật tính năng này khi có kết nối mạng ổn đ�
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts shelves -->
     <string name="revanced_preference_category_shorts_shelf">Kệ Shorts</string>
     <string name="revanced_hide_shorts_shelf_title">Ẩn kệ Shorts</string>
-    <string name="revanced_hide_shorts_shelf_summary">"\nHạn chế: Tiêu đề chính thức trong kết quả tìm kiếm sẽ được ẩn."</string>
-    <string name="revanced_hide_shorts_shelf_channel_title">Ẩn trong hồ sơ kênh</string>
-    <string name="revanced_hide_shorts_shelf_channel_summary_on">"Đã ẩn trong hồ sơ kênh.
+    <string name="revanced_hide_shorts_shelf_summary">"Cho phép ẩn các kệ Shorts.
 
-Chi tiết:
-• Chỉ những kệ có tiêu đề Shorts trên thẻ trang chủ mới bị ẩn."</string>
-    <string name="revanced_hide_shorts_shelf_channel_summary_off">Được hiển thị trong hồ sơ kênh.</string>
+Hạn chế: Tiêu đề chính thức trong kết quả tìm kiếm cũng sẽ bị ẩn."</string>
+    <string name="revanced_hide_shorts_shelf_channel_title">Ẩn trong trang kênh</string>
+    <string name="revanced_hide_shorts_shelf_channel_summary_on">"Đã ẩn trong trang kênh.
+
+Chi tiết: Chỉ những kệ có tiêu đề Shorts trên thẻ trang chủ mới bị ẩn."</string>
+    <string name="revanced_hide_shorts_shelf_channel_summary_off">Đã hiển thị trong trang kênh.</string>
     <string name="revanced_hide_shorts_shelf_home_related_videos_title">Ẩn trên thẻ Trang chủ và các video liên quan</string>
-    <string name="revanced_hide_shorts_shelf_home_related_videos_summary_on">Ẩn trên thẻ Trang chủ và các video liên quan.</string>
-    <string name="revanced_hide_shorts_shelf_home_related_videos_summary_off">Hiển thị trong thẻ Trang chủ và các video có liên quan.</string>
+    <string name="revanced_hide_shorts_shelf_home_related_videos_summary_on">Đã ẩn trên thẻ Trang chủ và các video liên quan.</string>
+    <string name="revanced_hide_shorts_shelf_home_related_videos_summary_off">Đã hiển thị trong thẻ Trang chủ và các video liên quan.</string>
     <string name="revanced_hide_shorts_shelf_search_title">Ẩn trong kết quả tìm kiếm</string>
-    <string name="revanced_hide_shorts_shelf_search_summary_on">Ẩn trong kết quả tìm kiếm.</string>
+    <string name="revanced_hide_shorts_shelf_search_summary_on">"Đã ẩn trong kết quả tìm kiếm.
+
+Hạn chế: Tiêu đề chính thức trong kết quả tìm kiếm cũng sẽ bị ẩn."</string>
     <string name="revanced_hide_shorts_shelf_search_summary_off">Hiển thị trong kết quả tìm kiếm.</string>
-    <string name="revanced_hide_shorts_shelf_subscriptions_title">Ẩn trong thẻ Kênh đăng ký</string>
-    <string name="revanced_hide_shorts_shelf_subscriptions_summary_on">Ẩn trong thẻ Kênh đăng ký.</string>
-    <string name="revanced_hide_shorts_shelf_subscriptions_summary_off">Hiển thị trong thẻ Kênh đăng ký.</string>
-    <string name="revanced_hide_shorts_shelf_history_title">Ẩn trong phần Nhật ký xem</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_on">Ẩn trong phần Nhật ký xem.</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_off">Hiển thị trong phần Nhật ký xem.</string>
+    <string name="revanced_hide_shorts_shelf_subscriptions_title">Ẩn trên thẻ Kênh đăng ký</string>
+    <string name="revanced_hide_shorts_shelf_subscriptions_summary_on">Đã ẩn trên thẻ Kênh đăng ký.</string>
+    <string name="revanced_hide_shorts_shelf_subscriptions_summary_off">Đã hiển thị trên thẻ Kênh đăng ký.</string>
+    <string name="revanced_hide_shorts_shelf_history_title">Ẩn trong nhật ký xem</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_on">Ẩn trong nhật ký xem.</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_off">Đã hiển thị trong nhật ký xem.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Experimental flags -->
     <string name="revanced_change_shorts_background_repeat_state_title">Thay đổi trạng thái lặp lại khi phát trong nền của video ngắn</string>
     <string name="revanced_change_shorts_repeat_state_title">Thay đổi trạng thái lặp lại của video ngắn</string>
@@ -1415,9 +1452,6 @@ Chi tiết:
     <string name="revanced_hide_shorts_channel_bar_title">Ẩn thanh kênh</string>
     <string name="revanced_hide_shorts_channel_bar_summary_on">Thanh kênh đã ẩn.</string>
     <string name="revanced_hide_shorts_channel_bar_summary_off">Thanh kênh được hiển thị.</string>
-    <string name="revanced_hide_shorts_full_video_link_label_title">Ẩn nhãn liên kết hướng tới video đầy đủ</string>
-    <string name="revanced_hide_shorts_full_video_link_label_summary_on">Nhãn liên kết hướng tới video đầy đủ đã ẩn.</string>
-    <string name="revanced_hide_shorts_full_video_link_label_summary_off">Nhãn liên kết hướng tới video đầy đủ được hiển thị.</string>
     <string name="revanced_hide_shorts_info_panel_title">Ẩn bảng thông tin</string>
     <string name="revanced_hide_shorts_info_panel_summary_on">Bảng thông tin đã ẩn.</string>
     <string name="revanced_hide_shorts_info_panel_summary_off">Bảng thông tin được hiển thị.</string>
@@ -1426,7 +1460,7 @@ Chi tiết:
     <string name="revanced_hide_shorts_join_button_summary_off">Nút tham gia được hiển thị.</string>
     <string name="revanced_hide_shorts_live_header_title">Ẩn tiêu đề Trò chuyện trực tiếp</string>
     <string name="revanced_hide_shorts_live_header_summary_on">Tiêu đề Trò chuyện trực tiếp đã ẩn.\n\nNút Quay lại trong tiêu đề sẽ không bị ẩn.</string>
-    <string name="revanced_hide_shorts_live_header_summary_off">Tiêu đề Trò chuyện trực tiếp được hiển thị.\n\nNút Quay lại trong tiêu đề sẽ không bị ẩn.</string>
+    <string name="revanced_hide_shorts_live_header_summary_off">Tiêu đề Trò chuyện trực tiếp được hiển thị.</string>
     <string name="revanced_hide_shorts_paid_promotion_label_title">Ẩn nhãn nội dung được trả tiền để quảng cáo</string>
     <string name="revanced_hide_shorts_paid_promotion_label_summary_on">Nhãn nội dung được trả tiền để quảng cáo đã ẩn.</string>
     <string name="revanced_hide_shorts_paid_promotion_label_summary_off">Nhãn nội dung được trả tiền để quảng cáo được hiển thị.</string>
@@ -1451,11 +1485,17 @@ Chi tiết:
     <string name="revanced_hide_shorts_trends_button_title">Ẩn nút Thịnh hành</string>
     <string name="revanced_hide_shorts_trends_button_summary_on">Nút Thịnh hành đã ẩn.</string>
     <string name="revanced_hide_shorts_trends_button_summary_off">Nút Thịnh hành được hiển thị.</string>
+    <string name="revanced_hide_shorts_video_link_label_title">Ẩn nhãn liên kết video</string>
+    <string name="revanced_hide_shorts_video_link_label_summary_on">Nhãn liên kết video đã ẩn.</string>
+    <string name="revanced_hide_shorts_video_link_label_summary_off">Nhãn liên kết video được hiển thị.</string>
     <string name="revanced_hide_shorts_video_title_title">Ẩn tiêu đề video</string>
     <string name="revanced_hide_shorts_video_title_summary_on">Tiêu đề video đã ẩn.</string>
     <string name="revanced_hide_shorts_video_title_summary_off">Tiêu đề video được hiển thị.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player, PreferenceCategory: Suggested actions -->
     <string name="revanced_preference_category_suggested_actions">Hành động đề xuất</string>
+    <string name="revanced_hide_shorts_buy_super_thanks_button_title">Ẩn nút Mua Super Thanks</string>
+    <string name="revanced_hide_shorts_buy_super_thanks_button_summary_on">Nút Mua Super Thanks đã ẩn.</string>
+    <string name="revanced_hide_shorts_buy_super_thanks_button_summary_off">Nút Mua Super Thanks được hiển thị.</string>
     <string name="revanced_hide_shorts_green_screen_button_title">Ẩn nút Phông xanh</string>
     <string name="revanced_hide_shorts_green_screen_button_summary_on">Nút Phông xanh đã ẩn.</string>
     <string name="revanced_hide_shorts_green_screen_button_summary_off">Nút Phông xanh được hiển thị.</string>
@@ -1471,15 +1511,12 @@ Chi tiết:
     <string name="revanced_hide_shorts_shop_button_title">Ẩn nút Cửa hàng</string>
     <string name="revanced_hide_shorts_shop_button_summary_on">Nút Cửa hàng đã ẩn.</string>
     <string name="revanced_hide_shorts_shop_button_summary_off">Nút Cửa hàng được hiển thị.</string>
-    <string name="revanced_hide_shorts_super_thanks_button_title">Ẩn nút Super Thanks</string>
-    <string name="revanced_hide_shorts_super_thanks_button_summary_on">Nút Super Thanks đã ẩn.</string>
-    <string name="revanced_hide_shorts_super_thanks_button_summary_off">Nút Super Thanks được hiển thị.</string>
     <string name="revanced_hide_shorts_tagged_products_title">Ẩn sản phẩm được gắn thẻ</string>
     <string name="revanced_hide_shorts_tagged_products_summary_on">Sản phẩm được gắn thẻ đã ẩn.</string>
     <string name="revanced_hide_shorts_tagged_products_summary_off">Sản phẩm được gắn thẻ được hiển thị.</string>
-    <string name="revanced_hide_shorts_use_template_button_title">Ẩn nút Sử dụng mẫu</string>
-    <string name="revanced_hide_shorts_use_template_button_summary_on">Nút \"Sử dụng mẫu\" đã ẩn.</string>
-    <string name="revanced_hide_shorts_use_template_button_summary_off">Nút \"Sử dụng mẫu\" được hiển thị.</string>
+    <string name="revanced_hide_shorts_use_this_template_button_title">Ẩn nút Sử dụng mẫu này</string>
+    <string name="revanced_hide_shorts_use_this_template_button_summary_on">Nút Sử dụng mẫu này đã ẩn.</string>
+    <string name="revanced_hide_shorts_use_this_template_button_summary_off">Nút Sử dụng mẫu này được hiển thị.</string>
     <string name="revanced_hide_shorts_use_this_sound_button_title">Ẩn nút Dùng âm thanh này</string>
     <string name="revanced_hide_shorts_use_this_sound_button_summary_on">Nút \"Dùng âm thanh này\" đã ẩn.</string>
     <string name="revanced_hide_shorts_use_this_sound_button_summary_off">Nút \"Dùng âm thanh này\" được hiển thị.</string>
@@ -1506,8 +1543,8 @@ Chi tiết:
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player, PreferenceCategory: Animation / Feedback -->
     <string name="revanced_preference_category_animation_feedback">Hoạt ảnh/Phản hồi</string>
     <string name="revanced_disable_shorts_like_button_fountain_animation_title">Tắt hiệu ứng kiểu phun nước nút Thích</string>
-    <string name="revanced_disable_shorts_like_button_fountain_animation_summary_on">Hiệu ứng kiểu phun nước trên nút Thích đã tắt.</string>
-    <string name="revanced_disable_shorts_like_button_fountain_animation_summary_off">Hiệu ứng kiểu phun nước trên nút Thích đã bật.</string>
+    <string name="revanced_disable_shorts_like_button_fountain_animation_summary_on">Hiệu ứng kiểu phun nước nút Thích đã tắt.</string>
+    <string name="revanced_disable_shorts_like_button_fountain_animation_summary_off">Hiệu ứng kiểu phun nước nút Thích được bật.</string>
     <string name="revanced_shorts_double_tap_to_like_animation_title">Hoạt ảnh nhấn đúp</string>
     <string name="revanced_shorts_double_tap_to_like_animation_entry_1">Gốc</string>
     <string name="revanced_shorts_double_tap_to_like_animation_entry_2">Thích</string>
@@ -1552,6 +1589,8 @@ Nhấn và giữ nút Thêm (⋮) để hiển thị hộp thoại Tác vụ tu�
     <string name="revanced_shorts_custom_actions_speed_dialog_title">Mục hộp thoại tốc độ phát</string>
     <string name="revanced_shorts_custom_actions_speed_dialog_summary_on">Mục hộp thoại tốc độ phát được hiển thị.</string>
     <string name="revanced_shorts_custom_actions_speed_dialog_summary_off">Mục hộp thoại tốc độ phát đã ẩn.</string>
+    <string name="revanced_shorts_custom_actions_speed_dialog_type_title">Kiểu hộp thoại tốc độ phát</string>
+    <string name="revanced_shorts_custom_actions_speed_dialog_type_user_dialog_message">Hộp thoại tốc độ phát hiện đại có thể không hoạt động trên phiên bản 19.01-19.34.</string>
     <string name="revanced_shorts_custom_actions_repeat_state_label">Trạng thái lặp lại</string>
     <string name="revanced_shorts_custom_actions_repeat_state_title">Mục trạng thái lặp lại</string>
     <string name="revanced_shorts_custom_actions_repeat_state_summary_on">Mục trạng thái lặp lại được hiển thị.</string>
@@ -1562,17 +1601,17 @@ Nhấn và giữ nút Thêm (⋮) để hiển thị hộp thoại Tác vụ tu�
 Hầu hết các lỗi không thể sửa được do hạn chế tới từ phía ứng dụng, cuối cùng, vui lòng chỉ sử dụng chúng cho mục đích thử nghiệm."</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player, PreferenceCategory: Experimental flags -->
     <string name="revanced_enable_shorts_time_stamp_title">Dấu thời gian</string>
-    <string name="revanced_enable_shorts_time_stamp_summary_on">"Dấu thời gian được bật.
+    <string name="revanced_enable_shorts_time_stamp_summary_on">"Dấu thời gian đã được bật.
 
 Hạn chế:
-• Cài đặt này không chỉ bật Dấu thời gian mà còn cho phép ẩn giao diện người dùng bằng cách nhấn vào nền trình phát.
-• Vì đây là tính năng đang trong giai đoạn phát triển của Google nên bố cục có thể bị lỗi."</string>
+• Bật dấu thời gian sẽ để lại khoảng trống bên dưới thanh tác vụ.
+• Vì đây là tính năng đang trong giai đoạn phát triển của Google, nên bố cục có thể bị lỗi."</string>
     <string name="revanced_enable_shorts_time_stamp_summary_off">Dấu thời gian đã tắt.</string>
-    <string name="revanced_shorts_time_stamp_change_repeat_state_title">Nhấn và giữ Dấu thời gian</string>
-    <string name="revanced_shorts_time_stamp_change_repeat_state_summary">Nhấn và giữ vào Dấu thời gian để thay đổi trạng thái phát lặp lại trên trình phát Shorts.</string>
-    <string name="revanced_shorts_meta_panel_bottom_margin_title">Lề dưới của bảng Meta</string>
-    <string name="revanced_shorts_meta_panel_bottom_margin_summary">Cấu hình khoảng cách từ thanh tiến trình tới bảng Meta, nằm trong khoảng 0 đến 64.</string>
-    <string name="revanced_shorts_meta_panel_bottom_margin_invalid_toast">Lề dưới của bảng Meta phải nằm trong khoảng từ 0 đến 64.</string>
+    <string name="revanced_enable_shorts_clear_mode_title">Chế độ toàn cảnh</string>
+    <string name="revanced_enable_shorts_clear_mode_summary_on">"Chế độ toàn cảnh đã được bật.
+
+Chạm vào nền trình phát để ẩn giao diện điều khiển."</string>
+    <string name="revanced_enable_shorts_clear_mode_summary_off">Chế độ toàn cảnh đã tắt.</string>
     <string name="revanced_hide_shorts_navigation_bar_title">Ẩn thanh điều hướng</string>
     <string name="revanced_hide_shorts_navigation_bar_summary_on">Thanh điều hướng đã ẩn.</string>
     <string name="revanced_hide_shorts_navigation_bar_summary_off">Thanh điều hướng được hiển thị.</string>
@@ -1591,58 +1630,61 @@ Không còn lề trên và dưới trong trình phát."</string>
     <string name="revanced_restore_shorts_old_player_layout_summary_off">Bố cục trình phát kiểu cũ không được sử dụng.</string>
     <!-- PreferenceScreen: Swipe controls -->
     <string name="revanced_preference_screen_swipe_controls_title">Cử chỉ vuốt</string>
-    <string name="revanced_enable_swipe_lowest_value_auto_brightness_title">Cử chỉ điều chỉnh độ sáng tự động</string>
-    <string name="revanced_enable_swipe_lowest_value_auto_brightness_summary_on">Chế độ độ sáng tự động sẽ được bật khi vuốt độ sáng về mức tổi thiểu.</string>
-    <string name="revanced_enable_swipe_lowest_value_auto_brightness_summary_off">Chế độ độ sáng tự động sẽ không được bật khi vuốt độ sáng về mức tổi thiểu.</string>
-    <string name="revanced_enable_swipe_brightness_title">Vuốt điều chỉnh độ sáng</string>
-    <string name="revanced_enable_swipe_brightness_summary_on">"Cử chỉ vuốt điều chỉnh độ sáng ở chế độ Toàn màn hình đã bật.
+    <string name="revanced_swipe_lowest_value_enable_auto_brightness_title">Cử chỉ điều chỉnh độ sáng tự động</string>
+    <string name="revanced_swipe_lowest_value_enable_auto_brightness_summary_on">Khi vuốt độ sáng về mức thấp nhất sẽ kích hoạt chế độ độ sáng tự động.</string>
+    <string name="revanced_swipe_lowest_value_enable_auto_brightness_summary_off">Khi vuốt độ sáng về mức thấp nhất sẽ không kích hoạt chế độ độ sáng tự động.</string>
+    <string name="revanced_swipe_lowest_value_enable_auto_brightness_overlay_text">Tự động</string>
+    <string name="revanced_swipe_brightness_title">Cử chỉ điều chỉnh độ sáng</string>
+    <string name="revanced_swipe_brightness_summary_on">"Cử chỉ điều chỉnh độ sáng ở chế độ Toàn màn hình đã được bật.
  
- Điều chỉnh độ sáng bằng cách vuốt dọc bên cạnh trái màn hình."</string>
-    <string name="revanced_enable_swipe_brightness_summary_off">Cử chỉ vuốt điều chỉnh độ sáng đã tắt.</string>
-    <string name="revanced_enable_swipe_volume_title">Vuốt điều chỉnh âm lượng</string>
-    <string name="revanced_enable_swipe_volume_summary_on">"Cử chỉ vuốt điều chỉnh âm lượng ở chế độ Toàn màn hình đã bật.
+Điều chỉnh độ sáng bằng cách vuốt dọc bên cạnh trái màn hình."</string>
+    <string name="revanced_swipe_brightness_summary_off">Cử chỉ điều chỉnh độ sáng ở chế độ Toàn màn hình đã tắt.</string>
+    <string name="revanced_swipe_volume_title">Cử chỉ điều chỉnh âm lượng</string>
+    <string name="revanced_swipe_volume_summary_on">"Cử chỉ điều chỉnh âm lượng ở chế độ Toàn màn hình đã được bật.
  
- Điều chỉnh âm lượng bằng cách vuốt dọc bên cạnh phải màn hình."</string>
-    <string name="revanced_enable_swipe_volume_summary_off">Cử chỉ vuốt điều chỉnh âm lượng đã tắt.</string>
-    <string name="revanced_enable_save_and_restore_brightness_title">Lưu độ sáng</string>
-    <string name="revanced_enable_save_and_restore_brightness_summary_on">Lưu độ sáng khi thoát ra hoặc vào chế độ toàn màn hình.</string>
-    <string name="revanced_enable_save_and_restore_brightness_summary_off">Không lưu độ sáng khi thoát ra hoặc vào chế độ toàn màn hình.</string>
-    <string name="revanced_enable_swipe_press_to_engage_title">Nhấn và giữ để vuốt</string>
-    <string name="revanced_enable_swipe_press_to_engage_summary_on">Nhấn và giữ để vuốt đã bật.</string>
-    <string name="revanced_enable_swipe_press_to_engage_summary_off">Nhấn và giữ để vuốt đã tắt.</string>
-    <string name="revanced_enable_swipe_haptic_feedback_title">Phản hồi xúc giác</string>
-    <string name="revanced_enable_swipe_haptic_feedback_summary_on">Phản hồi xúc giác đã bật.</string>
-    <string name="revanced_enable_swipe_haptic_feedback_summary_off">Phản hồi xúc giác đã tắt.</string>
+Điều chỉnh âm lượng bằng cách vuốt dọc bên cạnh phải màn hình."</string>
+    <string name="revanced_swipe_volume_summary_off">Cử chỉ điều chỉnh âm lượng ở chế độ Toàn màn hình đã tắt.</string>
+    <string name="revanced_swipe_press_to_engage_title">Cử chỉ nhấn giữ để vuốt</string>
+    <string name="revanced_swipe_press_to_engage_summary_on">Nhấn giữ để vuốt đã được bật.</string>
+    <string name="revanced_swipe_press_to_engage_summary_off">Nhấn giữ để vuốt đã tắt.</string>
+    <string name="revanced_swipe_haptic_feedback_title">Phản hồi xúc giác</string>
+    <string name="revanced_swipe_haptic_feedback_summary_on">Phản hồi xúc giác đã được bật.</string>
+    <string name="revanced_swipe_haptic_feedback_summary_off">Phản hồi xúc giác đã tắt.</string>
+    <string name="revanced_swipe_save_and_restore_brightness_title">Lưu và khôi phục độ sáng</string>
+    <string name="revanced_swipe_save_and_restore_brightness_summary_on">Lưu và khôi phục độ sáng khi thoát ra hoặc vào chế độ Toàn màn hình.</string>
+    <string name="revanced_swipe_save_and_restore_brightness_summary_off">Không lưu và khôi phục độ sáng khi thoát ra hoặc vào chế độ Toàn màn hình.</string>
     <string name="revanced_swipe_gestures_lock_mode_title">Vuốt ở chế độ Khoá màn hình</string>
     <string name="revanced_swipe_gestures_lock_mode_summary_on">Cử chỉ vuốt đã bật ở chế độ Khoá màn hình.</string>
     <string name="revanced_swipe_gestures_lock_mode_summary_off">Vuốt ở chế độ Khoá màn hình đã tắt.</string>
-    <string name="revanced_swipe_magnitude_threshold_title">Độ rộng ngưỡng vuốt</string>
-    <string name="revanced_swipe_magnitude_threshold_summary">Độ rộng của ngưỡng vuốt để thực hiện cử chỉ vuốt.</string>
-    <string name="revanced_swipe_overlay_alternative_ui_title">Giao diện thay thế lớp phủ vuốt</string>
-    <string name="revanced_swipe_overlay_alternative_ui_summary_on">Đang sử dụng giao diện thay thế.</string>
-    <string name="revanced_swipe_overlay_alternative_ui_summary_off">Đang sử dụng giao diện cũ.</string>
-    <string name="revanced_swipe_overlay_minimal_style_title">Chế độ tối giản</string>
-    <string name="revanced_swipe_overlay_minimal_style_summary_on">Lớp phủ tối giản đã bật.</string>
-    <string name="revanced_swipe_overlay_minimal_style_summary_off">Lớp phủ tối giản đã tắt.</string>
-    <string name="revanced_swipe_show_circular_overlay_title">Lớp phủ hình tròn</string>
-    <string name="revanced_swipe_show_circular_overlay_summary_on">Lớp phủ hình tròn được hiển thị.</string>
-    <string name="revanced_swipe_show_circular_overlay_summary_off">Lớp ngủ ngang được hiển thị.</string>
+    <string name="revanced_swipe_threshold_title">Ngưỡng vuốt</string>
+    <string name="revanced_swipe_threshold_summary">Ngưỡng vuốt tối thiểu để thao tác vuốt xẩy ra.</string>
+    <string name="revanced_swipe_overlay_style_title">Kiểu lớp phủ vuốt</string>
+    <string name="revanced_swipe_overlay_style_entry_0">Lớp phủ cũ</string>
+    <string name="revanced_swipe_overlay_style_entry_1">Lớp phủ ngang</string>
+    <string name="revanced_swipe_overlay_style_entry_2">Lớp phủ ngang (tối giản - trên cùng)</string>
+    <string name="revanced_swipe_overlay_style_entry_3">Lớp phủ ngang (tối giản - trung tâm)</string>
+    <string name="revanced_swipe_overlay_style_entry_4">Lớp phủ tròn</string>
+    <string name="revanced_swipe_overlay_style_entry_5">Lớp phủ tròn (tối giản)</string>
+    <string name="revanced_swipe_overlay_style_entry_6">Lớp phủ dọc</string>
+    <string name="revanced_swipe_overlay_style_entry_7">Lớp phủ dọc (tối giản)</string>
+    <string name="revanced_swipe_overlay_progress_brightness_color_title">Màu lớp phủ vuốt độ sáng</string>
+    <string name="revanced_swipe_overlay_progress_brightness_color_summary">Màu của thanh điều chỉnh độ sáng.</string>
+    <string name="revanced_swipe_overlay_progress_volume_color_title">Màu lớp phủ vuốt âm lượng</string>
+    <string name="revanced_swipe_overlay_progress_volume_color_summary">Màu của thanh điều chỉnh âm lượng.</string>
     <string name="revanced_swipe_overlay_background_opacity_title">Độ mờ nền của lớp phủ vuốt</string>
     <string name="revanced_swipe_overlay_background_opacity_summary">Độ mờ có thể điều chỉnh từ 0 đến 100.</string>
     <string name="revanced_swipe_overlay_background_opacity_invalid_toast">Giá trị của độ mờ khi vuốt phải từ 0 đến 100.</string>
-    <string name="revanced_swipe_overlay_text_size_title">Kích thước văn bản trên lớp phủ</string>
-    <string name="revanced_swipe_overlay_text_size_summary">Độ lớn của văn bản được hiển thị trên lớp phủ khi vuốt.</string>
     <string name="revanced_swipe_overlay_rect_size_title">Kích thước màn hình lớp phủ</string>
     <string name="revanced_swipe_overlay_rect_size_summary">Phần diện tích màn hình có thể vuốt (tính bằng %).\n\nLưu ý: Tuỳ chọn này cũng sẽ thay đổi kích thước vùng màn hình đối với cử chỉ nhấn đúp để tua.</string>
     <string name="revanced_swipe_overlay_rect_size_invalid_toast">Kích thước khu vực vuốt không được lớn hơn 50.</string>
+    <string name="revanced_swipe_text_overlay_size_title">Kích thước văn bản trên lớp phủ</string>
+    <string name="revanced_swipe_text_overlay_size_summary">Cỡ chữ trên lớp phủ vuốt thường nằm trong khoảng từ 1 đến 30.</string>
+    <string name="revanced_swipe_text_overlay_size_invalid_toast">Cỡ chữ phải nằm trong khoảng từ 1 đến 30.</string>
     <string name="revanced_swipe_overlay_timeout_title">Thời gian hiển thị lớp phủ</string>
     <string name="revanced_swipe_overlay_timeout_summary">Số mili giây mà lớp phủ khi vuốt được hiển thị.</string>
-    <string name="revanced_swipe_brightness_sensitivity_title">Độ nhạy khi vuốt để điều chỉnh độ sáng</string>
-    <string name="revanced_swipe_brightness_sensitivity_summary">Cấu hình khoảng cách tối thiểu để vuốt điều chỉnh độ sáng trong khoảng từ 1 đến 1000 (%).\nKhoảng cách tối thiểu càng ngắn thì mức độ sáng thay đổi càng nhanh.</string>
-    <string name="revanced_swipe_brightness_sensitivity_invalid_toast">Độ nhạy khi vuốt để điều chỉnh độ sáng phải nằm trong khoảng từ 1-1000 (%).</string>
     <string name="revanced_swipe_volume_sensitivity_title">Độ nhạy khi vuốt để điều chỉnh âm lượng</string>
-    <string name="revanced_swipe_volume_sensitivity_summary" formatted="false">Cấu hình khoảng cách tối thiểu để vuốt điều chỉnh âm lượng trong khoảng từ 1 đến 1000 (%).\n\nKhoảng cách tối thiểu càng ngắn thì mức âm lượng thay đổi càng nhanh.\n\nĐộ nhạy vuốt âm lượng được khuyến nghị là 100% với mức âm lượng 15 và 10% với mức âm lượng 150.</string>
-    <string name="revanced_swipe_volume_sensitivity_invalid_toast">Độ nhạy khi vuốt để điều chỉnh âm lượng phải nằm trong khoảng từ 1 đến 1000 (%).</string>
+    <string name="revanced_swipe_volume_sensitivity_summary">Mức âm lượng thay đổi sau mỗi lần vuốt.</string>
+    <string name="revanced_swipe_volume_sensitivity_invalid_toast">Độ nhạy khi vuốt để điều chỉnh âm lượng phải nằm trong khoảng từ 1 đến 1000.</string>
     <string name="revanced_disable_hdr_auto_brightness_title">Tắt độ sáng HDR tự động</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_on">Độ sáng HDR tự động đã tắt.</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_off">Độ sáng HDR tự động đã bật.</string>
@@ -1662,20 +1704,18 @@ Không còn lề trên và dưới trong trình phát."</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Video</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Codec -->
-    <string name="revanced_preference_category_codec">Codec</string>
+    <string name="revanced_preference_category_codec">Bộ giải mã</string>
     <string name="revanced_disable_hdr_video_title">Tắt video HDR</string>
     <string name="revanced_disable_hdr_video_summary_on">Video HDR đã tắt.</string>
     <string name="revanced_disable_hdr_video_summary_off">Video HDR đã bật.</string>
-    <string name="revanced_disable_vp9_codec_title">Vô hiệu hoá codec VP9</string>
-    <string name="revanced_disable_vp9_codec_summary_on">"Codec VP9 đã bị vô hiệu hoá.
+    <string name="revanced_disable_vp9_codec_title">Vô hiệu hóa bộ giải mã VP9</string>
+    <string name="revanced_disable_vp9_codec_summary_on">"Bộ giải mã VP9 đã bị vô hiệu hóa.
 
 Chi tiết:
 • Độ phân giải tối đa lúc này là 1080p.
 • Phát video sẽ sử dụng nhiều dữ liệu di động hơn so với VP9.
-• Codec VP9 vẫn được sử dụng cho video HDR."</string>
-    <string name="revanced_disable_vp9_codec_summary_off">Codec VP9 được kích hoạt.</string>
-    <string name="revanced_replace_av1_codec_title">Thay thế codec AV1 phần mềm</string>
-    <string name="revanced_replace_av1_codec_summary">Thay thế codec AV1 phần mềm bằng codec VP9.</string>
+• Bộ giải mã VP9 vẫn được sử dụng cho video HDR."</string>
+    <string name="revanced_disable_vp9_codec_summary_off">Bộ giải mã VP9 được kích hoạt.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Tốc độ phát</string>
     <string name="revanced_default_playback_speed_title">Tốc độ phát mặc định</string>
@@ -1702,8 +1742,10 @@ Chi tiết:
     <string name="revanced_enable_custom_playback_speed_summary_on">Đang áp dụng các giá trị tốc độ phát video tuỳ chỉnh.</string>
     <string name="revanced_enable_custom_playback_speed_summary_off">Đang áp dụng các giá trị tốc độ phát video mặc định.</string>
     <string name="revanced_custom_playback_speed_menu_type_title">Kiểu mục tốc độ phát tùy chỉnh</string>
-    <string name="revanced_custom_playback_speed_menu_type_summary_on">Mục tốc độ phát dạng hộp thoại được sử dụng.</string>
-    <string name="revanced_custom_playback_speed_menu_type_summary_off">Mục tốc độ phát kiểu cũ được sử dụng.</string>
+    <string name="revanced_custom_playback_speed_menu_type_entry_custom_legacy">Tuỳ chỉnh (Cũ)</string>
+    <string name="revanced_custom_playback_speed_menu_type_entry_custom_modern">Tuỳ chỉnh (Hiện đại)</string>
+    <string name="revanced_custom_playback_speed_menu_type_entry_custom_no_theme">Tuỳ chỉnh (Không chủ đề)</string>
+    <string name="revanced_custom_playback_speed_menu_type_entry_youtube_legacy">YouTube cũ</string>
     <string name="revanced_custom_playback_speeds_title">Chỉnh sửa tốc độ phát</string>
     <string name="revanced_custom_playback_speeds_summary">Thêm hoặc thay đổi tốc độ phát lại có sẵn.</string>
     <string name="revanced_custom_playback_speeds_invalid">Tốc độ tùy chỉnh phải nhỏ hơn %sx.</string>
@@ -1726,13 +1768,16 @@ Chi tiết:
     <string name="revanced_remember_video_quality_shorts_last_selected_toast_title">Thông báo ngắn</string>
     <string name="revanced_remember_video_quality_shorts_last_selected_toast_summary_on">Hiển thị một thông báo ngắn khi thay đổi chất lượng video Shorts mặc định.</string>
     <string name="revanced_remember_video_quality_shorts_last_selected_toast_summary_off">Không hiện một thông báo ngắn khi thay đổi chất lượng video Shorts mặc định.</string>
-    <string name="revanced_remember_video_quality_mobile">mạng di động</string>
-    <string name="revanced_remember_video_quality_wifi">wi-fi</string>
+    <string name="revanced_remember_video_quality_mobile">Mạng di động</string>
+    <string name="revanced_remember_video_quality_wifi">Wi-fi</string>
     <string name="revanced_remember_video_quality_toast">Đã thay đổi chất lượng mặc định %1$s thành: %2$s.</string>
     <string name="revanced_remember_video_quality_toast_shorts">Đã thay đổi chất lượng Shorts mặc định %1$s thành: %2$s.</string>
-    <string name="revanced_restore_old_video_quality_menu_title">Khôi phục mục chất lượng video kiểu cũ</string>
-    <string name="revanced_restore_old_video_quality_menu_summary_on">Mục chất lượng video kiểu cũ được hiển thị.</string>
-    <string name="revanced_restore_old_video_quality_menu_summary_off">Mục chất lượng video kiểu cũ không được hiển thị.</string>
+    <string name="revanced_advanced_video_quality_menu_title">Trình đơn chất lượng video nâng cao</string>
+    <string name="revanced_advanced_video_quality_menu_summary_on">Trình đơn chất lượng video nâng cao được hiển thị.</string>
+    <string name="revanced_advanced_video_quality_menu_summary_off">Trình đơn chất lượng video nâng cao không được hiển thị.</string>
+    <string name="revanced_advanced_video_quality_menu_type_title">Kiểu trình đơn chất lượng video nâng cao trong Shorts</string>
+    <string name="revanced_advanced_video_quality_menu_type_summary_on">Hộp thoại tuỳ chỉnh được sử dụng.</string>
+    <string name="revanced_advanced_video_quality_menu_type_summary_off">Trình đơn tuỳ chọn kiểu cũ được sử dụng.</string>
     <string name="revanced_skipped_preloaded_buffer">Đã bỏ qua bộ đệm tải trước.</string>
     <string name="revanced_skip_preloaded_buffer_title">Bỏ qua bộ đệm tải trước</string>
     <string name="revanced_skip_preloaded_buffer_summary">"Bỏ qua bộ đệm tải trước ở đầu video để áp dụng ngay chất lượng video mặc định.
@@ -1749,7 +1794,7 @@ Chi tiết:
     <string name="revanced_spoof_device_dimensions_summary">"Giả mạo kích thước thiết bị đến giá trị tối đa.
 
 Chi tiết:
-• Có thể mở khóa chất lượng cao cho một số video yêu cầu thiết bị có màn hình lớn, nhưng không phải tất cả.
+• Có thể mở khóa chất lượng cao cho một số video yêu cầu thiết bị có màn hình lớn, nhưng không phải tất cả video.
 • Cài đặt này sẽ không khả dụng nếu \"Giả mạo dữ liệu phát trực tuyến\" đang được bật."</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Experimental flags -->
     <string name="revanced_disable_default_playback_speed_music_title">Tắt tùy chọn tốc độ phát khi phát nhạc</string>
@@ -1776,8 +1821,8 @@ Hạn chế: Số lượt không thích có thể không hiển thị nếu ngư
     <string name="revanced_ryd_compact_layout_summary_on">Nút Thích được thiết kế để tối ưu kích thước hiển thị.</string>
     <string name="revanced_ryd_compact_layout_summary_off">Nút Thích được thiết kế để đồng bộ khả năng hiển thị với nút Không thích.</string>
     <string name="revanced_ryd_estimated_like_title">Hiển thị số lượt thích ước tính</string>
-    <string name="revanced_ryd_estimated_like_summary_on">Số lượt thích ước tính được hiển thị.</string>
-    <string name="revanced_ryd_estimated_like_summary_off">Số lượt thích ước tính đã ẩn.</string>
+    <string name="revanced_ryd_estimated_like_summary_on">Các video đã tắt lượt thích vẫn hiển thị số lượt thích ước tính.</string>
+    <string name="revanced_ryd_estimated_like_summary_off">Số lượt thích ước tính không được hiển thị.</string>
     <string name="revanced_ryd_toast_on_connection_error_title">Thông báo ngắn nếu API không khả dụng</string>
     <string name="revanced_ryd_toast_on_connection_error_summary_on">Hiển thị thông báo ngắn nếu Return YouTube Dislike không khả dụng.</string>
     <string name="revanced_ryd_toast_on_connection_error_summary_off">Không hiện thông báo ngắn nếu Return YouTube Dislike không khả dụng.</string>
@@ -1812,6 +1857,7 @@ Nhấp vào đây để xem các bước phát hành khóa API."</string>
     <string name="revanced_return_youtube_username_youtube_data_api_v3_dialog_message">1. &lt;a href=%1$s&gt;Tạo dự án mới&lt;/a&gt;.&lt;br&gt;2. Ấn vào &lt;b&gt;CREATE&lt;/b&gt;.&lt;br&gt;3. Đi tới &lt;a href=%2$s&gt;YouTube Data API v3&lt;/a&gt;.&lt;br&gt;4. Ấn vào &lt;b&gt;ENABLE&lt;/b&gt;.&lt;br&gt;5. Ấn vào &lt;b&gt;CREATE CREDENTIALS&lt;/b&gt;.&lt;br&gt;6. Chọn &lt;b&gt;Public data&lt;/b&gt;.&lt;br&gt;7. Ấn vào &lt;b&gt;NEXT&lt;/b&gt;.&lt;br&gt;8. Sao chép mã khoá API.&lt;br&gt;&lt;br&gt;※ Không nên chia sẻ mã khoá API với người khác, vì vậy chúng cũng không có mặt trong mục Nhập/Xuất cài đặt.</string>
     <!-- PreferenceScreen: SponsorBlock -->
     <string name="revanced_preference_screen_sb_title">SponsorBlock</string>
+    <string name="revanced_preference_group_sb_title">SponsorBlock</string>
     <string name="revanced_sb_enable_sb">SponsorBlock</string>
     <string name="revanced_sb_enable_sb_sum">SponsorBlock là một tiện ích được đóng góp bởi cộng đồng giúp bỏ qua các phần gây khó chịu trong video trên YouTube.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Appearance -->
@@ -1819,6 +1865,9 @@ Nhấp vào đây để xem các bước phát hành khóa API."</string>
     <string name="revanced_sb_enable_voting">Nút Bình chọn phân đoạn</string>
     <string name="revanced_sb_enable_voting_sum_on">Nút Bình chọn phân đoạn được hiển thị.</string>
     <string name="revanced_sb_enable_voting_sum_off">Nút Bình chọn phân đoạn không được hiển thị.</string>
+    <string name="revanced_sb_square_layout">Bố cục vuông</string>
+    <string name="revanced_sb_square_layout_sum_on">Các nút và thành phần điều khiển có dạng vuông.</string>
+    <string name="revanced_sb_square_layout_sum_off">Các nút và thành phần điều khiển được bo tròn.</string>
     <string name="revanced_sb_enable_compact_skip_button">Dùng nút Bỏ qua phân đoạn thu gọn</string>
     <string name="revanced_sb_enable_compact_skip_button_sum_on">Nút Bỏ qua phân đoạn được thiết kế để tối ưu kích thước hiển thị.</string>
     <string name="revanced_sb_enable_compact_skip_button_sum_off">Nút Bỏ qua phân đoạn được thiết kế với giao diện tốt nhất.</string>
@@ -1889,11 +1938,6 @@ Nhấp vào đây để xem các bước phát hành khóa API."</string>
     <string name="revanced_sb_skip_ignore">Tắt</string>
     <string name="revanced_sb_color_opacity_label">Độ mờ:</string>
     <string name="revanced_sb_color_dot_label">Màu:</string>
-    <string name="revanced_sb_color_changed">Đã thay đổi màu.</string>
-    <string name="revanced_sb_color_reset">Đặt lại màu</string>
-    <string name="revanced_sb_color_invalid">Mã màu không hợp lệ.</string>
-    <string name="revanced_sb_reset">Đặt lại</string>
-    <string name="revanced_sb_reset_color">Đặt lại màu</string>
     <string name="revanced_sb_share_copy_settings_success">Đã sao chép cài đặt vào bảng nhớ tạm.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->
     <string name="revanced_sb_create_segment_category">Tạo phân đoạn mới</string>
@@ -1960,9 +2004,9 @@ Nhấp vào đây để xem các bước phát hành khóa API."</string>
     <string name="revanced_sb_new_segment_disabled_category">Danh mục đã tắt trong cài đặt. Bật danh mục để gửi.</string>
     <string name="revanced_sb_new_segment_title">Đoạn SponsorBlock mới</string>
     <string name="revanced_sb_new_segment_mark_current_time_as_question">Đặt %s là bắt đầu hoặc là kết thúc của một phân đoạn mới?</string>
-    <string name="revanced_sb_new_segment_mark_start">bắt đầu</string>
-    <string name="revanced_sb_new_segment_mark_end">kết thúc</string>
-    <string name="revanced_sb_new_segment_now">ngay lúc này</string>
+    <string name="revanced_sb_new_segment_mark_start">Bắt đầu</string>
+    <string name="revanced_sb_new_segment_mark_end">Kết thúc</string>
+    <string name="revanced_sb_new_segment_now">Ngay bây giờ</string>
     <string name="revanced_sb_new_segment_time_start">Phân đoạn bắt đầu lúc</string>
     <string name="revanced_sb_new_segment_time_end">Phân đoạn kết thúc lúc</string>
     <string name="revanced_sb_new_segment_confirm_title">Thời lượng phân đoạn đã chính xác?</string>
@@ -2000,18 +2044,15 @@ Nhấp vào đây để xem các bước phát hành khóa API."</string>
     <string name="revanced_sb_about_api">sponsor.ajay.app</string>
     <string name="revanced_sb_about_api_sum">Dữ liệu này được cung cấp bởi API SponsorBlock. Nhấn vào đây để tìm hiểu thêm và xem các bản tải xuống cho các nền tảng khác.</string>
     <!-- PreferenceScreen: Miscellaneous -->
-    <string name="revanced_preference_screen_misc_title">Cài đặt khác</string>
+    <string name="revanced_preference_screen_misc_title">Khác</string>
     <string name="revanced_bypass_url_redirects_title">Mở liên kết trực tiếp</string>
     <string name="revanced_bypass_url_redirects_summary_on">Đang bỏ qua chuyển hướng URL khi mở các liên kết xuất hiện trên YouTube.</string>
     <string name="revanced_bypass_url_redirects_summary_off">Đang chuyển hướng URL khi mở các liên kết xuất hiện trên YouTube.</string>
     <string name="revanced_disable_quic_protocol_title">Vô hiệu hoá giao thức QUIC</string>
     <string name="revanced_disable_quic_protocol_summary">"Vô hiệu hoá giao thức QUIC của CronetEngine để giảm độ trễ khi phát video."</string>
-    <string name="revanced_enable_debug_logging_title">Nhật ký gỡ lỗi</string>
-    <string name="revanced_enable_debug_logging_summary_on">Nhật ký gỡ lỗi đã bật.</string>
-    <string name="revanced_enable_debug_logging_summary_off">Nhật ký gỡ lỗi đã tắt.</string>
-    <string name="revanced_enable_debug_buffer_logging_title">Nhật ký gỡ lỗi bộ đệm</string>
-    <string name="revanced_enable_debug_buffer_logging_summary_on">Đang ghi nhật ký gỡ lỗi bao gồm thông tin bộ đệm.</string>
-    <string name="revanced_enable_debug_buffer_logging_summary_off">Đang ghi nhật ký gỡ lỗi mà không có thông tin bộ đệm.</string>
+    <string name="revanced_litho_layout_thread_pool_max_size_title">Số luồng tối đa của bộ xử lý Litho</string>
+    <string name="revanced_litho_layout_thread_pool_max_size_entry_0">Chưa ghi đè</string>
+    <string name="revanced_litho_layout_thread_pool_max_size_invalid_toast">Số luồng tối đa của Litho phải nằm trong khoảng từ 1 đến 3.</string>
     <string name="revanced_open_links_externally_title">Mở liên kết trong trình duyệt</string>
     <string name="revanced_open_links_externally_summary_on">Đang mở các liên kết xuất hiện trên YouTube bằng trình duyệt bên ngoài.</string>
     <string name="revanced_open_links_externally_summary_off">Đang mở các liên kết xuất hiện trên YouTube bằng trình duyệt trong ứng dụng.</string>
@@ -2035,11 +2076,39 @@ Tắt tối ưu hoá pin cho GmsCore sẽ không làm ảnh hưởng đáng kể
 
 Nhấn vào Tiếp tục và cho phép thay đổi lựa chọn tối ưu hoá pin."</string>
     <string name="gms_core_dialog_continue_text">Tiếp tục</string>
+    <string name="gms_core_offline_account_login_error">Nếu gần đây bạn đã cập nhật thông tin tài khoản của mình, hãy gỡ và cài lại GmsCore.</string>
     <string name="revanced_change_share_sheet_title">Thay đổi bảng chia sẻ</string>
     <string name="revanced_change_share_sheet_summary_on">Đang sử dụng bảng chia sẻ của hệ thống Android.</string>
     <string name="revanced_change_share_sheet_summary_off">Đang sử dụng bảng chia sẻ trong ứng dụng Youtube.</string>
-    <string name="revanced_enable_opus_codec_title">Codec OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Kích hoạt codec OPUS nếu phản hồi của trình phát bao gồm codec OPUS.</string>
+    <string name="revanced_enable_opus_codec_title">Bộ giải mã OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">Kích hoạt bộ giải mã OPUS nếu phản hồi của trình phát bao gồm bộ giải mã OPUS.</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
+    <string name="revanced_preference_screen_debugging_title">Gỡ lỗi</string>
+    <string name="revanced_preference_screen_debugging_summary">Bật hoặc tắt tùy chọn gỡ lỗi.</string>
+    <string name="revanced_debug_title">Nhật ký gỡ lỗi</string>
+    <string name="revanced_debug_summary_on">Nhật ký gỡ lỗi đã bật.</string>
+    <string name="revanced_debug_summary_off">Nhật ký gỡ lỗi đã tắt.</string>
+    <string name="revanced_debug_protobuffer_title">Ghi nhật ký protocol buffer</string>
+    <string name="revanced_debug_protobuffer_summary_on">Nhật ký gỡ lỗi bao gồm dữ liệu protobuf.</string>
+    <string name="revanced_debug_protobuffer_summary_off">Nhật ký gỡ lỗi không bao gồm dữ liệu protobuf.</string>
+    <string name="revanced_debug_spannable_title">Ghi nhật ký spannable</string>
+    <string name="revanced_debug_spannable_summary_on">Nhật ký gỡ lỗi bao gồm dữ liệu spannable.</string>
+    <string name="revanced_debug_spannable_summary_off">Nhật ký gỡ lỗi không bao gồm dữ liệu spannable.</string>
+    <string name="revanced_debug_toast_on_error_title">Thông báo ngắn khi RVX lỗi</string>
+    <string name="revanced_debug_toast_on_error_summary_on">Hiển thị thông báo ngắn nếu xẩy ra lỗi.</string>
+    <string name="revanced_debug_toast_on_error_summary_off">Không hiển thị thông báo ngắn nếu xẩy ra lỗi.</string>
+    <string name="revanced_debug_export_logs_to_clipboard_title">Sao chép nhật ký gỡ lỗi</string>
+    <string name="revanced_debug_export_logs_to_clipboard_summary">Sao chép nhật ký gỡ lỗi RVX vào bảng nhớ tạm.</string>
+    <string name="revanced_debug_export_logs_to_file_title">Xuất nhật ký gỡ lỗi</string>
+    <string name="revanced_debug_export_logs_to_file_summary">Xuất nhật ký gỡ lỗi dưới dạng tệp.</string>
+    <string name="revanced_debug_logs_disabled">Nhật ký gỡ lỗi đã tắt.</string>
+    <string name="revanced_debug_logs_none_found">Không tìm thấy nhật ký.</string>
+    <string name="revanced_debug_logs_copied_to_clipboard">Đã sao chép nhật ký.</string>
+    <string name="revanced_debug_logs_failed_to_export">Không thể xuất nhật ký: $s.</string>
+    <string name="revanced_debug_logs_clear_buffer_title">Dọn dẹp nhật ký gỡ lỗi</string>
+    <string name="revanced_debug_logs_clear_buffer_summary">Xoá tất cả nhật ký gỡ lỗi RVX đã lưu trữ.</string>
+    <string name="revanced_debug_logs_clear_toast">Đã xoá nhật ký.</string>
+    <string name="revanced_debug_logs_export_success">Nhật ký đã được xuất thành công.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">Nhập/Xuất cài đặt</string>
     <string name="revanced_preference_screen_import_export_summary">Nhập hoặc xuất tuỳ chọn cài đặt RVX của bạn.</string>
@@ -2060,7 +2129,6 @@ Nhấn vào Tiếp tục và cho phép thay đổi lựa chọn tối ưu hoá p
     <string name="revanced_extended_settings_import_failed">Nhập cài đặt thất bại.</string>
     <string name="revanced_extended_settings_import_reset">Đã đặt lại cài đặt về mặc định.</string>
     <string name="revanced_extended_settings_import_success">Cài đặt đã được nhập thành công.</string>
-    <string name="revanced_extended_settings_reset">Đặt lại</string>
     <string name="revanced_share_copy_settings_success">Đã sao chép cài đặt sang bảng nhớ tạm.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <string name="revanced_preference_screen_spoof_streaming_data_title">Giả mạo dữ liệu phát trực tuyến</string>
@@ -2098,27 +2166,43 @@ CẢNH BÁO: Ứng dụng khách iOS đã không còn được hỗ trợ. Mọi
 Điều này có nghĩa là các yêu cầu phát trực tuyến qua iOS sẽ bị thiếu cả mã xác thực và PoTokens, khiến máy chủ có thể coi người dùng là bot cũng như chặn toàn bộ dải ASN/IP.
 
 HÃY CÂN NHẮC RỦI RO TRƯỚC KHI SỬ DỤNG!"</string>
+    <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Vô hiệu hóa AV1 trên VR</string>
+    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">Bộ giải mã video là AVC (H.264) hoặc VP9.</string>
+    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">Bộ giải mã video được xác định tự động.</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_title">Bắt buộc iOS sử dụng AVC (H.264)</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_summary_on">Codec video luôn là AVC (H.264).</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_summary_off">Codec video được xác định tự động.</string>
+    <string name="revanced_spoof_streaming_data_ios_force_avc_summary_on">Bộ giải mã video luôn là AVC (H.264).</string>
+    <string name="revanced_spoof_streaming_data_ios_force_avc_summary_off">Bộ giải mã video được xác định tự động.</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Bật tính năng này giúp cải thiện thời lượng sử dụng pin và khắc phục sự cố phát video.
 
 Hạn chế:
 • AVC có độ phân giải tối đa là 1080p.
-• Codec âm thanh OPUS không khả dụng.
+• Bộ giải mã âm thanh OPUS không khả dụng.
 • Dùng nhiều dữ liệu di động hơn với VP9 hoặc AV1."</string>
+    <string name="revanced_spoof_streaming_data_vr_audio_track_button_title">Nút bản âm thanh trên VR</string>
+    <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_on">Nút bản âm thanh trên VR đã được hiển thị.</string>
+    <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_off">Nút bản âm thanh trên VR không được hiển thị.</string>
+    <string name="revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message">"Điều kiện tiên quyết:
+• Ứng dụng khách được sử dụng để lấy dữ liệu phát trực tuyến là 'Android VR (Không xác thực)'.
+• Đang phát một video có nhiều bản âm thanh.
+
+Các sự cố đã biết:
+• Nếu thay đổi ngôn ngữ ứng dụng trong cài đặt của YouTube mà không được khởi động lại sau đó, ngôn ngữ hiển thị trong hộp thoại bản âm thanh có thể không được thay đổi.
+• Đôi khi ngôn ngữ bị chọn sai trong hộp thoại bản âm thanh.
+• Một số bản âm thanh như 'Mô tả tiếng Anh' hiện chưa được hỗ trợ.
+
+Tính năng này vẫn đang được phát triển, vì vậy nó có thể ngừng hoạt động bất cứ lúc nào do thay đổi từ phía máy chủ."</string>
     <string name="revanced_spoof_streaming_data_skip_response_encryption_title">Bỏ qua mã hóa phản hồi Onesie</string>
     <string name="revanced_spoof_streaming_data_skip_response_encryption_summary_on">"Bỏ qua mã hóa phản hồi Onesie.
 
 • Khắc phục sự cố phát mới mà một số người dùng đang gặp phải.
-• Codec AV1 có thể không khả dụng."</string>
+• Bộ giải mã AV1 có thể không khả dụng."</string>
     <string name="revanced_spoof_streaming_data_skip_response_encryption_summary_off">"Không bỏ qua mã hoá phản hồi Onesie.
 
 • Một số người dùng có thể gặp phải sự cố phát mới."</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Hiển thị trong Thống kê chi tiết</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Ứng dụng khách sử dụng để nạp dữ liệu phát trực tuyến được hiển thị trong Thống kê chi tiết.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Ứng dụng khách sử dụng để nạp dữ liệu phát trực tuyến đã ẩn trong Thống kê chi tiết.</string>
-    <string name="revanced_spoof_streaming_data_language_title">Ngôn ngữ luồng âm thanh mặc định cho ứng dụng khách VR</string>
+    <string name="revanced_spoof_streaming_data_vr_language_title">Ngôn ngữ luồng âm thanh mặc định trên VR</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Không thể nạp dữ liệu luồng từ ứng dụng khách.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Có thể bạn chưa đăng nhập.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: PoToken / VisitorData -->

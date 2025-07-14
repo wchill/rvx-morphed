@@ -223,11 +223,6 @@ val sponsorBlockPatch = resourcePatch(
                 "layout",
                 "revanced_sb_inline_sponsor_overlay.xml",
                 "revanced_sb_skip_sponsor_button.xml"
-            ),
-            ResourceGroup(
-                "drawable",
-                "revanced_sb_new_segment_background.xml",
-                "revanced_sb_skip_sponsor_button_background.xml"
             )
         ).forEach { resourceGroup ->
             copyResources("youtube/sponsorblock/shared", resourceGroup)
@@ -276,7 +271,11 @@ val sponsorBlockPatch = resourcePatch(
         /**
          * merge xml nodes from the host to their real xml files
          */
-        addTopControl("youtube/sponsorblock")
+        addTopControl(
+            "youtube/sponsorblock/shared",
+            "@+id/revanced_sb_voting_button",
+            "@+id/revanced_sb_create_segment_button"
+        )
 
         /**
          * Add settings

@@ -56,8 +56,8 @@ public final class ShortsButtonFilter extends Filter {
                 REEL_CHANNEL_BAR_PATH
         );
 
-        StringFilterGroup fullVideoLinkLabel = new StringFilterGroup(
-                Settings.HIDE_SHORTS_FULL_VIDEO_LINK_LABEL,
+        StringFilterGroup videoLinkLabel = new StringFilterGroup(
+                Settings.HIDE_SHORTS_VIDEO_LINK_LABEL,
                 "reel_multi_format_link"
         );
 
@@ -91,6 +91,20 @@ public final class ShortsButtonFilter extends Filter {
                 "reel_player_disclosure.eml"
         );
 
+        StringFilterGroup likeButton = new StringFilterGroup(
+                Settings.HIDE_SHORTS_LIKE_BUTTON,
+                "shorts_like_button.eml",
+                "reel_like_button.eml",
+                "reel_like_toggled_button.eml"
+        );
+
+        StringFilterGroup dislikeButton = new StringFilterGroup(
+                Settings.HIDE_SHORTS_DISLIKE_BUTTON,
+                "shorts_dislike_button.eml",
+                "reel_dislike_button.eml",
+                "reel_dislike_toggled_button.eml"
+        );
+
         metaPanelButton = new StringFilterGroup(
                 null,
                 "|ContainerType|button.eml|"
@@ -108,6 +122,7 @@ public final class ShortsButtonFilter extends Filter {
 
         actionButton = new StringFilterGroup(
                 null,
+                "reel_action_button.eml",
                 "shorts_video_action_button.eml"
         );
 
@@ -118,37 +133,32 @@ public final class ShortsButtonFilter extends Filter {
 
         addPathCallbacks(
                 suggestedAction, actionButton, joinButton, subscribeButton, metaPanelButton,
-                paidPromotionButton, pausedOverlayButtons, channelBar, fullVideoLinkLabel,
-                videoTitle, reelSoundMetadata, infoPanel, liveHeader, stickers
+                paidPromotionButton, pausedOverlayButtons, channelBar, videoLinkLabel,
+                videoTitle, reelSoundMetadata, infoPanel, liveHeader, stickers,
+                likeButton, dislikeButton
         );
 
         //
         // Action buttons
         //
         videoActionButtonGroupList.addAll(
-                // This also appears as the path item 'shorts_like_button.eml'
-                new ByteArrayFilterGroup(
-                        Settings.HIDE_SHORTS_LIKE_BUTTON,
-                        "reel_like_button",
-                        "reel_like_toggled_button"
-                ),
-                // This also appears as the path item 'shorts_dislike_button.eml'
-                new ByteArrayFilterGroup(
-                        Settings.HIDE_SHORTS_DISLIKE_BUTTON,
-                        "reel_dislike_button",
-                        "reel_dislike_toggled_button"
-                ),
                 new ByteArrayFilterGroup(
                         Settings.HIDE_SHORTS_COMMENTS_BUTTON,
-                        "reel_comment_button"
+                        "ic_right_comment",
+                        "reel_comment_button",
+                        "youtube_shorts_comment_outline"
                 ),
                 new ByteArrayFilterGroup(
                         Settings.HIDE_SHORTS_SHARE_BUTTON,
-                        "reel_share_button"
+                        "ic_right_share",
+                        "reel_share_button",
+                        "youtube_shorts_share_outline"
                 ),
                 new ByteArrayFilterGroup(
                         Settings.HIDE_SHORTS_REMIX_BUTTON,
-                        "reel_remix_button"
+                        "ic_remix_filled",
+                        "reel_remix_button",
+                        "youtube_shorts_remix_outline"
                 ),
                 new ByteArrayFilterGroup(
                         Settings.DISABLE_SHORTS_LIKE_BUTTON_FOUNTAIN_ANIMATION,
@@ -198,15 +208,16 @@ public final class ShortsButtonFilter extends Filter {
                         "yt_outline_search_"
                 ),
                 new ByteArrayFilterGroup(
-                        Settings.HIDE_SHORTS_SUPER_THANKS_BUTTON,
+                        Settings.HIDE_SHORTS_BUY_SUPER_THANKS_BUTTON,
                         "yt_outline_dollar_sign_heart_"
                 ),
                 new ByteArrayFilterGroup(
-                        Settings.HIDE_SHORTS_USE_TEMPLATE_BUTTON,
+                        Settings.HIDE_SHORTS_USE_THIS_TEMPLATE_BUTTON,
                         "yt_outline_template_add"
                 ),
                 new ByteArrayFilterGroup(
                         Settings.HIDE_SHORTS_GREEN_SCREEN_BUTTON,
+                        "greenscreen_temp",
                         "shorts_green_screen"
                 ),
                 useThisSoundButton

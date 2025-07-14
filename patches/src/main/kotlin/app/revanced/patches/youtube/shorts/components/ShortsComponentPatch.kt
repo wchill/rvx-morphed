@@ -22,6 +22,7 @@ import app.revanced.patches.youtube.utils.extension.Constants.COMPONENTS_PATH
 import app.revanced.patches.youtube.utils.extension.Constants.SHORTS_CLASS_DESCRIPTOR
 import app.revanced.patches.youtube.utils.extension.Constants.SHORTS_PATH
 import app.revanced.patches.youtube.utils.extension.Constants.UTILS_PATH
+import app.revanced.patches.youtube.utils.fix.litho.lithoLayoutPatch
 import app.revanced.patches.youtube.utils.indexOfSpannedCharSequenceInstruction
 import app.revanced.patches.youtube.utils.lottie.LOTTIE_ANIMATION_VIEW_CLASS_DESCRIPTOR
 import app.revanced.patches.youtube.utils.lottie.lottieAnimationViewHookPatch
@@ -37,14 +38,13 @@ import app.revanced.patches.youtube.utils.playservice.is_18_49_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_19_02_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_19_11_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_19_25_or_greater
-import app.revanced.patches.youtube.utils.playservice.is_19_28_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_19_34_or_greater
+import app.revanced.patches.youtube.utils.playservice.is_20_07_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_20_09_or_greater
 import app.revanced.patches.youtube.utils.playservice.versionCheckPatch
 import app.revanced.patches.youtube.utils.recyclerview.recyclerViewTreeObserverHook
 import app.revanced.patches.youtube.utils.recyclerview.recyclerViewTreeObserverPatch
 import app.revanced.patches.youtube.utils.resourceid.bottomBarContainer
-import app.revanced.patches.youtube.utils.resourceid.metaPanel
 import app.revanced.patches.youtube.utils.resourceid.reelDynRemix
 import app.revanced.patches.youtube.utils.resourceid.reelDynShare
 import app.revanced.patches.youtube.utils.resourceid.reelFeedbackLike
@@ -55,7 +55,6 @@ import app.revanced.patches.youtube.utils.resourceid.reelPlayerFooter
 import app.revanced.patches.youtube.utils.resourceid.reelPlayerRightPivotV2Size
 import app.revanced.patches.youtube.utils.resourceid.reelRightDislikeIcon
 import app.revanced.patches.youtube.utils.resourceid.reelRightLikeIcon
-import app.revanced.patches.youtube.utils.resourceid.reelVodTimeStampsContainer
 import app.revanced.patches.youtube.utils.resourceid.rightComment
 import app.revanced.patches.youtube.utils.resourceid.sharedResourceIdPatch
 import app.revanced.patches.youtube.utils.settings.ResourceUtils.addPreference
@@ -77,6 +76,7 @@ import app.revanced.util.REGISTER_TEMPLATE_REPLACEMENT
 import app.revanced.util.ResourceGroup
 import app.revanced.util.cloneMutable
 import app.revanced.util.copyResources
+import app.revanced.util.doRecursively
 import app.revanced.util.findMethodOrThrow
 import app.revanced.util.findMutableMethodOf
 import app.revanced.util.fingerprint.injectLiteralInstructionBooleanCall
@@ -92,7 +92,6 @@ import app.revanced.util.indexOfFirstLiteralInstruction
 import app.revanced.util.indexOfFirstLiteralInstructionOrThrow
 import app.revanced.util.indexOfFirstStringInstruction
 import app.revanced.util.indexOfFirstStringInstructionOrThrow
-import app.revanced.util.injectLiteralInstructionViewCall
 import app.revanced.util.or
 import app.revanced.util.replaceLiteralInstructionCall
 import com.android.tools.smali.dexlib2.AccessFlags
@@ -106,6 +105,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import com.android.tools.smali.dexlib2.util.MethodUtil
+import org.w3c.dom.Element
 
 private const val EXTENSION_ANIMATION_FEEDBACK_CLASS_DESCRIPTOR =
     "$SHORTS_PATH/AnimationFeedbackPatch;"
@@ -169,6 +169,7 @@ private val shortsCustomActionsPatch = bytecodePatch(
 ) {
     dependsOn(
         lithoFilterPatch,
+        lithoLayoutPatch,
         playerTypeHookPatch,
         recyclerViewTreeObserverPatch,
         toolBarHookPatch,
@@ -587,23 +588,53 @@ private val shortsTimeStampPatch = bytecodePatch(
 
     execute {
 
-        if (!is_19_25_or_greater || is_19_28_or_greater) return@execute
+        if (!is_19_34_or_greater) {
+            return@execute
+        }
 
         // region patch for enable time stamp
 
-        mapOf(
-            shortsTimeStampPrimaryFingerprint to 45627350L,
-            shortsTimeStampPrimaryFingerprint to 45638282L,
-            shortsTimeStampSecondaryFingerprint to 45638187L
-        ).forEach { (fingerprint, literal) ->
+        listOf(
+            Triple(
+                shortsTimeStampPrimarySecondaryFingerprint,
+                TIME_STAMP_PRIMARY_FEATURE_FLAG,
+                "enableShortsTimeStamp"
+            ),
+            Triple(
+                shortsTimeStampPrimarySecondaryFingerprint,
+                TIME_STAMP_SECONDARY_FEATURE_FLAG,
+                "enableShortsTimeStamp"
+            ),
+            Triple(
+                shortsTimeStampTertiaryFingerprint,
+                TIME_STAMP_TERTIARY_FEATURE_FLAG,
+                "enableShortsTimeStamp"
+            ),
+            Triple(
+                shortsTimeStampQuaternaryFingerprint,
+                TIME_STAMP_QUATERNARY_FEATURE_FLAG,
+                "enableShortsTimeStamp"
+            ),
+            Triple(
+                shortsTimeStampClearDisplayFingerprint,
+                TIME_STAMP_CLEAR_DISPLAY_FEATURE_FLAG,
+                "enableShortsTimeStampReverse"
+            ),
+            Triple(
+                shortsClearModeFingerprint,
+                CLEAR_MODE_FEATURE_FLAG,
+                "enableShortsClearMode"
+            ),
+        ).forEach { (fingerprint, literalValue, methodName) ->
             fingerprint.injectLiteralInstructionBooleanCall(
-                literal,
-                "$SHORTS_CLASS_DESCRIPTOR->enableShortsTimeStamp(Z)Z"
+                literalValue,
+                "$SHORTS_CLASS_DESCRIPTOR->$methodName(Z)Z"
             )
         }
 
-        shortsTimeStampPrimaryFingerprint.methodOrThrow().apply {
-            val literalIndex = indexOfFirstLiteralInstructionOrThrow(10002L)
+        shortsTimeStampPrimarySecondaryFingerprint.methodOrThrow().apply {
+            val literalIndex =
+                indexOfFirstLiteralInstructionOrThrow(TIME_STAMP_RELATIVE_INDEX_LITERAL)
             val literalRegister = getInstruction<OneRegisterInstruction>(literalIndex).registerA
 
             addInstructions(
@@ -616,27 +647,22 @@ private val shortsTimeStampPatch = bytecodePatch(
 
         // endregion
 
-        // region patch for timestamp long press action and meta panel bottom margin
+        // Google hasn't finalized this feature, so the layout of the Shorts title and the Shorts timestamp overlap.
+        // To fix the layout overlap issue, place the Shorts timestamp below the Shorts title.
 
-        listOf(
-            Triple(
-                shortsTimeStampConstructorFingerprint.methodOrThrow(),
-                reelVodTimeStampsContainer,
-                "setShortsTimeStampChangeRepeatState"
-            ),
-            Triple(
-                shortsTimeStampMetaPanelFingerprint.methodOrThrow(
-                    shortsTimeStampConstructorFingerprint
-                ),
-                metaPanel,
-                "setShortsMetaPanelBottomMargin"
-            )
-        ).forEach { (method, literalValue, methodName) ->
-            val smaliInstruction = """
-                invoke-static {v$REGISTER_TEMPLATE_REPLACEMENT}, $SHORTS_CLASS_DESCRIPTOR->$methodName(Landroid/view/View;)V
-                """
+        getContext().document("res/layout/consumption_feed_player_overlay.xml").use { document ->
+            document.doRecursively loop@{ node ->
+                if (node !is Element) return@loop
 
-            method.injectLiteralInstructionViewCall(literalValue, smaliInstruction)
+                node.getAttributeNode("android:id")?.let { attribute ->
+                    if (attribute.textContent == "@id/reel_player_footer_container") {
+                        node.setAttribute(
+                            "yt:layout_constraintBottom_toTopOf",
+                            "@id/reel_vod_timestamps_container"
+                        )
+                    }
+                }
+            }
         }
     }
 }
@@ -689,6 +715,7 @@ val shortsComponentPatch = bytecodePatch(
         shortsToolBarPatch,
 
         lithoFilterPatch,
+        lithoLayoutPatch,
         navigationBarHookPatch,
         playbackStartDescriptorPatch,
         playerTypeHookPatch,
@@ -748,10 +775,6 @@ val shortsComponentPatch = bytecodePatch(
             "SETTINGS: SHORTS_COMPONENTS"
         )
 
-        if (is_19_25_or_greater && !is_19_28_or_greater) {
-            settingArray += "SETTINGS: SHORTS_TIME_STAMP"
-        }
-
         if (is_18_34_or_greater) {
             settingArray += "SETTINGS: SHORTS_CUSTOM_ACTIONS_SHARED"
             settingArray += "SETTINGS: SHORTS_CUSTOM_ACTIONS_TOOLBAR"
@@ -763,6 +786,7 @@ val shortsComponentPatch = bytecodePatch(
 
         if (is_19_34_or_greater) {
             settingArray += "SETTINGS: SHORTS_REPEAT_STATE_BACKGROUND"
+            settingArray += "SETTINGS: SHORTS_TIME_STAMP"
         }
 
         // region patch for hide comments button (non-litho)
@@ -1030,6 +1054,35 @@ val shortsComponentPatch = bytecodePatch(
                 addInstructionsWithLabels(
                     index + 2,
                     extensionInstructions(playbackStartRegister, freeRegister)
+                )
+            }
+        }
+
+        // endregion
+
+        // region Disable experimental Shorts flags.
+
+        // Flags might be present in earlier targets, but they are not found in 19.47.53.
+        // If these flags are forced on, the experimental layout is still not used and
+        // it appears the features requires additional server side data to fully use.
+        if (is_20_07_or_greater) {
+            mapOf(
+                // Experimental Shorts player uses Android native buttons and not Litho,
+                // and the layout is provided by the server.
+                //
+                // Since the buttons are native components and not Litho, it should be possible to
+                // fix the RYD Shorts loading delay by asynchronously loading RYD and updating
+                // the button text after RYD has loaded.
+                shortsExperimentalPlayerFeatureFlagFingerprint to SHORTS_EXPERIMENTAL_PLAYER_FEATURE_FLAG,
+
+                // Experimental UI renderer must also be disabled since it requires the
+                // experimental Shorts player.  If this is enabled but Shorts player
+                // is disabled then the app crashes when the Shorts player is opened.
+                renderNextUIFeatureFlagFingerprint to RENDER_NEXT_UI_FEATURE_FLAG
+            ).forEach { (fingerprint, literal) ->
+                fingerprint.injectLiteralInstructionBooleanCall(
+                    literal,
+                    "0x0"
                 )
             }
         }
