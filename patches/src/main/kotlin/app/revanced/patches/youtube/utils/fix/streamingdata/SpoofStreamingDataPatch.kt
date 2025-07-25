@@ -532,8 +532,6 @@ val spoofStreamingDataPatch = bytecodePatch(
                     )
                 }
             }
-
-            settingArray += "SETTINGS: SKIP_RESPONSE_ENCRYPTION"
         }
 
         if (useIOSClient == true) {
