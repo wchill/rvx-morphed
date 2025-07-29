@@ -3,7 +3,7 @@
 // TODO: Scripts written in python have been converted to Java to run javascript.
 //       Migrate to 'eclipsesource/J2V8' or 'mozilla/rhino' for better performance.
 
-package app.revanced.extension.shared.innertube.utils;
+package app.revanced.extension.shared.innertube.utils.javatube;
 
 import android.annotation.TargetApi;
 

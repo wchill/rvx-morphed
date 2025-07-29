@@ -1,4 +1,4 @@
-package app.revanced.extension.shared.innertube.utils;
+package app.revanced.extension.shared.innertube.utils.javatube;
 
 import android.annotation.TargetApi;
 

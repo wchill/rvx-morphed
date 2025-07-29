@@ -7,15 +7,12 @@ import android.text.TextUtils;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.apache.commons.collections4.CollectionUtils;
+import com.google.protos.youtube.api.innertube.StreamingDataOuterClass.StreamingData;
+
 import org.apache.commons.lang3.StringUtils;
 
-import java.nio.ByteBuffer;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.Collections;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
@@ -40,6 +37,8 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
             SPOOF_STREAMING_DATA && BaseSettings.SPOOF_STREAMING_DATA_USE_TV.get();
     private static final boolean SPOOF_STREAMING_DATA_USE_TV_ALL =
             SPOOF_STREAMING_DATA_USE_TV && BaseSettings.SPOOF_STREAMING_DATA_USE_TV_ALL.get();
+    private static final boolean SPOOF_STREAMING_DATA_TV_USE_LATEST_JS =
+            BaseSettings.SPOOF_STREAMING_DATA_TV_USE_LATEST_JS.get();
 
     /**
      * Any unreachable ip address.  Used to intentionally fail requests.
@@ -71,34 +70,10 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
     private static volatile String reasonSkipped = "";
 
     /**
-     * Key: video id
-     * Value: original video length [streamingData.formats.approxDurationMs]
-     */
-    private static final Map<String, Long> approxDurationMsMap = Collections.synchronizedMap(
-            new LinkedHashMap<>(10) {
-                private static final int CACHE_LIMIT = 5;
-
-                @Override
-                protected boolean removeEldestEntry(Entry eldest) {
-                    return size() > CACHE_LIMIT; // Evict the oldest entry if over the cache limit.
-                }
-            });
-
-    /**
      * Injection point.
      */
     public static boolean isSpoofingEnabled() {
         return SPOOF_STREAMING_DATA;
-    }
-
-    /**
-     * Injection point.
-     * Called after {@link #getStreamingData(String)}.
-     * Used for {@link ClientType#IOS_UNPLUGGED} and {@link ClientType#IOS_DEPRECATED}.
-     */
-    public static boolean lastSpoofedClientIsIOS() {
-        return SPOOF_STREAMING_DATA &&
-                StreamingDataRequest.getLastSpoofedClientIsIOS();
     }
 
     /**
@@ -174,8 +149,7 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
      * Fix playback by replace the streaming data.
      * Called after {@link #fetchStreams(String, Map)}.
      */
-    @Nullable
-    public static ByteBuffer getStreamingData(@NonNull String videoId) {
+    public static StreamingData getStreamingData(@NonNull String videoId) {
         if (SPOOF_STREAMING_DATA) {
             try {
                 StreamingDataRequest request = StreamingDataRequest.getRequestForVideoId(videoId);
@@ -189,10 +163,10 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
                         Logger.printException(() -> "Error: Blocking main thread");
                     }
 
-                    var streamPair = request.getStreamPair();
-                    if (streamPair != null && streamPair.getFirst() != null) {
+                    var stream = request.getStream();
+                    if (stream != null) {
                         Logger.printDebug(() -> "Overriding video stream: " + videoId);
-                        return streamPair.getFirst();
+                        return stream;
                     }
                 }
 
@@ -203,47 +177,6 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         }
 
         return null;
-    }
-
-    /**
-     * Injection point.
-     * <p>
-     * If spoofed [streamingData.formats] is empty,
-     * Put the original [streamingData.formats.approxDurationMs] into the HashMap.
-     * <p>
-     * Called after {@link #getStreamingData(String)}.
-     */
-    public static void setApproxDurationMs(@NonNull String videoId, long approxDurationMs) {
-        if (approxDurationMs != Long.MAX_VALUE) {
-            approxDurationMsMap.put(videoId, approxDurationMs);
-            Logger.printDebug(() -> "New approxDurationMs loaded, video id: " + videoId + ", video length: " + approxDurationMs);
-        }
-    }
-
-    /**
-     * Injection point.
-     * <p>
-     * When measuring the length of a video in an Android YouTube client,
-     * the client first checks if the streaming data contains [streamingData.formats.approxDurationMs].
-     * <p>
-     * If the streaming data response contains [approxDurationMs] (Long type, actual value), this value will be the video length.
-     * <p>
-     * If [streamingData.formats] (List type) is empty, the [approxDurationMs] value cannot be accessed,
-     * So it falls back to the value of [videoDetails.lengthSeconds] (Integer type, approximate value) multiplied by 1000.
-     * <p>
-     * For iOS clients, [streamingData.formats] (List type) is always empty, so it always falls back to the approximate value.
-     * <p>
-     * Called after {@link #getStreamingData(String)}.
-     */
-    public static long getApproxDurationMs(@Nullable String videoId) {
-        if (lastSpoofedClientIsIOS() && isValidVideoId(videoId)) {
-            final Long approxDurationMs = approxDurationMsMap.get(videoId);
-            if (approxDurationMs != null) {
-                Logger.printDebug(() -> "Replacing video length: " + approxDurationMs + " for videoId: " + videoId);
-                return approxDurationMs;
-            }
-        }
-        return Long.MAX_VALUE;
     }
 
     /**
@@ -304,71 +237,10 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
     public static void initializeJavascript() {
         if (SPOOF_STREAMING_DATA_USE_TV) {
             // Download JavaScript and initialize the Cipher class
-            CompletableFuture.runAsync(ThrottlingParameterUtils::initializeJavascript);
+            CompletableFuture.runAsync(() -> ThrottlingParameterUtils.initializeJavascript(
+                    SPOOF_STREAMING_DATA_TV_USE_LATEST_JS
+            ));
         }
-    }
-
-    private static volatile ArrayList<String> deobfuscatedUrlArrayList;
-
-    /**
-     * Injection point.
-     * Called after {@link #getStreamingData(String)}.
-     * <p>
-     * @param videoId       Current video id.
-     * @return              Whether deobfuscatedUrlArrayList exists.
-     */
-    public static synchronized boolean isDeobfuscatedUrlArrayListNotEmpty(@NonNull String videoId) {
-        try {
-            StreamingDataRequest request = StreamingDataRequest.getRequestForVideoId(videoId);
-            if (request != null) {
-                // Pair(streamingData, ArrayList<deobfuscatedUrl>)
-                var streamPair = request.getStreamPair();
-                if (streamPair != null) {
-                    var urlArrayList = streamPair.getSecond();
-                    if (CollectionUtils.isNotEmpty(urlArrayList)) {
-                        deobfuscatedUrlArrayList = urlArrayList;
-                        Logger.printDebug(() -> "deobfuscatedUrlArrayList is not empty, videoId: " + videoId);
-                        return true;
-                    } else {
-                        Logger.printDebug(() -> "deobfuscatedUrlArrayList is empty, videoId: " + videoId);
-                    }
-                }
-            }
-        } catch (Exception ex) {
-            Logger.printException(() -> "setDeobfuscationUrlArrayList failure", ex);
-        }
-        return false;
-    }
-
-    /**
-     * Injection point.
-     * Called after {@link #isDeobfuscatedUrlArrayListNotEmpty(String)}.
-     * <p>
-     * @param videoId       Current video id.
-     * @param obfuscatedUrl Streaming url with obfuscated 'n' parameter.
-     *                      If the response contained 'signatureCipher', this value is null.
-     * @param nextIndex     Next index of adaptiveFormats.
-     * @return              Deobfuscated streaming url.
-     */
-    @Nullable
-    public static synchronized String getDeobfuscatedUrl(@NonNull String videoId, @Nullable String obfuscatedUrl, int nextIndex) {
-        int index = nextIndex - 1;
-        if (deobfuscatedUrlArrayList.size() > index) {
-            String deobfuscationUrl = deobfuscatedUrlArrayList.get(index);
-            Logger.printDebug(() -> "deobfuscationUrl found, videoId: " + videoId + ", index: " + index);
-            return deobfuscationUrl;
-        } else {
-            Logger.printDebug(() -> "deobfuscationUrl not found, videoId: " + videoId + ", index: " + index);
-        }
-        return ThrottlingParameterUtils.getUrlWithThrottlingParameterDeobfuscated(videoId, obfuscatedUrl);
-    }
-
-    /**
-     * Injection point.
-     * Called after {@link #getDeobfuscatedUrl(String, String, int)}.
-     */
-    public static synchronized void clearDeobfuscatedUrlArrayList() {
-        deobfuscatedUrlArrayList = null;
     }
 
     /**

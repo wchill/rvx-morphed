@@ -1,10 +1,12 @@
 package app.revanced.extension.shared.innertube.utils;
 
-import android.net.Uri;
 import android.util.Pair;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.net.SocketTimeoutException;
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
@@ -13,7 +15,7 @@ import java.util.regex.*;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import app.revanced.extension.shared.settings.BaseSettings;
+import app.revanced.extension.shared.innertube.utils.javatube.Cipher;
 import okhttp3.*;
 
 import org.apache.commons.lang3.StringUtils;
@@ -46,8 +48,12 @@ public class ThrottlingParameterUtils {
     /**
      * Format of JavaScript url.
      */
-    private static final String BASE_JS_PLAYER_URL_FORMAT =
+    private static final String PLAYER_JS_URL_FORMAT =
             "https://www.youtube.com/s/player/%s/player_ias.vflset/en_GB/base.js";
+    /**
+     * Path of javascript url containing global function.
+     */
+    private static final String PLAYER_JS_GLOBAL_FUNCTIONS_URL_PATH = "69b31e11";
     /**
      * Regular expression pattern to find variables used in JavaScript url.
      */
@@ -79,9 +85,7 @@ public class ThrottlingParameterUtils {
      * Url of javascript.
      */
     @Nullable
-    private volatile static String playerJsUrl = BaseSettings.SPOOF_STREAMING_DATA_TV_USE_LATEST_JS.get()
-            ? null
-            : "https://www.youtube.com/s/player/e12fbea4/player_ias.vflset/en_GB/base.js"; // global functions.
+    private volatile static String playerJsUrl = null; // global functions.
     /**
      * Field value included when sending a request.
      */
@@ -105,11 +109,15 @@ public class ThrottlingParameterUtils {
         }
     };
 
-    public static void initializeJavascript() {
+    public static void initializeJavascript(boolean fetchPlayerJs) {
         if (isInitialized) {
             return;
         }
         isInitialized = true;
+
+        if (!fetchPlayerJs) {
+            playerJsUrl = String.format(PLAYER_JS_URL_FORMAT, PLAYER_JS_GLOBAL_FUNCTIONS_URL_PATH);
+        }
 
         cipher = getCipher();
         playerJs = getPlayerJs();
@@ -153,7 +161,7 @@ public class ThrottlingParameterUtils {
             Matcher matcher = PLAYER_JS_IDENTIFIER_PATTERN.matcher(iframeContent);
             if (matcher.find()) {
                 return cleanJavaScriptUrl(
-                        String.format(BASE_JS_PLAYER_URL_FORMAT, matcher.group(1))
+                        String.format(PLAYER_JS_URL_FORMAT, matcher.group(1))
                 );
             }
         }
@@ -270,6 +278,11 @@ public class ThrottlingParameterUtils {
         return null;
     }
 
+    @SuppressWarnings("CharsetObjectCanBeUsed")
+    public static String decodeURL(String s) throws UnsupportedEncodingException {
+        return URLDecoder.decode(s, StandardCharsets.UTF_8.name());
+    }
+
     /**
      * Convert signatureCipher to streaming url with obfuscated 'n' parameter.
      * <p>
@@ -291,9 +304,9 @@ public class ThrottlingParameterUtils {
                     String urlParam = paramUrlMatcher.group(1);
                     if (StringUtils.isNotEmpty(sParam) && StringUtils.isNotEmpty(urlParam)) {
                         // The 'sig' parameter converted by javascript rules.
-                        String decodedSigParm = cipher.getSignature(Uri.decode(sParam));
+                        String decodedSigParm = cipher.getSignature(decodeURL(sParam));
                         if (StringUtils.isNotEmpty(decodedSigParm)) {
-                            String decodedUriParm = Uri.decode(urlParam);
+                            String decodedUriParm = decodeURL(urlParam);
                             Logger.printDebug(() -> "Converted signatureCipher to obfuscatedUrl, videoId: " + videoId);
                             return decodedUriParm + "&sig=" + decodedSigParm;
                         }

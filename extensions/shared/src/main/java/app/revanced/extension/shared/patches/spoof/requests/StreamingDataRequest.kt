@@ -9,12 +9,16 @@ import app.revanced.extension.shared.innertube.requests.InnerTubeRoutes.GET_ADAP
 import app.revanced.extension.shared.innertube.requests.InnerTubeRoutes.GET_STREAMING_DATA
 import app.revanced.extension.shared.innertube.utils.ThrottlingParameterUtils
 import app.revanced.extension.shared.patches.components.ByteArrayFilterGroup
+import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.getAdaptiveFormats
+import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.parseFrom
+import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.setUrl
 import app.revanced.extension.shared.requests.Requester
 import app.revanced.extension.shared.settings.BaseSettings
 import app.revanced.extension.shared.settings.EnumSetting
 import app.revanced.extension.shared.utils.Logger
 import app.revanced.extension.shared.utils.StringRef.str
 import app.revanced.extension.shared.utils.Utils
+import com.google.protos.youtube.api.innertube.StreamingDataOuterClass.StreamingData
 import org.apache.commons.lang3.StringUtils
 import java.io.BufferedInputStream
 import java.io.ByteArrayOutputStream
@@ -45,7 +49,7 @@ class StreamingDataRequest private constructor(
     reasonSkipped: String,
 ) {
     private val videoId: String
-    private val future: Future<Pair<ByteBuffer?, ArrayList<String>?>?>
+    private val future: Future<StreamingData?>
 
     init {
         Objects.requireNonNull(requestHeader)
@@ -63,9 +67,7 @@ class StreamingDataRequest private constructor(
         return future.isDone
     }
 
-    // first: StreamingData data to be used by ProtoBuf MessageParser
-    // second: ArrayList containing the deobfuscated streamingUrl
-    val streamPair: Pair<ByteBuffer?, ArrayList<String>?>?
+    val stream: StreamingData?
         get() {
             try {
                 return future[MAX_MILLISECONDS_TO_WAIT_FOR_FETCH.toLong(), TimeUnit.MILLISECONDS]
@@ -140,11 +142,6 @@ class StreamingDataRequest private constructor(
         val lastSpoofedClientIsAndroidVRNoAuth: Boolean
             get() = lastSpoofedClientFriendlyName != null
                     && lastSpoofedClientFriendlyName!! == YouTubeAppClient.ClientType.ANDROID_VR_NO_AUTH.friendlyName
-
-        @JvmStatic
-        val lastSpoofedClientIsIOS: Boolean
-            get() = lastSpoofedClientFriendlyName != null
-                    && lastSpoofedClientFriendlyName!!.startsWith("iOS")
 
         @JvmStatic
         val lastSpoofedClientIsTV: Boolean
@@ -296,6 +293,23 @@ class StreamingDataRequest private constructor(
             return null
         }
 
+        private fun deobfuscateStreamingData(
+            deobfuscatedUrlArrayList: ArrayList<String>,
+            streamingData: StreamingData?
+        ): StreamingData? {
+            if (streamingData != null) {
+                val adaptiveFormats = getAdaptiveFormats(streamingData)
+                if (adaptiveFormats != null) {
+                    for (i in 0..<adaptiveFormats.size) {
+                        val adaptiveFormat = adaptiveFormats[i]
+                        val url = deobfuscatedUrlArrayList[i]
+                        setUrl(adaptiveFormat, url)
+                    }
+                }
+            }
+            return streamingData
+        }
+
         private fun send(
             clientType: YouTubeAppClient.ClientType,
             videoId: String,
@@ -361,7 +375,7 @@ class StreamingDataRequest private constructor(
             videoId: String,
             requestHeader: Map<String, String>,
             reasonSkipped: String,
-        ): Pair<ByteBuffer?, ArrayList<String>?>? {
+        ): StreamingData? {
             lastSpoofedClientFriendlyName = null
 
             // MutableMap containing the deobfuscated streamingUrl.
@@ -420,7 +434,15 @@ class StreamingDataRequest private constructor(
                                         Logger.printDebug { "Ignore Android Studio spoofing as it is a livestream (video: $videoId)" }
                                     } else {
                                         lastSpoofedClientFriendlyName = clientType.friendlyName
-                                        return Pair(ByteBuffer.wrap(stream.toByteArray()), deobfuscatedUrlArrayList)
+
+                                        // Parses the Proto Buffer and returns StreamingData (GeneratedMessage).
+                                        var streamingData = parseFrom(ByteBuffer.wrap(stream.toByteArray()))
+
+                                        if (!deobfuscatedUrlArrayList.isNullOrEmpty()) {
+                                            streamingData = deobfuscateStreamingData(deobfuscatedUrlArrayList, streamingData)
+                                        }
+
+                                        return streamingData
                                     }
                                 }
                             }
