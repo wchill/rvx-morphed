@@ -2,9 +2,9 @@ package app.revanced.extension.youtube.patches.utils;
 
 import static app.revanced.extension.shared.utils.StringRef.str;
 import static app.revanced.extension.shared.utils.Utils.runOnMainThreadDelayed;
-import static app.revanced.extension.youtube.utils.VideoUtils.dismissPlayer;
 import static app.revanced.extension.youtube.utils.VideoUtils.launchVideoExternalDownloader;
 import static app.revanced.extension.youtube.utils.VideoUtils.openPlaylist;
+import static app.revanced.extension.youtube.utils.VideoUtils.reloadVideo;
 
 import android.content.Context;
 import android.view.KeyEvent;
@@ -383,8 +383,7 @@ public class PlaylistPatch {
                 // Since the Queue is not automatically synced, a 'reload' action has been added as a workaround.
                 // The 'reload' action simply closes the video and reopens it.
                 // It is important to close the video, otherwise the Queue will not be updated.
-                dismissPlayer();
-                openPlaylist(currentPlaylistId, VideoInformation.getVideoId(), true);
+                reloadVideo(VideoInformation.getVideoId(), currentPlaylistId);
             } else {
                 openPlaylist(currentPlaylistId, currentVideoId);
             }

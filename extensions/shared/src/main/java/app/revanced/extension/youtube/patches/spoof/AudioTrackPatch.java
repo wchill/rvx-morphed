@@ -6,7 +6,6 @@ import android.content.Context;
 import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 import org.apache.commons.collections4.MapUtils;
 
@@ -40,27 +39,7 @@ public class AudioTrackPatch {
     @NonNull
     private static String audioTrackId = "";
     @NonNull
-    private static String playlistId = "";
-    @NonNull
     private static String videoId = "";
-
-    /**
-     * Injection point.
-     */
-    @Nullable
-    public static String newPlayerResponseParameter(@NonNull String newlyLoadedVideoId, @Nullable String playerParameter,
-                                                    @Nullable String newlyLoadedPlaylistId, boolean isShortAndOpeningOrPlaying) {
-        if (SPOOF_STREAMING_DATA_AUDIO_TRACK_BUTTON && !VideoInformation.playerParametersAreShort(playerParameter)) {
-            if (newlyLoadedPlaylistId == null || newlyLoadedPlaylistId.isEmpty()) {
-                playlistId = "";
-            } else if (!Objects.equals(playlistId, newlyLoadedPlaylistId)) {
-                playlistId = newlyLoadedPlaylistId;
-                Logger.printDebug(() -> "newVideoStarted, videoId: " + newlyLoadedVideoId + ", playlistId: " + newlyLoadedPlaylistId);
-            }
-        }
-
-        return playerParameter; // Return the original value since we are observing and not modifying.
-    }
 
     /**
      * Injection point.
@@ -169,14 +148,7 @@ public class AudioTrackPatch {
                 // Change the audio track language by reloading the same video.
                 // Due to structural limitations of the YouTube app, the url of a video that is already playing will not be opened.
                 // As a workaround, the video should be forcefully dismissed.
-                VideoUtils.dismissPlayer();
-
-                // Open the video.
-                if (playlistId.isEmpty()) {
-                    VideoUtils.openVideo(videoId);
-                } else { // If the video is playing from a playlist, the url must include the playlistId.
-                    VideoUtils.openPlaylist(playlistId, videoId, true);
-                }
+                VideoUtils.reloadVideo(videoId);
 
                 // If the video has been reloaded, initialize the [overrideLanguage] field of the [StreamingDataRequest] class.
                 ExtendedUtils.runOnMainThreadDelayed(() -> StreamingDataRequest.overrideLanguage(""), 3000L);

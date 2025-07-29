@@ -44,8 +44,6 @@ import app.revanced.patches.youtube.utils.settings.ResourceUtils.addPreference
 import app.revanced.patches.youtube.utils.settings.settingsPatch
 import app.revanced.patches.youtube.video.information.hookBackgroundPlayVideoInformation
 import app.revanced.patches.youtube.video.information.videoInformationPatch
-import app.revanced.patches.youtube.video.playerresponse.Hook
-import app.revanced.patches.youtube.video.playerresponse.addPlayerResponseMethodHook
 import app.revanced.patches.youtube.video.videoid.videoIdPatch
 import app.revanced.util.ResourceGroup
 import app.revanced.util.addInstructionsAtControlFlowLabel
@@ -81,7 +79,6 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 import java.nio.file.Files
 import java.nio.file.StandardCopyOption
 import kotlin.io.path.notExists
-import kotlin.io.resolve
 
 private lateinit var context: ResourcePatchContext
 
@@ -326,12 +323,6 @@ val spoofStreamingDataPatch = bytecodePatch(
             )
         }
 
-        addPlayerResponseMethodHook(
-            Hook.PlayerParameterBeforeVideoId(
-                "$EXTENSION_CLASS_DESCRIPTOR->newPlayerResponseParameter(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;"
-            )
-        )
-
         findMethodOrThrow(EXTENSION_UTILS_CLASS_DESCRIPTOR) {
             name == "setContext"
         }.apply {
@@ -472,11 +463,6 @@ val spoofStreamingDataPatch = bytecodePatch(
         // region patch for audio track button
 
         val spoofPath = app.revanced.patches.youtube.utils.extension.Constants.SPOOF_PATH
-        addPlayerResponseMethodHook(
-            Hook.PlayerParameterBeforeVideoId(
-                "$spoofPath/AudioTrackPatch;->newPlayerResponseParameter(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;"
-            )
-        )
         hookAudioTrackId("$spoofPath/AudioTrackPatch;->setAudioTrackId(Ljava/lang/String;)V")
         hookBackgroundPlayVideoInformation("$spoofPath/AudioTrackPatch;->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
         hookTopControlButton("$spoofPath/ui/AudioTrackButtonController;")
@@ -510,12 +496,6 @@ val spoofStreamingDataPatch = bytecodePatch(
                 )
             }
 
-        addPlayerResponseMethodHook(
-            Hook.PlayerParameterBeforeVideoId(
-                "$spoofPath/ReloadVideoPatch;->newPlayerResponseParameter(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;"
-            )
-        )
-        hookBackgroundPlayVideoInformation("$spoofPath/ReloadVideoPatch;->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
         hookTopControlButton("$spoofPath/ui/ReloadVideoButtonController;")
 
         arrayOf(

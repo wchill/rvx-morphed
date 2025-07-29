@@ -543,7 +543,7 @@ Limitation: Back button on the toolbar may not work."</string>
     <string name="revanced_disable_auto_audio_tracks_title">Disable forced auto audio tracks</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Forced auto audio tracks are disabled.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Forced auto audio tracks are enabled.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">To use this feature, change \'Default client (Spoof streaming data)\' to iOS TV.</string>
+    <string name="revanced_disable_auto_audio_tracks_not_available">To use this feature, change \'Default client for audio (Spoof streaming data)\' to TV or iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Disable forced auto captions</string>
     <string name="revanced_disable_auto_captions_summary_on">Forced auto captions are disabled.</string>
     <string name="revanced_disable_auto_captions_summary_off">Forced auto captions are enabled.</string>
@@ -1109,7 +1109,7 @@ Limitation: Some highlighted search links that do not have a default text style 
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Audio track menu is shown.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Audio track menu is hidden.
 
-To show the Audio track menu, change \'Default client (Spoof streaming data)\' to iOS TV."</string>
+To show the Audio track menu, change \'Default client for audio (Spoof streaming data)\' to TV or iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Hide Captions menu</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Captions menu is hidden.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Captions menu is shown.</string>
@@ -2313,39 +2313,49 @@ Tap the continue button and allow optimization changes."</string>
     <string name="revanced_preference_screen_spoof_streaming_data_title">Spoof streaming data</string>
     <string name="revanced_preference_screen_spoof_streaming_data_summary">Spoof the streaming data to prevent playback issues.</string>
     <string name="revanced_spoof_streaming_data_title">Spoof streaming data</string>
-    <string name="revanced_spoof_streaming_data_summary_on">Streaming data is spoofed.</string>
+    <string name="revanced_spoof_streaming_data_summary_on">"Streaming data is spoofed.
+
+If you are a YouTube Premium user or have excluded the 'GmsCore support' patch, this setting may not be necessary."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Streaming data is not spoofed. Video playback may not work."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Turning off this setting may cause video playback issues.</string>
-    <string name="revanced_spoof_streaming_data_audio_type_title">Default audio client</string>
-    <string name="revanced_spoof_streaming_data_video_type_title">Default video client</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_unplugged">"Android TV
+    <string name="revanced_spoof_streaming_data_default_client_video_title">Default client for video</string>
+    <string name="revanced_spoof_streaming_data_default_client_audio_title">Default client for audio</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
 <small>(Login required)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr_no_auth">"Android VR
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(No auth)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_deprecated">"iOS
+    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
 <small>(Deprecated)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_unplugged">"iOS TV
+    <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(Login required)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv">"TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(WIP)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv_embedded">"TV Embedded
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV Embedded
 <small>(WIP)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv_simply">"TV Simply
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV Simply
 <small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Spoofing side effects</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android">"• Audio track menu is missing.
-• Stable volume is not available.
+    <string name="revanced_spoof_streaming_data_side_effects_audio_android">"• Audio track menu is missing.
 • Disable forced auto audio tracks is not available.
-• Kids videos may not play when logged out or in incognito mode."</string>
+• Stable volume is not available."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_ios_unplugged">• Stable volume is not available.</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_tv">"• If deobfuscation fails, playback may fail.
+• Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
+• Video may start late."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Whole ASNs/IP ranges may be blocked by the server.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Stable volume is not available.
-• Movies or paid videos may not play.
-• Kids videos may not play when logged out or in incognito mode."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• App uses more system resources to deobfuscate streaming urls.
-• If deobfuscation fails, playback may fail, or some video quality or codecs may be missing.
-• Sometimes playback fails for unknown reasons (the video doesn't start for more than 20 seconds), in which case you need to reopen the video.
-• Video starts 5 to 15 seconds late."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_android_without_tv">• Kids videos may not play when logged out or in incognito mode.</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_ios_unplugged_without_tv">• Kids videos may not play when logged out or in incognito mode.</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_tv">"• AVC (H.264) codec is not available.
+• If deobfuscation fails, playback may fail.
+• Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
+• Video may start late."</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_title">Show reload video button</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">Reload video button is shown.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">Reload video button is hidden.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_title">Always show reload video button</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_on">Reload video button is always shown.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_off">Reload video button is shown when loading spinner showing.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Show in Stats for nerds</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Client used to fetch streaming data is shown in Stats for nerds.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Client used to fetch streaming data is hidden in Stats for nerds.</string>
@@ -2361,7 +2371,7 @@ Tap the continue button and allow optimization changes."</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_on">VR audio track button is shown.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_off">VR audio track button is not shown.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message">"Prerequisites:
-• The client used to fetch the streaming data is 'Android VR (No auth)'.
+• The audio client used to fetch the streaming data is 'Android VR (No auth)'.
 • A video with multiple audio tracks is being played.
 
 Known issues:
@@ -2424,22 +2434,7 @@ This feature is still WIP, so please use it for debugging purposes only."</strin
     <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript does not run in native libraries.
 
 • Powered by JavaTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_title">Show TV reload video button</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_summary_on">Reload video button is shown when buffering animation is shown.</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_summary_off">Reload video button is hidden.</string>
-
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: PoToken / VisitorData -->
-    <string name="revanced_preference_category_po_token_visitor_data">PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_title">PoToken to use</string>
-    <string name="revanced_spoof_streaming_data_po_token_summary">PoToken issued by BotGuard in a trusted browser.</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_title">VisitorData to use</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_summary">VisitorData issued by BotGuard in a trusted browser.</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_title">About PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_summary">"Some clients require PoToken and VisitorData to get a valid streaming data response.
-
-If you are trying to use iOS as the default client, you may need these values.
-
-Click to see more information."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">If the V8 JavaScript engine is not used, it takes more time to deobfuscate the streaming URL, causing the video to start 10 seconds late.</string>
 
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Watch history</string>

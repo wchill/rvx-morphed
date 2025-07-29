@@ -12,12 +12,9 @@ import com.google.protos.youtube.api.innertube.StreamingDataOuterClass.Streaming
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
-import java.util.stream.Collectors;
 
 import app.revanced.extension.shared.innertube.client.YouTubeAppClient.ClientType;
 import app.revanced.extension.shared.innertube.utils.ThrottlingParameterUtils;
@@ -26,7 +23,6 @@ import app.revanced.extension.shared.patches.spoof.requests.StreamingDataRequest
 import app.revanced.extension.shared.settings.BaseSettings;
 import app.revanced.extension.shared.settings.Setting;
 import app.revanced.extension.shared.utils.Logger;
-import app.revanced.extension.shared.utils.ResourceUtils;
 import app.revanced.extension.shared.utils.Utils;
 import app.revanced.extension.youtube.shared.VideoInformation;
 
@@ -313,45 +309,17 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         return format;
     }
 
-    public static String[] getEntries() {
-        Collection<String> entries = Arrays
-                .stream(ResourceUtils.getStringArray("revanced_spoof_streaming_data_type_entries"))
-                .collect(Collectors.toList());
-        if (SPOOF_STREAMING_DATA_USE_IOS) {
-            entries.add(ResourceUtils.getString("revanced_spoof_streaming_data_type_entry_ios_deprecated"));
-        }
-        if (SPOOF_STREAMING_DATA_USE_TV) {
-            entries.add(ResourceUtils.getString("revanced_spoof_streaming_data_type_entry_tv"));
-            entries.add(ResourceUtils.getString("revanced_spoof_streaming_data_type_entry_tv_simply"));
-        }
-        return entries.toArray(new String[0]);
-    }
-
-    public static String[] getEntryValues() {
-        Collection<String> entryValues = Arrays
-                .stream(ResourceUtils.getStringArray("revanced_spoof_streaming_data_type_entry_values"))
-                .collect(Collectors.toList());
-        if (SPOOF_STREAMING_DATA_USE_IOS) {
-            entryValues.add("IOS_DEPRECATED");
-        }
-        if (SPOOF_STREAMING_DATA_USE_TV) {
-            entryValues.add("TV");
-            entryValues.add("TV_SIMPLY");
-        }
-        return entryValues.toArray(new String[0]);
-    }
-
     public static boolean notSpoofingToAndroidAudio() {
         return !PatchStatus.SpoofStreamingData()
                 || !BaseSettings.SPOOF_STREAMING_DATA.get()
-                || !BaseSettings.SPOOF_STREAMING_DATA_AUDIO_TYPE.get().name().startsWith("ANDROID"); // IOS, TV
+                || !BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO.get().name().startsWith("ANDROID"); // IOS, TV
     }
 
     public static final class ClientAndroidVRVideoAvailability implements Setting.Availability {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_VIDEO_TYPE.get().name().startsWith("ANDROID_VR");
+                    BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT_VIDEO.get().name().startsWith("ANDROID_VR");
         }
     }
 
@@ -359,7 +327,7 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_AUDIO_TYPE.get() == ClientType.ANDROID_VR_NO_AUTH;
+                    BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO.get() == ClientType.ANDROID_VR_NO_AUTH;
         }
     }
 
@@ -367,7 +335,7 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_VIDEO_TYPE.get().name().startsWith("IOS");
+                    BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT_VIDEO.get().name().startsWith("IOS");
         }
     }
 
@@ -375,8 +343,8 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    (BaseSettings.SPOOF_STREAMING_DATA_AUDIO_TYPE.get().name().startsWith("TV") ||
-                            BaseSettings.SPOOF_STREAMING_DATA_VIDEO_TYPE.get().name().startsWith("TV"));
+                    (BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO.get().name().startsWith("TV") ||
+                            BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT_VIDEO.get().name().startsWith("TV"));
         }
     }
 
@@ -395,8 +363,8 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    (BaseSettings.SPOOF_STREAMING_DATA_AUDIO_TYPE.get().name().startsWith("TV") ||
-                            BaseSettings.SPOOF_STREAMING_DATA_VIDEO_TYPE.get().name().startsWith("TV")) &&
+                    (BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO.get().name().startsWith("TV") ||
+                            BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT_VIDEO.get().name().startsWith("TV")) &&
                     J2V8_LIBRARY_AVAILABILITY;
         }
     }

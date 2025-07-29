@@ -9,18 +9,20 @@ import android.widget.ImageView;
 import java.lang.ref.WeakReference;
 import java.util.Objects;
 
-import app.revanced.extension.shared.patches.spoof.requests.StreamingDataRequest;
 import app.revanced.extension.shared.utils.Logger;
 import app.revanced.extension.youtube.patches.overlaybutton.BottomControlButton;
 import app.revanced.extension.youtube.patches.spoof.ReloadVideoPatch;
 import app.revanced.extension.youtube.settings.Settings;
+import app.revanced.extension.youtube.utils.VideoUtils;
 
 @SuppressWarnings("unused")
 public class ReloadVideoButtonController {
-    private static final boolean SPOOF_STREAMING_DATA_TV_RELOAD_VIDEO_BUTTON =
+    private static final boolean SPOOF_STREAMING_DATA_RELOAD_VIDEO_BUTTON =
             Settings.SPOOF_STREAMING_DATA.get() &&
-                    Settings.SPOOF_STREAMING_DATA_USE_TV.get() &&
-                    Settings.SPOOF_STREAMING_DATA_TV_RELOAD_VIDEO_BUTTON.get();
+                    Settings.SPOOF_STREAMING_DATA_RELOAD_VIDEO_BUTTON.get();
+    private static final boolean SPOOF_STREAMING_DATA_RELOAD_VIDEO_BUTTON_ALWAYS_SHOW =
+            SPOOF_STREAMING_DATA_RELOAD_VIDEO_BUTTON &&
+                    Settings.SPOOF_STREAMING_DATA_RELOAD_VIDEO_BUTTON_ALWAYS_SHOW.get();
     private static WeakReference<ImageView> buttonReference = new WeakReference<>(null);
     private static boolean isVisible;
 
@@ -32,7 +34,7 @@ public class ReloadVideoButtonController {
         try {
             ImageView imageView = Objects.requireNonNull(getChildView(youtubeControlsLayout, "revanced_reload_video_button"));
             imageView.setVisibility(View.GONE);
-            imageView.setOnClickListener(v -> ReloadVideoPatch.reloadVideo());
+            imageView.setOnClickListener(v -> VideoUtils.reloadVideo());
             buttonReference = new WeakReference<>(imageView);
         } catch (Exception ex) {
             Logger.printException(() -> "Unable to set RelativeLayout", ex);
@@ -85,8 +87,7 @@ public class ReloadVideoButtonController {
     }
 
     private static boolean shouldBeShown() {
-        return SPOOF_STREAMING_DATA_TV_RELOAD_VIDEO_BUTTON &&
-                StreamingDataRequest.getLastSpoofedClientIsTV() &&
-                ReloadVideoPatch.isProgressBarVisible();
+        return SPOOF_STREAMING_DATA_RELOAD_VIDEO_BUTTON &&
+                (SPOOF_STREAMING_DATA_RELOAD_VIDEO_BUTTON_ALWAYS_SHOW || ReloadVideoPatch.isProgressBarVisible());
     }
 }

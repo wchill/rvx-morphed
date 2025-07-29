@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Translation Exception -->
-    <string name="revanced_spoof_streaming_data_side_effects_android_creator">@string/revanced_spoof_streaming_data_side_effects_android</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_unplugged">@string/revanced_spoof_streaming_data_side_effects_android</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr">@string/revanced_spoof_streaming_data_side_effects_android</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_no_auth">@string/revanced_spoof_streaming_data_side_effects_android</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_embedded">@string/revanced_spoof_streaming_data_side_effects_tv</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply">@string/revanced_spoof_streaming_data_side_effects_tv</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_android_creator">@string/revanced_spoof_streaming_data_side_effects_audio_android</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_android_unplugged">@string/revanced_spoof_streaming_data_side_effects_audio_android</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_android_vr">@string/revanced_spoof_streaming_data_side_effects_audio_android</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_android_vr_no_auth">@string/revanced_spoof_streaming_data_side_effects_audio_android</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_ios_deprecated">@string/revanced_spoof_streaming_data_side_effects_ios_deprecated</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_tv_embedded">@string/revanced_spoof_streaming_data_side_effects_audio_tv</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_tv_simply">@string/revanced_spoof_streaming_data_side_effects_audio_tv</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_android"></string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_android_creator">@string/revanced_spoof_streaming_data_side_effects_video_android</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_android_unplugged">@string/revanced_spoof_streaming_data_side_effects_video_android</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_android_vr">@string/revanced_spoof_streaming_data_side_effects_video_android</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_android_vr_no_auth">@string/revanced_spoof_streaming_data_side_effects_video_android</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_android_creator_without_tv">@string/revanced_spoof_streaming_data_side_effects_video_android_without_tv</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_android_unplugged_without_tv">@string/revanced_spoof_streaming_data_side_effects_video_android_without_tv</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_android_vr_without_tv">@string/revanced_spoof_streaming_data_side_effects_video_android_without_tv</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_android_vr_no_auth_without_tv">@string/revanced_spoof_streaming_data_side_effects_video_android_without_tv</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_ios_unplugged"></string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_ios_deprecated">@string/revanced_spoof_streaming_data_side_effects_ios_deprecated</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_ios_deprecated_without_tv">@string/revanced_spoof_streaming_data_side_effects_ios_deprecated</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_tv_embedded">@string/revanced_spoof_streaming_data_side_effects_video_tv</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_tv_simply">@string/revanced_spoof_streaming_data_side_effects_video_tv</string>
 </resources>

@@ -41,6 +41,8 @@ public class BaseSettings {
      * Some patches are in a shared path, so they are declared here.
      */
     public static final BooleanSetting SPOOF_STREAMING_DATA = new BooleanSetting("revanced_spoof_streaming_data", TRUE, true, "revanced_spoof_streaming_data_user_dialog_message");
+    public static final BooleanSetting SPOOF_STREAMING_DATA_RELOAD_VIDEO_BUTTON = new BooleanSetting("revanced_spoof_streaming_data_reload_video_button", TRUE, true, parent(SPOOF_STREAMING_DATA));
+    public static final BooleanSetting SPOOF_STREAMING_DATA_RELOAD_VIDEO_BUTTON_ALWAYS_SHOW = new BooleanSetting("revanced_spoof_streaming_data_reload_video_button_always_show", FALSE, true, parent(SPOOF_STREAMING_DATA_RELOAD_VIDEO_BUTTON));
     public static final BooleanSetting SPOOF_STREAMING_DATA_STATS_FOR_NERDS = new BooleanSetting("revanced_spoof_streaming_data_stats_for_nerds", TRUE, parent(SPOOF_STREAMING_DATA));
 
     public static final BooleanSetting SPOOF_STREAMING_DATA_VR_DISABLE_AV1 = new BooleanSetting("revanced_spoof_streaming_data_vr_disable_av1", FALSE, true, new ClientAndroidVRVideoAvailability());
@@ -57,12 +59,12 @@ public class BaseSettings {
             "revanced_spoof_streaming_data_use_tv_user_dialog_message", parent(SPOOF_STREAMING_DATA));
     public static final BooleanSetting SPOOF_STREAMING_DATA_USE_TV_ALL = new BooleanSetting("revanced_spoof_streaming_data_use_tv_all", FALSE, true, new ClientTVAvailability());
     public static final BooleanSetting SPOOF_STREAMING_DATA_TV_USE_LATEST_JS = new BooleanSetting("revanced_spoof_streaming_data_tv_use_latest_js", FALSE, true, new ClientTVAvailability());
-    public static final BooleanSetting SPOOF_STREAMING_DATA_TV_USE_V8_JS_ENGINE = new BooleanSetting("revanced_spoof_streaming_data_tv_use_v8_js_engine", TRUE, true, new J2V8Availability());
-    public static final BooleanSetting SPOOF_STREAMING_DATA_TV_RELOAD_VIDEO_BUTTON = new BooleanSetting("revanced_spoof_streaming_data_tv_reload_video_button", FALSE, true, new ClientTVAvailability());
+    public static final BooleanSetting SPOOF_STREAMING_DATA_TV_USE_V8_JS_ENGINE = new BooleanSetting("revanced_spoof_streaming_data_tv_use_v8_js_engine", TRUE, true,
+            "revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message", new J2V8Availability());
 
     // Client type must be last spoof setting due to cyclic references.
-    public static final EnumSetting<YouTubeAppClient.ClientType> SPOOF_STREAMING_DATA_VIDEO_TYPE = new EnumSetting<>("revanced_spoof_streaming_data_video_type", YouTubeAppClient.ClientType.IOS_UNPLUGGED, true, parent(SPOOF_STREAMING_DATA));
-    public static final EnumSetting<YouTubeAppClient.ClientType> SPOOF_STREAMING_DATA_AUDIO_TYPE = new EnumSetting<>("revanced_spoof_streaming_data_audio_type", YouTubeAppClient.ClientType.IOS_UNPLUGGED, true, parent(SPOOF_STREAMING_DATA));
+    public static final EnumSetting<YouTubeAppClient.ClientType> SPOOF_STREAMING_DATA_DEFAULT_CLIENT_VIDEO = new EnumSetting<>("revanced_spoof_streaming_data_default_client_video", YouTubeAppClient.ClientType.IOS_UNPLUGGED, true, parent(SPOOF_STREAMING_DATA));
+    public static final EnumSetting<YouTubeAppClient.ClientType> SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO = new EnumSetting<>("revanced_spoof_streaming_data_default_client_audio", YouTubeAppClient.ClientType.IOS_UNPLUGGED, true, parent(SPOOF_STREAMING_DATA));
 
     /**
      * These settings are used by YouTube and YouTube Music.

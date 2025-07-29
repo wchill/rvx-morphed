@@ -103,16 +103,16 @@ class StreamingDataRequest private constructor(
         private const val PAGE_ID_HEADER = "X-Goog-PageId"
         private const val MAX_MILLISECONDS_TO_WAIT_FOR_FETCH = 25 * 1000
 
-        private val SPOOF_STREAMING_DATA_AUDIO_TYPE: ClientType =
-            BaseSettings.SPOOF_STREAMING_DATA_AUDIO_TYPE.get()
-        private val SPOOF_STREAMING_DATA_VIDEO_TYPE: ClientType =
-            BaseSettings.SPOOF_STREAMING_DATA_VIDEO_TYPE.get()
+        private val SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO: ClientType =
+            BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO.get()
+        private val SPOOF_STREAMING_DATA_DEFAULT_CLIENT_VIDEO: ClientType =
+            BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT_VIDEO.get()
         private val CLIENT_ORDER_TO_USE_AUDIO: Array<ClientType> =
-            YouTubeAppClient.availableClientTypes(SPOOF_STREAMING_DATA_AUDIO_TYPE)
+            YouTubeAppClient.availableClientTypes(SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO)
         private val CLIENT_ORDER_TO_USE_VIDEO: Array<ClientType> =
-            YouTubeAppClient.availableClientTypes(SPOOF_STREAMING_DATA_VIDEO_TYPE)
-        private val DEFAULT_AUDIO_CLIENT_IS_ANDROID_VR_NO_AUTH: Boolean =
-            SPOOF_STREAMING_DATA_AUDIO_TYPE == ClientType.ANDROID_VR_NO_AUTH
+            YouTubeAppClient.availableClientTypes(SPOOF_STREAMING_DATA_DEFAULT_CLIENT_VIDEO)
+        private val DEFAULT_CLIENT_AUDIO_IS_ANDROID_VR_NO_AUTH: Boolean =
+            SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO == ClientType.ANDROID_VR_NO_AUTH
         private val liveStreams: ByteArrayFilterGroup =
             ByteArrayFilterGroup(
                 null,
@@ -378,7 +378,7 @@ class StreamingDataRequest private constructor(
                     createApplicationRequestBody(
                         clientType = clientType,
                         videoId = videoId,
-                        setLocale = DEFAULT_AUDIO_CLIENT_IS_ANDROID_VR_NO_AUTH,
+                        setLocale = DEFAULT_CLIENT_AUDIO_IS_ANDROID_VR_NO_AUTH,
                         language = overrideLanguage.ifEmpty { BaseSettings.SPOOF_STREAMING_DATA_VR_LANGUAGE.get().language }
                     )
                 }
@@ -525,7 +525,7 @@ class StreamingDataRequest private constructor(
             val streamingDataAudio = streamingDataAudioPair.first
             val spoofedAudioClientFriendlyName = streamingDataAudioPair.second
 
-            if (SPOOF_STREAMING_DATA_AUDIO_TYPE != SPOOF_STREAMING_DATA_VIDEO_TYPE
+            if (SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO != SPOOF_STREAMING_DATA_DEFAULT_CLIENT_VIDEO
                 && streamingDataAudio != null) {
                 val streamingDataVideoPair = fetchStream(
                     videoId,

@@ -62,10 +62,35 @@ public class SpoofStreamingDataSideEffectsPreference extends Preference {
     }
 
     private void updateUI() {
-        final String clientName = Settings.SPOOF_STREAMING_DATA_VIDEO_TYPE.get().name().toLowerCase();
-        final String summaryTextKey = "revanced_spoof_streaming_data_side_effects_" + clientName;
+        String audioClientName = Settings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO.get().name().toLowerCase();
+        String videoClientName = Settings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT_VIDEO.get().name().toLowerCase();
 
-        setSummary(str(summaryTextKey));
+        boolean audioClientIsTV = audioClientName.startsWith("tv");
+        boolean videoClientIsTV = videoClientName.startsWith("tv");
+
+        String summaryTextKeyPrefix = "revanced_spoof_streaming_data_side_effects";
+        String audioClientSummaryTextKey = summaryTextKeyPrefix + "_audio_" + audioClientName;
+        String videoClientSummaryTextKey = summaryTextKeyPrefix + "_video_" + videoClientName;
+
+        if (!videoClientIsTV && !Settings.SPOOF_STREAMING_DATA_USE_TV.get()) {
+            videoClientSummaryTextKey += "_without_tv";
+        }
+
+        String audioClientSummaryText = str(audioClientSummaryTextKey);
+        String videoClientSummaryText = str(videoClientSummaryTextKey);
+
+        StringBuilder sb = new StringBuilder();
+        if (audioClientIsTV && videoClientIsTV) {
+            sb.append(videoClientSummaryText);
+        } else {
+            sb.append(audioClientSummaryText);
+            if (!videoClientSummaryText.isEmpty() && !audioClientSummaryText.equals(videoClientSummaryText)) {
+                sb.append("\n");
+                sb.append(videoClientSummaryText);
+            }
+        }
+
+        setSummary(sb.toString());
         setEnabled(Settings.SPOOF_STREAMING_DATA.get());
         setSelectable(false);
     }
