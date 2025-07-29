@@ -43,6 +43,17 @@ public final class AnimationFeedbackPatch {
     /**
      * Injection point.
      */
+    public static int getShortsLikeFeedbackId(int originalId) {
+        if (CURRENT_TYPE == ORIGINAL || CURRENT_TYPE.rawRes == 0) {
+            return originalId;
+        }
+
+        return CURRENT_TYPE.rawRes;
+    }
+
+    /**
+     * Injection point.
+     */
     public static void setShortsLikeFeedback(LottieAnimationView lottieAnimationView) {
         if (CURRENT_TYPE == ORIGINAL) {
             return;

@@ -8,6 +8,7 @@ import app.revanced.patches.shared.mapping.ResourceType.DRAWABLE
 import app.revanced.patches.shared.mapping.ResourceType.ID
 import app.revanced.patches.shared.mapping.ResourceType.INTEGER
 import app.revanced.patches.shared.mapping.ResourceType.LAYOUT
+import app.revanced.patches.shared.mapping.ResourceType.RAW
 import app.revanced.patches.shared.mapping.ResourceType.STRING
 import app.revanced.patches.shared.mapping.ResourceType.STYLE
 import app.revanced.patches.shared.mapping.ResourceType.XML
@@ -125,6 +126,8 @@ var insetOverlayViewLayout = -1L
 var interstitialsContainer = -1L
     private set
 var insetElementsWrapper = -1L
+    private set
+var likeTapFeedbackCairo = -1L
     private set
 var menuItemView = -1L
     private set
@@ -331,6 +334,7 @@ internal val sharedResourceIdPatch = resourcePatch(
         insetOverlayViewLayout = getResourceId(ID, "inset_overlay_view_layout")
         interstitialsContainer = getResourceId(ID, "interstitials_container")
         insetElementsWrapper = getResourceId(LAYOUT, "inset_elements_wrapper")
+        likeTapFeedbackCairo = getResourceId(RAW, "like_tap_feedback_cairo")
         menuItemView = getResourceId(ID, "menu_item_view")
         miniplayerMaxSize = getResourceId(DIMEN, "miniplayer_max_size")
         modernMiniPlayerClose = getResourceId(ID, "modern_miniplayer_close")

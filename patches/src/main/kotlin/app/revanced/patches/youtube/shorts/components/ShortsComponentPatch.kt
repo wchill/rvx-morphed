@@ -46,6 +46,7 @@ import app.revanced.patches.youtube.utils.playservice.versionCheckPatch
 import app.revanced.patches.youtube.utils.recyclerview.recyclerViewTreeObserverHook
 import app.revanced.patches.youtube.utils.recyclerview.recyclerViewTreeObserverPatch
 import app.revanced.patches.youtube.utils.resourceid.bottomBarContainer
+import app.revanced.patches.youtube.utils.resourceid.likeTapFeedbackCairo
 import app.revanced.patches.youtube.utils.resourceid.reelDynRemix
 import app.revanced.patches.youtube.utils.resourceid.reelDynShare
 import app.revanced.patches.youtube.utils.resourceid.reelFeedbackLike
@@ -149,6 +150,20 @@ private val shortsAnimationPatch = bytecodePatch(
                     viewIndex + 1,
                     methodCall
                 )
+            }
+
+            if (likeTapFeedbackCairo != -1L) {
+                val literalIndex = indexOfFirstLiteralInstruction(likeTapFeedbackCairo)
+                if (literalIndex > -1) {
+                    val literalRegister = getInstruction<OneRegisterInstruction>(literalIndex).registerA
+
+                    addInstructions(
+                        literalIndex + 1, """
+                            invoke-static { v$literalRegister }, $EXTENSION_ANIMATION_FEEDBACK_CLASS_DESCRIPTOR->getShortsLikeFeedbackId(I)I
+                            move-result v$literalRegister
+                            """
+                    )
+                }
             }
         }
 

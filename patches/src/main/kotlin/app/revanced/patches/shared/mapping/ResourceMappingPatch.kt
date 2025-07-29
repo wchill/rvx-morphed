@@ -55,6 +55,7 @@ enum class ResourceType(val value: String) {
     ID("id"),
     INTEGER("integer"),
     LAYOUT("layout"),
+    RAW("raw"),
     STRING("string"),
     STYLE("style"),
     XML("xml")
