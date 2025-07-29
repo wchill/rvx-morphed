@@ -12,6 +12,7 @@ import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.Clien
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientAndroidVRNoAuthAvailability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientiOSAvailability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientTVAvailability;
+import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.J2V8Availability;
 
 /**
  * Settings shared across multiple apps.
@@ -56,6 +57,7 @@ public class BaseSettings {
             "revanced_spoof_streaming_data_use_tv_user_dialog_message", parent(SPOOF_STREAMING_DATA));
     public static final BooleanSetting SPOOF_STREAMING_DATA_USE_TV_ALL = new BooleanSetting("revanced_spoof_streaming_data_use_tv_all", FALSE, true, new ClientTVAvailability());
     public static final BooleanSetting SPOOF_STREAMING_DATA_TV_USE_LATEST_JS = new BooleanSetting("revanced_spoof_streaming_data_tv_use_latest_js", TRUE, true, new ClientTVAvailability());
+    public static final BooleanSetting SPOOF_STREAMING_DATA_TV_USE_V8_JS_ENGINE = new BooleanSetting("revanced_spoof_streaming_data_tv_use_v8_js_engine", TRUE, true, new J2V8Availability());
     public static final BooleanSetting SPOOF_STREAMING_DATA_TV_RELOAD_VIDEO_BUTTON = new BooleanSetting("revanced_spoof_streaming_data_tv_reload_video_button", FALSE, true, new ClientTVAvailability());
 
     // Client type must be last spoof setting due to cyclic references.

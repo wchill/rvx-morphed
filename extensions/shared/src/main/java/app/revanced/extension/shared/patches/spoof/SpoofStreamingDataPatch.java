@@ -11,6 +11,7 @@ import com.google.protos.youtube.api.innertube.StreamingDataOuterClass.Streaming
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Map;
@@ -31,6 +32,7 @@ import app.revanced.extension.youtube.shared.VideoInformation;
 @TargetApi(26)
 @SuppressWarnings("unused")
 public class SpoofStreamingDataPatch extends BlockRequestPatch {
+    private static final boolean J2V8_LIBRARY_AVAILABILITY = checkJ2V8();
     private static final boolean SPOOF_STREAMING_DATA_USE_IOS =
             PatchStatus.SpoofStreamingDataIOS() && BaseSettings.SPOOF_STREAMING_DATA_USE_IOS.get();
     private static final boolean SPOOF_STREAMING_DATA_USE_TV =
@@ -39,6 +41,9 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
             SPOOF_STREAMING_DATA_USE_TV && BaseSettings.SPOOF_STREAMING_DATA_USE_TV_ALL.get();
     private static final boolean SPOOF_STREAMING_DATA_TV_USE_LATEST_JS =
             BaseSettings.SPOOF_STREAMING_DATA_TV_USE_LATEST_JS.get();
+    private static final boolean SPOOF_STREAMING_DATA_TV_USE_V8_JS_ENGINE =
+            BaseSettings.SPOOF_STREAMING_DATA_TV_USE_V8_JS_ENGINE.get() &&
+                    J2V8_LIBRARY_AVAILABILITY;
 
     /**
      * Any unreachable ip address.  Used to intentionally fail requests.
@@ -68,6 +73,29 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
      */
     @NonNull
     private static volatile String reasonSkipped = "";
+
+    /**
+     * If the app is installed via mounting, it will fail to load the J2V8 library.
+     * So, when the class is loaded, it should first check if the J2V8 library is present.
+     * <p>
+     * TODO: A feature should be implemented in revanced-library to copy external libraries
+     *       to the original app's path (/data/data/com.google.android.youtube/lib/*).
+     * @return Whether the J2V8 library exists.
+     */
+    private static boolean checkJ2V8() {
+        try {
+            String libraryDir = Utils.getContext()
+                    .getApplicationContext()
+                    .getApplicationInfo()
+                    .nativeLibraryDir;
+            File j2v8 = new File(libraryDir + "/libj2v8.so");
+            return j2v8.exists();
+        } catch (Exception ex) {
+            Logger.printException(() -> "J2V8 native library not found", ex);
+        }
+        return false;
+    }
+
 
     /**
      * Injection point.
@@ -238,7 +266,8 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         if (SPOOF_STREAMING_DATA_USE_TV) {
             // Download JavaScript and initialize the Cipher class
             CompletableFuture.runAsync(() -> ThrottlingParameterUtils.initializeJavascript(
-                    SPOOF_STREAMING_DATA_TV_USE_LATEST_JS
+                    SPOOF_STREAMING_DATA_TV_USE_LATEST_JS,
+                    SPOOF_STREAMING_DATA_TV_USE_V8_JS_ENGINE
             ));
         }
     }
@@ -334,6 +363,15 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
             // Check conditions of launch and now. Otherwise if spoofing is changed
             // without a restart the setting will show as available when it's not.
             return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.notSpoofingToAndroid();
+        }
+    }
+
+    public static final class J2V8Availability implements Setting.Availability {
+        @Override
+        public boolean isAvailable() {
+            return BaseSettings.SPOOF_STREAMING_DATA.get() &&
+                    BaseSettings.SPOOF_STREAMING_DATA_TYPE.get().name().startsWith("TV") &&
+                    J2V8_LIBRARY_AVAILABILITY;
         }
     }
 

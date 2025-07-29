@@ -2416,6 +2416,13 @@ This feature is still WIP, so please use it for debugging purposes only."</strin
     <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"JavaScript for deobfuscation is not kept up to date.
 
 • JavaScript that succeeds in deobfuscation is used, but it is still somewhat server-dependent."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">Use V8 JavaScript engine</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript runs in native libraries.
+
+• Powered by SmartTube."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript does not run in native libraries.
+
+• Powered by JavaTube."</string>
     <string name="revanced_spoof_streaming_data_tv_reload_video_button_title">Show TV reload video button</string>
     <string name="revanced_spoof_streaming_data_tv_reload_video_button_summary_on">Reload video button is shown when buffering animation is shown.</string>
     <string name="revanced_spoof_streaming_data_tv_reload_video_button_summary_off">Reload video button is hidden.</string>

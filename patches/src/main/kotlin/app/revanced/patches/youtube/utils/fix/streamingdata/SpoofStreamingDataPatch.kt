@@ -7,8 +7,10 @@ import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.instructions
 import app.revanced.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.revanced.patcher.patch.PatchException
+import app.revanced.patcher.patch.ResourcePatchContext
 import app.revanced.patcher.patch.booleanOption
 import app.revanced.patcher.patch.bytecodePatch
+import app.revanced.patcher.patch.rawResourcePatch
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.revanced.patches.shared.extension.Constants.EXTENSION_UTILS_CLASS_DESCRIPTOR
 import app.revanced.patches.shared.extension.Constants.PATCHES_PATH
@@ -33,7 +35,6 @@ import app.revanced.patches.youtube.utils.playservice.versionCheckPatch
 import app.revanced.patches.youtube.utils.request.buildRequestPatch
 import app.revanced.patches.youtube.utils.request.hookBuildRequest
 import app.revanced.patches.youtube.utils.resourceid.sharedResourceIdPatch
-import app.revanced.patches.youtube.utils.settings.ResourceUtils
 import app.revanced.patches.youtube.utils.settings.ResourceUtils.addPreference
 import app.revanced.patches.youtube.utils.settings.settingsPatch
 import app.revanced.patches.youtube.video.information.hookBackgroundPlayVideoInformation
@@ -51,6 +52,7 @@ import app.revanced.util.fingerprint.injectLiteralInstructionBooleanCall
 import app.revanced.util.fingerprint.matchOrThrow
 import app.revanced.util.fingerprint.methodOrThrow
 import app.revanced.util.getReference
+import app.revanced.util.inputStreamFromBundledResourceOrThrow
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -60,6 +62,54 @@ import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
+import java.nio.file.Files
+import java.nio.file.StandardCopyOption
+import kotlin.io.path.notExists
+
+private lateinit var context: ResourcePatchContext
+
+private val spoofStreamingDataRawResourcePatch = rawResourcePatch(
+    description = "spoofStreamingDataRawResourcePatch"
+) {
+    execute {
+        context = this
+        setOf(
+            "arm64-v8a",
+            "armeabi-v7a",
+            "x86",
+            "x86_64"
+        ).forEach { lib ->
+            val libraryDirectory = get("lib")
+            val architectureDirectory = libraryDirectory.resolve(lib)
+
+            if (architectureDirectory.exists()) {
+                val libraryFile = architectureDirectory.resolve("libj2v8.so")
+
+                val libraryDirectoryPath = libraryDirectory.toPath()
+                if (libraryDirectoryPath.notExists()) {
+                    Files.createDirectories(libraryDirectoryPath)
+                }
+                val architectureDirectoryPath = architectureDirectory.toPath()
+                if (architectureDirectoryPath.notExists()) {
+                    Files.createDirectories(architectureDirectoryPath)
+                }
+                val libraryPath = libraryFile.toPath()
+                Files.createFile(libraryPath)
+
+                val inputStream = inputStreamFromBundledResourceOrThrow(
+                    "youtube/spoof/jniLibs",
+                    "$lib/libj2v8.so"
+                )
+
+                Files.copy(
+                    inputStream,
+                    libraryPath,
+                    StandardCopyOption.REPLACE_EXISTING,
+                )
+            }
+        }
+    }
+}
 
 private const val EXTENSION_CLASS_DESCRIPTOR =
     "$SPOOF_PATH/SpoofStreamingDataPatch;"
@@ -75,6 +125,7 @@ val spoofStreamingDataPatch = bytecodePatch(
     compatibleWith(COMPATIBLE_PACKAGE)
 
     dependsOn(
+        spoofStreamingDataRawResourcePatch,
         settingsPatch,
         baseSpoofUserAgentPatch(YOUTUBE_PACKAGE_NAME),
         blockRequestPatch,
@@ -383,7 +434,7 @@ val spoofStreamingDataPatch = bytecodePatch(
                 "revanced_audio_track.xml",
             )
         ).forEach { resourceGroup ->
-            ResourceUtils.getContext().copyResources("youtube/spoof/$directory", resourceGroup)
+            context.copyResources("youtube/spoof/$directory", resourceGroup)
         }
 
         // endregion
@@ -415,7 +466,7 @@ val spoofStreamingDataPatch = bytecodePatch(
                 "revanced_reload_video.xml",
             )
         ).forEach { resourceGroup ->
-            ResourceUtils.getContext().copyResources("youtube/spoof/$directory", resourceGroup)
+            context.copyResources("youtube/spoof/$directory", resourceGroup)
         }
 
         // endregion
