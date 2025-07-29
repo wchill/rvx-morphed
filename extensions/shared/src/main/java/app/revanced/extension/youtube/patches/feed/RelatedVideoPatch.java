@@ -12,7 +12,8 @@ import app.revanced.extension.youtube.shared.VideoInformation;
 @SuppressWarnings("unused")
 public final class RelatedVideoPatch {
     private static final boolean HIDE_RELATED_VIDEOS = Settings.HIDE_RELATED_VIDEOS.get();
-    private static final boolean HIDE_RELATED_VIDEOS_TYPE = Settings.HIDE_RELATED_VIDEOS_TYPE.get();
+    private static final boolean HIDE_RELATED_VIDEOS_TYPE =
+            HIDE_RELATED_VIDEOS && Settings.HIDE_RELATED_VIDEOS_TYPE.get();
     private static final int OFFSET = Settings.RELATED_VIDEOS_OFFSET.get();
 
     // video title,channel bar, video action bar, comment
@@ -26,6 +27,12 @@ public final class RelatedVideoPatch {
             return size() > NUMBER_OF_LAST_VIDEO_IDS_TO_TRACK;
         }
     };
+
+    public static void onDismiss() {
+        if (HIDE_RELATED_VIDEOS_TYPE) {
+            lastVideoIds.clear();
+        }
+    }
 
     public static int overrideItemCounts(int itemCounts) {
         if (!HIDE_RELATED_VIDEOS) {

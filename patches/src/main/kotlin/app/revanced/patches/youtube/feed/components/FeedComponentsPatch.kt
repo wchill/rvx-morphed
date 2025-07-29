@@ -13,6 +13,8 @@ import app.revanced.patches.shared.litho.emptyComponentLabel
 import app.revanced.patches.shared.mainactivity.onCreateMethod
 import app.revanced.patches.youtube.utils.bottomsheet.bottomSheetHookPatch
 import app.revanced.patches.youtube.utils.compatibility.Constants.COMPATIBLE_PACKAGE
+import app.revanced.patches.youtube.utils.dismiss.dismissPlayerHookPatch
+import app.revanced.patches.youtube.utils.dismiss.hookDismissObserver
 import app.revanced.patches.youtube.utils.engagement.engagementPanelHookPatch
 import app.revanced.patches.youtube.utils.extension.Constants.COMPONENTS_PATH
 import app.revanced.patches.youtube.utils.extension.Constants.FEED_CLASS_DESCRIPTOR
@@ -79,6 +81,7 @@ val feedComponentsPatch = bytecodePatch(
         sharedResourceIdPatch,
         settingsPatch,
         bottomSheetHookPatch,
+        dismissPlayerHookPatch,
         engagementPanelHookPatch,
         videoInformationPatch,
         versionCheckPatch,
@@ -190,6 +193,8 @@ val feedComponentsPatch = bytecodePatch(
                 )
             }
         }
+
+        hookDismissObserver("$RELATED_VIDEO_CLASS_DESCRIPTOR->onDismiss()V")
 
         // endregion
 
