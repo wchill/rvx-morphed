@@ -8,6 +8,7 @@ import app.revanced.patcher.patch.resourcePatch
 import app.revanced.patcher.patch.stringOption
 import app.revanced.patcher.util.smali.ExternalLabel
 import app.revanced.patches.youtube.utils.compatibility.Constants.COMPATIBLE_PACKAGE
+import app.revanced.patches.youtube.utils.dismiss.dismissPlayerHookPatch
 import app.revanced.patches.youtube.utils.extension.Constants.OVERLAY_BUTTONS_PATH
 import app.revanced.patches.youtube.utils.extension.Constants.UTILS_PATH
 import app.revanced.patches.youtube.utils.fix.bottomui.cfBottomUIPatch
@@ -73,6 +74,7 @@ val overlayButtonsPatch = resourcePatch(
     dependsOn(
         overlayButtonsBytecodePatch,
         cfBottomUIPatch,
+        dismissPlayerHookPatch,
         pipStateHookPatch,
         playerControlsPatch,
         playlistPatch,

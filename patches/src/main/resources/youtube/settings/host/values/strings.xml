@@ -1401,6 +1401,7 @@ Info:
     <string name="revanced_whitelist_settings_summary">Check or remove the list of channels added to the whitelist.</string>
     <string name="revanced_whitelist_added">Channel \'%1$s\' was added to the %2$s whitelist.</string>
     <string name="revanced_whitelist_add_failed">Failed to add channel \'%1$s\' to the %2$s whitelist.</string>
+    <string name="revanced_whitelist_reload_video">Would you like to reload the video now?</string>
     <string name="revanced_whitelist_removed">Channel \'%1$s\' was removed from the %2$s whitelist.</string>
     <string name="revanced_whitelist_remove_failed">Failed to remove channel \'%1$s\' from the %2$s whitelist.</string>
     <string name="revanced_whitelist_remove_dialog_message">Remove channel \'%1$s\' from %2$s whitelist?</string>
