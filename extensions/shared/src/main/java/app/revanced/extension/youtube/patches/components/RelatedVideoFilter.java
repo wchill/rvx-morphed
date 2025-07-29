@@ -48,7 +48,7 @@ public final class RelatedVideoFilter extends Filter {
                               StringFilterGroup matchedGroup, FilterContentType contentType, int contentIndex) {
         if (PlayerType.getCurrent() == PlayerType.WATCH_WHILE_MINIMIZED &&
                 isActionBarVisible.compareAndSet(false, true)) {
-            Utils.runOnMainThreadDelayed(() -> isActionBarVisible.compareAndSet(true, false), 500);
+            Utils.runOnMainThreadDelayed(() -> isActionBarVisible.compareAndSet(true, false), 1000);
         }
 
         return false;
