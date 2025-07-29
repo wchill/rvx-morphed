@@ -14,6 +14,7 @@ import org.apache.commons.lang3.StringUtils;
 import java.io.File;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
@@ -30,7 +31,7 @@ import app.revanced.extension.shared.utils.Utils;
 import app.revanced.extension.youtube.shared.VideoInformation;
 
 @TargetApi(26)
-@SuppressWarnings("unused")
+@SuppressWarnings({"deprecation", "unused"})
 public class SpoofStreamingDataPatch extends BlockRequestPatch {
     private static final boolean J2V8_LIBRARY_AVAILABILITY = checkJ2V8();
     private static final boolean SPOOF_STREAMING_DATA_USE_IOS =
@@ -96,24 +97,6 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         return false;
     }
 
-
-    /**
-     * Injection point.
-     */
-    public static boolean isSpoofingEnabled() {
-        return SPOOF_STREAMING_DATA;
-    }
-
-    /**
-     * Injection point.
-     * Called after {@link #getStreamingData(String)}
-     * Used for {@link ClientType#TV}, {@link ClientType#TV_SIMPLY} and {@link ClientType#TV_EMBEDDED}.
-     */
-    public static boolean lastSpoofedClientIsTV() {
-        return SPOOF_STREAMING_DATA_USE_TV &&
-                StreamingDataRequest.getLastSpoofedClientIsTV();
-    }
-
     /**
      * Injection point.
      * This method is only invoked when playing a livestream on an iOS client.
@@ -164,11 +147,7 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         }
     }
 
-    /**
-     * Injection point.
-     * Called before {@link #getStreamingData(String)}.
-     */
-    public static boolean isValidVideoId(@Nullable String videoId) {
+    private static boolean isValidVideoId(@Nullable String videoId) {
         return videoId != null && !videoId.isEmpty() && !"zzzzzzzzzzz".equals(videoId);
     }
 
@@ -178,7 +157,7 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
      * Called after {@link #fetchStreams(String, Map)}.
      */
     public static StreamingData getStreamingData(@NonNull String videoId) {
-        if (SPOOF_STREAMING_DATA) {
+        if (SPOOF_STREAMING_DATA && isValidVideoId(videoId)) {
             try {
                 StreamingDataRequest request = StreamingDataRequest.getRequestForVideoId(videoId);
                 if (request != null) {
@@ -191,10 +170,13 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
                         Logger.printException(() -> "Error: Blocking main thread");
                     }
 
-                    var stream = request.getStream();
-                    if (stream != null) {
-                        Logger.printDebug(() -> "Overriding video stream: " + videoId);
-                        return stream;
+                    var streamPair = request.getStreamPair();
+                    if (streamPair != null) {
+                        var stream = streamPair.getFirst();
+                        if (stream != null) {
+                            Logger.printDebug(() -> "Overriding video stream: " + videoId);
+                            return stream;
+                        }
                     }
                 }
 
@@ -205,6 +187,44 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         }
 
         return null;
+    }
+
+    /**
+     * Injection point.
+     * Replace adaptiveFormats to merge multiple video and audio formats.
+     * Called after {@link #getStreamingData(String)}.
+     */
+    public static List<?> getAdaptiveFormats(@Nullable String videoId, List<?> adaptiveFormats) {
+        if (SPOOF_STREAMING_DATA && isValidVideoId(videoId)) {
+            try {
+                StreamingDataRequest request = StreamingDataRequest.getRequestForVideoId(videoId);
+                if (request != null) {
+                    // This hook is always called off the main thread,
+                    // but this can later be called for the same video id from the main thread.
+                    // This is not a concern, since the fetch will always be finished
+                    // and never block the main thread.
+                    // But if debugging, then still verify this is the situation.
+                    if (BaseSettings.DEBUG.get() && !request.fetchCompleted() && Utils.isCurrentlyOnMainThread()) {
+                        Logger.printException(() -> "Error: Blocking main thread");
+                    }
+
+                    var streamPair = request.getStreamPair();
+                    if (streamPair != null) {
+                        var formats = streamPair.getSecond();
+                        if (formats != null && !formats.isEmpty()) {
+                            Logger.printDebug(() -> "Overriding adaptive formats: " + videoId);
+                            return formats;
+                        }
+                    }
+                }
+
+                Logger.printDebug(() -> "Not overriding adaptive formats (adaptive formats is null): " + videoId);
+            } catch (Exception ex) {
+                Logger.printException(() -> "getAdaptiveFormats failure", ex);
+            }
+        }
+
+        return adaptiveFormats;
     }
 
     /**
@@ -275,18 +295,22 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
     /**
      * Injection point.
      */
-    public static String appendSpoofedClient(String videoFormat) {
+    public static String appendSpoofedClient(String format, boolean isAudio) {
         try {
             if (SPOOF_STREAMING_DATA && BaseSettings.SPOOF_STREAMING_DATA_STATS_FOR_NERDS.get()
-                    && !TextUtils.isEmpty(videoFormat)) {
+                    && !TextUtils.isEmpty(format)) {
+                String client = isAudio
+                        ? StreamingDataRequest.getLastSpoofedAudioClientName()
+                        : StreamingDataRequest.getLastSpoofedVideoClientName();
+
                 // Force LTR layout, to match the same LTR video time/length layout YouTube uses for all languages
-                return "\u202D" + videoFormat + String.format("\u2009(%s)", StreamingDataRequest.getLastSpoofedClientName()); // u202D = left to right override
+                return "\u202D" + format + String.format("\u2009(%s)", client); // u202D = left to right override
             }
         } catch (Exception ex) {
             Logger.printException(() -> "appendSpoofedClient failure", ex);
         }
 
-        return videoFormat;
+        return format;
     }
 
     public static String[] getEntries() {
@@ -317,33 +341,33 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         return entryValues.toArray(new String[0]);
     }
 
-    public static boolean notSpoofingToAndroid() {
+    public static boolean notSpoofingToAndroidAudio() {
         return !PatchStatus.SpoofStreamingData()
                 || !BaseSettings.SPOOF_STREAMING_DATA.get()
-                || !BaseSettings.SPOOF_STREAMING_DATA_TYPE.get().name().startsWith("ANDROID"); // IOS, TV
+                || !BaseSettings.SPOOF_STREAMING_DATA_AUDIO_TYPE.get().name().startsWith("ANDROID"); // IOS, TV
     }
 
-    public static final class ClientAndroidVRAvailability implements Setting.Availability {
+    public static final class ClientAndroidVRVideoAvailability implements Setting.Availability {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_TYPE.get().name().startsWith("ANDROID_VR");
+                    BaseSettings.SPOOF_STREAMING_DATA_VIDEO_TYPE.get().name().startsWith("ANDROID_VR");
         }
     }
 
-    public static final class ClientAndroidVRNoAuthAvailability implements Setting.Availability {
+    public static final class ClientAndroidVRNoAuthAudioAvailability implements Setting.Availability {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_TYPE.get() == ClientType.ANDROID_VR_NO_AUTH;
+                    BaseSettings.SPOOF_STREAMING_DATA_AUDIO_TYPE.get() == ClientType.ANDROID_VR_NO_AUTH;
         }
     }
 
-    public static final class ClientiOSAvailability implements Setting.Availability {
+    public static final class ClientiOSVideoAvailability implements Setting.Availability {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_TYPE.get().name().startsWith("IOS");
+                    BaseSettings.SPOOF_STREAMING_DATA_VIDEO_TYPE.get().name().startsWith("IOS");
         }
     }
 
@@ -351,18 +375,19 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_TYPE.get().name().startsWith("TV");
+                    (BaseSettings.SPOOF_STREAMING_DATA_AUDIO_TYPE.get().name().startsWith("TV") ||
+                            BaseSettings.SPOOF_STREAMING_DATA_VIDEO_TYPE.get().name().startsWith("TV"));
         }
     }
 
     public static final class ForceOriginalAudioAvailability implements Setting.Availability {
-        private static final boolean AVAILABLE_ON_LAUNCH = SpoofStreamingDataPatch.notSpoofingToAndroid();
+        private static final boolean AVAILABLE_ON_LAUNCH = SpoofStreamingDataPatch.notSpoofingToAndroidAudio();
 
         @Override
         public boolean isAvailable() {
             // Check conditions of launch and now. Otherwise if spoofing is changed
             // without a restart the setting will show as available when it's not.
-            return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.notSpoofingToAndroid();
+            return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.notSpoofingToAndroidAudio();
         }
     }
 
@@ -370,19 +395,20 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_TYPE.get().name().startsWith("TV") &&
+                    (BaseSettings.SPOOF_STREAMING_DATA_AUDIO_TYPE.get().name().startsWith("TV") ||
+                            BaseSettings.SPOOF_STREAMING_DATA_VIDEO_TYPE.get().name().startsWith("TV")) &&
                     J2V8_LIBRARY_AVAILABILITY;
         }
     }
 
     public static final class HideAudioFlyoutMenuAvailability implements Setting.Availability {
-        private static final boolean AVAILABLE_ON_LAUNCH = SpoofStreamingDataPatch.notSpoofingToAndroid();
+        private static final boolean AVAILABLE_ON_LAUNCH = SpoofStreamingDataPatch.notSpoofingToAndroidAudio();
 
         @Override
         public boolean isAvailable() {
             // Check conditions of launch and now. Otherwise if spoofing is changed
             // without a restart the setting will show as available when it's not.
-            return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.notSpoofingToAndroid();
+            return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.notSpoofingToAndroidAudio();
         }
     }
 }

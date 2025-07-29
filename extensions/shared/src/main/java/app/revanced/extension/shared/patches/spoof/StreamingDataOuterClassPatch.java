@@ -5,9 +5,13 @@ import androidx.annotation.Nullable;
 
 import com.google.protos.youtube.api.innertube.StreamingDataOuterClass.StreamingData;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.lang.ref.WeakReference;
 import java.lang.reflect.Field;
 import java.nio.ByteBuffer;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import app.revanced.extension.shared.utils.Logger;
@@ -165,8 +169,27 @@ public class StreamingDataOuterClassPatch {
         String unknownField_z = "z";
     }
 
+    // It is based on YouTube 19.47.53, but all fields are the same regardless of the YouTube version.
+    private interface AudioTrackFields {
+        // int
+        String unknownField_b = "b";
+
+        // String
+        String displayName = "c";
+
+        // String
+        String id = "d";
+
+        // boolean
+        String audioIsDefault = "e";
+
+    }
+
     private static WeakReference<StreamingDataMessage> streamingDataMessageRef = new WeakReference<>(null);
 
+    /**
+     * Injection point.
+     */
     public static void initialize(@NonNull StreamingDataMessage streamingDataMessage) {
         streamingDataMessageRef = new WeakReference<>(streamingDataMessage);
     }
@@ -213,6 +236,104 @@ public class StreamingDataOuterClassPatch {
     }
 
     /**
+     * Add the desired formats to the ArrayList in AdaptiveFormats.
+     * @param streamingData StreamingData (GeneratedMessage) parsed by ProtoParser.
+     * @param arrayList     An ArrayList where formats are added, this is what is actually used for playback.
+     *                      Since formats that are not in this ArrayList will not be used for playback, you can filter by not adding unwanted formats.
+     *                      See {@link #removeAV1Codecs(ArrayList)},
+     *                      and {@link #removeNonOriginalAudioTracks(ArrayList)} for examples.
+     * @param isVideo       This method only distinguishes between video and audio formats.
+     */
+    public static void setAdaptiveFormats(StreamingData streamingData, ArrayList<Object> arrayList, boolean isVideo) {
+        try {
+            List<?> adaptiveFormats = getAdaptiveFormats(streamingData);
+            if (adaptiveFormats != null) {
+                for (Object adaptiveFormat : adaptiveFormats) {
+                    // 'audio/webm; codecs="opus"', 'audio/mp4; codecs="mp4a.40.2"', ...
+                    // 'video/webm; codecs="vp9"', 'video/mp4; codecs="av01.0.00M.08.0.110.05.01.06.0"', ...
+                    String mimeType = getMimeType(adaptiveFormat);
+
+                    // mimeType starts with 'video', which means it is a video format.
+                    boolean isVideoType = StringUtils.startsWith(mimeType, "video");
+
+                    // streamingData is AudioFormat, and mimeType also starts with 'audio'.
+                    boolean isAudioFormat = !isVideo && !isVideoType;
+                    // streamingData is VideoFormat, and mimeType also starts with 'video'.
+                    boolean isVideoFormat = isVideo && isVideoType;
+
+                    if (isAudioFormat || isVideoFormat) {
+                        // Add formats.
+                        arrayList.add(adaptiveFormat);
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            Logger.printException(() -> "setAdaptiveFormats failed", ex);
+        }
+    }
+
+    /**
+     * Remove 'AV1' video format from arrayList.
+     * @param arrayList An ArrayList where formats are added.
+     */
+    public static void removeAV1Codecs(ArrayList<Object> arrayList) {
+        try {
+            for (Object adaptiveFormat : arrayList) {
+                // 'audio/webm; codecs="opus"', 'audio/mp4; codecs="mp4a.40.2"', ...
+                // 'video/webm; codecs="vp9"', 'video/mp4; codecs="av01.0.00M.08.0.110.05.01.06.0"', ...
+                String mimeType = getMimeType(adaptiveFormat);
+
+                // mimeType starts with 'video', which means it is a video format.
+                boolean isVideoType = StringUtils.startsWith(mimeType, "video");
+
+                if (isVideoType) {
+                    if (mimeType.contains("av01")) {
+                        // Remove formats.
+                        arrayList.remove(adaptiveFormat);
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            Logger.printException(() -> "removeAV1Codecs failed", ex);
+        }
+    }
+
+    /**
+     * Remove non-original audioTracks from the arrayList.
+     * @param arrayList An ArrayList where formats are added.
+     */
+    public static void removeNonOriginalAudioTracks(ArrayList<Object> arrayList) {
+        try {
+            for (Object adaptiveFormat : arrayList) {
+                // 'audio/webm; codecs="opus"', 'audio/mp4; codecs="mp4a.40.2"', ...
+                // 'video/webm; codecs="vp9"', 'video/mp4; codecs="av01.0.00M.08.0.110.05.01.06.0"', ...
+                String mimeType = getMimeType(adaptiveFormat);
+
+                // mimeType starts with 'audio', which means it is a audio format.
+                boolean isAudioType = StringUtils.startsWith(mimeType, "audio");
+
+                if (isAudioType) {
+                    Field audioTrackField = adaptiveFormat.getClass().getField(FormatFields.audioTrack);
+                    audioTrackField.setAccessible(true);
+                    Object audioTrack = audioTrackField.get(adaptiveFormat);
+                    if (audioTrack != null) { // AudioTrack field exists.
+                        Field audioIsDefaultField = adaptiveFormat.getClass().getField(AudioTrackFields.audioIsDefault);
+                        audioIsDefaultField.setAccessible(true);
+                        if (audioIsDefaultField.get(audioTrack) instanceof Boolean audioIsDefault) {
+                            if (!audioIsDefault) { // This is not the original audio track.
+                                // Remove formats.
+                                arrayList.remove(adaptiveFormat);
+                            }
+                        }
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            Logger.printException(() -> "removeNonOriginalAudioTracks failed", ex);
+        }
+    }
+
+    /**
      * Set the deobfuscated streaming url in the 'url' field of adaptiveFormat.
      * <p>
      * @param adaptiveFormat AdaptiveFormat (GeneratedMessage).
@@ -228,5 +349,20 @@ public class StreamingDataOuterClassPatch {
                 Logger.printException(() -> "setUrl failed", ex);
             }
         }
+    }
+
+    private static String getMimeType(Object adaptiveFormat) {
+        if (adaptiveFormat != null) {
+            try {
+                Field field = adaptiveFormat.getClass().getField(FormatFields.mimeType);
+                field.setAccessible(true);
+                if (field.get(adaptiveFormat) instanceof String mimeType) {
+                    return mimeType;
+                }
+            } catch (Exception ex) {
+                Logger.printException(() -> "setUrl failed", ex);
+            }
+        }
+        return null;
     }
 }

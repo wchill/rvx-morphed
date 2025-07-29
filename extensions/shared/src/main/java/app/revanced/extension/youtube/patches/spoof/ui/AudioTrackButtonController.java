@@ -85,7 +85,7 @@ public class AudioTrackButtonController {
 
     private static boolean shouldBeShown() {
         return SPOOF_STREAMING_DATA_AUDIO_TRACK_BUTTON &&
-                StreamingDataRequest.getLastSpoofedClientIsAndroidVRNoAuth() &&
+                StreamingDataRequest.getLastSpoofedAudioClientIsAndroidVRNoAuth() &&
                 AudioTrackPatch.audioTrackMapIsNotNull() &&
                 !VideoInformation.isAtEndOfVideo();
     }

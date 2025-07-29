@@ -1,6 +1,6 @@
 package app.revanced.extension.youtube.patches.spoof;
 
-import static app.revanced.extension.shared.patches.spoof.requests.StreamingDataRequest.getLastSpoofedClientIsAndroidVRNoAuth;
+import static app.revanced.extension.shared.patches.spoof.requests.StreamingDataRequest.getLastSpoofedAudioClientIsAndroidVRNoAuth;
 
 import android.content.Context;
 import android.widget.LinearLayout;
@@ -82,7 +82,7 @@ public class AudioTrackPatch {
             }
             // Only 'Android VR (No auth)' can change the audio track language when fetching.
             // Check if the last spoofed client is 'Android VR (No auth)'.
-            if (!getLastSpoofedClientIsAndroidVRNoAuth()) {
+            if (!getLastSpoofedAudioClientIsAndroidVRNoAuth()) {
                 Logger.printDebug(() -> "Video is not Android VR No Auth");
                 return;
             }

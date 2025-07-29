@@ -2,6 +2,7 @@ package app.revanced.extension.shared.patches.spoof.requests
 
 import androidx.annotation.GuardedBy
 import app.revanced.extension.shared.innertube.client.YouTubeAppClient
+import app.revanced.extension.shared.innertube.client.YouTubeAppClient.ClientType
 import app.revanced.extension.shared.innertube.requests.InnerTubeRequestBody.createApplicationRequestBody
 import app.revanced.extension.shared.innertube.requests.InnerTubeRequestBody.createTVRequestBody
 import app.revanced.extension.shared.innertube.requests.InnerTubeRequestBody.getInnerTubeResponseConnectionFromRoute
@@ -11,10 +12,10 @@ import app.revanced.extension.shared.innertube.utils.ThrottlingParameterUtils
 import app.revanced.extension.shared.patches.components.ByteArrayFilterGroup
 import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.getAdaptiveFormats
 import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.parseFrom
+import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.setAdaptiveFormats
 import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.setUrl
 import app.revanced.extension.shared.requests.Requester
 import app.revanced.extension.shared.settings.BaseSettings
-import app.revanced.extension.shared.settings.EnumSetting
 import app.revanced.extension.shared.utils.Logger
 import app.revanced.extension.shared.utils.StringRef.str
 import app.revanced.extension.shared.utils.Utils
@@ -25,6 +26,7 @@ import java.io.ByteArrayOutputStream
 import java.io.IOException
 import java.net.HttpURLConnection
 import java.net.SocketTimeoutException
+import java.net.URL
 import java.nio.ByteBuffer
 import java.util.Collections
 import java.util.Objects
@@ -49,7 +51,7 @@ class StreamingDataRequest private constructor(
     reasonSkipped: String,
 ) {
     private val videoId: String
-    private val future: Future<StreamingData?>
+    private val future: Future<Pair<StreamingData?, List<Any>?>?>
 
     init {
         Objects.requireNonNull(requestHeader)
@@ -67,7 +69,7 @@ class StreamingDataRequest private constructor(
         return future.isDone
     }
 
-    val stream: StreamingData?
+    val streamPair: Pair<StreamingData?, List<Any>?>?
         get() {
             try {
                 return future[MAX_MILLISECONDS_TO_WAIT_FOR_FETCH.toLong(), TimeUnit.MILLISECONDS]
@@ -101,19 +103,24 @@ class StreamingDataRequest private constructor(
         private const val PAGE_ID_HEADER = "X-Goog-PageId"
         private const val MAX_MILLISECONDS_TO_WAIT_FOR_FETCH = 25 * 1000
 
-        private val SPOOF_STREAMING_DATA_TYPE: EnumSetting<YouTubeAppClient.ClientType> =
-            BaseSettings.SPOOF_STREAMING_DATA_TYPE
-        private val CLIENT_ORDER_TO_USE: Array<YouTubeAppClient.ClientType> =
-            YouTubeAppClient.availableClientTypes(SPOOF_STREAMING_DATA_TYPE)
-        private val DEFAULT_CLIENT_IS_ANDROID_VR_NO_AUTH: Boolean =
-            SPOOF_STREAMING_DATA_TYPE.get() == YouTubeAppClient.ClientType.ANDROID_VR_NO_AUTH
+        private val SPOOF_STREAMING_DATA_AUDIO_TYPE: ClientType =
+            BaseSettings.SPOOF_STREAMING_DATA_AUDIO_TYPE.get()
+        private val SPOOF_STREAMING_DATA_VIDEO_TYPE: ClientType =
+            BaseSettings.SPOOF_STREAMING_DATA_VIDEO_TYPE.get()
+        private val CLIENT_ORDER_TO_USE_AUDIO: Array<ClientType> =
+            YouTubeAppClient.availableClientTypes(SPOOF_STREAMING_DATA_AUDIO_TYPE)
+        private val CLIENT_ORDER_TO_USE_VIDEO: Array<ClientType> =
+            YouTubeAppClient.availableClientTypes(SPOOF_STREAMING_DATA_VIDEO_TYPE)
+        private val DEFAULT_AUDIO_CLIENT_IS_ANDROID_VR_NO_AUTH: Boolean =
+            SPOOF_STREAMING_DATA_AUDIO_TYPE == ClientType.ANDROID_VR_NO_AUTH
         private val liveStreams: ByteArrayFilterGroup =
             ByteArrayFilterGroup(
                 null,
                 "yt_live_broadcast",
                 "yt_premiere_broadcast"
             )
-        private var lastSpoofedClientFriendlyName: String? = null
+        private var lastSpoofedAudioClientFriendlyName: String? = null
+        private var lastSpoofedVideoClientFriendlyName: String? = null
 
         // When this value is not empty, it is used as the preferred language when creating the RequestBody.
         private var overrideLanguage: String = ""
@@ -129,24 +136,36 @@ class StreamingDataRequest private constructor(
             })
 
         @JvmStatic
-        val lastSpoofedClientName: String
+        val lastSpoofedAudioClientName: String
             get() {
-                return if (lastSpoofedClientFriendlyName != null) {
-                    lastSpoofedClientFriendlyName!!
+                return if (lastSpoofedAudioClientFriendlyName != null) {
+                    lastSpoofedAudioClientFriendlyName!!
                 } else {
                     "Unknown"
                 }
             }
 
         @JvmStatic
-        val lastSpoofedClientIsAndroidVRNoAuth: Boolean
-            get() = lastSpoofedClientFriendlyName != null
-                    && lastSpoofedClientFriendlyName!! == YouTubeAppClient.ClientType.ANDROID_VR_NO_AUTH.friendlyName
+        val lastSpoofedVideoClientName: String
+            get() {
+                return if (lastSpoofedVideoClientFriendlyName != null) {
+                    lastSpoofedVideoClientFriendlyName!!
+                } else {
+                    "Unknown"
+                }
+            }
+
+        @JvmStatic
+        val lastSpoofedAudioClientIsAndroidVRNoAuth: Boolean
+            get() = lastSpoofedAudioClientFriendlyName != null
+                    && lastSpoofedAudioClientFriendlyName!! == ClientType.ANDROID_VR_NO_AUTH.friendlyName
 
         @JvmStatic
         val lastSpoofedClientIsTV: Boolean
-            get() = lastSpoofedClientFriendlyName != null
-                    && lastSpoofedClientFriendlyName!!.startsWith("TV")
+            get() = (lastSpoofedAudioClientFriendlyName != null
+                    && lastSpoofedAudioClientFriendlyName!! == ClientType.TV.friendlyName) ||
+                    (lastSpoofedVideoClientFriendlyName != null
+                            && lastSpoofedVideoClientFriendlyName!! == ClientType.TV.friendlyName)
 
         @JvmStatic
         fun overrideLanguage(language: String) {
@@ -183,6 +202,25 @@ class StreamingDataRequest private constructor(
         }
 
         /**
+         * The easiest way to check if streamingUrl has been deobfuscated properly is to send a request and check if the response code is 200.
+         * Typically, all n parameters included in the response are the same, so it is sufficient to test only for the stream Url at the first index.
+         */
+        private fun streamUrlIsAvailable(streamUrl: String): Boolean {
+            try {
+                val url = URL(streamUrl)
+                val connection = url.openConnection() as HttpURLConnection
+                connection.setFixedLengthStreamingMode(0)
+                connection.requestMethod = "HEAD"
+                return connection.responseCode == 200
+            } catch (ex: IOException) {
+                handleConnectionError("Network error", ex)
+            } catch (ex: Exception) {
+                Logger.printException({ "send failed" }, ex)
+            }
+            return false
+        }
+
+        /**
          * In Android YouTube client, Protobuf Message related to video streaming does not have signatureCipher field.
          * Even if the proto buffer contains signatureCipher, Protobuf MessageParser cannot parse it.
          *
@@ -190,7 +228,7 @@ class StreamingDataRequest private constructor(
          * Then, the decrypted url must be injected into the url field of YouTube's video streaming class.
          */
         private fun getDeobfuscatedUrlArrayList(
-            clientType: YouTubeAppClient.ClientType,
+            clientType: ClientType,
             videoId: String,
             requestHeader: Map<String, String>,
         ): ArrayList<String>? {
@@ -248,7 +286,7 @@ class StreamingDataRequest private constructor(
                             // The 'url' query parameter of signatureCipher contains streamingUrl.
                             // The 'n' query parameter of streamingUrl is obfuscated.
                             val signatureCipher = formatData.getString("signatureCipher")
-                            if (StringUtils.isNotEmpty(signatureCipher)) {
+                            if (!signatureCipher.isNullOrEmpty()) {
                                 streamUrl = ThrottlingParameterUtils.getUrlWithThrottlingParameterObfuscated(videoId, signatureCipher)
                             }
                         } else {
@@ -259,16 +297,16 @@ class StreamingDataRequest private constructor(
                             return null
                         }
                         // streamUrl not found, trying to fetch with legacy client.
-                        if (StringUtils.isEmpty(streamUrl)) {
+                        if (streamUrl.isNullOrEmpty()) {
                             Logger.printDebug { "StreamUrl was not found, legacy client will be used" }
                             return null
                         }
-                        val url = ThrottlingParameterUtils.getUrlWithThrottlingParameterDeobfuscated(videoId, streamUrl!!)
-                        if (StringUtils.isEmpty(url)) {
+                        val url = ThrottlingParameterUtils.getUrlWithThrottlingParameterDeobfuscated(videoId, streamUrl)
+                        if (url.isNullOrEmpty() || i == 0 && !streamUrlIsAvailable(url)) {
                             Logger.printDebug { "Failed to decrypt n-sig or signatureCipher, please check if latest regular expressions are being used" }
                             return null
                         }
-                        deobfuscatedUrlArrayList.add(i, url!!)
+                        deobfuscatedUrlArrayList.add(i, url)
                         Logger.printDebug { "deobfuscatedUrl added to ArrayList, videoId: $videoId, index: $i" }
                     }
 
@@ -311,7 +349,7 @@ class StreamingDataRequest private constructor(
         }
 
         private fun send(
-            clientType: YouTubeAppClient.ClientType,
+            clientType: ClientType,
             videoId: String,
             requestHeader: Map<String, String>,
         ): HttpURLConnection? {
@@ -340,7 +378,7 @@ class StreamingDataRequest private constructor(
                     createApplicationRequestBody(
                         clientType = clientType,
                         videoId = videoId,
-                        setLocale = DEFAULT_CLIENT_IS_ANDROID_VR_NO_AUTH,
+                        setLocale = DEFAULT_AUDIO_CLIENT_IS_ANDROID_VR_NO_AUTH,
                         language = overrideLanguage.ifEmpty { BaseSettings.SPOOF_STREAMING_DATA_VR_LANGUAGE.get().language }
                     )
                 }
@@ -371,19 +409,24 @@ class StreamingDataRequest private constructor(
             return null
         }
 
-        private fun fetch(
+        private fun fetchStream(
             videoId: String,
             requestHeader: Map<String, String>,
             reasonSkipped: String,
-        ): StreamingData? {
-            lastSpoofedClientFriendlyName = null
-
+            isAudio: Boolean,
+        ): Pair<StreamingData?, String?> {
             // MutableMap containing the deobfuscated streamingUrl.
             // This is used for clients where streamingUrl is obfuscated.
             var deobfuscatedUrlArrayList: ArrayList<String>? = null
 
+            val clientToUse: Array<ClientType> = if (isAudio) {
+                CLIENT_ORDER_TO_USE_AUDIO
+            } else {
+                CLIENT_ORDER_TO_USE_VIDEO
+            }
+
             // Retry with different client if empty response body is received.
-            for (clientType in CLIENT_ORDER_TO_USE) {
+            for (clientType in clientToUse) {
                 if (clientType.requireAuth &&
                     StringUtils.isAllEmpty(requestHeader[AUTHORIZATION_HEADER], requestHeader[PAGE_ID_HEADER])
                 ) {
@@ -395,7 +438,7 @@ class StreamingDataRequest private constructor(
                     // Decrypting signatureCipher takes time, so videos start 5 to 15 seconds late.
                     // Unlike regular videos, no one would be willing to wait 5 to 15 seconds to play a 10-second Shorts.
                     // For this reason, Shorts uses legacy clients that are not protected by signatureCipher.
-                    if (StringUtils.isNotEmpty(reasonSkipped)) {
+                    if (reasonSkipped.isNotEmpty()) {
                         Logger.printDebug { "Skipped javascript required client, Reason: $reasonSkipped, Client: $clientType, Video: $videoId" }
                         continue
                     }
@@ -428,13 +471,11 @@ class StreamingDataRequest private constructor(
                                     // Since it doesn't have an empty response, the app doesn't try to fetch with another client, and it tries to play the livestream.
                                     // However, the response doesn't contain any formats available, so an exception is thrown.
                                     // As a workaround for this issue, if Android Creator is used for fetching, it should check if the video is a livestream.
-                                    if (clientType == YouTubeAppClient.ClientType.ANDROID_CREATOR
+                                    if (clientType == ClientType.ANDROID_CREATOR
                                         && liveStreams.check(buffer).isFiltered //
                                     ) {
                                         Logger.printDebug { "Ignore Android Studio spoofing as it is a livestream (video: $videoId)" }
                                     } else {
-                                        lastSpoofedClientFriendlyName = clientType.friendlyName
-
                                         // Parses the Proto Buffer and returns StreamingData (GeneratedMessage).
                                         var streamingData = parseFrom(ByteBuffer.wrap(stream.toByteArray()))
 
@@ -442,7 +483,7 @@ class StreamingDataRequest private constructor(
                                             streamingData = deobfuscateStreamingData(deobfuscatedUrlArrayList, streamingData)
                                         }
 
-                                        return streamingData
+                                        return Pair(streamingData, clientType.friendlyName)
                                     }
                                 }
                             }
@@ -464,7 +505,62 @@ class StreamingDataRequest private constructor(
                 null,
                 showToast
             )
-            return null
+            return Pair(null, null)
+        }
+
+        private fun fetch(
+            videoId: String,
+            requestHeader: Map<String, String>,
+            reasonSkipped: String,
+        ): Pair<StreamingData?, List<Any>?>? {
+            lastSpoofedAudioClientFriendlyName = null
+            lastSpoofedVideoClientFriendlyName = null
+
+            val streamingDataAudioPair = fetchStream(
+                videoId,
+                requestHeader,
+                reasonSkipped,
+                true
+            )
+            val streamingDataAudio = streamingDataAudioPair.first
+            val spoofedAudioClientFriendlyName = streamingDataAudioPair.second
+
+            if (SPOOF_STREAMING_DATA_AUDIO_TYPE != SPOOF_STREAMING_DATA_VIDEO_TYPE
+                && streamingDataAudio != null) {
+                val streamingDataVideoPair = fetchStream(
+                    videoId,
+                    requestHeader,
+                    reasonSkipped,
+                    false
+                )
+                val streamingDataVideo = streamingDataVideoPair.first
+                val spoofedVideoClientFriendlyName = streamingDataVideoPair.second
+                if (streamingDataVideo != null
+                    && spoofedAudioClientFriendlyName != spoofedVideoClientFriendlyName) {
+                    val adaptiveFormatsList = ArrayList<Any?>(100)
+
+                    // Add audio formats.
+                    setAdaptiveFormats(streamingDataAudio, adaptiveFormatsList, false)
+
+                    // If you want to keep only the original audio track (original language), you can use this:
+                    // removeNonOriginalAudioTracks(adaptiveFormatsList)
+
+                    // Add video formats.
+                    setAdaptiveFormats(streamingDataVideo, adaptiveFormatsList, true)
+
+                    // If you want to remove the AV1 codec, you can use this:
+                    // removeAV1Codecs(adaptiveFormatsList)
+
+                    lastSpoofedAudioClientFriendlyName = spoofedAudioClientFriendlyName
+                    lastSpoofedVideoClientFriendlyName = streamingDataVideoPair.second
+
+                    return Pair(streamingDataAudio, adaptiveFormatsList.filterNotNull().toList())
+                }
+            }
+            lastSpoofedAudioClientFriendlyName = spoofedAudioClientFriendlyName
+            lastSpoofedVideoClientFriendlyName = spoofedAudioClientFriendlyName
+
+            return Pair(streamingDataAudio, null)
         }
     }
 }

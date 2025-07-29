@@ -254,8 +254,7 @@ object YouTubeAppClient {
         return BaseSettings.SPOOF_STREAMING_DATA_USE_TV.get()
     }
 
-    fun availableClientTypes(preferredClientSettings: EnumSetting<ClientType>): Array<ClientType> {
-        val preferredClient = preferredClientSettings.get()
+    fun availableClientTypes(preferredClient: ClientType): Array<ClientType> {
         var availableClientTypes = ClientType.CLIENT_ORDER_TO_USE
         if (useIOS()) {
             availableClientTypes += ClientType.IOS_DEPRECATED
@@ -275,7 +274,6 @@ object YouTubeAppClient {
             }
             return clientToUse.filterNotNull().toTypedArray()
         } else {
-            preferredClientSettings.resetToDefault()
             return availableClientTypes
         }
     }
@@ -474,11 +472,11 @@ object YouTubeAppClient {
 
         companion object {
             val CLIENT_ORDER_TO_USE: Array<ClientType> = arrayOf(
-                ANDROID_VR_NO_AUTH,
                 IOS_UNPLUGGED,
+                ANDROID_VR,
                 ANDROID_CREATOR,
                 ANDROID_UNPLUGGED,
-                ANDROID_VR,
+                ANDROID_VR_NO_AUTH,
             )
 
             val CLIENT_ORDER_TO_USE_TV: Array<ClientType> = arrayOf(

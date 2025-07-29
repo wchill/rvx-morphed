@@ -1,7 +1,5 @@
 // These java classes are taken from: https://github.com/felipeucelli/JavaTube/blob/ec9011fa2ed584b867d276e683c421059b87bec5/src/main/java/com/github/felipeucelli/javatube/JsInterpreter.java
 // This code is based on jsinterp.py, available at "https://github.com/yt-dlp/yt-dlp/blob/master/yt_dlp/jsinterp.py"
-// TODO: Scripts written in python have been converted to Java to run javascript.
-//       Migrate to 'eclipsesource/J2V8' or 'mozilla/rhino' for better performance.
 
 package app.revanced.extension.shared.innertube.utils.javatube;
 

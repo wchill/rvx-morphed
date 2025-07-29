@@ -26,7 +26,6 @@ public class Cipher {
             "(?:\\b|[^a-zA-Z0-9_$])(?<sig>[a-zA-Z0-9_$]{2,})\\s*=\\s*function\\(\\s*a\\s*\\)\\s*\\{\\s*a\\s*=\\s*a\\.split\\(\\s*\\\"\\\"\\s*\\)(?:;[a-zA-Z0-9_$]{2}\\.[a-zA-Z0-9_$]{2}\\(a,\\d+\\))?"
     };
     // TODO: Regular expressions need to be updated.
-    //       TV clients still can't deobfuscate videoStreamUrl in some formats.
     private final String THROTTLING_FUNCTION_REGEX = """
                             (?x)
                                 (?:

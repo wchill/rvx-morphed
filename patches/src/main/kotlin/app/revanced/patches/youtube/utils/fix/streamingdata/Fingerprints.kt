@@ -1,13 +1,17 @@
 package app.revanced.patches.youtube.utils.fix.streamingdata
 
+import app.revanced.patches.youtube.utils.resourceid.audioFormat
 import app.revanced.patches.youtube.utils.resourceid.playerLoadingViewThin
+import app.revanced.patches.youtube.utils.resourceid.videoFormat
 import app.revanced.util.fingerprint.legacyFingerprint
 import app.revanced.util.getReference
+import app.revanced.util.indexOfFirstInstruction
 import app.revanced.util.indexOfFirstInstructionReversed
 import app.revanced.util.or
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.Method
+import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
 // In YouTube 17.34.36, this class is obfuscated.
@@ -54,12 +58,39 @@ internal val createStreamingDataParentFingerprint = legacyFingerprint(
     strings = listOf("Invalid playback type; streaming data is not playable"),
 )
 
-internal val nerdsStatsVideoFormatBuilderFingerprint = legacyFingerprint(
-    name = "nerdsStatsVideoFormatBuilderFingerprint",
+internal val nerdsStatsFormatBuilderFingerprint = legacyFingerprint(
+    name = "nerdsStatsFormatBuilderFingerprint",
     returnType = "Ljava/lang/String;",
     accessFlags = AccessFlags.PUBLIC or AccessFlags.STATIC,
     parameters = listOf("L"),
     strings = listOf("codecs=\""),
+)
+
+internal val nerdsStatsOverlayFingerprint = legacyFingerprint(
+    name = "nerdsStatsOverlayFingerprint",
+    returnType = "V",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
+    parameters = emptyList(),
+    literals = listOf(audioFormat, videoFormat)
+)
+
+internal val nerdsStatsTextViewParentFingerprint = legacyFingerprint(
+    name = "nerdsStatsTextViewParentFingerprint",
+    returnType = "Ljava/lang/String;",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.STATIC,
+    parameters = listOf("Ljava/lang/String;"),
+    opcodes = listOf(
+        Opcode.CONST_STRING,
+        Opcode.CONST_STRING,
+        Opcode.INVOKE_STATIC,
+        Opcode.MOVE_RESULT_OBJECT,
+    ),
+    strings = listOf(" [", "]"),
+    customFingerprint = { methodDef, classDef ->
+        classDef.interfaces.contains("Landroid/view/View\$OnClickListener;") &&
+                classDef.fields.find { field -> field.type == "[F" } != null &&
+                classDef.fields.find { field -> field.type == "[I" } != null
+    },
 )
 
 internal val protobufClassParseByteBufferFingerprint = legacyFingerprint(
@@ -74,6 +105,41 @@ internal val protobufClassParseByteBufferFingerprint = legacyFingerprint(
         Opcode.RETURN_OBJECT,
     ),
     customFingerprint = { method, _ -> method.name == "parseFrom" },
+)
+
+internal val videoStreamingDataConstructorFingerprint = legacyFingerprint(
+    name = "videoStreamingDataConstructorFingerprint",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.CONSTRUCTOR,
+    returnType = "V",
+    customFingerprint = { method, _ ->
+        indexOfGetAdaptiveFormatsFieldInstruction(method) >= 0
+    },
+)
+
+internal fun indexOfGetAdaptiveFormatsFieldInstruction(method: Method) =
+    method.indexOfFirstInstruction {
+        val reference = getReference<FieldReference>()
+        opcode == Opcode.IGET_OBJECT &&
+                reference?.definingClass == STREAMING_DATA_OUTER_CLASS &&
+                // Field f: 'adaptiveFormats'.
+                // Field name is always 'f', regardless of the client version.
+                reference.name == "f" &&
+                reference.type.startsWith("L")
+    }
+
+/**
+ * On YouTube, this class is 'Lcom/google/android/libraries/youtube/innertube/model/media/VideoStreamingData;'
+ * On YouTube Music, class names are obfuscated.
+ */
+internal val videoStreamingDataToStringFingerprint = legacyFingerprint(
+    name = "videoStreamingDataToStringFingerprint",
+    returnType = "Ljava/lang/String;",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
+    parameters = emptyList(),
+    strings = listOf("VideoStreamingData(itags="),
+    customFingerprint = { method, _ ->
+        method.name == "toString"
+    },
 )
 
 internal const val HLS_CURRENT_TIME_FEATURE_FLAG = 45355374L

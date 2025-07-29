@@ -86,6 +86,7 @@ public class ReloadVideoButtonController {
 
     private static boolean shouldBeShown() {
         return SPOOF_STREAMING_DATA_TV_RELOAD_VIDEO_BUTTON &&
+                StreamingDataRequest.getLastSpoofedClientIsTV() &&
                 ReloadVideoPatch.isProgressBarVisible();
     }
 }

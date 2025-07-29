@@ -8,9 +8,9 @@ import app.revanced.extension.shared.innertube.client.YouTubeAppClient;
 import app.revanced.extension.shared.innertube.client.YouTubeMusicAppClient;
 import app.revanced.extension.shared.patches.ReturnYouTubeUsernamePatch.DisplayFormat;
 import app.revanced.extension.shared.patches.WatchHistoryPatch.WatchHistoryType;
-import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientAndroidVRAvailability;
-import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientAndroidVRNoAuthAvailability;
-import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientiOSAvailability;
+import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientAndroidVRVideoAvailability;
+import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientAndroidVRNoAuthAudioAvailability;
+import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientiOSVideoAvailability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientTVAvailability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.J2V8Availability;
 
@@ -43,25 +43,26 @@ public class BaseSettings {
     public static final BooleanSetting SPOOF_STREAMING_DATA = new BooleanSetting("revanced_spoof_streaming_data", TRUE, true, "revanced_spoof_streaming_data_user_dialog_message");
     public static final BooleanSetting SPOOF_STREAMING_DATA_STATS_FOR_NERDS = new BooleanSetting("revanced_spoof_streaming_data_stats_for_nerds", TRUE, parent(SPOOF_STREAMING_DATA));
 
-    public static final BooleanSetting SPOOF_STREAMING_DATA_VR_DISABLE_AV1 = new BooleanSetting("revanced_spoof_streaming_data_vr_disable_av1", FALSE, true, new ClientAndroidVRAvailability());
-    public static final EnumSetting<AppLanguage> SPOOF_STREAMING_DATA_VR_LANGUAGE = new EnumSetting<>("revanced_spoof_streaming_data_vr_language", AppLanguage.DEFAULT, new ClientAndroidVRNoAuthAvailability());
+    public static final BooleanSetting SPOOF_STREAMING_DATA_VR_DISABLE_AV1 = new BooleanSetting("revanced_spoof_streaming_data_vr_disable_av1", FALSE, true, new ClientAndroidVRVideoAvailability());
+    public static final EnumSetting<AppLanguage> SPOOF_STREAMING_DATA_VR_LANGUAGE = new EnumSetting<>("revanced_spoof_streaming_data_vr_language", AppLanguage.DEFAULT, new ClientAndroidVRNoAuthAudioAvailability());
     public static final BooleanSetting SPOOF_STREAMING_DATA_VR_AUDIO_TRACK_BUTTON = new BooleanSetting("revanced_spoof_streaming_data_vr_audio_track_button", FALSE, true,
-            "revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message", new ClientAndroidVRNoAuthAvailability());
+            "revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message", new ClientAndroidVRNoAuthAudioAvailability());
 
     public static final BooleanSetting SPOOF_STREAMING_DATA_IOS_FORCE_AVC = new BooleanSetting("revanced_spoof_streaming_data_ios_force_avc", FALSE, true,
-            "revanced_spoof_streaming_data_ios_force_avc_user_dialog_message", new ClientiOSAvailability());
+            "revanced_spoof_streaming_data_ios_force_avc_user_dialog_message", new ClientiOSVideoAvailability());
     public static final BooleanSetting SPOOF_STREAMING_DATA_USE_IOS = new BooleanSetting("revanced_spoof_streaming_data_use_ios", FALSE, true,
             "revanced_spoof_streaming_data_use_ios_user_dialog_message", parent(SPOOF_STREAMING_DATA));
 
     public static final BooleanSetting SPOOF_STREAMING_DATA_USE_TV = new BooleanSetting("revanced_spoof_streaming_data_use_tv", FALSE, true,
             "revanced_spoof_streaming_data_use_tv_user_dialog_message", parent(SPOOF_STREAMING_DATA));
     public static final BooleanSetting SPOOF_STREAMING_DATA_USE_TV_ALL = new BooleanSetting("revanced_spoof_streaming_data_use_tv_all", FALSE, true, new ClientTVAvailability());
-    public static final BooleanSetting SPOOF_STREAMING_DATA_TV_USE_LATEST_JS = new BooleanSetting("revanced_spoof_streaming_data_tv_use_latest_js", TRUE, true, new ClientTVAvailability());
+    public static final BooleanSetting SPOOF_STREAMING_DATA_TV_USE_LATEST_JS = new BooleanSetting("revanced_spoof_streaming_data_tv_use_latest_js", FALSE, true, new ClientTVAvailability());
     public static final BooleanSetting SPOOF_STREAMING_DATA_TV_USE_V8_JS_ENGINE = new BooleanSetting("revanced_spoof_streaming_data_tv_use_v8_js_engine", TRUE, true, new J2V8Availability());
     public static final BooleanSetting SPOOF_STREAMING_DATA_TV_RELOAD_VIDEO_BUTTON = new BooleanSetting("revanced_spoof_streaming_data_tv_reload_video_button", FALSE, true, new ClientTVAvailability());
 
     // Client type must be last spoof setting due to cyclic references.
-    public static final EnumSetting<YouTubeAppClient.ClientType> SPOOF_STREAMING_DATA_TYPE = new EnumSetting<>("revanced_spoof_streaming_data_type", YouTubeAppClient.ClientType.ANDROID_VR_NO_AUTH, true, parent(SPOOF_STREAMING_DATA));
+    public static final EnumSetting<YouTubeAppClient.ClientType> SPOOF_STREAMING_DATA_VIDEO_TYPE = new EnumSetting<>("revanced_spoof_streaming_data_video_type", YouTubeAppClient.ClientType.IOS_UNPLUGGED, true, parent(SPOOF_STREAMING_DATA));
+    public static final EnumSetting<YouTubeAppClient.ClientType> SPOOF_STREAMING_DATA_AUDIO_TYPE = new EnumSetting<>("revanced_spoof_streaming_data_audio_type", YouTubeAppClient.ClientType.IOS_UNPLUGGED, true, parent(SPOOF_STREAMING_DATA));
 
     /**
      * These settings are used by YouTube and YouTube Music.
