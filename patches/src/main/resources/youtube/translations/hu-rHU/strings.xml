@@ -2147,38 +2147,11 @@ Kattintson a folytatás gombra és kapcsolja ki az akkumulátor optimalizáláso
     <string name="revanced_preference_screen_spoof_streaming_data_title">Adatfolyam meghamisítása</string>
     <string name="revanced_preference_screen_spoof_streaming_data_summary">Az adatfolyam meghamisítása, hogy elkerülje a lejátszási problémákat.</string>
     <string name="revanced_spoof_streaming_data_title">Adatfolyam meghamisítása</string>
-    <string name="revanced_spoof_streaming_data_summary_on">Az adatfolyam hamisított.</string>
+    <string name="revanced_spoof_streaming_data_summary_on">"Az adatfolyam hamisított."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Az adatfolyam nincs meghamisítva. Lehet, hogy a videó lejátszás nem működik."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">A beállítás kikapcsolása videólejátszási problémákat okozhat.</string>
-    <string name="revanced_spoof_streaming_data_type_title">Alapértelmezett kliens</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_unplugged">"Android TV
-<small>(Belépés szükséges)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr_no_auth">"Android VR
-<small>(Nincs hitelesítés)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_deprecated">"iOS
-<small>(Elavult)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_unplugged">"iOS TV
-<small>(Belépés szükséges)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv">"TV
-<small>(fejlesztés alatt)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv_embedded">"TV beágyazott
-<small>(fejlesztés alatt)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv_simply">"TV egyszerű
-<small>(fejlesztés alatt)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Hamisítás mellékhatásai</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android">"• A hangsáv menü hiányzik.
-• A stabil hangerő nem áll rendelkezésre.
-• A kényszerített automatikus hangsávok letiltása nem elérhető.
-• Előfordulhat, hogy a gyerekeknek szánt tartalmat nem lehet lejátszani, ha ki van jelentkezve vagy inkognitó módban van."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• A kiszolgáló teljes ASN/IP-tartományt blokkolhat.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• A stabil hangerő nem érhető el.
-• Előfordulhat, hogy a filmeket vagy a fizetős videókat nem lehet lejátszani.
-• Előfordulhat, hogy a gyerekeknek szánt tartalmat nem lehet lejátszani, ha ki van jelentkezve vagy inkognitó módban van."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• Az alkalmazás több rendszererőforrást használ a streaming url-ek visszafejtéséhez.
-• Ha a visszafejtés sikertelen, a lejátszás is sikertelen lehet.
-• Előfordulhat, hogy a lejátszás ismeretlen okokból sikertelen (a videó több mint 20 másodpercig nem indul el), ilyen esetben újra kell nyitni a videót.
-• A videó 5-15 másodperces késéssel indul."</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Megjelenítés a statisztikában kockáknak</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Az adatfolyam lekérésére használt kliens a statisztikában kockáknak látható.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Az adatfolyam lekérésére használt kliens a statisztikában kockáknak nem látható.</string>
@@ -2237,18 +2210,6 @@ Ez a funkció még fejlesztés alatt van, ezért kérjük, csak hibakeresési c�
 • Automatikus lejátszás a hírfolyamban
 • Klipek
 • Shortok"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: PoToken / VisitorData -->
-    <string name="revanced_preference_category_po_token_visitor_data">PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_title">PoToken használatban</string>
-    <string name="revanced_spoof_streaming_data_po_token_summary">A BotGuard által kibocsátott PoToken egy megbízható böngészőben.</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_title">VisitorData használatban</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_summary">A BotGuard által kibocsátott VisitorData egy megbízható böngészőben.</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_title">A PoToken-ről / VisitorData-ról</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_summary">"Néhány kliensnek PoToken és VisitorData szükséges az adatok érvényes folyamatos adatátvitelére adott válaszhoz.
-
-Ha az iOS-t próbálja alapértelmezett kliensként használni, szüksége lehet ezekre az értékekre.
-
-Kattintson a további információkért."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Megtekintési előzmények</string>
     <string name="revanced_preference_screen_watch_history_summary">A megtekintési előzményekhez kapcsolódó beállítások módosítása.</string>

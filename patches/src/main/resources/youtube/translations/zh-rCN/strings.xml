@@ -1524,10 +1524,9 @@
     <string name="revanced_preference_screen_spoof_streaming_data_title">伪装流媒体数据</string>
     <string name="revanced_preference_screen_spoof_streaming_data_summary">伪装流媒体数据以防止播放问题</string>
     <string name="revanced_spoof_streaming_data_title">伪装流媒体数据</string>
-    <string name="revanced_spoof_streaming_data_summary_on">流媒体数据已伪装</string>
+    <string name="revanced_spoof_streaming_data_summary_on">"流媒体数据已伪装"</string>
     <string name="revanced_spoof_streaming_data_summary_off">"流媒体数据未伪装，视频可能无法正常播放"</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">关闭此选项可能会导致视频不能正常播放</string>
-    <string name="revanced_spoof_streaming_data_type_title">默认客户端</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">伪装副作用</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">显示统计信息</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">用于获取流媒体数据的客户端已在统计信息中显示</string>
@@ -1535,7 +1534,6 @@
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: PoToken / VisitorData -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">观看历史</string>
     <string name="revanced_preference_screen_watch_history_summary">更改与观看历史记录相关的设置</string>

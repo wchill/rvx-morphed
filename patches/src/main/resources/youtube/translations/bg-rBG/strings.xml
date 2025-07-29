@@ -1617,24 +1617,10 @@
     <string name="revanced_preference_screen_spoof_streaming_data_title">Подправяне на поточни данни</string>
     <string name="revanced_preference_screen_spoof_streaming_data_summary">Подправете поточно предаваните данни, за да предотвратите проблеми с възпроизвеждането.</string>
     <string name="revanced_spoof_streaming_data_title">Подправяне на поточни данни</string>
-    <string name="revanced_spoof_streaming_data_summary_on">Данните за поточно предаване са подправени.</string>
+    <string name="revanced_spoof_streaming_data_summary_on">"Данните за поточно предаване са подправени."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Данните за поточно предаване не са подправени. Възпроизвеждането на видео може да не работи."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Изключването на тази настройка може да причини проблеми с възпроизвеждането на видео.</string>
-    <string name="revanced_spoof_streaming_data_type_title">Клиент по подразбиране</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_unplugged">"Android TV
-<small>(Изисква се влизане)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr_no_auth">"Android VR
-<small>(Няма удостоверение)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_unplugged">"iOS
-<small>(Необходим вход)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Ефекти от замяната</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android">"• Липсва менюто за аудио запис.
-• Не е наличен стабилен звук.
-• Деактивиране на принудителни автоматични аудио записи не е налично.
-• Детските видеоклипове може да не се възпроизвеждат, когато сте излезли или сте в режим инкогнито."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Филми или платени видеоклипове може да не се възпроизвеждат.
-• Детските видеоклипове може да не се възпроизвеждат, когато сте излезли или сте в режим инкогнито."</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Показване в \"Разширени статистики\"</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Клиентът, използван за получаване на данни за потока, се показва в Статистика за системни администратори.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Клиентът, използван за получаване на данни за поток, е скрит в Статистика за системни администратори.</string>
@@ -1647,18 +1633,6 @@
 
 AVC има максимална разделителна способност от 1080p, аудио кодекът Opus не е наличен, а видеовъзпроизвеждането ще използва повече интернет данни от VP9 или AV1."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: PoToken / VisitorData -->
-    <string name="revanced_preference_category_po_token_visitor_data">PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_title">PoToken</string>
-    <string name="revanced_spoof_streaming_data_po_token_summary">PoToken се пуска с BotGuard в доверен браузър.</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_title">VisitorData</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_summary">VisitorData, издадени от BotGuard в доверен браузър.</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_title">За PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_summary">"Някои клиенти изискват PoToken и VisitorData, за да получат валиден отговор на поточни данни.
-
-Ако се опитвате да използвате iOS като клиент по подразбиране, може да имате нужда от тези стойности.
-
-Щракнете, за да видите повече информация."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">История на гледане</string>
     <string name="revanced_preference_screen_watch_history_summary">Променя настройките, за хронологията на гледане.</string>

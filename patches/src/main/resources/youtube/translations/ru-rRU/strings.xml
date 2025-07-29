@@ -2180,39 +2180,29 @@ Shorts
     <string name="revanced_preference_screen_spoof_streaming_data_title">Подмена потоковых данных</string>
     <string name="revanced_preference_screen_spoof_streaming_data_summary">Подменяет потоковые данные при проблемах с просмотром видео.</string>
     <string name="revanced_spoof_streaming_data_title">Подмена потоковых данных</string>
-    <string name="revanced_spoof_streaming_data_summary_on">Подмена потоковых данных включена.</string>
+    <string name="revanced_spoof_streaming_data_summary_on">"Подмена потоковых данных включена."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Подмена потоковых данных отключена.
 Просмотр может быть не доступен."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Отключение этой настройки вызовет проблемы с просмотром.</string>
-    <string name="revanced_spoof_streaming_data_type_title">Клиент по умолчанию</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_unplugged">"Android TV
-<small>(Требуется вход)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr_no_auth">"Android VR
-<small>(Без авторизац.)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_deprecated">"iOS
-<small>(Устаревшая)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_unplugged">"iOS TV
+    <string name="revanced_spoof_streaming_data_default_client_video_title">По умолчанию для видео</string>
+    <string name="revanced_spoof_streaming_data_default_client_audio_title">По умолчанию для аудио</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
 <small>(Необходим вход)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv">"TV
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
+<small>(Без авторизац.)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
+<small>(Устаревшая)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
+<small>(Необходим вход)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(В разработке)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv_embedded">"Встроенный TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Встроенный TV
 <small>(В разработке)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv_simply">"Простой TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"Простой TV
 <small>(В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Эффекты от подмены</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android">"• Меню аудио дорожки отсутствует.
-• Стабильная громкость недоступна.
-• Отключить принудительные авто звуковые дорожки недоступна.
-• Детские видео могут не работать в режиме инкогнито или выхода."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Целые диапазоны ASN/IP могут блокироваться сервером.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Стабильная громкость недоступна.
-• Фильмы или платные видео могут не работать.
-• Детские видео могут не работать при выходе из системы или в режиме инкогнито."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• Используется больше системных ресурсов для \"Запутывания\" URL-адресов потоковой передачи.
-• Если \"Запутывание\" не удалась, просмотр может прерваться.
-• Иногда просмотр прерывается по неизвестным причинам (видео запускается только через 20 секунд), в этом случае необходимо открыть видео заново.
-• Видео запускается с задержкой от 5 до 15 секунд."</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Статистика для сисадминов</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Клиент потоковых данных отображается в Статистике для сисадминов.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Клиент потоковых данных скрыт в Статистике для сисадминов.</string>
@@ -2287,21 +2277,6 @@ Shorts
 
 • Даже если \"Запутывание\" успешно, могут отсутствовать качества видео или кодеки.
 • Используется успешный JavaScript \"Запутывания\", но он все еще зависит от сервера."</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_title">Кнопка перезагрузить видео для TV</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_summary_on">Включено. При анимации буферизации кнопка отображается.</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_summary_off">Отключено. Кнопка перезагрузки видео скрыта.</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: PoToken / VisitorData -->
-    <string name="revanced_preference_category_po_token_visitor_data">PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_title">PoToken</string>
-    <string name="revanced_spoof_streaming_data_po_token_summary">PoToken выпущен с BotGuard в доверенном браузере.</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_title">VisitorData</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_summary">VisitorData выданный с BotGuard в надежном браузере.</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_title">О PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_summary">"Некоторые клиенты требуют PoToken и VisitorData для получения правильного ответа потоковых данных.
-
-Для iOS клиента по умолчанию, эти значения могут потребоваться.
-
-Нажмите, для дополнительной информации."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">История просмотра</string>
     <string name="revanced_preference_screen_watch_history_summary">Изменить настройки истории просмотра.</string>

@@ -326,9 +326,9 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_hide_surveys_title">설문 조사 숨기기</string>
     <string name="revanced_hide_surveys_summary_on">설문 조사가 숨겨집니다.</string>
     <string name="revanced_hide_surveys_summary_off">설문 조사가 표시됩니다.</string>
-    <string name="revanced_hide_ticket_shelf_title">콘서트 선반 숨기기</string>
-    <string name="revanced_hide_ticket_shelf_summary_on">콘서트 선반이 숨겨집니다.</string>
-    <string name="revanced_hide_ticket_shelf_summary_off">콘서트 선반이 표시됩니다.</string>
+    <string name="revanced_hide_ticket_shelf_title">콘서트 티켓 선반 숨기기</string>
+    <string name="revanced_hide_ticket_shelf_summary_on">콘서트 티켓 선반이 숨겨집니다.</string>
+    <string name="revanced_hide_ticket_shelf_summary_off">콘서트 티켓 선반이 표시됩니다.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">카테고리 바</string>
     <string name="revanced_preference_screen_category_bar_summary">피드, 관련 동영상, 검색 결과 그리고 시청 기록에서 카테고리 바를 숨기거나 표시할 수 있습니다.</string>
@@ -418,7 +418,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_hide_keyword_content_about_title">키워드 필터링에 대한 정보</string>
     <string name="revanced_hide_keyword_content_about_summary">"홈 / 구독 / 검색 결과가 필터링되어 키워드 구문과 일치하는 콘텐츠가 숨겨집니다.
 
-알려진 문제점:
+제한 사항:
 • 채널 이름으로 Shorts를 숨길 수 없습니다.
 • 일부 화면 구성요소는 숨겨지지 않을 수 있습니다.
 • 필터링 키워드를 검색하면 검색 결과가 표시되지 않을 수 있습니다."</string>
@@ -460,7 +460,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_hide_video_by_view_counts_about_title">조회수 필터링에 대한 정보</string>
     <string name="revanced_hide_video_by_view_counts_about_summary">"홈  / 구독 / 검색 결과가 필터링되어 조회수가 지정한 수보다 적거나 많은 동영상이 숨겨집니다.
 
-알려진 문제점:
+제한 사항:
 • Shorts를 숨길 수 없습니다.
 • '조회수 없음' 동영상은 숨길 수 없습니다."</string>
     <string name="revanced_hide_related_videos_title">관련 동영상 숨기기</string>
@@ -469,7 +469,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_hide_related_videos_user_dialog_message">"이 설정은 플레이어 화면에서 로드할 수 있는 최대 레이아웃 수를 제한합니다.
 
 서버 측 변경으로 인하여 플레이어 화면의 레이아웃이 변경되면 플레이어 화면에서 의도하지 않은 레이아웃이 숨겨질 수 있습니다."</string>
-    <string name="revanced_hide_related_videos_type_title">관련 동영상 유형 숨기기</string>
+    <string name="revanced_hide_related_videos_type_title">관련 동영상 숨기기 유형</string>
     <string name="revanced_hide_related_videos_type_summary_on">"동영상이 시작될 경우에 화면에 로드된 레이아웃의 수가 기억됩니다.
 
 • 피드 스크롤 위치가 초기화되는 문제가 부분적으로 수정되었습니다.
@@ -516,7 +516,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_disable_auto_audio_tracks_title">자동 오디오 트랙 비활성화하기</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">자동 오디오 트랙을 비활성화합니다.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">자동 오디오 트랙을 활성화합니다.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">이 기능을 사용하려면, \'스트리밍 데이터 변경하기\'에서 기본 클라이언트를 iOS TV로 변경하세요.</string>
+    <string name="revanced_disable_auto_audio_tracks_not_available">이 기능을 사용하려면, \'스트리밍 데이터 변경하기\'에서 오디오를 위한 기본 클라이언트를 TV 또는 iOS TV로 변경하세요.</string>
     <string name="revanced_disable_auto_captions_title">자동 자막 비활성화하기</string>
     <string name="revanced_disable_auto_captions_summary_on">자동 자막을 비활성화합니다.</string>
     <string name="revanced_disable_auto_captions_summary_off">자동 자막을 활성화합니다.</string>
@@ -982,9 +982,9 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_enable_comments_scroll_top_title">댓글에서 맨 위로 스크롤 활성화하기</string>
     <string name="revanced_enable_comments_scroll_top_summary_on">"댓글 패널 제목(‘댓글’)을 터치하면 상단으로 스크롤됩니다.
 
-알려진 문제점:
+제한 사항:
 • 댓글 답글에는 적용되지 않습니다.
-• ‘시간 제한'에서 댓글 패널 제목('댓글’)을 클릭하면 하단으로 스크롤됩니다."</string>
+• ‘시간순'에서 댓글 패널 제목('댓글’)을 클릭하면 하단으로 스크롤됩니다."</string>
     <string name="revanced_enable_comments_scroll_top_summary_off">"댓글 패널 제목(‘댓글’)을 터치해도 아무 효과가 없습니다."</string>
     <string name="revanced_hide_ai_chat_summary_title">AI 채팅 요약 숨기기</string>
     <string name="revanced_hide_ai_chat_summary_summary_on">AI 채팅 요약이 숨겨집니다.</string>
@@ -1011,8 +1011,11 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_hide_comments_emoji_and_timestamp_buttons_summary_on">타임스탬프 &amp; 이모지 버튼이 숨겨집니다.</string>
     <string name="revanced_hide_comments_emoji_and_timestamp_buttons_summary_off">타임스탬프 &amp; 이모지 버튼이 표시됩니다.</string>
     <string name="revanced_hide_comments_highlighted_search_links_title">강조 표시된 검색 링크 숨기기</string>
-    <string name="revanced_hide_comments_highlighted_search_links_summary_on">"파란색 강조 표시된 검색 링크가 숨겨집니다."</string>
-    <string name="revanced_hide_comments_highlighted_search_links_summary_off">파란색 강조 표시된 검색 링크가 표시됩니다.</string>
+    <string name="revanced_hide_comments_highlighted_search_links_summary_on">"강조 표시된 검색 링크가 숨겨집니다.
+
+알려진 문제점:
+• 기본 텍스트 스타일이 없는 일부 강조 표시된 검색 링크는 숨겨지지 않을 수 있습니다."</string>
+    <string name="revanced_hide_comments_highlighted_search_links_summary_off">강조 표시된 검색 링크가 표시됩니다.</string>
     <string name="revanced_hide_live_chat_messages_title">실시간 채팅 메시지 숨기기</string>
     <string name="revanced_hide_live_chat_messages_summary_on">실시간 채팅 메시지가 숨겨집니다.\n\n이 설정은 Shorts 실시간 스트림에도 적용됩니다.</string>
     <string name="revanced_hide_live_chat_messages_summary_off">실시간 채팅 메시지가 표시됩니다.</string>
@@ -1042,7 +1045,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">오디오 트랙 메뉴가 표시됩니다.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"오디오 트랙 메뉴가 숨겨집니다.
 
-오디오 트랙 메뉴를 표시하려면, '스트리밍 데이터 변경하기'에서 기본 클라이언트를 iOS TV로 변경하세요."</string>
+오디오 트랙 메뉴를 표시하려면, '스트리밍 데이터 변경하기'에서 오디오를 위한 기본 클라이언트를 TV 또는 iOS TV로 변경하세요."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">자막 메뉴 숨기기</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">자막 메뉴가 숨겨집니다.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">자막 메뉴가 표시됩니다.</string>
@@ -1321,6 +1324,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_whitelist_settings_summary">화이트리스트에 추가된 채널을 확인 또는 제거할 수 있습니다.</string>
     <string name="revanced_whitelist_added">\'%1$s\' 채널을 %2$s 화이트리스트에 추가하였습니다.</string>
     <string name="revanced_whitelist_add_failed">\'%1$s\' 채널을 %2$s 화이트리스트에 추가할 수 없습니다.</string>
+    <string name="revanced_whitelist_reload_video">지금 동영상을 다시 로드하시겠습니까?</string>
     <string name="revanced_whitelist_removed">\'%1$s\' 채널을 %2$s 화이트리스트에서 제거하였습니다.</string>
     <string name="revanced_whitelist_remove_failed">\'%1$s\' 채널을 %2$s 화이트리스트에서 제거할 수 없습니다.</string>
     <string name="revanced_whitelist_remove_dialog_message">\'%1$s\' 채널을 %2$s 화이트리스트에서 제거하시겠습니까?</string>
@@ -1593,7 +1597,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_enable_shorts_custom_actions_flyout_menu_title">메뉴 구성요소 사용자 정의 동작 활성화하기</string>
     <string name="revanced_enable_shorts_custom_actions_flyout_menu_summary_on">"메뉴 구성요소에서 사용자 정의 동작을 활성화합니다.
 
-알려진 문제점:
+제한 사항:
 • 실시간 스트림에서는 작동되지 않습니다."</string>
     <string name="revanced_enable_shorts_custom_actions_flyout_menu_summary_off">메뉴 구성요소에서 사용자 정의 동작을 비활성화합니다.</string>
     <string name="revanced_enable_shorts_custom_actions_toolbar_title">툴바 사용자 정의 동작 활성화하기</string>
@@ -1636,7 +1640,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_enable_shorts_time_stamp_title">타임스탬프 활성화하기</string>
     <string name="revanced_enable_shorts_time_stamp_summary_on">"타임스탬프를 활성화합니다.
 
-알려진 문제점:
+제한 사항:
 • 타임스탬프를 활성화하면 동작바 아래에 빈 공간이 남습니다.
 • 이 기능은 Google에서 개발 단계에 있는 기능이므로 레이아웃이 깨질 수 있습니다."</string>
     <string name="revanced_enable_shorts_time_stamp_summary_off">타임스탬프를 비활성화합니다.</string>
@@ -2164,38 +2168,49 @@ GmsCore 앱 배터리 최적화를 비활성화(제한 없음)하더라도, 배�
     <string name="revanced_preference_screen_spoof_streaming_data_title">스트리밍 데이터 변경하기</string>
     <string name="revanced_preference_screen_spoof_streaming_data_summary">스트리밍 데이터를 변경하여 동영상 재생 문제를 방지할 수 있습니다.</string>
     <string name="revanced_spoof_streaming_data_title">스트리밍 데이터 변경하기</string>
-    <string name="revanced_spoof_streaming_data_summary_on">스트리밍 데이터를 변경합니다.</string>
+    <string name="revanced_spoof_streaming_data_summary_on">"스트리밍 데이터를 변경합니다.
+
+YouTube Premium 사용자이거나 ‘GmsCore support’ 패치가 제외된 경우에는 이 설정이 필요하지 않을 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"스트리밍 데이터를 변경하지 않습니다.\n동영상 재생 문제가 발생할 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">이 설정을 비활성화하면 동영상 재생 문제가 발생할 수 있습니다.</string>
-    <string name="revanced_spoof_streaming_data_type_title">기본 클라이언트</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_unplugged">"Android TV
+    <string name="revanced_spoof_streaming_data_default_client_video_title">동영상을 위한 기본 클라이언트</string>
+    <string name="revanced_spoof_streaming_data_default_client_audio_title">오디오를 위한 기본 클라이언트</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
 <small>(로그인이 요구됨)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr_no_auth">"Android VR
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(인증 없음)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_deprecated">"iOS
+    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
 <small>(폐기 예정)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_unplugged">"iOS TV
+    <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(로그인이 요구됨)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv">"TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(개발 중)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv_embedded">"TV Embedded
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV Embedded
 <small>(개발 중)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv_simply">"TV Simply
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV Simply
 <small>(개발 중)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">알려진 문제점</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android">"• 오디오 트랙 메뉴가 표시되지 않습니다.
+    <string name="revanced_spoof_streaming_data_side_effects_audio_android">"• 오디오 트랙 메뉴가 표시되지 않습니다.
 • 안정적인 볼륨을 사용할 수 없습니다.
-• 자동 오디오 트랙을 비활성화할 수 없습니다.
-• 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
+• 자동 오디오 트랙 비활성화를 할 수 없습니다."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_ios_unplugged">• 안정적인 볼륨을 사용할 수 없습니다.</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_tv">"• 난독 해독에 실패하면 재생이 실패할 수 있습니다.
+• 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 다시 로드 버튼을 눌러야 합니다.
+• 동영상이 늦게 시작될 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• 서버에서 전체 ASNs/IP 범위가 차단될 수 있습니다.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• 안정적인 볼륨을 사용할 수 없습니다.
-• 영화 또는 유료 동영상이 재생되지 않을 수 있습니다.
-• 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• 앱이 스트리밍 URL의 난독화를 위해 더 많은 시스템 리소스를 사용합니다.
-• 난독 해제가 실패하면 재생이 실패하거나 일부 동영상 화질 또는 코덱이 누락될 수 있습니다.
-• 알 수 없는 이유로 재생이 실패하는 경우에(동영상이 20초 이상 시작되지 않음) 동영상을 다시 열어야 하는 경우가 있습니다.
-• 동영상이 5~15초 늦게 시작됩니다."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_android_without_tv">• 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다.</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_ios_unplugged_without_tv">• 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다.</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_tv">"• AVC (H.264) 코덱을 사용할 수 없습니다.
+• 난독 해독에 실패하면 재생이 실패할 수 있습니다.
+• 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 다시 로드 버튼을 눌러야 합니다.
+• 동영상이 늦게 시작될 수 있습니다."</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_title">동영상 다시 로드 버튼 표시하기</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">동영상 다시 로드 버튼이 표시됩니다.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">동영상 다시 로드 버튼이 숨겨집니다.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_title">동영상 다시 로드 버튼 항상 표시하기</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_on">동영상 다시 로드 버튼을 항상 표시합니다.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_off">동영상 다시 로드 버튼이 버퍼링이 일어날 경우에 표시됩니다.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">전문 통계에서 표시하기</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">스트리밍 데이터를 가져오는 데 사용되는 클라이언트가 전문 통계에서 표시됩니다.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">스트리밍 데이터를 가져오는 데 사용되는 클라이언트가 전문 통계에서 숨겨집니다.</string>
@@ -2210,15 +2225,15 @@ GmsCore 앱 배터리 최적화를 비활성화(제한 없음)하더라도, 배�
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_on">VR 오디오 트랙 버튼을 활성화합니다.\n이 버튼은 플레이어 오른쪽 상단에서 표시됩니다.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_off">VR 오디오 트랙 버튼을 표시하지 않습니다.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message">"전제 조건:
-• 스트리밍 데이터를 가져오는 데 사용되는 클라이언트가 'Android VR (인증 없음)'으로 선택되어야 합니다.
-• 다양한 오디오 트랙이 포함된 동영상을 재생되어야 합니다.
+• 스트리밍 데이터를 가져오는 데 사용되는 오디오를 위한 기본 클라이언트가 'Android VR (인증 없음)'이 선택되어야 합니다.
+• 다양한 오디오 트랙이 포함된 동영상이 재생되어야 합니다.
 
 알려진 문제:
-• YouTube 설정에서 앱 언어가 변경되고 앱이 다시 시작되지 않는다면 오디오 트랙 다이얼로그에 사용되는 언어가 변경되지 않을 수 있습니다.
+• YouTube 설정에서 앱 언어를 변경한 후에 앱을 다시 시작하지 않는다면 오디오 트랙 다이얼로그에서 사용되는 언어가 변경되지 않을 수 있습니다.
 • 가끔 오디오 트랙 다이얼로그에서 잘못된 언어가 선택될 수 있습니다.
 • '영어 설명'과 같은 일부 오디오 트랙은 지원되지 않습니다.
- 
-이 기능은 아직 개발 중이므로 서버 측 변경으로 인하여 언제든지 중단될 수 있습니다."</string>
+
+이 기능은 아직 개발 중이므로 서버 측 변경으로 인해 언제든지 중단될 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_vr_language_title">VR 기본 오디오 스트림 언어</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
     <string name="revanced_preference_category_ios">iOS</string>
@@ -2259,29 +2274,20 @@ n-sig 패턴은 YouTube 서버에서 자주 변경되며, 정규식이 n-sig 패
 • 클립
 • Shorts"</string>
     <string name="revanced_spoof_streaming_data_tv_use_latest_js_title">최신 JavaScript 사용하기</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_on">"난독 해제를 위한 JavaScript를 최신 상태로 유지됩니다.
+    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_on">"난독화 해제를 위한 JavaScript는 최신 상태로 유지됩니다.
 
-• 난독 해제가 성공하면 동영상 화질이나 코덱이 누락되지 않습니다.
-• 서버에 따라 크게 달라지며, 난독 해제의 성공 여부는 현재 서버에서 사용되는 JavaScript에 따라 달라집니다."</string>
+• 이는 서버에 따라 크게 달라지며, 난독 해제의 성공 여부는 현재 서버에서 사용되는 JavaScript에 따라 달라집니다."</string>
     <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"난독 해제를 위한 자바스크립트가 최신 상태로 유지되지 않습니다.
 
-• 난독 해독에 성공하더라도 동영상 화질이나 코덱이 누락될 수 있습니다.
-• 난독 해독에 성공한 JavaScript가 사용되지만 여전히 서버에 따라 다소 달라집니다."</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_title">TV 동영상 다시 로드 버튼 표시하기</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_summary_on">버퍼링 애니메이션이 표시되는 경우에 동영상 다시 로드 버튼이 표시됩니다.</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_summary_off">동영상 다시 로드 버튼이 숨겨집니다.</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: PoToken / VisitorData -->
-    <string name="revanced_preference_category_po_token_visitor_data">PoToken &amp; VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_title">PoToken 등록하기</string>
-    <string name="revanced_spoof_streaming_data_po_token_summary">\'신뢰할 수 있는 브라우저에서 BotGuard에 의해 발급된 PoToken\'을 등록할 수 있습니다.\n\n• PoToken 발급 방법은 \'PoToken &amp; VisitorData에 대한 정보\' 메뉴와 연결된 페이지에 나와있습니다.</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_title">VisitorData 등록하기</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_summary">\'신뢰할 수 있는 브라우저에서 BotGuard에 의해 발급된 VisitorData\'를 등록할 수 있습니다.\n\n• VisitorData 발급 방법은 \'PoToken &amp; VisitorData에 대한 정보\' 메뉴와 연결된 페이지에 나와있습니다.</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_title">PoToken &amp; VisitorData에 대한 정보</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_summary">"일부 클라이언트는 유효한 스트리밍 데이터 응답을 받기 위해 PoToken과 VisitorData가 요구됩니다.
+• 난독 해독에 성공한 자바스크립트가 사용되지만 여전히 서버에 따라 다소 달라집니다."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">V8 JavaScript 엔진 사용하기</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript를 기본 라이브러리에서 실행합니다.
 
-iOS를 기본 클라이언트로 사용하려는 경우에 이 값이 요구될 수 있습니다.
+• SmartTube에 의해 제공됩니다."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript를 기본 라이브러리에서 실행하지 않습니다.
 
-PoToken과 VisitorData를 발급받는 방법을 보려면 여기를 누르세요."</string>
+• JavaTube에 의해 제공됩니다."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">V8 JavaScript 엔진을 사용하지 않는 경우에는 스트리밍 URL의 난독화를 해제하는 데 시간이 더 걸리므로 동영상이 10초 늦게 시작될 수 있습니다.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">시청 기록</string>
     <string name="revanced_preference_screen_watch_history_summary">시청 기록과 관련된 설정을 변경할 수 있습니다.</string>

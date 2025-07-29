@@ -2155,37 +2155,41 @@ Pulsa el botón de continuar y desactiva las optimizaciones de la batería."</st
     <string name="revanced_preference_screen_spoof_streaming_data_title">Falsificar datos de transmisión</string>
     <string name="revanced_preference_screen_spoof_streaming_data_summary">Falsifica los datos de transmisión para evitar problemas de reproducción.</string>
     <string name="revanced_spoof_streaming_data_title">Falsificar datos de transmisión</string>
-    <string name="revanced_spoof_streaming_data_summary_on">Los datos de transmisión están falsificados.</string>
+    <string name="revanced_spoof_streaming_data_summary_on">"Los datos de transmisión están falsificados."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Los datos de transmisión no están falsificados. Es posible que la reproducción de vídeo no funcione."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Desactivar este ajuste puede causar problemas de reproducción de vídeo.</string>
-    <string name="revanced_spoof_streaming_data_type_title">Cliente predeterminado</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_unplugged">"Android TV
+    <string name="revanced_spoof_streaming_data_default_client_video_title">Cliente predeterminado para vídeo</string>
+    <string name="revanced_spoof_streaming_data_default_client_audio_title">Cliente predeterminado para audio</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
 <small>(Inicio de sesión requerido)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr_no_auth">"Android VR
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(Sin inicio de sesión)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_deprecated">"iOS
+    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
 <small>(Obsoleto)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_unplugged">"iOS TV
+    <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(Inicio de sesión requerido)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv">"TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(todavía en desarrollo)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv_embedded">"TV integrado
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV integrado
 <small>(todavía en desarrollo)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv_simply">"TV simple
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV simple
 <small>(todavía en desarrollo)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Efectos secundarios de falsificación</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android">"• Falta el menú de la pista de audio.
-• El volumen estable no está disponible.
-• Desactivar pistas de audio automáticas forzadas no está disponible.
-• Es posible que los vídeos infantiles no se reproduzcan al cerrar la sesión o en modo incógnito."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_android">"• Falta el menú de la pista de audio.
+• La opción de desactivar las pistas de audio automáticas forzadas no está disponible.
+• El volumen estable no está disponible."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_ios_unplugged">• El volumen estable no está disponible.</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_tv">"• Si la desofuscación falla, la reproducción puede fallar.
+• A veces, el vídeo no se reproducirá incluso después de 10 segundos, en cuyo caso deberás pulsar en el botón de recargar vídeo.
+• El vídeo puede comenzar tarde."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• El servidor puede bloquear ASN/rangos de IP completos.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Es posible que las películas o los vídeos de pago no se reproduzcan.
-• Es posible que los vídeos infantiles no se reproduzcan al cerrar la sesión o en modo incógnito."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• La aplicación utiliza más recursos del sistema para desofuscar las URL de transmisión.
+    <string name="revanced_spoof_streaming_data_side_effects_video_android_without_tv">• Es posible que los vídeos para niños no se reproduzcan cuando se cierra la sesión o en modo incógnito.</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_ios_unplugged_without_tv">• Es posible que los vídeos para niños no se reproduzcan cuando se cierra la sesión o en modo incógnito.</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_tv">"• El códec AVC (H.264) no está disponible.
 • Si la desofuscación falla, la reproducción puede fallar.
-• A veces, la reproducción falla por razones desconocidas (el vídeo no se inicia durante más de 20 segundos), en cuyo caso es necesario volver a abrir el vídeo.
-• El vídeo se inicia con una demora de 5 a 15 segundos."</string>
+• A veces, el vídeo no se reproducirá incluso después de 10 segundos, en cuyo caso deberás pulsar en el botón de recargar vídeo.
+• El vídeo puede comenzar tarde."</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Mostrar en estadísticas para nerds</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">El cliente utilizado para obtener datos de transmisión se muestra en estadísticas para nerds.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">El cliente utilizado para obtener datos de transmisión no se muestra en estadísticas para nerds.</string>
@@ -2256,21 +2260,13 @@ Esta función todavía está en desarrollo, así que úsala solo para fines de d
 
 • Incluso si la desofuscación tiene éxito, puede que falte calidad de vídeo o códecs.
 • Se utiliza JavaScript que logra la desofuscación, pero sigue dependiendo en cierta medida del servidor."</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_title">Mostrar botón de recarga de vídeo de TV</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_summary_on">El botón de recarga de vídeo está visible cuando la animación de búfer está visible.</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_summary_off">El botón de recarga de vídeo está oculto.</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: PoToken / VisitorData -->
-    <string name="revanced_preference_category_po_token_visitor_data">PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_title">PoToken a usar</string>
-    <string name="revanced_spoof_streaming_data_po_token_summary">PoToken emitido por BotGuard en un navegador de confianza.</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_title">VisitorData a usar</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_summary">VisitorData emitido por BotGuard en un navegador de confianza.</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_title">Acerca de PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_summary">"Algunos clientes requieren PoToken y VisitorData para obtener una respuesta de datos de streaming válida.
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">Usar motor V8 JavaScript</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript se ejecuta en bibliotecas nativas.
 
-Si estás intentando utilizar iOS como cliente predeterminado, es posible que necesites estos valores.
+• Desarrollado por SmartTube."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript no se ejecuta en bibliotecas nativas.
 
-Pulsa aquí para ver más información."</string>
+• Desarrollado por JavaTube."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Historial de reproducciones</string>
     <string name="revanced_preference_screen_watch_history_summary">Cambiar ajustes relacionados con el historial de reproducciones.</string>

@@ -513,7 +513,7 @@
     <string name="revanced_disable_auto_audio_tracks_title">Вимкнути примусові автоматичні звукові доріжки</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Примусові автоматичні звукові доріжки вимкнено.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Примусові автоматичні звукові доріжки увімкнено.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Щоб скористатися цією функцією, змініть \'Основний клієнт (Підробка даних трансляції)\' на iOS TV.</string>
+    <string name="revanced_disable_auto_audio_tracks_not_available">Щоб скористатися цією функцією, змініть \'Основний клієнт для аудіо (Підробка даних трансляції)\' на TV або iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Вимкнути примусові авто субтитри</string>
     <string name="revanced_disable_auto_captions_summary_on">Примусові авто субтитри вимкнено.</string>
     <string name="revanced_disable_auto_captions_summary_off">Примусові авто субтитри увімкнено.</string>
@@ -1045,7 +1045,7 @@
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Меню Звукова доріжка показується.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Меню Звукова доріжка приховано.
 
-Для показу меню Звукова доріжка, змініть 'Основний клієнт (Підробка даних трансляції)' на iOS TV."</string>
+Для показу меню Звукова доріжка, змініть 'Основний клієнт для аудіо (Підробка даних трансляції)' на TV або iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Приховати меню субтитрів</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Меню субтитрів приховано.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Меню субтитрів показується.</string>
@@ -2164,38 +2164,43 @@
     <string name="revanced_preference_screen_spoof_streaming_data_title">Підробка даних трансляції</string>
     <string name="revanced_preference_screen_spoof_streaming_data_summary">Підробка даних трансляції для вирішення проблем відтворення.</string>
     <string name="revanced_spoof_streaming_data_title">Підробити дані трансляції</string>
-    <string name="revanced_spoof_streaming_data_summary_on">Дані трансляції підроблено.</string>
+    <string name="revanced_spoof_streaming_data_summary_on">"Дані трансляції підроблено.
+
+Якщо маєте YouTube Premium або виключили патч 'GmsCore support', це налаштування може не знадобитися."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Дані трансляції не підроблено. Відтворення відео може не працювати."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Вимикання цього налаштування може призвести до проблем відтворення відео.</string>
-    <string name="revanced_spoof_streaming_data_type_title">Основний клієнт</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_unplugged">"Android TV
+    <string name="revanced_spoof_streaming_data_default_client_video_title">Основний клієнт для відео</string>
+    <string name="revanced_spoof_streaming_data_default_client_audio_title">Основний клієнт для аудіо</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
 <small>(Потрібна авторизація)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr_no_auth">"Android VR
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(Без авторизації)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_deprecated">"iOS
+    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
 <small>(Застаріла)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_unplugged">"iOS TV
+    <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(Потрібна авторизація)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv">"TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(ще в розробці)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv_embedded">"Вбудоване TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Вбудоване TV
 <small>(ще в розробці)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv_simply">"Просте TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"Просте TV
 <small>(ще в розробці)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Побічні ефекти імітування</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android">"• Меню звукової доріжки відсутнє.
-• Стабілізація гучності недоступна.
-• Вимкнення примусових авто звукових доріжок недоступне.
-• Відео для дітей можуть не відтворюватися коли вийшли з системи або в анонімному режимі."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_android">"• Відсутнє меню звукової доріжки.
+• Вимкнути примусові звукові доріжки недоступне.
+• Стабілізація гучності недоступна."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_ios_unplugged">• Стабілізація гучності недоступна.</string>
+    <string name="revanced_spoof_streaming_data_side_effects_audio_tv">"• Якщо деобфускація не вдасться, відтворення може завершитися зі збоями.
+• Іноді відео не відтворюється навіть через 10 секунд, і тоді потрібно натиснути кнопку перезавантаження відео.
+• Відео може розпочинається із запізненням."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Цілі діапазони ASN/IP можуть блокуватися сервером.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Стабілізація гучності недоступна.
-• Фільми та платні відео можуть не відтворюватися.
-• Відео для дітей можуть не відтворюватися коли вийшли з системи або в анонімному режимі."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• Програма використовує більше системних ресурсів для деобфуксування посилань трансляції.
-• Якщо деобфускація не вдасться, відтворення може завершитися зі збоями, або може бути відсутня деяка якість відео чи кодеки.
-• Іноді з невідомих причин відтворення не відбувається (відео не запускається більше 20 секунд), в такому випадку потрібно перевідкрити відео.
-• Відео розпочинається із запізненням на 5-15 секунд."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_android_without_tv">• Відео для дітей можуть не відтворюватися, якщо вийти з облікового запису або в анонімному режимі.</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_ios_unplugged_without_tv">• Відео для дітей можуть не відтворюватися, якщо вийти з облікового запису або в анонімному режимі.</string>
+    <string name="revanced_spoof_streaming_data_side_effects_video_tv">"• Кодек AVC (H.264) недоступний.
+• Якщо деобфускація не вдасться, відтворення може завершитися зі збоями.
+• Іноді відео не відтворюється навіть через 10 секунд, і тоді потрібно натиснути кнопку перезавантаження відео.
+• Відео може розпочинається із запізненням."</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Показувати в Статистика для сисадмінів</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Клієнт, що використовується для отримання даних трансляції показується у Статистика для сисадмінів.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Клієнт, що використовується для отримання даних трансляції приховано у Статистика для сисадмінів.</string>
@@ -2210,7 +2215,7 @@
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_on">Кнопку звукової доріжки VR показується.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_off">Кнопку звукової доріжки VR не показується.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message">"Необхідні умови:
-• Клієнтом, який використовується для отримання даних трансляції, є \"Android VR (Без авторизації)\".
+• Клієнтом для аудіо, який використовується для отримання даних трансляції, є 'Android VR (Без авторизації)'.
 • Відтворюється відео з кількома звуковими доріжками.
 
 Відомі проблеми:
@@ -2264,21 +2269,13 @@ AVC має максимальну роздільну здатність 1080p, �
     <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"JavaScript для деобфускації не підтримується в актуальному стані.
 
 • Використовується JavaScript, який успішно виконує деобфускацію, але він все одно дещо залежний від сервера."</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_title">Показувати кнопку перезавантаження відео TV</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_summary_on">Кнопку перезавантаження відео показується під час показу анімації буферизації.</string>
-    <string name="revanced_spoof_streaming_data_tv_reload_video_button_summary_off">Кнопку перезавантаження відео приховано.</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: PoToken / VisitorData -->
-    <string name="revanced_preference_category_po_token_visitor_data">PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_title">PoToken для використання</string>
-    <string name="revanced_spoof_streaming_data_po_token_summary">PoToken виданий BotGuard в довіреному браузері.</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_title">VisitorData для використання</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_summary">VisitorData виданий BotGuard в довіреному браузері.</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_title">Про PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_summary">"Деякі клієнти вимагають PoToken і VisitorData для отримання коректної відповіді даних трансляції.
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">Використовувати рушій JavaScript V8</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript виконується в корінних бібліотеках.
 
-Якщо намагаєтеся використовувати клієнт iOS, можуть знадобитися ці значення.
+• Працює на SmartTube."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript не виконується в корінних бібліотеках.
 
-Натисніть, щоб переглянути більше інформації."</string>
+• Працює на JavaTube."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Історія перегляду</string>
     <string name="revanced_preference_screen_watch_history_summary">Змінити налаштування пов\'язані з історією перегляду.</string>

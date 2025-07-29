@@ -468,6 +468,15 @@
     <string name="revanced_hide_related_videos_user_dialog_message">"يحد هذا الإعداد من الحد الأقصى لعدد التخطيطات التي يمكن تحميلها على شاشة المشغل.
 
 إذا تغير تخطيط شاشة المشغل بسبب تغييرات على جانب الخادم، فقد يتم إخفاء التخطيطات غير المقصودة على شاشة المشغل."</string>
+    <string name="revanced_hide_related_videos_type_title">نوع إخفاء الفيديوهات ذات الصلة</string>
+    <string name="revanced_hide_related_videos_type_summary_on">"يتم حفظ عدد التخطيطات المُحمّلة على الشاشة عند بدء الفيديو.
+
+• يُصلح جزئيًا مشكلة إعادة تعيين موضع تمرير الموجز.
+
+• قد لا تتم تصفية الفيديوهات ذات الصلة بالكامل."</string>
+    <string name="revanced_hide_related_videos_type_summary_off">"لا يُحفظ عدد التخطيطات المُحمّلة على الشاشة عند بدء الفيديو.
+
+• قد يُعاد ضبط موضع تمرير الموجز."</string>
     <string name="revanced_related_videos_offset_title">الموازن</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">عام</string>
@@ -972,6 +981,13 @@
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Comments -->
     <string name="revanced_preference_screen_comments_title">التعليقات</string>
     <string name="revanced_preference_screen_comments_summary">إخفاء أو عرض مكونات قسم التعليقات.</string>
+    <string name="revanced_enable_comments_scroll_top_title">تمكين التمرير إلى الأعلى في التعليقات</string>
+    <string name="revanced_enable_comments_scroll_top_summary_on">"عند النقر على عنوان لوحة التعليقات ('التعليقات')، ينتقل إلى الأعلى.
+
+القيود:
+• لا ينطبق على ردود التعليقات.
+• في 'المؤقت'، ينتقل إلى الأسفل عند النقر على عنوان لوحة التعليقات ('التعليقات')."</string>
+    <string name="revanced_enable_comments_scroll_top_summary_off">"النقر على عنوان لوحة التعليق ('التعليقات') لا يفعل شيئًا."</string>
     <string name="revanced_hide_ai_chat_summary_title">إخفاء ملخص محادثات الذكاء الاصطناعي</string>
     <string name="revanced_hide_ai_chat_summary_summary_on">تم إخفاء ملخص محادثة الذكاء الاصطناعي.</string>
     <string name="revanced_hide_ai_chat_summary_summary_off">يتم عرض ملخص محادثة الذكاء الاصطناعي.</string>
@@ -997,7 +1013,9 @@
     <string name="revanced_hide_comments_emoji_and_timestamp_buttons_summary_on">تم إخفاء أزرار الرموز التعبيرية والطوابع الزمنية.</string>
     <string name="revanced_hide_comments_emoji_and_timestamp_buttons_summary_off">يتم عرض أزرار الرموز التعبيرية والطوابع الزمنية.</string>
     <string name="revanced_hide_comments_highlighted_search_links_title">إخفاء روابط البحث المميزة</string>
-    <string name="revanced_hide_comments_highlighted_search_links_summary_on">"تم إخفاء روابط البحث المميزة."</string>
+    <string name="revanced_hide_comments_highlighted_search_links_summary_on">"تم إخفاء روابط البحث المميزة.
+
+ملاحظة: قد لا تكون بعض روابط البحث المميزة التي لا تحتوي على نمط نص افتراضي مخفية."</string>
     <string name="revanced_hide_comments_highlighted_search_links_summary_off">يتم عرض روابط البحث المميزة.</string>
     <string name="revanced_hide_live_chat_messages_title">إخفاء رسائل المحادثات المباشرة</string>
     <string name="revanced_hide_live_chat_messages_summary_on">تم إخفاء رسائل المحادثات المباشرة.\n\nينطبق هذا الإعداد على فيديوهات بث Shorts المباشر أيضًا.</string>
@@ -2151,41 +2169,18 @@
     <string name="revanced_preference_screen_spoof_streaming_data_title">Spoof Streaming Data</string>
     <string name="revanced_preference_screen_spoof_streaming_data_summary">تزييف بيانات البث لمنع حدوث مشكلات أثناء التشغيل.</string>
     <string name="revanced_spoof_streaming_data_title">Spoof Streaming Data</string>
-    <string name="revanced_spoof_streaming_data_summary_on">يتم تزييف بيانات البث.</string>
+    <string name="revanced_spoof_streaming_data_summary_on">"يتم تزييف بيانات البث."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"لا يتم تزييف بيانات البث. قد لا يعمل تشغيل الفيديو."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">إيقاف تشغيل هذا الإعداد قد يسبب مشاكل في تشغيل الفيديو.</string>
-    <string name="revanced_spoof_streaming_data_type_title">العميل الافتراضي</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_unplugged">"Android TV
-<small>(يتطلب تسجيل الدخول)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr_no_auth">"Android VR
-<small>(بدون مصادقة)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_deprecated">"iOS
-<small>(مُهمَل)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_unplugged">"iOS TV
-<small>(يتطلب تسجيل الدخول)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv">"TV <small>(WIP)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv_embedded">"TV Embedded <small>(WIP)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_tv_simply">"TV Simply <small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">التأثيرات الجانبية للتزييف</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android">"• قائمة المقطع الصوتي مفقودة.
-• مستوى الصوت الثابت غير متاح.
-• لا يتوفر تعطيل المقطع الصوتي التلقائي المفروض.
-• قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• قد يتم حظر نطاقات ASNs/IP بالكامل بواسطة الخادم.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• مستوى الصوت الثابت غير متوفر.
-• قد لا يتم تشغيل الأفلام أو الفيديوهات المدفوعة.
-• قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• يستهلك التطبيق موارد النظام بشكل أكبر لإزالة تشويش روابط البث.
-• إذا فشلت عملية إزالة التشويش، فقد يفشل التشغيل، أو قد تكون بعض جودة الفيديو أو برامج الترميز مفقودة.
-• أحيانًا يفشل التشغيل لأسباب غير معروفة (مثل عدم بدء تشغيل الفيديو لأكثر من ٢٠ ثانية)، وفي هذه الحالة، يجب إعادة فتح الفيديو.
-• يبدأ الفيديو متأخرًا من ٥ إلى ١٥ ثانية."</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">عرض في إحصاءات تقنية</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">يتم عرض العميل المستخدم لجلب بيانات البث في إحصاءات تقنية.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">تم إخفاء العميل المستخدم لجلب بيانات البث في إحصاءات تقنية.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">لم يتمكن من جلب أي تدفقات عميل.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">ربما لم تتمكن من تسجيل الدخول.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
+    <string name="revanced_preference_category_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_title">تعطيل VR AV1</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">ترميز الفيديو هو AVC (H.264) أو VP9.</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">يتم تحديد ترميز الفيديو تلقائيًا.</string>
@@ -2204,6 +2199,7 @@
 هذه الميزة لا تزال قيد التطوير، لذا قد تتوقف في أي وقت بسبب تغييرات من جانب الخادم."</string>
     <string name="revanced_spoof_streaming_data_vr_language_title">لغة المقطع الصوتي الافتراضي VR</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
+    <string name="revanced_preference_category_ios">iOS</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_title">فرض iOS AVC (H.264)</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_summary_on">يتم فرض ترميز الفيديو على AVC (H.264).</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_summary_off">يتم تحديد ترميز الفيديو تلقائيًا.</string>
@@ -2221,6 +2217,7 @@ AVC لديه حد أقصى للدقة 1080p، لا يتوفر ترميز الص�
 
 استخدمه على مسؤوليتك الخاصة!"</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
+    <string name="revanced_preference_category_tv">TV (WIP)</string>
     <string name="revanced_spoof_streaming_data_use_tv_title">استخدام عميل iOS</string>
     <string name="revanced_spoof_streaming_data_use_tv_summary_on">تم إضافة عميل TV إلى العملاء المتاحين.</string>
     <string name="revanced_spoof_streaming_data_use_tv_summary_off">لم يتم إضافة عميل TV إلى العملاء المتاحين.</string>
@@ -2238,18 +2235,13 @@ AVC لديه حد أقصى للدقة 1080p، لا يتوفر ترميز الص�
 • التشغيل التلقائي في الموجز
 • المقاطع
 • Shorts"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: PoToken / VisitorData -->
-    <string name="revanced_preference_category_po_token_visitor_data">PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_title">استخدام PoToken</string>
-    <string name="revanced_spoof_streaming_data_po_token_summary">PoToken الصادرة عن BotGuard في متصفح موثوق به.</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_title">استخدام VisitorData</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_summary">VisitorsData الصادرة عن BotGuard في متصفح موثوق به.</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_title">لمحة عن PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_summary">"يتطلب بعض العملاء PoToken و VisitorData للحصول على استجابة صالحة لتدفق البيانات.
+    <string name="revanced_spoof_streaming_data_tv_use_latest_js_title">استخدام أحدث JavaScript</string>
+    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_on">"يتم تحديث جافا سكريبت لإزالة التشويش باستمرار.
 
-إذا كنت تحاول استخدام iOS كعميل افتراضي، فقد تحتاج إلى هذه القيم.
+• يعتمد بشكل كبير على الخادم، ويعتمد نجاح أو فشل إزالة التشويش على جافا سكريبت المستخدم حاليًا على الخادم."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"لا يتم تحديث جافا سكريبت لإزالة التشويش.
 
-انقر لمعرفة المزيد من المعلومات."</string>
+• يُستخدم جافا سكريبت الذي ينجح في إزالة التشويش، ولكنه لا يزال يعتمد إلى حد ما على الخادم."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">سجل المشاهدة</string>
     <string name="revanced_preference_screen_watch_history_summary">تغيير الإعدادات المتعلقة بسجل المشاهدة.</string>

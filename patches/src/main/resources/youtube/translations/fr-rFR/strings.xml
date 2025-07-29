@@ -2063,28 +2063,11 @@ Cliquez sur le bouton Continuer et autorisez les modifications d'optimisations."
     <string name="revanced_preference_screen_spoof_streaming_data_title">Falsifier les données de diffusion en direct</string>
     <string name="revanced_preference_screen_spoof_streaming_data_summary">Falsifier les données de diffusion en direct afin d\'éviter les problèmes de lecture.</string>
     <string name="revanced_spoof_streaming_data_title">Falsifier les données de lecture en direct</string>
-    <string name="revanced_spoof_streaming_data_summary_on">Les données de lecture en direct sont falsifiées.</string>
+    <string name="revanced_spoof_streaming_data_summary_on">"Les données de lecture en direct sont falsifiées."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Les données de lecture en direct ne sont pas falsifiées. La lecture vidéo peut ne pas fonctionner."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Désactiver ce paramètre peut entraîner des problèmes de lecture vidéo.</string>
-    <string name="revanced_spoof_streaming_data_type_title">Client par défaut</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_unplugged">"Android TV
-<small>(Connexion requise)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr_no_auth">"Android VR
-<small>(sans authentification)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_deprecated">"iOS
-<small>(Obsolète)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_unplugged">"iOS TV
-<small>(Connexion requise)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Effets inconnus de la falsification</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android">"• Le menu 'piste audio' n'est pas disponible.
-• Le volume stable n'est pas disponible.
-• La désactivation forcée des pistes audio automatiques n'est pas disponible.
-• Les vidéos pour enfants peuvent ne pas être lues en cas de déconnexion ou en mode incognito."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Des plages entières d\'ASN/adresses IP peuvent être bloquées par le serveur.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Le volume stable n'es pas disponible.
-• Les films ou vidéos payantes peut ne pas être lus.
-• Les vidéos pour enfants peuvent ne pas être lues en cas de déconnexion ou en mode incognito."</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Afficher dans \'Statistiques pour les nerds\'</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Le client utilisé pour récupérer les données de lecture en direct est affiché dans \'Statistiques pour les nerds\'.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Le client utilisé pour récupérer les données de lecture en direct est masqué dans \'Statistiques pour les nerds\'.</string>
@@ -2099,18 +2082,6 @@ Cliquez sur le bouton Continuer et autorisez les modifications d'optimisations."
 
 AVC a une résolution maximale de 1080p, le codec audio Opus n'est pas disponible et la lecture vidéo utilisera plus de données internet que VP9 ou AV1."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: PoToken / VisitorData -->
-    <string name="revanced_preference_category_po_token_visitor_data">PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_title">PoToken à utiliser</string>
-    <string name="revanced_spoof_streaming_data_po_token_summary">PoToken publié par BotGuard dans un navigateur de confiance.</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_title">VisitorData à utiliser</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_summary">VisitorData publié par BotGuard dans un navigateur de confiance.</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_title">À propos de PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_summary">"Certains clients ont besoin de PoToken et de VisitorData pour obtenir une réponse de données en continu valide.
-
-Si vous essayez d'utiliser iOS comme client par défaut, il se peut que vous ayez besoin de ces valeurs.
-
-Cliquez pour plus d'informations."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Historique de visionnage</string>
     <string name="revanced_preference_screen_watch_history_summary">Modifie les paramètres liés à l\'historique de visionnage.</string>
