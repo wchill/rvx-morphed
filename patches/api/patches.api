@@ -15,7 +15,7 @@ public abstract interface class app/revanced/patches/all/misc/transformation/IMe
 	public abstract fun getMethodName ()Ljava/lang/String;
 	public abstract fun getMethodParams ()[Ljava/lang/String;
 	public abstract fun getReturnType ()Ljava/lang/String;
-	public abstract fun replaceInvokeVirtualWithExtension (Ljava/lang/String;Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;Lcom/android/tools/smali/dexlib2/iface/instruction/formats/Instruction35c;I)V
+	public fun replaceInvokeVirtualWithExtension (Ljava/lang/String;Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;Lcom/android/tools/smali/dexlib2/iface/instruction/formats/Instruction35c;I)V
 }
 
 public final class app/revanced/patches/all/misc/transformation/IMethodCall$DefaultImpls {
@@ -570,6 +570,7 @@ public final class app/revanced/patches/shared/mapping/ResourceType : java/lang/
 	public static final field ID Lapp/revanced/patches/shared/mapping/ResourceType;
 	public static final field INTEGER Lapp/revanced/patches/shared/mapping/ResourceType;
 	public static final field LAYOUT Lapp/revanced/patches/shared/mapping/ResourceType;
+	public static final field RAW Lapp/revanced/patches/shared/mapping/ResourceType;
 	public static final field STRING Lapp/revanced/patches/shared/mapping/ResourceType;
 	public static final field STYLE Lapp/revanced/patches/shared/mapping/ResourceType;
 	public static final field XML Lapp/revanced/patches/shared/mapping/ResourceType;
@@ -981,7 +982,7 @@ public final class app/revanced/patches/youtube/utils/fix/splash/DarkModeSplashS
 }
 
 public final class app/revanced/patches/youtube/utils/fix/streamingdata/FingerprintsKt {
-	public static final field STREAMING_DATA_INTERFACE Ljava/lang/String;
+	public static final field STREAMING_DATA_OUTER_CLASS Ljava/lang/String;
 }
 
 public final class app/revanced/patches/youtube/utils/fix/streamingdata/SpoofStreamingDataPatchKt {
@@ -1111,6 +1112,7 @@ public final class app/revanced/patches/youtube/utils/resourceid/SharedResourceI
 	public static final fun getAdAttribution ()J
 	public static final fun getAppRelatedEndScreenResults ()J
 	public static final fun getAppearance ()J
+	public static final fun getAudioFormat ()J
 	public static final fun getAutoNavPreviewStub ()J
 	public static final fun getAutoNavScrollCancelPadding ()J
 	public static final fun getAutoNavToggle ()J
@@ -1160,6 +1162,7 @@ public final class app/revanced/patches/youtube/utils/resourceid/SharedResourceI
 	public static final fun getInsetElementsWrapper ()J
 	public static final fun getInsetOverlayViewLayout ()J
 	public static final fun getInterstitialsContainer ()J
+	public static final fun getLikeTapFeedbackCairo ()J
 	public static final fun getMenuItemView ()J
 	public static final fun getMiniplayerMaxSize ()J
 	public static final fun getModernMiniPlayerClose ()J
@@ -1211,6 +1214,7 @@ public final class app/revanced/patches/youtube/utils/resourceid/SharedResourceI
 	public static final fun getVarispeedUnavailableTitle ()J
 	public static final fun getVerticalTouchOffsetToEnterFineScrubbing ()J
 	public static final fun getVerticalTouchOffsetToStartFineScrubbing ()J
+	public static final fun getVideoFormat ()J
 	public static final fun getVideoQualityBottomSheet ()J
 	public static final fun getVideoQualityUnavailableAnnouncement ()J
 	public static final fun getVideoZoomSnapIndicator ()J

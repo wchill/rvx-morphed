@@ -1635,6 +1635,7 @@
       "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
+      "BytecodePatch",
       "ResourcePatch"
     ],
     "compatiblePackages": {
@@ -2073,6 +2074,7 @@
     "description": "Adds options to display useful overlay buttons in the video player.",
     "use": true,
     "dependencies": [
+      "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
@@ -2881,6 +2883,7 @@
     "description": "Adds options to spoof the streaming data to allow playback.",
     "use": true,
     "dependencies": [
+      "RawResourcePatch",
       "Settings for YouTube",
       "BytecodePatch",
       "BytecodePatch",
