@@ -1,8 +1,6 @@
 package app.revanced.patches.youtube.utils.fix.streamingdata
 
-import app.revanced.patches.youtube.utils.resourceid.audioFormat
 import app.revanced.patches.youtube.utils.resourceid.playerLoadingViewThin
-import app.revanced.patches.youtube.utils.resourceid.videoFormat
 import app.revanced.util.fingerprint.legacyFingerprint
 import app.revanced.util.getReference
 import app.revanced.util.indexOfFirstInstruction
@@ -64,33 +62,6 @@ internal val nerdsStatsFormatBuilderFingerprint = legacyFingerprint(
     accessFlags = AccessFlags.PUBLIC or AccessFlags.STATIC,
     parameters = listOf("L"),
     strings = listOf("codecs=\""),
-)
-
-internal val nerdsStatsOverlayFingerprint = legacyFingerprint(
-    name = "nerdsStatsOverlayFingerprint",
-    returnType = "V",
-    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    parameters = emptyList(),
-    literals = listOf(audioFormat, videoFormat)
-)
-
-internal val nerdsStatsTextViewParentFingerprint = legacyFingerprint(
-    name = "nerdsStatsTextViewParentFingerprint",
-    returnType = "Ljava/lang/String;",
-    accessFlags = AccessFlags.PUBLIC or AccessFlags.STATIC,
-    parameters = listOf("Ljava/lang/String;"),
-    opcodes = listOf(
-        Opcode.CONST_STRING,
-        Opcode.CONST_STRING,
-        Opcode.INVOKE_STATIC,
-        Opcode.MOVE_RESULT_OBJECT,
-    ),
-    strings = listOf(" [", "]"),
-    customFingerprint = { methodDef, classDef ->
-        classDef.interfaces.contains("Landroid/view/View\$OnClickListener;") &&
-                classDef.fields.find { field -> field.type == "[F" } != null &&
-                classDef.fields.find { field -> field.type == "[I" } != null
-    },
 )
 
 internal val protobufClassParseByteBufferFingerprint = legacyFingerprint(

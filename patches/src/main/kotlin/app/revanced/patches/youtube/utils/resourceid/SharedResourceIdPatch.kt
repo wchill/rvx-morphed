@@ -27,8 +27,6 @@ var appearance = -1L
     private set
 var appRelatedEndScreenResults = -1L
     private set
-var audioFormat = -1L
-    private set
 var autoNavPreviewStub = -1L
     private set
 var autoNavScrollCancelPadding = -1L
@@ -225,8 +223,6 @@ var totalTime = -1L
     private set
 var touchArea = -1L
     private set
-var videoFormat = -1L
-    private set
 var videoQualityBottomSheet = -1L
     private set
 var varispeedUnavailableTitle = -1L
@@ -282,7 +278,6 @@ internal val sharedResourceIdPatch = resourcePatch(
         adAttribution = getResourceId(ID, "ad_attribution")
         appearance = getResourceId(STRING, "app_theme_appearance_dark")
         appRelatedEndScreenResults = getResourceId(LAYOUT, "app_related_endscreen_results")
-        audioFormat = getResourceId(ID, "audio_format")
         autoNavPreviewStub = getResourceId(ID, "autonav_preview_stub")
         autoNavScrollCancelPadding = getResourceId(DIMEN, "autonav_scroll_cancel_padding")
         autoNavToggle = getResourceId(ID, "autonav_toggle")
@@ -390,7 +385,6 @@ internal val sharedResourceIdPatch = resourcePatch(
         toolTipContentView = getResourceId(LAYOUT, "tooltip_content_view")
         totalTime = getResourceId(STRING, "total_time")
         touchArea = getResourceId(ID, "touch_area")
-        videoFormat = getResourceId(ID, "video_format")
         videoQualityBottomSheet =
             getResourceId(LAYOUT, "video_quality_bottom_sheet_list_fragment_title")
         varispeedUnavailableTitle = getResourceId(STRING, "varispeed_unavailable_title")

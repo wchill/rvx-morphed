@@ -12,7 +12,6 @@ import app.revanced.extension.shared.innertube.utils.ThrottlingParameterUtils
 import app.revanced.extension.shared.patches.components.ByteArrayFilterGroup
 import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.getAdaptiveFormats
 import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.parseFrom
-import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.setAdaptiveFormats
 import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.setUrl
 import app.revanced.extension.shared.requests.Requester
 import app.revanced.extension.shared.settings.BaseSettings
@@ -51,7 +50,7 @@ class StreamingDataRequest private constructor(
     reasonSkipped: String,
 ) {
     private val videoId: String
-    private val future: Future<Pair<StreamingData?, List<Any>?>?>
+    private val future: Future<StreamingData?>
 
     init {
         Objects.requireNonNull(requestHeader)
@@ -69,7 +68,7 @@ class StreamingDataRequest private constructor(
         return future.isDone
     }
 
-    val streamPair: Pair<StreamingData?, List<Any>?>?
+    val stream: StreamingData?
         get() {
             try {
                 return future[MAX_MILLISECONDS_TO_WAIT_FOR_FETCH.toLong(), TimeUnit.MILLISECONDS]
@@ -103,24 +102,19 @@ class StreamingDataRequest private constructor(
         private const val PAGE_ID_HEADER = "X-Goog-PageId"
         private const val MAX_MILLISECONDS_TO_WAIT_FOR_FETCH = 25 * 1000
 
-        private val SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO: ClientType =
-            BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO.get()
-        private val SPOOF_STREAMING_DATA_DEFAULT_CLIENT_VIDEO: ClientType =
-            BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT_VIDEO.get()
-        private val CLIENT_ORDER_TO_USE_AUDIO: Array<ClientType> =
-            YouTubeAppClient.availableClientTypes(SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO)
-        private val CLIENT_ORDER_TO_USE_VIDEO: Array<ClientType> =
-            YouTubeAppClient.availableClientTypes(SPOOF_STREAMING_DATA_DEFAULT_CLIENT_VIDEO)
+        private val SPOOF_STREAMING_DATA_DEFAULT_CLIENT: ClientType =
+            BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get()
+        private val CLIENT_ORDER_TO_USE: Array<ClientType> =
+            YouTubeAppClient.availableClientTypes(SPOOF_STREAMING_DATA_DEFAULT_CLIENT)
         private val DEFAULT_CLIENT_AUDIO_IS_ANDROID_VR_NO_AUTH: Boolean =
-            SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO == ClientType.ANDROID_VR_NO_AUTH
+            SPOOF_STREAMING_DATA_DEFAULT_CLIENT == ClientType.ANDROID_VR_NO_AUTH
         private val liveStreams: ByteArrayFilterGroup =
             ByteArrayFilterGroup(
                 null,
                 "yt_live_broadcast",
                 "yt_premiere_broadcast"
             )
-        private var lastSpoofedAudioClientFriendlyName: String? = null
-        private var lastSpoofedVideoClientFriendlyName: String? = null
+        private var lastSpoofedClientFriendlyName: String? = null
 
         // When this value is not empty, it is used as the preferred language when creating the RequestBody.
         private var overrideLanguage: String = ""
@@ -136,20 +130,10 @@ class StreamingDataRequest private constructor(
             })
 
         @JvmStatic
-        val lastSpoofedAudioClientName: String
+        val lastSpoofedClientName: String
             get() {
-                return if (lastSpoofedAudioClientFriendlyName != null) {
-                    lastSpoofedAudioClientFriendlyName!!
-                } else {
-                    "Unknown"
-                }
-            }
-
-        @JvmStatic
-        val lastSpoofedVideoClientName: String
-            get() {
-                return if (lastSpoofedVideoClientFriendlyName != null) {
-                    lastSpoofedVideoClientFriendlyName!!
+                return if (lastSpoofedClientFriendlyName != null) {
+                    lastSpoofedClientFriendlyName!!
                 } else {
                     "Unknown"
                 }
@@ -157,15 +141,8 @@ class StreamingDataRequest private constructor(
 
         @JvmStatic
         val lastSpoofedAudioClientIsAndroidVRNoAuth: Boolean
-            get() = lastSpoofedAudioClientFriendlyName != null
-                    && lastSpoofedAudioClientFriendlyName!! == ClientType.ANDROID_VR_NO_AUTH.friendlyName
-
-        @JvmStatic
-        val lastSpoofedClientIsTV: Boolean
-            get() = (lastSpoofedAudioClientFriendlyName != null
-                    && lastSpoofedAudioClientFriendlyName!! == ClientType.TV.friendlyName) ||
-                    (lastSpoofedVideoClientFriendlyName != null
-                            && lastSpoofedVideoClientFriendlyName!! == ClientType.TV.friendlyName)
+            get() = lastSpoofedClientFriendlyName != null
+                    && lastSpoofedClientFriendlyName!! == ClientType.ANDROID_VR_NO_AUTH.friendlyName
 
         @JvmStatic
         fun overrideLanguage(language: String) {
@@ -409,24 +386,19 @@ class StreamingDataRequest private constructor(
             return null
         }
 
-        private fun fetchStream(
+        private fun fetch(
             videoId: String,
             requestHeader: Map<String, String>,
             reasonSkipped: String,
-            isAudio: Boolean,
-        ): Pair<StreamingData?, String?> {
+        ): StreamingData? {
+            lastSpoofedClientFriendlyName = null
+
             // MutableMap containing the deobfuscated streamingUrl.
             // This is used for clients where streamingUrl is obfuscated.
             var deobfuscatedUrlArrayList: ArrayList<String>? = null
 
-            val clientToUse: Array<ClientType> = if (isAudio) {
-                CLIENT_ORDER_TO_USE_AUDIO
-            } else {
-                CLIENT_ORDER_TO_USE_VIDEO
-            }
-
             // Retry with different client if empty response body is received.
-            for (clientType in clientToUse) {
+            for (clientType in CLIENT_ORDER_TO_USE) {
                 if (clientType.requireAuth &&
                     StringUtils.isAllEmpty(requestHeader[AUTHORIZATION_HEADER], requestHeader[PAGE_ID_HEADER])
                 ) {
@@ -476,6 +448,8 @@ class StreamingDataRequest private constructor(
                                     ) {
                                         Logger.printDebug { "Ignore Android Studio spoofing as it is a livestream (video: $videoId)" }
                                     } else {
+                                        lastSpoofedClientFriendlyName = clientType.friendlyName
+
                                         // Parses the Proto Buffer and returns StreamingData (GeneratedMessage).
                                         var streamingData = parseFrom(ByteBuffer.wrap(stream.toByteArray()))
 
@@ -483,7 +457,7 @@ class StreamingDataRequest private constructor(
                                             streamingData = deobfuscateStreamingData(deobfuscatedUrlArrayList, streamingData)
                                         }
 
-                                        return Pair(streamingData, clientType.friendlyName)
+                                        return streamingData
                                     }
                                 }
                             }
@@ -505,62 +479,7 @@ class StreamingDataRequest private constructor(
                 null,
                 showToast
             )
-            return Pair(null, null)
-        }
-
-        private fun fetch(
-            videoId: String,
-            requestHeader: Map<String, String>,
-            reasonSkipped: String,
-        ): Pair<StreamingData?, List<Any>?>? {
-            lastSpoofedAudioClientFriendlyName = null
-            lastSpoofedVideoClientFriendlyName = null
-
-            val streamingDataAudioPair = fetchStream(
-                videoId,
-                requestHeader,
-                reasonSkipped,
-                true
-            )
-            val streamingDataAudio = streamingDataAudioPair.first
-            val spoofedAudioClientFriendlyName = streamingDataAudioPair.second
-
-            if (SPOOF_STREAMING_DATA_DEFAULT_CLIENT_AUDIO != SPOOF_STREAMING_DATA_DEFAULT_CLIENT_VIDEO
-                && streamingDataAudio != null) {
-                val streamingDataVideoPair = fetchStream(
-                    videoId,
-                    requestHeader,
-                    reasonSkipped,
-                    false
-                )
-                val streamingDataVideo = streamingDataVideoPair.first
-                val spoofedVideoClientFriendlyName = streamingDataVideoPair.second
-                if (streamingDataVideo != null
-                    && spoofedAudioClientFriendlyName != spoofedVideoClientFriendlyName) {
-                    val adaptiveFormatsList = ArrayList<Any?>(100)
-
-                    // Add audio formats.
-                    setAdaptiveFormats(streamingDataAudio, adaptiveFormatsList, false)
-
-                    // If you want to keep only the original audio track (original language), you can use this:
-                    // removeNonOriginalAudioTracks(adaptiveFormatsList)
-
-                    // Add video formats.
-                    setAdaptiveFormats(streamingDataVideo, adaptiveFormatsList, true)
-
-                    // If you want to remove the AV1 codec, you can use this:
-                    // removeAV1Codecs(adaptiveFormatsList)
-
-                    lastSpoofedAudioClientFriendlyName = spoofedAudioClientFriendlyName
-                    lastSpoofedVideoClientFriendlyName = streamingDataVideoPair.second
-
-                    return Pair(streamingDataAudio, adaptiveFormatsList.filterNotNull().toList())
-                }
-            }
-            lastSpoofedAudioClientFriendlyName = spoofedAudioClientFriendlyName
-            lastSpoofedVideoClientFriendlyName = spoofedAudioClientFriendlyName
-
-            return Pair(streamingDataAudio, null)
+            return null
         }
     }
 }

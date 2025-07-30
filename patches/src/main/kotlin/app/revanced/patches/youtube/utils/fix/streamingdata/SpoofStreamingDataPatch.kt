@@ -37,43 +37,32 @@ import app.revanced.patches.youtube.utils.playservice.is_20_14_or_greater
 import app.revanced.patches.youtube.utils.playservice.versionCheckPatch
 import app.revanced.patches.youtube.utils.request.buildRequestPatch
 import app.revanced.patches.youtube.utils.request.hookBuildRequest
-import app.revanced.patches.youtube.utils.resourceid.audioFormat
 import app.revanced.patches.youtube.utils.resourceid.sharedResourceIdPatch
-import app.revanced.patches.youtube.utils.resourceid.videoFormat
 import app.revanced.patches.youtube.utils.settings.ResourceUtils.addPreference
 import app.revanced.patches.youtube.utils.settings.settingsPatch
 import app.revanced.patches.youtube.video.information.hookBackgroundPlayVideoInformation
 import app.revanced.patches.youtube.video.information.videoInformationPatch
+import app.revanced.patches.youtube.video.playerresponse.Hook
+import app.revanced.patches.youtube.video.playerresponse.addPlayerResponseMethodHook
 import app.revanced.patches.youtube.video.videoid.videoIdPatch
 import app.revanced.util.ResourceGroup
 import app.revanced.util.addInstructionsAtControlFlowLabel
 import app.revanced.util.copyResources
-import app.revanced.util.findFreeRegister
+import app.revanced.util.findInstructionIndicesReversedOrThrow
 import app.revanced.util.findMethodOrThrow
 import app.revanced.util.fingerprint.definingClassOrThrow
 import app.revanced.util.fingerprint.injectLiteralInstructionBooleanCall
 import app.revanced.util.fingerprint.matchOrThrow
-import app.revanced.util.fingerprint.methodCall
 import app.revanced.util.fingerprint.methodOrThrow
-import app.revanced.util.fingerprint.mutableClassOrThrow
 import app.revanced.util.getReference
-import app.revanced.util.indexOfFirstInstruction
-import app.revanced.util.indexOfFirstInstructionOrThrow
-import app.revanced.util.indexOfFirstInstructionReversedOrThrow
-import app.revanced.util.indexOfFirstLiteralInstructionOrThrow
 import app.revanced.util.inputStreamFromBundledResourceOrThrow
-import app.revanced.util.or
-import app.revanced.util.toHexString
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
-import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
-import com.android.tools.smali.dexlib2.iface.reference.MethodReference
-import com.android.tools.smali.dexlib2.iface.reference.TypeReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 import java.nio.file.Files
@@ -279,49 +268,11 @@ val spoofStreamingDataPatch = bytecodePatch(
                 }
             }
 
-        videoStreamingDataConstructorFingerprint.methodOrThrow(
-            videoStreamingDataToStringFingerprint
-        ).apply {
-            val adaptiveFormatsFieldIndex =
-                indexOfGetAdaptiveFormatsFieldInstruction(this)
-            val adaptiveFormatsRegister =
-                getInstruction<TwoRegisterInstruction>(adaptiveFormatsFieldIndex).registerA
-
-            val arrayListIndex =
-                indexOfFirstInstructionReversedOrThrow(adaptiveFormatsFieldIndex) {
-                    opcode == Opcode.NEW_INSTANCE &&
-                            getReference<TypeReference>()?.type == "Ljava/util/ArrayList;"
-                }
-            val arrayListRegister =
-                getInstruction<OneRegisterInstruction>(arrayListIndex).registerA
-
-            val videoIdIndex =
-                indexOfFirstInstructionReversedOrThrow(adaptiveFormatsFieldIndex) {
-                    val reference = getReference<FieldReference>()
-                    opcode == Opcode.IGET_OBJECT &&
-                            reference?.type == "Ljava/lang/String;" &&
-                            reference.definingClass == definingClass
-                }
-            val definingClassRegister =
-                getInstruction<TwoRegisterInstruction>(videoIdIndex).registerB
-            val videoIdReference =
-                getInstruction<ReferenceInstruction>(videoIdIndex).reference
-
-            addInstructions(
-                adaptiveFormatsFieldIndex + 1, """
-                    # Get video id.
-                    iget-object v$arrayListRegister, v$definingClassRegister, $videoIdReference
-                    
-                    # Override adaptive formats.
-                    invoke-static { v$arrayListRegister, v$adaptiveFormatsRegister }, $EXTENSION_CLASS_DESCRIPTOR->getAdaptiveFormats(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
-                    move-result-object v$adaptiveFormatsRegister
-                    
-                    # Restore register.
-                    new-instance v$arrayListRegister, Ljava/util/ArrayList;
-                    invoke-direct { v$arrayListRegister }, Ljava/util/ArrayList;-><init>()V
-                    """
+        addPlayerResponseMethodHook(
+            Hook.PlayerParameterBeforeVideoId(
+                "$EXTENSION_CLASS_DESCRIPTOR->newPlayerResponseParameter(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;"
             )
-        }
+        )
 
         findMethodOrThrow(EXTENSION_UTILS_CLASS_DESCRIPTOR) {
             name == "setContext"
@@ -361,60 +312,16 @@ val spoofStreamingDataPatch = bytecodePatch(
 
         // region Append spoof info.
 
-        val nerdsStatsFormatBuilderMethodCall = nerdsStatsFormatBuilderFingerprint.methodCall()
+        nerdsStatsFormatBuilderFingerprint.methodOrThrow().apply {
+            findInstructionIndicesReversedOrThrow(Opcode.RETURN_OBJECT).forEach { index ->
+                val register = getInstruction<OneRegisterInstruction>(index).registerA
 
-        fun MutableMethod.findTextViewField(textViewId: Long): FieldReference {
-            val textViewIdIndex = indexOfFirstLiteralInstructionOrThrow(textViewId)
-            val textViewFieldIndex = indexOfFirstInstructionOrThrow(textViewIdIndex) {
-                opcode == Opcode.IPUT_OBJECT &&
-                        getReference<FieldReference>()?.type == "Landroid/widget/TextView;"
-            }
-            return getInstruction(textViewFieldIndex).getReference<FieldReference>()!!
-        }
-
-        val (audioFormatTextViewField, videoFormatTextViewField) =
-            with (nerdsStatsOverlayFingerprint.methodOrThrow()) {
-                Pair(
-                    findTextViewField(audioFormat),
-                    findTextViewField(videoFormat),
+                addInstructions(
+                    index, """
+                        invoke-static {v$register}, $EXTENSION_CLASS_DESCRIPTOR->appendSpoofedClient(Ljava/lang/String;)Ljava/lang/String;
+                        move-result-object v$register
+                        """
                 )
-            }
-
-        fun MutableClass.findTextViewMethod(textViewField: FieldReference): MutableMethod =
-            methods.find { method ->
-                method.returnType == "V" &&
-                        method.accessFlags == AccessFlags.PUBLIC or AccessFlags.FINAL &&
-                        method.indexOfFirstInstruction {
-                            opcode == Opcode.IGET_OBJECT &&
-                                    getReference<FieldReference>() == textViewField
-                        } >= 0 &&
-                        method.indexOfFirstInstruction {
-                            opcode == Opcode.INVOKE_STATIC &&
-                                    getReference<MethodReference>()?.toString() == nerdsStatsFormatBuilderMethodCall
-                        } >= 0
-            } ?: throw PatchException("Target method not found: $textViewField")
-
-        nerdsStatsTextViewParentFingerprint.mutableClassOrThrow().let {
-            mapOf(
-                audioFormatTextViewField to true,
-                videoFormatTextViewField to false,
-            ).forEach { (textViewField, isAudio) ->
-                it.findTextViewMethod(textViewField).apply {
-                    val textIndex = indexOfFirstInstructionOrThrow {
-                        opcode == Opcode.INVOKE_VIRTUAL &&
-                                getReference<MethodReference>()?.name == "setText"
-                    }
-                    val textRegister = getInstruction<FiveRegisterInstruction>(textIndex).registerD
-                    val freeRegister = findFreeRegister(textIndex, textRegister)
-
-                    addInstructions(
-                        textIndex, """
-                            const/4 v$freeRegister, ${isAudio.toHexString()}
-                            invoke-static { v$textRegister, v$freeRegister }, $EXTENSION_CLASS_DESCRIPTOR->appendSpoofedClient(Ljava/lang/String;Z)Ljava/lang/String;
-                            move-result-object v$textRegister
-                            """
-                    )
-                }
             }
         }
 
