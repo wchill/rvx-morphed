@@ -11,8 +11,6 @@ import app.revanced.patcher.patch.ResourcePatchContext
 import app.revanced.patcher.patch.booleanOption
 import app.revanced.patcher.patch.bytecodePatch
 import app.revanced.patcher.patch.rawResourcePatch
-import app.revanced.patcher.util.proxy.mutableTypes.MutableClass
-import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.revanced.patches.shared.extension.Constants.EXTENSION_UTILS_CLASS_DESCRIPTOR
 import app.revanced.patches.shared.extension.Constants.PATCHES_PATH
@@ -28,7 +26,7 @@ import app.revanced.patches.youtube.utils.dismiss.dismissPlayerHookPatch
 import app.revanced.patches.youtube.utils.patch.PatchList
 import app.revanced.patches.youtube.utils.patch.PatchList.SPOOF_STREAMING_DATA
 import app.revanced.patches.youtube.utils.playercontrols.addTopControl
-import app.revanced.patches.youtube.utils.playercontrols.hookTopControlButton
+import app.revanced.patches.youtube.utils.playercontrols.injectControl
 import app.revanced.patches.youtube.utils.playercontrols.playerControlsPatch
 import app.revanced.patches.youtube.utils.playservice.is_19_34_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_19_50_or_greater
@@ -372,7 +370,7 @@ val spoofStreamingDataPatch = bytecodePatch(
         val spoofPath = app.revanced.patches.youtube.utils.extension.Constants.SPOOF_PATH
         hookAudioTrackId("$spoofPath/AudioTrackPatch;->setAudioTrackId(Ljava/lang/String;)V")
         hookBackgroundPlayVideoInformation("$spoofPath/AudioTrackPatch;->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
-        hookTopControlButton("$spoofPath/ui/AudioTrackButtonController;")
+        injectControl("$spoofPath/ui/AudioTrackButton;")
 
         val directory = if (outlineIcon == true)
             "outline"
@@ -403,7 +401,7 @@ val spoofStreamingDataPatch = bytecodePatch(
                 )
             }
 
-        hookTopControlButton("$spoofPath/ui/ReloadVideoButtonController;")
+        injectControl("$spoofPath/ui/ReloadVideoButton;")
 
         arrayOf(
             ResourceGroup(

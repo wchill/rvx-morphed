@@ -93,6 +93,8 @@ var emojiPickerIcon = -1L
     private set
 var expandButtonDown = -1L
     private set
+var heatseekerViewstub = -1L
+    private set
 var fab = -1L
     private set
 var fadeDurationFast = -1L
@@ -311,6 +313,7 @@ internal val sharedResourceIdPatch = resourcePatch(
         endScreenElementLayoutVideo = getResourceId(LAYOUT, "endscreen_element_layout_video")
         emojiPickerIcon = getResourceId(ID, "emoji_picker_icon")
         expandButtonDown = getResourceId(LAYOUT, "expand_button_down")
+        heatseekerViewstub = getResourceId(ID, "heatseeker_viewstub")
         fab = getResourceId(ID, "fab")
         fadeDurationFast = getResourceId(INTEGER, "fade_duration_fast")
         filterBarHeight = getResourceId(DIMEN, "filter_bar_height")

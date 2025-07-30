@@ -16,7 +16,6 @@ fun getResourceId(resourceType: ResourceType, name: String) =
 
 /**
  * @return A resource id of the given resource type and name.
- * @throws PatchException if the resource is not found.
  */
 fun getResourceId(type: String, name: String) = resourceMappings[type + name]?.id
     ?: -1L
