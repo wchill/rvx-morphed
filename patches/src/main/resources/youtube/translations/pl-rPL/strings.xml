@@ -2172,12 +2172,11 @@ Stuknij przycisk kontynuacji i zezwól na zmiany w optymalizacji."</string>
 Jeśli jesteś użytkownikiem YouTube Premium lub odznaczono przy łataniu 'GmsCore support', to ustawienie te nie jest konieczne"</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Wyłączone. Odtwarzanie filmów może nie działać"</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Wyłączenie tej opcji może spowodować problemy z odtwarzaniem filmów.</string>
-    <string name="revanced_spoof_streaming_data_default_client_video_title">Domyślny klient dla filmów</string>
-    <string name="revanced_spoof_streaming_data_default_client_audio_title">Domyślny klient dla audio</string>
+    <string name="revanced_spoof_streaming_data_default_client_title">Domyślny klient</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
 <small>(Wymagane zalogowanie)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android TV
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(Wymagane zalogowanie)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
 <small>(Porzucone)</small>"</string>
@@ -2187,17 +2186,15 @@ Jeśli jesteś użytkownikiem YouTube Premium lub odznaczono przy łataniu 'GmsC
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Wbudowany TV<small>(W fazie rozwoju)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"Uproszczony TV<small>(W fazie rozwoju)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Efekty uboczne oszukiwania</string>
-    <string name="revanced_spoof_streaming_data_side_effects_audio_android">"• brakuje menu od ścieżki dźwiękowej
+    <string name="revanced_spoof_streaming_data_side_effects_android">"• brakuje menu od ścieżki dźwiękowej
+• stabilna głośność nie jest dostępna
 • automatyczne wymuszenie ścieżki dźwiękowej nie jest dostępne
-• stabilna głośność nie jest dostępna"</string>
-    <string name="revanced_spoof_streaming_data_side_effects_audio_ios_unplugged">• stabilna głośność nie jest dostępna</string>
-    <string name="revanced_spoof_streaming_data_side_effects_audio_tv">"• jeśli odszyfrowywanie się nie powiedzie, odtwarzanie może się nie powieść
-• czasem film nie odtwarza się nawet po 10 sekundach, dlatego należy kliknąć przycisk od odświeżenia filmu
-• filmy mogą zacząć się z opóźnieniem"</string>
+• filmy dla dzieci mogą się nie odtwarzać będąc zalogowanym lub w trybie incognito"</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Cały zakres ASNów/IP może być zablokowany przez serwer</string>
-    <string name="revanced_spoof_streaming_data_side_effects_video_android_without_tv">• filmy dla dzieci mogą się nie odtworzyć będąc wylogowanym lub w trybie incognito</string>
-    <string name="revanced_spoof_streaming_data_side_effects_video_ios_unplugged_without_tv">• filmy dla dzieci mogą się nie odtworzyć będąc wylogowanym lub w trybie incognito</string>
-    <string name="revanced_spoof_streaming_data_side_effects_video_tv">"• Kodek AVC (H.264) jest nie jest dostępny
+    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• stabilna głośność nie jest dostępna
+• filmy kinowe lub płatne mogą się nie odtwarzać
+• filmy dla dzieci mogą się nie odtwarzać będąc zalogowanym lub w trybie incognito"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"• kodek AVC (H.264) może nie być dostępny
 • jeśli odszyfrowywanie się nie powiedzie, odtwarzanie może się nie powieść
 • czasem film nie odtwarza się nawet po 10 sekundach, dlatego należy kliknąć przycisk od odświeżenia filmu
 • filmy mogą zacząć się z opóźnieniem"</string>

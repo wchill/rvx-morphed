@@ -513,7 +513,7 @@
     <string name="revanced_disable_auto_audio_tracks_title">Вимкнути примусові автоматичні звукові доріжки</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Примусові автоматичні звукові доріжки вимкнено.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Примусові автоматичні звукові доріжки увімкнено.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Щоб скористатися цією функцією, змініть \'Основний клієнт для аудіо (Підробка даних трансляції)\' на TV або iOS TV.</string>
+    <string name="revanced_disable_auto_audio_tracks_not_available">Щоб скористатися цією функцією, змініть \'Основний клієнт (Підробка даних трансляції)\' на TV або iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Вимкнути примусові авто субтитри</string>
     <string name="revanced_disable_auto_captions_summary_on">Примусові авто субтитри вимкнено.</string>
     <string name="revanced_disable_auto_captions_summary_off">Примусові авто субтитри увімкнено.</string>
@@ -1045,7 +1045,7 @@
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Меню Звукова доріжка показується.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Меню Звукова доріжка приховано.
 
-Для показу меню Звукова доріжка, змініть 'Основний клієнт для аудіо (Підробка даних трансляції)' на TV або iOS TV."</string>
+Для показу меню Звукова доріжка, змініть 'Основний клієнт (Підробка даних трансляції)' на TV або iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Приховати меню субтитрів</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Меню субтитрів приховано.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Меню субтитрів показується.</string>
@@ -1323,6 +1323,7 @@
     <string name="revanced_whitelist_settings_summary">Перевірити чи вилучити список каналів, доданих до білого списку.</string>
     <string name="revanced_whitelist_added">Канал \'%1$s\' додано до білого списку %2$s.</string>
     <string name="revanced_whitelist_add_failed">Не вдалося додати канал \'%1$s\' до білого списку %2$s.</string>
+    <string name="revanced_whitelist_reload_video">Бажаєте перезавантажити відео зараз?</string>
     <string name="revanced_whitelist_removed">Канал \'%1$s\' вилучено з білого списку %2$s.</string>
     <string name="revanced_whitelist_remove_failed">Не вдалося вилучити канал \'%1$s\' з білого списку %2$s.</string>
     <string name="revanced_whitelist_remove_dialog_message">Вилучити канал \'%1$s\' з білого списку %2$s?</string>
@@ -2169,8 +2170,7 @@
 Якщо маєте YouTube Premium або виключили патч 'GmsCore support', це налаштування може не знадобитися."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Дані трансляції не підроблено. Відтворення відео може не працювати."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Вимикання цього налаштування може призвести до проблем відтворення відео.</string>
-    <string name="revanced_spoof_streaming_data_default_client_video_title">Основний клієнт для відео</string>
-    <string name="revanced_spoof_streaming_data_default_client_audio_title">Основний клієнт для аудіо</string>
+    <string name="revanced_spoof_streaming_data_default_client_title">Основний клієнт</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
 <small>(Потрібна авторизація)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
@@ -2187,20 +2187,24 @@
     <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"Просте TV
 <small>(ще в розробці)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Побічні ефекти імітування</string>
-    <string name="revanced_spoof_streaming_data_side_effects_audio_android">"• Відсутнє меню звукової доріжки.
-• Вимкнути примусові звукові доріжки недоступне.
-• Стабілізація гучності недоступна."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_audio_ios_unplugged">• Стабілізація гучності недоступна.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_audio_tv">"• Якщо деобфускація не вдасться, відтворення може завершитися зі збоями.
-• Іноді відео не відтворюється навіть через 10 секунд, і тоді потрібно натиснути кнопку перезавантаження відео.
-• Відео може розпочинається із запізненням."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android">"• Меню звукової доріжки відсутнє.
+• Стабілізація гучності недоступна.
+• Вимкнення примусових авто звукових доріжок недоступне.
+• Відео для дітей можуть не відтворюватися коли вийшли з облікового запису або в анонімному режимі."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Цілі діапазони ASN/IP можуть блокуватися сервером.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_video_android_without_tv">• Відео для дітей можуть не відтворюватися, якщо вийти з облікового запису або в анонімному режимі.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_video_ios_unplugged_without_tv">• Відео для дітей можуть не відтворюватися, якщо вийти з облікового запису або в анонімному режимі.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_video_tv">"• Кодек AVC (H.264) недоступний.
+    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Стабілізація гучності недоступна.
+• Фільми та платні відео можуть не відтворюватися.
+• Відео для дітей можуть не відтворюватися коли вийшли з облікового запису або в анонімному режимі."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"• Кодек AVC (H.264) може бути недоступний.
 • Якщо деобфускація не вдасться, відтворення може завершитися зі збоями.
 • Іноді відео не відтворюється навіть через 10 секунд, і тоді потрібно натиснути кнопку перезавантаження відео.
 • Відео може розпочинається із запізненням."</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_title">Показувати кнопку перезавантаження відео</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">Кнопку перезавантаження відео показується.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">Кнопку перезавантаження відео приховано.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_title">Завжди показувати кнопку перезавантаження відео</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_on">Кнопку перезавантаження відео завжди показується.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_off">Кнопку перезавантаження відео показується під час показу анімації вантаження.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Показувати в Статистика для сисадмінів</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Клієнт, що використовується для отримання даних трансляції показується у Статистика для сисадмінів.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Клієнт, що використовується для отримання даних трансляції приховано у Статистика для сисадмінів.</string>
@@ -2276,6 +2280,7 @@ AVC має максимальну роздільну здатність 1080p, �
     <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript не виконується в корінних бібліотеках.
 
 • Працює на JavaTube."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">Якщо не використовується рушій JavaScript V8, потрібно більше часу для деобфускації посилання трансляції, через що відео розпочинається зі запізненням 10 секунд.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Історія перегляду</string>
     <string name="revanced_preference_screen_watch_history_summary">Змінити налаштування пов\'язані з історією перегляду.</string>

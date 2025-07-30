@@ -515,7 +515,7 @@
     <string name="revanced_disable_auto_audio_tracks_title">تعطيل المقطع الصوتي التلقائي المفروض</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">تم تعطيل المقطع الصوتي التلقائي المفروض.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">تم تمكين المقطع الصوتي التلقائي المفروض.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">لاستخدام هذه الميزة، قم بتغيير \'العميل الافتراضي (Spoof Streaming Data)\' إلى iOS TV.</string>
+    <string name="revanced_disable_auto_audio_tracks_not_available">لاستخدام هذه الميزة، قم بتغيير \'العميل الافتراضي (Spoof Streaming Data)\' إلى TV أو iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">تعطيل الترجمة التلقائية المفروضة</string>
     <string name="revanced_disable_auto_captions_summary_on">تم تعطيل الترجمة التلقائية المفروضة.</string>
     <string name="revanced_disable_auto_captions_summary_off">تم تمكين الترجمة التلقائية المفروضة.</string>
@@ -1046,7 +1046,7 @@
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">يتم عرض قائمة المقطع الصوتي.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"قائمة المقطع الصوتي مخفية.
 
-لإظهار قائمة المقطع الصوتي، قم بتغيير 'العميل الافتراضي (Spoof Streaming Data)' إلى iOS TV."</string>
+لإظهار قائمة المقطع الصوتي، قم بتغيير 'العميل الافتراضي (Spoof Streaming Data)' إلى TV أو iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">إخفاء قائمة الترجمة</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">تم إخفاء قائمة الترجمة.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">يتم عرض قائمة الترجمة.</string>
@@ -1324,6 +1324,7 @@
     <string name="revanced_whitelist_settings_summary">التحقق من قائمة القنوات المضافة إلى القائمة البيضاء أو إزالتها.</string>
     <string name="revanced_whitelist_added">تم إضافة القناة \'%1$s\' إلى القائمة البيضاء %2$s.</string>
     <string name="revanced_whitelist_add_failed">فشلت إضافة القناة \'%1$s\' إلى القائمة البيضاء %2$s.</string>
+    <string name="revanced_whitelist_reload_video">هل ترغب في إعادة تحميل الفيديو الآن؟</string>
     <string name="revanced_whitelist_removed">تمت إزالة القناة \'%1$s\' من القائمة البيضاء %2$s.</string>
     <string name="revanced_whitelist_remove_failed">فشلت إزالة القناة \'%1$s\' من القائمة البيضاء %2$s.</string>
     <string name="revanced_whitelist_remove_dialog_message">إزالة القناة \'%1$s\' من القائمة البيضاء %2$s؟</string>
@@ -2169,11 +2170,43 @@
     <string name="revanced_preference_screen_spoof_streaming_data_title">Spoof Streaming Data</string>
     <string name="revanced_preference_screen_spoof_streaming_data_summary">تزييف بيانات البث لمنع حدوث مشكلات أثناء التشغيل.</string>
     <string name="revanced_spoof_streaming_data_title">Spoof Streaming Data</string>
-    <string name="revanced_spoof_streaming_data_summary_on">"يتم تزييف بيانات البث."</string>
+    <string name="revanced_spoof_streaming_data_summary_on">"يتم تزييف بيانات البث.
+
+إذا كنت أحد مستخدمي YouTube Premium أو استبعدت التعديل 'دعم GmsCore'، فقد لا يكون هذا الإعداد ضروريًا."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"لا يتم تزييف بيانات البث. قد لا يعمل تشغيل الفيديو."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">إيقاف تشغيل هذا الإعداد قد يسبب مشاكل في تشغيل الفيديو.</string>
+    <string name="revanced_spoof_streaming_data_default_client_title">العميل الافتراضي</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
+<small>(يتطلب تسجيل الدخول)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
+<small>(بدون مصادقة)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
+<small>(مُهمَل)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
+<small>(يتطلب تسجيل الدخول)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">"TV <small>(WIP)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV Embedded <small>(WIP)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV Simply <small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">التأثيرات الجانبية للتزييف</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android">"• قائمة المقطع الصوتي مفقودة.
+• مستوى الصوت الثابت غير متاح.
+• لا يتوفر تعطيل المقطع الصوتي التلقائي المفروض.
+• قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• قد يتم حظر نطاقات ASNs/IP بالكامل بواسطة الخادم.</string>
+    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• مستوى الصوت الثابت غير متوفر.
+• قد لا يتم تشغيل الأفلام أو الفيديوهات المدفوعة.
+• قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"• قد لا يتوفر ترميز AVC (H.264).
+• في حال فشل إزالة التشويش، قد يفشل التشغيل.
+• في بعض الأحيان، قد لا يعمل الفيديو حتى بعد 10 ثوانٍ، وفي هذه الحالة، ستحتاج إلى الضغط على زر إعادة تحميل الفيديو.
+• قد يبدأ الفيديو متأخرًا."</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_title">عرض زر إعادة تحميل الفيديو</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">يتم عرض زر إعادة تحميل الفيديو.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">تم إخفاء زر إعادة تحميل الفيديو.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_title">عرض زر إعادة تحميل الفيديو دائمًا</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_on">يتم عرض زر إعادة تحميل الفيديو دائما.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_off">يتم عرض زر إعادة تحميل الفيديو عندما يظهر الدوران.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">عرض في إحصاءات تقنية</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">يتم عرض العميل المستخدم لجلب بيانات البث في إحصاءات تقنية.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">تم إخفاء العميل المستخدم لجلب بيانات البث في إحصاءات تقنية.</string>
@@ -2188,7 +2221,7 @@
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_on">يتم عرض زر المقطع الصوتي VR.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_off">لا يتم عرض زر المقطع الصوتي VR.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message">"المتطلبات الأساسية:
-• العميل المُستخدم لجلب بيانات البث هو 'Android VR (بدون مصادقة)'.
+• عميل الصوت المُستخدم لجلب بيانات البث هو 'Android VR (بدون مصادقة)'.
 • يتم تشغيل فيديو يحتوي على مقاطع صوتية متعددة.
 
 المشاكل المعروفة:
@@ -2242,6 +2275,14 @@ AVC لديه حد أقصى للدقة 1080p، لا يتوفر ترميز الص�
     <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"لا يتم تحديث جافا سكريبت لإزالة التشويش.
 
 • يُستخدم جافا سكريبت الذي ينجح في إزالة التشويش، ولكنه لا يزال يعتمد إلى حد ما على الخادم."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">استخدام محرك JavaScript V8</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"يعمل جافا سكريبت في المكتبات الأصلية.
+
+• مدعوم من SmartTube."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"لا يعمل جافا سكريبت في المكتبات الأصلية.
+
+• مدعوم من JavaTube."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">إذا لم يتم استخدام محرك JavaScript V8، فسيستغرق الأمر وقتًا أطول لإزالة التشويش عن URL البث، مما يتسبب في بدء تشغيل الفيديو متأخرًا بـ 10 ثوانٍ.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">سجل المشاهدة</string>
     <string name="revanced_preference_screen_watch_history_summary">تغيير الإعدادات المتعلقة بسجل المشاهدة.</string>

@@ -516,7 +516,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_disable_auto_audio_tracks_title">자동 오디오 트랙 비활성화하기</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">자동 오디오 트랙을 비활성화합니다.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">자동 오디오 트랙을 활성화합니다.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">이 기능을 사용하려면, \'스트리밍 데이터 변경하기\'에서 오디오를 위한 기본 클라이언트를 TV 또는 iOS TV로 변경하세요.</string>
+    <string name="revanced_disable_auto_audio_tracks_not_available">이 기능을 사용하려면, \'스트리밍 데이터 변경하기\'에서 기본 클라이언트를 TV 또는 iOS TV로 변경하세요.</string>
     <string name="revanced_disable_auto_captions_title">자동 자막 비활성화하기</string>
     <string name="revanced_disable_auto_captions_summary_on">자동 자막을 비활성화합니다.</string>
     <string name="revanced_disable_auto_captions_summary_off">자동 자막을 활성화합니다.</string>
@@ -1045,7 +1045,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">오디오 트랙 메뉴가 표시됩니다.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"오디오 트랙 메뉴가 숨겨집니다.
 
-오디오 트랙 메뉴를 표시하려면, '스트리밍 데이터 변경하기'에서 오디오를 위한 기본 클라이언트를 TV 또는 iOS TV로 변경하세요."</string>
+오디오 트랙 메뉴를 표시하려면, '스트리밍 데이터 변경하기'에서 기본 클라이언트를 TV 또는 iOS TV로 변경하세요."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">자막 메뉴 숨기기</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">자막 메뉴가 숨겨집니다.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">자막 메뉴가 표시됩니다.</string>
@@ -2173,8 +2173,7 @@ GmsCore 앱 배터리 최적화를 비활성화(제한 없음)하더라도, 배�
 YouTube Premium 사용자이거나 ‘GmsCore support’ 패치가 제외된 경우에는 이 설정이 필요하지 않을 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"스트리밍 데이터를 변경하지 않습니다.\n동영상 재생 문제가 발생할 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">이 설정을 비활성화하면 동영상 재생 문제가 발생할 수 있습니다.</string>
-    <string name="revanced_spoof_streaming_data_default_client_video_title">동영상을 위한 기본 클라이언트</string>
-    <string name="revanced_spoof_streaming_data_default_client_audio_title">오디오를 위한 기본 클라이언트</string>
+    <string name="revanced_spoof_streaming_data_default_client_title">기본 클라이언트</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
 <small>(로그인이 요구됨)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
@@ -2191,17 +2190,15 @@ YouTube Premium 사용자이거나 ‘GmsCore support’ 패치가 제외된 경
     <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV Simply
 <small>(개발 중)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">알려진 문제점</string>
-    <string name="revanced_spoof_streaming_data_side_effects_audio_android">"• 오디오 트랙 메뉴가 표시되지 않습니다.
+    <string name="revanced_spoof_streaming_data_side_effects_android">"• 오디오 트랙 메뉴가 표시되지 않습니다.
 • 안정적인 볼륨을 사용할 수 없습니다.
-• 자동 오디오 트랙 비활성화를 할 수 없습니다."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_audio_ios_unplugged">• 안정적인 볼륨을 사용할 수 없습니다.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_audio_tv">"• 난독 해독에 실패하면 재생이 실패할 수 있습니다.
-• 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 다시 로드 버튼을 눌러야 합니다.
-• 동영상이 늦게 시작될 수 있습니다."</string>
+• 자동 오디오 트랙을 비활성화할 수 없습니다.
+• 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• 서버에서 전체 ASNs/IP 범위가 차단될 수 있습니다.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_video_android_without_tv">• 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_video_ios_unplugged_without_tv">• 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다.</string>
-    <string name="revanced_spoof_streaming_data_side_effects_video_tv">"• AVC (H.264) 코덱을 사용할 수 없습니다.
+    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• 안정적인 볼륨을 사용할 수 없습니다.
+• 영화 또는 유료 동영상이 재생되지 않을 수 있습니다.
+• 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"• AVC (H.264) 코덱을 사용하지 못할 수 있습니다.
 • 난독 해독에 실패하면 재생이 실패할 수 있습니다.
 • 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 다시 로드 버튼을 눌러야 합니다.
 • 동영상이 늦게 시작될 수 있습니다."</string>
@@ -2225,7 +2222,7 @@ YouTube Premium 사용자이거나 ‘GmsCore support’ 패치가 제외된 경
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_on">VR 오디오 트랙 버튼을 활성화합니다.\n이 버튼은 플레이어 오른쪽 상단에서 표시됩니다.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_off">VR 오디오 트랙 버튼을 표시하지 않습니다.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message">"전제 조건:
-• 스트리밍 데이터를 가져오는 데 사용되는 오디오를 위한 기본 클라이언트가 'Android VR (인증 없음)'이 선택되어야 합니다.
+• 스트리밍 데이터를 가져오는 데 사용되는 기본 클라이언트가 'Android VR (인증 없음)'이 선택되어야 합니다.
 • 다양한 오디오 트랙이 포함된 동영상이 재생되어야 합니다.
 
 알려진 문제:

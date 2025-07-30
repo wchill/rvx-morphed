@@ -1333,6 +1333,7 @@ Shorts
     <string name="revanced_whitelist_settings_summary">Управление каналами в белом списке.</string>
     <string name="revanced_whitelist_added">Канал \'%1$s\' добавлен в белый список %2$s.</string>
     <string name="revanced_whitelist_add_failed">Ошибка добавления канала \'%1$s\' в белый список %2$s.</string>
+    <string name="revanced_whitelist_reload_video">Перезагрузить видео?</string>
     <string name="revanced_whitelist_removed">Канал \'%1$s\' удален из белого списка %2$s.</string>
     <string name="revanced_whitelist_remove_failed">Ошибка удаления канала \'%1$s\' из белого списка %2$s.</string>
     <string name="revanced_whitelist_remove_dialog_message">Удалить канал \'%1$s\' из белого списка %2$s?</string>
@@ -2184,8 +2185,7 @@ Shorts
     <string name="revanced_spoof_streaming_data_summary_off">"Подмена потоковых данных отключена.
 Просмотр может быть не доступен."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Отключение этой настройки вызовет проблемы с просмотром.</string>
-    <string name="revanced_spoof_streaming_data_default_client_video_title">По умолчанию для видео</string>
-    <string name="revanced_spoof_streaming_data_default_client_audio_title">По умолчанию для аудио</string>
+    <string name="revanced_spoof_streaming_data_default_client_title">Клиент по умолчанию</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
 <small>(Необходим вход)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
@@ -2202,7 +2202,24 @@ Shorts
     <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"Простой TV
 <small>(В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Эффекты от подмены</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android">"• Меню аудио дорожки отсутствует.
+• Стабильная громкость недоступна.
+• Отключить принудительные авто звуковые дорожки недоступна.
+• Детские видео могут не работать в режиме инкогнито или выхода."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Целые диапазоны ASN/IP могут блокироваться сервером.</string>
+    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Стабильная громкость недоступна.
+• Фильмы или платные видео могут не работать.
+• Детские видео могут не работать при выходе из системы или в режиме инкогнито."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"• Кодек AVC (H.264) может быть недоступен.
+• Если деобфускация не удалась, воспроизведение может быть прервано.
+• Иногда видео не воспроизводится даже через 10 секунд, в этом случае необходимо нажать кнопку \"Перезагрузить видео\".
+• Видео может запускаться с опозданием."</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_title">Кнопка перезагрузить видео</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">Включено. Кнопка перезагрузки видео отображена.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">Отключено. Кнопка перезагрузки видео скрыта.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_title">Всегда отображать кнопку перезагрузки видео</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_on">Кнопка перезагрузки видео всегда отображена.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_off">Включено. При анимации загрузки кнопка отображается.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Статистика для сисадминов</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Клиент потоковых данных отображается в Статистике для сисадминов.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Клиент потоковых данных скрыт в Статистике для сисадминов.</string>
@@ -2277,6 +2294,14 @@ Shorts
 
 • Даже если \"Запутывание\" успешно, могут отсутствовать качества видео или кодеки.
 • Используется успешный JavaScript \"Запутывания\", но он все еще зависит от сервера."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">Использовать V8 JavaScript</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript работает в нативных библиотеках.
+
+• Работает на SmartTube."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript не работает в нативных библиотеках.
+
+• Работает на JavaTube."</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">Если JavaScript V8 не используется, то на деобфускацию URL-адреса потоковой передачи уходит больше времени, из-за чего видео запускается на 10 секунд позже.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">История просмотра</string>
     <string name="revanced_preference_screen_watch_history_summary">Изменить настройки истории просмотра.</string>
