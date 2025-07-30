@@ -2078,7 +2078,7 @@
       "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
-      "ResourcePatch",
+      "BytecodePatch",
       "BytecodePatch",
       "ResourcePatch",
       "Settings for YouTube"
@@ -2105,28 +2105,6 @@
           "Rounded": "rounded",
           "Thin": "thin"
         }
-      },
-      {
-        "key": "bottomMargin",
-        "title": "Bottom margin",
-        "description": "The bottom margin for the overlay buttons and timestamp.",
-        "required": true,
-        "type": "kotlin.String",
-        "default": "2.5dip",
-        "values": {
-          "Default": "2.5dip",
-          "Minimum": "0.1dip",
-          "Wider": "5.0dip"
-        }
-      },
-      {
-        "key": "widerButtonsSpace",
-        "title": "Wider between-buttons space",
-        "description": "Prevent adjacent button presses by increasing the horizontal spacing between buttons.",
-        "required": true,
-        "type": "kotlin.Boolean",
-        "default": false,
-        "values": null
       },
       {
         "key": "changeTopButtons",
@@ -2779,7 +2757,7 @@
     "description": "Adds options to enable and configure SponsorBlock, which can skip undesired video segments, such as sponsored content.",
     "use": true,
     "dependencies": [
-      "ResourcePatch",
+      "BytecodePatch",
       "BytecodePatch",
       "Settings for YouTube"
     ],
@@ -2890,7 +2868,7 @@
       "BytecodePatch",
       "ResourcePatch",
       "ResourcePatch",
-      "ResourcePatch",
+      "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",
       "BytecodePatch",

@@ -1030,19 +1030,10 @@ public final class app/revanced/patches/youtube/utils/pip/PiPStateHookPatchKt {
 }
 
 public final class app/revanced/patches/youtube/utils/playercontrols/PlayerControlsPatchKt {
-	public static field changeVisibilityMethod Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;
-	public static field changeVisibilityNegatedImmediatelyMethod Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;
-	public static field initializeBottomControlButtonMethod Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;
-	public static field initializeTopControlButtonMethod Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;
-	public static final fun getChangeVisibilityMethod ()Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;
-	public static final fun getChangeVisibilityNegatedImmediatelyMethod ()Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;
-	public static final fun getInitializeBottomControlButtonMethod ()Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;
-	public static final fun getInitializeTopControlButtonMethod ()Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;
-	public static final fun getPlayerControlsPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
-	public static final fun setChangeVisibilityMethod (Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;)V
-	public static final fun setChangeVisibilityNegatedImmediatelyMethod (Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;)V
-	public static final fun setInitializeBottomControlButtonMethod (Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;)V
-	public static final fun setInitializeTopControlButtonMethod (Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;)V
+	public static final fun getPlayerControlsPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+	public static final fun getPlayerControlsResourcePatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+	public static final fun injectControl (Ljava/lang/String;ZZ)V
+	public static synthetic fun injectControl$default (Ljava/lang/String;ZZILjava/lang/Object;)V
 }
 
 public final class app/revanced/patches/youtube/utils/playertype/PlayerTypeHookPatchKt {
@@ -1112,7 +1103,6 @@ public final class app/revanced/patches/youtube/utils/resourceid/SharedResourceI
 	public static final fun getAdAttribution ()J
 	public static final fun getAppRelatedEndScreenResults ()J
 	public static final fun getAppearance ()J
-	public static final fun getAudioFormat ()J
 	public static final fun getAutoNavPreviewStub ()J
 	public static final fun getAutoNavScrollCancelPadding ()J
 	public static final fun getAutoNavToggle ()J
@@ -1153,6 +1143,7 @@ public final class app/revanced/patches/youtube/utils/resourceid/SharedResourceI
 	public static final fun getFullScreenButton ()J
 	public static final fun getFullScreenEngagementAdContainer ()J
 	public static final fun getFullScreenEngagementPanel ()J
+	public static final fun getHeatseekerViewstub ()J
 	public static final fun getHorizontalCardList ()J
 	public static final fun getIcOfflineNoContentUpsideDown ()J
 	public static final fun getImageOnlyTab ()J
@@ -1214,7 +1205,6 @@ public final class app/revanced/patches/youtube/utils/resourceid/SharedResourceI
 	public static final fun getVarispeedUnavailableTitle ()J
 	public static final fun getVerticalTouchOffsetToEnterFineScrubbing ()J
 	public static final fun getVerticalTouchOffsetToStartFineScrubbing ()J
-	public static final fun getVideoFormat ()J
 	public static final fun getVideoQualityBottomSheet ()J
 	public static final fun getVideoQualityUnavailableAnnouncement ()J
 	public static final fun getVideoZoomSnapIndicator ()J
