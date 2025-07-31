@@ -1015,7 +1015,7 @@ Limitaciones:
     <string name="revanced_hide_preview_comment_title">Ocultar vista previa de comentarios</string>
     <string name="revanced_hide_preview_comment_on">La vista previa de comentarios está oculta.</string>
     <string name="revanced_hide_preview_comment_off">La vista previa de comentarios está visible.</string>
-    <string name="revanced_hide_preview_comment_type_title">Ocultar vista previa de tipo de comentarios</string>
+    <string name="revanced_hide_preview_comment_type_title">Tipo de ocultación de vista previa de comentarios</string>
     <string name="revanced_hide_preview_comment_type_on">Esto no cambia el tamaño de la sección de comentarios, por lo que es posible abrir la repetición del chat en directo en la sección de comentarios.</string>
     <string name="revanced_hide_preview_comment_type_off">Esto cambia el tamaño de la sección de comentarios, por lo que es imposible abrir una repetición del chat en directo en la sección de comentarios.</string>
     <string name="revanced_hide_comments_thanks_button_title">Ocultar botón «Gracias»</string>

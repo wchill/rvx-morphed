@@ -2194,8 +2194,7 @@ Jeśli jesteś użytkownikiem YouTube Premium lub odznaczono przy łataniu 'GmsC
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• stabilna głośność nie jest dostępna
 • filmy kinowe lub płatne mogą się nie odtwarzać
 • filmy dla dzieci mogą się nie odtwarzać będąc zalogowanym lub w trybie incognito"</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• kodek AVC (H.264) może nie być dostępny
-• jeśli odszyfrowywanie się nie powiedzie, odtwarzanie może się nie powieść
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"• jeśli odszyfrowywanie się nie powiedzie, odtwarzanie może się nie powieść
 • czasem film nie odtwarza się nawet po 10 sekundach, dlatego należy kliknąć przycisk od odświeżenia filmu
 • filmy mogą zacząć się z opóźnieniem"</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_title">Przycisk od odświeżenia filmu</string>

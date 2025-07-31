@@ -2195,8 +2195,7 @@ Nếu bạn đã đăng ký YouTube Premium hoặc bỏ chọn 'GmsCore support'
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Âm lượng ổn định không khả dụng.
 • Phim hoặc video trả phí có thể không phát được.
 • Video dành cho trẻ em có thể không phát được khi bạn đã đăng xuất hoặc bật chế độ ẩn danh."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• Bộ giải mã AVC (H.264) có thể không khả dụng.
-• Nếu giải mã thất bại, video có thể không phát được.
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"• Nếu giải mã thất bại, video có thể không phát được.
 • Đôi khi video không phát dù đã chờ 10 giây, khi đó bạn cần nhấn vào nút tải lại video.
 • Video có thể bắt đầu muộn hơn."</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_title">Nút làm mới video</string>

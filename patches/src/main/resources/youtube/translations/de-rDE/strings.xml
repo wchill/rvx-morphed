@@ -10,7 +10,20 @@
     <string name="revanced_preference_category_experimental_flag">Experimentelle Flags</string>
     <string name="revanced_extended_confirm_user_dialog_title">Möchtest Du fortfahren?</string>
     <string name="revanced_extended_restart_first_run">Neustarten um das Layout zu laden</string>
+    <string name="revanced_extended_restart_title">Neustart benötigt</string>
+    <string name="revanced_extended_restart_dialog_message">Starte die App neu, um diese Änderung anzuwenden.</string>
+    <string name="revanced_extended_restart">Neustart</string>
+    <string name="revanced_extended_settings_color_invalid">Ungültige Farbe.</string>
+    <string name="revanced_extended_settings_color_picker">Farbauswahl</string>
     <string name="revanced_extended_settings_reset">Zurücksetzen</string>
+    <string name="revanced_extended_settings_reset_color">Farbe zurücksetzen</string>
+    <string name="revanced_extended_settings_search_history_title">Zeige Suchverlauf für Einstellungen</string>
+    <string name="revanced_extended_settings_search_history_summary_on">Suchverlauf für Einstellungen wird angezeigt.</string>
+    <string name="revanced_extended_settings_search_history_summary_off">Suchverlauf für Einstellungen wird nicht angezeigt.</string>
+    <string name="revanced_extended_settings_search_hint">Einstellungen durchsuchen</string>
+    <string name="revanced_extended_settings_search_no_results_title">Keine Ergebnisse für \'%s\' gefunden.</string>
+    <string name="revanced_extended_settings_search_no_results_summary">Probiere einen anderen Suchbegriff.</string>
+    <string name="revanced_extended_settings_search_remove_message">Aus Suchverlauf entfernen?</string>
     <string name="revanced_playback_speed_normal">Normal</string>
     <string name="revanced_external_downloader_package_name_video_title">Paketname des Video-Downloaders</string>
     <string name="revanced_external_downloader_package_name_video_summary">Paketname der installierten externen Video-Downloader-App wie NewPipe oder YTDLnis.</string>
@@ -75,6 +88,7 @@ Bitte verwenden Sie sie nur zu Debugging-Zwecken."</string>
     <string name="revanced_language_FA">""</string>
     <string name="revanced_language_FI">""</string>
     <string name="revanced_language_FR">""</string>
+    <string name="revanced_language_GA">"<small>Gaeilge</small>"</string>
     <string name="revanced_language_GU">""</string>
     <string name="revanced_language_HE">""</string>
     <string name="revanced_language_HI">""</string>
@@ -115,6 +129,9 @@ Bitte verwenden Sie sie nur zu Debugging-Zwecken."</string>
     <string name="revanced_language_ZH">""</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Werbung</string>
+    <string name="revanced_hide_creator_store_shelf_title">Verstecke Ersteller Shop Regal</string>
+    <string name="revanced_hide_creator_store_shelf_summary_on">Ersteller Shop Regal unter Videos ist versteckt.</string>
+    <string name="revanced_hide_creator_store_shelf_summary_off">Ersteller Shop Regal unter Videos wird angezeigt.</string>
     <string name="revanced_hide_end_screen_store_banner_title">Abspann Store Banner ausblenden</string>
     <string name="revanced_hide_end_screen_store_banner_summary_on">Store-Banner ist ausgeblendet.</string>
     <string name="revanced_hide_end_screen_store_banner_summary_off">Store-Banner wird angezeigt.</string>
@@ -210,6 +227,9 @@ Tippen Sie hier, um mehr über DeArrow zu erfahren."</string>
     <string name="revanced_hide_chips_shelf_title">Chips-Abschnitt verstecken</string>
     <string name="revanced_hide_chips_shelf_on">Chips-Abschnitt wird versteckt.</string>
     <string name="revanced_hide_chips_shelf_off">Chips-Abschnitt wird angezeigt</string>
+    <string name="revanced_hide_expandable_card_title">Verstecke ausklappbare Karte</string>
+    <string name="revanced_hide_expandable_card_summary_on">Ausklappbare Karte unter Videos ist versteckt.</string>
+    <string name="revanced_hide_expandable_card_summary_off">Ausklappbare Karte unter Videos wird angezeigt.</string>
     <string name="revanced_hide_expandable_shelf_title">Erweiterbare Regale ausblenden</string>
     <string name="revanced_hide_expandable_shelf_summary_on">Erweiterbare Regale sind ausgeblendet.</string>
     <string name="revanced_hide_expandable_shelf_summary_off">Erweiterbare Regale werden angezeigt.</string>

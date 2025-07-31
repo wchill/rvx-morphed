@@ -2205,9 +2205,8 @@ Playlists
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Η λειτουργία «Σταθερή ένταση» δεν είναι διαθέσιμη.
 • Οι ταινίες ή τα επί πληρωμή βίντεο ενδέχεται να μην αναπαράγονται.
 • Τα βίντεο για παιδιά ενδέχεται να μην αναπαράγονται αν είστε αποσυνδεμένοι ή σε λειτουργία ανώνυμης περιήγησης."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• Ο κωδικοποιητής AVC (H.264) δεν είναι διαθέσιμος.
-• Αν η αποσυσκότιση αποτύχει, θα αποτύχει και η αναπαραγωγή.
-• Η αναπαραγωγή ενδέχεται να ξεκινήσει με καθυστέρηση.
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"• Αν η αποσυσκότιση αποτύχει, θα αποτύχει και η αναπαραγωγή.
+• Η αναπαραγωγή ενδέχεται να ξεκινάει με καθυστέρηση.
 • Αν το βίντεο δεν ξεκινήσει εντός 10 δευτερολέπτων, πατήστε το κουμπί επαναφόρτωσης βίντεο."</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_title">Εμφάνιση κουμπιού επαναφόρτωσης βίντεο</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">Το κουμπί επαναφόρτωσης βίντεο εμφανίζεται.</string>

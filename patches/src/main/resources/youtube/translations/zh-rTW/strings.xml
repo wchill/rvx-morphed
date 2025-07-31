@@ -1319,6 +1319,7 @@
     <string name="revanced_whitelist_settings_summary">查看或刪除已新增至白名單的頻道清單。</string>
     <string name="revanced_whitelist_added">頻道 %1$s 已加入 %2$s 白名單。</string>
     <string name="revanced_whitelist_add_failed">無法將頻道 %1$s 新增至 %2$s 白名單。</string>
+    <string name="revanced_whitelist_reload_video">你想現在重新加載影片嗎？</string>
     <string name="revanced_whitelist_removed">頻道 %1$s 已從 %2$s 白名單中刪除。</string>
     <string name="revanced_whitelist_remove_failed">無法從 %2$s 白名單中刪除頻道 %1$s 。</string>
     <string name="revanced_whitelist_remove_dialog_message">從 %2$s 白名單中刪除頻道 %1$s 嗎？</string>
@@ -2166,8 +2167,40 @@
     <string name="revanced_spoof_streaming_data_summary_on">"串流資料已偽裝。"</string>
     <string name="revanced_spoof_streaming_data_summary_off">"串流資料未偽裝。 影片可能無法播放。"</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">關閉此設定可能會導致影片播放問題。</string>
+    <string name="revanced_spoof_streaming_data_default_client_title">預設用戶端</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android 電視
+<small>(需要登入)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
+<small>(無授權)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
+<small>(已棄用)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS 電視
+<small>(需要登入)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">"電視
+<small>(開發中)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"電視內嵌功能
+<small>(開發中)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"電視簡易功能
+<small>(開發中)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">偽裝副作用</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android">"• 音軌選單遺失。
+• 無法獲得穩定的音量。
+• 無法停用強制自動音軌。
+• 登出或處於隱身模式時 兒童影片可能無法播放。"</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• 整個 ASN/IP 範圍可能會被伺服器封鎖。</string>
+    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• 無法提供穩定音量。
+• 電影或付費影片可能無法播放。
+• 未登入或處於隱身模式時 兒童影片可能無法播放。"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"• 如果反混淆失敗，播放可能會失敗。
+• 有時影片即使播放 10 秒後也無法播放，在這種情況下，您需要點擊「重新載入影片」按鈕。
+• 影片可能會延遲播放。"</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_title">顯示重新載入影片按鈕</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">重新載入影片按鈕已顯示。</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">重新載入影片按鈕已隱藏。</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_title">始終顯示重新載入影片按鈕</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_on">始終顯示重新載入影片按鈕。</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_off">出現轉圈圈圖示時會顯示重新載入影片按鈕。</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">顯示統計資料</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">用於取得串流資料的用戶端顯示在統計資料中。</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">用於獲取串流資料的用戶端隱藏在統計資料中。</string>
@@ -2236,6 +2269,14 @@ YouTube 伺服器上的 n-sig 模式變化頻繁，如果正規表示式無法�
     <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"用於反混淆的 JavaScript 未保持最新。
 
 • 雖然使用了可成功反混淆的 JavaScript，但它仍然在一定程度上依賴伺服器。"</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">使用 V8 JavaScript 引擎</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript 在原生程式庫中運行。
+
+• 由 SmartTube 提供支援。"</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript 無法在原生程式庫中運作。
+
+• 由 JavaTube 提供支援。"</string>
+    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">如果不使用 V8 JavaScript 引擎，則需要更多時間來對串流媒體 URL 進行反混淆，導致影片開始時間延遲 10 秒。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">觀看歷史記錄</string>
     <string name="revanced_preference_screen_watch_history_summary">變更與觀看歷史記錄相關的設定。</string>

@@ -2193,8 +2193,7 @@ Nota: se sei un utente YouTube Premium o hai escluso la patch \"GmsCore support\
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Il menù Volume Stabile è nascosto.
 • I film o i video a pagamento potrebbero non essere riproducibili.
 • I video per bambini potrebbero non essere riprodotti se si è disconnessi o navigando in incognito."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• Il codec AVC (H.264) potrebbe non funzionare.
-• Se il deoffuscamento fallisce, la riproduzione potrebbe non funzionare.
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"• Se il deoffuscamento fallisce, la riproduzione potrebbe non funzionare.
 • I video potrebbero iniziare in ritardo.
 • A volte i video non vengono riprodotti neanche dopo 10 secondi, in tal caso è necessario toccare il pulsante \"Ricarica Video\"."</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_title">Mostra il pulsante Ricarica Video</string>

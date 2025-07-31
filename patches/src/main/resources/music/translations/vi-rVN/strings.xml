@@ -36,7 +36,7 @@
     <string name="revanced_hide_action_button_share_summary">Ẩn nút Chia sẻ trong thanh tương tác.</string>
     <string name="revanced_hide_action_button_song_video_title">Ẩn nút chuyển đổi giữa Bài hát và Video</string>
     <string name="revanced_hide_action_button_song_video_summary">"Ẩn nút chuyển đổi giữa Bài hát và Video trên thanh tương tác.
-(Nút này chỉ có sẵn với một số người dùng)"</string>
+(Nút chỉ có sẵn với một số người dùng)"</string>
     <string name="revanced_hide_action_button_label_title">Ẩn tên nút</string>
     <string name="revanced_hide_action_button_label_summary">Ẩn tên nút trong thanh tương tác.</string>
     <string name="revanced_external_downloader_action_title">Ghi đè nút tải xuống</string>
@@ -47,10 +47,10 @@
     <string name="revanced_external_downloader_package_name_title">Tên gói ứng dụng trình tải xuống</string>
     <string name="revanced_external_downloader_package_name_summary">Nhập tên gói ứng dụng trình tải xuống đã cài đặt trên thiết bị của bạn, chẳng hạn như NewPipe hoặc YTDLnis.</string>
     <string name="revanced_external_downloader_dialog_title">Trình tải xuống bên ngoài</string>
-    <string name="revanced_external_downloader_not_installed_dialog_title">Chú ý</string>
+    <string name="revanced_external_downloader_not_installed_dialog_title">Cảnh báo</string>
     <string name="revanced_external_downloader_not_installed_dialog_message">"Có vẻ như %1$s chưa được cài đặt.
  Vui lòng tải xuống %2$s từ trang web."</string>
-    <string name="revanced_external_downloader_not_installed_warning">%s chưa được cài đặt. Hãy cài đặt và thử lại.</string>
+    <string name="revanced_external_downloader_not_installed_warning">Hiện %s chưa được cài đặt. Hãy cài đặt và thử lại.</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Quảng cáo</string>
     <string name="revanced_hide_fullscreen_ads_title">Ẩn quảng cáo toàn màn hình</string>
@@ -179,7 +179,7 @@ Hạn chế:
     <string name="revanced_hide_tap_to_update_button_summary">Ẩn nút Chạm để nâng cấp.</string>
     <string name="revanced_hide_voice_search_button_title">Ẩn nút Tìm kiếm bằng giọng nói</string>
     <string name="revanced_hide_voice_search_button_summary">Ẩn nút Tìm kiếm bằng giọng nói kế bên thanh tìm kiếm.</string>
-    <string name="revanced_restore_old_style_library_shelf_title">Thẻ Thư viện cũ</string>
+    <string name="revanced_restore_old_style_library_shelf_title">Khôi phục thẻ thư viện cũ</string>
     <string name="revanced_restore_old_style_library_shelf_summary">Khôi phục lại thẻ Thư viện về kiểu cũ. (Thử nghiệm)</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Xoá hộp thoại cảnh báo trước khi xem</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Xoá hộp thoại cảnh báo nội dung cần cân nhắc trước khi xem.
@@ -266,7 +266,7 @@ Hạn chế: Không áp dụng trong trang phản hồi bình luận."</string>
 
 Hạn chế: các phân đoạn SponsorBlock không được hiển thị trên thanh tiến tình."</string>
     <string name="revanced_enable_zen_mode_title">Chế độ tập trung</string>
-    <string name="revanced_enable_zen_mode_summary">Thay đổi nền của trình phát thành màu xám nhạt để giúp mắt của bạn thư giãn hơn.</string>
+    <string name="revanced_enable_zen_mode_summary">Thay đổi nền của trình phát thành màu xám nhạt để giúp bạn giảm mỏi mắt và tập trung hơn.</string>
     <string name="revanced_enable_zen_mode_podcast_title">Chế độ tập trung cho Podcast</string>
     <string name="revanced_enable_zen_mode_podcast_summary">Chế độ tập trung cho Podcast.</string>
     <string name="revanced_hide_comment_channel_guidelines_title">Ẩn các nhãn nguyên tắc</string>
@@ -283,11 +283,11 @@ Hạn chế: các phân đoạn SponsorBlock không được hiển thị trên 
     <string name="revanced_remember_repeat_state_summary">Ghi nhớ trạng thái phát lặp lại một danh sách phát hoặc phát lặp lại một bài hát.</string>
     <string name="revanced_remember_shuffle_state_title">Lưu trạng thái phát ngẫu nhiên</string>
     <string name="revanced_remember_shuffle_state_summary">Ghi nhớ trạng thái phát ngẫu nhiên các bài hát.</string>
-    <string name="revanced_restore_old_comments_popup_panels_title">Bảng bình luận kiểu cũ</string>
+    <string name="revanced_restore_old_comments_popup_panels_title">Khôi phục bảng bình luận cũ</string>
     <string name="revanced_restore_old_comments_popup_panels_summary">Khôi phục bảng bình luận kiểu cũ.</string>
     <string name="revanced_restore_old_player_background_title">Nền trình phát kiểu cũ</string>
     <string name="revanced_restore_old_player_background_summary">Khôi phục nền của trình phát về kiểu cũ.</string>
-    <string name="revanced_restore_old_player_layout_title">Bố cục trình phát kiểu cũ</string>
+    <string name="revanced_restore_old_player_layout_title">Khôi phục bố cục trình phát cũ</string>
     <string name="revanced_restore_old_player_layout_summary">"Khôi phục bố cục trình phát về kiểu cũ.
 Một số tính năng có thể không hoạt động bình thường trong bố cục trình phát kiểu cũ."</string>
     <!-- PreferenceScreen: Settings menu -->

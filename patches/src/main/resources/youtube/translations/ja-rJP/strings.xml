@@ -2172,8 +2172,7 @@ YouTube Premium に加入している場合や「GmsCore support」パッチを�
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"・[一定音量] は利用できません。
 ・映画や有料動画は再生できない可能性があります。
 ・ログインしていない場合やシークレットモードでは、子ども向け動画は再生できない可能性があります。"</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"・AVC (H.264) コーデックは利用できない可能性があります。
-・難読化の解除に失敗すると、動画の再生に失敗する可能性があります。
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"・難読化の解除に失敗すると、動画の再生に失敗する可能性があります。
 ・10 秒経っても動画が再生されない可能性があります。その場合は、動画の再読み込みボタンをタップする必要があります。
 ・動画の再生開始に時間がかかる可能性があります。"</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_title">リロードボタンを表示</string>
