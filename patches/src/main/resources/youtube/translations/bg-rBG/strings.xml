@@ -573,6 +573,9 @@
     <string name="revanced_hide_end_screen_cards_title">Скриване на препоръките в края</string>
     <string name="revanced_hide_end_screen_cards_summary_on">Препоръките в края са скрити</string>
     <string name="revanced_hide_end_screen_cards_summary_off">Препоръките в края се показват</string>
+    <string name="revanced_skip_autoplay_countdown_title">Незабавно автоматично пускане</string>
+    <string name="revanced_skip_autoplay_countdown_summary_on">Ако автоматичното пускане е активирано, следващият видеоклип ще се възпроизведе веднага.</string>
+    <string name="revanced_skip_autoplay_countdown_summary_off">Ако автоматичното пускане е активирано, следващият видеоклип ще се възпроизведе след края на обратното броене.</string>
     <string name="revanced_hide_filmstrip_overlay_title">Скриване на филмовата лента</string>
     <string name="revanced_hide_filmstrip_overlay_summary_on">Филмовата лента е скрита</string>
     <string name="revanced_hide_filmstrip_overlay_summary_off">Филмовата лента се показва.</string>
@@ -594,15 +597,6 @@
     <string name="revanced_hide_suggested_actions_title">Препоръчителни действия</string>
     <string name="revanced_hide_suggested_actions_summary_on">Предложенията за действе са скрити</string>
     <string name="revanced_hide_suggested_actions_summary_off">Предложенията за действе се показват.</string>
-    <string name="revanced_hide_suggested_video_end_screen_title">Препоръчан видеоклип в края на възпроизвеждането</string>
-    <string name="revanced_hide_suggested_video_end_screen_summary_on">"Екранът за предложения на видеоклипове е скрит, когато автоматичното пускане е изключено.
-
-Автоматичното пускане може да се промени в настройките на YouTube:
-Настройки → Автоматично пускане → Автоматично пускане на следващия видеоклип"</string>
-    <string name="revanced_hide_suggested_video_end_screen_summary_off">Препоръчаният видеоклип се показва в края на възпроизвеждането.</string>
-    <string name="revanced_skip_autoplay_countdown_title">Незабавно автоматично пускане</string>
-    <string name="revanced_skip_autoplay_countdown_summary_on">Ако автоматичното пускане е активирано, следващият видеоклип ще се възпроизведе веднага.</string>
-    <string name="revanced_skip_autoplay_countdown_summary_off">Ако автоматичното пускане е активирано, следващият видеоклип ще се възпроизведе след края на обратното броене.</string>
     <string name="revanced_hide_timed_reactions_title">Скриване на времевите реакции</string>
     <string name="revanced_hide_timed_reactions_summary_on">Времевите реакции са скрити.</string>
     <string name="revanced_hide_timed_reactions_summary_off">Времевите реакции се показват.</string>
@@ -685,15 +679,6 @@
     <string name="revanced_hide_comments_section_in_home_feed_title">Скриване на секцията с коментари в началната емисия</string>
     <string name="revanced_hide_comments_section_in_home_feed_summary_on">Секцията с коментари в началната емисия е скрита.</string>
     <string name="revanced_hide_comments_section_in_home_feed_summary_off">Секцията с коментари в началната емисия се показва.</string>
-    <string name="revanced_hide_comment_create_shorts_button_title">Бутон за създаване на Shorts</string>
-    <string name="revanced_hide_comment_create_shorts_button_summary_on">Бутонът за създаване на Кратко видео е скрит.</string>
-    <string name="revanced_hide_comment_create_shorts_button_summary_off">Бутонът за създаване на Кратко видео се показва.</string>
-    <string name="revanced_hide_comment_timestamp_and_emoji_buttons_title">Скриване на инструмента за избор на емоджи и клеймо за време</string>
-    <string name="revanced_hide_comment_timestamp_and_emoji_buttons_summary_on">Бутоните за клеймо за време и емотикони са скрити.</string>
-    <string name="revanced_hide_comment_timestamp_and_emoji_buttons_summary_off">Бутоните за клеймо за време и емотикони се показват.</string>
-    <string name="revanced_hide_comment_highlighted_search_links_title">Скриване на подчертаните връзки за търсене</string>
-    <string name="revanced_hide_comment_highlighted_search_links_summary_on">Маркираните линкове за търсене са скрити.</string>
-    <string name="revanced_hide_comment_highlighted_search_links_summary_off">Показани са маркираните линкове за търсене.</string>
     <string name="revanced_hide_live_chat_messages_title">Съобщения за чат на живо</string>
     <string name="revanced_hide_live_chat_messages_summary_on">Съобщенията в чата на живо са скрити.\n\nТази настройка се отнася и за кратки видеоклипове на живо.</string>
     <string name="revanced_hide_live_chat_messages_summary_off">Показват се съобщения от чат на живо.\n\nТази настройка се отнася и за кратки видеоклипове на живо.</string>
@@ -703,9 +688,6 @@
     <string name="revanced_hide_preview_comment_type_title">Скриване на типа коментар за визуализация</string>
     <string name="revanced_hide_preview_comment_type_on">Това не променя размера на секцията за коментари, така че е възможно да отворите повторението на чата на живо в секцията за коментари.</string>
     <string name="revanced_hide_preview_comment_type_off">Това преоразмерява секцията за коментари, така че е невъзможно да се отвори повторението на чата на живо в секцията за коментари.</string>
-    <string name="revanced_hide_comment_thanks_button_title">Скриване на бурона за благодарност</string>
-    <string name="revanced_hide_comment_thanks_button_summary_on">Бутона за благодарност е скрит.</string>
-    <string name="revanced_hide_comment_thanks_button_summary_off">Бутона за благодарност се показва.</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_player_flyout_menu_title">Падащо меню</string>
     <string name="revanced_preference_screen_player_flyout_menu_summary">Скриване или промяна на елементи от изскачащото меню на екрана на видеоплейъра.</string>
@@ -1080,14 +1062,14 @@
     <string name="revanced_disable_resuming_shorts_player_summary_on">Shorts плейъра при стартиране на приложението е скрит.</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">Shorts плейъра при стартиране на приложението се показва.</string>
     <string name="revanced_hide_shorts_floating_button_title">Скриване на изскачащ бутон</string>
-    <string name="revanced_hide_shorts_floating_button_summary_on">"Изскачащи бутони като „Използване на този звук“ са скрити в раздела Shorts."</string>
-    <string name="revanced_hide_shorts_floating_button_summary_off">"Изскачащи бутони като „Използване на този звук“ Се показват в раздела Shorts."</string>
+    <string name="revanced_hide_shorts_floating_button_summary_on">Изскачащи бутони като „Използване на този звук“ са скрити в раздела Shorts.</string>
+    <string name="revanced_hide_shorts_floating_button_summary_off">Изскачащи бутони като „Използване на този звук“ Се показват в раздела Shorts.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts shelves -->
     <string name="revanced_preference_category_shorts_shelf">Shorts рафтове</string>
     <string name="revanced_hide_shorts_shelf_title">Скрийте рафтовете Shorts</string>
-    <string name="revanced_hide_shorts_shelf_summary">"Скрива рафтовете за кратки видеа
+    <string name="revanced_hide_shorts_shelf_summary">Скрива рафтовете за кратки видеа
 
-Известен проблем: Официалните заглавки в резултатите от търсенето са скрити."</string>
+Известен проблем: Официалните заглавки в резултатите от търсенето са скрити.</string>
     <string name="revanced_hide_shorts_shelf_channel_title">Скрит в канала</string>
     <string name="revanced_hide_shorts_shelf_channel_summary_on">"Скрито в канала.
 
@@ -1635,45 +1617,22 @@
     <string name="revanced_preference_screen_spoof_streaming_data_title">Подправяне на поточни данни</string>
     <string name="revanced_preference_screen_spoof_streaming_data_summary">Подправете поточно предаваните данни, за да предотвратите проблеми с възпроизвеждането.</string>
     <string name="revanced_spoof_streaming_data_title">Подправяне на поточни данни</string>
-    <string name="revanced_spoof_streaming_data_summary_on">Данните за поточно предаване са подправени.</string>
+    <string name="revanced_spoof_streaming_data_summary_on">"Данните за поточно предаване са подправени."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Данните за поточно предаване не са подправени. Възпроизвеждането на видео може да не работи."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Изключването на тази настройка може да причини проблеми с възпроизвеждането на видео.</string>
-    <string name="revanced_spoof_streaming_data_type_title">Клиент по подразбиране</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_unplugged">"Android TV
-<small>(Изисква се влизане)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_type_entry_android_vr_no_auth">"Android VR
-<small>(Няма удостоверение)</small>"</string>
-    <string name="revanced_spoof_streaming_data_type_entry_ios_unplugged">"iOS
-<small>(Необходим вход)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Ефекти от замяната</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android">"• Липсва менюто за аудио запис.
-• Не е наличен стабилен звук.
-• Деактивиране на принудителни автоматични аудио записи не е налично.
-• Детските видеоклипове може да не се възпроизвеждат, когато сте излезли или сте в режим инкогнито."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Филми или платени видеоклипове може да не се възпроизвеждат.
-• Детските видеоклипове може да не се възпроизвеждат, когато сте излезли или сте в режим инкогнито."</string>
+    <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Показване в \"Разширени статистики\"</string>
+    <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Клиентът, използван за получаване на данни за потока, се показва в Статистика за системни администратори.</string>
+    <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Клиентът, използван за получаване на данни за поток, е скрит в Статистика за системни администратори.</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
     <string name="revanced_spoof_streaming_data_ios_force_avc_title">Принудително AVC (H.264) за iOS</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_summary_on">Видео кодек по подразбиране AVC (H.264).</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_summary_off">Видео кодекът се определя автоматично.</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Активирането на това може да подобри живота на батерията и да поправи заекването на възпроизвеждането.
 
 AVC има максимална разделителна способност от 1080p, аудио кодекът Opus не е наличен, а видеовъзпроизвеждането ще използва повече интернет данни от VP9 или AV1."</string>
-    <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Показване в \"Разширени статистики\"</string>
-    <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Клиентът, използван за получаване на данни за потока, се показва в Статистика за системни администратори.</string>
-    <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Клиентът, използван за получаване на данни за поток, е скрит в Статистика за системни администратори.</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: PoToken / VisitorData -->
-    <string name="revanced_preference_category_po_token_visitor_data">PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_title">PoToken</string>
-    <string name="revanced_spoof_streaming_data_po_token_summary">PoToken се пуска с BotGuard в доверен браузър.</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_title">VisitorData</string>
-    <string name="revanced_spoof_streaming_data_visitor_data_summary">VisitorData, издадени от BotGuard в доверен браузър.</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_title">За PoToken / VisitorData</string>
-    <string name="revanced_spoof_streaming_data_po_token_visitor_data_about_summary">"Някои клиенти изискват PoToken и VisitorData, за да получат валиден отговор на поточни данни.
-
-Ако се опитвате да използвате iOS като клиент по подразбиране, може да имате нужда от тези стойности.
-
-Щракнете, за да видите повече информация."</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">История на гледане</string>
     <string name="revanced_preference_screen_watch_history_summary">Променя настройките, за хронологията на гледане.</string>

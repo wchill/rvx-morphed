@@ -56,7 +56,7 @@
     <string name="revanced_hide_fullscreen_ads_title">전체 화면 광고 제거</string>
     <string name="revanced_hide_fullscreen_ads_summary">"전체 화면 광고를 숨깁니다.
 
-알려진 문제점:
+제한 사항:
 • 간혹 홈 피드 대신 검은색 빈 화면이 표시될 수 있습니다."</string>
     <string name="revanced_fullscreen_ads_closed_toast">전체 화면 광고가 닫아졌습니다.</string>
     <string name="revanced_hide_general_ads_title">일반 레이아웃 광고 제거</string>
@@ -83,7 +83,7 @@
     <string name="revanced_enable_compact_dialog_title">소형 다이얼로그 활성화</string>
     <string name="revanced_enable_compact_dialog_summary">"휴대폰에서 소형 메뉴 구성요소를 활성화합니다.
 
-알려진 문제점:
+제한 사항:
 • 보관함 탭에서 앨범 아트가 그리드로 구성될 때 작아집니다.
 • 취침 타이머 레이아웃이 비정상적으로 보일 수 있습니다."</string>
     <string name="revanced_hide_flyout_menu_like_dislike_title">좋아요 &amp; 싫어요 버튼 제거</string>
@@ -224,7 +224,7 @@
     <string name="revanced_replace_navigation_button_about_summary">"이 기능은 실험 기능입니다.
 YouTube Music의 검색 및 설정과 같은 활동은 공개되지 않으므로 패치에는 구조적인 제한이 있습니다.
 
-알려진 문제:
+제한 사항:
 • 검색 및 설정과 같은 교체된 활동이 닫히면 앱 시작 페이지가 열립니다.
 
 앱 시작 페이지 설정을 열려면 여기를 누르세요."</string>
@@ -257,10 +257,15 @@ YouTube Music의 검색 및 설정과 같은 활동은 공개되지 않으므로
     <string name="revanced_enable_forced_miniplayer_summary">새로운 트랙으로 변경되면 강제로 미니 플레이어를 활성화합니다.</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">스와이프하여 미니 플레이어 닫기 활성화</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">미니 플레이어를 아래로 스와이프하여 닫을 수 있습니다.</string>
+    <string name="revanced_enable_comments_scroll_top_title">댓글에서 맨 위로 스크롤 활성화</string>
+    <string name="revanced_enable_comments_scroll_top_summary">"댓글 패널 제목(‘댓글’)을 누르면 상단으로 스크롤됩니다.
+
+제한 사항:
+• 댓글 답글에는 적용되지 않습니다."</string>
     <string name="revanced_enable_thick_seekbar_title">두꺼운 재생바 활성화</string>
     <string name="revanced_enable_thick_seekbar_summary">"두꺼운 재생바를 활성화합니다.
 
-알려진 문제점:
+제한 사항:
 • 재생바에서 SponsorBlock 구간이 표시되지 않습니다."</string>
     <string name="revanced_enable_zen_mode_title">집중 모드 활성화</string>
     <string name="revanced_enable_zen_mode_summary">동영상 플레이어의 색상을 회색조로 설정해 눈의 피로를 줄입니다.</string>
@@ -441,7 +446,7 @@ API Key를 발급받는 방법을 보려면 여기를 누르세요."</string>
 
 앨범에서 뮤직 비디오가 재생되는 것이 감지되면 정식 음원을 찾아줍니다.
 
-알려진 문제점:
+제한 사항:
 • Kids 동영상은 리다이렉션되지 않을 수 있습니다."</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_title">리다이렉션 유형</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_summary">정식 음원으로 리다이렉션하는 방법을 지정할 수 있습니다.</string>
