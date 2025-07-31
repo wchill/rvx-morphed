@@ -11,6 +11,7 @@ import app.revanced.patches.youtube.utils.extension.Constants.UTILS_PATH
 import app.revanced.patches.youtube.utils.extension.sharedExtensionPatch
 import app.revanced.patches.youtube.utils.playservice.is_19_25_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_19_36_or_greater
+import app.revanced.patches.youtube.utils.playservice.versionCheckPatch
 import app.revanced.patches.youtube.utils.resourceid.fullScreenButton
 import app.revanced.patches.youtube.utils.resourceid.sharedResourceIdPatch
 import app.revanced.patches.youtube.utils.youtubeControlsOverlayFingerprint
@@ -161,6 +162,7 @@ val playerControlsPatch = bytecodePatch(
         playerControlsResourcePatch,
         sharedExtensionPatch,
         sharedResourceIdPatch,
+        versionCheckPatch,
     )
 
     execute {
