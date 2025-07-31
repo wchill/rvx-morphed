@@ -1,6 +1,5 @@
 package app.revanced.extension.shared.patches.spoof;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.google.protos.youtube.api.innertube.StreamingDataOuterClass.StreamingData;
@@ -11,12 +10,12 @@ import java.lang.ref.WeakReference;
 import java.lang.reflect.Field;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
+import app.revanced.extension.shared.settings.BaseSettings;
 import app.revanced.extension.shared.utils.Logger;
 
-@SuppressWarnings("unused")
+@SuppressWarnings({"deprecation", "unused"})
 public class StreamingDataOuterClassPatch {
     public interface StreamingDataMessage {
         // Methods are added to YT classes during patching.
@@ -185,13 +184,22 @@ public class StreamingDataOuterClassPatch {
 
     }
 
-    private static WeakReference<StreamingDataMessage> streamingDataMessageRef = new WeakReference<>(null);
+    private static final boolean SPOOF_STREAMING_DATA = BaseSettings.SPOOF_STREAMING_DATA.get();
+
+    /**
+     * Do not use {@link WeakReference}.
+     * This class can be null, as hooking and invoking are performed in different methods.
+     */
+    @Nullable
+    private static StreamingDataMessage streamingDataMessage;
 
     /**
      * Injection point.
      */
-    public static void initialize(@NonNull StreamingDataMessage streamingDataMessage) {
-        streamingDataMessageRef = new WeakReference<>(streamingDataMessage);
+    public static void initialize(StreamingDataMessage message) {
+        if (SPOOF_STREAMING_DATA && message != null) {
+            streamingDataMessage = message;
+        }
     }
 
     /**
@@ -202,7 +210,6 @@ public class StreamingDataOuterClassPatch {
     @Nullable
     public static StreamingData parseFrom(ByteBuffer responseProto) {
         try {
-            StreamingDataMessage streamingDataMessage = streamingDataMessageRef.get();
             if (streamingDataMessage == null) {
                 Logger.printDebug(() -> "Cannot parseFrom because streaming data is null");
             } else {

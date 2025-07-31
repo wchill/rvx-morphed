@@ -3,7 +3,6 @@ package app.revanced.extension.shared.innertube.client
 import android.os.Build
 import app.revanced.extension.shared.patches.PatchStatus
 import app.revanced.extension.shared.settings.BaseSettings
-import app.revanced.extension.shared.settings.EnumSetting
 import app.revanced.extension.shared.utils.PackageUtils
 import org.apache.commons.lang3.ArrayUtils
 import java.util.Locale

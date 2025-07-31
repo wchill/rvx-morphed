@@ -28,11 +28,11 @@ import app.revanced.extension.youtube.shared.VideoInformation;
 @TargetApi(26)
 @SuppressWarnings({"deprecation", "unused"})
 public class SpoofStreamingDataPatch extends BlockRequestPatch {
-    private static final boolean J2V8_LIBRARY_AVAILABILITY = checkJ2V8();
     private static final boolean SPOOF_STREAMING_DATA_USE_IOS =
             PatchStatus.SpoofStreamingDataIOS() && BaseSettings.SPOOF_STREAMING_DATA_USE_IOS.get();
     private static final boolean SPOOF_STREAMING_DATA_USE_TV =
             SPOOF_STREAMING_DATA && BaseSettings.SPOOF_STREAMING_DATA_USE_TV.get();
+    private static final boolean J2V8_LIBRARY_AVAILABILITY = checkJ2V8();
     private static final boolean SPOOF_STREAMING_DATA_USE_TV_ALL =
             SPOOF_STREAMING_DATA_USE_TV && BaseSettings.SPOOF_STREAMING_DATA_USE_TV_ALL.get();
     private static final boolean SPOOF_STREAMING_DATA_TV_USE_LATEST_JS =
@@ -79,16 +79,19 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
      * @return Whether the J2V8 library exists.
      */
     private static boolean checkJ2V8() {
-        try {
-            String libraryDir = Utils.getContext()
-                    .getApplicationContext()
-                    .getApplicationInfo()
-                    .nativeLibraryDir;
-            File j2v8 = new File(libraryDir + "/libj2v8.so");
-            return j2v8.exists();
-        } catch (Exception ex) {
-            Logger.printException(() -> "J2V8 native library not found", ex);
+        if (SPOOF_STREAMING_DATA_USE_TV) {
+            try {
+                String libraryDir = Utils.getContext()
+                        .getApplicationContext()
+                        .getApplicationInfo()
+                        .nativeLibraryDir;
+                File j2v8 = new File(libraryDir + "/libj2v8.so");
+                return j2v8.exists();
+            } catch (Exception ex) {
+                Logger.printException(() -> "J2V8 native library not found", ex);
+            }
         }
+
         return false;
     }
 

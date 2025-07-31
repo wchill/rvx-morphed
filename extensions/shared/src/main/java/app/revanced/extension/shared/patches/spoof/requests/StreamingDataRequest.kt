@@ -310,16 +310,14 @@ class StreamingDataRequest private constructor(
 
         private fun deobfuscateStreamingData(
             deobfuscatedUrlArrayList: ArrayList<String>,
-            streamingData: StreamingData?
-        ): StreamingData? {
-            if (streamingData != null) {
-                val adaptiveFormats = getAdaptiveFormats(streamingData)
-                if (adaptiveFormats != null) {
-                    for (i in 0..<adaptiveFormats.size) {
-                        val adaptiveFormat = adaptiveFormats[i]
-                        val url = deobfuscatedUrlArrayList[i]
-                        setUrl(adaptiveFormat, url)
-                    }
+            streamingData: StreamingData
+        ): StreamingData {
+            val adaptiveFormats = getAdaptiveFormats(streamingData)
+            if (adaptiveFormats != null) {
+                for (i in 0..<adaptiveFormats.size) {
+                    val adaptiveFormat = adaptiveFormats[i]
+                    val url = deobfuscatedUrlArrayList[i]
+                    setUrl(adaptiveFormat, url)
                 }
             }
             return streamingData
@@ -452,12 +450,16 @@ class StreamingDataRequest private constructor(
 
                                         // Parses the Proto Buffer and returns StreamingData (GeneratedMessage).
                                         var streamingData = parseFrom(ByteBuffer.wrap(stream.toByteArray()))
-
-                                        if (!deobfuscatedUrlArrayList.isNullOrEmpty()) {
-                                            streamingData = deobfuscateStreamingData(deobfuscatedUrlArrayList, streamingData)
+                                        if (streamingData != null) {
+                                            if (!deobfuscatedUrlArrayList.isNullOrEmpty()) {
+                                                streamingData = deobfuscateStreamingData(deobfuscatedUrlArrayList, streamingData)
+                                            }
+                                            return streamingData
+                                        } else {
+                                            Logger.printDebug { "Ignore empty streamingData, Client: $clientType, Video: $videoId" }
+                                            lastSpoofedClientFriendlyName = null
+                                            continue
                                         }
-
-                                        return streamingData
                                     }
                                 }
                             }
