@@ -51,6 +51,11 @@ public class PatchStatus {
         return false;
     }
 
+    public static boolean SpoofAppVersion() {
+        // Replace this with true if the Spoof app version patch succeeds
+        return false;
+    }
+
     public static String SpoofAppVersionDefaultString() {
         return SPOOF_APP_VERSION_TARGET_DEFAULT_VALUE;
     }
