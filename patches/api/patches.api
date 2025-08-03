@@ -194,10 +194,6 @@ public final class app/revanced/patches/music/utils/fix/androidauto/AndroidAutoC
 	public static final fun getAndroidAutoCertificatePatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
-public final class app/revanced/patches/music/utils/fix/client/SpoofClientPatchKt {
-	public static final fun getSpoofClientPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
-}
-
 public final class app/revanced/patches/music/utils/fix/fileprovider/FileProviderPatchKt {
 	public static final fun fileProviderPatch (Ljava/lang/String;Ljava/lang/String;)Lapp/revanced/patcher/patch/BytecodePatch;
 }
@@ -617,10 +613,6 @@ public final class app/revanced/patches/shared/spoof/appversion/BaseSpoofAppVers
 	public static final fun baseSpoofAppVersionPatch (Ljava/lang/String;)Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
-public final class app/revanced/patches/shared/spoof/blockrequest/BlockRequestPatchKt {
-	public static final fun getBlockRequestPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
-}
-
 public final class app/revanced/patches/shared/spoof/useragent/BaseSpoofUserAgentPatchKt {
 	public static final fun baseSpoofUserAgentPatch (Ljava/lang/String;)Lapp/revanced/patcher/patch/BytecodePatch;
 }
@@ -949,14 +941,6 @@ public final class app/revanced/patches/youtube/utils/fix/bottomui/CfBottomUIPat
 	public static final fun getCfBottomUIPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
-public final class app/revanced/patches/youtube/utils/fix/cairo/CairoFragmentPatchKt {
-	public static final fun getCairoFragmentPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
-}
-
-public final class app/revanced/patches/youtube/utils/fix/cairo/CairoSettingsPatchKt {
-	public static final fun getCairoSettingsPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
-}
-
 public final class app/revanced/patches/youtube/utils/fix/endscreensuggestedvideo/EndScreenSuggestedVideoPatchKt {
 	public static final fun getEndScreenSuggestedVideoPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
@@ -1085,6 +1069,7 @@ public final class app/revanced/patches/youtube/utils/playservice/VersionCheckPa
 	public static final fun is_20_10_or_greater ()Z
 	public static final fun is_20_12_or_greater ()Z
 	public static final fun is_20_14_or_greater ()Z
+	public static final fun is_20_15_or_greater ()Z
 }
 
 public final class app/revanced/patches/youtube/utils/recyclerview/RecyclerViewTreeObserverPatchKt {
@@ -1165,6 +1150,7 @@ public final class app/revanced/patches/youtube/utils/resourceid/SharedResourceI
 	public static final fun getNotificationBigPictureIconWidth ()J
 	public static final fun getOfflineActionsVideoDeletedUndoSnackbarText ()J
 	public static final fun getOfflineNoContentBodyTextNotOfflineEligible ()J
+	public static final fun getP13nHeader ()J
 	public static final fun getPairWithTVKey ()J
 	public static final fun getPlayerCollapseButton ()J
 	public static final fun getPlayerControlNextButtonTouchArea ()J
@@ -1189,6 +1175,7 @@ public final class app/revanced/patches/youtube/utils/resourceid/SharedResourceI
 	public static final fun getRelatedChipCloudMargin ()J
 	public static final fun getRightComment ()J
 	public static final fun getScrimOverlay ()J
+	public static final fun getSeeMoreProceedingHeader ()J
 	public static final fun getSeekEasyHorizontalTouchOffsetToStartScrubbing ()J
 	public static final fun getSeekUndoEduOverlayStub ()J
 	public static final fun getSettingsFragment ()J
