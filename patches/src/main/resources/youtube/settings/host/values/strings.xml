@@ -1354,7 +1354,9 @@ Swipe to expand or close."</string>
     <string name="revanced_hide_player_collapse_button_summary_on">Collapse button is hidden.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">Collapse button is shown.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Hide Fullscreen button</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">Fullscreen button is hidden.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"Fullscreen button is hidden.
+
+Limitation: All overlay buttons may be hidden after the video ends."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">Fullscreen button is shown.</string>
     <string name="revanced_hide_player_previous_next_button_title">Hide Previous &amp; Next buttons</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">Previous &amp; Next buttons are hidden.</string>
