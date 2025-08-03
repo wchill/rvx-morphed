@@ -185,8 +185,8 @@
     <string name="revanced_hide_promotion_alert_banner_summary_on">メンバーシップの更新や YouTube Premium の価格の値上げなどのプロモーションバナーを非表示にします。</string>
     <string name="revanced_hide_promotion_alert_banner_summary_off">メンバーシップの更新や YouTube Premium の価格の値上げなどのプロモーションバナーを非表示にします。</string>
     <string name="revanced_hide_self_sponsor_cards_title">自己スポンサーカードを非表示</string>
-    <string name="revanced_hide_self_sponsor_cards_summary_on">概要欄下部に表示されるセルフスポンサーカードを非表示にします。</string>
-    <string name="revanced_hide_self_sponsor_cards_summary_off">概要欄下部に表示されるセルフスポンサーカードを非表示にします。</string>
+    <string name="revanced_hide_self_sponsor_cards_summary_on">概要欄下部に表示される自己スポンサーカードを非表示にします。</string>
+    <string name="revanced_hide_self_sponsor_cards_summary_off">概要欄下部に表示される自己スポンサーカードを非表示にします。</string>
     <string name="revanced_hide_shopping_links_title">商品へのリンクを非表示</string>
     <string name="revanced_hide_shopping_links_summary_on">概要欄にある商品のリンクを非表示にします。</string>
     <string name="revanced_hide_shopping_links_summary_off">概要欄にある商品のリンクを非表示にします。</string>
@@ -197,8 +197,8 @@
     <string name="revanced_hide_view_products_summary_on">プレーヤー内に表示される商品バナーを非表示にします。</string>
     <string name="revanced_hide_view_products_summary_off">プレーヤー内に表示される商品バナーを非表示にします。</string>
     <string name="revanced_hide_web_search_results_title">ウェブの検索結果を非表示</string>
-    <string name="revanced_hide_web_search_results_summary_on">検索フィードから Web 検索結果を非表示にします。</string>
-    <string name="revanced_hide_web_search_results_summary_off">検索フィードから Web 検索結果を非表示にします。</string>
+    <string name="revanced_hide_web_search_results_summary_on">検索フィードからウェブの検索結果を非表示にします。</string>
+    <string name="revanced_hide_web_search_results_summary_off">検索フィードからウェブの検索結果を非表示にします。</string>
     <string name="revanced_hide_get_premium_title">YouTube Premium のバナーを非表示</string>
     <string name="revanced_hide_get_premium_summary_on">プレーヤーと動画の説明の間に表示される YouTube Premium のプロモーションバナーを非表示にします。</string>
     <string name="revanced_hide_get_premium_summary_off">プレーヤーと動画の説明の間に表示される YouTube Premium のプロモーションバナーを非表示にします。</string>
@@ -214,21 +214,23 @@
     <string name="revanced_alt_thumbnail_options_entry_3">DeArrow &amp; 静止画サムネイル</string>
     <string name="revanced_alt_thumbnail_options_entry_4">静止画サムネイル</string>
     <string name="revanced_alt_thumbnail_dearrow_about_title">DeArrow</string>
-    <string name="revanced_alt_thumbnail_dearrow_about_summary">"DeArrow は、YouTube 動画のサムネイルをクラウドソーシングで提供する機能です。DeArrow のサムネイルは、YouTube が提供するサムネイルよりも適切なことが多いです。これを有効にすると、動画のURLが API サーバーに送信されますが、他のデータは送信されません。動画に DeArrow サムネイルがない場合は、オリジナルまたは静止画サムネイルが表示されます。
+    <string name="revanced_alt_thumbnail_dearrow_about_summary">"DeArrow は YouTube の動画のサムネイルをクラウドソーシングで提供しています。これらのサムネイルは、YouTube が提供するサムネイルよりも関連性の高いものが多いです。
 
-DeArrow の詳細については、ここをタップしてください。"</string>
+有効にすると、動画の URL のみが API サーバーに送信され、その他のデータは送信されません。動画に DeArrow サムネイルがない場合は、オリジナルまたは静止画サムネイルが表示されます。
+
+DeArrow について詳しく知るには、ここをタップしてください。"</string>
     <string name="revanced_alt_thumbnail_dearrow_connection_toast_title">API が利用できない場合にトーストを表示</string>
-    <string name="revanced_alt_thumbnail_dearrow_connection_toast_summary_on">DeArrow が利用できない場合、トーストを表示します。</string>
-    <string name="revanced_alt_thumbnail_dearrow_connection_toast_summary_off">DeArrow が利用できない場合、トーストを表示します。</string>
+    <string name="revanced_alt_thumbnail_dearrow_connection_toast_summary_on">DeArrow が利用できない場合にトーストを表示します。</string>
+    <string name="revanced_alt_thumbnail_dearrow_connection_toast_summary_off">DeArrow が利用できない場合にトーストを表示します。</string>
     <string name="revanced_alt_thumbnail_dearrow_api_url_title">DeArrow API エンドポイント</string>
     <string name="revanced_alt_thumbnail_dearrow_api_url_summary">DeArrow サムネイルキャッシュエンドポイントの URLです。</string>
     <string name="revanced_alt_thumbnail_dearrow_api_url_invalid_toast">無効な DeArrow API の URL です。</string>
     <string name="revanced_alt_thumbnail_stills_about_title">静止画サムネイルについて</string>
-    <string name="revanced_alt_thumbnail_stills_about_summary">静止画サムネイルは、各動画の最初/中間/最後の部分から取得されます。これらの画像は YouTube に直接組み込まれており、外部 API は使用されません。</string>
-    <string name="revanced_alt_thumbnail_stills_fast_title">高速な静止画サムネイル</string>
+    <string name="revanced_alt_thumbnail_stills_about_summary">静止画サムネイルは、各動画の最初、中間、最後のいずれかの部分から取得されます。これらの画像は YouTube に直接組み込まれており、外部 API は使用されません。</string>
+    <string name="revanced_alt_thumbnail_stills_fast_title">高速な静止画サムネイルを使用</string>
     <string name="revanced_alt_thumbnail_stills_fast_summary_on">現在の設定: 中画質の静止画サムネイルを使用します。\n\n注意: 読み込みは速くなりますが、ライブ配信、公開予定、非常に古い動画は、サムネイルが空白になることがあります。</string>
     <string name="revanced_alt_thumbnail_stills_fast_summary_off">現在の設定: 高画質の静止画サムネイルを使用します。</string>
-    <string name="revanced_alt_thumbnail_stills_time_title">取得する静止画サムネイルの時間</string>
+    <string name="revanced_alt_thumbnail_stills_time_title">取得する静止画サムネイルの位置</string>
     <string name="revanced_alt_thumbnail_stills_time_entry_1">動画の最初</string>
     <string name="revanced_alt_thumbnail_stills_time_entry_2">動画の中間</string>
     <string name="revanced_alt_thumbnail_stills_time_entry_3">動画の最後</string>
@@ -258,8 +260,8 @@ DeArrow の詳細については、ここをタップしてください。"</str
 ・続きを見る"</string>
     <string name="revanced_hide_carousel_shelf_summary_off">以下の欄を非表示にします:\n・関連性が強い\n・ショッピング\n・ニュース速報\n・もう一度聴く\n・もう一度見る\n・他のチャンネルを探す\n・続きを見る</string>
     <string name="revanced_hide_chips_shelf_title">チップ欄を非表示</string>
-    <string name="revanced_hide_chips_shelf_on">フィードに表示される、似ている動画のチップ欄を非表示にします。</string>
-    <string name="revanced_hide_chips_shelf_off">フィードに表示される、似ている動画のチップ欄を非表示にします。</string>
+    <string name="revanced_hide_chips_shelf_on">フィードに表示される似ている動画のチップ欄を非表示にします。</string>
+    <string name="revanced_hide_chips_shelf_off">フィードに表示される似ている動画のチップ欄を非表示にします。</string>
     <string name="revanced_hide_expandable_card_title">展開可能なカードを非表示</string>
     <string name="revanced_hide_expandable_card_summary_on">動画の下にある展開可能なカードを非表示にします。</string>
     <string name="revanced_hide_expandable_card_summary_off">動画の下にある展開可能なカードを非表示にします。</string>
@@ -282,8 +284,8 @@ DeArrow の詳細については、ここをタップしてください。"</str
     <string name="revanced_hide_mix_playlists_summary_on">ミックスリストを非表示にします。</string>
     <string name="revanced_hide_mix_playlists_summary_off">ミックスリストを非表示にします。</string>
     <string name="revanced_hide_movie_shelf_title">映画欄を非表示</string>
-    <string name="revanced_hide_movie_shelf_summary_on">有料の映画、テレビ番組を非表示にします。</string>
-    <string name="revanced_hide_movie_shelf_summary_off">有料の映画、テレビ番組を非表示にします。</string>
+    <string name="revanced_hide_movie_shelf_summary_on">映画やテレビ番組を非表示にします。</string>
+    <string name="revanced_hide_movie_shelf_summary_off">映画やテレビ番組を非表示にします。</string>
     <string name="revanced_hide_notify_me_button_title">[通知を受け取る] ボタンを非表示</string>
     <string name="revanced_hide_notify_me_button_summary_on">配信予定の動画にある [通知を受け取る] ボタンを非表示にします。</string>
     <string name="revanced_hide_notify_me_button_summary_off">配信予定の動画にある [通知を受け取る] ボタンを非表示にします。</string>
@@ -303,8 +305,8 @@ DeArrow の詳細については、ここをタップしてください。"</str
     <string name="revanced_hide_surveys_summary_on">ホームページと登録チャンネルページからアンケート (例: 「上記のおすすめ動画はご自身の好みに合っていると思いますか？」など) を非表示にします。</string>
     <string name="revanced_hide_surveys_summary_off">ホームページと登録チャンネルページからアンケート (例: 「上記のおすすめ動画はご自身の好みに合っていると思いますか？」など) を非表示にします。</string>
     <string name="revanced_hide_ticket_shelf_title">チケット欄を非表示</string>
-    <string name="revanced_hide_ticket_shelf_summary_on">検索結果/関連動画からチケット欄を非表示にします。</string>
-    <string name="revanced_hide_ticket_shelf_summary_off">検索結果/関連動画からチケット欄を非表示にします。</string>
+    <string name="revanced_hide_ticket_shelf_summary_on">検索結果と関連動画からチケット欄を非表示にします。</string>
+    <string name="revanced_hide_ticket_shelf_summary_off">検索結果と関連動画からチケット欄を非表示にします。</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">カテゴリーバー</string>
     <string name="revanced_preference_screen_category_bar_summary">フィード、検索、関連動画からカテゴリバー ([すべて]、[ゲーム]、[音楽] など) を非表示または表示します。</string>
@@ -326,8 +328,8 @@ DeArrow の詳細については、ここをタップしてください。"</str
     <string name="revanced_hide_channel_tab_title">[チャンネル] タブのフィルターを有効化</string>
     <string name="revanced_hide_channel_tab_summary_on">[チャンネル] タブのフィルターを有効にします。</string>
     <string name="revanced_hide_channel_tab_summary_off">[チャンネル] タブのフィルターを有効にします。</string>
-    <string name="revanced_hide_channel_tab_filter_strings_title">チャンネルタブのフィルター</string>
-    <string name="revanced_hide_channel_tab_filter_strings_summary">[登録チャンネル] タブから非表示にしたい項目を入力してください。(改行区切り)</string>
+    <string name="revanced_hide_channel_tab_filter_strings_title">[チャンネル] タブのフィルター</string>
+    <string name="revanced_hide_channel_tab_filter_strings_summary">[登録チャンネル] タブから非表示にする項目を入力してください。(改行区切り)</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"ショート
 再生リスト
 ストア"</string>
@@ -367,8 +369,8 @@ DeArrow の詳細については、ここをタップしてください。"</str
     <string name="revanced_hide_feed_flyout_menu_filter_type_title">フィードのフライアウトメニューのフィルタの種類</string>
     <string name="revanced_hide_feed_flyout_menu_filter_type_summary_on">現在の設定: 設定したキーワードが部分的に一致した場合にメニューを非表示にします。&lt;br&gt;&lt;br&gt;例えば、&lt;br&gt;[キューの最初に追加] &lt;br&gt;メニューを非表示にしたい場合、&lt;b&gt;「キュー」&lt;/b&gt;や&lt;b&gt;「追加」&lt;/b&gt;などをキーワードとして使用できます。</string>
     <string name="revanced_hide_feed_flyout_menu_filter_type_summary_off">現在の設定: 設定したキーワードが完全に一致した場合にメニューを非表示にします。&lt;br&gt;&lt;br&gt;例えば、&lt;b&gt;[キューの最初に追加] &lt;/b&gt;メニューを非表示にしたい場合、&lt;b&gt;「キューの最初に追加」&lt;/b&gt;のみをキーワードとして使用できます。</string>
-    <string name="revanced_hide_feed_flyout_menu_filter_strings_title">フィードのフライアウトメニューのフィルタ</string>
-    <string name="revanced_hide_feed_flyout_menu_filter_strings_summary">フライアウトメニューから非表示にしたいメニューを入力してください。(改行区切り)</string>
+    <string name="revanced_hide_feed_flyout_menu_filter_strings_title">フィードのフライアウトメニューのフィルター</string>
+    <string name="revanced_hide_feed_flyout_menu_filter_strings_summary">フライアウトメニューから非表示にするメニューを入力してください。(改行区切り)</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter -->
     <string name="revanced_preference_screen_video_filter_title">動画フィルター</string>
     <string name="revanced_preference_screen_video_filter_summary">キーワードや再生回数で動画をフィルタリングします。</string>
@@ -579,7 +581,7 @@ DeArrow の詳細については、ここをタップしてください。"</str
     <string name="revanced_hide_account_menu_filter_type_summary_on">現在の設定: 設定したキーワードが部分的に一致した場合にメニューを非表示にします。&lt;br&gt;&lt;br&gt;例えば、&lt;b&gt;[YouTube Premium に登録] &lt;/b&gt;メニューを非表示にしたい場合、&lt;b&gt;「YouTube Premium」&lt;/b&gt;や&lt;b&gt;「Premium に登録」&lt;/b&gt;などをキーワードとして使用できます。</string>
     <string name="revanced_hide_account_menu_filter_type_summary_off">現在の設定: 設定したキーワードが完全に一致した場合にメニューを非表示にします。&lt;br&gt;&lt;br&gt;例えば、&lt;b&gt;[YouTube Premium に登録] &lt;/b&gt;メニューを非表示にしたい場合、&lt;b&gt;「YouTube Premium に登録」&lt;/b&gt;のみをキーワードとして使用できます。</string>
     <string name="revanced_hide_account_menu_filter_strings_title">非表示にするメニューのリスト</string>
-    <string name="revanced_hide_account_menu_filter_strings_summary">[マイページ] タブから非表示にしたい項目を入力してください。(改行区切り)</string>
+    <string name="revanced_hide_account_menu_filter_strings_summary">[マイページ] タブから非表示にする項目を入力してください。(改行区切り)</string>
     <string name="revanced_hide_handle_title">ハンドルを非表示</string>
     <string name="revanced_hide_handle_summary_on">ハンドル (例: @youtubecreators) を非表示にします。</string>
     <string name="revanced_hide_handle_summary_off">ハンドル (例: @youtubecreators) を非表示にします。</string>
@@ -591,7 +593,7 @@ DeArrow の詳細については、ここをタップしてください。"</str
     <string name="revanced_custom_filter_summary_off">カスタムフィルターを有効にします。</string>
     <string name="revanced_custom_filter_strings_title">カスタムフィルター</string>
     <!-- 'Component path builder strings' is the technical name for identifying the Litho UI layout items to hide. This is an advanced feature and most users will never use this. -->
-    <string name="revanced_custom_filter_strings_summary">フィルタリングするコンポーネントパスビルダーの文字列を並べたリストを改行で区切ってフィルタリングできます。</string>
+    <string name="revanced_custom_filter_strings_summary">フィルタリングするコンポーネントパスビルダーの文字列のリストです。(改行区切り)</string>
     <string name="revanced_custom_filter_toast_invalid_syntax">無効なカスタムフィルターです: %s。</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Hook buttons -->
     <string name="revanced_preference_screen_hook_buttons_title">ボタンを置換</string>
@@ -600,9 +602,6 @@ DeArrow の詳細については、ここをタップしてください。"</str
     <string name="revanced_preference_category_download_button">[オフライン] ボタン</string>
     <string name="revanced_override_playlist_download_button_title">再生リストのダウンロードボタンを置換</string>
     <string name="revanced_override_playlist_download_button_summary_on">再生リストの右上にあるダウンロードボタンを押すと外部ダウンローダーが開きます。</string>
-    <string name="revanced_override_playlist_download_button_summary_on_disclaimer">"再生リストの右上にあるダウンロードボタンを押すと、外部ダウンローダーが開きます。
-
-再生リストにダウンロードボタンを表示するには、[アプリのバージョンを偽装] をオンにし、[偽装するバージョン] を v19.28.42 以前に変更してください。"</string>
     <string name="revanced_override_playlist_download_button_summary_off">再生リストの右上にあるダウンロードボタンを押すと外部ダウンローダーが開きます。</string>
     <string name="revanced_override_video_download_button_title">[オフライン] ボタンを置換</string>
     <string name="revanced_override_video_download_button_summary_on">[オフライン] ボタンで外部ダウンローダーを開きます。</string>
@@ -733,8 +732,8 @@ DeArrow の詳細については、ここをタップしてください。"</str
     <string name="revanced_preference_screen_snack_bar_title">スナックバー</string>
     <string name="revanced_preference_screen_snack_bar_summary">スナックバー (画質を変更した時などに下部に表示される白いバー) に関連するコンポーネントを非表示または変更します。</string>
     <string name="revanced_hide_snack_bar_title">スナックバーを非表示</string>
-    <string name="revanced_hide_snack_bar_summary_on">共有からリンクをコピーした際などに画面下部に表示されるポップアップを非表示にします。</string>
-    <string name="revanced_hide_snack_bar_summary_off">共有からリンクをコピーした際などに画面下部に表示されるポップアップを非表示にします。</string>
+    <string name="revanced_hide_snack_bar_summary_on">[共有] からリンクをコピーした際などに画面下部に表示されるポップアップを非表示にします。</string>
+    <string name="revanced_hide_snack_bar_summary_off">[共有] からリンクをコピーした際などに画面下部に表示されるポップアップを非表示にします。</string>
     <string name="revanced_hide_server_side_snack_bar_title">サーバー側のスナックバーを非表示</string>
     <string name="revanced_hide_server_side_snack_bar_summary_on">サーバー側のスナックバーを非表示にします。</string>
     <string name="revanced_hide_server_side_snack_bar_summary_off">サーバー側のスナックバーを非表示にします。</string>
@@ -758,7 +757,7 @@ DeArrow の詳細については、ここをタップしてください。"</str
     <string name="revanced_enable_wide_search_bar_title">幅の広い検索バーを有効化</string>
     <string name="revanced_enable_wide_search_bar_summary_on">検索バーの幅を広くします。</string>
     <string name="revanced_enable_wide_search_bar_summary_off">検索バーの幅を広くします。</string>
-    <string name="revanced_enable_wide_search_bar_with_header_title">ヘッダー付きの幅広い検索バーを有効化</string>
+    <string name="revanced_enable_wide_search_bar_with_header_title">ヘッダー付きの幅の広い検索バーを有効化</string>
     <string name="revanced_enable_wide_search_bar_with_header_summary_on">ヘッダー付きの幅広い検索バーを有効にします。</string>
     <string name="revanced_enable_wide_search_bar_with_header_summary_off">ヘッダー付きの幅広い検索バーを有効にします。</string>
     <string name="revanced_enable_wide_search_bar_in_you_tab_title">[マイページ] タブで幅の広い検索バーを有効化</string>
@@ -799,13 +798,13 @@ DeArrow の詳細については、ここをタップしてください。"</str
     <string name="revanced_replace_toolbar_create_button_title">[作成] ボタンを置換</string>
     <string name="revanced_replace_toolbar_create_button_summary">[作成] ボタンを [設定] ボタンに置き換えます。</string>
     <string name="revanced_replace_toolbar_create_button_type_title">ボタンに割り当てるアクションの種類</string>
-    <string name="revanced_replace_toolbar_create_button_type_summary_on">"タップすると Revanced Extended 設定が開きます。
-長押しすると YouTube 設定が開きます。"</string>
+    <string name="revanced_replace_toolbar_create_button_type_summary_on">"タップすると Revanced Extended の設定が開きます。
+長押しすると YouTube の設定が開きます。"</string>
     <string name="revanced_replace_toolbar_create_button_type_summary_off">"タップすると YouTube の設定が開きます。
-長押しすると Revanced Extended 設定が開きます。"</string>
+長押しすると Revanced Extended の設定が開きます。"</string>
     <!-- PreferenceScreen: Player -->
     <string name="revanced_preference_screen_player_title">プレーヤー</string>
-    <string name="revanced_custom_player_overlay_opacity_title">プレーヤーのオーバーレイのカスタム不透明度</string>
+    <string name="revanced_custom_player_overlay_opacity_title">プレーヤーオーバーレイのカスタム不透明度</string>
     <string name="revanced_custom_player_overlay_opacity_summary">不透明度の値は 0 ~ 100 の間で、0 が透明です。</string>
     <string name="revanced_custom_player_overlay_opacity_invalid_toast">プレーヤーのオーバーレイの不透明度は 0 ~ 100 の間でなければなりません。デフォルト値にリセットします。</string>
     <string name="revanced_disable_auto_switch_mix_playlists_title">ミックスリストの自動切り替えを無効化</string>
@@ -823,21 +822,21 @@ DeArrow の詳細については、ここをタップしてください。"</str
 注意: 
 ・倍速再生オーバーレイを無効にすると、旧バージョンのレイアウトの「スライドしてシーク」動作が復元されます。
 ・この設定は、倍速再生オーバーレイを強制的に有効にするものではありません。"</string>
-    <string name="revanced_speed_overlay_value_title">倍速再生のオーバーレイの値</string>
+    <string name="revanced_speed_overlay_value_title">倍速再生オーバーレイの値</string>
     <string name="revanced_speed_overlay_value_summary">倍速再生オーバーレイの値は 0 ~ 8.0 の間です。</string>
     <string name="revanced_speed_overlay_value_invalid_toast">倍速再生オーバーレイの値は 0 ~ 8.0 の間でなければなりません。デフォルト値にリセットします。</string>
     <string name="revanced_hide_channel_watermark_title">チャンネルの透かしを非表示</string>
     <string name="revanced_hide_channel_watermark_summary_on">全画面表示時に右下に表示されるチャンネルの透かしを非表示にします。</string>
     <string name="revanced_hide_channel_watermark_summary_off">全画面表示時に右下に表示されるチャンネルの透かしを非表示にします。</string>
     <string name="revanced_hide_crowdfunding_box_title">クラウドファンディング欄を非表示</string>
-    <string name="revanced_hide_crowdfunding_box_summary_on">プレーヤーと概要欄の間にあるクラウドファンディングボックスを非表示にします。</string>
-    <string name="revanced_hide_crowdfunding_box_summary_off">プレーヤーと概要欄の間にあるクラウドファンディングボックスを非表示にします。</string>
+    <string name="revanced_hide_crowdfunding_box_summary_on">プレーヤーと概要欄の間にあるクラウドファンディング欄を非表示にします。</string>
+    <string name="revanced_hide_crowdfunding_box_summary_off">プレーヤーと概要欄の間にあるクラウドファンディング欄を非表示にします。</string>
     <string name="revanced_hide_double_tap_overlay_filter_title">ダブルタップオーバーレイフィルタを非表示</string>
     <string name="revanced_hide_double_tap_overlay_filter_summary_on">ダブルタップ時のオーバーレイフィルタを非表示にします。</string>
     <string name="revanced_hide_double_tap_overlay_filter_summary_off">ダブルタップ時のオーバーレイフィルタを非表示にします。</string>
     <string name="revanced_hide_end_screen_cards_title">エンドカードを非表示</string>
-    <string name="revanced_hide_end_screen_cards_summary_on">動画の最後に表示される作成者が追加したエンドカードを非表示にします。</string>
-    <string name="revanced_hide_end_screen_cards_summary_off">動画の最後に表示される作成者が追加したエンドカードを非表示にします。</string>
+    <string name="revanced_hide_end_screen_cards_summary_on">動画の最後に表示されるエンドカードを非表示にします。</string>
+    <string name="revanced_hide_end_screen_cards_summary_off">動画の最後に表示されるエンドカードを非表示にします。</string>
     <string name="revanced_hide_end_screen_suggested_video_title">動画終了時の関連動画オーバーレイを非表示</string>
     <string name="revanced_hide_end_screen_suggested_video_summary_on">"動画の終了画面に表示される関連動画のオーバーレイはプレーヤー画面から非表示になりますが、自動再生がオンになっている場合は次の動画が自動で再生されます。
 
@@ -1245,7 +1244,7 @@ DeArrow の詳細については、ここをタップしてください。"</str
     <string name="revanced_hide_player_collapse_button_summary_on">プレーヤーの最小化ボタンを非表示にします。</string>
     <string name="revanced_hide_player_collapse_button_summary_off">プレーヤーの最小化ボタンを非表示にします。</string>
     <string name="revanced_hide_player_fullscreen_button_title">全画面表示のボタンを非表示</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">全画面表示のボタンを非表示にします。</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"全画面表示のボタンを非表示にします。"</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">全画面表示のボタンを非表示にします。</string>
     <string name="revanced_hide_player_previous_next_button_title">前の動画に戻る/次の動画に進むボタンを非表示</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">前の動画に戻る/次の動画に進むボタンを非表示にします。</string>
@@ -2153,8 +2152,6 @@ YouTube Premium に加入している場合や「GmsCore support」パッチを�
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(認証なし)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
-<small>(非推奨)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(Google アカウントへのログインが必要)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
@@ -2168,7 +2165,6 @@ YouTube Premium に加入している場合や「GmsCore support」パッチを�
 ・[一定音量] は利用できません。
 ・[音声トラックの強制を無効化] は利用できません。
 ・ログインしていない場合やシークレットモードでは、子ども向け動画は再生できない可能性があります。"</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">・ASN/IP 範囲全体がサーバーによってブロックされる可能性があります。</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"・[一定音量] は利用できません。
 ・映画や有料動画は再生できない可能性があります。
 ・ログインしていない場合やシークレットモードでは、子ども向け動画は再生できない可能性があります。"</string>
@@ -2216,44 +2212,7 @@ YouTube Premium に加入している場合や「GmsCore support」パッチを�
 ・AVC (H.264) の最大解像度は 1080p です。
 ・Opus オーディオコーデックは利用できません。
 ・動画の再生時には VP9 や AV1 よりも多くの通信量を消費します。"</string>
-    <string name="revanced_spoof_streaming_data_use_ios_title">iOS クライアントを使用</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_on">"偽装するクライアントの一覧に「iOS」を追加します。
-
-警告: iOS クライアントは非推奨です。使用中に問題が発生した場合は、自己責任で対処してください。"</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_off">偽装するクライアントの一覧に「iOS」を追加します。\n\n警告: iOS クライアントは非推奨です。使用中に問題が発生した場合は、自己責任で対処してください。</string>
-    <string name="revanced_spoof_streaming_data_use_ios_user_dialog_message">"iOS を使用して YouTube API エンドポイントをリクエストする場合、iOS デバイスによって発行された Auth トークンと iOSGuard によって発行された PoToken が必要になります。
-
-つまり、iOS 経由のストリーミングリクエストでは Auth トークンと PoToken の両方が欠落し、サーバーがユーザーをボットと見なして ASN/IP 範囲全体をブロックする可能性があります。
-
-自己責任で使用してください。"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <string name="revanced_preference_category_tv">TV (開発途中)</string>
-    <string name="revanced_spoof_streaming_data_use_tv_title">TV クライアントを使用</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_on">偽装するクライアントの一覧に「TV」を追加します。</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_off">偽装するクライアントの一覧に「TV」を追加します。</string>
-    <string name="revanced_spoof_streaming_data_use_tv_user_dialog_message">"アプリは n-sig パターンの検索やデコードに多くのシステムリソースを使用するため、動画の再生開始が遅くなります。
-
-YouTube サーバーでは n-sig パターンが頻繁に変更されるため、正規表現で n-sig パターンが見つからない場合は再生に失敗する可能性があります。
-
-この機能はまだ開発途中なので、デバッグ目的でのみ使用してください。"</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_title">すべての動画に TV クライアントを使用</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_on">"現在の設定: 動画の種類に関係なく TV クライアントを使用します。
-
-注意: TV クライアントでは一部の動画を再生できません。"</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_off">"現在の設定: 高速再生が必要な一部の動画 (フィードの動画の自動再生、クリップ、ショート) では TV クライアントを使用しません。"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_title">最新の JavaScript を使用</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_on">"難読化解除用の JavaScript を最新の状態に保ちます。
-
-注意: サーバーに大きく依存し、難読化解除の成功または失敗はサーバー上で現在使用されている JavaScript に依存します。"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"難読化解除用の JavaScript を最新の状態に保ちます。\n\n注意: サーバーに大きく依存し、難読化解除の成功または失敗はサーバー上で現在使用されている JavaScript に依存します。"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">V8 JavaScript エンジンを使用</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript をネイティブライブラリで実行します。
-
-SmartTube を搭載。"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript をネイティブライブラリで実行します。
-
-SmartTube を搭載。"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">V8 JavaScript エンジンを使用しない場合、ストリーミング URL の難読化の解除に時間がかかり、動画が 10 秒遅れて開始されます。</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">再生履歴</string>
     <string name="revanced_preference_screen_watch_history_summary">再生履歴に関連する設定を変更します。</string>

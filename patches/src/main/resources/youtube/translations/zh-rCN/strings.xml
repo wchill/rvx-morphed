@@ -886,7 +886,7 @@
     <string name="revanced_hide_player_collapse_button_summary_on">折叠按钮已隐藏</string>
     <string name="revanced_hide_player_collapse_button_summary_off">折叠按钮已显示</string>
     <string name="revanced_hide_player_fullscreen_button_title">隐藏全屏按钮</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">全屏按钮已隐藏</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"全屏按钮已隐藏"</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">全屏按钮已显示</string>
     <string name="revanced_hide_player_previous_next_button_title">隐藏上一个 &amp; 下一个按钮</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">上一个和下一个按钮已隐藏</string>
@@ -1533,7 +1533,7 @@
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">用于获取流媒体数据的客户端已在统计信息中隐藏</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">观看历史</string>
     <string name="revanced_preference_screen_watch_history_summary">更改与观看历史记录相关的设置</string>

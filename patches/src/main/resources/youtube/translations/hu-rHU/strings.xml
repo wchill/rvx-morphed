@@ -611,9 +611,6 @@ Előfordulhat, hogy egyes komponensek nincsenek elrejtve."</string>
     <string name="revanced_preference_category_download_button">Letöltés gomb</string>
     <string name="revanced_override_playlist_download_button_title">Lejátszási lista letöltése gomb felülbírálása</string>
     <string name="revanced_override_playlist_download_button_summary_on">A eredeti lejátszási lista letöltése gomb mindig megjelenik, és a nyilvános lejátszási listákban megnyitja a külső letöltőt.</string>
-    <string name="revanced_override_playlist_download_button_summary_on_disclaimer">"A beépített lejátszási lista letöltése gomb, ha látható, megnyitja a külső letöltőt.
-
-A beépített lejátszási lista letöltése gomb megjelenítéséhez kapcsolja be a „Hamis alkalmazás verziója” opciót, és módosítsa a „Hamis alkalmazás verziójának célja” beállítást „19.28.42” vagy korábbi verzióra."</string>
     <string name="revanced_override_playlist_download_button_summary_off">Az eredeti lejátszási lista letöltése gomb megnyitja a beépített letöltőt, amennyiben megjelenik.</string>
     <string name="revanced_override_video_download_button_title">Videó letöltési gomb felülbírálása</string>
     <string name="revanced_override_video_download_button_summary_on">Az eredeti letöltés gomb megnyitja a külső letöltőt.</string>
@@ -1245,7 +1242,7 @@ Csúsztasson a kibontáshoz vagy bezáráshoz."</string>
     <string name="revanced_hide_player_collapse_button_summary_on">Az összecsukás gomb el van rejtve.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">Az összecsukás gomb látható.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Teljes képernyős gomb elrejtése</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">A teljes képernyős gomb el van rejtve.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"A teljes képernyős gomb el van rejtve."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">A teljes képernyős gomb látható.</string>
     <string name="revanced_hide_player_previous_next_button_title">Előző és következő gombok elrejtése</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">A gombok el vannak rejtve.</string>
@@ -2151,7 +2148,6 @@ Kattintson a folytatás gombra és kapcsolja ki az akkumulátor optimalizáláso
     <string name="revanced_spoof_streaming_data_summary_off">"Az adatfolyam nincs meghamisítva. Lehet, hogy a videó lejátszás nem működik."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">A beállítás kikapcsolása videólejátszási problémákat okozhat.</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Hamisítás mellékhatásai</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• A kiszolgáló teljes ASN/IP-tartományt blokkolhat.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Megjelenítés a statisztikában kockáknak</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Az adatfolyam lekérésére használt kliens a statisztikában kockáknak látható.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Az adatfolyam lekérésére használt kliens a statisztikában kockáknak nem látható.</string>
@@ -2182,34 +2178,7 @@ Ez a funkció még fejlesztés alatt áll, így a szerveroldali változások mia
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Ennek engedélyezése javíthatja az akkumulátor élettartamát és javíthatja a lejátszás akadozását.
 
 Az AVC maximális felbontása 1080p, az Opus hangkodek nem érhető el, és a videolejátszás több adatforgalmat igényel, mint a VP9 vagy az AV1."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_title">iOS kliens használata</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_on">"iOS kliens hozzáadva az elérhető kliensekhez.
-
-FIGYELMEZTETÉS: Az iOS kliens elavult. A használat során felmerülő problémákat a saját felelősségére vállalja."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_off">Az iOS kliens nem lett hozzáadva az elérhető kliensekhez.</string>
-    <string name="revanced_spoof_streaming_data_use_ios_user_dialog_message">"Ha iOS-en keresztül YouTube API-végpontokat kér, szüksége lesz az iOS-eszköz által kiadott hitelesítési tokenekre és az iOSGuard által kiadott PoTokenekre.
-
-Ez azt jelenti, hogy az iOS-en keresztüli streaming kérésekből hiányozni fognak az Auth tokenek és a PoTokenek, és a szerver botnak tekintheti a felhasználót, és blokkolhatja a teljes ASN/IP tartományt.
-
-SAJÁT FELELŐSSÉGRE HASZNÁLJA!"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <string name="revanced_spoof_streaming_data_use_tv_title">TV kliens használata</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_on">A TV kliens hozzá lett adva az elérhető kliensekhez.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_off">A TV kliens nem lett hozzáadva az elérhető kliensekhez.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_user_dialog_message">"Az alkalmazás több rendszererőforrást használ az n-sig minta megtalálásához vagy dekódolásához, és a videó lassabban indul el.
-
-Az n-sig minta elég gyakran változik a YouTube szerverein, és a lejátszás sikertelen lehet, ha a reguláris kifejezés nem találja meg az n-sig mintát.
-
-Ez a funkció még fejlesztés alatt van, ezért kérjük, csak hibakeresési célokra használja."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_title">TV kliens használata az összes videóhoz</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_on">"A TV kliens a videó típusától függetlenül használatban van.
-
-• A TV kliens továbbra sem tud lejátszani bizonyos videókat."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_off">"A TV kliens nem használható bizonyos, gyors lejátszást igénylő videóknál:
-
-• Automatikus lejátszás a hírfolyamban
-• Klipek
-• Shortok"</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Megtekintési előzmények</string>
     <string name="revanced_preference_screen_watch_history_summary">A megtekintési előzményekhez kapcsolódó beállítások módosítása.</string>

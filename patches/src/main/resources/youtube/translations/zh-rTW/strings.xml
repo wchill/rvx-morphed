@@ -617,9 +617,6 @@
     <string name="revanced_preference_category_download_button">下載按鈕</string>
     <string name="revanced_override_playlist_download_button_title">覆蓋播放清單下載按鈕</string>
     <string name="revanced_override_playlist_download_button_summary_on">原生播放清單下載按鈕可開啟您的外部下載器。</string>
-    <string name="revanced_override_playlist_download_button_summary_on_disclaimer">"如果顯示原生播放清單下載按鈕，則會開啟您的外部下載器。
-
-若要顯示原生播放清單下載按鈕，請啟用'偽裝應用程式版本'，並將'偽裝應用程式目標版本'變更為'19.28.42'或更早版本。"</string>
     <string name="revanced_override_playlist_download_button_summary_off">原生播放清單下載按鈕可開啟本機應用程式內下載器。</string>
     <string name="revanced_override_video_download_button_title">覆蓋影片下載按鈕</string>
     <string name="revanced_override_video_download_button_summary_on">原生影片下載按鈕可開啟你的外部下載器。</string>
@@ -1262,7 +1259,7 @@
     <string name="revanced_hide_player_collapse_button_summary_on">折疊按鈕已隱藏</string>
     <string name="revanced_hide_player_collapse_button_summary_off">折疊按鈕已顯示</string>
     <string name="revanced_hide_player_fullscreen_button_title">隱藏全螢幕按鈕</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">全螢幕按鈕已隱藏</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"全螢幕按鈕已隱藏"</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">全螢幕按鈕已顯示</string>
     <string name="revanced_hide_player_previous_next_button_title">隱藏上一個和下一個按鈕</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">上一個和下一個按鈕已隱藏</string>
@@ -2173,8 +2170,6 @@
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(無授權)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
-<small>(已棄用)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS 電視
 <small>(需要登入)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">"電視
@@ -2188,7 +2183,6 @@
 • 無法獲得穩定的音量。
 • 無法停用強制自動音軌。
 • 登出或處於隱身模式時 兒童影片可能無法播放。"</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• 整個 ASN/IP 範圍可能會被伺服器封鎖。</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• 無法提供穩定音量。
 • 電影或付費影片可能無法播放。
 • 未登入或處於隱身模式時 兒童影片可能無法播放。"</string>
@@ -2233,50 +2227,7 @@
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"啟用此功能可能會延長電池壽命並修復播放卡頓問題。
 
 AVC 的最大解析度為 1080p，Opus 音訊編解碼器不可用，影片播放將使用比 VP9 或 AV1 更多的網路資料。"</string>
-    <string name="revanced_spoof_streaming_data_use_ios_title">使用 iOS 用戶端</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_on">"iOS 用戶端已新增至可用用戶端。
-
-警告：iOS 用戶端已棄用。使用過程中出現的任何問題均由您自行承擔風險。"</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_off">iOS 用戶端未新增至可用用戶端。</string>
-    <string name="revanced_spoof_streaming_data_use_ios_user_dialog_message">"使用 iOS 請求 YouTube API 端點時，您需要 iOS 裝置頒發的 Auth 令牌和 iOSGuard 頒發的 PoToken。
-
-這意味著透過 iOS 發出的串流媒體請求將同時缺少 Auth 令牌和 PoToken，伺服器可能會將使用者視為機器人並阻止整個 ASN/IP 範圍。
-
-使用風險自負！"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <string name="revanced_preference_category_tv">電視 (開發中)</string>
-    <string name="revanced_spoof_streaming_data_use_tv_title">使用電視客戶端</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_on">電視用戶端已新增至可用用戶端。</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_off">電視用戶端未新增至可用用戶端。</string>
-    <string name="revanced_spoof_streaming_data_use_tv_user_dialog_message">"應用程式會佔用更多系統資源來尋找或解碼 n-sig 模式，導致影片啟動速度變慢。
-
-YouTube 伺服器上的 n-sig 模式變化頻繁，如果正規表示式無法找到 n-sig 模式，播放可能會失敗。
-
-此功能尚在開發中，請僅用於調試目的。"</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_title">使用電視用戶端觀看所有影片</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_on">"無論影片類型為何，電視用戶端均可使用。
-
-• 電視用戶端仍無法播放某些影片。"</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_off">"某些需要快速播放的影片無法使用 TV 用戶端：
-
-• 動態中自動播放
-• 短片
-• Shotrs 短片"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_title">使用最新的 JavaScript</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_on">"用於反混淆的 JavaScript 會保持最新狀態。
-
-• 它高度依賴伺服器，反混淆的成功或失敗取決於伺服器上目前使用的 JavaScript。"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"用於反混淆的 JavaScript 未保持最新。
-
-• 雖然使用了可成功反混淆的 JavaScript，但它仍然在一定程度上依賴伺服器。"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">使用 V8 JavaScript 引擎</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript 在原生程式庫中運行。
-
-• 由 SmartTube 提供支援。"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript 無法在原生程式庫中運作。
-
-• 由 JavaTube 提供支援。"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">如果不使用 V8 JavaScript 引擎，則需要更多時間來對串流媒體 URL 進行反混淆，導致影片開始時間延遲 10 秒。</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">觀看歷史記錄</string>
     <string name="revanced_preference_screen_watch_history_summary">變更與觀看歷史記錄相關的設定。</string>

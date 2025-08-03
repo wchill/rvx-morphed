@@ -1182,7 +1182,7 @@ Glissez le minilecteur pour agrandir ou fermer."</string>
     <string name="revanced_hide_player_collapse_button_summary_on">Le bouton \'Réduire\' est masqué.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">Le bouton \'Réduire\' est affiché.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Masquer le bouton \'Plein écran\'</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">Le bouton \'Plein écran\' est masqué.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"Le bouton 'Plein écran' est masqué."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">Le bouton \'Plein écran\' est affiché.</string>
     <string name="revanced_hide_player_previous_next_button_title">Masquer les boutons \'Précédent &amp; Suivant\'</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">Les boutons sont masqués.</string>
@@ -2067,7 +2067,6 @@ Cliquez sur le bouton Continuer et autorisez les modifications d'optimisations."
     <string name="revanced_spoof_streaming_data_summary_off">"Les données de lecture en direct ne sont pas falsifiées. La lecture vidéo peut ne pas fonctionner."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Désactiver ce paramètre peut entraîner des problèmes de lecture vidéo.</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Effets inconnus de la falsification</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Des plages entières d\'ASN/adresses IP peuvent être bloquées par le serveur.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Afficher dans \'Statistiques pour les nerds\'</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Le client utilisé pour récupérer les données de lecture en direct est affiché dans \'Statistiques pour les nerds\'.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Le client utilisé pour récupérer les données de lecture en direct est masqué dans \'Statistiques pour les nerds\'.</string>
@@ -2081,7 +2080,7 @@ Cliquez sur le bouton Continuer et autorisez les modifications d'optimisations."
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Activer ceci peut améliorer la durée de vie de la batterie et résoudre les problèmes de lecture saccadée.
 
 AVC a une résolution maximale de 1080p, le codec audio Opus n'est pas disponible et la lecture vidéo utilisera plus de données internet que VP9 ou AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Historique de visionnage</string>
     <string name="revanced_preference_screen_watch_history_summary">Modifie les paramètres liés à l\'historique de visionnage.</string>

@@ -24,6 +24,7 @@
     <string name="revanced_extended_settings_search_no_results_title">\'%s\'에 대한 검색 결과가 없습니다.</string>
     <string name="revanced_extended_settings_search_no_results_summary">다른 키워드를 검색해 보세요.</string>
     <string name="revanced_extended_settings_search_remove_message">검색 기록에서 삭제하시겠습니까?</string>
+    <string name="revanced_dismiss_player_not_available_toast">동영상 ID를 사용할 수 없습니다. 동영상을 수동으로 다시 재생해 주세요.</string>
     <string name="revanced_playback_speed_normal">일반</string>
     <string name="revanced_external_downloader_package_name_video_title">동영상 외부 다운로더 앱 패키지명</string>
     <string name="revanced_external_downloader_package_name_video_summary">NewPipe 또는 YTDLnis와 같은 설치된 외부 다운로더 앱 패키지명을 설정하세요.</string>
@@ -589,6 +590,16 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - 이전 재생목록 헤더로 복원합니다.</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - 이전 동영상 재생 속도 구성요소 패널을 복원합니다.</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">변경할 앱 버전이 잘못되었습니다: %s</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_title">\'앱 버전 변경하기\' 부작용 수정하기</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_summary_on">"'재생' 설정 대신에 ‘자동재생’ 설정이 사용됩니다."</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_summary_off">\'자동재생\' 설정 대신에 ‘재생’ 설정이 사용됩니다</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_user_dialog_message">"앱 버전이 한 번이라도 19.30 이전 버전으로 변경된 경우 '재생' 설정이 깨질 수 있습니다.
+
+이는 앱이 서버로부터 어떤 응답을 받는지에 따라 달라집니다.
+
+'재생' 설정이 깨지면 이 설정을 활성화하면 문제가 해결될 수 있습니다.
+
+이 설정을 활성화하거나 비활성화한 후에도 '재생' 설정이 여전히 깨지는 경우에는 앱 데이터를 삭제해야 합니다."</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">계정 메뉴</string>
     <string name="revanced_preference_screen_account_menu_summary">계정 메뉴 및 내 페이지에서 구성요소를 숨기거나 표시할 수 있습니다.</string>
@@ -620,9 +631,10 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_preference_category_download_button">오프라인 저장 버튼</string>
     <string name="revanced_override_playlist_download_button_title">재생목록 오프라인 저장 버튼 재정의하기</string>
     <string name="revanced_override_playlist_download_button_summary_on">기본 재생목록 오프라인 저장 버튼이 항상 표시되어 있으며, 공개 재생목록에서는 그 버튼으로 외부 다운로더를 실행할 수 있습니다.</string>
-    <string name="revanced_override_playlist_download_button_summary_on_disclaimer">"기본 재생목록 오프라인 저장 버튼이 표시되어 있으면, 그 버튼으로 외부 다운로더를 실행할 수 있습니다.
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer_1">기본 재생목록 오프라인 저장 버튼이 표시되어 있으면, 그 버튼으로 외부 다운로더가 실행할 수 있습니다.</string>
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer_2">"기본 재생목록 오프라인 저장 버튼이 표시되어 있으면, 그 버튼으로 외부 다운로더가 실행할 수 있습니다.
 
-기본 재생목록 오프라인 저장 버튼을 표시하려면 ‘앱 버전 변경하기'를 활성화한 후에 '변경할 앱 버전'을 '19.28.42’ 이하로 선택하세요."</string>
+기본 재생목록 오프라인 버튼을 표시하려면 ‘앱 버전 변경하기'를 활성화하고, '변경할 앱 버전'을 '19.28.42’ 이하로 변경하세요."</string>
     <string name="revanced_override_playlist_download_button_summary_off">기본 재생목록 오프라인 저장 버튼이 표시되어 있으면, 그 버튼으로 기본 다운로더를 실행할 수 있습니다.</string>
     <string name="revanced_override_video_download_button_title">동영상 오프라인 저장 버튼 재정의하기</string>
     <string name="revanced_override_video_download_button_summary_on">기본 동영상 오프라인 저장 버튼으로 외부 다운로더를 실행할 수 있습니다.</string>
@@ -809,6 +821,9 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_hide_voice_search_button_title">음성 검색 버튼 숨기기</string>
     <string name="revanced_hide_voice_search_button_summary_on">음성 검색 버튼이 숨겨집니다.</string>
     <string name="revanced_hide_voice_search_button_summary_off">음성 검색 버튼이 표시됩니다.</string>
+    <string name="revanced_hide_you_may_like_section_title">추천 콘텐츠 섹션 숨기기</string>
+    <string name="revanced_hide_you_may_like_section_summary_on">추천 콘텐츠 섹션이 숨겨집니다.</string>
+    <string name="revanced_hide_you_may_like_section_summary_off">추천 콘텐츠 섹션이 표시됩니다.</string>
     <string name="revanced_hide_youtube_doodles_title">YouTube Doodles 숨기기</string>
     <string name="revanced_hide_youtube_doodles_summary_on">YouTube Doodles가 숨겨집니다.\n• Doodles: 기념일 로고 헤더</string>
     <string name="revanced_hide_youtube_doodles_summary_off">YouTube Doodles가 표시됩니다.\n• Doodles: 기념일 로고 헤더</string>
@@ -825,7 +840,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <!-- PreferenceScreen: Player -->
     <string name="revanced_preference_screen_player_title">플레이어</string>
     <string name="revanced_custom_player_overlay_opacity_title">사용자 정의 플레이어 오버레이 불투명도</string>
-    <string name="revanced_custom_player_overlay_opacity_summary">불투명도 값은 0-100 사이이며, 0은 투명입니다.</string>
+    <string name="revanced_custom_player_overlay_opacity_summary">불투명도 값을 0-100 사이에서 지정할 수 있습니다. (투명: 0)</string>
     <string name="revanced_custom_player_overlay_opacity_invalid_toast">플레이어 오버레이 불투명도 값은 0-100 사이어야 합니다.</string>
     <string name="revanced_disable_auto_switch_mix_playlists_title">믹스 재생목록 자동전환 비활성화하기</string>
     <string name="revanced_disable_auto_switch_mix_playlists_summary_on">믹스 재생목록 자동전환을 비활성화합니다.</string>
@@ -1249,7 +1264,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_miniplayer_width_dip_summary">화면 크기 초기값을 지정할 수 있습니다. (픽셀)</string>
     <string name="revanced_miniplayer_width_dip_invalid_toast">픽셀 크기는 %1$s-%2$s 사이어야 합니다.</string>
     <string name="revanced_miniplayer_opacity_title">미니 플레이어 오버레이 불투명도</string>
-    <string name="revanced_miniplayer_opacity_summary">불투명도 값은 0-100 사이이며, 0은 투명입니다.</string>
+    <string name="revanced_miniplayer_opacity_summary">불투명도 값을 0-100 사이에서 지정할 수 있습니다. (투명: 0)</string>
     <string name="revanced_miniplayer_opacity_invalid_toast">미니 플레이어 오버레이 불투명도 값은 0-100 사이어야 합니다.</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Player buttons -->
     <string name="revanced_preference_screen_player_buttons_title">플레이어 버튼</string>
@@ -1267,7 +1282,10 @@ DeArrow에 대해 자세히 알아보려면 여기를 누르세요."</string>
     <string name="revanced_hide_player_collapse_button_summary_on">플레이어 접기 버튼이 숨겨집니다.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">플레이어 접기 버튼이 표시됩니다.</string>
     <string name="revanced_hide_player_fullscreen_button_title">전체 화면 버튼 숨기기</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">전체 화면 버튼이 숨겨집니다.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"전체 화면 버튼이 숨겨집니다.
+
+제한 사항:
+• 동영상이 끝나면 모든 오버레이 버튼이 숨겨질 수 있습니다."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">전체 화면 버튼이 표시됩니다.</string>
     <string name="revanced_hide_player_previous_next_button_title">이전 &amp; 다음 동영상 버튼 숨기기</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">이전 &amp; 다음 동영상 버튼이 숨겨집니다.</string>
@@ -2179,10 +2197,10 @@ YouTube Premium 사용자이거나 ‘GmsCore support’ 패치가 제외된 경
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(인증 없음)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
-<small>(폐기 예정)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(로그인이 요구됨)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
+<small>(개발 중)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(개발 중)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV Embedded
@@ -2194,13 +2212,51 @@ YouTube Premium 사용자이거나 ‘GmsCore support’ 패치가 제외된 경
 • 안정적인 볼륨을 사용할 수 없습니다.
 • 자동 오디오 트랙을 비활성화할 수 없습니다.
 • 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• 서버에서 전체 ASNs/IP 범위가 차단될 수 있습니다.</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• 안정적인 볼륨을 사용할 수 없습니다.
 • 영화 또는 유료 동영상이 재생되지 않을 수 있습니다.
 • 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• 난독 해독에 실패하면 재생이 실패할 수 있습니다.
+    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• 오디오 트랙 메뉴가 표시되지 않습니다.
+• 자동 오디오 트랙을 비활성화할 수 없습니다.
+• 복호화에 실패하면 재생이 실패할 수 있습니다.
 • 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우 동영상 다시 로드 버튼을 눌러야 합니다.
 • 동영상이 늦게 시작될 수 있습니다."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"• 복호화에 실패하면 재생이 실패할 수 있습니다.
+• 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우 동영상 다시 로드 버튼을 눌러야 합니다.
+• 동영상이 늦게 시작될 수 있습니다."</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">동영상 화질 우선순위 지정하기</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">동영상 화질이 우선시됩니다.</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_off">동영상 코덱이 우선시됩니다.</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_user_dialog_message">"일부 동영상에는 다음과 같은 동영상 화질 및 코덱이 있습니다:
+
+• 1080p AVC
+• 720p AVC
+• 360p VP9
+
+기기가 VP9을 지원하는 경우에는 ‘1080p AVC’ 및 '720p AVC'는 무시됩니다.
+
+즉, ‘360p VP9'가 최고 화질로 사용되며 '1080p AVC’ 및 '720p AVC'는 동영상 화질 메뉴 구성요소에는 표시되지 않습니다.
+
+이는 Android YouTube 앱의 의도된 동작이며, 일부 동영상에서 동영상 화질 메뉴 구성요소를 사용할 수 없었던 이유입니다.
+
+VP9은 AVC보다 고급 코덱이지만, 일부 사용자는 '360p VP9'보다 '1080p AVC'를 선호할 수 있습니다.
+
+이 설정을 활성화하면 동영상 코덱에 관계없이 서버 응답에서 사용 가능한 가장 높은 동영상 화질이 사용됩니다.
+
+예시 1:
+
+• 1080p AVC
+• 720p AVC
+• 360p VP9
+
+→ 1080p AVC가 사용됩니다.
+
+예시 2:
+
+• 1080p AVC
+• 1080p VP9
+• 720p VP9
+
+→ 1080p VP9가 사용됩니다."</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_title">동영상 다시 로드 버튼 표시하기</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">동영상 다시 로드 버튼이 표시됩니다.</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">동영상 다시 로드 버튼이 숨겨집니다.</string>
@@ -2239,51 +2295,32 @@ YouTube Premium 사용자이거나 ‘GmsCore support’ 패치가 제외된 경
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"이 설정를 활성화하면 배터리 수명이 향상되고, 동영상 재생 끊김 문제가 해결될 수 있습니다.
 
 AVC의 최대 화질 값은 1080p이고, OPUS 코덱을 사용불가 및 HDR 동영상을 재생할 수 없으며, 동영상을 재생했을 경우에는 VP9 또는 AV1보다 더 많은 모바일 데이터를 사용되오니 주의하세요."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_title">iOS 클라이언트 사용하기</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_on">"사용 가능한 클라이언트에 iOS 클라이언트가 추가되었습니다.
-
-경고: 
-• iOS 클라이언트는 폐기될 예정입니다. 사용 중 발생하는 모든 문제는 사용자의 책임입니다."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_off">사용 가능한 클라이언트에 iOS 클라이언트가 추가되지 않습니다.</string>
-    <string name="revanced_spoof_streaming_data_use_ios_user_dialog_message">"iOS를 사용하여 YouTube API 엔드포인트를 요청할 때는 iOS 기기에서 발급된 Auth Token과 iOSGuard에 의해 발급된 PoTokens가 필요합니다.
-
-즉, iOS를 통한 스트리밍 요청에는 Auth Token과 PoTokens가 모두 누락되며, 서버는 사용자를 봇으로 간주하여 전체 ASN/IP 범위를 차단할 수 있습니다.
-
-당신의 위험을 감수하고 사용하세요!"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <string name="revanced_preference_category_tv">TV (개발 중)</string>
-    <string name="revanced_spoof_streaming_data_use_tv_title">TV 클라이언트 사용하기</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_on">사용 가능한 클라이언트에 TV 클라이언트가 추가됩니다.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_off">사용 가능한 클라이언트에 TV 클라이언트가 추가되지 않습니다.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_user_dialog_message">"앱이 n-sig 패턴을 찾거나 디코딩하는 데 더 많은 시스템 리소스를 사용하며 동영상이 더 느리게 시작됩니다.
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <string name="revanced_preference_category_js">JavaScript (개발 중)</string>
+    <string name="revanced_spoof_streaming_data_use_js_title">JavaScript 클라이언트 사용하기</string>
+    <string name="revanced_spoof_streaming_data_use_js_summary_on">사용 가능한 클라이언트에 JavaScript 클라이언트가 추가됩니다.</string>
+    <string name="revanced_spoof_streaming_data_use_js_summary_off">사용 가능한 클라이언트에 JavaScript 클라이언트가 추가되지 않습니다.</string>
+    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"앱이 n-sig 패턴을 찾거나 디코딩하는 데 더 많은 시스템 리소스를 사용하며 동영상이 더 느리게 시작됩니다.
 
 n-sig 패턴은 YouTube 서버에서 자주 변경되며, 정규식이 n-sig 패턴을 찾지 못하면 재생이 실패할 수 있습니다.
 
 이 기능은 아직 개발 중이므로 디버깅 목적으로만 사용하시기 바랍니다."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_title">모든 동영상에 TV 클라이언트 사용하기</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_on">"TV 클라이언트가 동영상 유형에 관계없이 사용됩니다.
+    <string name="revanced_spoof_streaming_data_use_js_all_title">모든 동영상에 JavaScript 클라이언트 사용하기</string>
+    <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"JavaScript 클라이언트가 동영상 유형에 관계없이 사용됩니다.
 
-• TV 클라이언트가 여전히 일부 동영상을 재생할 수 없습니다."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_off">"TV 클라이언트가 빠른 재생이 필요한 일부 동영상에는 사용되지 않습니다:
+• TV 클라이언트에서 여전히 일부 동영상을 재생할 수 없습니다."</string>
+    <string name="revanced_spoof_streaming_data_use_js_all_summary_off">"JavaScript 클라이언트가 빠른 재생이 필요한 일부 동영상에는 사용되지 않습니다:
 
 • 피드에서 자동재생
 • 클립
 • Shorts"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_title">최신 JavaScript 사용하기</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_on">"난독화 해제를 위한 JavaScript는 최신 상태로 유지됩니다.
+    <string name="revanced_spoof_streaming_data_use_latest_js_title">최신 JavaScript 사용하기</string>
+    <string name="revanced_spoof_streaming_data_use_latest_js_summary_on">"복호화를 위한 JavaScript가 최신 상태로 유지됩니다.
 
-• 이는 서버에 따라 크게 달라지며, 난독 해제의 성공 여부는 현재 서버에서 사용되는 JavaScript에 따라 달라집니다."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"난독 해제를 위한 자바스크립트가 최신 상태로 유지되지 않습니다.
+• 이는 서버에 따라 크게 달라지며, 복호화의 성공 여부는 현재 서버에서 사용되는 JavaScript에 따라 달라집니다."</string>
+    <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"복호화를 위한 JavaScript가 최신 상태로 유지되지 않습니다.
 
-• 난독 해독에 성공한 자바스크립트가 사용되지만 여전히 서버에 따라 다소 달라집니다."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">V8 JavaScript 엔진 사용하기</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript를 기본 라이브러리에서 실행합니다.
-
-• SmartTube에 의해 제공됩니다."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript를 기본 라이브러리에서 실행하지 않습니다.
-
-• JavaTube에 의해 제공됩니다."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">V8 JavaScript 엔진을 사용하지 않는 경우에는 스트리밍 URL의 난독화를 해제하는 데 시간이 더 걸리므로 동영상이 10초 늦게 시작될 수 있습니다.</string>
+• 복호화에 성공한 JavaScript가 사용되지만 여전히 서버에 따라 다소 달라질 수 있습니다."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">시청 기록</string>
     <string name="revanced_preference_screen_watch_history_summary">시청 기록과 관련된 설정을 변경할 수 있습니다.</string>

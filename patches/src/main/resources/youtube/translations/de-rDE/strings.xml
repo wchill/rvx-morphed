@@ -1117,7 +1117,7 @@ Wischen zum erweitern oder schließen."</string>
     <string name="revanced_hide_player_collapse_button_summary_on">Schaltfläche \"Ausklappen\" wird ausgeblendet.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">Schaltfläche \"Ausklappen\" wird angezeigt.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Vollbild-Schaltfläche ausblenden</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">Vollbild-Schaltfläche wird ausgeblendet.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"Vollbild-Schaltfläche wird ausgeblendet."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">Vollbild-Schaltfläche wird angezeigt.</string>
     <string name="revanced_hide_player_previous_next_button_title">Hide previous &amp; next button</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">Buttons are hidden.</string>
@@ -1891,7 +1891,6 @@ Drücke Weiter und deaktiviere Akku-Optimierungen."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Streaming-Daten sind nicht gefälscht. Videowiedergabe funktioniert möglicherweise nicht."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Das Deaktivieren dieser Einstellung kann zu Videowiedergabeproblemen führen.</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Nebenwirkungen des Spoofings</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Ganze ASNs/IP-Bereiche können vom Server blockiert werden.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Zeigt Statistiken für Nerds</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Der Client zum Abrufen von Streaming-Daten wird in Statistiken für Nerds angezeigt.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Client zum Abrufen von Streaming-Daten wird in Statistiken für Nerds versteckt.</string>
@@ -1904,7 +1903,7 @@ Drücke Weiter und deaktiviere Akku-Optimierungen."</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Aktivieren Sie dies, um die Akkulaufzeit zu verbessern und Ruckeln bei der Wiedergabe zu beheben.
 
 AVC hat eine maximale Auflösung von 1080p, Opus-Audiocodec ist nicht verfügbar und die Videowiedergabe verbraucht mehr Internetdaten als VP9 oder AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Historie ansehen</string>
     <string name="revanced_preference_screen_watch_history_summary">Einstellungen im Zusammenhang mit dem Beobachtungsverlauf ändern.</string>

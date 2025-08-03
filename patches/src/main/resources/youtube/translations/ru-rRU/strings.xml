@@ -628,9 +628,6 @@ Shorts
     <string name="revanced_preference_category_download_button">Кнопка \"Скачать\"</string>
     <string name="revanced_override_playlist_download_button_title">Действие кнопки \"Скачать\" для плейлиста</string>
     <string name="revanced_override_playlist_download_button_summary_on">Кнопка \"Скачать\" для плейлиста, использует внешний загрузчик.</string>
-    <string name="revanced_override_playlist_download_button_summary_on_disclaimer">"Кнопка загрузки плейлиста, если показано, откроет внешний загрузчик.
-
-Для показа обычной кнопки, включите 'Подмена версии' и измените 'Версия подмены' на '19.28.42' или раньше."</string>
     <string name="revanced_override_playlist_download_button_summary_off">Кнопка \"Скачать\" для плейлиста, использует внутренний загрузчик.</string>
     <string name="revanced_override_video_download_button_title">Действие кнопки \"Скачать\" для видео</string>
     <string name="revanced_override_video_download_button_summary_on">Кнопка \"Скачать\" открывает внешний загрузчик.</string>
@@ -1276,7 +1273,7 @@ Shorts
     <string name="revanced_hide_player_collapse_button_summary_on">Кнопка \"Свернуть\" скрыта.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">Кнопка \"Свернуть\" отображена.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Кнопка полноэкранного режима</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">Кнопка полноэкранного режима скрыта.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"Кнопка полноэкранного режима скрыта."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">Кнопка полноэкранного режима отображена.</string>
     <string name="revanced_hide_player_previous_next_button_title">Кнопки предыдущего и следующего видео</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">Кнопки скрыты.</string>
@@ -2191,10 +2188,10 @@ Shorts
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(Без авторизац.)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
-<small>(Устаревшая)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(Необходим вход)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web
+<small>(В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Встроенный TV
@@ -2206,7 +2203,6 @@ Shorts
 • Стабильная громкость недоступна.
 • Отключить принудительные авто звуковые дорожки недоступна.
 • Детские видео могут не работать в режиме инкогнито или выхода."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Целые диапазоны ASN/IP могут блокироваться сервером.</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Стабильная громкость недоступна.
 • Фильмы или платные видео могут не работать.
 • Детские видео могут не работать при выходе из системы или в режиме инкогнито."</string>
@@ -2255,53 +2251,8 @@ Shorts
 - устранить прерывания при воспроизведении.
 
 Максимальное разрешение AVC - 1080p. Кодек Opus недоступен. Потребление трафика больше, чем при VP9 или AV1."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_title">Клиент iOS</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_on">"Клиент iOS доступен.
-
-ПРЕДУПРЕЖДЕНИЕ:
-Клиент iOS устаревший! Любые, возникающие, проблемы решайте сами или не используйте его."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_off">Клиент iOS не доступен.</string>
-    <string name="revanced_spoof_streaming_data_use_ios_user_dialog_message">"При запросе конечных точек YouTube API с помощью iOS требуются токены Auth, от устройства iOS, и токены PoToken, от iOSGuard.
-
-При подмене через клиент iOS не будет ни токенов Auth, ни токенов PoToken, и сервер может считать пользователя ботом и заблокировать целый диапазон ASN/IP.
-
-ИСПОЛЬЗУЙТЕ НА СВОЙ СТРАХ И РИСК!"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <string name="revanced_preference_category_tv">TV (В разработке)</string>
-    <string name="revanced_spoof_streaming_data_use_tv_title">Клиент TV</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_on">Клиент TV доступен.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_off">Клиент TV не доступен.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_user_dialog_message">"Используется больше ресурсов для обработки шаблона n-sig, и видео запускается медленнее.
-
-Шаблон n-sig часто меняется на серверах YouTube, и просмотр может быть прерван, если регулярное выражение не найдет шаблон n-sig.
-
-Функция все еще в разработке, поэтому используйте её только в целях отладки."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_title">Клиент TV для всех видео</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_on">"Клиент TV используется, принудительно, для всех типов видео.
-
-• Некоторые видео будут не доступны."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_off">"Клиент TV не используется для видео, требующих быстрого просмотра:
-
-• Автозапуск в ленте
-• Клипы
-• Shorts"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_title">Использовать актуальный JavaScript</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_on">"Включено. JavaScript для \"Запутывания\" хранится в актуальном состоянии.
-
-• Если \"Запутывание\" успешно, не будет отсутствующих кодеков или качества видео.
-• Очень зависит от сервера, а успех или сбой \"Запутывания\" зависит сервера JavaScript."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"Отключено. JavaScript для \"Запутывания\" не в актуальном состоянии.
-
-• Даже если \"Запутывание\" успешно, могут отсутствовать качества видео или кодеки.
-• Используется успешный JavaScript \"Запутывания\", но он все еще зависит от сервера."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">Использовать V8 JavaScript</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript работает в нативных библиотеках.
-
-• Работает на SmartTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript не работает в нативных библиотеках.
-
-• Работает на JavaTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">Если JavaScript V8 не используется, то на деобфускацию URL-адреса потоковой передачи уходит больше времени, из-за чего видео запускается на 10 секунд позже.</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <string name="revanced_preference_category_js">JavaScript (В разработке)</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">История просмотра</string>
     <string name="revanced_preference_screen_watch_history_summary">Изменить настройки истории просмотра.</string>

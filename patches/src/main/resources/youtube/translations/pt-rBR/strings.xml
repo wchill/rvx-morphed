@@ -1209,7 +1209,7 @@ Deslize para expandir ou fechar."</string>
     <string name="revanced_hide_player_collapse_button_summary_on">O botão minimizar está oculto.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">O botão minimizar será exibido.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Ocultar botão de tela cheia</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">O botão de tela cheia está oculto.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"O botão de tela cheia está oculto."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">O botão de tela cheia será exibido.</string>
     <string name="revanced_hide_player_previous_next_button_title">Ocultar o botão anterior &amp; próximo</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">Os botões estão ocultos.</string>
@@ -1994,7 +1994,6 @@ Toque no botão continuar e desative as otimizações da bateria."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Os dados de streaming não são falsificados. A reprodução de vídeo pode não funcionar."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Desativar esta configuração pode causar problemas de reprodução de vídeo.</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Efeitos colaterais da falsificação</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Todos os intervalos de ASNs/IP podem ser bloqueados pelo servidor.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Exibir em Estatísticas para nerds</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">O cliente usado para buscar dados de streaming é mostrado em Estatísticas para nerds.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">O cliente usado para buscar dados de streaming está oculto em Estatísticas para nerds.</string>
@@ -2008,7 +2007,7 @@ Toque no botão continuar e desative as otimizações da bateria."</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Ativar isso pode melhorar a duração da bateria e corrigir travamentos na reprodução.
 
 O AVC tem uma resolução máxima de 1080p, o codec de áudio Opus não está disponível e a reprodução de vídeo usará mais dados da internet do que VP9 ou AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Histórico de exibição</string>
     <string name="revanced_preference_screen_watch_history_summary">Altere as configurações relacionadas ao histórico de exibição.</string>

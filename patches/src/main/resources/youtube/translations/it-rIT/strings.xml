@@ -619,9 +619,6 @@ Nota: alcuni componenti potrebbero non essere nascosti."</string>
     <string name="revanced_preference_category_download_button">Pulsanti Scarica</string>
     <string name="revanced_override_playlist_download_button_title">Sovrascrivi il pulsante Scarica Playlist</string>
     <string name="revanced_override_playlist_download_button_summary_on">Il pulsante Scarica Playlist nativo è sempre visibile e nelle playlist pubbliche apre il downloader esterno.</string>
-    <string name="revanced_override_playlist_download_button_summary_on_disclaimer">"Se è visibile, il pulsante Scarica Playlist nativo apre il downloader esterno.
-
-Per mostrare il pulsante Scarica Playlist nativo, attiva il camuffamento della versione dell'app e cambia la versione dell'app da camuffare in 19.28.42 o una versione precedente."</string>
     <string name="revanced_override_playlist_download_button_summary_off">Se è visibile, il pulsante Scarica Playlist nativo apre il downloader nativo.</string>
     <string name="revanced_override_video_download_button_title">Sovrascrivi il pulsante Scarica Video</string>
     <string name="revanced_override_video_download_button_summary_on">Il pulsante Scarica Video nativo apre il downloader esterno.</string>
@@ -1267,7 +1264,7 @@ Trascina il riproduttore minimizzato per espanderlo o chiuderlo."</string>
     <string name="revanced_hide_player_collapse_button_summary_on">Il pulsante Comprimi è nascosto.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">Il pulsante Comprimi è visibile.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Nascondi il pulsante Schermo Intero</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">Il pulsante Schermo Intero è nascosto.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"Il pulsante Schermo Intero è nascosto."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">Il pulsante Schermo Intero è visibile.</string>
     <string name="revanced_hide_player_previous_next_button_title">Nascondi i pulsanti Precedente e Successivo</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">I pulsanti Precedente e Successivo sono nascosti.</string>
@@ -2174,8 +2171,6 @@ Nota: se sei un utente YouTube Premium o hai escluso la patch \"GmsCore support\
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(Nessun accesso richiesto)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
-<small>(Obsoleto)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(Accesso richiesto)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
@@ -2189,7 +2184,6 @@ Nota: se sei un utente YouTube Premium o hai escluso la patch \"GmsCore support\
 • Il menù Volume Stabile è nascosto.
 • La disattivazione delle tracce audio automatiche forzate non funziona.
 • I video per bambini potrebbero non essere riprodotti se si è disconnessi o navigando in incognito."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Interi intervalli di ASN/IP potrebbero essere bloccati dal server.</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Il menù Volume Stabile è nascosto.
 • I film o i video a pagamento potrebbero non essere riproducibili.
 • I video per bambini potrebbero non essere riprodotti se si è disconnessi o navigando in incognito."</string>
@@ -2234,46 +2228,7 @@ Questa impostazione è ancora in fase di sviluppo, quindi potrebbe non funzionar
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"L'attivazione di questa impostazione potrebbe migliorare la durata della batteria e risolvere il problema della riproduzione a scatti.
 
 Nota: AVC ha una risoluzione massima di 1080p, il codec Opus non è disponibile e la riproduzione userà più dati internet rispetto a VP9 o AV1."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_title">Mostra il client iOS tra i client disponibili</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_on">"Il client iOS è visibile tra i client disponibili.
-
-Nota: il client iOS è obsoleto, pertanto eventuali problemi riscontrati durante l'uso sono a tuo rischio."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_off">Il client iOS è nascosto tra i client disponibili.</string>
-    <string name="revanced_spoof_streaming_data_use_ios_user_dialog_message">"Quando richiedi gli endpoint API di YouTube tramite iOS, avrai bisogno dei token Auth emessi da un dispositivo iOS e dei PoToken emessi da iOSGuard.
-
-Ciò significa che alle richieste di streaming tramite iOS mancheranno sia i token Auth che i PoToken, e il server potrebbe considerare l'utente come un bot e bloccare l'intero intervallo ASN/IP.
-
-Usalo a tuo rischio."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <string name="revanced_preference_category_tv">TV (In fase di sviluppo)</string>
-    <string name="revanced_spoof_streaming_data_use_tv_title">Mostra il client TV tra i client disponibili</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_on">Il client TV è visibile tra i client disponibili.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_off">Il client TV è nascosto tra i client disponibili.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_user_dialog_message">"L'app usa più risorse di sistema per trovare o decodificare il pattern n-sig e il video si avvia più lentamente.
-
-Il pattern n-sig cambia piuttosto frequentemente sui server di YouTube e la riproduzione potrebbe non funzionare se il regex non riesce a trovare il pattern.
-
-Questa impostazione è ancora in fase di sviluppo, quindi usala solo per scopi di debug."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_title">Usa il client TV per tutti i video</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_on">"Il client TV viene usato indipendentemente dal tipo di video.
-
-Nota: il client TV non riesce ancora a riprodurre clip, riproduzione automatica nelle schede e Shorts."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_off">"Il client TV non viene usato per clip, riproduzione automatica nelle schede e Shorts, poichè richiedono una riproduzione rapida."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_title">Usa l\'ultima versione di JavaScript</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_on">"La versione di JavaScript per il deoffuscamento viene mantenuta aggiornata.
-
-Nota: è altamente dipendente dal server, e il successo o il fallimento del deoffuscamento dipendono dalla versione di JavaScript attualmente usato sul server."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"La versione di JavaScript per il deoffuscamento non viene mantenuta aggiornata.
-
-Nota: viene usato la versione di JavaScript che riesce nel deoffuscamento, ma l'operazione è comunque in qualche modo dipendente dal server."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">Usa il motore JavaScript V8</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript viene eseguito in librerie native.
-
-Nota: offerto da SmartTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript non viene eseguito in librerie native.
-
-Nota: offerto da JavaTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">Se non si usa il motore JavaScript V8, ci vorrà più tempo per deoffuscare l\'URL dello streaming, facendo sì che i video inizino con 10 secondi di ritardo.</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Cronologia</string>
     <string name="revanced_preference_screen_watch_history_summary">Cambia le impostazioni della cronologia.</string>

@@ -769,7 +769,7 @@ Genişletmek veya kapatmak için kaydırın."</string>
     <string name="revanced_hide_player_collapse_button_summary_on">Videoyu küçült butonu devre dışı.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">Videoyu küçült butonu gösteriliyor</string>
     <string name="revanced_hide_player_fullscreen_button_title">Tam ekran butonunu gizle</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">Tam ekran butonu gizli.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"Tam ekran butonu gizli."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">Tam ekran butonu gizlenmiyor.</string>
     <string name="revanced_hide_player_previous_next_button_title">Önceki &amp; sonraki düğmelerini gizle</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">Düğmeler gizli.</string>
@@ -1319,7 +1319,7 @@ Devam düğmesine dokunun ve pil optimizasyonlarını devre dışı bırakın."<
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">İzleme geçmişi</string>
     <string name="revanced_preference_screen_watch_history_summary">İzlemek geçmişi ile alakalı ayarları değiştirir.</string>

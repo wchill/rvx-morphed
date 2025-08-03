@@ -24,6 +24,7 @@
     <string name="revanced_extended_settings_search_no_results_title">No se encontraron resultados para «%s».</string>
     <string name="revanced_extended_settings_search_no_results_summary">Prueba con otra palabra clave.</string>
     <string name="revanced_extended_settings_search_remove_message">¿Eliminar del historial de búsqueda?</string>
+    <string name="revanced_dismiss_player_not_available_toast">El ID del vídeo no está disponible. Vuelve a abrir el vídeo manualmente.</string>
     <string name="revanced_playback_speed_normal">Normal</string>
     <string name="revanced_external_downloader_package_name_video_title">Nombre del paquete del descargador de vídeo</string>
     <string name="revanced_external_downloader_package_name_video_summary">Nombre del paquete de tu aplicación de descargas externas instalada, como NewPipe o YTDLnis.</string>
@@ -585,6 +586,16 @@ Si se desactiva más tarde, se recomienda borrar los datos de la aplicación par
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Restaura el antiguo encabezado de la lista de reproducción</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Restaurar el antiguo panel desplegable de velocidad de reproducción</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Versión de aplicación falsa no válida: %s.</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_title">Corregir efecto secundario de versión de app falsificada</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_summary_on">"Se utiliza el ajuste «Reproducción automática» en lugar del ajuste «Reproducción»."</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_summary_off">Se utiliza el ajuste «Reproducción» en lugar del ajuste «Reproducción automática».</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_user_dialog_message">"Si la versión de la aplicación se ha falsificado a 19.30 o anterior, aunque sea una sola vez, el ajuste «Reproducción» puede estar roto.
+
+Esto depende de la respuesta que reciba la aplicación del servidor.
+
+Si el ajuste «Reproducción» no funciona, activar este ajuste puede resolver el problema.
+
+Si el ajuste «Reproducción» sigue sin funcionar incluso después de activar o desactivar este ajuste, debes borrar los datos de la aplicación."</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">Menú de cuenta</string>
     <string name="revanced_preference_screen_account_menu_summary">Ocultar o mostrar elementos en el menú de la cuenta y la pestaña Tú.</string>
@@ -616,9 +627,10 @@ Algunos componentes pueden no estar ocultos."</string>
     <string name="revanced_preference_category_download_button">Botón de descarga</string>
     <string name="revanced_override_playlist_download_button_title">Reemplazar botón de descarga de listas de reproducción</string>
     <string name="revanced_override_playlist_download_button_summary_on">El botón nativo de descarga de listas de reproducción abre tu descargador externo.</string>
-    <string name="revanced_override_playlist_download_button_summary_on_disclaimer">"El botón de descarga nativo de la lista de reproducción, si se muestra, abre tu descargador externo.
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer_1">Botón de descarga de lista de reproducción nativa, si se muestra, abre tu descargador externo.</string>
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer_2">"Botón de descarga de lista de reproducción nativa, si se muestra, abre tu descargador externo.
 
-Para mostrar el botón de descarga nativo de la lista de reproducción, activa «Falsificar versión de la app» y cambia «Versión a falsificar de la app» a «19.28.42» o anterior."</string>
+Para mostrar el botón de descarga de la lista de reproducción nativa, activa «Falsificar versión de la app» y cambia «Versión a falsificar de la app» a «19.28.42» o anterior."</string>
     <string name="revanced_override_playlist_download_button_summary_off">El botón nativo de descarga de listas de reproducción abre el descargador nativo de la aplicación.</string>
     <string name="revanced_override_video_download_button_title">Reemplazar botón de descarga de vídeo</string>
     <string name="revanced_override_video_download_button_summary_on">El botón nativo de descarga de vídeo abre tu descargador externo.</string>
@@ -805,6 +817,9 @@ Pestaña Tú → Ver canal → Menú → Configuración"</string>
     <string name="revanced_hide_voice_search_button_title">Ocultar botón de búsqueda por voz</string>
     <string name="revanced_hide_voice_search_button_summary_on">El botón de búsqueda por voz está oculto.</string>
     <string name="revanced_hide_voice_search_button_summary_off">El botón de búsqueda por voz está visible.</string>
+    <string name="revanced_hide_you_may_like_section_title">Ocultar sección «Te puede gustar»</string>
+    <string name="revanced_hide_you_may_like_section_summary_on">La sección «Te puede gustar» está oculta.</string>
+    <string name="revanced_hide_you_may_like_section_summary_off">La sección «Te puede gustar» está visible.</string>
     <string name="revanced_hide_youtube_doodles_title">Ocultar Doodles de YouTube</string>
     <string name="revanced_hide_youtube_doodles_summary_on">Los Doodles de YouTube están ocultos.</string>
     <string name="revanced_hide_youtube_doodles_summary_off">Los Doodles de YouTube están visibles.</string>
@@ -1259,7 +1274,7 @@ Desliza para expandir o cerrar."</string>
     <string name="revanced_hide_player_collapse_button_summary_on">El botón de contraer está oculto.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">El botón de contraer está visible.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Ocultar botón de pantalla completa</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">El botón de pantalla completa está oculto.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"El botón de pantalla completa está oculto."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">El botón de pantalla completa está visible.</string>
     <string name="revanced_hide_player_previous_next_button_title">Ocultar botones de anterior y siguiente</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">Los botones están ocultos.</string>
@@ -2165,10 +2180,10 @@ Pulsa el botón de continuar y desactiva las optimizaciones de la batería."</st
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(Sin inicio de sesión)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
-<small>(Obsoleto)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(Inicio de sesión requerido)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web móvil
+<small>(todavía en desarrollo)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(todavía en desarrollo)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV integrado
@@ -2180,14 +2195,52 @@ Pulsa el botón de continuar y desactiva las optimizaciones de la batería."</st
 • El volumen estable no está disponible.
 • La opción de desactivar las pistas de audio automáticas forzadas no está disponible.
 • Es posible que los vídeos para niños no se reproduzcan cuando se cierra la sesión o en modo incógnito."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• El servidor puede bloquear ASN/rangos de IP completos.</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• El volumen estable no está disponible.
 • Es posible que no se reproduzcan películas o vídeos de pago.
 • Es posible que los vídeos para niños no se reproduzcan cuando se cierra la sesión o en modo incógnito."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Falta el menú de la pista de audio.
+• La opción de desactivar las pistas de audio automáticas forzadas no está disponible.
+• Si la desofuscación falla, la reproducción puede fallar.
+• A veces, el vídeo no se reproducirá incluso después de 10 segundos, en cuyo caso deberás pulsar en el botón de recargar vídeo.
+• El vídeo puede comenzar tarde."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• El códec AVC (H.264) puede no estar disponible.
 • Si la desofuscación falla, la reproducción puede fallar.
 • A veces, el vídeo no se reproducirá incluso después de 10 segundos, en cuyo caso deberás pulsar en el botón de recargar vídeo.
 • El vídeo puede comenzar tarde."</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Priorizar calidad de vídeo</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">Se prioriza la calidad del vídeo.</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_off">Se priorizan los códecs de vídeo.</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_user_dialog_message">"Algunos vídeos tienen la siguiente calidad de vídeo y códecs:
+
+• 1080p AVC
+• 720p AVC
+• 360p VP9
+
+Si el dispositivo es compatible con VP9, se ignoran «1080p AVC» y «720p AVC».
+
+En otras palabras, «360p VP9» se utiliza como la calidad de vídeo más alta, y «1080p AVC» y «720p AVC» no son visibles en el menú desplegable de calidad de vídeo.
+
+Este es el comportamiento previsto de la aplicación de YouTube para Android, y es por eso que el menú desplegable de calidad de vídeo no estaba disponible para algunos vídeos.
+
+Aunque VP9 es un códec más avanzado que AVC, algunos usuarios pueden preferir «1080p AVC» a «360p VP9».
+
+Si este ajuste está activado, se utiliza la calidad de vídeo más alta disponible de la respuesta del servidor, independientemente del códec de vídeo.
+
+Ejemplo 1:
+
+• 1080p AVC
+• 720p AVC
+• 360p VP9
+
+Se utiliza→ 1080p AVC.
+
+Ejemplo 2:
+
+• 1080p AVC
+• 1080p VP9
+• 720p VP9
+
+Se utiliza→ 1080p VP9."</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_title">Mostrar botón de recarga de vídeo</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">El botón de recarga de vídeo está visible.</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">El botón de recarga de vídeo está oculto.</string>
@@ -2226,52 +2279,32 @@ Esta función todavía está en desarrollo, por lo que puede fallar en cualquier
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Activar este ajuste podría mejorar la duración de la batería y solucionar el problema de la reproducción entrecortada.
 
 AVC tiene una resolución máxima de 1080p, el códec de audio Opus no está disponible y la reproducción de vídeo utilizará más datos de Internet que VP9 o AV1."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_title">Usar cliente de iOS</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_on">"El cliente de iOS se ha añadido a los clientes disponibles.
-
-ADVERTENCIA: El cliente de iOS está obsoleto. Cualquier problema que surja al utilizarlo es bajo tu propia responsabilidad."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_off">El cliente iOS no se ha añadido a los clientes disponibles.</string>
-    <string name="revanced_spoof_streaming_data_use_ios_user_dialog_message">"Al solicitar puntos finales de la API de YouTube utilizando iOS, necesitarás los tokens de autenticación emitidos por el dispositivo iOS y los PoTokens emitidos por iOSGuard.
-
-Esto significa que las solicitudes de transmisión a través de iOS carecerán tanto de los tokens de autenticación como de los PoTokens, y el servidor puede considerar al usuario como un bot y bloquear todo el rango de ASN/IP.
-
-¡ÚSALO BAJO TU PROPIA RESPONSABILIDAD!"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <string name="revanced_preference_category_tv">TV (todavía en desarrollo)</string>
-    <string name="revanced_spoof_streaming_data_use_tv_title">Usar cliente de TV</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_on">El cliente de TV se ha añadido a los clientes disponibles.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_off">El cliente de TV no se ha añadido a los clientes disponibles.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_user_dialog_message">"La aplicación utiliza más recursos del sistema para encontrar o decodificar el patrón n-sig, y el vídeo se inicia más lentamente.
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <string name="revanced_preference_category_js">JavaScript (todavía en desarrollo)</string>
+    <string name="revanced_spoof_streaming_data_use_js_title">Usar cliente JavaScript</string>
+    <string name="revanced_spoof_streaming_data_use_js_summary_on">El cliente JavaScript se ha añadido a los clientes disponibles.</string>
+    <string name="revanced_spoof_streaming_data_use_js_summary_off">El cliente JavaScript no se ha añadido a los clientes disponibles.</string>
+    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"La aplicación utiliza más recursos del sistema para encontrar o decodificar el patrón n-sig, y el vídeo se inicia más lentamente.
 
 El patrón n-sig cambia con bastante frecuencia en los servidores de YouTube, y la reproducción puede fallar si el regex no encuentra el patrón n-sig.
 
 Esta función todavía está en desarrollo, así que úsala solo para fines de depuración."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_title">Usar cliente de TV para todos los vídeos</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_on">"El cliente de TV se utiliza independientemente del tipo de vídeo.
+    <string name="revanced_spoof_streaming_data_use_js_all_title">Usar cliente JavaScript para todos los vídeos</string>
+    <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"El cliente JavaScript se utiliza independientemente del tipo de vídeo.
 
-• El cliente de TV todavía no puede reproducir algunos vídeos."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_off">"El cliente de TV no se utiliza para algunos vídeos que requieren una reproducción rápida:
+• El cliente JavaScript todavía no puede reproducir algunos vídeos."</string>
+    <string name="revanced_spoof_streaming_data_use_js_all_summary_off">"El cliente JavaScript no se utiliza para algunos vídeos que requieren una reproducción rápida:
 
 • Reproducción automática en el feed
 • Clips
 • Shorts"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_title">Usar última versión de JavaScript</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_on">"El JavaScript para la desofuscación se mantiene actualizado.
+    <string name="revanced_spoof_streaming_data_use_latest_js_title">Usar última versión de JavaScript</string>
+    <string name="revanced_spoof_streaming_data_use_latest_js_summary_on">"El JavaScript para la desofuscación se mantiene actualizado.
 
-• Si la desofuscación tiene éxito, no habrá pérdida de calidad de vídeo ni de códecs.
 • Depende en gran medida del servidor, y el éxito o el fracaso de la desofuscación depende del JavaScript que se utilice en el servidor."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"El JavaScript para la desofuscación no se mantiene actualizado.
+    <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"El JavaScript para la desofuscación no se mantiene actualizado.
 
-• Incluso si la desofuscación tiene éxito, puede que falte calidad de vídeo o códecs.
-• Se utiliza JavaScript que logra la desofuscación, pero sigue dependiendo en cierta medida del servidor."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">Usar motor V8 JavaScript</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript se ejecuta en bibliotecas nativas.
-
-• Desarrollado por SmartTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript no se ejecuta en bibliotecas nativas.
-
-• Desarrollado por JavaTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">Si no se utiliza el motor V8 JavaScript, se tarda más en desofuscar la URL de transmisión, lo que hace que el vídeo se inicie 10 segundos tarde.</string>
+• Se utiliza JavaScript que tiene éxito en la desofuscación, pero sigue dependiendo en cierta medida del servidor."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Historial de reproducciones</string>
     <string name="revanced_preference_screen_watch_history_summary">Cambiar ajustes relacionados con el historial de reproducciones.</string>

@@ -622,9 +622,6 @@
     <string name="revanced_preference_category_download_button">زر التنزيل</string>
     <string name="revanced_override_playlist_download_button_title">تجاوز زر تنزيل قائمة التشغيل</string>
     <string name="revanced_override_playlist_download_button_summary_on">يتم دائمًا عرض زر تنزيل قائمة التشغيل الأصلية، وفي قوائم التشغيل العامة، يتم فتح أداة التنزيل الخارجية لديك.</string>
-    <string name="revanced_override_playlist_download_button_summary_on_disclaimer">"إذا ظهر زر تنزيل قائمة التشغيل الأصلية، فسيفتح برنامج التنزيل الخارجي.
-
-لعرض زر تنزيل قائمة التشغيل الأصلي، فعّل 'إصدار تطبيق وهمي' وغيّر 'الهدف من خِداع إصدار التطبيق' إلى '19.28.42' أو إصدار أقدم."</string>
     <string name="revanced_override_playlist_download_button_summary_off">زر تنزيل قائمة التشغيل الأصلية، إذا ظهر، يفتح أداة التنزيل الأصلية داخل التطبيق.</string>
     <string name="revanced_override_video_download_button_title">تجاوز زر تنزيل الفيديو</string>
     <string name="revanced_override_video_download_button_summary_on">يفتح زر تنزيل الفيديو الأصلي أداة التنزيل الخارجية.</string>
@@ -1267,7 +1264,7 @@
     <string name="revanced_hide_player_collapse_button_summary_on">تم إخفاء زر الطَيّ.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">يتم عرض زر الطَيّ.</string>
     <string name="revanced_hide_player_fullscreen_button_title">إخفاء زر ملء الشاشة</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">تم إخفاء زر ملء الشاشة.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"تم إخفاء زر ملء الشاشة."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">يتم عرض زر ملء الشاشة.</string>
     <string name="revanced_hide_player_previous_next_button_title">إخفاء أزرار السابق &amp; التالي</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">تم إخفاء أزرار السابق &amp; التالي.</string>
@@ -2181,8 +2178,6 @@
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(بدون مصادقة)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
-<small>(مُهمَل)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(يتطلب تسجيل الدخول)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV <small>(WIP)</small>"</string>
@@ -2193,12 +2188,10 @@
 • مستوى الصوت الثابت غير متاح.
 • لا يتوفر تعطيل المقطع الصوتي التلقائي المفروض.
 • قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• قد يتم حظر نطاقات ASNs/IP بالكامل بواسطة الخادم.</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• مستوى الصوت الثابت غير متوفر.
 • قد لا يتم تشغيل الأفلام أو الفيديوهات المدفوعة.
 • قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• قد لا يتوفر ترميز AVC (H.264).
-• في حال فشل إزالة التشويش، قد يفشل التشغيل.
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"• في حال فشل إزالة التشويش، قد يفشل التشغيل.
 • في بعض الأحيان، قد لا يعمل الفيديو حتى بعد 10 ثوانٍ، وفي هذه الحالة، ستحتاج إلى الضغط على زر إعادة تحميل الفيديو.
 • قد يبدأ الفيديو متأخرًا."</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_title">عرض زر إعادة تحميل الفيديو</string>
@@ -2239,50 +2232,7 @@
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"قد يؤدي تمكين هذا إلى تحسين عمر البطارية وإصلاح تقطيع التشغيل.
 
 AVC لديه حد أقصى للدقة 1080p، لا يتوفر ترميز الصوت Opus، وسوف يستخدم تشغيل الفيديو بيانات إنترنت أكثر من VP9 أو AV1."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_title">استخدام عميل iOS</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_on">"تمت إضافة عميل iOS إلى العملاء المتاحين.
-
-تحذير: عميل iOS قديم. أي مشاكل قد تظهر أثناء استخدامه تكون على مسؤوليتك الخاصة."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_off">لم يتم إضافة عميل iOS إلى العملاء المتاحين.</string>
-    <string name="revanced_spoof_streaming_data_use_ios_user_dialog_message">"عند طلب YouTube API Endpoints باستخدام عميل iOS، ستحتاج إلى رموز المصادقة الصادرة عن جهاز iOS ورموز PoTokens الصادرة عن iOSGuard.
-
-هذا يعني أن طلبات البث عبر عميل iOS ستفتقد رموز المصادقة ورموز PoTokens، وقد يعتبر الخادم المستخدم روبوتًا ويحظر نطاق ASN/IP بالكامل.
-
-استخدمه على مسؤوليتك الخاصة!"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <string name="revanced_preference_category_tv">TV (WIP)</string>
-    <string name="revanced_spoof_streaming_data_use_tv_title">استخدام عميل iOS</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_on">تم إضافة عميل TV إلى العملاء المتاحين.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_off">لم يتم إضافة عميل TV إلى العملاء المتاحين.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_user_dialog_message">"يستهلك التطبيق موارد النظام بشكل أكبر للعثور على نمط n-sig أو فك تشفيره، ويبدأ الفيديو ببطء.
-
-يتغير نمط n-sig بشكل متكرر على خوادم YouTube، وقد يفشل التشغيل إذا لم يتمكن التعبير العادي من العثور على نمط n-sig.
-
-لا تزال هذه الميزة قيد التطوير، لذا يُرجى استخدامها لأغراض تصحيح الأخطاء فقط."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_title">استخدام عميل TV لجميع الفيديوهات</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_on">"يتم استخدام عميل TV بغض النظر عن نوع الفيديو.
-
-• لا يزال عميل TV غير قادر على تشغيل بعض الفيديوهات."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_off">"لا يُستخدم عميل TV لبعض الفيديوهات التي تتطلب تشغيلًا سريعًا:
-
-• التشغيل التلقائي في الموجز
-• المقاطع
-• Shorts"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_title">استخدام أحدث JavaScript</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_on">"يتم تحديث جافا سكريبت لإزالة التشويش باستمرار.
-
-• يعتمد بشكل كبير على الخادم، ويعتمد نجاح أو فشل إزالة التشويش على جافا سكريبت المستخدم حاليًا على الخادم."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"لا يتم تحديث جافا سكريبت لإزالة التشويش.
-
-• يُستخدم جافا سكريبت الذي ينجح في إزالة التشويش، ولكنه لا يزال يعتمد إلى حد ما على الخادم."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">استخدام محرك JavaScript V8</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"يعمل جافا سكريبت في المكتبات الأصلية.
-
-• مدعوم من SmartTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"لا يعمل جافا سكريبت في المكتبات الأصلية.
-
-• مدعوم من JavaTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">إذا لم يتم استخدام محرك JavaScript V8، فسيستغرق الأمر وقتًا أطول لإزالة التشويش عن URL البث، مما يتسبب في بدء تشغيل الفيديو متأخرًا بـ 10 ثوانٍ.</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">سجل المشاهدة</string>
     <string name="revanced_preference_screen_watch_history_summary">تغيير الإعدادات المتعلقة بسجل المشاهدة.</string>

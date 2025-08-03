@@ -24,6 +24,7 @@
     <string name="revanced_extended_settings_search_no_results_title">Не знайдено результатів для \'%s\'.</string>
     <string name="revanced_extended_settings_search_no_results_summary">Спробуйте інше ключове слово.</string>
     <string name="revanced_extended_settings_search_remove_message">Вилучити з історії пошуку?</string>
+    <string name="revanced_dismiss_player_not_available_toast">Ідентифікатор відео недоступний. Будь ласка, перевідкрийте відео.</string>
     <string name="revanced_playback_speed_normal">Стандартна</string>
     <string name="revanced_external_downloader_package_name_video_title">Ім\'я пакета завантажувача відео</string>
     <string name="revanced_external_downloader_package_name_video_summary">Ім\'я пакета встановленого зовнішнього завантажувача, наприклад NewPipe або YTDLnis.</string>
@@ -590,6 +591,16 @@
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Відновлення старого заголовка списку відтворення</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Відновлення старої висувної панелі швидкості відтворення</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Недійсне підроблення версії програми: %s.</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_title">Виправити побічний ефект Підробки версії програми</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_summary_on">"Замість параметра 'Відтворення' використовується параметр 'Автовідтворення'."</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_summary_off">Замість параметра \'Автовідтворення\' використовується параметр \'Відтворення\'.</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_user_dialog_message">"Якщо версію програми було підроблена на 19.30 або ранішу хоча б один раз, налаштування 'Відтворення' може бути порушене.
+
+Це залежить від того, яку відповідь додаток отримує від сервера.
+
+Якщо налаштування 'Відтворення' порушене, увімкнення цього налаштування може вирішити проблему.
+
+Якщо налаштування 'Відтворення' не працює навіть після увімкнення або вимкнення цього налаштування, слід очистити дані програми."</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">Меню облікового запису</string>
     <string name="revanced_preference_screen_account_menu_summary">Приховувати чи показувати елементи меню облікового запису і вкладки Ви.</string>
@@ -621,9 +632,10 @@
     <string name="revanced_preference_category_download_button">Кнопка завантаження</string>
     <string name="revanced_override_playlist_download_button_title">Перевизначити кнопку завантаження списку відтворення</string>
     <string name="revanced_override_playlist_download_button_summary_on">Кнопка вбудованого завантаження списку відтворення завжди показується, і в публічних списках відтворення відкриває зовнішній завантажувач.</string>
-    <string name="revanced_override_playlist_download_button_summary_on_disclaimer">"Кнопка вбудованого завантаження списку відтворення відкриває зовнішній завантажувач, якщо показується.
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer_1">Кнопка завантаження списку відтворення відкриває зовнішній завантажувач, якщо показується.</string>
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer_2">"Кнопка завантаження списку відтворення відкриває зовнішній завантажувач, якщо показується.
 
-Для показу кнопки вбудованого завантаження списку відтворення, увімкніть 'Підробити версію програми' і змініть 'Підробити цільову версію програми' на '19.28.42' або ранішу."</string>
+Для показу кнопки завантаження списку відтворення, увімкніть 'Підробити версію програми' і змініть 'Підробити цільову версію програми' на '19.28.42' або ранішу."</string>
     <string name="revanced_override_playlist_download_button_summary_off">Кнопка вбудованого завантаження списку відтворення відкриває вбудований завантажувач, якщо показується.</string>
     <string name="revanced_override_video_download_button_title">Перевизначити кнопку завантаження відео</string>
     <string name="revanced_override_video_download_button_summary_on">Кнопка завантаження відео відкриває зовнішній завантажувач.</string>
@@ -810,6 +822,9 @@
     <string name="revanced_hide_voice_search_button_title">Приховати кнопку голосового пошуку</string>
     <string name="revanced_hide_voice_search_button_summary_on">Кнопку голосового пошуку приховано.</string>
     <string name="revanced_hide_voice_search_button_summary_off">Кнопку голосового пошуку показується.</string>
+    <string name="revanced_hide_you_may_like_section_title">Приховати секцію Вам може сподобатись</string>
+    <string name="revanced_hide_you_may_like_section_summary_on">Секцію Вам може сподобатись приховано.</string>
+    <string name="revanced_hide_you_may_like_section_summary_off">Секцію Вам може сподобатись показується.</string>
     <string name="revanced_hide_youtube_doodles_title">Приховати Yoodles</string>
     <string name="revanced_hide_youtube_doodles_summary_on">Yoodles приховано.</string>
     <string name="revanced_hide_youtube_doodles_summary_off">Yoodles показується.</string>
@@ -1266,7 +1281,9 @@
     <string name="revanced_hide_player_collapse_button_summary_on">Кнопку згортування приховано.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">Кнопку згортування показується.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Приховати кнопку повноекранного режиму</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">Кнопку повного екранного режиму приховано.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"Кнопку повного екранного режиму приховано.
+
+Застереження: Всі кнопки можуть бути приховані після закінчення відео."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">Кнопку повноекранного режиму показується.</string>
     <string name="revanced_hide_player_previous_next_button_title">Приховати кнопки Попереднє та Наступне</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">Кнопки приховано.</string>
@@ -2176,28 +2193,66 @@
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(Без авторизації)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
-<small>(Застаріла)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(Потрібна авторизація)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web мобільний
+<small>(ще в розробці)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(ще в розробці)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Вбудоване TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Вбудований TV
 <small>(ще в розробці)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"Просте TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"Простий TV
 <small>(ще в розробці)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Побічні ефекти імітування</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Меню звукової доріжки відсутнє.
 • Стабілізація гучності недоступна.
 • Вимкнення примусових авто звукових доріжок недоступне.
 • Відео для дітей можуть не відтворюватися коли вийшли з облікового запису або в анонімному режимі."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Цілі діапазони ASN/IP можуть блокуватися сервером.</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Стабілізація гучності недоступна.
 • Фільми та платні відео можуть не відтворюватися.
 • Відео для дітей можуть не відтворюватися коли вийшли з облікового запису або в анонімному режимі."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Меню звукової доріжки відсутнє.
+• Вимкнення примусових автоматичних звукових доріжок недоступне.
+• Якщо деобфускація не вдасться, відтворення може завершитися зі збоями.
+• Іноді відео не відтворюється навіть через 10 секунд, і тоді потрібно натиснути кнопку перезавантаження відео.
+• Відео може розпочинається із запізненням."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Якщо деобфускація не вдасться, відтворення може завершитися зі збоями.
 • Іноді відео не відтворюється навіть через 10 секунд, і тоді потрібно натиснути кнопку перезавантаження відео.
 • Відео може розпочинається із запізненням."</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Пріоритетна якість відео</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">Якість відео пріоритетна.</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_off">Кодеки відео пріоритетні.</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_user_dialog_message">"Деякі відео мають такі якість відео та кодеки:
+
+• 1080p AVC
+• 720p AVC
+• 360p VP9
+
+Якщо пристрій підтримує VP9, '1080p AVC' і '720p AVC' ігноруються.
+
+Іншими словами, '360p VP9' використовується як найвища якість відео, і '1080p AVC' і '720p AVC' не відображаються у висувному меню якості відео.
+
+Це передбачувана поведінка програми YouTube Android, і саме тому висувне меню якості відео було недоступне для деяких відео.
+
+Хоча VP9 є більш досконалим кодеком, ніж AVC, деякі користувачі можуть віддати перевагу '1080p AVC' ніж '360p VP9'.
+
+Якщо це налаштування увімкнено, використовується найвища доступна якість відео з відповіді сервера, незалежно від відеокодека.
+
+Приклад 1:
+
+• 1080p AVC
+• 720p AVC
+• 360p VP9
+
+→ 1080p AVC використовується.
+
+Приклад 2:
+
+• 1080p AVC
+• 1080p VP9
+• 720p VP9
+
+→ 1080p VP9 використовується."</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_title">Показувати кнопку перезавантаження відео</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">Кнопку перезавантаження відео показується.</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">Кнопку перезавантаження відео приховано.</string>
@@ -2236,50 +2291,32 @@
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Увімкнення може зменшити споживання акумулятора та виправити затинання відтворення.
 
 AVC має максимальну роздільну здатність 1080p, аудіокодек Opus недоступний, а відтворення відео використовуватиме більше інтернет-даних, ніж кодек VP9 чи AV1."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_title">Використовувати клієнт iOS</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_on">"Клієнт iOS доданий до доступних клієнтів.
-
-ЗАУВАЖЕННЯ: Клієнт iOS застарілий. Будь-які проблеми, які виникають під час його використання, на власний ризик."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_off">Клієнт iOS не доданий до доступних клієнтів.</string>
-    <string name="revanced_spoof_streaming_data_use_ios_user_dialog_message">"Під час запиту кінцевих точок YouTube API за допомогою iOS потрібні токени Auth, видані пристроєм iOS, і токени PoToken, видані iOSGuard.
-
-Це означає, що в запитах трансляції через iOS не буде ані токенів Auth, ані токенів PoToken, і сервер може вважати користувача ботом і заблокувати цілий діапазон ASN/IP.
-
-ВИКОРИСТОВУЙТЕ НА ВЛАСНИЙ РИЗИК!"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <string name="revanced_preference_category_tv">TV (ще в розробці)</string>
-    <string name="revanced_spoof_streaming_data_use_tv_title">Використовувати клієнт TV</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_on">Клієнт TV доданий до доступних клієнтів.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_off">Клієнт TV не доданий до доступних клієнтів.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_user_dialog_message">"Програма використовує більше системних ресурсів для пошуку чи декодування шаблону n-sig, а відео запускається повільніше.
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <string name="revanced_preference_category_js">JavaScript (ще в розробці)</string>
+    <string name="revanced_spoof_streaming_data_use_js_title">Використовувати клієнт JavaScript</string>
+    <string name="revanced_spoof_streaming_data_use_js_summary_on">Клієнт JavaScript доданий до доступних клієнтів.</string>
+    <string name="revanced_spoof_streaming_data_use_js_summary_off">Клієнт JavaScript не доданий до доступних клієнтів.</string>
+    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"Програма використовує більше системних ресурсів для пошуку чи декодування шаблону n-sig, а відео запускається повільніше.
 
 Шаблон n-sig досить часто змінюється на серверах YouTube, і відтворення може завершитися невдало, якщо regex не вдасться знайти шаблон n-sig.
 
 Ця функція все ще перебуває у стадії розробки, тому, будь ласка, використовуйте її лише з метою налагодження."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_title">Використовувати клієнт TV для всіх відео</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_on">"Клієнт TV використовується незалежно від типу відео.
+    <string name="revanced_spoof_streaming_data_use_js_all_title">Використовувати клієнт JavaScript для всіх відео</string>
+    <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"Клієнт JavaScript використовується незалежно від типу відео.
 
 • Клієнт TV все ще не може відтворювати деякі відео."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_off">"Клієнт TV не використовується для деяких відео, які потребують швидкого відтворення:
+    <string name="revanced_spoof_streaming_data_use_js_all_summary_off">"Клієнт JavaScript не використовується для деяких відео, які потребують швидкого відтворення:
 
 • Автовідтворення у стрічці
 • Кліпи
 • YouTube Shorts"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_title">Використовувати останній JavaScript</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_on">"JavaScript для деобфускації підтримується в актуальному стані.
+    <string name="revanced_spoof_streaming_data_use_latest_js_title">Використовувати останній JavaScript</string>
+    <string name="revanced_spoof_streaming_data_use_latest_js_summary_on">"JavaScript для деобфускації підтримується в актуальному стані.
 
 • Це дуже залежить від сервера, і успіх або невдача деобфускації залежить від JavaScript, який наразі використовується на сервері."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"JavaScript для деобфускації не підтримується в актуальному стані.
+    <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"JavaScript для деобфускації не підтримується в актуальному стані.
 
 • Використовується JavaScript, який успішно виконує деобфускацію, але він все одно дещо залежний від сервера."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">Використовувати рушій JavaScript V8</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript виконується в корінних бібліотеках.
-
-• Працює на SmartTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript не виконується в корінних бібліотеках.
-
-• Працює на JavaTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">Якщо не використовується рушій JavaScript V8, потрібно більше часу для деобфускації посилання трансляції, через що відео розпочинається зі запізненням 10 секунд.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Історія перегляду</string>
     <string name="revanced_preference_screen_watch_history_summary">Змінити налаштування пов\'язані з історією перегляду.</string>

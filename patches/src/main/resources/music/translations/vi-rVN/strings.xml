@@ -185,10 +185,10 @@ Hạn chế:
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Xoá hộp thoại cảnh báo nội dung cần cân nhắc trước khi xem.
 \nLưu ý: Tuỳ chọn này chỉ tự động chấp nhận hộp thoại cảnh báo, không thể bỏ qua giới hạn về độ tuổi."</string>
     <string name="revanced_spoof_app_version_title">Giả mạo phiên bản ứng dụng</string>
-    <string name="revanced_spoof_app_version_summary">"Giả mạo phiên bản YouTube Music hiện tại thành phiên bản cũ.
+    <string name="revanced_spoof_app_version_summary">"Giả mạo phiên bản YouTube Music thành phiên bản cũ.
 
-• Tuỳ chọn này sẽ làm thay đổi giao diện của ứng dụng, tuy nhiên có thể xảy ra các sự cố chưa xác định khác.
-• Nếu tắt tuỳ chọn này sau đó, giao diện cũ có thể vẫn tồn tại cho đến khi bạn xoá dữ liệu ứng dụng."</string>
+• Tuỳ chọn này sẽ làm thay đổi giao diện của ứng dụng, nhưng cũng có thể phát sinh sự cố chưa xác định khác.
+• Nếu tắt tuỳ chọn này sau đó, giao diện cũ có thể vẫn giữ nguyên cho đến khi bạn xoá dữ liệu ứng dụng."</string>
     <string name="revanced_spoof_app_version_target_title">Phiên bản giả mạo</string>
     <string name="revanced_spoof_app_version_target_summary">Chọn phiên bản YouTube Music mà bạn muốn giả mạo.</string>
     <string name="revanced_spoof_app_version_target_entry_6_42_55">6.42.55 - Tắt lời bài hát theo thời gian thực</string>
@@ -354,7 +354,7 @@ Một số tính năng có thể không hoạt động bình thường trong b�
     <string name="revanced_return_youtube_username_youtube_data_api_v3_about_title">Giới thiệu về khoá YouTube Data API</string>
     <string name="revanced_return_youtube_username_youtube_data_api_v3_about_summary">"Khoá nhà phát triển YouTube Data API v3 là một mã khoá cho phép các nhà phát triển truy cập lấy dữ liệu từ Youtube, và chúng cũng cần thiết để thay thế @tên hiển thị thành tên người dùng.
 
-Giới hạn truy cập hàng ngày cho các khoá API trên gói miễn phí là 10000 lần, với mỗi lượt truy cập chỉ áp dụng cho 1 bình luận.
+Giới hạn truy cập hàng ngày cho các khoá API trên gói miễn phí là 10000 lượt, với mỗi lượt truy cập chỉ áp dụng cho 1 bình luận.
 
 Nhấp vào đây để xem các bước phát hành khóa API."</string>
     <string name="revanced_return_youtube_username_youtube_data_api_v3_dialog_title">Phát hành mã khoá</string>
@@ -416,7 +416,7 @@ Nhấp vào đây để xem các bước phát hành khóa API."</string>
     <string name="revanced_sb_about">Giới thiệu</string>
     <string name="revanced_sb_about_api">sponsor.ajay.app</string>
     <!-- PreferenceScreen: Miscellaneous -->
-    <string name="revanced_preference_screen_misc_title">Cài đặt khác</string>
+    <string name="revanced_preference_screen_misc_title">Khác</string>
     <string name="revanced_extended_settings_import_export_title">Nhập/Xuất cài đặt</string>
     <string name="revanced_extended_settings_import_export_summary">Nhập hoặc xuất các tuỳ chọn cài đặt RVX Music của bạn.</string>
     <string name="revanced_extended_settings_export_as_file">Xuất cài đặt dưới dạng tệp</string>
@@ -435,8 +435,8 @@ Nhấp vào đây để xem các bước phát hành khóa API."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Bỏ qua miền bị chặn ở một số khu vực để có thể thu được được hình thu nhỏ video của danh sách phát, ảnh đại diện kênh, v. v.</string>
     <string name="revanced_change_share_sheet_title">Thay đổi bảng chia sẻ</string>
     <string name="revanced_change_share_sheet_summary">Chuyển bảng chia sẻ trong ứng dụng Youtube sang của hệ thống Android.</string>
-    <string name="revanced_disable_cairo_splash_animation_title">Vô hiệu hóa hoạt ảnh kiểu Cairo</string>
-    <string name="revanced_disable_cairo_splash_animation_summary">Vô hiệu hóa hoạt ảnh kiểu Cairo khi ứng dụng khởi chạy.</string>
+    <string name="revanced_disable_cairo_splash_animation_title">Vô hiệu hóa hoạt ảnh Cairo</string>
+    <string name="revanced_disable_cairo_splash_animation_summary">Vô hiệu hóa hoạt ảnh Cairo khi ứng dụng khởi chạy.</string>
     <string name="revanced_disable_drc_audio_title">Vô hiệu hoá audio DRC</string>
     <string name="revanced_disable_drc_audio_summary">Vô hiệu hoá tính năng nén dải âm thanh động.</string>
     <string name="revanced_disable_music_video_in_album_title">Tắt video âm nhạc trong đĩa nhạc</string>
@@ -446,7 +446,7 @@ Trong trường hợp đó, hệ thống sẽ tìm và chuyển hướng tới b
 
 Hạn chế: Video dành cho trẻ em có thể không được chuyển hướng."</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_title">Kiểu chuyển hướng</string>
-    <string name="revanced_disable_music_video_in_album_redirect_type_summary">Xác định cách chuyển tới bài hát chính thức.</string>
+    <string name="revanced_disable_music_video_in_album_redirect_type_summary">Chọn cách chuyển hướng bài hát chính thức.</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_redirect">Chuyển hướng</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_on_click">Nhấn vào nút chuyển đổi giữa Bài hát và Video</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_on_long_click">Nhấn và giữ nút chuyển đổi giữa Bài hát và Video</string>
@@ -466,10 +466,10 @@ Chi tiết:
 • Điều này chỉ áp dụng cho người dùng giả mạo với các phiên bản ứng dụng rất cũ."</string>
     <string name="revanced_sanitize_sharing_links_title">Liên kết sạch khi chia sẻ</string>
     <string name="revanced_sanitize_sharing_links_summary">Loại bỏ các tham số truy vấn theo dõi khỏi URL khi chia sẻ liên kết.</string>
-    <string name="revanced_spoof_client_title">Giả mạo ứng dụng khách</string>
-    <string name="revanced_spoof_client_summary">Giả mạo ứng dụng khách khách để ngăn chặn sự cố phát.</string>
-    <string name="revanced_spoof_client_type_title">Ứng dụng khách mặc định</string>
-    <string name="revanced_spoof_client_type_summary">Xác định ứng dụng khách mặc định để giả mạo.</string>
+    <string name="revanced_spoof_client_title">Giả mạo thiết bị</string>
+    <string name="revanced_spoof_client_summary">Giả mạo loại thiết bị để tránh lỗi khi phát.</string>
+    <string name="revanced_spoof_client_type_title">Loại thiết bị mặc định</string>
+    <string name="revanced_spoof_client_type_summary">Chọn loại thiết bị để giả mạo.</string>
     <string name="revanced_spoof_client_type_entry_android_music_4_27">Android Music 4.27.53</string>
     <string name="revanced_spoof_client_type_entry_android_music_5_29">Android Music 5.29.53</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
@@ -497,7 +497,7 @@ Tăng giá trị này có thể giúp tải bố cục nhanh hơn, nhưng có th
     <string name="gms_core_settings_title">Cài đặt GmsCore</string>
     <string name="gms_core_settings_summary">Chuyển hướng tới cài đặt GmsCore và kích hoạt Cloud Messaging để nhận thông báo đẩy.</string>
     <string name="gms_core_toast_not_installed_message">GmsCore chưa được cài đặt. Hãy cài đặt nó đi nào.</string>
-    <string name="gms_core_dialog_title">Hành động cần thiết</string>
+    <string name="gms_core_dialog_title">Cần thực hiện</string>
     <string name="gms_core_dialog_not_whitelisted_not_allowed_in_background_message">"Hiện GmsCore không có quyền chạy nền.
 
 Hãy làm theo hướng dẫn của 'Don't kill my app!' và tiến hành cài đặt GmsCore đúng cách.

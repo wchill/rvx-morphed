@@ -902,7 +902,7 @@
     <string name="revanced_hide_player_collapse_button_summary_on">Бутон за минимизиране е скрит.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">Бутон за минимизиране се показва.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Бутон за Цял екран</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">Бутон за цял екран е скрит.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"Бутон за цял екран е скрит."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">Бутон за цял екран се показва.</string>
     <string name="revanced_hide_player_previous_next_button_title">Скриване предишен &amp; следващ бутон</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">Бутоните са скрити.</string>
@@ -1632,7 +1632,7 @@
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Активирането на това може да подобри живота на батерията и да поправи заекването на възпроизвеждането.
 
 AVC има максимална разделителна способност от 1080p, аудио кодекът Opus не е наличен, а видеовъзпроизвеждането ще използва повече интернет данни от VP9 или AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">История на гледане</string>
     <string name="revanced_preference_screen_watch_history_summary">Променя настройките, за хронологията на гледане.</string>
