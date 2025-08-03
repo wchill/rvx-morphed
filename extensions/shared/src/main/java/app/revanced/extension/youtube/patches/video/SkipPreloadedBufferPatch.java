@@ -10,8 +10,8 @@ import app.revanced.extension.youtube.shared.PlayerType;
 import app.revanced.extension.youtube.shared.VideoInformation;
 
 @SuppressWarnings("unused")
-public class ReloadVideoPatch {
-    private static final long RELOAD_VIDEO_TIME_MILLISECONDS = 15000L;
+public class SkipPreloadedBufferPatch {
+    private static final long MINIMUM_VIDEO_LENGTH_TO_SKIP = 15000L;
 
     @NonNull
     public static String videoId = "";
@@ -30,12 +30,19 @@ public class ReloadVideoPatch {
             return;
         videoId = newlyLoadedVideoId;
 
-        if (newlyLoadedVideoLength < RELOAD_VIDEO_TIME_MILLISECONDS || newlyLoadedLiveStreamValue)
+        if (newlyLoadedVideoLength < MINIMUM_VIDEO_LENGTH_TO_SKIP || newlyLoadedLiveStreamValue)
             return;
 
-        final long seekTime = Math.max(RELOAD_VIDEO_TIME_MILLISECONDS, (long) (newlyLoadedVideoLength * 0.5));
+        final long seekTime = Math.max(MINIMUM_VIDEO_LENGTH_TO_SKIP, (long) (newlyLoadedVideoLength * 0.5));
 
         Utils.runOnMainThreadDelayed(() -> reloadVideo(seekTime), 250);
+    }
+
+    /**
+     * Injection point.
+     */
+    public static void onDismiss() {
+        videoId = "";
     }
 
     private static void reloadVideo(final long videoLength) {

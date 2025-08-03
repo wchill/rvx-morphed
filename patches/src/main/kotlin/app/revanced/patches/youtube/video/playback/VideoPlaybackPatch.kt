@@ -32,6 +32,8 @@ import app.revanced.patches.youtube.video.information.hookVideoInformation
 import app.revanced.patches.youtube.video.information.onCreateHook
 import app.revanced.patches.youtube.video.information.speedSelectionInsertMethod
 import app.revanced.patches.youtube.video.information.videoInformationPatch
+import app.revanced.patches.youtube.video.information.videoQualityListInsertIndex
+import app.revanced.patches.youtube.video.information.videoQualityListMethod
 import app.revanced.patches.youtube.video.videoid.hookPlayerResponseVideoId
 import app.revanced.patches.youtube.video.videoid.videoIdPatch
 import app.revanced.util.findMethodOrThrow
@@ -66,8 +68,8 @@ private const val EXTENSION_HDR_VIDEO_CLASS_DESCRIPTOR =
     "$VIDEO_PATH/HDRVideoPatch;"
 private const val EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR =
     "$VIDEO_PATH/PlaybackSpeedPatch;"
-private const val EXTENSION_RELOAD_VIDEO_CLASS_DESCRIPTOR =
-    "$VIDEO_PATH/ReloadVideoPatch;"
+private const val EXTENSION_SKIP_PRELOADED_BUFFER_CLASS_DESCRIPTOR =
+    "$VIDEO_PATH/SkipPreloadedBufferPatch;"
 private const val EXTENSION_SPOOF_DEVICE_DIMENSIONS_CLASS_DESCRIPTOR =
     "$VIDEO_PATH/SpoofDeviceDimensionsPatch;"
 private const val EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR =
@@ -198,13 +200,13 @@ val videoPlaybackPatch = bytecodePatch(
 
         qualityChangedFromRecyclerViewFingerprint.matchOrThrow().let {
             it.method.apply {
-                val index = it.patternMatch!!.startIndex
+                val index = it.patternMatch!!.startIndex + 1
+                val register = getInstruction<TwoRegisterInstruction>(index).registerA
 
                 addInstruction(
                     index + 1,
-                    "invoke-static {}, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->userSelectedVideoQuality()V"
+                    "invoke-static { v$register }, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->userChangedQualityInNewFlyout(Ljava/lang/String;)V"
                 )
-
             }
         }
 
@@ -215,17 +217,21 @@ val videoPlaybackPatch = bytecodePatch(
             onItemClickMethod?.apply {
                 addInstruction(
                     0,
-                    "invoke-static {}, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->userSelectedVideoQuality()V"
+                    "invoke-static {p3}, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->userChangedQualityInOldFlyout(I)V"
                 )
             } ?: throw PatchException("Failed to find onItemClick method")
         }
 
-        hookBackgroundPlayVideoInformation("$EXTENSION_RELOAD_VIDEO_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
-        hookVideoInformation("$EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
-        onCreateHook(
-            EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR,
-            "newVideoStarted"
+        videoQualityListMethod.addInstruction(
+            videoQualityListInsertIndex,
+            "invoke-static {}, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->newVideoQualityLoaded()V"
         )
+
+        hookBackgroundPlayVideoInformation("$EXTENSION_SKIP_PRELOADED_BUFFER_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
+        hookDismissObserver("$EXTENSION_SKIP_PRELOADED_BUFFER_CLASS_DESCRIPTOR->onDismiss()V")
+        hookVideoInformation("$EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
+        hookDismissObserver("$EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->onDismiss()V")
+        onCreateHook(EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR, "newVideoStarted")
 
         // endregion
 

@@ -70,8 +70,8 @@ internal val qualityChangedFromRecyclerViewFingerprint = legacyFingerprint(
     accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
     parameters = listOf("L"),
     opcodes = listOf(
-        Opcode.IGET,  // Video resolution (human readable).
-        Opcode.IGET_OBJECT,
+        Opcode.IGET,  // Video resolution int (human readable).
+        Opcode.IGET_OBJECT,  // Video resolution string (human readable).
         Opcode.IGET_BOOLEAN,
         Opcode.IGET_OBJECT,
         Opcode.INVOKE_STATIC,

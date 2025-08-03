@@ -101,6 +101,8 @@ private lateinit var setPlaybackSpeedMethodReference: MethodReference
 // Used by other patches.
 internal lateinit var speedSelectionInsertMethod: MutableMethod
 internal lateinit var videoEndMethod: MutableMethod
+internal lateinit var videoQualityListMethod: MutableMethod
+internal var videoQualityListInsertIndex = -1
 
 val videoInformationPatch = bytecodePatch(
     description = "videoInformationPatch",
@@ -574,6 +576,9 @@ val videoInformationPatch = bytecodePatch(
                     listIndex,
                     "invoke-static {v$listRegister}, $EXTENSION_CLASS_DESCRIPTOR->setAvailableVideoQuality([Lcom/google/android/libraries/youtube/innertube/model/media/VideoQuality;)V"
                 )
+
+                videoQualityListMethod = this
+                videoQualityListInsertIndex = listIndex + 1
             }
 
             val smaliInstructions =

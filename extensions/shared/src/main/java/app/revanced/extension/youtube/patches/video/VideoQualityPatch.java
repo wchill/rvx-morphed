@@ -2,8 +2,11 @@ package app.revanced.extension.youtube.patches.video;
 
 import static app.revanced.extension.shared.utils.StringRef.str;
 import static app.revanced.extension.youtube.shared.RootView.isShortsActive;
+import static app.revanced.extension.youtube.shared.VideoInformation.qualityNeedsUpdating;
 
 import androidx.annotation.NonNull;
+
+import org.apache.commons.lang3.StringUtils;
 
 import app.revanced.extension.shared.settings.IntegerSetting;
 import app.revanced.extension.shared.utils.Logger;
@@ -20,15 +23,22 @@ public class VideoQualityPatch {
     private static final IntegerSetting videoQualityMobile = Settings.DEFAULT_VIDEO_QUALITY_MOBILE;
     private static final IntegerSetting videoQualityWifi = Settings.DEFAULT_VIDEO_QUALITY_WIFI;
 
-    @NonNull
-    public static String videoId = "";
+    private static String videoId = "";
+    private static boolean userChangedVideoQuality = false;
+
+    /**
+     * Injection point.
+     */
+    public static void newVideoQualityLoaded() {
+        Utils.runOnMainThread(VideoQualityPatch::setVideoQuality);
+    }
 
     /**
      * Injection point.
      */
     public static void newVideoStarted() {
-        VideoInformation.qualityNeedsUpdating = true;
-        setVideoQuality(250);
+        qualityNeedsUpdating = true;
+        Utils.runOnMainThreadDelayed(VideoQualityPatch::setVideoQuality, 250);
     }
 
     /**
@@ -40,40 +50,65 @@ public class VideoQualityPatch {
         if (PlayerType.getCurrent() != PlayerType.INLINE_MINIMAL &&
                 !videoId.equals(newlyLoadedVideoId)) {
             videoId = newlyLoadedVideoId;
-            setVideoQuality(750);
+            qualityNeedsUpdating = true;
+            userChangedVideoQuality = false;
+            Utils.runOnMainThreadDelayed(VideoQualityPatch::setVideoQuality, 750);
+        }
+    }
+
+    public static void onDismiss() {
+        userChangedVideoQuality = false;
+        videoId = "";
+    }
+
+    private static void setVideoQuality() {
+        if (!userChangedVideoQuality) {
+            boolean isShorts = isShortsActive();
+            IntegerSetting defaultQualitySetting = Utils.getNetworkType() == Utils.NetworkType.MOBILE
+                    ? isShorts ? shortsQualityMobile : videoQualityMobile
+                    : isShorts ? shortsQualityWifi : videoQualityWifi;
+            int defaultQuality = defaultQualitySetting.get();
+            if (defaultQuality != DEFAULT_YOUTUBE_VIDEO_QUALITY) {
+                final int qualityToUseFinal = VideoInformation.getAvailableVideoQuality(defaultQuality);
+                Logger.printDebug(() -> "Changing video quality to: " + qualityToUseFinal);
+                VideoInformation.overrideVideoQuality(qualityToUseFinal);
+            }
         }
     }
 
     /**
      * Injection point.
+     * @param qualityIndex Element index of {@link VideoInformation#videoQualityEntryValues}.
      */
-    public static void userSelectedVideoQuality() {
-        Utils.runOnMainThreadDelayed(() ->
-                        userSelectedVideoQuality(VideoInformation.getVideoQuality()),
-                300
-        );
+    public static void userChangedQualityInOldFlyout(int qualityIndex) {
+        Utils.runOnMainThread(() -> {
+            int selectedQuality = VideoInformation.getVideoQuality(qualityIndex);
+            userSelectedVideoQuality(selectedQuality);
+        });
     }
 
-    private static void setVideoQuality(long delayMillis) {
-        boolean isShorts = isShortsActive();
-        IntegerSetting defaultQualitySetting = Utils.getNetworkType() == Utils.NetworkType.MOBILE
-                ? isShorts ? shortsQualityMobile : videoQualityMobile
-                : isShorts ? shortsQualityWifi : videoQualityWifi;
-
-        int defaultQuality = defaultQualitySetting.get();
-
-        if (defaultQuality != DEFAULT_YOUTUBE_VIDEO_QUALITY) {
-            Utils.runOnMainThreadDelayed(() -> {
-                        final int qualityToUseFinal = VideoInformation.getAvailableVideoQuality(defaultQuality);
-                        Logger.printDebug(() -> "Changing video quality to: " + qualityToUseFinal);
-                        VideoInformation.overrideVideoQuality(qualityToUseFinal);
-                    }, delayMillis
-            );
-        }
+    /**
+     * Injection point.
+     * @param videoResolution Human readable resolution: 480p, 720p HDR, 1080s.
+     */
+    public static void userChangedQualityInNewFlyout(String videoResolution) {
+        Utils.verifyOnMainThread();
+        Utils.runOnMainThread(() -> {
+            try {
+                int suffixIndex = StringUtils.indexOfAny(videoResolution, "p", "s");
+                if (suffixIndex > -1) {
+                    int selectedQuality = Integer.parseInt(StringUtils.substring(videoResolution, 0, suffixIndex));
+                    userSelectedVideoQuality(selectedQuality);
+                }
+            } catch (Exception ex) {
+                Logger.printException(() -> "userChangedQualityInNewFlyout failed", ex);
+            }
+        });
     }
 
     public static void userSelectedVideoQuality(final int defaultQuality) {
         if (defaultQuality != DEFAULT_YOUTUBE_VIDEO_QUALITY) {
+            userChangedVideoQuality = true;
             final Utils.NetworkType networkType = Utils.getNetworkType();
             String networkTypeMessage = networkType == Utils.NetworkType.MOBILE
                     ? str("revanced_remember_video_quality_mobile")

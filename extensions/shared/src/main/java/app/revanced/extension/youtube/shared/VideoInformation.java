@@ -8,12 +8,16 @@ import androidx.annotation.Nullable;
 
 import com.google.android.libraries.youtube.innertube.model.media.VideoQuality;
 
+import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import app.revanced.extension.shared.utils.Logger;
 import app.revanced.extension.shared.utils.Utils;
 import app.revanced.extension.youtube.patches.utils.AlwaysRepeatPatch;
+import kotlin.Triple;
 
 /**
  * Hooking class for the current playing video.
@@ -434,6 +438,17 @@ public final class VideoInformation {
     }
 
     /**
+     * @return The current video quality.
+     */
+    public static int getVideoQuality(int qualityIndex) {
+        if (videoQualityEntryValues != null) {
+            return videoQualityEntryValues.get(qualityIndex);
+        } else {
+            return videoQuality;
+        }
+    }
+
+    /**
      * @return The current video quality simplified string.
      */
     public static String getVideoQualitySimplifiedString() {
@@ -449,20 +464,10 @@ public final class VideoInformation {
         if (newlyLoadedVideoQuality == null) {
             return;
         }
-        try {
-            videoQuality = newlyLoadedVideoQuality.a;
-            videoQualityString = newlyLoadedVideoQuality.b;
-
-            if (videoQualityString.contains("p")) {
-                videoQualitySimplifiedString = videoQuality + "p";
-            } else if (videoQualityString.contains("s")) {
-                videoQualitySimplifiedString = videoQuality + "s";
-            } else {
-                videoQualitySimplifiedString = videoQualityString;
-            }
-        } catch (Exception ex) {
-            Logger.printException(() -> "Failed to set video quality", ex);
-        }
+        var videoQualityTriple = parseVideoQuality(newlyLoadedVideoQuality);
+        videoQuality = videoQualityTriple.component1();
+        videoQualityString = videoQualityTriple.component2();
+        videoQualitySimplifiedString = videoQualityTriple.component3();
     }
 
     /**
@@ -471,27 +476,59 @@ public final class VideoInformation {
      * @param qualities Video qualities available, ordered from largest to smallest, with index 0 being the 'automatic' value of -2
      */
     public static void setAvailableVideoQuality(VideoQuality[] qualities) {
-        if (qualities == null) {
+        if (qualities == null || qualities.length < 0) {
             return;
         }
+        List<String> qualityEntries = new ArrayList<>(qualities.length);
+        List<Integer> qualityEntryValues = new ArrayList<>(qualities.length);
+        for (VideoQuality videoQuality : qualities) {
+            if (videoQuality != null) {
+                var videoQualityTriple = parseVideoQuality(videoQuality);
+                qualityEntries.add(videoQualityTriple.component2());
+                qualityEntryValues.add(videoQualityTriple.component1());
+            }
+        }
+        if (videoQualityEntries == null || !CollectionUtils.isEqualCollection(videoQualityEntries, qualityEntries)) {
+            videoQualityEntries = qualityEntries;
+            videoQualityEntryValues = qualityEntryValues;
+            qualityNeedsUpdating = true;
+            Logger.printDebug(() -> "videoQualityEntries: " + videoQualityEntries + "\nvideoQualityEntryValues: " + videoQualityEntryValues);
+        }
+    }
+
+
+    /**
+     * Sometimes, the int value and the string value for the video quality are different:
+     * Label: 360p, Value: 480
+     * Label: 480p, Value: 720
+     * Label: 1080p, Value: 1440
+     * Label: 1440p, Value: 2160
+     * <p>
+     * The easiest way to solve this is to parse the quality label.
+     * @param videoQuality  VideoQuality class that may have incorrect int values:
+     *                      e.g. public class VideoQuality {
+     *                              int a = 1440
+     *                              String b = "1080p HDR"
+     *                           }
+     * @return  Triple(Video quality value, Video quality label, Video quality label simplfied).
+     *          e.g. Triple(1080, "1080p HDR", "1080p")
+     */
+    private static Triple<Integer, String, String> parseVideoQuality(@NonNull VideoQuality videoQuality) {
+        int videoQualityInt = videoQuality.a;
+        String videoQualityString = videoQuality.b;
+        String videoQualitySimplifiedString = DEFAULT_YOUTUBE_VIDEO_QUALITY_STRING;
         try {
-            if (videoQualityEntries == null || videoQualityEntries.size() != qualities.length) {
-                videoQualityEntries = new ArrayList<>(qualities.length);
-                videoQualityEntryValues = new ArrayList<>(qualities.length);
-                for (VideoQuality videoQuality : qualities) {
-                    if (videoQuality != null) {
-                        videoQualityEntries.add(videoQuality.b);
-                        videoQualityEntryValues.add(videoQuality.a);
-                    }
-                }
-                if (videoQualityEntries != null && videoQualityEntries.size() > 0) {
-                    qualityNeedsUpdating = true;
-                    Logger.printDebug(() -> "videoQualityEntries: " + videoQualityEntries + "\nvideoQualityEntryValues: " + videoQualityEntryValues);
-                }
+            int suffixIndex = StringUtils.indexOfAny(videoQualityString, "p", "s");
+            if (suffixIndex > -1) {
+                String videoQualityIntString = StringUtils.substring(videoQualityString, 0, suffixIndex);
+                videoQualitySimplifiedString = videoQualityIntString + videoQualityString.charAt(suffixIndex);
+                videoQualityInt = Integer.parseInt(videoQualityIntString);
             }
         } catch (Exception ex) {
-            Logger.printException(() -> "Failed to set video quality array", ex);
+            Logger.printException(() -> "parseVideoQuality failed", ex);
         }
+        // Fallback to video quality value only if parsing fails.
+        return new Triple(videoQualityInt, videoQualityString, videoQualitySimplifiedString);
     }
 
     /**
