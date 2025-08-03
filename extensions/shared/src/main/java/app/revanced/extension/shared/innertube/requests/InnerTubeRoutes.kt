@@ -25,9 +25,13 @@ object InnerTubeRoutes {
     @JvmField
     val GET_ADAPTIVE_FORMATS = compileRoute(
         endpoint = "player",
-        fields = "streamingData.adaptiveFormats.signatureCipher," +
+        fields = "playabilityStatus.status," +
+                "streamingData.adaptiveFormats.signatureCipher," +
                 "streamingData.adaptiveFormats.url," +
-                "streamingData.initialAuthorizedDrmTrackTypes"
+                "streamingData.formats.signatureCipher," +
+                "streamingData.formats.url," +
+                "streamingData.initialAuthorizedDrmTrackTypes," +
+                "streamingData.serverAbrStreamingUrl"
     )
 
     @JvmField

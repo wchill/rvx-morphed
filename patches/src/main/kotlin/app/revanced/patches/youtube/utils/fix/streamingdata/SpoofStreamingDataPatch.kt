@@ -5,7 +5,6 @@ import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.instructions
-import app.revanced.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.revanced.patcher.patch.PatchException
 import app.revanced.patcher.patch.ResourcePatchContext
 import app.revanced.patcher.patch.booleanOption
@@ -15,7 +14,6 @@ import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMu
 import app.revanced.patches.shared.extension.Constants.EXTENSION_UTILS_CLASS_DESCRIPTOR
 import app.revanced.patches.shared.extension.Constants.PATCHES_PATH
 import app.revanced.patches.shared.extension.Constants.SPOOF_PATH
-import app.revanced.patches.shared.spoof.blockrequest.blockRequestPatch
 import app.revanced.patches.shared.spoof.useragent.baseSpoofUserAgentPatch
 import app.revanced.patches.youtube.utils.audiotracks.audioTracksHookPatch
 import app.revanced.patches.youtube.utils.audiotracks.hookAudioTrackId
@@ -51,14 +49,18 @@ import app.revanced.util.findMethodOrThrow
 import app.revanced.util.fingerprint.definingClassOrThrow
 import app.revanced.util.fingerprint.injectLiteralInstructionBooleanCall
 import app.revanced.util.fingerprint.matchOrThrow
+import app.revanced.util.fingerprint.methodCall
 import app.revanced.util.fingerprint.methodOrThrow
 import app.revanced.util.getReference
+import app.revanced.util.indexOfFirstInstructionReversedOrThrow
 import app.revanced.util.inputStreamFromBundledResourceOrThrow
+import app.revanced.util.returnEarly
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
@@ -94,7 +96,6 @@ val spoofStreamingDataPatch = bytecodePatch(
         spoofStreamingDataRawResourcePatch,
         settingsPatch,
         baseSpoofUserAgentPatch(YOUTUBE_PACKAGE_NAME),
-        blockRequestPatch,
         buildRequestPatch,
         sharedResourceIdPatch,
         versionCheckPatch,
@@ -114,26 +115,47 @@ val spoofStreamingDataPatch = bytecodePatch(
         required = true
     )
 
-    val useIOSClient by booleanOption(
-        key = "useIOSClient",
-        default = false,
-        title = "Use iOS client",
-        description = "Add setting to set iOS client (Deprecated) as default client.",
-    )
-
     execute {
-
-        var settingArray = arrayOf(
-            "SETTINGS: SPOOF_STREAMING_DATA"
-        )
-
-        var patchStatusArray = arrayOf(
-            "SpoofStreamingData"
-        )
 
         // region Get replacement streams at player requests.
 
         hookBuildRequest("$EXTENSION_CLASS_DESCRIPTOR->fetchStreams(Ljava/lang/String;Ljava/util/Map;)V")
+
+        // endregion
+
+        // region Block /initplayback requests to fall back to /get_watch requests.
+
+        buildInitPlaybackRequestFingerprint.methodOrThrow().apply {
+            val uriIndex = indexOfUriToStringInstruction(this)
+            val uriRegister =
+                getInstruction<FiveRegisterInstruction>(uriIndex).registerC
+
+            addInstructions(
+                uriIndex,
+                """
+                    invoke-static { v$uriRegister }, $EXTENSION_CLASS_DESCRIPTOR->blockInitPlaybackRequest(Landroid/net/Uri;)Landroid/net/Uri;
+                    move-result-object v$uriRegister
+                    """,
+            )
+        }
+
+        // endregion
+
+        // region Block /get_watch requests to fall back to /player requests.
+
+        buildPlayerRequestURIFingerprint.methodOrThrow().apply {
+            val invokeToStringIndex = indexOfUriToStringInstruction(this)
+            val uriRegister =
+                getInstruction<FiveRegisterInstruction>(invokeToStringIndex).registerC
+
+            addInstructions(
+                invokeToStringIndex,
+                """
+                    invoke-static { v$uriRegister }, $EXTENSION_CLASS_DESCRIPTOR->blockGetWatchRequest(Landroid/net/Uri;)Landroid/net/Uri;
+                    move-result-object v$uriRegister
+                    """,
+            )
+        }
 
         // endregion
 
@@ -266,6 +288,71 @@ val spoofStreamingDataPatch = bytecodePatch(
                 }
             }
 
+        videoStreamingDataConstructorFingerprint.matchOrThrow(
+            videoStreamingDataToStringFingerprint
+        ).let {
+            it.method.apply {
+                val setAdaptiveFormatsMethodName = "patch_setAdaptiveFormats"
+
+                val adaptiveFormatsFieldIndex =
+                    indexOfGetAdaptiveFormatsFieldInstruction(this)
+                val adaptiveFormatsRegister =
+                    getInstruction<TwoRegisterInstruction>(adaptiveFormatsFieldIndex).registerA
+                val videoIdIndex =
+                    indexOfFirstInstructionReversedOrThrow(adaptiveFormatsFieldIndex) {
+                        val reference = getReference<FieldReference>()
+                        opcode == Opcode.IGET_OBJECT &&
+                                reference?.type == "Ljava/lang/String;" &&
+                                reference.definingClass == definingClass
+                    }
+                val definingClassRegister =
+                    getInstruction<TwoRegisterInstruction>(videoIdIndex).registerB
+                val videoIdReference =
+                    getInstruction<ReferenceInstruction>(videoIdIndex).reference
+
+                it.classDef.methods.add(
+                    ImmutableMethod(
+                        definingClass,
+                        setAdaptiveFormatsMethodName,
+                        listOf(
+                            ImmutableMethodParameter(
+                                "Ljava/util/List;",
+                                annotations,
+                                "adaptiveFormats"
+                            )
+                        ),
+                        "Ljava/util/List;",
+                        AccessFlags.PRIVATE.value or AccessFlags.FINAL.value,
+                        annotations,
+                        null,
+                        MutableMethodImplementation(4),
+                    ).toMutable().apply {
+                        addInstructionsWithLabels(
+                            0,
+                            """
+                                # Get video id.
+                                iget-object v0, p0, $videoIdReference
+                                
+                                # Override adaptive formats.
+                                invoke-static { v0, p1 }, $EXTENSION_CLASS_DESCRIPTOR->prioritizeVideoQuality(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
+                                move-result-object p1
+
+                                return-object p1
+                                """,
+                        )
+                    },
+                )
+
+                addInstructions(
+                    adaptiveFormatsFieldIndex + 1, """
+                        # Override adaptive formats.
+                        invoke-direct { v$definingClassRegister,  v$adaptiveFormatsRegister }, $definingClass->$setAdaptiveFormatsMethodName(Ljava/util/List;)Ljava/util/List;
+                        move-result-object v$adaptiveFormatsRegister
+                        """
+                )
+            }
+        }
+
         addPlayerResponseMethodHook(
             Hook.PlayerParameterBeforeVideoId(
                 "$EXTENSION_CLASS_DESCRIPTOR->newPlayerResponseParameter(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;"
@@ -304,6 +391,29 @@ val spoofStreamingDataPatch = bytecodePatch(
                     iput-object v1, v0, $definingClass->d:[B
                     """,
             )
+        }
+
+        val (brotliInputStreamClassName, brotliInputStreamMethodCall) = with (brotliInputStreamFingerprint.methodOrThrow()) {
+            Pair(definingClass, methodCall())
+        }
+
+        findMethodOrThrow(EXTENSION_UTILS_CLASS_DESCRIPTOR) {
+            name == "getBrotliInputStream"
+        }.addInstructions(
+            0, """
+                new-instance v0, $brotliInputStreamClassName
+                invoke-direct {v0, p0}, $brotliInputStreamMethodCall
+                return-object v0
+                """
+        )
+
+        arrayOf(
+            ResourceGroup(
+                "raw",
+                "po_token.html",
+            )
+        ).forEach { resourceGroup ->
+            context.copyResources("youtube/spoof/shared", resourceGroup)
         }
 
         // endregion
@@ -358,11 +468,6 @@ val spoofStreamingDataPatch = bytecodePatch(
             }
         }
 
-        if (useIOSClient == true) {
-            settingArray += "SETTINGS: USE_IOS_DEPRECATED"
-            patchStatusArray += "SpoofStreamingDataIOS"
-        }
-
         // endregion
 
         // region patch for audio track button
@@ -414,17 +519,14 @@ val spoofStreamingDataPatch = bytecodePatch(
 
         // endregion
 
-        patchStatusArray.forEach { methodName ->
-            findMethodOrThrow("$PATCHES_PATH/PatchStatus;") {
-                name == methodName
-            }.replaceInstruction(
-                0,
-                "const/4 v0, 0x1"
-            )
-        }
+        findMethodOrThrow("$PATCHES_PATH/PatchStatus;") {
+            name == "SpoofStreamingData"
+        }.returnEarly(true)
 
         addPreference(
-            settingArray,
+            arrayOf(
+                "SETTINGS: SPOOF_STREAMING_DATA"
+            ),
             SPOOF_STREAMING_DATA
         )
     }

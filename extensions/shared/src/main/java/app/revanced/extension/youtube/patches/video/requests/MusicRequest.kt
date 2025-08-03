@@ -2,10 +2,9 @@ package app.revanced.extension.youtube.patches.video.requests
 
 import android.annotation.SuppressLint
 import androidx.annotation.GuardedBy
-import app.revanced.extension.shared.innertube.client.YouTubeAppClient
-import app.revanced.extension.shared.innertube.client.YouTubeWebClient
+import app.revanced.extension.shared.innertube.client.YouTubeClient
 import app.revanced.extension.shared.innertube.requests.InnerTubeRequestBody.createApplicationRequestBody
-import app.revanced.extension.shared.innertube.requests.InnerTubeRequestBody.createWebInnertubeBody
+import app.revanced.extension.shared.innertube.requests.InnerTubeRequestBody.createJSRequestBody
 import app.revanced.extension.shared.innertube.requests.InnerTubeRequestBody.getInnerTubeResponseConnectionFromRoute
 import app.revanced.extension.shared.innertube.requests.InnerTubeRoutes.GET_CATEGORY
 import app.revanced.extension.shared.innertube.requests.InnerTubeRoutes.GET_PLAYLIST_PAGE
@@ -123,7 +122,7 @@ class MusicRequest private constructor(
             Objects.requireNonNull(videoId)
 
             val startTime = System.currentTimeMillis()
-            val clientType = YouTubeAppClient.ClientType.ANDROID_VR
+            val clientType = YouTubeClient.ClientType.ANDROID_VR
             val clientTypeName = clientType.name
             Logger.printDebug { "Fetching playlist request for: $videoId, using client: $clientTypeName" }
 
@@ -167,7 +166,7 @@ class MusicRequest private constructor(
             Objects.requireNonNull(videoId)
 
             val startTime = System.currentTimeMillis()
-            val clientType = YouTubeWebClient.ClientType.MWEB
+            val clientType = YouTubeClient.ClientType.MWEB
             val clientTypeName = clientType.name
             Logger.printDebug { "Fetching microformat request for: $videoId, using client: $clientTypeName" }
 
@@ -176,7 +175,7 @@ class MusicRequest private constructor(
                     GET_CATEGORY,
                     clientType
                 )
-                val requestBody = createWebInnertubeBody(clientType, videoId)
+                val requestBody = createJSRequestBody(clientType, videoId)
 
                 connection.setFixedLengthStreamingMode(requestBody.size)
                 connection.outputStream.write(requestBody)

@@ -1,7 +1,7 @@
 package app.revanced.extension.youtube.patches.player.requests
 
 import androidx.annotation.GuardedBy
-import app.revanced.extension.shared.innertube.client.YouTubeAppClient
+import app.revanced.extension.shared.innertube.client.YouTubeClient
 import app.revanced.extension.shared.innertube.requests.InnerTubeRequestBody.createApplicationRequestBody
 import app.revanced.extension.shared.innertube.requests.InnerTubeRequestBody.getInnerTubeResponseConnectionFromRoute
 import app.revanced.extension.shared.innertube.requests.InnerTubeRoutes.GET_VIDEO_ACTION_BUTTON
@@ -92,7 +92,7 @@ class ActionButtonRequest private constructor(
 
             val startTime = System.currentTimeMillis()
             // '/next' endpoint does not require PoToken.
-            val clientType = YouTubeAppClient.ClientType.ANDROID
+            val clientType = YouTubeClient.ClientType.ANDROID
             val clientTypeName = clientType.name
             Logger.printDebug { "Fetching playlist request for: $videoId, using client: $clientTypeName" }
 

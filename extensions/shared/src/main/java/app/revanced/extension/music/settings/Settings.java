@@ -290,7 +290,6 @@ public class Settings extends BaseSettings {
             SB_API_URL.key,
             SETTINGS_IMPORT_EXPORT.key,
             SPOOF_APP_VERSION_TARGET.key,
-            SPOOF_CLIENT_TYPE.key,
             WATCH_HISTORY_TYPE.key,
     };
 

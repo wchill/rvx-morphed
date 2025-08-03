@@ -2,7 +2,7 @@ package app.revanced.extension.youtube.patches.spoof.requests
 
 import android.annotation.SuppressLint
 import androidx.annotation.GuardedBy
-import app.revanced.extension.shared.innertube.client.YouTubeAppClient
+import app.revanced.extension.shared.innertube.client.YouTubeClient
 import app.revanced.extension.shared.innertube.requests.InnerTubeRequestBody.createApplicationRequestBody
 import app.revanced.extension.shared.innertube.requests.InnerTubeRequestBody.getInnerTubeResponseConnectionFromRoute
 import app.revanced.extension.shared.innertube.requests.InnerTubeRoutes.GET_AUDIO_TRACK
@@ -102,7 +102,7 @@ class AudioTrackRequest private constructor(
             val startTime = System.currentTimeMillis()
             // '/player' endpoint requires a PoToken, and if there is no PoToken in the RequestBody, there is a playback issue after 1:10.
             // This is not a problem, as it is only used to get the list of audio tracks, not for streaming purposes.
-            val clientType = YouTubeAppClient.ClientType.ANDROID
+            val clientType = YouTubeClient.ClientType.ANDROID
             val clientTypeName = clientType.name
             Logger.printDebug { "Fetching audiotrack request for: $videoId" }
 

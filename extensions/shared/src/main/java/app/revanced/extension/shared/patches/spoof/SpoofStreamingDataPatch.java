@@ -1,6 +1,7 @@
 package app.revanced.extension.shared.patches.spoof;
 
-import android.annotation.TargetApi;
+import static app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.prioritizeResolution;
+
 import android.net.Uri;
 import android.text.TextUtils;
 
@@ -12,10 +13,11 @@ import com.google.protos.youtube.api.innertube.StreamingDataOuterClass.Streaming
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
-import app.revanced.extension.shared.innertube.client.YouTubeAppClient.ClientType;
+import app.revanced.extension.shared.innertube.client.YouTubeClient.ClientType;
 import app.revanced.extension.shared.innertube.utils.ThrottlingParameterUtils;
 import app.revanced.extension.shared.patches.PatchStatus;
 import app.revanced.extension.shared.patches.spoof.requests.StreamingDataRequest;
@@ -25,21 +27,19 @@ import app.revanced.extension.shared.utils.Logger;
 import app.revanced.extension.shared.utils.Utils;
 import app.revanced.extension.youtube.shared.VideoInformation;
 
-@TargetApi(26)
 @SuppressWarnings({"deprecation", "unused"})
-public class SpoofStreamingDataPatch extends BlockRequestPatch {
-    private static final boolean SPOOF_STREAMING_DATA_USE_IOS =
-            PatchStatus.SpoofStreamingDataIOS() && BaseSettings.SPOOF_STREAMING_DATA_USE_IOS.get();
-    private static final boolean SPOOF_STREAMING_DATA_USE_TV =
-            SPOOF_STREAMING_DATA && BaseSettings.SPOOF_STREAMING_DATA_USE_TV.get();
+public class SpoofStreamingDataPatch {
+    public static final boolean SPOOF_STREAMING_DATA =
+            BaseSettings.SPOOF_STREAMING_DATA.get() && PatchStatus.SpoofStreamingData();
     private static final boolean J2V8_LIBRARY_AVAILABILITY = checkJ2V8();
-    private static final boolean SPOOF_STREAMING_DATA_USE_TV_ALL =
-            SPOOF_STREAMING_DATA_USE_TV && BaseSettings.SPOOF_STREAMING_DATA_USE_TV_ALL.get();
-    private static final boolean SPOOF_STREAMING_DATA_TV_USE_LATEST_JS =
-            SPOOF_STREAMING_DATA_USE_TV && BaseSettings.SPOOF_STREAMING_DATA_TV_USE_LATEST_JS.get();
-    private static final boolean SPOOF_STREAMING_DATA_TV_USE_V8_JS_ENGINE =
-            SPOOF_STREAMING_DATA_USE_TV && BaseSettings.SPOOF_STREAMING_DATA_TV_USE_V8_JS_ENGINE.get() &&
-                    J2V8_LIBRARY_AVAILABILITY;
+    private static final boolean SPOOF_STREAMING_DATA_PRIORITIZE_VIDEO_QUALITY =
+            SPOOF_STREAMING_DATA && BaseSettings.SPOOF_STREAMING_DATA_PRIORITIZE_VIDEO_QUALITY.get();
+    private static final boolean SPOOF_STREAMING_DATA_USE_JS =
+            SPOOF_STREAMING_DATA && BaseSettings.SPOOF_STREAMING_DATA_USE_JS.get();
+    private static final boolean SPOOF_STREAMING_DATA_USE_JS_ALL =
+            SPOOF_STREAMING_DATA_USE_JS && BaseSettings.SPOOF_STREAMING_DATA_USE_JS_ALL.get();
+    private static final boolean SPOOF_STREAMING_DATA_USE_LATEST_JS =
+            SPOOF_STREAMING_DATA_USE_JS && BaseSettings.SPOOF_STREAMING_DATA_USE_LATEST_JS.get();
 
     /**
      * Any unreachable ip address.  Used to intentionally fail requests.
@@ -62,9 +62,10 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
      * Prefix present in all Short player parameters signature.
      */
     private static final String SHORTS_PLAYER_PARAMETERS = "8AEB";
+    private static volatile boolean isInitialized = false;
     /**
-     * If {@link SpoofStreamingDataPatch#SPOOF_STREAMING_DATA_USE_TV_ALL} is false,
-     * Autoplay in feed, Clips, and Shorts will not use the TV client for fast playback.
+     * If {@link SpoofStreamingDataPatch#SPOOF_STREAMING_DATA_USE_JS_ALL} is false,
+     * Autoplay in feed, Clips, and Shorts will not use the JS client for fast playback.
      * The player parameter is used to detect the video type.
      */
     @NonNull
@@ -79,7 +80,7 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
      * @return Whether the J2V8 library exists.
      */
     private static boolean checkJ2V8() {
-        if (SPOOF_STREAMING_DATA_USE_TV) {
+        if (SPOOF_STREAMING_DATA && !isInitialized) {
             try {
                 String libraryDir = Utils.getContext()
                         .getApplicationContext()
@@ -89,10 +90,60 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
                 return j2v8.exists();
             } catch (Exception ex) {
                 Logger.printException(() -> "J2V8 native library not found", ex);
+            } finally {
+                isInitialized = true;
             }
         }
 
         return false;
+    }
+
+    /**
+     * Injection point.
+     * Blocks /get_watch requests by returning an unreachable URI.
+     *
+     * @param playerRequestUri The URI of the player request.
+     * @return An unreachable URI if the request is a /get_watch request, otherwise the original URI.
+     */
+    public static Uri blockGetWatchRequest(Uri playerRequestUri) {
+        if (SPOOF_STREAMING_DATA) {
+            try {
+                String path = playerRequestUri.getPath();
+
+                if (path != null && path.contains("get_watch")) {
+                    Logger.printDebug(() -> "Blocking 'get_watch' by returning unreachable uri");
+
+                    return UNREACHABLE_HOST_URI;
+                }
+            } catch (Exception ex) {
+                Logger.printException(() -> "blockGetWatchRequest failure", ex);
+            }
+        }
+
+        return playerRequestUri;
+    }
+
+    /**
+     * Injection point.
+     * <p>
+     * Blocks /initplayback requests.
+     */
+    public static Uri blockInitPlaybackRequest(Uri initPlaybackRequestUri) {
+        if (SPOOF_STREAMING_DATA) {
+            try {
+                String path = initPlaybackRequestUri.getPath();
+
+                if (path != null && path.contains("initplayback")) {
+                    Logger.printDebug(() -> "Blocking 'initplayback' by clearing query");
+
+                    return initPlaybackRequestUri.buildUpon().clearQuery().build();
+                }
+            } catch (Exception ex) {
+                Logger.printException(() -> "blockInitPlaybackRequest failure", ex);
+            }
+        }
+
+        return initPlaybackRequestUri;
     }
 
     /**
@@ -188,6 +239,18 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
      * Injection point.
      * Called after {@link #getStreamingData(String)}.
      */
+    public static List<Object> prioritizeVideoQuality(@Nullable String videoId, @NonNull List<Object> adaptiveFormats) {
+        if (SPOOF_STREAMING_DATA_PRIORITIZE_VIDEO_QUALITY && isValidVideoId(videoId)) {
+            return prioritizeResolution(adaptiveFormats);
+        }
+
+        return adaptiveFormats;
+    }
+
+    /**
+     * Injection point.
+     * Called after {@link #getStreamingData(String)}.
+     */
     @Nullable
     public static byte[] removeVideoPlaybackPostBody(Uri uri, int method, byte[] postData) {
         if (SPOOF_STREAMING_DATA) {
@@ -216,9 +279,9 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
     @Nullable
     public static String newPlayerResponseParameter(@NonNull String newlyLoadedVideoId, @Nullable String playerParameter,
                                                     @Nullable String newlyLoadedPlaylistId, boolean isShortAndOpeningOrPlaying) {
-        if (SPOOF_STREAMING_DATA_USE_TV) {
+        if (SPOOF_STREAMING_DATA_USE_JS) {
             reasonSkipped = "";
-            if (!SPOOF_STREAMING_DATA_USE_TV_ALL && playerParameter != null) {
+            if (!SPOOF_STREAMING_DATA_USE_JS_ALL && playerParameter != null) {
                 if (playerParameter.startsWith(SHORTS_PLAYER_PARAMETERS)) {
                     reasonSkipped = "Shorts";
                 }  else if (StringUtils.startsWithAny(playerParameter, AUTOPLAY_PARAMETERS)) {
@@ -240,11 +303,10 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
      * Used for {@link ClientType#TV}, {@link ClientType#TV_SIMPLY} and {@link ClientType#TV_EMBEDDED}.
      */
     public static void initializeJavascript() {
-        if (SPOOF_STREAMING_DATA_USE_TV) {
+        if (SPOOF_STREAMING_DATA_USE_JS) {
             // Download JavaScript and initialize the Cipher class
             CompletableFuture.runAsync(() -> ThrottlingParameterUtils.initializeJavascript(
-                    SPOOF_STREAMING_DATA_TV_USE_LATEST_JS,
-                    SPOOF_STREAMING_DATA_TV_USE_V8_JS_ENGINE
+                    SPOOF_STREAMING_DATA_USE_LATEST_JS
             ));
         }
     }
@@ -266,10 +328,15 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         return format;
     }
 
-    public static boolean notSpoofingToAndroidAudio() {
-        return !PatchStatus.SpoofStreamingData()
-                || !BaseSettings.SPOOF_STREAMING_DATA.get()
-                || !BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().name().startsWith("ANDROID"); // IOS, TV
+    public static boolean notSpoofingToAndroid() {
+        if (!PatchStatus.SpoofStreamingData()) {
+            return true;
+        }
+        if (!BaseSettings.SPOOF_STREAMING_DATA.get()) {
+            return true;
+        }
+        String defaultClient = BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().name();
+        return defaultClient.equals("IOS_UNPLUGGED") || defaultClient.startsWith("TV");
     }
 
     public static final class ClientAndroidVRAvailability implements Setting.Availability {
@@ -292,26 +359,28 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().name().startsWith("IOS");
+                    BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().name().equals("IOS_UNPLUGGED");
         }
     }
 
-    public static final class ClientTVAvailability implements Setting.Availability {
+    public static final class ClientJSAvailability implements Setting.Availability {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().name().startsWith("TV");
+                    J2V8_LIBRARY_AVAILABILITY &&
+                    BaseSettings.SPOOF_STREAMING_DATA_USE_JS.get() &&
+                    BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().getRequireJS();
         }
     }
 
     public static final class ForceOriginalAudioAvailability implements Setting.Availability {
-        private static final boolean AVAILABLE_ON_LAUNCH = SpoofStreamingDataPatch.notSpoofingToAndroidAudio();
+        private static final boolean AVAILABLE_ON_LAUNCH = SpoofStreamingDataPatch.notSpoofingToAndroid();
 
         @Override
         public boolean isAvailable() {
             // Check conditions of launch and now. Otherwise if spoofing is changed
             // without a restart the setting will show as available when it's not.
-            return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.notSpoofingToAndroidAudio();
+            return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.notSpoofingToAndroid();
         }
     }
 
@@ -319,19 +388,18 @@ public class SpoofStreamingDataPatch extends BlockRequestPatch {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().name().startsWith("TV") &&
                     J2V8_LIBRARY_AVAILABILITY;
         }
     }
 
     public static final class HideAudioFlyoutMenuAvailability implements Setting.Availability {
-        private static final boolean AVAILABLE_ON_LAUNCH = SpoofStreamingDataPatch.notSpoofingToAndroidAudio();
+        private static final boolean AVAILABLE_ON_LAUNCH = SpoofStreamingDataPatch.notSpoofingToAndroid();
 
         @Override
         public boolean isAvailable() {
             // Check conditions of launch and now. Otherwise if spoofing is changed
             // without a restart the setting will show as available when it's not.
-            return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.notSpoofingToAndroidAudio();
+            return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.notSpoofingToAndroid();
         }
     }
 }

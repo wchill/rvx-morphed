@@ -243,22 +243,14 @@ public class ReVancedSettingsPreference extends ReVancedPreferenceFragment {
 
     private static void SpoofStreamingDataPreferenceLinks() {
         if (mPreferenceManager.findPreference(BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.key) instanceof ListPreference listPreference) {
-            boolean useIOS = app.revanced.extension.shared.patches.PatchStatus.SpoofStreamingDataIOS() && BaseSettings.SPOOF_STREAMING_DATA_USE_IOS.get();
-            boolean useTV = BaseSettings.SPOOF_STREAMING_DATA_USE_TV.get();
+            boolean useJS = BaseSettings.SPOOF_STREAMING_DATA_USE_JS.get();
 
-            String entriesKey = "revanced_spoof_streaming_data_default_client_entries";
-            String entryValueKey = "revanced_spoof_streaming_data_default_client_entry_values";
-
-            if (useIOS && !useTV) {
-                entriesKey = "revanced_spoof_streaming_data_default_client_with_ios_entries";
-                entryValueKey = "revanced_spoof_streaming_data_default_client_with_ios_entry_values";
-            } else if (!useIOS && useTV) {
-                entriesKey = "revanced_spoof_streaming_data_default_client_with_tv_entries";
-                entryValueKey = "revanced_spoof_streaming_data_default_client_with_tv_entry_values";
-            } else if (useIOS && useTV) {
-                entriesKey = "revanced_spoof_streaming_data_default_client_with_ios_tv_entries";
-                entryValueKey = "revanced_spoof_streaming_data_default_client_with_ios_tv_entry_values";
-            }
+            String entriesKey = useJS
+                    ? "revanced_spoof_streaming_data_default_client_with_js_entries"
+                    : "revanced_spoof_streaming_data_default_client_entries";
+            String entryValueKey = useJS
+                    ? "revanced_spoof_streaming_data_default_client_with_js_entry_values"
+                    : "revanced_spoof_streaming_data_default_client_entry_values";
 
             listPreference.setEntries(ResourceUtils.getArrayIdentifier(entriesKey));
             listPreference.setEntryValues(ResourceUtils.getArrayIdentifier(entryValueKey));

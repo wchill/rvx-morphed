@@ -12,11 +12,10 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-import app.revanced.extension.shared.settings.BaseSettings;
 import app.revanced.extension.shared.utils.Logger;
 
 @SuppressWarnings({"deprecation", "unused"})
-public class StreamingDataOuterClassPatch {
+public class StreamingDataOuterClassPatch extends SpoofStreamingDataPatch {
     public interface StreamingDataMessage {
         // Methods are added to YT classes during patching.
         StreamingData parseFrom(ByteBuffer responseProto);
@@ -184,8 +183,6 @@ public class StreamingDataOuterClassPatch {
 
     }
 
-    private static final boolean SPOOF_STREAMING_DATA = BaseSettings.SPOOF_STREAMING_DATA.get();
-
     /**
      * Do not use {@link WeakReference}.
      * This class can be null, as hooking and invoking are performed in different methods.
@@ -280,6 +277,79 @@ public class StreamingDataOuterClassPatch {
     }
 
     /**
+     * Get formats from parsed streamingData.
+     * <p>
+     * @param streamingData StreamingData (GeneratedMessage) parsed by ProtoParser.
+     * @return              Formats (ProtoList).
+     */
+    public static List<?> getFormats(StreamingData streamingData) {
+        try {
+            if (streamingData != null) {
+                Field field = streamingData.getClass().getField(StreamingDataFields.formats);
+                field.setAccessible(true);
+                if (field.get(streamingData) instanceof List<?> formats) {
+                    return formats;
+                }
+            }
+        } catch (Exception ex) {
+            Logger.printException(() -> "getFormats failed", ex);
+        }
+        return null;
+    }
+
+    /**
+     * Some videos have the following video codecs:
+     * <p>
+     * 1. 1080p AVC
+     * 2. 720p AVC
+     * 3. 360p VP9
+     * <p>
+     * If the device supports VP9, 1080p AVC and 720p AVC are ignored,
+     * and 360p VP9 is used as the highest video quality.
+     * This is the intended behavior of YouTube,
+     * which is why the video quality flyout menu is unavailable for some videos.
+     * <p>
+     * Although VP9 is a more advanced codec than AVC, using 1080p AVC is better than using 360p VP9.
+     * <p>
+     * This function removes all VP9 / AV1 codecs if the highest resolution video codec is AVC.
+     */
+    public static List<Object> prioritizeResolution(List<Object> adaptiveFormats) {
+        try {
+            int maxAVCHeight = -1;
+            int maxVP9Height = -1;
+            for (Object adaptiveFormat : adaptiveFormats) {
+                String mimeType = getMimeType(adaptiveFormat);
+                if (StringUtils.startsWith(mimeType, "video")) {
+                    int height = getHeight(adaptiveFormat);
+                    if (mimeType.contains("avc")) {
+                        maxAVCHeight = Math.max(maxAVCHeight, height);
+                    } else {
+                        maxVP9Height = Math.max(maxVP9Height, height);
+                    }
+                    if (maxAVCHeight != -1 && maxVP9Height != -1) {
+                        break;
+                    }
+                }
+            }
+            if (maxAVCHeight > maxVP9Height) {
+                ArrayList<Object> arrayList = new ArrayList<>(adaptiveFormats.size());
+                for (Object adaptiveFormat : adaptiveFormats) {
+                    String mimeType = getMimeType(adaptiveFormat);
+                    boolean isVideoType = StringUtils.startsWith(mimeType, "video");
+
+                    if (!isVideoType || mimeType.contains("avc")) {
+                        arrayList.add(adaptiveFormat);
+                    }
+                }
+                return arrayList;
+            }
+        } catch (Exception ex) {
+            Logger.printException(() -> "prioritizeResolution failed", ex);
+        }
+        return adaptiveFormats;
+    }
+
+    /**
      * Remove 'AV1' video format from arrayList.
      * @param arrayList An ArrayList where formats are added.
      */
@@ -340,6 +410,18 @@ public class StreamingDataOuterClassPatch {
         }
     }
 
+    public static void setServerAbrStreamingUrl(StreamingData streamingData, String url) {
+        try {
+            if (streamingData != null) {
+                Field field = streamingData.getClass().getField(StreamingDataFields.serverAbrStreamingUrl);
+                field.setAccessible(true);
+                field.set(streamingData, url);
+            }
+        } catch (Exception ex) {
+            Logger.printException(() -> "setServerAbrStreamingUrl failed", ex);
+        }
+    }
+
     /**
      * Set the deobfuscated streaming url in the 'url' field of adaptiveFormat.
      * <p>
@@ -358,6 +440,21 @@ public class StreamingDataOuterClassPatch {
         }
     }
 
+    private static int getHeight(Object adaptiveFormat) {
+        if (adaptiveFormat != null) {
+            try {
+                Field field = adaptiveFormat.getClass().getField(FormatFields.height);
+                field.setAccessible(true);
+                if (field.get(adaptiveFormat) instanceof Integer height) {
+                    return height;
+                }
+            } catch (Exception ex) {
+                Logger.printException(() -> "getHeight failed", ex);
+            }
+        }
+        return -1;
+    }
+
     private static String getMimeType(Object adaptiveFormat) {
         if (adaptiveFormat != null) {
             try {
@@ -367,7 +464,7 @@ public class StreamingDataOuterClassPatch {
                     return mimeType;
                 }
             } catch (Exception ex) {
-                Logger.printException(() -> "setUrl failed", ex);
+                Logger.printException(() -> "getMimeType failed", ex);
             }
         }
         return null;

@@ -2325,10 +2325,10 @@ If you are a YouTube Premium user or have excluded the 'GmsCore support' patch, 
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(No auth)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
-<small>(Deprecated)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(Login required)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
+<small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV Embedded
@@ -2340,13 +2340,51 @@ If you are a YouTube Premium user or have excluded the 'GmsCore support' patch, 
 • Stable volume is not available.
 • Disable forced auto audio tracks is not available.
 • Kids videos may not play when logged out or in incognito mode."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Whole ASNs/IP ranges may be blocked by the server.</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Stable volume is not available.
 • Movies or paid videos may not play.
 • Kids videos may not play when logged out or in incognito mode."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Audio track menu is missing.
+• Disable forced auto audio tracks is not available.
+• If deobfuscation fails, playback may fail.
+• Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
+• Video may start late."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• If deobfuscation fails, playback may fail.
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
 • Video may start late."</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Prioritize video quality</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">Video quality is prioritized.</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_off">Video codecs are prioritized.</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_user_dialog_message">"Some videos have the following video quality and codecs:
+
+• 1080p AVC
+• 720p AVC
+• 360p VP9
+
+If the device supports VP9, '1080p AVC' and '720p AVC' are ignored.
+
+In other words, '360p VP9' is used as the highest video quality, and '1080p AVC' and '720p AVC' are not visible in the video quality flyout menu.
+
+This is the intended behavior of the Android YouTube app, and this is why the video quality flyout menu was unavailable for some videos.
+
+Although VP9 is a more advanced codec than AVC, some users may prefer '1080p AVC' over '360p VP9'.
+
+If this setting is enabled, the highest available video quality from the server response is used, regardless of the video codec.
+
+Example 1:
+
+• 1080p AVC
+• 720p AVC
+• 360p VP9
+
+→ 1080p AVC is used.
+
+Example 2:
+
+• 1080p AVC
+• 1080p VP9
+• 720p VP9
+
+→ 1080p VP9 is used."</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_title">Show reload video button</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">Reload video button is shown.</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">Reload video button is hidden.</string>
@@ -2387,51 +2425,33 @@ This feature is still in development, so it may break at any time due to server-
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Enabling this might improve battery life and fix playback stuttering.
 
 AVC has a maximum resolution of 1080p, Opus audio codec is not available, and video playback will use more internet data than VP9 or AV1."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_title">Use iOS client</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_on">"iOS client added to available clients.
 
-WARNING: iOS client is deprecated. Any issues that arise while using it are at your own risk."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_off">iOS client not added to available clients.</string>
-    <string name="revanced_spoof_streaming_data_use_ios_user_dialog_message">"When requesting YouTube API endpoints using iOS, you will need the Auth tokens issued by the iOS device and the PoTokens issued by iOSGuard.
-
-This means that streaming requests via iOS will be missing both the Auth tokens and the PoTokens, and the server may consider the user as a bot and block the entire ASN/IP range.
-
-USE AT YOUR OWN RISK!"</string>
-
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <string name="revanced_preference_category_tv">TV (WIP)</string>
-    <string name="revanced_spoof_streaming_data_use_tv_title">Use TV client</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_on">TV client added to available clients.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_off">TV client not added to available clients.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_user_dialog_message">"The app uses more system resources to find or decode the n-sig pattern, and the video starts more slowly.
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <string name="revanced_preference_category_js">JavaScript (WIP)</string>
+    <string name="revanced_spoof_streaming_data_use_js_title">Use JavaScript client</string>
+    <string name="revanced_spoof_streaming_data_use_js_summary_on">JavaScript client added to the available clients.</string>
+    <string name="revanced_spoof_streaming_data_use_js_summary_off">JavaScript client not added to available clients.</string>
+    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"The app uses more system resources to find or decode the n-sig pattern, and the video starts more slowly.
 
 The n-sig pattern changes quite frequently on YouTube servers, and playback may fail if the regex fails to find the n-sig pattern.
 
 This feature is still WIP, so please use it for debugging purposes only."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_title">Use TV client for all videos</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_on">"TV client is used regardless of video type.
+    <string name="revanced_spoof_streaming_data_use_js_all_title">Use JavaScript client for all videos</string>
+    <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"JavaScript client is used regardless of video type.
 
 • TV client still cannot play some videos."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_off">"TV client is not used for some videos that require fast playback:
+    <string name="revanced_spoof_streaming_data_use_js_all_summary_off">"JavaScript client is not used for some videos that require fast playback:
 
 • Autoplay in feed
 • Clips
 • Shorts"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_title">Use latest JavaScript</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_on">"JavaScript for deobfuscation is kept up to date.
+    <string name="revanced_spoof_streaming_data_use_latest_js_title">Use latest JavaScript</string>
+    <string name="revanced_spoof_streaming_data_use_latest_js_summary_on">"JavaScript for deobfuscation is kept up to date.
 
 • It is highly server-dependent, and the success or failure of deobfuscation depends on the JavaScript currently used on the server."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"JavaScript for deobfuscation is not kept up to date.
+    <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"JavaScript for deobfuscation is not kept up to date.
 
 • JavaScript that succeeds in deobfuscation is used, but it is still somewhat server-dependent."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">Use V8 JavaScript engine</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript runs in native libraries.
-
-• Powered by SmartTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript does not run in native libraries.
-
-• Powered by JavaTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">If the V8 JavaScript engine is not used, it takes more time to deobfuscate the streaming URL, causing the video to start 10 seconds late.</string>
 
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Watch history</string>
