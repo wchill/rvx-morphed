@@ -26,6 +26,7 @@
     <string name="revanced_extended_settings_search_no_results_title">No results found for \'%s\'.</string>
     <string name="revanced_extended_settings_search_no_results_summary">Try another keyword.</string>
     <string name="revanced_extended_settings_search_remove_message">Remove from search history?</string>
+    <string name="revanced_dismiss_player_not_available_toast">Video id is unavailable. Please manually reopen the video.</string>
     <string name="revanced_playback_speed_normal">Normal</string>
 
     <string name="revanced_external_downloader_package_name_video_title">Video downloader package name</string>

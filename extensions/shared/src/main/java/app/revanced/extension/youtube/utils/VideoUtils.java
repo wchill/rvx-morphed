@@ -379,13 +379,19 @@ public class VideoUtils extends IntentUtils {
      * Use it only when it is guaranteed to be used in situations where the player is active.
      */
     public static void reloadVideo(@NonNull String videoId, @NonNull String playlistId) {
-        dismissPlayer();
+        if (videoId.isEmpty()) {
+            showToastShort(str("revanced_dismiss_player_not_available_toast"));
+        } else {
+            dismissPlayer();
 
-        // Open the video.
-        if (playlistId.isEmpty()) {
-            openVideo(videoId);
-        } else { // If the video is playing from a playlist, the url must include the playlistId.
-            openPlaylist(playlistId, videoId, true);
+            Utils.runOnMainThreadDelayed(() -> {
+                // Open the video.
+                if (playlistId.isEmpty()) {
+                    openVideo(videoId);
+                } else { // If the video is playing from a playlist, the url must include the playlistId.
+                    openPlaylist(playlistId, videoId, true);
+                }
+            }, 500);
         }
     }
 
