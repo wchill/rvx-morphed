@@ -12,6 +12,8 @@ import app.revanced.patches.youtube.utils.resourceid.playerControlNextButtonTouc
 import app.revanced.patches.youtube.utils.resourceid.playerControlPreviousButtonTouchArea
 import app.revanced.patches.youtube.utils.resourceid.scrimOverlay
 import app.revanced.patches.youtube.utils.resourceid.seekUndoEduOverlayStub
+import app.revanced.patches.youtube.utils.resourceid.settingsFragment
+import app.revanced.patches.youtube.utils.resourceid.settingsFragmentCairo
 import app.revanced.patches.youtube.utils.resourceid.totalTime
 import app.revanced.patches.youtube.utils.resourceid.varispeedUnavailableTitle
 import app.revanced.patches.youtube.utils.resourceid.videoQualityBottomSheet
@@ -49,6 +51,21 @@ fun indexOfSpannedCharSequenceInstruction(method: Method) =
                 reference?.parameterTypes?.size == 1 &&
                 reference.returnType == "Ljava/lang/CharSequence;"
     }
+
+/**
+ * Added in YouTube v19.04.38
+ *
+ * When this value is TRUE, Cairo Fragment is used.
+ * In this case, some of patches may be broken, so set this value to FALSE.
+ */
+internal const val CAIRO_FRAGMENT_FEATURE_FLAG = 45532100L
+
+internal val cairoFragmentConfigFingerprint = legacyFingerprint(
+    name = "cairoFragmentConfigFingerprint",
+    returnType = "Z",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
+    literals = listOf(CAIRO_FRAGMENT_FEATURE_FLAG),
+)
 
 internal val layoutConstructorFingerprint = legacyFingerprint(
     name = "layoutConstructorFingerprint",
@@ -198,6 +215,14 @@ internal fun indexOfGetDrawableInstruction(method: Method) =
         opcode == Opcode.INVOKE_VIRTUAL &&
                 getReference<MethodReference>()?.toString() == "Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;"
     }
+
+internal val settingsFragmentSyntheticFingerprint = legacyFingerprint(
+    name = "settingsFragmentSyntheticFingerprint",
+    returnType = "V",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
+    opcodes = listOf(Opcode.INVOKE_VIRTUAL_RANGE),
+    literals = listOf(settingsFragment, settingsFragmentCairo),
+)
 
 internal val toolBarButtonFingerprint = legacyFingerprint(
     name = "toolBarButtonFingerprint",
