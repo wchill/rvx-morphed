@@ -872,6 +872,9 @@ You tab → View channel → Menu → Settings"</string>
     <string name="revanced_hide_voice_search_button_title">Hide voice search button</string>
     <string name="revanced_hide_voice_search_button_summary_on">Voice search button is hidden.</string>
     <string name="revanced_hide_voice_search_button_summary_off">Voice search button is shown.</string>
+    <string name="revanced_hide_you_may_like_section_title">Hide You may like section</string>
+    <string name="revanced_hide_you_may_like_section_summary_on">You may like section is hidden.</string>
+    <string name="revanced_hide_you_may_like_section_summary_off">You may like section is shown.</string>
     <string name="revanced_hide_youtube_doodles_title">Hide YouTube Doodles</string>
     <string name="revanced_hide_youtube_doodles_summary_on">YouTube Doodles are hidden.</string>
     <string name="revanced_hide_youtube_doodles_summary_off">YouTube Doodles are shown.</string>
