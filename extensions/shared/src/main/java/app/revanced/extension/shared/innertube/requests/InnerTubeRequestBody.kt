@@ -65,9 +65,6 @@ object InnerTubeRequestBody {
             client.put("osVersion", clientType.osVersion)
             if (clientType.androidSdkVersion != null) {
                 client.put("androidSdkVersion", clientType.androidSdkVersion)
-                if (clientType.gmscoreVersionCode != null) {
-                    client.put("gmscoreVersionCode", clientType.gmscoreVersionCode)
-                }
             }
             client.put(
                 "hl",
