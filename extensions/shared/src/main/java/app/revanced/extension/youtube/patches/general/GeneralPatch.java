@@ -1,5 +1,6 @@
 package app.revanced.extension.youtube.patches.general;
 
+import static app.revanced.extension.shared.utils.ResourceUtils.getXmlIdentifier;
 import static app.revanced.extension.shared.utils.StringRef.str;
 import static app.revanced.extension.shared.utils.Utils.getChildView;
 import static app.revanced.extension.shared.utils.Utils.hideViewByLayoutParams;
@@ -338,10 +339,29 @@ public class GeneralPatch {
 
     // region [Spoof app version] patch
 
+    private static int legacyFragmentId = 0;
+
+    public static boolean disableCairoFragment(boolean original) {
+        return !Settings.FIX_SPOOF_APP_VERSION_SIDE_EFFECT.get() && original;
+    }
+
     public static String getVersionOverride(String appVersion) {
         return Settings.SPOOF_APP_VERSION.get()
                 ? Settings.SPOOF_APP_VERSION_TARGET.get()
                 : appVersion;
+    }
+
+    public static int useLegacyFragment(int original) {
+        if (Settings.FIX_SPOOF_APP_VERSION_SIDE_EFFECT.get()) {
+            if (legacyFragmentId == 0) {
+                legacyFragmentId = getXmlIdentifier("settings_fragment_legacy");
+            }
+            if (legacyFragmentId != 0) {
+                return legacyFragmentId;
+            }
+        }
+
+        return original;
     }
 
     // endregion

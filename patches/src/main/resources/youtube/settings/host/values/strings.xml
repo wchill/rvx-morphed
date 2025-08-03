@@ -623,6 +623,17 @@ If later turned off, it is recommended to clear the app data to prevent UI bugs.
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Restore old playback speed flyout panel</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Invalid spoof app version: %s.</string>
 
+    <string name="revanced_fix_spoof_app_version_side_effect_title">Fix Spoof app version side effect</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_summary_on">"The 'Autoplay' setting is used instead of the 'Playback' setting."</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_summary_off">"The 'Playback' setting is used instead of the 'Autoplay' setting.</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_user_dialog_message">"If the app version has been spoofed to 19.30 or earlier even once, the 'Playback' setting may be broken.
+
+This depends on what response the app receives from the server.
+
+If the 'Playback' setting is broken, turning on this setting may resolve the issue.
+
+If the 'Playback' setting is still broken even after enabling or disabling this setting, then you should clear the app data."</string>
+
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">Account menu</string>
     <string name="revanced_preference_screen_account_menu_summary">Hide or show elements in account menu and You tab.</string>
@@ -660,7 +671,8 @@ Some components may not be hidden."</string>
 
     <string name="revanced_override_playlist_download_button_title">Override playlist download button</string>
     <string name="revanced_override_playlist_download_button_summary_on">Native playlist download button is always shown, and in public playlists, it opens your external downloader.</string>
-    <string name="revanced_override_playlist_download_button_summary_on_disclaimer">"Native playlist download button, if shown, opens your external downloader.
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer_1">Native playlist download button, if shown, opens your external downloader.</string>
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer_2">"Native playlist download button, if shown, opens your external downloader.
 
 To show the native playlist download button, turn on \'Spoof app version\' and change \'Spoof app version target\' to \'19.28.42\' or earlier."</string>
     <string name="revanced_override_playlist_download_button_summary_off">Native playlist download button, if shown, opens the native in-app downloader.</string>
