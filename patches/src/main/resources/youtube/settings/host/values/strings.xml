@@ -341,6 +341,9 @@ Tap here to learn more about DeArrow."</string>
     <string name="revanced_hide_ticket_shelf_title">Hide ticket shelves</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Ticket shelves are hidden.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Ticket shelves are shown.</string>
+    <string name="revanced_hide_video_recommendation_labels_title">Hide video recommendation labels</string>
+    <string name="revanced_hide_video_recommendation_labels_summary_on">"Thumbnail labels - such as 'People also watched' and 'You might also like' - are hidden."</string>
+    <string name="revanced_hide_video_recommendation_labels_summary_off">"Thumbnail labels - such as 'People also watched' and 'You might also like' - are hidden."</string>
 
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Category bar</string>
@@ -452,18 +455,6 @@ Limitations:
     <string name="revanced_hide_keyword_toast_invalid_conflicting">Keyword has conflicting declarations: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_length">Keyword is too short and requires quotes: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">Keyword will hide all videos: %s.</string>
-
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">Recommended video</string>
-    <string name="revanced_hide_low_views_video_title">Hide low views video</string>
-    <string name="revanced_hide_low_views_video_summary">"Hide videos with less than 1,000 views from Home feeds that have been uploaded from unsubscribed channels.
-
-This filter may no longer work, use 'View count filter' instead."</string>
-    <string name="revanced_hide_recommended_video_title">Hide recommended videos</string>
-    <string name="revanced_hide_recommended_video_summary">"Hides the following recommended videos:
-
-• Videos with phrases such as 'People also watched' underneath."</string>
-
 
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">View count filter</string>
