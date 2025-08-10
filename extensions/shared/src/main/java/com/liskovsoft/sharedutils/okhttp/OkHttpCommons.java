@@ -2,16 +2,16 @@ package com.liskovsoft.sharedutils.okhttp;
 
 import com.liskovsoft.sharedutils.okhttp.interceptors.UnzippingInterceptor;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.concurrent.TimeUnit;
+
 import okhttp3.CipherSuite;
 import okhttp3.ConnectionPool;
 import okhttp3.ConnectionSpec;
 import okhttp3.OkHttpClient;
 import okhttp3.OkHttpClient.Builder;
 import okhttp3.Protocol;
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.concurrent.TimeUnit;
 
 public final class OkHttpCommons {
     private static final String TAG = OkHttpCommons.class.getSimpleName();

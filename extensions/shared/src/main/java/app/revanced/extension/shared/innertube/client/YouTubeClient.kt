@@ -14,10 +14,11 @@ import java.util.Locale
 object YouTubeClient {
     private const val CLIENT_SCREEN_WATCH = "WATCH"
     private const val CLIENT_SCREEN_EMBED = "EMBED"
-    private const val CLIENT_PLATFORM_TV = "TV"
     private const val CLIENT_PLATFORM_DESKTOP = "DESKTOP"
+    private const val CLIENT_PLATFORM_GAME_CONSOLE = "GAME_CONSOLE"
     private const val CLIENT_PLATFORM_MOBILE = "MOBILE"
     private const val CLIENT_PLATFORM_TABLET = "TABLET"
+    private const val CLIENT_PLATFORM_TV = "TV"
 
     private const val CLIENT_REFERER_FORMAT_TV = "https://www.youtube.com/tv#/watch?v=%s"
     private const val CLIENT_REFERER_FORMAT_WEB = "https://www.youtube.com/watch?v=%s"
@@ -26,8 +27,8 @@ object YouTubeClient {
 
     // IOS UNPLUGGED
     /**
-     * Video not playable: Paid / Movie / Playlists / Music
-     * Note: Audio track available
+     * Video not playable: Paid / Movie / Playlists / Music.
+     * Note: Audio track available.
      */
     private const val PACKAGE_NAME_IOS_UNPLUGGED = "com.google.ios.youtubeunplugged"
 
@@ -77,8 +78,8 @@ object YouTubeClient {
 
     // ANDROID VR
     /**
-     * Video not playable: Kids
-     * Note: Audio track is not available
+     * Video not playable: Kids.
+     * Note: Audio track is not available.
      *
      * Package name for YouTube VR (Google DayDream): com.google.android.apps.youtube.vr (Deprecated)
      * Package name for YouTube VR (Meta Quests): com.google.android.apps.youtube.vr.oculus
@@ -131,8 +132,8 @@ object YouTubeClient {
 
     // ANDROID UNPLUGGED
     /**
-     * Video not playable: Playlists / Music
-     * Note: Audio track is not available
+     * Video not playable: Playlists / Music.
+     * Note: Audio track is not available.
      */
     private const val PACKAGE_NAME_ANDROID_UNPLUGGED = "com.google.android.apps.youtube.unplugged"
     private const val CLIENT_VERSION_ANDROID_UNPLUGGED = "9.25.2"
@@ -158,8 +159,8 @@ object YouTubeClient {
 
     // ANDROID CREATOR
     /**
-     * Video not playable: Livestream / HDR
-     * Note: Audio track is not available
+     * Video not playable: Livestream / HDR.
+     * Note: Audio track is not available.
      */
     private const val PACKAGE_NAME_ANDROID_CREATOR = "com.google.android.apps.youtube.creator"
     private const val CLIENT_VERSION_ANDROID_CREATOR = "25.10.100"
@@ -185,29 +186,45 @@ object YouTubeClient {
 
     // TVHTML5
     /**
-     * Video not playable: Drm-protected
-     * TODO: Find out why playback sometimes fails
+     * Video not playable: Drm-protected.
+     * Note: Both 'Authorization' and 'Set-Cookie' are supported.
+     * TODO: Find out why playback sometimes fails.
      */
-    private const val CLIENT_VERSION_TVHTML5 = "7.20250402.11.00"
-    // Used by yt-dlp
-    private const val USER_AGENT_TVHTML5 = "Mozilla/5.0 (ChromiumStylePlatform) Cobalt/Version"
+    private const val CLIENT_VERSION_TVHTML5 = "7.20250714.16.00"
+
+    private const val USER_AGENT_TVHTML5 =
+        "Mozilla/5.0 (PLAYSTATION 3 4.10) AppleWebKit/531.22.8 (KHTML, like Gecko)"
 
 
     // TVHTML5 SIMPLY
+    /**
+     * Video not playable: Drm-protected.
+     * Note: Only 'Authorization' is supported.
+     * TODO: Find out why playback sometimes fails.
+     */
     private const val CLIENT_VERSION_TVHTML5_SIMPLY = "1.0"
+    private const val USER_AGENT_TVHTML5_SIMPLY =
+        "Mozilla/5.0 (RokuOS) Cobalt/20.lts.5.272122-gold (unlike Gecko) v8/6.5.254.43 gles Starboard/11, Roku_TV_MT10_2017/12.0 (TCL, 7121X, Wired)"
 
 
     // TVHTML5 EMBEDDED
+    /**
+     * Only embeddable videos available.
+     * Note: Both 'Authorization' and 'Set-Cookie' are supported.
+     * TODO: Find out why playback sometimes fails.
+     */
     private const val CLIENT_VERSION_TVHTML5_EMBEDDED = "2.0"
 
 
     // MWEB
     /**
-     * Video not playable: Paid / Movie / Private / Age-restricted
-     * Note: Audio track is not available
+     * Video not playable: Paid / Movie / Private / Age-restricted.
+     * Note: Audio track is not available.
+     * Note: Only 'Set-Cookie' is supported.
+     * TODO: Find out why playback sometimes fails.
      */
-    private const val CLIENT_VERSION_MWEB = "2.20250311.03.00"
-    private const val USER_AGENT_MWEB = "Mozilla/5.0 (iPad; CPU OS 16_7_10 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1,gzip(gfe)"
+    private const val CLIENT_VERSION_MWEB = "2.20250213.05.00"
+    private val USER_AGENT_MWEB = "Mozilla/5.0 (Android ${Build.VERSION.RELEASE}; Mobile; rv:135.0) Gecko/135.0 Firefox/135.0"
 
 
     /**
@@ -325,10 +342,6 @@ object YouTubeClient {
          */
         val requireAuth: Boolean = false,
         /**
-         * If the client requires params.
-         */
-        val requireParams: Boolean = false,
-        /**
          * If the client requires GVS PoToken.
          */
         val requirePoToken: Boolean = false,
@@ -395,6 +408,7 @@ object YouTubeClient {
             clientName = "ANDROID_UNPLUGGED",
             friendlyName = "Android TV"
         ),
+        // Fallback client.
         ANDROID_CREATOR(
             id = 14,
             deviceMake = DEVICE_MAKE_ANDROID_CREATOR,
@@ -422,13 +436,26 @@ object YouTubeClient {
             else
                 "iOS TV"
         ),
+        // Fallback client, not yet released.
+        VISIONOS(
+            id = 101,
+            deviceMake = DEVICE_MAKE_IOS_UNPLUGGED,
+            deviceModel = "RealityDevice14,1",
+            osName = "visionOS",
+            osVersion = "1.3.21O771",
+            userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15",
+            clientVersion = "0.1",
+            clientPlatform = CLIENT_PLATFORM_DESKTOP,
+            supportsCookies = false,
+            clientName = "VISIONOS",
+            friendlyName = "visionOS"
+        ),
         TV(
             id = 7,
             clientVersion = CLIENT_VERSION_TVHTML5,
-            clientPlatform = CLIENT_PLATFORM_TV,
+            clientPlatform = CLIENT_PLATFORM_GAME_CONSOLE,
             userAgent = USER_AGENT_TVHTML5,
             requireJS = true,
-            requireParams = true,
             refererFormat = CLIENT_REFERER_FORMAT_TV,
             clientName = "TVHTML5",
             friendlyName = "TV"
@@ -437,7 +464,7 @@ object YouTubeClient {
             id = 75,
             clientVersion = CLIENT_VERSION_TVHTML5_SIMPLY,
             clientPlatform = CLIENT_PLATFORM_TV,
-            userAgent = USER_AGENT_TVHTML5,
+            userAgent = USER_AGENT_TVHTML5_SIMPLY,
             requireJS = true,
             clientName = "TVHTML5_SIMPLY",
             refererFormat = CLIENT_REFERER_FORMAT_TV,
@@ -446,7 +473,7 @@ object YouTubeClient {
         TV_EMBEDDED(
             id = 85,
             clientVersion = CLIENT_VERSION_TVHTML5_EMBEDDED,
-            clientPlatform = CLIENT_PLATFORM_TV,
+            clientPlatform = CLIENT_PLATFORM_GAME_CONSOLE,
             clientScreen = CLIENT_SCREEN_EMBED,
             userAgent = USER_AGENT_TVHTML5,
             requireJS = true,
@@ -461,7 +488,7 @@ object YouTubeClient {
             userAgent = USER_AGENT_MWEB,
             requireJS = true,
             requirePoToken = true,
-            // Only 'Set-Cookie' used on the Web can be used.
+            // RVX does not support 'Set-Cookie'.
             supportsCookies = false,
             refererFormat = CLIENT_REFERER_FORMAT_MWEB,
             clientName = "MWEB",
@@ -475,6 +502,7 @@ object YouTubeClient {
                 ANDROID_CREATOR,
                 ANDROID_UNPLUGGED,
                 ANDROID_VR_NO_AUTH,
+                VISIONOS,
             )
             val CLIENT_ORDER_TO_USE_JS: Array<ClientType> = arrayOf(
                 IOS_UNPLUGGED,
@@ -485,6 +513,7 @@ object YouTubeClient {
                 TV,
                 TV_SIMPLY,
                 MWEB,
+                VISIONOS,
             )
             val CLIENT_ORDER_TO_USE_JS_PREFER_TV: Array<ClientType> = arrayOf(
                 TV,
@@ -495,6 +524,7 @@ object YouTubeClient {
                 ANDROID_VR_NO_AUTH,
                 TV_SIMPLY,
                 MWEB,
+                VISIONOS,
             )
         }
     }

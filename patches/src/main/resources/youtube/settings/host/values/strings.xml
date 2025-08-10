@@ -2357,6 +2357,7 @@ If you are a YouTube Premium user or have excluded the 'GmsCore support' patch, 
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• If deobfuscation fails, playback may fail.
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
 • Video may start late."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_unknown">• Unknown</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Prioritize video quality</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">Video quality is prioritized.</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_off">Video codecs are prioritized.</string>
@@ -2445,7 +2446,7 @@ This feature is still WIP, so please use it for debugging purposes only."</strin
     <string name="revanced_spoof_streaming_data_use_js_all_title">Use JavaScript client for all videos</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"JavaScript client is used regardless of video type.
 
-• TV client still cannot play some videos."</string>
+• JavaScript client still cannot play some videos."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_off">"JavaScript client is not used for some videos that require fast playback:
 
 • Autoplay in feed

@@ -2,6 +2,10 @@ package com.liskovsoft.sharedutils.okhttp;
 
 import androidx.annotation.Nullable;
 
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
 import app.revanced.extension.shared.utils.Logger;
 import okhttp3.Headers;
 import okhttp3.MediaType;
@@ -9,10 +13,6 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
-
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 public class OkHttpManager {
     private static final String TAG = OkHttpManager.class.getSimpleName();

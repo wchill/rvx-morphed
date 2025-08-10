@@ -1,4 +1,4 @@
-package com.liskovsoft.youtubeapi.common.helpers
+package com.liskovsoft.googlecommon.common.helpers
 
 import android.os.Build
 
@@ -29,6 +29,8 @@ object DefaultHeaders {
         "Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ (KHTML, like Gecko) Safari/537.1+ LG Browser/6.00.00(+mouse+3D+SCREEN+TUNER; LGE; 42LA660S-ZA; 04.25.05; 0x00000001;); LG NetCast.TV-2013 /04.25.05 (LG, 42LA660S-ZA, wired)"
     private const val USER_AGENT_COBALT_1 = "Mozilla/5.0 (DirectFB; Linux x86_64) Cobalt/4.13031-qa (unlike Gecko) Starboard/1"
     private const val USER_AGENT_COBALT_2 = "Mozilla/5.0 (DirectFB; Linux x86_64) Cobalt/20.lts.2.0-gold (unlike Gecko) Starboard/11"
+    // See: https://github.com/youtube/cobalt/blob/main/cobalt/browser/user_agent/user_agent_platform_info.cc#L506
+    private const val USER_AGENT_COBALT_3 = "Mozilla/5.0 (ChromiumStylePlatform) Cobalt/25.lts.30.1034943-gold (unlike Gecko), Unknown_TV_Unknown_0/Unknown (Unknown, Unknown)"
 
     // OK
     private const val USER_AGENT_WEBOS =
@@ -56,9 +58,9 @@ object DefaultHeaders {
     private const val USER_AGENT_IOS_2 = "com.google.ios.youtube/19.29.1 (iPhone16,2; U; CPU iOS 17_5_1 like Mac OS X;)"
     const val USER_AGENT_SAFARI = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.5 Safari/605.1.15,gzip(gfe)"
 
-    //const val USER_AGENT_TV = USER_AGENT_SAMSUNG_3 // no buffering
+    const val USER_AGENT_TV = USER_AGENT_SAMSUNG_3 // no buffering
     //const val USER_AGENT_TV = USER_AGENT_ATV_COMBINED // buffering badly even with protobuf params (see videoinfo)
-    const val USER_AGENT_TV = USER_AGENT_FIRE_TV // buffering???
+    //const val USER_AGENT_TV = USER_AGENT_FIRE_TV // buffering???
     const val USER_AGENT_WEB = USER_AGENT_CHROME
     const val USER_AGENT_MOBILE_WEB = USER_AGENT_MOBILE_CHROME_2
     const val USER_AGENT_ANDROID = USER_AGENT_ANDROID_1

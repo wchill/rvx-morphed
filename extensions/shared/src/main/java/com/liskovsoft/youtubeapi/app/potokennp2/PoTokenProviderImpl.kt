@@ -1,22 +1,21 @@
 package com.liskovsoft.youtubeapi.app.potokennp2
 
-import com.liskovsoft.youtubeapi.app.potokennp2.misc.PoTokenProvider
-import com.liskovsoft.youtubeapi.app.potokennp2.misc.PoTokenResult
 import android.os.Handler
 import android.os.Looper
-import androidx.annotation.RequiresApi
 import app.revanced.extension.shared.innertube.utils.AuthUtils
-import com.liskovsoft.sharedutils.helpers.DeviceHelpers
-import com.liskovsoft.youtubeapi.app.potokennp2.visitor.VisitorService
 import app.revanced.extension.shared.utils.Logger
 import app.revanced.extension.shared.utils.Utils
+import com.liskovsoft.sharedutils.helpers.DeviceHelpers
+import com.liskovsoft.youtubeapi.app.potokennp2.PoTokenProviderImpl.webPoTokenGenerator
+import com.liskovsoft.youtubeapi.app.potokennp2.misc.PoTokenProvider
+import com.liskovsoft.youtubeapi.app.potokennp2.misc.PoTokenResult
+import com.liskovsoft.youtubeapi.app.potokennp2.visitor.VisitorService
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 
-@RequiresApi(19)
 internal object PoTokenProviderImpl : PoTokenProvider {
     private val mContext by lazy { Utils.getContext() }
-    private val webViewSupported by lazy { DeviceHelpers.supportsWebView() }
+    private val webViewSupported by lazy { DeviceHelpers.isWebViewSupported() }
     private var webViewBadImpl = false // whether the system has a bad WebView implementation
 
     private object WebPoTokenGenLock

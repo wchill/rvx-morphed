@@ -1,16 +1,13 @@
 package com.liskovsoft.youtubeapi.app.potokennp2
 
 import android.content.Context
-import android.os.Build
 import android.os.Handler
 import android.os.Looper
-import android.os.PowerManager
 import android.webkit.ConsoleMessage
 import android.webkit.JavascriptInterface
 import android.webkit.WebChromeClient
 import android.webkit.WebView
 import androidx.annotation.MainThread
-import androidx.annotation.RequiresApi
 import app.revanced.extension.shared.utils.Logger
 import app.revanced.extension.shared.utils.ResourceUtils.openRawResource
 import app.revanced.extension.shared.utils.Utils
@@ -18,7 +15,6 @@ import com.liskovsoft.sharedutils.okhttp.OkHttpManager
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 
-@RequiresApi(19)
 internal class PoTokenWebView private constructor(
     context: Context = Utils.getContext(),
     private var onInitDone: () -> Unit
@@ -132,7 +128,7 @@ internal class PoTokenWebView private constructor(
      */
     @JavascriptInterface
     fun onJsInitializationError(error: String) {
-        Logger.printException { "Initialization error from JavaScript: $error" }
+        Logger.printException { "onJsInitializationError: $error" }
         onInitializationErrorCloseAndCancel(buildExceptionForJsError(error))
     }
 
@@ -211,8 +207,7 @@ internal class PoTokenWebView private constructor(
      */
     @JavascriptInterface
     fun onObtainPoTokenError(identifier: String, error: String) {
-        Logger.printDebug { "obtainPoToken error from JavaScript: $error" }
-        //throw buildExceptionForJsError(error)
+        Logger.printDebug { "onObtainPoTokenError: $error" }
         onInitializationErrorCloseAndCancel(buildExceptionForJsError(error))
     }
 
@@ -356,8 +351,12 @@ internal class PoTokenWebView private constructor(
         private const val JS_INTERFACE = "PoTokenWebView"
 
         override fun newPoTokenGenerator(context: Context): PoTokenGenerator {
-            if (!isThermalServiceAvailable(context)) {
+            if (hasThermalServiceBug(context)) {
                 throw BadWebViewException("ThermalService isn't available")
+            }
+
+            if (hasUsbServiceBug(context)) {
+                throw BadWebViewException("Usb service isn't available")
             }
 
             val latch = CountDownLatch(1)
@@ -393,27 +392,6 @@ internal class PoTokenWebView private constructor(
         ) {
             if (!Handler(Looper.getMainLooper()).post(runnable)) {
                 throw PoTokenException("Could not run on main thread")
-            }
-        }
-
-        private fun isThermalServiceAvailable(context: Context): Boolean {
-            // Only Android 10 has the issue
-            if (Build.VERSION.SDK_INT != 29)
-                return true
-
-            val powerService = context.getSystemService(Context.POWER_SERVICE) as? PowerManager ?: return false
-
-            val listener = PowerManager.OnThermalStatusChangedListener {
-                // NOP
-            }
-
-            return try {
-                powerService.addThermalStatusListener(listener)
-                true
-            } catch (e: Exception) {
-                false
-            } finally {
-                powerService.removeThermalStatusListener(listener)
             }
         }
     }

@@ -1,9 +1,9 @@
 package com.liskovsoft.youtubeapi.app.potokennp2
 
+import android.util.Base64
 import com.grack.nanojson.JsonObject
 import com.grack.nanojson.JsonParser
 import com.grack.nanojson.JsonWriter
-import android.util.Base64
 
 /**
  * Parses the raw challenge data obtained from the Create endpoint and returns an object that can be
@@ -107,7 +107,8 @@ private fun newUint8Array(contents: ByteArray): String {
  * Decodes a base64 string encoded in the specific base64 representation used by YouTube.
  */
 private fun base64ToByteString(base64: String): ByteArray {
-    val base64Mod = base64.replace('-', '+')
+    val base64Mod = base64
+        .replace('-', '+')
         .replace('_', '/')
         .replace('.', '=')
 

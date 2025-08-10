@@ -1,4 +1,4 @@
-package com.liskovsoft.youtubeapi.common.converters.gson;
+package com.liskovsoft.googlecommon.common.converters.gson;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

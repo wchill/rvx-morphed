@@ -3,11 +3,10 @@ package com.liskovsoft.youtubeapi.app.playerdata
 import app.revanced.extension.shared.utils.Logger
 
 import com.eclipsesource.v8.V8ScriptExecutionException
-import com.liskovsoft.youtubeapi.common.js.JSInterpret
+import com.liskovsoft.googlecommon.common.js.JSInterpret
 import java.util.regex.Pattern
 
 /**
- * Powered by [MediaServiceCore](https://github.com/yuliskov/MediaServiceCore/blob/f5691d30c81342548852c6951bc7ea5bb8a810ca/youtubeapi/src/main/java/com/liskovsoft/youtubeapi/app/playerdata/SigExtractor.kt)
  * yt_dlp.extractor.youtube._video.YoutubeIE._parse_sig_js
  */
 internal object SigExtractor {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.liskovsoft.youtubeapi.common.converters.gson;
+package com.liskovsoft.googlecommon.common.converters.gson;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonIOException;
@@ -21,10 +21,10 @@ import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonToken;
 
+import java.io.IOException;
+
 import okhttp3.ResponseBody;
 import retrofit2.Converter;
-
-import java.io.IOException;
 
 final class GsonResponseBodyConverter<T> implements Converter<ResponseBody, T> {
   private final Gson gson;

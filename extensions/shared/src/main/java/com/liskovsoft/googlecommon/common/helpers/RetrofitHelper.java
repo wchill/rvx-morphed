@@ -1,7 +1,7 @@
-package com.liskovsoft.youtubeapi.common.helpers;
+package com.liskovsoft.googlecommon.common.helpers;
 
-import com.liskovsoft.youtubeapi.common.converters.gson.WithGson;
-import com.liskovsoft.youtubeapi.common.converters.gson.GsonConverterFactory;
+import com.liskovsoft.googlecommon.common.converters.gson.GsonConverterFactory;
+import com.liskovsoft.googlecommon.common.converters.gson.WithGson;
 
 import java.io.IOException;
 import java.lang.annotation.Annotation;
@@ -14,13 +14,20 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 public class RetrofitHelper {
-    private static final String TAG = RetrofitHelper.class.getSimpleName();
     // Ignored when specified url is absolute
     private static final String DEFAULT_BASE_URL = "https://www.youtube.com";
 
     private static <T> T withGson(Class<T> clazz) {
         return buildRetrofit(GsonConverterFactory.create()).create(clazz);
     }
+
+    //public static <T> T get(Call<T> wrapper) {
+    //    Response<T> response = getResponse(wrapper);
+    //
+    //    //handleResponseErrors(response);
+    //
+    //    return response != null ? response.body() : null;
+    //}
 
     public static <T> T get(Call<T> wrapper) {
         return get(wrapper, false);
@@ -66,6 +73,7 @@ public class RetrofitHelper {
 
     public static <T> T create(Class<T> clazz) {
         Annotation[] annotations = clazz.getAnnotations();
+
         for (Annotation annotation : annotations) {
             if (annotation instanceof WithGson) {
                 return withGson(clazz);

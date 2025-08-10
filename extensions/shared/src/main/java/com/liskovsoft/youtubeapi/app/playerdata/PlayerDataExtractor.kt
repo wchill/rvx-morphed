@@ -2,11 +2,8 @@ package com.liskovsoft.youtubeapi.app.playerdata
 
 import app.revanced.extension.shared.utils.Logger
 import com.eclipsesource.v8.V8ScriptExecutionException
-import com.liskovsoft.youtubeapi.common.js.JSInterpret
+import com.liskovsoft.googlecommon.common.js.JSInterpret
 
-/**
- * Powered by [MediaServiceCore](https://github.com/yuliskov/MediaServiceCore/blob/f5691d30c81342548852c6951bc7ea5bb8a810ca/youtubeapi/src/main/java/com/liskovsoft/youtubeapi/app/playerdata/PlayerDataExtractor.kt)
- */
 internal class PlayerDataExtractor(val jsCode: String?) {
     private var mNFuncCode: Pair<List<String>, String>? = null
     private var mSigFuncCode: Pair<List<String>, String>? = null

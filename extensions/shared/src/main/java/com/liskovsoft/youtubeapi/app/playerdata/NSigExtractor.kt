@@ -4,12 +4,9 @@ import app.revanced.extension.shared.utils.Logger
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.liskovsoft.youtubeapi.common.js.JSInterpret
+import com.liskovsoft.googlecommon.common.js.JSInterpret
 import java.util.regex.Pattern
 
-/**
- * Powered by [MediaServiceCore](https://github.com/yuliskov/MediaServiceCore/blob/f5691d30c81342548852c6951bc7ea5bb8a810ca/youtubeapi/src/main/java/com/liskovsoft/youtubeapi/app/playerdata/NSigExtractor.kt)
- */
 internal object NSigExtractor {
     private val mNFuncPattern = com.florianingerl.util.regex.Pattern.compile("""(?x)
             (?:

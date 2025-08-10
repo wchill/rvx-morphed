@@ -51,7 +51,9 @@ import app.revanced.util.fingerprint.injectLiteralInstructionBooleanCall
 import app.revanced.util.fingerprint.matchOrThrow
 import app.revanced.util.fingerprint.methodCall
 import app.revanced.util.fingerprint.methodOrThrow
+import app.revanced.util.getNode
 import app.revanced.util.getReference
+import app.revanced.util.indexOfFirstInstructionOrThrow
 import app.revanced.util.indexOfFirstInstructionReversedOrThrow
 import app.revanced.util.inputStreamFromBundledResourceOrThrow
 import app.revanced.util.returnEarly
@@ -65,6 +67,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
+import com.android.tools.smali.dexlib2.util.MethodUtil
 import java.nio.file.Files
 import java.nio.file.StandardCopyOption
 import kotlin.io.path.notExists
@@ -216,10 +219,14 @@ val spoofStreamingDataPatch = bytecodePatch(
                             """
                     )
 
-                    addInstruction(
-                        1,
-                        "invoke-static { p0 }, $EXTENSION_STREAMING_DATA_OUTER_CLASS_DESCRIPTOR->initialize($EXTENSION_STREAMING_DATA_INTERFACE)V"
-                    )
+                    result.classDef.methods.filter { method ->
+                        MethodUtil.isConstructor(method)
+                    }.forEach { method ->
+                        method.addInstruction(
+                            1,
+                            "invoke-static { p0 }, $EXTENSION_STREAMING_DATA_OUTER_CLASS_DESCRIPTOR->initialize($EXTENSION_STREAMING_DATA_INTERFACE)V"
+                        )
+                    }
 
                     resultClassDef.interfaces.add(EXTENSION_STREAMING_DATA_INTERFACE)
 
@@ -238,7 +245,7 @@ val spoofStreamingDataPatch = bytecodePatch(
                             AccessFlags.PUBLIC.value or AccessFlags.FINAL.value,
                             annotations,
                             null,
-                            MutableMethodImplementation(4),
+                            MutableMethodImplementation(5),
                         ).toMutable().apply {
                             addInstructionsWithLabels(
                                 0,
@@ -281,7 +288,7 @@ val spoofStreamingDataPatch = bytecodePatch(
                             AccessFlags.PRIVATE.value or AccessFlags.FINAL.value,
                             annotations,
                             null,
-                            MutableMethodImplementation(4),
+                            MutableMethodImplementation(5),
                         ).toMutable().apply {
                             addInstructionsWithLabels(
                                 0,
@@ -317,10 +324,10 @@ val spoofStreamingDataPatch = bytecodePatch(
                                 reference?.type == "Ljava/lang/String;" &&
                                 reference.definingClass == definingClass
                     }
-                val definingClassRegister =
+                var definingClassRegister =
                     getInstruction<TwoRegisterInstruction>(videoIdIndex).registerB
                 val videoIdReference =
-                    getInstruction<ReferenceInstruction>(videoIdIndex).reference
+                    getInstruction<ReferenceInstruction>(videoIdIndex).reference as FieldReference
 
                 it.classDef.methods.add(
                     ImmutableMethod(
@@ -360,6 +367,73 @@ val spoofStreamingDataPatch = bytecodePatch(
                         # Override adaptive formats.
                         invoke-direct { v$definingClassRegister,  v$adaptiveFormatsRegister }, $definingClass->$setAdaptiveFormatsMethodName(Ljava/util/List;)Ljava/util/List;
                         move-result-object v$adaptiveFormatsRegister
+                        """
+                )
+
+                val setStreamDataMethodName = "patch_setStreamingData"
+                val streamingDataIndex = indexOfFirstInstructionOrThrow {
+                    val reference = getReference<FieldReference>()
+                    opcode == Opcode.IPUT_OBJECT &&
+                            reference?.type == STREAMING_DATA_OUTER_CLASS &&
+                            reference.definingClass == definingClass
+                }
+                val streamingDataField =
+                    getInstruction<ReferenceInstruction>(streamingDataIndex).reference
+                val streamingDataRegister =
+                    getInstruction<TwoRegisterInstruction>(streamingDataIndex).registerA
+
+                val setVideoIdIndex = indexOfFirstInstructionOrThrow {
+                    opcode == Opcode.IPUT_OBJECT &&
+                            getReference<FieldReference>() == videoIdReference
+                }
+                val setVideoIdRegister =
+                    getInstruction<TwoRegisterInstruction>(setVideoIdIndex).registerA
+                definingClassRegister =
+                    getInstruction<TwoRegisterInstruction>(setVideoIdIndex).registerB
+
+                it.classDef.methods.add(
+                    ImmutableMethod(
+                        definingClass,
+                        setStreamDataMethodName,
+                        listOf(
+                            ImmutableMethodParameter(
+                                STREAMING_DATA_OUTER_CLASS,
+                                annotations,
+                                "streamingDataOuterClass"
+                            ),
+                            ImmutableMethodParameter(
+                                "Ljava/lang/String;",
+                                annotations,
+                                "videoId"
+                            )
+                        ),
+                        STREAMING_DATA_OUTER_CLASS,
+                        AccessFlags.PRIVATE.value or AccessFlags.FINAL.value,
+                        annotations,
+                        null,
+                        MutableMethodImplementation(6),
+                    ).toMutable().apply {
+                        addInstructionsWithLabels(
+                            0,
+                            """
+                                move-object/from16 v0, p0
+                                # Get streaming data.
+                                invoke-static { p2 }, $EXTENSION_CLASS_DESCRIPTOR->getStreamingData(Ljava/lang/String;)$STREAMING_DATA_OUTER_CLASS
+                                move-result-object v1
+                                if-eqz v1, :ignore
+                                iput-object v1, v0, $streamingDataField
+                                return-object v1
+                                :ignore
+                                return-object p1
+                                """,
+                        )
+                    },
+                )
+
+                addInstructions(
+                    setVideoIdIndex + 1, """
+                        invoke-direct { v$definingClassRegister, v$streamingDataRegister, v$setVideoIdRegister }, $definingClass->$setStreamDataMethodName(${STREAMING_DATA_OUTER_CLASS}Ljava/lang/String;)$STREAMING_DATA_OUTER_CLASS
+                        move-result-object v$streamingDataRegister
                         """
                 )
             }
@@ -590,6 +664,14 @@ val spoofStreamingDataPatch = bytecodePatch(
                             StandardCopyOption.REPLACE_EXISTING,
                         )
                     }
+                }
+
+                // WebViewUtils.
+                document("AndroidManifest.xml").use { document ->
+                    val feature = document.createElement("uses-feature").apply {
+                        setAttribute("android:name", "android.hardware.usb.host")
+                    }
+                    document.getNode("manifest").appendChild(feature)
                 }
             }
         }

@@ -1,7 +1,7 @@
 package com.liskovsoft.youtubeapi.app.potokennp2.visitor
 
+import com.liskovsoft.googlecommon.common.converters.gson.WithGson
 import com.liskovsoft.youtubeapi.app.potokennp2.visitor.data.VisitorResult
-import com.liskovsoft.youtubeapi.common.converters.gson.WithGson
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.Headers

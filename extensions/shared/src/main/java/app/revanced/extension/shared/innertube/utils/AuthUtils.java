@@ -32,16 +32,16 @@ public class AuthUtils {
             return;
         }
         String newlyLoadedAuthorization = requestHeaders.get(AUTHORIZATION_HEADER);
-        if (StringUtils.isNotEmpty(newlyLoadedAuthorization) && !authorization.equals(newlyLoadedAuthorization)) {
+        String newlyLoadedVisitorId = requestHeaders.get(VISITOR_ID_HEADER);
+        boolean authorizationNeedsUpdating = StringUtils.isNotEmpty(newlyLoadedAuthorization) && !authorization.equals(newlyLoadedAuthorization);
+        boolean visitorIdNeedsUpdating = StringUtils.isNotEmpty(newlyLoadedVisitorId) && !visitorId.equals(newlyLoadedVisitorId);
+
+        if (authorizationNeedsUpdating && visitorIdNeedsUpdating) {
             REQUEST_HEADER.put(AUTHORIZATION_HEADER, newlyLoadedAuthorization);
             authorization = newlyLoadedAuthorization;
-            Logger.printDebug(() -> "new Authorization loaded: " + newlyLoadedAuthorization);
-        }
-
-        String newlyLoadedVisitorId = requestHeaders.get(VISITOR_ID_HEADER);
-        if (StringUtils.isNotEmpty(newlyLoadedVisitorId) && !visitorId.equals(newlyLoadedVisitorId)) {
             REQUEST_HEADER.put(VISITOR_ID_HEADER, newlyLoadedVisitorId);
             visitorId = newlyLoadedVisitorId;
+            Logger.printDebug(() -> "new Authorization loaded: " + newlyLoadedAuthorization);
             Logger.printDebug(() -> "new VisitorId loaded: " + newlyLoadedVisitorId);
         }
 

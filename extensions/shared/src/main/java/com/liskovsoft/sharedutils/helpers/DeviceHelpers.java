@@ -8,7 +8,7 @@ public final class DeviceHelpers {
      * @return whether the device has support for WebView, see
      * <a href="https://stackoverflow.com/a/69626735">https://stackoverflow.com/a/69626735</a>
      */
-    public static boolean supportsWebView() {
+    public static boolean isWebViewSupported() {
         try {
             CookieManager.getInstance();
             return true;

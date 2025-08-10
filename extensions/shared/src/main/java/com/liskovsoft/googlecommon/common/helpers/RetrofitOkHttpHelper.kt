@@ -1,12 +1,12 @@
-package com.liskovsoft.youtubeapi.common.helpers
+package com.liskovsoft.googlecommon.common.helpers
 
 import app.revanced.extension.shared.innertube.utils.ThrottlingParameterUtils
+import com.liskovsoft.sharedutils.helpers.Helpers
 import com.liskovsoft.sharedutils.okhttp.OkHttpCommons
 import okhttp3.Headers
 import okhttp3.HttpUrl
 import okhttp3.OkHttpClient
 import okhttp3.Request
-import java.util.Locale
 
 internal object RetrofitOkHttpHelper {
     private const val API_KEY = "AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8"
@@ -43,10 +43,12 @@ internal object RetrofitOkHttpHelper {
     )
 
     private val apiPrefixes = arrayOf(
+        // "https://www.googleapis.com/upload/drive/v3",
+        // "https://www.googleapis.com/drive/v3",
         "https://m.youtube.com/youtubei/v1/",
         "https://www.youtube.com/youtubei/v1/",
-        "https://www.youtube.com/api/stats/",
-        "https://clients1.google.com/complete/"
+        // "https://www.youtube.com/api/stats/",
+        // "https://clients1.google.com/complete/"
     )
 
     private fun createClient(): OkHttpClient {
@@ -66,7 +68,7 @@ internal object RetrofitOkHttpHelper {
 
             val url = request.url.toString()
 
-            if (startsWithAny(url, *apiPrefixes)) {
+            if (Helpers.startsWithAny(url, *apiPrefixes)) {
                 val doSkipAuth = authSkipList.remove(request)
 
                 // Empty Home fix (anonymous user) and improve Recommendations for everyone
@@ -124,44 +126,5 @@ internal object RetrofitOkHttpHelper {
         newUrlBuilder?.run {
             builder.url(build())
         }
-    }
-
-    private fun startsWithAny(word: String?, vararg prefixes: String?): Boolean {
-        if (word == null) {
-            return false
-        }
-
-        for (prefix in prefixes) {
-            if (startsWith(word, prefix)) {
-                return true
-            }
-        }
-
-        return false
-    }
-
-    private fun startsWith(word: String?, prefix: String?): Boolean {
-        var word = word
-        var prefix = prefix
-        if (word == null && prefix == null) {
-            return true
-        }
-
-        if (word == null || prefix == null) {
-            return false
-        }
-
-        word = normalize(word)
-        prefix = normalize(prefix)
-
-        return word!!.startsWith(prefix!!)
-    }
-
-    private fun normalize(word: String?): String? {
-        if (word == null || word.isEmpty()) {
-            return word
-        }
-
-        return word.lowercase(Locale.getDefault()).replace("ё", "е")
     }
 }

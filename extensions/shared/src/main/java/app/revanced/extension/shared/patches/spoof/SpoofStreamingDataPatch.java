@@ -10,8 +10,6 @@ import androidx.annotation.Nullable;
 
 import com.google.protos.youtube.api.innertube.StreamingDataOuterClass.StreamingData;
 
-import org.apache.commons.lang3.StringUtils;
-
 import java.io.File;
 import java.util.List;
 import java.util.Map;
@@ -27,7 +25,7 @@ import app.revanced.extension.shared.utils.Logger;
 import app.revanced.extension.shared.utils.Utils;
 import app.revanced.extension.youtube.shared.VideoInformation;
 
-@SuppressWarnings({"deprecation", "unused"})
+@SuppressWarnings("unused")
 public class SpoofStreamingDataPatch {
     public static final boolean SPOOF_STREAMING_DATA =
             BaseSettings.SPOOF_STREAMING_DATA.get() && PatchStatus.SpoofStreamingData();
@@ -48,12 +46,9 @@ public class SpoofStreamingDataPatch {
     private static final Uri UNREACHABLE_HOST_URI = Uri.parse(UNREACHABLE_HOST_URI_STRING);
 
     /**
-     * Parameters causing playback issues.
+     * Parameters used when playing scrim.
      */
-    private static final String[] AUTOPLAY_PARAMETERS = {
-            "YAHI", // Autoplay in feed.
-            "SAFg"  // Autoplay in scrim.
-    };
+    private static final String SCRIM_PARAMETERS = "SAFgAXgB";
     /**
      * Parameters used when playing clips.
      */
@@ -62,6 +57,15 @@ public class SpoofStreamingDataPatch {
      * Prefix present in all Short player parameters signature.
      */
     private static final String SHORTS_PLAYER_PARAMETERS = "8AEB";
+    /**
+     * No video id in these parameters.
+     */
+    private static final String[] PATH_NO_VIDEO_ID = {
+            "ad_break",         // This request fetches a list of times when ads can be displayed.
+            "get_drm_license",  // Waiting for a paid video to start.
+            "heartbeat",        // This request determines whether to pause playback when the user is AFK.
+            "refresh",          // Waiting for a livestream to start.
+    };
     private static volatile boolean isInitialized = false;
     /**
      * If {@link SpoofStreamingDataPatch#SPOOF_STREAMING_DATA_USE_JS_ALL} is false,
@@ -184,12 +188,27 @@ public class SpoofStreamingDataPatch {
      */
     public static void fetchStreams(String url, Map<String, String> requestHeader) {
         if (SPOOF_STREAMING_DATA) {
-            String id = Utils.getVideoIdFromRequest(url);
+            Uri uri = Uri.parse(url);
+            String path = uri.getPath();
+            if (path == null || !path.contains("player")) {
+                return;
+            }
+            if (Utils.containsAny(path, PATH_NO_VIDEO_ID)) {
+                Logger.printDebug(() -> "Ignoring path: " + path);
+                return;
+            }
+            String id = uri.getQueryParameter("id");
             if (id == null) {
                 Logger.printException(() -> "Ignoring request with no id: " + url);
                 return;
-            } else if (id.isEmpty()) {
-                return;
+            }
+            if (SPOOF_STREAMING_DATA_USE_JS &&
+                    !SPOOF_STREAMING_DATA_USE_JS_ALL &&
+                    reasonSkipped.isEmpty()) {
+                String inline = uri.getQueryParameter("inline");
+                if ("1".equals(inline)) {
+                    reasonSkipped = "Autoplay in feed";
+                }
             }
 
             StreamingDataRequest.fetchRequest(id, requestHeader, reasonSkipped);
@@ -284,7 +303,7 @@ public class SpoofStreamingDataPatch {
             if (!SPOOF_STREAMING_DATA_USE_JS_ALL && playerParameter != null) {
                 if (playerParameter.startsWith(SHORTS_PLAYER_PARAMETERS)) {
                     reasonSkipped = "Shorts";
-                }  else if (StringUtils.startsWithAny(playerParameter, AUTOPLAY_PARAMETERS)) {
+                }  else if (playerParameter.equals(SCRIM_PARAMETERS)) {
                     reasonSkipped = "Autoplay in feed";
                 } else if (playerParameter.length() > 150 || playerParameter.startsWith(CLIPS_PARAMETERS)) {
                     reasonSkipped = "Clips";

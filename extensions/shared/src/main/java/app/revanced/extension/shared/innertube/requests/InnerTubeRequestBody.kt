@@ -128,9 +128,6 @@ object InnerTubeRequestBody {
             context.put("user", user)
 
             if (isGVS) {
-                if (clientType.requireParams) {
-                    innerTubeBody.put("params", "8AEB")
-                }
                 val contentPlaybackContext = JSONObject()
                 if (clientType.refererFormat != null) {
                     contentPlaybackContext.put("referer", String.format(clientType.refererFormat, videoId))

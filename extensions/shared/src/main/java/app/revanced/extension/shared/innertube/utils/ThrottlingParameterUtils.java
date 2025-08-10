@@ -3,10 +3,7 @@ package app.revanced.extension.shared.innertube.utils;
 import android.util.Pair;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.net.SocketTimeoutException;
-import java.net.URLDecoder;
-import java.nio.charset.StandardCharsets;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
@@ -15,6 +12,7 @@ import java.util.regex.*;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.liskovsoft.sharedutils.helpers.Helpers;
 import com.liskovsoft.youtubeapi.app.PoTokenGate;
 import com.liskovsoft.youtubeapi.app.playerdata.PlayerDataExtractor;
 
@@ -74,10 +72,10 @@ public class ThrottlingParameterUtils {
     private static final String IFRAME_API_URL =
             "https://www.youtube.com/iframe_api";
     /**
-     * User-agent of the TV client being used by yt-dlp.
+     * Android 14 for TV (Emulator) with [Cobalt](https://github.com/youtube/cobalt) Dev build.
      */
-    private static final String USER_AGENT_CHROMIUM =
-            "Mozilla/5.0 (ChromiumStylePlatform) Cobalt/Version";
+    private static final String USER_AGENT_COBALT =
+            "Mozilla/5.0 (Linux x86; Android 14) Cobalt/26.master.0.1036476-qa (unlike Gecko) v8/11.4.183.40-jit gles Starboard/17, Google_ATV_Unknown_2023/UTT1.240131.001.F1 (google, AOSP TV on x86) dev.cobalt.coat/DeveloperBuild";
     /**
      * User-agent of the Web client being used by SmartTube.
      */
@@ -321,7 +319,7 @@ public class ThrottlingParameterUtils {
             Request request = new Request.Builder()
                     .url(uri)
                     .header("Accept-Language", "en-US,en")
-                    .header("User-Agent", isTV ? USER_AGENT_CHROMIUM : USER_AGENT_WEB)
+                    .header("User-Agent", isTV ? USER_AGENT_COBALT : USER_AGENT_WEB)
                     .build();
 
             try (Response response = client.newCall(request).execute())  {
@@ -348,11 +346,6 @@ public class ThrottlingParameterUtils {
         return null;
     }
 
-    @SuppressWarnings("CharsetObjectCanBeUsed")
-    public static String decodeURL(String s) throws UnsupportedEncodingException {
-        return URLDecoder.decode(s, StandardCharsets.UTF_8.name());
-    }
-
     /**
      * Convert signatureCipher to streaming url with obfuscated 'n' parameter.
      * <p>
@@ -374,9 +367,9 @@ public class ThrottlingParameterUtils {
                     String urlParam = paramUrlMatcher.group(1);
                     if (StringUtils.isNotEmpty(sParam) && StringUtils.isNotEmpty(urlParam)) {
                         // The 'sig' parameter converted by javascript rules.
-                        String decodedSigParm = extractor.extractSig(decodeURL(sParam));
+                        String decodedSigParm = extractor.extractSig(Helpers.decode(sParam));
                         if (StringUtils.isNotEmpty(decodedSigParm)) {
-                            String decodedUriParm = decodeURL(urlParam);
+                            String decodedUriParm = Helpers.decode(urlParam);
                             Logger.printDebug(() -> "Converted signatureCipher to obfuscatedUrl, videoId: " + videoId);
                             return decodedUriParm + "&sig=" + decodedSigParm;
                         }

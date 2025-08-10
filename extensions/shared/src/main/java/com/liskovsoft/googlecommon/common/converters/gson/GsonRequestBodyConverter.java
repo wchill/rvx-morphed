@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.liskovsoft.youtubeapi.common.converters.gson;
+package com.liskovsoft.googlecommon.common.converters.gson;
 
 import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
 
+import java.io.IOException;
+import java.nio.charset.Charset;
+
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import retrofit2.Converter;
-
-import java.io.IOException;
-import java.nio.charset.Charset;
 
 final class GsonRequestBodyConverter<T> implements Converter<T, RequestBody> {
   private static final MediaType MEDIA_TYPE = MediaType.get("application/json; charset=UTF-8");
