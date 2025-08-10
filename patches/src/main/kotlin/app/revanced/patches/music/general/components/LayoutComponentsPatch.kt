@@ -13,7 +13,6 @@ import app.revanced.patches.music.utils.extension.Constants.COMPONENTS_PATH
 import app.revanced.patches.music.utils.extension.Constants.GENERAL_CLASS_DESCRIPTOR
 import app.revanced.patches.music.utils.extension.Constants.GENERAL_PATH
 import app.revanced.patches.music.utils.patch.PatchList.HIDE_LAYOUT_COMPONENTS
-import app.revanced.patches.music.utils.patch.PatchList.LITHO_FILTER
 import app.revanced.patches.music.utils.playservice.is_6_39_or_greater
 import app.revanced.patches.music.utils.playservice.is_6_42_or_greater
 import app.revanced.patches.music.utils.playservice.is_6_48_or_greater
@@ -458,7 +457,6 @@ val layoutComponentsPatch = bytecodePatch(
         )
 
         updatePatchStatus(HIDE_LAYOUT_COMPONENTS)
-        updatePatchStatus(LITHO_FILTER)
 
     }
 }

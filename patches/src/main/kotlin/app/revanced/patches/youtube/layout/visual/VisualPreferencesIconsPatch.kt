@@ -185,18 +185,6 @@ val visualPreferencesIconsPatch = resourcePatch(
 
         // endregion.
 
-        // ‘Litho thread pool max size’ setting is added last, so this method is used.
-        if (applyToAll == true) {
-            val rvxSettingFile = this[RVX_PREFERENCE_PATH]
-            rvxSettingFile.writeText(
-                rvxSettingFile.readText()
-                    .replace(
-                        "android:key=\"revanced_litho_layout_thread_pool_max_size\"",
-                        "android:key=\"revanced_litho_layout_thread_pool_max_size\" android:icon=\"@drawable/$EMPTY_ICON\""
-                    )
-            )
-        }
-
         addPreference(VISUAL_PREFERENCES_ICONS_FOR_YOUTUBE)
     }
 
