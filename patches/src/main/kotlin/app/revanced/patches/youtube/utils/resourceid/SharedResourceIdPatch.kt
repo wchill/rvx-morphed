@@ -45,8 +45,6 @@ var bottomBarContainer = -1L
     private set
 var bottomSheetFooterText = -1L
     private set
-var bottomSheetRecyclerView = -1L
-    private set
 var bottomUiContainerStub = -1L
     private set
 var captionToggleContainer = -1L
@@ -293,7 +291,6 @@ internal val sharedResourceIdPatch = resourcePatch(
         barContainerHeight = getResourceId(DIMEN, "bar_container_height")
         bottomBarContainer = getResourceId(ID, "bottom_bar_container")
         bottomSheetFooterText = getResourceId(ID, "bottom_sheet_footer_text")
-        bottomSheetRecyclerView = getResourceId(LAYOUT, "bottom_sheet_recycler_view")
         bottomUiContainerStub = getResourceId(ID, "bottom_ui_container_stub")
         captionToggleContainer = getResourceId(ID, "caption_toggle_container")
         castMediaRouteButton = getResourceId(LAYOUT, "castmediaroutebutton")
