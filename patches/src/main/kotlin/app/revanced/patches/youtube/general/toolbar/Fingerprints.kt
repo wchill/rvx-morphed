@@ -193,6 +193,16 @@ internal val searchSuggestionCollectionFingerprint = legacyFingerprint(
     literals = listOf(p13nHeader, seeMoreProceedingHeader)
 )
 
+/**
+ * YouTube 19.47 ~ 20.14.
+ */
+internal const val ROUND_EDGE_SEARCH_BAR_FEATURE_FLAG = 45353159L
+
+internal val roundEdgeSearchBarFeatureFlagFingerprint = legacyFingerprint(
+    name = "searchFragmentFeatureFlagFingerprint",
+    literals = listOf(ROUND_EDGE_SEARCH_BAR_FEATURE_FLAG),
+)
+
 internal val searchBarFingerprint = legacyFingerprint(
     name = "searchBarFingerprint",
     returnType = "V",

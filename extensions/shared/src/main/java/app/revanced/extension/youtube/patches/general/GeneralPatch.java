@@ -56,6 +56,17 @@ public class GeneralPatch {
     /**
      * Injection point.
      */
+    public static boolean ignoreDefaultAudioStream(boolean original) {
+        if (Settings.DISABLE_AUTO_AUDIO_TRACKS.get()
+                || Settings.SPOOF_STREAMING_DATA_VR_AUDIO_TRACK_BUTTON.get()) {
+            return false;
+        }
+        return original;
+    }
+
+    /**
+     * Injection point.
+     */
     public static boolean isDefaultAudioStream(boolean isDefault, String audioTrackId, String audioTrackDisplayName) {
         try {
             if (!Settings.DISABLE_AUTO_AUDIO_TRACKS.get()) {
@@ -79,7 +90,6 @@ public class GeneralPatch {
             return isOriginal;
         } catch (Exception ex) {
             Logger.printException(() -> "isDefaultAudioStream failure", ex);
-
             return isDefault;
         }
     }
@@ -567,6 +577,15 @@ public class GeneralPatch {
                             ? View.GONE : visibility
             );
         }
+    }
+
+    /**
+     * Injection point.
+     * If the round search bar is enabled, the patch will not work.
+     * Forcibly disable it.
+     */
+    public static boolean disableRoundSearchBar(boolean original) {
+        return !Settings.HIDE_YOU_MAY_LIKE_SECTION.get() && original;
     }
 
     /**

@@ -510,6 +510,11 @@ val toolBarComponentsPatch = bytecodePatch(
                 }
             }
 
+            roundEdgeSearchBarFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
+                ROUND_EDGE_SEARCH_BAR_FEATURE_FLAG,
+                "$GENERAL_CLASS_DESCRIPTOR->disableRoundSearchBar(Z)Z"
+            )
+
             settingArray += "SETTINGS: HIDE_YOU_MAY_LIKE_SECTION"
         } else if (is_20_15_or_greater) {
             printWarn("\"Hide You may like section\" is not yet supported in this version. Use YouTube 20.14.43 or earlier.")
