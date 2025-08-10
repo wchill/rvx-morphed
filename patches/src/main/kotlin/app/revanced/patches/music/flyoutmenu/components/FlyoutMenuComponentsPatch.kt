@@ -241,6 +241,8 @@ val flyoutMenuComponentsPatch = bytecodePatch(
 
         // endregion
 
+        addLithoFilter(FILTER_CLASS_DESCRIPTOR)
+
         if (trimSilenceIncluded) {
             addSwitchPreference(
                 CategoryType.FLYOUT,
@@ -260,8 +262,6 @@ val flyoutMenuComponentsPatch = bytecodePatch(
             false
         )
         if (is_6_36_or_greater) {
-            addLithoFilter(FILTER_CLASS_DESCRIPTOR)
-
             addSwitchPreference(
                 CategoryType.FLYOUT,
                 "revanced_hide_flyout_menu_3_column_component",
