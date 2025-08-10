@@ -35,12 +35,6 @@ object InnerTubeRoutes {
     )
 
     @JvmField
-    val GET_AUDIO_TRACK = compileRoute(
-        endpoint = "player",
-        fields = "streamingData.adaptiveFormats.audioTrack"
-    )
-
-    @JvmField
     val GET_CATEGORY = compileRoute(
         endpoint = "player",
         fields = "microformat.playerMicroformatRenderer.category",

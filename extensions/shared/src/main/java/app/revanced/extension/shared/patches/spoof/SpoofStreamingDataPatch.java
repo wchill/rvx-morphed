@@ -1,6 +1,6 @@
 package app.revanced.extension.shared.patches.spoof;
 
-import static app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.prioritizeResolution;
+import static app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.prioritizeResolution;
 
 import android.net.Uri;
 import android.text.TextUtils;
@@ -196,7 +196,7 @@ public class SpoofStreamingDataPatch {
         }
     }
 
-    private static boolean isValidVideoId(@Nullable String videoId) {
+    public static boolean isValidVideoId(@Nullable String videoId) {
         return videoId != null && !videoId.isEmpty() && !"zzzzzzzzzzz".equals(videoId);
     }
 

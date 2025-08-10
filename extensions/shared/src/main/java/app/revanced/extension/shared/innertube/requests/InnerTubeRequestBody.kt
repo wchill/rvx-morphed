@@ -29,7 +29,7 @@ object InnerTubeRequestBody {
     private val REQUEST_HEADER_KEYS = setOf(
         AUTHORIZATION_HEADER,  // Available only to logged-in users.
         PAGE_ID_HEADER,
-        VISITOR_ID_HEADER
+        VISITOR_ID_HEADER,
     )
 
     /**

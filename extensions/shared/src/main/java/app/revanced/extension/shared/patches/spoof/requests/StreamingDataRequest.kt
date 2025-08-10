@@ -9,13 +9,13 @@ import app.revanced.extension.shared.innertube.requests.InnerTubeRequestBody.get
 import app.revanced.extension.shared.innertube.requests.InnerTubeRoutes.GET_ADAPTIVE_FORMATS
 import app.revanced.extension.shared.innertube.requests.InnerTubeRoutes.GET_STREAMING_DATA
 import app.revanced.extension.shared.innertube.utils.AuthUtils
+import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.getAdaptiveFormats
+import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.getFormats
+import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.setServerAbrStreamingUrl
+import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.setUrl
 import app.revanced.extension.shared.innertube.utils.ThrottlingParameterUtils
 import app.revanced.extension.shared.patches.components.ByteArrayFilterGroup
-import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.getAdaptiveFormats
-import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.getFormats
 import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.parseFrom
-import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.setServerAbrStreamingUrl
-import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.setUrl
 import app.revanced.extension.shared.requests.Requester
 import app.revanced.extension.shared.settings.BaseSettings
 import app.revanced.extension.shared.utils.Logger

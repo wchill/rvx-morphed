@@ -86,6 +86,17 @@ private const val EXTENSION_STREAMING_DATA_OUTER_CLASS_DESCRIPTOR =
 private const val EXTENSION_STREAMING_DATA_INTERFACE =
     "$SPOOF_PATH/StreamingDataOuterClassPatch${'$'}StreamingDataMessage;"
 
+private const val EXTENSION_YOUTUBE_SPOOF_PATH =
+    app.revanced.patches.youtube.utils.extension.Constants.SPOOF_PATH
+private const val EXTENSION_AUTO_TRACK_CLASS_DESCRIPTOR =
+    "$EXTENSION_YOUTUBE_SPOOF_PATH/AudioTrackPatch;"
+private const val EXTENSION_AUTO_TRACK_BUTTON_CLASS_DESCRIPTOR =
+    "$EXTENSION_YOUTUBE_SPOOF_PATH/ui/AudioTrackButton;"
+private const val EXTENSION_RELOAD_VIDEO_CLASS_DESCRIPTOR =
+    "$EXTENSION_YOUTUBE_SPOOF_PATH/ReloadVideoPatch;"
+private const val EXTENSION_RELOAD_VIDEO_BUTTON_CLASS_DESCRIPTOR =
+    "$EXTENSION_YOUTUBE_SPOOF_PATH/ui/ReloadVideoButton;"
+
 val spoofStreamingDataPatch = bytecodePatch(
     SPOOF_STREAMING_DATA.title,
     SPOOF_STREAMING_DATA.summary
@@ -199,6 +210,7 @@ val spoofStreamingDataPatch = bytecodePatch(
                             sget-object v$freeRegister, $getVideoDetailsFallbackField
                             :ignore
                             iget-object v$freeRegister, v$freeRegister, ${getVideoDetailsField.type}->c:Ljava/lang/String;
+                            invoke-static { v$freeRegister, v$setStreamingDataRegister }, $EXTENSION_AUTO_TRACK_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;${STREAMING_DATA_OUTER_CLASS})V
                             invoke-direct { p0, v$setStreamingDataRegister, v$freeRegister }, $resultMethodType->$setStreamDataMethodName(${STREAMING_DATA_OUTER_CLASS}Ljava/lang/String;)$STREAMING_DATA_OUTER_CLASS
                             move-result-object v$setStreamingDataRegister
                             """
@@ -472,10 +484,9 @@ val spoofStreamingDataPatch = bytecodePatch(
 
         // region patch for audio track button
 
-        val spoofPath = app.revanced.patches.youtube.utils.extension.Constants.SPOOF_PATH
-        hookAudioTrackId("$spoofPath/AudioTrackPatch;->setAudioTrackId(Ljava/lang/String;)V")
-        hookBackgroundPlayVideoInformation("$spoofPath/AudioTrackPatch;->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
-        injectControl("$spoofPath/ui/AudioTrackButton;")
+        hookAudioTrackId("$EXTENSION_AUTO_TRACK_CLASS_DESCRIPTOR->setAudioTrackId(Ljava/lang/String;)V")
+        hookBackgroundPlayVideoInformation("$EXTENSION_AUTO_TRACK_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
+        injectControl(EXTENSION_AUTO_TRACK_BUTTON_CLASS_DESCRIPTOR)
 
         val directory = if (outlineIcon == true)
             "outline"
@@ -502,11 +513,11 @@ val spoofStreamingDataPatch = bytecodePatch(
 
                 addInstructionsAtControlFlowLabel(
                     index,
-                    "invoke-static {v$register}, $spoofPath/ReloadVideoPatch;->setProgressBarVisibility(I)V"
+                    "invoke-static {v$register}, $EXTENSION_RELOAD_VIDEO_CLASS_DESCRIPTOR->setProgressBarVisibility(I)V"
                 )
             }
 
-        injectControl("$spoofPath/ui/ReloadVideoButton;")
+        injectControl(EXTENSION_RELOAD_VIDEO_BUTTON_CLASS_DESCRIPTOR)
 
         arrayOf(
             ResourceGroup(
