@@ -571,12 +571,12 @@ public class Settings extends BaseSettings {
     public static final IntegerSetting SWIPE_VOLUMES_SENSITIVITY = new IntegerSetting("revanced_swipe_volumes_sensitivity", 1, true, parent(SWIPE_VOLUME));
     public static final FloatSetting SWIPE_BRIGHTNESS_VALUE = new FloatSetting("revanced_swipe_brightness_value", -1f);
 
+    public static final BooleanSetting ENABLE_SWIPE_TO_SWITCH_VIDEO = new BooleanSetting("revanced_enable_swipe_to_switch_video", FALSE, true);
     /**
      * @noinspection DeprecatedIsStillUsed
      */
     @Deprecated // Patch is obsolete and no longer works with 19.09+
     public static final BooleanSetting DISABLE_HDR_AUTO_BRIGHTNESS = new BooleanSetting("revanced_disable_hdr_auto_brightness", TRUE, true, parent(SWIPE_BRIGHTNESS));
-    public static final BooleanSetting DISABLE_SWIPE_TO_SWITCH_VIDEO = new BooleanSetting("revanced_disable_swipe_to_switch_video", TRUE, true);
     public static final BooleanSetting DISABLE_SWIPE_TO_ENTER_FULLSCREEN_MODE_BELOW_THE_PLAYER = new BooleanSetting("revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player", FALSE, true);
     public static final BooleanSetting DISABLE_SWIPE_TO_ENTER_FULLSCREEN_MODE_IN_THE_PLAYER = new BooleanSetting("revanced_disable_swipe_to_enter_fullscreen_mode_in_the_player", FALSE, true);
     public static final BooleanSetting DISABLE_SWIPE_TO_EXIT_FULLSCREEN_MODE = new BooleanSetting("revanced_disable_swipe_to_exit_fullscreen_mode", FALSE, true);

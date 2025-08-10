@@ -307,7 +307,7 @@ class SwipeControlsOverlayLayout(
     // Handle brightness change.
     override fun onBrightnessChanged(brightness: Double) {
         if (config.shouldLowestValueEnableAutoBrightness && brightness <= 0) {
-            val displayText = if (config.overlayStyle.isVertical) "А"
+            val displayText = if (config.overlayStyle.isVertical) "A"
             else str("revanced_swipe_lowest_value_enable_auto_brightness_overlay_text")
 
             if (isLegacyStyles) {

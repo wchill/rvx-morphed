@@ -1831,9 +1831,6 @@ Adjust volume by swiping vertically on the right side of the screen."</string>
     <string name="revanced_disable_hdr_auto_brightness_title">Disable auto HDR brightness</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_on">Auto HDR brightness is disabled.</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_off">Auto HDR brightness is enabled.</string>
-    <string name="revanced_disable_swipe_to_switch_video_title">Disable swipe to change video</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_on">Swiping up / down in fullscreen mode will not change to the next / previous video.</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_off">Swiping up / down in fullscreen mode will change to the next / previous video.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_title">Disable swipe to enter fullscreen mode (below the player)</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_on">Swiping down below the player will not enter fullscreen mode.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_off">Swiping down below the player will enter fullscreen mode.</string>
@@ -1843,6 +1840,9 @@ Adjust volume by swiping vertically on the right side of the screen."</string>
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_title">Disable swipe to exit fullscreen mode</string>
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_summary_on">Swiping down in fullscreen will not exit fullscreen mode.</string>
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_summary_off">Swiping down in fullscreen will exit fullscreen mode.</string>
+    <string name="revanced_enable_swipe_to_switch_video_title">Enable swipe to change video</string>
+    <string name="revanced_enable_swipe_to_switch_video_summary_on">Swiping up / down in fullscreen mode will change to the next / previous video.</string>
+    <string name="revanced_enable_swipe_to_switch_video_summary_off">Swiping up / down in fullscreen mode will not change to the next / previous video.</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">Auto</string>
 
 
