@@ -519,6 +519,17 @@ Info:
 • This is only valid for users spoofing with very old clients."</string>
     <string name="revanced_sanitize_sharing_links_title">Sanitize sharing links</string>
     <string name="revanced_sanitize_sharing_links_summary">Sanitizes sharing links by removing tracking query parameters.</string>
+    <string name="revanced_spoof_client_title">Spoof client</string>
+    <string name="revanced_spoof_client_summary">"Spoof the client to prevent playback issues.
+
+If this is turned on, 'Spoof player parameter' can be turned off.
+
+Side effect:
+• Player flyout menu may not show properly."</string>
+    <string name="revanced_spoof_client_type_title">Default client</string>
+    <string name="revanced_spoof_client_type_summary">Defines a default client for spoofing.</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_player_parameter_title">Spoof player parameter</string>
     <string name="revanced_spoof_player_parameter_summary">"Spoof the player parameter to prevent playback issues.
 

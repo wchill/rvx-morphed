@@ -3,7 +3,7 @@ package app.revanced.patches.music.utils.fix.parameter
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.patch.bytecodePatch
 import app.revanced.patches.music.utils.compatibility.Constants.COMPATIBLE_PACKAGE
-import app.revanced.patches.music.utils.extension.Constants.MISC_PATH
+import app.revanced.patches.music.utils.extension.Constants.SPOOF_PATH
 import app.revanced.patches.music.utils.patch.PatchList.SPOOF_PLAYER_PARAMETER
 import app.revanced.patches.music.utils.settings.CategoryType
 import app.revanced.patches.music.utils.settings.ResourceUtils.updatePatchStatus
@@ -18,7 +18,7 @@ import app.revanced.util.fingerprint.methodOrThrow
 import app.revanced.util.fingerprint.resolvable
 
 private const val EXTENSION_CLASS_DESCRIPTOR =
-    "$MISC_PATH/SpoofPlayerParameterPatch;"
+    "$SPOOF_PATH/SpoofPlayerParameterPatch;"
 
 @Suppress("unused")
 val spoofPlayerParameterPatch = bytecodePatch(

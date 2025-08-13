@@ -1,4 +1,4 @@
-package app.revanced.extension.music.patches.misc;
+package app.revanced.extension.music.patches.spoof;
 
 import static app.revanced.extension.music.shared.VideoInformation.parameterIsSample;
 
@@ -36,7 +36,8 @@ public class SpoofPlayerParameterPatch {
      * <p>
      * Music history is saved to Recent searches or Speed dial.
      */
-    private static final String PLAYER_PARAMETER_SHORTS = "8AEByAMkuAQ0";
+    private static final String PLAYER_PARAMETER_SHORTS =
+            "8AEByAMyuAQUogYVAXaSymCZP-45XhmQL8Iv5KWGApmBkAcC";
 
     /**
      * On app first start, the first video played usually contains a single non-default window setting value
@@ -71,6 +72,7 @@ public class SpoofPlayerParameterPatch {
      * Injection point.
      */
     public static String spoofParameter(@NonNull String videoId, @Nullable String parameter) {
+        Logger.printInfo(() -> "playerParameter: " + parameter);
         if (SPOOF_PLAYER_PARAMETER) {
             synchronized (lastVideoIds) {
                 Boolean isSamples = parameterIsSample(parameter);

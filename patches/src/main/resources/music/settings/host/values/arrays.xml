@@ -69,6 +69,14 @@
     </string-array>
     <string-array name="revanced_spoof_app_version_target_entry_values">
     </string-array>
+    <string-array name="revanced_spoof_client_type_entries">
+        <item>@string/revanced_spoof_client_type_entry_ios_music_6_21</item>
+        <item>@string/revanced_spoof_client_type_entry_ios_music_7_04</item>
+    </string-array>
+    <string-array name="revanced_spoof_client_type_entry_values">
+        <item>IOS_MUSIC_6_21</item>
+        <item>IOS_MUSIC_7_04</item>
+    </string-array>
     <string-array name="revanced_watch_history_type_entries">
         <item>@string/revanced_watch_history_type_entry_1</item>
         <item>@string/revanced_watch_history_type_entry_2</item>
