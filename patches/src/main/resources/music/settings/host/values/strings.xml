@@ -347,6 +347,8 @@ Some features may not work properly in the old player layout."</string>
     <string name="revanced_custom_playback_speeds_invalid">Custom speeds must be less than %sx.</string>
     <string name="revanced_custom_playback_speeds_parse_exception">Invalid custom playback speeds.</string>
     <string name="revanced_remember_playback_speed_toast">Changing default speed to %s.</string>
+    <string name="revanced_remember_video_quality_auto_mobile">Changing default mobile data quality to Auto.</string>
+    <string name="revanced_remember_video_quality_auto_wifi">Changing default Wi-Fi quality to Auto.</string>
     <string name="revanced_remember_video_quality_mobile">Changing default mobile data quality to %s.</string>
     <string name="revanced_remember_video_quality_none">Failed to set quality.</string>
     <string name="revanced_remember_video_quality_wifi">Changing default Wi-Fi quality to %s.</string>
