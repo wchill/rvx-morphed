@@ -42,10 +42,8 @@ import app.revanced.util.fingerprint.definingClassOrThrow
 import app.revanced.util.fingerprint.matchOrThrow
 import app.revanced.util.fingerprint.methodOrThrow
 import app.revanced.util.getReference
-import app.revanced.util.getWalkerMethod
 import app.revanced.util.indexOfFirstInstructionOrThrow
 import app.revanced.util.indexOfFirstInstructionReversedOrThrow
-import app.revanced.util.indexOfFirstStringInstructionOrThrow
 import app.revanced.util.updatePatchStatus
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
@@ -65,8 +63,6 @@ private const val EXTENSION_VP9_CODEC_CLASS_DESCRIPTOR =
     "$VIDEO_PATH/VP9CodecPatch;"
 private const val EXTENSION_CUSTOM_PLAYBACK_SPEED_CLASS_DESCRIPTOR =
     "$VIDEO_PATH/CustomPlaybackSpeedPatch;"
-private const val EXTENSION_HDR_VIDEO_CLASS_DESCRIPTOR =
-    "$VIDEO_PATH/HDRVideoPatch;"
 private const val EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR =
     "$VIDEO_PATH/PlaybackSpeedPatch;"
 private const val EXTENSION_SKIP_PRELOADED_BUFFER_CLASS_DESCRIPTOR =
@@ -93,6 +89,7 @@ val videoPlaybackPatch = bytecodePatch(
         flyoutMenuHookPatch,
         lithoFilterPatch,
         lithoLayoutPatch,
+        disableHdrPatch,
         dismissPlayerHookPatch,
         playerTypeHookPatch,
         recyclerViewTreeObserverPatch,
@@ -112,32 +109,6 @@ val videoPlaybackPatch = bytecodePatch(
 
         recyclerViewTreeObserverHook("$EXTENSION_CUSTOM_PLAYBACK_SPEED_CLASS_DESCRIPTOR->onFlyoutMenuCreate(Landroid/support/v7/widget/RecyclerView;)V")
         addLithoFilter(PLAYBACK_SPEED_MENU_FILTER_CLASS_DESCRIPTOR)
-
-        // endregion
-
-        // region patch for disable HDR video
-
-        hdrCapabilityFingerprint.methodOrThrow().apply {
-            val stringIndex =
-                indexOfFirstStringInstructionOrThrow("av1_profile_main_10_hdr_10_plus_supported")
-            val walkerIndex = indexOfFirstInstructionOrThrow(stringIndex) {
-                val reference = getReference<MethodReference>()
-                reference?.parameterTypes == listOf("I", "Landroid/view/Display;") &&
-                        reference.returnType == "Z"
-            }
-
-            val walkerMethod = getWalkerMethod(walkerIndex)
-            walkerMethod.apply {
-                addInstructionsWithLabels(
-                    0, """
-                        invoke-static {}, $EXTENSION_HDR_VIDEO_CLASS_DESCRIPTOR->disableHDRVideo()Z
-                        move-result v0
-                        if-nez v0, :default
-                        return v0
-                        """, ExternalLabel("default", getInstruction(0))
-                )
-            }
-        }
 
         // endregion
 

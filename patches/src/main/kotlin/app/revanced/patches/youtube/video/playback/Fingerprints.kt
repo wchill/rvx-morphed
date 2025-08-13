@@ -16,15 +16,6 @@ internal val deviceDimensionsModelToStringFingerprint = legacyFingerprint(
     strings = listOf("minh.", ";maxh.")
 )
 
-internal val hdrCapabilityFingerprint = legacyFingerprint(
-    name = "hdrCapabilityFingerprint",
-    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    strings = listOf(
-        "av1_profile_main_10_hdr_10_plus_supported",
-        "video/av01"
-    )
-)
-
 internal val playbackSpeedChangedFromRecyclerViewFingerprint = legacyFingerprint(
     name = "playbackSpeedChangedFromRecyclerViewFingerprint",
     returnType = "L",
