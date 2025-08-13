@@ -189,8 +189,10 @@ object YouTubeClient {
      * Video not playable: Drm-protected.
      * Note: Both 'Authorization' and 'Set-Cookie' are supported.
      * TODO: Find out why playback sometimes fails.
+     * TODO: Like NewPipe Extractor, the latest client version must always be fetched
+     *       in [YouTube TV Service Worker](https://www.youtube.com/tv/sw.js_data).
      */
-    private const val CLIENT_VERSION_TVHTML5 = "7.20250714.16.00"
+    private const val CLIENT_VERSION_TVHTML5 = "7.20250805.16.01"
 
     private const val USER_AGENT_TVHTML5 =
         "Mozilla/5.0 (PLAYSTATION 3 4.10) AppleWebKit/531.22.8 (KHTML, like Gecko)"
@@ -222,9 +224,12 @@ object YouTubeClient {
      * Note: Audio track is not available.
      * Note: Only 'Set-Cookie' is supported.
      * TODO: Find out why playback sometimes fails.
+     * TODO: Like NewPipe Extractor, the latest client version must always be fetched
+     *       in [YouTube Mobile Web Service Worker](https://m.youtube.com/sw.js_data).
      */
-    private const val CLIENT_VERSION_MWEB = "2.20250213.05.00"
-    private val USER_AGENT_MWEB = "Mozilla/5.0 (Android ${Build.VERSION.RELEASE}; Mobile; rv:135.0) Gecko/135.0 Firefox/135.0"
+    private const val CLIENT_VERSION_MWEB = "2.20250812.01.00"
+    private const val USER_AGENT_MWEB =
+        "Mozilla/5.0 (PlayStation Vita 3.74) AppleWebKit/537.73 (KHTML, like Gecko) Silk/3.2"
 
 
     /**
@@ -470,6 +475,7 @@ object YouTubeClient {
             refererFormat = CLIENT_REFERER_FORMAT_TV,
             friendlyName = "TV Simply"
         ),
+        // Unused client.
         TV_EMBEDDED(
             id = 85,
             clientVersion = CLIENT_VERSION_TVHTML5_EMBEDDED,
