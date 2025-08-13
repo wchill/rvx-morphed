@@ -4,7 +4,6 @@ import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
-import app.revanced.patcher.patch.PatchException
 import app.revanced.patcher.patch.bytecodePatch
 import app.revanced.patcher.util.smali.ExternalLabel
 import app.revanced.patches.shared.customspeed.customPlaybackSpeedPatch
@@ -30,11 +29,8 @@ import app.revanced.patches.youtube.utils.settings.ResourceUtils.addPreference
 import app.revanced.patches.youtube.utils.settings.settingsPatch
 import app.revanced.patches.youtube.video.information.hookBackgroundPlayVideoInformation
 import app.revanced.patches.youtube.video.information.hookVideoInformation
-import app.revanced.patches.youtube.video.information.onCreateHook
 import app.revanced.patches.youtube.video.information.speedSelectionInsertMethod
 import app.revanced.patches.youtube.video.information.videoInformationPatch
-import app.revanced.patches.youtube.video.information.videoQualityListInsertIndex
-import app.revanced.patches.youtube.video.information.videoQualityListMethod
 import app.revanced.patches.youtube.video.videoid.hookPlayerResponseVideoId
 import app.revanced.patches.youtube.video.videoid.videoIdPatch
 import app.revanced.util.findMethodOrThrow
@@ -65,8 +61,6 @@ private const val EXTENSION_CUSTOM_PLAYBACK_SPEED_CLASS_DESCRIPTOR =
     "$VIDEO_PATH/CustomPlaybackSpeedPatch;"
 private const val EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR =
     "$VIDEO_PATH/PlaybackSpeedPatch;"
-private const val EXTENSION_SKIP_PRELOADED_BUFFER_CLASS_DESCRIPTOR =
-    "$VIDEO_PATH/SkipPreloadedBufferPatch;"
 private const val EXTENSION_SPOOF_DEVICE_DIMENSIONS_CLASS_DESCRIPTOR =
     "$VIDEO_PATH/SpoofDeviceDimensionsPatch;"
 private const val EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR =
@@ -165,7 +159,7 @@ val videoPlaybackPatch = bytecodePatch(
         hookPlayerResponseVideoId("$EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR->fetchMusicRequest(Ljava/lang/String;Z)V")
         hookDismissObserver("$EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR->onDismiss()V")
 
-        updatePatchStatus(PATCH_STATUS_CLASS_DESCRIPTOR, "RememberPlaybackSpeed")
+        updatePatchStatus(PATCH_STATUS_CLASS_DESCRIPTOR, "VideoPlayback")
 
         // endregion
 
@@ -173,38 +167,22 @@ val videoPlaybackPatch = bytecodePatch(
 
         qualityChangedFromRecyclerViewFingerprint.matchOrThrow().let {
             it.method.apply {
-                val index = it.patternMatch!!.startIndex + 1
+                val index = it.patternMatch!!.startIndex
                 val register = getInstruction<TwoRegisterInstruction>(index).registerA
 
                 addInstruction(
                     index + 1,
-                    "invoke-static { v$register }, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->userChangedQualityInNewFlyout(Ljava/lang/String;)V"
+                    "invoke-static { v$register }, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->userChangedQualityInNewFlyout(I)V"
                 )
             }
         }
 
-        qualitySetterFingerprint.matchOrThrow().let {
-            val onItemClickMethod =
-                it.classDef.methods.find { method -> method.name == "onItemClick" }
-
-            onItemClickMethod?.apply {
-                addInstruction(
-                    0,
-                    "invoke-static {p3}, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->userChangedQualityInOldFlyout(I)V"
-                )
-            } ?: throw PatchException("Failed to find onItemClick method")
-        }
-
-        videoQualityListMethod.addInstruction(
-            videoQualityListInsertIndex,
-            "invoke-static {}, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->newVideoQualityLoaded()V"
+        videoQualityItemOnClickFingerprint.methodOrThrow(
+            videoQualityItemOnClickParentFingerprint
+        ).addInstruction(
+            0,
+            "invoke-static { p3 }, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->userChangedQualityInOldFlyout(I)V"
         )
-
-        hookBackgroundPlayVideoInformation("$EXTENSION_SKIP_PRELOADED_BUFFER_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
-        hookDismissObserver("$EXTENSION_SKIP_PRELOADED_BUFFER_CLASS_DESCRIPTOR->onDismiss()V")
-        hookVideoInformation("$EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
-        hookDismissObserver("$EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->onDismiss()V")
-        onCreateHook(EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR, "newVideoStarted")
 
         // endregion
 

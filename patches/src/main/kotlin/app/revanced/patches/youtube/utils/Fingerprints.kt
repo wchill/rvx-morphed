@@ -29,6 +29,12 @@ import com.android.tools.smali.dexlib2.iface.Method
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
+internal const val YOUTUBE_FORMAT_STREAM_MODEL_CLASS_TYPE =
+    "Lcom/google/android/libraries/youtube/innertube/model/media/FormatStreamModel;"
+
+internal const val YOUTUBE_VIDEO_QUALITY_CLASS_TYPE =
+    "Lcom/google/android/libraries/youtube/innertube/model/media/VideoQuality;"
+
 internal val bottomSheetMenuItemBuilderFingerprint = legacyFingerprint(
     name = "bottomSheetMenuItemBuilderFingerprint",
     returnType = "L",
@@ -65,6 +71,16 @@ internal val cairoFragmentConfigFingerprint = legacyFingerprint(
     returnType = "Z",
     accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
     literals = listOf(CAIRO_FRAGMENT_FEATURE_FLAG),
+)
+
+internal val formatStreamModelToStringFingerprint = legacyFingerprint(
+    name = "formatStreamModelToStringFingerprint",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
+    returnType = "Ljava/lang/String;",
+    customFingerprint = { method, classDef ->
+        method.name == "toString"
+                && classDef.type == YOUTUBE_FORMAT_STREAM_MODEL_CLASS_TYPE
+    }
 )
 
 internal val layoutConstructorFingerprint = legacyFingerprint(

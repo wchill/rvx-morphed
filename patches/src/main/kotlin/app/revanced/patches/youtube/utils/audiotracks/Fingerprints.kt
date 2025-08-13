@@ -17,13 +17,3 @@ internal val selectAudioStreamFingerprint = legacyFingerprint(
                 && method.containsLiteralInstruction(AUDIO_STREAM_IGNORE_DEFAULT_FEATURE_FLAG)
     }
 )
-
-internal val formatStreamModelToStringFingerprint = legacyFingerprint(
-    name = "formatStreamModelToStringFingerprint",
-    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    returnType = "Ljava/lang/String;",
-    customFingerprint = { method, classDef ->
-        method.name == "toString" && classDef.type ==
-                "Lcom/google/android/libraries/youtube/innertube/model/media/FormatStreamModel;"
-    }
-)

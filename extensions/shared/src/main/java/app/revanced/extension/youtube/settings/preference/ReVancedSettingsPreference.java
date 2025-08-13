@@ -222,7 +222,7 @@ public class ReVancedSettingsPreference extends ReVancedPreferenceFragment {
      * Enable/Disable Preference related to Shorts settings
      */
     private static void ShortsPreferenceLinks() {
-        if (!PatchStatus.RememberPlaybackSpeed()) {
+        if (!PatchStatus.VideoPlayback()) {
             enableDisablePreferences(
                     true,
                     Settings.SHORTS_CUSTOM_ACTIONS_SPEED_DIALOG
@@ -258,7 +258,7 @@ public class ReVancedSettingsPreference extends ReVancedPreferenceFragment {
     }
 
     private static void WhitelistPreferenceLinks() {
-        final boolean enabled = PatchStatus.RememberPlaybackSpeed() || PatchStatus.SponsorBlock();
+        final boolean enabled = PatchStatus.VideoPlayback() || PatchStatus.SponsorBlock();
         final String[] whitelistKey = {Settings.OVERLAY_BUTTON_WHITELIST.key, "revanced_whitelist_settings"};
 
         for (String key : whitelistKey) {

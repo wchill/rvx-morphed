@@ -9,6 +9,7 @@ import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.revanced.patches.youtube.utils.extension.Constants.GENERAL_CLASS_DESCRIPTOR
 import app.revanced.patches.youtube.utils.extension.sharedExtensionPatch
+import app.revanced.patches.youtube.utils.formatStreamModelToStringFingerprint
 import app.revanced.patches.youtube.utils.playservice.is_20_07_or_greater
 import app.revanced.patches.youtube.utils.playservice.versionCheckPatch
 import app.revanced.util.findMethodFromToString
@@ -38,11 +39,12 @@ val audioTracksHookPatch = bytecodePatch(
 
     execute {
 
-        isDefaultAudioTrackMethod = formatStreamModelToStringFingerprint.originalMethodOrThrow()
+        val toStringMethod = formatStreamModelToStringFingerprint.originalMethodOrThrow()
+        isDefaultAudioTrackMethod = toStringMethod
             .findMethodFromToString("isDefaultAudioTrack=")
-        val audioTrackDisplayNameMethod = formatStreamModelToStringFingerprint.originalMethodOrThrow()
+        val audioTrackDisplayNameMethod = toStringMethod
             .findMethodFromToString("audioTrackDisplayName=")
-        audioTrackIdMethod = formatStreamModelToStringFingerprint.originalMethodOrThrow()
+        audioTrackIdMethod = toStringMethod
             .findMethodFromToString("audioTrackId=")
 
         // Disable feature flag that ignores the default track flag

@@ -98,12 +98,25 @@ internal fun indexOfContextInstruction(method: Method) =
                 getReference<FieldReference>()?.type == "Landroid/content/Context;"
     }
 
-internal val qualitySetterFingerprint = legacyFingerprint(
-    name = "qualitySetterFingerprint",
+
+internal val videoQualityItemOnClickParentFingerprint = legacyFingerprint(
+    name = "videoQualityItemOnClickParentFingerprint",
     returnType = "V",
-    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    parameters = listOf("L"),
     strings = listOf("VIDEO_QUALITIES_MENU_BOTTOM_SHEET_FRAGMENT")
+)
+
+internal val videoQualityItemOnClickFingerprint = legacyFingerprint(
+    name = "videoQualityItemOnClickFingerprint",
+    returnType = "V",
+    parameters = listOf(
+        "Landroid/widget/AdapterView;",
+        "Landroid/view/View;",
+        "I",
+        "J"
+    ),
+    customFingerprint = { method, _ ->
+        method.name == "onItemClick"
+    }
 )
 
 internal val vp9CapabilityFingerprint = legacyFingerprint(
