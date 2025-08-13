@@ -325,7 +325,8 @@ public class SpoofStreamingDataPatch {
         if (SPOOF_STREAMING_DATA_USE_JS) {
             // Download JavaScript and initialize the Cipher class
             CompletableFuture.runAsync(() -> ThrottlingParameterUtils.initializeJavascript(
-                    SPOOF_STREAMING_DATA_USE_LATEST_JS
+                    SPOOF_STREAMING_DATA_USE_LATEST_JS,
+                    BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().getRequirePoToken()
             ));
         }
     }
@@ -419,6 +420,19 @@ public class SpoofStreamingDataPatch {
             // Check conditions of launch and now. Otherwise if spoofing is changed
             // without a restart the setting will show as available when it's not.
             return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.notSpoofingToAndroid();
+        }
+    }
+
+    public static final class ShowReloadVideoButtonAvailability implements Setting.Availability {
+        private static final boolean AVAILABLE_ON_LAUNCH = BaseSettings.SPOOF_STREAMING_DATA.get() &&
+                BaseSettings.SPOOF_STREAMING_DATA_RELOAD_VIDEO_BUTTON.get();
+
+        @Override
+        public boolean isAvailable() {
+            // Check conditions of launch and now. Otherwise if spoofing is changed
+            // without a restart the setting will show as available when it's not.
+            return AVAILABLE_ON_LAUNCH && BaseSettings.SPOOF_STREAMING_DATA.get() &&
+                    BaseSettings.SPOOF_STREAMING_DATA_RELOAD_VIDEO_BUTTON.get();
         }
     }
 }

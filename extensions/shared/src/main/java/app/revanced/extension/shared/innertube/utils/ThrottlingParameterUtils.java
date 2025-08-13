@@ -13,7 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.liskovsoft.sharedutils.helpers.Helpers;
-import com.liskovsoft.youtubeapi.app.PoTokenGate;
 import com.liskovsoft.youtubeapi.app.playerdata.PlayerDataExtractor;
 
 import okhttp3.*;
@@ -47,20 +46,23 @@ public class ThrottlingParameterUtils {
      */
     private static final Pattern THROTTLING_PARAM_URL_PATTERN = Pattern.compile("&url=([^&]+)");
     /**
-     * Format of JavaScript url (TV).
-     * SmartTube uses this format not only for 'TV' but also 'WEB'.
+     * JavaScript url format (Mobile Web).
      */
-    private static final String PLAYER_JS_TV_URL_FORMAT =
-            "https://www.youtube.com/s/player/%s/tv-player-es6.vflset/tv-player-es6.js";
+    private static final String PLAYER_JS_URL_FORMAT_MOBILE_WEB =
+            "https://m.youtube.com/s/player/%s/player-plasma-ias-phone-en_US.vflset/base.js";
     /**
-     * Format of JavaScript url (Web).
+     * JavaScript url format (TV).
      */
-    private static final String PLAYER_JS_WEB_URL_FORMAT =
-            "https://www.youtube.com/s/player/%s/player_ias.vflset/en_GB/base.js";
+    private static final String PLAYER_JS_URL_FORMAT_TV =
+            "https://www.youtube.com/s/player/%s/tv-player-ias.vflset/tv-player-ias.js";
     /**
-     * Path of javascript url containing global function.
+     * Hardcoded javascript url path (Mobile Web).
      */
-    private static final String PLAYER_JS_GLOBAL_FUNCTIONS_URL_PATH = "69b31e11";
+    private static final String PLAYER_JS_HARDCODED_URL_PATH_MOBILE_WEB = "010fbc8d";
+    /**
+     * Hardcoded javascript url path (TV).
+     */
+    private static final String PLAYER_JS_HARDCODED_URL_PATH_TV = "6ea06c52";
     /**
      * Regular expression pattern to find variables used in JavaScript url.
      */
@@ -72,37 +74,55 @@ public class ThrottlingParameterUtils {
     private static final String IFRAME_API_URL =
             "https://www.youtube.com/iframe_api";
     /**
-     * Android 14 for TV (Emulator) with [Cobalt](https://github.com/youtube/cobalt) Dev build.
+     * User-agent (Mobile Web).
      */
-    private static final String USER_AGENT_COBALT =
-            "Mozilla/5.0 (Linux x86; Android 14) Cobalt/26.master.0.1036476-qa (unlike Gecko) v8/11.4.183.40-jit gles Starboard/17, Google_ATV_Unknown_2023/UTT1.240131.001.F1 (google, AOSP TV on x86) dev.cobalt.coat/DeveloperBuild";
+    private static final String USER_AGENT_MOBILE_WEB =
+            "Mozilla/5.0 (PlayStation Vita 3.74) AppleWebKit/537.73 (KHTML, like Gecko) Silk/3.2";
     /**
-     * User-agent of the Web client being used by SmartTube.
+     * User-agent (TV).
      */
-    private static final String USER_AGENT_WEB =
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
-    private static final String HTTPS = "https:";
-
+    private static final String USER_AGENT_TV =
+            "Mozilla/5.0 (PLAYSTATION 3 4.10) AppleWebKit/531.22.8 (KHTML, like Gecko)";
     /**
-     * Class used to deobfuscate, powered by SmartTube.
+     * Class used to deobfuscate, powered by SmartTube (Mobile Web).
      */
     @Nullable
-    private volatile static PlayerDataExtractor extractor = null;
+    private volatile static PlayerDataExtractor extractorMobileWeb = null;
     /**
-     * Javascript contents.
+     * Class used to deobfuscate, powered by SmartTube (TV).
      */
     @Nullable
-    private volatile static String playerJs = null;
+    private volatile static PlayerDataExtractor extractorTV = null;
     /**
-     * Url of javascript.
+     * Javascript contents (Mobile Web).
      */
     @Nullable
-    private volatile static String playerJsUrl = null;
+    private volatile static String playerJsMobileWeb = null;
     /**
-     * Field value included when sending a request.
+     * Javascript contents (TV).
      */
     @Nullable
-    private volatile static String signatureTimestamp = null;
+    private volatile static String playerJsTV = null;
+    /**
+     * Javascript url (Mobile Web).
+     */
+    @Nullable
+    private volatile static String playerJsUrlMobileWeb = null;
+    /**
+     * Javascript url (TV).
+     */
+    @Nullable
+    private volatile static String playerJsUrlTV = null;
+    /**
+     * Field value included when sending a request (Mobile Web).
+     */
+    @Nullable
+    private volatile static String signatureTimestampMobileWeb = null;
+    /**
+     * Field value included when sending a request (TV).
+     */
+    @Nullable
+    private volatile static String signatureTimestampTV = null;
     /**
      * Field value included when sending a request.
      */
@@ -126,7 +146,7 @@ public class ThrottlingParameterUtils {
         }
     };
 
-    public static void initializeJavascript(boolean useLatestPlayerJs) {
+    public static void initializeJavascript(boolean useLatestPlayerJs, boolean useMobileWeb) {
         if (isInitialized) {
             return;
         }
@@ -136,31 +156,41 @@ public class ThrottlingParameterUtils {
         isInitialized = true;
 
         if (!useLatestPlayerJs) {
-            playerJsUrl = String.format(PLAYER_JS_TV_URL_FORMAT, PLAYER_JS_GLOBAL_FUNCTIONS_URL_PATH);
+            playerJsUrlMobileWeb = String.format(PLAYER_JS_URL_FORMAT_MOBILE_WEB, PLAYER_JS_HARDCODED_URL_PATH_MOBILE_WEB);
+            playerJsUrlTV = String.format(PLAYER_JS_URL_FORMAT_TV, PLAYER_JS_HARDCODED_URL_PATH_TV);
         }
 
-        extractor = getExtractor();
-        playerJs = getPlayerJs();
-        playerJsUrl = getPlayerJsUrl();
-        signatureTimestamp = getSignatureTimestamp();
-        visitorId = getVisitorId();
-        // Initialize the PoToken service in advance.
-        PoTokenGate.getSessionPoToken();
+        extractorTV = getExtractor(true);
+        playerJsTV = getPlayerJs(true);
+        playerJsUrlTV = getPlayerJsUrl(true);
+        signatureTimestampTV = getSignatureTimestamp(true);
+
+        if (useMobileWeb) {
+            extractorMobileWeb = getExtractor(false);
+            playerJsMobileWeb = getPlayerJs(false);
+            playerJsUrlMobileWeb = getPlayerJsUrl(false);
+            signatureTimestampMobileWeb = getSignatureTimestamp(false);
+            visitorId = getVisitorId();
+        }
     }
 
     private static void resetAll() {
         isInitialized = false;
-        extractor = null;
-        playerJs = null;
-        playerJsUrl = null;
-        signatureTimestamp = null;
+        extractorMobileWeb = null;
+        extractorTV = null;
+        playerJsMobileWeb = null;
+        playerJsTV = null;
+        playerJsUrlMobileWeb = null;
+        playerJsUrlTV = null;
+        signatureTimestampMobileWeb = null;
+        signatureTimestampTV = null;
         visitorId = null;
     }
 
     @Nullable
-    private static String setSignatureTimestamp() {
+    private static String setSignatureTimestamp(boolean isTV) {
         try {
-            String playerJs = getPlayerJs();
+            String playerJs = getPlayerJs(isTV);
             if (playerJs != null) {
                 Matcher matcher = SIGNATURE_TIMESTAMP_PATTERN.matcher(playerJs);
                 if (matcher.find()) {
@@ -179,15 +209,23 @@ public class ThrottlingParameterUtils {
     }
 
     @Nullable
-    public static String getSignatureTimestamp() {
-        if (signatureTimestamp == null){
-            signatureTimestamp = setSignatureTimestamp();
+    public static String getSignatureTimestamp(boolean isTV) {
+        String signatureTimestamp = isTV
+                ? signatureTimestampTV
+                : signatureTimestampMobileWeb;
+        if (signatureTimestamp == null) {
+            signatureTimestamp = setSignatureTimestamp(isTV);
+            if (isTV) {
+                signatureTimestampTV = signatureTimestamp;
+            } else {
+                signatureTimestampMobileWeb = signatureTimestamp;
+            }
         }
         return signatureTimestamp;
     }
 
     private static String setVisitorId() {
-        String jsonString = fetch("https://www.youtube.com/sw.js_data", false);
+        String jsonString = fetch("https://m.youtube.com/sw.js_data", false);
         if (jsonString != null) {
             if (jsonString.startsWith(")]}'"))
                 jsonString = jsonString.substring(4);
@@ -219,14 +257,15 @@ public class ThrottlingParameterUtils {
 
 
     @Nullable
-    private static String setPlayerJsUrl() {
-        String iframeContent = fetch(IFRAME_API_URL, true);
+    private static String setPlayerJsUrl(boolean isTV) {
+        String iframeContent = fetch(IFRAME_API_URL, isTV);
         if (iframeContent != null) {
             Matcher matcher = PLAYER_JS_IDENTIFIER_PATTERN.matcher(iframeContent);
             if (matcher.find()) {
                 try {
-                    return cleanJavaScriptUrl(
-                            String.format(PLAYER_JS_TV_URL_FORMAT, matcher.group(1))
+                    return String.format(
+                            isTV ? PLAYER_JS_URL_FORMAT_TV : PLAYER_JS_URL_FORMAT_MOBILE_WEB,
+                            matcher.group(1)
                     );
                 } catch (Exception ex) {
                     Logger.printException(() -> "setPlayerJsUrl failed", ex);
@@ -239,33 +278,49 @@ public class ThrottlingParameterUtils {
     }
 
     @Nullable
-    private static String getPlayerJsUrl() {
-        if (playerJsUrl == null){
-            playerJsUrl = setPlayerJsUrl();
+    private static String getPlayerJsUrl(boolean isTV) {
+        String playerJsUrl = isTV
+                ? playerJsUrlTV
+                : playerJsUrlMobileWeb;
+        if (playerJsUrl == null) {
+            playerJsUrl = setPlayerJsUrl(isTV);
+            if (isTV) {
+                playerJsUrlTV = playerJsUrl;
+            } else {
+                playerJsUrlMobileWeb = playerJsUrl;
+            }
         }
         return playerJsUrl;
     }
 
     @Nullable
-    private static String setPlayerJs() {
-        String playerJsUrl = getPlayerJsUrl();
+    private static String setPlayerJs(boolean isTV) {
+        String playerJsUrl = getPlayerJsUrl(isTV);
         if (playerJsUrl != null) {
-            return fetch(playerJsUrl, true);
+            return fetch(playerJsUrl, isTV);
         }
         return null;
     }
 
     @Nullable
-    private static String getPlayerJs() {
+    private static String getPlayerJs(boolean isTV) {
+        String playerJs = isTV
+                ? playerJsTV
+                : playerJsMobileWeb;
         if (playerJs == null) {
-            playerJs = setPlayerJs();
+            playerJs = setPlayerJs(isTV);
+            if (isTV) {
+                playerJsTV = playerJs;
+            } else {
+                playerJsMobileWeb = playerJs;
+            }
         }
         return playerJs;
     }
 
     @Nullable
-    private static PlayerDataExtractor setExtractor() {
-        String playerJs = getPlayerJs();
+    private static PlayerDataExtractor setExtractor(boolean isTV) {
+        String playerJs = getPlayerJs(isTV);
         if (playerJs != null) {
             return new PlayerDataExtractor(playerJs);
         }
@@ -273,25 +328,19 @@ public class ThrottlingParameterUtils {
     }
 
     @Nullable
-    private static PlayerDataExtractor getExtractor() {
+    private static PlayerDataExtractor getExtractor(boolean isTV) {
+        PlayerDataExtractor extractor = isTV
+                ? extractorTV
+                : extractorMobileWeb;
         if (extractor == null) {
-            extractor = setExtractor();
+            extractor = setExtractor(isTV);
+            if (isTV) {
+                extractorTV = extractor;
+            } else {
+                extractorMobileWeb = extractor;
+            }
         }
         return extractor;
-    }
-
-    @NonNull
-    private static String cleanJavaScriptUrl(@NonNull String javaScriptPlayerUrl) {
-        if (javaScriptPlayerUrl.startsWith("//")) {
-            // https part has to be added manually if the URL is protocol-relative
-            return HTTPS + javaScriptPlayerUrl;
-        } else if (javaScriptPlayerUrl.startsWith("/")) {
-            // https://www.youtube.com part has to be added manually if the URL is relative to
-            // YouTube's domain
-            return HTTPS + "//www.youtube.com" + javaScriptPlayerUrl;
-        } else {
-            return javaScriptPlayerUrl;
-        }
     }
 
     private static void handleConnectionError(String toastMessage, @Nullable Exception ex) {
@@ -319,7 +368,7 @@ public class ThrottlingParameterUtils {
             Request request = new Request.Builder()
                     .url(uri)
                     .header("Accept-Language", "en-US,en")
-                    .header("User-Agent", isTV ? USER_AGENT_COBALT : USER_AGENT_WEB)
+                    .header("User-Agent", isTV ? USER_AGENT_TV : USER_AGENT_MOBILE_WEB)
                     .build();
 
             try (Response response = client.newCall(request).execute())  {
@@ -354,9 +403,10 @@ public class ThrottlingParameterUtils {
      * @return                  Streaming url with obfuscated 'n' parameter.
      */
     @Nullable
-    public static String getUrlWithThrottlingParameterObfuscated(@NonNull String videoId, @NonNull String signatureCipher) {
+    public static String getUrlWithThrottlingParameterObfuscated(@NonNull String videoId, @NonNull String signatureCipher,
+                                                                 boolean isTV) {
         try {
-            PlayerDataExtractor extractor = getExtractor();
+            PlayerDataExtractor extractor = getExtractor(isTV);
             if (extractor != null) {
                 Matcher paramSMatcher = THROTTLING_PARAM_S_PATTERN.matcher(signatureCipher);
                 Matcher paramUrlMatcher = THROTTLING_PARAM_URL_PATTERN.matcher(signatureCipher);
@@ -392,7 +442,8 @@ public class ThrottlingParameterUtils {
      * @return              Deobfuscated streaming url.
      */
     @Nullable
-    public static String getUrlWithThrottlingParameterDeobfuscated(@NonNull String videoId, @Nullable String obfuscatedUrl) {
+    public static String getUrlWithThrottlingParameterDeobfuscated(@NonNull String videoId, @Nullable String obfuscatedUrl,
+                                                                   boolean isTV) {
         try {
             // Obfuscated url is empty.
             if (StringUtils.isEmpty(obfuscatedUrl)) {
@@ -417,7 +468,7 @@ public class ThrottlingParameterUtils {
             }
 
             // Deobfuscate the 'n' parameter.
-            Pair<String, String> deobfuscatedNParamPairs = decodeNParam(obfuscatedUrl, obfuscatedNParams);
+            Pair<String, String> deobfuscatedNParamPairs = decodeNParam(obfuscatedUrl, obfuscatedNParams, isTV);
             String deobfuscatedUrl = deobfuscatedNParamPairs.first;
             String deobfuscatedNParams = deobfuscatedNParamPairs.second;
             if (!deobfuscatedNParams.isEmpty()) {
@@ -471,9 +522,10 @@ public class ThrottlingParameterUtils {
      * @return                  Deobfuscated Pair(Deobfuscated streaming url, Deobfuscated 'n' parameter).
      */
     @NonNull
-    private static Pair<String, String> decodeNParam(@NonNull String obfuscatedUrl, @NonNull String obfuscatedNParams) {
+    private static Pair<String, String> decodeNParam(@NonNull String obfuscatedUrl, @NonNull String obfuscatedNParams,
+                                                     boolean isTV) {
         try {
-            PlayerDataExtractor extractor = getExtractor();
+            PlayerDataExtractor extractor = getExtractor(isTV);
             if (extractor != null) {
                 // The 'n' parameter deobfuscated by javascript rules.
                 String deObfuscatedNParams = extractor.extractNSig(obfuscatedNParams);

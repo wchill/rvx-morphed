@@ -8,7 +8,6 @@ import app.revanced.extension.shared.innertube.requests.InnerTubeRequestBody.cre
 import app.revanced.extension.shared.innertube.requests.InnerTubeRequestBody.getInnerTubeResponseConnectionFromRoute
 import app.revanced.extension.shared.innertube.requests.InnerTubeRoutes.GET_ADAPTIVE_FORMATS
 import app.revanced.extension.shared.innertube.requests.InnerTubeRoutes.GET_STREAMING_DATA
-import app.revanced.extension.shared.innertube.utils.AuthUtils
 import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.getAdaptiveFormats
 import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.getFormats
 import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.setServerAbrStreamingUrl
@@ -105,7 +104,6 @@ class StreamingDataRequest private constructor(
         private const val AUTHORIZATION_HEADER = "Authorization"
         private const val PAGE_ID_HEADER = "X-Goog-PageId"
         private const val VISITOR_ID_HEADER: String = "X-Goog-Visitor-Id"
-        private const val DATA_SYNC_ID_HEADER = "X-YouTube-DataSync-Id"
         private const val MAX_MILLISECONDS_TO_WAIT_FOR_FETCH = 25 * 1000
 
         private val SPOOF_STREAMING_DATA_DEFAULT_CLIENT: ClientType =
@@ -209,10 +207,6 @@ class StreamingDataRequest private constructor(
                         finalRequestHeader.put(key, value)
                     }
                 }
-                val dataSyncIdPair = AuthUtils.getDataSyncIdPair()
-                if (dataSyncIdPair != null) {
-                    finalRequestHeader.put(DATA_SYNC_ID_HEADER, dataSyncIdPair.first)
-                }
                 return finalRequestHeader
             }
             return requestHeader
@@ -308,6 +302,8 @@ class StreamingDataRequest private constructor(
 
                     // Deobfuscated streaming urls are added to the ArrayList in order.
                     val deobfuscatedAdaptiveFormatsArrayList: ArrayList<String> = ArrayList(adaptiveFormats.length())
+                    val requirePoToken = clientType.requirePoToken
+                    val isTV = !requirePoToken
 
                     for (i in 0..<adaptiveFormats.length()) {
                         var streamUrl: String? = null
@@ -322,7 +318,7 @@ class StreamingDataRequest private constructor(
                             // The 'n' query parameter of streamingUrl is obfuscated.
                             val signatureCipher = formatData.getString("signatureCipher")
                             if (!signatureCipher.isNullOrEmpty()) {
-                                streamUrl = ThrottlingParameterUtils.getUrlWithThrottlingParameterObfuscated(videoId, signatureCipher)
+                                streamUrl = ThrottlingParameterUtils.getUrlWithThrottlingParameterObfuscated(videoId, signatureCipher, isTV)
                             }
                         } else {
                             // Neither streamingUrl nor signatureCipher are present in the response.
@@ -336,10 +332,12 @@ class StreamingDataRequest private constructor(
                             Logger.printDebug { "StreamUrl was not found, legacy client will be used" }
                             return null
                         }
-                        var url = ThrottlingParameterUtils.getUrlWithThrottlingParameterDeobfuscated(videoId, streamUrl)
+                        var url = ThrottlingParameterUtils.getUrlWithThrottlingParameterDeobfuscated(videoId, streamUrl, isTV)
                         if (StringUtils.isNotEmpty(url) && clientType.requirePoToken) {
-                            val sessionPoToken = PoTokenGate.getSessionPoToken()
-                            url += "&pot=$sessionPoToken"
+                            val sessionPoToken = PoTokenGate.getSessionPoToken(videoId)
+                            if (!sessionPoToken.isNullOrEmpty()) {
+                                url += "&pot=$sessionPoToken"
+                            }
                         }
                         if (url.isNullOrEmpty() || i == 0 && !streamUrlIsAvailable(url)) {
                             Logger.printDebug { "Failed to decrypt n-sig or signatureCipher, please check if latest regular expressions are being used" }
@@ -371,7 +369,7 @@ class StreamingDataRequest private constructor(
                                 // The 'n' query parameter of streamingUrl is obfuscated.
                                 val signatureCipher = formatData.getString("signatureCipher")
                                 if (!signatureCipher.isNullOrEmpty()) {
-                                    streamUrl = ThrottlingParameterUtils.getUrlWithThrottlingParameterObfuscated(videoId, signatureCipher)
+                                    streamUrl = ThrottlingParameterUtils.getUrlWithThrottlingParameterObfuscated(videoId, signatureCipher, isTV)
                                 }
                             } else {
                                 // Neither streamingUrl nor signatureCipher are present in the response.
@@ -387,12 +385,8 @@ class StreamingDataRequest private constructor(
                                 deobfuscatedFormatsArrayList.clear()
                                 break
                             }
-                            var url = ThrottlingParameterUtils.getUrlWithThrottlingParameterDeobfuscated(videoId, streamUrl)
-                            if (StringUtils.isNotEmpty(url) && clientType.requirePoToken) {
-                                val sessionPoToken = PoTokenGate.getSessionPoToken()
-                                url += "&pot=$sessionPoToken"
-                            }
-                            if (url.isNullOrEmpty() || i == 0 && !streamUrlIsAvailable(url)) {
+                            val url = ThrottlingParameterUtils.getUrlWithThrottlingParameterDeobfuscated(videoId, streamUrl, isTV)
+                            if (url.isNullOrEmpty()) {
                                 Logger.printDebug { "Failed to decrypt n-sig or signatureCipher" }
                                 deobfuscatedFormatsArrayList.clear()
                                 break
@@ -408,7 +402,8 @@ class StreamingDataRequest private constructor(
                         serverAbrStreamingUrl = ThrottlingParameterUtils
                             .getUrlWithThrottlingParameterDeobfuscated(
                                 videoId,
-                                streamingData.getString("serverAbrStreamingUrl")
+                                streamingData.getString("serverAbrStreamingUrl"),
+                                isTV
                             )
                     }
 

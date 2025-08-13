@@ -129,11 +129,12 @@ object InnerTubeRequestBody {
 
             if (isGVS) {
                 val contentPlaybackContext = JSONObject()
+                val requirePoToken = clientType.requirePoToken
                 if (clientType.refererFormat != null) {
                     contentPlaybackContext.put("referer", String.format(clientType.refererFormat, videoId))
                 }
                 contentPlaybackContext.put("html5Preference", "HTML5_PREF_WANTS")
-                val signatureTimestamp = ThrottlingParameterUtils.getSignatureTimestamp()
+                val signatureTimestamp = ThrottlingParameterUtils.getSignatureTimestamp(!requirePoToken)
                 if (signatureTimestamp != null) {
                     contentPlaybackContext.put("signatureTimestamp", signatureTimestamp.toInt())
                 }
@@ -141,7 +142,7 @@ object InnerTubeRequestBody {
                 playbackContext.put("contentPlaybackContext", contentPlaybackContext)
                 innerTubeBody.put("playbackContext", playbackContext)
 
-                if (clientType.requirePoToken) {
+                if (requirePoToken) {
                     val playerRequestPoToken = PoTokenGate.getContentPoToken(videoId)
                     if (playerRequestPoToken != null) {
                         val serviceIntegrityDimensions = JSONObject()

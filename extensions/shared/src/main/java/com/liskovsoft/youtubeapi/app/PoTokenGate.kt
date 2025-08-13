@@ -22,13 +22,16 @@ internal object PoTokenGate {
     }
 
     @JvmStatic
-    fun getSessionPoToken(): String? {
-        return if (isNpPotSupported()) {
-            if (mNpPoToken == null) {
-                mNpPoToken = PoTokenProviderImpl.getWebClientPoToken("")
-            }
-            mNpPoToken?.streamingDataPoToken
-        } else ""
+    fun getSessionPoToken(videoId: String): String? {
+        if (mNpPoToken?.videoId == videoId) {
+            return mNpPoToken?.streamingDataPoToken
+        }
+
+        mNpPoToken = if (isNpPotSupported())
+            PoTokenProviderImpl.getWebClientPoToken(videoId)
+        else null
+
+        return mNpPoToken?.streamingDataPoToken
     }
 
     @JvmStatic
@@ -42,6 +45,11 @@ internal object PoTokenGate {
     @JvmStatic
     fun getVisitorData(): String? {
         return mNpPoToken?.visitorData
+    }
+
+    @JvmStatic
+    fun getDataSyncId(): String? {
+        return mNpPoToken?.dataSyncId
     }
 
     @JvmStatic

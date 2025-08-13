@@ -72,7 +72,7 @@ internal class QueryBuilder(private val client: AppClient) {
             //     cpn = appService.clientPlaybackNonce // get it somewhere else?
 
             if (signatureTimestamp == null)
-                signatureTimestamp = Helpers.parseInt(ThrottlingParameterUtils.getSignatureTimestamp()) // get it somewhere else?
+                signatureTimestamp = Helpers.parseInt(ThrottlingParameterUtils.getSignatureTimestamp(false)) // get it somewhere else?
         }
 
         val json = """

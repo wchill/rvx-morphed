@@ -51,23 +51,20 @@ internal object PoTokenProviderImpl : PoTokenProvider {
      */
     private fun getWebClientPoToken(videoId: String, forceRecreate: Boolean): PoTokenResult {
         // just a helper class since Kotlin does not have builtin support for 4-tuples
-        data class Quadruple<T1, T2, T3, T4>(val t1: T1, val t2: T2, val t3: T3, val t4: T4)
+        data class Quadruple<T1, T2, T3, T4, T5>(val t1: T1, val t2: T2, val t3: T3, val t4: T4, val t5: T5)
 
-        val (poTokenGenerator, visitorData, streamingPot, hasBeenRecreated) =
+        val (poTokenGenerator, visitorData, dataSyncId, streamingPot, hasBeenRecreated) =
             synchronized(WebPoTokenGenLock) {
                 val shouldRecreate = webPoTokenGenerator == null || webPoTokenVisitorData == null || webPoTokenStreamingPot == null ||
                    forceRecreate || webPoTokenGenerator!!.isExpired()
+                val dataSyncIdPair = AuthUtils.getDataSyncIdPair()
+                val localDataSyncId = dataSyncIdPair?.first
 
                 if (shouldRecreate) {
                     // MOD: my visitor data
                     //webPoTokenVisitorData = AppService.instance().visitorData
-                    val dataSyncIdPair = AuthUtils.getDataSyncIdPair()
-                    if (dataSyncIdPair != null) { // If a valid dataSyncId has been loaded, the visitorData paired with the dataSyncId is used.
-                        val visitorId = dataSyncIdPair.second
-                        webPoTokenVisitorData = visitorId
-                    } else { // If a valid dataSyncId has not been loaded, a new visitorData will be fetched.
-                        webPoTokenVisitorData = VisitorService.getVisitorData()
-                    }
+                    webPoTokenVisitorData = dataSyncIdPair?.second // If a valid dataSyncId has been loaded, the visitorData paired with the dataSyncId is used.
+                        ?: VisitorService.getVisitorData() // If a valid dataSyncId has not been loaded, a new visitorData will be fetched.
 
                     val latch = if (webPoTokenGenerator != null) CountDownLatch(1) else null
 
@@ -90,24 +87,19 @@ internal object PoTokenProviderImpl : PoTokenProvider {
 
                     // The streaming poToken needs to be generated exactly once before generating
                     // any other (player) tokens.
-                    if (dataSyncIdPair != null) { // If a valid dataSyncId has been loaded, it will be used.
-                        val dataSyncId = dataSyncIdPair.first
-                        webPoTokenStreamingPot = webPoTokenGenerator!!
-                            .generatePoToken(dataSyncId)
+                    webPoTokenStreamingPot = if (localDataSyncId != null) { // If a valid dataSyncId has been loaded, it will be used.
+                        webPoTokenGenerator!!
+                            .generatePoToken(localDataSyncId)
                     } else { // If a valid dataSyncId is not loaded, the newly fetched visitorData is used.
-                        webPoTokenStreamingPot = webPoTokenGenerator!!
+                        webPoTokenGenerator!!
                             .generatePoToken(webPoTokenVisitorData!!)
                     }
-
-                    // The streaming poToken needs to be generated exactly once before generating
-                    // any other (player) tokens.
-                    //webPoTokenStreamingPot = webPoTokenGenerator!!
-                    //    .generatePoToken(webPoTokenVisitorData!!)
                 }
 
                 return@synchronized Quadruple(
                     webPoTokenGenerator!!,
                     webPoTokenVisitorData!!,
+                    localDataSyncId,
                     webPoTokenStreamingPot!!,
                     shouldRecreate
                 )
@@ -138,7 +130,7 @@ internal object PoTokenProviderImpl : PoTokenProvider {
                     "streamingPot=$streamingPot, visitor_data=$visitorData"
         }
 
-        return PoTokenResult(videoId, visitorData, playerPot, streamingPot)
+        return PoTokenResult(videoId, visitorData, dataSyncId, playerPot, streamingPot)
     }
 
     override fun getWebEmbedClientPoToken(videoId: String): PoTokenResult? = null

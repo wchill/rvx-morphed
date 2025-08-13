@@ -12,7 +12,7 @@ nanojson = "1.10"
 okhttp3 = "4.12.0"
 preference = "1.2.1"
 regex = "1.1.11"
-retrofit = "2.12.0"
+retrofit = "2.11.0"
 
 [libraries]
 annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }

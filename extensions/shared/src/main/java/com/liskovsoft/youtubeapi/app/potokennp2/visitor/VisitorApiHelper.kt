@@ -5,7 +5,7 @@ import com.liskovsoft.youtubeapi.common.helpers.QueryBuilder
 
 internal object VisitorApiHelper {
     fun getVisitorQuery(): String {
-        return QueryBuilder(AppClient.WEB)
+        return QueryBuilder(AppClient.MWEB)
             .build()
     }
 }
