@@ -10,6 +10,7 @@ import app.revanced.patcher.util.smali.ExternalLabel
 import app.revanced.patches.shared.customspeed.customPlaybackSpeedPatch
 import app.revanced.patches.shared.litho.addLithoFilter
 import app.revanced.patches.shared.litho.lithoFilterPatch
+import app.revanced.patches.youtube.utils.auth.authHookPatch
 import app.revanced.patches.youtube.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.revanced.patches.youtube.utils.dismiss.dismissPlayerHookPatch
 import app.revanced.patches.youtube.utils.dismiss.hookDismissObserver
@@ -88,6 +89,7 @@ val videoPlaybackPatch = bytecodePatch(
             "$VIDEO_PATH/CustomPlaybackSpeedPatch;",
             8.0f
         ),
+        authHookPatch,
         flyoutMenuHookPatch,
         lithoFilterPatch,
         lithoLayoutPatch,
