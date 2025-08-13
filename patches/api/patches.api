@@ -15,7 +15,7 @@ public abstract interface class app/revanced/patches/all/misc/transformation/IMe
 	public abstract fun getMethodName ()Ljava/lang/String;
 	public abstract fun getMethodParams ()[Ljava/lang/String;
 	public abstract fun getReturnType ()Ljava/lang/String;
-	public fun replaceInvokeVirtualWithExtension (Ljava/lang/String;Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;Lcom/android/tools/smali/dexlib2/iface/instruction/formats/Instruction35c;I)V
+	public abstract fun replaceInvokeVirtualWithExtension (Ljava/lang/String;Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;Lcom/android/tools/smali/dexlib2/iface/instruction/formats/Instruction35c;I)V
 }
 
 public final class app/revanced/patches/all/misc/transformation/IMethodCall$DefaultImpls {
@@ -194,6 +194,10 @@ public final class app/revanced/patches/music/utils/fix/androidauto/AndroidAutoC
 	public static final fun getAndroidAutoCertificatePatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
+public final class app/revanced/patches/music/utils/fix/client/SpoofClientPatchKt {
+	public static final fun getSpoofClientPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
 public final class app/revanced/patches/music/utils/fix/fileprovider/FileProviderPatchKt {
 	public static final fun fileProviderPatch (Ljava/lang/String;Ljava/lang/String;)Lapp/revanced/patcher/patch/BytecodePatch;
 }
@@ -334,6 +338,7 @@ public final class app/revanced/patches/music/utils/videotype/VideoTypeHookPatch
 }
 
 public final class app/revanced/patches/music/video/information/VideoInformationPatchKt {
+	public static final field EXTENSION_CLASS_DESCRIPTOR Ljava/lang/String;
 	public static final fun getVideoInformationPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
@@ -421,6 +426,10 @@ public final class app/revanced/patches/reddit/layout/subredditdialog/SubRedditD
 
 public final class app/revanced/patches/reddit/layout/toolbar/ToolBarButtonPatchKt {
 	public static final fun getToolBarButtonPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class app/revanced/patches/reddit/layout/trendingtoday/TrendingTodayShelfPatchKt {
+	public static final fun getTrendingTodayShelfPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
 public final class app/revanced/patches/reddit/misc/openlink/FingerprintsKt {
@@ -595,6 +604,7 @@ public final class app/revanced/patches/shared/returnyoutubeusername/BaseReturnY
 public final class app/revanced/patches/shared/scrolltop/CommentsScrollTopPatchKt {
 	public static final fun getCommentsScrollTopPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 	public static final fun getModernTitle ()J
+	public static final fun getTitle ()J
 }
 
 public final class app/revanced/patches/shared/settingmenu/SettingsMenuPatchKt {
@@ -1097,7 +1107,6 @@ public final class app/revanced/patches/youtube/utils/resourceid/SharedResourceI
 	public static final fun getBarContainerHeight ()J
 	public static final fun getBottomBarContainer ()J
 	public static final fun getBottomSheetFooterText ()J
-	public static final fun getBottomSheetRecyclerView ()J
 	public static final fun getBottomUiContainerStub ()J
 	public static final fun getCaptionToggleContainer ()J
 	public static final fun getCastMediaRouteButton ()J
@@ -1251,6 +1260,10 @@ public final class app/revanced/patches/youtube/video/information/VideoInformati
 	public static final fun getVideoInformationPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
+public final class app/revanced/patches/youtube/video/playback/DisableHdrPatchKt {
+	public static final fun getDisableHdrPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
 public final class app/revanced/patches/youtube/video/playback/VideoPlaybackPatchKt {
 	public static final fun getVideoPlaybackPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
@@ -1297,6 +1310,7 @@ public final class app/revanced/util/BytecodeUtilsKt {
 	public static final fun cloneMutable (Lcom/android/tools/smali/dexlib2/iface/Method;IZLjava/lang/String;ILjava/util/List;Ljava/lang/String;)Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;
 	public static synthetic fun cloneMutable$default (Lcom/android/tools/smali/dexlib2/iface/Method;IZLjava/lang/String;ILjava/util/List;Ljava/lang/String;ILjava/lang/Object;)Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;
 	public static final fun containsLiteralInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;J)Z
+	public static final fun findFreeRegister (Lcom/android/tools/smali/dexlib2/iface/Method;IZ[I)I
 	public static final fun findInstructionIndicesReversed (Lcom/android/tools/smali/dexlib2/iface/Method;Lcom/android/tools/smali/dexlib2/Opcode;)Ljava/util/List;
 	public static final fun findInstructionIndicesReversed (Lcom/android/tools/smali/dexlib2/iface/Method;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
 	public static final fun findInstructionIndicesReversedOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;Lcom/android/tools/smali/dexlib2/Opcode;)Ljava/util/List;
