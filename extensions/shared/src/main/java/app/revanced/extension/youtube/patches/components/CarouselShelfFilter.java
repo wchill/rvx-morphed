@@ -2,6 +2,8 @@ package app.revanced.extension.youtube.patches.components;
 
 import androidx.annotation.Nullable;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
@@ -13,7 +15,7 @@ import app.revanced.extension.youtube.settings.Settings;
 import app.revanced.extension.youtube.shared.NavigationBar.NavigationButton;
 import app.revanced.extension.youtube.shared.RootView;
 
-@SuppressWarnings("unused")
+@SuppressWarnings({"deprecation", "unused"})
 public final class CarouselShelfFilter extends Filter {
     private static final String BROWSE_ID_CLIP = "FEclips";
     private static final String BROWSE_ID_COURSES = "FEcourses_destination";
@@ -83,7 +85,8 @@ public final class CarouselShelfFilter extends Filter {
             return true;
         }
         // Fixes a very rare bug in home.
-        if (selectedNavButton == NavigationButton.HOME && browseId.equals(BROWSE_ID_NOTIFICATION_INBOX)) {
+        if (selectedNavButton == NavigationButton.HOME
+                && StringUtils.equalsAny(browseId, BROWSE_ID_LIBRARY, BROWSE_ID_NOTIFICATION_INBOX)) {
             return true;
         }
         // Fixes a very rare bug in library.
@@ -109,7 +112,11 @@ public final class CarouselShelfFilter extends Filter {
         if (contentIndex != 0) {
             return false;
         }
-        Logger.printDebug(() -> "hideShelves: " + hideShelves + "\nplayerActive: " + playerActive + "\nsearchBarActive: " + searchBarActive + "\nbrowseId: " + browseId + "\nnavigation: " + navigation);
+        Logger.printDebug(() -> "hideShelves: " + hideShelves +
+                "\nplayerActive: " + playerActive +
+                "\nsearchBarActive: " + searchBarActive +
+                "\nbrowseId: " + browseId +
+                "\nnavigation: " + navigation);
         if (!hideShelves) {
             return false;
         }
