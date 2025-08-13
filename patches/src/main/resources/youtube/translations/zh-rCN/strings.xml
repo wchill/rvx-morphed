@@ -265,16 +265,6 @@
     <string name="revanced_hide_keyword_toast_invalid_conflicting">关键词有冲突声明： %s</string>
     <string name="revanced_hide_keyword_toast_invalid_length">关键词太短，需要引号： %s</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">关键字将隐藏所有视频： %s</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">推荐视频</string>
-    <string name="revanced_hide_low_views_video_title">隐藏低播放量的视频</string>
-    <string name="revanced_hide_low_views_video_summary">"从主页隐藏未订阅的频道上传的且播放量少于 1,000 的推荐视频"</string>
-    <string name="revanced_hide_recommended_video_title">隐藏推荐视频</string>
-    <string name="revanced_hide_recommended_video_summary">"隐藏以下推荐视频：	
-
-• 带有“仅限会员”标签的视频
-• 视频底部带有“用户还观看了”等短语的视频
-• 来自未订阅频道且观看次数少于1,000次的视频"</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">观看次数过滤器</string>
     <string name="revanced_hide_video_by_view_counts_home_title">启用首页播放量过滤器</string>
@@ -1223,16 +1213,6 @@
     <string name="revanced_remember_video_quality_last_selected_toast_title">显示 Toast</string>
     <string name="revanced_remember_video_quality_last_selected_toast_summary_on">更改默认视频画质时，显示 Toast</string>
     <string name="revanced_remember_video_quality_last_selected_toast_summary_off">更改默认视频画质时，不显示 Toast</string>
-    <string name="revanced_skipped_preloaded_buffer">跳过预加载缓冲</string>
-    <string name="revanced_skip_preloaded_buffer_title">跳过预加载缓冲</string>
-    <string name="revanced_skip_preloaded_buffer_summary">"视频播放开始时，跳过预加载缓冲的默认视频画质
-
-• 视频开始时约有 0.7 秒延迟，但默认视频分辨率会立即生效
-• 不适用于 HDR 视频或短于 10 秒的视频"</string>
-    <string name="revanced_skip_preloaded_buffer_user_dialog_message">开启此选项可能会导致视频不能正常播放</string>
-    <string name="revanced_skip_preloaded_buffer_toast_title">跳过时的提示信息</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_on">提示信息已显示</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_off">提示信息已隐藏</string>
     <string name="revanced_spoof_device_dimensions_title">伪装设备尺寸</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Experimental flags -->
     <string name="revanced_disable_default_playback_speed_music_title">禁用音乐播放速度</string>

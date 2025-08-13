@@ -224,16 +224,6 @@
     <string name="revanced_hide_keyword_toast_invalid_conflicting">Ключовата дума има противоречиви твърдения: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_length">Ключовата дума е твърде кратка и изисква кавички: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">Ключовата дума „%1$s“ ще скрие всички видеоклипове.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">Препоръчани видеоклипове</string>
-    <string name="revanced_hide_low_views_video_title">Скриване на видеоклипове с малко гледания</string>
-    <string name="revanced_hide_low_views_video_summary">"Скрийте видеоклипове с по-малко от 1000 гледания от емисията и от канали, за които сте се абонирали."</string>
-    <string name="revanced_hide_recommended_video_title">Скриване на Препоръчани видеоклипове</string>
-    <string name="revanced_hide_recommended_video_summary">"Скрива следните препоръчани видеоклипове:
-
-• С етикет „Само за членове“.
-• С фрази като „Хората също са гледали“ под видеоклипа.
-• От канали, за които не сте абонирани (по-малко от 1000 гледания)."</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">Филтрирайте по брой гледания</string>
     <string name="revanced_hide_video_by_view_counts_home_title">Фильтр за видео в \"Начало\" по гледания</string>
@@ -1057,7 +1047,7 @@
     <string name="revanced_preference_screen_shorts_title">Shorts</string>
     <string name="revanced_disable_shorts_background_playback_title">Възпроизвеждане на Shorts в фонов режим</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">Фоновото възпроизвеждане на Shorts е деактивирано.</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">Фоновото възпроизвеждане на Shorts е активирано.</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"Фоновото възпроизвеждане на Shorts е активирано."</string>
     <string name="revanced_disable_resuming_shorts_player_title">Скриване на Shorts плейъра при стартиране на приложението</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">Shorts плейъра при стартиране на приложението е скрит.</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">Shorts плейъра при стартиране на приложението се показва.</string>
@@ -1264,9 +1254,6 @@
     <string name="revanced_disable_hdr_auto_brightness_title">Деактивирайте автоматичната HDR яркост</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_on">Автоматичната яркост при HDR е изключена.</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_off">Автоматичната яркост при HDR е включена.</string>
-    <string name="revanced_disable_swipe_to_switch_video_title">Жестове за превключване на видеоклипове</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_on">Плъзгането нагоре/надолу в режим на цял екран няма да премине към следващото/предишното видео.</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_off">Плъзгането нагоре/надолу в режим на цял екран ще премине към следващото/предишното видео.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_title">Деактивирайте плъзгането за влизане в режим на цял екран (под плейъра)</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_on">Плъзгането надолу под плейъра няма да влезе в режим на цял екран.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_off">Плъзгането надолу под плейъра ще влезе в режим на цял екран.</string>
@@ -1314,17 +1301,6 @@
     <string name="revanced_remember_video_quality_last_selected_toast_title">Покажи съобщение</string>
     <string name="revanced_remember_video_quality_last_selected_toast_summary_on">Съобщението се появява в долната част на екрана при промяна на качеството на видеото по подразбиране.</string>
     <string name="revanced_remember_video_quality_last_selected_toast_summary_off">Няма съобщение в долната част на екрана при промяна на качеството на видеото по подразбиране.</string>
-    <string name="revanced_skipped_preloaded_buffer">Пропуснат предварително зареден буфер.</string>
-    <string name="revanced_skip_preloaded_buffer_title">Пропусни предварително зареден буфер</string>
-    <string name="revanced_skip_preloaded_buffer_summary">"Пропуска предварително заредения буфер в началото на видеоклиповете, за да приложи незабавно качеството на видеото по подразбиране. 
-
-Информация:
-• Когато видеото започне, има забавяне от приблизително 0,3 секунди.
-• Не се прилага за HDR видеоклипове, видеоклипове на живо или видеоклипове, по-кратки от 15 секунди."</string>
-    <string name="revanced_skip_preloaded_buffer_user_dialog_message">Активирането на тази настройка може да причини проблеми с възпроизвеждането на видео.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_title">Уведомление при пропуске</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_on">Уведомлението се показва.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_off">Уведомлението е скрито.</string>
     <string name="revanced_spoof_device_dimensions_title">Лъжливи параметри на устройството</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Experimental flags -->
     <string name="revanced_disable_default_playback_speed_music_title">Деактивирайте скоростта на възпроизвеждане за музика</string>

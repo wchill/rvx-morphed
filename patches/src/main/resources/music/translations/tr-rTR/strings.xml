@@ -397,11 +397,9 @@ Bilgi:
     <string name="revanced_sanitize_sharing_links_title">Paylaşılan bağlantıları sterilize edin</string>
     <string name="revanced_sanitize_sharing_links_summary">Bağlantıları paylaşırken, tracking query parametrelerini URL\'lerden kaldırır.</string>
     <string name="revanced_spoof_client_title">Sahte istemci</string>
-    <string name="revanced_spoof_client_summary">Oynatma sorunlarını çözmek için istemciyi taklit eder.</string>
+    <string name="revanced_spoof_client_summary">"Oynatma sorunlarını çözmek için istemciyi taklit eder."</string>
     <string name="revanced_spoof_client_type_title">Varsayılan istemci</string>
     <string name="revanced_spoof_client_type_summary">Taklit etmek için varsayılan bir istemci tanımlar.</string>
-    <string name="revanced_spoof_client_type_entry_android_music_4_27">Android Music 4.27.53</string>
-    <string name="revanced_spoof_client_type_entry_android_music_5_29">Android Music 5.29.53</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_watch_history_type_title">İzleme geçmişi türü</string>

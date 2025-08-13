@@ -327,6 +327,9 @@ Pulsa aquí para saber más sobre DeArrow."</string>
     <string name="revanced_hide_ticket_shelf_title">Ocultar estantes de tickets</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Los estantes de tickets están ocultos.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Los estantes de tickets están visibles.</string>
+    <string name="revanced_hide_video_recommendation_labels_title">Ocultar etiquetas de recomendación de vídeo</string>
+    <string name="revanced_hide_video_recommendation_labels_summary_on">"Las etiquetas de las miniaturas, como «Otras personas también vieron» y «También te puede gustar», están ocultas."</string>
+    <string name="revanced_hide_video_recommendation_labels_summary_off">"Las etiquetas de las miniaturas, como «Otras personas también vieron» y «También te puede gustar», están visibles."</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Barra de categorías</string>
     <string name="revanced_preference_screen_category_bar_summary">Ocultar o mostrar la barra de categorías en el feed, la búsqueda y vídeos relacionados.</string>
@@ -425,16 +428,6 @@ Limitaciones:
     <string name="revanced_hide_keyword_toast_invalid_conflicting">La palabra clave tiene declaraciones contradictoras: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_length">La palabra clave es demasiado corta y requiere comillas: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">La palabra clave \"%1$s\" es demasiado amplia y ocultará todos los vídeos</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">Vídeos recomendados</string>
-    <string name="revanced_hide_low_views_video_title">Ocultar vídeos con pocas visualizaciones</string>
-    <string name="revanced_hide_low_views_video_summary">"Oculta los vídeos con menos de 1.000 visualizaciones de los feeds de inicio que hayan sido subidos desde canales a los que no estás suscrito."</string>
-    <string name="revanced_hide_recommended_video_title">Ocultar vídeos recomendados</string>
-    <string name="revanced_hide_recommended_video_summary">"Oculta los siguientes vídeos recomendados:
-
-• Vídeos con etiqueta \"Solo para miembros\".
-• Vídeos con frases como \"La gente también vio\" en la parte inferior del vídeo.
-• Vídeos subidos desde canales a los que no estás suscrito y que tienen menos de 1,000 visualizaciones."</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">Filtro de contador de visualizaciones</string>
     <string name="revanced_hide_video_by_view_counts_home_title">Ocultar vídeos de inicio por visualizaciones</string>
@@ -1442,7 +1435,7 @@ Esta función funciona mejor con una conexión a Internet muy rápida."</string>
     <string name="revanced_preference_screen_shorts_title">Shorts</string>
     <string name="revanced_disable_shorts_background_playback_title">Desactivar la reproducción en segundo plano de Shorts</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">La reproducción de Shorts en segundo plano está desactivada.</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">La reproducción de Shorts en segundo plano está activada.</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"La reproducción de Shorts en segundo plano está activada."</string>
     <string name="revanced_disable_resuming_shorts_player_title">Desactivar reanudación del reproductor de Shorts</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">El reproductor de Shorts no se reanudará al iniciar la app</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">El reproductor de Shorts se reanudará al iniciar la app</string>
@@ -1729,9 +1722,6 @@ Ajusta el volumen deslizando verticalmente en el lado derecho de la pantalla."</
     <string name="revanced_disable_hdr_auto_brightness_title">Desactivar brillo HDR automático</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_on">El brillo HDR automático está desactivado.</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_off">El brillo HDR automático está activado.</string>
-    <string name="revanced_disable_swipe_to_switch_video_title">Desactivar deslizar para cambiar el vídeo</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_on">Deslizar hacia arriba / abajo no reproducirá el vídeo siguiente / anterior.</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_off">Deslizar hacia arriba / abajo reproducirá el vídeo siguiente / anterior.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_title">Desactivar deslizamiento para entrar en modo de pantalla completa (debajo del reproductor)</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_on">Si deslizas el dedo hacia abajo por debajo del reproductor, no entrará en el modo de pantalla completa.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_off">Si deslizas el dedo hacia abajo por debajo del reproductor, entrará en el modo de pantalla completa.</string>
@@ -1741,6 +1731,9 @@ Ajusta el volumen deslizando verticalmente en el lado derecho de la pantalla."</
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_title">Desactivar deslizamiento para salir del modo de pantalla completa</string>
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_summary_on">Si deslizas el dedo hacia abajo en pantalla completa, no saldrá del modo de pantalla completa.</string>
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_summary_off">Si deslizas el dedo hacia abajo en pantalla completa, saldrá del modo de pantalla completa.</string>
+    <string name="revanced_enable_swipe_to_switch_video_title">Activar deslizamiento para cambiar de vídeo</string>
+    <string name="revanced_enable_swipe_to_switch_video_summary_on">Deslizar hacia arriba/abajo en modo de pantalla completa cambiará al vídeo siguiente/anterior.</string>
+    <string name="revanced_enable_swipe_to_switch_video_summary_off">Deslizar hacia arriba/abajo en modo de pantalla completa no cambiará al vídeo siguiente/anterior.</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">Automático</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Vídeo</string>
@@ -1818,16 +1811,6 @@ Información:
     <string name="revanced_advanced_video_quality_menu_type_title">Tipo de menú de calidad de vídeo avanzado en Shorts</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_on">Se utiliza un cuadro de diálogo personalizado.</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_off">Se utiliza el menú desplegable de estilo antiguo.</string>
-    <string name="revanced_skipped_preloaded_buffer">Búfer precargado omitido.</string>
-    <string name="revanced_skip_preloaded_buffer_title">Omitir búfer precargado</string>
-    <string name="revanced_skip_preloaded_buffer_summary">"Omite el búfer precargado al iniciar el vídeo para evitar la demora en la aplicación de la calidad predeterminada del video.
-
-• Cuando comienza el vídeo, hay una demora de aproximadamente 0.3 segundos, pero la calidad predeterminada de vídeo se aplica inmediatamente.
-• No se aplica a vídeos HDR, vídeos en directo ni vídeos de menos de 15 segundos."</string>
-    <string name="revanced_skip_preloaded_buffer_user_dialog_message">Activar este ajuste puede causar problemas de reproducción de vídeo.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_title">Mostrar un mensaje al omitir</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_on">El mensaje está visible.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_off">El mensaje está oculto.</string>
     <string name="revanced_spoof_device_dimensions_title">Falsificar dimensiones del dispositivo</string>
     <string name="revanced_spoof_device_dimensions_summary">"Falsifica las dimensiones del dispositivo al valor máximo.
 
@@ -2089,9 +2072,6 @@ Toca para ver cómo crear una clave de API."</string>
     <string name="revanced_bypass_url_redirects_summary_off">No se omiten las redirecciones de URL.</string>
     <string name="revanced_disable_quic_protocol_title">Desactivar protocolo QUIC</string>
     <string name="revanced_disable_quic_protocol_summary">"Desactiva el protocolo QUIC de CronetEngine."</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_title">Tamaño máximo del grupo de subprocesos de Litho</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_entry_0">No anulado</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_invalid_toast">El tamaño máximo del grupo de subprocesos de Litho debe estar entre 1 y 3.</string>
     <string name="revanced_open_links_externally_title">Abrir enlaces en el navegador</string>
     <string name="revanced_open_links_externally_summary_on">Abre enlaces en el navegador externo.</string>
     <string name="revanced_open_links_externally_summary_off">Abre enlaces en el navegador de la app.</string>
@@ -2207,6 +2187,7 @@ Pulsa el botón de continuar y desactiva las optimizaciones de la batería."</st
 • Si la desofuscación falla, la reproducción puede fallar.
 • A veces, el vídeo no se reproducirá incluso después de 10 segundos, en cuyo caso deberás pulsar en el botón de recargar vídeo.
 • El vídeo puede comenzar tarde."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_unknown">• Desconocido</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Priorizar calidad de vídeo</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">Se prioriza la calidad del vídeo.</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_off">Se priorizan los códecs de vídeo.</string>

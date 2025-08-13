@@ -281,16 +281,6 @@ Keterbatasan:
     <string name="revanced_hide_keyword_toast_invalid_conflicting">Kata kunci punya keterangan yang bertentangan: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_length">Kata kunci terlalu pendek &amp; butuh tanda kutip: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">Kata kunci akan menyembunyikan semua video: %s.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">Video yang direkomendasikan</string>
-    <string name="revanced_hide_low_views_video_title">Sembunyikan video dengan penayangan rendah</string>
-    <string name="revanced_hide_low_views_video_summary">"Sembunyikan video dengan kurang dari 1.000 penayangan dari feed beranda yang telah diunggah dari saluran yang tidak berlangganan.
-
-Filter ini mungkin tidak lagi berfungsi, gunakan 'Filter jumlah penayangan' sebagai gantinya."</string>
-    <string name="revanced_hide_recommended_video_title">Sembunyikan video yang direkomendasikan</string>
-    <string name="revanced_hide_recommended_video_summary">"Menyembunyikan video yang direkomendasikan berikut ini:
-
-• Video dengan frasa seperti 'Orang-orang juga menonton' di bawahnya."</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">Filter jumlah penayangan</string>
     <string name="revanced_hide_video_by_view_counts_home_title">Sembunyikan video beranda berdasarkan penayangan</string>

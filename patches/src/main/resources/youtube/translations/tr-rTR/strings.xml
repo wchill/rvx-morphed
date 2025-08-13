@@ -229,15 +229,6 @@ Kısıtlamalar:
     <string name="revanced_hide_keyword_content_about_whole_words_title">Bütün kelimeyi eşle</string>
     <string name="revanced_hide_keyword_toast_invalid_common">Geçersiz anahtar kelime. \'%s\' kullanılamaz</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">\'%1$s\' anahtar kelimesi tüm videoları gizleyecek.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">Önerilen video</string>
-    <string name="revanced_hide_low_views_video_title">Az izlenen videoları gizle</string>
-    <string name="revanced_hide_low_views_video_summary">"Abone olunmayan kanallardan yüklenen ana sayfa yayınlarında 1.000'den az izlenen videoları gizleyin."</string>
-    <string name="revanced_hide_recommended_video_title">Önerilen videoları gizle</string>
-    <string name="revanced_hide_recommended_video_summary">"Aşağıdaki önerilen videoları gizler:
-
-• 'Yalnızca Üyeler İçin' etiketine sahip videolar
-• Videonun altında 'Kullanıcılar da izledi' gibi ibarelerin yer aldığı videolar."</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">İzlenme sayısı filtresi</string>
     <string name="revanced_hide_video_view_counts_greater_than_title">Görüntülemelerden büyük</string>
@@ -1047,16 +1038,6 @@ Sınırlamalar:
     <string name="revanced_remember_video_quality_last_selected_title">Video kalitesi değişimlerini hatırla</string>
     <string name="revanced_remember_video_quality_last_selected_summary_on">Kalite değişimleri bütün videolara uygulanıyor</string>
     <string name="revanced_remember_video_quality_last_selected_summary_off">Kalite değişimleri sadece oynatılan videoya uygulanıyor</string>
-    <string name="revanced_skipped_preloaded_buffer">Önceden yüklenmiş arabellek atlandı.</string>
-    <string name="revanced_skip_preloaded_buffer_title">Önceden yüklenmiş arabelleği atla</string>
-    <string name="revanced_skip_preloaded_buffer_summary">"Varsayılan video kalitesi uygulama gecikmesini atlamak için video başlangıcında önceden yüklenmiş arabelleği atlayın.
-
- • Video başladığında yaklaşık 0.7 saniyelik bir gecikme olur, ancak varsayılan video kalitesi hemen uygulanır.
-• HDR videolar veya 10 saniyeden kısa videolar için geçerli değildir."</string>
-    <string name="revanced_skip_preloaded_buffer_user_dialog_message">Bu ayarı etkinleştirmek video oynatma sorunlarına yol açabilir.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_title">Bir kısım atlanırken uyarı ver</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_on">Gizlenmiyor</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_off">Gizleniyor</string>
     <string name="revanced_spoof_device_dimensions_title">Farklı cihaz boyutlarını taklit et</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Experimental flags -->
     <!-- PreferenceScreen: Return YouTube Dislike -->

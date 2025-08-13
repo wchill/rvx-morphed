@@ -24,6 +24,7 @@
     <string name="revanced_extended_settings_search_no_results_title">未找到“%s”的結果。</string>
     <string name="revanced_extended_settings_search_no_results_summary">嘗試其他關鍵字。</string>
     <string name="revanced_extended_settings_search_remove_message">要從搜尋記錄中移除嗎？</string>
+    <string name="revanced_dismiss_player_not_available_toast">影片 Id 不可用。請手動重新開啟影片。</string>
     <string name="revanced_playback_speed_normal">正常</string>
     <string name="revanced_external_downloader_package_name_video_title">影片下載器套件名稱</string>
     <string name="revanced_external_downloader_package_name_video_summary">您安裝的外部下載器應用程式的套件名稱，例如 NewPipe 或 YTDLnis。</string>
@@ -326,6 +327,9 @@
     <string name="revanced_hide_ticket_shelf_title">隱藏購票庫</string>
     <string name="revanced_hide_ticket_shelf_summary_on">購票庫已隱藏</string>
     <string name="revanced_hide_ticket_shelf_summary_off">購票庫已顯示</string>
+    <string name="revanced_hide_video_recommendation_labels_title">隱藏影片推薦標籤</string>
+    <string name="revanced_hide_video_recommendation_labels_summary_on">"縮圖標籤 - 例如 '人們還觀看了' 和 '您可能還喜歡' - 已隱藏。"</string>
+    <string name="revanced_hide_video_recommendation_labels_summary_off">"縮圖標籤 - 例如 '人們還觀看了' 和 '您可能還喜歡' - 已隱藏。"</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">類別欄</string>
     <string name="revanced_preference_screen_category_bar_summary">隱藏或顯示來源、搜尋和相關影片中的類別欄</string>
@@ -427,14 +431,6 @@
     <string name="revanced_hide_keyword_toast_invalid_conflicting">關鍵字有衝突的聲明：%s.</string>
     <string name="revanced_hide_keyword_toast_invalid_length">關鍵字太短，需要引號：%s.</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">關鍵字 \'%1$s\' 將隱藏所有影片。</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">推薦影片</string>
-    <string name="revanced_hide_low_views_video_title">隱藏低觀看次數的影片</string>
-    <string name="revanced_hide_low_views_video_summary">"在首頁隱藏來自未訂閱頻道的、觀看次數少於 1,000 次的影片。"</string>
-    <string name="revanced_hide_recommended_video_title">隱藏推薦影片</string>
-    <string name="revanced_hide_recommended_video_summary">"隱藏以下推薦影片：
-
-• 影片下方標有「其他人也看了」等類似字樣的內容。  "</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">觀看次數篩選器</string>
     <string name="revanced_hide_video_by_view_counts_home_title">依觀看次數隱藏家庭影片</string>
@@ -586,6 +582,16 @@
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - 恢復舊版的播放清單標題</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - 恢復舊的播放速度彈出面板</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">無效的偽裝應用程式版本: %s。</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_title">修復偽裝應用程式版本副作用</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_summary_on">"使用 '自動播放' 設定代替 '播放' 設定。"</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_summary_off">使用 \'播放\' 設定取代 \'自動播放\' 設定。</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_user_dialog_message">"如果應用程式版本被盜用至 19.30 或更早版本，即使只有一次，「播放」設定也可能已損壞。
+
+這取決於應用程式從伺服器收到的回應。
+
+如果 '播放' 設定已損壞，啟用此設定或許可以解決問題。
+
+如果啟用或停用此設定後，'播放' 設定仍然損壞，則應清除應用程式資料。"</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">帳戶選單</string>
     <string name="revanced_preference_screen_account_menu_summary">隱藏或顯示帳戶選單和你的內容分頁中的元素。</string>
@@ -617,6 +623,10 @@
     <string name="revanced_preference_category_download_button">下載按鈕</string>
     <string name="revanced_override_playlist_download_button_title">覆蓋播放清單下載按鈕</string>
     <string name="revanced_override_playlist_download_button_summary_on">原生播放清單下載按鈕可開啟您的外部下載器。</string>
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer_1">如果顯示本機播放清單下載按鈕，則會開啟您的外部下載器。</string>
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer_2">"如果顯示原生播放清單下載按鈕，則會開啟您的外部下載器。
+
+若要顯示原生播放清單下載按鈕，請啟用 '偽裝應用程式版本' ，並將 '偽裝應用程式目標版本' 變更為“19.28.42”或更早版本。"</string>
     <string name="revanced_override_playlist_download_button_summary_off">原生播放清單下載按鈕可開啟本機應用程式內下載器。</string>
     <string name="revanced_override_video_download_button_title">覆蓋影片下載按鈕</string>
     <string name="revanced_override_video_download_button_summary_on">原生影片下載按鈕可開啟你的外部下載器。</string>
@@ -803,6 +813,9 @@
     <string name="revanced_hide_voice_search_button_title">隱藏語音搜尋按鈕</string>
     <string name="revanced_hide_voice_search_button_summary_on">語音搜尋按鈕已隱藏</string>
     <string name="revanced_hide_voice_search_button_summary_off">語音搜尋按鈕已顯示</string>
+    <string name="revanced_hide_you_may_like_section_title">隱藏你可能喜歡的部分</string>
+    <string name="revanced_hide_you_may_like_section_summary_on">你可能喜歡的部分已被隱藏。</string>
+    <string name="revanced_hide_you_may_like_section_summary_off">你可能喜歡的部分已被顯示。</string>
     <string name="revanced_hide_youtube_doodles_title">隱藏 YouTube 塗鴉</string>
     <string name="revanced_hide_youtube_doodles_summary_on">YouTube 塗鴉已隱藏。</string>
     <string name="revanced_hide_youtube_doodles_summary_off">YouTube 塗鴉已顯示。</string>
@@ -1427,7 +1440,7 @@
     <string name="revanced_preference_screen_shorts_title">短影音</string>
     <string name="revanced_disable_shorts_background_playback_title">停用短影音背景播放</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">短影音背景播放已停用。</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">短影音背景播放已啟用。</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"短影音背景播放已啟用。"</string>
     <string name="revanced_disable_resuming_shorts_player_title">停用恢復短影音播放器</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">短影音播放器在應用程式啟動時不會恢復播放。</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">短影音播放器在應用程式啟動時會恢復播放。</string>
@@ -1713,9 +1726,6 @@
     <string name="revanced_disable_hdr_auto_brightness_title">停用 HDR 影片自動亮度</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_on">HDR 影片自動亮度已停用</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_off">HDR 影片自動亮度已啟用</string>
-    <string name="revanced_disable_swipe_to_switch_video_title">停用滑動切換影片功能</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_on">向上/向下滑動將不會播放下一個/上一個影片。</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_off">向上/向下滑動將播放下一個/上一個影片。</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_title">停用滑動進入全螢幕模式（在播放器下方）。</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_on">向下滑動播放器下方將不會進入全螢幕模式。</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_off">向下滑動播放器下方將進入全螢幕模式。</string>
@@ -1725,6 +1735,9 @@
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_title">停用滑動退出全螢幕模式。</string>
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_summary_on">在全螢幕模式下向下滑動將不會退出全螢幕模式。</string>
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_summary_off">在全螢幕模式下向下滑動將退出全螢幕模式。</string>
+    <string name="revanced_enable_swipe_to_switch_video_title">啟用滑動切換影片</string>
+    <string name="revanced_enable_swipe_to_switch_video_summary_on">在全螢幕模式下向上 / 向下滑動將切換到下一個 / 上一個影片。</string>
+    <string name="revanced_enable_swipe_to_switch_video_summary_off">在全螢幕模式下向上 / 向下滑動不會切換到下一個 / 上一個影片。</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">自動</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">影片</string>
@@ -1803,17 +1816,6 @@
     <string name="revanced_advanced_video_quality_menu_type_title">短片中的高級影片畫質選單類型</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_on">使用自訂對話框。</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_off">使用舊式彈出式選單。</string>
-    <string name="revanced_skipped_preloaded_buffer">跳過預載入</string>
-    <string name="revanced_skip_preloaded_buffer_title">跳過預載入</string>
-    <string name="revanced_skip_preloaded_buffer_summary">"跳過影片開頭的預先載入緩衝區以立即套用預設影片品質
-
- 資訊:
- • 影片開始時，會有大約0.3 秒的延遲
- • 不適用於HDR 影片、直播或短於15 秒的影片"</string>
-    <string name="revanced_skip_preloaded_buffer_user_dialog_message">啟用此設定可能會導致影片播放問題。</string>
-    <string name="revanced_skip_preloaded_buffer_toast_title">跳過時的提示訊息</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_on">提示訊息已顯示</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_off">提示訊息已隱藏</string>
     <string name="revanced_spoof_device_dimensions_title">偽裝裝置尺寸</string>
     <string name="revanced_spoof_device_dimensions_summary">"將設備尺寸偽裝為最大值。
 
@@ -2079,9 +2081,6 @@
     <string name="revanced_bypass_url_redirects_summary_off">未繞過 URL 重新導向。</string>
     <string name="revanced_disable_quic_protocol_title">停用 QUIC 協議</string>
     <string name="revanced_disable_quic_protocol_summary">"停用 Cronet 引擎的 QUIC 協議"</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_title">Litho 線程池最大大小</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_entry_0">未被覆蓋</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_invalid_toast">Litho 執行緒池最大大小必須介於 1-3 之間。</string>
     <string name="revanced_open_links_externally_title">在瀏覽器中開啟連結</string>
     <string name="revanced_open_links_externally_summary_on">在外部瀏覽器中開啟連結。</string>
     <string name="revanced_open_links_externally_summary_off">在應用程式內瀏覽器中開啟連結。</string>
@@ -2172,6 +2171,8 @@
 <small>(無授權)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS 電視
 <small>(需要登入)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_mweb">"行動網路
+<small>(開發中)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">"電視
 <small>(開發中)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"電視內嵌功能
@@ -2186,9 +2187,49 @@
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• 無法提供穩定音量。
 • 電影或付費影片可能無法播放。
 • 未登入或處於隱身模式時 兒童影片可能無法播放。"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• 缺少音軌選單。
+• 無法停用強制自動音軌。
+• 如果反混淆失敗，播放可能會失敗。
+• 有時影片即使播放 10 秒後也無法播放，在這種情況下，您需要點擊重新載入影片按鈕。
+• 影片可能會延遲開始。"</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• 如果反混淆失敗，播放可能會失敗。
 • 有時影片即使播放 10 秒後也無法播放，在這種情況下，您需要點擊「重新載入影片」按鈕。
 • 影片可能會延遲播放。"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_unknown">• 未知</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">優先考慮影片品質</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">影片品質優先。</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_off">影片編解碼器優先。</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_user_dialog_message">"部分影片具有以下影片品質和編解碼器：
+
+• 1080p AVC
+• 720p AVC
+• 360p VP9
+
+如果設備支援 VP9，則會忽略 '1080p AVC' 和 '720p AVC' 。
+
+換句話說，'360p VP9' 將用作最高影片品質，而 '1080p AVC' 和 '720p AVC' 在影片品質彈出式選單中不可見。
+
+這是 Android 版 YouTube 應用程式的預期行為，也是部分影片無法顯示影片品質彈出式選單的原因。
+
+儘管 VP9 編解碼器比 AVC 更先進，但部分用戶可能更喜歡 '1080p AVC' ，而不是 '360p VP9' 。
+
+如果啟用此設置，則無論影片編解碼器是什麼，都會使用伺服器回應中可用的最高影片品質。
+
+範例 1：
+
+• 1080p AVC
+• 720p AVC
+• 360p VP9
+
+→ 使用 1080p AVC。
+
+範例 2：
+
+• 1080p AVC
+• 1080p VP9
+• 720p VP9
+
+→ 使用 1080p VP9。"</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_title">顯示重新載入影片按鈕</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">重新載入影片按鈕已顯示。</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">重新載入影片按鈕已隱藏。</string>
@@ -2228,6 +2269,31 @@
 
 AVC 的最大解析度為 1080p，Opus 音訊編解碼器不可用，影片播放將使用比 VP9 或 AV1 更多的網路資料。"</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <string name="revanced_preference_category_js">JavaScript(開發中)</string>
+    <string name="revanced_spoof_streaming_data_use_js_title">使用 JavaScript 用戶端</string>
+    <string name="revanced_spoof_streaming_data_use_js_summary_on">JavaScript 用戶端已新增至可用用戶端。</string>
+    <string name="revanced_spoof_streaming_data_use_js_summary_off">JavaScript 用戶端未新增至可用用戶端。</string>
+    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"應用程式會佔用更多系統資源來尋找或解碼 n-sig 模式，導致影片啟動速度變慢。
+
+YouTube 伺服器上的 n-sig 模式變化頻繁，如果正規表示式無法找到 n-sig 模式，播放可能會失敗。
+
+此功能尚在開發中，請僅用於調試目的。"</string>
+    <string name="revanced_spoof_streaming_data_use_js_all_title">對所有影片使用 JavaScript 用戶端</string>
+    <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"無論影片類型為何，都會使用 JavaScript 用戶端。
+
+• 電視用戶端仍無法播放某些影片。"</string>
+    <string name="revanced_spoof_streaming_data_use_js_all_summary_off">"某些需要快速播放的影片不使用 JavaScript 用戶端：
+
+• 動態中自動播放
+• 短片
+• Shorts 短片"</string>
+    <string name="revanced_spoof_streaming_data_use_latest_js_title">使用最新的 JavaScript</string>
+    <string name="revanced_spoof_streaming_data_use_latest_js_summary_on">"用於反混淆的 JavaScript 會保持最新狀態。
+
+• 它高度依賴伺服器，反混淆的成功或失敗取決於伺服器上目前使用的 JavaScript。"</string>
+    <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"用於反混淆的 JavaScript 未保持最新。
+
+• 雖然使用了可成功反混淆的 JavaScript，但它仍然在一定程度上依賴伺服器。"</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">觀看歷史記錄</string>
     <string name="revanced_preference_screen_watch_history_summary">變更與觀看歷史記錄相關的設定。</string>

@@ -327,6 +327,9 @@
     <string name="revanced_hide_ticket_shelf_title">Приховати полицю квитків</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Полиці квитків приховано.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Полиці квитків показується.</string>
+    <string name="revanced_hide_video_recommendation_labels_title">Приховати мітки відеорекомендацій</string>
+    <string name="revanced_hide_video_recommendation_labels_summary_on">"Мітки мініатюр, такі як 'Люди також дивилися' та 'Вам також може сподобатись', приховано."</string>
+    <string name="revanced_hide_video_recommendation_labels_summary_off">"Мітки мініатюр, такі як 'Люди також дивилися' та 'Вам також може сподобатись', показується."</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Панель категорій</string>
     <string name="revanced_preference_screen_category_bar_summary">Приховувати чи показувати панель категорій у стрічці, пошуку та пов\'язаних відео.</string>
@@ -428,16 +431,6 @@
     <string name="revanced_hide_keyword_toast_invalid_conflicting">Ключове слово комплектує з: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_length">Ключове слово занадто коротке і потребує лапок: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">Ключове слово приховає всі відео: %s.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">Рекомендовані відео</string>
-    <string name="revanced_hide_low_views_video_title">Приховати відео з малою кількістю переглядів</string>
-    <string name="revanced_hide_low_views_video_summary">"Приховати відео з менш ніж 1,000 переглядів з головної стрічки, вантажені з каналів, на які не підписані.
-
-Цей фільтр може більше не працювати, натомість використовуйте \"Фільтр кількості переглядів\"."</string>
-    <string name="revanced_hide_recommended_video_title">Приховати рекомендовані відео</string>
-    <string name="revanced_hide_recommended_video_summary">"Приховуються такі рекомендовані відео:
-
-• Відео з фразами на кшталт 'Людей також дивилися' внизу."</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">Фільтр за кількістю переглядів</string>
     <string name="revanced_hide_video_by_view_counts_home_title">Приховати відео на головній за переглядами</string>
@@ -1454,7 +1447,9 @@
     <string name="revanced_preference_screen_shorts_title">YouTube Shorts</string>
     <string name="revanced_disable_shorts_background_playback_title">Вимкнути фонове відтворення Shorts</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">Фонове відтворення Shorts вимкнено.</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">Фонове відтворення Shorts увімкнено.</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"Фонове відтворення Shorts увімкнено.
+
+Інформація: Фонове відтворення Shorts доступне лише в режимі 'Картинка в картинці'."</string>
     <string name="revanced_disable_resuming_shorts_player_title">Вимкнути відновлення плеєра Shorts</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">Плеєр Shorts не відновлюватиметься при запуску додатка.</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">Плеєр Shorts відновлюватиметься при запуску додатка.</string>
@@ -1740,9 +1735,6 @@
     <string name="revanced_disable_hdr_auto_brightness_title">Вимкнути авто яскравість HDR</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_on">Авто яскравість HDR вимкнено.</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_off">Авто яскравість HDR увімкнено.</string>
-    <string name="revanced_disable_swipe_to_switch_video_title">Вимкнути зміну відео проведенням</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_on">Проведення вгору / вниз у повноекранному режимі не змінюватиме на наступне / попереднє відео.</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_off">Проведення вгору / вниз у повноекранному режимі змінюватиме на наступне / попереднє відео.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_title">Вимкнути проведення для переходу у повноекранний режим (знизу плеєра)</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_on">Проведенням униз не переходитиметься у повноекранний режим.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_off">Проведенням униз переходитиметься у повноекранний режим.</string>
@@ -1752,6 +1744,9 @@
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_title">Вимкнути проведення для виходу з повноекранного режиму</string>
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_summary_on">Проведенням вниз не виходитиметься з повноекранного режиму.</string>
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_summary_off">Проведенням вниз виходитиметься з повноекранного режиму.</string>
+    <string name="revanced_enable_swipe_to_switch_video_title">Увімкнути зміну відео проведенням</string>
+    <string name="revanced_enable_swipe_to_switch_video_summary_on">Проведення вгору / вниз у повноекранному режимі змінюватиме на наступне / попереднє відео.</string>
+    <string name="revanced_enable_swipe_to_switch_video_summary_off">Проведення вгору / вниз у повноекранному режимі не змінюватиме на наступне / попереднє відео.</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">Авто</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Відео</string>
@@ -1830,18 +1825,6 @@
     <string name="revanced_advanced_video_quality_menu_type_title">Тип розширеного меню якості відео в Shorts</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_on">Використовується специфічний діалог.</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_off">Використовується висувне меню старого стилю.</string>
-    <string name="revanced_skipped_preloaded_buffer">Пропущено перед вантажений буфер</string>
-    <string name="revanced_skip_preloaded_buffer_title">Пропустити перед вантажений буфер</string>
-    <string name="revanced_skip_preloaded_buffer_summary">"Пропуск передвантаженого буфера під час запуску відео для обходу затримки примусового застосування типової якості відео.
-
-Інформація:
-• Під час запуску відео є затримка приблизно 0.3 секунди.
-• Не застосовується на Shorts, відео HDR, прямі трансляції, менші ніж 15 секунд.
-• Налаштування 'Підробити дані трансляції' також вилучає передвантажений буфер, отже це налаштування не потрібне якщо використовуєте те."</string>
-    <string name="revanced_skip_preloaded_buffer_user_dialog_message">Вмикання цього налаштування може спричинити проблеми відтворення відео.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_title">Показувати тост, коли пропущено</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_on">Тост показується.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_off">Тост не показується.</string>
     <string name="revanced_spoof_device_dimensions_title">Підробити розміри пристрою</string>
     <string name="revanced_spoof_device_dimensions_summary">"Підробка розмірів пристрою до максимального значення.
 
@@ -2102,9 +2085,6 @@
     <string name="revanced_bypass_url_redirects_summary_off">Перенаправлення посилань не обходяться.</string>
     <string name="revanced_disable_quic_protocol_title">Вимкнути протокол QUIC</string>
     <string name="revanced_disable_quic_protocol_summary">"Вимкнути протокол CronetEngine's QUIC"</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_title">Максимальний розмір пулу Лізо зв\'язків</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_entry_0">Не перевизначено</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_invalid_toast">Максимальний розмір пулу Лізо зв\'язків повинен бути між 1-3.</string>
     <string name="revanced_open_links_externally_title">Відкривати посилання ззовні</string>
     <string name="revanced_open_links_externally_summary_on">Посилання відкриваються у зовнішньому браузері.</string>
     <string name="revanced_open_links_externally_summary_off">Посилання відкриваються у браузері додатка.</string>
@@ -2219,6 +2199,7 @@
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Якщо деобфускація не вдасться, відтворення може завершитися зі збоями.
 • Іноді відео не відтворюється навіть через 10 секунд, і тоді потрібно натиснути кнопку перезавантаження відео.
 • Відео може розпочинається із запізненням."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_unknown">• Невідомі</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Пріоритетна якість відео</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">Якість відео пріоритетна.</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_off">Кодеки відео пріоритетні.</string>
@@ -2304,7 +2285,7 @@ AVC має максимальну роздільну здатність 1080p, �
     <string name="revanced_spoof_streaming_data_use_js_all_title">Використовувати клієнт JavaScript для всіх відео</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"Клієнт JavaScript використовується незалежно від типу відео.
 
-• Клієнт TV все ще не може відтворювати деякі відео."</string>
+• Клієнт JavaScript все ще не може відтворювати деякі відео."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_off">"Клієнт JavaScript не використовується для деяких відео, які потребують швидкого відтворення:
 
 • Автовідтворення у стрічці

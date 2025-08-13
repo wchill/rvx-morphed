@@ -401,16 +401,6 @@ Limitations :
     <string name="revanced_hide_keyword_toast_invalid_conflicting">Le mot-clé a des déclarations en conflit : %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_length">Le mot-clé est trop court et nécessite des guillemets : %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">Ce mot-clé va masquer toutes les vidéos : %s.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">Vidéo recommandée</string>
-    <string name="revanced_hide_low_views_video_title">Masquer les vidéos peu vues</string>
-    <string name="revanced_hide_low_views_video_summary">"Masque les vidéos ayant moins de 1 000 vues dans les flux 'accueil' et qui ont été mis en ligne par des chaînes dont vous n'êtes pas abonnés.
-
-Ce filtre peut ne plus fonctionner, utilisez le filtre 'Nombre de vues' à la place."</string>
-    <string name="revanced_hide_recommended_video_title">Masquer les vidéos recommandées</string>
-    <string name="revanced_hide_recommended_video_summary">"Masque les vidéos recommandées suivants :
-
-• Les vidéos avec des phrases telles que 'Les internautes ont aussi regardé' en dessous."</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">Filtre du compteur de vues</string>
     <string name="revanced_hide_video_by_view_counts_home_title">Masquer les vidéos de la page d\'accueil par vues</string>
@@ -1352,7 +1342,7 @@ Cette fonction fonctionne mieux avec une connexion internet très rapide."</stri
     <string name="revanced_preference_screen_shorts_title">Shorts</string>
     <string name="revanced_disable_shorts_background_playback_title">Désactiver la lecture en arrière-plan des Shorts</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">La lecture en arrière-plan des Shorts est désactivée.</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">La lecture en arrière-plan des Shorts est activée.</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"La lecture en arrière-plan des Shorts est activée."</string>
     <string name="revanced_disable_resuming_shorts_player_title">Désac. \'Reprendre la lecture\' sur les Shorts</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">Les shorts ne reprennent pas au démarrage de l\'application.</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">Les shorts reprennent au démarrage de l\'application.</string>
@@ -1617,9 +1607,6 @@ Ajustez le volume en balayant verticalement sur le côté droit de l'écran."</s
     <string name="revanced_disable_hdr_auto_brightness_title">Luminosité HDR automatique</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_on">La luminosité HDR automatique est désactivée.</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_off">La luminosité HDR automatique est activée.</string>
-    <string name="revanced_disable_swipe_to_switch_video_title">Désactiver les gestes pour changer de vidéo</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_on">Glisser vers le haut / bas en plein écran ne lira pas la vidéo suivante / précédente.</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_off">Glisser vers le haut / bas en plein écran lira la vidéo suivante / précédente.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_title">Désactiver les gestes pour entrer en mode plein écran (sous le lecteur)</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_on">Glisser vers le bas sous le lecteur ne permet pas d\'entrer en mode plein écran.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_off">Glisser vers le bas sous le lecteur permet d\'entrer en mode plein écran.</string>
@@ -1707,18 +1694,6 @@ Info :
     <string name="revanced_advanced_video_quality_menu_type_title">Type de menu de qualité vidéo avancé dans les Shorts</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_on">La boîte de dialogue personnalisée est utilisée.</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_off">L\'ancien style du menu déroulant est utilisé.</string>
-    <string name="revanced_skipped_preloaded_buffer">Tampon préchargé passé.</string>
-    <string name="revanced_skip_preloaded_buffer_title">Tampon préchargé</string>
-    <string name="revanced_skip_preloaded_buffer_summary">"Passe le tampon préchargé au début de la vidéo pour appliquer immédiatement la qualité vidéo.
-
-Info :
-• Au démarrage de la vidéo, il y a un délai d'environ 0.3 secondes.
-• Ne s'applique pas aux vidéos HDR, aux diffusions en direct et aux vidéos de moins de 15 secondes.
-• Le paramètre 'Falsifier les données de lecture en direct' supprime également les tampons préchargés, ce paramètre n'est donc pas nécessaire si vous l'utilisez."</string>
-    <string name="revanced_skip_preloaded_buffer_user_dialog_message">Activer ce paramètre peut entraîner des problèmes de lecture vidéo.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_title">Affic. message lors du passage</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_on">Le message est affiché.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_off">Le message est masqué.</string>
     <string name="revanced_spoof_device_dimensions_title">Falsifier les dimensions de l\'appareil</string>
     <string name="revanced_spoof_device_dimensions_summary">"Falsifie les dimensions de l'appareil à la valeur maximale.
 
@@ -1979,9 +1954,6 @@ Cliquez ici pour découvrir comment créer une clé API."</string>
     <string name="revanced_bypass_url_redirects_summary_off">Les redirections d\'URL ne sont pas contournées.</string>
     <string name="revanced_disable_quic_protocol_title">Protocole QUIC</string>
     <string name="revanced_disable_quic_protocol_summary">"Désactive le protocole QUIC de CronetEngine."</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_title">Taille maximale du groupe de tâches Litho</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_entry_0">Non remplacé</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_invalid_toast">La taille maximale du pool de threads Litho doit être comprise entre 1 et 3.</string>
     <string name="revanced_open_links_externally_title">Ouvrir les liens en externe</string>
     <string name="revanced_open_links_externally_summary_on">Ouvre les liens dans le navigateur externe.</string>
     <string name="revanced_open_links_externally_summary_off">Ouvre les liens dans le navigateur de l\'application.</string>

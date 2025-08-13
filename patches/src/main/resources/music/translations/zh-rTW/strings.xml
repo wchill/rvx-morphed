@@ -368,8 +368,6 @@
     <string name="revanced_sanitize_sharing_links_summary">分享連結時從 URL 中刪除追蹤參數。</string>
     <string name="revanced_spoof_client_title">偽裝客戶端</string>
     <string name="revanced_spoof_client_type_title">預設客戶端</string>
-    <string name="revanced_spoof_client_type_entry_android_music_4_27">Android Music 4.27.53</string>
-    <string name="revanced_spoof_client_type_entry_android_music_5_29">Android Music 5.29.53</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_default_app_settings_title">開啟預設應用程式設定</string>
     <string name="revanced_default_app_settings_summary">要在RVX Music中打開YouTube Music連結，啟用「打開支援的連結」並啟用支援的網址。</string>
