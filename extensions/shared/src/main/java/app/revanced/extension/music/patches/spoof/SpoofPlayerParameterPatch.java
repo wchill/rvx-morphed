@@ -72,7 +72,6 @@ public class SpoofPlayerParameterPatch {
      * Injection point.
      */
     public static String spoofParameter(@NonNull String videoId, @Nullable String parameter) {
-        Logger.printInfo(() -> "playerParameter: " + parameter);
         if (SPOOF_PLAYER_PARAMETER) {
             synchronized (lastVideoIds) {
                 Boolean isSamples = parameterIsSample(parameter);
