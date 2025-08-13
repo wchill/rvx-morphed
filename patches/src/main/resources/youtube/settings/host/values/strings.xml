@@ -1533,7 +1533,9 @@ This feature works best with a very fast internet connection."</string>
 
     <string name="revanced_disable_shorts_background_playback_title">Disable Shorts background play</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">Shorts background play is disabled.</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">Shorts background play is enabled.</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"Shorts background play is enabled.
+
+Info: Shorts background playback is only available through Picture-in-picture mode."</string>
     <string name="revanced_disable_resuming_shorts_player_title">Disable resuming Shorts player</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">Shorts player will not resume on app startup.</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">Shorts player will resume on app startup.</string>
