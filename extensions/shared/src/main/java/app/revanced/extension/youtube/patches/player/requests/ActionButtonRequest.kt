@@ -136,25 +136,25 @@ class ActionButtonRequest private constructor(
 
         private fun parseResponse(json: JSONObject): Array<ActionButton> {
             try {
-                val secondaryContentsJsonObject =
+                val secondaryContentsJsonArray =
                     json.getJSONObject("contents")
                         .getJSONObject("singleColumnWatchNextResults")
                         .getJSONObject("results")
                         .getJSONObject("results")
                         .getJSONArray("contents")
-                        .get(0)
 
-                if (secondaryContentsJsonObject is JSONObject) {
-                    val tertiaryContentsJsonArray =
-                        secondaryContentsJsonObject
-                            .getJSONObject("slimVideoMetadataSectionRenderer")
-                            .getJSONArray("contents")
+                for (i in 0..<secondaryContentsJsonArray.length()) {
+                    val secondaryContentsJsonObject = secondaryContentsJsonArray.getJSONObject(i)
+                    if (secondaryContentsJsonObject.has("slimVideoMetadataSectionRenderer")) {
+                        val tertiaryContentsJsonArray =
+                            secondaryContentsJsonObject
+                                .getJSONObject("slimVideoMetadataSectionRenderer")
+                                .getJSONArray("contents")
 
-                    val elementRendererJsonObject =
-                        tertiaryContentsJsonArray
-                            .get(tertiaryContentsJsonArray.length() - 1)
+                        val elementRendererJsonObject =
+                            tertiaryContentsJsonArray
+                                .getJSONObject(tertiaryContentsJsonArray.length() - 1)
 
-                    if (elementRendererJsonObject is JSONObject) {
                         val buttons =
                             elementRendererJsonObject
                                 .getJSONObject("elementRenderer")
