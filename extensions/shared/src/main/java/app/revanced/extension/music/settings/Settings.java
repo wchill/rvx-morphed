@@ -199,6 +199,8 @@ public class Settings extends BaseSettings {
     public static final BooleanSetting SPOOF_CLIENT = new BooleanSetting("revanced_spoof_client", FALSE, true);
     public static final EnumSetting<ClientType> SPOOF_CLIENT_TYPE = new EnumSetting<>("revanced_spoof_client_type", ClientType.IOS_MUSIC_6_21, true);
     public static final BooleanSetting SPOOF_PLAYER_PARAMETER = new BooleanSetting("revanced_spoof_player_parameter", TRUE, true);
+    public static final BooleanSetting SPOOF_VIDEO_STREAMS = new BooleanSetting("revanced_spoof_video_streams", FALSE, true);
+    public static final EnumSetting<ClientType> SPOOF_VIDEO_STREAMS_DEFAULT_CLIENT = new EnumSetting<>("revanced_spoof_video_streams_default_client", ClientType.ANDROID_VR_1_43_32, true);
     public static final BooleanSetting SETTINGS_IMPORT_EXPORT = new BooleanSetting("revanced_extended_settings_import_export", FALSE, false);
 
     // PreferenceScreen: Return YouTube Dislike
@@ -293,6 +295,7 @@ public class Settings extends BaseSettings {
             SETTINGS_IMPORT_EXPORT.key,
             SPOOF_APP_VERSION_TARGET.key,
             SPOOF_CLIENT_TYPE.key,
+            SPOOF_VIDEO_STREAMS_DEFAULT_CLIENT.key,
             WATCH_HISTORY_TYPE.key,
     };
 

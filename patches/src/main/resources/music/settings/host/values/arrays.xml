@@ -77,6 +77,20 @@
         <item>IOS_MUSIC_6_21</item>
         <item>IOS_MUSIC_7_04</item>
     </string-array>
+    <string-array name="revanced_spoof_video_streams_default_client_entries">
+        <item>@string/revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32</item>
+        <item>@string/revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09</item>
+        <item>@string/revanced_spoof_video_streams_default_client_entry_ios_music_6_21</item>
+        <item>@string/revanced_spoof_video_streams_default_client_entry_ios_music_7_04</item>
+        <item>@string/revanced_spoof_video_streams_default_client_entry_ios_music_8_12</item>
+    </string-array>
+    <string-array name="revanced_spoof_video_streams_default_client_entry_values">
+        <item>ANDROID_VR_1_43_32</item>
+        <item>ANDROID_VR_1_65_09</item>
+        <item>IOS_MUSIC_6_21</item>
+        <item>IOS_MUSIC_7_04</item>
+        <item>IOS_MUSIC_8_12</item>
+    </string-array>
     <string-array name="revanced_watch_history_type_entries">
         <item>@string/revanced_watch_history_type_entry_1</item>
         <item>@string/revanced_watch_history_type_entry_2</item>
