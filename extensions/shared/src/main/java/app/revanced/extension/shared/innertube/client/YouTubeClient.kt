@@ -42,7 +42,7 @@ object YouTubeClient {
     private val CLIENT_VERSION_IOS_UNPLUGGED = if (forceAVC())
         "6.45"
     else
-        "9.21"
+        "9.33"
     private const val DEVICE_MAKE_IOS_UNPLUGGED = "Apple"
     private const val OS_NAME_IOS_UNPLUGGED = "iOS"
     /**
@@ -57,11 +57,11 @@ object YouTubeClient {
     private val OS_VERSION_IOS_UNPLUGGED = if (forceAVC())
         "13.7.17H35" // Last release of iOS 13.
     else
-        "18.5.22F76"
+        "18.6.1.22G90"
     private val USER_AGENT_VERSION_IOS_UNPLUGGED = if (forceAVC())
         "13_7"
     else
-        "18_5"
+        "18_6_1"
     @SuppressLint("ConstantLocale")
     private val USER_AGENT_IOS_UNPLUGGED =
         "$PACKAGE_NAME_IOS_UNPLUGGED/$CLIENT_VERSION_IOS_UNPLUGGED ($DEVICE_MODEL_IOS_UNPLUGGED; U; CPU iOS $USER_AGENT_VERSION_IOS_UNPLUGGED like Mac OS X; ${Locale.getDefault()})"
@@ -136,7 +136,7 @@ object YouTubeClient {
      * Note: Audio track is not available.
      */
     private const val PACKAGE_NAME_ANDROID_UNPLUGGED = "com.google.android.apps.youtube.unplugged"
-    private const val CLIENT_VERSION_ANDROID_UNPLUGGED = "9.25.2"
+    private const val CLIENT_VERSION_ANDROID_UNPLUGGED = "9.33.0"
 
     /**
      * The device machine id for the Chromecast with Google TV 4K.
@@ -146,7 +146,7 @@ object YouTubeClient {
     private const val DEVICE_MAKE_ANDROID_UNPLUGGED = "Google"
     private const val OS_VERSION_ANDROID_UNPLUGGED = "14"
     private const val ANDROID_SDK_VERSION_ANDROID_UNPLUGGED = "34"
-    private const val BUILD_ID_ANDROID_UNPLUGGED = "UTTK.241210.003"
+    private const val BUILD_ID_ANDROID_UNPLUGGED = "UTTK.250305.003"
 
     private val USER_AGENT_ANDROID_UNPLUGGED = androidUserAgent(
         packageName = PACKAGE_NAME_ANDROID_UNPLUGGED,
@@ -193,7 +193,6 @@ object YouTubeClient {
      *       in [YouTube TV Service Worker](https://www.youtube.com/tv/sw.js_data).
      */
     private const val CLIENT_VERSION_TVHTML5 = "7.20250805.16.01"
-
     private const val USER_AGENT_TVHTML5 =
         "Mozilla/5.0 (PLAYSTATION 3 4.10) AppleWebKit/531.22.8 (KHTML, like Gecko)"
 
@@ -206,7 +205,7 @@ object YouTubeClient {
      */
     private const val CLIENT_VERSION_TVHTML5_SIMPLY = "1.0"
     private const val USER_AGENT_TVHTML5_SIMPLY =
-        "Mozilla/5.0 (RokuOS) Cobalt/20.lts.5.272122-gold (unlike Gecko) v8/6.5.254.43 gles Starboard/11, Roku_TV_MT10_2017/12.0 (TCL, 7121X, Wired)"
+        "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; Xbox)"
 
 
     // TVHTML5 EMBEDDED
