@@ -85,7 +85,6 @@ public class Settings extends BaseSettings {
     // PreferenceScreen: Feed
     public static final BooleanSetting HIDE_ALBUM_CARDS = new BooleanSetting("revanced_hide_album_card", TRUE);
     public static final BooleanSetting HIDE_FEED_CAPTIONS_BUTTON = new BooleanSetting("revanced_hide_feed_captions_button", FALSE, true);
-    public static final BooleanSetting HIDE_CAROUSEL_SHELF = new BooleanSetting("revanced_hide_carousel_shelf", FALSE, true);
     public static final BooleanSetting HIDE_CHIPS_SHELF = new BooleanSetting("revanced_hide_chips_shelf", TRUE);
     public static final BooleanSetting HIDE_EXPANDABLE_CARD = new BooleanSetting("revanced_hide_expandable_card", TRUE);
     public static final BooleanSetting HIDE_EXPANDABLE_SHELF = new BooleanSetting("revanced_hide_expandable_shelf", TRUE);
@@ -103,6 +102,11 @@ public class Settings extends BaseSettings {
     public static final BooleanSetting HIDE_SURVEYS = new BooleanSetting("revanced_hide_surveys", TRUE);
     public static final BooleanSetting HIDE_TICKET_SHELF = new BooleanSetting("revanced_hide_ticket_shelf", TRUE);
     public static final BooleanSetting HIDE_VIDEO_RECOMMENDATION_LABELS = new BooleanSetting("revanced_hide_video_recommendation_labels", TRUE);
+
+    // PreferenceScreen: Feed - Carousel shelf
+    public static final BooleanSetting HIDE_CAROUSEL_SHELF_HOME = new BooleanSetting("revanced_hide_carousel_shelf_home", FALSE);
+    public static final BooleanSetting HIDE_CAROUSEL_SHELF_SEARCH = new BooleanSetting("revanced_hide_carousel_shelf_search", FALSE);
+    public static final BooleanSetting HIDE_CAROUSEL_SHELF_SUBSCRIPTIONS = new BooleanSetting("revanced_hide_carousel_shelf_subscriptions", FALSE);
 
     // PreferenceScreen: Feed - Category bar
     public static final BooleanSetting HIDE_CATEGORY_BAR_IN_FEED = new BooleanSetting("revanced_hide_category_bar_in_feed", FALSE, true);

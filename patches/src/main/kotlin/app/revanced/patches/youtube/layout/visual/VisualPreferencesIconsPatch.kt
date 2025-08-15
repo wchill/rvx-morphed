@@ -381,6 +381,7 @@ private var rvxPreferenceKey = setOf(
     "revanced_preference_screen_account_menu",
     "revanced_preference_screen_action_buttons",
     "revanced_preference_screen_ambient_mode",
+    "revanced_preference_screen_carousel_shelf",
     "revanced_preference_screen_category_bar",
     "revanced_preference_screen_channel_bar",
     "revanced_preference_screen_channel_page",

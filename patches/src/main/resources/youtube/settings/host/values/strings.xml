@@ -283,16 +283,6 @@ Tap here to learn more about DeArrow."</string>
     <string name="revanced_hide_feed_captions_button_title">Hide Captions button</string>
     <string name="revanced_hide_feed_captions_button_on">Captions button is hidden.</string>
     <string name="revanced_hide_feed_captions_button_off">Captions button is shown.</string>
-    <string name="revanced_hide_carousel_shelf_title">Hide carousel shelves</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Carousel shelves are hidden, such as:
-• Breaking news
-• Continue watching
-• Explore more channels
-• Listen again
-• Most relevant
-• Shopping
-• Watch it again"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Carousel shelves are shown.</string>
     <string name="revanced_hide_chips_shelf_title">Hide chips shelf</string>
     <string name="revanced_hide_chips_shelf_on">Chips shelf is hidden.</string>
     <string name="revanced_hide_chips_shelf_off">Chips shelf is shown.</string>
@@ -344,6 +334,22 @@ Tap here to learn more about DeArrow."</string>
     <string name="revanced_hide_video_recommendation_labels_title">Hide video recommendation labels</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Thumbnail labels - such as 'People also watched' and 'You might also like' - are hidden."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Thumbnail labels - such as 'People also watched' and 'You might also like' - are hidden."</string>
+
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <string name="revanced_preference_screen_carousel_shelf_title">Carousel shelf</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">Hide or show carousel shelf in home, search results, and subscriptions.</string>
+
+    <string name="revanced_hide_carousel_shelf_home_title">Hide in Home feed and related videos</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_on">Hidden in Home feed and related videos.</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_off">Shown in Home feed and related videos.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_title">Hide in Subscriptions feed</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_on">Hidden in Subscriptions feed.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_off">Shown in Subscriptions feed.</string>
+    <string name="revanced_hide_carousel_shelf_search_title">Hide in search results</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_on">Hidden in search results.</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_off">Shown in search results.</string>
+    <string name="revanced_hide_carousel_shelf_about_title">About carousel shelf</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Examples of carousel shelves:&lt;br>&lt;br>&lt;b>Breaking news&lt;/b>, &lt;b>Continue watching&lt;/b>, &lt;b>Explore more channels&lt;/b>, &lt;b>Listen again&lt;/b>, &lt;b>Most relevant&lt;/b>, &lt;b>Shopping&lt;/b>, &lt;b>Watch it again&lt;/b></string>
 
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Category bar</string>
