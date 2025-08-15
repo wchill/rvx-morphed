@@ -183,7 +183,10 @@ class MusicRequest private constructor(
             return null
         }
 
-        private fun parseApplicationResponse(playlistJson: JSONObject): Boolean {
+        private fun parseApplicationResponse(
+            clientType: ClientType,
+            playlistJson: JSONObject,
+        ): Boolean {
             try {
                 val singleColumnWatchNextResultsJsonObject: JSONObject =
                     playlistJson
@@ -213,12 +216,14 @@ class MusicRequest private constructor(
                     .getJSONObject("navigationEndpoint")
 
                 val watchEndpointJsonObject: JSONObject? =
-                    if (navigationEndpointJsonObject.has("coWatchWatchEndpointWrapperCommand")) { // Android
+                    if (clientType == ClientType.ANDROID
+                        && navigationEndpointJsonObject.has("coWatchWatchEndpointWrapperCommand")) { // Android
                         navigationEndpointJsonObject
                             .getJSONObject("coWatchWatchEndpointWrapperCommand")
                             .getJSONObject("watchEndpoint")
                             .getJSONObject("watchEndpoint")
-                    } else if (navigationEndpointJsonObject.has("watchEndpoint")) { // Android VR
+                    } else if (clientType == ClientType.ANDROID_VR
+                        && navigationEndpointJsonObject.has("watchEndpoint")) { // Android VR
                         navigationEndpointJsonObject
                             .getJSONObject("watchEndpoint")
                     } else {
@@ -265,14 +270,14 @@ class MusicRequest private constructor(
                     return parseWebResponse(microFormatJson)
                 }
             } else {
-                for (clientType in arrayOf(ClientType.ANDROID, ClientType.ANDROID_VR)) {
+                for (clientType in arrayOf(ClientType.ANDROID_VR, ClientType.ANDROID)) {
                     val playlistJson = sendApplicationRequest(
                         clientType,
                         videoId,
                         AuthUtils.getRequestHeader()
                     )
                     if (playlistJson != null) {
-                        return parseApplicationResponse(playlistJson)
+                        return parseApplicationResponse(clientType, playlistJson)
                     }
                 }
             }
