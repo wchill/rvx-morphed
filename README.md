@@ -103,6 +103,7 @@ See the [documentation](https://github.com/inotia00/revanced-documentation#readm
 | `Enable OPUS codec` | Adds an option to enable the OPUS audio codec if the player response includes it. | 6.20.51 ~ 8.12.53 |
 | `Enable debug logging` | Adds an option for debugging. | 6.20.51 ~ 8.12.53 |
 | `Enable landscape mode` | Adds an option to enable landscape mode when rotating the screen on phones. | 6.20.51 ~ 8.12.53 |
+| `Fix playback` | Adds options to fix playback issues. | 6.20.51 ~ 8.12.53 |
 | `Flyout menu components` | Adds options to hide or change flyout menu components. | 6.20.51 ~ 8.12.53 |
 | `GmsCore support` | Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services. | 6.20.51 ~ 8.12.53 |
 | `Hide account components` | Adds options to hide components related to the account menu. | 6.20.51 ~ 8.12.53 |
@@ -122,8 +123,6 @@ See the [documentation](https://github.com/inotia00/revanced-documentation#readm
 | `Settings for YouTube Music` | Applies mandatory patches to implement ReVanced Extended settings into the application. | 6.20.51 ~ 8.12.53 |
 | `SponsorBlock` | Adds options to enable and configure SponsorBlock, which can skip undesired video segments, such as non-music sections. | 6.20.51 ~ 8.12.53 |
 | `Spoof app version` | Adds options to spoof the YouTube Music client version. This can be used to restore old UI elements and features. | 6.42.55 ~ 8.12.53 |
-| `Spoof client` | Adds options to spoof the client to allow playback. | 6.20.51 ~ 8.12.53 |
-| `Spoof player parameter` | Adds options to spoof player parameter to allow playback. | 6.20.51 ~ 8.12.53 |
 | `Translations for YouTube Music` | Add translations or remove string resources. | 6.20.51 ~ 8.12.53 |
 | `Video playback` | Adds options to customize settings related to video playback, such as default video quality and playback speed. | 6.20.51 ~ 8.12.53 |
 | `Visual preferences icons for YouTube Music` | Adds icons to specific preferences in the settings. | 6.20.51 ~ 8.12.53 |
