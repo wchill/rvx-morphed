@@ -11,7 +11,7 @@
     <string name="revanced_extended_confirm_user_dialog_title">¿Quieres continuar?</string>
     <string name="revanced_extended_restart_first_run">Reiniciar para cargar el diseño normalmente</string>
     <string name="revanced_extended_restart_title">Reinicio requerido</string>
-    <string name="revanced_extended_restart_dialog_message">Reinicie la app para que este cambio surta efecto.</string>
+    <string name="revanced_extended_restart_dialog_message">Reinicia la app para que este cambio surta efecto.</string>
     <string name="revanced_extended_restart">Reiniciar</string>
     <string name="revanced_extended_settings_color_invalid">Color no válido.</string>
     <string name="revanced_extended_settings_color_picker">Selección de color</string>
@@ -270,15 +270,6 @@ Pulsa aquí para saber más sobre DeArrow."</string>
     <string name="revanced_hide_feed_captions_button_title">Ocultar botón de subtítulos</string>
     <string name="revanced_hide_feed_captions_button_on">El botón de subtítulos está oculto.</string>
     <string name="revanced_hide_feed_captions_button_off">El botón de subtítulos está visible.</string>
-    <string name="revanced_hide_carousel_shelf_title">Ocultar estante de carrusel</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Las estanterías de carrusel están ocultas, tales como:
-• Noticias de última hora
-• Seguir viendo
-• Explorar más canales
-• Volver a escuchar
-• Compras
-• Volver a ver"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Las estanterías de carrusel están visibles.</string>
     <string name="revanced_hide_chips_shelf_title">Ocultar estante de fichas</string>
     <string name="revanced_hide_chips_shelf_on">El estante de fichas está oculto.</string>
     <string name="revanced_hide_chips_shelf_off">El estante de fichas está visible.</string>
@@ -330,6 +321,20 @@ Pulsa aquí para saber más sobre DeArrow."</string>
     <string name="revanced_hide_video_recommendation_labels_title">Ocultar etiquetas de recomendación de vídeo</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Las etiquetas de las miniaturas, como «Otras personas también vieron» y «También te puede gustar», están ocultas."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Las etiquetas de las miniaturas, como «Otras personas también vieron» y «También te puede gustar», están visibles."</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <string name="revanced_preference_screen_carousel_shelf_title">Estanterías de carrusel</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">Ocultar o mostrar las estanterías de carrusel en la página de inicio, los resultados de búsqueda y las suscripciones.</string>
+    <string name="revanced_hide_carousel_shelf_home_title">Ocultar en feed de inicio y vídeos relacionados</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_on">Oculto en feed de inicio y vídeos relacionados.</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_off">Visible en feed de inicio y vídeos relacionados.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_title">Ocultar en feed de suscripciones</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_on">Oculto en el feed de suscripciones.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_off">Visible en el feed de suscripciones.</string>
+    <string name="revanced_hide_carousel_shelf_search_title">Ocultar en resultados de búsqueda</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_on">Oculto en los resultados de búsqueda.</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_off">Visible en los resultados de búsqueda.</string>
+    <string name="revanced_hide_carousel_shelf_about_title">Acerca de estanterías de carrusel</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Ejemplos de estanterías de carrusel:&lt;br&gt;&lt;br&gt;&lt;b&gt;Últimas noticias&lt;/b&gt;, &lt;b&gt;Seguir viendo&lt;/b&gt;, &lt;b&gt;Explorar más canales&lt;/b&gt;, &lt;b&gt;Escuchar de nuevo&lt;/b&gt;, &lt;b&gt;Más relevante&lt;/b&gt;, &lt;b&gt;Compras&lt;/b&gt;, &lt;b&gt;Ver de nuevo&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Barra de categorías</string>
     <string name="revanced_preference_screen_category_bar_summary">Ocultar o mostrar la barra de categorías en el feed, la búsqueda y vídeos relacionados.</string>

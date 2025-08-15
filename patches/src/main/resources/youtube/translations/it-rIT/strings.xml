@@ -270,16 +270,6 @@ Tocca qui per saperne di più su DeArrow."</string>
     <string name="revanced_hide_feed_captions_button_title">Nascondi il pulsante Sottotitoli</string>
     <string name="revanced_hide_feed_captions_button_on">Il pulsante Sottotitoli è nascosto.</string>
     <string name="revanced_hide_feed_captions_button_off">Il pulsante Sottotitoli è visibile.</string>
-    <string name="revanced_hide_carousel_shelf_title">Nascondi gli scaffali a carosello</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Nascondi i seguenti scaffali a carosello:
-• Ultime notizie
-• Continua a guardare
-• Esplora altri canali
-• Ascolta di nuovo
-• Più rilevanti
-• Shopping
-• Guarda di nuovo"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Gli scaffali a carosello sono visibili.</string>
     <string name="revanced_hide_chips_shelf_title">Nascondi lo scaffale dei chip</string>
     <string name="revanced_hide_chips_shelf_on">Lo scaffale dei chip è nascosto.</string>
     <string name="revanced_hide_chips_shelf_off">Lo scaffale dei chip è visibile.</string>
@@ -331,6 +321,7 @@ Tocca qui per saperne di più su DeArrow."</string>
     <string name="revanced_hide_video_recommendation_labels_title">Nascondi le etichette dei video consigliati</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Le etichette nei thumbnails, come \"Le persone hanno guardato anche questo video\" e \"Potrebbe anche piacerti questo\", sono nascoste."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Le etichette nei thumbnails, come \"Le persone hanno guardato anche questo video\" e \"Potrebbe anche piacerti questo\", sono visibili."</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Barra dei filtri</string>
     <string name="revanced_preference_screen_category_bar_summary">Personalizza la barra dei filtri nelle schede, nei video correlati, nei risultati di ricerca e nella cronologia.</string>
@@ -1445,7 +1436,9 @@ Questa impostazione funziona meglio con una connessione internet molto veloce."<
     <string name="revanced_preference_screen_shorts_title">Shorts</string>
     <string name="revanced_disable_shorts_background_playback_title">Disattiva la riproduzione in background</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">La riproduzione in background degli Shorts è disattivata.</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">"La riproduzione in background degli Shorts è attivata."</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"La riproduzione in background degli Shorts è attivata.
+
+Nota: è disponibile solo tramite la modalità Picture-in-Picture."</string>
     <string name="revanced_disable_resuming_shorts_player_title">Disattiva la ripresa del riproduttore</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">Il riproduttore degli Shorts non riprenderà all\'avvio dell\'app.</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">Il riproduttore degli Shorts riprenderà all\'avvio dell\'app.</string>

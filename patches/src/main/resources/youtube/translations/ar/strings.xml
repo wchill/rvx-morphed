@@ -270,16 +270,6 @@
     <string name="revanced_hide_feed_captions_button_title">إخفاء زر الترجمة</string>
     <string name="revanced_hide_feed_captions_button_on">تم إخفاء زر الترجمة.</string>
     <string name="revanced_hide_feed_captions_button_off">يتم عرض زر الترجمة.</string>
-    <string name="revanced_hide_carousel_shelf_title">إخفاء الرفوف الدوارة</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"تم إخفاء الرفوف الدوارة، مثل:
-• أخبار عاجلة
-• متابعة المشاهدة
-• اكتشف المزيد من القنوات
-• استمع مجددًا
-• الأكثر صلة
-• التسوق
-• مشاهده مرة أخرى"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">يتم عرض الرفوف الدوارة.</string>
     <string name="revanced_hide_chips_shelf_title">إخفاء رف الشرائح</string>
     <string name="revanced_hide_chips_shelf_on">تم إخفاء رف الشرائح.</string>
     <string name="revanced_hide_chips_shelf_off">يتم عرض رف الشرائح.</string>
@@ -331,6 +321,7 @@
     <string name="revanced_hide_video_recommendation_labels_title">إخفاء علامات اقتراحات الفيديو</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"علامات المصغرات - مثل 'الناس شاهدوا أيضًا' و 'قد يعجبك أيضًا' - مخفية."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"يتم عرض علامات المصغرات - مثل 'الناس شاهدوا أيضًا' و 'قد يعجبك أيضًا'."</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">شريط الفئة</string>
     <string name="revanced_preference_screen_category_bar_summary">إخفاء أو عرض شريط الفئة في الموجز، الفيديوهات ذات الصلة، نتائج البحث، والسجلّ.</string>

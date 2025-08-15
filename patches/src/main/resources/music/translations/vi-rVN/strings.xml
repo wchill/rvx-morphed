@@ -141,6 +141,8 @@ Hạn chế:
     <string name="revanced_change_start_page_entry_samples">Đoạn nhạc</string>
     <string name="revanced_change_start_page_entry_search">Tìm kiếm</string>
     <string name="revanced_change_start_page_entry_subscriptions">Kênh đăng ký</string>
+    <string name="revanced_disable_cairo_splash_animation_title">Vô hiệu hóa hoạt ảnh Cairo</string>
+    <string name="revanced_disable_cairo_splash_animation_summary">Vô hiệu hóa hoạt ảnh Cairo khi ứng dụng khởi chạy.</string>
     <string name="revanced_disable_dislike_redirection_title">Tắt chuyển hướng khi nhấn nút Không thích</string>
     <string name="revanced_disable_dislike_redirection_summary">Không chuyển đến bài hát tiếp theo khi nhấn vào nút Không thích.</string>
     <string name="revanced_disable_auto_captions_title">Tắt tự động hiển thị phụ đề</string>
@@ -319,6 +321,8 @@ Một số tính năng có thể không hoạt động bình thường trong b�
     <string name="revanced_custom_playback_speeds_invalid">Tốc độ phát tuỳ chỉnh phải nhỏ hơn %sx.</string>
     <string name="revanced_custom_playback_speeds_parse_exception">Tốc độ phát tùy chỉnh không hợp lệ.</string>
     <string name="revanced_remember_playback_speed_toast">Đã lưu tốc độ phát mặc định thành %s.</string>
+    <string name="revanced_remember_video_quality_auto_mobile">Đã lưu chất lượng video mặc định khi sử dụng dữ liệu di động thành Tự động.</string>
+    <string name="revanced_remember_video_quality_auto_wifi">Đã lưu chất lượng video mặc định khi sử dụng Wi-Fi thành Tự động.</string>
     <string name="revanced_remember_video_quality_mobile">Đã lưu chất lượng video mặc định khi sử dụng dữ liệu di động thành %s.</string>
     <string name="revanced_remember_video_quality_none">Đặt chất lượng video thất bại.</string>
     <string name="revanced_remember_video_quality_wifi">Đã lưu chất lượng video mặc định khi sử dụng Wi-Fi thành %s.</string>
@@ -437,8 +441,6 @@ Nhấp vào đây để xem các bước phát hành khóa API."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Bỏ qua miền bị chặn ở một số khu vực để có thể thu được được hình thu nhỏ video của danh sách phát, ảnh đại diện kênh, v. v.</string>
     <string name="revanced_change_share_sheet_title">Thay đổi bảng chia sẻ</string>
     <string name="revanced_change_share_sheet_summary">Chuyển bảng chia sẻ trong ứng dụng Youtube sang của hệ thống Android.</string>
-    <string name="revanced_disable_cairo_splash_animation_title">Vô hiệu hóa hoạt ảnh Cairo</string>
-    <string name="revanced_disable_cairo_splash_animation_summary">Vô hiệu hóa hoạt ảnh Cairo khi ứng dụng khởi chạy.</string>
     <string name="revanced_disable_drc_audio_title">Vô hiệu hoá audio DRC</string>
     <string name="revanced_disable_drc_audio_summary">Vô hiệu hoá tính năng nén dải âm thanh động.</string>
     <string name="revanced_disable_music_video_in_album_title">Tắt video âm nhạc trong đĩa nhạc</string>
@@ -484,6 +486,7 @@ Hạn chế:
 
 Hạn chế:
 • Đôi khi phụ đề hiển thị ở phía trên của trình phát thay vì ở phía dưới như thường lệ."</string>
+    <string name="revanced_spoof_video_streams_title">Giả mạo luồng video</string>
     <string name="revanced_watch_history_type_title">Kiểu nhật ký</string>
     <string name="revanced_watch_history_type_summary">"• Gốc: Tuân theo cài đặt nhật ký xem của tài khoản Google, nhưng có thể không hoạt động do DNS hoặc VPN.
 • Thay thế miền: Vẫn tuân theo cài đặt nhật ký xem của tài khoản Google.

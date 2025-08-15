@@ -270,16 +270,6 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_hide_feed_captions_button_title">字幕ボタンを非表示</string>
     <string name="revanced_hide_feed_captions_button_on">フィードから字幕のボタンを非表示にします。</string>
     <string name="revanced_hide_feed_captions_button_off">フィードから字幕のボタンを非表示にします。</string>
-    <string name="revanced_hide_carousel_shelf_title">おすすめ欄を非表示</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"以下の欄を非表示にします:
-・関連が強い
-・ショッピング
-・続きを見る
-・ニュース速報
-・もう一度聴く
-・もう一度見る
-・他のチャンネルを探す"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">以下の欄を非表示にします:\n・関連が強い\n・ショッピング\n・続きを見る\n・ニュース速報\n・もう一度聴く\n・もう一度見る\n・他のチャンネルを探す</string>
     <string name="revanced_hide_chips_shelf_title">チップ欄を非表示</string>
     <string name="revanced_hide_chips_shelf_on">フィードに表示される似ている動画のチップ欄を非表示にします。</string>
     <string name="revanced_hide_chips_shelf_off">フィードに表示される似ている動画のチップ欄を非表示にします。</string>
@@ -331,6 +321,7 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_hide_video_recommendation_labels_title">サムネイルラベルを非表示</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"「あなたへのおすすめ」「他の人はこの動画も視聴しています」のようなサムネイルのラベルを非表示にします。"</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"「あなたへのおすすめ」「他の人はこの動画も視聴しています」のようなサムネイルのラベルを非表示にします。"</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">カテゴリーバー</string>
     <string name="revanced_preference_screen_category_bar_summary">フィード、検索、関連動画からカテゴリバー ([すべて]、[ゲーム]、[音楽] など) を非表示または表示します。</string>

@@ -141,6 +141,8 @@ Limitazioni:
     <string name="revanced_change_start_page_entry_samples">Esempi</string>
     <string name="revanced_change_start_page_entry_search">Cerca</string>
     <string name="revanced_change_start_page_entry_subscriptions">Sottoscrizioni</string>
+    <string name="revanced_disable_cairo_splash_animation_title">Disabilita animazione di avvio Cairo</string>
+    <string name="revanced_disable_cairo_splash_animation_summary">Disabilita l\'animazione di avvio Cairo all\'avvio dell\'applicazione.</string>
     <string name="revanced_disable_dislike_redirection_title">Disattiva il reindirizzamento Non mi piace</string>
     <string name="revanced_disable_dislike_redirection_summary">Disabilita il reindirizzamento alla traccia successiva quando si fa clic sul pulsante Non mi piace.</string>
     <string name="revanced_disable_auto_captions_title">Disabilita i sottotitoli automatici forzati</string>
@@ -431,8 +433,6 @@ Fai clic per vedere come emettere una chiave API."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Ignora il dominio bloccato in alcune regioni in modo che le miniature della playlist, gli avatar del canale, ecc. possano essere ricevuti.</string>
     <string name="revanced_change_share_sheet_title">Cambia foglio di condivisione</string>
     <string name="revanced_change_share_sheet_summary">Sostituisce il foglio di condivisione in-app con il foglio di condivisione di sistema.</string>
-    <string name="revanced_disable_cairo_splash_animation_title">Disabilita animazione di avvio Cairo</string>
-    <string name="revanced_disable_cairo_splash_animation_summary">Disabilita l\'animazione di avvio Cairo all\'avvio dell\'applicazione.</string>
     <string name="revanced_disable_drc_audio_title">Disabilita audio DRC</string>
     <string name="revanced_disable_drc_audio_summary">Disabilita DRC (Compressione Gamma Dinamica) applicato all\'audio.</string>
     <string name="revanced_disable_music_video_in_album_title">Disabilita video musicali nell\'album</string>

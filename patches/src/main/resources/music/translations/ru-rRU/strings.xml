@@ -142,6 +142,8 @@
     <string name="revanced_change_start_page_entry_samples">Сэмплы</string>
     <string name="revanced_change_start_page_entry_search">Поиск</string>
     <string name="revanced_change_start_page_entry_subscriptions">Подписки</string>
+    <string name="revanced_disable_cairo_splash_animation_title">Отключить анимацию Кайро</string>
+    <string name="revanced_disable_cairo_splash_animation_summary">Отключает анимацию Кайро при запуске приложения.</string>
     <string name="revanced_disable_dislike_redirection_title">Отключить переключение при \"Не нравится\"</string>
     <string name="revanced_disable_dislike_redirection_summary">Отключает перенаправление на следующий трек при нажатии на кнопку \"Не нравится\".</string>
     <string name="revanced_disable_auto_captions_title">Отключить автоматические субтитры</string>
@@ -317,6 +319,8 @@
     <string name="revanced_custom_playback_speeds_invalid">Недопустимые скорости. Значения сброшены к начальным.</string>
     <string name="revanced_custom_playback_speeds_parse_exception">Недопустимые пользовательские скорости воспроизведения. Используются значения по умолчанию.</string>
     <string name="revanced_remember_playback_speed_toast">Скорость по умолчанию изменена на %s.</string>
+    <string name="revanced_remember_video_quality_auto_mobile">Качество по умолчанию при моб. сети изменено на \"Авто\".</string>
+    <string name="revanced_remember_video_quality_auto_wifi">Качество по умолчанию при Wi-Fi изменено на \"Авто\".</string>
     <string name="revanced_remember_video_quality_mobile">Качество по умолчанию при моб. сети изменено на %s.</string>
     <string name="revanced_remember_video_quality_none">Не удалось установить качество.</string>
     <string name="revanced_remember_video_quality_wifi">Качество по умолчанию при Wi-Fi изменено на %s.</string>
@@ -435,8 +439,6 @@
     <string name="revanced_bypass_image_region_restrictions_summary">Заменяет заблокированный в некоторых регионах домен, чтобы можно было получать миниатюры плейлистов, аватары каналов и т. д.</string>
     <string name="revanced_change_share_sheet_title">Изменить окно \"Поделиться\"</string>
     <string name="revanced_change_share_sheet_summary">Меняет тип диалогового окна \"Поделиться\" из встроенного на системное.</string>
-    <string name="revanced_disable_cairo_splash_animation_title">Отключить анимацию Кайро</string>
-    <string name="revanced_disable_cairo_splash_animation_summary">Отключает анимацию Кайро при запуске приложения.</string>
     <string name="revanced_disable_drc_audio_title">Отключить DRC аудио</string>
     <string name="revanced_disable_drc_audio_summary">Выключает DRC (сжатие динамического диапазона), применяемого к аудио.</string>
     <string name="revanced_disable_music_video_in_album_title">Отключить музыкальные видео в альбоме</string>
@@ -477,6 +479,19 @@
 
 Побочный эффект:
 • Иногда субтитры располагаются в верхней части плеера, а не в нижней."</string>
+    <string name="revanced_spoof_video_streams_title">Подменить видеопотоки</string>
+    <string name="revanced_spoof_video_streams_summary">"Подменять клиентские видеопотоки для предотвращения проблем с воспроизведением.
+
+Побочный эффект:
+• Приложение может принудительно закрываться при использовании VPN или DNS.
+• Звук может периодически прерываться во время воспроизведения на клиентах потоковой передачи с адаптивным битрейтом (все клиенты, кроме Android VR 1.43.32)."</string>
+    <string name="revanced_spoof_video_streams_default_client_title">Клиент по умолчанию</string>
+    <string name="revanced_spoof_video_streams_default_client_summary">Определяет клиент по умолчанию для подмены.</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32">Android VR 1.43.32</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09">Android VR 1.65.09</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
     <string name="revanced_watch_history_type_title">Тип истории просмотра</string>
     <string name="revanced_watch_history_type_summary">"• Оригинальный: Соответствует настройкам истории просмотров аккаунта Google, но история просмотров может не работать через DNS или VPN.
 • Заменить домен: Настройка истории просмотров аккаунта Google.

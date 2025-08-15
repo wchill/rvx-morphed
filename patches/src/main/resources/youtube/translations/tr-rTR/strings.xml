@@ -111,15 +111,6 @@ DeArrow hakkında daha fazla bilgi edinmek için buraya dokunun."</string>
     <string name="revanced_hide_feed_captions_button_title">Akış altyazı butonunu gizle</string>
     <string name="revanced_hide_feed_captions_button_on">Altyazılar butonu gizleniyor.</string>
     <string name="revanced_hide_feed_captions_button_off">Altyazılar butonu gizlenmiyor.</string>
-    <string name="revanced_hide_carousel_shelf_title">Karosel raflarını gizle</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Karosel  rafları gizlidir, örneğin:
-• Son dakika haberleri
-• İzlemeye devam edin
-• Daha fazla kanal keşfedin
-• Tekrar dinleyin
-• Alışveriş
-• Tekrar izleyin"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Karosel rafları gösteriliyor.</string>
     <string name="revanced_hide_chips_shelf_title">Buna benzer daha çok video çipini gizle</string>
     <string name="revanced_hide_chips_shelf_on">Silindirik öneri butonları ve menüleri gizleniyor</string>
     <string name="revanced_hide_chips_shelf_off">Silindirik öneri butonları ve menüleri gösteriliyor</string>
@@ -153,6 +144,7 @@ DeArrow hakkında daha fazla bilgi edinmek için buraya dokunun."</string>
     <string name="revanced_hide_ticket_shelf_title">Biletler kısmını gizle</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Gizleniyor</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Gizlenmiyor</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Kategori çubuğu</string>
     <string name="revanced_preference_screen_category_bar_summary">Akışta, arama sonuçlarında ve ilgili videolardaki kategori barını gizle veya göster.</string>

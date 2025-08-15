@@ -139,6 +139,8 @@ Korlátozások:
     <string name="revanced_change_start_page_entry_samples">Minták</string>
     <string name="revanced_change_start_page_entry_search">Kereső</string>
     <string name="revanced_change_start_page_entry_subscriptions">Feliratkozások</string>
+    <string name="revanced_disable_cairo_splash_animation_title">Betöltési animáció kikapcsolása</string>
+    <string name="revanced_disable_cairo_splash_animation_summary">Letiltja a betöltési animációt amikor az app indul.</string>
     <string name="revanced_disable_dislike_redirection_title">Nem tetszik átirányítás letiltása</string>
     <string name="revanced_disable_dislike_redirection_summary">Letiltja az átirányítást a következő számra, amikor rányomsz a nem tetszik gombra.</string>
     <string name="revanced_disable_auto_captions_title">Kényszerített automatikus feliratok letiltása</string>
@@ -395,8 +397,6 @@ Kattintson ide az API-kulcs kiadásának megtekintéséhez."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Helyettesíti az egyes régiókban blokkolt domaint, így a lejátszási lista miniatűrjei, csatorna avatarok stb. fogadhatóak.</string>
     <string name="revanced_change_share_sheet_title">Megosztási lap megváltoztatása</string>
     <string name="revanced_change_share_sheet_summary">Az alkalmazáson belüli megosztási lapot a rendszer megosztási lapjára változtatja.</string>
-    <string name="revanced_disable_cairo_splash_animation_title">Betöltési animáció kikapcsolása</string>
-    <string name="revanced_disable_cairo_splash_animation_summary">Letiltja a betöltési animációt amikor az app indul.</string>
     <string name="revanced_disable_drc_audio_title">DRC hang letiltása</string>
     <string name="revanced_disable_drc_audio_summary">Letiltja a hangra alkalmazott DRC-t (dinamikatartomány-kompresszió).</string>
     <string name="revanced_disable_music_video_in_album_title">Zenei videó letiltása az albumban</string>

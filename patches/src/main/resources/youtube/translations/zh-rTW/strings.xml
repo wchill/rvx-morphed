@@ -270,15 +270,6 @@
     <string name="revanced_hide_feed_captions_button_title">隱藏動態字幕按鈕</string>
     <string name="revanced_hide_feed_captions_button_on">字幕按鈕已隱藏</string>
     <string name="revanced_hide_feed_captions_button_off">字幕按鈕已顯示</string>
-    <string name="revanced_hide_carousel_shelf_title">隱藏輪播內容</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"隱藏以下分類區，如：
-• 突發新聞
-• 繼續觀看
-• 探索更多管道
-• 再聽一遍
-• 購物
-• 再看一遍"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">分類區已顯示</string>
     <string name="revanced_hide_chips_shelf_title">隱藏剪輯</string>
     <string name="revanced_hide_chips_shelf_on">剪輯已隱藏</string>
     <string name="revanced_hide_chips_shelf_off">剪輯已顯示</string>
@@ -330,6 +321,7 @@
     <string name="revanced_hide_video_recommendation_labels_title">隱藏影片推薦標籤</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"縮圖標籤 - 例如 '人們還觀看了' 和 '您可能還喜歡' - 已隱藏。"</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"縮圖標籤 - 例如 '人們還觀看了' 和 '您可能還喜歡' - 已隱藏。"</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">類別欄</string>
     <string name="revanced_preference_screen_category_bar_summary">隱藏或顯示來源、搜尋和相關影片中的類別欄</string>

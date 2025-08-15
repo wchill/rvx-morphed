@@ -270,15 +270,6 @@ Stuknij tutaj, aby dowiedzieć się więcej o DeArrow."</string>
     <string name="revanced_hide_feed_captions_button_title">Przycisk od napisów na stronie głównej</string>
     <string name="revanced_hide_feed_captions_button_on">Ukryty</string>
     <string name="revanced_hide_feed_captions_button_off">Widoczny</string>
-    <string name="revanced_hide_carousel_shelf_title">Półki karuzelowe</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Ukryte, konkretnie półki:
-• z najnowszymi informacjami
-• z filmami, które nie zostały dokończone
-• od odkrywania kanałów
-• z muzyką do ponownego odsłuchania
-• od kupowania
-• z filmami, które nie zostały obejrzane"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Widoczne</string>
     <string name="revanced_hide_chips_shelf_title">Paski z kategoriami</string>
     <string name="revanced_hide_chips_shelf_on">Ukryte</string>
     <string name="revanced_hide_chips_shelf_off">Widoczne</string>
@@ -330,6 +321,7 @@ Stuknij tutaj, aby dowiedzieć się więcej o DeArrow."</string>
     <string name="revanced_hide_video_recommendation_labels_title">Etykiety z rekomendacjami filmów</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Ukryte"</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Widoczne"</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Pasek kategorii</string>
     <string name="revanced_preference_screen_category_bar_summary">Ukryj lub pokazuj pasek z kategoriami na stronie głównej, nad wynikami wyszukiwania, powiązanymi filmami i historią wyszukiwania</string>
@@ -1449,7 +1441,9 @@ Funkcja działa najlepiej przy bardzo szybkim połączeniu internetowym."</strin
     <string name="revanced_preference_screen_shorts_title">Shortsy</string>
     <string name="revanced_disable_shorts_background_playback_title">Odtwarzanie Shortsów w tle</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">Wyłączone</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">"Włączone"</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"Włączone
+
+Informacja: odtwarzanie w tle Shortsów jest dostępne wyłącznie w trybie 'Obraz w obrazie'"</string>
     <string name="revanced_disable_resuming_shorts_player_title">Start od Shortsów</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">Shortsy nie będą włączane podczas startu aplikacji</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">Shortsy będą włączane podczas startu aplikacji</string>

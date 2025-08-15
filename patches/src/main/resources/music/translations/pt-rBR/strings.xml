@@ -142,6 +142,8 @@ Limitações:
     <string name="revanced_change_start_page_entry_samples">Descobertas</string>
     <string name="revanced_change_start_page_entry_search">Buscar</string>
     <string name="revanced_change_start_page_entry_subscriptions">Inscrições</string>
+    <string name="revanced_disable_cairo_splash_animation_title">Desativar a animação inicial do Cairo</string>
+    <string name="revanced_disable_cairo_splash_animation_summary">Desabilita a animação inicial do Cairo quando o aplicativo é iniciado.</string>
     <string name="revanced_disable_dislike_redirection_title">Desativar redirecionamento de dislike</string>
     <string name="revanced_disable_dislike_redirection_summary">Desativa o redirecionamento para a próxima faixa ao clicar no botão de Dislike.</string>
     <string name="revanced_disable_auto_captions_title">Desativar legendas automáticas</string>
@@ -437,8 +439,6 @@ Clique para ver como emitir uma chave de API."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Ignora o domínio que está bloqueado em algumas regiões para que miniaturas para playlists, avatares de canais, etc. possam ser recebidos.</string>
     <string name="revanced_change_share_sheet_title">Alterar menu de compartilhamento</string>
     <string name="revanced_change_share_sheet_summary">Altera o menu de compartilhamento do app para o meno de compartilhamento do sistema.</string>
-    <string name="revanced_disable_cairo_splash_animation_title">Desativar a animação inicial do Cairo</string>
-    <string name="revanced_disable_cairo_splash_animation_summary">Desabilita a animação inicial do Cairo quando o aplicativo é iniciado.</string>
     <string name="revanced_disable_drc_audio_title">Desativar áudio DRC</string>
     <string name="revanced_disable_drc_audio_summary">Desativa o DRC (Compressão de faixa dinâmica) aplicada ao áudio.</string>
     <string name="revanced_disable_music_video_in_album_title">Desativar vídeo da música no álbum</string>

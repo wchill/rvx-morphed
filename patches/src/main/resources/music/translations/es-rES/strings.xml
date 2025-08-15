@@ -140,6 +140,8 @@ Problemas conocidos:
     <string name="revanced_change_start_page_entry_samples">Muestras</string>
     <string name="revanced_change_start_page_entry_search">Buscar</string>
     <string name="revanced_change_start_page_entry_subscriptions">Suscripciones</string>
+    <string name="revanced_disable_cairo_splash_animation_title">Desactiva la animación Cairo</string>
+    <string name="revanced_disable_cairo_splash_animation_summary">Deshabilita la animación de bienvenida \"Cairo\" cuando se inicia la aplicación.</string>
     <string name="revanced_disable_dislike_redirection_title">Desactivar redirección de No me Gusta</string>
     <string name="revanced_disable_dislike_redirection_summary">Deshabilita la redirección a la siguiente pista al hacer clic en el botón No me Gusta.</string>
     <string name="revanced_disable_auto_captions_title">Desactivar subtítulos automáticos</string>
@@ -425,8 +427,6 @@ Toca para ver cómo crear una clave de API."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Reemplaza el dominio que está bloqueado en algunas regiones para que las miniaturas de la lista de reproducción, avatares de canales, etc. puedan ser recibidas.</string>
     <string name="revanced_change_share_sheet_title">Cambiar la hoja de compartir</string>
     <string name="revanced_change_share_sheet_summary">Cambia la hoja de compartir en la app a la hoja de compartir del sistema.</string>
-    <string name="revanced_disable_cairo_splash_animation_title">Desactiva la animación Cairo</string>
-    <string name="revanced_disable_cairo_splash_animation_summary">Deshabilita la animación de bienvenida \"Cairo\" cuando se inicia la aplicación.</string>
     <string name="revanced_disable_drc_audio_title">Desactivar audio DRC</string>
     <string name="revanced_disable_drc_audio_summary">Deshabilita DRC (Dynamic Range Compression) aplicado al audio.</string>
     <string name="revanced_disable_music_video_in_album_title">Desactivar vídeo de música en el álbum</string>

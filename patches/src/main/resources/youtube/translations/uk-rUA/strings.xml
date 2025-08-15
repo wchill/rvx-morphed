@@ -270,15 +270,6 @@
     <string name="revanced_hide_feed_captions_button_title">Приховати кнопку Субтитри</string>
     <string name="revanced_hide_feed_captions_button_on">Кнопку субтитрів приховано.</string>
     <string name="revanced_hide_feed_captions_button_off">Кнопку субтитрів показується.</string>
-    <string name="revanced_hide_carousel_shelf_title">Приховати карусельні полиці</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Карусельні полиці приховано:
-• Важливі новини
-• Продовжити перегляд
-• Переглянути більше каналів
-• Прослухати знову
-• Покупки
-• Переглянути ще раз"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Карусельні полиці показується.</string>
     <string name="revanced_hide_chips_shelf_title">Приховати полицю фішок</string>
     <string name="revanced_hide_chips_shelf_on">Полицю фішок приховано</string>
     <string name="revanced_hide_chips_shelf_off">Полицю фішок показується</string>
@@ -330,6 +321,7 @@
     <string name="revanced_hide_video_recommendation_labels_title">Приховати мітки відеорекомендацій</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Мітки мініатюр, такі як 'Люди також дивилися' та 'Вам також може сподобатись', приховано."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Мітки мініатюр, такі як 'Люди також дивилися' та 'Вам також може сподобатись', показується."</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Панель категорій</string>
     <string name="revanced_preference_screen_category_bar_summary">Приховувати чи показувати панель категорій у стрічці, пошуку та пов\'язаних відео.</string>

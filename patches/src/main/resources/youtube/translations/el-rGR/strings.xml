@@ -268,16 +268,6 @@
     <string name="revanced_hide_feed_captions_button_title">Κουμπί υπότιτλων</string>
     <string name="revanced_hide_feed_captions_button_on">Κρυμμένο.</string>
     <string name="revanced_hide_feed_captions_button_off">Εμφανίζεται.</string>
-    <string name="revanced_hide_carousel_shelf_title">Οριζόντιες ενότητες προτάσεων</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Απόκρυψη ενοτήτων όπως:
-• Έκτακτη είδηση
-• Συνέχεια παρακολούθησης
-• Εξερευνήστε περισσότερα κανάλια
-• Ακούστε ξανά
-• Πιο σχετικά
-• Αγορές
-• Παρακολουθήστε ξανά"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Εμφανίζονται.</string>
     <string name="revanced_hide_chips_shelf_title">Ενότητα σχετιζόμενων λέξεων</string>
     <string name="revanced_hide_chips_shelf_on">Κρυμμένη.</string>
     <string name="revanced_hide_chips_shelf_off">Εμφανίζεται.</string>
@@ -329,6 +319,7 @@
     <string name="revanced_hide_video_recommendation_labels_title">Ετικέτες προτάσεων βίντεο</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Κρυμμένες.\n\nΑφορά ετικέτες όπως τις «Άλλοι χρήστες παρακολούθησαν επίσης» και «Ενδέχεται επίσης να σας αρέσει»."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Εμφανίζονται.\n\nΑφορά ετικέτες όπως τις «Άλλοι χρήστες παρακολούθησαν επίσης» και «Ενδέχεται επίσης να σας αρέσει»."</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Γραμμή κατηγοριών</string>
     <string name="revanced_preference_screen_category_bar_summary">Απόκρυψη ή εμφάνιση της γραμμής κατηγοριών στις ροές, στα σχετικά βίντεο, στα αποτελέσματα αναζήτησης και στο ιστορικό παρακολούθησης.</string>
@@ -1451,7 +1442,9 @@ Playlists
     <string name="revanced_preference_screen_shorts_title">Shorts</string>
     <string name="revanced_disable_shorts_background_playback_title">Απενεργοποίηση αναπαραγωγής παρασκηνίου για τα Shorts</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">Η αναπαραγωγή παρασκηνίου είναι απενεργοποιημένη για τα Shorts.</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">"Η αναπαραγωγή παρασκηνίου είναι ενεργοποιημένη για τα Shorts."</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"Η αναπαραγωγή παρασκηνίου είναι ενεργοποιημένη για τα Shorts.
+
+Πληροφορίες: Η αναπαραγωγή Shorts στο παρασκήνιο είναι μόνο διαθέσιμη σε λειτουργία Picture-in-picture."</string>
     <string name="revanced_disable_resuming_shorts_player_title">Απενεργοποίηση συνέχισης των Shorts</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">Η αναπαραγωγή Shorts δε θα συνεχίζεται κατά την εκκίνηση της εφαρμογής.</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">Η αναπαραγωγή Shorts θα συνεχίζεται κατά την εκκίνηση της εφαρμογής.</string>

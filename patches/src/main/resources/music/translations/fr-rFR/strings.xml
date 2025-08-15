@@ -141,6 +141,8 @@ Limitations :
     <string name="revanced_change_start_page_entry_samples">Échantillons</string>
     <string name="revanced_change_start_page_entry_search">Recherche</string>
     <string name="revanced_change_start_page_entry_subscriptions">Abonnements</string>
+    <string name="revanced_disable_cairo_splash_animation_title">Désactiver l\'animation Cairo au démarrage</string>
+    <string name="revanced_disable_cairo_splash_animation_summary">Désactive l\'animation Cairo lors du démarrage de l\'application.</string>
     <string name="revanced_disable_dislike_redirection_title">Désactiver la redirection du bouton \"Je n\'aime pas\"</string>
     <string name="revanced_disable_dislike_redirection_summary">Désactive le passage à la piste suivante lorsque vous cliquez sur le bouton \"Je n\'aime pas\".</string>
     <string name="revanced_disable_auto_captions_title">Désactiver les sous-titres forcés</string>
@@ -431,8 +433,6 @@ Cliquez ici pour découvrir comment créer une clé API."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Remplace le domaine qui est bloqué dans certaines régions afin que les miniatures des listes de lecture, les avatars des chaînes, etc. puissent être reçus.</string>
     <string name="revanced_change_share_sheet_title">Modifier la fiche de partage</string>
     <string name="revanced_change_share_sheet_summary">Remplace la fiche de partage de l\'appli par celui du système.</string>
-    <string name="revanced_disable_cairo_splash_animation_title">Désactiver l\'animation Cairo au démarrage</string>
-    <string name="revanced_disable_cairo_splash_animation_summary">Désactive l\'animation Cairo lors du démarrage de l\'application.</string>
     <string name="revanced_disable_drc_audio_title">Désactiver l\'audio DRC</string>
     <string name="revanced_disable_drc_audio_summary">Désactive la DRC (compression de plage dynamique) appliquée à l\'audio.</string>
     <string name="revanced_disable_music_video_in_album_title">Désactiver le clip vidéo dans l\'album</string>

@@ -99,15 +99,6 @@
     <string name="revanced_hide_feed_captions_button_title">Бутон за субтити</string>
     <string name="revanced_hide_feed_captions_button_on">Бутона за субтити е скрит.</string>
     <string name="revanced_hide_feed_captions_button_off">Бутона за субтити се показва.</string>
-    <string name="revanced_hide_carousel_shelf_title">Скриване на рафта с Препоръчани</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Скрива рафтове:
-• Извънредни новини
-• Продължете да разглеждате
-• Още канали
-• Слушайте отново
-• Покупки
-• Гледайте отново"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Показани са рафтовете.</string>
     <string name="revanced_hide_chips_shelf_title">Скриване на филмовите рафтове</string>
     <string name="revanced_hide_chips_shelf_on">Филмовите рафтове са скрити.</string>
     <string name="revanced_hide_chips_shelf_off">Филмовите рафтове се показват.</string>
@@ -147,6 +138,7 @@
     <string name="revanced_hide_ticket_shelf_title">Секция за билети</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Рафтовете с билети са скрити.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Рафтовете с билети се показват.</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Панел с категорий</string>
     <string name="revanced_preference_screen_category_bar_summary">Скриване или показване на лентата с категории в емисията, резултатите от търсенето и свързаните видеоклипове.</string>

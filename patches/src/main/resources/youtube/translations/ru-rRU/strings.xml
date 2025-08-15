@@ -271,15 +271,6 @@
     <string name="revanced_hide_feed_captions_button_title">Кнопка \"Субтитры\" в ленте</string>
     <string name="revanced_hide_feed_captions_button_on">Кнопка \"Субтитры\" в ленте скрыта.</string>
     <string name="revanced_hide_feed_captions_button_off">Кнопка \"Субтитры\" в ленте отображена.</string>
-    <string name="revanced_hide_carousel_shelf_title">Скрыть рекомендуемые секции</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Скрывает полки карусели:
-• Срочные новости
-• Продолжить просмотр
-• Больше каналов
-• Слушать ещё раз
-• Покупки
-• Смотреть ещё раз"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Полки карусели отображены.</string>
     <string name="revanced_hide_chips_shelf_title">Полка эпизодов</string>
     <string name="revanced_hide_chips_shelf_on">Полка эпизодов скрыта.</string>
     <string name="revanced_hide_chips_shelf_off">Полка эпизодов отображена.</string>
@@ -331,6 +322,7 @@
     <string name="revanced_hide_video_recommendation_labels_title">Метки рекомендованных видео</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Метки \"Люди также смотрели\" и \"Вы можете понравиться\" скрыты."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Метки \"Люди также смотрели\" и \"Вы можете понравиться\" отображены."</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Панель категорий</string>
     <string name="revanced_preference_screen_category_bar_summary">Скрытие или отображение панели категорий в ленте, поиске и похожих видео.</string>

@@ -261,15 +261,6 @@ Toque aqui para saber mais sobre o DeArrow."</string>
     <string name="revanced_hide_feed_captions_button_title">Ocultar botão de legendas no feed</string>
     <string name="revanced_hide_feed_captions_button_on">O botão de legendas está oculto.</string>
     <string name="revanced_hide_feed_captions_button_off">O botão de legendas será exibido.</string>
-    <string name="revanced_hide_carousel_shelf_title">Ocultar painel de carrossel</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Os painéis do carrossel estão ocultas, como:
-• Últimas notícias
-• Continuar assistindo
-• Explorar mais canais
-• Ouça novamente
-• Compras
-• Assistir novamente"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Os painéis do carrossel serão exibidos.</string>
     <string name="revanced_hide_chips_shelf_title">Ocultar painel de chips</string>
     <string name="revanced_hide_chips_shelf_on">O painel de chips está oculto.</string>
     <string name="revanced_hide_chips_shelf_off">O painel de chips será exibido.</string>
@@ -318,6 +309,7 @@ Toque aqui para saber mais sobre o DeArrow."</string>
     <string name="revanced_hide_ticket_shelf_title">Ocultar painel de ingressos</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Os painéis de ingressos estão ocultos.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Os painéis de ingressos serão exibidos.</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Barra de categoria</string>
     <string name="revanced_preference_screen_category_bar_summary">Ocultar ou mostrar a barra de categorias no feed, pesquisa e vídeos relacionados.</string>

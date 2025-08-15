@@ -216,14 +216,6 @@ Tippen Sie hier, um mehr über DeArrow zu erfahren."</string>
     <string name="revanced_hide_feed_captions_button_title">Verstecke \"Untertitel\" Schaltfläche</string>
     <string name="revanced_hide_feed_captions_button_on">Schaltfläche \"Untertitel\" ist versteckt.</string>
     <string name="revanced_hide_feed_captions_button_off">Schaltfläche \"Untertitel\" wird angezeigt.</string>
-    <string name="revanced_hide_carousel_shelf_title">Karussellregal ausblenden</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Versteckt folgende Abschnitte:
-- Aktuelle Nachrichten
-- Weiterschauen
-- Entdecke mehr Kanäle
-- Shopping
-- Erneut anschauen"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Karussellregale werden angezeigt.</string>
     <string name="revanced_hide_chips_shelf_title">Chips-Abschnitt verstecken</string>
     <string name="revanced_hide_chips_shelf_on">Chips-Abschnitt wird versteckt.</string>
     <string name="revanced_hide_chips_shelf_off">Chips-Abschnitt wird angezeigt</string>
@@ -266,6 +258,7 @@ Tippen Sie hier, um mehr über DeArrow zu erfahren."</string>
     <string name="revanced_hide_ticket_shelf_title">Ticket-Abschnitte verstecken</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Ticket-Abschnitte sind versteckt</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Ticket-Abschnitte werden angezeigt</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Kategorieleiste</string>
     <string name="revanced_preference_screen_category_bar_summary">Verstecke oder zeige die Kategorieleiste im Feed, Suche und verwandten Videos an.</string>

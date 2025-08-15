@@ -149,15 +149,6 @@ Ketuk di sini untuk mempelajari lebih lanjut tentang DeArrow."</string>
     <string name="revanced_hide_feed_captions_button_title">Sembunyikan tombol Teks</string>
     <string name="revanced_hide_feed_captions_button_on">Tombol teks disembunyikan.</string>
     <string name="revanced_hide_feed_captions_button_off">Tombol teks ditampilkan.</string>
-    <string name="revanced_hide_carousel_shelf_title">Sembunyikan rak carousel</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Rak carousel disembunyikan, seperti:
-• Berita terbaru
-• Lanjutkan menonton
-• Jelajahi lebih banyak saluran
-• Dengarkan lagi
-• Belanja
-• Tonton lagi"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Rak carousel ditampilkan.</string>
     <string name="revanced_hide_chips_shelf_title">Sembunyikan kepingan rak</string>
     <string name="revanced_hide_chips_shelf_on">Kepingan rak disembunyikan.</string>
     <string name="revanced_hide_chips_shelf_off">Kepingan rak ditampilkan.</string>
@@ -197,6 +188,7 @@ Ketuk di sini untuk mempelajari lebih lanjut tentang DeArrow."</string>
     <string name="revanced_hide_ticket_shelf_title">Sembunyikan rak tiket</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Rak tiket disembunyikan.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Rak tiket ditunjukkan.</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Bilah kategori</string>
     <string name="revanced_preference_screen_category_bar_summary">Sembunyikan atau tampilkan bilah kategori di feed, pencarian, dan video terkait.</string>

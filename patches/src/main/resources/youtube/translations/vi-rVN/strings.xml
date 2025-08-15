@@ -270,16 +270,6 @@ Nhấn vào đây để tìm hiểu thêm về DeArrow."</string>
     <string name="revanced_hide_feed_captions_button_title">Ẩn nút Phụ đề</string>
     <string name="revanced_hide_feed_captions_button_on">Nút Phụ đề đã ẩn.</string>
     <string name="revanced_hide_feed_captions_button_off">Nút Phụ đề được hiển thị.</string>
-    <string name="revanced_hide_carousel_shelf_title">Ẩn các kệ được cá nhân hoá</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Các kệ ngang đã ẩn, chẳng hạn như:
-• Tin nổi bật
-• Tiếp tục xem
-• Khám phá các chủ đề khác
-• Nghe lại
-• Phù hợp nhất
-• Mua sắm
-• Xem lại"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Các kệ được hiển thị.</string>
     <string name="revanced_hide_chips_shelf_title">Ẩn kệ danh mục đề xuất</string>
     <string name="revanced_hide_chips_shelf_on">Kệ danh mục được đề xuất đã ẩn.</string>
     <string name="revanced_hide_chips_shelf_off">Kệ danh mục được đề xuất được hiển thị.</string>
@@ -331,6 +321,7 @@ Nhấn vào đây để tìm hiểu thêm về DeArrow."</string>
     <string name="revanced_hide_video_recommendation_labels_title">Ẩn nhãn video đề xuất</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Nhãn hình thu nhỏ - ví dụ như 'Mọi người cũng xem video này' và 'Có thể bạn cũng thích nội dung này' - đã ẩn."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Nhãn hình thu nhỏ - ví dụ như 'Mọi người cũng xem video này' và 'Có thể bạn cũng thích nội dung này' - được hiển thị."</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Thanh danh mục</string>
     <string name="revanced_preference_screen_category_bar_summary">Ẩn hoặc hiển thị thanh danh mục trong các trang video, video liên quan, kết quả tìm kiếm và video đã xem.</string>
@@ -577,7 +568,7 @@ Nếu muốn tắt tính năng này sau đó, bạn nên xóa dữ liệu ứng 
     <string name="revanced_spoof_app_version_target_entry_17_41_37">17.41.37 - Khôi phục kệ Danh sách phát kiểu cũ</string>
     <string name="revanced_spoof_app_version_target_entry_18_05_40">18.05.40 - Khôi phục khung nhập bình luận cũ</string>
     <string name="revanced_spoof_app_version_target_entry_18_17_43">18.17.43 - Khôi phục trình đơn Cài đặt trình phát cũ</string>
-    <string name="revanced_spoof_app_version_target_entry_18_33_40">18.33.40 - Khôi phục thanh thao tác trình Shorts cũ</string>
+    <string name="revanced_spoof_app_version_target_entry_18_33_40">18.33.40 - Khôi phục bảng nút thao tác Shorts kiểu cũ</string>
     <string name="revanced_spoof_app_version_target_entry_18_38_45">18.38.45 - Khôi phục phương thức áp dụng chất lượng video mặc định cũ</string>
     <string name="revanced_spoof_app_version_target_entry_18_48_39">18.48.39 - Vô hiệu hoá cập nhật số \"lượt xem\" và \"lượt thích\" theo thời gian thực</string>
     <string name="revanced_spoof_app_version_target_entry_19_01_34">19.01.34 - Tắt tương tác với mô tả video</string>
@@ -902,8 +893,8 @@ Cài đặt → Tự động phát/Phát → Tự động phát video tiếp the
     <string name="revanced_sanitize_video_subtitle_summary_on">"Các tag có cụm từ như \"#\", \"Chiến dịch gây quỹ\", \"Cửa hàng\" và \"sản phẩm\" đã ẩn bên dưới tiêu đề video."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Các tag có các cụm từ như \"#\", \"Chiến dịch gây quỹ\", \"Cửa hàng\" và \"sản phẩm\" được hiển thị trong phụ đề video."</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
-    <string name="revanced_preference_screen_action_buttons_title">Nút tương tác</string>
-    <string name="revanced_preference_screen_action_buttons_summary">Ẩn hoặc hiển thị các nút tương tác bên dưới video.</string>
+    <string name="revanced_preference_screen_action_buttons_title">Nút thao tác</string>
+    <string name="revanced_preference_screen_action_buttons_summary">Ẩn hoặc hiển thị các nút thao tác bên dưới video.</string>
     <string name="revanced_disable_like_dislike_glow_title">Tắt hoạt ảnh các nút Thích và Không thích</string>
     <string name="revanced_disable_like_dislike_glow_summary_on">Các nút Thích và Không thích sẽ không sáng lên khi nhấn vào.</string>
     <string name="revanced_disable_like_dislike_glow_summary_off">Các nút Thích và Không thích sẽ sáng lên khi nhấn vào.</string>
@@ -947,17 +938,17 @@ Cài đặt → Tự động phát/Phát → Tự động phát video tiếp the
     <string name="revanced_hide_thanks_button_summary_on">Nút Cảm ơn đã ẩn.</string>
     <string name="revanced_hide_thanks_button_summary_off">Nút Cảm ơn được hiển thị.</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons, PreferenceCategory: Experimental flags -->
-    <string name="revanced_hide_action_button_index_title">Ẩn nút tương tác theo thứ tự</string>
-    <string name="revanced_hide_action_button_index_summary_on">"Các nút tương tác đã ẩn theo thứ tự.
+    <string name="revanced_hide_action_button_index_title">Ẩn nút thao tác theo thứ tự</string>
+    <string name="revanced_hide_action_button_index_summary_on">"Các nút thao tác đã ẩn theo thứ tự.
 
 Chi tiết:
-• Các nút tương tác có thể ẩn không đúng, hoặc không bị ẩn.
-• Các nút tương tác đang bị ẩn sẽ không để lại khoảng trống."</string>
-    <string name="revanced_hide_action_button_index_summary_off">"Các nút tương tác đã ẩn theo tên.
+• Các nút thao tác có thể ẩn không đúng, hoặc không bị ẩn.
+• Các nút thao tác đang bị ẩn sẽ không để lại khoảng trống."</string>
+    <string name="revanced_hide_action_button_index_summary_off">"Các nút thao tác đã ẩn theo tên.
 
 Chi tiết:
-• Các nút tương tác bên phải bị ẩn.
-• Các nút tương tác đang bị ẩn sẽ để lại khoảng trống."</string>
+• Các nút thao tác bên phải bị ẩn.
+• Các nút thao tác đang bị ẩn sẽ để lại khoảng trống."</string>
     <string name="revanced_remix_button_index_title">Vị trí nút Phối lại</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Ambient mode -->
     <string name="revanced_preference_screen_ambient_mode_title">Chế độ môi trường xung quanh</string>
@@ -1135,7 +1126,7 @@ Hạn chế: Tiêu đề video sẽ biến mất khi nhấn vào."</string>
     <string name="revanced_hide_related_videos_overlay_summary_on">Phần video thêm trong bảng nút thao tác nhanh và lớp phủ video liên quan đã ẩn.</string>
     <string name="revanced_hide_related_videos_overlay_summary_off">Phần video thêm trong bảng nút thao tác nhanh và lớp phủ video liên quan đã ẩn.</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Fullscreen, PreferenceCategory: Quick actions -->
-    <string name="revanced_preference_category_quick_actions">Thao tác nhanh</string>
+    <string name="revanced_preference_category_quick_actions">Bảng nút thao tác nhanh</string>
     <string name="revanced_hide_quick_actions_title">Ẩn bảng nút thao tác nhanh</string>
     <string name="revanced_hide_quick_actions_summary_on">Bảng nút thao tác nhanh đã ẩn.</string>
     <string name="revanced_hide_quick_actions_summary_off">Bảng nút thao tác nhanh được hiển thị.</string>
@@ -1444,7 +1435,9 @@ Vì vậy, bạn nên bật tính năng này khi có kết nối mạng ổn đ�
     <string name="revanced_preference_screen_shorts_title">Shorts</string>
     <string name="revanced_disable_shorts_background_playback_title">Tắt tính năng phát trong nền cho trình Shorts</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">Phát trong nền cho trình Shorts đã tắt.</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">"Phát trong nền cho trình Shorts được bật."</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"Phát trong nền cho trình Shorts được bật.
+
+Chi tiết: Phát nền Shorts chỉ khả dụng qua chế độ Hình trong hình."</string>
     <string name="revanced_disable_resuming_shorts_player_title">Tắt tính năng tiếp tục video Shorts</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">Trinh phát Shorts sẽ không còn được tiếp tục khi khởi động ứng dụng.</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">Trinh phát Shorts vẫn sẽ tiếp tục khi khởi động ứng dụng.</string>
@@ -1562,7 +1555,7 @@ Hạn chế: Tiêu đề chính thức trong kết quả tìm kiếm cũng sẽ 
     <string name="revanced_hide_shorts_use_this_sound_button_summary_on">Nút \"Dùng âm thanh này\" đã ẩn.</string>
     <string name="revanced_hide_shorts_use_this_sound_button_summary_off">Nút \"Dùng âm thanh này\" được hiển thị.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player, PreferenceCategory: Action buttons -->
-    <string name="revanced_preference_category_action_buttons">Nút tương tác</string>
+    <string name="revanced_preference_category_action_buttons">Nút thao tác</string>
     <string name="revanced_hide_shorts_like_button_title">Ẩn nút Thích</string>
     <string name="revanced_hide_shorts_like_button_summary_on">Nút Thích đã ẩn.</string>
     <string name="revanced_hide_shorts_like_button_summary_off">Nút Thích được hiển thị.</string>
@@ -1597,19 +1590,19 @@ Hạn chế: Tiêu đề chính thức trong kết quả tìm kiếm cũng sẽ 
     <string name="revanced_hide_shorts_play_pause_button_background_summary_on">Nền nút Phát &amp; Tạm dừng đã ẩn.</string>
     <string name="revanced_hide_shorts_play_pause_button_background_summary_off">Nền nút Phát &amp; Tạm dừng được hiển thị.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player, PreferenceCategory: Custom actions -->
-    <string name="revanced_preference_category_custom_actions">Tác vụ tuỳ chỉnh</string>
-    <string name="revanced_enable_shorts_custom_actions_flyout_menu_title">Tác vụ tuỳ chỉnh trong trình đơn tuỳ chọn</string>
-    <string name="revanced_enable_shorts_custom_actions_flyout_menu_summary_on">"Tác vụ tuỳ chỉnh đã được bật trong trình đơn tuỳ chọn.
+    <string name="revanced_preference_category_custom_actions">Thao tác tuỳ chỉnh</string>
+    <string name="revanced_enable_shorts_custom_actions_flyout_menu_title">Thao tác tuỳ chỉnh trong trình đơn tuỳ chọn</string>
+    <string name="revanced_enable_shorts_custom_actions_flyout_menu_summary_on">"Thao tác tuỳ chỉnh đã được bật trong trình đơn tuỳ chọn.
 
 Hạn chế:
 • Không hoạt động đối với video phát trực tiếp."</string>
-    <string name="revanced_enable_shorts_custom_actions_flyout_menu_summary_off">Tác vụ tuỳ chỉnh đã tắt trong trình đơn tuỳ chọn.</string>
-    <string name="revanced_enable_shorts_custom_actions_toolbar_title">Tác vụ tuỳ chỉnh trong thanh công cụ</string>
-    <string name="revanced_enable_shorts_custom_actions_toolbar_summary_on">"Tác vụ tuỳ chỉnh được bật trong thanh công cụ.
+    <string name="revanced_enable_shorts_custom_actions_flyout_menu_summary_off">Thao tác tuỳ chỉnh đã tắt trong trình đơn tuỳ chọn.</string>
+    <string name="revanced_enable_shorts_custom_actions_toolbar_title">Thao tác tuỳ chỉnh trong thanh công cụ</string>
+    <string name="revanced_enable_shorts_custom_actions_toolbar_summary_on">"Thao tác tuỳ chỉnh được bật trong thanh công cụ.
 
-Nhấn và giữ nút ba chấm (⋮) để hiện hộp thoại Tác vụ tuỳ chỉnh."</string>
-    <string name="revanced_enable_shorts_custom_actions_toolbar_summary_off">Tác vụ tuỳ chỉnh đã tắt trong thanh công cụ.</string>
-    <string name="revanced_shorts_custom_actions_toolbar_dialog_title">Tác vụ tuỳ chỉnh</string>
+Nhấn và giữ nút ba chấm (⋮) để hiện hộp thoại Thao tác tuỳ chỉnh."</string>
+    <string name="revanced_enable_shorts_custom_actions_toolbar_summary_off">Thao tác tuỳ chỉnh đã tắt trong thanh công cụ.</string>
+    <string name="revanced_shorts_custom_actions_toolbar_dialog_title">Thao tác tuỳ chỉnh</string>
     <string name="revanced_shorts_custom_actions_copy_video_url_timestamp_label">Sao chép URL kèm dấu thời gian</string>
     <string name="revanced_shorts_custom_actions_copy_video_url_timestamp_title">Mục sao chép URL kèm dấu thời gian</string>
     <string name="revanced_shorts_custom_actions_copy_video_url_timestamp_summary_on">Mục sao chép URL kèm dấu thời gian được hiển thị.</string>
@@ -1636,7 +1629,7 @@ Nhấn và giữ nút ba chấm (⋮) để hiện hộp thoại Tác vụ tuỳ
     <string name="revanced_shorts_custom_actions_repeat_state_title">Mục trạng thái lặp lại</string>
     <string name="revanced_shorts_custom_actions_repeat_state_summary_on">Mục trạng thái lặp lại được hiển thị.</string>
     <string name="revanced_shorts_custom_actions_repeat_state_summary_off">Mục trạng thái lặp lại đã ẩn.</string>
-    <string name="revanced_shorts_custom_actions_about_title">Giới thiệu về Tác vụ tuỳ chọn</string>
+    <string name="revanced_shorts_custom_actions_about_title">Giới thiệu về Thao tác tuỳ chọn</string>
     <string name="revanced_shorts_custom_actions_about_summary">"Hiện tính năng này vẫn đang trong giai đoạn thử nghiệm, vì vậy, không có gì đảm bảo rằng tính năng này sẽ hoạt động một cách hoàn hảo.
 
 Hầu hết các lỗi không thể sửa được do hạn chế tới từ phía ứng dụng, vì vậy vui lòng chỉ sử dụng chúng cho mục đích thử nghiệm."</string>
@@ -1645,7 +1638,7 @@ Hầu hết các lỗi không thể sửa được do hạn chế tới từ ph�
     <string name="revanced_enable_shorts_time_stamp_summary_on">"Dấu thời gian đã được bật.
 
 Hạn chế:
-• Bật dấu thời gian sẽ để lại khoảng trống bên dưới thanh tác vụ.
+• Bật dấu thời gian sẽ để lại khoảng trống bên dưới thanh thao tác.
 • Vì đây là tính năng đang trong giai đoạn phát triển của Google, nên bố cục có thể bị lỗi."</string>
     <string name="revanced_enable_shorts_time_stamp_summary_off">Dấu thời gian đã tắt.</string>
     <string name="revanced_enable_shorts_clear_mode_title">Chế độ toàn cảnh</string>
@@ -1771,7 +1764,7 @@ Chi tiết:
     <string name="revanced_remember_playback_speed_shorts_last_selected_summary_on">"Lựa chọn tốc độ phát đã chọn sẽ áp dụng cho tất cả video Shorts.
 
 Chi tiết:
-• Cách duy nhất để thay đổi tốc độ phát trong trình phát Shorts là dùng \"Hộp thoại tốc độ phát\" trong \"Tác vụ tùy chỉnh\".
+• Cách duy nhất để thay đổi tốc độ phát trong trình phát Shorts là dùng \"Hộp thoại tốc độ phát\" trong \"Thao tác tùy chỉnh\".
 • Nếu bạn không bao gồm bản vá \"Shorts components\", tùy chọn này sẽ không khả dụng."</string>
     <string name="revanced_remember_playback_speed_shorts_last_selected_summary_off">Lựa chọn tốc độ phát đã chọn chỉ áp dụng cho video Shorts hiện tại.</string>
     <string name="revanced_remember_playback_speed_shorts_last_selected_toast_title">Thông báo ngắn</string>
