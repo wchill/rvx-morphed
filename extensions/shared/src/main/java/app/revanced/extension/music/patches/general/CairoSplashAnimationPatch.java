@@ -1,4 +1,4 @@
-package app.revanced.extension.music.patches.misc;
+package app.revanced.extension.music.patches.general;
 
 import app.revanced.extension.music.settings.Settings;
 

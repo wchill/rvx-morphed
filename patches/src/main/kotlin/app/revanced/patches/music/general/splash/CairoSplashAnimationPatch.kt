@@ -1,11 +1,11 @@
-package app.revanced.patches.music.misc.splash
+package app.revanced.patches.music.general.splash
 
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.patch.bytecodePatch
 import app.revanced.patcher.util.smali.ExternalLabel
 import app.revanced.patches.music.utils.compatibility.Constants.YOUTUBE_MUSIC_PACKAGE_NAME
-import app.revanced.patches.music.utils.extension.Constants.MISC_PATH
+import app.revanced.patches.music.utils.extension.Constants.GENERAL_PATH
 import app.revanced.patches.music.utils.patch.PatchList.DISABLE_CAIRO_SPLASH_ANIMATION
 import app.revanced.patches.music.utils.playservice.is_7_06_or_greater
 import app.revanced.patches.music.utils.playservice.is_7_20_or_greater
@@ -28,7 +28,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
 private const val EXTENSION_METHOD_DESCRIPTOR =
-    "$MISC_PATH/CairoSplashAnimationPatch;->disableCairoSplashAnimation(Z)Z"
+    "$GENERAL_PATH/CairoSplashAnimationPatch;->disableCairoSplashAnimation(Z)Z"
 
 @Suppress("unused")
 val cairoSplashAnimationPatch = bytecodePatch(
@@ -89,7 +89,7 @@ val cairoSplashAnimationPatch = bytecodePatch(
         }
 
         addSwitchPreference(
-            CategoryType.MISC,
+            CategoryType.GENERAL,
             "revanced_disable_cairo_splash_animation",
             "false"
         )

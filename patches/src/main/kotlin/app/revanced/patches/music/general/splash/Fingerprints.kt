@@ -1,4 +1,4 @@
-package app.revanced.patches.music.misc.splash
+package app.revanced.patches.music.general.splash
 
 import app.revanced.patches.music.utils.playservice.is_7_20_or_greater
 import app.revanced.patches.music.utils.resourceid.mainActivityLaunchAnimation

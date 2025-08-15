@@ -157,6 +157,8 @@ Limitations:
     <string name="revanced_change_start_page_entry_samples">Samples</string>
     <string name="revanced_change_start_page_entry_search">Search</string>
     <string name="revanced_change_start_page_entry_subscriptions">Subscriptions</string>
+    <string name="revanced_disable_cairo_splash_animation_title">Disable Cairo splash animation</string>
+    <string name="revanced_disable_cairo_splash_animation_summary">Disables Cairo splash animation when the app starts up.</string>
     <string name="revanced_disable_dislike_redirection_title">Disable dislike redirection</string>
     <string name="revanced_disable_dislike_redirection_summary">Disables redirection to the next track when clicking the Dislike button.</string>
     <string name="revanced_disable_auto_captions_title">Disable forced auto captions</string>
@@ -488,8 +490,6 @@ Click to see how to issue an API key."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Bypasses the domain that is blocked in some regions so that playlist thumbnails, channel avatars, etc. can be received.</string>
     <string name="revanced_change_share_sheet_title">Change share sheet</string>
     <string name="revanced_change_share_sheet_summary">Changes the in-app share sheet to system share sheet.</string>
-    <string name="revanced_disable_cairo_splash_animation_title">Disable Cairo splash animation</string>
-    <string name="revanced_disable_cairo_splash_animation_summary">Disables Cairo splash animation when the app starts up.</string>
     <string name="revanced_disable_drc_audio_title">Disable DRC audio</string>
     <string name="revanced_disable_drc_audio_summary">Disables DRC (Dynamic Range Compression) applied to audio.</string>
     <string name="revanced_disable_music_video_in_album_title">Disable music video in album</string>
