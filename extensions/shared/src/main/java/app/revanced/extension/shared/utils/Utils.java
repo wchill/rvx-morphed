@@ -26,7 +26,6 @@ import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.RoundRectShape;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -507,34 +506,6 @@ public class Utils {
         }
 
         return value;
-    }
-
-    /**
-     * No video id in these parameters.
-     */
-    private static final String[] PATH_NO_VIDEO_ID = {
-            "ad_break",         // This request fetches a list of times when ads can be displayed.
-            "get_drm_license",  // Waiting for a paid video to start.
-            "heartbeat",        // This request determines whether to pause playback when the user is AFK.
-            "refresh",          // Waiting for a livestream to start.
-    };
-
-    @Nullable
-    public static String getVideoIdFromRequest(String url) {
-        try {
-            Uri uri = Uri.parse(url);
-            String path = uri.getPath();
-            if (path != null && path.contains("player")) {
-                if (!containsAny(path, PATH_NO_VIDEO_ID)) {
-                    return uri.getQueryParameter("id");
-                } else {
-                    Logger.printDebug(() -> "Ignoring path: " + path);
-                }
-            }
-        } catch (Exception ex) {
-            Logger.printException(() -> "getVideoIdFromRequest failure", ex);
-        }
-        return "";
     }
 
     @Nullable
