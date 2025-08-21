@@ -17,7 +17,7 @@ enum class FullscreenEngagementPanelState {
         }
 
         /**
-         * The current shorts player state.
+         * The current fullscreen engagement panel state.
          */
         @JvmStatic
         var current
@@ -35,7 +35,7 @@ enum class FullscreenEngagementPanelState {
     }
 
     /**
-     * Check if the shorts player is [ATTACHED].
+     * Check if the fullscreen engagement panel is [ATTACHED].
      */
     fun isAttached(): Boolean {
         return this == ATTACHED
