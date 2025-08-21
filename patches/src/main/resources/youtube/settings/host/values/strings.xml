@@ -335,7 +335,7 @@ Tap here to learn more about DeArrow."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Thumbnail labels - such as 'People also watched' and 'You might also like' - are hidden."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Thumbnail labels - such as 'People also watched' and 'You might also like' - are hidden."</string>
 
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
     <string name="revanced_preference_screen_carousel_shelf_title">Carousel shelf</string>
     <string name="revanced_preference_screen_carousel_shelf_summary">Hide or show carousel shelf in home, search results, and subscriptions.</string>
 
@@ -486,21 +486,6 @@ Limitations:
 Limitations: 
 • Shorts cannot be hidden.
 • Videos with 0 views are not filtered."</string>
-    <string name="revanced_hide_related_videos_title">Hide related videos</string>
-    <string name="revanced_hide_related_videos_summary_on">Related videos are hidden.</string>
-    <string name="revanced_hide_related_videos_summary_off">Related videos are shown.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"This setting limits the maximum number of layouts that can be loaded on the player screen.
-
-If the layout of the player screen changes due to server-side changes, unintended layouts may be hidden on the player screen."</string>
-    <string name="revanced_hide_related_videos_type_title">Hide related videos type</string>
-    <string name="revanced_hide_related_videos_type_summary_on">"The number of layouts loaded on screen is remembered when the video starts.
-
-• Partially fixes an issue where the feed scroll position is reset.
-• Related videos may not be completely filtered."</string>
-    <string name="revanced_hide_related_videos_type_summary_off">"The number of layouts loaded on screen is not remembered when the video starts.
-
-• The feed scroll position may be reset."</string>
-    <string name="revanced_related_videos_offset_title">Offset</string>
 
 
     <!-- PreferenceScreen: General -->
@@ -976,6 +961,17 @@ Settings → Autoplay / Playback → Autoplay next video"</string>
     <string name="revanced_sanitize_video_subtitle_title">Sanitize video subtitle</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Phrases like '#', 'Fundraiser', 'Shop' and 'products' are hidden from the video subtitles."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Phrases like '#', 'Fundraiser', 'Shop' and 'products' are shown from the video subtitles."</string>
+
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_title">Hide related videos</string>
+    <string name="revanced_hide_related_videos_summary_on">Related videos are hidden.</string>
+    <string name="revanced_hide_related_videos_summary_off">Related videos are shown.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"This setting limits the maximum number of layouts that can be loaded on the player screen.
+
+If some related videos are not hidden, or unintended layouts such as the action bar or comments section are hidden, changing the offset may resolve the issue.
+
+If the layout of the player screen changes due to server-side changes, unintended layouts may be hidden on the player screen."</string>
+    <string name="revanced_related_videos_offset_title">Offset</string>
 
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Action buttons</string>

@@ -14,8 +14,11 @@ import app.revanced.patches.shared.litho.lithoFilterPatch
 import app.revanced.patches.shared.spans.addSpanFilter
 import app.revanced.patches.shared.spans.inclusiveSpanPatch
 import app.revanced.patches.shared.startVideoInformerFingerprint
+import app.revanced.patches.youtube.utils.bottomsheet.bottomSheetHookPatch
 import app.revanced.patches.youtube.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.revanced.patches.youtube.utils.controlsoverlay.controlsOverlayConfigPatch
+import app.revanced.patches.youtube.utils.dismiss.dismissPlayerHookPatch
+import app.revanced.patches.youtube.utils.dismiss.hookDismissObserver
 import app.revanced.patches.youtube.utils.engagement.engagementPanelBuilderMethod
 import app.revanced.patches.youtube.utils.engagement.engagementPanelFreeRegister
 import app.revanced.patches.youtube.utils.engagement.engagementPanelHookPatch
@@ -23,6 +26,7 @@ import app.revanced.patches.youtube.utils.engagement.engagementPanelIdIndex
 import app.revanced.patches.youtube.utils.engagement.engagementPanelIdRegister
 import app.revanced.patches.youtube.utils.extension.Constants.COMPONENTS_PATH
 import app.revanced.patches.youtube.utils.extension.Constants.PLAYER_CLASS_DESCRIPTOR
+import app.revanced.patches.youtube.utils.extension.Constants.PLAYER_PATH
 import app.revanced.patches.youtube.utils.extension.Constants.SPANS_PATH
 import app.revanced.patches.youtube.utils.extension.sharedExtensionPatch
 import app.revanced.patches.youtube.utils.fix.endscreensuggestedvideo.endScreenSuggestedVideoPatch
@@ -329,6 +333,8 @@ private const val PLAYER_COMPONENTS_FILTER_CLASS_DESCRIPTOR =
     "$COMPONENTS_PATH/PlayerComponentsFilter;"
 private const val SANITIZE_VIDEO_SUBTITLE_FILTER_CLASS_DESCRIPTOR =
     "$SPANS_PATH/SanitizeVideoSubtitleFilter;"
+private const val RELATED_VIDEO_CLASS_DESCRIPTOR =
+    "$PLAYER_PATH/RelatedVideoPatch;"
 
 @Suppress("unused")
 val playerComponentsPatch = bytecodePatch(
@@ -339,8 +345,11 @@ val playerComponentsPatch = bytecodePatch(
 
     dependsOn(
         settingsPatch,
+        bottomSheetHookPatch,
         controlsOverlayConfigPatch,
         endScreenSuggestedVideoPatch,
+        engagementPanelHookPatch,
+        dismissPlayerHookPatch,
         inclusiveSpanPatch,
         lithoFilterPatch,
         lithoLayoutPatch,
@@ -349,7 +358,6 @@ val playerComponentsPatch = bytecodePatch(
         speedOverlayPatch,
         videoInformationPatch,
         versionCheckPatch,
-        engagementPanelHookPatch,
     )
 
     execute {
@@ -578,17 +586,16 @@ val playerComponentsPatch = bytecodePatch(
             index: Int = 0,
             register: Int = 0
         ) {
-            val stringInstructions = if (returnType == "Z")
-                """
+            val stringInstructions = when (returnType) {
+                "Z" -> """
                     const/4 v$register, 0x0
                     return v$register
-                """
-            else if (returnType == "V")
-                """
+                    """
+                "V" -> """
                     return-void
-                """
-            else
-                throw Exception("This case should never happen.")
+                    """
+                else -> throw Exception("This case should never happen.")
+            }
 
             addInstructionsWithLabels(
                 index, """
@@ -698,6 +705,28 @@ val playerComponentsPatch = bytecodePatch(
                 )
             }
         }
+
+        // endregion
+
+        // region patch for hide relative video
+
+        linearLayoutManagerItemCountsFingerprint.matchOrThrow().let {
+            val methodWalker =
+                it.getWalkerMethod(it.patternMatch!!.endIndex)
+            methodWalker.apply {
+                val index = indexOfFirstInstructionOrThrow(Opcode.MOVE_RESULT)
+                val register = getInstruction<OneRegisterInstruction>(index).registerA
+
+                addInstructions(
+                    index + 1, """
+                        invoke-static {v$register}, $RELATED_VIDEO_CLASS_DESCRIPTOR->overrideItemCounts(I)I
+                        move-result v$register
+                        """
+                )
+            }
+        }
+
+        hookDismissObserver("$RELATED_VIDEO_CLASS_DESCRIPTOR->onDismiss(I)V")
 
         // endregion
 
