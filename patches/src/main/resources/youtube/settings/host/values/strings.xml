@@ -484,7 +484,7 @@ Limitations:
     <string name="revanced_hide_video_by_view_counts_about_summary">"Home / Subscriptions / Search results are filtered to hide videos with views less or greater than a specified number.
 
 Limitations: 
-• Shorts cannot be hidden.
+• Live streams or Shorts cannot be hidden.
 • Videos with 0 views are not filtered."</string>
 
 
