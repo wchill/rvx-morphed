@@ -10,6 +10,8 @@ internal object PoTokenGate {
     
     @JvmStatic
     fun getContentPoToken(videoId: String): String? {
+        if (!isNpPotSupported()) return null
+
         if (mNpPoToken?.videoId == videoId) {
             return mNpPoToken?.playerRequestPoToken
         }
@@ -23,15 +25,29 @@ internal object PoTokenGate {
 
     @JvmStatic
     fun getSessionPoToken(videoId: String): String? {
-        if (mNpPoToken?.videoId == videoId) {
-            return mNpPoToken?.streamingDataPoToken
+        if (!isNpPotSupported()) return null
+
+        if (mNpPoToken != null && mNpPoToken!!.videoId == videoId) {
+            val streamingDataPoToken = mNpPoToken!!.streamingDataPoToken
+            if (streamingDataPoToken != null) {
+                mNpPoToken = null
+                return streamingDataPoToken
+            }
         }
 
         mNpPoToken = if (isNpPotSupported())
             PoTokenProviderImpl.getWebClientPoToken(videoId)
         else null
 
-        return mNpPoToken?.streamingDataPoToken
+        if (mNpPoToken != null) {
+            val streamingDataPoToken = mNpPoToken!!.streamingDataPoToken
+            if (streamingDataPoToken != null) {
+                mNpPoToken = null
+                return streamingDataPoToken
+            }
+        }
+
+        return null
     }
 
     @JvmStatic
@@ -44,12 +60,9 @@ internal object PoTokenGate {
 
     @JvmStatic
     fun getVisitorData(): String? {
-        return mNpPoToken?.visitorData
-    }
+        if (!isNpPotSupported()) return null
 
-    @JvmStatic
-    fun getDataSyncId(): String? {
-        return mNpPoToken?.dataSyncId
+        return mNpPoToken?.visitorData
     }
 
     @JvmStatic
