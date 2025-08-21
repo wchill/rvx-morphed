@@ -321,7 +321,20 @@
     <string name="revanced_hide_video_recommendation_labels_title">Приховати мітки відеорекомендацій</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Мітки мініатюр, такі як 'Люди також дивилися' та 'Вам також може сподобатись', приховано."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Мітки мініатюр, такі як 'Люди також дивилися' та 'Вам також може сподобатись', показується."</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
+    <string name="revanced_preference_screen_carousel_shelf_title">Карусельна полиця</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">Приховувати чи показувати карусельну полицю у головній, результатах пошуку, і підписках.</string>
+    <string name="revanced_hide_carousel_shelf_home_title">Приховати у Головній стрічці та пов\'язаних відео</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_on">Приховано у Головній стрічці та пов\'язаних відео.</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_off">Показується у Головній стрічці та пов\'язаних відео.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_title">Приховати у стрічці Підписки</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_on">Приховано у стрічці Підписки.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_off">Показується у стрічці Підписки.</string>
+    <string name="revanced_hide_carousel_shelf_search_title">Приховати у результатах пошуку</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_on">Приховано у результатах пошуку.</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_off">Показується у результатах пошуку.</string>
+    <string name="revanced_hide_carousel_shelf_about_title">Про карусельну полицю</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Приклади карусельних полиць:&lt;br&gt;&lt;br&gt;&lt;b&gt;Важливі новини&lt;/b&gt;, &lt;b&gt;Продовжити перегляд&lt;/b&gt;, &lt;b&gt;Переглянути більше каналів&lt;/b&gt;, &lt;b&gt;Прослухати знову&lt;/b&gt;, &lt;b&gt;Найактуальніші&lt;/b&gt;, &lt;b&gt;Покупки&lt;/b&gt;, &lt;b&gt;Переглянути ще раз&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Панель категорій</string>
     <string name="revanced_preference_screen_category_bar_summary">Приховувати чи показувати панель категорій у стрічці, пошуку та пов\'язаних відео.</string>
@@ -445,23 +458,8 @@
     <string name="revanced_hide_video_by_view_counts_about_summary">"Головна/Підписки/Результати пошуку фільтрується, щоб приховати відео з переглядами менше або більше вказаної кількості.
 
 Застереження:
-• YouTube Shorts неможливо приховати.
+• Прямі трансляції чи YouTube Shorts неможливо приховати.
 • Відео з 0 переглядів не фільтруються."</string>
-    <string name="revanced_hide_related_videos_title">Приховати пов’язані відео</string>
-    <string name="revanced_hide_related_videos_summary_on">Пов\'язані відео приховано.</string>
-    <string name="revanced_hide_related_videos_summary_off">Пов\'язані відео показується.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Це налаштування обмежує максимальну кількість, які можуть вантажитися на екран плеєра.
-
-Якщо екран плеєра змінюється через зміни на стороні сервера, можуть бути приховані ненавмисно на екрані плеєра."</string>
-    <string name="revanced_hide_related_videos_type_title">Тип приховування пов\'язаних відео</string>
-    <string name="revanced_hide_related_videos_type_summary_on">"Кількість завантажених на екран запам'ятовується під час запуску відео.
-
-• Частково виправлено проблему зі скиданням позиції прокрутки стрічки.
-• Пов'язані відео можуть бути не повністю відфільтровані."</string>
-    <string name="revanced_hide_related_videos_type_summary_off">"Кількість завантажених на екран не запам'ятовується під час запуску відео.
-
-• Позицію прокрутки стрічки можна скинути."</string>
-    <string name="revanced_related_videos_offset_title">Зміщення</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Загальне</string>
     <string name="revanced_change_start_page_title">Змінити початкову сторінку</string>
@@ -473,6 +471,7 @@
     <string name="revanced_change_start_page_entry_fashion">Мода і краса</string>
     <string name="revanced_change_start_page_entry_gaming">Ігри</string>
     <string name="revanced_change_start_page_entry_history">Історія</string>
+    <string name="revanced_change_start_page_entry_hype">Розголос</string>
     <string name="revanced_change_start_page_entry_library">Бібліотека</string>
     <string name="revanced_change_start_page_entry_liked_videos">Відео, які сподобалися</string>
     <string name="revanced_change_start_page_entry_live">Наживо</string>
@@ -503,6 +502,9 @@
     <string name="revanced_disable_auto_captions_title">Вимкнути примусові авто субтитри</string>
     <string name="revanced_disable_auto_captions_summary_on">Примусові авто субтитри вимкнено.</string>
     <string name="revanced_disable_auto_captions_summary_off">Примусові авто субтитри увімкнено.</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">Вимкнути вікно Увійти на телевізорі</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">Вікно Увійти на телевізорі вимкнено.</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">Вікно Увійти на телевізорі увімкнено.</string>
     <string name="revanced_disable_splash_animation_title">Вимкнути сплеш анімацію</string>
     <string name="revanced_disable_splash_animation_summary_on">Сплеш анімацію вимкнено.</string>
     <string name="revanced_disable_splash_animation_summary_off">Сплеш анімацію увімкнено.</string>
@@ -556,6 +558,16 @@
     <string name="revanced_disable_translucent_status_bar_summary_on">Рядок стану непрозорий.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Рядок стану непрозорий чи напівпрозорий.</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">Для прошивок деяких розробників Android 12+, увімкнення цієї функції може зробити панель навігації системи прозорою.</string>
+    <string name="revanced_fix_hype_button_icon_title">Виправити іконку кнопки Розголос</string>
+    <string name="revanced_fix_hype_button_icon_summary_on">Іконку кнопки Розголос показується.</string>
+    <string name="revanced_fix_hype_button_icon_summary_off">Іконку кнопки Розголос приховано.</string>
+    <string name="revanced_fix_hype_button_icon_user_dialog_message">"В YouTube 19.25.39 або більш ранніх іконка Розголос прихована у панелі дій та панелі опису відео.
+
+Як обхідний шлях, версія програми підміняється на 19.26.42 в кінцевих точках '/get_watch' і '/next'.
+
+Якщо вимкнете це налаштування, іконка Розголос може не зображатись у панелі дій та панелі опису відео.
+
+※ Навіть якщо це налаштування вимкнене, кнопку Розголос не вдасться приховати."</string>
     <string name="revanced_spoof_app_version_title">Підробити версію програми</string>
     <string name="revanced_spoof_app_version_summary_on">Версію підроблено</string>
     <string name="revanced_spoof_app_version_summary_off">Версію не підроблено</string>
@@ -898,6 +910,16 @@
     <string name="revanced_sanitize_video_subtitle_title">Обробляти субтитри відео</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Фрази типу '#', 'Збір коштів', 'Магазин' та 'товари' приховано з субтитрів відео."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Фрази типу '#', 'Збір коштів', 'Магазин' та 'товари' показується в субтитрах відео."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_title">Приховати пов’язані відео</string>
+    <string name="revanced_hide_related_videos_summary_on">Пов\'язані відео приховано.</string>
+    <string name="revanced_hide_related_videos_summary_off">Пов\'язані відео показується.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Це налаштування обмежує максимальну кількість, які можуть вантажитися на екран плеєра.
+
+Якщо деякі пов'язані відео не приховані чи приховані небажані макети, такі як панель дій чи секція коментарів, зміна зсуву може вирішити проблему.
+
+Якщо екран плеєра змінюється через зміни на стороні сервера, можуть бути приховані ненавмисно на екрані плеєра."</string>
+    <string name="revanced_related_videos_offset_title">Зміщення</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Кнопки дії</string>
     <string name="revanced_preference_screen_action_buttons_summary">Приховувати чи показувати кнопки дії під відео.</string>
@@ -916,6 +938,9 @@
     <string name="revanced_hide_download_button_title">Приховати кнопку Завантажити</string>
     <string name="revanced_hide_download_button_summary_on">Кнопку Завантажити приховано.</string>
     <string name="revanced_hide_download_button_summary_off">Кнопку Завантажити показується.</string>
+    <string name="revanced_hide_hype_button_title">Приховати кнопку Розголос</string>
+    <string name="revanced_hide_hype_button_summary_on">Кнопку Розголос приховано.</string>
+    <string name="revanced_hide_hype_button_summary_off">Кнопку Розголос показується.</string>
     <string name="revanced_hide_like_dislike_button_title">Приховати кнопки Подобається і Не подобається</string>
     <string name="revanced_hide_like_dislike_button_summary_on">Кнопки Подобається та Не подобається приховано.</string>
     <string name="revanced_hide_like_dislike_button_summary_off">Кнопки Подобається та Не подобається показується.</string>
@@ -1721,6 +1746,9 @@
     <string name="revanced_swipe_text_overlay_size_invalid_toast">Розмір тексту повинен бути в межах 1-30.</string>
     <string name="revanced_swipe_overlay_timeout_title">Час показу панелі</string>
     <string name="revanced_swipe_overlay_timeout_summary">Скільки мілісекунд панель буде показуватися</string>
+    <string name="revanced_swipe_brightness_distance_dip_title">Відстань проведення для яскравості</string>
+    <string name="revanced_swipe_brightness_distance_dip_summary">Мінімальна відстань проведення, у пікселях.</string>
+    <string name="revanced_swipe_brightness_distance_dip_invalid_toast">Відстань проведення для яскравості повинна бути в межах 0.1dip - 10.0dip.</string>
     <string name="revanced_swipe_volume_sensitivity_title">Чутливість жесту гучності</string>
     <string name="revanced_swipe_volume_sensitivity_summary">Наскільки змінюється гучність при проведенні.</string>
     <string name="revanced_swipe_volume_sensitivity_invalid_toast">Чутливість жесту гучності повинна бути в межах 1-1000.</string>

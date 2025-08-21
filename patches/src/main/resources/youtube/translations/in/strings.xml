@@ -188,7 +188,7 @@ Ketuk di sini untuk mempelajari lebih lanjut tentang DeArrow."</string>
     <string name="revanced_hide_ticket_shelf_title">Sembunyikan rak tiket</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Rak tiket disembunyikan.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Rak tiket ditunjukkan.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Bilah kategori</string>
     <string name="revanced_preference_screen_category_bar_summary">Sembunyikan atau tampilkan bilah kategori di feed, pencarian, dan video terkait.</string>
@@ -297,13 +297,6 @@ Keterbatasan:
 Keterbatasan: 
 • Shorts tidak dapat disembunyikan.
 • Video dengan 0 penayangan tidak disaring."</string>
-    <string name="revanced_hide_related_videos_title">Sembunyikan video terkait</string>
-    <string name="revanced_hide_related_videos_summary_on">Video terkait disembunyikan.</string>
-    <string name="revanced_hide_related_videos_summary_off">Video terkait ditampilkan.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Pengaturan ini membatasi jumlah maksimum tata letak yang dapat dimuat pada layar pemutar.
-
-Jika tata letak layar pemutar berubah karena perubahan di sisi server, tata letak yang tidak diinginkan mungkin disembunyikan di layar pemutar."</string>
-    <string name="revanced_related_videos_offset_title">Offset</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Umum</string>
     <string name="revanced_change_start_page_title">Ganti halaman awal</string>
@@ -352,6 +345,13 @@ Keterbatasan: Tombol Kembali pada bilah alat mungkin tidak berfungsi."</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Snack bar -->
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Toolbar -->
     <!-- PreferenceScreen: Player -->
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">Video terkait disembunyikan.</string>
+    <string name="revanced_hide_related_videos_summary_off">Video terkait ditampilkan.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Pengaturan ini membatasi jumlah maksimum tata letak yang dapat dimuat pada layar pemutar.
+
+Jika tata letak layar pemutar berubah karena perubahan di sisi server, tata letak yang tidak diinginkan mungkin disembunyikan di layar pemutar."</string>
+    <string name="revanced_related_videos_offset_title">Offset</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons, PreferenceCategory: Experimental flags -->
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Ambient mode -->

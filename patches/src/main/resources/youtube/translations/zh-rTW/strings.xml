@@ -321,7 +321,20 @@
     <string name="revanced_hide_video_recommendation_labels_title">隱藏影片推薦標籤</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"縮圖標籤 - 例如 '人們還觀看了' 和 '您可能還喜歡' - 已隱藏。"</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"縮圖標籤 - 例如 '人們還觀看了' 和 '您可能還喜歡' - 已隱藏。"</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
+    <string name="revanced_preference_screen_carousel_shelf_title">輪播欄</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">隱藏或顯示輪播欄在首頁, 搜尋結果, 和訂閱頁面。</string>
+    <string name="revanced_hide_carousel_shelf_home_title">隱藏在首頁動態和相關影片中</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_on">隱藏在首頁動態和相關影片中。</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_off">顯示在首頁動態和相關影片中。</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_title">隱藏在訂閱頁面動態中</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_on">隱藏在訂閱頁面動態中。</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_off">顯示在訂閱頁面動態中。</string>
+    <string name="revanced_hide_carousel_shelf_search_title">在搜尋結果中隱藏</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_on">隱藏在搜尋結果中。</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_off">顯示在搜尋結果中。</string>
+    <string name="revanced_hide_carousel_shelf_about_title">關於輪播欄</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">輪播欄範例:&lt;br&gt;&lt;br&gt;&lt;b&gt;突發新聞&lt;/b&gt;, &lt;b&gt;繼續觀看&lt;/b&gt;, &lt;b&gt;探索更多頻道&lt;/b&gt;, &lt;b&gt;再收聽&lt;/b&gt;, &lt;b&gt;最相關&lt;/b&gt;, &lt;b&gt;購物&lt;/b&gt;, &lt;b&gt;再觀看&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">類別欄</string>
     <string name="revanced_preference_screen_category_bar_summary">隱藏或顯示來源、搜尋和相關影片中的類別欄</string>
@@ -447,21 +460,6 @@
 限制： 
 • 短影音無法隱藏。
 • 觀看次數為零的影片不會被篩選。"</string>
-    <string name="revanced_hide_related_videos_title">隱藏相關影片</string>
-    <string name="revanced_hide_related_videos_summary_on">相關影片已隱藏。</string>
-    <string name="revanced_hide_related_videos_summary_off">相關影片已顯示。</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"此設定限制播放器螢幕上可以載入佈局的最大數量。
-
-如果由於伺服器端變更而導致播放器螢幕佈局發生變化，則播放器螢幕上可能會隱藏非預期的佈局。"</string>
-    <string name="revanced_hide_related_videos_type_title">隱藏相關影片類型</string>
-    <string name="revanced_hide_related_videos_type_summary_on">"影片啟動時，會記住螢幕上加載的佈局數量。
-
-• 部分修正了 Feed 捲動位置重置的問題。
-• 相關影片可能無法完全過濾。"</string>
-    <string name="revanced_hide_related_videos_type_summary_off">"影片啟動時，不會記住螢幕上加載的佈局數量。
-
-• feed 滾動位置可能會被重設。"</string>
-    <string name="revanced_related_videos_offset_title">偏移</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">一般設定</string>
     <string name="revanced_change_start_page_title">更改起始頁</string>
@@ -473,6 +471,7 @@
     <string name="revanced_change_start_page_entry_fashion">時尚 &amp; 美妝</string>
     <string name="revanced_change_start_page_entry_gaming">遊戲</string>
     <string name="revanced_change_start_page_entry_history">歷史</string>
+    <string name="revanced_change_start_page_entry_hype">熱門</string>
     <string name="revanced_change_start_page_entry_library">媒體庫</string>
     <string name="revanced_change_start_page_entry_liked_videos">喜歡的影片</string>
     <string name="revanced_change_start_page_entry_live">直播</string>
@@ -503,6 +502,9 @@
     <string name="revanced_disable_auto_captions_title">停用強制顯示字幕</string>
     <string name="revanced_disable_auto_captions_summary_on">強制顯示字幕已停用</string>
     <string name="revanced_disable_auto_captions_summary_off">強制顯示字幕已啟用</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">停用登入電視彈出窗口</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">登入電視彈出窗口已停用。</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">登入電視彈出窗口已啟用。</string>
     <string name="revanced_disable_splash_animation_title">停用啟動動畫</string>
     <string name="revanced_disable_splash_animation_summary_on">啟動動畫已停用</string>
     <string name="revanced_disable_splash_animation_summary_off">啟動動畫已啟用</string>
@@ -554,6 +556,18 @@
     <string name="revanced_disable_translucent_status_bar_summary_on">狀態列不透明。</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">狀態列是不透明或半透明的。</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">對於一些運行 Android 12 以上版本的製造商 ROM，啟用此功能可能會使系統導覽列變得透明。</string>
+    <string name="revanced_fix_hype_button_icon_title">修復熱門按鈕圖標</string>
+    <string name="revanced_fix_hype_button_icon_summary_on">熱門按鈕圖示已顯示。</string>
+    <string name="revanced_fix_hype_button_icon_summary_off">熱門按鈕圖示已隱藏。</string>
+    <string name="revanced_fix_hype_button_icon_user_dialog_message">"在 YouTube 19.25.39 或更早版本中
+ 圖示在影片操作欄和影片說明面板中隱藏。
+
+為了解決這個問題，應用程式版本會在 '/get_watch' 端點和 '/next' 端點中偽裝成 19.26.42。
+
+如果您關閉此設置，是圖示可能不會顯示在影片操作列和視訊說明面板中。
+
+※ 即使關閉此設置，熱門
+按鈕也可能不會隱藏。"</string>
     <string name="revanced_spoof_app_version_title">偽裝應用程式版本</string>
     <string name="revanced_spoof_app_version_summary_on">已偽裝版本</string>
     <string name="revanced_spoof_app_version_summary_off">未偽裝版本</string>
@@ -896,6 +910,14 @@
     <string name="revanced_sanitize_video_subtitle_title">清理影片字幕</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"像這樣的短語 '#', 'Shop' 和 'N products' 被隱藏在影片字幕中。"</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"像這樣的短語 '#', 'Shop' 和 'N products' 被顯示在影片字幕中。"</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_title">隱藏相關影片</string>
+    <string name="revanced_hide_related_videos_summary_on">相關影片已隱藏。</string>
+    <string name="revanced_hide_related_videos_summary_off">相關影片已顯示。</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"此設定限制播放器螢幕上可以載入佈局的最大數量。
+
+如果由於伺服器端變更而導致播放器螢幕佈局發生變化，則播放器螢幕上可能會隱藏非預期的佈局。"</string>
+    <string name="revanced_related_videos_offset_title">偏移</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">操作按鈕</string>
     <string name="revanced_preference_screen_action_buttons_summary">隱藏或顯示影片下方的操作按鈕</string>
@@ -914,6 +936,9 @@
     <string name="revanced_hide_download_button_title">隱藏下載按鈕</string>
     <string name="revanced_hide_download_button_summary_on">隱藏下載按鈕</string>
     <string name="revanced_hide_download_button_summary_off">顯示下載按鈕</string>
+    <string name="revanced_hide_hype_button_title">隱藏熱門按鈕</string>
+    <string name="revanced_hide_hype_button_summary_on">熱門按鈕已隱藏。</string>
+    <string name="revanced_hide_hype_button_summary_off">熱門按鈕已顯示。</string>
     <string name="revanced_hide_like_dislike_button_title">隱藏讚和不喜歡按鈕</string>
     <string name="revanced_hide_like_dislike_button_summary_on">隱藏讚和不喜歡按鈕。</string>
     <string name="revanced_hide_like_dislike_button_summary_off">顯示讚和不喜歡按鈕。</string>
@@ -1712,6 +1737,9 @@
     <string name="revanced_swipe_text_overlay_size_invalid_toast">文字大小必須介於 1-30 之間。</string>
     <string name="revanced_swipe_overlay_timeout_title">滑動疊加層時長</string>
     <string name="revanced_swipe_overlay_timeout_summary">滑動疊加層顯示的時長（毫秒）</string>
+    <string name="revanced_swipe_brightness_distance_dip_title">亮度滑動距離</string>
+    <string name="revanced_swipe_brightness_distance_dip_summary">最小滑動距離（以像素為單位）。</string>
+    <string name="revanced_swipe_brightness_distance_dip_invalid_toast">亮度滑動距離必須在 0.1dip - 10.0dip 之間。</string>
     <string name="revanced_swipe_volume_sensitivity_title">滑動控制 (音量) 靈敏度</string>
     <string name="revanced_swipe_volume_sensitivity_summary">每次滑動音量改變多少。</string>
     <string name="revanced_swipe_volume_sensitivity_invalid_toast">音量滑動靈敏度必須介於 1-1000 之間。</string>

@@ -138,7 +138,7 @@
     <string name="revanced_hide_ticket_shelf_title">Секция за билети</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Рафтовете с билети са скрити.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Рафтовете с билети се показват.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Панел с категорий</string>
     <string name="revanced_preference_screen_category_bar_summary">Скриване или показване на лентата с категории в емисията, резултатите от търсенето и свързаните видеоклипове.</string>
@@ -236,13 +236,6 @@
     <string name="revanced_hide_video_view_counts_multiplier_default_value">K -&gt; 1 000\nM -&gt; 1 000 000\nB -&gt; 1 000 000 000\nviews -&gt; views</string>
     <string name="revanced_hide_video_by_view_counts_about_title">Относно филтрирането на броя показвания</string>
     <string name="revanced_hide_video_by_view_counts_about_summary">"Начало / Абонамент / Резултатите от търсенето се филтрират, за да скрият видеоклипове с гледания, по-малки или по-големи от определен брой."</string>
-    <string name="revanced_hide_related_videos_title">Скриване в сродни видеоклипове</string>
-    <string name="revanced_hide_related_videos_summary_on">Сродните клипове са скрити.</string>
-    <string name="revanced_hide_related_videos_summary_off">Сродните клипове се показват.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Тази настройка ограничава максималния брой оформления, които могат да бъдат заредени на екрана на плейъра.
-
-Ако оформлението на екрана на плейъра се промени поради промени от страна на сървъра, нежеланите оформления може да бъдат скрити на екрана на плейъра."</string>
-    <string name="revanced_related_videos_offset_title">Компенсиране</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Основни настройки</string>
     <string name="revanced_change_start_page_title">Промяна на началната страница</string>
@@ -588,6 +581,13 @@
     <string name="revanced_sanitize_video_subtitle_title">Филтриране на фрази в субтитрите</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Фрази като „#“, „Набиране на средства“, „Пазаруване“ и „продукти“ бяха скрити от субтитрите на видеоклипа."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Фрази като „#“, „Набиране на средства“, „Пазаруване“ и „продукти“ бяха показани от субтитрите на видеоклипа."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">Сродните клипове са скрити.</string>
+    <string name="revanced_hide_related_videos_summary_off">Сродните клипове се показват.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Тази настройка ограничава максималния брой оформления, които могат да бъдат заредени на екрана на плейъра.
+
+Ако оформлението на екрана на плейъра се промени поради промени от страна на сървъра, нежеланите оформления може да бъдат скрити на екрана на плейъра."</string>
+    <string name="revanced_related_videos_offset_title">Компенсиране</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Бутони за действие</string>
     <string name="revanced_preference_screen_action_buttons_summary">Скриване или показване на бутони за действие под видеоклипове.</string>

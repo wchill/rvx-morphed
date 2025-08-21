@@ -343,7 +343,7 @@ Một số tính năng có thể không hoạt động bình thường trong b�
     <string name="revanced_ryd_attribution_summary">Dữ liệu về số lượt không thích được cung cấp bởi API Return YouTube Dislike. Nhấn vào đây để tìm hiểu thêm.</string>
     <string name="revanced_ryd_failure_connection_timeout">Số lượt không thích tạm thời không khả dụng (API đã hết thời gian chờ).</string>
     <string name="revanced_ryd_failure_connection_status_code">Số lượt không thích không khả dụng (trạng thái %d).</string>
-    <string name="revanced_ryd_failure_client_rate_limit_requested">Số lượt không thích không khả dụng (đã đạt đến giới hạn API máy khách).</string>
+    <string name="revanced_ryd_failure_client_rate_limit_requested">Số lượt không thích không khả dụng (đã đạt đến giới hạn API client).</string>
     <string name="revanced_ryd_failure_generic">Số lượt không thích không khả dụng (%s).</string>
     <string name="revanced_ryd_video_likes_hidden_by_video_owner">Ẩn</string>
     <!-- PreferenceScreen: Return YouTube Username -->
@@ -470,23 +470,36 @@ Chi tiết:
 • Điều này chỉ áp dụng cho người dùng giả mạo với các phiên bản ứng dụng rất cũ."</string>
     <string name="revanced_sanitize_sharing_links_title">Liên kết sạch khi chia sẻ</string>
     <string name="revanced_sanitize_sharing_links_summary">Loại bỏ các tham số truy vấn theo dõi khỏi URL khi chia sẻ liên kết.</string>
-    <string name="revanced_spoof_client_title">Giả mạo thiết bị</string>
-    <string name="revanced_spoof_client_summary">"Giả mạo loại thiết bị để tránh lỗi khi phát.
-
-Nếu bật cài đặt này, bạn có thể tắt 'Giả mạo thông số trình phát'.
+    <string name="revanced_spoof_client_title">Giả mạo client</string>
+    <string name="revanced_spoof_client_summary">"Giả mạo client để tránh lỗi khi phát.
 
 Hạn chế:
+• Nút thao tác có thể luôn bị ẩn trong YouTube Music 7.17+.
+• Âm thanh có thể bị ngắt quãng khi phát.
 • Trình đơn tuỳ chọn trong trình phát có thể không hiển thị đúng cách."</string>
-    <string name="revanced_spoof_client_type_title">Loại thiết bị mặc định</string>
-    <string name="revanced_spoof_client_type_summary">Chọn loại thiết bị để giả mạo.</string>
+    <string name="revanced_spoof_client_type_title">Loại client mặc định</string>
+    <string name="revanced_spoof_client_type_summary">Chọn loại client để giả mạo.</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_player_parameter_title">Giả mạo thông số trình phát</string>
     <string name="revanced_spoof_player_parameter_summary">"Giả mạo thông số trình phát để khắc phục sự cố phát.
 
 Hạn chế:
-• Đôi khi phụ đề hiển thị ở phía trên của trình phát thay vì ở phía dưới như thường lệ."</string>
+• Đôi khi phụ đề hiển thị ở phía trên của trình phát thay vì ở phía dưới như thường lệ.
+• Tính năng này có thể không hoạt động với một số người dùng."</string>
     <string name="revanced_spoof_video_streams_title">Giả mạo luồng video</string>
+    <string name="revanced_spoof_video_streams_summary">"Giả mạo luồng video của client để tránh lỗi khi phát.
+
+Hạn chế:
+• Ứng dụng có thể bị buộc đóng khi dùng VPN hoặc DNS.
+• Âm thanh có thể bị ngắt quãng khi phát trên client dùng truyền phát bit thích ứng (trừ Android VR 1.43.32)."</string>
+    <string name="revanced_spoof_video_streams_default_client_title">Client mặc định</string>
+    <string name="revanced_spoof_video_streams_default_client_summary">Chọn client để giả mạo.</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32">Android VR 1.43.32</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09">Android VR 1.65.09</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
     <string name="revanced_watch_history_type_title">Kiểu nhật ký</string>
     <string name="revanced_watch_history_type_summary">"• Gốc: Tuân theo cài đặt nhật ký xem của tài khoản Google, nhưng có thể không hoạt động do DNS hoặc VPN.
 • Thay thế miền: Vẫn tuân theo cài đặt nhật ký xem của tài khoản Google.

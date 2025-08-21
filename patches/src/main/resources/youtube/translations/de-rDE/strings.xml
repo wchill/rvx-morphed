@@ -258,7 +258,7 @@ Tippen Sie hier, um mehr über DeArrow zu erfahren."</string>
     <string name="revanced_hide_ticket_shelf_title">Ticket-Abschnitte verstecken</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Ticket-Abschnitte sind versteckt</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Ticket-Abschnitte werden angezeigt</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Kategorieleiste</string>
     <string name="revanced_preference_screen_category_bar_summary">Verstecke oder zeige die Kategorieleiste im Feed, Suche und verwandten Videos an.</string>
@@ -364,13 +364,6 @@ Einschränkungen:
 Beschränkungen: 
 • Shorts können nicht ausgeblendet werden.
 • Videos mit 0 Ansichten werden nicht gefiltert."</string>
-    <string name="revanced_hide_related_videos_title">Ähnliche Videos ausblenden</string>
-    <string name="revanced_hide_related_videos_summary_on">Ähnliche Videos sind ausgeblendet.</string>
-    <string name="revanced_hide_related_videos_summary_off">Ähnliche Videos werden angezeigt.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Diese Einstellung begrenzt die maximale Anzahl von Layouts, die auf dem Wiedergabebildschirm geladen werden können.
-
-Wenn sich das Layout des Wiedergabebildschirms aufgrund serverseitiger Änderungen ändert, können unbeabsichtigte Layouts auf dem Wiedergabebildschirm ausgeblendet werden."</string>
-    <string name="revanced_related_videos_offset_title">Offset</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Allgemein</string>
     <string name="revanced_change_start_page_title">Startseite ändern</string>
@@ -778,6 +771,13 @@ Information:
     <string name="revanced_sanitize_video_subtitle_title">Video-Untertitel säubern</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Phrasen wie '#', 'Fundraiser', 'Shop' und 'products' sind vor den Videountertiteln versteckt."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Ausdrücke wie '#', 'Fundraiser', 'Shop' und 'products' werden aus den Video-Untertiteln gezeigt."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">Ähnliche Videos sind ausgeblendet.</string>
+    <string name="revanced_hide_related_videos_summary_off">Ähnliche Videos werden angezeigt.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Diese Einstellung begrenzt die maximale Anzahl von Layouts, die auf dem Wiedergabebildschirm geladen werden können.
+
+Wenn sich das Layout des Wiedergabebildschirms aufgrund serverseitiger Änderungen ändert, können unbeabsichtigte Layouts auf dem Wiedergabebildschirm ausgeblendet werden."</string>
+    <string name="revanced_related_videos_offset_title">Offset</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Aktionsschaltflächen</string>
     <string name="revanced_preference_screen_action_buttons_summary">Aktionsschaltflächen unter Videos ausblenden oder anzeigen.</string>

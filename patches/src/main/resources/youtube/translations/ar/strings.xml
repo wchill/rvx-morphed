@@ -321,7 +321,16 @@
     <string name="revanced_hide_video_recommendation_labels_title">إخفاء علامات اقتراحات الفيديو</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"علامات المصغرات - مثل 'الناس شاهدوا أيضًا' و 'قد يعجبك أيضًا' - مخفية."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"يتم عرض علامات المصغرات - مثل 'الناس شاهدوا أيضًا' و 'قد يعجبك أيضًا'."</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
+    <string name="revanced_hide_carousel_shelf_home_title">إخفاء في موجز الصفحة الرئيسية والفيديوهات ذات الصلة</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_on">مخفي في موجز الصفحة الرئيسية والفيديوهات ذات الصلة.</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_off">يُعرض في موجز الصفحة الرئيسية والفيديوهات ذات الصلة.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_title">إخفاء في موجز الاشتراكات</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_on">مخفي في موجز الاشتراكات.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_off">يُعرض في موجز الاشتراكات.</string>
+    <string name="revanced_hide_carousel_shelf_search_title">إخفاء في نتائج البحث</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_on">مخفي في نتائج البحث.</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_off">يُعرض في نتائج البحث.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">شريط الفئة</string>
     <string name="revanced_preference_screen_category_bar_summary">إخفاء أو عرض شريط الفئة في الموجز، الفيديوهات ذات الصلة، نتائج البحث، والسجلّ.</string>
@@ -447,22 +456,6 @@
 القيود: 
 • لا يمكن إخفاء فيديوهات Shorts.
 • لا تتم تصفية الفيديوهات التي حصلت على 0 مشاهدة."</string>
-    <string name="revanced_hide_related_videos_title">إخفاء الفيديوهات ذات الصلة</string>
-    <string name="revanced_hide_related_videos_summary_on">تم إخفاء الفيديوهات ذات الصلة.</string>
-    <string name="revanced_hide_related_videos_summary_off">يتم عرض الفيديوهات ذات الصلة.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"يحد هذا الإعداد من الحد الأقصى لعدد التخطيطات التي يمكن تحميلها على شاشة المشغل.
-
-إذا تغير تخطيط شاشة المشغل بسبب تغييرات على جانب الخادم، فقد يتم إخفاء التخطيطات غير المقصودة على شاشة المشغل."</string>
-    <string name="revanced_hide_related_videos_type_title">نوع إخفاء الفيديوهات ذات الصلة</string>
-    <string name="revanced_hide_related_videos_type_summary_on">"يتم حفظ عدد التخطيطات المُحمّلة على الشاشة عند بدء الفيديو.
-
-• يُصلح جزئيًا مشكلة إعادة تعيين موضع تمرير الموجز.
-
-• قد لا تتم تصفية الفيديوهات ذات الصلة بالكامل."</string>
-    <string name="revanced_hide_related_videos_type_summary_off">"لا يُحفظ عدد التخطيطات المُحمّلة على الشاشة عند بدء الفيديو.
-
-• قد يُعاد ضبط موضع تمرير الموجز."</string>
-    <string name="revanced_related_videos_offset_title">الموازن</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">عام</string>
     <string name="revanced_change_start_page_title">تغيير صفحة البداية</string>
@@ -898,6 +891,15 @@
     <string name="revanced_sanitize_video_subtitle_title">تطهير ترجمة الفيديو</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"تم إخفاء عبارات مثل '#'، 'جمع التبرعات'، 'المتجر' و 'المنتجات' من ترجمات الفيديو."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"يتم عرض عبارات مثل '#'، 'جمع التبرعات'، 'المتجر' و 'المنتجات' من ترجمات الفيديو."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">تم إخفاء الفيديوهات ذات الصلة.</string>
+    <string name="revanced_hide_related_videos_summary_off">يتم عرض الفيديوهات ذات الصلة.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"يحد هذا الإعداد الحد الأقصى لعدد التخطيطات التي يمكن تحميلها على شاشة المشغل.
+
+إذا لم تكن بعض الفيديوهات ذات الصلة مخفية، أو كانت التخطيطات الغير مقصودة مثل شريط الإجراءات أو قسم التعليقات مخفية، فقد يؤدي تغيير الإزاحة إلى حل المشكلة.
+
+إذا تغير تخطيط شاشة المشغل بسبب تغييرات من جانب الخادم، فقد يتم إخفاء التخطيطات غير المقصودة على شاشة المشغل."</string>
+    <string name="revanced_related_videos_offset_title">الموازن</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">أزرار الإجراء</string>
     <string name="revanced_preference_screen_action_buttons_summary">إخفاء أو عرض أزرار الإجراءات تحت الفيديو.</string>
@@ -1439,7 +1441,9 @@
     <string name="revanced_preference_screen_shorts_title">Shorts</string>
     <string name="revanced_disable_shorts_background_playback_title">تعطيل تشغيل فيديوهات Shorts في الخلفية</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">تم تعطيل تشغيل Shorts في الخلفية.</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">"تم تمكين تشغيل Shorts في الخلفية."</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"تم تمكين تشغيل Shorts في الخلفية.
+
+معلومة: تشغيل Shorts في الخلفية متاح فقط من خلال وضع صورة داخل صورة."</string>
     <string name="revanced_disable_resuming_shorts_player_title">تعطيل استئناف مشغل Shorts</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">لن يتم استئناف تشغيل مشغل Shorts عند بدء تشغيل التطبيق.</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">سيتم استئناف تشغيل مشغل Shorts عند بدء تشغيل التطبيق.</string>
@@ -1718,6 +1722,9 @@
     <string name="revanced_swipe_text_overlay_size_invalid_toast">يجب أن يكون حجم النص بين 1-30.</string>
     <string name="revanced_swipe_overlay_timeout_title">مهلة واجهة إيماءة التمرير</string>
     <string name="revanced_swipe_overlay_timeout_summary">أجزاء الثانية التي تكون فيها الواجهة مرئية.</string>
+    <string name="revanced_swipe_brightness_distance_dip_title">مسافة تمرير السطوع</string>
+    <string name="revanced_swipe_brightness_distance_dip_summary">الحد الأدنى لمسافة التمرير، بالبكسل.</string>
+    <string name="revanced_swipe_brightness_distance_dip_invalid_toast">يجب أن تكون مسافة تمرير السطوع بين 0.1dip - 10.0dip.</string>
     <string name="revanced_swipe_volume_sensitivity_title">حساسية تمرير مستوى الصوت</string>
     <string name="revanced_swipe_volume_sensitivity_summary">مقدار تغير مستوى الصوت لكل تمريرة.</string>
     <string name="revanced_swipe_volume_sensitivity_invalid_toast">يجب أن تكون حساسية إيماءة الصوت بين 1-1000.</string>

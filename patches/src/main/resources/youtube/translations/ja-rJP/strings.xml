@@ -321,7 +321,20 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_hide_video_recommendation_labels_title">サムネイルラベルを非表示</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"「あなたへのおすすめ」「他の人はこの動画も視聴しています」のようなサムネイルのラベルを非表示にします。"</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"「あなたへのおすすめ」「他の人はこの動画も視聴しています」のようなサムネイルのラベルを非表示にします。"</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
+    <string name="revanced_preference_screen_carousel_shelf_title">おすすめ欄</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">ホーム、検索結果、登録チャンネルにあるおすすめ欄を非表示または表示します。</string>
+    <string name="revanced_hide_carousel_shelf_home_title">ホームフィードと関連動画から非表示</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_on">ホームフィードと関連動画から非表示にします。</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_off">ホームフィードと関連動画から非表示にします。</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_title">[登録チャンネル] フィードから非表示</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_on">[登録チャンネル] フィードから非表示にします。</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_off">[登録チャンネル] フィードから非表示にします。</string>
+    <string name="revanced_hide_carousel_shelf_search_title">検索結果から非表示</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_on">検索結果から非表示にします。</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_off">検索結果から非表示にします。</string>
+    <string name="revanced_hide_carousel_shelf_about_title">おすすめ欄について</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">以下の欄を非表示にします:&lt;br&gt;&lt;br&gt;&lt;b&gt;・関連が強い&lt;/b&gt;&lt;br&gt;&lt;b&gt;・ショッピング&lt;/b&gt;&lt;br&gt;&lt;b&gt;・続きを見る&lt;/b&gt;&lt;br&gt;&lt;b&gt;・ニュース速報&lt;/b&gt;&lt;br&gt;&lt;b&gt;・もう一度聴く&lt;/b&gt;&lt;br&gt;&lt;b&gt;・もう一度見る&lt;/b&gt;&lt;br&gt;&lt;b&gt;・他のチャンネルを探す&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">カテゴリーバー</string>
     <string name="revanced_preference_screen_category_bar_summary">フィード、検索、関連動画からカテゴリバー ([すべて]、[ゲーム]、[音楽] など) を非表示または表示します。</string>
@@ -447,19 +460,6 @@ DeArrow について詳しく知るには、ここをタップしてください
 注意: 
 ・ショートは非表示にできません。
 ・再生回数が 0 の動画はフィルタリングされません。"</string>
-    <string name="revanced_hide_related_videos_title">関連動画を非表示</string>
-    <string name="revanced_hide_related_videos_summary_on">ホームフィードから関連動画を非表示にします。</string>
-    <string name="revanced_hide_related_videos_summary_off">ホームフィードから関連動画を非表示にします。</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"これを有効にすると、プレーヤー画面に読み込まれるレイアウトの最大数を制限します。
-
-注意: サーバー側の変更によりプレーヤー画面のレイアウトが変更された場合、意図しないレイアウトがプレーヤー画面上から非表示になる可能性があります。"</string>
-    <string name="revanced_hide_related_videos_type_title">「関連動画を非表示」の種類</string>
-    <string name="revanced_hide_related_videos_type_summary_on">"動画の開始時に画面に読み込まれたレイアウトの数を記憶します。
-
-・フィードでのスクロールの位置がリセットされる問題が部分的に修正されます。
-・関連動画が完全にフィルタリングされない可能性があります。"</string>
-    <string name="revanced_hide_related_videos_type_summary_off">"動画の開始時に画面に読み込まれたレイアウトの数を記憶します。\n\n・フィードでのスクロールの位置がリセットされる問題が部分的に修正されます。\n・関連動画が完全にフィルタリングされない可能性があります。"</string>
-    <string name="revanced_related_videos_offset_title">オフセット</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">一般</string>
     <string name="revanced_change_start_page_title">起動時のページを変更</string>
@@ -898,6 +898,15 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_sanitize_video_subtitle_title">タグを非表示</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"動画のタイトルの下にある「#」、「寄付」、「購入」、「商品」のようなタグを非表示にします。"</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"動画のタイトルの下にある「#」、「寄付」、「購入」、「商品」のようなタグを非表示にします。"</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">ホームフィードから関連動画を非表示にします。</string>
+    <string name="revanced_hide_related_videos_summary_off">ホームフィードから関連動画を非表示にします。</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"この設定は、プレーヤー画面に読み込むことができるレイアウトの最大数を制限します。
+
+一部の関連動画が非表示にならない場合や、アクションバーやコメントセクションなどの意図しないレイアウトが非表示になる場合は、オフセットを変更すると問題が解決する可能性があります。
+
+サーバー側の変更によりプレーヤー画面のレイアウトが変更された場合、意図しないレイアウトがプレーヤー画面上から非表示になる可能性があります。"</string>
+    <string name="revanced_related_videos_offset_title">オフセット</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">アクションボタン</string>
     <string name="revanced_preference_screen_action_buttons_summary">動画下のアクションボタンを非表示または表示します。</string>
@@ -1713,6 +1722,9 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_swipe_text_overlay_size_invalid_toast">テキストサイズは 1 ~ 30 の間でなければなりません。</string>
     <string name="revanced_swipe_overlay_timeout_title">スワイプオーバーレイのタイムアウト</string>
     <string name="revanced_swipe_overlay_timeout_summary">スワイプオーバーレイが表示される時間 (単位: ミリ秒)</string>
+    <string name="revanced_swipe_brightness_distance_dip_title">明るさのスワイプ距離</string>
+    <string name="revanced_swipe_brightness_distance_dip_summary">最小スワイプ距離を設定できます (ピクセル単位)。</string>
+    <string name="revanced_swipe_brightness_distance_dip_invalid_toast">明るさのスワイプ距離は 0.1dip ~ 10.0dip の範囲でなければなりません。</string>
     <string name="revanced_swipe_volume_sensitivity_title">音量のスワイプ感度</string>
     <string name="revanced_swipe_volume_sensitivity_summary">スワイプするごとの音量の変化量です。</string>
     <string name="revanced_swipe_volume_sensitivity_invalid_toast">音量のスワイプ感度は 1 ~ 1000 の間でなければなりません。</string>

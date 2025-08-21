@@ -472,11 +472,11 @@ Informacje:
     <string name="revanced_sanitize_sharing_links_title">Oczyść udostępniane linki</string>
     <string name="revanced_sanitize_sharing_links_summary">Usuwa parametry śledzących zapytań z adresów URL podczas udostępniania linków.</string>
     <string name="revanced_spoof_client_title">Oszukuj klienta</string>
-    <string name="revanced_spoof_client_summary">"Oszukuj klienta, by zapobiec problemom z odtwarzaniem.
+    <string name="revanced_spoof_client_summary">"Oszukuje klienta, by zapobiec problemom z odtwarzaniem.
 
-Jeśli opcja jest włączona, 'Oszukuj parametry odtwarzacza' mogą być wyłączone
-
-Efekt uboczny:
+Efekty uboczne:
+• przyciski akcji mogą być zawsze ukryte w wersjach YouTube Music powyżej 7.17
+• dźwięk może sporadycznie się zacinać podczas odtwarzania
 • menu ustawień odtwarzacza może nie wyświetlać się poprawnie"</string>
     <string name="revanced_spoof_client_type_title">Domyślny klient</string>
     <string name="revanced_spoof_client_type_summary">Definiuje domyślny klient do oszukiwania.</string>
@@ -485,8 +485,22 @@ Efekt uboczny:
     <string name="revanced_spoof_player_parameter_title">Oszukuj parametry odtwarzacza</string>
     <string name="revanced_spoof_player_parameter_summary">"Oszukuje parametry odtwarzacza, by zapobiec problemom z odtwarzaniem.
 
-Efekt uboczny:
-• Czasem napisy są u góry odtwarzacza, zamiast na dole"</string>
+Efekty uboczne:
+• czasem napisy są u góry odtwarzacza, zamiast na dole
+• u niektórych użytkowników może nie działać"</string>
+    <string name="revanced_spoof_video_streams_title">Oszukuj strumienie filmu</string>
+    <string name="revanced_spoof_video_streams_summary">"Oszukuje strumienie filmu klienta, by zapobiec problemom z odtwarzaniem.
+
+Efekty uboczne:
+• aplikacja może wymusić zamknięcie się podczas korzystania z VPN lub DNS
+• dźwięk może sporadycznie się zacinać podczas odtwarzania na strumieniach klienta z adaptacyjną przepływnością (każdy z wyjątkiem Android VR 1.43.32)"</string>
+    <string name="revanced_spoof_video_streams_default_client_title">Domyślny klient</string>
+    <string name="revanced_spoof_video_streams_default_client_summary">Definiuje domyślnego klienta do oszukiwania.</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32">Android VR 1.43.32</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09">Android VR 1.65.09</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
     <string name="revanced_watch_history_type_title">Typ historii oglądania</string>
     <string name="revanced_watch_history_type_summary">"• Oryginalny: Stosuje się do ustawień historii oglądania konta Google, lecz historia oglądania może nie działać przy używaniu DNS lub VPN
 • Zastąpienie domeny: Stosuje się do ustawień historii oglądania konta Google

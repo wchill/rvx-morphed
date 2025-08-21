@@ -322,7 +322,22 @@
     <string name="revanced_hide_video_recommendation_labels_title">Метки рекомендованных видео</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Метки \"Люди также смотрели\" и \"Вы можете понравиться\" скрыты."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Метки \"Люди также смотрели\" и \"Вы можете понравиться\" отображены."</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
+    <string name="revanced_preference_screen_carousel_shelf_title">Полка карусели</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">Настройка полки карусели на \"Главной\", результатов поиска и подписок.</string>
+    <string name="revanced_hide_carousel_shelf_home_title">Вкладка Главная в ленте и похожих видео</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_on">На \"Главной\" в ленте и похожих видео скрыта.</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_off">На \"Главной\" в ленте и похожих видео отображена.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_title">Карусель в подписках</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_on">Карусель в подписках скрыта.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_off">Карусель в подписках отображена.</string>
+    <string name="revanced_hide_carousel_shelf_search_title">Карусель в результатах поиска</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_on">В результатах поиска скрыта.</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_off">В результатах поиска отображена.</string>
+    <string name="revanced_hide_carousel_shelf_about_title">О полке карусели</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Примеры полок карусели:
+
+Срочные новости, Продолжить просмотр, Больше каналов, Слушать снова, Наиболее релевантные, Покупки, Смотреть снова.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Панель категорий</string>
     <string name="revanced_preference_screen_category_bar_summary">Скрытие или отображение панели категорий в ленте, поиске и похожих видео.</string>
@@ -457,21 +472,6 @@ Shorts
 Ограничения:
 • Shorts нельзя скрыть.
 • Видео без просмотров не обрабатываются."</string>
-    <string name="revanced_hide_related_videos_title">Похожие видео</string>
-    <string name="revanced_hide_related_videos_summary_on">Похожие видео скрыты.</string>
-    <string name="revanced_hide_related_videos_summary_off">Похожие видео отображены.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Этот параметр ограничивает количество контейнеров по умолчанию, которые влияют на отображение похожих видео.
-
-Если параметр изменен на стороне сервера, не запрошенные, контейнеры могут быть не доступны."</string>
-    <string name="revanced_hide_related_videos_type_title">Фильтр похожих видео по типу</string>
-    <string name="revanced_hide_related_videos_type_summary_on">"Включено. Количество загруженных макетов на экране запоминается при запуске видео.
-
-• Частично исправимо, сбросом позиции прокрутки.
-• Похожие видео могут быть не полностью отфильтрованы."</string>
-    <string name="revanced_hide_related_videos_type_summary_off">"Отключено. Количество макетов, загруженных на экране не запоминается при запуске видео.
-
-• Позиция прокрутки канала может быть сброшена."</string>
-    <string name="revanced_related_videos_offset_title">Оффсет - Алгоритм выдачи похожих видео</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Основные настройки</string>
     <string name="revanced_change_start_page_title">Начальная страница</string>
@@ -906,6 +906,13 @@ Shorts
     <string name="revanced_sanitize_video_subtitle_title">Фильтр фраз в субтитрах</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Фильтр фраз типа \"#\", \"Магазин\" и \"N продуктов\" в субтитрах отключен."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Фильтр фраз типа \"#\", \"Магазин\" и \"N продуктов\" в субтитрах включен."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">Похожие видео скрыты.</string>
+    <string name="revanced_hide_related_videos_summary_off">Похожие видео отображены.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Этот параметр ограничивает количество контейнеров по умолчанию, которые влияют на отображение похожих видео.
+
+Если параметр изменен на стороне сервера, не запрошенные, контейнеры могут быть не доступны."</string>
+    <string name="revanced_related_videos_offset_title">Оффсет - Алгоритм выдачи похожих видео</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Кнопки действий под видео</string>
     <string name="revanced_preference_screen_action_buttons_summary">Настройка кнопок действий под видео.</string>
@@ -1731,6 +1738,9 @@ Shorts
     <string name="revanced_swipe_text_overlay_size_invalid_toast">Размер текста должен быть от 1 до 30.</string>
     <string name="revanced_swipe_overlay_timeout_title">Таймаут наложения при жесте</string>
     <string name="revanced_swipe_overlay_timeout_summary">Количество миллисекунд отображения наложения.</string>
+    <string name="revanced_swipe_brightness_distance_dip_title">Длина жеста для яркости</string>
+    <string name="revanced_swipe_brightness_distance_dip_summary">Минимальная длина жеста (пиксели).</string>
+    <string name="revanced_swipe_brightness_distance_dip_invalid_toast">Длина жеста для яркости должна быть от 0.1 px - 10.0 px.</string>
     <string name="revanced_swipe_volume_sensitivity_title">Чувствительность жеста громкости</string>
     <string name="revanced_swipe_volume_sensitivity_summary">Величина изменения громкости жестом.</string>
     <string name="revanced_swipe_volume_sensitivity_invalid_toast">Значение должно быть от 1 до 1000.</string>

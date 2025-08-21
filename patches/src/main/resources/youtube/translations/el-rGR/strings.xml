@@ -319,7 +319,20 @@
     <string name="revanced_hide_video_recommendation_labels_title">Ετικέτες προτάσεων βίντεο</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Κρυμμένες.\n\nΑφορά ετικέτες όπως τις «Άλλοι χρήστες παρακολούθησαν επίσης» και «Ενδέχεται επίσης να σας αρέσει»."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Εμφανίζονται.\n\nΑφορά ετικέτες όπως τις «Άλλοι χρήστες παρακολούθησαν επίσης» και «Ενδέχεται επίσης να σας αρέσει»."</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
+    <string name="revanced_preference_screen_carousel_shelf_title">Ενότητα καρουζέλ προτάσεων</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">Απόκρυψη ή εμφάνιση της ενότητας καρουζέλ προτάσεων στην αρχική καρτέλα, στα αποτελέσματα αναζήτησης και στην καρτέλα εγγραφών.</string>
+    <string name="revanced_hide_carousel_shelf_home_title">Ενότητα καρουζέλ προτάσεων στην καρτέλα «Αρχική» και στα σχετικα βίντεο</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_on">Κρυμμένη.</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_title">Ενότητα καρουζέλ προτάσεων στην καρτέλα «Εγγραφές»</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_on">Κρυμμένη.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_carousel_shelf_search_title">Ενότητα καρουζέλ προτάσεων στα αποτελέσματα αναζήτησης</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_on">Κρυμμένη.</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_carousel_shelf_about_title">Σχετικά με την ενότητα καρουζέλ προτάσεων</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Παραδείγματα ενοτήτων καρουζέλ προτάσεων:&lt;br&gt;&lt;br&gt;&lt;b&gt;Έκτακτη είδηση&lt;/b&gt;, &lt;b&gt;Συνέχεια παρακολούθησης&lt;/b&gt;, &lt;b&gt;Εξερευνήστε περισσότερα κανάλια&lt;/b&gt;, &lt;b&gt;Ακούστε ξανά&lt;/b&gt;, &lt;b&gt;Πιο σχετικά&lt;/b&gt;, &lt;b&gt;Shopping&lt;/b&gt;, &lt;b&gt;Παρακολουθήστε ξανά&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Γραμμή κατηγοριών</string>
     <string name="revanced_preference_screen_category_bar_summary">Απόκρυψη ή εμφάνιση της γραμμής κατηγοριών στις ροές, στα σχετικά βίντεο, στα αποτελέσματα αναζήτησης και στο ιστορικό παρακολούθησης.</string>
@@ -443,21 +456,6 @@ Playlists
 Περιορισμοί:
 • Τα Shorts δε φιλτράρονται.
 • Τα βίντεο με 0 προβολές δε φιλτράρονται."</string>
-    <string name="revanced_hide_related_videos_title">Περισσότερα βίντεο</string>
-    <string name="revanced_hide_related_videos_summary_on">Κρυμμένα.</string>
-    <string name="revanced_hide_related_videos_summary_off">Εμφανίζονται.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Αυτή η ρύθμιση περιορίζει τον μέγιστο αριθμό διατάξεων που μπορούν να εμφανιστούν στην οθόνη αναπαραγωγής.
-
-Στην περίπτωση που η διεπαφή της οθόνης αναπαραγωγής αλλάξει λόγω αλλαγών από πλευράς του διακομιστή, ορισμένες διατάξεις της ενδέχεται να είναι κρυμμένες χωρίς να είναι επιθυμητό."</string>
-    <string name="revanced_hide_related_videos_type_title">Τύπου απόκρυψης σχετικών βίντεο</string>
-    <string name="revanced_hide_related_videos_type_summary_on">"Ο αριθμός των διατάξεων που φορτώνονται στην οθόνη απομνημονεύονται όταν ξεκινά το βίντεο.
-
-• Διορθώνει μερικώς ένα πρόβλημα όπου επαναφέρεται η θέση κύλισης της ροής.
-• Τα σχετικά βίντεο ενδέχεται να μη φιλτραριστούν εντελώς."</string>
-    <string name="revanced_hide_related_videos_type_summary_off">"Ο αριθμός των διατάξεων που φορτώνονται στην οθόνη δεν απομνημονεύονται όταν ξεκινά το βίντεο.
-
-• Η θέση κύλισης της ροής ενδέχεται να επαναφέρεται."</string>
-    <string name="revanced_related_videos_offset_title">Μετατόπιση</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Γενικά</string>
     <string name="revanced_change_start_page_title">Αλλαγή αρχικής σελίδας</string>
@@ -892,6 +890,15 @@ Playlists
     <string name="revanced_sanitize_video_subtitle_title">Καθάρισμα υπότιτλων βίντεο</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Φράσεις όπως «#», «Έρανος», «Κατάστημα» και «προϊόντα» είναι κρυμμένες από τους υπότιτλους των βίντεο."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Φράσεις όπως «#», «Έρανος», «Κατάστημα» και «N προϊόντα» εμφανίζονται στους υπότιτλους των βίντεο."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">Κρυμμένα.</string>
+    <string name="revanced_hide_related_videos_summary_off">Εμφανίζονται.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Αυτή η ρύθμιση περιορίζει τον μέγιστο αριθμό διατάξεων που μπορούν να εμφανιστούν στην οθόνη αναπαραγωγής.
+
+Αν κάποια σχετικά βίντεο εξακολουθούν να εμφανίζονται, ή γίνεται απόκρυψη στοιχείων που δε θα έπρεπε, όπως η γραμμή ενεργειών ή η ενότητα σχολίων, η αλλαγή της μετατόπισης μπορεί να διορθώσει το πρόβλημα.
+
+Στην περίπτωση που η διάταξη της οθόνης αναπαραγωγής αλλάξει λόγω αλλαγών από πλευράς του διακομιστή, ενδέχεται να γίνει απόκρυψη ορισμένων στοιχείων χωρίς να είναι επιθυμητό."</string>
+    <string name="revanced_related_videos_offset_title">Μετατόπιση</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Κουμπιά ενεργειών</string>
     <string name="revanced_preference_screen_action_buttons_summary">Απόκρυψη ή εμφάνιση κουμπιών κάτω από τα βίντεο.</string>
@@ -1727,6 +1734,9 @@ Playlists
     <string name="revanced_swipe_text_overlay_size_invalid_toast">Το μέγεθος κειμένου πρέπει να είναι μεταξύ 1-30.</string>
     <string name="revanced_swipe_overlay_timeout_title">Χρονικό όριο φόντου σάρωσης</string>
     <string name="revanced_swipe_overlay_timeout_summary">Το χρονικό διάστημα των χιλιοστών του δευτερολέπτου που είναι ορατό το φόντο σάρωσης.</string>
+    <string name="revanced_swipe_brightness_distance_dip_title">Απόσταση σάρωσης φωτεινότητας</string>
+    <string name="revanced_swipe_brightness_distance_dip_summary">Ελάχιστη απόσταση σάρωσης, σε pixels.</string>
+    <string name="revanced_swipe_brightness_distance_dip_invalid_toast">Η απόσταση σάρωσης πρέπει να είναι μεταξύ 0.1dip - 10.0dip.</string>
     <string name="revanced_swipe_volume_sensitivity_title">Ευαισθησία σάρωσης έντασης ήχου</string>
     <string name="revanced_swipe_volume_sensitivity_summary">Πόσο αλλάζει η ένταση ήχου ανά σάρωση.</string>
     <string name="revanced_swipe_volume_sensitivity_invalid_toast">Η ευαισθησία σάρωσης πρέπει να ναι μεταξύ 1-1000.</string>

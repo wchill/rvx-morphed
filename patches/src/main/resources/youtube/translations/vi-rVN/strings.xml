@@ -321,7 +321,20 @@ Nhấn vào đây để tìm hiểu thêm về DeArrow."</string>
     <string name="revanced_hide_video_recommendation_labels_title">Ẩn nhãn video đề xuất</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Nhãn hình thu nhỏ - ví dụ như 'Mọi người cũng xem video này' và 'Có thể bạn cũng thích nội dung này' - đã ẩn."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Nhãn hình thu nhỏ - ví dụ như 'Mọi người cũng xem video này' và 'Có thể bạn cũng thích nội dung này' - được hiển thị."</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
+    <string name="revanced_preference_screen_carousel_shelf_title">Kệ cá nhân hoá</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">Ẩn hoặc hiển thị kệ được cá nhân hoá trong trang chủ, kết quả tìm kiếm, và kênh đăng ký.</string>
+    <string name="revanced_hide_carousel_shelf_home_title">Ẩn trên thẻ Trang chủ và các video liên quan</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_on">Đã ẩn trên thẻ Trang chủ và các video liên quan.</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_off">Đã hiển thị trong thẻ Trang chủ và các video liên quan.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_title">Ẩn trên thẻ Kênh đăng ký</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_on">Đã ẩn trên thẻ Kênh đăng ký.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_off">Đã hiển thị trên thẻ Kênh đăng ký.</string>
+    <string name="revanced_hide_carousel_shelf_search_title">Ẩn trong kết quả tìm kiếm</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_on">Đã ẩn trong kết quả tìm kiếm.</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_off">Đã hiển thị trong kết quả tìm kiếm.</string>
+    <string name="revanced_hide_carousel_shelf_about_title">Đôi chút về kệ cá nhân hoá</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Ví dụ về kệ cá nhân hoá:&lt;br&gt;&lt;br&gt;&lt;b&gt;Tin nổi bật&lt;/b&gt;, &lt;b&gt;Tiếp tục xem&lt;/b&gt;, &lt;b&gt;Khám phá các chủ đề khác&lt;/b&gt;, &lt;b&gt;Nghe lại&lt;/b&gt;, &lt;b&gt;Phù hợp nhất&lt;/b&gt;, &lt;b&gt;Mua sắm&lt;/b&gt;, &lt;b&gt;Xem lại&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Thanh danh mục</string>
     <string name="revanced_preference_screen_category_bar_summary">Ẩn hoặc hiển thị thanh danh mục trong các trang video, video liên quan, kết quả tìm kiếm và video đã xem.</string>
@@ -445,23 +458,8 @@ Bộ lọc có phân biệt chữ hoa chữ thường, vì vậy bạn cần nh�
     <string name="revanced_hide_video_by_view_counts_about_summary">"Các video có số lượt xem ít hoặc nhiều hơn con số bạn đã đặt sẽ bị ẩn trên thẻ Trang chủ/Kênh đăng ký/Kết quả tìm kiếm.
 
 Hạn chế:
-• Không ẩn đối với các video ngắn.
+• Không ẩn đối với các video ngắn và phát trực tiếp.
 • Các video có 0 lượt xem cũng không bị lọc."</string>
-    <string name="revanced_hide_related_videos_title">Ẩn các video có liên quan</string>
-    <string name="revanced_hide_related_videos_summary_on">Các video có liên quan đã ẩn.</string>
-    <string name="revanced_hide_related_videos_summary_off">Các Video có liên quan được hiển thị.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Cài đặt này giới hạn số lượng bố cục tối đa có thể được tải trên màn hình trình phát.
-
-Nếu bố cục của màn hình trình phát thay đổi do các thay đổi từ phía máy chủ, các bố cục không mong muốn có thể bị ẩn trên màn hình trình phát."</string>
-    <string name="revanced_hide_related_videos_type_title">Ẩn kiểu video liên quan</string>
-    <string name="revanced_hide_related_videos_type_summary_on">"Ghi nhớ số bố cục hiển thị trên màn hình khi video bắt đầu.
-
-• Giúp giảm lỗi đặt lại vị trí cuộn trong trang video.
-• Video liên quan có thể chưa được lọc hết."</string>
-    <string name="revanced_hide_related_videos_type_summary_off">"Không ghi nhớ số bố cục hiển thị trên màn hình khi video bắt đầu.
-
-• Vị trí cuộn trang video có thể bị đặt lại."</string>
-    <string name="revanced_related_videos_offset_title">Độ lệch</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Tổng quan</string>
     <string name="revanced_change_start_page_title">Thay đổi trang khởi động</string>
@@ -892,6 +890,15 @@ Cài đặt → Tự động phát/Phát → Tự động phát video tiếp the
     <string name="revanced_sanitize_video_subtitle_title">Ẩn các tag bên dưới tiêu đề video</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Các tag có cụm từ như \"#\", \"Chiến dịch gây quỹ\", \"Cửa hàng\" và \"sản phẩm\" đã ẩn bên dưới tiêu đề video."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Các tag có các cụm từ như \"#\", \"Chiến dịch gây quỹ\", \"Cửa hàng\" và \"sản phẩm\" được hiển thị trong phụ đề video."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">Các video có liên quan đã ẩn.</string>
+    <string name="revanced_hide_related_videos_summary_off">Các video có liên quan được hiển thị.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Cài đặt này giới hạn số bố cục có thể tải trên màn hình trình phát.
+
+Nếu một số video liên quan không bị ẩn, hoặc các bố cục khác như thanh thao tác hoặc phần bình luận bị ẩn, hãy thử thay đổi độ lệch để khắc phục vấn đề này.
+
+Nếu bố cục màn hình trình phát thay đổi từ phía máy chủ, cũng có thể khiến các bố cục khác bị ẩn."</string>
+    <string name="revanced_related_videos_offset_title">Độ lệch</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Nút thao tác</string>
     <string name="revanced_preference_screen_action_buttons_summary">Ẩn hoặc hiển thị các nút thao tác bên dưới video.</string>
@@ -1122,9 +1129,9 @@ Hạn chế: Tiêu đề video sẽ biến mất khi nhấn vào."</string>
     <string name="revanced_hide_live_chat_replay_button_title">Ẩn nút phát lại cuộc trò chuyện trực tiếp</string>
     <string name="revanced_hide_live_chat_replay_button_summary_on">Nút phát lại cuộc trò chuyện trực tiếp trong lớp phủ video đã ẩn.</string>
     <string name="revanced_hide_live_chat_replay_button_summary_off">Nút phát lại cuộc trò chuyện trực tiếp trong lớp phủ video được hiển thị.</string>
-    <string name="revanced_hide_related_videos_overlay_title">Ẩn lớp phủ các video liên quan</string>
-    <string name="revanced_hide_related_videos_overlay_summary_on">Phần video thêm trong bảng nút thao tác nhanh và lớp phủ video liên quan đã ẩn.</string>
-    <string name="revanced_hide_related_videos_overlay_summary_off">Phần video thêm trong bảng nút thao tác nhanh và lớp phủ video liên quan đã ẩn.</string>
+    <string name="revanced_hide_related_videos_overlay_title">Ẩn lớp phủ video liên quan</string>
+    <string name="revanced_hide_related_videos_overlay_summary_on">Phần video khác trong bảng nút thao tác nhanh và lớp phủ video liên quan đã ẩn.</string>
+    <string name="revanced_hide_related_videos_overlay_summary_off">Phần video khác trong bảng nút thao tác nhanh và lớp phủ video liên quan đã hiển thị.</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Fullscreen, PreferenceCategory: Quick actions -->
     <string name="revanced_preference_category_quick_actions">Bảng nút thao tác nhanh</string>
     <string name="revanced_hide_quick_actions_title">Ẩn bảng nút thao tác nhanh</string>

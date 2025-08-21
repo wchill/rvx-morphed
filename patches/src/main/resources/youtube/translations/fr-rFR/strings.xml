@@ -305,7 +305,7 @@ Cliquez ici pour en savoir plus sur DeArrow."</string>
     <string name="revanced_hide_ticket_shelf_title">Masquer les étagères à tickets</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Les étagères à tickets sont masqués.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Les étagères à tickets sont affichés.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Barre de catégorie</string>
     <string name="revanced_preference_screen_category_bar_summary">Masque ou affiche la barre de catégorie dans les flux, recherche, et vidéos similaires.</string>
@@ -417,13 +417,6 @@ Limitations :
 Limitations : 
 - Les shorts ne peuvent pas être masqués.
 - Les vidéos avec 0 vue ne sont pas filtrées."</string>
-    <string name="revanced_hide_related_videos_title">Masquer les vidéos similaires</string>
-    <string name="revanced_hide_related_videos_summary_on">Les vidéos similaires sont masqués.</string>
-    <string name="revanced_hide_related_videos_summary_off">Les vidéos similaires sont affichés.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Ce paramètre limite le nombre maximum de mises en page pouvant être chargées sur l'écran du lecteur.
-
-Si la mise en page de l'écran du lecteur change en raison de modifications côté serveur, des mises en page non désirées risquent d'être masquées sur l'écran du lecteur."</string>
-    <string name="revanced_related_videos_offset_title">Décalage</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Interface</string>
     <string name="revanced_change_start_page_title">Modifier la page de démarrage</string>
@@ -832,6 +825,13 @@ Note :
     <string name="revanced_sanitize_video_subtitle_title">Nettoyer les sous-titres vidéo</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Les phrases telles que '#', 'Financement' 'Magasin' et 'produits' seront masqués sur les sous-titres vidéos."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Les phrases telles que '#', 'Financement' 'Magasin' et 'produits' seront affichés sur les sous-titres vidéos."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">Les vidéos similaires sont masqués.</string>
+    <string name="revanced_hide_related_videos_summary_off">Les vidéos similaires sont affichés.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Ce paramètre limite le nombre maximum de mises en page pouvant être chargées sur l'écran du lecteur.
+
+Si la mise en page de l'écran du lecteur change en raison de modifications côté serveur, des mises en page non désirées risquent d'être masquées sur l'écran du lecteur."</string>
+    <string name="revanced_related_videos_offset_title">Décalage</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Boutons sous la vidéo</string>
     <string name="revanced_preference_screen_action_buttons_summary">Masque ou affiche les boutons sous les vidéos.</string>

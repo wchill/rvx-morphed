@@ -17,6 +17,11 @@
     <string name="revanced_extended_settings_color_picker">Renk seçici</string>
     <string name="revanced_extended_settings_reset">Sıfırla</string>
     <string name="revanced_extended_settings_reset_color">Rengi sıfırla</string>
+    <string name="revanced_extended_settings_search_hint">Ayarlarda ara</string>
+    <string name="revanced_extended_settings_search_no_results_title">\'%s\' için hiçbir sonuç bulunamadı.</string>
+    <string name="revanced_extended_settings_search_no_results_summary">Başka bir anahtar kelime deneyin.</string>
+    <string name="revanced_extended_settings_search_remove_message">Arama geçmişinden kaldırılsın mı?</string>
+    <string name="revanced_dismiss_player_not_available_toast">Video kimliği mevcut değil. Lütfen videoyu manuel olarak yeniden açın.</string>
     <string name="revanced_playback_speed_normal">Normal</string>
     <string name="revanced_external_downloader_package_name_video_title">Video indirici paket adı</string>
     <string name="revanced_external_downloader_package_name_video_summary">Yüklü olan harici indirme uygulamanızın paket adı, örneğin NewPipe veya YTDLnis gibi.</string>
@@ -26,8 +31,120 @@
 Lütfen web sitesinden %2$s dosyasını indirin."</string>
     <string name="revanced_external_downloader_not_installed_warning">%s kurulmamış. Lütfen önce indiriniz.</string>
     <string name="revanced_queue_manager_add_to_queue">Kuyruğa ekle</string>
+    <string name="revanced_queue_manager_add_to_queue_and_open_queue">Sıraya ekle ve sırayı aç</string>
+    <string name="revanced_queue_manager_add_to_queue_and_play_video">Sıraya ekle ve videoyu oynat</string>
+    <string name="revanced_queue_manager_add_to_queue_and_reload_video">Sıraya ekle ve videoyu yeniden yükle</string>
+    <string name="revanced_queue_manager_external_downloader">Harici indirici</string>
+    <string name="revanced_queue_manager_open_queue">Sırayı aç</string>
+    <string name="revanced_queue_manager_queue">Sıra</string>
+    <string name="revanced_queue_manager_remove_from_queue">Sıradan kaldır</string>
+    <string name="revanced_queue_manager_remove_from_queue_and_open_queue">Sıradan kaldır ve sırayı aç</string>
+    <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Sıradan kaldır ve videoyu yeniden yükle</string>
+    <string name="revanced_queue_manager_remove_queue">Sırayı kaldır</string>
+    <string name="revanced_queue_manager_save_queue">Sırayı kaydet</string>
+    <string name="revanced_queue_manager_user_dialog_message">"Harici bir indirici açmak yerine, sıra yöneticisi diyaloğunu açın.
+
+Navigasyon çubuğundaki geri düğmesini basılı tutarak da sıra yöneticisini açabilirsiniz.
+
+Bu özellik hala geliştirme aşamasındadır, bu nedenle çoğu özellik çalışmayabilir.
+
+Lütfen yalnızca hata ayıklama amacıyla kullanın."</string>
+    <string name="revanced_queue_manager_check_failed_auth">Kullanıcı girişi gerekli</string>
+    <string name="revanced_queue_manager_check_failed_generic">Sıra yöneticisi kullanılamıyor (%s).</string>
+    <string name="revanced_queue_manager_check_failed_playlist_id">Oynatma listesi tanımlanamadı</string>
+    <string name="revanced_queue_manager_check_failed_queue">Sıra boş</string>
+    <string name="revanced_queue_manager_check_failed_video_id">Video tanımlanamadı</string>
+    <string name="revanced_queue_manager_fetch_failed_add">Video eklenemedi.</string>
+    <string name="revanced_queue_manager_fetch_failed_create">Sıra oluşturulamadı.</string>
+    <string name="revanced_queue_manager_fetch_failed_delete">Sıra silinemedi.</string>
+    <string name="revanced_queue_manager_fetch_failed_remove">Video kaldırılamadı.</string>
+    <string name="revanced_queue_manager_fetch_failed_save">Sıra kaydedilemedi.</string>
+    <string name="revanced_queue_manager_fetch_succeeded_add">Video başarıyla eklendi.</string>
+    <string name="revanced_queue_manager_fetch_succeeded_create">Sıra başarıyla oluşturuldu.</string>
+    <string name="revanced_queue_manager_fetch_succeeded_delete">Sıra başarıyla silindi.</string>
+    <string name="revanced_queue_manager_fetch_succeeded_remove">Video başarıyla kaldırıldı.</string>
     <string name="revanced_language_title">RVX dili</string>
     <string name="revanced_language_DEFAULT">Uygulama dili</string>
+    <string name="revanced_language_AM">"Amharca
+<small>አማርኛ</small>"</string>
+    <string name="revanced_language_AR">"Arapça
+<small>العربية</small>"</string>
+    <string name="revanced_language_AZ">"Azerice
+<small>Azərbaycan</small>"</string>
+    <string name="revanced_language_BE">"Belarusça
+<small>беларуская</small>"</string>
+    <string name="revanced_language_BG">"Bulgarca
+<small>Български</small>"</string>
+    <string name="revanced_language_BN">"Bengalce
+<small>বাংলা</small>"</string>
+    <string name="revanced_language_CA">"Katalanca
+<small>Català</small>"</string>
+    <string name="revanced_language_CS">"Çekçe
+<small>Čeština</small>"</string>
+    <string name="revanced_language_DA">"Danimarkaca
+<small>Dansk</small>"</string>
+    <string name="revanced_language_DE">"Almanca
+<small>Deutsch</small>"</string>
+    <string name="revanced_language_EL">"Yunanca
+<small>Ελληνικά</small>"</string>
+    <string name="revanced_language_EN">"İngilizce
+<small>English</small>"</string>
+    <string name="revanced_language_ES">"İspanyolca
+<small>Español</small>"</string>
+    <string name="revanced_language_ET">"Estonca
+<small>Eesti</small>"</string>
+    <string name="revanced_language_FA">"Persçe
+<small>فارسی</small>"</string>
+    <string name="revanced_language_FI">"Fince
+<small>Suomi</small>"</string>
+    <string name="revanced_language_FR">"Fransızca
+<small>Français</small>"</string>
+    <string name="revanced_language_GA">"İrlandaca
+<small>Gaeilge</small>"</string>
+    <string name="revanced_language_GU">"Guceratça
+<small>ગુજરાતી</small>"</string>
+    <string name="revanced_language_HE">"İbranice
+<small>עברי</small>"</string>
+    <string name="revanced_language_HI">"Hintçe
+<small>हिन्दी</small>"</string>
+    <string name="revanced_language_HR">"Hırvatça
+<small>Hrvatski</small>"</string>
+    <string name="revanced_language_HU">"Macarca
+<small>Magyar</small>"</string>
+    <string name="revanced_language_ID">"Endonezce
+<small>Indonesia</small>"</string>
+    <string name="revanced_language_IT">"İtalyanca
+<small>Italiano</small>"</string>
+    <string name="revanced_language_JA">"Japonca
+<small>日本語</small>"</string>
+    <string name="revanced_language_KK">"Kazakça
+<small>Қазақ тілі</small>"</string>
+    <string name="revanced_language_KO">"Korece
+<small>한국어</small>"</string>
+    <string name="revanced_language_LT">"Litvanca
+<small>Lietuvių</small>"</string>
+    <string name="revanced_language_LV">"Letonca
+<small>Latviešu</small>"</string>
+    <string name="revanced_language_MK">"Makedonca
+<small>Македонски</small>"</string>
+    <string name="revanced_language_MN">"Moğolca
+<small>Монгол</small>"</string>
+    <string name="revanced_language_PL">"Lehçe
+<small>Polski</small>"</string>
+    <string name="revanced_language_PT">"Portekizce
+<small>Português</small>"</string>
+    <string name="revanced_language_RO">"Rumence
+<small>Română</small>"</string>
+    <string name="revanced_language_RU">"Rusça
+<small>Русский</small>"</string>
+    <string name="revanced_language_SR">"Sırpça
+<small>Српски</small>"</string>
+    <string name="revanced_language_SV">"İsveççe
+<small>Svenska</small>"</string>
+    <string name="revanced_language_TR">"Türkçe
+<small>Türkçe</small>"</string>
+    <string name="revanced_language_ZH">"Çince
+<small>中文</small>"</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Reklamlar</string>
     <string name="revanced_hide_end_screen_store_banner_title">Bitiş ekranındaki mağaza afişini gizle</string>
@@ -36,6 +153,7 @@ Lütfen web sitesinden %2$s dosyasını indirin."</string>
     <string name="revanced_hide_fullscreen_ads_title">Tam ekran reklamlarını gizle</string>
     <string name="revanced_hide_fullscreen_ads_summary_on">Tam ekran reklamları gizli.</string>
     <string name="revanced_hide_fullscreen_ads_summary_off">Tam ekran reklamları görünür.</string>
+    <string name="revanced_fullscreen_ads_closed_toast">Tam ekran reklamlar kapatıldı.</string>
     <string name="revanced_hide_general_ads_title">Genel reklamları gizle</string>
     <string name="revanced_hide_general_ads_summary_on">Genel reklamlar gizleniyor</string>
     <string name="revanced_hide_general_ads_summary_off">Genel reklamlar gösteriliyor</string>
@@ -144,7 +262,7 @@ DeArrow hakkında daha fazla bilgi edinmek için buraya dokunun."</string>
     <string name="revanced_hide_ticket_shelf_title">Biletler kısmını gizle</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Gizleniyor</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Gizlenmiyor</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Kategori çubuğu</string>
     <string name="revanced_preference_screen_category_bar_summary">Akışta, arama sonuçlarında ve ilgili videolardaki kategori barını gizle veya göster.</string>
@@ -482,6 +600,7 @@ Not: Bu özelliği devre dışı bırakmak, eski arayüzdeki \"Videoyu sarmak i�
     <string name="revanced_hide_zoom_overlay_title">Yakınlaştırma arayüzünü gizle</string>
     <string name="revanced_hide_zoom_overlay_summary_on">Yakınlaştırma arayüzü gizli.</string>
     <string name="revanced_hide_zoom_overlay_summary_off">Yakınlaştırma arayüzü gizlenmiyor.</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Eylem düğmeleri</string>
     <string name="revanced_preference_screen_action_buttons_summary">Videonun altındaki aksiyon düğmeleri gizle veya göster.</string>

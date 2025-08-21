@@ -321,7 +321,7 @@ Koppints ide, ha többet szeretnél megtudni a DeArrow-ról."</string>
     <string name="revanced_hide_video_recommendation_labels_title">Videóajánló címkék elrejtése</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Az indexképek címkéi – például a 'Mások ezeket is megnézték' és az 'Ezek is tetszhetnek' – rejtve vannak."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Az indexképek címkéi – például a 'Mások ezeket is megnézték' és az 'Ezek is tetszhetnek' – rejtve vannak."</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Kategória sáv</string>
     <string name="revanced_preference_screen_category_bar_summary">Rejtse el vagy jelenítse meg a kategória sávot a hírfolyamban, keresésben és a kapcsolódó videókban.</string>
@@ -447,22 +447,6 @@ Korlátozások:
 Korlátozások:
 • A Shortokat nem lehet elrejteni.
 • A 0 megtekintésű videók nincsenek kiszűrve."</string>
-    <string name="revanced_hide_related_videos_title">Kapcsolódó videók elrejtése</string>
-    <string name="revanced_hide_related_videos_summary_on">A kapcsolódó videók el vannak rejtve.</string>
-    <string name="revanced_hide_related_videos_summary_off">A kapcsolódó videók láthatóak.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Ez a beállítás korlátozza a lejátszó képernyőjére betölthető elrendezések maximális számát.
-
-Ha a lejátszó képernyőjének elrendezése a szerveroldali változtatások miatt megváltozik, akkor esetleg a nem kívánt elrendezések elrejthetők a lejátszó képernyőjén."</string>
-    <string name="revanced_hide_related_videos_type_title">Kapcsolódó videók típusának elrejtése</string>
-    <string name="revanced_hide_related_videos_type_summary_on">"A képernyőn betöltött elrendezések számát a videó indításakor megjegyzi a rendszer.
-
-• Részben kijavít egy hibát, amely miatt a hírfolyam görgetési pozíciója visszaállt.
-
-• Előfordulhat, hogy a kapcsolódó videók nem szűrhetők teljesen."</string>
-    <string name="revanced_hide_related_videos_type_summary_off">"A képernyőn betöltött elrendezések számát a videó indításakor nem jegyzi meg a rendszer.
-
-• A hírfolyam görgetési pozíciója visszaállhat."</string>
-    <string name="revanced_related_videos_offset_title">Eltolás</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Általános</string>
     <string name="revanced_change_start_page_title">Kezdőlap megváltoztatása</string>
@@ -895,6 +879,13 @@ Beállítások → Automatikus lejátszás / Lejátszás → Következő videó 
     <string name="revanced_sanitize_video_subtitle_title">Videó feliratának tisztítása</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Az olyan kifejezések, mint a „#”, „Adománygyűjtés”, „Üzlet” és „termékek”, el lettek rejtve a videófeliratokban."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Az olyan kifejezések, mint a „#”, „Adománygyűjtés”, „Üzlet” és „termékek”, láthatóak a videófeliratokban."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">A kapcsolódó videók el vannak rejtve.</string>
+    <string name="revanced_hide_related_videos_summary_off">A kapcsolódó videók láthatóak.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Ez a beállítás korlátozza a lejátszó képernyőjére betölthető elrendezések maximális számát.
+
+Ha a lejátszó képernyőjének elrendezése a szerveroldali változtatások miatt megváltozik, akkor esetleg a nem kívánt elrendezések elrejthetők a lejátszó képernyőjén."</string>
+    <string name="revanced_related_videos_offset_title">Eltolás</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Művelet gombok</string>
     <string name="revanced_preference_screen_action_buttons_summary">Videók alatti műveletgombok elrejtése vagy megjelenítése.</string>

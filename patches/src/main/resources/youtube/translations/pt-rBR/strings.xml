@@ -309,7 +309,7 @@ Toque aqui para saber mais sobre o DeArrow."</string>
     <string name="revanced_hide_ticket_shelf_title">Ocultar painel de ingressos</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Os painéis de ingressos estão ocultos.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Os painéis de ingressos serão exibidos.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Barra de categoria</string>
     <string name="revanced_preference_screen_category_bar_summary">Ocultar ou mostrar a barra de categorias no feed, pesquisa e vídeos relacionados.</string>
@@ -428,13 +428,6 @@ Limitações:
 Limitações: 
 • Shorts não podem ser ocultos.
 • Vídeos com 0 visualizações não são filtrados."</string>
-    <string name="revanced_hide_related_videos_title">Ocultar vídeos relacionados</string>
-    <string name="revanced_hide_related_videos_summary_on">Os vídeos relacionados estão ocultos.</string>
-    <string name="revanced_hide_related_videos_summary_off">Os vídeos relacionados serão exibidos.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Esta configuração limita o número máximo de layouts que podem ser carregados na tela do reprodutor.
-
-Se o layout da tela do reprodutor mudar devido a alterações no lado do servidor, layouts não intencionais podem ficar ocultos na tela do reprodutor."</string>
-    <string name="revanced_related_videos_offset_title">Desvio</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Geral</string>
     <string name="revanced_change_start_page_title">Alterar a página inicial</string>
@@ -849,6 +842,13 @@ Nota:
     <string name="revanced_sanitize_video_subtitle_title">Limpar legendas de vídeo</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Frases como '#', 'Arrecadação de fundos', 'Loja' e 'produtos' serão ocultadas da legenda do vídeo."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Frases como '#', 'Arrecadação de fundos', 'Loja' e 'produtos' serão exibidos na legenda do vídeo."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">Os vídeos relacionados estão ocultos.</string>
+    <string name="revanced_hide_related_videos_summary_off">Os vídeos relacionados serão exibidos.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Esta configuração limita o número máximo de layouts que podem ser carregados na tela do reprodutor.
+
+Se o layout da tela do reprodutor mudar devido a alterações no lado do servidor, layouts não intencionais podem ficar ocultos na tela do reprodutor."</string>
+    <string name="revanced_related_videos_offset_title">Desvio</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Botões de ação</string>
     <string name="revanced_preference_screen_action_buttons_summary">Ocultar ou mostrar botões de ação sob os vídeos.</string>

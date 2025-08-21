@@ -179,7 +179,7 @@
     <string name="revanced_hide_ticket_shelf_title">隐藏购票栏</string>
     <string name="revanced_hide_ticket_shelf_summary_on">购票栏已隐藏</string>
     <string name="revanced_hide_ticket_shelf_summary_off">购票栏已显示</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">类别栏</string>
     <string name="revanced_preference_screen_category_bar_summary">在首页、搜索和相关视频中隐藏或显示类别栏</string>
@@ -282,13 +282,6 @@
 限制：
 • 不能隐藏 Shorts
 • 不能过滤 0 播放量的视频"</string>
-    <string name="revanced_hide_related_videos_title">在相关视频中隐藏</string>
-    <string name="revanced_hide_related_videos_summary_on">相关视频已隐藏</string>
-    <string name="revanced_hide_related_videos_summary_off">相关视频已显示</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"该设置限制了播放器屏幕上可以加载的最大布局数量
-
-如果由于服务器端的更改导致播放器屏幕的布局发生变化，未预期的布局可能会被隐藏在播放器屏幕上"</string>
-    <string name="revanced_related_videos_offset_title">偏移</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">常规设置</string>
     <string name="revanced_change_start_page_title">更改起始页</string>
@@ -605,6 +598,13 @@
     <string name="revanced_sanitize_video_subtitle_title">清理视频字幕</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"像'#', 'Shop' 和 'N products' 这样的词组已在视频字幕中隐藏"</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"像'#', 'Shop' 和 'N products' 这样的词组已在视频字幕中显示"</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">相关视频已隐藏</string>
+    <string name="revanced_hide_related_videos_summary_off">相关视频已显示</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"该设置限制了播放器屏幕上可以加载的最大布局数量
+
+如果由于服务器端的更改导致播放器屏幕的布局发生变化，未预期的布局可能会被隐藏在播放器屏幕上"</string>
+    <string name="revanced_related_videos_offset_title">偏移</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">操作按钮</string>
     <string name="revanced_preference_screen_action_buttons_summary">隐藏或显示视频下方的操作按钮</string>

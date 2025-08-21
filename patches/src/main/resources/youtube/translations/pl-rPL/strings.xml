@@ -321,7 +321,20 @@ Stuknij tutaj, aby dowiedzieć się więcej o DeArrow."</string>
     <string name="revanced_hide_video_recommendation_labels_title">Etykiety z rekomendacjami filmów</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Ukryte"</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Widoczne"</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
+    <string name="revanced_preference_screen_carousel_shelf_title">Półki karuzelowe</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">Ukryj lub pokazuj półki karuzelowe na stronie głównej, w wynikach wyszukiwania i subskrypcjach</string>
+    <string name="revanced_hide_carousel_shelf_home_title">Na stronie głównej i między powiązanymi filmami</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_on">Ukryte</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_off">Widoczne</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_title">Na stronie subskrypcji</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_on">Ukryte</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_off">Widoczne</string>
+    <string name="revanced_hide_carousel_shelf_search_title">W wynikach wyszukiwania</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_on">Ukryte</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_off">Widoczne</string>
+    <string name="revanced_hide_carousel_shelf_about_title">O półkach karuzelowych</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Przykłady półek karuzelowych:&lt;br&gt;&lt;br&gt;&lt;b&gt;Najważniejsze wiadomości&lt;/b&gt;, &lt;b&gt;Kontynuuj oglądanie&lt;/b&gt;, &lt;b&gt;Odkryj więcej kanałów&lt;/b&gt;, &lt;b&gt;Posłuchaj jeszcze raz&lt;/b&gt;, &lt;b&gt;Najbardziej istotne&lt;/b&gt;, &lt;b&gt;Zakupy&lt;/b&gt;, &lt;b&gt;Obejrzyj ponownie&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Pasek kategorii</string>
     <string name="revanced_preference_screen_category_bar_summary">Ukryj lub pokazuj pasek z kategoriami na stronie głównej, nad wynikami wyszukiwania, powiązanymi filmami i historią wyszukiwania</string>
@@ -447,21 +460,6 @@ Ograniczenia:
 Ograniczenia:
 • Shortsy nie mogą zostać ukryte
 • Filmy z 0 wyświetleń nie są filtrowane"</string>
-    <string name="revanced_hide_related_videos_title">Powiązane filmy</string>
-    <string name="revanced_hide_related_videos_summary_on">Ukryte</string>
-    <string name="revanced_hide_related_videos_summary_off">Widoczne</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Ustawienie te ogranicza maksymalną ilość układów aplikacji, jakie mogą być załadowane na ekranie odtwarzacza.
-
-Jeśli układ ekranu odtwarzacza zmieni się w skutek zmian po stronie serwera, niepożądane układy mogą być ukryte na ekranie odtwarzacza."</string>
-    <string name="revanced_hide_related_videos_type_title">Pamiętanie o typach układów powiązanych filmów</string>
-    <string name="revanced_hide_related_videos_type_summary_on">"Włączone
-
-• częściowo rozwiązuje problem, gdzie pozycja przewijania na stronie głównej się resetuje
-• powiązane filmy mogą nie być całkowicie filtrowane"</string>
-    <string name="revanced_hide_related_videos_type_summary_off">"Wyłączone
-
-• pozycja przewijania na stronie głównej może się zresetować"</string>
-    <string name="revanced_related_videos_offset_title">Przesunięcie</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Ogólne</string>
     <string name="revanced_change_start_page_title">Strona startowa</string>
@@ -900,6 +898,15 @@ Ustawienia → Autoodtwarzanie/Odtwarzanie → Autoodtwarzanie następnego filmu
     <string name="revanced_sanitize_video_subtitle_title">Oczyść napisy w filmach</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Frazy takie jak '#', 'Zbiórka', 'Sklep' i 'Produkty' są ukryte w napisach filmu"</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Frazy takie jak '#', 'Zbiórka', 'Sklep' i 'Produkty' są widoczne w napisach filmu"</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">Ukryte</string>
+    <string name="revanced_hide_related_videos_summary_off">Widoczne</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Ustawienie te ogranicza maksymalną ilość układów aplikacji, jakie mogą być załadowane na ekranie odtwarzacza.
+
+Jeśli niektóre powiązane filmy nie są ukryte, bądź występują niezamierzone układy, jak ukryty pasek akcji, sekcja komentarzy, zmiana przesunięcia może rozwiązać problem.
+
+Jeśli układ ekranu odtwarzacza zmieni się w skutek zmian po stronie serwera, niepożądane układy mogą być ukryte na ekranie odtwarzacza."</string>
+    <string name="revanced_related_videos_offset_title">Przesunięcie</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Przyciski akcji</string>
     <string name="revanced_preference_screen_action_buttons_summary">Ukryj lub pokazuj przyciski akcji pod odtwarzaczem</string>
@@ -1720,6 +1727,9 @@ Dostosuj głośność, przesuwając pionowo po prawej stronie ekranu."</string>
     <string name="revanced_swipe_text_overlay_size_invalid_toast">Rozmiar tekstu musi być pomiędzy 1-30.</string>
     <string name="revanced_swipe_overlay_timeout_title">Limit czasu widoczności nakładki</string>
     <string name="revanced_swipe_overlay_timeout_summary">Ilość milisekund, przez które nakładka jest widoczna</string>
+    <string name="revanced_swipe_brightness_distance_dip_title">Odległość przesunięcia gestu jasności</string>
+    <string name="revanced_swipe_brightness_distance_dip_summary">Minimalna odległość przesunięcia w pikselach</string>
+    <string name="revanced_swipe_brightness_distance_dip_invalid_toast">Odległość przesunięcia gestu jasności musi być pomiędzy 0.1 dpi, a 10 dpi.</string>
     <string name="revanced_swipe_volume_sensitivity_title">Czułość przesuwania głośności</string>
     <string name="revanced_swipe_volume_sensitivity_summary">O ile zmienia się głośność na przesunięcie</string>
     <string name="revanced_swipe_volume_sensitivity_invalid_toast">Czułość przesuwania gestu głośności musi być pomiędzy 1 a 1000.</string>

@@ -321,7 +321,27 @@ Tocca qui per saperne di più su DeArrow."</string>
     <string name="revanced_hide_video_recommendation_labels_title">Nascondi le etichette dei video consigliati</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Le etichette nei thumbnails, come \"Le persone hanno guardato anche questo video\" e \"Potrebbe anche piacerti questo\", sono nascoste."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Le etichette nei thumbnails, come \"Le persone hanno guardato anche questo video\" e \"Potrebbe anche piacerti questo\", sono visibili."</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
+    <string name="revanced_preference_screen_carousel_shelf_title">Scaffali a carosello</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">Personalizza gli scaffali a carosello nelle schede, nei video correlati, e nei risultati di ricerca.</string>
+    <string name="revanced_hide_carousel_shelf_home_title">Nascondi nella scheda Home e nei video correlati</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_on">Sono nascosti nella scheda Home e nei video correlati.</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_off">Sono visibili nella scheda Home e nei video correlati.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_title">Nascondi nella scheda Iscrizioni</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_on">Sono nascosti nella scheda Iscrizioni.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_off">Sono visibili nella scheda Iscrizioni.</string>
+    <string name="revanced_hide_carousel_shelf_search_title">Nascondi nei risultati di ricerca</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_on">Sono nascosti nei risultati di ricerca.</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_off">Sono visibili nei risultati di ricerca.</string>
+    <string name="revanced_hide_carousel_shelf_about_title">Informazioni sugli scaffali a carosello</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Nascondi i seguenti scaffali a carosello:
+• Ultime notizie
+• Continua a guardare
+• Esplora altri canali
+• Ascolta di nuovo
+• Più pertinenti
+• Shopping
+• Guarda di nuovo</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Barra dei filtri</string>
     <string name="revanced_preference_screen_category_bar_summary">Personalizza la barra dei filtri nelle schede, nei video correlati, nei risultati di ricerca e nella cronologia.</string>
@@ -447,22 +467,6 @@ Note:
 Note: 
 • Gli Shorts non possono essere nascosti.
 • I video con 0 visualizzazioni non sono filtrati."</string>
-    <string name="revanced_hide_related_videos_title">Nascondi i video correlati</string>
-    <string name="revanced_hide_related_videos_summary_on">I video correlati sono nascosti.</string>
-    <string name="revanced_hide_related_videos_summary_off">I video correlati sono visibili.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Il numero massimo di interfacce caricabili sulla schermata del riproduttore sarà limitato.
-
-Se l'interfaccia della schermata del riproduttore cambia a causa di modifiche lato server, potrebbero esserci delle interfacce indesiderate nascosti nella schermata del riproduttore."</string>
-    <string name="revanced_hide_related_videos_type_title">Nascondi il tipo di video correlati</string>
-    <string name="revanced_hide_related_videos_type_summary_on">"Il numero di interfacce caricati sullo schermo viene ricordato all'avvio dei video.
-
-Note:
-• Risolve parzialmente il problema della reimpostazione della posizione di scorrimento delle schede.
-• I video correlati potrebbero non essere completamente filtrati."</string>
-    <string name="revanced_hide_related_videos_type_summary_off">"Il numero di interfacce caricati sullo schermo non viene ricordato all'avvio dei video.
-
-Nota: la posizione di scorrimento delle schede potrebbe essere reimpostata."</string>
-    <string name="revanced_related_videos_offset_title">Numero massimo di interfacce</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Generali</string>
     <string name="revanced_change_start_page_title">Cambia la scheda iniziale</string>
@@ -895,6 +899,15 @@ Impostazioni → Riproduzione → Riproduzione automatica video successivo"</str
     <string name="revanced_sanitize_video_subtitle_title">Nascondi i sottotesti dei video</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Le frasi come \"#\", \"Raccolta fondi\", \"Negozio\" e \"Prodotti\" dei sottotesti dei video sono nascoste."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Le frasi come \"#\", \"Raccolta fondi\", \"Negozio\" e \"Prodotti\" dei sottotesti dei video sono visibili."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">I video correlati sono nascosti.</string>
+    <string name="revanced_hide_related_videos_summary_off">I video correlati sono visibili.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Il numero massimo di interfacce caricabili sulla schermata del riproduttore sarà limitato.
+
+Se alcuni video correlati non sono nascosti o se alcuni componenti dell'interfaccia, come la barra delle azioni o la sezione dei commenti, sono nascosti involontariamente, la modifica dell'offset potrebbe risolvere il problema.
+
+Se l'interfaccia della schermata del riproduttore cambia a causa di modifiche lato server, potrebbero esserci alcuni componenti dell'interfaccia nascosti involontariamente nella schermata del riproduttore."</string>
+    <string name="revanced_related_videos_offset_title">Numero massimo di interfacce</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Pulsanti di azione</string>
     <string name="revanced_preference_screen_action_buttons_summary">Personalizza i pulsanti di azione sotto i video.</string>
@@ -1714,6 +1727,9 @@ Regola il volume scorrendo verticalmente sul lato destro dello schermo."</string
     <string name="revanced_swipe_text_overlay_size_invalid_toast">La dimensione del testo deve essere tra 1 e 30</string>
     <string name="revanced_swipe_overlay_timeout_title">Durata della sovrapposizione durante il trascinamento</string>
     <string name="revanced_swipe_overlay_timeout_summary">Il tempo in millisecondi per cui la sovrapposizione durante il trascinamento è visibile.</string>
+    <string name="revanced_swipe_brightness_distance_dip_title">Distanza di trascinamento del gesto della luminosità</string>
+    <string name="revanced_swipe_brightness_distance_dip_summary">La distanza minima di trascinamento in pixel.</string>
+    <string name="revanced_swipe_brightness_distance_dip_invalid_toast">La distanza di trascinamento del gesto della luminosità deve essere tra 0,1dip e 10,0dip</string>
     <string name="revanced_swipe_volume_sensitivity_title">Sensibilità del gesto del volume</string>
     <string name="revanced_swipe_volume_sensitivity_summary">Di quanto cambia il volume durante il trascinamento.</string>
     <string name="revanced_swipe_volume_sensitivity_invalid_toast">La sensibilità del trascinamento deve essere tra 1 e 1000</string>

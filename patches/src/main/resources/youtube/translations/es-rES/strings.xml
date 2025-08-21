@@ -321,7 +321,7 @@ Pulsa aquí para saber más sobre DeArrow."</string>
     <string name="revanced_hide_video_recommendation_labels_title">Ocultar etiquetas de recomendación de vídeo</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Las etiquetas de las miniaturas, como «Otras personas también vieron» y «También te puede gustar», están ocultas."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Las etiquetas de las miniaturas, como «Otras personas también vieron» y «También te puede gustar», están visibles."</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
     <string name="revanced_preference_screen_carousel_shelf_title">Estanterías de carrusel</string>
     <string name="revanced_preference_screen_carousel_shelf_summary">Ocultar o mostrar las estanterías de carrusel en la página de inicio, los resultados de búsqueda y las suscripciones.</string>
     <string name="revanced_hide_carousel_shelf_home_title">Ocultar en feed de inicio y vídeos relacionados</string>
@@ -457,21 +457,6 @@ Limitaciones:
 Limitaciones:
 • Los Shorts no se pueden ocultar.
 • Los vídeos con 0 visualizaciones no se filtran."</string>
-    <string name="revanced_hide_related_videos_title">Ocultar vídeos relacionados</string>
-    <string name="revanced_hide_related_videos_summary_on">Los vídeos relacionados están ocultos.</string>
-    <string name="revanced_hide_related_videos_summary_off">Los vídeos relacionados están visibles.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Este ajuste limita el número máximo de diseños que se pueden cargar en la pantalla del reproductor. 
-
-Si el diseño de la pantalla del reproductor cambia debido a cambios en el servidor, es posible que se oculten diseños no deseados en la pantalla del reproductor."</string>
-    <string name="revanced_hide_related_videos_type_title">Ocultar tipo de vídeos relacionados</string>
-    <string name="revanced_hide_related_videos_type_summary_on">"El número de diseños cargados en la pantalla se recuerda cuando se inicia el vídeo.
-
-• Soluciona parcialmente un problema en el que se restablece la posición de desplazamiento del feed.
-• Los vídeos relacionados pueden no estar completamente filtrados."</string>
-    <string name="revanced_hide_related_videos_type_summary_off">"El número de diseños cargados en la pantalla no se recuerda cuando se inicia el vídeo.
-
-• La posición de desplazamiento del feed puede restablecerse."</string>
-    <string name="revanced_related_videos_offset_title">Desplazamiento</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">General</string>
     <string name="revanced_change_start_page_title">Cambiar página de inicio</string>
@@ -906,6 +891,13 @@ Configuración → Reproducción → Reproducción automática del siguiente ví
     <string name="revanced_sanitize_video_subtitle_title">Desinfectar subtítulos de vídeo</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Frases como \"#\", \"Tienda\" y \"N productos\" se ocultan en los subtítulos de vídeo."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Frases como \"#\", \"Tienda\" y \"N productos\" se muestran en los subtítulos de vídeo."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">Los vídeos relacionados están ocultos.</string>
+    <string name="revanced_hide_related_videos_summary_off">Los vídeos relacionados están visibles.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Este ajuste limita el número máximo de diseños que se pueden cargar en la pantalla del reproductor. 
+
+Si el diseño de la pantalla del reproductor cambia debido a cambios en el servidor, es posible que se oculten diseños no deseados en la pantalla del reproductor."</string>
+    <string name="revanced_related_videos_offset_title">Desplazamiento</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Botones de acción</string>
     <string name="revanced_preference_screen_action_buttons_summary">Ocultar o mostrar botones de acción bajo los vídeos.</string>
@@ -1721,6 +1713,9 @@ Ajusta el volumen deslizando verticalmente en el lado derecho de la pantalla."</
     <string name="revanced_swipe_text_overlay_size_invalid_toast">El tamaño del texto debe estar entre 1 y 30.</string>
     <string name="revanced_swipe_overlay_timeout_title">Tiempo de espera de superposición deslizante</string>
     <string name="revanced_swipe_overlay_timeout_summary">La cantidad de milisegundos que la superposición es visible.</string>
+    <string name="revanced_swipe_brightness_distance_dip_title">Distancia de deslizamiento de brillo</string>
+    <string name="revanced_swipe_brightness_distance_dip_summary">Distancia mínima de deslizamiento, en píxeles.</string>
+    <string name="revanced_swipe_brightness_distance_dip_invalid_toast">La distancia de deslizamiento del brillo debe estar entre 0,1 dip y 10,0 dip.</string>
     <string name="revanced_swipe_volume_sensitivity_title">Sensibilidad de deslizamiento de volumen</string>
     <string name="revanced_swipe_volume_sensitivity_summary">Cuánto cambia el volumen por deslizamiento.</string>
     <string name="revanced_swipe_volume_sensitivity_invalid_toast">La sensibilidad de deslizamiento del volumen debe estar entre 1 y 1000.</string>
