@@ -996,6 +996,9 @@ Settings → Autoplay / Playback → Autoplay next video"</string>
     <string name="revanced_hide_download_button_title">Hide Download button</string>
     <string name="revanced_hide_download_button_summary_on">Download button is hidden.</string>
     <string name="revanced_hide_download_button_summary_off">Download button is shown.</string>
+    <string name="revanced_hide_hype_button_title">Hide Hype button</string>
+    <string name="revanced_hide_hype_button_summary_on">Hype button is hidden.</string>
+    <string name="revanced_hide_hype_button_summary_off">Hype button is shown.</string>
     <string name="revanced_hide_like_dislike_button_title">Hide Like and Dislike buttons</string>
     <string name="revanced_hide_like_dislike_button_summary_on">Like and Dislike buttons are hidden.</string>
     <string name="revanced_hide_like_dislike_button_summary_off">Like and Dislike buttons are shown.</string>

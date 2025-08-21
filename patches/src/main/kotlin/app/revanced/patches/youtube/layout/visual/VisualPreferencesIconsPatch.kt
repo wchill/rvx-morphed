@@ -316,6 +316,7 @@ private var rvxPreferenceKey = setOf(
     "revanced_hide_ask_button",
     "revanced_hide_clip_button",
     "revanced_hide_download_button",
+    "revanced_hide_hype_button",
     "revanced_hide_keyword_content_comments",
     "revanced_hide_keyword_content_home",
     "revanced_hide_keyword_content_search",
