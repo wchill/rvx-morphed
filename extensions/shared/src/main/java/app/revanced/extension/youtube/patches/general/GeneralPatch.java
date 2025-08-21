@@ -124,6 +124,14 @@ public class GeneralPatch {
 
     // endregion
 
+    // region [Disable sign in to TV popup] patch
+
+    public static boolean disableSignInToTvPopup() {
+        return Settings.DISABLE_SIGNIN_TO_TV_POPUP.get();
+    }
+
+    // endregion
+
     // region [Disable splash animation] patch
 
     public static boolean disableSplashAnimation(boolean original) {

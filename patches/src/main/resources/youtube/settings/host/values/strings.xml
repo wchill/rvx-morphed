@@ -530,6 +530,9 @@ Limitation: Back button on the toolbar may not work."</string>
     <string name="revanced_disable_auto_captions_title">Disable forced auto captions</string>
     <string name="revanced_disable_auto_captions_summary_on">Forced auto captions are disabled.</string>
     <string name="revanced_disable_auto_captions_summary_off">Forced auto captions are enabled.</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">Disable Sign in to TV popup</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">Sign in to TV popup is disabled.</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">Sign in to TV popup is enabled.</string>
     <string name="revanced_disable_splash_animation_title">Disable splash animation</string>
     <string name="revanced_disable_splash_animation_summary_on">Splash animation is disabled.</string>
     <string name="revanced_disable_splash_animation_summary_off">Splash animation is enabled.</string>
