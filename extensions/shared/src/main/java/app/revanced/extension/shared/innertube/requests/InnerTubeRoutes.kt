@@ -47,11 +47,7 @@ object InnerTubeRoutes {
         endpoint = "next",
         fields = "contents.singleColumnWatchNextResults." +
                 "playlist.playlist.contents.playlistPanelVideoRenderer." +
-                "navigationEndpoint.watchEndpoint.playerParams," + // Android VR
-                "contents.singleColumnWatchNextResults." +
-                "playlist.playlist.contents.playlistPanelVideoRenderer." +
-                "navigationEndpoint.coWatchWatchEndpointWrapperCommand." +
-                "watchEndpoint.watchEndpoint.playerParams", // Android
+                "navigationEndpoint"
     )
 
     @JvmField

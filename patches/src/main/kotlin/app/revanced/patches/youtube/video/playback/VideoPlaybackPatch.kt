@@ -11,8 +11,6 @@ import app.revanced.patches.shared.litho.addLithoFilter
 import app.revanced.patches.shared.litho.lithoFilterPatch
 import app.revanced.patches.youtube.utils.auth.authHookPatch
 import app.revanced.patches.youtube.utils.compatibility.Constants.COMPATIBLE_PACKAGE
-import app.revanced.patches.youtube.utils.dismiss.dismissPlayerHookPatch
-import app.revanced.patches.youtube.utils.dismiss.hookDismissObserver
 import app.revanced.patches.youtube.utils.extension.Constants.COMPONENTS_PATH
 import app.revanced.patches.youtube.utils.extension.Constants.PATCH_STATUS_CLASS_DESCRIPTOR
 import app.revanced.patches.youtube.utils.extension.Constants.VIDEO_PATH
@@ -84,7 +82,6 @@ val videoPlaybackPatch = bytecodePatch(
         lithoFilterPatch,
         lithoLayoutPatch,
         disableHdrPatch,
-        dismissPlayerHookPatch,
         playerTypeHookPatch,
         recyclerViewTreeObserverPatch,
         shortsPlaybackPatch,
@@ -156,8 +153,7 @@ val videoPlaybackPatch = bytecodePatch(
 
         hookBackgroundPlayVideoInformation("$EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
         hookVideoInformation("$EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
-        hookPlayerResponseVideoId("$EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR->fetchMusicRequest(Ljava/lang/String;Z)V")
-        hookDismissObserver("$EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR->onDismiss()V")
+        hookPlayerResponseVideoId("$EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR->fetchRequest(Ljava/lang/String;Z)V")
 
         updatePatchStatus(PATCH_STATUS_CLASS_DESCRIPTOR, "VideoPlayback")
 

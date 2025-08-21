@@ -11,6 +11,7 @@ import org.apache.commons.lang3.BooleanUtils;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import app.revanced.extension.shared.innertube.utils.AuthUtils;
 import app.revanced.extension.shared.settings.BooleanSetting;
 import app.revanced.extension.shared.settings.FloatSetting;
 import app.revanced.extension.shared.utils.Logger;
@@ -30,6 +31,8 @@ public class PlaybackSpeedPatch {
 
     private static final boolean DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC =
             Settings.DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC.get();
+    private static final boolean DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC_TYPE =
+            DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC && Settings.DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC_TYPE.get();
     private static final long TOAST_DELAY_MILLISECONDS = 750;
     private static long lastTimeSpeedChanged;
 
@@ -92,7 +95,7 @@ public class PlaybackSpeedPatch {
     /**
      * Injection point.
      */
-    public static void fetchMusicRequest(@NonNull String videoId, boolean isShortAndOpeningOrPlaying) {
+    public static void fetchRequest(@NonNull String videoId, boolean isShortAndOpeningOrPlaying) {
         if (DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC) {
             try {
                 final boolean videoIdIsShort = VideoInformation.lastPlayerResponseIsShort();
@@ -105,10 +108,11 @@ public class PlaybackSpeedPatch {
 
                 MusicRequest.fetchRequestIfNeeded(
                         videoId,
-                        Settings.DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC_TYPE.get()
+                        DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC_TYPE,
+                        AuthUtils.getRequestHeader()
                 );
             } catch (Exception ex) {
-                Logger.printException(() -> "fetchMusicRequest failure", ex);
+                Logger.printException(() -> "fetchRequest failure", ex);
             }
         }
     }
@@ -207,16 +211,6 @@ public class PlaybackSpeedPatch {
             }
         } catch (Exception ex) {
             Logger.printException(() -> "userSelectedPlaybackSpeed failure", ex);
-        }
-    }
-
-    /**
-     * Injection point.
-     */
-    public static void onDismiss() {
-        synchronized (ignoredPlaybackSpeedVideoIds) {
-            ignoredPlaybackSpeedVideoIds.remove(videoId);
-            videoId = "";
         }
     }
 
