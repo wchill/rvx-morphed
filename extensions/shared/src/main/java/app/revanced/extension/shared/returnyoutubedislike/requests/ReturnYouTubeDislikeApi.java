@@ -32,13 +32,13 @@ public class ReturnYouTubeDislikeApi {
     /**
      * {@link #fetchVotes(String)} TCP connection timeout
      */
-    private static final int API_GET_VOTES_TCP_TIMEOUT_MILLISECONDS = 2 * 1000; // 2 Seconds.
+    private static final int API_GET_VOTES_TCP_TIMEOUT_MILLISECONDS = 5 * 1000; // 5 Seconds.
 
     /**
      * {@link #fetchVotes(String)} HTTP read timeout.
      * To locally debug and force timeouts, change this to a very small number (ie: 100)
      */
-    private static final int API_GET_VOTES_HTTP_TIMEOUT_MILLISECONDS = 4 * 1000; // 4 Seconds.
+    private static final int API_GET_VOTES_HTTP_TIMEOUT_MILLISECONDS = 10 * 1000; // 10 Seconds.
 
     /**
      * Default connection and response timeout for voting and registration.
