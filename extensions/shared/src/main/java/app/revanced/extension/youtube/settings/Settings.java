@@ -709,8 +709,14 @@ public class Settings extends BaseSettings {
         // region Migration initialized
 
         // Old spoof versions that no longer work reliably.
+        boolean spoofAppVersionIncluded = PatchStatus.SpoofAppVersion();
+        if (!spoofAppVersionIncluded && SPOOF_APP_VERSION.get()) {
+            Logger.printInfo(() -> "Resetting spoof app version");
+            SPOOF_APP_VERSION.resetToDefault();
+            SPOOF_APP_VERSION_TARGET.resetToDefault();
+        }
         String spoofAppVersionTarget = SPOOF_APP_VERSION_TARGET.get();
-        if (spoofAppVersionTarget.compareTo(SPOOF_APP_VERSION_TARGET.defaultValue) < 0) {
+        if (spoofAppVersionIncluded && spoofAppVersionTarget.compareTo(SPOOF_APP_VERSION_TARGET.defaultValue) < 0) {
             Utils.showToastShort(str("revanced_spoof_app_version_target_invalid_toast", spoofAppVersionTarget));
             Utils.showToastShort(str("revanced_extended_reset_to_default_toast"));
             Logger.printInfo(() -> "Resetting spoof app version target");
