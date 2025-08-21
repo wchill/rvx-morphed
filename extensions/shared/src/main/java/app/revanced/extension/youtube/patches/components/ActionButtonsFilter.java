@@ -107,7 +107,7 @@ public final class ActionButtonsFilter extends Filter {
                         Settings.HIDE_HYPE_BUTTON,
                         IS_19_26_OR_GREATER || Settings.FIX_HYPE_BUTTON_ICON.get()
                                 ? "yt_outline_star_shooting"
-                                : "\"Hype\""
+                                : "Hype"
                 )
         );
     }
