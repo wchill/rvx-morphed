@@ -14,6 +14,8 @@ import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMu
 import app.revanced.patcher.util.smali.ExternalLabel
 import app.revanced.patcher.util.smali.toInstructions
 import app.revanced.patches.shared.mdxPlayerDirectorSetVideoStageFingerprint
+import app.revanced.patches.shared.playbackStartParametersConstructorFingerprint
+import app.revanced.patches.shared.playbackStartParametersToStringFingerprint
 import app.revanced.patches.shared.videoLengthFingerprint
 import app.revanced.patches.youtube.utils.PLAYER_RESPONSE_MODEL_CLASS_DESCRIPTOR
 import app.revanced.patches.youtube.utils.YOUTUBE_FORMAT_STREAM_MODEL_CLASS_TYPE
@@ -34,6 +36,7 @@ import app.revanced.patches.youtube.video.videoid.videoIdPatch
 import app.revanced.util.addInstructionsAtControlFlowLabel
 import app.revanced.util.addStaticFieldToExtension
 import app.revanced.util.cloneMutable
+import app.revanced.util.findFieldFromToString
 import app.revanced.util.findMethodFromToString
 import app.revanced.util.findMethodOrThrow
 import app.revanced.util.findMutableClassOrThrow
@@ -55,6 +58,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodImplementation
@@ -576,13 +580,26 @@ val videoInformationPatch = bytecodePatch(
 
         videoQualityFingerprint.matchOrThrow().let {
             // Fix bad data used by YouTube.
-            it.method.addInstructions(
-                0,
-                """
-                    invoke-static { p2, p1 }, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->fixVideoQualityResolution(Ljava/lang/String;I)I
-                    move-result p1
-                """
-            )
+            val (qualityNameField, resolutionField) = with (it.method) {
+                val qualityNameIndex = indexOfVideoQualityNameFieldInstruction(this)
+                val resolutionIndex = indexOfVideoQualityResolutionFieldInstruction(this)
+                val qualityNameReference = getInstruction<ReferenceInstruction>(qualityNameIndex).reference
+                val resolutionReference = getInstruction<ReferenceInstruction>(resolutionIndex).reference
+                val qualityNameRegister = getInstruction<TwoRegisterInstruction>(qualityNameIndex).registerA
+                val resolutionRegister = getInstruction<TwoRegisterInstruction>(resolutionIndex).registerA
+
+                addInstructions(
+                    0, """
+                        invoke-static { v$qualityNameRegister, v$resolutionRegister }, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->fixVideoQualityResolution(Ljava/lang/String;I)I
+                        move-result v$resolutionRegister
+                        """
+                )
+
+                Pair(
+                    qualityNameReference,
+                    resolutionReference
+                )
+            }
 
             // Add methods to access obfuscated quality fields.
             it.classDef.apply {
@@ -597,17 +614,11 @@ val videoInformationPatch = bytecodePatch(
                         null,
                         MutableMethodImplementation(2),
                     ).toMutable().apply {
-                        // Only one string field.
-                        val qualityNameField = fields.single { field ->
-                            field.type == "Ljava/lang/String;"
-                        }
-
                         addInstructions(
-                            0,
-                            """
+                            0, """
                                 iget-object v0, p0, $qualityNameField
                                 return-object v0
-                            """
+                                """
                         )
                     }
                 )
@@ -623,16 +634,11 @@ val videoInformationPatch = bytecodePatch(
                         null,
                         MutableMethodImplementation(2),
                     ).toMutable().apply {
-                        val resolutionField = fields.single { field ->
-                            field.type == "I"
-                        }
-
                         addInstructions(
-                            0,
-                            """
+                            0, """
                                 iget v0, p0, $resolutionField
                                 return v0
-                            """
+                                """
                         )
                     }
                 )
@@ -670,15 +676,7 @@ val videoInformationPatch = bytecodePatch(
             ).let {
                 with (it.method) {
                     val formatStreamIndex = it.patternMatch!!.startIndex + 1
-                    val formatStreamResolutionReference =
-                        getInstruction<ReferenceInstruction>(formatStreamIndex).reference as MethodReference
-
-                    addInstructions(
-                        0,
-                        "invoke-static { p0 }, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->setVideoFormat(Ljava/util/List;)V"
-                    )
-
-                    formatStreamResolutionReference
+                    getInstruction<ReferenceInstruction>(formatStreamIndex).reference as MethodReference
                 }
             }
 
@@ -722,42 +720,38 @@ val videoInformationPatch = bytecodePatch(
                 )
         }
 
-        initFormatStreamFingerprint.methodOrThrow(initFormatStreamParentFingerprint)
+        val initialResolutionField = playbackStartParametersToStringFingerprint.originalMethodOrThrow()
+            .findFieldFromToString(", initialPlaybackVideoQualityFixedResolution=")
+
+        playbackStartParametersConstructorFingerprint
+            .methodOrThrow(playbackStartParametersToStringFingerprint)
             .apply {
-                val preferredFormatStreamIndex =
-                    indexOfPreferredFormatStreamInstruction(this)
-                val preferredFormatStreamReference =
-                    getInstruction<ReferenceInstruction>(preferredFormatStreamIndex).reference
-                val preferredFormatStreamInstruction =
-                    getInstruction<TwoRegisterInstruction>(preferredFormatStreamIndex)
-                val preferredFormatStreamRegister =
-                    preferredFormatStreamInstruction.registerA
-                val definingClassRegister =
-                    preferredFormatStreamInstruction.registerB
+                val index = indexOfFirstInstructionReversedOrThrow {
+                    opcode == Opcode.IPUT_OBJECT &&
+                            getReference<FieldReference>() == initialResolutionField
+                }
+                val register = getInstruction<TwoRegisterInstruction>(index).registerA
 
                 addInstructions(
-                    preferredFormatStreamIndex + 1, """
-                        invoke-static { v$preferredFormatStreamRegister }, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->getVideoFormat($YOUTUBE_FORMAT_STREAM_MODEL_CLASS_TYPE)$YOUTUBE_FORMAT_STREAM_MODEL_CLASS_TYPE
-                        move-result-object v$preferredFormatStreamRegister
-                        iput-object v$preferredFormatStreamRegister, v$definingClassRegister, $preferredFormatStreamReference
+                    index, """
+                        invoke-static {v$register}, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->getInitialVideoQuality(Lj${'$'}/util/Optional;)Lj${'$'}/util/Optional;
+                        move-result-object v$register
                         """
                 )
             }
 
-        videoQualityArrayFingerprint.methodOrThrow().apply {
-            val qualityLabelIndex = indexOfQualityLabelInstruction(this)
-            val listIndex = indexOfFirstInstructionReversedOrThrow(qualityLabelIndex) {
-                opcode == Opcode.INVOKE_INTERFACE &&
-                        getReference<MethodReference>()?.name == "iterator"
-            }
-            val listRegister = getInstruction<FiveRegisterInstruction>(listIndex).registerC
+        videoQualityArrayFingerprint.matchOrThrow(formatStreamModelBuilderFingerprint).let {
+            it.method.apply {
+                val index = it.patternMatch!!.startIndex
+                val register = getInstruction<OneRegisterInstruction>(index).registerA
 
-            addInstructions(
-                listIndex, """
-                    invoke-static { v$listRegister }, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->removeVideoQualities(Ljava/util/List;)Ljava/util/List;
-                    move-result-object v$listRegister
-                    """
-            )
+                addInstructionsAtControlFlowLabel(
+                    index, """
+                        invoke-static { v$register }, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->removeVideoQualities(Ljava/util/List;)Ljava/util/List;
+                        move-result-object v$register
+                        """
+                )
+            }
         }
 
         videoQualityListFingerprint.matchOrThrow().let {

@@ -187,3 +187,20 @@ internal val removeLikeFingerprint = legacyFingerprint(
     returnType = "V",
     strings = listOf("like/removelike")
 )
+
+internal val playbackStartParametersConstructorFingerprint = legacyFingerprint(
+    name = "playbackStartParametersConstructorFingerprint",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.CONSTRUCTOR,
+    returnType = "V",
+    opcodes = listOf(Opcode.IPUT_OBJECT)
+)
+
+internal val playbackStartParametersToStringFingerprint = legacyFingerprint(
+    name = "playbackStartParametersToStringFingerprint",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
+    returnType = "Ljava/lang/String;",
+    strings = listOf(", initialPlaybackVideoQualityFixedResolution="),
+    customFingerprint = { method, classDef ->
+        method.name == "toString"
+    }
+)
