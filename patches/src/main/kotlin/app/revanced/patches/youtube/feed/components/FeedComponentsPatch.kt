@@ -305,22 +305,16 @@ val feedComponentsPatch = bytecodePatch(
 
         // region patch for hide show more button
 
-        showMoreButtonFingerprint.mutableClassOrThrow().let {
-            val getViewMethod =
-                it.methods.find { method ->
-                    method.parameters.isEmpty() &&
-                            method.returnType == "Landroid/view/View;"
-                }
+        showMoreButtonFingerprint.methodOrThrow(
+            showMoreButtonParentFingerprint
+        ).apply {
+            val targetIndex = implementation!!.instructions.size - 1
+            val targetRegister = getInstruction<OneRegisterInstruction>(targetIndex).registerA
 
-            getViewMethod?.apply {
-                val targetIndex = implementation!!.instructions.size - 1
-                val targetRegister = getInstruction<OneRegisterInstruction>(targetIndex).registerA
-
-                addInstruction(
-                    targetIndex,
-                    "invoke-static {v$targetRegister}, $FEED_CLASS_DESCRIPTOR->hideShowMoreButton(Landroid/view/View;)V"
-                )
-            } ?: throw PatchException("Failed to find getView method")
+            addInstruction(
+                targetIndex,
+                "invoke-static {v$targetRegister}, $FEED_CLASS_DESCRIPTOR->hideShowMoreButton(Landroid/view/View;)V"
+            )
         }
 
         // endregion

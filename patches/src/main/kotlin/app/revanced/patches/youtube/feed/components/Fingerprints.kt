@@ -176,15 +176,17 @@ internal val searchResultsChipBarFingerprint = legacyFingerprint(
     literals = listOf(barContainerHeight),
 )
 
+internal val showMoreButtonParentFingerprint = legacyFingerprint(
+    name = "showMoreButtonParentFingerprint",
+    returnType = "V",
+    literals = listOf(expandButtonDown),
+)
+
 internal val showMoreButtonFingerprint = legacyFingerprint(
     name = "showMoreButtonFingerprint",
-    opcodes = listOf(
-        Opcode.CONST,
-        Opcode.CONST_4,
-        Opcode.INVOKE_STATIC,
-        Opcode.MOVE_RESULT_OBJECT
-    ),
-    literals = listOf(expandButtonDown),
+    returnType = "Landroid/view/View;",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
+    parameters = emptyList(),
 )
 
 

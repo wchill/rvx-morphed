@@ -32,6 +32,9 @@ import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 internal const val YOUTUBE_FORMAT_STREAM_MODEL_CLASS_TYPE =
     "Lcom/google/android/libraries/youtube/innertube/model/media/FormatStreamModel;"
 
+internal const val YOUTUBE_PIVOT_BAR_CLASS_TYPE =
+    "Lcom/google/android/libraries/youtube/rendering/ui/pivotbar/PivotBar;"
+
 internal const val YOUTUBE_VIDEO_QUALITY_CLASS_TYPE =
     "Lcom/google/android/libraries/youtube/innertube/model/media/VideoQuality;"
 
