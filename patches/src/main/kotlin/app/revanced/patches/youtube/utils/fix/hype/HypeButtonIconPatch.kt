@@ -93,8 +93,6 @@ val hypeButtonIconPatch = bytecodePatch(
 
         val spoofedAppVersion = "19.26.42"
 
-        // TODO: HOOK Player Response... Nop, just add Spoof app version..
-
         fun MutableMethod.getReference(index: Int) =
             getInstruction<ReferenceInstruction>(index).reference
 
