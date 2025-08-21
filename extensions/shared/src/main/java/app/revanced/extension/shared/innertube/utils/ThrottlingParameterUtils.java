@@ -15,6 +15,7 @@ import androidx.annotation.Nullable;
 import com.liskovsoft.sharedutils.helpers.Helpers;
 import com.liskovsoft.youtubeapi.app.playerdata.PlayerDataExtractor;
 
+import app.revanced.extension.shared.innertube.client.YouTubeClient;
 import okhttp3.*;
 
 import org.apache.commons.lang3.StringUtils;
@@ -58,16 +59,26 @@ public class ThrottlingParameterUtils {
     /**
      * Hardcoded javascript url path (Mobile Web).
      */
-    private static final String PLAYER_JS_HARDCODED_URL_PATH_MOBILE_WEB = "010fbc8d";
+    private static final String PLAYER_JS_HARDCODED_URL_PATH_MOBILE_WEB = "3d3ba064";
     /**
      * Hardcoded javascript url path (TV).
      */
-    private static final String PLAYER_JS_HARDCODED_URL_PATH_TV = "6ea06c52";
+    private static final String PLAYER_JS_HARDCODED_URL_PATH_TV = "3d3ba064";
     /**
      * Regular expression pattern to find variables used in JavaScript url.
      */
     private static final Pattern PLAYER_JS_IDENTIFIER_PATTERN =
             Pattern.compile("player\\\\/([a-z0-9]{8})\\\\/");
+    /**
+     * Service worker url (Mobile Web).
+     */
+    private static final String SERVICE_WORKER_URL_MOBILE_WEB =
+            "https://m.youtube.com/sw.js_data";
+    /**
+     * Service worker url (TV).
+     */
+    private static final String SERVICE_WORKER_URL_TV =
+            "https://www.youtube.com/tv/sw.js_data";
     /**
      * Url used to find variables used in JavaScript url.
      */
@@ -77,12 +88,22 @@ public class ThrottlingParameterUtils {
      * User-agent (Mobile Web).
      */
     private static final String USER_AGENT_MOBILE_WEB =
-            "Mozilla/5.0 (PlayStation Vita 3.74) AppleWebKit/537.73 (KHTML, like Gecko) Silk/3.2";
+            "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML; like Gecko) FxiOS/98.2  Mobile/15E148 Safari/605.1.15";
     /**
      * User-agent (TV).
      */
     private static final String USER_AGENT_TV =
             "Mozilla/5.0 (PLAYSTATION 3 4.10) AppleWebKit/531.22.8 (KHTML, like Gecko)";
+    /**
+     * Client version from service worker (Mobile Web).
+     */
+    @Nullable
+    private volatile static String clientVersionMobileWeb = null;
+    /**
+     * Client version from service worker (TV).
+     */
+    @Nullable
+    private volatile static String clientVersionTV = null;
     /**
      * Class used to deobfuscate, powered by SmartTube (Mobile Web).
      */
@@ -114,6 +135,16 @@ public class ThrottlingParameterUtils {
     @Nullable
     private volatile static String playerJsUrlTV = null;
     /**
+     * Service worker Json Array (Mobile Web).
+     */
+    @Nullable
+    private volatile static JSONArray serviceWorkerJsonArrayMobileWeb = null;
+    /**
+     * Service worker Json Array (TV).
+     */
+    @Nullable
+    private volatile static JSONArray serviceWorkerJsonArrayTV = null;
+    /**
      * Field value included when sending a request (Mobile Web).
      */
     @Nullable
@@ -124,12 +155,18 @@ public class ThrottlingParameterUtils {
     @Nullable
     private volatile static String signatureTimestampTV = null;
     /**
-     * Field value included when sending a request.
+     * Visitor data from service worker (Mobile Web).
      */
     @Nullable
-    private volatile static String visitorId = null;
+    private volatile static String visitorIdMobileWeb = null;
+    /**
+     * Visitor data from service worker (TV).
+     */
+    @Nullable
+    private volatile static String visitorIdTV = null;
 
     private volatile static boolean isInitialized = false;
+    private volatile static boolean useLatestPlayerJs = false;
 
     /**
      * Typically, there are 10 to 30 available formats for a video.
@@ -154,6 +191,7 @@ public class ThrottlingParameterUtils {
             return;
         }
         isInitialized = true;
+        ThrottlingParameterUtils.useLatestPlayerJs = useLatestPlayerJs;
 
         if (!useLatestPlayerJs) {
             playerJsUrlMobileWeb = String.format(PLAYER_JS_URL_FORMAT_MOBILE_WEB, PLAYER_JS_HARDCODED_URL_PATH_MOBILE_WEB);
@@ -165,26 +203,41 @@ public class ThrottlingParameterUtils {
         playerJsUrlTV = getPlayerJsUrl(true);
         signatureTimestampTV = getSignatureTimestamp(true);
 
+        if (useLatestPlayerJs) {
+            clientVersionTV = getClientVersion(true);
+            serviceWorkerJsonArrayTV = getServiceWorkerJsonArray(true);
+        }
+
         if (useMobileWeb) {
             extractorMobileWeb = getExtractor(false);
             playerJsMobileWeb = getPlayerJs(false);
             playerJsUrlMobileWeb = getPlayerJsUrl(false);
             signatureTimestampMobileWeb = getSignatureTimestamp(false);
-            visitorId = getVisitorId();
+            visitorIdMobileWeb = getVisitorId(false);
+            serviceWorkerJsonArrayMobileWeb = getServiceWorkerJsonArray(false);
+            if (useLatestPlayerJs) {
+                clientVersionMobileWeb = getClientVersion(false);
+            }
         }
     }
 
     private static void resetAll() {
         isInitialized = false;
+
+        clientVersionMobileWeb = null;
+        clientVersionTV = null;
         extractorMobileWeb = null;
         extractorTV = null;
         playerJsMobileWeb = null;
         playerJsTV = null;
         playerJsUrlMobileWeb = null;
         playerJsUrlTV = null;
+        serviceWorkerJsonArrayMobileWeb = null;
+        serviceWorkerJsonArrayTV = null;
         signatureTimestampMobileWeb = null;
         signatureTimestampTV = null;
-        visitorId = null;
+        visitorIdMobileWeb = null;
+        visitorIdTV = null;
     }
 
     @Nullable
@@ -224,8 +277,12 @@ public class ThrottlingParameterUtils {
         return signatureTimestamp;
     }
 
-    private static String setVisitorId() {
-        String jsonString = fetch("https://m.youtube.com/sw.js_data", false);
+    private static JSONArray setServiceWorkerJsonArray(boolean isTV) {
+        String jsonString = fetch(isTV
+                ? SERVICE_WORKER_URL_TV
+                : SERVICE_WORKER_URL_MOBILE_WEB,
+                isTV
+        );
         if (jsonString != null) {
             if (jsonString.startsWith(")]}'"))
                 jsonString = jsonString.substring(4);
@@ -233,23 +290,114 @@ public class ThrottlingParameterUtils {
             try {
                 JSONArray jsonArray = new JSONArray(jsonString);
 
-                //jsonArray[0][2][0][0][13]
+                //jsonArray[0][2][0][0]
                 return jsonArray
                         .getJSONArray(0)
                         .getJSONArray(2)
                         .getJSONArray(0)
-                        .getJSONArray(0)
-                        .getString(13);
+                        .getJSONArray(0);
             } catch (Exception ex) {
-                Logger.printException(() -> "setVisitorId failed", ex);
+                Logger.printException(() -> "setServiceWorkerJsonArray failed", ex);
             }
         }
         return null;
     }
 
-    public static String getVisitorId() {
+    private static JSONArray getServiceWorkerJsonArray(boolean isTV) {
+        JSONArray serviceWorkerJsonArray = isTV
+                ? serviceWorkerJsonArrayTV
+                : serviceWorkerJsonArrayMobileWeb;
+        if (serviceWorkerJsonArray == null) {
+            serviceWorkerJsonArray = setServiceWorkerJsonArray(isTV);
+            if (isTV) {
+                serviceWorkerJsonArrayTV = serviceWorkerJsonArray;
+            } else {
+                serviceWorkerJsonArrayMobileWeb = serviceWorkerJsonArray;
+            }
+        }
+        return serviceWorkerJsonArray;
+    }
+
+    private static String setClientVersion(boolean isTV) {
+        JSONArray serviceWorkerJsonArray = getServiceWorkerJsonArray(isTV);
+
+        if (serviceWorkerJsonArray != null) {
+            try {
+                String clientVersion = serviceWorkerJsonArray
+                        .getString(16);
+                if (StringUtils.isNotEmpty(clientVersion)) {
+                    Logger.printDebug(() -> "clientVersion: " + clientVersion + ", isTV: " + isTV);
+                }
+                return clientVersion;
+            } catch (Exception ex) {
+                Logger.printException(() -> "setClientVersion failed", ex);
+            }
+        }
+
+        return null;
+    }
+
+    public static String getClientVersion(boolean isTV) {
+        String clientVersion = isTV
+                ? clientVersionTV
+                : clientVersionMobileWeb;
+        if (clientVersion == null) {
+            clientVersion = setClientVersion(isTV);
+            if (isTV) {
+                clientVersionTV = clientVersion;
+            } else {
+                clientVersionMobileWeb = clientVersion;
+            }
+        }
+
+        return clientVersion;
+    }
+
+    public static String getClientVersion(YouTubeClient.ClientType clientType) {
+        String hardCodedClientVersion = clientType.getClientVersion();
+        if (useLatestPlayerJs) {
+            if (clientType == YouTubeClient.ClientType.TV || clientType == YouTubeClient.ClientType.MWEB) {
+                boolean isTV = clientType == YouTubeClient.ClientType.TV;
+                String clientVersion = getClientVersion(isTV);
+                if (clientVersion != null) {
+                    return clientVersion;
+                }
+            }
+        }
+
+        return hardCodedClientVersion;
+    }
+
+    private static String setVisitorId(boolean isTV) {
+        JSONArray serviceWorkerJsonArray = getServiceWorkerJsonArray(isTV);
+
+        if (serviceWorkerJsonArray != null) {
+            try {
+                String visitorId = serviceWorkerJsonArray
+                        .getString(13);
+                if (StringUtils.isNotEmpty(visitorId)) {
+                    Logger.printDebug(() -> "visitorId: " + visitorId + ", isTV: " + isTV);
+                }
+                return visitorId;
+            } catch (Exception ex) {
+                Logger.printException(() -> "setVisitorId failed", ex);
+            }
+        }
+
+        return null;
+    }
+
+    public static String getVisitorId(boolean isTV) {
+        String visitorId = isTV
+                ? visitorIdTV
+                : visitorIdMobileWeb;
         if (visitorId == null) {
-            visitorId = setVisitorId();
+            visitorId = setVisitorId(isTV);
+            if (isTV) {
+                visitorIdTV = visitorId;
+            } else {
+                visitorIdMobileWeb = visitorId;
+            }
         }
 
         return visitorId;

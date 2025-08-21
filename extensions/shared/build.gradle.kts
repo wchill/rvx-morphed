@@ -1,5 +1,9 @@
 import java.lang.Boolean.TRUE
 
+plugins {
+    alias(libs.plugins.protobuf)
+}
+
 extension {
     name = "extensions/shared.rve"
 }
@@ -38,10 +42,27 @@ dependencies {
     implementation(libs.lang3)
     implementation(libs.nanojson)
     implementation(libs.okhttp3)
+    implementation(libs.protobuf.javalite)
+
     implementation(libs.regex)
     implementation(libs.retrofit)
     //noinspection UseTomlInstead
     implementation("com.eclipsesource.j2v8:j2v8:6.2.1@aar")
 
     compileOnly(project(":extensions:shared:stub"))
+}
+
+protobuf {
+    protoc {
+        artifact = libs.protobuf.protoc.get().toString()
+    }
+    generateProtoTasks {
+        all().forEach { task ->
+            task.builtins {
+                create("java") {
+                    option("lite")
+                }
+            }
+        }
+    }
 }

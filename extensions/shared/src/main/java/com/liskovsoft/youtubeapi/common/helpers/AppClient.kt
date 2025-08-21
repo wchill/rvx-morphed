@@ -48,7 +48,7 @@ internal enum class AppClient(
     // 8AEB - premium formats?
     WEB_SAFARI("WEB", "2.20250312.04.00", 1, userAgent = DefaultHeaders.USER_AGENT_SAFARI,
         referer = "https://www.youtube.com/", params = "8AEB"),
-    MWEB("MWEB", "2.20250812.01.00", 2, userAgent = DefaultHeaders.USER_AGENT_MOBILE_WEB,
+    MWEB("MWEB", "2.20250819.01.00", 2, userAgent = DefaultHeaders.USER_AGENT_MOBILE_WEB,
         referer = "https://m.youtube.com/"),
     ANDROID("ANDROID", "19.26.37", 3, userAgent = DefaultHeaders.USER_AGENT_ANDROID,
         referer = null, postData = String.format(POST_DATA_ANDROID, 30)),

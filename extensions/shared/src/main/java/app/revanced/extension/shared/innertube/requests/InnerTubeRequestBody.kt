@@ -107,7 +107,7 @@ object InnerTubeRequestBody {
         try {
             val client = JSONObject()
             client.put("clientName", clientType.clientName)
-            client.put("clientVersion", clientType.clientVersion)
+            client.put("clientVersion", ThrottlingParameterUtils.getClientVersion(clientType))
             client.put("platform", clientType.clientPlatform)
             client.put("clientScreen", clientType.clientScreen)
             client.put("hl", LOCALE_LANGUAGE)

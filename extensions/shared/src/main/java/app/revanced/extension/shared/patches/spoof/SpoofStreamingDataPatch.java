@@ -245,7 +245,7 @@ public class SpoofStreamingDataPatch {
                     }
                 }
 
-                Logger.printDebug(() -> "Not overriding streaming data (video stream is null): " + videoId);
+                Logger.printDebug(() -> "Not overriding streaming data (video stream is null, it may be video ads): " + videoId);
             } catch (Exception ex) {
                 Logger.printException(() -> "getStreamingData failure", ex);
             }

@@ -43,6 +43,7 @@ import app.revanced.patches.youtube.video.playerresponse.addPlayerResponseMethod
 import app.revanced.patches.youtube.video.videoid.videoIdPatch
 import app.revanced.util.ResourceGroup
 import app.revanced.util.addInstructionsAtControlFlowLabel
+import app.revanced.util.cloneMutable
 import app.revanced.util.copyResources
 import app.revanced.util.findInstructionIndicesReversedOrThrow
 import app.revanced.util.findMethodOrThrow
@@ -437,6 +438,16 @@ val spoofStreamingDataPatch = bytecodePatch(
                         """
                 )
             }
+        }
+
+        // Some classes that exist in YouTube are not merged.
+        // Instead of relocating all classes in the extension,
+        // Only the methods necessary for the patch to function are copied.
+        // Note: Protobuf library included with YouTube seems to have been released before 2016.
+        getEmptyRegistryFingerprint.matchOrThrow().let {
+            it.classDef.methods.add(
+                it.method.cloneMutable(name = "getEmptyRegistry")
+            )
         }
 
         addPlayerResponseMethodHook(

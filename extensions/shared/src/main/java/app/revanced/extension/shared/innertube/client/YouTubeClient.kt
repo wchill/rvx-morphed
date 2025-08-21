@@ -186,20 +186,18 @@ object YouTubeClient {
 
     // TVHTML5
     /**
-     * Video not playable: Drm-protected.
+     * Video not playable: None.
      * Note: Both 'Authorization' and 'Set-Cookie' are supported.
      * TODO: Find out why playback sometimes fails.
-     * TODO: Like NewPipe Extractor, the latest client version must always be fetched
-     *       in [YouTube TV Service Worker](https://www.youtube.com/tv/sw.js_data).
      */
-    private const val CLIENT_VERSION_TVHTML5 = "7.20250805.16.01"
+    private const val CLIENT_VERSION_TVHTML5 = "7.20250819.10.00"
     private const val USER_AGENT_TVHTML5 =
         "Mozilla/5.0 (PLAYSTATION 3 4.10) AppleWebKit/531.22.8 (KHTML, like Gecko)"
 
 
     // TVHTML5 SIMPLY
     /**
-     * Video not playable: Drm-protected.
+     * Video not playable: None.
      * Note: Only 'Authorization' is supported.
      * TODO: Find out why playback sometimes fails.
      */
@@ -223,12 +221,10 @@ object YouTubeClient {
      * Note: Audio track is not available.
      * Note: Only 'Set-Cookie' is supported.
      * TODO: Find out why playback sometimes fails.
-     * TODO: Like NewPipe Extractor, the latest client version must always be fetched
-     *       in [YouTube Mobile Web Service Worker](https://m.youtube.com/sw.js_data).
      */
-    private const val CLIENT_VERSION_MWEB = "2.20250812.01.00"
+    private const val CLIENT_VERSION_MWEB = "2.20250820.01.00"
     private const val USER_AGENT_MWEB =
-        "Mozilla/5.0 (PlayStation Vita 3.74) AppleWebKit/537.73 (KHTML, like Gecko) Silk/3.2"
+        "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML; like Gecko) FxiOS/98.2  Mobile/15E148 Safari/605.1.15"
 
 
     /**
@@ -489,7 +485,6 @@ object YouTubeClient {
         MWEB(
             id = 2,
             clientVersion = CLIENT_VERSION_MWEB,
-            clientPlatform = CLIENT_PLATFORM_TABLET,
             userAgent = USER_AGENT_MWEB,
             requireJS = true,
             requirePoToken = true,
@@ -521,13 +516,13 @@ object YouTubeClient {
                 VISIONOS,
             )
             val CLIENT_ORDER_TO_USE_JS_PREFER_TV: Array<ClientType> = arrayOf(
-                TV,
+                TV_SIMPLY,
                 IOS_UNPLUGGED,
                 ANDROID_VR,
                 ANDROID_CREATOR,
                 ANDROID_UNPLUGGED,
                 ANDROID_VR_NO_AUTH,
-                TV_SIMPLY,
+                TV,
                 MWEB,
                 VISIONOS,
             )
