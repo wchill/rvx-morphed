@@ -8,6 +8,7 @@ import app.revanced.patches.youtube.utils.componentlist.hookElementList
 import app.revanced.patches.youtube.utils.componentlist.lazilyConvertedElementHookPatch
 import app.revanced.patches.youtube.utils.extension.Constants.COMPONENTS_PATH
 import app.revanced.patches.youtube.utils.extension.Constants.PLAYER_PATH
+import app.revanced.patches.youtube.utils.fix.hype.hypeButtonIconPatch
 import app.revanced.patches.youtube.utils.fix.litho.lithoLayoutPatch
 import app.revanced.patches.youtube.utils.patch.PatchList.HIDE_ACTION_BUTTONS
 import app.revanced.patches.youtube.utils.request.buildRequestPatch
@@ -35,6 +36,7 @@ val actionButtonsPatch = bytecodePatch(
         lazilyConvertedElementHookPatch,
         videoInformationPatch,
         buildRequestPatch,
+        hypeButtonIconPatch,
     )
 
     execute {

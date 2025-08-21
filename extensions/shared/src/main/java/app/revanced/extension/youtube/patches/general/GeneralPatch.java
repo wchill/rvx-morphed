@@ -347,6 +347,14 @@ public class GeneralPatch {
 
     // endregion
 
+    // region [Fix Hype button icon] patch
+
+    public static boolean fixHypeButtonIconEnabled() {
+        return Settings.FIX_HYPE_BUTTON_ICON.get();
+    }
+
+    // endregion
+
     // region [Spoof app version] patch
 
     private static int legacyFragmentId = 0;

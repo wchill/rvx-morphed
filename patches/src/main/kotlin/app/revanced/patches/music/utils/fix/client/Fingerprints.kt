@@ -6,27 +6,6 @@ import app.revanced.util.or
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 
-internal val createPlayerRequestBodyFingerprint = legacyFingerprint(
-    name = "createPlayerRequestBodyFingerprint",
-    returnType = "V",
-    parameters = listOf("L"),
-    opcodes = listOf(
-        Opcode.CHECK_CAST,
-        Opcode.IGET,
-        Opcode.AND_INT_LIT16,
-    ),
-    strings = listOf("ms"),
-)
-
-internal val setPlayerRequestClientTypeFingerprint = legacyFingerprint(
-    name = "setPlayerRequestClientTypeFingerprint",
-    opcodes = listOf(
-        Opcode.IGET,
-        Opcode.IPUT, // Sets ClientInfo.clientId.
-    ),
-    strings = listOf("10.29"),
-)
-
 /**
  * This is the fingerprint used in the 'client-spoof' patch around 2022.
  * (Integrated into [baseSpoofUserAgentPatch] now.)

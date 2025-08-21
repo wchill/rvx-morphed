@@ -600,6 +600,18 @@ Changes include:
     <string name="revanced_disable_translucent_status_bar_summary_on">Status bar is opaque.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Status bar is opaque or translucent.</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">For some manufacturer ROMs running Android 12+, enabling this feature may make the system navigation bar transparent.</string>
+
+    <string name="revanced_fix_hype_button_icon_title">Fix Hype button icon</string>
+    <string name="revanced_fix_hype_button_icon_summary_on">Hype button icon is shown.</string>
+    <string name="revanced_fix_hype_button_icon_summary_off">Hype button icon is hidden.</string>
+    <string name="revanced_fix_hype_button_icon_user_dialog_message">"In YouTube 19.25.39 or earlier, the Hype icon is hidden in the video action bar and video description panel.
+
+As a workaround, the app version is spoofed to 19.26.42 in the '/get_watch' endpoint and '/next' endpoint.
+
+If you turn off this setting, the Hype icon may not show in the video action bar and video description panel.
+
+※ Even if this setting is turned off, the Hype button may not be hidden."</string>
+
     <string name="revanced_spoof_app_version_title">Spoof app version</string>
     <string name="revanced_spoof_app_version_summary_on">Version spoofed</string>
     <string name="revanced_spoof_app_version_summary_off">Version not spoofed</string>

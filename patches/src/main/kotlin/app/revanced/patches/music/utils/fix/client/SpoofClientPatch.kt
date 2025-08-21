@@ -11,8 +11,12 @@ import app.revanced.patches.music.utils.extension.Constants.SPOOF_PATH
 import app.revanced.patches.music.utils.playbackRateBottomSheetClassFingerprint
 import app.revanced.patches.music.utils.playbackSpeedBottomSheetFingerprint
 import app.revanced.patches.music.utils.resourceid.varispeedUnavailableTitle
+import app.revanced.patches.shared.CLIENT_INFO_CLASS_DESCRIPTOR
+import app.revanced.patches.shared.clientTypeFingerprint
+import app.revanced.patches.shared.createPlayerRequestBodyFingerprint
 import app.revanced.patches.shared.createPlayerRequestBodyWithModelFingerprint
 import app.revanced.patches.shared.indexOfBrandInstruction
+import app.revanced.patches.shared.indexOfClientInfoInstruction
 import app.revanced.patches.shared.indexOfManufacturerInstruction
 import app.revanced.patches.shared.indexOfModelInstruction
 import app.revanced.patches.shared.indexOfReleaseInstruction
@@ -43,8 +47,6 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 
 private const val EXTENSION_CLASS_DESCRIPTOR =
     "$SPOOF_PATH/SpoofClientPatch;"
-private const val CLIENT_INFO_CLASS_DESCRIPTOR =
-    "Lcom/google/protos/youtube/api/innertube/InnertubeContext\$ClientInfo;"
 
 context(BytecodePatchContext)
 internal fun patchSpoofClient() {
@@ -63,12 +65,9 @@ internal fun patchSpoofClient() {
 
     // region Get field references to be used below.
 
-    setPlayerRequestClientTypeFingerprint.matchOrThrow().let {
+    clientTypeFingerprint.matchOrThrow().let {
         it.method.apply {
-            val clientInfoIndex = indexOfFirstInstructionOrThrow {
-                opcode == Opcode.IPUT_OBJECT &&
-                        getReference<FieldReference>()?.type == CLIENT_INFO_CLASS_DESCRIPTOR
-            }
+            val clientInfoIndex = indexOfClientInfoInstruction(this)
             val clientIdIndex = it.patternMatch!!.endIndex
             val dummyClientVersionIndex = it.stringMatches!!.first().index
             val dummyClientVersionRegister =
@@ -76,6 +75,7 @@ internal fun patchSpoofClient() {
             val clientVersionIndex =
                 indexOfFirstInstructionOrThrow(dummyClientVersionIndex) {
                     opcode == Opcode.IPUT_OBJECT &&
+                            getReference<FieldReference>()?.type == "Ljava/lang/String;" &&
                             (this as TwoRegisterInstruction).registerA == dummyClientVersionRegister
                 }
 
