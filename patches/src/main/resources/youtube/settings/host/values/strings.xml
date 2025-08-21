@@ -1848,6 +1848,9 @@ Adjust volume by swiping vertically on the right side of the screen."</string>
     <string name="revanced_swipe_text_overlay_size_invalid_toast">The text size must be between 1-30.</string>
     <string name="revanced_swipe_overlay_timeout_title">Swipe overlay timeout</string>
     <string name="revanced_swipe_overlay_timeout_summary">The amount of milliseconds the overlay is visible.</string>
+    <string name="revanced_swipe_brightness_distance_dip_title">Brightness swipe distance</string>
+    <string name="revanced_swipe_brightness_distance_dip_summary">Minimum swipe distance, in pixels.</string>
+    <string name="revanced_swipe_brightness_distance_dip_invalid_toast">Brightness swipe distance must be between 0.1dip - 10.0dip.</string>
     <string name="revanced_swipe_volume_sensitivity_title">Volume swipe sensitivity</string>
     <string name="revanced_swipe_volume_sensitivity_summary">How much the volume changes per swipe.</string>
     <string name="revanced_swipe_volume_sensitivity_invalid_toast">Volume swipe sensitivity must be between 1-1000.</string>

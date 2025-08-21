@@ -443,6 +443,7 @@ private val emptyTitles = setOf(
     "revanced_hide_player_flyout_menu_captions_footer",
     "revanced_hide_player_flyout_menu_quality_footer",
     "revanced_hide_stop_ads_button",
+    "revanced_swipe_brightness_distance_dip",
     "revanced_swipe_volumes_sensitivity",
 )
 

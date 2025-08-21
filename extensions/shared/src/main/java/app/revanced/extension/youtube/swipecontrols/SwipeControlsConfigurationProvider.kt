@@ -84,6 +84,19 @@ class SwipeControlsConfigurationProvider {
     val swipeMagnitudeThreshold = Settings.SWIPE_MAGNITUDE_THRESHOLD.get()
 
     /**
+     * The minimum swipe distance of brightness swipe gestures, in pixels.
+     * Resets to default if set to 0, as it would disable swiping.
+     */
+    val brightnessSwipeDistance: Float by lazy {
+        validateValue(
+            Settings.SWIPE_BRIGHTNESS_DISTANCE_DIP,
+            0.1f,
+            10f,
+            "revanced_swipe_brightness_distance_dip_invalid_toast"
+        )
+    }
+
+    /**
      * The sensitivity of volume swipe gestures, determining how much volume changes per swipe.
      * Resets to default if set to 0, as it would disable swiping.
      */
