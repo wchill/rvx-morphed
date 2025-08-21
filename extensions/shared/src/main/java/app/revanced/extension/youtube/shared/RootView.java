@@ -55,7 +55,7 @@ public final class RootView {
     }
 
     public static boolean isPlayerActive() {
-        return PlayerType.getCurrent().isMaximizedOrFullscreen() || isActionBarVisible.get();
+        return PlayerType.getCurrent().isMaximizedOrFullscreenOrSliding() || isActionBarVisible.get();
     }
 
     public static boolean isShortsActive() {
