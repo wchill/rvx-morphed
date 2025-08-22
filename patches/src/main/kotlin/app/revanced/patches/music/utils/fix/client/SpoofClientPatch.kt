@@ -11,6 +11,7 @@ import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMu
 import app.revanced.patches.music.utils.extension.Constants.SPOOF_PATH
 import app.revanced.patches.music.utils.playbackRateBottomSheetClassFingerprint
 import app.revanced.patches.music.utils.playbackSpeedBottomSheetFingerprint
+import app.revanced.patches.music.utils.playservice.is_6_36_or_greater
 import app.revanced.patches.music.utils.resourceid.varispeedUnavailableTitle
 import app.revanced.patches.shared.CLIENT_INFO_CLASS_DESCRIPTOR
 import app.revanced.patches.shared.clientTypeFingerprint
@@ -249,6 +250,26 @@ internal fun patchSpoofClient() {
                 move-result-object v$insertRegister
                 """
         )
+    }
+
+    // endregion
+
+    // region fix for video action bar is always hidden
+
+    if (is_6_36_or_greater) {
+        spoofAppVersionFingerprint.matchOrThrow().let {
+            it.method.apply {
+                val startIndex = it.patternMatch!!.startIndex
+                val buildOverrideNameRegister = getInstruction<OneRegisterInstruction>(startIndex).registerA
+
+                addInstructions(
+                    startIndex + 1, """
+                    invoke-static {v$buildOverrideNameRegister}, $EXTENSION_CLASS_DESCRIPTOR->getClientVersionOverride(Ljava/lang/String;)Ljava/lang/String;
+                    move-result-object v$buildOverrideNameRegister
+                    """
+                )
+            }
+        }
     }
 
     // endregion

@@ -524,8 +524,8 @@ Info:
 
 Side effect:
 • Action buttons may always be hidden in YouTube Music 7.17+.
-• Audio may intermittently stutter during playback.
-• Player flyout menu may not show properly."</string>
+• Player flyout menu may not show properly.
+• These side effects may be resolved by clearing the app data and logging in again."</string>
     <string name="revanced_spoof_client_type_title">Default client</string>
     <string name="revanced_spoof_client_type_summary">Defines a default client for spoofing.</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>

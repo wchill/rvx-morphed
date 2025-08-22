@@ -36,6 +36,19 @@ internal val playbackFeatureFlagFingerprint = legacyFingerprint(
     literals = listOf(PLAYBACK_FEATURE_FLAG),
 )
 
+internal val spoofAppVersionFingerprint = legacyFingerprint(
+    name = "spoofAppVersionFingerprint",
+    returnType = "Ljava/lang/String;",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.STATIC,
+    parameters = listOf("Landroid/content/Context;"),
+    opcodes = listOf(
+        Opcode.IGET_OBJECT,
+        Opcode.GOTO,
+        Opcode.CONST_STRING,
+    ),
+    strings = listOf("pref_override_build_version_name"),
+)
+
 internal const val INIT_PLAYER_RESPONSE = " interstitialPlayerResponse="
 
 /**

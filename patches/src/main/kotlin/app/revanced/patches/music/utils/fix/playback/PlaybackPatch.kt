@@ -8,6 +8,7 @@ import app.revanced.patches.music.utils.extension.Constants.VIDEO_PATH
 import app.revanced.patches.music.utils.fix.client.patchSpoofClient
 import app.revanced.patches.music.utils.fix.streamingdata.patchSpoofVideoStreams
 import app.revanced.patches.music.utils.patch.PatchList.FIX_PLAYBACK
+import app.revanced.patches.music.utils.playservice.versionCheckPatch
 import app.revanced.patches.music.utils.settings.CategoryType
 import app.revanced.patches.music.utils.settings.ResourceUtils.updatePatchStatus
 import app.revanced.patches.music.utils.settings.addPreferenceWithIntent
@@ -32,6 +33,7 @@ val playbackPatch = bytecodePatch(
             "$VIDEO_PATH/CustomPlaybackSpeedPatch;",
             5.0f
         ),
+        versionCheckPatch,
     )
 
     val spoofClient = booleanOption(
