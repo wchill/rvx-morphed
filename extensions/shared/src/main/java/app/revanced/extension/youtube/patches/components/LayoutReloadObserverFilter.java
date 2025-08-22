@@ -30,11 +30,11 @@ import app.revanced.extension.youtube.shared.PlayerType;
  * As a workaround for this special issue, if a video actionbar is detected, which is one of the components below the player,
  * it is treated as being in the same state as [WATCH_WHILE_MAXIMIZED].
  */
-public final class RelatedVideoFilter extends Filter {
+public final class LayoutReloadObserverFilter extends Filter {
     // Must be volatile or synchronized, as litho filtering runs off main thread and this field is then access from the main thread.
     public static final AtomicBoolean isActionBarVisible = new AtomicBoolean(false);
 
-    public RelatedVideoFilter() {
+    public LayoutReloadObserverFilter() {
         addIdentifierCallbacks(
                 new StringFilterGroup(
                         null,

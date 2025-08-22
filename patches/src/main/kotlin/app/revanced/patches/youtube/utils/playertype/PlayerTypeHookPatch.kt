@@ -43,7 +43,7 @@ private const val EXTENSION_ROOT_VIEW_TOOLBAR_INTERFACE =
     "$SHARED_PATH/RootView${'$'}AppCompatToolbarPatchInterface;"
 
 private const val FILTER_CLASS_DESCRIPTOR =
-    "$COMPONENTS_PATH/RelatedVideoFilter;"
+    "$COMPONENTS_PATH/LayoutReloadObserverFilter;"
 
 val playerTypeHookPatch = bytecodePatch(
     description = "playerTypeHookPatch"
