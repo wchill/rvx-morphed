@@ -5,8 +5,6 @@ import static app.revanced.extension.shared.utils.StringRef.str;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.apache.commons.lang3.StringUtils;
-
 import java.util.Arrays;
 
 import app.revanced.extension.music.settings.Settings;
@@ -115,9 +113,9 @@ public class VideoQualityPatch {
     public static int fixVideoQualityResolution(int quality, String label) {
         if (quality > 0 && label != null && !label.startsWith(String.valueOf(quality))) {
             try {
-                int suffixIndex = StringUtils.indexOfAny(label, "p", "s");
+                int suffixIndex = label.indexOf("p");
                 if (suffixIndex > -1) {
-                    int fixedQuality = Integer.parseInt(StringUtils.substring(label, 0, suffixIndex));
+                    int fixedQuality = Integer.parseInt(label.substring(0, suffixIndex));
                     Logger.printDebug(() -> "Changing wrong quality resolution from: " +
                             quality + " (" + label + ") to: " + fixedQuality+ " (" + label + ")");
                     return fixedQuality;
