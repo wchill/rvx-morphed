@@ -52,6 +52,10 @@ public class PackageUtils extends Utils {
         return getSmallestScreenWidthDp() >= 600;
     }
 
+    public static boolean isVersionOrGreater(String version) {
+        return getAppVersionName().compareTo(version) >= 0;
+    }
+
     public static int getSmallestScreenWidthDp() {
         return getResources(false).getConfiguration().smallestScreenWidthDp;
     }
