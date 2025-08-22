@@ -47,7 +47,10 @@ val navigationBarHookPatch = bytecodePatch(
     )
 
     execute {
-        fun MutableMethod.addHook(hook: NavigationHook, insertPredicate: Instruction.() -> Boolean) {
+        fun MutableMethod.addHook(
+            hook: NavigationHook,
+            insertPredicate: Instruction.() -> Boolean
+        ) {
             val filtered = instructions.filter(insertPredicate)
             if (filtered.isEmpty()) throw PatchException("Could not find insert indexes")
             filtered.forEach {
@@ -81,7 +84,8 @@ val navigationBarHookPatch = bytecodePatch(
             }
 
             if (is_20_21_or_greater && !is_20_28_or_greater) {
-                val imageResourceIntTabMethod = pivotBarButtonsCreateResourceIntViewFingerprint.methodOrThrow()
+                val imageResourceIntTabMethod =
+                    pivotBarButtonsCreateResourceIntViewFingerprint.methodOrThrow()
                 addHook(NavigationHook.NAVIGATION_TAB_LOADED) predicate@{
                     MethodUtil.methodSignaturesMatch(
                         getReference<MethodReference>() ?: return@predicate false,

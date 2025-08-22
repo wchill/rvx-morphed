@@ -178,7 +178,8 @@ internal fun patchSpoofClient() {
                     MutableMethodImplementation(3),
                 ).toMutable().apply {
                     addInstructions(
-                        0, """
+                        0,
+                        """
                             invoke-static { }, $EXTENSION_CLASS_DESCRIPTOR->isClientSpoofingEnabled()Z
                             move-result v0
                             if-eqz v0, :disabled
@@ -260,7 +261,8 @@ internal fun patchSpoofClient() {
         spoofAppVersionFingerprint.matchOrThrow().let {
             it.method.apply {
                 val startIndex = it.patternMatch!!.startIndex
-                val buildOverrideNameRegister = getInstruction<OneRegisterInstruction>(startIndex).registerA
+                val buildOverrideNameRegister =
+                    getInstruction<OneRegisterInstruction>(startIndex).registerA
 
                 addInstructions(
                     startIndex + 1, """

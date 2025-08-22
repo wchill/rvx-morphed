@@ -112,7 +112,10 @@ class StreamingDataRequest private constructor(
         private val DEFAULT_CLIENT_IS_MWEB: Boolean =
             SPOOF_STREAMING_DATA_DEFAULT_CLIENT == ClientType.MWEB
         private val CLIENT_ORDER_TO_USE: Array<ClientType> =
-            YouTubeClient.availableClientTypes(SPOOF_STREAMING_DATA_DEFAULT_CLIENT, DEFAULT_CLIENT_IS_MWEB)
+            YouTubeClient.availableClientTypes(
+                SPOOF_STREAMING_DATA_DEFAULT_CLIENT,
+                DEFAULT_CLIENT_IS_MWEB
+            )
         private val liveStreams: ByteArrayFilterGroup =
             ByteArrayFilterGroup(
                 null,
@@ -273,7 +276,8 @@ class StreamingDataRequest private constructor(
                         return null
                     }
 
-                    val deobfuscatedAdaptiveFormatsArrayList: ArrayList<String> = ArrayList(adaptiveFormatsCount)
+                    val deobfuscatedAdaptiveFormatsArrayList: ArrayList<String> =
+                        ArrayList(adaptiveFormatsCount)
                     val requirePoToken = clientType.requirePoToken
                     val isTV = !requirePoToken
                     val sessionPoToken = if (requirePoToken)
@@ -292,7 +296,12 @@ class StreamingDataRequest private constructor(
                             if (!url.isNullOrEmpty()) {
                                 streamUrl = url
                             } else if (!signatureCipher.isNullOrEmpty()) {
-                                streamUrl = ThrottlingParameterUtils.getUrlWithThrottlingParameterObfuscated(videoId, signatureCipher, isTV)
+                                streamUrl =
+                                    ThrottlingParameterUtils.getUrlWithThrottlingParameterObfuscated(
+                                        videoId,
+                                        signatureCipher,
+                                        isTV
+                                    )
                             } else {
                                 // Neither streamingUrl nor signatureCipher are present in the response.
                                 // In this case, decoding serverAbrStreamingUrl is required to obtain streamingUrl.
@@ -305,11 +314,19 @@ class StreamingDataRequest private constructor(
                                 Logger.printDebug { "StreamUrl was not found, legacy client will be used" }
                                 return null
                             }
-                            var deobfuscatedUrl = ThrottlingParameterUtils.getUrlWithThrottlingParameterDeobfuscated(videoId, streamUrl, isTV)
+                            var deobfuscatedUrl =
+                                ThrottlingParameterUtils.getUrlWithThrottlingParameterDeobfuscated(
+                                    videoId,
+                                    streamUrl,
+                                    isTV
+                                )
                             if (!deobfuscatedUrl.isNullOrEmpty() && !sessionPoToken.isNullOrEmpty()) {
                                 deobfuscatedUrl += "&pot=$sessionPoToken"
                             }
-                            if (deobfuscatedUrl.isNullOrEmpty() || i == 0 && !streamUrlIsAvailable(deobfuscatedUrl)) {
+                            if (deobfuscatedUrl.isNullOrEmpty() || i == 0 && !streamUrlIsAvailable(
+                                    deobfuscatedUrl
+                                )
+                            ) {
                                 Logger.printDebug { "Failed to decrypt n-sig or signatureCipher, please check if latest regular expressions are being used" }
                                 return null
                             }
@@ -334,7 +351,12 @@ class StreamingDataRequest private constructor(
                             if (!url.isNullOrEmpty()) {
                                 streamUrl = url
                             } else if (!signatureCipher.isNullOrEmpty()) {
-                                streamUrl = ThrottlingParameterUtils.getUrlWithThrottlingParameterObfuscated(videoId, signatureCipher, isTV)
+                                streamUrl =
+                                    ThrottlingParameterUtils.getUrlWithThrottlingParameterObfuscated(
+                                        videoId,
+                                        signatureCipher,
+                                        isTV
+                                    )
                             } else {
                                 // Neither streamingUrl nor signatureCipher are present in the response.
                                 // In this case, decoding serverAbrStreamingUrl is required to obtain streamingUrl.
@@ -349,7 +371,12 @@ class StreamingDataRequest private constructor(
                                 deobfuscatedFormatsArrayList.clear()
                                 break
                             }
-                            var deobfuscatedUrl = ThrottlingParameterUtils.getUrlWithThrottlingParameterDeobfuscated(videoId, streamUrl, isTV)
+                            var deobfuscatedUrl =
+                                ThrottlingParameterUtils.getUrlWithThrottlingParameterDeobfuscated(
+                                    videoId,
+                                    streamUrl,
+                                    isTV
+                                )
                             if (!deobfuscatedUrl.isNullOrEmpty() && !sessionPoToken.isNullOrEmpty()) {
                                 deobfuscatedUrl += "&pot=$sessionPoToken"
                             }
@@ -479,7 +506,10 @@ class StreamingDataRequest private constructor(
             // Retry with different client if empty response body is received.
             for (clientType in CLIENT_ORDER_TO_USE) {
                 if (clientType.requireAuth &&
-                    StringUtils.isAllEmpty(requestHeader[AUTHORIZATION_HEADER], requestHeader[PAGE_ID_HEADER])
+                    StringUtils.isAllEmpty(
+                        requestHeader[AUTHORIZATION_HEADER],
+                        requestHeader[PAGE_ID_HEADER]
+                    )
                 ) {
                     Logger.printDebug { "Skipped login-required client (clientType: $clientType, videoId: $videoId)" }
                     continue
@@ -523,43 +553,58 @@ class StreamingDataRequest private constructor(
                                         // Parses the Proto Buffer and returns StreamingData (GeneratedMessage).
                                         val streamBytes: ByteArray = stream.toByteArray()
 
-                                        val playabilityStatus = getPlayabilityStatus(videoId, streamBytes)
+                                        val playabilityStatus =
+                                            getPlayabilityStatus(videoId, streamBytes)
                                         if (playabilityStatus == "OK") {
-                                            var streamingData = parseFrom(ByteBuffer.wrap(streamBytes))
+                                            var streamingData =
+                                                parseFrom(ByteBuffer.wrap(streamBytes))
 
                                             if (streamingData != null) {
                                                 if (clientType.requireJS) {
                                                     // ArrayList containing the deobfuscated streamingUrl
-                                                    val arrayLists = getDeobfuscatedUrlArrayList(clientType, videoId, streamBytes)
+                                                    val arrayLists = getDeobfuscatedUrlArrayList(
+                                                        clientType,
+                                                        videoId,
+                                                        streamBytes
+                                                    )
                                                     if (arrayLists != null) {
                                                         // MutableMap containing the deobfuscated streamingUrl.
                                                         // This is used for clients where streamingUrl is obfuscated.
-                                                        val deobfuscatedAdaptiveFormatsArrayList = arrayLists.first
-                                                        val deobfuscatedFormatsArrayList = arrayLists.second
+                                                        val deobfuscatedAdaptiveFormatsArrayList =
+                                                            arrayLists.first
+                                                        val deobfuscatedFormatsArrayList =
+                                                            arrayLists.second
                                                         val serverAbrStreamingUrl = arrayLists.third
                                                         if (!deobfuscatedAdaptiveFormatsArrayList.isNullOrEmpty()) {
-                                                            streamingData = deobfuscateStreamingData(
-                                                                deobfuscatedUrlArrayList = deobfuscatedAdaptiveFormatsArrayList,
-                                                                isAdaptiveFormats = true,
-                                                                streamingData = streamingData
-                                                            )
+                                                            streamingData =
+                                                                deobfuscateStreamingData(
+                                                                    deobfuscatedUrlArrayList = deobfuscatedAdaptiveFormatsArrayList,
+                                                                    isAdaptiveFormats = true,
+                                                                    streamingData = streamingData
+                                                                )
                                                         }
                                                         if (!deobfuscatedFormatsArrayList.isNullOrEmpty()) {
-                                                            streamingData = deobfuscateStreamingData(
-                                                                deobfuscatedUrlArrayList = deobfuscatedFormatsArrayList,
-                                                                isAdaptiveFormats = false,
-                                                                streamingData = streamingData
-                                                            )
+                                                            streamingData =
+                                                                deobfuscateStreamingData(
+                                                                    deobfuscatedUrlArrayList = deobfuscatedFormatsArrayList,
+                                                                    isAdaptiveFormats = false,
+                                                                    streamingData = streamingData
+                                                                )
                                                         }
                                                         if (!serverAbrStreamingUrl.isNullOrEmpty()) {
-                                                            setServerAbrStreamingUrl(streamingData, serverAbrStreamingUrl)
+                                                            setServerAbrStreamingUrl(
+                                                                streamingData,
+                                                                serverAbrStreamingUrl
+                                                            )
                                                         }
 
-                                                        lastSpoofedClientFriendlyName = clientType.friendlyName
+                                                        lastSpoofedClientFriendlyName =
+                                                            clientType.friendlyName
                                                         return streamingData
                                                     }
                                                 } else {
-                                                    lastSpoofedClientFriendlyName = clientType.friendlyName
+                                                    lastSpoofedClientFriendlyName =
+                                                        clientType.friendlyName
                                                     return streamingData
                                                 }
                                             } else {

@@ -606,6 +606,7 @@ public class GeneralPatch {
 
     /**
      * Injection point.
+     *
      * @param searchQuery Keywords entered in the search bar.
      * @return Whether the setting is enabled and the search query is empty.
      */
@@ -618,15 +619,16 @@ public class GeneralPatch {
 
     /**
      * Injection point.
-     * @param searchTerm    This class contains information related to search terms.
-     *                      The {@code toString()} method of this class overrides the search term.
-     * @param endpoint      Endpoint related with the search term.
-     *                      For search history, this value is:
-     *                      '/complete/deleteitems?client=youtube-android-pb&delq=${searchTerm}&deltok=${token}'.
-     *                      (If you long press on the search history,
-     *                      you will see a dialog 'Remove from search history?')
-     *                      For search suggestions, this value is null or empty.
-     * @return              Whether search term is a search history or not.
+     *
+     * @param searchTerm This class contains information related to search terms.
+     *                   The {@code toString()} method of this class overrides the search term.
+     * @param endpoint   Endpoint related with the search term.
+     *                   For search history, this value is:
+     *                   '/complete/deleteitems?client=youtube-android-pb&delq=${searchTerm}&deltok=${token}'.
+     *                   (If you long press on the search history,
+     *                   you will see a dialog 'Remove from search history?')
+     *                   For search suggestions, this value is null or empty.
+     * @return Whether search term is a search history or not.
      */
     public static boolean isSearchHistory(Object searchTerm, String endpoint) {
         boolean isSearchHistory = endpoint != null && endpoint.contains("/delete");

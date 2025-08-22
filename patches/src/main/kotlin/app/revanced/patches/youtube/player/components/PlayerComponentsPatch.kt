@@ -593,9 +593,11 @@ val playerComponentsPatch = bytecodePatch(
                     const/4 v$register, 0x0
                     return v$register
                     """
+
                 "V" -> """
                     return-void
                     """
+
                 else -> throw Exception("This case should never happen.")
             }
 

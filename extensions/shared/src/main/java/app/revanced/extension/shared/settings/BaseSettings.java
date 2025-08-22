@@ -9,8 +9,8 @@ import app.revanced.extension.shared.patches.ReturnYouTubeUsernamePatch.DisplayF
 import app.revanced.extension.shared.patches.WatchHistoryPatch.WatchHistoryType;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientAndroidVRAvailability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientAndroidVRNoAuthAvailability;
-import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientiOSAvailability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientJSAvailability;
+import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientiOSAvailability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.J2V8Availability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ShowReloadVideoButtonAvailability;
 

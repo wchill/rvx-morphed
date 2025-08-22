@@ -2,27 +2,30 @@ package app.revanced.extension.shared.innertube.utils;
 
 import android.util.Pair;
 
-import java.io.IOException;
-import java.net.SocketTimeoutException;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.concurrent.ExecutionException;
-import java.util.regex.*;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.liskovsoft.sharedutils.helpers.Helpers;
 import com.liskovsoft.youtubeapi.app.playerdata.PlayerDataExtractor;
 
-import app.revanced.extension.shared.innertube.client.YouTubeClient;
-import okhttp3.*;
-
 import org.apache.commons.lang3.StringUtils;
 import org.json.JSONArray;
 
+import java.io.IOException;
+import java.net.SocketTimeoutException;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.concurrent.ExecutionException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import app.revanced.extension.shared.innertube.client.YouTubeClient;
 import app.revanced.extension.shared.utils.Logger;
 import app.revanced.extension.shared.utils.Utils;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+import okhttp3.ResponseBody;
 
 /**
  * The functions used in this class are referenced below:
@@ -279,8 +282,8 @@ public class ThrottlingParameterUtils {
 
     private static JSONArray setServiceWorkerJsonArray(boolean isTV) {
         String jsonString = fetch(isTV
-                ? SERVICE_WORKER_URL_TV
-                : SERVICE_WORKER_URL_MOBILE_WEB,
+                        ? SERVICE_WORKER_URL_TV
+                        : SERVICE_WORKER_URL_MOBILE_WEB,
                 isTV
         );
         if (jsonString != null) {
@@ -519,7 +522,7 @@ public class ThrottlingParameterUtils {
                     .header("User-Agent", isTV ? USER_AGENT_TV : USER_AGENT_MOBILE_WEB)
                     .build();
 
-            try (Response response = client.newCall(request).execute())  {
+            try (Response response = client.newCall(request).execute()) {
                 if (response.isSuccessful()) {
                     ResponseBody responseBody = response.body();
                     if (responseBody != null) {
@@ -527,7 +530,7 @@ public class ThrottlingParameterUtils {
                     }
                 } else {
                     handleConnectionError("API not available with response code: "
-                                    + response.code() + " message: " + response.message(), null);
+                            + response.code() + " message: " + response.message(), null);
                 }
             }
         } catch (SocketTimeoutException ex) {
@@ -546,9 +549,10 @@ public class ThrottlingParameterUtils {
     /**
      * Convert signatureCipher to streaming url with obfuscated 'n' parameter.
      * <p>
-     * @param videoId           Current video id.
-     * @param signatureCipher   The 'signatureCipher' included in the response.
-     * @return                  Streaming url with obfuscated 'n' parameter.
+     *
+     * @param videoId         Current video id.
+     * @param signatureCipher The 'signatureCipher' included in the response.
+     * @return Streaming url with obfuscated 'n' parameter.
      */
     @Nullable
     public static String getUrlWithThrottlingParameterObfuscated(@NonNull String videoId, @NonNull String signatureCipher,
@@ -585,9 +589,10 @@ public class ThrottlingParameterUtils {
     /**
      * Deobfuscates the obfuscated 'n' parameter to a valid streaming url.
      * <p>
+     *
      * @param videoId       Current video id.
      * @param obfuscatedUrl Streaming url with obfuscated 'n' parameter.
-     * @return              Deobfuscated streaming url.
+     * @return Deobfuscated streaming url.
      */
     @Nullable
     public static String getUrlWithThrottlingParameterDeobfuscated(@NonNull String videoId, @Nullable String obfuscatedUrl,
@@ -636,8 +641,9 @@ public class ThrottlingParameterUtils {
     /**
      * Extract the 'n' parameter from the streaming Url.
      * <p>
-     * @param streamingUrl  The streaming url.
-     * @return              The 'n' parameter.
+     *
+     * @param streamingUrl The streaming url.
+     * @return The 'n' parameter.
      */
     @Nullable
     private static String getThrottlingParameterFromStreamingUrl(@NonNull String streamingUrl) {
@@ -652,10 +658,11 @@ public class ThrottlingParameterUtils {
 
     /**
      * Replace the 'n' parameter.
-     * @param obfuscatedUrl         Streaming url with obfuscated 'n' parameter.
-     * @param obfuscatedNParams     Obfuscated 'n' parameter.
-     * @param deObfuscatedNParams   Deobfuscated 'n' parameter.
-     * @return                      Deobfuscated streaming url.
+     *
+     * @param obfuscatedUrl       Streaming url with obfuscated 'n' parameter.
+     * @param obfuscatedNParams   Obfuscated 'n' parameter.
+     * @param deObfuscatedNParams Deobfuscated 'n' parameter.
+     * @return Deobfuscated streaming url.
      */
     @NonNull
     private static String replaceNParam(@NonNull String obfuscatedUrl, @NonNull String obfuscatedNParams, @NonNull String deObfuscatedNParams) {
@@ -665,9 +672,10 @@ public class ThrottlingParameterUtils {
     /**
      * Deobfuscate the 'n' parameter.
      * <p>
+     *
      * @param obfuscatedUrl     Streaming url with obfuscated 'n' parameter.
      * @param obfuscatedNParams Obfuscated 'n' parameter.
-     * @return                  Deobfuscated Pair(Deobfuscated streaming url, Deobfuscated 'n' parameter).
+     * @return Deobfuscated Pair(Deobfuscated streaming url, Deobfuscated 'n' parameter).
      */
     @NonNull
     private static Pair<String, String> decodeNParam(@NonNull String obfuscatedUrl, @NonNull String obfuscatedNParams,

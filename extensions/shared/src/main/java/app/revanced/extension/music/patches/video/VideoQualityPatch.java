@@ -117,7 +117,7 @@ public class VideoQualityPatch {
                 if (suffixIndex > -1) {
                     int fixedQuality = Integer.parseInt(label.substring(0, suffixIndex));
                     Logger.printDebug(() -> "Changing wrong quality resolution from: " +
-                            quality + " (" + label + ") to: " + fixedQuality+ " (" + label + ")");
+                            quality + " (" + label + ") to: " + fixedQuality + " (" + label + ")");
                     return fixedQuality;
                 }
             } catch (Exception ex) {

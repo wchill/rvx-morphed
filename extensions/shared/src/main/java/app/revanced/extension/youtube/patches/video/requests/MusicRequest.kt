@@ -221,18 +221,20 @@ class MusicRequest private constructor(
 
                 val navigationEndpointJsonObject =
                     currentStreamJsonObject
-                    .getJSONObject("playlistPanelVideoRenderer")
-                    .getJSONObject("navigationEndpoint")
+                        .getJSONObject("playlistPanelVideoRenderer")
+                        .getJSONObject("navigationEndpoint")
 
                 val watchEndpointJsonObject: JSONObject? =
                     if (clientType == ClientType.ANDROID
-                        && navigationEndpointJsonObject.has("coWatchWatchEndpointWrapperCommand")) { // Android
+                        && navigationEndpointJsonObject.has("coWatchWatchEndpointWrapperCommand")
+                    ) { // Android
                         navigationEndpointJsonObject
                             .getJSONObject("coWatchWatchEndpointWrapperCommand")
                             .getJSONObject("watchEndpoint")
                             .getJSONObject("watchEndpoint")
                     } else if (clientType == ClientType.ANDROID_VR
-                        && navigationEndpointJsonObject.has("watchEndpoint")) { // Android VR
+                        && navigationEndpointJsonObject.has("watchEndpoint")
+                    ) { // Android VR
                         navigationEndpointJsonObject
                             .getJSONObject("watchEndpoint")
                     } else {

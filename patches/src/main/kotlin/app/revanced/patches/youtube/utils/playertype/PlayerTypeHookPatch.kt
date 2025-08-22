@@ -86,7 +86,8 @@ val playerTypeHookPatch = bytecodePatch(
         fullScreenEngagementPanelFingerprint.methodOrThrow().apply {
             val literalIndex =
                 indexOfFirstLiteralInstructionOrThrow(fullScreenEngagementPanel)
-            val targetIndex = indexOfFirstInstructionOrThrow(literalIndex, Opcode.MOVE_RESULT_OBJECT)
+            val targetIndex =
+                indexOfFirstInstructionOrThrow(literalIndex, Opcode.MOVE_RESULT_OBJECT)
             val targetRegister = getInstruction<OneRegisterInstruction>(targetIndex).registerA
 
             addInstruction(

@@ -101,7 +101,7 @@ val hypeButtonIconPatch = bytecodePatch(
 
         val (clientInfoClass, clientInfoReference, clientVersionReference) =
             clientTypeFingerprint.matchOrThrow().let {
-                with (it.method) {
+                with(it.method) {
                     val clientInfoIndex = indexOfClientInfoInstruction(this)
                     val dummyClientVersionIndex = it.stringMatches!!.first().index
                     val dummyClientVersionRegister =
@@ -162,7 +162,8 @@ val hypeButtonIconPatch = bytecodePatch(
                         MutableMethodImplementation(4),
                     ).toMutable().apply {
                         addInstructionsWithLabels(
-                            0, """
+                            0,
+                            """
                             invoke-static { }, $GENERAL_CLASS_DESCRIPTOR->fixHypeButtonIconEnabled()Z
                             move-result v0
                             if-eqz v0, :disabled
@@ -185,11 +186,14 @@ val hypeButtonIconPatch = bytecodePatch(
         val syntheticClass = watchNextConstructorFingerprint.matchOrThrow(
             watchNextSyntheticFingerprint
         ).let { result ->
-            with (result.method) {
+            with(result.method) {
                 val directIndex = result.patternMatch!!.startIndex
-                val startRegister = getInstruction<RegisterRangeInstruction>(directIndex).startRegister
-                val directReference = getInstruction<ReferenceInstruction>(directIndex).reference as MethodReference
-                val messageIndex = directReference.parameterTypes.indexOfFirst { it == "Lcom/google/protobuf/MessageLite;" }
+                val startRegister =
+                    getInstruction<RegisterRangeInstruction>(directIndex).startRegister
+                val directReference =
+                    getInstruction<ReferenceInstruction>(directIndex).reference as MethodReference
+                val messageIndex =
+                    directReference.parameterTypes.indexOfFirst { it == "Lcom/google/protobuf/MessageLite;" }
                 val targetRegister = startRegister + messageIndex + 1 + 2
 
                 val targetIndex = indexOfFirstInstructionReversedOrThrow(directIndex) {

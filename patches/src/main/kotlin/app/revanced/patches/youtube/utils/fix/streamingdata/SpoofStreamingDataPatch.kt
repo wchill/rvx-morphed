@@ -490,7 +490,9 @@ val spoofStreamingDataPatch = bytecodePatch(
             )
         }
 
-        val (brotliInputStreamClassName, brotliInputStreamMethodCall) = with (brotliInputStreamFingerprint.methodOrThrow()) {
+        val (brotliInputStreamClassName, brotliInputStreamMethodCall) = with(
+            brotliInputStreamFingerprint.methodOrThrow()
+        ) {
             Pair(definingClass, methodCall())
         }
 

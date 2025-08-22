@@ -152,7 +152,7 @@ private lateinit var visibilityMethod: MutableMethod
 private var visibilityInsertIndex: Int = 0
 
 private var visibilityImmediateCallbacksExistModified = false
-private lateinit var visibilityImmediateCallbacksExistMethod : MutableMethod
+private lateinit var visibilityImmediateCallbacksExistMethod: MutableMethod
 
 private lateinit var visibilityImmediateMethod: MutableMethod
 private var visibilityImmediateInsertIndex: Int = 0
@@ -209,7 +209,8 @@ val playerControlsPatch = bytecodePatch(
             inflateBottomControlMethod = this
 
             val inflateReturnObjectIndex = indexOfFirstViewInflateOrThrow() + 1
-            inflateBottomControlRegister = getInstruction<OneRegisterInstruction>(inflateReturnObjectIndex).registerA
+            inflateBottomControlRegister =
+                getInstruction<OneRegisterInstruction>(inflateReturnObjectIndex).registerA
             inflateBottomControlInsertIndex = inflateReturnObjectIndex + 1
         }
 
@@ -217,7 +218,8 @@ val playerControlsPatch = bytecodePatch(
             inflateTopControlMethod = this
 
             val inflateReturnObjectIndex = indexOfFirstViewInflateOrThrow() + 1
-            inflateTopControlRegister = getInstruction<OneRegisterInstruction>(inflateReturnObjectIndex).registerA
+            inflateTopControlRegister =
+                getInstruction<OneRegisterInstruction>(inflateReturnObjectIndex).registerA
             inflateTopControlInsertIndex = inflateReturnObjectIndex + 1
         }
 
@@ -244,7 +246,8 @@ val playerControlsPatch = bytecodePatch(
             )
         }
 
-        visibilityImmediateCallbacksExistMethod = playerControlsExtensionHookListenersExistFingerprint.methodOrThrow()
+        visibilityImmediateCallbacksExistMethod =
+            playerControlsExtensionHookListenersExistFingerprint.methodOrThrow()
         visibilityImmediateMethod = playerControlsExtensionHookFingerprint.methodOrThrow()
 
         // A/B test for a slightly different bottom overlay controls,
@@ -269,31 +272,32 @@ val playerControlsPatch = bytecodePatch(
                 val register = getInstruction<OneRegisterInstruction>(index).registerA
 
                 addInstructions(
-                    index + 1, """
+                    index + 1,
+                    """
                         invoke-static { v$register }, $EXTENSION_CLASS_DESCRIPTOR->getPlayerTopControlsLayoutResourceName(Ljava/lang/String;)Ljava/lang/String;
                         move-result-object v$register
                         """,
                 )
             }
         } else if (is_20_20_or_greater) { // Turn off a/b tests of ugly player buttons that don't match the style of custom player buttons.
-                playerControlsFullscreenLargeButtonsFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
-                    PLAYER_CONTROLS_FULLSCREEN_LARGE_BUTTON_FEATURE_FLAG,
+            playerControlsFullscreenLargeButtonsFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
+                PLAYER_CONTROLS_FULLSCREEN_LARGE_BUTTON_FEATURE_FLAG,
+                "0x0"
+            )
+
+            if (is_20_28_or_greater) {
+                playerControlsLargeOverlayButtonsFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
+                    PLAYER_CONTROLS_FULLSCREEN_LARGE_OVERLAY_BUTTON_FEATURE_FLAG,
                     "0x0"
                 )
 
-                if (is_20_28_or_greater) {
-                    playerControlsLargeOverlayButtonsFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
-                        PLAYER_CONTROLS_FULLSCREEN_LARGE_OVERLAY_BUTTON_FEATURE_FLAG,
+                if (is_20_30_or_greater) {
+                    playerControlsButtonStrokeFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
+                        PLAYER_CONTROLS_BUTTON_STROKE_FEATURE_FLAG,
                         "0x0"
                     )
-
-                    if (is_20_30_or_greater) {
-                        playerControlsButtonStrokeFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
-                            PLAYER_CONTROLS_BUTTON_STROKE_FEATURE_FLAG,
-                            "0x0"
-                        )
-                    }
                 }
             }
+        }
     }
 }

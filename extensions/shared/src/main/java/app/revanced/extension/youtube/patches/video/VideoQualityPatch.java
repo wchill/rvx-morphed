@@ -177,7 +177,7 @@ public class VideoQualityPatch {
     /**
      * Injection point.
      *
-     * @param qualities Video qualities available, ordered from largest to smallest, with index 0 being the 'automatic' value of -2
+     * @param qualities            Video qualities available, ordered from largest to smallest, with index 0 being the 'automatic' value of -2
      * @param originalQualityIndex quality index to use, as chosen by YouTube
      */
     public static int setVideoQuality(VideoQuality[] qualities, VideoQualityMenuInterface menu, int originalQualityIndex) {
@@ -251,6 +251,7 @@ public class VideoQualityPatch {
      * Injection point.
      * The old flyout is used in Shorts videos, but is sometimes also used in regular videos:
      * The player flyout opened before JavaScript was executed.
+     *
      * @param userSelectedQualityIndex Element index of {@link #currentQualities}.
      */
     public static void userChangedQualityInOldFlyout(int userSelectedQualityIndex) {
@@ -270,6 +271,7 @@ public class VideoQualityPatch {
 
     /**
      * Injection point.
+     *
      * @param videoResolution Human readable resolution: 480, 720, 1080.
      */
     public static void userChangedQualityInNewFlyout(int videoResolution) {
@@ -321,7 +323,7 @@ public class VideoQualityPatch {
                 if (suffixIndex > -1) {
                     int fixedQuality = Integer.parseInt(StringUtils.substring(label, 0, suffixIndex));
                     Logger.printDebug(() -> "Changing wrong quality resolution from: " +
-                            quality + " (" + label + ") to: " + fixedQuality+ " (" + label + ")");
+                            quality + " (" + label + ") to: " + fixedQuality + " (" + label + ")");
                     return fixedQuality;
                 }
             } catch (Exception ex) {
@@ -339,8 +341,9 @@ public class VideoQualityPatch {
      * both '1080p' and '1080p60' appear in the video quality flyout menu.
      * To avoid user confusion, '1080p' is removed when both '1080p' and '1080p60' are available.
      * <p>
-     * @param streams   Format streams available, ordered from largest to smallest.
-     * @return          Patched format streams.
+     *
+     * @param streams Format streams available, ordered from largest to smallest.
+     * @return Patched format streams.
      */
     public static List<FormatStreamModel> removeVideoQualities(List<FormatStreamModel> streams) {
         if (streams != null && streams.size() > 2) {

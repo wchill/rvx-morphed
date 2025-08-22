@@ -45,6 +45,7 @@ object YouTubeClient {
         "9.33"
     private const val DEVICE_MAKE_IOS_UNPLUGGED = "Apple"
     private const val OS_NAME_IOS_UNPLUGGED = "iOS"
+
     /**
      * The device machine id for the iPhone 16 Pro Max (iPhone17,2),
      * used to get HDR with AV1 hardware decoding.
@@ -62,6 +63,7 @@ object YouTubeClient {
         "13_7"
     else
         "18_6_1"
+
     @SuppressLint("ConstantLocale")
     private val USER_AGENT_IOS_UNPLUGGED =
         "$PACKAGE_NAME_IOS_UNPLUGGED/$CLIENT_VERSION_IOS_UNPLUGGED ($DEVICE_MODEL_IOS_UNPLUGGED; U; CPU iOS $USER_AGENT_VERSION_IOS_UNPLUGGED like Mac OS X; ${Locale.getDefault()})"
@@ -408,6 +410,7 @@ object YouTubeClient {
             clientName = "ANDROID_UNPLUGGED",
             friendlyName = "Android TV"
         ),
+
         // Fallback client.
         ANDROID_CREATOR(
             id = 14,
@@ -436,6 +439,7 @@ object YouTubeClient {
             else
                 "iOS TV"
         ),
+
         // Fallback client, not yet released.
         VISIONOS(
             id = 101,
@@ -470,6 +474,7 @@ object YouTubeClient {
             refererFormat = CLIENT_REFERER_FORMAT_TV,
             friendlyName = "TV Simply"
         ),
+
         // Unused client.
         TV_EMBEDDED(
             id = 85,

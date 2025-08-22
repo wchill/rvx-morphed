@@ -103,7 +103,8 @@ private val settingsBytecodePatch = bytecodePatch(
                     opcode == Opcode.INVOKE_VIRTUAL &&
                             getReference<MethodReference>()?.toString() == cairoFragmentConfigMethodCall
                 } + 2
-                val insertRegister = getInstruction<OneRegisterInstruction>(insertIndex - 1).registerA
+                val insertRegister =
+                    getInstruction<OneRegisterInstruction>(insertIndex - 1).registerA
 
                 addInstruction(insertIndex, "const/4 v$insertRegister, 0x0")
             }

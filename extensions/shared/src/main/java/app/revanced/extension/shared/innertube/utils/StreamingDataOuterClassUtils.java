@@ -22,8 +22,9 @@ public class StreamingDataOuterClassUtils {
     /**
      * Get adaptiveFormats from parsed streamingData.
      * <p>
+     *
      * @param streamingData StreamingData (GeneratedMessage) parsed by ProtoParser.
-     * @return              AdaptiveFormats (ProtoList).
+     * @return AdaptiveFormats (ProtoList).
      */
     public static List<?> getAdaptiveFormats(StreamingDataOuterClass.StreamingData streamingData) {
         try {
@@ -42,6 +43,7 @@ public class StreamingDataOuterClassUtils {
 
     /**
      * Add the desired formats to the ArrayList in AdaptiveFormats.
+     *
      * @param streamingData StreamingData (GeneratedMessage) parsed by ProtoParser.
      * @param arrayList     An ArrayList where formats are added, this is what is actually used for playback.
      *                      Since formats that are not in this ArrayList will not be used for playback, you can filter by not adding unwanted formats.
@@ -80,8 +82,9 @@ public class StreamingDataOuterClassUtils {
     /**
      * Get formats from parsed streamingData.
      * <p>
+     *
      * @param streamingData StreamingData (GeneratedMessage) parsed by ProtoParser.
-     * @return              Formats (ProtoList).
+     * @return Formats (ProtoList).
      */
     public static List<?> getFormats(StreamingDataOuterClass.StreamingData streamingData) {
         try {
@@ -152,6 +155,7 @@ public class StreamingDataOuterClassUtils {
 
     /**
      * Remove 'AV1' video format from arrayList.
+     *
      * @param arrayList An ArrayList where formats are added.
      */
     public static void removeAV1Codecs(ArrayList<Object> arrayList) {
@@ -241,6 +245,7 @@ public class StreamingDataOuterClassUtils {
 
     /**
      * Remove non-original audioTracks from the arrayList.
+     *
      * @param arrayList An ArrayList where formats are added.
      */
     public static void removeNonOriginalAudioTracks(ArrayList<Object> arrayList) {
@@ -295,6 +300,7 @@ public class StreamingDataOuterClassUtils {
     /**
      * Set the deobfuscated streaming url in the 'url' field of adaptiveFormat.
      * <p>
+     *
      * @param adaptiveFormat AdaptiveFormat (GeneratedMessage).
      * @param url            Deobfuscated streaming url.
      */

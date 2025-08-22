@@ -106,7 +106,7 @@ val videoPlaybackPatch = bytecodePatch(
         // region patch for default video quality
 
         val videoQualityClass = videoQualityListFingerprint.matchOrThrow().let {
-            with (it.method) {
+            with(it.method) {
                 // set video quality array
                 val listIndex = it.patternMatch!!.startIndex
                 val listRegister = getInstruction<FiveRegisterInstruction>(listIndex).registerD
@@ -115,9 +115,10 @@ val videoPlaybackPatch = bytecodePatch(
                     listIndex,
                     "invoke-static {v$listRegister}, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->setVideoQualities([Ljava/lang/Object;)V"
                 )
-                
+
                 val literalIndex = indexOfFirstLiteralInstructionOrThrow(qualityAuto)
-                val qualityClassIndex = indexOfFirstInstructionReversedOrThrow(literalIndex + 1, Opcode.NEW_INSTANCE)
+                val qualityClassIndex =
+                    indexOfFirstInstructionReversedOrThrow(literalIndex + 1, Opcode.NEW_INSTANCE)
                 getInstruction<ReferenceInstruction>(qualityClassIndex).reference.toString()
             }
         }
@@ -147,9 +148,12 @@ val videoPlaybackPatch = bytecodePatch(
             }.apply {
                 val qualityNameIndex = indexOfVideoQualityNameFieldInstruction(this)
                 val resolutionIndex = indexOfVideoQualityResolutionFieldInstruction(this)
-                val resolutionField = getInstruction<ReferenceInstruction>(resolutionIndex).reference
-                val qualityNameRegister = getInstruction<TwoRegisterInstruction>(qualityNameIndex).registerA
-                val resolutionRegister = getInstruction<TwoRegisterInstruction>(resolutionIndex).registerA
+                val resolutionField =
+                    getInstruction<ReferenceInstruction>(resolutionIndex).reference
+                val qualityNameRegister =
+                    getInstruction<TwoRegisterInstruction>(qualityNameIndex).registerA
+                val resolutionRegister =
+                    getInstruction<TwoRegisterInstruction>(resolutionIndex).registerA
 
                 addInstructions(
                     0, """
@@ -170,8 +174,9 @@ val videoPlaybackPatch = bytecodePatch(
             }
         }
 
-        val initialResolutionField = playbackStartParametersToStringFingerprint.originalMethodOrThrow()
-            .findFieldFromToString(", initialPlaybackVideoQualityFixedResolution=")
+        val initialResolutionField =
+            playbackStartParametersToStringFingerprint.originalMethodOrThrow()
+                .findFieldFromToString(", initialPlaybackVideoQualityFixedResolution=")
 
         playbackStartParametersConstructorFingerprint
             .methodOrThrow(playbackStartParametersToStringFingerprint)

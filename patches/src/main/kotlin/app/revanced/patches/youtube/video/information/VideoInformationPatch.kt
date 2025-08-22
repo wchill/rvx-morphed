@@ -580,13 +580,17 @@ val videoInformationPatch = bytecodePatch(
 
         videoQualityFingerprint.matchOrThrow().let {
             // Fix bad data used by YouTube.
-            val (qualityNameField, resolutionField) = with (it.method) {
+            val (qualityNameField, resolutionField) = with(it.method) {
                 val qualityNameIndex = indexOfVideoQualityNameFieldInstruction(this)
                 val resolutionIndex = indexOfVideoQualityResolutionFieldInstruction(this)
-                val qualityNameReference = getInstruction<ReferenceInstruction>(qualityNameIndex).reference
-                val resolutionReference = getInstruction<ReferenceInstruction>(resolutionIndex).reference
-                val qualityNameRegister = getInstruction<TwoRegisterInstruction>(qualityNameIndex).registerA
-                val resolutionRegister = getInstruction<TwoRegisterInstruction>(resolutionIndex).registerA
+                val qualityNameReference =
+                    getInstruction<ReferenceInstruction>(qualityNameIndex).reference
+                val resolutionReference =
+                    getInstruction<ReferenceInstruction>(resolutionIndex).reference
+                val qualityNameRegister =
+                    getInstruction<TwoRegisterInstruction>(qualityNameIndex).registerA
+                val resolutionRegister =
+                    getInstruction<TwoRegisterInstruction>(resolutionIndex).registerA
 
                 addInstructions(
                     0, """
@@ -648,7 +652,7 @@ val videoInformationPatch = bytecodePatch(
         val formatStreamFpsReference = formatStreamingModelQualityLabelBuilderFingerprint
             .matchOrThrow()
             .let {
-                with (it.method) {
+                with(it.method) {
                     val stringIndex = it.stringMatches!!.first().index
                     val formatStreamIndex = indexOfFirstInstructionReversedOrThrow(stringIndex) {
                         val reference = getReference<MethodReference>()
@@ -674,7 +678,7 @@ val videoInformationPatch = bytecodePatch(
             availableVideoFormatsFingerprint.matchOrThrow(
                 formatStreamModelBuilderFingerprint
             ).let {
-                with (it.method) {
+                with(it.method) {
                     val formatStreamIndex = it.patternMatch!!.startIndex + 1
                     getInstruction<ReferenceInstruction>(formatStreamIndex).reference as MethodReference
                 }
@@ -720,8 +724,9 @@ val videoInformationPatch = bytecodePatch(
                 )
         }
 
-        val initialResolutionField = playbackStartParametersToStringFingerprint.originalMethodOrThrow()
-            .findFieldFromToString(", initialPlaybackVideoQualityFixedResolution=")
+        val initialResolutionField =
+            playbackStartParametersToStringFingerprint.originalMethodOrThrow()
+                .findFieldFromToString(", initialPlaybackVideoQualityFixedResolution=")
 
         playbackStartParametersConstructorFingerprint
             .methodOrThrow(playbackStartParametersToStringFingerprint)
@@ -764,7 +769,11 @@ val videoInformationPatch = bytecodePatch(
                         definingClass,
                         "patch_setQuality",
                         listOf(
-                            ImmutableMethodParameter(YOUTUBE_VIDEO_QUALITY_CLASS_TYPE, annotations, null)
+                            ImmutableMethodParameter(
+                                YOUTUBE_VIDEO_QUALITY_CLASS_TYPE,
+                                annotations,
+                                null
+                            )
                         ),
                         "V",
                         AccessFlags.PUBLIC.value or AccessFlags.FINAL.value,

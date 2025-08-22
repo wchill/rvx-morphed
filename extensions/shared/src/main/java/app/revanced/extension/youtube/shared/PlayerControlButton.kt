@@ -26,6 +26,7 @@ class PlayerControlButton(
     private val buttonRef: WeakReference<ImageView?>
 
     private val placeholderExists: Boolean
+
     /**
      * Empty view with the same layout size as the button. Used to fill empty space while the
      * fade out animation runs. Without this the chapter titles overlapping the button when fading out.
@@ -40,7 +41,8 @@ class PlayerControlButton(
 
         var tempPlaceholder: View? = null
         if (hasPlaceholder) {
-            tempPlaceholder = Utils.getChildView<View>(controlsViewGroup, "${imageViewButtonId}_placeholder")
+            tempPlaceholder =
+                Utils.getChildView<View>(controlsViewGroup, "${imageViewButtonId}_placeholder")
             tempPlaceholder.visibility = View.GONE
         }
         placeholderExists = hasPlaceholder
