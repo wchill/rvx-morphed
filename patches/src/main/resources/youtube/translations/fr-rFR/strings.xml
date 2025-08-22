@@ -266,15 +266,6 @@ Cliquez ici pour en savoir plus sur DeArrow."</string>
     <string name="revanced_hide_feed_captions_button_title">Masquer le bouton \'Sous-titres\'</string>
     <string name="revanced_hide_feed_captions_button_on">Le bouton \'Sous-titres\' est masqué.</string>
     <string name="revanced_hide_feed_captions_button_off">Le bouton \'Sous-titres\' est affiché.</string>
-    <string name="revanced_hide_carousel_shelf_title">Masquer les étagères du carrousel</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Les étagères du carrousel sont masqués, tels que :
-• Actualités
-• Continuer à regarder
-• Explorer d'autres chaînes
-• Écouter à nouveau
-• Produits
-• Regarder à nouveau"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Les étagères du carrousel sont affichés.</string>
     <string name="revanced_hide_chips_shelf_title">Masquer des étagères</string>
     <string name="revanced_hide_chips_shelf_on">L\'étagère \'Vous pourriez aussi aimer\' est masquée.</string>
     <string name="revanced_hide_chips_shelf_off">L\'étagère \'Vous pourriez aussi aimer\' est affichée.</string>
@@ -314,6 +305,7 @@ Cliquez ici pour en savoir plus sur DeArrow."</string>
     <string name="revanced_hide_ticket_shelf_title">Masquer les étagères à tickets</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Les étagères à tickets sont masqués.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Les étagères à tickets sont affichés.</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Barre de catégorie</string>
     <string name="revanced_preference_screen_category_bar_summary">Masque ou affiche la barre de catégorie dans les flux, recherche, et vidéos similaires.</string>
@@ -401,16 +393,6 @@ Limitations :
     <string name="revanced_hide_keyword_toast_invalid_conflicting">Le mot-clé a des déclarations en conflit : %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_length">Le mot-clé est trop court et nécessite des guillemets : %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">Ce mot-clé va masquer toutes les vidéos : %s.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">Vidéo recommandée</string>
-    <string name="revanced_hide_low_views_video_title">Masquer les vidéos peu vues</string>
-    <string name="revanced_hide_low_views_video_summary">"Masque les vidéos ayant moins de 1 000 vues dans les flux 'accueil' et qui ont été mis en ligne par des chaînes dont vous n'êtes pas abonnés.
-
-Ce filtre peut ne plus fonctionner, utilisez le filtre 'Nombre de vues' à la place."</string>
-    <string name="revanced_hide_recommended_video_title">Masquer les vidéos recommandées</string>
-    <string name="revanced_hide_recommended_video_summary">"Masque les vidéos recommandées suivants :
-
-• Les vidéos avec des phrases telles que 'Les internautes ont aussi regardé' en dessous."</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">Filtre du compteur de vues</string>
     <string name="revanced_hide_video_by_view_counts_home_title">Masquer les vidéos de la page d\'accueil par vues</string>
@@ -435,13 +417,6 @@ Ce filtre peut ne plus fonctionner, utilisez le filtre 'Nombre de vues' à la pl
 Limitations : 
 - Les shorts ne peuvent pas être masqués.
 - Les vidéos avec 0 vue ne sont pas filtrées."</string>
-    <string name="revanced_hide_related_videos_title">Masquer les vidéos similaires</string>
-    <string name="revanced_hide_related_videos_summary_on">Les vidéos similaires sont masqués.</string>
-    <string name="revanced_hide_related_videos_summary_off">Les vidéos similaires sont affichés.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Ce paramètre limite le nombre maximum de mises en page pouvant être chargées sur l'écran du lecteur.
-
-Si la mise en page de l'écran du lecteur change en raison de modifications côté serveur, des mises en page non désirées risquent d'être masquées sur l'écran du lecteur."</string>
-    <string name="revanced_related_videos_offset_title">Décalage</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Interface</string>
     <string name="revanced_change_start_page_title">Modifier la page de démarrage</string>
@@ -850,6 +825,13 @@ Note :
     <string name="revanced_sanitize_video_subtitle_title">Nettoyer les sous-titres vidéo</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Les phrases telles que '#', 'Financement' 'Magasin' et 'produits' seront masqués sur les sous-titres vidéos."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Les phrases telles que '#', 'Financement' 'Magasin' et 'produits' seront affichés sur les sous-titres vidéos."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">Les vidéos similaires sont masqués.</string>
+    <string name="revanced_hide_related_videos_summary_off">Les vidéos similaires sont affichés.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Ce paramètre limite le nombre maximum de mises en page pouvant être chargées sur l'écran du lecteur.
+
+Si la mise en page de l'écran du lecteur change en raison de modifications côté serveur, des mises en page non désirées risquent d'être masquées sur l'écran du lecteur."</string>
+    <string name="revanced_related_videos_offset_title">Décalage</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Boutons sous la vidéo</string>
     <string name="revanced_preference_screen_action_buttons_summary">Masque ou affiche les boutons sous les vidéos.</string>
@@ -1182,7 +1164,7 @@ Glissez le minilecteur pour agrandir ou fermer."</string>
     <string name="revanced_hide_player_collapse_button_summary_on">Le bouton \'Réduire\' est masqué.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">Le bouton \'Réduire\' est affiché.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Masquer le bouton \'Plein écran\'</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">Le bouton \'Plein écran\' est masqué.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"Le bouton 'Plein écran' est masqué."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">Le bouton \'Plein écran\' est affiché.</string>
     <string name="revanced_hide_player_previous_next_button_title">Masquer les boutons \'Précédent &amp; Suivant\'</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">Les boutons sont masqués.</string>
@@ -1352,7 +1334,7 @@ Cette fonction fonctionne mieux avec une connexion internet très rapide."</stri
     <string name="revanced_preference_screen_shorts_title">Shorts</string>
     <string name="revanced_disable_shorts_background_playback_title">Désactiver la lecture en arrière-plan des Shorts</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">La lecture en arrière-plan des Shorts est désactivée.</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">La lecture en arrière-plan des Shorts est activée.</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"La lecture en arrière-plan des Shorts est activée."</string>
     <string name="revanced_disable_resuming_shorts_player_title">Désac. \'Reprendre la lecture\' sur les Shorts</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">Les shorts ne reprennent pas au démarrage de l\'application.</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">Les shorts reprennent au démarrage de l\'application.</string>
@@ -1617,9 +1599,6 @@ Ajustez le volume en balayant verticalement sur le côté droit de l'écran."</s
     <string name="revanced_disable_hdr_auto_brightness_title">Luminosité HDR automatique</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_on">La luminosité HDR automatique est désactivée.</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_off">La luminosité HDR automatique est activée.</string>
-    <string name="revanced_disable_swipe_to_switch_video_title">Désactiver les gestes pour changer de vidéo</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_on">Glisser vers le haut / bas en plein écran ne lira pas la vidéo suivante / précédente.</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_off">Glisser vers le haut / bas en plein écran lira la vidéo suivante / précédente.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_title">Désactiver les gestes pour entrer en mode plein écran (sous le lecteur)</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_on">Glisser vers le bas sous le lecteur ne permet pas d\'entrer en mode plein écran.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_off">Glisser vers le bas sous le lecteur permet d\'entrer en mode plein écran.</string>
@@ -1707,18 +1686,6 @@ Info :
     <string name="revanced_advanced_video_quality_menu_type_title">Type de menu de qualité vidéo avancé dans les Shorts</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_on">La boîte de dialogue personnalisée est utilisée.</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_off">L\'ancien style du menu déroulant est utilisé.</string>
-    <string name="revanced_skipped_preloaded_buffer">Tampon préchargé passé.</string>
-    <string name="revanced_skip_preloaded_buffer_title">Tampon préchargé</string>
-    <string name="revanced_skip_preloaded_buffer_summary">"Passe le tampon préchargé au début de la vidéo pour appliquer immédiatement la qualité vidéo.
-
-Info :
-• Au démarrage de la vidéo, il y a un délai d'environ 0.3 secondes.
-• Ne s'applique pas aux vidéos HDR, aux diffusions en direct et aux vidéos de moins de 15 secondes.
-• Le paramètre 'Falsifier les données de lecture en direct' supprime également les tampons préchargés, ce paramètre n'est donc pas nécessaire si vous l'utilisez."</string>
-    <string name="revanced_skip_preloaded_buffer_user_dialog_message">Activer ce paramètre peut entraîner des problèmes de lecture vidéo.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_title">Affic. message lors du passage</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_on">Le message est affiché.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_off">Le message est masqué.</string>
     <string name="revanced_spoof_device_dimensions_title">Falsifier les dimensions de l\'appareil</string>
     <string name="revanced_spoof_device_dimensions_summary">"Falsifie les dimensions de l'appareil à la valeur maximale.
 
@@ -1979,9 +1946,6 @@ Cliquez ici pour découvrir comment créer une clé API."</string>
     <string name="revanced_bypass_url_redirects_summary_off">Les redirections d\'URL ne sont pas contournées.</string>
     <string name="revanced_disable_quic_protocol_title">Protocole QUIC</string>
     <string name="revanced_disable_quic_protocol_summary">"Désactive le protocole QUIC de CronetEngine."</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_title">Taille maximale du groupe de tâches Litho</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_entry_0">Non remplacé</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_invalid_toast">La taille maximale du pool de threads Litho doit être comprise entre 1 et 3.</string>
     <string name="revanced_open_links_externally_title">Ouvrir les liens en externe</string>
     <string name="revanced_open_links_externally_summary_on">Ouvre les liens dans le navigateur externe.</string>
     <string name="revanced_open_links_externally_summary_off">Ouvre les liens dans le navigateur de l\'application.</string>
@@ -2067,7 +2031,6 @@ Cliquez sur le bouton Continuer et autorisez les modifications d'optimisations."
     <string name="revanced_spoof_streaming_data_summary_off">"Les données de lecture en direct ne sont pas falsifiées. La lecture vidéo peut ne pas fonctionner."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Désactiver ce paramètre peut entraîner des problèmes de lecture vidéo.</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Effets inconnus de la falsification</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Des plages entières d\'ASN/adresses IP peuvent être bloquées par le serveur.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Afficher dans \'Statistiques pour les nerds\'</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Le client utilisé pour récupérer les données de lecture en direct est affiché dans \'Statistiques pour les nerds\'.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Le client utilisé pour récupérer les données de lecture en direct est masqué dans \'Statistiques pour les nerds\'.</string>
@@ -2081,7 +2044,7 @@ Cliquez sur le bouton Continuer et autorisez les modifications d'optimisations."
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Activer ceci peut améliorer la durée de vie de la batterie et résoudre les problèmes de lecture saccadée.
 
 AVC a une résolution maximale de 1080p, le codec audio Opus n'est pas disponible et la lecture vidéo utilisera plus de données internet que VP9 ou AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Historique de visionnage</string>
     <string name="revanced_preference_screen_watch_history_summary">Modifie les paramètres liés à l\'historique de visionnage.</string>

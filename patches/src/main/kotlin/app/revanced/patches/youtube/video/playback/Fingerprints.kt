@@ -16,15 +16,6 @@ internal val deviceDimensionsModelToStringFingerprint = legacyFingerprint(
     strings = listOf("minh.", ";maxh.")
 )
 
-internal val hdrCapabilityFingerprint = legacyFingerprint(
-    name = "hdrCapabilityFingerprint",
-    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    strings = listOf(
-        "av1_profile_main_10_hdr_10_plus_supported",
-        "video/av01"
-    )
-)
-
 internal val playbackSpeedChangedFromRecyclerViewFingerprint = legacyFingerprint(
     name = "playbackSpeedChangedFromRecyclerViewFingerprint",
     returnType = "L",
@@ -70,8 +61,8 @@ internal val qualityChangedFromRecyclerViewFingerprint = legacyFingerprint(
     accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
     parameters = listOf("L"),
     opcodes = listOf(
-        Opcode.IGET,  // Video resolution (human readable).
-        Opcode.IGET_OBJECT,
+        Opcode.IGET,  // Video resolution int (human readable).
+        Opcode.IGET_OBJECT,  // Video resolution string (human readable).
         Opcode.IGET_BOOLEAN,
         Opcode.IGET_OBJECT,
         Opcode.INVOKE_STATIC,
@@ -107,12 +98,25 @@ internal fun indexOfContextInstruction(method: Method) =
                 getReference<FieldReference>()?.type == "Landroid/content/Context;"
     }
 
-internal val qualitySetterFingerprint = legacyFingerprint(
-    name = "qualitySetterFingerprint",
+
+internal val videoQualityItemOnClickParentFingerprint = legacyFingerprint(
+    name = "videoQualityItemOnClickParentFingerprint",
     returnType = "V",
-    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    parameters = listOf("L"),
     strings = listOf("VIDEO_QUALITIES_MENU_BOTTOM_SHEET_FRAGMENT")
+)
+
+internal val videoQualityItemOnClickFingerprint = legacyFingerprint(
+    name = "videoQualityItemOnClickFingerprint",
+    returnType = "V",
+    parameters = listOf(
+        "Landroid/widget/AdapterView;",
+        "Landroid/view/View;",
+        "I",
+        "J"
+    ),
+    customFingerprint = { method, _ ->
+        method.name == "onItemClick"
+    }
 )
 
 internal val vp9CapabilityFingerprint = legacyFingerprint(

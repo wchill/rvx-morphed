@@ -138,6 +138,8 @@
     <string name="revanced_change_start_page_entry_samples">样品</string>
     <string name="revanced_change_start_page_entry_search">搜索</string>
     <string name="revanced_change_start_page_entry_subscriptions">订阅</string>
+    <string name="revanced_disable_cairo_splash_animation_title">禁用 Cairo 启动动画</string>
+    <string name="revanced_disable_cairo_splash_animation_summary">应用启动时禁用 Cairo 启动动画。</string>
     <string name="revanced_disable_dislike_redirection_title">禁用不喜欢重定向</string>
     <string name="revanced_disable_dislike_redirection_summary">点击不喜欢按钮时禁用重定向到下一曲目</string>
     <string name="revanced_disable_auto_captions_title">禁用自动字幕</string>
@@ -410,8 +412,6 @@
     <string name="revanced_bypass_image_region_restrictions_summary">绕过部分地区屏蔽的网域，以便可以接收播放列表缩略图、频道头像等。</string>
     <string name="revanced_change_share_sheet_title">更改分享菜单</string>
     <string name="revanced_change_share_sheet_summary">将应用内共享菜单更改为系统共享菜单。</string>
-    <string name="revanced_disable_cairo_splash_animation_title">禁用 Cairo 启动动画</string>
-    <string name="revanced_disable_cairo_splash_animation_summary">应用启动时禁用 Cairo 启动动画。</string>
     <string name="revanced_disable_drc_audio_title">禁用动态范围压缩音频</string>
     <string name="revanced_disable_drc_audio_summary">禁用应用于音频的 DRC（动态范围压缩）。</string>
     <string name="revanced_disable_music_video_in_album_title">禁用专辑中的音乐视频</string>
@@ -425,11 +425,8 @@
     <string name="revanced_sanitize_sharing_links_title">清理分享链接</string>
     <string name="revanced_sanitize_sharing_links_summary">分享链接时删除跟踪查询参数</string>
     <string name="revanced_spoof_client_title">伪装客户端</string>
-    <string name="revanced_spoof_client_summary">伪装客户端以防止播放问题。</string>
     <string name="revanced_spoof_client_type_title">默认客户端</string>
     <string name="revanced_spoof_client_type_summary">定义用于伪装的默认客户端。</string>
-    <string name="revanced_spoof_client_type_entry_android_music_4_27">Android 音乐 4.27.53</string>
-    <string name="revanced_spoof_client_type_entry_android_music_5_29">Android 音乐 5.29.53</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS 音乐 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS 音乐 7.04</string>
     <string name="revanced_watch_history_type_title">观看历史记录类型</string>

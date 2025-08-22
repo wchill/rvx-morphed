@@ -24,6 +24,7 @@
     <string name="revanced_extended_settings_search_no_results_title">Δεν βρέθηκαν αποτελέσματα για \'%s\'.</string>
     <string name="revanced_extended_settings_search_no_results_summary">Δοκιμάστε άλλη λέξη-κλειδί.</string>
     <string name="revanced_extended_settings_search_remove_message">Κατάργηση από το ιστορικό αναζήτησης;</string>
+    <string name="revanced_dismiss_player_not_available_toast">Id του βίντεο μη διαθέσιμο. Ανοίξτε ξανά το βίντεο χειροκίνητα.</string>
     <string name="revanced_playback_speed_normal">Κανονική</string>
     <string name="revanced_external_downloader_package_name_video_title">Όνομα πακέτου εφαρμογής λήψης βίντεο</string>
     <string name="revanced_external_downloader_package_name_video_summary">Όνομα πακέτου της εγκατεστημένης σας εξωτερικής εφαρμογής λήψης (π.χ NewPipe, YTLDnis).</string>
@@ -267,16 +268,6 @@
     <string name="revanced_hide_feed_captions_button_title">Κουμπί υπότιτλων</string>
     <string name="revanced_hide_feed_captions_button_on">Κρυμμένο.</string>
     <string name="revanced_hide_feed_captions_button_off">Εμφανίζεται.</string>
-    <string name="revanced_hide_carousel_shelf_title">Οριζόντιες ενότητες προτάσεων</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Απόκρυψη ενοτήτων όπως:
-• Έκτακτη είδηση
-• Συνέχεια παρακολούθησης
-• Εξερευνήστε περισσότερα κανάλια
-• Ακούστε ξανά
-• Πιο σχετικά
-• Αγορές
-• Παρακολουθήστε ξανά"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Εμφανίζονται.</string>
     <string name="revanced_hide_chips_shelf_title">Ενότητα σχετιζόμενων λέξεων</string>
     <string name="revanced_hide_chips_shelf_on">Κρυμμένη.</string>
     <string name="revanced_hide_chips_shelf_off">Εμφανίζεται.</string>
@@ -325,6 +316,23 @@
     <string name="revanced_hide_ticket_shelf_title">Ενότητα εισιτηρίων</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_video_recommendation_labels_title">Ετικέτες προτάσεων βίντεο</string>
+    <string name="revanced_hide_video_recommendation_labels_summary_on">"Κρυμμένες.\n\nΑφορά ετικέτες όπως τις «Άλλοι χρήστες παρακολούθησαν επίσης» και «Ενδέχεται επίσης να σας αρέσει»."</string>
+    <string name="revanced_hide_video_recommendation_labels_summary_off">"Εμφανίζονται.\n\nΑφορά ετικέτες όπως τις «Άλλοι χρήστες παρακολούθησαν επίσης» και «Ενδέχεται επίσης να σας αρέσει»."</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
+    <string name="revanced_preference_screen_carousel_shelf_title">Ενότητα καρουζέλ προτάσεων</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">Απόκρυψη ή εμφάνιση της ενότητας καρουζέλ προτάσεων στην αρχική καρτέλα, στα αποτελέσματα αναζήτησης και στην καρτέλα εγγραφών.</string>
+    <string name="revanced_hide_carousel_shelf_home_title">Ενότητα καρουζέλ προτάσεων στην καρτέλα «Αρχική» και στα σχετικα βίντεο</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_on">Κρυμμένη.</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_title">Ενότητα καρουζέλ προτάσεων στην καρτέλα «Εγγραφές»</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_on">Κρυμμένη.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_carousel_shelf_search_title">Ενότητα καρουζέλ προτάσεων στα αποτελέσματα αναζήτησης</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_on">Κρυμμένη.</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_carousel_shelf_about_title">Σχετικά με την ενότητα καρουζέλ προτάσεων</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Παραδείγματα ενοτήτων καρουζέλ προτάσεων:&lt;br&gt;&lt;br&gt;&lt;b&gt;Έκτακτη είδηση&lt;/b&gt;, &lt;b&gt;Συνέχεια παρακολούθησης&lt;/b&gt;, &lt;b&gt;Εξερευνήστε περισσότερα κανάλια&lt;/b&gt;, &lt;b&gt;Ακούστε ξανά&lt;/b&gt;, &lt;b&gt;Πιο σχετικά&lt;/b&gt;, &lt;b&gt;Shopping&lt;/b&gt;, &lt;b&gt;Παρακολουθήστε ξανά&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Γραμμή κατηγοριών</string>
     <string name="revanced_preference_screen_category_bar_summary">Απόκρυψη ή εμφάνιση της γραμμής κατηγοριών στις ροές, στα σχετικά βίντεο, στα αποτελέσματα αναζήτησης και στο ιστορικό παρακολούθησης.</string>
@@ -424,16 +432,6 @@ Playlists
     <string name="revanced_hide_keyword_toast_invalid_conflicting">Η λέξη έχει αντικρουόμενες δηλώσεις: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_length">Η λέξη είναι πολύ μικρή και απαιτεί εισαγωγικά: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">Η λέξη θα κρύβει όλα τα βίντεο: %s.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">Προτεινόμενα βίντεο</string>
-    <string name="revanced_hide_low_views_video_title">Απόκρυψη βίντεο χαμηλών προβολών</string>
-    <string name="revanced_hide_low_views_video_summary">"Απόκρυψη των βίντεο με λιγότερες από 1,000 προβολές από τις αρχικές ροές τα οποία ανήκουν σε κανάλια που δεν έχετε εγγραφεί.
-
-Η λειτουργία αυτή ενδέχεται να μη λειτουργεί πλέον, αντί αυτού χρησιμοποιείστε το «Φίλτρο αριθμού προβολών»."</string>
-    <string name="revanced_hide_recommended_video_title">Απόκρυψη προτεινόμενων βίντεο</string>
-    <string name="revanced_hide_recommended_video_summary">"Απόκρυψη των παρακάτω προτεινόμενων βίντεο:
-
-• Βίντεο με φράσεις όπως «Άλλοι χρήστες παρακολούθησαν επίσης» στο κάτω μέρος τους."</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">Φίλτρο αριθμού προβολών</string>
     <string name="revanced_hide_video_by_view_counts_home_title">Φιλτράρισμα καρτέλας «Αρχική»</string>
@@ -456,23 +454,8 @@ Playlists
     <string name="revanced_hide_video_by_view_counts_about_summary">"Οι καρτέλες «Αρχική», «Εγγραφές» και τα αποτελέσματα αναζήτησης φιλτράρονται για απόκρυψη βίντεο με προβολές λιγότερες ή περισσότερες από τον καθορισμένο σας αριθμό.
 
 Περιορισμοί:
-• Τα Shorts δε φιλτράρονται.
+• Οι ζωντανές μεταδόσεις και τα Shorts δε φιλτράρονται.
 • Τα βίντεο με 0 προβολές δε φιλτράρονται."</string>
-    <string name="revanced_hide_related_videos_title">Περισσότερα βίντεο</string>
-    <string name="revanced_hide_related_videos_summary_on">Κρυμμένα.</string>
-    <string name="revanced_hide_related_videos_summary_off">Εμφανίζονται.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Αυτή η ρύθμιση περιορίζει τον μέγιστο αριθμό διατάξεων που μπορούν να εμφανιστούν στην οθόνη αναπαραγωγής.
-
-Στην περίπτωση που η διεπαφή της οθόνης αναπαραγωγής αλλάξει λόγω αλλαγών από πλευράς του διακομιστή, ορισμένες διατάξεις της ενδέχεται να είναι κρυμμένες χωρίς να είναι επιθυμητό."</string>
-    <string name="revanced_hide_related_videos_type_title">Τύπου απόκρυψης σχετικών βίντεο</string>
-    <string name="revanced_hide_related_videos_type_summary_on">"Ο αριθμός των διατάξεων που φορτώνονται στην οθόνη απομνημονεύονται όταν ξεκινά το βίντεο.
-
-• Διορθώνει μερικώς ένα πρόβλημα όπου επαναφέρεται η θέση κύλισης της ροής.
-• Τα σχετικά βίντεο ενδέχεται να μη φιλτραριστούν εντελώς."</string>
-    <string name="revanced_hide_related_videos_type_summary_off">"Ο αριθμός των διατάξεων που φορτώνονται στην οθόνη δεν απομνημονεύονται όταν ξεκινά το βίντεο.
-
-• Η θέση κύλισης της ροής ενδέχεται να επαναφέρεται."</string>
-    <string name="revanced_related_videos_offset_title">Μετατόπιση</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Γενικά</string>
     <string name="revanced_change_start_page_title">Αλλαγή αρχικής σελίδας</string>
@@ -484,6 +467,7 @@ Playlists
     <string name="revanced_change_start_page_entry_fashion">Μόδα &amp; ομορφιά</string>
     <string name="revanced_change_start_page_entry_gaming">Παιχνίδια</string>
     <string name="revanced_change_start_page_entry_history">Ιστορικό</string>
+    <string name="revanced_change_start_page_entry_hype">Hype</string>
     <string name="revanced_change_start_page_entry_library">Βιβλιοθήκη</string>
     <string name="revanced_change_start_page_entry_liked_videos">Βίντεο που σας αρέσουν</string>
     <string name="revanced_change_start_page_entry_live">Live</string>
@@ -514,6 +498,9 @@ Playlists
     <string name="revanced_disable_auto_captions_title">Απενεργοποίηση υποχρεωτικών αυτόματων υπότιτλων</string>
     <string name="revanced_disable_auto_captions_summary_on">Οι υποχρεωτικοί αυτόματοι υπότιτλοι είναι απενεργοποιημένοι.</string>
     <string name="revanced_disable_auto_captions_summary_off">Οι υποχρεωτικοί αυτόματοι υπότιτλοι εμφανίζονται.</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">Απενεργοποίηση αναδυόμενου παραθύρου σύνδεσης στην τηλεόραση</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">Το αναδυόμενο παράθυρο σύνδεσης στην τηλεόραση είναι απενεργοποιημένο.</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">Το αναδυόμενο παράθυρο σύνδεσης στην τηλεόραση είναι ενεργοποιημένο.</string>
     <string name="revanced_disable_splash_animation_title">Απενεργοποίηση εφέ εκκίνησης εφαρμογής</string>
     <string name="revanced_disable_splash_animation_summary_on">Το εφέ εκκίνησης της εφαρμογής είναι απενεργοποιημένο.</string>
     <string name="revanced_disable_splash_animation_summary_off">Το εφέ εκκίνησης της εφαρμογής είναι ενεργοποιημένο.</string>
@@ -565,6 +552,16 @@ Playlists
     <string name="revanced_disable_translucent_status_bar_summary_on">Η γραμμή κατάστασης δεν είναι διαφανής.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Η διαφάνεια της γραμμής κατάστασης ορίζεται αυτόματα.</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">Σε ορισμένες εργοστασιακές ROM που τρέχουν Android 12+, η ενεργοποίηση αυτής της λειτουργίας μπορεί να κάνει τη γραμμή πλοήγησης του συστήματος διαφανή.</string>
+    <string name="revanced_fix_hype_button_icon_title">Διόρθωση εικονιδίου κουμπιού Hype</string>
+    <string name="revanced_fix_hype_button_icon_summary_on">Το εικονίδιο του κουμπί «Hype» εμφανίζεται.</string>
+    <string name="revanced_fix_hype_button_icon_summary_off">Το εικονίδιο του κουμπί «Hype» δεν εμφανίζεται.</string>
+    <string name="revanced_fix_hype_button_icon_user_dialog_message">"Στην έκδοση YouTube 19.25.39 ή παλιότερη, το εικονίδιο του κουμπιού «Hype» δεν εμφανίζεται στη γραμμή ενεργειών και στον πίνακα περιγραφής του βίντεο.
+
+Για να λυθεί αυτό, η έκδοση εφαρμογής παραποιείται σε 19.26.42 στα endpoint '/get_watch' και '/next' του YouTube.
+
+Αν απενεργοποιηθεί αυτή η ρύθμιση, το εικονίδιο του κουμπιού «Hype» ενδέχεται να μην εμφανίζεται στη γραμμή ενεργειών και στον πίνακα περιγραφής του βίντεο.
+
+※ Ακόμη κι αν αυτή η ρύθμιση είναι απενεργοποιημένη, το κουμπί «Hype» ενδέχεται να εμφανίζεται."</string>
     <string name="revanced_spoof_app_version_title">Παραποίηση έκδοσης εφαρμογής</string>
     <string name="revanced_spoof_app_version_summary_on">Η έκδοση παραποιείται.</string>
     <string name="revanced_spoof_app_version_summary_off">Η έκδοση δεν παραποιείται.</string>
@@ -585,6 +582,16 @@ Playlists
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Επαναφορά παλιάς επικεφαλίδας λίστας αναπαραγωγής</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Επαναφορά αναδυόμενου πίνακα ταχύτητας αναπαραγωγής παλιού στυλ</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Μη έγκυρη έκδοση για παραποίηση: %s.</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_title">Διόρθωση παρενέργειας παραποίησης έκδοσης εφαρμογής</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_summary_on">"Χρησιμοποιείται η ρύθμιση «Αυτόματη αναπαραγωγή» αντί για τη ρύθμιση «Αναπαραγωγή» στις ρυθμίσεις του YouTube."</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_summary_off">Χρησιμοποιείται η ρύθμιση «Αναπαραγωγή» αντί για τη ρύθμιση «Αυτόματη αναπαραγωγή» στις ρυθμίσεις του YouTube.</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_user_dialog_message">"Αν η έκδοση της εφαρμογής έχει παραποιηθεί σε 19.30 ή παλιότερη ακόμα και μία φορά, η ρύθμιση «Αναπαραγωγή» στις ρυθμίσεις YouTube ενδέχεται να μη λειτουργεί.
+
+Αυτό εξαρτάται από την απάντηση που λαμβάνει η εφαρμογή από τον διακομιστή.
+
+Αν η ρύθμιση «Αναπαραγωγή» δε λειτουργεί, η ενεργοποίηση αυτής της λειτουργίας μπορεί να διορθώσει το πρόβλημα.
+
+Αν η ρύθμιση «Αναπαραγωγή» δε λειτουργεί ακόμη και μετά την ενεργοποίηση ή απενεργοποίηση αυτής της λειτουργίας, θα πρέπει να κάνετε εκκαθάριση δεδομένων εφαρμογής."</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">Μενού λογαριασμού</string>
     <string name="revanced_preference_screen_account_menu_summary">Απόκρυψη ή εμφάνιση στοιχείων στο μενού λογαριασμού και στην καρτέλα «Εσείς».</string>
@@ -615,8 +622,9 @@ Playlists
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Hook buttons, PreferenceCategory: Download button -->
     <string name="revanced_preference_category_download_button">Κουμπί «Λήψη»</string>
     <string name="revanced_override_playlist_download_button_title">Αλλαγή λειτουργίας κουμπιού λήψης λίστας αναπαραγωγής</string>
-    <string name="revanced_override_playlist_download_button_summary_on">Το κουμπί λήψης λίστας αναπαραγωγής εμφανίζεται πάντα, και σε δημόσιες λίστες αναπαραγωγής ανοίγει η εξωτερική εφαρμογή λήψης σας.</string>
-    <string name="revanced_override_playlist_download_button_summary_on_disclaimer">"Το κουμπί λήψης λίστας αναπαραγωγής του YouTube, αν εμφανίζεται, ανοίγει η εξωτερική εφαρμογή λήψης.
+    <string name="revanced_override_playlist_download_button_summary_on">Το κουμπί λήψης λίστας αναπαραγωγής εμφανίζεται πάντα, και σε δημόσιες λίστες αναπαραγωγής ανοίγει την εξωτερική εφαρμογή λήψης σας.</string>
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer_1">Το κουμπί λήψης λίστας αναπαραγωγής του YouTube, αν εμφανίζεται, ανοίγει την εξωτερική εφαρμογή λήψης σας.</string>
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer_2">"Το κουμπί λήψης λίστας αναπαραγωγής του YouTube, αν εμφανίζεται, ανοίγει την εξωτερική εφαρμογή λήψης σας.
 
 Για να εμφανίζεται το κουμπί λήψης λίστας αναπαραγωγής, ενεργοποιήστε τη ρύθμιση «Παραποίηση έκδοσης εφαρμογής» και αλλάξτε την «Έκδοση παραποίησης της εφαρμογής» σε 19.28.42 ή παλιότερη."</string>
     <string name="revanced_override_playlist_download_button_summary_off">Το κουμπί λήψης λίστας αναπαραγωγής, αν εμφανίζεται, ανοίγει το ενσωματωμένο πρόγραμμα λήψης του YouTube.</string>
@@ -805,6 +813,9 @@ Playlists
     <string name="revanced_hide_voice_search_button_title">Κουμπί φωνητικής αναζήτησης</string>
     <string name="revanced_hide_voice_search_button_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_voice_search_button_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_you_may_like_section_title">Ενότητα «Ενδέχεται να σας αρέσουν»</string>
+    <string name="revanced_hide_you_may_like_section_summary_on">Κρυμμένη.</string>
+    <string name="revanced_hide_you_may_like_section_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_youtube_doodles_title">YouTube Doodles</string>
     <string name="revanced_hide_youtube_doodles_summary_on">Κρυμμένα.</string>
     <string name="revanced_hide_youtube_doodles_summary_off">Εμφανίζονται.</string>
@@ -893,6 +904,16 @@ Playlists
     <string name="revanced_sanitize_video_subtitle_title">Καθάρισμα υπότιτλων βίντεο</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Φράσεις όπως «#», «Έρανος», «Κατάστημα» και «προϊόντα» είναι κρυμμένες από τους υπότιτλους των βίντεο."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Φράσεις όπως «#», «Έρανος», «Κατάστημα» και «N προϊόντα» εμφανίζονται στους υπότιτλους των βίντεο."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_title">Σχετικά βίντεο</string>
+    <string name="revanced_hide_related_videos_summary_on">Κρυμμένα.</string>
+    <string name="revanced_hide_related_videos_summary_off">Εμφανίζονται.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Αυτή η ρύθμιση περιορίζει τον μέγιστο αριθμό διατάξεων που μπορούν να εμφανιστούν στην οθόνη αναπαραγωγής.
+
+Αν κάποια σχετικά βίντεο εξακολουθούν να εμφανίζονται, ή γίνεται απόκρυψη στοιχείων που δε θα έπρεπε, όπως η γραμμή ενεργειών ή η ενότητα σχολίων, η αλλαγή της μετατόπισης μπορεί να διορθώσει το πρόβλημα.
+
+Στην περίπτωση που η διάταξη της οθόνης αναπαραγωγής αλλάξει λόγω αλλαγών από πλευράς του διακομιστή, ενδέχεται να γίνει απόκρυψη ορισμένων στοιχείων χωρίς να είναι επιθυμητό."</string>
+    <string name="revanced_related_videos_offset_title">Μετατόπιση</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Κουμπιά ενεργειών</string>
     <string name="revanced_preference_screen_action_buttons_summary">Απόκρυψη ή εμφάνιση κουμπιών κάτω από τα βίντεο.</string>
@@ -911,6 +932,9 @@ Playlists
     <string name="revanced_hide_download_button_title">Κουμπί «Λήψη»</string>
     <string name="revanced_hide_download_button_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_download_button_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_hype_button_title">Κουμπί «Hype»</string>
+    <string name="revanced_hide_hype_button_summary_on">Κρυμμένο.</string>
+    <string name="revanced_hide_hype_button_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_like_dislike_button_title">Κουμπιά «Μου αρέσει» &amp; «Δεν μου αρέσει»</string>
     <string name="revanced_hide_like_dislike_button_summary_on">Κρυμμένα.</string>
     <string name="revanced_hide_like_dislike_button_summary_off">Εμφανίζονται.</string>
@@ -1032,7 +1056,7 @@ Playlists
     <string name="revanced_change_player_flyout_menu_toggle_title">Τύπος εναλλαγής ρυθμίσεων</string>
     <string name="revanced_change_player_flyout_menu_toggle_summary_on">Εμφανίζονται εναλλαγές κειμένου.</string>
     <string name="revanced_change_player_flyout_menu_toggle_summary_off">Εμφανίζονται εναλλαγές διακόπτη.</string>
-    <string name="revanced_hide_player_flyout_menu_enhanced_bitrate_title">Μενού ποιότητας 1080p Premium</string>
+    <string name="revanced_hide_player_flyout_menu_enhanced_bitrate_title">Μενού επιλογής ποιότητας 1080p Premium</string>
     <string name="revanced_hide_player_flyout_menu_enhanced_bitrate_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_player_flyout_menu_enhanced_bitrate_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Μενού «Κομμάτι ήχου»</string>
@@ -1265,7 +1289,9 @@ Playlists
     <string name="revanced_hide_player_collapse_button_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Κουμπί λειτουργίας πλήρους οθόνης</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">Κρυμμένο.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"Κρυμμένο.
+
+Περιορισμός: Ενδέχεται να εξαφανίζονται όλα τα κουμπιά της οθόνης αναπαραγωγής μετά το τέλος του βίντεο."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_player_previous_next_button_title">Κουμπιά προηγούμενου &amp; επόμενου βίντεο</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">Κρυμμένα.</string>
@@ -1441,7 +1467,9 @@ Playlists
     <string name="revanced_preference_screen_shorts_title">Shorts</string>
     <string name="revanced_disable_shorts_background_playback_title">Απενεργοποίηση αναπαραγωγής παρασκηνίου για τα Shorts</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">Η αναπαραγωγή παρασκηνίου είναι απενεργοποιημένη για τα Shorts.</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">Η αναπαραγωγή παρασκηνίου είναι ενεργοποιημένη για τα Shorts.</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"Η αναπαραγωγή παρασκηνίου είναι ενεργοποιημένη για τα Shorts.
+
+Πληροφορίες: Η αναπαραγωγή Shorts στο παρασκήνιο είναι μόνο διαθέσιμη σε λειτουργία Picture-in-picture."</string>
     <string name="revanced_disable_resuming_shorts_player_title">Απενεργοποίηση συνέχισης των Shorts</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">Η αναπαραγωγή Shorts δε θα συνεχίζεται κατά την εκκίνηση της εφαρμογής.</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">Η αναπαραγωγή Shorts θα συνεχίζεται κατά την εκκίνηση της εφαρμογής.</string>
@@ -1724,15 +1752,15 @@ Playlists
     <string name="revanced_swipe_text_overlay_size_invalid_toast">Το μέγεθος κειμένου πρέπει να είναι μεταξύ 1-30.</string>
     <string name="revanced_swipe_overlay_timeout_title">Χρονικό όριο φόντου σάρωσης</string>
     <string name="revanced_swipe_overlay_timeout_summary">Το χρονικό διάστημα των χιλιοστών του δευτερολέπτου που είναι ορατό το φόντο σάρωσης.</string>
+    <string name="revanced_swipe_brightness_distance_dip_title">Απόσταση σάρωσης φωτεινότητας</string>
+    <string name="revanced_swipe_brightness_distance_dip_summary">Ελάχιστη απόσταση σάρωσης, σε pixels.</string>
+    <string name="revanced_swipe_brightness_distance_dip_invalid_toast">Η απόσταση σάρωσης πρέπει να είναι μεταξύ 0.1dip - 10.0dip.</string>
     <string name="revanced_swipe_volume_sensitivity_title">Ευαισθησία σάρωσης έντασης ήχου</string>
     <string name="revanced_swipe_volume_sensitivity_summary">Πόσο αλλάζει η ένταση ήχου ανά σάρωση.</string>
     <string name="revanced_swipe_volume_sensitivity_invalid_toast">Η ευαισθησία σάρωσης πρέπει να ναι μεταξύ 1-1000.</string>
     <string name="revanced_disable_hdr_auto_brightness_title">Απενεργοποίηση αυτόματης φωτεινότητας HDR</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_on">Η αυτόματη φωτεινότητα HDR είναι απενεργοποιημένη.</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_off">Η αυτόματη φωτεινότητα HDR είναι ενεργοποιημένη.</string>
-    <string name="revanced_disable_swipe_to_switch_video_title">Απενεργοποίηση χειρονομίας σάρωσης για αλλαγή βίντεο</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_on">Η σάρωση προς τα πάνω / κάτω κατά τη λειτουργία πλήρους οθόνης δε θα αναπαράγει το επόμενο / προηγούμενο βίντεο.</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_off">Η σάρωση προς τα πάνω / κάτω κατά τη λειτουργία πλήρους οθόνης θα αναπαράγει το επόμενο / προηγούμενο βίντεο.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_title">Απενεργοποίηση σάρωσης για εισαγωγή σε πλήρη οθόνη (κάτω από την οθόνη αναπαραγωγής)</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_on">Η σάρωση προς τα κάτω κάτω από την οθόνη αναπαραγωγής δε θα ενεργοποιήσει τη λειτουργία πλήρους οθόνης.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_off">Η σάρωση προς τα κάτω κάτω από την οθόνη αναπαραγωγής θα ενεργοποιήσει τη λειτουργία πλήρους οθόνης.</string>
@@ -1742,6 +1770,9 @@ Playlists
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_title">Απενεργοποίηση σάρωσης για έξοδο από πλήρη οθόνη</string>
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_summary_on">Η σάρωση προς τα κάτω δε θα τερματίζει τη λειτουργία πλήρους οθόνης.</string>
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_summary_off">Η σάρωση προς τα κάτω θα τερματίζει τη λειτουργία πλήρους οθόνης.</string>
+    <string name="revanced_enable_swipe_to_switch_video_title">Χειρονομία σάρωσης για αλλαγή βίντεο</string>
+    <string name="revanced_enable_swipe_to_switch_video_summary_on">Η σάρωση προς τα πάνω / κάτω στη λειτουργία πλήρους οθόνης αλλάζει στο επόμενο / προηγούμενο βίντεο.</string>
+    <string name="revanced_enable_swipe_to_switch_video_summary_off">Η σάρωση προς τα πάνω / κάτω στη λειτουργία πλήρους οθόνης δεν αλλάζει στο επόμενο / προηγούμενο βίντεο.</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">Αυτόματη</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Βίντεο</string>
@@ -1819,17 +1850,6 @@ Playlists
     <string name="revanced_advanced_video_quality_menu_type_title">Εμφάνιση προχωρημένου μενού ποιότητας στα Shorts</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_on">Εμφανίζεται προσαρμοσμένο παράθυρο.</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_off">Εμφανίζεται το αναδυόμενο μενού παλιού στυλ.</string>
-    <string name="revanced_skipped_preloaded_buffer">Η προφόρτωση βίντεο παραλείφθηκε.</string>
-    <string name="revanced_skip_preloaded_buffer_title">Παράλειψη προφόρτωσης βίντεο</string>
-    <string name="revanced_skip_preloaded_buffer_summary">"Παράλειψη προφόρτωσης στην αρχή του βίντεο, για άμεση εφαρμογή της προεπιλεγμένης ποιότητας.
-
-• Κατά την έναρξη βίντεο, υπάρχει μια καθυστέρηση περίπου 0.3 δευτερολέπτων.
-• Δεν ισχύει για Shorts, βίντεο HDR ή μικρότερα από 15 δευτερόλεπτα και ζωντανές μεταδόσεις.
-• Η λειτουργία «Παραποίηση δεδομένων ροής» παραλείπει επίσης την προφόρτωση, οπότε αν είναι ενεργοποιημένη τότε αυτή η λειτουργία δε χρειάζεται."</string>
-    <string name="revanced_skip_preloaded_buffer_user_dialog_message">Η ενεργοποίηση αυτής της ρύθμισης μπορεί να προκαλέσει προβλήματα αναπαραγωγής βίντεο.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_title">Εμφάνιση μηνύματος κατά την παράλειψη</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_on">Εμφανίζεται μήνυμα στο κάτω μέρος της οθόνης.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_off">Δεν εμφανίζεται μήνυμα στο κάτω μέρος της οθόνης.</string>
     <string name="revanced_spoof_device_dimensions_title">Παραποίηση διαστάσεων συσκευής</string>
     <string name="revanced_spoof_device_dimensions_summary">"Παραποίηση των διαστάσεων συσκευής στη μέγιστη τιμή.
 
@@ -2091,9 +2111,6 @@ Playlists
     <string name="revanced_disable_quic_protocol_summary">"Απενεργοποίηση πρωτοκόλλου QUIC του CronetEngine.
 
 Αυτή η λειτουργία αποτρέπει την συμπίεση και αποσυμπίεση των βίντεο κατά την αναπαραγωγή, οι οποίες μπορούν να προκαλέσουν κολλήματα, ενδέχεται όμως να χρησιμοποιηθούν περισσότερα δεδομένα."</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_title">Μέγιστος αριθμός παρασκηνιακών διεργασιών Litho</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_entry_0">Χωρίς παράκαμψη</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_invalid_toast">Ο μέγιστος αριθμός πρέπει να ναι μεταξύ 1-3.</string>
     <string name="revanced_open_links_externally_title">Άνοιγμα συνδέσμων σε πρόγραμμα περιήγησης</string>
     <string name="revanced_open_links_externally_summary_on">Οι σύνδεσμοι ανοίγουν σε εξωτερικό πρόγραμμα περιήγησης.</string>
     <string name="revanced_open_links_externally_summary_off">Οι σύνδεσμοι ανοίγουν εσωτερικά στην εφαρμογή.</string>
@@ -2186,10 +2203,10 @@ Playlists
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(χωρίς έλεγχο ταυτότητας)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
-<small>(Ξεπερασμένο)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(Απαιτείται σύνδεση)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web Κινητού
+<small>(λειτουργία σε εξέλιξη)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(Λειτουργία σε εξέλιξη)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV Embedded
@@ -2201,13 +2218,51 @@ Playlists
 • Η λειτουργία «Σταθερή ένταση» δεν είναι διαθέσιμη.
 • Η ρύθμιση «Απενεργοποίηση υποχρεωτικών κομματιών ήχου» δε λειτουργεί.
 • Τα βίντεο για παιδιά ενδέχεται να μην αναπαράγονται αν είστε αποσυνδεμένοι ή σε λειτουργία ανώνυμης περιήγησης."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Ολόκληρα αυτόνομα συστήματα (ASN) ή εύρη διευθύνσεων IP ενδέχεται να αποκλειστούν από τον διακομιστή.</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Η λειτουργία «Σταθερή ένταση» δεν είναι διαθέσιμη.
 • Οι ταινίες ή τα επί πληρωμή βίντεο ενδέχεται να μην αναπαράγονται.
 • Τα βίντεο για παιδιά ενδέχεται να μην αναπαράγονται αν είστε αποσυνδεμένοι ή σε λειτουργία ανώνυμης περιήγησης."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Το μενού «Κομμάτι ήχου» λείπει.
+• Η ρύθμιση «Απενεργοποίηση υποχρεωτικών κομματιών ήχου» δε λειτουργεί.
+• Αν η αποσυσκότιση αποτύχει, θα αποτύχει και η αναπαραγωγή.
+• Η αναπαραγωγή ενδέχεται να ξεκινήσει με καθυστέρηση.
+• Αν το βίντεο δεν ξεκινήσει εντός 10 δευτερολέπτων, πατήστε το κουμπί επαναφόρτωσης βίντεο."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Αν η αποσυσκότιση αποτύχει, θα αποτύχει και η αναπαραγωγή.
 • Η αναπαραγωγή ενδέχεται να ξεκινάει με καθυστέρηση.
 • Αν το βίντεο δεν ξεκινήσει εντός 10 δευτερολέπτων, πατήστε το κουμπί επαναφόρτωσης βίντεο."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_unknown">• Άγνωστες</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Προτεραιοποίηση ποιότητας βίντεο</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">Προτεραιοποιείται η ποιότητα βίντεο.</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_off">Προτεραιοποιούνται οι κωδικοποιητές βίντεο.</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_user_dialog_message">"Κάποια βίντεο διαθέτουν τις εξής ποιότητες και κωδικοποιήσεις:
+• 1080p AVC
+• 720p AVC
+• 360p VP9
+
+Αν η συσκευή σας υποστηρίζει VP9, οι επιλογές \"1080p AVC\" και \"720p AVC\" παρακάμπτονται.
+
+Δηλαδή, η μέγιστη διαθέσιμη ποιότητα είναι \"360p VP9\" και οι επιλογές \"1080p AVC\" και \"720p AVC\" δεν εμφανίζονται στο μενού επιλογής ποιότητας.
+
+Αυτό είναι η προεπιλεγμένη συμπεριφορά της εφαρμογής YouTube και είναι ο λόγος που το μενού επιλογής ποιότητας δεν είναι διαθέσιμο για ορισμένα βίντεο.
+
+Αν και ο VP9 είναι πιο προηγμένος κωδικοποιητής από το AVC, κάποιοι χρήστες μπορεί να προτιμούν το \"1080p AVC\" αντί για το \"360p VP9\".
+
+Όταν αυτή η ρύθμιση είναι ενεργοποιημένη, χρησιμοποιείται η υψηλότερη διαθέσιμη ποιότητα βίντεο από την απόκριση του διακομιστή, ανεξάρτητα από τον κωδικοποιητή.
+
+Παράδειγμα 1:
+
+• 1080p AVC
+• 720p AVC
+• 360p VP9
+
+→ Χρησιμοποιείται το 1080p AVC.
+
+Παράδειγμα 2:
+
+• 1080p AVC
+• 1080p VP9
+• 720p VP9
+
+→ Χρησιμοποιείται το 1080p VP9."</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_title">Εμφάνιση κουμπιού επαναφόρτωσης βίντεο</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">Το κουμπί επαναφόρτωσης βίντεο εμφανίζεται.</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">Το κουμπί επαναφόρτωσης βίντεο δεν εμφανίζεται.</string>
@@ -2246,50 +2301,32 @@ Playlists
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Η ενεργοποίηση αυτής της λειτουργίας ενδέχεται να βελτιώσει τη διάρκεια ζωής της μπαταρίας και να διορθώσει κολλήματα αναπαραγωγής.
 
 Ο AVC έχει μέγιστη ανάλυση 1080p, ο κωδικοποιητής ήχου Opus δεν είναι διαθέσιμος και η αναπαραγωγή βίντεο θα χρησιμοποιεί περισσότερα δεδομένα ίντερνετ από τον VP9 ή τον AV1."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_title">Χρήση του προγράμματος πελάτη iOS</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_on">"Το iOS προστέθηκε στα διαθέσιμα προγράμματα πελάτη.
-
-ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Το πρόγραμμα πελάτη iOS είναι ξεπερασμένο. Οποιοδήποτε θέμα προκύψει κατά τη χρήση του είναι με δική σας ευθύνη."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_off">Το iOS δεν προστέθηκε στα διαθέσιμα προγράμματα πελάτη.</string>
-    <string name="revanced_spoof_streaming_data_use_ios_user_dialog_message">"Κατά την αποστολή αιτημάτων προς το YouTube API endpoint μέσω iOS, απαιτούνται τα αναγνωριστικά ελέγχου ταυτότητας που εκδίδονται από τη συσκευή iOS και τα PoToken που εκδίδονται από το iOSGuard.
-
-Αυτό σημαίνει ότι τα αιτήματα ροής μέσω iOS δεν θα περιλαμβάνουν ούτε τα αναγνωριστικά ελέγχου ταυτότητας ούτε τα PoToken, γεγονός που μπορεί να οδηγήσει τον διακομιστή στο να θεωρήσει τον χρήστη ως bot και να αποκλείσει ολόκληρο το ASN ή τα εύρη διευθύνσεων IP.
-
-ΧΡΗΣΙΜΟΠΟΙΗΣΤΕ ΤΟ ΜΕ ΔΙΚΗ ΣΑΣ ΕΥΘΥΝΗ!"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <string name="revanced_preference_category_tv">TV (Λειτουργία σε εξέλιξη)</string>
-    <string name="revanced_spoof_streaming_data_use_tv_title">Χρήση του προγράμματος πελάτη TV</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_on">Το TV προστέθηκε στα διαθέσιμα προγράμματα πελάτη.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_off">Το TV δεν προστέθηκε στα διαθέσιμα προγράμματα πελάτη.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_user_dialog_message">"Η εφαρμογή θα χρησιμοποιεί περισσότερους πόρους συστήματος για να βρει ή να αποκωδικοποιήσει το μοτίβο n-sig, και υπάρχει μια μικρή καθυστέρηση στην έναρξη αναπαραγωγής βίντεο.
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <string name="revanced_preference_category_js">JavaScript (λειτουργία σε εξέλιξη)</string>
+    <string name="revanced_spoof_streaming_data_use_js_title">Χρήση προγράμματος πελάτη JavaScript</string>
+    <string name="revanced_spoof_streaming_data_use_js_summary_on">Το JavaScript προστέθηκε στα διαθέσιμα προγράμματα πελάτη.</string>
+    <string name="revanced_spoof_streaming_data_use_js_summary_off">Το JavaScript δεν προστέθηκε στα διαθέσιμα προγράμματα πελάτη.</string>
+    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"Η εφαρμογή χρησιμοποιεί περισσότερους πόρους συστήματος για την εύρεση ή την αποκωδικοποίηση του μοτίβου n-sig, και υπάρχει μια μικρή καθυστέρηση στην έναρξη αναπαραγωγής βίντεο.
 
 Το μοτίβο n-sig αλλάζει αρκετά συχνά στον διακομιστή YouTube, και η αναπαραγωγή βίντεο ενδέχεται να αποτύχει αν ο αλγόριθμος δεν καταφέρει να βρει το μοτίβο n-sig.
 
 Αυτή η λειτουργία είναι ακόμη προς ανάπτυξη, επομένως χρησιμοποιήστε τη για σκοπούς εντοπισμού σφαλμάτων μόνο."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_title">Χρήση του προγράμματος πελάτη TV για όλα τα βίντεο</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_on">"Το πρόγραμμα πελάτη TV χρησιμοποιείται ανεξάρτητα από τον τύπο βίντεο.
+    <string name="revanced_spoof_streaming_data_use_js_all_title">Χρήση του προγράμματος πελάτη JavaScript για όλα τα βίντεο</string>
+    <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"Το πρόγραμμα πελάτη JavaScript χρησιμοποιείται ανεξάρτητα από τον τύπο βίντεο.
 
-• Κάποια βίντεο ενδέχεται να μην αναπαράγονται."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_off">"Το πρόγραμμα πελάτη TV δεν χρησιμοποιείται σε κάποιες περιπτώσεις που απαιτούν γρήγορη αναπαραγωγή, όπως:
+• Ορισμένα βίντεο ενδέχεται να μην αναπαράγονται."</string>
+    <string name="revanced_spoof_streaming_data_use_js_all_summary_off">"Το πρόγραμμα πελάτη JavaScript δεν χρησιμοποιείται σε κάποιες περιπτώσεις που απαιτούν γρήγορη αναπαραγωγή, όπως:
 
-• Αυτόματη αναπαραγωγή στη ροή
+• Αυτόματη αναπαραγωγή των βίντεο στη ροή
 • Κλιπ
 • Shorts"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_title">Χρήση τελευταίας εκδόσεως JavaScript</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_on">"Η JavaScript που χρησιμοποιείται για την αποσυσκότιση διατηρείται ενημερωμένη.
+    <string name="revanced_spoof_streaming_data_use_latest_js_title">Χρήση τελευταίας εκδόσεως JavaScript</string>
+    <string name="revanced_spoof_streaming_data_use_latest_js_summary_on">"Η JavaScript που χρησιμοποιείται για την αποσυσκότιση διατηρείται ενημερωμένη.
 
-• Εξαρτάται σε μεγάλο βαθμό από τον διακομιστή, και η επιτυχία ή η αποτυχία της αποσυσκότισης βασίζεται στη JavaScript που χρησιμοποιείται εκείνη τη στιγμή στον διακομιστή."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"Η JavaScript που χρησιμοποιείται για την αποσυσκότιση δεν διατηρείται ενημερωμένη.
+• Εξαρτάται σε μεγάλο βαθμό από τον διακομιστή, και η επιτυχία ή η αποτυχία της αποσυσκότισης βασίζεται στην έκδοση που χρησιμοποιείται εκείνη τη στιγμή στον διακομιστή."</string>
+    <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"Η JavaScript που χρησιμοποιείται για την αποσυσκότιση δεν διατηρείται ενημερωμένη.
 
-• Χρησιμοποιείται η έκδοση που πετυχαίνει την αποσυσκότιση, αλλά παραμένει σε κάποιο βαθμό εξαρτημένη από τον διακομιστή."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">Χρήση μηχανής JavaScript έκδοσης V8</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"Η JavaScript εκτελείται σε εγγενείς βιβλιοθήκες.
-
-• Τροφοδοτείται από το SmartTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"Η JavaScript δεν εκτελείται σε εγγενείς βιβλιοθήκες.
-
-• Τροφοδοτείται από το JavaTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">Αν δεν χρησιμοποιείται η μηχανή JavaScript έκδοσης V8, το βίντεο ξεκινά με καθυστέρηση 10 δευτερολέπτων λόγω αργής αποσυσκότισης του URL ροής.</string>
+• Χρησιμοποιείται η έκδοση που πετυχαίνει στην αποσυσκότιση, αλλά παραμένει σε κάποιο βαθμό εξαρτημένη από τον διακομιστή."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Ιστορικό παρακολούθησης</string>
     <string name="revanced_preference_screen_watch_history_summary">Διαχείριση των ρυθμίσεων που σχετίζονται με το ιστορικό παρακολούθησης.</string>

@@ -367,6 +367,7 @@ public class SearchViewController {
         toolbar.setTitle(originalTitle);
         searchContainer.setVisibility(View.GONE);
         searchView.setQuery("", false);
+        searchView.clearFocus();
 
         // Hide keyboard.
         InputMethodManager imm = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);

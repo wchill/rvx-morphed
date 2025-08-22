@@ -141,6 +141,8 @@ Limitazioni:
     <string name="revanced_change_start_page_entry_samples">Esempi</string>
     <string name="revanced_change_start_page_entry_search">Cerca</string>
     <string name="revanced_change_start_page_entry_subscriptions">Sottoscrizioni</string>
+    <string name="revanced_disable_cairo_splash_animation_title">Disabilita animazione di avvio Cairo</string>
+    <string name="revanced_disable_cairo_splash_animation_summary">Disabilita l\'animazione di avvio Cairo all\'avvio dell\'applicazione.</string>
     <string name="revanced_disable_dislike_redirection_title">Disattiva il reindirizzamento Non mi piace</string>
     <string name="revanced_disable_dislike_redirection_summary">Disabilita il reindirizzamento alla traccia successiva quando si fa clic sul pulsante Non mi piace.</string>
     <string name="revanced_disable_auto_captions_title">Disabilita i sottotitoli automatici forzati</string>
@@ -431,8 +433,6 @@ Fai clic per vedere come emettere una chiave API."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Ignora il dominio bloccato in alcune regioni in modo che le miniature della playlist, gli avatar del canale, ecc. possano essere ricevuti.</string>
     <string name="revanced_change_share_sheet_title">Cambia foglio di condivisione</string>
     <string name="revanced_change_share_sheet_summary">Sostituisce il foglio di condivisione in-app con il foglio di condivisione di sistema.</string>
-    <string name="revanced_disable_cairo_splash_animation_title">Disabilita animazione di avvio Cairo</string>
-    <string name="revanced_disable_cairo_splash_animation_summary">Disabilita l\'animazione di avvio Cairo all\'avvio dell\'applicazione.</string>
     <string name="revanced_disable_drc_audio_title">Disabilita audio DRC</string>
     <string name="revanced_disable_drc_audio_summary">Disabilita DRC (Compressione Gamma Dinamica) applicato all\'audio.</string>
     <string name="revanced_disable_music_video_in_album_title">Disabilita video musicali nell\'album</string>
@@ -459,18 +459,10 @@ Limitazioni: I video per bambini potrebbero non essere reindirizzati."</string>
     <string name="revanced_sanitize_sharing_links_title">Sanitizza i link di condivisione</string>
     <string name="revanced_sanitize_sharing_links_summary">Sanifica i link di condivisione rimuovendo i parametri di tracciamento.</string>
     <string name="revanced_spoof_client_title">Falsifica client</string>
-    <string name="revanced_spoof_client_summary">Falsifica il client per prevenire problemi di riproduzione.</string>
     <string name="revanced_spoof_client_type_title">Client predefinito</string>
     <string name="revanced_spoof_client_type_summary">Definisce un client predefinito per la falsificazione.</string>
-    <string name="revanced_spoof_client_type_entry_android_music_4_27">Android Music 4.27.53</string>
-    <string name="revanced_spoof_client_type_entry_android_music_5_29">Android Music 5.29.53</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
-    <string name="revanced_spoof_player_parameter_title">Falsifica i parametri del lettore</string>
-    <string name="revanced_spoof_player_parameter_summary">"Falsifica il parametro del lettore per evitare problemi di riproduzione.
-
-Effetto collaterale:
-• A volte i sottotitoli si trovano nella parte superiore del lettore anziché in quella inferiore."</string>
     <string name="revanced_watch_history_type_title">Guarda il tipo di cronologia</string>
     <string name="revanced_watch_history_type_summary">"• Originale: segue le impostazioni della cronologia delle visualizzazioni dell'account Google, ma la cronologia delle visualizzazioni potrebbe non funzionare a causa di DNS o VPN.
 • Sostituisci dominio: segue le impostazioni della cronologia delle visualizzazioni dell'account Google.
@@ -478,12 +470,6 @@ Effetto collaterale:
     <string name="revanced_watch_history_type_entry_1">Originale</string>
     <string name="revanced_watch_history_type_entry_2">Sostituisci dominio</string>
     <string name="revanced_watch_history_type_entry_3">Blocca la cronologia delle visualizzazioni</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_title">Dimensione massima del gruppo di discussioni litografiche</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_summary">"Cambia la dimensione massima del gruppo di discussioni litografiche.
-
-Un valore più alto potrebbe migliorare le prestazioni di caricamento delle disposizioni Litografiche, ma potrebbe consumare più batteria."</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_entry_0">Non superato</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_invalid_toast">La dimensione massima del gruppo di discussioni Litografiche deve essere compresa tra 1-3.</string>
     <string name="revanced_default_app_settings_title">Apri le impostazioni predefinite dell\'app</string>
     <string name="revanced_default_app_settings_summary">Per aprire i link di YouTube Music in RVX Music, abilita Apri link supportati e abilita tutti gli indirizzi web supportati.</string>
     <string name="gms_core_settings_title">Apri le impostazioni GmsCore</string>

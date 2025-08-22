@@ -1,7 +1,5 @@
 package app.revanced.extension.shared.patches.components;
 
-import static app.revanced.extension.shared.utils.Utils.validateValue;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
@@ -77,14 +75,11 @@ public final class LithoFilterPatch {
         }
     }
 
-    private static final boolean CHANGE_LITHO_LAYOUT_THREAD_POOL_SIZE;
-
     /**
      * Litho layout fixed thread pool size override.
      * <p>
      * Unpatched YouTube uses a layout fixed thread pool between 1 and 3 threads:
      * <pre>
-     * 0 thread - > Do not override thread pool size
      * 1 thread - > Device has less than 6 cores
      * 2 threads -> Device has over 6 cores and less than 6GB of memory
      * 3 threads -> Device has over 6 cores and more than 6GB of memory
@@ -94,7 +89,7 @@ public final class LithoFilterPatch {
      * that is sometimes incorrectly hidden (ReVanced is not hiding it), and seems to
      * fix a race issue if using the active navigation tab status with litho filtering.
      */
-    private static final int LITHO_LAYOUT_THREAD_POOL_MAX_SIZE;
+    private static final int LITHO_LAYOUT_THREAD_POOL_SIZE = 1;
 
     private static final Filter[] filters = new Filter[]{
             new DummyFilter() // Replaced patching, do not touch.
@@ -113,14 +108,6 @@ public final class LithoFilterPatch {
     private static final ThreadLocal<byte[]> bufferThreadLocal = new ThreadLocal<>();
 
     static {
-        LITHO_LAYOUT_THREAD_POOL_MAX_SIZE = validateValue(
-                BaseSettings.LITHO_LAYOUT_THREAD_POOL_MAX_SIZE,
-                0,
-                3,
-                "revanced_litho_layout_thread_pool_max_size_invalid_toast"
-        );
-        CHANGE_LITHO_LAYOUT_THREAD_POOL_SIZE = LITHO_LAYOUT_THREAD_POOL_MAX_SIZE != 0;
-
         for (Filter filter : filters) {
             filterUsingCallbacks(identifierSearchTree, filter,
                     filter.identifierCallbacks, Filter.FilterContentType.IDENTIFIER);
@@ -227,36 +214,24 @@ public final class LithoFilterPatch {
      * Injection point.
      */
     public static int getExecutorCorePoolSize(int originalCorePoolSize) {
-        if (!CHANGE_LITHO_LAYOUT_THREAD_POOL_SIZE) {
-            return originalCorePoolSize;
-        }
-
-        final int finalCorePoolSize =
-                Math.min(originalCorePoolSize, LITHO_LAYOUT_THREAD_POOL_MAX_SIZE);
-        if (originalCorePoolSize != finalCorePoolSize) {
+        if (originalCorePoolSize != LITHO_LAYOUT_THREAD_POOL_SIZE) {
             Logger.printDebug(() -> "Overriding core thread pool size from: " + originalCorePoolSize
-                    + " to: " + finalCorePoolSize);
+                    + " to: " + LITHO_LAYOUT_THREAD_POOL_SIZE);
         }
 
-        return finalCorePoolSize;
+        return LITHO_LAYOUT_THREAD_POOL_SIZE;
     }
 
     /**
      * Injection point.
      */
     public static int getExecutorMaxThreads(int originalMaxThreads) {
-        if (!CHANGE_LITHO_LAYOUT_THREAD_POOL_SIZE) {
-            return originalMaxThreads;
-        }
-
-        final int finalMaxThreads =
-                Math.min(originalMaxThreads, LITHO_LAYOUT_THREAD_POOL_MAX_SIZE);
-        if (originalMaxThreads != finalMaxThreads) {
+        if (originalMaxThreads != LITHO_LAYOUT_THREAD_POOL_SIZE) {
             Logger.printDebug(() -> "Overriding max thread pool size from: " + originalMaxThreads
-                    + " to: " + finalMaxThreads);
+                    + " to: " + LITHO_LAYOUT_THREAD_POOL_SIZE);
         }
 
-        return finalMaxThreads;
+        return LITHO_LAYOUT_THREAD_POOL_SIZE;
     }
 }
 

@@ -7,7 +7,6 @@ import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
 import app.revanced.patches.shared.mainactivity.injectOnBackPressedMethodCall
 import app.revanced.patches.youtube.utils.extension.Constants.UTILS_PATH
 import app.revanced.patches.youtube.utils.scrollTopParentFingerprint
-import app.revanced.patches.youtube.utils.settings.ResourceUtils.addPreference
 import app.revanced.util.fingerprint.matchOrThrow
 import app.revanced.util.getWalkerMethod
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
@@ -70,17 +69,5 @@ val lithoLayoutPatch = bytecodePatch(
 
         // endregion
 
-    }
-
-    finalize {
-        // region add setting for litho layout thread pool max size
-
-        addPreference(
-            arrayOf(
-                "SETTINGS: LITHO_LAYOUT_THREAD_POOL_MAX_SIZE"
-            )
-        )
-
-        // endregion
     }
 }

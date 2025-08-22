@@ -140,14 +140,6 @@
     <string name="revanced_hide_feed_captions_button_title">隐藏动态字幕按钮</string>
     <string name="revanced_hide_feed_captions_button_on">隐藏字幕按钮</string>
     <string name="revanced_hide_feed_captions_button_off">显示字幕按钮</string>
-    <string name="revanced_hide_carousel_shelf_title">隐藏轮播内容</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"隐藏以下分类：
-• 突发新闻
-• 继续观看
-• 探索更多频道
-• 重新收听
-• 购物
-• 重新观看"</string>
     <string name="revanced_hide_chips_shelf_title">隐藏 Chips 视频栏</string>
     <string name="revanced_hide_chips_shelf_on">Chips 视频栏已隐藏</string>
     <string name="revanced_hide_chips_shelf_off">Chips 视频栏已显示</string>
@@ -187,6 +179,7 @@
     <string name="revanced_hide_ticket_shelf_title">隐藏购票栏</string>
     <string name="revanced_hide_ticket_shelf_summary_on">购票栏已隐藏</string>
     <string name="revanced_hide_ticket_shelf_summary_off">购票栏已显示</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">类别栏</string>
     <string name="revanced_preference_screen_category_bar_summary">在首页、搜索和相关视频中隐藏或显示类别栏</string>
@@ -265,16 +258,6 @@
     <string name="revanced_hide_keyword_toast_invalid_conflicting">关键词有冲突声明： %s</string>
     <string name="revanced_hide_keyword_toast_invalid_length">关键词太短，需要引号： %s</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">关键字将隐藏所有视频： %s</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">推荐视频</string>
-    <string name="revanced_hide_low_views_video_title">隐藏低播放量的视频</string>
-    <string name="revanced_hide_low_views_video_summary">"从主页隐藏未订阅的频道上传的且播放量少于 1,000 的推荐视频"</string>
-    <string name="revanced_hide_recommended_video_title">隐藏推荐视频</string>
-    <string name="revanced_hide_recommended_video_summary">"隐藏以下推荐视频：	
-
-• 带有“仅限会员”标签的视频
-• 视频底部带有“用户还观看了”等短语的视频
-• 来自未订阅频道且观看次数少于1,000次的视频"</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">观看次数过滤器</string>
     <string name="revanced_hide_video_by_view_counts_home_title">启用首页播放量过滤器</string>
@@ -299,13 +282,6 @@
 限制：
 • 不能隐藏 Shorts
 • 不能过滤 0 播放量的视频"</string>
-    <string name="revanced_hide_related_videos_title">在相关视频中隐藏</string>
-    <string name="revanced_hide_related_videos_summary_on">相关视频已隐藏</string>
-    <string name="revanced_hide_related_videos_summary_off">相关视频已显示</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"该设置限制了播放器屏幕上可以加载的最大布局数量
-
-如果由于服务器端的更改导致播放器屏幕的布局发生变化，未预期的布局可能会被隐藏在播放器屏幕上"</string>
-    <string name="revanced_related_videos_offset_title">偏移</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">常规设置</string>
     <string name="revanced_change_start_page_title">更改起始页</string>
@@ -622,6 +598,13 @@
     <string name="revanced_sanitize_video_subtitle_title">清理视频字幕</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"像'#', 'Shop' 和 'N products' 这样的词组已在视频字幕中隐藏"</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"像'#', 'Shop' 和 'N products' 这样的词组已在视频字幕中显示"</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">相关视频已隐藏</string>
+    <string name="revanced_hide_related_videos_summary_off">相关视频已显示</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"该设置限制了播放器屏幕上可以加载的最大布局数量
+
+如果由于服务器端的更改导致播放器屏幕的布局发生变化，未预期的布局可能会被隐藏在播放器屏幕上"</string>
+    <string name="revanced_related_videos_offset_title">偏移</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">操作按钮</string>
     <string name="revanced_preference_screen_action_buttons_summary">隐藏或显示视频下方的操作按钮</string>
@@ -886,7 +869,7 @@
     <string name="revanced_hide_player_collapse_button_summary_on">折叠按钮已隐藏</string>
     <string name="revanced_hide_player_collapse_button_summary_off">折叠按钮已显示</string>
     <string name="revanced_hide_player_fullscreen_button_title">隐藏全屏按钮</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">全屏按钮已隐藏</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"全屏按钮已隐藏"</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">全屏按钮已显示</string>
     <string name="revanced_hide_player_previous_next_button_title">隐藏上一个 &amp; 下一个按钮</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">上一个和下一个按钮已隐藏</string>
@@ -1223,16 +1206,6 @@
     <string name="revanced_remember_video_quality_last_selected_toast_title">显示 Toast</string>
     <string name="revanced_remember_video_quality_last_selected_toast_summary_on">更改默认视频画质时，显示 Toast</string>
     <string name="revanced_remember_video_quality_last_selected_toast_summary_off">更改默认视频画质时，不显示 Toast</string>
-    <string name="revanced_skipped_preloaded_buffer">跳过预加载缓冲</string>
-    <string name="revanced_skip_preloaded_buffer_title">跳过预加载缓冲</string>
-    <string name="revanced_skip_preloaded_buffer_summary">"视频播放开始时，跳过预加载缓冲的默认视频画质
-
-• 视频开始时约有 0.7 秒延迟，但默认视频分辨率会立即生效
-• 不适用于 HDR 视频或短于 10 秒的视频"</string>
-    <string name="revanced_skip_preloaded_buffer_user_dialog_message">开启此选项可能会导致视频不能正常播放</string>
-    <string name="revanced_skip_preloaded_buffer_toast_title">跳过时的提示信息</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_on">提示信息已显示</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_off">提示信息已隐藏</string>
     <string name="revanced_spoof_device_dimensions_title">伪装设备尺寸</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Experimental flags -->
     <string name="revanced_disable_default_playback_speed_music_title">禁用音乐播放速度</string>
@@ -1533,7 +1506,7 @@
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">用于获取流媒体数据的客户端已在统计信息中隐藏</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">观看历史</string>
     <string name="revanced_preference_screen_watch_history_summary">更改与观看历史记录相关的设置</string>

@@ -247,13 +247,13 @@ public class ReVancedPreferenceFragment extends PreferenceFragment {
             Utils.sortPreferenceGroups(mPreferenceScreen);
             Utils.setPreferenceTitlesToMultiLineIfNeeded(mPreferenceScreen);
 
+            setPreferenceScreenToolbar(mPreferenceScreen);
+
             // Store the original structure for restoration after filtering.
-            originalPreferenceScreen = getPreferenceManager().createPreferenceScreen(getContext());
+            originalPreferenceScreen = getPreferenceManager().createPreferenceScreen(getActivity());
             for (int i = 0, count = mPreferenceScreen.getPreferenceCount(); i < count; i++) {
                 originalPreferenceScreen.addPreference(mPreferenceScreen.getPreference(i));
             }
-
-            setPreferenceScreenToolbar(mPreferenceScreen);
 
             // Initialize ReVanced settings
             ReVancedSettingsPreference.initializeReVancedSettings();
@@ -403,13 +403,13 @@ public class ReVancedPreferenceFragment extends PreferenceFragment {
 
         for (int i = 0, count = parentScreen.getPreferenceCount(); i < count; i++) {
             Preference childPreference = parentScreen.getPreference(i);
-            if (childPreference instanceof PreferenceScreen) {
+            if (childPreference instanceof PreferenceScreen preferenceScreen) {
                 // Recursively set sub preferences.
-                setPreferenceScreenToolbar((PreferenceScreen) childPreference);
+                setPreferenceScreenToolbar(preferenceScreen);
 
-                childPreference.setOnPreferenceClickListener(
+                preferenceScreen.setOnPreferenceClickListener(
                         childScreen -> {
-                            Dialog preferenceScreenDialog = ((PreferenceScreen) childScreen).getDialog();
+                            Dialog preferenceScreenDialog = preferenceScreen.getDialog();
                             ViewGroup rootView = (ViewGroup) preferenceScreenDialog
                                     .findViewById(android.R.id.content)
                                     .getParent();
@@ -456,7 +456,7 @@ public class ReVancedPreferenceFragment extends PreferenceFragment {
                             setToolbarLayoutParams(toolbar);
 
                             rootView.addView(toolbar, 0);
-                            return false;
+                            return true;
                         }
                 );
             }

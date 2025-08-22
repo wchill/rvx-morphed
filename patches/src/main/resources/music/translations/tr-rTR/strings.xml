@@ -128,6 +128,8 @@ Bilinen sorunlar:
     <string name="revanced_change_start_page_entry_samples">Örnekler</string>
     <string name="revanced_change_start_page_entry_search">Arama</string>
     <string name="revanced_change_start_page_entry_subscriptions">Abonelikler</string>
+    <string name="revanced_disable_cairo_splash_animation_title">Kahire açılış animasyonunu devre dışı bırak</string>
+    <string name="revanced_disable_cairo_splash_animation_summary">Uygulama açılışındaki Kahire açılış animasyonunu devre dışı bırakır.</string>
     <string name="revanced_disable_dislike_redirection_title">Beğenmeme yönlendirmesini devre dışı bırak</string>
     <string name="revanced_disable_dislike_redirection_summary">Beğenmedim düğmesine tıklandığında sonraki parçaya yönlendirmeyi devre dışı bırakır.</string>
     <string name="revanced_disable_auto_captions_title">Altyazıların kendiliğinden açılmasını kapat</string>
@@ -378,8 +380,6 @@ APl anahtarının nasıl verileceğini görmek için tıklayın."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Bazı bölgelerde engellenen alan adını değiştirerek oynatma listesi küçük resimlerinin, kanal avatarlarının vb. alınabilmesini sağlar.</string>
     <string name="revanced_change_share_sheet_title">Paylaşım sayfasını değiştir</string>
     <string name="revanced_change_share_sheet_summary">Uygulama içi paylaşım sayfasını sistem paylaşım sayfasıyla değiştirin.</string>
-    <string name="revanced_disable_cairo_splash_animation_title">Kahire açılış animasyonunu devre dışı bırak</string>
-    <string name="revanced_disable_cairo_splash_animation_summary">Uygulama açılışındaki Kahire açılış animasyonunu devre dışı bırakır.</string>
     <string name="revanced_disable_drc_audio_title">Sabit sesi devre dışı bırak</string>
     <string name="revanced_disable_drc_audio_summary">Sese uygulanan Dinamik Aralık Sıkıştırmayı devre dışı bırakır.</string>
     <string name="revanced_disable_music_video_in_album_title">Albümdeki müzik videosunu devre dışı bırak</string>
@@ -397,11 +397,8 @@ Bilgi:
     <string name="revanced_sanitize_sharing_links_title">Paylaşılan bağlantıları sterilize edin</string>
     <string name="revanced_sanitize_sharing_links_summary">Bağlantıları paylaşırken, tracking query parametrelerini URL\'lerden kaldırır.</string>
     <string name="revanced_spoof_client_title">Sahte istemci</string>
-    <string name="revanced_spoof_client_summary">Oynatma sorunlarını çözmek için istemciyi taklit eder.</string>
     <string name="revanced_spoof_client_type_title">Varsayılan istemci</string>
     <string name="revanced_spoof_client_type_summary">Taklit etmek için varsayılan bir istemci tanımlar.</string>
-    <string name="revanced_spoof_client_type_entry_android_music_4_27">Android Music 4.27.53</string>
-    <string name="revanced_spoof_client_type_entry_android_music_5_29">Android Music 5.29.53</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_watch_history_type_title">İzleme geçmişi türü</string>

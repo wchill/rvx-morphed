@@ -14,8 +14,8 @@ import app.revanced.patches.music.utils.extension.Constants.UTILS_PATH
 import app.revanced.patches.music.utils.extension.sharedExtensionPatch
 import app.revanced.patches.music.utils.mainactivity.mainActivityResolvePatch
 import app.revanced.patches.music.utils.patch.PatchList.GMSCORE_SUPPORT
-import app.revanced.patches.music.utils.patch.PatchList.LITHO_FILTER
 import app.revanced.patches.music.utils.patch.PatchList.SETTINGS_FOR_YOUTUBE_MUSIC
+import app.revanced.patches.music.utils.playservice.is_6_39_or_greater
 import app.revanced.patches.music.utils.playservice.versionCheckPatch
 import app.revanced.patches.music.utils.settings.ResourceUtils.addGmsCorePreference
 import app.revanced.patches.music.utils.settings.ResourceUtils.gmsCorePackageName
@@ -25,6 +25,7 @@ import app.revanced.patches.shared.mainactivity.injectConstructorMethodCall
 import app.revanced.patches.shared.mainactivity.injectOnCreateMethodCall
 import app.revanced.patches.shared.settings.baseSettingsPatch
 import app.revanced.patches.shared.sharedSettingFingerprint
+import app.revanced.util.Utils.printInfo
 import app.revanced.util.copyXmlNode
 import app.revanced.util.findMethodOrThrow
 import app.revanced.util.fingerprint.matchOrThrow
@@ -136,11 +137,34 @@ private val settingsBytecodePatch = bytecodePatch(
             EXTENSION_UTILS_CLASS_DESCRIPTOR,
             "setActivity"
         )
+
+        accountIdentityConstructorFingerprint
+            .methodOrThrow()
+            .addInstruction(
+                1,
+                "invoke-static/range { p7 .. p7 }, $EXTENSION_INITIALIZATION_CLASS_DESCRIPTOR->" +
+                        "onLoggedIn(Ljava/lang/String;)V"
+            )
     }
 }
 
+private const val DEFAULT_ELEMENT = "pref_key_parent_tools"
 private const val DEFAULT_LABEL = "RVX"
+private const val FALLBACK_ELEMENT = "settings_header_general"
 private lateinit var settingsLabel: String
+
+private val SETTINGS_ELEMENTS_MAP = mapOf(
+    "Parent settings" to DEFAULT_ELEMENT,
+    "General" to FALLBACK_ELEMENT,
+    "Playback" to "settings_header_playback",
+    "Data saving" to "settings_header_data_saving",
+    "Downloads & storage" to "settings_header_downloads_and_storage",
+    "Notifications" to "settings_header_notifications",
+    "Privacy & data" to "settings_header_privacy_and_location",
+    "Recommendations" to "settings_header_recommendations",
+    "Paid memberships" to "settings_header_paid_memberships",
+    "About YouTube Music" to "settings_header_about_youtube_music",
+)
 
 val settingsPatch = resourcePatch(
     SETTINGS_FOR_YOUTUBE_MUSIC.title,
@@ -150,6 +174,16 @@ val settingsPatch = resourcePatch(
 
     dependsOn(
         settingsBytecodePatch,
+        versionCheckPatch,
+    )
+
+    val insertPosition = stringOption(
+        key = "insertPosition",
+        default = DEFAULT_ELEMENT,
+        values = SETTINGS_ELEMENTS_MAP,
+        title = "Insert position",
+        description = "The settings menu name that the RVX settings menu should be above.",
+        required = true,
     )
 
     val rvxSettingsLabel = stringOption(
@@ -170,6 +204,16 @@ val settingsPatch = resourcePatch(
          */
         settingsLabel = rvxSettingsLabel
             .valueOrThrow()
+
+        var insertKey = insertPosition
+            .valueOrThrow()
+
+        if (!is_6_39_or_greater && insertKey == DEFAULT_ELEMENT) {
+            // 'Parent settings' does not exists in YT Music 6.38.
+            // Fallback to 'General'
+            insertKey = FALLBACK_ELEMENT
+            printInfo("Since this version does not have \"Parent settings\", patch option \"Insert position\" is replaced with \"General\".")
+        }
 
         /**
          * copy arrays, colors and strings
@@ -218,7 +262,7 @@ val settingsPatch = resourcePatch(
         }
 
         ResourceUtils.setContext(this)
-        ResourceUtils.addRVXSettingsPreference()
+        ResourceUtils.addRVXSettingsPreference(insertKey)
 
         ResourceUtils.updatePatchStatus(SETTINGS_FOR_YOUTUBE_MUSIC)
 
@@ -253,16 +297,6 @@ val settingsPatch = resourcePatch(
                         .appendChild(stringElement)
                 }
             }
-        }
-
-        /**
-         * add litho thread pool max size settings
-         */
-        if (LITHO_FILTER.included == true) {
-            addPreferenceWithIntent(
-                CategoryType.MISC,
-                "revanced_litho_layout_thread_pool_max_size"
-            )
         }
 
         /**

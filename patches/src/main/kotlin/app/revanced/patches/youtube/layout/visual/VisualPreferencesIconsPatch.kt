@@ -185,18 +185,6 @@ val visualPreferencesIconsPatch = resourcePatch(
 
         // endregion.
 
-        // ‘Litho thread pool max size’ setting is added last, so this method is used.
-        if (applyToAll == true) {
-            val rvxSettingFile = this[RVX_PREFERENCE_PATH]
-            rvxSettingFile.writeText(
-                rvxSettingFile.readText()
-                    .replace(
-                        "android:key=\"revanced_litho_layout_thread_pool_max_size\"",
-                        "android:key=\"revanced_litho_layout_thread_pool_max_size\" android:icon=\"@drawable/$EMPTY_ICON\""
-                    )
-            )
-        }
-
         addPreference(VISUAL_PREFERENCES_ICONS_FOR_YOUTUBE)
     }
 
@@ -328,6 +316,7 @@ private var rvxPreferenceKey = setOf(
     "revanced_hide_ask_button",
     "revanced_hide_clip_button",
     "revanced_hide_download_button",
+    "revanced_hide_hype_button",
     "revanced_hide_keyword_content_comments",
     "revanced_hide_keyword_content_home",
     "revanced_hide_keyword_content_search",
@@ -393,6 +382,7 @@ private var rvxPreferenceKey = setOf(
     "revanced_preference_screen_account_menu",
     "revanced_preference_screen_action_buttons",
     "revanced_preference_screen_ambient_mode",
+    "revanced_preference_screen_carousel_shelf",
     "revanced_preference_screen_category_bar",
     "revanced_preference_screen_channel_bar",
     "revanced_preference_screen_channel_page",
@@ -453,6 +443,7 @@ private val emptyTitles = setOf(
     "revanced_hide_player_flyout_menu_captions_footer",
     "revanced_hide_player_flyout_menu_quality_footer",
     "revanced_hide_stop_ads_button",
+    "revanced_swipe_brightness_distance_dip",
     "revanced_swipe_volumes_sensitivity",
 )
 

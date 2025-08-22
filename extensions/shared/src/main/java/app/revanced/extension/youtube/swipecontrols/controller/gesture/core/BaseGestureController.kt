@@ -22,7 +22,7 @@ abstract class BaseGestureController(
         controller.screen,
         controller.overlay,
         10f,
-        1f,
+        controller.config.brightnessSwipeDistance,
         controller.config.volumeSwipeSensitivity,
     ) {
 

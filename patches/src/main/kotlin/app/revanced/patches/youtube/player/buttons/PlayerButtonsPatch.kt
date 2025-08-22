@@ -24,6 +24,7 @@ import app.revanced.patches.youtube.utils.resourceid.sharedResourceIdPatch
 import app.revanced.patches.youtube.utils.resourceid.titleAnchor
 import app.revanced.patches.youtube.utils.settings.ResourceUtils.addPreference
 import app.revanced.patches.youtube.utils.settings.settingsPatch
+import app.revanced.util.fingerprint.injectLiteralInstructionBooleanCall
 import app.revanced.util.fingerprint.matchOrThrow
 import app.revanced.util.fingerprint.methodOrThrow
 import app.revanced.util.getReference
@@ -78,17 +79,10 @@ val playerButtonsPatch = bytecodePatch(
         // region patch for hide captions button
 
         if (is_18_31_or_greater) {
-            lithoSubtitleButtonConfigFingerprint.methodOrThrow().apply {
-                val insertIndex = implementation!!.instructions.lastIndex
-                val insertRegister = getInstruction<OneRegisterInstruction>(insertIndex).registerA
-
-                addInstructions(
-                    insertIndex, """
-                        invoke-static {v$insertRegister}, $PLAYER_CLASS_DESCRIPTOR->hideCaptionsButton(Z)Z
-                        move-result v$insertRegister
-                        """
-                )
-            }
+            lithoSubtitleButtonConfigFingerprint.injectLiteralInstructionBooleanCall(
+                LITHO_SUBTITLE_BUTTON_FEATURE_FLAG,
+                "$PLAYER_CLASS_DESCRIPTOR->hideCaptionsButton(Z)Z"
+            )
         }
 
 

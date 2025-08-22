@@ -261,15 +261,6 @@ Toque aqui para saber mais sobre o DeArrow."</string>
     <string name="revanced_hide_feed_captions_button_title">Ocultar botão de legendas no feed</string>
     <string name="revanced_hide_feed_captions_button_on">O botão de legendas está oculto.</string>
     <string name="revanced_hide_feed_captions_button_off">O botão de legendas será exibido.</string>
-    <string name="revanced_hide_carousel_shelf_title">Ocultar painel de carrossel</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Os painéis do carrossel estão ocultas, como:
-• Últimas notícias
-• Continuar assistindo
-• Explorar mais canais
-• Ouça novamente
-• Compras
-• Assistir novamente"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Os painéis do carrossel serão exibidos.</string>
     <string name="revanced_hide_chips_shelf_title">Ocultar painel de chips</string>
     <string name="revanced_hide_chips_shelf_on">O painel de chips está oculto.</string>
     <string name="revanced_hide_chips_shelf_off">O painel de chips será exibido.</string>
@@ -318,6 +309,7 @@ Toque aqui para saber mais sobre o DeArrow."</string>
     <string name="revanced_hide_ticket_shelf_title">Ocultar painel de ingressos</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Os painéis de ingressos estão ocultos.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Os painéis de ingressos serão exibidos.</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Barra de categoria</string>
     <string name="revanced_preference_screen_category_bar_summary">Ocultar ou mostrar a barra de categorias no feed, pesquisa e vídeos relacionados.</string>
@@ -412,16 +404,6 @@ Limitações:
     <string name="revanced_hide_keyword_toast_invalid_conflicting">A palavra-chave tem declarações conflitantes: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_length">A palavra-chave é muito curta e requer aspas: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">Palavra-chave \'%1$s\' irá ocultar todos os vídeos.</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">Vídeo recomendado</string>
-    <string name="revanced_hide_low_views_video_title">Ocultar vídeos com baixas visualizações</string>
-    <string name="revanced_hide_low_views_video_summary">"Ocultar vídeos com menos de 1.000 visualizações do feed de início que foram enviadas de canais não inscritos."</string>
-    <string name="revanced_hide_recommended_video_title">Ocultar vídeos recomendados</string>
-    <string name="revanced_hide_recommended_video_summary">"Oculta os seguintes vídeos recomendados:
-
-• Vídeos com a tag 'Somente para membros'
-• Vídeos com frases como 'Pessoas também assistiram' na parte inferior do vídeo
-• Vídeos enviados de canais não inscritos com menos de 1,000 visualizações"</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">Filtro por contagem de visualização</string>
     <string name="revanced_hide_video_by_view_counts_home_title">Ocultar vídeos no feed de início por visualizações</string>
@@ -446,13 +428,6 @@ Limitações:
 Limitações: 
 • Shorts não podem ser ocultos.
 • Vídeos com 0 visualizações não são filtrados."</string>
-    <string name="revanced_hide_related_videos_title">Ocultar vídeos relacionados</string>
-    <string name="revanced_hide_related_videos_summary_on">Os vídeos relacionados estão ocultos.</string>
-    <string name="revanced_hide_related_videos_summary_off">Os vídeos relacionados serão exibidos.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Esta configuração limita o número máximo de layouts que podem ser carregados na tela do reprodutor.
-
-Se o layout da tela do reprodutor mudar devido a alterações no lado do servidor, layouts não intencionais podem ficar ocultos na tela do reprodutor."</string>
-    <string name="revanced_related_videos_offset_title">Desvio</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Geral</string>
     <string name="revanced_change_start_page_title">Alterar a página inicial</string>
@@ -867,6 +842,13 @@ Nota:
     <string name="revanced_sanitize_video_subtitle_title">Limpar legendas de vídeo</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Frases como '#', 'Arrecadação de fundos', 'Loja' e 'produtos' serão ocultadas da legenda do vídeo."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Frases como '#', 'Arrecadação de fundos', 'Loja' e 'produtos' serão exibidos na legenda do vídeo."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_summary_on">Os vídeos relacionados estão ocultos.</string>
+    <string name="revanced_hide_related_videos_summary_off">Os vídeos relacionados serão exibidos.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Esta configuração limita o número máximo de layouts que podem ser carregados na tela do reprodutor.
+
+Se o layout da tela do reprodutor mudar devido a alterações no lado do servidor, layouts não intencionais podem ficar ocultos na tela do reprodutor."</string>
+    <string name="revanced_related_videos_offset_title">Desvio</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Botões de ação</string>
     <string name="revanced_preference_screen_action_buttons_summary">Ocultar ou mostrar botões de ação sob os vídeos.</string>
@@ -1209,7 +1191,7 @@ Deslize para expandir ou fechar."</string>
     <string name="revanced_hide_player_collapse_button_summary_on">O botão minimizar está oculto.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">O botão minimizar será exibido.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Ocultar botão de tela cheia</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">O botão de tela cheia está oculto.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"O botão de tela cheia está oculto."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">O botão de tela cheia será exibido.</string>
     <string name="revanced_hide_player_previous_next_button_title">Ocultar o botão anterior &amp; próximo</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">Os botões estão ocultos.</string>
@@ -1372,7 +1354,7 @@ Este recurso funciona melhor com uma conexão de Internet muito rápida."</strin
     <string name="revanced_preference_screen_shorts_title">Shorts</string>
     <string name="revanced_disable_shorts_background_playback_title">Desativar reprodução de fundo dos Shorts</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">A reprodução de fundo dos Shorts está desativada.</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">A reprodução de fundo dos Shorts está ativada.</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"A reprodução de fundo dos Shorts está ativada."</string>
     <string name="revanced_disable_resuming_shorts_player_title">Desativar continuar a reproduzir Shorts</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">O shorts não irá continuar reproduzindo ao iniciar o aplicativo</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">O shorts irá continuar reproduzindo ao iniciar o aplicativo</string>
@@ -1592,9 +1574,6 @@ Sem margens na parte superior e inferior do reprodutor."</string>
     <string name="revanced_disable_hdr_auto_brightness_title">Desativar brilho automático HDR</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_on">O brilho automático HDR está desativado.</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_off">O brilho automático HDR está ativado.</string>
-    <string name="revanced_disable_swipe_to_switch_video_title">Desativar deslizar para alterar o vídeo</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_on">Deslizar para cima / baixo não reproduzirá o vídeo seguinte / anterior.</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_off">Deslizar para cima / baixo reproduzirá o vídeo seguinte / anterior.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_title">Desativar deslizar para entrar no modo de tela cheia (abaixo do reprodutor)</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_on">Deslizar para baixo no reprodutor não entrará no modo de tela cheia.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_off">Deslizar para baixo no reprodutor entrará no modo de tela cheia.</string>
@@ -1671,16 +1650,6 @@ Informação:
     <string name="revanced_remember_video_quality_wifi">Wi-Fi</string>
     <string name="revanced_remember_video_quality_toast">Alterada a qualidade padrão de %1$s para: %2$s.</string>
     <string name="revanced_remember_video_quality_toast_shorts">Alterada a qualidade %1$s de Shorts para: %2$s.</string>
-    <string name="revanced_skipped_preloaded_buffer">O buffer pré-carregado é ignorado.</string>
-    <string name="revanced_skip_preloaded_buffer_title">Ignorar buffer pré-carregado</string>
-    <string name="revanced_skip_preloaded_buffer_summary">"Ignore o buffer pré-carregado no início do vídeo para ignorar o atraso padrão na aplicação da qualidade do vídeo.
-
-• Quando o vídeo é iniciado, há um atraso de aproximadamente 0,3 segundos, mas a qualidade de vídeo padrão é aplicada imediatamente.
-• Não se aplica a vídeos HDR, vídeos transmitidos ao vivo e vídeos com menos de 15 segundos."</string>
-    <string name="revanced_skip_preloaded_buffer_user_dialog_message">Ativar essa configuração pode causar problemas de reprodução de vídeo.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_title">Mostrar uma notificação flutuante quando ignorado</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_on">Uma notificação flutuante será exibida.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_off">Uma notificação flutuante não será exibida.</string>
     <string name="revanced_spoof_device_dimensions_title">Falsificar dimensões do dispositivo</string>
     <string name="revanced_spoof_device_dimensions_summary">"Falsificar as dimensões do dispositivo para o valor máximo.
 
@@ -1994,7 +1963,6 @@ Toque no botão continuar e desative as otimizações da bateria."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Os dados de streaming não são falsificados. A reprodução de vídeo pode não funcionar."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Desativar esta configuração pode causar problemas de reprodução de vídeo.</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Efeitos colaterais da falsificação</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Todos os intervalos de ASNs/IP podem ser bloqueados pelo servidor.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Exibir em Estatísticas para nerds</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">O cliente usado para buscar dados de streaming é mostrado em Estatísticas para nerds.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">O cliente usado para buscar dados de streaming está oculto em Estatísticas para nerds.</string>
@@ -2008,7 +1976,7 @@ Toque no botão continuar e desative as otimizações da bateria."</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Ativar isso pode melhorar a duração da bateria e corrigir travamentos na reprodução.
 
 O AVC tem uma resolução máxima de 1080p, o codec de áudio Opus não está disponível e a reprodução de vídeo usará mais dados da internet do que VP9 ou AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Histórico de exibição</string>
     <string name="revanced_preference_screen_watch_history_summary">Altere as configurações relacionadas ao histórico de exibição.</string>

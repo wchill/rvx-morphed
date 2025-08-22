@@ -24,6 +24,7 @@
     <string name="revanced_extended_settings_search_no_results_title">\'%s\' Не найдено.</string>
     <string name="revanced_extended_settings_search_no_results_summary">Попробуйте другое ключевое слово.</string>
     <string name="revanced_extended_settings_search_remove_message">Удалить из истории поиска?</string>
+    <string name="revanced_dismiss_player_not_available_toast">Идентификатор видео недоступен. Откройте его вручную, еще раз.</string>
     <string name="revanced_playback_speed_normal">Обычная</string>
     <string name="revanced_external_downloader_package_name_video_title">Внешний загрузчик для видео, название пакета</string>
     <string name="revanced_external_downloader_package_name_video_summary">Например: NewPipe или YTDLnis, или др.</string>
@@ -270,15 +271,6 @@
     <string name="revanced_hide_feed_captions_button_title">Кнопка \"Субтитры\" в ленте</string>
     <string name="revanced_hide_feed_captions_button_on">Кнопка \"Субтитры\" в ленте скрыта.</string>
     <string name="revanced_hide_feed_captions_button_off">Кнопка \"Субтитры\" в ленте отображена.</string>
-    <string name="revanced_hide_carousel_shelf_title">Скрыть рекомендуемые секции</string>
-    <string name="revanced_hide_carousel_shelf_summary_on">"Скрывает полки карусели:
-• Срочные новости
-• Продолжить просмотр
-• Больше каналов
-• Слушать ещё раз
-• Покупки
-• Смотреть ещё раз"</string>
-    <string name="revanced_hide_carousel_shelf_summary_off">Полки карусели отображены.</string>
     <string name="revanced_hide_chips_shelf_title">Полка эпизодов</string>
     <string name="revanced_hide_chips_shelf_on">Полка эпизодов скрыта.</string>
     <string name="revanced_hide_chips_shelf_off">Полка эпизодов отображена.</string>
@@ -327,6 +319,25 @@
     <string name="revanced_hide_ticket_shelf_title">Полки билетов</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Полки билетов скрыты.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Полки билетов отображены.</string>
+    <string name="revanced_hide_video_recommendation_labels_title">Метки рекомендованных видео</string>
+    <string name="revanced_hide_video_recommendation_labels_summary_on">"Метки \"Люди также смотрели\" и \"Вы можете понравиться\" скрыты."</string>
+    <string name="revanced_hide_video_recommendation_labels_summary_off">"Метки \"Люди также смотрели\" и \"Вы можете понравиться\" отображены."</string>
+    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
+    <string name="revanced_preference_screen_carousel_shelf_title">Полка карусели</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">Настройка полки карусели на \"Главной\", результатов поиска и подписок.</string>
+    <string name="revanced_hide_carousel_shelf_home_title">Вкладка Главная в ленте и похожих видео</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_on">На \"Главной\" в ленте и похожих видео скрыта.</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_off">На \"Главной\" в ленте и похожих видео отображена.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_title">Карусель в подписках</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_on">Карусель в подписках скрыта.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_off">Карусель в подписках отображена.</string>
+    <string name="revanced_hide_carousel_shelf_search_title">Карусель в результатах поиска</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_on">В результатах поиска скрыта.</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_off">В результатах поиска отображена.</string>
+    <string name="revanced_hide_carousel_shelf_about_title">О полке карусели</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Примеры полок карусели:
+
+Срочные новости, Продолжить просмотр, Больше каналов, Слушать снова, Наиболее релевантные, Покупки, Смотреть снова.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Панель категорий</string>
     <string name="revanced_preference_screen_category_bar_summary">Скрытие или отображение панели категорий в ленте, поиске и похожих видео.</string>
@@ -428,16 +439,6 @@ Shorts
     <string name="revanced_hide_keyword_toast_invalid_conflicting">У ключевого слова %s есть конфликт.</string>
     <string name="revanced_hide_keyword_toast_invalid_length">Ключевое слово короткое и необходимо взятие в кавычки: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_broad">Ключевое слово \'%1$s\' не точное и скроет все видео</string>
-    <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: Recommended video -->
-    <string name="revanced_preference_category_recommended_video">Рекомендованное видео</string>
-    <string name="revanced_hide_low_views_video_title">Скрыть видео с низкими просмотрами</string>
-    <string name="revanced_hide_low_views_video_summary">"Скрыть видео с менее 1000 просмотров из ленты, из каналов от которых Вы отписались."</string>
-    <string name="revanced_hide_recommended_video_title">Скрыть рекомендованные видео</string>
-    <string name="revanced_hide_recommended_video_summary">"Скрывает следующие рекомендованные видео:
-
-• С тегом \"Только для участников\".
-• С фразами по типу \"Люди также смотрели\" под видео.
-• С каналов, на которые вы не подписаны (менее 1000 просмотров)."</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">Фильтр по количеству просмотров</string>
     <string name="revanced_hide_video_by_view_counts_home_title">Фильтр видео на главной по просмотрам</string>
@@ -471,21 +472,6 @@ Shorts
 Ограничения:
 • Shorts нельзя скрыть.
 • Видео без просмотров не обрабатываются."</string>
-    <string name="revanced_hide_related_videos_title">Похожие видео</string>
-    <string name="revanced_hide_related_videos_summary_on">Похожие видео скрыты.</string>
-    <string name="revanced_hide_related_videos_summary_off">Похожие видео отображены.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"Этот параметр ограничивает количество контейнеров по умолчанию, которые влияют на отображение похожих видео.
-
-Если параметр изменен на стороне сервера, не запрошенные, контейнеры могут быть не доступны."</string>
-    <string name="revanced_hide_related_videos_type_title">Фильтр похожих видео по типу</string>
-    <string name="revanced_hide_related_videos_type_summary_on">"Включено. Количество загруженных макетов на экране запоминается при запуске видео.
-
-• Частично исправимо, сбросом позиции прокрутки.
-• Похожие видео могут быть не полностью отфильтрованы."</string>
-    <string name="revanced_hide_related_videos_type_summary_off">"Отключено. Количество макетов, загруженных на экране не запоминается при запуске видео.
-
-• Позиция прокрутки канала может быть сброшена."</string>
-    <string name="revanced_related_videos_offset_title">Оффсет - Алгоритм выдачи похожих видео</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Основные настройки</string>
     <string name="revanced_change_start_page_title">Начальная страница</string>
@@ -497,6 +483,7 @@ Shorts
     <string name="revanced_change_start_page_entry_fashion">Модная</string>
     <string name="revanced_change_start_page_entry_gaming">Игры</string>
     <string name="revanced_change_start_page_entry_history">История</string>
+    <string name="revanced_change_start_page_entry_hype">Шумиха</string>
     <string name="revanced_change_start_page_entry_library">Библиотека</string>
     <string name="revanced_change_start_page_entry_liked_videos">Понравившиеся</string>
     <string name="revanced_change_start_page_entry_live">Трансляции</string>
@@ -577,6 +564,16 @@ Shorts
     <string name="revanced_disable_translucent_status_bar_summary_on">Полупрозрачность включена.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Полупрозрачность отключена.</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">Для прошивок некоторых разработчиков Android 12+, включение этой функции может сделать панель навигации системы прозрачной.</string>
+    <string name="revanced_fix_hype_button_icon_title">Исправить значок кнопки \"Шумиха\"</string>
+    <string name="revanced_fix_hype_button_icon_summary_on">Значок кнопки \"Шумиха\" отображается.</string>
+    <string name="revanced_fix_hype_button_icon_summary_off">Значок кнопки \"Шумиха\" скрыт.</string>
+    <string name="revanced_fix_hype_button_icon_user_dialog_message">"В YouTube версии 19.25.39 и более ранних версиях значок \"Шумиха\" скрыт на панели действий с видео и панели описания видео.
+
+В качестве обходного решения в конечных точках '/get_watch' и '/next' версия приложения заменяется на 19.26.42.
+
+Если отключить этот параметр, значок \"Шумиха\" может не отображаться на панели действий с видео и панели описания видео.
+
+※ Даже если этот параметр отключен, кнопка \"Шумиха\" может не быть скрыта."</string>
     <string name="revanced_spoof_app_version_title">Подмена версии приложения</string>
     <string name="revanced_spoof_app_version_summary_on">Версия приложения подменена</string>
     <string name="revanced_spoof_app_version_summary_off">Версия приложения не подменена</string>
@@ -597,6 +594,16 @@ Shorts
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Со старым заголовком плейлиста</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Восстановит старый стиль выпадающей панели скорости проигрывания</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Неверная версия подмены: %s.</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_title">Исправить эффект подмены версии приложения</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_summary_on">"Параметр 'Автозапуск' используется вместо параметра 'Просмотр'."</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_summary_off">Параметр \"Просмотр\" используется вместо параметра \'Автозапуск\'.</string>
+    <string name="revanced_fix_spoof_app_version_side_effect_user_dialog_message">"При подмене приложения на 19.30 или ранней версии, настройка 'Просмотр' может быть нарушена.
+
+Это зависит от ответа сервера.
+
+Если настройка 'Просмотр' повреждена, эта настройка может решить проблему.
+
+Если настройка 'Просмотр' по-прежнему повреждена, даже, после включения или отключения этой настройки, попробуйте очистить данные приложения."</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">Меню аккаунта</string>
     <string name="revanced_preference_screen_account_menu_summary">Настройка меню аккаунта и вкладки Вы.</string>
@@ -628,9 +635,10 @@ Shorts
     <string name="revanced_preference_category_download_button">Кнопка \"Скачать\"</string>
     <string name="revanced_override_playlist_download_button_title">Действие кнопки \"Скачать\" для плейлиста</string>
     <string name="revanced_override_playlist_download_button_summary_on">Кнопка \"Скачать\" для плейлиста, использует внешний загрузчик.</string>
-    <string name="revanced_override_playlist_download_button_summary_on_disclaimer">"Кнопка загрузки плейлиста, если показано, откроет внешний загрузчик.
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer_1">Кнопка \"Скачать\" для плейлиста, откроет внешний загрузчик.</string>
+    <string name="revanced_override_playlist_download_button_summary_on_disclaimer_2">"Кнопка \"Загрузка\" плейлиста, если показано, откроет внешний загрузчик.
 
-Для показа обычной кнопки, включите 'Подмена версии' и измените 'Версия подмены' на '19.28.42' или раньше."</string>
+Для показа обычной кнопки, включите 'Подмена версии приложения' и измените 'Версия подмены' на '19.28.42' или раньше."</string>
     <string name="revanced_override_playlist_download_button_summary_off">Кнопка \"Скачать\" для плейлиста, использует внутренний загрузчик.</string>
     <string name="revanced_override_video_download_button_title">Действие кнопки \"Скачать\" для видео</string>
     <string name="revanced_override_video_download_button_summary_on">Кнопка \"Скачать\" открывает внешний загрузчик.</string>
@@ -818,6 +826,9 @@ Shorts
     <string name="revanced_hide_voice_search_button_title">Кнопка \"Голосовой поиск\"</string>
     <string name="revanced_hide_voice_search_button_summary_on">Кнопка \"Голосовой поиск\" скрыта.</string>
     <string name="revanced_hide_voice_search_button_summary_off">Кнопка \"Голосовой поиск\" отображена.</string>
+    <string name="revanced_hide_you_may_like_section_title">Вам может понравиться раздел</string>
+    <string name="revanced_hide_you_may_like_section_summary_on">Вам может понравиться раздел скрыто.</string>
+    <string name="revanced_hide_you_may_like_section_summary_off">Вам может понравиться раздел отображено.</string>
     <string name="revanced_hide_youtube_doodles_title">YouTube Doodles</string>
     <string name="revanced_hide_youtube_doodles_summary_on">YouTube Doodles скрыты.</string>
     <string name="revanced_hide_youtube_doodles_summary_off">YouTube Doodles отображены.</string>
@@ -906,6 +917,14 @@ Shorts
     <string name="revanced_sanitize_video_subtitle_title">Фильтр фраз в субтитрах</string>
     <string name="revanced_sanitize_video_subtitle_summary_on">"Фильтр фраз типа \"#\", \"Магазин\" и \"N продуктов\" в субтитрах отключен."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Фильтр фраз типа \"#\", \"Магазин\" и \"N продуктов\" в субтитрах включен."</string>
+    <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_title">Похожие видео</string>
+    <string name="revanced_hide_related_videos_summary_on">Похожие видео скрыты.</string>
+    <string name="revanced_hide_related_videos_summary_off">Похожие видео отображены.</string>
+    <string name="revanced_hide_related_videos_user_dialog_message">"Этот параметр ограничивает количество контейнеров по умолчанию, которые влияют на отображение похожих видео.
+
+Если параметр изменен на стороне сервера, не запрошенные, контейнеры могут быть не доступны."</string>
+    <string name="revanced_related_videos_offset_title">Оффсет - Алгоритм выдачи похожих видео</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Action buttons -->
     <string name="revanced_preference_screen_action_buttons_title">Кнопки действий под видео</string>
     <string name="revanced_preference_screen_action_buttons_summary">Настройка кнопок действий под видео.</string>
@@ -924,6 +943,9 @@ Shorts
     <string name="revanced_hide_download_button_title">Кнопка \"Скачать\"</string>
     <string name="revanced_hide_download_button_summary_on">Кнопка \"Скачать\" скрыта.</string>
     <string name="revanced_hide_download_button_summary_off">Кнопка \"Скачать\" отображена.</string>
+    <string name="revanced_hide_hype_button_title">Кнопка \"Шумиха\"</string>
+    <string name="revanced_hide_hype_button_summary_on">Кнопка \"Шумиха\" скрыта.</string>
+    <string name="revanced_hide_hype_button_summary_off">Кнопка \"Шумиха\" отображена.</string>
     <string name="revanced_hide_like_dislike_button_title">Кнопки \"Лайк\" и \"Дизлайк\"</string>
     <string name="revanced_hide_like_dislike_button_summary_on">Кнопки \"Лайк\" и \"Дизлайк\" скрыты.</string>
     <string name="revanced_hide_like_dislike_button_summary_off">Кнопки \"Лайк\" и \"Дизлайк\" отображены.</string>
@@ -1276,7 +1298,7 @@ Shorts
     <string name="revanced_hide_player_collapse_button_summary_on">Кнопка \"Свернуть\" скрыта.</string>
     <string name="revanced_hide_player_collapse_button_summary_off">Кнопка \"Свернуть\" отображена.</string>
     <string name="revanced_hide_player_fullscreen_button_title">Кнопка полноэкранного режима</string>
-    <string name="revanced_hide_player_fullscreen_button_summary_on">Кнопка полноэкранного режима скрыта.</string>
+    <string name="revanced_hide_player_fullscreen_button_summary_on">"Кнопка полноэкранного режима скрыта."</string>
     <string name="revanced_hide_player_fullscreen_button_summary_off">Кнопка полноэкранного режима отображена.</string>
     <string name="revanced_hide_player_previous_next_button_title">Кнопки предыдущего и следующего видео</string>
     <string name="revanced_hide_player_previous_next_button_summary_on">Кнопки скрыты.</string>
@@ -1444,7 +1466,7 @@ Shorts
     <string name="revanced_preference_screen_shorts_title">Shorts</string>
     <string name="revanced_disable_shorts_background_playback_title">Фоновый просмотр Shorts</string>
     <string name="revanced_disable_shorts_background_playback_summary_on">Фоновый просмотр Shorts отключен.</string>
-    <string name="revanced_disable_shorts_background_playback_summary_off">Фоновый просмотр Shorts включен.</string>
+    <string name="revanced_disable_shorts_background_playback_summary_off">"Фоновый просмотр Shorts включен."</string>
     <string name="revanced_disable_resuming_shorts_player_title">Возобновление Shorts при запуске приложения</string>
     <string name="revanced_disable_resuming_shorts_player_summary_on">Возобновление Shorts отключено.</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">Возобновление Shorts включено.</string>
@@ -1731,15 +1753,15 @@ Shorts
     <string name="revanced_swipe_text_overlay_size_invalid_toast">Размер текста должен быть от 1 до 30.</string>
     <string name="revanced_swipe_overlay_timeout_title">Таймаут наложения при жесте</string>
     <string name="revanced_swipe_overlay_timeout_summary">Количество миллисекунд отображения наложения.</string>
+    <string name="revanced_swipe_brightness_distance_dip_title">Длина жеста для яркости</string>
+    <string name="revanced_swipe_brightness_distance_dip_summary">Минимальная длина жеста (пиксели).</string>
+    <string name="revanced_swipe_brightness_distance_dip_invalid_toast">Длина жеста для яркости должна быть от 0.1 px - 10.0 px.</string>
     <string name="revanced_swipe_volume_sensitivity_title">Чувствительность жеста громкости</string>
     <string name="revanced_swipe_volume_sensitivity_summary">Величина изменения громкости жестом.</string>
     <string name="revanced_swipe_volume_sensitivity_invalid_toast">Значение должно быть от 1 до 1000.</string>
     <string name="revanced_disable_hdr_auto_brightness_title">Автояркость HDR</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_on">Автояркость HDR отключена.</string>
     <string name="revanced_disable_hdr_auto_brightness_summary_off">Автояркость HDR включена.</string>
-    <string name="revanced_disable_swipe_to_switch_video_title">Переключение видео жестом</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_on">Переключение видео жестами отключены.</string>
-    <string name="revanced_disable_swipe_to_switch_video_summary_off">Переключение видео жестами включены.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_title">Жест полноэкранного режима (под плеером)</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_on">Жест под плеером отключен.</string>
     <string name="revanced_disable_swipe_to_enter_fullscreen_mode_below_the_player_summary_off">Жест под плеером включен.</string>
@@ -1749,6 +1771,9 @@ Shorts
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_title">Жест выхода из полноэкранного режима</string>
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_summary_on">Жест выхода из режима отключен.</string>
     <string name="revanced_disable_swipe_to_exit_fullscreen_mode_summary_off">Жест выхода из режима включен.</string>
+    <string name="revanced_enable_swipe_to_switch_video_title">Переключение видео жестами</string>
+    <string name="revanced_enable_swipe_to_switch_video_summary_on">Включено. В полном экране, жест вверх / вниз - следующее / предыдущее видео.</string>
+    <string name="revanced_enable_swipe_to_switch_video_summary_off">Отключено. В полном экране, жест вверх / вниз.</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">Авто</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Видео</string>
@@ -1826,18 +1851,6 @@ Shorts
     <string name="revanced_advanced_video_quality_menu_type_title">Расширенный тип меню качества Shorts</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_on">Стиль расширенного меню качества включен.</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_off">Стиль расширенного меню качества отключен.</string>
-    <string name="revanced_skipped_preloaded_buffer">Пропущен предварительно загруженный буфер.</string>
-    <string name="revanced_skip_preloaded_buffer_title">Пропустить предварительно загруженный буфер</string>
-    <string name="revanced_skip_preloaded_buffer_summary">"Пропустить предварительно загруженный буфер при запуске видео, чтобы избежать задержек обеспечения качества видео.
-
-Ограничения:
-• При запуске видео возникает задержка примерно в 0.3 секунды.
-• Не распространяется на HDR-видео, трансляции и видео длительностью менее 15 секунд."</string>
-    <string name="revanced_skip_preloaded_buffer_user_dialog_message">Включение приведет к проблемам при воспроизведении видео.
-(Связанно с буфером предзагрузки).</string>
-    <string name="revanced_skip_preloaded_buffer_toast_title">Уведомление при пропуске буфера</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_on">Уведомление включено.</string>
-    <string name="revanced_skip_preloaded_buffer_toast_summary_off">Уведомление отключено.</string>
     <string name="revanced_spoof_device_dimensions_title">Подмена размеров устройства</string>
     <string name="revanced_spoof_device_dimensions_summary">"Подменяет размеры устройства до максимального значения.
 
@@ -2099,9 +2112,6 @@ Shorts
     <string name="revanced_bypass_url_redirects_summary_off">Отключено.</string>
     <string name="revanced_disable_quic_protocol_title">Отключить протокол QUIC</string>
     <string name="revanced_disable_quic_protocol_summary">"Отключает протокол, построенный поверх UDP, переходя на TCP."</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_title">Макс. размер объединения потоков Litho</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_entry_0">Не переопределено</string>
-    <string name="revanced_litho_layout_thread_pool_max_size_invalid_toast">Макс. размер объединения потоков Litho от 1 до 3.</string>
     <string name="revanced_open_links_externally_title">Открывать внешние ссылки</string>
     <string name="revanced_open_links_externally_summary_on">Открывает ссылки во внешнем браузере.</string>
     <string name="revanced_open_links_externally_summary_off">Открывает ссылки в браузере приложения.</string>
@@ -2191,10 +2201,10 @@ Shorts
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(Без авторизац.)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_deprecated">"iOS
-<small>(Устаревшая)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(Необходим вход)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web
+<small>(В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Встроенный TV
@@ -2206,14 +2216,49 @@ Shorts
 • Стабильная громкость недоступна.
 • Отключить принудительные авто звуковые дорожки недоступна.
 • Детские видео могут не работать в режиме инкогнито или выхода."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_deprecated">• Целые диапазоны ASN/IP могут блокироваться сервером.</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Стабильная громкость недоступна.
 • Фильмы или платные видео могут не работать.
 • Детские видео могут не работать при выходе из системы или в режиме инкогнито."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Отсутствует меню аудиодорожки.
+• Отключить недоступные принудительные автозвуковые дорожки.
+• При ошибке разобфускации кода, просмотр может завершиться неудачей.
+• Иногда видео не проигрывается даже через 10 секунд, есть кнопка перезагрузить видео.
+• Видео может начинаться с опозданием."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Кодек AVC (H.264) может быть недоступен.
 • Если деобфускация не удалась, воспроизведение может быть прервано.
 • Иногда видео не воспроизводится даже через 10 секунд, в этом случае необходимо нажать кнопку \"Перезагрузить видео\".
 • Видео может запускаться с опозданием."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_unknown">• Неизвестно</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Приоритет качества видео</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">Приоритет качества видео включен.</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_off">Приоритет качества видео отключен.</string>
+    <string name="revanced_spoof_streaming_data_prioritize_video_quality_user_dialog_message">"Некоторые видео имеют следующее качество видео и кодеки:
+• 1080p AVC
+• 720p AVC
+• 360p VP9
+
+Если устройство поддерживает VP9, '1080p AVC' и '720p AVC' игнорируются.
+'360p VP9' используется как макс. качество видео, а '1080p AVC' и '720p AVC' не видны в выпадающем меню.
+
+Это поведение приложения Android YouTube, поэтому меню качества видео недоступно для некоторых видео.
+
+VP9 более продвинутый кодек, чем AVC, но некоторые пользователи предпочитают '1080p AVC'.
+
+Если включено, используется макс. качество видео из ответа сервера, независимо от видеокодека.
+
+Пример 1:
+• 1080p AVC
+• 720p AVC
+• 360p VP9
+
+→ 1080p AVC используется.
+
+Пример 2:
+• 1080p AVC
+• 1080p VP9
+• 720p VP9
+
+→ 1080p VP9 используется."</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_title">Кнопка перезагрузить видео</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">Включено. Кнопка перезагрузки видео отображена.</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">Отключено. Кнопка перезагрузки видео скрыта.</string>
@@ -2255,53 +2300,32 @@ Shorts
 - устранить прерывания при воспроизведении.
 
 Максимальное разрешение AVC - 1080p. Кодек Opus недоступен. Потребление трафика больше, чем при VP9 или AV1."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_title">Клиент iOS</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_on">"Клиент iOS доступен.
-
-ПРЕДУПРЕЖДЕНИЕ:
-Клиент iOS устаревший! Любые, возникающие, проблемы решайте сами или не используйте его."</string>
-    <string name="revanced_spoof_streaming_data_use_ios_summary_off">Клиент iOS не доступен.</string>
-    <string name="revanced_spoof_streaming_data_use_ios_user_dialog_message">"При запросе конечных точек YouTube API с помощью iOS требуются токены Auth, от устройства iOS, и токены PoToken, от iOSGuard.
-
-При подмене через клиент iOS не будет ни токенов Auth, ни токенов PoToken, и сервер может считать пользователя ботом и заблокировать целый диапазон ASN/IP.
-
-ИСПОЛЬЗУЙТЕ НА СВОЙ СТРАХ И РИСК!"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: TV (WIP) -->
-    <string name="revanced_preference_category_tv">TV (В разработке)</string>
-    <string name="revanced_spoof_streaming_data_use_tv_title">Клиент TV</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_on">Клиент TV доступен.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_summary_off">Клиент TV не доступен.</string>
-    <string name="revanced_spoof_streaming_data_use_tv_user_dialog_message">"Используется больше ресурсов для обработки шаблона n-sig, и видео запускается медленнее.
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <string name="revanced_preference_category_js">JavaScript (В разработке)</string>
+    <string name="revanced_spoof_streaming_data_use_js_title">Использовать клиент JavaScript</string>
+    <string name="revanced_spoof_streaming_data_use_js_summary_on">Клиент JavaScript используется.</string>
+    <string name="revanced_spoof_streaming_data_use_js_summary_off">Клиент JavaScript не доступен.</string>
+    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"Используется больше ресурсов для обработки шаблона n-sig, видео запускается медленнее.
 
 Шаблон n-sig часто меняется на серверах YouTube, и просмотр может быть прерван, если регулярное выражение не найдет шаблон n-sig.
 
-Функция все еще в разработке, поэтому используйте её только в целях отладки."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_title">Клиент TV для всех видео</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_on">"Клиент TV используется, принудительно, для всех типов видео.
+Функция в разработке, используйте только для отладки."</string>
+    <string name="revanced_spoof_streaming_data_use_js_all_title">Использовать клиент JavaScript для всех видео</string>
+    <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"Клиент JavaScript используется независимо от типа видео.
 
-• Некоторые видео будут не доступны."</string>
-    <string name="revanced_spoof_streaming_data_use_tv_all_summary_off">"Клиент TV не используется для видео, требующих быстрого просмотра:
+• ТВ клиент может не проигрывать некоторые видео."</string>
+    <string name="revanced_spoof_streaming_data_use_js_all_summary_off">"Клиент JavaScript не используется для видео, требующих быстрого просмотра:
 
 • Автозапуск в ленте
 • Клипы
 • Shorts"</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_title">Использовать актуальный JavaScript</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_on">"Включено. JavaScript для \"Запутывания\" хранится в актуальном состоянии.
+    <string name="revanced_spoof_streaming_data_use_latest_js_title">Использовать актуальный JavaScript</string>
+    <string name="revanced_spoof_streaming_data_use_latest_js_summary_on">"JavaScript для разобфускации сохраняется в актуальном состоянии.
 
-• Если \"Запутывание\" успешно, не будет отсутствующих кодеков или качества видео.
-• Очень зависит от сервера, а успех или сбой \"Запутывания\" зависит сервера JavaScript."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_latest_js_summary_off">"Отключено. JavaScript для \"Запутывания\" не в актуальном состоянии.
+• Очень зависит от сервера, а успех или сбой разобфускации зависит от используемого на сервере JavaScript."</string>
+    <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"JavaScript для разобфускации не сохранен в актуальном состоянии.
 
-• Даже если \"Запутывание\" успешно, могут отсутствовать качества видео или кодеки.
-• Используется успешный JavaScript \"Запутывания\", но он все еще зависит от сервера."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_title">Использовать V8 JavaScript</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_on">"JavaScript работает в нативных библиотеках.
-
-• Работает на SmartTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_summary_off">"JavaScript не работает в нативных библиотеках.
-
-• Работает на JavaTube."</string>
-    <string name="revanced_spoof_streaming_data_tv_use_v8_js_engine_user_dialog_message">Если JavaScript V8 не используется, то на деобфускацию URL-адреса потоковой передачи уходит больше времени, из-за чего видео запускается на 10 секунд позже.</string>
+• Используется JavaScript, но все еще зависит от сервера."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">История просмотра</string>
     <string name="revanced_preference_screen_watch_history_summary">Изменить настройки истории просмотра.</string>

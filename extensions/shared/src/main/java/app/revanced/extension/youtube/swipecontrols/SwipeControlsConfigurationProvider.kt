@@ -4,6 +4,7 @@ import android.graphics.Color
 import app.revanced.extension.shared.utils.Utils.validateColor
 import app.revanced.extension.shared.utils.Utils.validateValue
 import app.revanced.extension.youtube.settings.Settings
+import app.revanced.extension.youtube.shared.FullscreenEngagementPanelState
 import app.revanced.extension.youtube.shared.LockModeState
 import app.revanced.extension.youtube.shared.PlayerType
 
@@ -34,9 +35,18 @@ class SwipeControlsConfigurationProvider {
 
     /**
      * Checks if the video player is currently in fullscreen mode.
+     *
+     * Since [PlayerType] changes are not immediately reflected in the Extension,
+     * Incorrect [PlayerType] may sometimes be used.
+     * In most cases, this does not cause any problems,
+     * But under certain conditions, the following issue may occur:
+     * [ReVanced_Extended#3052](https://github.com/inotia00/ReVanced_Extended/issues/3052)
+     *
+     * Instead of checking [PlayerType],
+     * Check whether the fullscreen engagement panel holder is attached to Windows.
      */
     private val isFullscreenVideo: Boolean
-        get() = PlayerType.current == PlayerType.WATCH_WHILE_FULLSCREEN
+        get() = FullscreenEngagementPanelState.current.isAttached()
 
     /**
      * is the video player currently in lock mode?
@@ -72,6 +82,19 @@ class SwipeControlsConfigurationProvider {
      * Loaded once to ensure consistent behavior during rapid scroll events.
      */
     val swipeMagnitudeThreshold = Settings.SWIPE_MAGNITUDE_THRESHOLD.get()
+
+    /**
+     * The minimum swipe distance of brightness swipe gestures, in pixels.
+     * Resets to default if set to 0, as it would disable swiping.
+     */
+    val brightnessSwipeDistance: Float by lazy {
+        validateValue(
+            Settings.SWIPE_BRIGHTNESS_DISTANCE_DIP,
+            0.1f,
+            10f,
+            "revanced_swipe_brightness_distance_dip_invalid_toast"
+        )
+    }
 
     /**
      * The sensitivity of volume swipe gestures, determining how much volume changes per swipe.
