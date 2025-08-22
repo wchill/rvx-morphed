@@ -103,7 +103,7 @@ class StreamingDataRequest private constructor(
         private const val AUTHORIZATION_HEADER = "Authorization"
         private const val PAGE_ID_HEADER = "X-Goog-PageId"
         private const val VISITOR_ID_HEADER: String = "X-Goog-Visitor-Id"
-        private const val MAX_MILLISECONDS_TO_WAIT_FOR_FETCH = 25 * 1000
+        private const val MAX_MILLISECONDS_TO_WAIT_FOR_FETCH = 20 * 1000
 
         private val SPOOF_STREAMING_DATA_DEFAULT_CLIENT: ClientType =
             BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get()
