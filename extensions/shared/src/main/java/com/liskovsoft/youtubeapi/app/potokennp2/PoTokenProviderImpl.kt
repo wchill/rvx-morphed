@@ -23,7 +23,7 @@ internal object PoTokenProviderImpl : PoTokenProvider {
     private var webPoTokenGenerator: PoTokenGenerator? = null
 
     override fun getWebClientPoToken(videoId: String): PoTokenResult? {
-        if (!webViewSupported || webViewBadImpl) {
+        if (!isPotSupported) {
             return null
         }
 
@@ -128,6 +128,10 @@ internal object PoTokenProviderImpl : PoTokenProvider {
     override fun getAndroidClientPoToken(videoId: String): PoTokenResult? = null
 
     override fun getIosClientPoToken(videoId: String): PoTokenResult? = null
+
+    override fun isExpired() = isPotSupported && webPoTokenGenerator?.isExpired() ?: true
+
+    override fun isPotSupported() = webViewSupported && !webViewBadImpl
 
     fun resetCache() {
         webPoTokenGenerator = null
