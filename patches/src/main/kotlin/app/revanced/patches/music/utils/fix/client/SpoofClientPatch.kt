@@ -2,6 +2,7 @@ package app.revanced.patches.music.utils.fix.client
 
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
+import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.patch.BytecodePatchContext
 import app.revanced.patcher.patch.PatchException
@@ -20,10 +21,13 @@ import app.revanced.patches.shared.indexOfClientInfoInstruction
 import app.revanced.patches.shared.indexOfManufacturerInstruction
 import app.revanced.patches.shared.indexOfModelInstruction
 import app.revanced.patches.shared.indexOfReleaseInstruction
+import app.revanced.util.findFieldFromToString
 import app.revanced.util.fingerprint.injectLiteralInstructionBooleanCall
+import app.revanced.util.fingerprint.legacyFingerprint
 import app.revanced.util.fingerprint.matchOrThrow
 import app.revanced.util.fingerprint.methodOrThrow
 import app.revanced.util.fingerprint.mutableClassOrThrow
+import app.revanced.util.fingerprint.originalMethodOrThrow
 import app.revanced.util.fingerprint.resolvable
 import app.revanced.util.getReference
 import app.revanced.util.getWalkerMethod
@@ -313,6 +317,57 @@ internal fun patchSpoofClient() {
             "$EXTENSION_CLASS_DESCRIPTOR->forceDisablePlaybackFeatureFlag(Z)Z"
         )
     }
+
+    // endregion
+
+    // region fix background playback in live stream, if spoofing to iOS
+
+    val playerResponseModel = directorSavedStateToStringFingerprint
+        .originalMethodOrThrow()
+        .findFieldFromToString(INIT_PLAYER_RESPONSE)
+        .type
+
+    val backgroundPlaybackPlayerResponseFingerprint = legacyFingerprint(
+        name = "backgroundPlaybackPlayerResponseFingerprint",
+        returnType = "Z",
+        accessFlags = AccessFlags.PUBLIC or AccessFlags.STATIC,
+        parameters = listOf(playerResponseModel),
+        opcodes = listOf(
+            Opcode.CONST_4,
+            Opcode.IF_EQZ,
+            Opcode.INVOKE_INTERFACE,
+            Opcode.MOVE_RESULT_OBJECT,
+            Opcode.IF_EQZ,
+            Opcode.INVOKE_INTERFACE,
+            Opcode.MOVE_RESULT_OBJECT,
+            Opcode.INVOKE_STATIC,
+            Opcode.MOVE_RESULT,
+            Opcode.IF_EQZ,
+            Opcode.INVOKE_INTERFACE,
+            Opcode.MOVE_RESULT,
+            Opcode.CONST_4,
+            Opcode.IF_EQZ,
+            Opcode.INVOKE_INTERFACE,
+            Opcode.MOVE_RESULT_OBJECT,
+            Opcode.INVOKE_VIRTUAL,
+            Opcode.MOVE_RESULT,
+            Opcode.IF_NEZ,
+        ),
+    )
+
+    backgroundPlaybackPlayerResponseFingerprint
+        .methodOrThrow()
+        .addInstructionsWithLabels(
+            0, """
+                invoke-static { }, $EXTENSION_CLASS_DESCRIPTOR->isClientSpoofingEnabled()Z
+                move-result v0
+                if-eqz v0, :disabled
+                const/4 v0, 0x1
+                return v0
+                :disabled
+                nop
+                """
+        )
 
     // endregion
 

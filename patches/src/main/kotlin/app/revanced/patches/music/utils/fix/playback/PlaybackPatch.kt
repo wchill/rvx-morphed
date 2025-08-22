@@ -2,6 +2,7 @@ package app.revanced.patches.music.utils.fix.playback
 
 import app.revanced.patcher.patch.booleanOption
 import app.revanced.patcher.patch.bytecodePatch
+import app.revanced.patches.music.misc.backgroundplayback.backgroundPlaybackPatch
 import app.revanced.patches.music.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.revanced.patches.music.utils.extension.Constants.VIDEO_PATH
 import app.revanced.patches.music.utils.fix.client.patchSpoofClient
@@ -25,6 +26,8 @@ val playbackPatch = bytecodePatch(
 
     dependsOn(
         settingsPatch,
+        // required to fix background playback issue of live stream on iOS client.
+        backgroundPlaybackPatch,
         customPlaybackSpeedPatch(
             "$VIDEO_PATH/CustomPlaybackSpeedPatch;",
             5.0f

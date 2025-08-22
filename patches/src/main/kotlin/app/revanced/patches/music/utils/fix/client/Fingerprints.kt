@@ -35,3 +35,22 @@ internal val playbackFeatureFlagFingerprint = legacyFingerprint(
     parameters = emptyList(),
     literals = listOf(PLAYBACK_FEATURE_FLAG),
 )
+
+internal const val INIT_PLAYER_RESPONSE = " interstitialPlayerResponse="
+
+/**
+ * Inspired by the August 2024 commit:
+ * https://github.com/inotia00/revanced-patches/commit/dde5331ba949ed2655ae168a6bc2485ebec197e9
+ * Class 'Lcom/google/android/libraries/youtube/innertube/model/player/PlayerResponseModel;'
+ * is obfuscated in YouTube Music, so this fingerprint is used to find the class 'PlayerResponseModel'
+ */
+internal val directorSavedStateToStringFingerprint = legacyFingerprint(
+    name = "directorSavedStateToStringFingerprint",
+    returnType = "Ljava/lang/String;",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
+    parameters = emptyList(),
+    strings = listOf(INIT_PLAYER_RESPONSE),
+    customFingerprint = { method, _ ->
+        method.name == "toString"
+    }
+)
