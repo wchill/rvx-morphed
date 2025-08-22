@@ -30,12 +30,47 @@ enum Status {
 }
 
 message StreamingData {
+    int64 expiresInSeconds = 1;
     repeated Format formats = 2;
     repeated Format adaptiveFormats = 3;
     string serverAbrStreamingUrl = 15;
 }
 
 message Format {
+    int32 itag = 1;
     string url = 2;
+    string mimeType = 5;
+    int32 bitrate = 6;
+    int32 width = 7;
+    int32 height = 8;
+    int64 lastModified = 11;
+    string quality = 16;
+    string xtags = 23;
+    int32 fps = 25;
+    string qualityLabel = 26;
+    int32 averageBitrate = 31;
+    int64 approxDurationMs = 44;
+    int64 audioSampleRate = 45;
+    int32 audioChannels = 46;
+    // This field does not exist on YouTube or YouTube Music.
+    // Therefore, you can't get the signatureCipher using the Message class included in YouTube or YouTube Music.
     string signatureCipher = 48;
+
+    oneof data {
+        Range initRange = 9;
+        Range indexRange = 10;
+        AudioTrack audioTrack = 28;
+    }
 }
+
+message Range {
+    int64 start = 3;
+    int64 end = 4;
+}
+
+message AudioTrack {
+    string displayName = 4;
+    string id = 5;
+    bool audioIsDefault = 6;
+}
+

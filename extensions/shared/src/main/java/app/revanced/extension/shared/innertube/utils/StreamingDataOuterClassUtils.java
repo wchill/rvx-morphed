@@ -3,6 +3,7 @@ package app.revanced.extension.shared.innertube.utils;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.google.protobuf.MessageLite;
 import com.google.protos.youtube.api.innertube.StreamingDataOuterClass;
 
 import org.apache.commons.lang3.StringUtils;
@@ -181,24 +182,24 @@ public class StreamingDataOuterClassUtils {
     @Nullable
     public static Map<String, String> getAudioTrackMap(@NonNull StreamingDataOuterClass.StreamingData streamingData) {
         try {
-            List<?> adaptiveFormats = getAdaptiveFormats(streamingData);
-            // Failed to parse adaptiveFormats.
-            if (adaptiveFormats == null) return null;
-            int size = adaptiveFormats.size();
+            // Failed to cast.
+            if (!(streamingData instanceof MessageLite messageLite)) return null;
+            var parsedStreamingData = PlayerResponseOuterClass.StreamingData.parseFrom(messageLite.toByteArray());
+            // Failed to parse streamingData.
+            if (parsedStreamingData == null) return null;
+            int adaptiveFormatsCount = parsedStreamingData.getAdaptiveFormatsCount();
+
             // AdaptiveFormats contains both video and audio codecs.
             // If there are multiple audio tracks, the size of adaptiveFormats is usually large.
-            if (size < 5) return null;
+            if (adaptiveFormatsCount < 5) return null;
 
             // Check if the video contains audio tracks.
             boolean hasAudioTrack = false;
 
             // The first half of the index contains video formats, and the remaining half contains audio formats.
             // For faster navigation, the search is performed in reverse order.
-            for (int i = size - 1; i > (size / 2); i--) {
-                Object adaptiveFormat = adaptiveFormats.get(i);
-                Field audioTrackField = adaptiveFormat.getClass().getField(FormatFields.audioTrack);
-                audioTrackField.setAccessible(true);
-                Object audioTrack = audioTrackField.get(adaptiveFormat);
+            for (int i = adaptiveFormatsCount - 1; i > (adaptiveFormatsCount / 2); i--) {
+                var audioTrack = parsedStreamingData.getAdaptiveFormats(i).getAudioTrack();
                 // If an audio track is found, stop searching the list.
                 if (audioTrack != null) {
                     hasAudioTrack = true;
@@ -212,22 +213,13 @@ public class StreamingDataOuterClassUtils {
             Map<String, String> audioTrackMap = new LinkedHashMap<>(30);
 
             // For faster navigation, the search is performed in reverse order.
-            for (int i = size - 1; i > 0; i--) {
-                Object adaptiveFormat = adaptiveFormats.get(i);
-                Field audioTrackField = adaptiveFormat.getClass().getField(FormatFields.audioTrack);
-                audioTrackField.setAccessible(true);
-                Object audioTrack = audioTrackField.get(adaptiveFormat);
+            for (int i = adaptiveFormatsCount - 1; i > 0; i--) {
+                var audioTrack = parsedStreamingData.getAdaptiveFormats(i).getAudioTrack();
                 if (audioTrack != null) {
-                    Field displayNameField = audioTrack.getClass().getField(AudioTrackFields.displayName);
-                    displayNameField.setAccessible(true);
-                    if (!(displayNameField.get(audioTrack) instanceof String displayName)) {
-                        continue;
-                    }
-                    Field idField = audioTrack.getClass().getField(AudioTrackFields.id);
-                    idField.setAccessible(true);
-                    if (!(idField.get(audioTrack) instanceof String id)) {
-                        continue;
-                    }
+                    String displayName = audioTrack.getDisplayName();
+                    if (displayName == null) continue;
+                    String id = audioTrack.getId();
+                    if (id == null) continue;
                     if (audioTrackMap.get(displayName) == null) {
                         audioTrackMap.put(displayName, id);
                     } else {
@@ -243,6 +235,7 @@ public class StreamingDataOuterClassUtils {
         } catch (Exception ex) {
             Logger.printException(() -> "getAudioTrackMap failed", ex);
         }
+
         return null;
     }
 
@@ -363,8 +356,11 @@ public class StreamingDataOuterClassUtils {
     }
 
 
-    // com.google.protos.youtube.api.innertube.StreamingDataOuterClass.StreamingData
-    // It is based on YouTube 19.47.53, but 'field c' to 'field k' are the same regardless of the YouTube version.
+    /**
+     * Field access via reflection will be replaced by Protobuf.MessageParser in the future.
+     * See {@link #getAudioTrackMap(StreamingDataOuterClass.StreamingData)}.
+     */
+    @Deprecated
     private interface StreamingDataFields {
         // int
         String unknownField_c = "c";
