@@ -2271,8 +2271,8 @@ VP9은 AVC보다 고급 코덱이지만, 일부 사용자는 '360p VP9'보다 '1
     <string name="revanced_spoof_streaming_data_vr_disable_av1_title">VR AV1 비활성화하기</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">동영상 코덱이 AVC (H.264) 또는 VP9으로 결정됩니다.</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">동영상 코덱이 자동으로 결정됩니다.</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_title">VR 오디오 트랙 버튼 활성화하기</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_on">VR 오디오 트랙 버튼을 활성화합니다.\n이 버튼은 플레이어 오른쪽 상단에서 표시됩니다.</string>
+    <string name="revanced_spoof_streaming_data_vr_audio_track_button_title">VR 오디오 트랙 버튼 표시하기</string>
+    <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_on">VR 오디오 트랙 버튼을 표시합니다.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_off">VR 오디오 트랙 버튼을 표시하지 않습니다.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message">"전제 조건:
 • 스트리밍 데이터를 가져오는 데 사용되는 기본 클라이언트가 'Android VR (인증 없음)'이 선택되어야 합니다.

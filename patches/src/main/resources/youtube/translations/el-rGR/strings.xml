@@ -454,7 +454,7 @@ Playlists
     <string name="revanced_hide_video_by_view_counts_about_summary">"Οι καρτέλες «Αρχική», «Εγγραφές» και τα αποτελέσματα αναζήτησης φιλτράρονται για απόκρυψη βίντεο με προβολές λιγότερες ή περισσότερες από τον καθορισμένο σας αριθμό.
 
 Περιορισμοί:
-• Τα Shorts δε φιλτράρονται.
+• Οι ζωντανές μεταδόσεις και τα Shorts δε φιλτράρονται.
 • Τα βίντεο με 0 προβολές δε φιλτράρονται."</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Γενικά</string>
@@ -467,6 +467,7 @@ Playlists
     <string name="revanced_change_start_page_entry_fashion">Μόδα &amp; ομορφιά</string>
     <string name="revanced_change_start_page_entry_gaming">Παιχνίδια</string>
     <string name="revanced_change_start_page_entry_history">Ιστορικό</string>
+    <string name="revanced_change_start_page_entry_hype">Hype</string>
     <string name="revanced_change_start_page_entry_library">Βιβλιοθήκη</string>
     <string name="revanced_change_start_page_entry_liked_videos">Βίντεο που σας αρέσουν</string>
     <string name="revanced_change_start_page_entry_live">Live</string>
@@ -497,6 +498,9 @@ Playlists
     <string name="revanced_disable_auto_captions_title">Απενεργοποίηση υποχρεωτικών αυτόματων υπότιτλων</string>
     <string name="revanced_disable_auto_captions_summary_on">Οι υποχρεωτικοί αυτόματοι υπότιτλοι είναι απενεργοποιημένοι.</string>
     <string name="revanced_disable_auto_captions_summary_off">Οι υποχρεωτικοί αυτόματοι υπότιτλοι εμφανίζονται.</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">Απενεργοποίηση αναδυόμενου παραθύρου σύνδεσης στην τηλεόραση</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">Το αναδυόμενο παράθυρο σύνδεσης στην τηλεόραση είναι απενεργοποιημένο.</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">Το αναδυόμενο παράθυρο σύνδεσης στην τηλεόραση είναι ενεργοποιημένο.</string>
     <string name="revanced_disable_splash_animation_title">Απενεργοποίηση εφέ εκκίνησης εφαρμογής</string>
     <string name="revanced_disable_splash_animation_summary_on">Το εφέ εκκίνησης της εφαρμογής είναι απενεργοποιημένο.</string>
     <string name="revanced_disable_splash_animation_summary_off">Το εφέ εκκίνησης της εφαρμογής είναι ενεργοποιημένο.</string>
@@ -548,6 +552,16 @@ Playlists
     <string name="revanced_disable_translucent_status_bar_summary_on">Η γραμμή κατάστασης δεν είναι διαφανής.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Η διαφάνεια της γραμμής κατάστασης ορίζεται αυτόματα.</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">Σε ορισμένες εργοστασιακές ROM που τρέχουν Android 12+, η ενεργοποίηση αυτής της λειτουργίας μπορεί να κάνει τη γραμμή πλοήγησης του συστήματος διαφανή.</string>
+    <string name="revanced_fix_hype_button_icon_title">Διόρθωση εικονιδίου κουμπιού Hype</string>
+    <string name="revanced_fix_hype_button_icon_summary_on">Το εικονίδιο του κουμπί «Hype» εμφανίζεται.</string>
+    <string name="revanced_fix_hype_button_icon_summary_off">Το εικονίδιο του κουμπί «Hype» δεν εμφανίζεται.</string>
+    <string name="revanced_fix_hype_button_icon_user_dialog_message">"Στην έκδοση YouTube 19.25.39 ή παλιότερη, το εικονίδιο του κουμπιού «Hype» δεν εμφανίζεται στη γραμμή ενεργειών και στον πίνακα περιγραφής του βίντεο.
+
+Για να λυθεί αυτό, η έκδοση εφαρμογής παραποιείται σε 19.26.42 στα endpoint '/get_watch' και '/next' του YouTube.
+
+Αν απενεργοποιηθεί αυτή η ρύθμιση, το εικονίδιο του κουμπιού «Hype» ενδέχεται να μην εμφανίζεται στη γραμμή ενεργειών και στον πίνακα περιγραφής του βίντεο.
+
+※ Ακόμη κι αν αυτή η ρύθμιση είναι απενεργοποιημένη, το κουμπί «Hype» ενδέχεται να εμφανίζεται."</string>
     <string name="revanced_spoof_app_version_title">Παραποίηση έκδοσης εφαρμογής</string>
     <string name="revanced_spoof_app_version_summary_on">Η έκδοση παραποιείται.</string>
     <string name="revanced_spoof_app_version_summary_off">Η έκδοση δεν παραποιείται.</string>
@@ -891,6 +905,7 @@ Playlists
     <string name="revanced_sanitize_video_subtitle_summary_on">"Φράσεις όπως «#», «Έρανος», «Κατάστημα» και «προϊόντα» είναι κρυμμένες από τους υπότιτλους των βίντεο."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Φράσεις όπως «#», «Έρανος», «Κατάστημα» και «N προϊόντα» εμφανίζονται στους υπότιτλους των βίντεο."</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_title">Σχετικά βίντεο</string>
     <string name="revanced_hide_related_videos_summary_on">Κρυμμένα.</string>
     <string name="revanced_hide_related_videos_summary_off">Εμφανίζονται.</string>
     <string name="revanced_hide_related_videos_user_dialog_message">"Αυτή η ρύθμιση περιορίζει τον μέγιστο αριθμό διατάξεων που μπορούν να εμφανιστούν στην οθόνη αναπαραγωγής.
@@ -917,6 +932,9 @@ Playlists
     <string name="revanced_hide_download_button_title">Κουμπί «Λήψη»</string>
     <string name="revanced_hide_download_button_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_download_button_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_hype_button_title">Κουμπί «Hype»</string>
+    <string name="revanced_hide_hype_button_summary_on">Κρυμμένο.</string>
+    <string name="revanced_hide_hype_button_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_like_dislike_button_title">Κουμπιά «Μου αρέσει» &amp; «Δεν μου αρέσει»</string>
     <string name="revanced_hide_like_dislike_button_summary_on">Κρυμμένα.</string>
     <string name="revanced_hide_like_dislike_button_summary_off">Εμφανίζονται.</string>

@@ -483,6 +483,7 @@ Shorts
     <string name="revanced_change_start_page_entry_fashion">Модная</string>
     <string name="revanced_change_start_page_entry_gaming">Игры</string>
     <string name="revanced_change_start_page_entry_history">История</string>
+    <string name="revanced_change_start_page_entry_hype">Шумиха</string>
     <string name="revanced_change_start_page_entry_library">Библиотека</string>
     <string name="revanced_change_start_page_entry_liked_videos">Понравившиеся</string>
     <string name="revanced_change_start_page_entry_live">Трансляции</string>
@@ -563,6 +564,16 @@ Shorts
     <string name="revanced_disable_translucent_status_bar_summary_on">Полупрозрачность включена.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Полупрозрачность отключена.</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">Для прошивок некоторых разработчиков Android 12+, включение этой функции может сделать панель навигации системы прозрачной.</string>
+    <string name="revanced_fix_hype_button_icon_title">Исправить значок кнопки \"Шумиха\"</string>
+    <string name="revanced_fix_hype_button_icon_summary_on">Значок кнопки \"Шумиха\" отображается.</string>
+    <string name="revanced_fix_hype_button_icon_summary_off">Значок кнопки \"Шумиха\" скрыт.</string>
+    <string name="revanced_fix_hype_button_icon_user_dialog_message">"В YouTube версии 19.25.39 и более ранних версиях значок \"Шумиха\" скрыт на панели действий с видео и панели описания видео.
+
+В качестве обходного решения в конечных точках '/get_watch' и '/next' версия приложения заменяется на 19.26.42.
+
+Если отключить этот параметр, значок \"Шумиха\" может не отображаться на панели действий с видео и панели описания видео.
+
+※ Даже если этот параметр отключен, кнопка \"Шумиха\" может не быть скрыта."</string>
     <string name="revanced_spoof_app_version_title">Подмена версии приложения</string>
     <string name="revanced_spoof_app_version_summary_on">Версия приложения подменена</string>
     <string name="revanced_spoof_app_version_summary_off">Версия приложения не подменена</string>
@@ -907,6 +918,7 @@ Shorts
     <string name="revanced_sanitize_video_subtitle_summary_on">"Фильтр фраз типа \"#\", \"Магазин\" и \"N продуктов\" в субтитрах отключен."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Фильтр фраз типа \"#\", \"Магазин\" и \"N продуктов\" в субтитрах включен."</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_title">Похожие видео</string>
     <string name="revanced_hide_related_videos_summary_on">Похожие видео скрыты.</string>
     <string name="revanced_hide_related_videos_summary_off">Похожие видео отображены.</string>
     <string name="revanced_hide_related_videos_user_dialog_message">"Этот параметр ограничивает количество контейнеров по умолчанию, которые влияют на отображение похожих видео.
@@ -931,6 +943,9 @@ Shorts
     <string name="revanced_hide_download_button_title">Кнопка \"Скачать\"</string>
     <string name="revanced_hide_download_button_summary_on">Кнопка \"Скачать\" скрыта.</string>
     <string name="revanced_hide_download_button_summary_off">Кнопка \"Скачать\" отображена.</string>
+    <string name="revanced_hide_hype_button_title">Кнопка \"Шумиха\"</string>
+    <string name="revanced_hide_hype_button_summary_on">Кнопка \"Шумиха\" скрыта.</string>
+    <string name="revanced_hide_hype_button_summary_off">Кнопка \"Шумиха\" отображена.</string>
     <string name="revanced_hide_like_dislike_button_title">Кнопки \"Лайк\" и \"Дизлайк\"</string>
     <string name="revanced_hide_like_dislike_button_summary_on">Кнопки \"Лайк\" и \"Дизлайк\" скрыты.</string>
     <string name="revanced_hide_like_dislike_button_summary_off">Кнопки \"Лайк\" и \"Дизлайк\" отображены.</string>

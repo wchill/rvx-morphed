@@ -458,7 +458,7 @@ Ograniczenia:
     <string name="revanced_hide_video_by_view_counts_about_summary">"Strona główna / subskrypcje / wyniki wyszukiwania są filtrowane, by ukrywać filmy z ilością wyświetleń mniejszą bądź większą od określonej liczby.
 
 Ograniczenia:
-• Shortsy nie mogą zostać ukryte
+• Transmisje na żywo oraz Shortsy nie mogą zostać ukryte
 • Filmy z 0 wyświetleń nie są filtrowane"</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Ogólne</string>
@@ -471,6 +471,7 @@ Ograniczenia:
     <string name="revanced_change_start_page_entry_fashion">Moda i uroda</string>
     <string name="revanced_change_start_page_entry_gaming">Gry</string>
     <string name="revanced_change_start_page_entry_history">Historia</string>
+    <string name="revanced_change_start_page_entry_hype">Podbij</string>
     <string name="revanced_change_start_page_entry_library">Biblioteka</string>
     <string name="revanced_change_start_page_entry_liked_videos">Polubione filmy</string>
     <string name="revanced_change_start_page_entry_live">Na żywo</string>
@@ -501,6 +502,9 @@ Ograniczenie: Przycisk wstecz na pasku narzędzi może nie działać."</string>
     <string name="revanced_disable_auto_captions_title">Automatyczne wymuszanie napisów</string>
     <string name="revanced_disable_auto_captions_summary_on">Wyłączone</string>
     <string name="revanced_disable_auto_captions_summary_off">Włączone</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">Komunikat o zalogowaniu się do TV</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">Wyłączony</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">Włączony</string>
     <string name="revanced_disable_splash_animation_title">Animacja uruchamiania aplikacji</string>
     <string name="revanced_disable_splash_animation_summary_on">Wyłączona</string>
     <string name="revanced_disable_splash_animation_summary_off">Włączona</string>
@@ -554,6 +558,16 @@ Zmiany zawierają:
     <string name="revanced_disable_translucent_status_bar_summary_on">Wyłączona</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Włączona</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">Dla większości producentów ROM-ów bazujących na Androidzie 12 i wzwyż, włączenie tej opcji spowoduje stanie się systemowego paska nawigacji przezroczystym.</string>
+    <string name="revanced_fix_hype_button_icon_title">Napraw widoczność ikony podbijania</string>
+    <string name="revanced_fix_hype_button_icon_summary_on">Tak</string>
+    <string name="revanced_fix_hype_button_icon_summary_off">Nie</string>
+    <string name="revanced_fix_hype_button_icon_user_dialog_message">"W wersjach YouTube 19.25.39 i wcześniejszych, ikona podbijania jest ukryta w pasku akcji filmu oraz w panelu opisu filmu.
+
+Jako obejście, aplikacja jest oszukiwana do wersji 19.26.42 na punkcie końcowym '/get_watch' oraz '/next'.
+
+Jeśli wyłączysz to ustawienie, ikona podbijania może się nie pojawiać w pasku akcji filmu oraz w panelu opisu filmu.
+
+※ Nawet jeśli to ustawienie jest wyłączone, przycisk od podbijania może nie być ukryty."</string>
     <string name="revanced_spoof_app_version_title">Oszukiwanie wersji aplikacji</string>
     <string name="revanced_spoof_app_version_summary_on">Włączone</string>
     <string name="revanced_spoof_app_version_summary_off">Wyłączone</string>
@@ -899,6 +913,7 @@ Ustawienia → Autoodtwarzanie/Odtwarzanie → Autoodtwarzanie następnego filmu
     <string name="revanced_sanitize_video_subtitle_summary_on">"Frazy takie jak '#', 'Zbiórka', 'Sklep' i 'Produkty' są ukryte w napisach filmu"</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Frazy takie jak '#', 'Zbiórka', 'Sklep' i 'Produkty' są widoczne w napisach filmu"</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_title">Powiązane filmy</string>
     <string name="revanced_hide_related_videos_summary_on">Ukryte</string>
     <string name="revanced_hide_related_videos_summary_off">Widoczne</string>
     <string name="revanced_hide_related_videos_user_dialog_message">"Ustawienie te ogranicza maksymalną ilość układów aplikacji, jakie mogą być załadowane na ekranie odtwarzacza.
@@ -925,6 +940,9 @@ Jeśli układ ekranu odtwarzacza zmieni się w skutek zmian po stronie serwera, 
     <string name="revanced_hide_download_button_title">Przycisk od pobierania</string>
     <string name="revanced_hide_download_button_summary_on">Ukryty</string>
     <string name="revanced_hide_download_button_summary_off">Widoczny</string>
+    <string name="revanced_hide_hype_button_title">Przycisk od podbijania</string>
+    <string name="revanced_hide_hype_button_summary_on">Ukryty</string>
+    <string name="revanced_hide_hype_button_summary_off">Widoczny</string>
     <string name="revanced_hide_like_dislike_button_title">Przyciski od łapkowania w górę i dół</string>
     <string name="revanced_hide_like_dislike_button_summary_on">Ukryte</string>
     <string name="revanced_hide_like_dislike_button_summary_off">Widoczne</string>

@@ -497,6 +497,9 @@
     <string name="revanced_disable_auto_captions_title">تعطيل الترجمة التلقائية المفروضة</string>
     <string name="revanced_disable_auto_captions_summary_on">تم تعطيل الترجمة التلقائية المفروضة.</string>
     <string name="revanced_disable_auto_captions_summary_off">تم تمكين الترجمة التلقائية المفروضة.</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">تعطيل نافذة تسجيل الدخول إلى التلفزيون</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">تم تعطيل نافذة تسجيل الدخول إلى التلفزيون.</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">تم تمكين نافذة تسجيل الدخول إلى التلفزيون.</string>
     <string name="revanced_disable_splash_animation_title">تعطيل تأثيرات الحركة</string>
     <string name="revanced_disable_splash_animation_summary_on">تم تعطيل تأثيرات الحركة.</string>
     <string name="revanced_disable_splash_animation_summary_off">تم تمكين تأثيرات الحركة.</string>
@@ -892,6 +895,7 @@
     <string name="revanced_sanitize_video_subtitle_summary_on">"تم إخفاء عبارات مثل '#'، 'جمع التبرعات'، 'المتجر' و 'المنتجات' من ترجمات الفيديو."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"يتم عرض عبارات مثل '#'، 'جمع التبرعات'، 'المتجر' و 'المنتجات' من ترجمات الفيديو."</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_title">إخفاء الفيديوهات ذات الصلة</string>
     <string name="revanced_hide_related_videos_summary_on">تم إخفاء الفيديوهات ذات الصلة.</string>
     <string name="revanced_hide_related_videos_summary_off">يتم عرض الفيديوهات ذات الصلة.</string>
     <string name="revanced_hide_related_videos_user_dialog_message">"يحد هذا الإعداد الحد الأقصى لعدد التخطيطات التي يمكن تحميلها على شاشة المشغل.

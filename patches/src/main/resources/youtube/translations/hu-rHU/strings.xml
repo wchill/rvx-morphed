@@ -322,6 +322,19 @@ Koppints ide, ha többet szeretnél megtudni a DeArrow-ról."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_on">"Az indexképek címkéi – például a 'Mások ezeket is megnézték' és az 'Ezek is tetszhetnek' – rejtve vannak."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"Az indexképek címkéi – például a 'Mások ezeket is megnézték' és az 'Ezek is tetszhetnek' – rejtve vannak."</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
+    <string name="revanced_preference_screen_carousel_shelf_title">Karusszel</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">Karusszel elrejtése vagy megjelenítése a kezdőlapon, a keresési eredményekben és a feliratkozásokban.</string>
+    <string name="revanced_hide_carousel_shelf_home_title">Elrejtés a kezdőlapon és a kapcsolódó videóknál</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_on">Elrejtve a kezdőlapon és a kapcsolódó videóknál.</string>
+    <string name="revanced_hide_carousel_shelf_home_summary_off">Látható a kezdőlapon és a kapcsolódó videóknál.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_title">Elrejtés a feliratkozások között</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_on">Elrejtve a feliratkozások között.</string>
+    <string name="revanced_hide_carousel_shelf_subscriptions_summary_off">Látható a feliratkozások között.</string>
+    <string name="revanced_hide_carousel_shelf_search_title">Elrejtés a keresési eredményekben</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_on">Elrejtve a keresési eredményekben.</string>
+    <string name="revanced_hide_carousel_shelf_search_summary_off">Látható a keresési eredményekben.</string>
+    <string name="revanced_hide_carousel_shelf_about_title">A karusszelről</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Példák a karusszelre:&lt;br&gt;&lt;br&gt;&lt;b&gt;Friss hírek&lt;/b&gt;, &lt;b&gt;Nézés folytatása&lt;/b&gt;, &lt;b&gt;További csatornák felfedezése&lt;/b&gt;, &lt;b&gt;Hallgassa meg újra&lt;/b&gt;, &lt;b&gt;Legrelevánsabb&lt;/b&gt;, &lt;b&gt;Vásárlás&lt;/b&gt;, &lt;b&gt;Nézze meg újra&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Kategória sáv</string>
     <string name="revanced_preference_screen_category_bar_summary">Rejtse el vagy jelenítse meg a kategória sávot a hírfolyamban, keresésben és a kapcsolódó videókban.</string>
@@ -458,6 +471,7 @@ Korlátozások:
     <string name="revanced_change_start_page_entry_fashion">Divat és szépség</string>
     <string name="revanced_change_start_page_entry_gaming">Játékok</string>
     <string name="revanced_change_start_page_entry_history">Előzmények</string>
+    <string name="revanced_change_start_page_entry_hype">Hype</string>
     <string name="revanced_change_start_page_entry_library">Könyvtár</string>
     <string name="revanced_change_start_page_entry_liked_videos">Kedvelt videók</string>
     <string name="revanced_change_start_page_entry_live">Élő</string>
@@ -488,6 +502,9 @@ Korlátozás: Előfordulhat, hogy az eszköztár Vissza gombja nem működik."</
     <string name="revanced_disable_auto_captions_title">Kényszerített automatikus feliratok letiltása</string>
     <string name="revanced_disable_auto_captions_summary_on">A kényszerített automatikus feliratok le vannak tiltva.</string>
     <string name="revanced_disable_auto_captions_summary_off">A kényszerített automatikus feliratok engedélyezve vannak.</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">Bejelentkezés TV-n felugró ablak tiltása</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">A bejelentkezés TV-n felugró ablak tiltott.</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">A bejelentkezés TV-n felugró ablak engedélyezett.</string>
     <string name="revanced_disable_splash_animation_title">Indító animáció letiltása</string>
     <string name="revanced_disable_splash_animation_summary_on">Az indító animáció le van tiltva.</string>
     <string name="revanced_disable_splash_animation_summary_off">Az indító animáció engedélyezett.</string>
@@ -539,6 +556,16 @@ A változások a következők:
     <string name="revanced_disable_translucent_status_bar_summary_on">Az állapotsor nem átlátszó.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Az állapotsor nem átlátszó vagy átlátszó.</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">Egyes, Android 12 vagy újabb rendszert futtató gyártói ROM-ok esetében ennek a funkciónak az engedélyezése átlátszóvá teheti a rendszer navigációs sávját.</string>
+    <string name="revanced_fix_hype_button_icon_title">Hype gomb ikonjának kijavítása</string>
+    <string name="revanced_fix_hype_button_icon_summary_on">A Hype gomb ikonja látható.</string>
+    <string name="revanced_fix_hype_button_icon_summary_off">A Hype gomb ikonja rejtett.</string>
+    <string name="revanced_fix_hype_button_icon_user_dialog_message">"A YouTube 19.25.39-es vagy korábbi verzióiban a Hype ikon rejtve van a videó műveletsávján és a videóleírás paneljén.
+
+Megoldásként az alkalmazás verziója a '/get_watch' és a '/next' végpontokban 19.26.42-re hamisítva jelenik meg.
+
+Ha kikapcsolja ezt a beállítást, előfordulhat, hogy a Hype ikon nem jelenik meg a videó műveletsávján és a videóleírás paneljén.
+
+※ Még ha ez a beállítás ki is van kapcsolva, előfordulhat, hogy a Hype gomb nem lesz rejtett."</string>
     <string name="revanced_spoof_app_version_title">Alkalmazásverzió hamisítása</string>
     <string name="revanced_spoof_app_version_summary_on">Verzió hamisítás</string>
     <string name="revanced_spoof_app_version_summary_off">Verzió nincs hamisítva</string>
@@ -880,6 +907,7 @@ Beállítások → Automatikus lejátszás / Lejátszás → Következő videó 
     <string name="revanced_sanitize_video_subtitle_summary_on">"Az olyan kifejezések, mint a „#”, „Adománygyűjtés”, „Üzlet” és „termékek”, el lettek rejtve a videófeliratokban."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Az olyan kifejezések, mint a „#”, „Adománygyűjtés”, „Üzlet” és „termékek”, láthatóak a videófeliratokban."</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_title">Kapcsolódó videók elrejtése</string>
     <string name="revanced_hide_related_videos_summary_on">A kapcsolódó videók el vannak rejtve.</string>
     <string name="revanced_hide_related_videos_summary_off">A kapcsolódó videók láthatóak.</string>
     <string name="revanced_hide_related_videos_user_dialog_message">"Ez a beállítás korlátozza a lejátszó képernyőjére betölthető elrendezések maximális számát.
@@ -904,6 +932,9 @@ Ha a lejátszó képernyőjének elrendezése a szerveroldali változtatások mi
     <string name="revanced_hide_download_button_title">Letöltés gomb elrejtése</string>
     <string name="revanced_hide_download_button_summary_on">A letöltés gomb el van rejtve.</string>
     <string name="revanced_hide_download_button_summary_off">A letöltés gomb látható.</string>
+    <string name="revanced_hide_hype_button_title">Hype gomb elrejtése</string>
+    <string name="revanced_hide_hype_button_summary_on">A Hype gomb rejtett.</string>
+    <string name="revanced_hide_hype_button_summary_off">A Hype gomb látható.</string>
     <string name="revanced_hide_like_dislike_button_title">Tetszik és nem tetszik gombok elrejtése</string>
     <string name="revanced_hide_like_dislike_button_summary_on">A tetszik és nem tetszik gombok el vannak rejtve.</string>
     <string name="revanced_hide_like_dislike_button_summary_off">A tetszik és nem tetszik gombok láthatók.</string>
@@ -1707,6 +1738,9 @@ Megjegyzés: Ezzel a képernyőterület méretét is megváltoztatja, ahol érz�
     <string name="revanced_swipe_text_overlay_size_invalid_toast">A szövegméretnek 1-30 között kell lennie.</string>
     <string name="revanced_swipe_overlay_timeout_title">Gesztus vezérlés átfedésének időkorlátja</string>
     <string name="revanced_swipe_overlay_timeout_summary">Az átfedés láthatóságának időtartama ezredmásodpercben.</string>
+    <string name="revanced_swipe_brightness_distance_dip_title">Fényerő csúsztatás távolsága</string>
+    <string name="revanced_swipe_brightness_distance_dip_summary">A minimális csúsztatási távolság pixel-ben.</string>
+    <string name="revanced_swipe_brightness_distance_dip_invalid_toast">A fényerő csúsztatás távolságának 0.1 és 10.0 dip között kell lennie.</string>
     <string name="revanced_swipe_volume_sensitivity_title">Hangerő csúsztatás érzékenység</string>
     <string name="revanced_swipe_volume_sensitivity_summary">Mennyit változzon a hangerő húzásonként.</string>
     <string name="revanced_swipe_volume_sensitivity_invalid_toast">A hangerő csúsztatás érzékenységének 1 és 1000 között kell lennie.</string>

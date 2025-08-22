@@ -455,10 +455,10 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_hide_video_view_counts_multiplier_summary">UI の各動画の下に表示される再生回数の言語テンプレートを設定します。各キー (言語の文字/単語) -&gt; 値 (キーの意味) は、改行して記述する必要があります。キーは「-&gt;」記号の前に記述します。言語設定を更新した場合は、この設定をリセットする必要があります。\n\n例:\n英語: 10K views = K -&gt; 1000、views -&gt; 回\nスペイン語: 10 K vistas = K -&gt; 1000、vistas -&gt; 回</string>
     <string name="revanced_hide_video_view_counts_multiplier_default_value">万 -&gt; 10 000\n億 -&gt; 100 000 000\n回視聴 -&gt; views</string>
     <string name="revanced_hide_video_by_view_counts_about_title">再生回数のフィルタリングについて</string>
-    <string name="revanced_hide_video_by_view_counts_about_summary">"ホーム/登録チャンネル/検索結果はフィルタリングされ、設定した値よりも少ない再生回数の動画を非表示にします。
+    <string name="revanced_hide_video_by_view_counts_about_summary">"ホーム/登録チャンネル/検索結果はフィルタリングされ、設定した値よりも少ないまたは多い再生回数の動画を非表示にします。
 
 注意: 
-・ショートは非表示にできません。
+・ライブ配信やショートは非表示にできません。
 ・再生回数が 0 の動画はフィルタリングされません。"</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">一般</string>
@@ -471,6 +471,7 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_change_start_page_entry_fashion">ファッションと美容</string>
     <string name="revanced_change_start_page_entry_gaming">ゲーム</string>
     <string name="revanced_change_start_page_entry_history">履歴</string>
+    <string name="revanced_change_start_page_entry_hype">ハイプ</string>
     <string name="revanced_change_start_page_entry_library">ライブラリ</string>
     <string name="revanced_change_start_page_entry_liked_videos">高く評価した動画</string>
     <string name="revanced_change_start_page_entry_live">ライブ</string>
@@ -501,6 +502,9 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_disable_auto_captions_title">字幕の強制を無効化</string>
     <string name="revanced_disable_auto_captions_summary_on">投稿者が設定している字幕の強制を無効にします。</string>
     <string name="revanced_disable_auto_captions_summary_off">投稿者が設定している字幕の強制を無効にします。</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">「テレビでログイン」ポップアップを無効化</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">「テレビでログイン」ポップアップを無効にします。</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">「テレビでログイン」ポップアップを無効にします。</string>
     <string name="revanced_disable_splash_animation_title">スプラッシュアニメーションを無効化</string>
     <string name="revanced_disable_splash_animation_summary_on">アプリ起動時のスプラッシュアニメーションを無効にします。</string>
     <string name="revanced_disable_splash_animation_summary_off">アプリ起動時のスプラッシュアニメーションを無効にします。</string>
@@ -556,6 +560,16 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_disable_translucent_status_bar_summary_on">ステータスバーを不透明にします。</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">ステータスバーを不透明にします。</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">Android 12 以降を実行している一部のメーカーの ROM では、この機能を有効にすると、システムナビゲーションバーが透明になる可能性があります。</string>
+    <string name="revanced_fix_hype_button_icon_title">[ハイプ] ボタンのアイコンを修正</string>
+    <string name="revanced_fix_hype_button_icon_summary_on">[ハイプ] ボタンのアイコンを修正します。</string>
+    <string name="revanced_fix_hype_button_icon_summary_off">[ハイプ] ボタンのアイコンを修正します。</string>
+    <string name="revanced_fix_hype_button_icon_user_dialog_message">"YouTube v19.25.39 以前では、[ハイプ] アイコンは動画アクションバーと概要欄パネルに表示されません。
+
+回避策として、「/get_watch」エンドポイントと「/next」エンドポイントでアプリのバージョンが 19.26.42 に偽装されます。
+
+この設定をオフにすると、動画アクションバーと概要欄パネルに [ハイプ] アイコンが表示されない可能性があります。
+
+注意: 本設定をオフにしても [ハイプ] ボタンが非表示にならない可能性があります。"</string>
     <string name="revanced_spoof_app_version_title">アプリのバージョンを偽装</string>
     <string name="revanced_spoof_app_version_summary_on">アプリのバージョンを偽装できます。</string>
     <string name="revanced_spoof_app_version_summary_off">アプリのバージョンを偽装できます。</string>
@@ -899,6 +913,7 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_sanitize_video_subtitle_summary_on">"動画のタイトルの下にある「#」、「寄付」、「購入」、「商品」のようなタグを非表示にします。"</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"動画のタイトルの下にある「#」、「寄付」、「購入」、「商品」のようなタグを非表示にします。"</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_title">関連動画を非表示</string>
     <string name="revanced_hide_related_videos_summary_on">ホームフィードから関連動画を非表示にします。</string>
     <string name="revanced_hide_related_videos_summary_off">ホームフィードから関連動画を非表示にします。</string>
     <string name="revanced_hide_related_videos_user_dialog_message">"この設定は、プレーヤー画面に読み込むことができるレイアウトの最大数を制限します。
@@ -925,6 +940,9 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_hide_download_button_title">[オフライン] ボタンを非表示</string>
     <string name="revanced_hide_download_button_summary_on">[オフライン] ボタンを非表示にします。</string>
     <string name="revanced_hide_download_button_summary_off">[オフライン] ボタンを非表示にします。</string>
+    <string name="revanced_hide_hype_button_title">[ハイプ] ボタンを非表示</string>
+    <string name="revanced_hide_hype_button_summary_on">[ハイプ] ボタンを非表示にします。</string>
+    <string name="revanced_hide_hype_button_summary_off">[ハイプ] ボタンを非表示にします。</string>
     <string name="revanced_hide_like_dislike_button_title">評価ボタンを非表示</string>
     <string name="revanced_hide_like_dislike_button_summary_on">[高評価] と [低評価] ボタンを非表示にします。</string>
     <string name="revanced_hide_like_dislike_button_summary_off">[高評価] と [低評価] ボタンを非表示にします。</string>

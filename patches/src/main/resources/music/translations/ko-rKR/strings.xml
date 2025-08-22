@@ -477,19 +477,14 @@ API Key를 발급받는 방법을 보려면 여기를 탭하세요."</string>
     <string name="revanced_spoof_client_summary">"클라이언트를 변경하여 재생 문제를 방지할 수 있습니다.
 
 부작용:
-• YouTube Music 7.17+에서 동작 버튼이 항상 숨겨져 있을 수 있습니다.
-• 오디오 재생이 간헐적으로 끊길 수 있습니다.
-• 플레이어 메뉴 구성요소가 제대로 표시되지 않을 수 있습니다."</string>
+• YouTube Music 7.17+에서는 동작 버튼이 항상 숨겨져 있을 수 있습니다.
+• 플레이어 메뉴 구성요소가 제대로 표시되지 않을 수 있습니다.
+• 이러한 부작용은 앱 데이터를 지우고 다시 로그인하면 해결될 수 있습니다."</string>
     <string name="revanced_spoof_client_type_title">기본 클라이언트</string>
     <string name="revanced_spoof_client_type_summary">클라이언트를 변경하기 위한 기본 클라이언트를 정의할 수 있습니다.</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
-    <string name="revanced_spoof_player_parameter_title">플레이어 매개변수 변경</string>
-    <string name="revanced_spoof_player_parameter_summary">"플레이어 매개변수를 변경하여 재생 문제를 방지할 수 있습니다.
-
-부작용:
-• 자막이 플레이어 하단이 아닌 상단에 위치할 수 있습니다.
-• 일부 사용자에게는 작동하지 않을 수 있습니다."</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
     <string name="revanced_spoof_video_streams_title">동영상 스트림 변경</string>
     <string name="revanced_spoof_video_streams_summary">"클라이언트 동영상 스트림을 변경하여 재생 문제를 방지할 수 있습니다.
 

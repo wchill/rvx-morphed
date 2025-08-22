@@ -468,6 +468,7 @@ Limitaciones:
     <string name="revanced_change_start_page_entry_fashion">Moda y belleza</string>
     <string name="revanced_change_start_page_entry_gaming">Juegos</string>
     <string name="revanced_change_start_page_entry_history">Historial</string>
+    <string name="revanced_change_start_page_entry_hype">Hype</string>
     <string name="revanced_change_start_page_entry_library">Biblioteca</string>
     <string name="revanced_change_start_page_entry_liked_videos">Vídeos gustados</string>
     <string name="revanced_change_start_page_entry_live">En directo</string>
@@ -498,6 +499,9 @@ Limitación: Es posible que el botón Atrás de la barra de herramientas no func
     <string name="revanced_disable_auto_captions_title">Desactivar subtítulos automáticos forzados</string>
     <string name="revanced_disable_auto_captions_summary_on">Los subtítulos automáticos forzados están desactivados.</string>
     <string name="revanced_disable_auto_captions_summary_off">Los subtítulos automáticos forzados están activados.</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">Desactivar ventana emergente de inicio de sesión en TV</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">La ventana emergente de inicio de sesión en la TV está desactivada.</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">La ventana emergente de inicio de sesión en la TV está activada.</string>
     <string name="revanced_disable_splash_animation_title">Desactivar animación de bienvenida</string>
     <string name="revanced_disable_splash_animation_summary_on">La animación de bienvenida está desactivada.</string>
     <string name="revanced_disable_splash_animation_summary_off">La animación de bienvenida está activada.</string>
@@ -549,6 +553,16 @@ Los cambios incluyen:
     <string name="revanced_disable_translucent_status_bar_summary_on">La barra de estado es opaca.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">La barra de estado es opaca o translúcida.</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">Para algunas ROM de fabricantes que ejecutan Android 12+, activar esta función puede hacer que la barra de navegación del sistema sea transparente.</string>
+    <string name="revanced_fix_hype_button_icon_title">Corregir icono del botón Hype</string>
+    <string name="revanced_fix_hype_button_icon_summary_on">El icono del botón Hype está visible.</string>
+    <string name="revanced_fix_hype_button_icon_summary_off">El icono del botón Hype está oculto.</string>
+    <string name="revanced_fix_hype_button_icon_user_dialog_message">"En YouTube 19.25.39 o versiones anteriores, el icono de Hype está oculto en la barra de acción del vídeo y en el panel de descripción del vídeo.
+
+Como solución alternativa, la versión de la aplicación se falsifica a 19.26.42 en los endpoint «/get_watch» y «/next».
+
+Si desactivas este ajuste, es posible que el icono de Hype no se muestre en la barra de acciones del vídeo ni en el panel de descripción del vídeo.
+
+※ Incluso si este ajuste está desactivado, es posible que el botón Hype no esté oculto."</string>
     <string name="revanced_spoof_app_version_title">Falsificar versión de la app</string>
     <string name="revanced_spoof_app_version_summary_on">Versión falsificada</string>
     <string name="revanced_spoof_app_version_summary_off">Versión no falsificada</string>
@@ -892,6 +906,7 @@ Configuración → Reproducción → Reproducción automática del siguiente ví
     <string name="revanced_sanitize_video_subtitle_summary_on">"Frases como \"#\", \"Tienda\" y \"N productos\" se ocultan en los subtítulos de vídeo."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Frases como \"#\", \"Tienda\" y \"N productos\" se muestran en los subtítulos de vídeo."</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_title">Ocultar vídeos relacionados</string>
     <string name="revanced_hide_related_videos_summary_on">Los vídeos relacionados están ocultos.</string>
     <string name="revanced_hide_related_videos_summary_off">Los vídeos relacionados están visibles.</string>
     <string name="revanced_hide_related_videos_user_dialog_message">"Este ajuste limita el número máximo de diseños que se pueden cargar en la pantalla del reproductor. 
@@ -916,6 +931,9 @@ Si el diseño de la pantalla del reproductor cambia debido a cambios en el servi
     <string name="revanced_hide_download_button_title">Ocultar botón de descargar</string>
     <string name="revanced_hide_download_button_summary_on">El botón de descargar está oculto.</string>
     <string name="revanced_hide_download_button_summary_off">El botón de descargar está visible.</string>
+    <string name="revanced_hide_hype_button_title">Ocultar botón Hype</string>
+    <string name="revanced_hide_hype_button_summary_on">El botón Hype está oculto.</string>
+    <string name="revanced_hide_hype_button_summary_off">El botón Hype está visible.</string>
     <string name="revanced_hide_like_dislike_button_title">Ocultar botones de me gusta y no me gusta</string>
     <string name="revanced_hide_like_dislike_button_summary_on">Los botones de me gusta y no me gusta están ocultos.</string>
     <string name="revanced_hide_like_dislike_button_summary_off">Los botones de me gusta y no me gusta están visibles.</string>

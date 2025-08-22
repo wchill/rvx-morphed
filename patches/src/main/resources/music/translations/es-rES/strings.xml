@@ -453,16 +453,10 @@ Limitantes: Vídeos para niños puede que no se redirijan."</string>
     <string name="revanced_sanitize_sharing_links_title">Desinfectar enlaces compartidos</string>
     <string name="revanced_sanitize_sharing_links_summary">Elimina los parámetros de consulta de seguimiento de las URL al compartir enlaces.</string>
     <string name="revanced_spoof_client_title">Falsificar cliente</string>
-    <string name="revanced_spoof_client_summary">"Falsifica el cliente para prevenir problemas en la reproducción."</string>
     <string name="revanced_spoof_client_type_title">Cliente por defecto</string>
     <string name="revanced_spoof_client_type_summary">Define un cliente de por defecto para el falsificado.</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
-    <string name="revanced_spoof_player_parameter_title">Falsificar parámetro del reproductor</string>
-    <string name="revanced_spoof_player_parameter_summary">"Falsifica el parámetro del reproductor para prevenir problemas de reproducción.
-
-Efecto secundario:
-• Puede que los subtítulos aparezcan puestos arriba del reproductor en lugar de abajo."</string>
     <string name="revanced_watch_history_type_title">Tipo de vista del historial</string>
     <string name="revanced_watch_history_type_summary">"• Original: Sigue la configuración del registro del historial de su cuenta de Google, pero la opción del registro del historial pueda no funcionar al tener un DNS o VPN.
 • Reemplazar dominio: Sigue la configuración del registro del historial de su cuenta de Google.

@@ -397,7 +397,6 @@ Bilgi:
     <string name="revanced_sanitize_sharing_links_title">Paylaşılan bağlantıları sterilize edin</string>
     <string name="revanced_sanitize_sharing_links_summary">Bağlantıları paylaşırken, tracking query parametrelerini URL\'lerden kaldırır.</string>
     <string name="revanced_spoof_client_title">Sahte istemci</string>
-    <string name="revanced_spoof_client_summary">"Oynatma sorunlarını çözmek için istemciyi taklit eder."</string>
     <string name="revanced_spoof_client_type_title">Varsayılan istemci</string>
     <string name="revanced_spoof_client_type_summary">Taklit etmek için varsayılan bir istemci tanımlar.</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>

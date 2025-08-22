@@ -459,16 +459,10 @@ Limitazioni: I video per bambini potrebbero non essere reindirizzati."</string>
     <string name="revanced_sanitize_sharing_links_title">Sanitizza i link di condivisione</string>
     <string name="revanced_sanitize_sharing_links_summary">Sanifica i link di condivisione rimuovendo i parametri di tracciamento.</string>
     <string name="revanced_spoof_client_title">Falsifica client</string>
-    <string name="revanced_spoof_client_summary">"Falsifica il client per prevenire problemi di riproduzione."</string>
     <string name="revanced_spoof_client_type_title">Client predefinito</string>
     <string name="revanced_spoof_client_type_summary">Definisce un client predefinito per la falsificazione.</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
-    <string name="revanced_spoof_player_parameter_title">Falsifica i parametri del lettore</string>
-    <string name="revanced_spoof_player_parameter_summary">"Falsifica il parametro del lettore per evitare problemi di riproduzione.
-
-Effetto collaterale:
-• A volte i sottotitoli si trovano nella parte superiore del lettore anziché in quella inferiore."</string>
     <string name="revanced_watch_history_type_title">Guarda il tipo di cronologia</string>
     <string name="revanced_watch_history_type_summary">"• Originale: segue le impostazioni della cronologia delle visualizzazioni dell'account Google, ma la cronologia delle visualizzazioni potrebbe non funzionare a causa di DNS o VPN.
 • Sostituisci dominio: segue le impostazioni della cronologia delle visualizzazioni dell'account Google.

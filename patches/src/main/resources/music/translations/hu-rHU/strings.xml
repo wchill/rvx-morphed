@@ -414,7 +414,6 @@ Információk:
     <string name="revanced_sanitize_sharing_links_title">Megosztási linkek tisztítása</string>
     <string name="revanced_sanitize_sharing_links_summary">A megosztási linkeket a nyomkövető lekérdezési paraméterek eltávolításával tisztítja.</string>
     <string name="revanced_spoof_client_title">Kliens hamisítása</string>
-    <string name="revanced_spoof_client_summary">"Kliens meghamisítása a lejátszási hibák elkerüléséhez."</string>
     <string name="revanced_spoof_client_type_title">Alapértelmezett kliens</string>
     <string name="revanced_spoof_client_type_summary">Meghatároz egy alapértelmezett klients a hamisításhoz.</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>

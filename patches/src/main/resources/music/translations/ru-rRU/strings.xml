@@ -469,16 +469,10 @@
     <string name="revanced_sanitize_sharing_links_title">Подчищать ссылки</string>
     <string name="revanced_sanitize_sharing_links_summary">Убирает параметры отслеживания запросов из адресов при отправке ссылки.</string>
     <string name="revanced_spoof_client_title">Подмена клиента</string>
-    <string name="revanced_spoof_client_summary">"Подмена клиента, чтобы предотвратить проблемы воспроизведения."</string>
     <string name="revanced_spoof_client_type_title">Клиент по умолчанию</string>
     <string name="revanced_spoof_client_type_summary">Определяет клиент по умолчанию для подмены.</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
-    <string name="revanced_spoof_player_parameter_title">Подменить параметр плеера</string>
-    <string name="revanced_spoof_player_parameter_summary">"Подменяет параметр плеера, чтобы предотвратить проблемы с воспроизведением.
-
-Побочный эффект:
-• Иногда субтитры располагаются в верхней части плеера, а не в нижней."</string>
     <string name="revanced_spoof_video_streams_title">Подменить видеопотоки</string>
     <string name="revanced_spoof_video_streams_summary">"Подменять клиентские видеопотоки для предотвращения проблем с воспроизведением.
 
