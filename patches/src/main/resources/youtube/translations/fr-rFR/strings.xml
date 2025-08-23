@@ -24,6 +24,7 @@
     <string name="revanced_extended_settings_search_no_results_title">Aucun résultat trouvé pour \'%s\'.</string>
     <string name="revanced_extended_settings_search_no_results_summary">Essayez un autre mot-clé.</string>
     <string name="revanced_extended_settings_search_remove_message">Supprimer de l\'historique des recherches ?</string>
+    <string name="revanced_dismiss_player_not_available_toast">Id de vidéo pas disponible. S\'il vous plaît rouvrez la vidéo.</string>
     <string name="revanced_playback_speed_normal">Normal</string>
     <string name="revanced_external_downloader_package_name_video_title">Nom du paquet du téléchargeur vidéo</string>
     <string name="revanced_external_downloader_package_name_video_summary">Nom du paquet de l\'appli de téléchargement externe installée, telle que NewPipe ou YTDLnis.</string>

@@ -617,8 +617,8 @@ Playlists
     <string name="revanced_custom_filter_strings_summary">Λίστα από συμβολοσειρές στοιχείων που θα φιλτραριστούν, διαχωρισμένες με νέες γραμμές.</string>
     <string name="revanced_custom_filter_toast_invalid_syntax">Μη έγκυρο φίλτρο: %s.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Hook buttons -->
-    <string name="revanced_preference_screen_hook_buttons_title">Μετατροπή κουμπιών</string>
-    <string name="revanced_preference_screen_hook_buttons_summary">Αλλαγή λειτουργίας κατά το πάτημα των ενσωματωμένων κουμπιών της εφαρμογής.</string>
+    <string name="revanced_preference_screen_hook_buttons_title">Αλλαγή λειτουργίας κουμπιών</string>
+    <string name="revanced_preference_screen_hook_buttons_summary">Αλλαγή λειτουργίας των ενσωματωμένων κουμπιών της εφαρμογής κατά το πάτημά τους.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Hook buttons, PreferenceCategory: Download button -->
     <string name="revanced_preference_category_download_button">Κουμπί «Λήψη»</string>
     <string name="revanced_override_playlist_download_button_title">Αλλαγή λειτουργίας κουμπιού λήψης λίστας αναπαραγωγής</string>
@@ -1054,8 +1054,8 @@ Playlists
     <string name="revanced_preference_screen_player_flyout_menu_title">Αναδυόμενο μενού ρυθμίσεων</string>
     <string name="revanced_preference_screen_player_flyout_menu_summary">Απόκρυψη ή αλλαγή στοιχείων του αναδυόμενου μενού της οθόνης αναπαραγωγής βίντεο.</string>
     <string name="revanced_change_player_flyout_menu_toggle_title">Τύπος εναλλαγής ρυθμίσεων</string>
-    <string name="revanced_change_player_flyout_menu_toggle_summary_on">Εμφανίζονται εναλλαγές κειμένου.</string>
-    <string name="revanced_change_player_flyout_menu_toggle_summary_off">Εμφανίζονται εναλλαγές διακόπτη.</string>
+    <string name="revanced_change_player_flyout_menu_toggle_summary_on">Χρησιμοποιούνται εναλλαγές κειμένου.</string>
+    <string name="revanced_change_player_flyout_menu_toggle_summary_off">Χρησιμοποιούνται εναλλαγές διακοπτών.</string>
     <string name="revanced_hide_player_flyout_menu_enhanced_bitrate_title">Μενού επιλογής ποιότητας 1080p Premium</string>
     <string name="revanced_hide_player_flyout_menu_enhanced_bitrate_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_player_flyout_menu_enhanced_bitrate_summary_off">Εμφανίζεται.</string>
@@ -2279,7 +2279,7 @@ Playlists
     <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Απενεργοποίηση κωδικοποιητή VR AV1</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">Ο κωδικοποιητής βίντεο είναι ο AVC (H.264) ή ο VP9.</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">Ο κωδικοποιητής βίντεο ορίζεται αυτόματα.</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_title">Εμφάνιση κουμπιού κομματιού ήχου κατά τη χρήση VR</string>
+    <string name="revanced_spoof_streaming_data_vr_audio_track_button_title">Εμφάνιση κουμπιού κομματιού ήχου VR</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_on">Το κουμπί κομματιού ήχου VR εμφανίζεται.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_off">Το κουμπί κομματιού ήχου VR δεν εμφανίζεται.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message">"Προαπαιτούμενα:

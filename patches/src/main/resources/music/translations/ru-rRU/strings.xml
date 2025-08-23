@@ -259,6 +259,8 @@
     <string name="revanced_disable_player_gesture_summary">Отключает свайп для переключения треков в плеере.</string>
     <string name="revanced_enable_forced_miniplayer_title">Включить миниплеер на постоянной основе</string>
     <string name="revanced_enable_forced_miniplayer_summary">Включает миниплеер на постоянной основе при переходе на новый трек.</string>
+    <string name="revanced_enable_smooth_transition_animation_title">Включить плавную анимацию перехода</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">Включает плавную анимацию при разворачивании миниплеера из свернутого состояния.</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Включить жест закрытия миниплеера</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Включает жест вниз для закрытия миниплеера.</string>
     <string name="revanced_enable_comments_scroll_top_title">Включить прокрутку к началу в комментариях</string>
@@ -279,6 +281,8 @@
     <string name="revanced_hide_comment_timestamp_and_emoji_buttons_summary">Скрывает кнопки метки времени и эмодзи при вводе комментариев.</string>
     <string name="revanced_hide_fullscreen_share_button_title">Скрыть кнопку \"Поделиться\" в полноэкранном режиме</string>
     <string name="revanced_hide_fullscreen_share_button_summary">Скрывает кнопку \"Поделиться\" в полноэкранном проигрывателе.</string>
+    <string name="revanced_hide_lyrics_share_button_title">Скрыть кнопку \"Поделиться\"</string>
+    <string name="revanced_hide_lyrics_share_button_summary">Скрывает кнопку \"Поделиться\" в текстах.</string>
     <string name="revanced_hide_song_video_toggle_title">Скрыть переключатель \"песня | видео\"</string>
     <string name="revanced_hide_song_video_toggle_summary">Скрывает переключатель \"песня | видео\" в плеере.</string>
     <string name="revanced_remember_repeat_state_title">Запоминать состояние повтора</string>
@@ -469,10 +473,17 @@
     <string name="revanced_sanitize_sharing_links_title">Подчищать ссылки</string>
     <string name="revanced_sanitize_sharing_links_summary">Убирает параметры отслеживания запросов из адресов при отправке ссылки.</string>
     <string name="revanced_spoof_client_title">Подмена клиента</string>
+    <string name="revanced_spoof_client_summary">"Подменяет клиент для предотвращения проблем с воспроизведением.
+
+Побочный эффект:
+• Кнопки действий могут быть всегда скрыты в YouTube Music 7.17+.
+• Всплывающее меню плеера может отображаться некорректно.
+• Эти побочные эффекты можно устранить, очистив данные приложения и повторно войдя в систему."</string>
     <string name="revanced_spoof_client_type_title">Клиент по умолчанию</string>
     <string name="revanced_spoof_client_type_summary">Определяет клиент по умолчанию для подмены.</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
     <string name="revanced_spoof_video_streams_title">Подменить видеопотоки</string>
     <string name="revanced_spoof_video_streams_summary">"Подменять клиентские видеопотоки для предотвращения проблем с воспроизведением.
 
@@ -509,4 +520,8 @@
 
 Нажмите кнопку \"Продолжить\" и отключите оптимизацию батареи."</string>
     <string name="gms_core_dialog_continue_text">Продолжить</string>
+    <string name="revanced_app_info_title">О приложении</string>
+    <string name="revanced_app_info_summary">Нажмите для проверки названия, версии, патча и когда пропатчено.</string>
+    <string name="revanced_app_info_dialog_title">Информация о приложении</string>
+    <string name="revanced_app_info_dialog_message">&lt;b&gt;Название&lt;/b&gt;&lt;br&gt;&lt;small&gt;%1$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Версия&lt;/b&gt;&lt;br&gt;&lt;small&gt;%2$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;ReVanced Патчи&lt;/b&gt;&lt;br&gt;&lt;small&gt;%3$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Пропатчено&lt;/b&gt;&lt;br&gt;&lt;small&gt;%4$s&lt;/small&gt;</string>
 </resources>
