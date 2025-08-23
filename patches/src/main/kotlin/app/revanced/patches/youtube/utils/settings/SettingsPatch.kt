@@ -23,7 +23,6 @@ import app.revanced.patches.youtube.utils.fix.playbackspeed.playbackSpeedWhilePl
 import app.revanced.patches.youtube.utils.fix.splash.darkModeSplashScreenPatch
 import app.revanced.patches.youtube.utils.mainactivity.mainActivityResolvePatch
 import app.revanced.patches.youtube.utils.patch.PatchList.SETTINGS_FOR_YOUTUBE
-import app.revanced.patches.youtube.utils.playservice.is_19_15_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_19_34_or_greater
 import app.revanced.patches.youtube.utils.playservice.versionCheckPatch
 import app.revanced.patches.youtube.utils.resourceid.sharedResourceIdPatch
@@ -134,13 +133,8 @@ private val settingsBytecodePatch = bytecodePatch(
 
         // endregion.
 
-        val targetActivityFingerprint = if (is_19_15_or_greater)
-            proxyBillingActivityV2OnCreateFingerprint
-        else
-            licenseMenuActivityOnCreateFingerprint
-
         val hostActivityClass = settingsHostActivityOnCreateFingerprint.mutableClassOrThrow()
-        val targetActivityClass = targetActivityFingerprint.mutableClassOrThrow()
+        val targetActivityClass = licenseMenuActivityOnCreateFingerprint.mutableClassOrThrow()
 
         hookClassHierarchy(
             hostActivityClass,

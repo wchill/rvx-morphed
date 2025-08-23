@@ -51,12 +51,3 @@ internal val licenseMenuActivityOnCreateFingerprint = legacyFingerprint(
         classDef.endsWith("/LicenseMenuActivity;") && method.name == "onCreate"
     }
 )
-
-internal val proxyBillingActivityV2OnCreateFingerprint = legacyFingerprint(
-    name = "proxyBillingActivityV2OnCreateFingerprint",
-    returnType = "V",
-    parameters = listOf("Landroid/os/Bundle;"),
-    customFingerprint = { method, classDef ->
-        classDef.endsWith("/ProxyBillingActivityV2;") && method.name == "onCreate"
-    }
-)
