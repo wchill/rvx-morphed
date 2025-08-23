@@ -12,6 +12,9 @@ import app.revanced.patches.music.utils.extension.Constants.SPOOF_PATH
 import app.revanced.patches.music.utils.playbackRateBottomSheetClassFingerprint
 import app.revanced.patches.music.utils.playbackSpeedBottomSheetFingerprint
 import app.revanced.patches.music.utils.playservice.is_6_36_or_greater
+import app.revanced.patches.music.utils.playservice.is_7_16_or_greater
+import app.revanced.patches.music.utils.playservice.is_7_33_or_greater
+import app.revanced.patches.music.utils.playservice.is_8_12_or_greater
 import app.revanced.patches.music.utils.resourceid.varispeedUnavailableTitle
 import app.revanced.patches.shared.CLIENT_INFO_CLASS_DESCRIPTOR
 import app.revanced.patches.shared.clientTypeFingerprint
@@ -29,7 +32,6 @@ import app.revanced.util.fingerprint.matchOrThrow
 import app.revanced.util.fingerprint.methodOrThrow
 import app.revanced.util.fingerprint.mutableClassOrThrow
 import app.revanced.util.fingerprint.originalMethodOrThrow
-import app.revanced.util.fingerprint.resolvable
 import app.revanced.util.getReference
 import app.revanced.util.getWalkerMethod
 import app.revanced.util.indexOfFirstInstructionOrThrow
@@ -334,11 +336,23 @@ internal fun patchSpoofClient() {
 
     // region fix for feature flags
 
-    if (playbackFeatureFlagFingerprint.resolvable()) {
-        playbackFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
-            PLAYBACK_FEATURE_FLAG,
-            "$EXTENSION_CLASS_DESCRIPTOR->forceDisablePlaybackFeatureFlag(Z)Z"
+    if (is_7_16_or_greater) {
+        fallbackFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
+            FALLBACK_FEATURE_FLAG,
+            "$EXTENSION_CLASS_DESCRIPTOR->forceDisableFallbackFeatureFlag(Z)Z"
         )
+        if (is_7_33_or_greater) {
+            playbackFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
+                PLAYBACK_FEATURE_FLAG,
+                "$EXTENSION_CLASS_DESCRIPTOR->forceDisablePlaybackFeatureFlag(Z)Z"
+            )
+            if (is_8_12_or_greater) {
+                formatsFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
+                    FORMATS_FEATURE_FLAG,
+                    "$EXTENSION_CLASS_DESCRIPTOR->forceDisableFormatsFeatureFlag(Z)Z"
+                )
+            }
+        }
     }
 
     // endregion
