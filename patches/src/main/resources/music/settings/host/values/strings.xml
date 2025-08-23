@@ -303,6 +303,8 @@ Limitations: SponsorBlock segments are not shown in the seekbar."</string>
     <string name="revanced_hide_comment_timestamp_and_emoji_buttons_summary">Hides the emoji and timestamp buttons when typing comments.</string>
     <string name="revanced_hide_fullscreen_share_button_title">Hide fullscreen Share button</string>
     <string name="revanced_hide_fullscreen_share_button_summary">Hides the Share button in the fullscreen player.</string>
+    <string name="revanced_hide_lyrics_share_button_title">Hide lyrics Share button</string>
+    <string name="revanced_hide_lyrics_share_button_summary">Hides the Share button in lyrics.</string>
     <string name="revanced_hide_song_video_toggle_title">Hide Song / Video toggle</string>
     <string name="revanced_hide_song_video_toggle_summary">Hides the Song / Video toggle in the player.</string>
     <string name="revanced_remember_repeat_state_title">Remember repeat state</string>

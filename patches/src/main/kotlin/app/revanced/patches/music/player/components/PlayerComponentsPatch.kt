@@ -26,6 +26,7 @@ import app.revanced.patches.music.utils.playservice.is_7_18_or_greater
 import app.revanced.patches.music.utils.playservice.is_7_25_or_greater
 import app.revanced.patches.music.utils.playservice.is_7_29_or_greater
 import app.revanced.patches.music.utils.playservice.is_8_03_or_greater
+import app.revanced.patches.music.utils.playservice.is_8_05_or_greater
 import app.revanced.patches.music.utils.playservice.versionCheckPatch
 import app.revanced.patches.music.utils.resourceid.colorGrey
 import app.revanced.patches.music.utils.resourceid.darkBackground
@@ -870,6 +871,18 @@ val playerComponentsPatch = bytecodePatch(
             "revanced_hide_comment_timestamp_and_emoji_buttons",
             "false"
         )
+
+        // region patch for hide lyrics share button
+
+        if (is_8_05_or_greater) {
+            addSwitchPreference(
+                CategoryType.PLAYER,
+                "revanced_hide_lyrics_share_button",
+                "false"
+            )
+        }
+
+        // endregion
 
         // region patch for hide fullscreen share button
 
