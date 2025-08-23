@@ -44,9 +44,13 @@ val playbackPatch = bytecodePatch(
             Includes the 'Spoof client' patch.
             
             Side effect:
-            • Action buttons may always be hidden in YouTube Music 7.17+.
-            • Audio may intermittently stutter during playback.
-            • Player flyout menu may not show properly.
+            #1. Action buttons may always be hidden in YouTube Music 7.17+.
+            #2. Player flyout menu may not show properly.
+            #3. These side effects may be resolved by clearing the app data and logging in again.
+            
+            Additional Context:
+            If both 'Spoof client' and 'Spoof video streams' are used,
+            'Spoof client' side effects #1 and #2, and 'Spoof video streams' side effect #2 may be solved.
             """.trimIndentMultiline(),
         required = true
     )
@@ -59,8 +63,12 @@ val playbackPatch = bytecodePatch(
             Includes the 'Spoof video streams' patch.
             
             Side effect:
-            • App may be forced to close when using a DNS or VPN.
-            • Audio may intermittently stutter during playback on adaptive bitrate streaming clients.
+            #1. App may be forced to close when using a DNS or VPN.
+            #2. Audio may intermittently stutter during playback on adaptive bitrate streaming clients.
+
+            Additional Context:
+            If both 'Spoof client' and 'Spoof video streams' are used,
+            'Spoof client' side effects #1 and #2, and 'Spoof video streams' side effect #2 may be solved.
             """.trimIndentMultiline(),
         required = true
     )
