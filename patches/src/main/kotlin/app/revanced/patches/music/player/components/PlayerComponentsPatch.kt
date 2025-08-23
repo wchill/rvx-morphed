@@ -27,6 +27,7 @@ import app.revanced.patches.music.utils.playservice.is_7_25_or_greater
 import app.revanced.patches.music.utils.playservice.is_7_29_or_greater
 import app.revanced.patches.music.utils.playservice.is_8_03_or_greater
 import app.revanced.patches.music.utils.playservice.is_8_05_or_greater
+import app.revanced.patches.music.utils.playservice.is_8_12_or_greater
 import app.revanced.patches.music.utils.playservice.versionCheckPatch
 import app.revanced.patches.music.utils.resourceid.colorGrey
 import app.revanced.patches.music.utils.resourceid.darkBackground
@@ -610,6 +611,23 @@ val playerComponentsPatch = bytecodePatch(
             "revanced_enable_forced_miniplayer",
             "true"
         )
+
+        // endregion
+
+        // region patch for enable smooth transition animation
+
+        if (is_8_12_or_greater) {
+            smoothTransitionAnimationFingerprint.injectLiteralInstructionBooleanCall(
+                SMOOTH_TRANSITION_ANIMATION_FEATURE_FLAG,
+                "$PLAYER_CLASS_DESCRIPTOR->enableSmoothTransitionAnimation(Z)Z"
+            )
+
+            addSwitchPreference(
+                CategoryType.PLAYER,
+                "revanced_enable_smooth_transition_animation",
+                "true"
+            )
+        }
 
         // endregion
 

@@ -33,6 +33,8 @@ public class PlayerPatch {
             Settings.CHANGE_SEEK_BAR_POSITION.get();
     private static final boolean DISABLE_PLAYER_GESTURE =
             Settings.DISABLE_PLAYER_GESTURE.get();
+    private static final boolean ENABLE_SMOOTH_TRANSITION_ANIMATION =
+            Settings.ENABLE_SMOOTH_TRANSITION_ANIMATION.get();
     private static final boolean ENABLE_SWIPE_TO_DISMISS_MINIPLAYER =
             Settings.ENABLE_SWIPE_TO_DISMISS_MINIPLAYER.get();
     private static final boolean ENABLE_THICK_SEEKBAR =
@@ -182,6 +184,12 @@ public class PlayerPatch {
     private static void previousButtonClicked(View view) {
         // These instructions are ignored by patch.
         Logger.printDebug(() -> "previous button clicked: " + view);
+    }
+
+    public static boolean enableSmoothTransitionAnimation(boolean original) {
+        return SETTINGS_INITIALIZED
+                ? ENABLE_SMOOTH_TRANSITION_ANIMATION
+                : original;
     }
 
     public static boolean enableSwipeToDismissMiniPlayer() {

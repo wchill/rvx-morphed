@@ -342,6 +342,15 @@ internal val shuffleEnumFingerprint = legacyFingerprint(
     }
 )
 
+internal const val SMOOTH_TRANSITION_ANIMATION_FEATURE_FLAG = 45679250L
+
+internal val smoothTransitionAnimationFingerprint = legacyFingerprint(
+    name = "smoothTransitionAnimationFingerprint",
+    returnType = "Z",
+    parameters = emptyList(),
+    literals = listOf(SMOOTH_TRANSITION_ANIMATION_FEATURE_FLAG),
+)
+
 internal val swipeToCloseFingerprint = legacyFingerprint(
     name = "swipeToCloseFingerprint",
     returnType = "Z",
