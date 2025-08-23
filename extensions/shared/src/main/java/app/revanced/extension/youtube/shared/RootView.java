@@ -1,10 +1,11 @@
 package app.revanced.extension.youtube.shared;
 
+import static app.revanced.extension.youtube.patches.components.LayoutReloadObserverFilter.isActionBarVisible;
+
 import android.graphics.drawable.Drawable;
 import android.widget.FrameLayout;
 
 import java.lang.ref.WeakReference;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 import app.revanced.extension.shared.utils.Logger;
 import app.revanced.extension.shared.utils.Utils;
@@ -21,20 +22,6 @@ public final class RootView {
 
     private static volatile WeakReference<AppCompatToolbarPatchInterface> toolbarResultsRef
             = new WeakReference<>(null);
-
-    // Must be volatile or synchronized, as litho filtering runs off main thread and this field is then access from the main thread.
-    private static final AtomicBoolean isActionBarVisible = new AtomicBoolean(false);
-
-    public static boolean compareAndSetActionBar(boolean expectedValue, boolean newValue) {
-        return isActionBarVisible.compareAndSet(false, true);
-    }
-
-    public static void onPlayerLayoutReloaded() {
-        Utils.runOnMainThreadDelayed(() ->
-                isActionBarVisible.compareAndSet(true, false),
-                1000
-        );
-    }
 
     /**
      * Injection point.
