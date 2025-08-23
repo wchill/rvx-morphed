@@ -573,5 +573,10 @@ Disabling battery optimizations for GmsCore will not negatively affect battery u
 
 Tap the continue button and allow optimization changes."</string>
     <string name="gms_core_dialog_continue_text">Continue</string>
+
+    <string name="revanced_app_info_title">App info</string>
+    <string name="revanced_app_info_summary">Click to check the app name, app version, patch version, and patched date.</string>
+    <string name="revanced_app_info_dialog_title">App info</string>
+    <string name="revanced_app_info_dialog_message">&lt;b>App name&lt;/b>&lt;br>&lt;small>%1$s&lt;/small>&lt;br>&lt;br>&lt;b>App version&lt;/b>&lt;br>&lt;small>%2$s&lt;/small>&lt;br>&lt;br>&lt;b>ReVanced Patches&lt;/b>&lt;br>&lt;small>%3$s&lt;/small>&lt;br>&lt;br>&lt;b>Patched date&lt;/b>&lt;br>&lt;small>%4$s&lt;/small></string>
 </resources>
 

@@ -203,6 +203,7 @@ public class Settings extends BaseSettings {
     public static final BooleanSetting SPOOF_VIDEO_STREAMS = new BooleanSetting("revanced_spoof_video_streams", FALSE, true);
     public static final EnumSetting<ClientType> SPOOF_VIDEO_STREAMS_DEFAULT_CLIENT = new EnumSetting<>("revanced_spoof_video_streams_default_client", ClientType.ANDROID_VR_1_43_32, true);
     public static final BooleanSetting SETTINGS_IMPORT_EXPORT = new BooleanSetting("revanced_extended_settings_import_export", FALSE, false);
+    public static final BooleanSetting APP_INFO = new BooleanSetting("revanced_app_info", FALSE, false);
 
     // PreferenceScreen: Return YouTube Dislike
     public static final BooleanSetting RYD_ENABLED = new BooleanSetting("revanced_ryd_enabled", TRUE);
@@ -276,6 +277,7 @@ public class Settings extends BaseSettings {
      * Array of settings using intent
      */
     private static final String[] intentSettingArray = new String[]{
+            APP_INFO.key,
             BYPASS_IMAGE_REGION_RESTRICTIONS_DOMAIN.key,
             CHANGE_START_PAGE.key,
             CUSTOM_FILTER_STRINGS.key,
