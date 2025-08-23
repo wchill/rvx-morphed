@@ -26,6 +26,15 @@ import com.android.tools.smali.dexlib2.iface.reference.TypeReference
 const val AUDIO_VIDEO_SWITCH_TOGGLE_VISIBILITY =
     "/AudioVideoSwitcherToggleView;->setVisibility(I)V"
 
+internal const val AUDIO_VIDEO_SWITCH_TOGGLE_FEATURE_FLAG = 45671274L
+
+internal val audioVideoSwitchToggleFeatureFlagsFingerprint = legacyFingerprint(
+    name = "audioVideoSwitchToggleFeatureFlagsFingerprint",
+    returnType = "Z",
+    parameters = emptyList(),
+    literals = listOf(AUDIO_VIDEO_SWITCH_TOGGLE_FEATURE_FLAG),
+)
+
 internal val audioVideoSwitchToggleFingerprint = legacyFingerprint(
     name = "audioVideoSwitchToggleFingerprint",
     returnType = "V",
@@ -114,7 +123,6 @@ internal val minimizedPlayerFingerprint = legacyFingerprint(
     accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
     parameters = listOf("L", "L"),
     opcodes = listOf(
-        Opcode.INVOKE_VIRTUAL,
         Opcode.MOVE_RESULT,
         Opcode.IF_NEZ,
         Opcode.IF_EQZ

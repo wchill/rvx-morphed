@@ -17,6 +17,7 @@ import app.revanced.patches.music.utils.playservice.is_6_39_or_greater
 import app.revanced.patches.music.utils.playservice.is_6_42_or_greater
 import app.revanced.patches.music.utils.playservice.is_6_48_or_greater
 import app.revanced.patches.music.utils.playservice.is_8_05_or_greater
+import app.revanced.patches.music.utils.playservice.is_8_15_or_greater
 import app.revanced.patches.music.utils.playservice.versionCheckPatch
 import app.revanced.patches.music.utils.resourceid.musicTasteBuilderShelf
 import app.revanced.patches.music.utils.resourceid.playerOverlayChip
@@ -243,16 +244,19 @@ val layoutComponentsPatch = bytecodePatch(
 
         // region patch for hide tap to update button
 
-        contentPillFingerprint.methodOrThrow().apply {
-            addInstructionsWithLabels(
-                0,
-                """
-                    invoke-static {}, $GENERAL_CLASS_DESCRIPTOR->hideTapToUpdateButton()Z
-                    move-result v0
-                    if-eqz v0, :show
-                    return-void
-                    """, ExternalLabel("show", getInstruction(0))
-            )
+        if (!is_8_15_or_greater) {
+            contentPillFingerprint
+                .methodOrThrow()
+                .addInstructionsWithLabels(
+                    0, """
+                        invoke-static {}, $GENERAL_CLASS_DESCRIPTOR->hideTapToUpdateButton()Z
+                        move-result v0
+                        if-eqz v0, :show
+                        return-void
+                        :show
+                        nop
+                        """
+                )
         }
 
         // endregion
@@ -383,11 +387,13 @@ val layoutComponentsPatch = bytecodePatch(
                 "false"
             )
         }
-        addSwitchPreference(
-            CategoryType.GENERAL,
-            "revanced_hide_tap_to_update_button",
-            "false"
-        )
+        if (!is_8_15_or_greater) {
+            addSwitchPreference(
+                CategoryType.GENERAL,
+                "revanced_hide_tap_to_update_button",
+                "false"
+            )
+        }
         addSwitchPreference(
             CategoryType.GENERAL,
             "revanced_hide_voice_search_button",

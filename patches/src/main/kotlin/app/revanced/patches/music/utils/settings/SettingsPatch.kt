@@ -12,6 +12,7 @@ import app.revanced.patches.music.utils.compatibility.Constants.COMPATIBLE_PACKA
 import app.revanced.patches.music.utils.extension.Constants.EXTENSION_PATH
 import app.revanced.patches.music.utils.extension.Constants.UTILS_PATH
 import app.revanced.patches.music.utils.extension.sharedExtensionPatch
+import app.revanced.patches.music.utils.fix.timedlyrics.timedLyricsPatch
 import app.revanced.patches.music.utils.mainactivity.mainActivityResolvePatch
 import app.revanced.patches.music.utils.patch.PatchList.GMSCORE_SUPPORT
 import app.revanced.patches.music.utils.patch.PatchList.SETTINGS_FOR_YOUTUBE_MUSIC
@@ -52,6 +53,7 @@ private val settingsBytecodePatch = bytecodePatch(
     dependsOn(
         sharedExtensionPatch,
         mainActivityResolvePatch,
+        timedLyricsPatch,
         versionCheckPatch,
         baseSettingsPatch,
     )

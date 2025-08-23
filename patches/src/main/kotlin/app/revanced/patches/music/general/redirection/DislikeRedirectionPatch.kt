@@ -8,7 +8,6 @@ import app.revanced.patcher.util.smali.ExternalLabel
 import app.revanced.patches.music.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.revanced.patches.music.utils.extension.Constants.GENERAL_CLASS_DESCRIPTOR
 import app.revanced.patches.music.utils.patch.PatchList.DISABLE_DISLIKE_REDIRECTION
-import app.revanced.patches.music.utils.pendingIntentReceiverFingerprint
 import app.revanced.patches.music.utils.playservice.is_7_29_or_greater
 import app.revanced.patches.music.utils.playservice.versionCheckPatch
 import app.revanced.patches.music.utils.settings.CategoryType
@@ -17,10 +16,8 @@ import app.revanced.patches.music.utils.settings.addSwitchPreference
 import app.revanced.patches.music.utils.settings.settingsPatch
 import app.revanced.util.fingerprint.methodOrThrow
 import app.revanced.util.getReference
-import app.revanced.util.getWalkerMethod
 import app.revanced.util.indexOfFirstInstructionOrThrow
 import app.revanced.util.indexOfFirstInstructionReversedOrThrow
-import app.revanced.util.indexOfFirstStringInstructionOrThrow
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
@@ -41,45 +38,30 @@ val dislikeRedirectionPatch = bytecodePatch(
     )
 
     execute {
-        pendingIntentReceiverFingerprint.methodOrThrow().apply {
-            val startIndex = indexOfFirstStringInstructionOrThrow("YTM Dislike")
-            val onClickRelayIndex =
-                indexOfFirstInstructionReversedOrThrow(startIndex, Opcode.INVOKE_VIRTUAL)
-            val onClickRelayMethod = getWalkerMethod(onClickRelayIndex)
 
-            onClickRelayMethod.apply {
-                val onClickMethodIndex =
-                    indexOfFirstInstructionReversedOrThrow(Opcode.INVOKE_DIRECT)
-                val onClickMethod = getWalkerMethod(onClickMethodIndex)
+        notificationLikeButtonOnClickListenerFingerprint
+            .methodOrThrow(notificationLikeButtonControllerFingerprint)
+            .apply {
+                val mapIndex = indexOfMapInstruction(this)
+                val onClickIndex = indexOfFirstInstructionOrThrow(mapIndex) {
+                    val reference = getReference<MethodReference>()
 
-                onClickMethod.apply {
-                    val relativeIndex = indexOfFirstInstructionOrThrow {
-                        opcode == Opcode.INVOKE_VIRTUAL &&
-                                getReference<MethodReference>()
-                                    ?.parameterTypes
-                                    ?.contains("Ljava/util/Map;") == true
-                    }
-                    val onClickIndex = indexOfFirstInstructionOrThrow(relativeIndex) {
-                        val reference = getReference<MethodReference>()
-
-                        opcode == Opcode.INVOKE_INTERFACE &&
-                                reference?.returnType == "V" &&
-                                reference.parameterTypes.size == 1
-                    }
-                    onClickReference =
-                        getInstruction<ReferenceInstruction>(onClickIndex).reference.toString()
-
-                    disableDislikeRedirection(onClickIndex)
+                    opcode == Opcode.INVOKE_INTERFACE &&
+                            reference?.returnType == "V" &&
+                            reference.parameterTypes.size == 1
                 }
+                onClickReference =
+                    getInstruction<ReferenceInstruction>(onClickIndex).reference.toString()
+
+                disableDislikeRedirection(onClickIndex)
             }
-        }
 
         if (is_7_29_or_greater) {
-            dislikeButtonOnClickListenerAlternativeFingerprint
+            dislikeButtonOnClickListenerFingerprint
                 .methodOrThrow()
                 .disableDislikeRedirection()
         } else {
-            dislikeButtonOnClickListenerFingerprint
+            dislikeButtonOnClickListenerLegacyFingerprint
                 .methodOrThrow()
                 .disableDislikeRedirection()
         }

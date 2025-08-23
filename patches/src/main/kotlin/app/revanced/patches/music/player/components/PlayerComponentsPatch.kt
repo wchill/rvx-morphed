@@ -950,6 +950,13 @@ val playerComponentsPatch = bytecodePatch(
                 }
         }
 
+        if (is_8_05_or_greater) {
+            audioVideoSwitchToggleFeatureFlagsFingerprint.injectLiteralInstructionBooleanCall(
+                AUDIO_VIDEO_SWITCH_TOGGLE_FEATURE_FLAG,
+                "$PLAYER_CLASS_DESCRIPTOR->hideSongVideoToggle(Z)Z"
+            )
+        }
+
         addSwitchPreference(
             CategoryType.PLAYER,
             "revanced_hide_song_video_toggle",

@@ -220,6 +220,10 @@ public class PlayerPatch {
         return originalColor;
     }
 
+    public static boolean hideSongVideoToggle(boolean original) {
+        return HIDE_SONG_VIDEO_TOGGLE && original;
+    }
+
     public static void hideSongVideoToggle(View view, int originalVisibility) {
         view.setVisibility(
                 HIDE_SONG_VIDEO_TOGGLE

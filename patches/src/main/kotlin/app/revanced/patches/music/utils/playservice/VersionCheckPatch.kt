@@ -49,6 +49,12 @@ var is_8_05_or_greater = false
     private set
 var is_8_12_or_greater = false
     private set
+var is_8_15_or_greater = false
+    private set
+var is_8_28_or_greater = false
+    private set
+var is_8_29_or_greater = false
+    private set
 
 val versionCheckPatch = resourcePatch(
     description = "versionCheckPatch",
@@ -89,5 +95,8 @@ val versionCheckPatch = resourcePatch(
         is_8_03_or_greater = isGreaterThan(250399000)
         is_8_05_or_greater = isGreaterThan(250599000)
         is_8_12_or_greater = isGreaterThan(251299000)
+        is_8_15_or_greater = isGreaterThan(251530000)
+        is_8_28_or_greater = isGreaterThan(252830000)
+        is_8_29_or_greater = isGreaterThan(252930000)
     }
 }

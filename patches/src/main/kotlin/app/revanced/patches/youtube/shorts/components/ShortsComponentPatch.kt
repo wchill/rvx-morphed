@@ -77,6 +77,8 @@ import app.revanced.patches.youtube.video.videoid.videoIdPatch
 import app.revanced.util.REGISTER_TEMPLATE_REPLACEMENT
 import app.revanced.util.ResourceGroup
 import app.revanced.util.cloneMutable
+import app.revanced.util.containsLiteralInstruction
+import app.revanced.util.containsStringInstruction
 import app.revanced.util.copyResources
 import app.revanced.util.doRecursively
 import app.revanced.util.findMethodOrThrow
@@ -92,7 +94,6 @@ import app.revanced.util.indexOfFirstInstructionOrThrow
 import app.revanced.util.indexOfFirstInstructionReversedOrThrow
 import app.revanced.util.indexOfFirstLiteralInstruction
 import app.revanced.util.indexOfFirstLiteralInstructionOrThrow
-import app.revanced.util.indexOfFirstStringInstruction
 import app.revanced.util.indexOfFirstStringInstructionOrThrow
 import app.revanced.util.or
 import app.revanced.util.replaceLiteralInstructionCall
@@ -414,8 +415,8 @@ private val shortsNavigationBarPatch = bytecodePatch(
                 method.returnType == "V" &&
                         method.accessFlags == AccessFlags.PUBLIC or AccessFlags.FINAL &&
                         method.parameters == listOf("Landroid/view/View;", "Landroid/os/Bundle;") &&
-                        method.indexOfFirstStringInstruction("r_pfvc") >= 0 &&
-                        method.indexOfFirstLiteralInstruction(bottomBarContainer) >= 0
+                        method.containsStringInstruction("r_pfvc") &&
+                        method.containsLiteralInstruction(bottomBarContainer)
             }.forEach { method ->
                 proxy(classDef)
                     .mutableClass

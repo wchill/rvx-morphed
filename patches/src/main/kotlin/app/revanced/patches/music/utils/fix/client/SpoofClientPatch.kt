@@ -17,6 +17,7 @@ import app.revanced.patches.music.utils.playservice.is_7_33_or_greater
 import app.revanced.patches.music.utils.playservice.is_8_12_or_greater
 import app.revanced.patches.music.utils.resourceid.varispeedUnavailableTitle
 import app.revanced.patches.shared.CLIENT_INFO_CLASS_DESCRIPTOR
+import app.revanced.patches.shared.clientEnumFingerprint
 import app.revanced.patches.shared.clientTypeFingerprint
 import app.revanced.patches.shared.createPlayerRequestBodyFingerprint
 import app.revanced.patches.shared.createPlayerRequestBodyWithModelFingerprint
@@ -26,6 +27,7 @@ import app.revanced.patches.shared.indexOfManufacturerInstruction
 import app.revanced.patches.shared.indexOfModelInstruction
 import app.revanced.patches.shared.indexOfReleaseInstruction
 import app.revanced.util.findFieldFromToString
+import app.revanced.util.fingerprint.definingClassOrThrow
 import app.revanced.util.fingerprint.injectLiteralInstructionBooleanCall
 import app.revanced.util.fingerprint.legacyFingerprint
 import app.revanced.util.fingerprint.matchOrThrow
@@ -72,10 +74,23 @@ internal fun patchSpoofClient() {
 
     // region Get field references to be used below.
 
+    val enumClass = clientEnumFingerprint.definingClassOrThrow()
+
     clientTypeFingerprint.matchOrThrow().let {
         it.method.apply {
             val clientInfoIndex = indexOfClientInfoInstruction(this)
-            val clientIdIndex = it.patternMatch!!.endIndex
+            val ordinalIndex = indexOfFirstInstructionOrThrow {
+                val reference = getReference<FieldReference>()
+                opcode == Opcode.IGET &&
+                        reference?.type == "I" &&
+                        reference.definingClass == enumClass
+            }
+            val clientIdIndex = indexOfFirstInstructionOrThrow(ordinalIndex) {
+                val reference = getReference<FieldReference>()
+                opcode == Opcode.IPUT &&
+                        reference?.type == "I" &&
+                        reference.definingClass == CLIENT_INFO_CLASS_DESCRIPTOR
+            }
             val dummyClientVersionIndex = it.stringMatches!!.first().index
             val dummyClientVersionRegister =
                 getInstruction<OneRegisterInstruction>(dummyClientVersionIndex).registerA
