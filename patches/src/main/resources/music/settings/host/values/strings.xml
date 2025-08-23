@@ -281,6 +281,8 @@ Use dark colors if possible, as the app does not support light themes."</string>
     <string name="revanced_disable_player_gesture_summary">Disables swipe to change tracks in the player.</string>
     <string name="revanced_enable_forced_miniplayer_title">Enable forced miniplayer</string>
     <string name="revanced_enable_forced_miniplayer_summary">Enables forced miniplayer when switching to a new track.</string>
+    <string name="revanced_enable_smooth_transition_animation_title">Enable smooth transition animation</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">Enables smooth animation when miniplayer is maximized from minimized state.</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Enable swipe to dismiss miniplayer</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Enables swipe down to dismiss miniplayer.</string>
     <string name="revanced_enable_comments_scroll_top_title">Enable scroll to top in comments</string>
