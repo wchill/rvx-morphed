@@ -5,6 +5,17 @@ import app.revanced.util.fingerprint.legacyFingerprint
 import app.revanced.util.or
 import com.android.tools.smali.dexlib2.AccessFlags
 
+internal val clientContextBodyBuilderFingerprint = legacyFingerprint(
+    name = "clientContextBodyBuilderFingerprint",
+    returnType = "V",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
+    parameters = listOf("L"),
+    strings = listOf(
+        "country",
+        "\u200e\u200f\u200e\u200e",
+    )
+)
+
 internal val settingsFragmentStylePrimaryFingerprint = legacyFingerprint(
     name = "settingsFragmentStylePrimaryFingerprint",
     returnType = "V",
@@ -49,5 +60,18 @@ internal val licenseMenuActivityOnCreateFingerprint = legacyFingerprint(
     parameters = listOf("Landroid/os/Bundle;"),
     customFingerprint = { method, classDef ->
         classDef.endsWith("/LicenseMenuActivity;") && method.name == "onCreate"
+    }
+)
+
+internal val userInterfaceThemeEnumFingerprint = legacyFingerprint(
+    name = "userInterfaceThemeEnumFingerprint",
+    returnType = "V",
+    strings = listOf(
+        "USER_INTERFACE_THEME_UNKNOWN",
+        "USER_INTERFACE_THEME_LIGHT",
+        "USER_INTERFACE_THEME_DARK",
+    ),
+    customFingerprint = { method, _ ->
+        method.name == "<clinit>"
     }
 )
