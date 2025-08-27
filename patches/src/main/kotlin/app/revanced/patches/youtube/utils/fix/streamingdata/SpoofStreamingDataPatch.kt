@@ -132,7 +132,19 @@ val spoofStreamingDataPatch = bytecodePatch(
         required = true
     )
 
+    val useMobileWebClient by booleanOption(
+        key = "useMobileWebClient",
+        default = false,
+        title = "Use Mobile Web client",
+        description = "Add Mobile Web to available clients.",
+        required = true
+    )
+
     execute {
+
+        var patchStatusArray = arrayOf(
+            "SpoofStreamingData"
+        )
 
         // region Get replacement streams at player requests.
 
@@ -583,9 +595,15 @@ val spoofStreamingDataPatch = bytecodePatch(
 
         // endregion
 
-        findMethodOrThrow("$PATCHES_PATH/PatchStatus;") {
-            name == "SpoofStreamingData"
-        }.returnEarly(true)
+        if (useMobileWebClient == true) {
+            patchStatusArray += "SpoofStreamingDataMobileWeb"
+        }
+
+        patchStatusArray.forEach { methodName ->
+            findMethodOrThrow("$PATCHES_PATH/PatchStatus;") {
+                name == methodName
+            }.returnEarly(true)
+        }
 
         addPreference(
             arrayOf(

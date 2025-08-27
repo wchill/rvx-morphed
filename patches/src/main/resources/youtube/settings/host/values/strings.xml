@@ -527,7 +527,7 @@ Limitation: Back button on the toolbar may not work."</string>
     <string name="revanced_disable_auto_audio_tracks_title">Disable forced auto audio tracks</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Forced auto audio tracks are disabled.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Forced auto audio tracks are enabled.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">To use this feature, change \'Default client (Spoof streaming data)\' to TV or iOS TV.</string>
+    <string name="revanced_disable_auto_audio_tracks_not_available">To use this feature, change \'Default client (Spoof streaming data)\' to TV, TV Simply or iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Disable forced auto captions</string>
     <string name="revanced_disable_auto_captions_summary_on">Forced auto captions are disabled.</string>
     <string name="revanced_disable_auto_captions_summary_off">Forced auto captions are enabled.</string>
@@ -1137,7 +1137,7 @@ Limitation: Some highlighted search links that do not have a default text style 
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Audio track menu is shown.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Audio track menu is hidden.
 
-To show the Audio track menu, change \'Default client (Spoof streaming data)\' to TV or iOS TV."</string>
+To show the Audio track menu, change \'Default client (Spoof streaming data)\' to TV, TV Simply or iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Hide Captions menu</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Captions menu is hidden.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Captions menu is shown.</string>
@@ -2447,8 +2447,8 @@ This feature is still in development, so it may break at any time due to server-
 
 AVC has a maximum resolution of 1080p, Opus audio codec is not available, and video playback will use more internet data than VP9 or AV1."</string>
 
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
-    <string name="revanced_preference_category_js">JavaScript (WIP)</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
+    <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Use JavaScript client</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">JavaScript client added to the available clients.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">JavaScript client not added to available clients.</string>
@@ -2456,7 +2456,7 @@ AVC has a maximum resolution of 1080p, Opus audio codec is not available, and vi
 
 The n-sig pattern changes quite frequently on YouTube servers, and playback may fail if the regex fails to find the n-sig pattern.
 
-This feature is still WIP, so please use it for debugging purposes only."</string>
+Among JavaScript clients, the recommended client is TV Simply."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Use JavaScript client for all videos</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"JavaScript client is used regardless of video type.
 
