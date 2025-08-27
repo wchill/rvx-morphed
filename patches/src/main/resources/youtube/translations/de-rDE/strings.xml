@@ -1506,6 +1506,8 @@ Keine Ränder oben und unten des Spielers."</string>
 • Videowiedergabe wird mehr Internet-Daten als VP9 verwenden.
 • VP9-Codec wird immer noch für HDR-Videos verwendet."</string>
     <string name="revanced_disable_vp9_codec_summary_off">VP9-Codec ist aktiviert.</string>
+    <string name="revanced_enable_opus_codec_title">OPUS Codec aktivieren</string>
+    <string name="revanced_enable_opus_codec_summary">Aktiviere den OPUS-Codec, wenn die Antwort des Players den OPUS-Codec enthält.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Wiedergabegeschwindigkeit</string>
     <string name="revanced_default_playback_speed_title">Standard Wiedergabegeschwindigkeit</string>
@@ -1829,8 +1831,6 @@ Drücke Weiter und deaktiviere Akku-Optimierungen."</string>
     <string name="revanced_change_share_sheet_title">Freigabeblatt ändern</string>
     <string name="revanced_change_share_sheet_summary_on">System Share Sheet wird verwendet.</string>
     <string name="revanced_change_share_sheet_summary_off">App-Freigabeblatt wird verwendet.</string>
-    <string name="revanced_enable_opus_codec_title">OPUS Codec aktivieren</string>
-    <string name="revanced_enable_opus_codec_summary">Aktiviere den OPUS-Codec, wenn die Antwort des Players den OPUS-Codec enthält.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">Einstellungen importieren / exportieren</string>
@@ -1873,7 +1873,7 @@ Drücke Weiter und deaktiviere Akku-Optimierungen."</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Aktivieren Sie dies, um die Akkulaufzeit zu verbessern und Ruckeln bei der Wiedergabe zu beheben.
 
 AVC hat eine maximale Auflösung von 1080p, Opus-Audiocodec ist nicht verfügbar und die Videowiedergabe verbraucht mehr Internetdaten als VP9 oder AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Historie ansehen</string>
     <string name="revanced_preference_screen_watch_history_summary">Einstellungen im Zusammenhang mit dem Beobachtungsverlauf ändern.</string>

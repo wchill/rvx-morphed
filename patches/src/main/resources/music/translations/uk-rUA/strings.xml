@@ -258,6 +258,8 @@
     <string name="revanced_disable_player_gesture_summary">Вимикає жести перемикання треків у плеєрі.</string>
     <string name="revanced_enable_forced_miniplayer_title">Увімкнути мініплеєр на постійній основі</string>
     <string name="revanced_enable_forced_miniplayer_summary">Вмикає мініплеєр на постійній основі під час переходу на новий трек.</string>
+    <string name="revanced_enable_smooth_transition_animation_title">Включити плавну анімацію переходу</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">Вмикає плавну анімацію при розгортанні мініплеєра зі згорнутого стану.</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Увімкнути жест закриття мініплеєру</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Вмикає жест вниз для закриття мініплеєру.</string>
     <string name="revanced_enable_comments_scroll_top_title">Включити прокрутку до початку коментарів</string>
@@ -280,6 +282,8 @@
     <string name="revanced_hide_comment_timestamp_and_emoji_buttons_summary">Приховує кнопки емодзі та мітки часу під час введення коментарів.</string>
     <string name="revanced_hide_fullscreen_share_button_title">Приховати \"Поділитися\" повноекранного режиму</string>
     <string name="revanced_hide_fullscreen_share_button_summary">Приховує кнопку \"Поділитися\" в повноекранному плеєрі.</string>
+    <string name="revanced_hide_lyrics_share_button_title">Приховати кнопку \"Поділитися\"</string>
+    <string name="revanced_hide_lyrics_share_button_summary">Приховує кнопку \"Поділитися\" у текстах.</string>
     <string name="revanced_hide_song_video_toggle_title">Приховати перемикач \"пісня | відео\"</string>
     <string name="revanced_hide_song_video_toggle_summary">Приховує перемикач \"пісня | відео\" у плеєрі.</string>
     <string name="revanced_remember_repeat_state_title">Запам\'ятовувати стан повтору</string>
@@ -309,6 +313,12 @@
     <string name="revanced_preference_screen_video_title">Відео</string>
     <string name="revanced_custom_playback_speeds_title">Редагувати користувацькі швидкості відтворення</string>
     <string name="revanced_custom_playback_speeds_summary">Налаштувати доступні швидкості відтворення.</string>
+    <string name="revanced_enable_opus_codec_title">Увімкнути кодек OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">"Вмикає кодек OPUS, якщо відповідь від сервера містить його.
+
+Інформація:
+• Останні YouTube Music клієнти за умовчанням використовують аудіокодек OPUS.
+• Це буде корисно лише для користувачів, які користуються дуже старими клієнтами."</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Запам\'ятовувати зміни швидкості відтворення</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Запам\'ятовує останню вибрану швидкість відтворення.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Показувати тост</string>
@@ -461,34 +471,31 @@
     <string name="revanced_debug_protobuffer_summary">Включає протобуфер в журналу налагодження.</string>
     <string name="revanced_debug_spannable_title">Охоплення журналу</string>
     <string name="revanced_debug_spannable_summary">Включає охоплення журналу налагодження.</string>
-    <string name="revanced_enable_opus_codec_title">Увімкнути кодек OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">"Вмикає кодек OPUS, якщо відповідь від сервера містить його.
-
-Інформація:
-• Останні YouTube Music клієнти за умовчанням використовують аудіокодек OPUS.
-• Це буде корисно лише для користувачів, які користуються дуже старими клієнтами."</string>
     <string name="revanced_sanitize_sharing_links_title">Обробляти поширення посилань</string>
     <string name="revanced_sanitize_sharing_links_summary">Видаляє параметри запиту відстеження з посилання перед тим, як поділитися ним.</string>
     <string name="revanced_spoof_client_title">Підмінити клієнт</string>
-    <string name="revanced_spoof_client_summary">"Підміняє клієнт для запобігання проблем з відновленням.
+    <string name="revanced_spoof_client_summary">Підміняє клієнт для запобігання проблем з відновленням.
 
 Побічний ефект:
 • Кнопки дій можуть бути завжди приховані в YouTube Music 7.17+.
 • Спливаюче меню плеєра може не відображатися належним чином.
-• Ці побічні ефекти можна вирішити, очистивши дані програми та знову ввійшовши в систему."</string>
+• Ці побічні ефекти можна вирішити, очистивши дані програми та знову ввійшовши в систему.</string>
     <string name="revanced_spoof_client_type_title">Клієнт за замовчуванням</string>
-    <string name="revanced_spoof_client_type_summary">Визначає клієнт за замовчуванням для підробки.</string>
+    <string name="revanced_spoof_client_type_summary">"Визначає клієнт за замовчуванням для підробки."</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_6_21_block_requst">iOS Music 6.21 (Блокування запитів)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_7_04_block_requst">iOS Music 7.04 (Блокування запитів)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_12_block_requst">iOS Music 8.12 (Блокування запитів)</string>
     <string name="revanced_spoof_video_streams_title">Підробка відеопотоків</string>
-    <string name="revanced_spoof_video_streams_summary">"Підробка клієнтськіх відеопотоків, щоб запобігти проблем з відтворенням.
+    <string name="revanced_spoof_video_streams_summary">Підробка клієнтськіх відеопотоків, щоб запобігти проблем з відтворенням.
 
 Побічний ефект:
 • Програма може закриватися при використанні VPN або DNS.
-• Звук може періодично перериватись під час відтворення на клієнтах потокової передачі з адаптивним бітрейтом (всі клієнти, крім Android VR 1.43.32)."</string>
+• Звук може періодично перериватись під час відтворення на клієнтах потокової передачі з адаптивним бітрейтом (всі клієнти, крім Android VR 1.43.32).</string>
     <string name="revanced_spoof_video_streams_default_client_title">Клієнт за замовчуванням</string>
-    <string name="revanced_spoof_video_streams_default_client_summary">Визначає клієнт за замовчуванням для підробки.</string>
+    <string name="revanced_spoof_video_streams_default_client_summary">"Визначає клієнт за замовчуванням для підробки."</string>
     <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32">Android VR 1.43.32</string>
     <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09">Android VR 1.65.09</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
@@ -519,4 +526,8 @@
 
 Натисніть кнопку \"Продовжити\" та вимкніть оптимізацію."</string>
     <string name="gms_core_dialog_continue_text">Продовжити</string>
+    <string name="revanced_app_info_title">Про застосунок</string>
+    <string name="revanced_app_info_summary">Натисніть , щоб перевірити назву, версію, патч і коли пропатчено.</string>
+    <string name="revanced_app_info_dialog_title">Інформація про застосунок</string>
+    <string name="revanced_app_info_dialog_message">&lt;b&gt;Назва&lt;/b&gt;&lt;br&gt;&lt;small&gt;%1$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Версія&lt;/b&gt;&lt;br&gt;&lt;small&gt;%2$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;ReVanced Патчі&lt;/b&gt;&lt;br&gt;&lt;small&gt;%3$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Пропатчено&lt;/b&gt;&lt;br&gt;&lt;small&gt;%4$s&lt;/small&gt;</string>
 </resources>

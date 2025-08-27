@@ -1268,6 +1268,8 @@
 • Възпроизвеждането на видео ще използва повече интернет данни от VP9.
 • За да получите възпроизвеждане на HDR, HDR видеото все още използва кодека VP9."</string>
     <string name="revanced_disable_vp9_codec_summary_off">VP9 кодек е включен.</string>
+    <string name="revanced_enable_opus_codec_title">Активирайте кодека OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">Активирайте кодека OPUS, ако съдържанието в плейъра е подходящо за кодека.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_default_playback_speed_title">Скорост на възпроизвеждане по подразбиране</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Запомнете промените в скоростта на възпроизвеждане</string>
@@ -1557,8 +1559,6 @@
     <string name="revanced_change_share_sheet_title">Списък със приложения за споделяне</string>
     <string name="revanced_change_share_sheet_summary_on">Използва се от системният лист за споделяне.</string>
     <string name="revanced_change_share_sheet_summary_off">Списък с приложения за спделяне – вграден.</string>
-    <string name="revanced_enable_opus_codec_title">Активирайте кодека OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Активирайте кодека OPUS, ако съдържанието в плейъра е подходящо за кодека.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">Импортиране / Експортиране на настройките</string>
@@ -1600,7 +1600,7 @@
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Активирането на това може да подобри живота на батерията и да поправи заекването на възпроизвеждането.
 
 AVC има максимална разделителна способност от 1080p, аудио кодекът Opus не е наличен, а видеовъзпроизвеждането ще използва повече интернет данни от VP9 или AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">История на гледане</string>
     <string name="revanced_preference_screen_watch_history_summary">Променя настройките, за хронологията на гледане.</string>

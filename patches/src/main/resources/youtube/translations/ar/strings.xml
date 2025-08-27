@@ -454,7 +454,7 @@
     <string name="revanced_hide_video_by_view_counts_about_summary">"الصفحة الرئيسية / الاشتراكات / تتم تصفية نتائج البحث لإخفاء الفيديوهات التي حصلت على عدد مشاهدات أقل أو أكبر من عدد محدد.
 
 القيود: 
-• لا يمكن إخفاء فيديوهات Shorts.
+• لا يمكن إخفاء فيديوهات البث المباشر او Shorts.
 • لا تتم تصفية الفيديوهات التي حصلت على 0 مشاهدة."</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">عام</string>
@@ -1763,6 +1763,8 @@
 • سيستهلك تشغيل الفيديو بيانات إنترنت أكثر من VP9.
 • لا يزال برنامج ترميز VP9 مستخدمًا لفيديو HDR."</string>
     <string name="revanced_disable_vp9_codec_summary_off">تم تمكين ترميز VP9.</string>
+    <string name="revanced_enable_opus_codec_title">تمكين ترميز OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">يقوم بتمكين ترميز OPUS إذا كانت استجابة المشغل تتضمن برنامج ترميز OPUS.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">سرعة التشغيل</string>
     <string name="revanced_default_playback_speed_title">سرعة التشغيل الافتراضية</string>
@@ -2113,8 +2115,6 @@
     <string name="revanced_change_share_sheet_title">تغيير لوح مشاركة</string>
     <string name="revanced_change_share_sheet_summary_on">يتم استخدام لوح مشاركة النظام.</string>
     <string name="revanced_change_share_sheet_summary_off">يتم استخدام لوح مشاركة داخل التطبيق.</string>
-    <string name="revanced_enable_opus_codec_title">تمكين ترميز OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">يقوم بتمكين ترميز OPUS إذا كانت استجابة المشغل تتضمن برنامج ترميز OPUS.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">تسجيل الأخطاء</string>
     <string name="revanced_preference_screen_debugging_summary">تمكين أو تعطيل خيارات تصحيح الأخطاء.</string>
@@ -2183,7 +2183,6 @@
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web <small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV <small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV Embedded <small>(WIP)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV Simply <small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">التأثيرات الجانبية للتزييف</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• قائمة المقطع الصوتي مفقودة.
 • مستوى الصوت الثابت غير متاح.
@@ -2273,7 +2272,7 @@
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"قد يؤدي تمكين هذا إلى تحسين عمر البطارية وإصلاح تقطيع التشغيل.
 
 AVC لديه حد أقصى للدقة 1080p، لا يتوفر ترميز الصوت Opus، وسوف يستخدم تشغيل الفيديو بيانات إنترنت أكثر من VP9 أو AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (WIP)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">استخدام عميل JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">تم إضافة عميل JavaScript إلى العملاء المتاحين.</string>

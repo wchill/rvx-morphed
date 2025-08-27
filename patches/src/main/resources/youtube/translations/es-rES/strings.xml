@@ -553,16 +553,16 @@ Los cambios incluyen:
     <string name="revanced_disable_translucent_status_bar_summary_on">La barra de estado es opaca.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">La barra de estado es opaca o translúcida.</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">Para algunas ROM de fabricantes que ejecutan Android 12+, activar esta función puede hacer que la barra de navegación del sistema sea transparente.</string>
-    <string name="revanced_fix_hype_button_icon_title">Corregir icono del botón Hype</string>
-    <string name="revanced_fix_hype_button_icon_summary_on">El icono del botón Hype está visible.</string>
-    <string name="revanced_fix_hype_button_icon_summary_off">El icono del botón Hype está oculto.</string>
-    <string name="revanced_fix_hype_button_icon_user_dialog_message">"En YouTube 19.25.39 o versiones anteriores, el icono de Hype está oculto en la barra de acción del vídeo y en el panel de descripción del vídeo.
+    <string name="revanced_fix_hype_button_icon_title">Corregir icono del botón Hypear</string>
+    <string name="revanced_fix_hype_button_icon_summary_on">El icono del botón Hypear está visible.</string>
+    <string name="revanced_fix_hype_button_icon_summary_off">El icono del botón Hypear está oculto.</string>
+    <string name="revanced_fix_hype_button_icon_user_dialog_message">"En YouTube 19.25.39 o versiones anteriores, el icono de Hypear está oculto en la barra de acción del vídeo y en el panel de descripción del vídeo.
 
 Como solución alternativa, la versión de la aplicación se falsifica a 19.26.42 en los endpoint «/get_watch» y «/next».
 
-Si desactivas este ajuste, es posible que el icono de Hype no se muestre en la barra de acciones del vídeo ni en el panel de descripción del vídeo.
+Si desactivas este ajuste, es posible que el icono de Hypear no se muestre en la barra de acciones del vídeo ni en el panel de descripción del vídeo.
 
-※ Incluso si este ajuste está desactivado, es posible que el botón Hype no esté oculto."</string>
+※ Incluso si este ajuste está desactivado, es posible que el botón Hypear no esté oculto."</string>
     <string name="revanced_spoof_app_version_title">Falsificar versión de la app</string>
     <string name="revanced_spoof_app_version_summary_on">Versión falsificada</string>
     <string name="revanced_spoof_app_version_summary_off">Versión no falsificada</string>
@@ -932,8 +932,8 @@ Si el diseño de la pantalla del reproductor cambia debido a cambios en el servi
     <string name="revanced_hide_download_button_summary_on">El botón de descargar está oculto.</string>
     <string name="revanced_hide_download_button_summary_off">El botón de descargar está visible.</string>
     <string name="revanced_hide_hype_button_title">Ocultar botón Hype</string>
-    <string name="revanced_hide_hype_button_summary_on">El botón Hype está oculto.</string>
-    <string name="revanced_hide_hype_button_summary_off">El botón Hype está visible.</string>
+    <string name="revanced_hide_hype_button_summary_on">El botón Hypear está oculto.</string>
+    <string name="revanced_hide_hype_button_summary_off">El botón Hypear está visible.</string>
     <string name="revanced_hide_like_dislike_button_title">Ocultar botones de me gusta y no me gusta</string>
     <string name="revanced_hide_like_dislike_button_summary_on">Los botones de me gusta y no me gusta están ocultos.</string>
     <string name="revanced_hide_like_dislike_button_summary_off">Los botones de me gusta y no me gusta están visibles.</string>
@@ -1767,6 +1767,8 @@ Ajusta el volumen deslizando verticalmente en el lado derecho de la pantalla."</
 • La reproducción de vídeo utilizará más datos de Internet que VP9.
 • Para obtener reproducción HDR, el vídeo HDR sigue utilizando el códec VP9."</string>
     <string name="revanced_disable_vp9_codec_summary_off">El códec VP9 está activado.</string>
+    <string name="revanced_enable_opus_codec_title">Activar códec OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">Activa el códec OPUS si la respuesta del reproductor incluye el códec OPUS.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Velocidad de reproducción</string>
     <string name="revanced_default_playback_speed_title">Velocidad predeterminada de reproducción</string>
@@ -2115,8 +2117,6 @@ Pulsa el botón de continuar y desactiva las optimizaciones de la batería."</st
     <string name="revanced_change_share_sheet_title">Cambiar hoja de compartir</string>
     <string name="revanced_change_share_sheet_summary_on">Se utiliza la hoja de compartir del sistema.</string>
     <string name="revanced_change_share_sheet_summary_off">Se utiliza la hoja de compartir incorporada.</string>
-    <string name="revanced_enable_opus_codec_title">Activar códec OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Activa el códec OPUS si la respuesta del reproductor incluye el códec OPUS.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Depuración</string>
     <string name="revanced_preference_screen_debugging_summary">Activar o desactivar las opciones de depuración.</string>
@@ -2185,8 +2185,6 @@ Pulsa el botón de continuar y desactiva las optimizaciones de la batería."</st
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(todavía en desarrollo)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV integrado
-<small>(todavía en desarrollo)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV simple
 <small>(todavía en desarrollo)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Efectos secundarios de falsificación</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Falta el menú de la pista de audio.
@@ -2278,7 +2276,7 @@ Esta función todavía está en desarrollo, por lo que puede fallar en cualquier
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Activar este ajuste podría mejorar la duración de la batería y solucionar el problema de la reproducción entrecortada.
 
 AVC tiene una resolución máxima de 1080p, el códec de audio Opus no está disponible y la reproducción de vídeo utilizará más datos de Internet que VP9 o AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (todavía en desarrollo)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Usar cliente JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">El cliente JavaScript se ha añadido a los clientes disponibles.</string>

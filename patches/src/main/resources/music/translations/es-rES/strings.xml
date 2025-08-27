@@ -298,6 +298,8 @@ Algunas características pueden no funcionar correctamente en la disposición de
     <string name="revanced_preference_screen_video_title">Video</string>
     <string name="revanced_custom_playback_speeds_title">Editar velocidades de reproducción personalizadas</string>
     <string name="revanced_custom_playback_speeds_summary">Agregar o cambiar las velocidades de reproducción disponibles.</string>
+    <string name="revanced_enable_opus_codec_title">Activar códec opus</string>
+    <string name="revanced_enable_opus_codec_summary">"Activa el códec Opus 250/251 al reproducir audio."</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Recordar cambios de velocidad de reproducción</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Recuerda la última velocidad de reproducción seleccionada.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Mostrar un mensaje</string>
@@ -448,13 +450,11 @@ Limitantes: Vídeos para niños puede que no se redirijan."</string>
     <string name="revanced_debug_protobuffer_summary">Incluye el búfer proto en el registro de depuración.</string>
     <string name="revanced_debug_spannable_title">Spannable en registro</string>
     <string name="revanced_debug_spannable_summary">Incluye spannable dentro del registro de depuración.</string>
-    <string name="revanced_enable_opus_codec_title">Activar códec opus</string>
-    <string name="revanced_enable_opus_codec_summary">"Activa el códec Opus 250/251 al reproducir audio."</string>
     <string name="revanced_sanitize_sharing_links_title">Desinfectar enlaces compartidos</string>
     <string name="revanced_sanitize_sharing_links_summary">Elimina los parámetros de consulta de seguimiento de las URL al compartir enlaces.</string>
     <string name="revanced_spoof_client_title">Falsificar cliente</string>
     <string name="revanced_spoof_client_type_title">Cliente por defecto</string>
-    <string name="revanced_spoof_client_type_summary">Define un cliente de por defecto para el falsificado.</string>
+    <string name="revanced_spoof_client_type_summary">"Define un cliente de por defecto para el falsificado."</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_watch_history_type_title">Tipo de vista del historial</string>

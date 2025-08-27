@@ -268,6 +268,12 @@ Előfordulhat, hogy egyes funkciók nem működnek megfelelően a régi lejátsz
     <string name="revanced_preference_screen_video_title">Videó</string>
     <string name="revanced_custom_playback_speeds_title">Egyéni lejátszási sebességek szerkesztése</string>
     <string name="revanced_custom_playback_speeds_summary">Az elérhető lejátszási sebességek módosítása vagy hozzáadása.</string>
+    <string name="revanced_enable_opus_codec_title">Opus codec engedélyezése</string>
+    <string name="revanced_enable_opus_codec_summary">"Engedélyezi az OPUS codec-et, ha a lejátszó válasza tartalmazza azt.
+
+Információk:
+• A legújabb YouTube Music kliensek alapértelmezés szerint az OPUS audio codec-et használják.
+• Ez csak a nagyon régi kliensekre hamisító felhasználókra érvényes."</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Lejátszási sebesség módosításainak megjegyzése</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Megjegyzi az utoljára kiválasztott lejátszási sebességet.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Mutass egy felugró értesítést</string>
@@ -405,17 +411,11 @@ Kattintson ide az API-kulcs kiadásának megtekintéséhez."</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_redirect">Átirányítás</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_on_click">Koppints a Hang / Videó kapcsolójára</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_on_long_click">Koppints és tartsd lenyomva az Hang / Videó kapcsolót</string>
-    <string name="revanced_enable_opus_codec_title">Opus codec engedélyezése</string>
-    <string name="revanced_enable_opus_codec_summary">"Engedélyezi az OPUS codec-et, ha a lejátszó válasza tartalmazza azt.
-
-Információk:
-• A legújabb YouTube Music kliensek alapértelmezés szerint az OPUS audio codec-et használják.
-• Ez csak a nagyon régi kliensekre hamisító felhasználókra érvényes."</string>
     <string name="revanced_sanitize_sharing_links_title">Megosztási linkek tisztítása</string>
     <string name="revanced_sanitize_sharing_links_summary">A megosztási linkeket a nyomkövető lekérdezési paraméterek eltávolításával tisztítja.</string>
     <string name="revanced_spoof_client_title">Kliens hamisítása</string>
     <string name="revanced_spoof_client_type_title">Alapértelmezett kliens</string>
-    <string name="revanced_spoof_client_type_summary">Meghatároz egy alapértelmezett klients a hamisításhoz.</string>
+    <string name="revanced_spoof_client_type_summary">"Meghatároz egy alapértelmezett klients a hamisításhoz."</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_watch_history_type_title">Megtekintési előzmények típusa</string>

@@ -569,7 +569,7 @@ DeArrow について詳しく知るには、ここをタップしてください
 
 この設定をオフにすると、動画アクションバーと概要欄パネルに [ハイプ] アイコンが表示されない可能性があります。
 
-注意: 本設定をオフにしても [ハイプ] ボタンが非表示にならない可能性があります。"</string>
+注意: この設定をオフにしても [ハイプ] ボタンが非表示にならない可能性があります。"</string>
     <string name="revanced_spoof_app_version_title">アプリのバージョンを偽装</string>
     <string name="revanced_spoof_app_version_summary_on">アプリのバージョンを偽装できます。</string>
     <string name="revanced_spoof_app_version_summary_off">アプリのバージョンを偽装できます。</string>
@@ -1777,6 +1777,8 @@ DeArrow について詳しく知るには、ここをタップしてください
 ・動画を再生する際には VP9 コーデックよりも多くの通信量を消費します。
 ・HDR 動画では引き続き VP9 コーデックが使用されます。"</string>
     <string name="revanced_disable_vp9_codec_summary_off">VP9 コーデックを無効にします。\n\n注意: \n・最大解像度は 1080p です。\n・動画を再生する際には VP9 コーデックよりも多くの通信量を消費します。\n・HDR 動画では引き続き VP9 コーデックが使用されます。</string>
+    <string name="revanced_enable_opus_codec_title">OPUS コーデックを有効化</string>
+    <string name="revanced_enable_opus_codec_summary">プレーヤーの応答に OPUS コーデックが含まれている場合、OPUS コーデックを有効にします。</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">再生速度</string>
     <string name="revanced_default_playback_speed_title">デフォルトの再生速度 (通常の動画)</string>
@@ -2126,8 +2128,6 @@ GmsCore の電池の最適化を無効にしても、バッテリーの使用に
     <string name="revanced_change_share_sheet_title">[共有] メニューを変更</string>
     <string name="revanced_change_share_sheet_summary_on">[共有] ボタンをタップした際に表示される共有メニューを、システムの共有メニューに置き換えます。</string>
     <string name="revanced_change_share_sheet_summary_off">[共有] ボタンをタップした際に表示される共有メニューを、システムの共有メニューに置き換えます。</string>
-    <string name="revanced_enable_opus_codec_title">OPUS コーデックを有効化</string>
-    <string name="revanced_enable_opus_codec_summary">プレーヤーの応答に OPUS コーデックが含まれている場合、OPUS コーデックを有効にします。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">デバッグ</string>
     <string name="revanced_preference_screen_debugging_summary">デバッグオプションを有効または無効にします。</string>
@@ -2198,8 +2198,6 @@ YouTube Premium に加入している場合や「GmsCore support」パッチを�
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(開発途中)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV Embedded
-<small>(開発途中)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV Simply
 <small>(開発途中)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">このクライアントを使用する場合に生じる副作用</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"・[音声トラック] メニューは表示されません。
@@ -2293,7 +2291,7 @@ VP9 は AVC よりも高度なコーデックですが、利用者によって�
 ・AVC (H.264) の最大解像度は 1080p です。
 ・Opus オーディオコーデックは利用できません。
 ・動画の再生時には VP9 や AV1 よりも多くの通信量を消費します。"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (開発途中)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">JavaScript クライアントを使用</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">偽装するクライアントの一覧に「JavaScript」を追加します。</string>

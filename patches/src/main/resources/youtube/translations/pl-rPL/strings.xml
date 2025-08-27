@@ -1781,6 +1781,8 @@ Dostosuj głośność, przesuwając pionowo po prawej stronie ekranu."</string>
 • Odtwarzanie filmów wykorzystuje więcej danych internetowych niż VP9
 • Kodek VP9 jest używany do filmów z HDR"</string>
     <string name="revanced_disable_vp9_codec_summary_off">Włączone</string>
+    <string name="revanced_enable_opus_codec_title">Włącz kodek OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">Włącza kodek OPUS, jeśli odpowiedź odtwarzacza zawiera ten kodek.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Prędkość odtwarzania</string>
     <string name="revanced_default_playback_speed_title">Domyślna prędkość odtwarzania</string>
@@ -2130,8 +2132,6 @@ Stuknij przycisk kontynuacji i zezwól na zmiany w optymalizacji."</string>
     <string name="revanced_change_share_sheet_title">Wygląd panelu udostępniania</string>
     <string name="revanced_change_share_sheet_summary_on">Systemowy</string>
     <string name="revanced_change_share_sheet_summary_off">Aplikacji</string>
-    <string name="revanced_enable_opus_codec_title">Włącz kodek OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Włącza kodek OPUS, jeśli odpowiedź odtwarzacza zawiera ten kodek.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Debugowanie</string>
     <string name="revanced_preference_screen_debugging_summary">Włącz lub wyłącz opcje debugowania</string>
@@ -2202,8 +2202,6 @@ Jeśli jesteś użytkownikiem YouTube Premium lub odznaczono przy łataniu 'GmsC
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(W fazie rozwoju)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Wbudowany TV
-<small>(W fazie rozwoju)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"Uproszczony TV
 <small>(W fazie rozwoju)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Efekty uboczne oszukiwania</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• brakuje menu od ścieżki dźwiękowej
@@ -2294,7 +2292,7 @@ Funkcja jest nadal w fazie rozwoju, więc może przerwać się jej działanie w 
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Włączenie tego może poprawić czas pracy baterii i naprawić zacinanie się odtwarzacza.
 
 AVC obsługuje maksymalnie rozdzielczość 1080p, kodek audio OPUS nie jest dostępny, a odtwarzanie wideo będzie zużywać więcej danych internetowych niż VP9 lub AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (w fazie rozwoju)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Włącz klienta JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">Tak</string>

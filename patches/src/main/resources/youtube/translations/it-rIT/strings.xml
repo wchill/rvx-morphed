@@ -507,9 +507,9 @@ Nota: il pulsante Indietro della barra degli strumenti potrebbe non funzionare."
     <string name="revanced_disable_auto_captions_title">Disattiva i sottotitoli automatici forzati</string>
     <string name="revanced_disable_auto_captions_summary_on">I sottotitoli automatici forzati sono disattivati.</string>
     <string name="revanced_disable_auto_captions_summary_off">I sottotitoli automatici forzati sono attivati.</string>
-    <string name="revanced_disable_signin_to_tv_popup_title">Disattiva il pannello a comparsa Accedi alla TV</string>
-    <string name="revanced_disable_signin_to_tv_popup_summary_on">Il pannello a comparsa Accedi alla TV è disattivato.</string>
-    <string name="revanced_disable_signin_to_tv_popup_summary_off">Il pannello a comparsa Accedi alla TV è attivato.</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">Disattiva il pannello a comparsa Accedi sulla TV</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">Il pannello a comparsa Accedi sulla TV è disattivato.</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">Il pannello a comparsa Accedi sulla TV è attivato.</string>
     <string name="revanced_disable_splash_animation_title">Disattiva l\'animazione di avvio</string>
     <string name="revanced_disable_splash_animation_summary_on">L\'animazione di avvio è disattivata.</string>
     <string name="revanced_disable_splash_animation_summary_off">L\'animazione di avvio è attivata.</string>
@@ -1778,6 +1778,8 @@ Note:
 • La riproduzione userà più dati internet di VP9.
 • VP9 è comunque usato per la riproduzione HDR."</string>
     <string name="revanced_disable_vp9_codec_summary_off">Il codec VP9 è attivato.</string>
+    <string name="revanced_enable_opus_codec_title">Attiva il codec audio Opus</string>
+    <string name="revanced_enable_opus_codec_summary">Attiva il codec audio Opus se la risposta del riproduttore lo include.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Velocità di riproduzione</string>
     <string name="revanced_default_playback_speed_title">Velocità di riproduzione predefinita dei video</string>
@@ -2125,8 +2127,6 @@ Tocca il pulsante Continua e consenti le modifiche di ottimizzazione."</string>
     <string name="revanced_change_share_sheet_title">Cambia la schermata di condivisione</string>
     <string name="revanced_change_share_sheet_summary_on">Sistema</string>
     <string name="revanced_change_share_sheet_summary_off">Nativo</string>
-    <string name="revanced_enable_opus_codec_title">Attiva il codec audio Opus</string>
-    <string name="revanced_enable_opus_codec_summary">Attiva il codec audio Opus se la risposta del riproduttore lo include.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Debug</string>
     <string name="revanced_preference_screen_debugging_summary">Attiva o disattiva le impostazioni di debug.</string>
@@ -2197,8 +2197,6 @@ Nota: se sei un utente YouTube Premium o hai escluso la patch \"GmsCore support\
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(In fase di sviluppo)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV Embedded
-<small>(In fase di sviluppo)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV Simply
 <small>(In fase di sviluppo)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Effetti collaterali del camuffamento</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Il menù Traccia Audio è nascosto.
@@ -2280,7 +2278,7 @@ Questa impostazione è ancora in fase di sviluppo, quindi potrebbe non funzionar
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"L'attivazione di questa impostazione potrebbe migliorare la durata della batteria e risolvere il problema della riproduzione a scatti.
 
 Nota: AVC ha una risoluzione massima di 1080p, il codec Opus non è disponibile e la riproduzione userà più dati internet rispetto a VP9 o AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (In fase di sviluppo)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Mostra il client JavaScript tra i client disponibili</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">Il client JavaScript è visibile tra i client disponibili.</string>

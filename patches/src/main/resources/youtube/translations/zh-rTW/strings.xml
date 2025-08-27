@@ -1773,6 +1773,8 @@
 • 影片播放將使用比 VP9 更多的網路數據。
 • 若要獲得 HDR 播放，HDR 影片仍會使用 VP9 編解碼器。"</string>
     <string name="revanced_disable_vp9_codec_summary_off">VP9 編解碼器已啟用。</string>
+    <string name="revanced_enable_opus_codec_title">啟用 OPUS 編解碼器</string>
+    <string name="revanced_enable_opus_codec_summary">如果播放器回應包含 OPUS 編解碼器，則啟用 OPUS 編解碼器。</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">播放速度</string>
     <string name="revanced_default_playback_speed_title">預設播放速度</string>
@@ -2126,8 +2128,6 @@
     <string name="revanced_change_share_sheet_title">更改分享擴展</string>
     <string name="revanced_change_share_sheet_summary_on">使用系統分享擴展。</string>
     <string name="revanced_change_share_sheet_summary_off">使用應用程式內分享擴展。</string>
-    <string name="revanced_enable_opus_codec_title">啟用 OPUS 編解碼器</string>
-    <string name="revanced_enable_opus_codec_summary">如果播放器回應包含 OPUS 編解碼器，則啟用 OPUS 編解碼器。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">偵錯</string>
     <string name="revanced_preference_screen_debugging_summary">啟用或停用偵錯選項。</string>
@@ -2196,8 +2196,6 @@
     <string name="revanced_spoof_streaming_data_client_entry_tv">"電視
 <small>(開發中)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"電視內嵌功能
-<small>(開發中)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"電視簡易功能
 <small>(開發中)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">偽裝副作用</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• 音軌選單遺失。
@@ -2288,7 +2286,7 @@
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"啟用此功能可能會延長電池壽命並修復播放卡頓問題。
 
 AVC 的最大解析度為 1080p，Opus 音訊編解碼器不可用，影片播放將使用比 VP9 或 AV1 更多的網路資料。"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript(開發中)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">使用 JavaScript 用戶端</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">JavaScript 用戶端已新增至可用用戶端。</string>

@@ -1783,6 +1783,8 @@
 • Відтворення відео використовуватиме більше інтернет даних ніж VP9.
 • Кодек VP9 все ще використовується для HDR відео."</string>
     <string name="revanced_disable_vp9_codec_summary_off">Кодек VP9 увімкнено.</string>
+    <string name="revanced_enable_opus_codec_title">Увімкнути кодек OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">Вмикає кодек OPUS, якщо відповідь плеєра включає його.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Швидкість відтворення</string>
     <string name="revanced_default_playback_speed_title">Типова швидкість відтворення</string>
@@ -2128,8 +2130,6 @@
     <string name="revanced_change_share_sheet_title">Змінити діалог Поділитися</string>
     <string name="revanced_change_share_sheet_summary_on">Використовується системний діалог поширення.</string>
     <string name="revanced_change_share_sheet_summary_off">Використовується діалог Поділитися додатка.</string>
-    <string name="revanced_enable_opus_codec_title">Увімкнути кодек OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Вмикає кодек OPUS, якщо відповідь плеєра включає його.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Налагодження</string>
     <string name="revanced_preference_screen_debugging_summary">Увімкнути чи вимкнути опції налагодження.</string>
@@ -2200,8 +2200,6 @@
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(ще в розробці)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Вбудований TV
-<small>(ще в розробці)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"Простий TV
 <small>(ще в розробці)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Побічні ефекти імітування</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Меню звукової доріжки відсутнє.
@@ -2292,7 +2290,7 @@
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Увімкнення може зменшити споживання акумулятора та виправити затинання відтворення.
 
 AVC має максимальну роздільну здатність 1080p, аудіокодек Opus недоступний, а відтворення відео використовуватиме більше інтернет-даних, ніж кодек VP9 чи AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (ще в розробці)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Використовувати клієнт JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">Клієнт JavaScript доданий до доступних клієнтів.</string>

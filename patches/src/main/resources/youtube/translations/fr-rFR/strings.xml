@@ -1624,6 +1624,8 @@ Ajustez le volume en balayant verticalement sur le côté droit de l'écran."</s
 • La lecture vidéo utilisera plus de données internet que le VP9.
 • Le codec VP9 est également utilisé pour les vidéos HDR."</string>
     <string name="revanced_disable_vp9_codec_summary_off">Le codec VP9 est activé.</string>
+    <string name="revanced_enable_opus_codec_title">Activer le Codec OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">Active le codec OPUS si la réponse du lecteur inclut le codec OPUS.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Vitesse de lecture</string>
     <string name="revanced_default_playback_speed_title">Vitesse de lecture par défaut</string>
@@ -1974,8 +1976,6 @@ Cliquez sur le bouton Continuer et autorisez les modifications d'optimisations."
     <string name="revanced_change_share_sheet_title">Modifier l\'onglet \'Partager avec\'</string>
     <string name="revanced_change_share_sheet_summary_on">L\'onglet \'Partager avec\' du système est utilisée.</string>
     <string name="revanced_change_share_sheet_summary_off">L\'onglet \'Partager avec\' de l\'application est utilisée.</string>
-    <string name="revanced_enable_opus_codec_title">Activer le Codec OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Active le codec OPUS si la réponse du lecteur inclut le codec OPUS.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Debogage</string>
     <string name="revanced_preference_screen_debugging_summary">Activer ou désactiver les options de débogage.</string>
@@ -2045,7 +2045,7 @@ Cliquez sur le bouton Continuer et autorisez les modifications d'optimisations."
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Activer ceci peut améliorer la durée de vie de la batterie et résoudre les problèmes de lecture saccadée.
 
 AVC a une résolution maximale de 1080p, le codec audio Opus n'est pas disponible et la lecture vidéo utilisera plus de données internet que VP9 ou AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Historique de visionnage</string>
     <string name="revanced_preference_screen_watch_history_summary">Modifie les paramètres liés à l\'historique de visionnage.</string>

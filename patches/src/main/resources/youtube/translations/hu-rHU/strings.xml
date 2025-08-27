@@ -1774,6 +1774,8 @@ Megjegyzés: Ezzel a képernyőterület méretét is megváltoztatja, ahol érz�
 • A videolejátszás több internetes adatot használ, mint a VP9.
 • A HDR lejátszáshoz a HDR videó továbbra is a VP9 kodeket használja."</string>
     <string name="revanced_disable_vp9_codec_summary_off">VP9 kodek engedélyezve van.</string>
+    <string name="revanced_enable_opus_codec_title">OPUS kodek engedélyezése</string>
+    <string name="revanced_enable_opus_codec_summary">Engedélyezi az OPUS kodeket, ha a lejátszó válasza tartalmazza az OPUS kodeket.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Lejátszási sebesség</string>
     <string name="revanced_default_playback_speed_title">Alapértelmezett lejátszási sebesség</string>
@@ -2123,8 +2125,6 @@ Kattintson a folytatás gombra és kapcsolja ki az akkumulátor optimalizáláso
     <string name="revanced_change_share_sheet_title">Megosztási lap módosítása</string>
     <string name="revanced_change_share_sheet_summary_on">A rendszer megosztási lap van használatban.</string>
     <string name="revanced_change_share_sheet_summary_off">Az app-on belüli megosztási lap van használatban.</string>
-    <string name="revanced_enable_opus_codec_title">OPUS kodek engedélyezése</string>
-    <string name="revanced_enable_opus_codec_summary">Engedélyezi az OPUS kodeket, ha a lejátszó válasza tartalmazza az OPUS kodeket.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Hibakeresés</string>
     <string name="revanced_preference_screen_debugging_summary">Hibakeresési beállítások engedélyezése vagy tiltása.</string>
@@ -2193,8 +2193,6 @@ Kattintson a folytatás gombra és kapcsolja ki az akkumulátor optimalizáláso
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(fejlesztés alatt)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV beágyazott
-<small>(fejlesztés alatt)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV egyszerű
 <small>(fejlesztés alatt)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Hamisítás mellékhatásai</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• A hangsáv menü hiányzik.
@@ -2285,7 +2283,7 @@ Ez a funkció még fejlesztés alatt áll, így a szerveroldali változások mia
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Ennek engedélyezése javíthatja az akkumulátor élettartamát és javíthatja a lejátszás akadozását.
 
 Az AVC maximális felbontása 1080p, az Opus hangkodek nem érhető el, és a videolejátszás több adatforgalmat igényel, mint a VP9 vagy az AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (fejlesztés alatt)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">JavaScript kliens használata</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">A JavaScript kliens hozzáadva az elérhető kliensekhez.</string>

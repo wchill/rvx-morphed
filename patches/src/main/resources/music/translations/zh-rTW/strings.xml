@@ -229,6 +229,8 @@
     <string name="revanced_preference_screen_video_title">影片</string>
     <string name="revanced_custom_playback_speeds_title">編輯自訂播放速度</string>
     <string name="revanced_custom_playback_speeds_summary">新增或變更可以使用的播放速度</string>
+    <string name="revanced_enable_opus_codec_title">啟用解碼器覆寫</string>
+    <string name="revanced_enable_opus_codec_summary">"播放音樂時啟用 250/251 opus 解碼器。"</string>
     <string name="revanced_remember_playback_speed_last_selected_title">記住播放速度的變更</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">記住上次選擇的播放速度</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">顯示提示訊息</string>
@@ -362,8 +364,6 @@
     <string name="revanced_disable_drc_audio_title">停用DRC音訊</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_title">限制類型</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_redirect">重新導向</string>
-    <string name="revanced_enable_opus_codec_title">啟用解碼器覆寫</string>
-    <string name="revanced_enable_opus_codec_summary">"播放音樂時啟用 250/251 opus 解碼器。"</string>
     <string name="revanced_sanitize_sharing_links_title">清理分享連結</string>
     <string name="revanced_sanitize_sharing_links_summary">分享連結時從 URL 中刪除追蹤參數。</string>
     <string name="revanced_spoof_client_title">偽裝客戶端</string>

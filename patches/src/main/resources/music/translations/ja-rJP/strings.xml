@@ -259,6 +259,8 @@ YouTube Music の検索や設定などのアクティビティは公開されて
     <string name="revanced_disable_player_gesture_summary">プレイヤーでスワイプによる曲の変更を無効にします。</string>
     <string name="revanced_enable_forced_miniplayer_title">ミニプレイヤーの強制</string>
     <string name="revanced_enable_forced_miniplayer_summary">新しいトラックに切り替えたときに強制的にミニプレーヤーを有効にします。</string>
+    <string name="revanced_enable_smooth_transition_animation_title">スムーズな遷移アニメーションを有効化</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">ミニプレイヤーを最大化したときのスムーズなアニメーションを有効にします。</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">スワイプしてミニプレーヤーを閉じる</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">下にスワイプしてミニプレーヤーを閉じられるようにします。</string>
     <string name="revanced_enable_comments_scroll_top_title">コメントの最上部へのスクロールを有効化</string>
@@ -281,6 +283,8 @@ YouTube Music の検索や設定などのアクティビティは公開されて
     <string name="revanced_hide_comment_timestamp_and_emoji_buttons_summary">コメントを入力するときにタイムスタンプと絵文字ボタンを非表示にします。</string>
     <string name="revanced_hide_fullscreen_share_button_title">全画面共有ボタンを非表示</string>
     <string name="revanced_hide_fullscreen_share_button_summary">全画面表示のプレイヤーの共有ボタンを非表示にします。</string>
+    <string name="revanced_hide_lyrics_share_button_title">歌詞共有ボタンを非表示</string>
+    <string name="revanced_hide_lyrics_share_button_summary">歌詞の共有ボタンを非表示にします。</string>
     <string name="revanced_hide_song_video_toggle_title">「曲 / 動画」ボタンを非表示</string>
     <string name="revanced_hide_song_video_toggle_summary">プレイヤーから「曲 / 動画」ボタンを非表示にします。</string>
     <string name="revanced_remember_repeat_state_title">リピートの状態を保存</string>
@@ -310,6 +314,8 @@ YouTube Music の検索や設定などのアクティビティは公開されて
     <string name="revanced_preference_screen_video_title">動画</string>
     <string name="revanced_custom_playback_speeds_title">カスタム再生速度の編集</string>
     <string name="revanced_custom_playback_speeds_summary">利用可能な再生速度を編集します。</string>
+    <string name="revanced_enable_opus_codec_title">Opus コーデックを有効化</string>
+    <string name="revanced_enable_opus_codec_summary">"MP4A コーデックの代わりに、Opus コーデックを適用します。"</string>
     <string name="revanced_remember_playback_speed_last_selected_title">再生速度の変更を保存</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">再生速度を変更するたびに、再生速度を保存します。</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">トーストを表示</string>
@@ -462,23 +468,26 @@ API キーの発行方法については、ここをタップしてください�
     <string name="revanced_debug_protobuffer_summary">プロトコルバッファをデバッグログに含めます。</string>
     <string name="revanced_debug_spannable_title">Spannable をログに含む</string>
     <string name="revanced_debug_spannable_summary">デバッグログにSpannableを含めます。</string>
-    <string name="revanced_enable_opus_codec_title">Opus コーデックを有効化</string>
-    <string name="revanced_enable_opus_codec_summary">"MP4A コーデックの代わりに、Opus コーデックを適用します。"</string>
     <string name="revanced_sanitize_sharing_links_title">共有リンクのクリーンアップ</string>
     <string name="revanced_sanitize_sharing_links_summary">リンクを共有する際に、URL からトラッキングクエリパラメーターを削除します。</string>
     <string name="revanced_spoof_client_title">クライアントを偽装</string>
+    <string name="revanced_spoof_client_summary">再生の問題を防ぐためにクライアントを偽装します。</string>
     <string name="revanced_spoof_client_type_title">既定のクライアント</string>
-    <string name="revanced_spoof_client_type_summary">偽装するデフォルトのクライアントを定義します。</string>
+    <string name="revanced_spoof_client_type_summary">"偽装するデフォルトのクライアントを定義します。"</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_6_21_block_requst">iOS Music 6.21 (ブロックリクエスト)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_7_04_block_requst">iOS Music 7.04 (ブロックリクエスト)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_12_block_requst">iOS Music 8.12 (ブロックリクエスト)</string>
     <string name="revanced_spoof_video_streams_title">ビデオストリームを偽装します</string>
-    <string name="revanced_spoof_video_streams_summary">"クライアントのビデオストリームを偽装して再生の問題を防ぎます。
+    <string name="revanced_spoof_video_streams_summary">クライアントのビデオストリームを偽装して再生の問題を防ぎます。
 
 副作用:
 ・VPNまたは DNSを使用している場合アプリが強制終了する可能性があります。
-・アダプティブビットレートストリーミングのクライアント（Android VR 1.43.32以外のすべて）では再生中に音声が断続的に途切れることがあります。"</string>
+・アダプティブビットレートストリーミングのクライアント（Android VR 1.43.32以外のすべて）では再生中に音声が断続的に途切れることがあります。</string>
     <string name="revanced_spoof_video_streams_default_client_title">デフォルトのクライアント</string>
-    <string name="revanced_spoof_video_streams_default_client_summary">偽装するデフォルトのクライアントを定義します。</string>
+    <string name="revanced_spoof_video_streams_default_client_summary">"偽装するデフォルトのクライアントを定義します。"</string>
     <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32">Android VR 1.43.32</string>
     <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09">Android VR 1.65.09</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
@@ -503,4 +512,8 @@ API キーの発行方法については、ここをタップしてください�
 
 「続行」をタップし、バッテリーの最適化を無効にします。"</string>
     <string name="gms_core_dialog_continue_text">続行</string>
+    <string name="revanced_app_info_title">アプリ情報</string>
+    <string name="revanced_app_info_summary">タップしてアプリ名、アプリのバージョン、パッチのバージョン、およびパッチの適用日を確認できます。</string>
+    <string name="revanced_app_info_dialog_title">アプリ情報</string>
+    <string name="revanced_app_info_dialog_message">&lt;b&gt;アプリ名&lt;/b&gt;&lt;br&gt;&lt;small&gt;%1$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;アプリのバージョン&lt;/b&gt;&lt;br&gt;&lt;small&gt;%2$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;ReVanced パッチ&lt;/b&gt;&lt;br&gt;&lt;small&gt;%3$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;パッチの適用日&lt;/b&gt;&lt;br&gt;&lt;small&gt;%4$s&lt;/small&gt;</string>
 </resources>

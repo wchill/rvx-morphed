@@ -471,6 +471,7 @@ Hạn chế:
     <string name="revanced_change_start_page_entry_fashion">Thời trang &amp; Làm đẹp</string>
     <string name="revanced_change_start_page_entry_gaming">Trò chơi</string>
     <string name="revanced_change_start_page_entry_history">Video đã xem</string>
+    <string name="revanced_change_start_page_entry_hype">Khuấy động</string>
     <string name="revanced_change_start_page_entry_library">Bạn</string>
     <string name="revanced_change_start_page_entry_liked_videos">Video đã thích</string>
     <string name="revanced_change_start_page_entry_live">Trực tiếp</string>
@@ -501,6 +502,9 @@ Hạn chế: Nút Quay lại trên thanh công cụ có thể không hoạt đ�
     <string name="revanced_disable_auto_captions_title">Tắt tự động hiển thị phụ đề</string>
     <string name="revanced_disable_auto_captions_summary_on">Tự động hiển thị phụ đề khi phát video có phụ đề đã tắt.</string>
     <string name="revanced_disable_auto_captions_summary_off">Tự động hiển thị phụ đề khi phát video có phụ đề đã bật.</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">Tắt cửa sổ Đăng nhập vào TV</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">Cửa sổ đăng nhập vào TV đã tắt.</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">Cửa sổ đăng nhập vào TV đã bật.</string>
     <string name="revanced_disable_splash_animation_title">Tắt hoạt ảnh khi ứng dụng khởi chạy</string>
     <string name="revanced_disable_splash_animation_summary_on">Hoạt ảnh khi ứng dụng khởi chạy đã tắt.</string>
     <string name="revanced_disable_splash_animation_summary_off">Hoạt ảnh khi ứng dụng khởi chạy được bật.</string>
@@ -554,6 +558,16 @@ Các thay đổi bao gồm:
     <string name="revanced_disable_translucent_status_bar_summary_on">Thanh trạng thái không còn trong suốt.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Thanh trạng thái có thể trong suốt hoặc không.</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">Trên một số ROM tùy chỉnh chạy Android 12+, bật tính năng này có thể làm cho thanh điều hướng hệ thống trở nên trong suốt.</string>
+    <string name="revanced_fix_hype_button_icon_title">Sữa lỗi nút Khuấy động</string>
+    <string name="revanced_fix_hype_button_icon_summary_on">Biểu tượng nút Khuấy động đã được hiển thị.</string>
+    <string name="revanced_fix_hype_button_icon_summary_off">Biểu tượng nút Khuấy động đã ẩn.</string>
+    <string name="revanced_fix_hype_button_icon_user_dialog_message">"Trên YouTube 19.25.39 trở xuống, biểu tượng Khuấy động bị ẩn trong bảng nút thao tác và bảng mô tả video.
+
+Để khắc phục, ứng dụng sẽ giả lập phiên bản 19.26.42 ở các endpoint '/get_watch' và '/next'.
+
+Nếu tắt cài đặt này, biểu tượng Khuấy động có thể không hiển thị trong bảng nút thao tác và bảng mô tả video.
+
+※ Ngay cả khi tắt, nút Khuấy động đôi khi vẫn không bị ẩn."</string>
     <string name="revanced_spoof_app_version_title">Giả mạo phiên bản ứng dụng</string>
     <string name="revanced_spoof_app_version_summary_on">Phiên bản đã được giả mạo</string>
     <string name="revanced_spoof_app_version_summary_off">Phiên bản không được giả mạo</string>
@@ -577,7 +591,7 @@ Nếu muốn tắt tính năng này sau đó, bạn nên xóa dữ liệu ứng 
     <string name="revanced_fix_spoof_app_version_side_effect_title">Khắc phục hạn chế khi giả mạo phiên bản</string>
     <string name="revanced_fix_spoof_app_version_side_effect_summary_on">"Cài đặt \"Tự động phát\" đã thay thế cho cài đặt \"Phát\"."</string>
     <string name="revanced_fix_spoof_app_version_side_effect_summary_off">Cài đặt \"Phát\" đã thay thế cho cài đặt \"Tự động phát\".</string>
-    <string name="revanced_fix_spoof_app_version_side_effect_user_dialog_message">"Khi bạn giả mạo phiên bản xuống 19.30 hoặc thấp hơn, cài đặt \"Phát\" có thể bị lỗi do phụ thuộc vào phản hồi từ máy chủ. Trong trường hợp đó, hãy thử bật cài đặt này để khắc phục.
+    <string name="revanced_fix_spoof_app_version_side_effect_user_dialog_message">"Khi bạn giả mạo phiên bản xuống 19.30.xx trở xuống, cài đặt \"Phát\" có thể bị lỗi do phụ thuộc vào phản hồi từ máy chủ. Trong trường hợp đó, hãy thử bật cài đặt này để khắc phục.
 
 Nếu lỗi vẫn còn ngay cả khi bạn thử bật tắt cài đặt này nhiều lần, hãy xoá dữ liệu ứng dụng và thử lại."</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
@@ -614,7 +628,7 @@ Một số thành phần có thể không bị ẩn."</string>
     <string name="revanced_override_playlist_download_button_summary_on_disclaimer_1">Nút tải xuống danh sách phát (nếu có) sẽ mở trình tải xuống bên ngoài của bạn.</string>
     <string name="revanced_override_playlist_download_button_summary_on_disclaimer_2">"Nút tải xuống danh sách phát (nếu có) sẽ mở trình tải xuống bên ngoài của bạn.
 
-Để hiển thị nút tải xuống danh sách phát, hãy bật \"Giả mạo phiên bản ứng dụng\" và chọn phiên bản 19.28.42 hoặc thấp hơn."</string>
+Để hiển thị nút tải xuống danh sách phát, hãy bật \"Giả mạo phiên bản ứng dụng\" và chọn phiên bản 19.28.42 trở xuống."</string>
     <string name="revanced_override_playlist_download_button_summary_off">Nếu nút tải xuống danh sách phát được hiển thị, khi thao tác với nút sẽ mở trình tải xuống được tích hợp sẵn của Youtube.</string>
     <string name="revanced_override_video_download_button_title">Ghi đè nút tải xuống video</string>
     <string name="revanced_override_video_download_button_summary_on">Khi thao tác với nút tải xuống video sẽ mở trình tải xuống bên ngoài của bạn.</string>
@@ -891,6 +905,7 @@ Cài đặt → Tự động phát/Phát → Tự động phát video tiếp the
     <string name="revanced_sanitize_video_subtitle_summary_on">"Các tag có cụm từ như \"#\", \"Chiến dịch gây quỹ\", \"Cửa hàng\" và \"sản phẩm\" đã ẩn bên dưới tiêu đề video."</string>
     <string name="revanced_sanitize_video_subtitle_summary_off">"Các tag có các cụm từ như \"#\", \"Chiến dịch gây quỹ\", \"Cửa hàng\" và \"sản phẩm\" được hiển thị trong phụ đề video."</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
+    <string name="revanced_hide_related_videos_title">Ẩn video có liên quan</string>
     <string name="revanced_hide_related_videos_summary_on">Các video có liên quan đã ẩn.</string>
     <string name="revanced_hide_related_videos_summary_off">Các video có liên quan được hiển thị.</string>
     <string name="revanced_hide_related_videos_user_dialog_message">"Cài đặt này giới hạn số bố cục có thể tải trên màn hình trình phát.
@@ -917,6 +932,9 @@ Nếu bố cục màn hình trình phát thay đổi từ phía máy chủ, cũn
     <string name="revanced_hide_download_button_title">Ẩn nút Tải xuống</string>
     <string name="revanced_hide_download_button_summary_on">Nút Tải xuống đã ẩn.</string>
     <string name="revanced_hide_download_button_summary_off">Nút Tải xuống được hiển thị.</string>
+    <string name="revanced_hide_hype_button_title">Ẩn nút Khuấy động</string>
+    <string name="revanced_hide_hype_button_summary_on">Nút Khuấy động đã ẩn.</string>
+    <string name="revanced_hide_hype_button_summary_off">Nút Khuấy động được hiển thị.</string>
     <string name="revanced_hide_like_dislike_button_title">Ẩn các nút Thích và Không thích</string>
     <string name="revanced_hide_like_dislike_button_summary_on">Các nút Thích và Không thích đã ẩn.</string>
     <string name="revanced_hide_like_dislike_button_summary_off">Các nút Thích và Không thích được hiển thị.</string>
@@ -1046,7 +1064,7 @@ Hạn chế: Các bình luận chữ xanh không dùng kiểu chữ mặc địn
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Mục Bản âm thanh được hiển thị.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Trình đơn bản âm thanh đã ẩn.
 
-Để hiện trình đơn bản âm thanh, hãy thay đổi 'Client mặc định (Giả mạo dữ liệu phát video)' sang TV hoặc iOS TV."</string>
+Để hiện trình đơn bản âm thanh, hãy thay đổi 'Client mặc định (Giả mạo dữ liệu phát video)' sang TV, TV Simply hoặc iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Ẩn mục Phụ đề</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Mục Phụ đề đã ẩn.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Mục Phụ đề được hiển thị.</string>
@@ -1723,6 +1741,9 @@ Không còn lề trên và dưới trong trình phát."</string>
     <string name="revanced_swipe_text_overlay_size_invalid_toast">Cỡ chữ phải nằm trong khoảng từ 1 đến 30.</string>
     <string name="revanced_swipe_overlay_timeout_title">Thời gian hiển thị lớp phủ</string>
     <string name="revanced_swipe_overlay_timeout_summary">Số mili giây mà lớp phủ khi vuốt được hiển thị.</string>
+    <string name="revanced_swipe_brightness_distance_dip_title">Ngưỡng vuốt độ sáng</string>
+    <string name="revanced_swipe_brightness_distance_dip_summary">Nhập khoảng vuốt tối thiểu để thay đổi độ sáng, tính bằng pixel.</string>
+    <string name="revanced_swipe_brightness_distance_dip_invalid_toast">Khoảng vuốt độ sáng phải nằm trong khoảng từ 0.1dip đến 10.0dip.</string>
     <string name="revanced_swipe_volume_sensitivity_title">Độ nhạy khi vuốt để điều chỉnh âm lượng</string>
     <string name="revanced_swipe_volume_sensitivity_summary">Mức âm lượng thay đổi sau mỗi lần vuốt.</string>
     <string name="revanced_swipe_volume_sensitivity_invalid_toast">Độ nhạy khi vuốt để điều chỉnh âm lượng phải nằm trong khoảng từ 1 đến 1000.</string>
@@ -1757,6 +1778,8 @@ Chi tiết:
 • Phát video sẽ sử dụng nhiều dữ liệu di động hơn so với VP9.
 • Codec VP9 vẫn được sử dụng cho video HDR."</string>
     <string name="revanced_disable_vp9_codec_summary_off">Codec VP9 được kích hoạt.</string>
+    <string name="revanced_enable_opus_codec_title">Codec OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">Kích hoạt codec OPUS nếu phản hồi của trình phát bao gồm codec OPUS.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Tốc độ phát</string>
     <string name="revanced_default_playback_speed_title">Tốc độ phát mặc định</string>
@@ -2106,8 +2129,6 @@ Nhấn Tiếp tục và cho phép thay đổi lựa chọn tối ưu hoá pin."<
     <string name="revanced_change_share_sheet_title">Thay đổi bảng chia sẻ</string>
     <string name="revanced_change_share_sheet_summary_on">Đang sử dụng bảng chia sẻ của hệ thống Android.</string>
     <string name="revanced_change_share_sheet_summary_off">Đang sử dụng bảng chia sẻ trong ứng dụng Youtube.</string>
-    <string name="revanced_enable_opus_codec_title">Codec OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Kích hoạt codec OPUS nếu phản hồi của trình phát bao gồm codec OPUS.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Gỡ lỗi</string>
     <string name="revanced_preference_screen_debugging_summary">Bật hoặc tắt tùy chọn gỡ lỗi.</string>
@@ -2269,7 +2290,7 @@ Hạn chế:
 • AVC có độ phân giải tối đa là 1080p.
 • Codec âm thanh OPUS không khả dụng.
 • Dùng nhiều dữ liệu di động hơn với VP9 hoặc AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (Thử nghiệm)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Giả mạo JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">JavaScript được thêm vào danh sách khả dụng.</string>

@@ -498,7 +498,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
     <string name="revanced_disable_auto_audio_tracks_title">자동 오디오 트랙 비활성화하기</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">자동 오디오 트랙을 비활성화합니다.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">자동 오디오 트랙을 활성화합니다.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">이 기능을 사용하려면, \'스트리밍 데이터 변경하기\'에서 기본 클라이언트를 TV 또는 iOS TV로 변경하세요.</string>
+    <string name="revanced_disable_auto_audio_tracks_not_available">이 기능을 사용하려면, \'스트리밍 데이터 변경하기\'에서 기본 클라이언트를 TV, TV Simply 또는 iOS TV로 변경하세요.</string>
     <string name="revanced_disable_auto_captions_title">자동 자막 비활성화하기</string>
     <string name="revanced_disable_auto_captions_summary_on">자동 자막을 비활성화합니다.</string>
     <string name="revanced_disable_auto_captions_summary_off">자동 자막을 활성화합니다.</string>
@@ -1067,7 +1067,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">오디오 트랙 메뉴가 표시됩니다.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"오디오 트랙 메뉴가 숨겨집니다.
 
-오디오 트랙 메뉴를 표시하려면, '스트리밍 데이터 변경하기'에서 기본 클라이언트를 TV 또는 iOS TV로 변경하세요."</string>
+오디오 트랙 메뉴를 표시하려면, '스트리밍 데이터 변경하기'에서 기본 클라이언트를 TV, TV Simply 또는 iOS TV로 변경하세요."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">자막 메뉴 숨기기</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">자막 메뉴가 숨겨집니다.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">자막 메뉴가 표시됩니다.</string>
@@ -1779,6 +1779,8 @@ Shorts 플레이어 배경을 탭하면 상태바 및 플레이어 구성요소�
 • 동영상 재생 시 VP9보다 더 많은 모바일 데이터가 사용됩니다.
 • HDR 동영상에는 여전히 VP9 코덱이 사용됩니다."</string>
     <string name="revanced_disable_vp9_codec_summary_off">동영상 코덱이 VP9으로 결정됩니다.</string>
+    <string name="revanced_enable_opus_codec_title">OPUS 코덱 활성화하기</string>
+    <string name="revanced_enable_opus_codec_summary">플레이어 응답에 OPUS 코덱이 포함된 경우에 OPUS 코덱을 활성화합니다.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">재생 속도</string>
     <string name="revanced_default_playback_speed_title">기본 동영상 재생 속도</string>
@@ -1852,8 +1854,8 @@ Shorts 플레이어 배경을 탭하면 상태바 및 플레이어 구성요소�
     <string name="revanced_disable_default_playback_speed_music_on">음악 동영상에서 기본 동영상 재생 속도를 비활성화합니다.</string>
     <string name="revanced_disable_default_playback_speed_music_off">음악 동영상에서 기본 동영상 재생 속도를 활성화합니다.</string>
     <string name="revanced_disable_default_playback_speed_music_type_title">카테고리를 사용하여 유효성 검사하기</string>
-    <string name="revanced_disable_default_playback_speed_music_type_on">동영상 카테고리가 음악인 경우에는 기본 동영상 재생 속도를 비활성화합니다.</string>
-    <string name="revanced_disable_default_playback_speed_music_type_off">YouTube Music에서 재생할 수 있는 동영상인 경우에는 기본 동영상 재생 속도를 비활성화합니다.</string>
+    <string name="revanced_disable_default_playback_speed_music_type_on">동영상 카테고리가 음악인 경우에만 기본 동영상 재생 속도를 비활성화합니다.</string>
+    <string name="revanced_disable_default_playback_speed_music_type_off">YouTube Music에서 재생할 수 있는 동영상인 경우에만 기본 동영상 재생 속도를 비활성화합니다.</string>
     <!-- PreferenceScreen: Return YouTube Dislike -->
     <string name="revanced_preference_screen_ryd_title">Return YouTube Dislike</string>
     <string name="revanced_ryd_enable_title">Return YouTube Dislike 활성화하기</string>
@@ -2129,8 +2131,6 @@ GmsCore 앱 배터리 최적화를 비활성화(제한 없음)하더라도, 배�
     <string name="revanced_change_share_sheet_title">공유 시트 변경하기</string>
     <string name="revanced_change_share_sheet_summary_on">Android 시스템 공유 시트를 사용합니다.\n\n• 공유 버튼으로 바로 Android 시스템 공유 메뉴를 실행할 수 있습니다.</string>
     <string name="revanced_change_share_sheet_summary_off">YouTube 기본 공유 시트를 사용합니다.</string>
-    <string name="revanced_enable_opus_codec_title">OPUS 코덱 활성화하기</string>
-    <string name="revanced_enable_opus_codec_summary">플레이어 응답에 OPUS 코덱이 포함된 경우에는 OPUS 코덱을 활성화합니다.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">디버깅</string>
     <string name="revanced_preference_screen_debugging_summary">디버깅 옵션을 활성화하거나 비활성화할 수 있습니다.</string>
@@ -2293,8 +2293,8 @@ VP9은 AVC보다 고급 코덱이지만, 일부 사용자는 '360p VP9'보다 '1
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"이 설정를 활성화하면 배터리 수명이 향상되고, 동영상 재생 끊김 문제가 해결될 수 있습니다.
 
 AVC의 최대 화질 값은 1080p이고, OPUS 코덱을 사용불가 및 HDR 동영상을 재생할 수 없으며, 동영상을 재생했을 경우에는 VP9 또는 AV1보다 더 많은 모바일 데이터를 사용되오니 주의하세요."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
-    <string name="revanced_preference_category_js">JavaScript (개발 중)</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
+    <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">JavaScript 클라이언트 사용하기</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">JavaScript 클라이언트가 사용 가능한 클라이언트에 추가됩니다.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">JavaScript 클라이언트가 사용 가능한 클라이언트에 추가되지 않습니다.</string>
@@ -2302,7 +2302,7 @@ AVC의 최대 화질 값은 1080p이고, OPUS 코덱을 사용불가 및 HDR 동
 
 n-sig 패턴은 YouTube 서버에서 자주 변경되며, 정규식이 n-sig 패턴을 찾지 못하면 재생이 실패할 수 있습니다.
 
-이 기능은 아직 개발 중이므로 디버깅 목적으로만 사용하시기 바랍니다."</string>
+JavaScript 클라이언트 중에서 권장되는 클라이언트는 TV Simply입니다."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">모든 동영상에 JavaScript 클라이언트 사용하기</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"JavaScript 클라이언트가 동영상 유형에 관계없이 사용됩니다.
 

@@ -514,6 +514,9 @@ Shorts
     <string name="revanced_disable_auto_captions_title">Принудительные автоматические субтитры</string>
     <string name="revanced_disable_auto_captions_summary_on">Принудительные автоматические субтитры отключены.</string>
     <string name="revanced_disable_auto_captions_summary_off">Принудительные автоматические субтитры включены.</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">Отключить всплывающее окно \"Вход на ТВ\"</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">Всплывающее окно \"Вход на ТВ\" отключено.</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">Всплывающее окно \"Вход на ТВ\" включено.</string>
     <string name="revanced_disable_splash_animation_title">Анимированная заставка</string>
     <string name="revanced_disable_splash_animation_summary_on">Анимированная заставка отключена.</string>
     <string name="revanced_disable_splash_animation_summary_off">Анимированная заставка включена.</string>
@@ -1789,6 +1792,8 @@ Shorts
 • Просмотр будет использовать больше трафика, чем с VP9.
 • HDR просмотр недоступен, HDR видео все еще использует VP9 кодек."</string>
     <string name="revanced_disable_vp9_codec_summary_off">VP9 кодек включен.</string>
+    <string name="revanced_enable_opus_codec_title">Включить кодек OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">Включить кодек OPUS, если содержимое в плеере подходит для кодека.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Скорость просмотра</string>
     <string name="revanced_default_playback_speed_title">Скорость по умолчанию</string>
@@ -2137,8 +2142,6 @@ Shorts
     <string name="revanced_change_share_sheet_title">Изменить диалог \"Поделиться\"</string>
     <string name="revanced_change_share_sheet_summary_on">Используется системный диалог.</string>
     <string name="revanced_change_share_sheet_summary_off">Используется встроенный диалог.</string>
-    <string name="revanced_enable_opus_codec_title">Включить кодек OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Включить кодек OPUS, если содержимое в плеере подходит для кодека.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Отладка</string>
     <string name="revanced_preference_screen_debugging_summary">Включить или отключить параметры отладки.</string>
@@ -2196,20 +2199,18 @@ Shorts
 Просмотр может быть не доступен."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Отключение этой настройки вызовет проблемы с просмотром.</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Клиент по умолчанию</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
+    <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android ТВ
 <small>(Необходим вход)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(Без авторизац.)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
+    <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS ТВ
 <small>(Необходим вход)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web
 <small>(В разработке)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv">"ТВ
 <small>(В разработке)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Встроенный TV
-<small>(В разработке)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"Простой TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Встроенный ТВ
 <small>(В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Эффекты от подмены</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Меню аудио дорожки отсутствует.
@@ -2300,7 +2301,7 @@ VP9 более продвинутый кодек, чем AVC, но некото�
 - устранить прерывания при воспроизведении.
 
 Максимальное разрешение AVC - 1080p. Кодек Opus недоступен. Потребление трафика больше, чем при VP9 или AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (В разработке)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Использовать клиент JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">Клиент JavaScript используется.</string>
