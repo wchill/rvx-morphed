@@ -342,6 +342,12 @@ Some features may not work properly in the old player layout."</string>
 
     <string name="revanced_custom_playback_speeds_title">Edit custom playback speeds</string>
     <string name="revanced_custom_playback_speeds_summary">Add or change available playback speeds.</string>
+    <string name="revanced_enable_opus_codec_title">Enable OPUS codec</string>
+    <string name="revanced_enable_opus_codec_summary">"Enables the OPUS codec if the player response includes it.
+
+Info:
+• Latest YouTube Music clients use the OPUS audio codec by default.
+• This may be necessary if the client or video stream is spoofed."</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Remember playback speed changes</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Remembers the last playback speed selected.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Show a toast</string>
@@ -515,12 +521,6 @@ Limitations: Kids videos may not redirected."</string>
     <string name="revanced_debug_protobuffer_summary">Includes proto buffer in the debug log.</string>
     <string name="revanced_debug_spannable_title">Log spannable</string>
     <string name="revanced_debug_spannable_summary">Includes spannable in the debug log.</string>
-    <string name="revanced_enable_opus_codec_title">Enable OPUS codec</string>
-    <string name="revanced_enable_opus_codec_summary">"Enables the OPUS codec if the player response includes it.
-
-Info:
-• Latest YouTube Music clients use the OPUS audio codec by default.
-• This is only valid for users spoofing with very old clients."</string>
     <string name="revanced_sanitize_sharing_links_title">Sanitize sharing links</string>
     <string name="revanced_sanitize_sharing_links_summary">Sanitizes sharing links by removing tracking query parameters.</string>
     <string name="revanced_spoof_client_title">Spoof client</string>

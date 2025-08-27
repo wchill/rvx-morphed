@@ -1888,6 +1888,8 @@ Info:
 • Video playback will use more internet data than VP9.
 • VP9 codec is still used for HDR video."</string>
     <string name="revanced_disable_vp9_codec_summary_off">VP9 codec is enabled.</string>
+    <string name="revanced_enable_opus_codec_title">Enable OPUS codec</string>
+    <string name="revanced_enable_opus_codec_summary">Enables the OPUS codec if the player response includes it.</string>
 
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Playback speed</string>
@@ -2272,8 +2274,6 @@ Tap the continue button and allow optimization changes."</string>
     <string name="revanced_change_share_sheet_title">Change share sheet</string>
     <string name="revanced_change_share_sheet_summary_on">System share sheet is used.</string>
     <string name="revanced_change_share_sheet_summary_off">In-app share sheet is used.</string>
-    <string name="revanced_enable_opus_codec_title">Enable OPUS codec</string>
-    <string name="revanced_enable_opus_codec_summary">Enables the OPUS codec if the player response includes it.</string>
 
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Debugging</string>
