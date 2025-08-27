@@ -3,6 +3,8 @@ package app.revanced.extension.youtube.patches.video;
 import static app.revanced.extension.shared.utils.StringRef.str;
 import static app.revanced.extension.youtube.shared.RootView.isShortsActive;
 
+import android.net.Uri;
+
 import androidx.annotation.GuardedBy;
 import androidx.annotation.NonNull;
 
@@ -11,7 +13,6 @@ import org.apache.commons.lang3.BooleanUtils;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import app.revanced.extension.shared.innertube.utils.AuthUtils;
 import app.revanced.extension.shared.settings.BooleanSetting;
 import app.revanced.extension.shared.settings.FloatSetting;
 import app.revanced.extension.shared.utils.Logger;
@@ -95,22 +96,36 @@ public class PlaybackSpeedPatch {
     /**
      * Injection point.
      */
-    public static void fetchRequest(@NonNull String videoId, boolean isShortAndOpeningOrPlaying) {
+    public static void fetchRequest(String urlString, Map<String, String> requestHeaders) {
         if (DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC) {
             try {
-                final boolean videoIdIsShort = VideoInformation.lastPlayerResponseIsShort();
-                // Shorts shelf in home and subscription feed causes player response hook to be called,
-                // and the 'is opening/playing' parameter will be false.
-                // This hook will be called again when the Short is actually opened.
-                if (videoIdIsShort && !isShortAndOpeningOrPlaying) {
-                    return;
+                if (urlString != null) {
+                    var uri = Uri.parse(urlString);
+                    String path = uri.getPath();
+                    if (path != null) {
+                        if (path.contains("player") && uri.getQueryParameter("t") != null) {
+                            String id = uri.getQueryParameter("id");
+                            if (id != null) {
+                                MusicRequest.fetchRequestIfNeeded(
+                                        id,
+                                        DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC_TYPE,
+                                        requestHeaders
+                                );
+                            }
+                        } else if (path.contains("initplayback")) {
+                            if (!VideoInformation.lastPlayerResponseIsShort()) {
+                                String id = VideoInformation.getPlayerResponseVideoId();
+                                if (!id.isEmpty()) {
+                                    MusicRequest.fetchRequestIfNeeded(
+                                            id,
+                                            DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC_TYPE,
+                                            requestHeaders
+                                    );
+                                }
+                            }
+                        }
+                    }
                 }
-
-                MusicRequest.fetchRequestIfNeeded(
-                        videoId,
-                        DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC_TYPE,
-                        AuthUtils.getRequestHeader()
-                );
             } catch (Exception ex) {
                 Logger.printException(() -> "fetchRequest failure", ex);
             }
