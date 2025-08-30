@@ -349,7 +349,7 @@ Tap here to learn more about DeArrow."</string>
     <string name="revanced_hide_carousel_shelf_search_summary_on">Hidden in search results.</string>
     <string name="revanced_hide_carousel_shelf_search_summary_off">Shown in search results.</string>
     <string name="revanced_hide_carousel_shelf_about_title">About carousel shelf</string>
-    <string name="revanced_hide_carousel_shelf_about_summary">Examples of carousel shelves:&lt;br>&lt;br>&lt;b>Breaking news&lt;/b>, &lt;b>Continue watching&lt;/b>, &lt;b>Explore more channels&lt;/b>, &lt;b>Listen again&lt;/b>, &lt;b>Most relevant&lt;/b>, &lt;b>Shopping&lt;/b>, &lt;b>Watch it again&lt;/b></string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Examples of carousel shelves:&lt;br>&lt;br>&lt;b>Breaking news&lt;/b>, &lt;b>Continue watching&lt;/b>, &lt;b>Explore more channels&lt;/b>, &lt;b>For You&lt;/b>, &lt;b>Listen again&lt;/b>, &lt;b>Most relevant&lt;/b>, &lt;b>Shopping&lt;/b>, &lt;b>Watch it again&lt;/b></string>
 
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Category bar</string>
@@ -380,9 +380,6 @@ Tap here to learn more about DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Playlists
 Store"</string>
-    <string name="revanced_hide_for_you_shelf_title">Hide For You shelf</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">For You shelf is hidden.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">For You shelf is shown.</string>
     <string name="revanced_hide_links_preview_title">Hide links preview</string>
     <string name="revanced_hide_links_preview_summary_on">Links preview is hidden.</string>
     <string name="revanced_hide_links_preview_summary_off">Links preview is shown.</string>
