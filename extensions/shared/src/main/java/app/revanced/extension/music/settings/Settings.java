@@ -59,7 +59,7 @@ public class Settings extends BaseSettings {
 
 
     // PreferenceScreen: Flyout menu
-    public static final BooleanSetting ENABLE_TRIM_SILENCE = new BooleanSetting("revanced_enable_trim_silence", FALSE);
+    public static final BooleanSetting DISABLE_TRIM_SILENCE = new BooleanSetting("revanced_disable_trim_silence", TRUE);
     public static final BooleanSetting ENABLE_COMPACT_DIALOG = new BooleanSetting("revanced_enable_compact_dialog", TRUE);
     public static final BooleanSetting HIDE_FLYOUT_MENU_LIKE_DISLIKE = new BooleanSetting("revanced_hide_flyout_menu_like_dislike", FALSE, true);
     public static final BooleanSetting HIDE_FLYOUT_MENU_3_COLUMN_COMPONENT = new BooleanSetting("revanced_hide_flyout_menu_3_column_component", FALSE);

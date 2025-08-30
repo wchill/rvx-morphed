@@ -88,8 +88,8 @@ Limitations:
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Flyout menu</string>
 
-    <string name="revanced_enable_trim_silence_title">Add Trim silence switch</string>
-    <string name="revanced_enable_trim_silence_summary">"Adds a Trim silence switch to the playback speed flyout menu.
+    <string name="revanced_disable_trim_silence_title">Disable Trim silence switch</string>
+    <string name="revanced_disable_trim_silence_summary">"Disables a Trim silence switch in the playback speed flyout menu.
 
 Info:
 • This feature is for podcasts.
