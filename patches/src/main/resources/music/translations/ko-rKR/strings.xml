@@ -37,6 +37,8 @@
     <string name="revanced_hide_action_button_song_video_title">노래 / 동영상 버튼 제거</string>
     <string name="revanced_hide_action_button_song_video_summary">"노래 / 동영상 버튼을 숨깁니다.
 (이 버튼은 일부 사용자만 사용할 수 있습니다.)"</string>
+    <string name="revanced_hide_action_button_disabled_title">사용 중지된 버튼 제거</string>
+    <string name="revanced_hide_action_button_disabled_summary">사용 중지된 댓글 버튼과 같은 사용 중지된 버튼을 숨깁니다.</string>
     <string name="revanced_hide_action_button_label_title">동작 버튼 라벨 제거</string>
     <string name="revanced_hide_action_button_label_summary">동작 버튼에서 라벨을 숨깁니다.</string>
     <string name="revanced_external_downloader_action_title">오프라인 저장 버튼 재정의</string>
@@ -74,11 +76,11 @@
     <string name="revanced_hide_promotion_alert_banner_summary">프로모션 알림 배너를 숨깁니다.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">메뉴 구성요소</string>
-    <string name="revanced_enable_trim_silence_title">무음 건너뛰기 스위치 추가</string>
-    <string name="revanced_enable_trim_silence_summary">"재생 속도 메뉴 구성요소에 '무음 건너뛰기' 스위치를 추가합니다.
+    <string name="revanced_disable_trim_silence_title">무음 건너뛰기 스위치 비활성화</string>
+    <string name="revanced_disable_trim_silence_summary">"재생 속도 메뉴 구성요소에서 '무음 건너뛰기' 스위치를 비활성화합니다.
 
-알림:
-• 팟캐스트 기능입니다.
+정보:
+• 이 기능은 팟캐스트용입니다.
 • 이 기능은 아직 개발 중이므로 불안정할 수 있습니다."</string>
     <string name="revanced_enable_compact_dialog_title">소형 다이얼로그 활성화</string>
     <string name="revanced_enable_compact_dialog_summary">"휴대폰에서 소형 메뉴 구성요소를 활성화합니다.
@@ -260,7 +262,9 @@ YouTube Music의 검색 및 설정과 같은 활동은 공개되지 않으므로
     <string name="revanced_enable_forced_miniplayer_title">강제로 미니 플레이어 활성화</string>
     <string name="revanced_enable_forced_miniplayer_summary">새로운 트랙으로 변경되면 강제로 미니 플레이어를 활성화합니다.</string>
     <string name="revanced_enable_smooth_transition_animation_title">부드러운 전환 애니메이션 활성화</string>
-    <string name="revanced_enable_smooth_transition_animation_summary">미니 플레이어를 최소화 상태에서 최대화할 때, 부드러운 애니메이션을 활성화합니다.</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">"미니 플레이어를 최소화 상태에서 최대화할 때, 부드러운 애니메이션을 활성화합니다.
+
+제한 사항: 일부 사용자에게는 실시간 가사 레이아웃이 깨질 수 있습니다."</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">스와이프하여 미니 플레이어 닫기 활성화</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">미니 플레이어를 아래로 스와이프하여 닫을 수 있습니다.</string>
     <string name="revanced_enable_comments_scroll_top_title">댓글에서 맨 위로 스크롤 활성화</string>
@@ -452,7 +456,7 @@ API Key를 발급받는 방법을 보려면 여기를 탭하세요."</string>
     <string name="revanced_bypass_image_region_restrictions_title">이미지 표시 제한 국가 우회</string>
     <string name="revanced_bypass_image_region_restrictions_summary">이미지 도메인을 변경하여 일부 국가에서 차단된 재생목록 썸네일, 채널 프로필 사진, 커뮤니티 게시물 이미지 등을 수신할 수 있습니다.</string>
     <string name="revanced_change_share_sheet_title">공유 시트 변경</string>
-    <string name="revanced_change_share_sheet_summary">YT Music 기본 공유 시트에서 Android 시스템 공유 시트로 변경합니다.\n\n• 공유 버튼으로 바로 Android 시스템 공유 메뉴를 실행할 수 있습니다.</string>
+    <string name="revanced_change_share_sheet_summary">기본 공유 시트에서 시스템 공유 시트로 변경합니다.</string>
     <string name="revanced_disable_drc_audio_title">DRC 오디오 비활성화</string>
     <string name="revanced_disable_drc_audio_summary">오디오에 적용된 DRC (Dynamic Range Compression)를 비활성화합니다.</string>
     <string name="revanced_disable_music_video_in_album_title">앨범에서 뮤직 비디오 비활성화</string>
@@ -489,9 +493,11 @@ API Key를 발급받는 방법을 보려면 여기를 탭하세요."</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21_block_requst">iOS Music 6.21 (요청 차단)</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04_block_requst">iOS Music 7.04 (요청 차단)</string>
     <string name="revanced_spoof_client_type_entry_ios_music_8_12_block_requst">iOS Music 8.12 (요청 차단)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34_block_requst">iOS Music 8.34 (요청 차단)</string>
     <string name="revanced_spoof_video_streams_title">동영상 스트림 변경</string>
     <string name="revanced_spoof_video_streams_summary">클라이언트 동영상 스트림을 변경하여 재생 문제를 방지할 수 있습니다.</string>
     <string name="revanced_spoof_video_streams_default_client_title">기본 클라이언트</string>
@@ -503,6 +509,7 @@ API Key를 발급받는 방법을 보려면 여기를 탭하세요."</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_watch_history_type_title">시청 기록 유형</string>
     <string name="revanced_watch_history_type_summary">"• 원본: Google 계정의 시청 기록 설정을 따르지만 DNS 또는 VPN으로 인하여 시청 기록이 작동되지 않을 수 있습니다.
 • 도메인 변경: Google 계정의 시청 기록 설정을 따릅니다.

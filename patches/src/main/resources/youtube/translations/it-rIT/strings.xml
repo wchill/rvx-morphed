@@ -338,6 +338,7 @@ Tocca qui per saperne di più su DeArrow."</string>
 • Ultime notizie&lt;br&gt;
 • Continua a guardare&lt;br&gt;
 • Esplora altri canali&lt;br&gt;
+• Per te&lt;br&gt;
 • Ascolta di nuovo&lt;br&gt;
 • Più pertinenti&lt;br&gt;
 • Shopping&lt;br&gt;
@@ -368,9 +369,6 @@ Tocca qui per saperne di più su DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Playlist
 Negozio"</string>
-    <string name="revanced_hide_for_you_shelf_title">Nascondi lo scaffale Per Te</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Lo scaffale Per Te è nascosto.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Lo scaffale Per Te è visibile.</string>
     <string name="revanced_hide_links_preview_title">Nascondi l\'anteprima dei link</string>
     <string name="revanced_hide_links_preview_summary_on">L\'anteprima dei link è nascosta.</string>
     <string name="revanced_hide_links_preview_summary_off">L\'anteprima dei link è visibile.</string>
@@ -468,7 +466,7 @@ Nota: i video live, con 0 visualizzazioni e gli Shorts non possono essere nascos
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Generali</string>
     <string name="revanced_change_start_page_title">Cambia la scheda iniziale</string>
-    <string name="revanced_change_start_page_entry_default">Predefinita (Home)</string>
+    <string name="revanced_change_start_page_entry_default">Home (Predefinita)</string>
     <string name="revanced_change_start_page_entry_all_subscriptions">Tutte le iscrizioni</string>
     <string name="revanced_change_start_page_entry_browse">Esplora canali</string>
     <string name="revanced_change_start_page_entry_courses">Apprendimento</string>
@@ -503,7 +501,7 @@ Nota: il pulsante Indietro della barra degli strumenti potrebbe non funzionare."
     <string name="revanced_disable_auto_audio_tracks_title">Disattiva la traccia audio automatica forzata</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">La traccia audio automatica forzata è disattivata.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">La traccia audio automatica forzata è attivata.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Per usare questa impostazione, cambia il client predefinito in TV o iOS TV.</string>
+    <string name="revanced_disable_auto_audio_tracks_not_available">Per usare questa impostazione, cambia il client predefinito in TV, TV Simply o iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Disattiva i sottotitoli automatici forzati</string>
     <string name="revanced_disable_auto_captions_summary_on">I sottotitoli automatici forzati sono disattivati.</string>
     <string name="revanced_disable_auto_captions_summary_off">I sottotitoli automatici forzati sono attivati.</string>
@@ -1014,9 +1012,9 @@ Note:
     <string name="revanced_hide_ai_chat_summary_title">Nascondi la sezione Riepilogo IA della Chat nella chat live</string>
     <string name="revanced_hide_ai_chat_summary_summary_on">La sezione Riepilogo IA della Chat nella chat live è nascosta.</string>
     <string name="revanced_hide_ai_chat_summary_summary_off">La sezione Riepilogo IA della Chat nella chat live è visibile.</string>
-    <string name="revanced_hide_ai_comments_summary_title">Nascondi il riepilogo IA dei commenti</string>
-    <string name="revanced_hide_ai_comments_summary_summary_on">Il riepilogo IA dei commenti è nascosto.</string>
-    <string name="revanced_hide_ai_comments_summary_summary_off">Il riepilogo IA dei commenti è visibile.</string>
+    <string name="revanced_hide_ai_comments_summary_title">Nascondi i riepiloghi IA nei commenti</string>
+    <string name="revanced_hide_ai_comments_summary_summary_on">I riepiloghi IA nei commenti sono nascosti.</string>
+    <string name="revanced_hide_ai_comments_summary_summary_off">I riepiloghi IA nei commenti sono visibili.</string>
     <string name="revanced_hide_channel_guidelines_title">Nascondi le linee guida dei canali</string>
     <string name="revanced_hide_channel_guidelines_summary_on">Le linee guida dei canali sono nascoste.</string>
     <string name="revanced_hide_channel_guidelines_summary_off">Le linee guida dei canali sono visibili.</string>
@@ -1069,7 +1067,7 @@ Nota: alcuni link di ricerca evidenziati che non hanno uno stile di testo predef
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Il menù Traccia Audio è visibile.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Il menù Traccia Audio è nascosto.
 
-Nota: per mostrare il menù Traccia Audio, cambia il client predefinito in TV o iOS TV."</string>
+Nota: per mostrare il menù Traccia Audio, cambia il client predefinito in TV, TV Simply o iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Nascondi il menù Sottotitoli</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Il menù Sottotitoli è nascosto.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Il menù Sottotitoli è visibile.</string>
@@ -2198,6 +2196,8 @@ Nota: se sei un utente YouTube Premium o hai escluso la patch \"GmsCore support\
 <small>(In fase di sviluppo)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV Embedded
 <small>(In fase di sviluppo)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV Simply
+<small>(In fase di sviluppo)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Effetti collaterali del camuffamento</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Il menù Traccia Audio è nascosto.
 • Il menù Volume Stabile è nascosto.
@@ -2279,15 +2279,15 @@ Questa impostazione è ancora in fase di sviluppo, quindi potrebbe non funzionar
 
 Nota: AVC ha una risoluzione massima di 1080p, il codec Opus non è disponibile e la riproduzione userà più dati internet rispetto a VP9 o AV1."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
-    <string name="revanced_preference_category_js">JavaScript (In fase di sviluppo)</string>
+    <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Mostra il client JavaScript tra i client disponibili</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">Il client JavaScript è visibile tra i client disponibili.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">Il client JavaScript non è visibile tra i client disponibili.</string>
-    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"L'app userà più risorse di sistema per trovare o decodificare il pattern n-sig e i video si avvieranno più lentamente.
+    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"L'app userà più risorse di sistema per trovare o decodificare il pattern n-sig, e i video si avvieranno più lentamente.
 
 Il pattern n-sig cambia piuttosto frequentemente sui server di YouTube e la riproduzione potrebbe non funzionare se il regex non riesce a trovare il pattern.
 
-Questa impostazione è ancora in fase di sviluppo, quindi usala solo per scopi di debug."</string>
+Tra i client JavaScript, il client consigliato è TV Simply."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Usa il client JavaScript per tutti i video</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"Il client JavaScript viene usato indipendentemente dal tipo di video.
 

@@ -10,7 +10,7 @@
     <string name="revanced_preference_category_experimental_flag">Tính năng thử nghiệm</string>
     <string name="revanced_extended_confirm_user_dialog_title">Bạn có chắc chắn muốn tiếp tục không?</string>
     <string name="revanced_extended_restart_first_run">Vui lòng khởi động lại ứng dụng trong lần đầu khởi chạy để hiển thị đúng giao diện</string>
-    <string name="revanced_extended_restart_title">Cần khởi động lại</string>
+    <string name="revanced_extended_restart_title">Yêu cầu khởi động lại</string>
     <string name="revanced_extended_restart_dialog_message">Khởi động lại ứng dụng để thay đổi này có hiệu lực.</string>
     <string name="revanced_extended_restart">Khởi động lại</string>
     <string name="revanced_extended_settings_color_invalid">Màu không hợp lệ.</string>
@@ -52,7 +52,7 @@ Ngoài ra, bạn cũng có thể mở hộp thoại quản lý hàng chờ bằn
 Nhưng tính năng này vẫn còn đang trong quá trình phát triển, vì vậy phần lớn các tính năng có thể chưa hoạt động.
 
 Vui lòng chỉ sử dụng cho mục đích gỡ lỗi."</string>
-    <string name="revanced_queue_manager_check_failed_auth">Cần đăng nhập</string>
+    <string name="revanced_queue_manager_check_failed_auth">Yêu cầu đăng nhập</string>
     <string name="revanced_queue_manager_check_failed_generic">Quản lý hàng chờ không khả dụng (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Không xác định được danh sách phát</string>
     <string name="revanced_queue_manager_check_failed_queue">Hàng chờ trống</string>
@@ -240,7 +240,7 @@ Vui lòng chỉ sử dụng cho mục đích gỡ lỗi."</string>
 Nếu được bật, chỉ có URL video được gửi đến máy chủ API, ngoài ra không có bất kì dữ liệu nào khác được gửi đi. Nếu video không có hình thu nhỏ DeArrow, hình thu nhỏ gốc hoặc hình thu nhỏ tự động sẽ được hiển thị.
 
 Nhấn vào đây để tìm hiểu thêm về DeArrow."</string>
-    <string name="revanced_alt_thumbnail_dearrow_connection_toast_title">Thông báo ngắn nếu API không khả dụng</string>
+    <string name="revanced_alt_thumbnail_dearrow_connection_toast_title">Hiện thông báo ngắn nếu API không khả dụng</string>
     <string name="revanced_alt_thumbnail_dearrow_connection_toast_summary_on">Hiển thị thông báo ngắn nếu API DeArrow không khả dụng.</string>
     <string name="revanced_alt_thumbnail_dearrow_connection_toast_summary_off">Không hiện thông báo ngắn nếu API DeArrow không khả dụng.</string>
     <string name="revanced_alt_thumbnail_dearrow_api_url_title">Điểm cuối API DeArrow</string>
@@ -361,9 +361,6 @@ Nhấn vào đây để tìm hiểu thêm về DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Danh sách phát
 Cửa hàng"</string>
-    <string name="revanced_hide_for_you_shelf_title">Ẩn kệ Dành cho bạn</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Kệ \"Dành cho bạn\" đã ẩn.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Kệ \"Dành cho bạn\" được hiển thị.</string>
     <string name="revanced_hide_links_preview_title">Ẩn xem trước liên kết</string>
     <string name="revanced_hide_links_preview_summary_on">Xem trước liên kết đã ẩn.</string>
     <string name="revanced_hide_links_preview_summary_off">Xem trước liên kết được hiển thị.</string>
@@ -2143,7 +2140,7 @@ Nhấn Tiếp tục và cho phép thay đổi lựa chọn tối ưu hoá pin."<
     <string name="revanced_debug_spannable_summary_off">Nhật ký gỡ lỗi không bao gồm dữ liệu spannable.</string>
     <string name="revanced_debug_toast_on_error_title">Thông báo ngắn khi RVX lỗi</string>
     <string name="revanced_debug_toast_on_error_summary_on">Hiển thị thông báo ngắn nếu xảy ra lỗi.</string>
-    <string name="revanced_debug_toast_on_error_summary_off">Không hiển thị thông báo ngắn nếu xảy ra lỗi.</string>
+    <string name="revanced_debug_toast_on_error_summary_off">Không hiện thông báo ngắn nếu xảy ra lỗi.</string>
     <string name="revanced_debug_export_logs_to_clipboard_title">Sao chép nhật ký gỡ lỗi</string>
     <string name="revanced_debug_export_logs_to_clipboard_summary">Sao chép nhật ký gỡ lỗi RVX vào bảng nhớ tạm.</string>
     <string name="revanced_debug_export_logs_to_file_title">Xuất nhật ký gỡ lỗi</string>
@@ -2291,7 +2288,7 @@ Hạn chế:
 • Codec âm thanh OPUS không khả dụng.
 • Dùng nhiều dữ liệu di động hơn với VP9 hoặc AV1."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
-    <string name="revanced_preference_category_js">JavaScript (Thử nghiệm)</string>
+    <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Giả mạo JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">JavaScript được thêm vào danh sách khả dụng.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">JavaScript không được thêm vào danh sách khả dụng.</string>
@@ -2299,7 +2296,7 @@ Hạn chế:
 
 Chuỗi n-sig trên máy chủ YouTube thay đổi khá thường xuyên, nên nếu biểu thức chính quy không tìm được chuỗi phù hợp, video có thể không phát được.
 
-Tính năng này vẫn đang trong quá trình phát triển, vui lòng chỉ dùng cho mục đích gỡ lỗi."</string>
+Trong số client dùng JavaScript, client được khuyến nghị là TV Simply."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Giả mạo JavaScript cho tất cả video</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"JavaScript được sử dụng cho bất kể loại video nào.
 

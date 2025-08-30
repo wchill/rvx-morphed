@@ -72,12 +72,6 @@ Descarga %2$s desde el sitio web."</string>
     <string name="revanced_hide_promotion_alert_banner_summary">Oculta el banner de alerta de promoción.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Menú desplegable</string>
-    <string name="revanced_enable_trim_silence_title">Añadir interruptor para recortar silencios</string>
-    <string name="revanced_enable_trim_silence_summary">"Añade un interruptor para recortar silencios en el menú desplegable de velocidad de reproducción.
-
-Información:
-Esta función es para podcasts.
-Esta función aún está en desarrollo, por lo que puede ser inestable."</string>
     <string name="revanced_enable_compact_dialog_title">Activar diálogo compacto</string>
     <string name="revanced_enable_compact_dialog_summary">"Activa el diálogo compacto en el teléfono.
 

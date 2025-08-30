@@ -70,12 +70,6 @@
     <string name="revanced_hide_promotion_alert_banner_summary">隐藏推广提醒横幅。</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">弹出菜单</string>
-    <string name="revanced_enable_trim_silence_title">新增修改静音开关</string>
-    <string name="revanced_enable_trim_silence_summary">"在播放速度弹出菜单中添加修改静音开关。
-
-信息：
-• 此功能适用于播客。
-• 此功能仍在开发中，因此可能不稳定。"</string>
     <string name="revanced_enable_compact_dialog_title">启用紧凑对话框</string>
     <string name="revanced_enable_compact_dialog_summary">"在手机上启用紧凑弹出菜单。
 

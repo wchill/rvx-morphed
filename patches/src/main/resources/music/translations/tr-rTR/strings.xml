@@ -63,12 +63,6 @@ Lütfen web sitesinden %2$s dosyasını indirin."</string>
     <string name="revanced_hide_promotion_alert_banner_summary">Promosyon uyarı başlığını gizler.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Açılır menü</string>
-    <string name="revanced_enable_trim_silence_title">Kırpma sessizliğini etkinleştir</string>
-    <string name="revanced_enable_trim_silence_summary">"Oynatma hızı açılır menüsüne 'Sessizliği kırp' geçişini etkinleştirir.
-
-Bilgi:
-• Bu özellik podcast'ler içindir.
-• Bu özellik henüz geliştirme aşamasında olduğundan kararsız olabilir."</string>
     <string name="revanced_enable_compact_dialog_title">Kompakt diyaloğu etkinleştir</string>
     <string name="revanced_enable_compact_dialog_summary">"Telefonda kompakt iletişim kutusunu etkinleştirin. 
 

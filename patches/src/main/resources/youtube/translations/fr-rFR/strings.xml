@@ -331,9 +331,6 @@ Cliquez ici pour en savoir plus sur DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Playlists
 Boutique"</string>
-    <string name="revanced_hide_for_you_shelf_title">Masquer la catégorie \'Pour vous\'</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">La catégorie \'Pour vous\' est masquée.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">La catégorie \'Pour vous\' est affichée.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Posts communautaires</string>
     <string name="revanced_preference_screen_community_posts_summary">Masque ou affiche les posts communautaires dans les flux et sur les chaînes.</string>

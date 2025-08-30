@@ -161,9 +161,6 @@
  Shorts 
 Плейлисти
 Маркет"</string>
-    <string name="revanced_hide_for_you_shelf_title">Скриване на секцията \'За Вас\'</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Секцията \'За Вас\' е скрита.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Секцията \'За Вас\' се показва.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Публикации в общността</string>
     <string name="revanced_preference_screen_community_posts_summary">Скрийте или покажете публикации в общността в емисията и канала.</string>

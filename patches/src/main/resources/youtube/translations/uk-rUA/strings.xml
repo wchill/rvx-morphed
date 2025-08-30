@@ -334,7 +334,7 @@
     <string name="revanced_hide_carousel_shelf_search_summary_on">Приховано у результатах пошуку.</string>
     <string name="revanced_hide_carousel_shelf_search_summary_off">Показується у результатах пошуку.</string>
     <string name="revanced_hide_carousel_shelf_about_title">Про карусельну полицю</string>
-    <string name="revanced_hide_carousel_shelf_about_summary">Приклади карусельних полиць:&lt;br&gt;&lt;br&gt;&lt;b&gt;Важливі новини&lt;/b&gt;, &lt;b&gt;Продовжити перегляд&lt;/b&gt;, &lt;b&gt;Переглянути більше каналів&lt;/b&gt;, &lt;b&gt;Прослухати знову&lt;/b&gt;, &lt;b&gt;Найактуальніші&lt;/b&gt;, &lt;b&gt;Покупки&lt;/b&gt;, &lt;b&gt;Переглянути ще раз&lt;/b&gt;</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Приклади карусельних полиць:&lt;br&gt;&lt;br&gt;&lt;b&gt;Важливі новини&lt;/b&gt;, &lt;b&gt;Продовжити перегляд&lt;/b&gt;, &lt;b&gt;Переглянути більше каналів&lt;/b&gt;, &lt;b&gt;;Для Вас&lt;/b&gt;, &lt;b&gt;Прослухати знову&lt;/b&gt;, &lt;b&gt;Найактуальніші&lt;/b&gt;, &lt;b&gt;Покупки&lt;/b&gt;, &lt;b&gt;Переглянути ще раз&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Панель категорій</string>
     <string name="revanced_preference_screen_category_bar_summary">Приховувати чи показувати панель категорій у стрічці, пошуку та пов\'язаних відео.</string>
@@ -361,9 +361,6 @@
     <string name="revanced_hide_channel_tab_filter_strings_hint">"YouTube Shorts
 Списки відтворення
 Магазин"</string>
-    <string name="revanced_hide_for_you_shelf_title">Приховати полицю \'Для вас\'</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Полицю \'Для вас\' приховано.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Полицю \'Для вас\' показується.</string>
     <string name="revanced_hide_links_preview_title">Приховати попередній перегляд посилань</string>
     <string name="revanced_hide_links_preview_summary_on">Попередній перегляд посилань приховано.</string>
     <string name="revanced_hide_links_preview_summary_off">Попередній перегляд посилань показується.</string>
@@ -498,7 +495,7 @@
     <string name="revanced_disable_auto_audio_tracks_title">Вимкнути примусові автоматичні звукові доріжки</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Примусові автоматичні звукові доріжки вимкнено.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Примусові автоматичні звукові доріжки увімкнено.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Щоб скористатися цією функцією, змініть \'Основний клієнт (Підробка даних трансляції)\' на TV або iOS TV.</string>
+    <string name="revanced_disable_auto_audio_tracks_not_available">Щоб скористатися цією функцією, змініть \'Основний клієнт (Підробка даних трансляції)\' на TV, Простий TV або iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Вимкнути примусові авто субтитри</string>
     <string name="revanced_disable_auto_captions_summary_on">Примусові авто субтитри вимкнено.</string>
     <string name="revanced_disable_auto_captions_summary_off">Примусові авто субтитри увімкнено.</string>
@@ -1070,7 +1067,7 @@
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Меню Звукова доріжка показується.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Меню Звукова доріжка приховано.
 
-Для показу меню Звукова доріжка, змініть 'Основний клієнт (Підробка даних трансляції)' на TV або iOS TV."</string>
+Для показу меню Звукова доріжка, змініть 'Основний клієнт (Підробка даних трансляції)' на TV, Простий TV або iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Приховати меню субтитрів</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Меню субтитрів приховано.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Меню субтитрів показується.</string>
@@ -2201,6 +2198,8 @@
 <small>(ще в розробці)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Вбудований TV
 <small>(ще в розробці)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"Простий TV
+<small>(ще в розробці)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Побічні ефекти імітування</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Меню звукової доріжки відсутнє.
 • Стабілізація гучності недоступна.
@@ -2291,7 +2290,7 @@
 
 AVC має максимальну роздільну здатність 1080p, аудіокодек Opus недоступний, а відтворення відео використовуватиме більше інтернет-даних, ніж кодек VP9 чи AV1."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
-    <string name="revanced_preference_category_js">JavaScript (ще в розробці)</string>
+    <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Використовувати клієнт JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">Клієнт JavaScript доданий до доступних клієнтів.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">Клієнт JavaScript не доданий до доступних клієнтів.</string>
@@ -2299,7 +2298,7 @@ AVC має максимальну роздільну здатність 1080p, �
 
 Шаблон n-sig досить часто змінюється на серверах YouTube, і відтворення може завершитися невдало, якщо regex не вдасться знайти шаблон n-sig.
 
-Ця функція все ще перебуває у стадії розробки, тому, будь ласка, використовуйте її лише з метою налагодження."</string>
+Серед клієнтів JavaScript рекомендується Простий TV."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Використовувати клієнт JavaScript для всіх відео</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"Клієнт JavaScript використовується незалежно від типу відео.
 

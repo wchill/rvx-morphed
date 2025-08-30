@@ -361,9 +361,6 @@
     <string name="revanced_hide_channel_tab_filter_strings_hint">"短影音
 播放清單
 商店"</string>
-    <string name="revanced_hide_for_you_shelf_title">隱藏「為你推薦」功能列</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">「為你推薦」功能列已隱藏</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">「為你推薦」功能列已顯示。</string>
     <string name="revanced_hide_links_preview_title">隱藏連結預覽</string>
     <string name="revanced_hide_links_preview_summary_on">連結預覽已隱藏。</string>
     <string name="revanced_hide_links_preview_summary_off">連結預覽已顯示。</string>
@@ -2196,6 +2193,8 @@
     <string name="revanced_spoof_streaming_data_client_entry_tv">"電視
 <small>(開發中)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"電視內嵌功能
+<small>(開發中)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"電視簡易功能
 <small>(開發中)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">偽裝副作用</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• 音軌選單遺失。

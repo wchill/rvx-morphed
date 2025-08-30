@@ -71,12 +71,6 @@ Limitáció;
     <string name="revanced_hide_promotion_alert_banner_summary">Promóciós figyelmeztető banner elrejtése.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Felugró menü</string>
-    <string name="revanced_enable_trim_silence_title">Csend kivágás kapcsoló hozzáadása</string>
-    <string name="revanced_enable_trim_silence_summary">"A 'Csend kivágás' kapcsoló hozzáadása a lejátszási sebesség felugró menühöz.
-
-Információ:
-• Ez a funkció podcastek számára készült.
-• Ez a funkció még fejlesztés alatt áll, ezért instabil lehet."</string>
     <string name="revanced_enable_compact_dialog_title">Kompakt menü engedélyezése</string>
     <string name="revanced_enable_compact_dialog_summary">"Engedélyezi a telefonokon a kompakt felugró menüt.
 

@@ -37,6 +37,8 @@
     <string name="revanced_hide_action_button_song_video_title">Ukryj przycisk utwór/teledysk</string>
     <string name="revanced_hide_action_button_song_video_summary">"Ukrywa przycisk utwór/teledysk.
 (Ten przycisk jest jedynie dostępny u niektórych użytkowników)"</string>
+    <string name="revanced_hide_action_button_disabled_title">Ukryj wyłączone przyciski</string>
+    <string name="revanced_hide_action_button_disabled_summary">Ukrywa wyłączone przyciski, jak wyłączony przycisk od komentarzy.</string>
     <string name="revanced_hide_action_button_label_title">Ukryj nazwy przycisków akcji</string>
     <string name="revanced_hide_action_button_label_summary">Ukrywa nazwy przycisków akcji.</string>
     <string name="revanced_external_downloader_action_title">Zastąp przycisk od pobierania</string>
@@ -74,12 +76,12 @@ Ograniczenie:
     <string name="revanced_hide_promotion_alert_banner_summary">Ukrywa banery z alertami promocyjnymi.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Menu ustawień utworu</string>
-    <string name="revanced_enable_trim_silence_title">Włącz przełącznik do pomijania ciszy</string>
-    <string name="revanced_enable_trim_silence_summary">"Dodaje przycisk pomijania ciszy do menu od prędkości odtwarzania.
+    <string name="revanced_disable_trim_silence_title">Wyłącz przełącznik do pomijania ciszy</string>
+    <string name="revanced_disable_trim_silence_summary">"Wyłącza przycisk od pomijania ciszy do menu od prędkości odtwarzania.
 
 Informacje:
-• Ta funkcja jest dostępna tylko dla podcastów.
-• Ta funkcja jest nadal w fazie rozwoju, więc może być niestabilna."</string>
+• funkcja jest dostępna tylko dla podcastów.
+• funkcja jest nadal w fazie rozwoju, więc może być niestabilna."</string>
     <string name="revanced_enable_compact_dialog_title">Włącz kompaktowe menu</string>
     <string name="revanced_enable_compact_dialog_summary">"Włącza kompaktowe menu ustawień utworu na telefonie.
 
@@ -261,7 +263,9 @@ Jeśli to możliwe, użyj ciemnych kolorów, gdyż aplikacja nie obsługuje jasn
     <string name="revanced_enable_forced_miniplayer_title">Włącz wymuszenie miniodtwarzacza</string>
     <string name="revanced_enable_forced_miniplayer_summary">Zostawia odtwarzacz zminimalizowany, nawet jeśli zostanie odtworzony inny utwór.</string>
     <string name="revanced_enable_smooth_transition_animation_title">Włącz płynną animację przejścia</string>
-    <string name="revanced_enable_smooth_transition_animation_summary">Włącza płynną animację, gdy miniodtwarzacz jest zmaksymalizowany ze zminimalizowanego stanu.</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">"Włącza płynną animację, gdy miniodtwarzacz jest zmaksymalizowany ze zminimalizowanego stanu.
+
+Ograniczenie: interfejs tekstów utworów synchronizowanych czasowo może być popsuty dla niektórych użytkowników."</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Włącz przesunięcie, by zamknąć miniodtwarzacz</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Włącza przesunięcie, by zamknąć miniodtwarzacz.</string>
     <string name="revanced_enable_comments_scroll_top_title">Przewijanie do góry komentarzy przyciskiem</string>
@@ -319,8 +323,8 @@ Niektóre ustawienia mogą nie działać poprawnie ze starym układem odtwarzacz
     <string name="revanced_enable_opus_codec_summary">"Włącza kodek OPUS, jeśli odpowiedź odtwarzacza zawiera ten kodek.
 
 Informacje:
-• Najnowsze klienty YouTube Music domyślnie używają kodeka OPUS
-• Działa jedynie dla użytkowników używających oszukiwania aplikacji na bardzo starych klientach"</string>
+• najnowsze klienty YouTube Music domyślnie używają kodeka OPUS
+• opcja może być niepotrzebna, jeśli klient bądź strumień filmu jest oszukiwany"</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Zapamiętuj zmiany prędkości odtwarzania</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Zapisuje ostatnią wybraną prędkość odtwarzania.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Komunikaty o zmianie domyślnej prędkości odtwarzania</string>
@@ -487,9 +491,11 @@ Efekt uboczny (blokada żądania):
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21_block_requst">iOS Music 6.21 (Blokada żądania)</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04_block_requst">iOS Music 7.04 (Blokada żądania)</string>
     <string name="revanced_spoof_client_type_entry_ios_music_8_12_block_requst">iOS Music 8.12 (Blokada żądania)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34_block_requst">iOS Music 8.34 (Blokada żądania)</string>
     <string name="revanced_spoof_video_streams_title">Oszukuj strumienie filmu</string>
     <string name="revanced_spoof_video_streams_summary">Oszukuje strumienie filmu klienta, by zapobiec problemom z odtwarzaniem.</string>
     <string name="revanced_spoof_video_streams_default_client_title">Domyślny klient</string>
@@ -501,6 +507,7 @@ Efekt uboczny (blokada żądania):
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_watch_history_type_title">Typ historii oglądania</string>
     <string name="revanced_watch_history_type_summary">"• Oryginalny: Stosuje się do ustawień historii oglądania konta Google, lecz historia oglądania może nie działać przy używaniu DNS lub VPN
 • Zastąpienie domeny: Stosuje się do ustawień historii oglądania konta Google

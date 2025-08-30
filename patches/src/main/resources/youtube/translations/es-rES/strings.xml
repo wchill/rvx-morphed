@@ -361,9 +361,6 @@ Pulsa aquí para saber más sobre DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Listas de reproducción
 Tienda"</string>
-    <string name="revanced_hide_for_you_shelf_title">Ocultar estanterías Para Ti</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Las estanterías Para Ti están ocultas.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Las estanterías Para Ti están visibles.</string>
     <string name="revanced_hide_links_preview_title">Ocultar vista previa de enlaces</string>
     <string name="revanced_hide_links_preview_summary_on">La vista previa de enlaces está oculta.</string>
     <string name="revanced_hide_links_preview_summary_off">La vista previa de enlaces está visible.</string>
@@ -2185,6 +2182,8 @@ Pulsa el botón de continuar y desactiva las optimizaciones de la batería."</st
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
 <small>(todavía en desarrollo)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV integrado
+<small>(todavía en desarrollo)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV simple
 <small>(todavía en desarrollo)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Efectos secundarios de falsificación</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Falta el menú de la pista de audio.

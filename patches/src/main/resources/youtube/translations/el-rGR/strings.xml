@@ -332,7 +332,7 @@
     <string name="revanced_hide_carousel_shelf_search_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_carousel_shelf_search_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_carousel_shelf_about_title">Σχετικά με την ενότητα καρουζέλ προτάσεων</string>
-    <string name="revanced_hide_carousel_shelf_about_summary">Παραδείγματα ενοτήτων καρουζέλ προτάσεων:&lt;br&gt;&lt;br&gt;&lt;b&gt;Έκτακτη είδηση&lt;/b&gt;, &lt;b&gt;Συνέχεια παρακολούθησης&lt;/b&gt;, &lt;b&gt;Εξερευνήστε περισσότερα κανάλια&lt;/b&gt;, &lt;b&gt;Ακούστε ξανά&lt;/b&gt;, &lt;b&gt;Πιο σχετικά&lt;/b&gt;, &lt;b&gt;Shopping&lt;/b&gt;, &lt;b&gt;Παρακολουθήστε ξανά&lt;/b&gt;</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Παραδείγματα ενοτήτων καρουζέλ προτάσεων:&lt;br&gt;&lt;br&gt;&lt;b&gt;Έκτακη είδηση&lt;/b&gt;, &lt;b&gt;Συνέχεια παρακολούθησης&lt;/b&gt;, &lt;b&gt;Εξερευνήστε περισσότερα κανάλια&lt;/b&gt;, &lt;b&gt;Για εσάς&lt;/b&gt;, &lt;b&gt;Ακούστε ξανά&lt;/b&gt;, &lt;b&gt;Πιο σχετικά&lt;/b&gt;, &lt;b&gt;Shopping&lt;/b&gt;, &lt;b&gt;Παρακολούθηση ξανά&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Γραμμή κατηγοριών</string>
     <string name="revanced_preference_screen_category_bar_summary">Απόκρυψη ή εμφάνιση της γραμμής κατηγοριών στις ροές, στα σχετικά βίντεο, στα αποτελέσματα αναζήτησης και στο ιστορικό παρακολούθησης.</string>
@@ -359,9 +359,6 @@
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Playlists
 Κοινότητα"</string>
-    <string name="revanced_hide_for_you_shelf_title">Ενότητα «Για εσάς»</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Κρυμμένη.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_links_preview_title">Προεπισκόπηση συνδέσμων</string>
     <string name="revanced_hide_links_preview_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_links_preview_summary_off">Εμφανίζεται.</string>
@@ -494,7 +491,7 @@ Playlists
     <string name="revanced_disable_auto_audio_tracks_title">Απενεργοποίηση υποχρεωτικών κομματιών ήχου</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Τα υποχρεωτικά κομμάτια ήχου είναι απενεργοποιημένα.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Τα υποχρεωτικά κομμάτια ήχου είναι ενεργοποιημένα.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Για να χρησιμοποιήσετε αυτή τη λειτουργία, πρέπει να γίνει αλλαγή του προεπιλεγμένου προγράμματος πελάτη σε TV ή iOS TV στις ρυθμίσεις «Παραποίηση δεδομένων ροής».</string>
+    <string name="revanced_disable_auto_audio_tracks_not_available">Για να χρησιμοποιήσετε αυτή τη λειτουργία, πρέπει να γίνει αλλαγή του προεπιλεγμένου προγράμματος πελάτη σε TV, TV Simply ή iOS TV στις ρυθμίσεις «Παραποίηση δεδομένων ροής».</string>
     <string name="revanced_disable_auto_captions_title">Απενεργοποίηση υποχρεωτικών αυτόματων υπότιτλων</string>
     <string name="revanced_disable_auto_captions_summary_on">Οι υποχρεωτικοί αυτόματοι υπότιτλοι είναι απενεργοποιημένοι.</string>
     <string name="revanced_disable_auto_captions_summary_off">Οι υποχρεωτικοί αυτόματοι υπότιτλοι εμφανίζονται.</string>
@@ -1064,7 +1061,7 @@ Playlists
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Κρυμμένο.
 
-Για να εμφανίζεται το μενού «Κομμάτι ήχου», πρέπει να γίνει αλλαγή του προεπιλεγμένου προγράμματος πελάτη σε TV ή iOS TV στις ρυθμίσεις «Παραποίηση δεδομένων ροής»."</string>
+Για να εμφανίζεται το μενού «Κομμάτι ήχου», πρέπει να γίνει αλλαγή του προεπιλεγμένου προγράμματος πελάτη σε TV, TV Simply ή iOS TV στις ρυθμίσεις «Παραποίηση δεδομένων ροής»."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Μενού «Υπότιτλοι»</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Εμφανίζεται.</string>
@@ -2211,6 +2208,8 @@ Playlists
 <small>(Λειτουργία σε εξέλιξη)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV Embedded
 <small>(Λειτουργία σε εξέλιξη)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV Simply
+<small>(Λειτουργία σε εξέλιξη)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Παρενέργειες παραποίησης</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Το μενού «Κομμάτι ήχου» λείπει.
 • Η λειτουργία «Σταθερή ένταση» δεν είναι διαθέσιμη.
@@ -2300,15 +2299,15 @@ Playlists
 
 Ο AVC έχει μέγιστη ανάλυση 1080p, ο κωδικοποιητής ήχου Opus δεν είναι διαθέσιμος και η αναπαραγωγή βίντεο θα χρησιμοποιεί περισσότερα δεδομένα ίντερνετ από τον VP9 ή τον AV1."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
-    <string name="revanced_preference_category_js">JavaScript (λειτουργία σε εξέλιξη)</string>
+    <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Χρήση προγράμματος πελάτη JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">Το JavaScript προστέθηκε στα διαθέσιμα προγράμματα πελάτη.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">Το JavaScript δεν προστέθηκε στα διαθέσιμα προγράμματα πελάτη.</string>
     <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"Η εφαρμογή χρησιμοποιεί περισσότερους πόρους συστήματος για την εύρεση ή την αποκωδικοποίηση του μοτίβου n-sig, και υπάρχει μια μικρή καθυστέρηση στην έναρξη αναπαραγωγής βίντεο.
 
-Το μοτίβο n-sig αλλάζει αρκετά συχνά στον διακομιστή YouTube, και η αναπαραγωγή βίντεο ενδέχεται να αποτύχει αν ο αλγόριθμος δεν καταφέρει να βρει το μοτίβο n-sig.
+Το μοτίβο n-sig αλλάζει αρκετά συχνά στον διακομιστή YouTube, και η αναπαραγωγή βίντεο μπορεί να αποτύχει αν ο αλγόριθμος δεν καταφέρει να βρει το μοτίβο n-sig.
 
-Αυτή η λειτουργία είναι ακόμη προς ανάπτυξη, επομένως χρησιμοποιήστε τη για σκοπούς εντοπισμού σφαλμάτων μόνο."</string>
+Μεταξύ των προγραμμάτων πελάτη JavaScript, το προτεινόμενο είναι το TV Simply."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Χρήση του προγράμματος πελάτη JavaScript για όλα τα βίντεο</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"Το πρόγραμμα πελάτη JavaScript χρησιμοποιείται ανεξάρτητα από τον τύπο βίντεο.
 

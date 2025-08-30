@@ -201,9 +201,6 @@
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 播放列表
 商店"</string>
-    <string name="revanced_hide_for_you_shelf_title">隐藏”个性化“功能架</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">“个性化” 功能架已隐藏</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">“个性化” 功能架已显示</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">社区帖子</string>
     <string name="revanced_preference_screen_community_posts_summary">在首页和频道中隐藏或显示社区帖子</string>

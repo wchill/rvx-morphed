@@ -74,12 +74,6 @@ Limitações:
     <string name="revanced_hide_promotion_alert_banner_summary">Oculta o banner de alerta de promoção.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Menu flutuante</string>
-    <string name="revanced_enable_trim_silence_title">Adicionar alternador para Cortar silêncio</string>
-    <string name="revanced_enable_trim_silence_summary">"Adiciona a opção Cortar silêncio ao menu flutuante de velocidade de reprodução.
-
-Informações:
-• Este recurso é para podcasts.
-• Este recurso ainda está em desenvolvimento, portanto pode ser instável."</string>
     <string name="revanced_enable_compact_dialog_title">Ativar diálogo compacto</string>
     <string name="revanced_enable_compact_dialog_summary">"Ativa o menu flutuante compacto em telefones.
 

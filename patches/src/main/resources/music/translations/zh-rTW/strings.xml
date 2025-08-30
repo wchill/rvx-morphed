@@ -62,12 +62,6 @@
     <string name="revanced_hide_promotion_alert_banner_summary">隱藏促銷提醒橫幅。</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">彈出式選單</string>
-    <string name="revanced_enable_trim_silence_title">新增修改靜音開關</string>
-    <string name="revanced_enable_trim_silence_summary">"將修改靜音開關新增至播放速度彈出式選單
-
- 資訊:
- • 此功能適用於播客
- • 此功能仍在開發中，因此可能不穩定"</string>
     <string name="revanced_enable_compact_dialog_title">啟用精簡選單</string>
     <string name="revanced_enable_compact_dialog_summary">"在手機上啟用緊湊對話框
 

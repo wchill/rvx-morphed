@@ -73,12 +73,6 @@ Limitations :
     <string name="revanced_hide_promotion_alert_banner_summary">Masque la bannière d\'alerte de promotion.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Menu déroulant</string>
-    <string name="revanced_enable_trim_silence_title">Ajouter une option \"Masquer les silences\"</string>
-    <string name="revanced_enable_trim_silence_summary">"Ajoute \"Masquer les silences\" dans le menu \"Vitesse de lecture\" du menu déroulant.
-
-Info :
-• Cette fonctionnalité est destinée aux podcasts. 
-• Cette fonctionnalité est encore en développement, elle peut donc être instable."</string>
     <string name="revanced_enable_compact_dialog_title">Activer la boîte de dialogue compacte</string>
     <string name="revanced_enable_compact_dialog_summary">"Active le menu déroulant compact sur téléphones.
 

@@ -37,6 +37,8 @@
     <string name="revanced_hide_action_button_song_video_title">Приховати кнопку Пісня / Відео</string>
     <string name="revanced_hide_action_button_song_video_summary">"Приховує кнопку Пісня / Відео.
 (Ця кнопка доступна лише деяким користувачам)"</string>
+    <string name="revanced_hide_action_button_disabled_title">Приховати кнопку вимкнення</string>
+    <string name="revanced_hide_action_button_disabled_summary">Приховує вимкнені кнопки, наприклад, вимкнену кнопку \"Коментарі\".</string>
     <string name="revanced_hide_action_button_label_title">Приховати підписи панелі дій</string>
     <string name="revanced_hide_action_button_label_summary">Приховує підписи кнопок на панелі дій плеєра.</string>
     <string name="revanced_external_downloader_action_title">Підмінити \"Завантажити\"</string>
@@ -74,12 +76,6 @@
     <string name="revanced_hide_promotion_alert_banner_summary">Приховує банер рекламних сповіщень.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Спливаюче меню</string>
-    <string name="revanced_enable_trim_silence_title">Додати перемикач \"Пропуск тиші\"</string>
-    <string name="revanced_enable_trim_silence_summary">"Додає перемикач \"Пропуск тиші\" у спливаючому меню швидкості відео.
-
-Інформація:
-• Ця функція призначена для подкастів.
-• Ця функція все ще у розробці, тому може бути нестабільною."</string>
     <string name="revanced_enable_compact_dialog_title">Увімкнути компактний вигляд меню</string>
     <string name="revanced_enable_compact_dialog_summary">"Вмикає компактне спливаюче вікно на телефонах.
 
@@ -259,7 +255,7 @@
     <string name="revanced_enable_forced_miniplayer_title">Увімкнути мініплеєр на постійній основі</string>
     <string name="revanced_enable_forced_miniplayer_summary">Вмикає мініплеєр на постійній основі під час переходу на новий трек.</string>
     <string name="revanced_enable_smooth_transition_animation_title">Включити плавну анімацію переходу</string>
-    <string name="revanced_enable_smooth_transition_animation_summary">Вмикає плавну анімацію при розгортанні мініплеєра зі згорнутого стану.</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">"Вмикає плавну анімацію при розгортанні мініплеєра зі згорнутого стану."</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Увімкнути жест закриття мініплеєру</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Вмикає жест вниз для закриття мініплеєру.</string>
     <string name="revanced_enable_comments_scroll_top_title">Включити прокрутку до початку коментарів</string>
@@ -485,9 +481,11 @@
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21_block_requst">iOS Music 6.21 (Блокування запитів)</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04_block_requst">iOS Music 7.04 (Блокування запитів)</string>
     <string name="revanced_spoof_client_type_entry_ios_music_8_12_block_requst">iOS Music 8.12 (Блокування запитів)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34_block_requst">iOS Music 8.34 (Блокування запитів)</string>
     <string name="revanced_spoof_video_streams_title">Підробка відеопотоків</string>
     <string name="revanced_spoof_video_streams_summary">Підробка клієнтськіх відеопотоків, щоб запобігти проблем з відтворенням.
 
@@ -501,6 +499,7 @@
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_watch_history_type_title">Тип історії перегляду</string>
     <string name="revanced_watch_history_type_summary">"• Оригінальний: Відповідає налаштуванням історії переглядів облікового запису Google, але історія переглядів може не працювати через DNS або VPN.
 • Замінити домен: Дотримується налаштувань історії переглядів облікового запису Google.

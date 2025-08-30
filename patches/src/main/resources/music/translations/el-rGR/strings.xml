@@ -37,6 +37,8 @@
     <string name="revanced_hide_action_button_song_video_title">Απόκρυψη κουμπιού «Ήχος / Βίντεο»</string>
     <string name="revanced_hide_action_button_song_video_summary">"Απόκρυψη του κουμπιού «Ήχος / Βίντεο».
 (Αυτό το κουμπί είναι διαθέσιμο μόνο σε ορισμένους χρήστες)"</string>
+    <string name="revanced_hide_action_button_disabled_title">Απόκρυψη απενεργοποιημένων κουμπιών</string>
+    <string name="revanced_hide_action_button_disabled_summary">Απόκρυψη των κουμπιών που είναι απενεργοποιημένα, όπως το κουμπί απενεργοποιημένων σχολίων.</string>
     <string name="revanced_hide_action_button_label_title">Απόκρυψη ονομασιών κουμπιών ενέργειας</string>
     <string name="revanced_hide_action_button_label_summary">Απόκρυψη των ονομασιών των κουμπιών ενεργειών.</string>
     <string name="revanced_external_downloader_action_title">Μετατροπή κουμπιού ενέργειας «Λήψη»</string>
@@ -74,8 +76,8 @@
     <string name="revanced_hide_promotion_alert_banner_summary">Απόκρυψη των ετικετών προειδοποίησης προώθησης.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Αναδυόμενο μενού ρυθμίσεων</string>
-    <string name="revanced_enable_trim_silence_title">Ενεργοποίηση περικοπής σίγασης</string>
-    <string name="revanced_enable_trim_silence_summary">"Ενεργοποίηση της λειτουργίας «Περικοπή σίγασης» στο αναδυόμενο μενού αλλαγής ταχύτητας αναπαραγωγής.
+    <string name="revanced_disable_trim_silence_title">Απενεργοποίηση εναλλαγής περικοπής σίγασης</string>
+    <string name="revanced_disable_trim_silence_summary">"Απενεργοποίηση της λειτουργίας «Περικοπή σίγασης» στο αναδυόμενο μενού αλλαγής ταχύτητας αναπαραγωγής.
 
 Πληροφορίες:
 • Αυτή η λειτουργία είναι για ηχητικές εκπομπές.
@@ -261,7 +263,9 @@
     <string name="revanced_enable_forced_miniplayer_title">Εξαναγκαστική ελαχιστοποίηση οθόνης αναπαραγωγής</string>
     <string name="revanced_enable_forced_miniplayer_summary">Μόνιμη διατήρηση της ελαχιστοποιημένης οθόνης αναπαραγωγής ακόμη και όταν γίνεται μετάβαση σε άλλο κομμάτι.</string>
     <string name="revanced_enable_smooth_transition_animation_title">Ομαλή μετάβαση ελαχιστοποιημένης οθόνης αναπαραγωγής</string>
-    <string name="revanced_enable_smooth_transition_animation_summary">Ενεργοποίηση ομαλού animation μετάβασης όταν η ελαχιστοποιημένη οθόνη αναπαραγωγής μεγιστοποιείται από την ελαχιστοποιημένη κατάσταση.</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">"Ενεργοποίηση ομαλού animation μετάβασης όταν η ελαχιστοποιημένη οθόνη αναπαραγωγής μεγιστοποιείται από την ελαχιστοποιημένη κατάσταση.
+
+Περιορισμός: Οι στίχοι σε πραγματικό χρόνο μπορεί να μη λειτουργούν για κάποιους χρήστες."</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Χειρονομία απόρριψης ελαχιστοποιημένης οθόνης αναπαραγωγής</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Ενεργοποίηση χειρονομίας σάρωσης προς τα κάτω για απόρριψη της ελαχιστοποιημένης οθόνης αναπαραγωγής.</string>
     <string name="revanced_enable_comments_scroll_top_title">Κύλιση στην αρχή των σχολίων</string>
@@ -318,7 +322,9 @@
     <string name="revanced_enable_opus_codec_title">Ενεργοποίηση κωδικοποιητή opus</string>
     <string name="revanced_enable_opus_codec_summary">"Ενεργοποίηση του κωδικοποιητή OPUS αν η ανταπόκριση του προγράμματος αναπαραγωγής τον περιλαμβάνει.
 
-Οι τελευταίες εκδόσεις Android χρησιμοποιούν τον κωδικοποιητή opus από προεπιλογή, οπότε αυτή η ρύθμιση ισχύει μόνο για χρήστες που χρησιμοποιούν τη λειτουργία παραποίησης έκδοσης εφαρμογής, σε πολύ παλιές εκδόσεις."</string>
+Πληροφορίες:
+• Οι πιο πρόσφατες εκδόσεις YouTube Music χρησιμοποιούν τον κωδικοποιητή opus από προεπιλογή.
+• Αυτή η ρύθμιση μπορεί να είναι απαραίτητη αν μία από τις ρυθμίσεις «Παραποίηση προγράμματος πελάτη» ή «Παραποίηση ροών βίντεο» είναι ενεργοποιημένη."</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Απομνημόνευση αλλαγών ταχύτητας αναπαραγωγής</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Απομνημόνευση της τελευταίας ταχύτητας αναπαραγωγής που επιλέχθηκε.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Εμφάνιση μηνύματος</string>
@@ -486,9 +492,11 @@
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21_block_requst">iOS Music 6.21 (Αποκλεισμός αιτήματος)</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04_block_requst">iOS Music 7.04 (Αποκλεισμός αιτήματος)</string>
     <string name="revanced_spoof_client_type_entry_ios_music_8_12_block_requst">iOS Music 8.12 (Αποκλεισμός αιτήματος)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34_block_requst">iOS Music 8.34 (Αποκλεισμός αιτήματος)</string>
     <string name="revanced_spoof_video_streams_title">Παραποίηση ροών βίντεο</string>
     <string name="revanced_spoof_video_streams_summary">Παραποίηση ροών βίντεο του προγράμματος πελάτη για την αποφυγή προβλημάτων αναπαραγωγής.</string>
     <string name="revanced_spoof_video_streams_default_client_title">Προεπιλεγμένο πρόγραμμα πελάτη</string>
@@ -500,6 +508,7 @@
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_watch_history_type_title">Τύπος ιστορικού παρακολούθησης</string>
     <string name="revanced_watch_history_type_summary">"• Αρχικός: Ακολουθεί τις ρυθμίσεις ιστορικού παρακολούθησης του λογαριασμού Google σας, αλλά το ιστορικό παρακολούθησης μπορεί να μη λειτουργεί λόγω χρήσης VPN ή εναλλακτικού DNS.
 • Αντικατάσταση του domain: Ακολουθεί τις ρυθμίσεις ιστορικού παρακολούθησης του λογαριασμού Google σας.

@@ -365,9 +365,6 @@
 Shorts
 Плейлисты
 Магазин"</string>
-    <string name="revanced_hide_for_you_shelf_title">Полка \"Для вас\"</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Полка \"Для вас\" скрыта.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Полка \"Для вас\" отображена.</string>
     <string name="revanced_hide_links_preview_title">Предпросмотр ссылок</string>
     <string name="revanced_hide_links_preview_summary_on">Предпросмотр ссылок включен.</string>
     <string name="revanced_hide_links_preview_summary_off">Предпросмотр ссылок отключен.</string>
@@ -2211,6 +2208,8 @@ Shorts
     <string name="revanced_spoof_streaming_data_client_entry_tv">"ТВ
 <small>(В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Встроенный ТВ
+<small>(В разработке)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"Простой ТВ
 <small>(В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Эффекты от подмены</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Меню аудио дорожки отсутствует.

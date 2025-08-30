@@ -73,12 +73,6 @@ Limitazioni:
     <string name="revanced_hide_promotion_alert_banner_summary">Nasconde il banner di avviso promozionale.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Menù a comparsa</string>
-    <string name="revanced_enable_trim_silence_title">Aggiungi interruttore per tagliare le parti di silenzio</string>
-    <string name="revanced_enable_trim_silence_summary">"Aggiunge un interruttore per tagliare le parti di silenzio, nel menù a comparsa della velocità di riproduzione.
-
-Info:
-• Questa funzione è per i podcast.
-• Questa funzione è ancora in fase di sviluppo, potrebbe essere instabile."</string>
     <string name="revanced_enable_compact_dialog_title">Abilita dialogo compatto</string>
     <string name="revanced_enable_compact_dialog_summary">"Abilita il menù a comparsa compatto sui telefoni.
 

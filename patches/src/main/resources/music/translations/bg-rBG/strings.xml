@@ -59,12 +59,6 @@
     <string name="revanced_hide_premium_renewal_summary">Скриване на банера за подновяване на Premium.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Падащо меню</string>
-    <string name="revanced_enable_trim_silence_title">Добавете опция „Скриване на мълчанията“</string>
-    <string name="revanced_enable_trim_silence_summary">"Добавя „Скриване на мълчанията“ към падащото меню „Скорост на възпроизвеждане“.
-
-Информация:
-• Тази функция е предназначена за подкасти.
-• Тази функция все още е в процес на разработка, така че може да е нестабилна."</string>
     <string name="revanced_enable_compact_dialog_title">Компактен изглед на прозореца</string>
     <string name="revanced_enable_compact_dialog_summary">"Активира компактно изскачащо меню на телефони.
 

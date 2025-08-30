@@ -357,9 +357,6 @@
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 قوائم التشغيل
 المتجر"</string>
-    <string name="revanced_hide_for_you_shelf_title">إخفاء رف مُقترَح لك</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">تم إخفاء رف مُقترَح لك.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">يتم عرض رف مُقترَح لك.</string>
     <string name="revanced_hide_links_preview_title">إخفاء معاينة الروابط</string>
     <string name="revanced_hide_links_preview_summary_on">تم إخفاء معاينة الروابط.</string>
     <string name="revanced_hide_links_preview_summary_off">يتم عرض معاينة الروابط.</string>
@@ -493,7 +490,7 @@
     <string name="revanced_disable_auto_audio_tracks_title">تعطيل المقطع الصوتي التلقائي المفروض</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">تم تعطيل المقطع الصوتي التلقائي المفروض.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">تم تمكين المقطع الصوتي التلقائي المفروض.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">لاستخدام هذه الميزة، قم بتغيير \'العميل الافتراضي (Spoof Streaming Data)\' إلى TV أو iOS TV.</string>
+    <string name="revanced_disable_auto_audio_tracks_not_available">لاستخدام هذه الميزة، قم بتغيير \'العميل الافتراضي (Spoof Streaming Data)\' إلى TV, TV Simply أو iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">تعطيل الترجمة التلقائية المفروضة</string>
     <string name="revanced_disable_auto_captions_summary_on">تم تعطيل الترجمة التلقائية المفروضة.</string>
     <string name="revanced_disable_auto_captions_summary_off">تم تمكين الترجمة التلقائية المفروضة.</string>
@@ -1051,7 +1048,7 @@
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">يتم عرض قائمة المقطع الصوتي.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"قائمة المقطع الصوتي مخفية.
 
-لإظهار قائمة المقطع الصوتي، قم بتغيير 'العميل الافتراضي (Spoof Streaming Data)' إلى TV أو iOS TV."</string>
+لإظهار قائمة المقطع الصوتي، قم بتغيير 'العميل الافتراضي (Spoof Streaming Data)' إلى TV, TV Simply أو iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">إخفاء قائمة الترجمة</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">تم إخفاء قائمة الترجمة.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">يتم عرض قائمة الترجمة.</string>
@@ -2183,6 +2180,7 @@
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web <small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">"TV <small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV Embedded <small>(WIP)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV Simply <small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">التأثيرات الجانبية للتزييف</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• قائمة المقطع الصوتي مفقودة.
 • مستوى الصوت الثابت غير متاح.
@@ -2273,15 +2271,15 @@
 
 AVC لديه حد أقصى للدقة 1080p، لا يتوفر ترميز الصوت Opus، وسوف يستخدم تشغيل الفيديو بيانات إنترنت أكثر من VP9 أو AV1."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
-    <string name="revanced_preference_category_js">JavaScript (WIP)</string>
+    <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">استخدام عميل JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">تم إضافة عميل JavaScript إلى العملاء المتاحين.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">لم يتم إضافة عميل JavaScript إلى العملاء المتاحين.</string>
-    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"يستهلك التطبيق موارد النظام بشكل أكبر للعثور على نمط n-sig أو فك تشفيره، ويبدأ الفيديو ببطء اكبر.
+    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"يستخدم التطبيق موارد النظام بشكل أكبر للعثور على نمط n-sig أو فك تشفيره، ويبدأ الفيديو ببطء.
 
-يتغير نمط n-sig بشكل متكرر على خوادم YouTube، وقد يفشل التشغيل إذا لم يتمكن التعبير العادي من العثور على نمط n-sig.
+يتغير نمط n-sig بشكل متكرر على خوادم يوتيوب، وقد يفشل التشغيل إذا لم يتمكن التعبير العادي من العثور على نمط n-sig.
 
-لا تزال هذه الميزة قيد التطوير، لذا يُرجى استخدامها لأغراض تصحيح الأخطاء فقط."</string>
+من بين عملاء JavaScript، يُنصح باستخدام TV Simply."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">استخدام عميل JavaScript لجميع الفيديوهات</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"يتم استخدام عميل JavaScript بغض النظر عن نوع الفيديو.
 

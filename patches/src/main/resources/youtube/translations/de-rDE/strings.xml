@@ -280,9 +280,6 @@ Tippen Sie hier, um mehr über DeArrow zu erfahren."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Verkürzt
 Playlists
 Store"</string>
-    <string name="revanced_hide_for_you_shelf_title">Für dich ausblenden</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Chips-Abschnitt wird versteckt.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Für Sie ist Regal gezeigt.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Community Beiträge</string>
     <string name="revanced_preference_screen_community_posts_summary">Verstecke oder zeige Community-Beiträge im Feed und Kanal.</string>

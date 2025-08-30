@@ -284,9 +284,6 @@ DeArrow hakkında daha fazla bilgi edinmek için buraya dokunun."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Oynatma listeleri
 Mağaza"</string>
-    <string name="revanced_hide_for_you_shelf_title">\'Sizin için\' rafını gizle</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">\'Sizin için\' rafları gizleniyor.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">\'Sizin için\' rafları gizlenmiyor.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Topluluk gönderileri</string>
     <string name="revanced_preference_screen_community_posts_summary">Akıştaki ve kanaldaki topluluk gönderilerini gizleyin veya gösterin.</string>

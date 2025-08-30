@@ -74,12 +74,6 @@ Keterbatasan:
     <string name="revanced_hide_promotion_alert_banner_summary">Sembunyikan banner peringatan promosi.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Menu flyout</string>
-    <string name="revanced_enable_trim_silence_title">Tambah tombol Pangkas keheningan</string>
-    <string name="revanced_enable_trim_silence_summary">"Menambahkan tombol Pangkas keheningan ke menu flyout kecepatan pemutaran.
-
-Info:
-• Fitur ini hanya untuk podcast.
-• Fitur ini masih dalam pengembangan, jadi mungkin tidak stabil."</string>
     <string name="revanced_enable_compact_dialog_title">Aktifkan dialog ringkas</string>
     <string name="revanced_enable_compact_dialog_summary">"Mengaktifkan dialog ringkas di ponsel.
 

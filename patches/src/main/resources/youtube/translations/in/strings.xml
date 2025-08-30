@@ -210,9 +210,6 @@ Ketuk di sini untuk mempelajari lebih lanjut tentang DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Daftar putar
 Toko"</string>
-    <string name="revanced_hide_for_you_shelf_title">Sembunyikan rak Untuk Anda</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Rak Untuk Anda disembunyikan.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Rak Untuk Anda ditampilkan.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Postingan Komunitas</string>
     <string name="revanced_preference_screen_community_posts_summary">Sembunyikan atau tampilkan postingan komunitas di feed dan saluran.</string>

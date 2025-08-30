@@ -73,12 +73,6 @@ Hạn chế: Đôi khi mở thẻ Trang chủ, bạn chỉ thấy một màn hì
     <string name="revanced_hide_promotion_alert_banner_summary">Ẩn biểu ngữ thông báo khuyến mãi.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Trình đơn tuỳ chọn</string>
-    <string name="revanced_enable_trim_silence_title">Cắt bỏ khoảng lặng</string>
-    <string name="revanced_enable_trim_silence_summary">"Thêm tính năng Cắt bỏ khoảng lặng vào mục tuỳ chọn tốc độ phát.
-
- Chi tiết:
- • Tính năng này dành cho podcast.
- • Tính năng này vẫn đang được phát triển nên có thể chưa ổn định."</string>
     <string name="revanced_enable_compact_dialog_title">Trình đơn tuỳ chọn thu gọn</string>
     <string name="revanced_enable_compact_dialog_summary">"Bật trình đơn tuỳ chọn dạng hộp thoại.
 
@@ -260,7 +254,7 @@ Nếu có thể, hãy sử dụng màu tối vì ứng dụng không hỗ trợ 
     <string name="revanced_enable_forced_miniplayer_title">Luôn phát trong trình phát thu nhỏ</string>
     <string name="revanced_enable_forced_miniplayer_summary">Luôn phát nhạc trong trình phát thu nhỏ bất cứ khi nào bạn nghe một bài hát mới.</string>
     <string name="revanced_enable_smooth_transition_animation_title">Hiệu ứng chuyển tiếp</string>
-    <string name="revanced_enable_smooth_transition_animation_summary">Làm cho hiệu ứng mượt hơn khi phóng to trình phát thu nhỏ.</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">"Làm cho hiệu ứng mượt hơn khi phóng to trình phát thu nhỏ."</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Vuốt để đóng trình phát thu nhỏ</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Vuốt xuống để đóng trình phát thu nhỏ.</string>
     <string name="revanced_enable_comments_scroll_top_title">Cuộn lên đầu trang trong bình luận</string>
@@ -319,7 +313,7 @@ Một số tính năng có thể không hoạt động bình thường trong b�
 
 Chi tiết:
 • Các phiên bản YouTube Music mới nhất sử dụng codec OPUS như mặc định.
-• Điều này chỉ áp dụng cho người dùng giả mạo với các phiên bản ứng dụng rất cũ."</string>
+• Có thể cần thiết nếu giả mạo client hoặc luồng video."</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Lưu lựa chọn tốc độ phát</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Ghi nhớ lựa chọn tốc độ phát đã chọn gần nhất.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Thông báo ngắn</string>
