@@ -43,6 +43,8 @@
     <string name="revanced_hide_action_button_song_video_title">Hide Song / Video button</string>
     <string name="revanced_hide_action_button_song_video_summary">"Hides the Song / Video button.
 (This button is only available to some users)"</string>
+    <string name="revanced_hide_action_button_disabled_title">Hide disabled button</string>
+    <string name="revanced_hide_action_button_disabled_summary">Hides disabled buttons, such as the disabled Comments button.</string>
     <string name="revanced_hide_action_button_label_title">Hide action button labels</string>
     <string name="revanced_hide_action_button_label_summary">Hides the labels of the action buttons.</string>
     <string name="revanced_external_downloader_action_title">Override Download action button</string>
