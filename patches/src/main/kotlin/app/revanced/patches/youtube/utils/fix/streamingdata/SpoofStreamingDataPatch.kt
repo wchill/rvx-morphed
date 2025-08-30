@@ -449,29 +449,6 @@ val spoofStreamingDataPatch = bytecodePatch(
 
         // endregion
 
-        // region Remove /videoplayback request body to fix playback.
-        // This is needed when using iOS client as streaming data source.
-
-        buildMediaDataSourceFingerprint.methodOrThrow().apply {
-            val targetIndex = instructions.lastIndex
-
-            addInstructions(
-                targetIndex,
-                """
-                    # Field a: Stream uri.
-                    # Field c: Http method.
-                    # Field d: Post data.
-                    move-object/from16 v0, p0
-                    iget-object v1, v0, $definingClass->a:Landroid/net/Uri;
-                    iget v2, v0, $definingClass->c:I
-                    iget-object v3, v0, $definingClass->d:[B
-                    invoke-static { v1, v2, v3 }, $EXTENSION_CLASS_DESCRIPTOR->removeVideoPlaybackPostBody(Landroid/net/Uri;I[B)[B
-                    move-result-object v1
-                    iput-object v1, v0, $definingClass->d:[B
-                    """,
-            )
-        }
-
         val (brotliInputStreamClassName, brotliInputStreamMethodCall) = with(
             brotliInputStreamFingerprint.methodOrThrow()
         ) {
