@@ -55,6 +55,7 @@ Please download %2$s from the website."</string>
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Remove from queue and reload video</string>
     <string name="revanced_queue_manager_remove_queue">Remove queue</string>
     <string name="revanced_queue_manager_save_queue">Save queue</string>
+    <string name="revanced_queue_manager_show_original_video_information">Show original video information</string>
     <string name="revanced_queue_manager_user_dialog_message">"Instead of opening an external downloader, open the queue manager dialog.
 
 You can also open the queue manager by pressing and holding the back button on the navigation bar.
@@ -62,6 +63,26 @@ You can also open the queue manager by pressing and holding the back button on t
 This feature is still in progress, so most features may not work.
 
 Please use it for debugging purposes only."</string>
+    <string name="revanced_queue_manager_video_information">Video information</string>
+    <string name="revanced_queue_manager_video_information_copy">Copy</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Channel
+══════════════
+%1$s
+
+Title
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Channel
+══════════════
+%1$s
+
+Title
+══════════════
+%2$s
+
+Description
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Login required</string>
     <string name="revanced_queue_manager_check_failed_generic">Queue manager unavailable (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Could not identify playlist</string>
@@ -72,11 +93,13 @@ Please use it for debugging purposes only."</string>
     <string name="revanced_queue_manager_fetch_failed_delete">Failed to delete queue.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">Failed to remove video.</string>
     <string name="revanced_queue_manager_fetch_failed_save">Failed to save queue.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Failed to get video information.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">Video successfully added.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">Queue successfully created.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">Queue successfully deleted.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">Video successfully removed.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Queue successfully saved to \'%s\'.</string>
+    <string name="revanced_share_copy_video_information_success">Video information copied to clipboard.</string>
 
     <string name="revanced_language_title">RVX language</string>
     <string name="revanced_language_DEFAULT">App language</string>
