@@ -10,6 +10,12 @@
     <string name="revanced_extended_reset_to_default_toast">Reset to default values.</string>
 
     <string name="revanced_preference_category_experimental_flag">Experimental flags</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"This setting is currently unavailable.
+To use this feature, change 'Default client (Spoof streaming data)' to iOS TV, TV or TV Simply.
+
+Note:
+• iOS TV does not support playback of some videos, such as music videos.
+• Therefore, if the Default client is set to iOS TV, this setting may not work for some videos."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Are you sure you want to proceed?</string>
     <string name="revanced_extended_restart_first_run">Restart to load the layout normally</string>
     <string name="revanced_extended_restart_title">Restart required</string>
@@ -524,7 +530,6 @@ Limitation: Back button on the toolbar may not work."</string>
     <string name="revanced_disable_auto_audio_tracks_title">Disable forced auto audio tracks</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Forced auto audio tracks are disabled.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Forced auto audio tracks are enabled.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">To use this feature, change \'Default client (Spoof streaming data)\' to TV, TV Simply or iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Disable forced auto captions</string>
     <string name="revanced_disable_auto_captions_summary_on">Forced auto captions are disabled.</string>
     <string name="revanced_disable_auto_captions_summary_off">Forced auto captions are enabled.</string>
@@ -1132,9 +1137,6 @@ Limitation: Some highlighted search links that do not have a default text style 
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Hide Audio track menu</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Audio track menu is hidden.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Audio track menu is shown.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Audio track menu is hidden.
-
-To show the Audio track menu, change \'Default client (Spoof streaming data)\' to TV, TV Simply or iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Hide Captions menu</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Captions menu is hidden.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Captions menu is shown.</string>
