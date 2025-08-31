@@ -17,7 +17,7 @@
     <string name="revanced_hide_handle_title">Ocultar asa</string>
     <string name="revanced_hide_handle_summary">Oculta el asa en el conmutador de cuenta.</string>
     <string name="revanced_hide_terms_container_title">Ocultar contenedor de términos</string>
-    <string name="revanced_hide_terms_container_summary">Oculta los términos del contenedor de servicio.</string>
+    <string name="revanced_hide_terms_container_summary">Oculta el contenedor de Términos de Servicio.</string>
     <!-- PreferenceScreen: Action bar -->
     <string name="revanced_preference_screen_action_bar_title">Barra de Acción</string>
     <string name="revanced_change_action_bar_position_title">Cambiar posición de la barra de acción</string>

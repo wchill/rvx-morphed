@@ -8,6 +8,12 @@
     <string name="revanced_extended_settings_search_title">Пошук %s</string>
     <string name="revanced_extended_reset_to_default_toast">Скинуто.</string>
     <string name="revanced_preference_category_experimental_flag">Експериментальні опції</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"Це налаштування наразі недоступне.
+Щоб скористатися цією функцією, змініть 'Основний клієнт (Підробка даних трансляції)' на iOS TV, TV або Простий TV.
+
+Примітка:
+• iOS TV не підтримує відтворення деяких відео, наприклад, музичних відео.
+• Отже, якщо Основний клієнт вибрано iOS TV, це налаштування може не працювати для деяких відео."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Впевнені, що бажаєте продовжити?</string>
     <string name="revanced_extended_restart_first_run">Перезапустіть, щоб нормально завантажився макет</string>
     <string name="revanced_extended_restart_title">Потрібно перезапустити</string>
@@ -45,6 +51,7 @@
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Видалити з черги та перевантажити відео</string>
     <string name="revanced_queue_manager_remove_queue">Вилучити чергу</string>
     <string name="revanced_queue_manager_save_queue">Зберегти чергу</string>
+    <string name="revanced_queue_manager_show_original_video_information">Показувати оригінальну інформацію про відео</string>
     <string name="revanced_queue_manager_user_dialog_message">"Замість відкривання зовнішнього завантажувача відкриває діалог керування чергою.
 
 Також можливо відкрити керування чергою натисканням та утриманням кнопки назад на панелі навігації.
@@ -52,6 +59,26 @@
 Ця функція все ще перебуває в процесі розробки, тому більшість функцій не працюють.
 
 Будь ласка, використовуйте її лише для налагодження."</string>
+    <string name="revanced_queue_manager_video_information">Інформація про відео</string>
+    <string name="revanced_queue_manager_video_information_copy">Копіювати</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Канал
+══════════════
+%1$s
+
+Назва
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Канал
+══════════════
+%1$s
+
+Назва
+══════════════
+%2$s
+
+Опис
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Необхідна авторизація</string>
     <string name="revanced_queue_manager_check_failed_generic">Керування чергою недоступне (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Не вдалося ідентифікувати список відтворення</string>
@@ -62,11 +89,13 @@
     <string name="revanced_queue_manager_fetch_failed_delete">Не вдалося видалити чергу.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">Не вдалося вилучити відео.</string>
     <string name="revanced_queue_manager_fetch_failed_save">Не вдалося зберегти чергу.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Не вдалося отримати інформацію про відео.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">Відео додано успішно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">Чергу створено успішно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">Чергу видалено успішно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">Відео вилучено успішно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Чергу збережено успішно до: \'%s\'.</string>
+    <string name="revanced_share_copy_video_information_success">Інформацію про відео скопійовано в буфер обміну.</string>
     <string name="revanced_language_title">Мова RVX</string>
     <string name="revanced_language_DEFAULT">Мова додатка</string>
     <string name="revanced_language_AM">"Амхарська
@@ -495,7 +524,6 @@
     <string name="revanced_disable_auto_audio_tracks_title">Вимкнути примусові автоматичні звукові доріжки</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Примусові автоматичні звукові доріжки вимкнено.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Примусові автоматичні звукові доріжки увімкнено.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Щоб скористатися цією функцією, змініть \'Основний клієнт (Підробка даних трансляції)\' на TV, Простий TV або iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Вимкнути примусові авто субтитри</string>
     <string name="revanced_disable_auto_captions_summary_on">Примусові авто субтитри вимкнено.</string>
     <string name="revanced_disable_auto_captions_summary_off">Примусові авто субтитри увімкнено.</string>
@@ -1065,9 +1093,6 @@
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Приховати меню Звукова доріжка</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Меню Звукова доріжка приховано.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Меню Звукова доріжка показується.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Меню Звукова доріжка приховано.
-
-Для показу меню Звукова доріжка, змініть 'Основний клієнт (Підробка даних трансляції)' на TV, Простий TV або iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Приховати меню субтитрів</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Меню субтитрів приховано.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Меню субтитрів показується.</string>

@@ -8,6 +8,13 @@
     <string name="revanced_extended_settings_search_title">بحث %s</string>
     <string name="revanced_extended_reset_to_default_toast">إعادة التعيين إلى القيم الافتراضية.</string>
     <string name="revanced_preference_category_experimental_flag">تعديلات تجريبية</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"هذا الإعداد غير متاح حاليًا.
+
+لاستخدام هذه الميزة، غيّر 'العميل الافتراضي (Spoof Streaming Data)' إلى iOS TV, TV أو TV Simply.
+
+ملاحظة:
+• لا يدعم iOS TV تشغيل بعض الفيديوهات، مثل الفيديوهات الموسيقية.
+• لذلك، إذا تم ضبط العميل الافتراضي على iOS TV، فقد لا يعمل هذا الإعداد مع بعض الفيديوهات."</string>
     <string name="revanced_extended_confirm_user_dialog_title">هل انت متاكد انك تريد المتابعة؟</string>
     <string name="revanced_extended_restart_first_run">إعادة التشغيل لتحميل التخطيط بشكل طبيعي</string>
     <string name="revanced_extended_restart_title">يلزم إعادة التشغيل</string>
@@ -45,6 +52,7 @@
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">إزالة من قائمة الانتظار وإعادة تحميل الفيديو</string>
     <string name="revanced_queue_manager_remove_queue">إزالة قائمة الانتظار</string>
     <string name="revanced_queue_manager_save_queue">حفظ قائمة الانتظار</string>
+    <string name="revanced_queue_manager_show_original_video_information">عرض معلومات الفيديو الأصلية</string>
     <string name="revanced_queue_manager_user_dialog_message">"بدلاً من فتح برنامج تنزيل خارجي، افتح نافذة مدير قائمة الانتظار.
 
 يمكنك أيضًا فتح مدير قائمة الانتظار بالضغط باستمرار على زر الرجوع في شريط التنقل.
@@ -52,6 +60,10 @@
 هذه الميزة لا تزال قيد التطوير، لذا قد لا تعمل معظم الميزات.
 
 يرجى استخدامها لأغراض تصحيح الأخطاء فقط."</string>
+    <string name="revanced_queue_manager_video_information">معلومات الفيديو</string>
+    <string name="revanced_queue_manager_video_information_copy">نسخ</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"القناة ══════════════ %1$s العنوان ══════════════ %2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"القناة ══════════════ %1$s العنوان ══════════════ %2$s الوصف ══════════════ %3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">مطلوب تسجيل الدخول</string>
     <string name="revanced_queue_manager_check_failed_generic">مدير قائمة الانتظار غير متاح (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">تعذر التعرف على قائمة التشغيل</string>
@@ -62,11 +74,13 @@
     <string name="revanced_queue_manager_fetch_failed_delete">فشل في حذف قائمة الانتظار.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">فشل في إزالة الفيديو.</string>
     <string name="revanced_queue_manager_fetch_failed_save">فشل في حفظ قائمة الانتظار.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">فشل في الحصول على معلومات الفيديو.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">تم إضافة الفيديو بنجاح.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">تم إنشاء قائمة الانتظار بنجاح.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">تم حذف قائمة الانتظار بنجاح.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">تم إزالة الفيديو بنجاح.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">تم حفظ قائمة الانتظار بنجاح في \'%s\'.</string>
+    <string name="revanced_share_copy_video_information_success">تم نسخ معلومات الفيديو إلى الحافظة.</string>
     <string name="revanced_language_title">لغة RVX</string>
     <string name="revanced_language_DEFAULT">لغة التطبيق</string>
     <string name="revanced_language_AM">"الأمهرية
@@ -490,7 +504,6 @@
     <string name="revanced_disable_auto_audio_tracks_title">تعطيل المقطع الصوتي التلقائي المفروض</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">تم تعطيل المقطع الصوتي التلقائي المفروض.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">تم تمكين المقطع الصوتي التلقائي المفروض.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">لاستخدام هذه الميزة، قم بتغيير \'العميل الافتراضي (Spoof Streaming Data)\' إلى TV, TV Simply أو iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">تعطيل الترجمة التلقائية المفروضة</string>
     <string name="revanced_disable_auto_captions_summary_on">تم تعطيل الترجمة التلقائية المفروضة.</string>
     <string name="revanced_disable_auto_captions_summary_off">تم تمكين الترجمة التلقائية المفروضة.</string>
@@ -1046,9 +1059,6 @@
     <string name="revanced_hide_player_flyout_menu_audio_track_title">إخفاء قائمة المقطع الصوتي</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">تم إخفاء قائمة المقطع الصوتي.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">يتم عرض قائمة المقطع الصوتي.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"قائمة المقطع الصوتي مخفية.
-
-لإظهار قائمة المقطع الصوتي، قم بتغيير 'العميل الافتراضي (Spoof Streaming Data)' إلى TV, TV Simply أو iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">إخفاء قائمة الترجمة</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">تم إخفاء قائمة الترجمة.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">يتم عرض قائمة الترجمة.</string>

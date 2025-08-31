@@ -8,6 +8,11 @@
     <string name="revanced_extended_settings_search_title">Buscar en %s</string>
     <string name="revanced_extended_reset_to_default_toast">Restablecer valores predeterminados.</string>
     <string name="revanced_preference_category_experimental_flag">Funciones experimentales</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"Para utilizar esta función, cambie «Cliente predeterminado (falsificación de datos de transmisión)» a iOS TV, TV o TV simple.
+
+Nota:
+• iOS TV no admite la reproducción de algunos vídeos, como vídeos musicales.
+• Por lo tanto, si el cliente predeterminado está configurado en iOS TV, este ajuste puede no funcionar para algunos vídeos."</string>
     <string name="revanced_extended_confirm_user_dialog_title">¿Quieres continuar?</string>
     <string name="revanced_extended_restart_first_run">Reiniciar para cargar el diseño normalmente</string>
     <string name="revanced_extended_restart_title">Reinicio requerido</string>
@@ -492,7 +497,6 @@ Limitación: Es posible que el botón Atrás de la barra de herramientas no func
     <string name="revanced_disable_auto_audio_tracks_title">Desactivar pistas de audio automáticas forzadas</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Las pistas de audio automáticas forzadas están desactivadas.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Las pistas de audio automáticas forzadas están activadas.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Para usar esta función, cambia «Cliente predeterminado (falsificación de datos de transmisión)» a iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Desactivar subtítulos automáticos forzados</string>
     <string name="revanced_disable_auto_captions_summary_on">Los subtítulos automáticos forzados están desactivados.</string>
     <string name="revanced_disable_auto_captions_summary_off">Los subtítulos automáticos forzados están activados.</string>
@@ -1056,9 +1060,6 @@ Limitaciones:
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Ocultar menú \"Pista de audio\"</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">El menú \"Pista de audio\" está oculto.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">El menú \"Pista de audio\" está visible.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"El menú de la pista de audio está oculto.
-
-Para mostrar el menú de la pista de audio, cambie «Cliente predeterminado (falsificación de datos de transmisión)» a iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Ocultar menú \"Subtítulos\"</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">El menú \"Subtítulos\" está oculto.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">El menú \"Subtítulos\" está visible.</string>

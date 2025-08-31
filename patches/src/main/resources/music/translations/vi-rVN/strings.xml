@@ -37,6 +37,8 @@
     <string name="revanced_hide_action_button_song_video_title">Ẩn nút chuyển đổi giữa Bài hát và Video</string>
     <string name="revanced_hide_action_button_song_video_summary">"Ẩn nút chuyển đổi giữa Bài hát và Video trên thanh tương tác.
 (Nút chỉ có sẵn với một số người dùng)"</string>
+    <string name="revanced_hide_action_button_disabled_title">Ẩn nút bị vô hiệu hóa</string>
+    <string name="revanced_hide_action_button_disabled_summary">Ẩn các nút bị vô hiệu hóa, chẳng hạn như nút Bình luận bị vô hiệu hóa khi nhà sáng tạo tắt tính năng bình luận cho video.</string>
     <string name="revanced_hide_action_button_label_title">Ẩn tên nút</string>
     <string name="revanced_hide_action_button_label_summary">Ẩn tên nút trong thanh tương tác.</string>
     <string name="revanced_external_downloader_action_title">Ghi đè nút tải xuống</string>
@@ -73,6 +75,12 @@ Hạn chế: Đôi khi mở thẻ Trang chủ, bạn chỉ thấy một màn hì
     <string name="revanced_hide_promotion_alert_banner_summary">Ẩn biểu ngữ thông báo khuyến mãi.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Trình đơn tuỳ chọn</string>
+    <string name="revanced_disable_trim_silence_title">Tắt tính năng Cắt bỏ khoảng lặng</string>
+    <string name="revanced_disable_trim_silence_summary">"Tắt tính năng Cắt bỏ khoảng lặng trong trình đơn tuỳ chọn tốc độ phát.
+
+ Chi tiết:
+ • Tính năng này dành cho podcast.
+ • Tính năng này vẫn đang được phát triển nên có thể chưa ổn định."</string>
     <string name="revanced_enable_compact_dialog_title">Trình đơn tuỳ chọn thu gọn</string>
     <string name="revanced_enable_compact_dialog_summary">"Bật trình đơn tuỳ chọn dạng hộp thoại.
 
@@ -479,9 +487,11 @@ Hạn chế (Chặn truy vấn):
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21_block_requst">iOS Music 6.21 (Chặn truy vấn)</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04_block_requst">iOS Music 7.04 (Chặn truy vấn)</string>
     <string name="revanced_spoof_client_type_entry_ios_music_8_12_block_requst">iOS Music 8.12 (Chặn truy vấn)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34_block_requst">iOS Music 8.34 (Chặn truy vấn)</string>
     <string name="revanced_spoof_video_streams_title">Giả mạo luồng video</string>
     <string name="revanced_spoof_video_streams_summary">Giả mạo luồng video của client để tránh lỗi khi phát.</string>
     <string name="revanced_spoof_video_streams_default_client_title">Client mặc định</string>
@@ -493,6 +503,7 @@ Hạn chế (Chặn truy vấn):
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_watch_history_type_title">Kiểu nhật ký</string>
     <string name="revanced_watch_history_type_summary">"• Gốc: Tuân theo cài đặt nhật ký xem của tài khoản Google, nhưng có thể không hoạt động do DNS hoặc VPN.
 • Thay thế miền: Vẫn tuân theo cài đặt nhật ký xem của tài khoản Google.

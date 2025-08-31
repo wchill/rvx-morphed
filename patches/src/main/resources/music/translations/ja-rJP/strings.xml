@@ -37,6 +37,8 @@
     <string name="revanced_hide_action_button_song_video_title">「曲 / 動画」ボタンを非表示</string>
     <string name="revanced_hide_action_button_song_video_summary">"「曲 / 動画」ボタンを非表示
 （このボタンは一部のユーザーのみ利用可能です）"</string>
+    <string name="revanced_hide_action_button_disabled_title">無効なボタンを非表示</string>
+    <string name="revanced_hide_action_button_disabled_summary">閉鎖されたコメントボタンなどの無効なボタンを非表示にします。</string>
     <string name="revanced_hide_action_button_label_title">アクションボタンのラベルを非表示</string>
     <string name="revanced_hide_action_button_label_summary">アクションボタンのラベルを非表示にします。</string>
     <string name="revanced_external_downloader_action_title">ダウンロードボタンを置き換える</string>
@@ -74,6 +76,12 @@
     <string name="revanced_hide_promotion_alert_banner_summary">プロモーションバナーを非表示にします。</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">フライアウトメニュー</string>
+    <string name="revanced_disable_trim_silence_title">「無音部分をスキップ」を無効化</string>
+    <string name="revanced_disable_trim_silence_summary">"再生速度のフライアウトメニューで「無音部分をスキップ」スイッチを無効化します。
+
+注意:
+・この機能はポッドキャスト向けです。
+・この機能はまだ開発中のため、不安定な場合があります。"</string>
     <string name="revanced_enable_compact_dialog_title">コンパクトなダイアログ</string>
     <string name="revanced_enable_compact_dialog_summary">"コンパクトなダイアログを有効にします。
 
@@ -471,9 +479,11 @@ API キーの発行方法については、ここをタップしてください�
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21_block_requst">iOS Music 6.21 (ブロックリクエスト)</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04_block_requst">iOS Music 7.04 (ブロックリクエスト)</string>
     <string name="revanced_spoof_client_type_entry_ios_music_8_12_block_requst">iOS Music 8.12 (ブロックリクエスト)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34_block_requst">iOS Music 8.34 (ブロックリクエスト)</string>
     <string name="revanced_spoof_video_streams_title">ビデオストリームを偽装します</string>
     <string name="revanced_spoof_video_streams_summary">クライアントのビデオストリームを偽装して再生の問題を防ぎます。
 
@@ -487,6 +497,7 @@ API キーの発行方法については、ここをタップしてください�
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_watch_history_type_title">再生履歴の種類</string>
     <string name="revanced_watch_history_type_summary">"・オリジナル：　Google アカウントの視聴履歴設定に従いますが、DNSやVPNにより視聴履歴が機能しない場合があります。
 ・ドメインを置き換えます：　 Google アカウントの視聴履歴設定に従います。

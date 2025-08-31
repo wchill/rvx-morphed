@@ -8,6 +8,9 @@
     <string name="revanced_extended_settings_search_title">Cerca su %s</string>
     <string name="revanced_extended_reset_to_default_toast">Ripristinato ai valori predefiniti</string>
     <string name="revanced_preference_category_experimental_flag">Opzioni sperimentali</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"Per usare questa impostazione, cambia il client predefinito in iOS TV, TV o TV Simply.
+
+Nota: iOS TV non supporta la riproduzione di alcuni video, come i video musicali, quindi se il client predefinito è impostato su iOS TV, questa impostazione potrebbe non funzionare per alcuni video."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Sei sicuro di voler procedere?</string>
     <string name="revanced_extended_restart_first_run">Riavvia per caricare l\'interfaccia normalmente</string>
     <string name="revanced_extended_restart_title">Riavvio richiesto</string>
@@ -501,7 +504,6 @@ Nota: il pulsante Indietro della barra degli strumenti potrebbe non funzionare."
     <string name="revanced_disable_auto_audio_tracks_title">Disattiva la traccia audio automatica forzata</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">La traccia audio automatica forzata è disattivata.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">La traccia audio automatica forzata è attivata.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Per usare questa impostazione, cambia il client predefinito in TV, TV Simply o iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Disattiva i sottotitoli automatici forzati</string>
     <string name="revanced_disable_auto_captions_summary_on">I sottotitoli automatici forzati sono disattivati.</string>
     <string name="revanced_disable_auto_captions_summary_off">I sottotitoli automatici forzati sono attivati.</string>
@@ -1065,9 +1067,6 @@ Nota: alcuni link di ricerca evidenziati che non hanno uno stile di testo predef
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Nascondi il menù Traccia Audio</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Il menù Traccia Audio è nascosto.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Il menù Traccia Audio è visibile.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Il menù Traccia Audio è nascosto.
-
-Nota: per mostrare il menù Traccia Audio, cambia il client predefinito in TV, TV Simply o iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Nascondi il menù Sottotitoli</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Il menù Sottotitoli è nascosto.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Il menù Sottotitoli è visibile.</string>

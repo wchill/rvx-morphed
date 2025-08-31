@@ -452,7 +452,6 @@ Limitation : Le bouton Retour de la barre d'outils peut ne pas fonctionner."</st
     <string name="revanced_disable_auto_audio_tracks_title">Désact. les pistes audio forcés</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Les pistes audio automatiques forcées sont désactivé.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Les pistes audio automatiques forcées sont activés.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Pour utiliser cette fonctionnalité, changez \'Client par défaut (Falsifier les données de lecture en direct)\' en iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Désact. les sous-titres forcés</string>
     <string name="revanced_disable_auto_captions_summary_on">Les sous-titres automatiques forcés sont désactivés.</string>
     <string name="revanced_disable_auto_captions_summary_off">Les sous-titres automatiques forcés sont activés.</string>
@@ -942,9 +941,6 @@ Info:
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Masquer le menu \'Piste audio\'</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Le menu \'Piste audio\' est masqué.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Le menu \'Piste audio\' est affiché.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Le menu des pistes audio est masqué.
-
-Pour afficher le menu des pistes audio, changez \"Client par défaut (Falsifier les données de lecteur en direct)\" en iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Masquer le menu \'Sous-titres\'</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Le menu \'Sous-titres\' est masqué.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Le menu \'Sous-titres\' est affiché.</string>

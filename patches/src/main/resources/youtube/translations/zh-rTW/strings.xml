@@ -8,6 +8,11 @@
     <string name="revanced_extended_settings_search_title">搜尋 %s</string>
     <string name="revanced_extended_reset_to_default_toast">重設為預設值。</string>
     <string name="revanced_preference_category_experimental_flag">實驗性功能</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"若要使用此功能，請將 '預設用戶端（偽裝串流資料）' 變更為 iOS TV, TV 或 TV Simply。
+
+注意：
+• iOS TV 不支援播放某些影片，例如音樂影片。
+• 因此，如果將預設用戶端設定為 iOS TV，此設定可能不適用於某些影片。"</string>
     <string name="revanced_extended_confirm_user_dialog_title">你想繼續嗎？</string>
     <string name="revanced_extended_restart_first_run">重新啟動以正常載入版面配置</string>
     <string name="revanced_extended_restart_title">需要重新啟動</string>
@@ -495,7 +500,6 @@
     <string name="revanced_disable_auto_audio_tracks_title">停用強制自動音軌</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">強制自動音軌已停用</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">強制自動音軌已啟用</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">若要使用此功能，請將「預設用戶端（偽裝串流資料）」變更為 iOS TV。</string>
     <string name="revanced_disable_auto_captions_title">停用強制顯示字幕</string>
     <string name="revanced_disable_auto_captions_summary_on">強制顯示字幕已停用</string>
     <string name="revanced_disable_auto_captions_summary_off">強制顯示字幕已啟用</string>
@@ -1063,9 +1067,6 @@
     <string name="revanced_hide_player_flyout_menu_audio_track_title">隱藏音軌選單</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">音軌選單已隱藏</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">音軌選單已顯示</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"音軌選單已隱藏。
-
-若要顯示音軌選單，請將 '預設用戶端 (偽裝串流資料)' 變更為 iOS TV。"</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">隱藏字幕選單</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">字幕選單已隱藏</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">字幕選單已顯示</string>

@@ -8,6 +8,12 @@
     <string name="revanced_extended_settings_search_title">%s 검색</string>
     <string name="revanced_extended_reset_to_default_toast">기본값으로 초기화하였습니다.</string>
     <string name="revanced_preference_category_experimental_flag">실험 기능</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"이 설정은 현재 사용할 수 없습니다.
+이 기능을 사용하려면, '스트리밍 데이터 변경하기'에서 기본 클라이언트를 iOS TV, TV 또는 TV Simply로 변경하세요.
+
+알림:
+• iOS TV는 뮤직 비디오와 같은 일부 동영상의 재생을 지원하지 않습니다.
+• 따라서 기본 클라이언트가 iOS TV로 설정되어 있으면, 일부 동영상에서 이 설정이 작동하지 않을 수 있습니다."</string>
     <string name="revanced_extended_confirm_user_dialog_title">계속하시겠습니까?</string>
     <string name="revanced_extended_restart_first_run">레이아웃을 정상적으로 불러오기 위해 다시 시작합니다.</string>
     <string name="revanced_extended_restart_title">앱을 다시 시작하세요</string>
@@ -45,6 +51,7 @@
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">현재 재생목록에서 제거하고 동영상 다시 로드</string>
     <string name="revanced_queue_manager_remove_queue">현재 재생목록 제거</string>
     <string name="revanced_queue_manager_save_queue">현재 재생목록 저장</string>
+    <string name="revanced_queue_manager_show_original_video_information">원본 동영상 정보 표시하기</string>
     <string name="revanced_queue_manager_user_dialog_message">"외부 다운로더가 아닌 현재 재생목록 관리자 다이얼로그를 실행할 수 있습니다.
 
 시스템 네비게이션 바에서 '뒤로 가기' 버튼을 길게 탭하여 현재 재생목록 관리자를 실행할 수도 있습니다.
@@ -52,6 +59,26 @@
 이 기능은 아직 개발 중이므로 대부분의 기능이 작동하지 않을 수 있습니다.
 
 디버깅 목적으로만 사용하세요."</string>
+    <string name="revanced_queue_manager_video_information">동영상 정보</string>
+    <string name="revanced_queue_manager_video_information_copy">복사</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"채널
+══════════════
+%1$s
+
+제목
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"채널
+══════════════
+%1$s
+
+제목
+══════════════
+%2$s
+
+설명
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">로그인이 요구됨</string>
     <string name="revanced_queue_manager_check_failed_generic">현재 재생목록 관리자를 실행할 수 없습니다 (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">재생목록을 식별할 수 없음</string>
@@ -62,11 +89,13 @@
     <string name="revanced_queue_manager_fetch_failed_delete">현재 재생목록을 제거할 수 없습니다.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">동영상을 제거할 수 없습니다.</string>
     <string name="revanced_queue_manager_fetch_failed_save">현재 재생목록을 저장할 수 없습니다.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">동영상 정보를 가져올 수 없습니다.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">동영상을 성공적으로 추가하였습니다.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">현재 재생목록을 성공적으로 만들었습니다.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">현재 재생목록을 성공적으로 제거하였습니다.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">동영상을 성공적으로 제거하였습니다.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">현재 재생목록을 \'%s\'에 성공적으로 저장하였습니다.</string>
+    <string name="revanced_share_copy_video_information_success">동영상 정보를 클립보드에 복사하였습니다.</string>
     <string name="revanced_language_title">RVX 언어</string>
     <string name="revanced_language_DEFAULT">앱 언어</string>
     <string name="revanced_language_AM">"암하라어
@@ -492,13 +521,12 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
 제한 사항:
 • 툴바에서 '뒤로 가기' 버튼이 작동되지 않을 수 있습니다."</string>
     <string name="revanced_change_start_page_type_summary_off">앱 시작 페이지가 한 번만 변경됩니다.</string>
-    <string name="revanced_disable_auto_audio_tracks_title">자동 오디오 트랙 비활성화하기</string>
-    <string name="revanced_disable_auto_audio_tracks_summary_on">자동 오디오 트랙을 비활성화합니다.</string>
-    <string name="revanced_disable_auto_audio_tracks_summary_off">자동 오디오 트랙을 활성화합니다.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">이 기능을 사용하려면, \'스트리밍 데이터 변경하기\'에서 기본 클라이언트를 TV, TV Simply 또는 iOS TV로 변경하세요.</string>
-    <string name="revanced_disable_auto_captions_title">자동 자막 비활성화하기</string>
-    <string name="revanced_disable_auto_captions_summary_on">자동 자막을 비활성화합니다.</string>
-    <string name="revanced_disable_auto_captions_summary_off">자동 자막을 활성화합니다.</string>
+    <string name="revanced_disable_auto_audio_tracks_title">강제된 자동 오디오 트랙 비활성화하기</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_on">강제된 자동 오디오 트랙을 비활성화합니다.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_off">강제된 자동 오디오 트랙을 활성화합니다.</string>
+    <string name="revanced_disable_auto_captions_title">강제된 자동 자막 비활성화하기</string>
+    <string name="revanced_disable_auto_captions_summary_on">강제된 자동 자막을 비활성화합니다.</string>
+    <string name="revanced_disable_auto_captions_summary_off">강제된 자동 자막을 활성화합니다.</string>
     <string name="revanced_disable_signin_to_tv_popup_title">\'TV에 로그인\' 팝업 비활성화하기</string>
     <string name="revanced_disable_signin_to_tv_popup_summary_on">\'TV에 로그인\' 팝업을 비활성화합니다.</string>
     <string name="revanced_disable_signin_to_tv_popup_summary_off">\'TV에 로그인\' 팝업을 활성화합니다.</string>
@@ -1062,9 +1090,6 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_title">오디오 트랙 메뉴 숨기기</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">오디오 트랙 메뉴가 숨겨집니다.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">오디오 트랙 메뉴가 표시됩니다.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"오디오 트랙 메뉴가 숨겨집니다.
-
-오디오 트랙 메뉴를 표시하려면, '스트리밍 데이터 변경하기'에서 기본 클라이언트를 TV, TV Simply 또는 iOS TV로 변경하세요."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">자막 메뉴 숨기기</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">자막 메뉴가 숨겨집니다.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">자막 메뉴가 표시됩니다.</string>
@@ -2204,13 +2229,13 @@ YouTube Premium 사용자이거나 ‘GmsCore support’ 패치가 제외된 경
     <string name="revanced_spoof_streaming_data_side_effects_title">변경에 따른 부작용</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• 오디오 트랙 메뉴가 표시되지 않습니다.
 • 안정적인 볼륨을 사용할 수 없습니다.
-• 자동 오디오 트랙을 비활성화할 수 없습니다.
+• 강제된 자동 오디오 트랙을 비활성화할 수 없습니다.
 • 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• 안정적인 볼륨을 사용할 수 없습니다.
 • 영화 또는 유료 동영상이 재생되지 않을 수 있습니다.
 • 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• 오디오 트랙 메뉴가 표시되지 않습니다.
-• 자동 오디오 트랙을 비활성화할 수 없습니다.
+• 강제된 자동 오디오 트랙을 비활성화할 수 없습니다.
 • 복호화에 실패하면 재생이 실패할 수 있습니다.
 • 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 다시 로드 버튼을 탭해야 합니다.
 • 동영상이 늦게 시작될 수 있습니다."</string>

@@ -8,6 +8,10 @@
     <string name="revanced_extended_settings_search_title">Αναζήτηση %s</string>
     <string name="revanced_extended_reset_to_default_toast">Έγινε επαναφορά στις προεπιλεγμένες τιμές.</string>
     <string name="revanced_preference_category_experimental_flag">Πειραματικές λειτουργίες</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"Αυτή η ρύθμιση δεν είναι διαθέσιμη προς το παρόν.
+Για να χρησιμοποιήσετε αυτή τη λειτουργία, αλλάξτε το «Προεπιλεγμένο πρόγραμμα πελάτη» στις ρυθμίσεις «Παραποίηση δεδομένων ροής» σε iOS TV, TV ή TV Simply.
+
+Σημείωση: Το πρόγραμμα πελάτη iOS TV δεν υποστηρίζει την αναπαραγωγή ορισμένων βίντεο, όπως μουσικών βίντεο. Άρα, αν το προεπιλεγμένο πρόγραμμα πελάτη οριστεί σε iOS TV, αυτή η ρύθμιση μπορεί να μη λειτουργεί σε κάποια βίντεο."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Είστε βέβαιοι ότι θέλετε να συνεχίσετε;</string>
     <string name="revanced_extended_restart_first_run">Επανεκκίνηση ώστε να φορτωθεί σωστά η διάταξη</string>
     <string name="revanced_extended_restart_title">Απαιτείται επανεκκίνηση</string>
@@ -45,6 +49,7 @@
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Αφαίρεση από την ουρά και επαναφόρτωση του βίντεο</string>
     <string name="revanced_queue_manager_remove_queue">Κατάργηση ουράς</string>
     <string name="revanced_queue_manager_save_queue">Αποθήκευση ουράς</string>
+    <string name="revanced_queue_manager_show_original_video_information">Εμφάνιση αρχικών πληροφοριών βίντεο</string>
     <string name="revanced_queue_manager_user_dialog_message">"Αντί να ανοίξετε μια εξωτερική εφαρμογή λήψης, θα ανοίξει το παράθυρο διαχείρισης ουράς.
 
 Μπορείτε επίσης να ανοίξετε τον διαχειριστή ουράς πατώντας παρατεταμένα το κουμπί επιστροφής στη γραμμή πλοήγησης.
@@ -52,6 +57,26 @@
 Αυτή η λειτουργία είναι ακόμη υπό ανάπτυξη, οπότε οι περισσότερες λειτουργίες ενδέχεται να μη λειτουργούν.
 
 Παρακαλούμε χρησιμοποιήστε την για σκοπούς εντοπισμού σφαλμάτων μόνο."</string>
+    <string name="revanced_queue_manager_video_information">Πληροφορίες βίντεο</string>
+    <string name="revanced_queue_manager_video_information_copy">Αντιγραφή</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Κανάλι
+══════════════
+%1$s
+
+Τίτλος
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Κανάλι
+══════════════
+%1$s
+
+Τίτλος
+══════════════
+%2$s
+
+Περιγραφή
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Απαιτείται σύνδεση</string>
     <string name="revanced_queue_manager_check_failed_generic">Διαχειριστής ουράς μη διαθέσιμος (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Αδυναμία αναγνώρισης λίστας αναπαραγωγής</string>
@@ -62,11 +87,13 @@
     <string name="revanced_queue_manager_fetch_failed_delete">Αποτυχία διαγραφής ουράς.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">Αποτυχία αφαίρεσης βίντεο.</string>
     <string name="revanced_queue_manager_fetch_failed_save">Αποτυχία αποθήκευσης της ουράς.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Αποτυχία λήψης πληροφοριών βίντεο.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">Το βίντεο προστέθηκε επιτυχώς.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">Η ουρά δημιουργήθηκε επιτυχώς.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">Η ουρά διαγράφηκε επιτυχώς.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">Το βίντεο αφαιρέθηκε επιτυχώς.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Η ουρά αποθηκεύτηκε επιτυχώς στο \'%s\'.</string>
+    <string name="revanced_share_copy_video_information_success">Οι πληροφορίες βίντεο αντιγράφηκαν στο πρόχειρο.</string>
     <string name="revanced_language_title">Γλώσσα ρυθμίσεων RVX</string>
     <string name="revanced_language_DEFAULT">Γλώσσα εφαρμογής</string>
     <string name="revanced_language_AM">"Αμχαρικά
@@ -491,7 +518,6 @@ Playlists
     <string name="revanced_disable_auto_audio_tracks_title">Απενεργοποίηση υποχρεωτικών κομματιών ήχου</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Τα υποχρεωτικά κομμάτια ήχου είναι απενεργοποιημένα.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Τα υποχρεωτικά κομμάτια ήχου είναι ενεργοποιημένα.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Για να χρησιμοποιήσετε αυτή τη λειτουργία, πρέπει να γίνει αλλαγή του προεπιλεγμένου προγράμματος πελάτη σε TV, TV Simply ή iOS TV στις ρυθμίσεις «Παραποίηση δεδομένων ροής».</string>
     <string name="revanced_disable_auto_captions_title">Απενεργοποίηση υποχρεωτικών αυτόματων υπότιτλων</string>
     <string name="revanced_disable_auto_captions_summary_on">Οι υποχρεωτικοί αυτόματοι υπότιτλοι είναι απενεργοποιημένοι.</string>
     <string name="revanced_disable_auto_captions_summary_off">Οι υποχρεωτικοί αυτόματοι υπότιτλοι εμφανίζονται.</string>
@@ -1059,9 +1085,6 @@ Playlists
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Μενού «Κομμάτι ήχου»</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Εμφανίζεται.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Κρυμμένο.
-
-Για να εμφανίζεται το μενού «Κομμάτι ήχου», πρέπει να γίνει αλλαγή του προεπιλεγμένου προγράμματος πελάτη σε TV, TV Simply ή iOS TV στις ρυθμίσεις «Παραποίηση δεδομένων ροής»."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Μενού «Υπότιτλοι»</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Εμφανίζεται.</string>

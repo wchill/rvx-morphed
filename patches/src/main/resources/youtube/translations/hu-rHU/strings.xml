@@ -495,7 +495,6 @@ Korlátozás: Előfordulhat, hogy az eszköztár Vissza gombja nem működik."</
     <string name="revanced_disable_auto_audio_tracks_title">Kényszerített automatikus hangsávok letiltása</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">A kényszerített automatikus hangsávok le vannak tiltva.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">A kényszerített automatikus hangsávok engedélyezve vannak.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">A funkció használatához módosítsa az \'Alapértelmezett kliens (adatfolyam hamisításhoz)\' beállítást TV-re, TV egyszerű-re vagy iOS TV-re.</string>
     <string name="revanced_disable_auto_captions_title">Kényszerített automatikus feliratok letiltása</string>
     <string name="revanced_disable_auto_captions_summary_on">A kényszerített automatikus feliratok le vannak tiltva.</string>
     <string name="revanced_disable_auto_captions_summary_off">A kényszerített automatikus feliratok engedélyezve vannak.</string>
@@ -1057,9 +1056,6 @@ Korlátozások:
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Hangsáv menü elrejtése</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">A hangsáv menü el van rejtve.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">A hangsáv menü látható.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"A hangsáv menü rejtett.
-
-A hangsáv menü megjelenítéséhez módosítsa az 'Alapértelmezett kliens (adatfolyam hamisításhoz)' beállítást TV-re, TV egyszerű-re vagy iOS TV-re."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Feliratok menü elrejtése</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">A feliratok menü el van rejtve.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">A feliratok menü látható.</string>

@@ -148,8 +148,8 @@
     <string name="revanced_disable_cairo_splash_animation_summary">앱을 시작할 때, Cairo 스플래시 애니메이션을 비활성화합니다.</string>
     <string name="revanced_disable_dislike_redirection_title">싫어요 리다이렉션 비활성화</string>
     <string name="revanced_disable_dislike_redirection_summary">싫어요 버튼을 탭하면 다음 트랙으로 리다이렉션할 수 없습니다.</string>
-    <string name="revanced_disable_auto_captions_title">자동 자막 비활성화</string>
-    <string name="revanced_disable_auto_captions_summary">자막이 자동으로 활성화되지 않도록 설정합니다.</string>
+    <string name="revanced_disable_auto_captions_title">강제된 자동 자막 비활성화</string>
+    <string name="revanced_disable_auto_captions_summary">자동 자막이 강제로 활성화되지 않도록 설정합니다.</string>
     <string name="revanced_enable_landscape_mode_title">가로 모드 활성화</string>
     <string name="revanced_enable_landscape_mode_summary">앱을 가로로 회전할 수 있도록 합니다.</string>
     <string name="revanced_custom_filter_title">사용자 정의 필터 활성화</string>
@@ -259,7 +259,7 @@ YouTube Music의 검색 및 설정과 같은 활동은 공개되지 않으므로
     <string name="revanced_disable_miniplayer_gesture_summary">미니 플레이어에서 스와이프하여 트랙을 변경할 수 없습니다.</string>
     <string name="revanced_disable_player_gesture_title">플레이어 제스처 비활성화</string>
     <string name="revanced_disable_player_gesture_summary">플레이어에서 스와이프하여 트랙을 변경할 수 없습니다.</string>
-    <string name="revanced_enable_forced_miniplayer_title">강제로 미니 플레이어 활성화</string>
+    <string name="revanced_enable_forced_miniplayer_title">강제된 미니 플레이어 활성화</string>
     <string name="revanced_enable_forced_miniplayer_summary">새로운 트랙으로 변경되면 강제로 미니 플레이어를 활성화합니다.</string>
     <string name="revanced_enable_smooth_transition_animation_title">부드러운 전환 애니메이션 활성화</string>
     <string name="revanced_enable_smooth_transition_animation_summary">"미니 플레이어를 최소화 상태에서 최대화할 때, 부드러운 애니메이션을 활성화합니다.
@@ -506,6 +506,8 @@ API Key를 발급받는 방법을 보려면 여기를 탭하세요."</string>
 • 적응형 비트레이트 스트리밍 클라이언트 (Android VR 1.43.32 이외의 모든 클라이언트)를 사용하는 경우에 오디오 재생이 간헐적으로 끊길 수 있습니다."</string>
     <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32">Android VR 1.43.32</string>
     <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09">Android VR 1.65.09</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32_no_auth">Android VR 1.43.32 (인증 없음)</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09_no_auth">Android VR 1.65.09 (인증 없음)</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
