@@ -8,6 +8,11 @@
     <string name="revanced_extended_settings_search_title">Tìm kiếm trong %s</string>
     <string name="revanced_extended_reset_to_default_toast">Đã đặt lại giá trị về mặc định.</string>
     <string name="revanced_preference_category_experimental_flag">Tính năng thử nghiệm</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"Cài đặt này hiện không khả dụng.
+Để dùng tính năng, hãy thay đổi 'Client mặc định (Giả mạo dữ liệu phát video)' sang iOS TV, TV hoặc TV Simply.
+
+Lưu ý:
+• iOS TV không hỗ trợ phát một số video, ví dụ như video nhạc."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Bạn có chắc chắn muốn tiếp tục không?</string>
     <string name="revanced_extended_restart_first_run">Vui lòng khởi động lại ứng dụng trong lần đầu khởi chạy để hiển thị đúng giao diện</string>
     <string name="revanced_extended_restart_title">Yêu cầu khởi động lại</string>
@@ -45,6 +50,7 @@
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Xoá khỏi hàng chờ và tải lại video</string>
     <string name="revanced_queue_manager_remove_queue">Xoá hàng chờ</string>
     <string name="revanced_queue_manager_save_queue">Lưu hàng chờ</string>
+    <string name="revanced_queue_manager_show_original_video_information">Thông tin gốc của video</string>
     <string name="revanced_queue_manager_user_dialog_message">"Thay vì mở trình tải xuống bên ngoài, khi tương tác sẽ mở hộp thoại quản lý hàng chờ.
 
 Ngoài ra, bạn cũng có thể mở hộp thoại quản lý hàng chờ bằng cách nhấn và giữ nút quay lại trên thanh điều hướng.
@@ -52,6 +58,26 @@ Ngoài ra, bạn cũng có thể mở hộp thoại quản lý hàng chờ bằn
 Nhưng tính năng này vẫn còn đang trong quá trình phát triển, vì vậy phần lớn các tính năng có thể chưa hoạt động.
 
 Vui lòng chỉ sử dụng cho mục đích gỡ lỗi."</string>
+    <string name="revanced_queue_manager_video_information">Thông tin video</string>
+    <string name="revanced_queue_manager_video_information_copy">Sao chép</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Kênh
+══════════════
+%1$s
+
+Tiêu đề
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Kênh
+══════════════
+%1$s
+
+Tiêu đề
+══════════════
+%2$s
+
+Mô tả
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Yêu cầu đăng nhập</string>
     <string name="revanced_queue_manager_check_failed_generic">Quản lý hàng chờ không khả dụng (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Không xác định được danh sách phát</string>
@@ -62,11 +88,13 @@ Vui lòng chỉ sử dụng cho mục đích gỡ lỗi."</string>
     <string name="revanced_queue_manager_fetch_failed_delete">Không thể xoá hàng chờ.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">Không thể xoá video.</string>
     <string name="revanced_queue_manager_fetch_failed_save">Không thể lưu hàng chờ.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Không thể tải thông tin video.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">Thêm video thành công.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">Tạo hàng chờ thành công.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">Xoá hàng chờ thành công.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">Xoá video thành công.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Lưu hàng chờ thành công thành \"%s\".</string>
+    <string name="revanced_share_copy_video_information_success">Đã sao chép thông tin video sang bảng nhớ tạm.</string>
     <string name="revanced_language_title">Ngôn ngữ trong cài đặt RVX</string>
     <string name="revanced_language_DEFAULT">Theo ứng dụng</string>
     <string name="revanced_language_AM">"Amharic

@@ -75,8 +75,8 @@ Hạn chế: Đôi khi mở thẻ Trang chủ, bạn chỉ thấy một màn hì
     <string name="revanced_hide_promotion_alert_banner_summary">Ẩn biểu ngữ thông báo khuyến mãi.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Trình đơn tuỳ chọn</string>
-    <string name="revanced_disable_trim_silence_title">Tắt tính năng Cắt bỏ khoảng lặng</string>
-    <string name="revanced_disable_trim_silence_summary">"Tắt tính năng Cắt bỏ khoảng lặng trong trình đơn tuỳ chọn tốc độ phát.
+    <string name="revanced_disable_trim_silence_title">Vô hiệu hoá nút Cắt bỏ khoảng lặng</string>
+    <string name="revanced_disable_trim_silence_summary">"Vô hiệu hoá nút Cắt bỏ khoảng lặng trong trình đơn tuỳ chọn tốc độ phát.
 
  Chi tiết:
  • Tính năng này dành cho podcast.
@@ -500,6 +500,8 @@ Hạn chế (Chặn truy vấn):
 • Âm thanh có thể bị ngắt quãng khi phát trên client dùng truyền phát bit thích ứng (trừ Android VR 1.43.32)."</string>
     <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32">Android VR 1.43.32</string>
     <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09">Android VR 1.65.09</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32_no_auth">Android VR 1.43.32 (Không xác thực)</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09_no_auth">Android VR 1.65.09 (Không xác thực)</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>

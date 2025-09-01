@@ -8,11 +8,13 @@
     <string name="revanced_extended_settings_search_title">設定を検索</string>
     <string name="revanced_extended_reset_to_default_toast">デフォルト値にリセットしました。</string>
     <string name="revanced_preference_category_experimental_flag">実験的な機能</string>
-    <string name="revanced_extended_audio_tracks_unavailable">"この機能を使用するには、[偽装するクライアントを選択 (ストリーミングデータを偽装)] を「iOS TV」、「TV」、または「TV Simply」に変更してください。
+    <string name="revanced_extended_audio_tracks_unavailable">"この設定は現在利用できません。
+
+この機能を使用するには、[ストリーミングデータを偽装] 設定内の [偽装するクライアントを選択] で「iOS TV」、「TV」、または「TV Simply」に変更してください。
 
 注意:
 ・「iOS TV」はミュージックビデオなど一部の動画の再生に対応していません。
-・したがって、「偽装するクライアント」が「iOS TV」に設定している場合、この設定は一部の動画では動作しない可能性があります。"</string>
+・したがって、偽装するクライアントを「iOS TV」に設定している場合、この設定は一部の動画では動作しない可能性があります。"</string>
     <string name="revanced_extended_confirm_user_dialog_title">続行しますか？</string>
     <string name="revanced_extended_restart_first_run">レイアウトを正常に読み込むためにはアプリを再起動する必要があります。\n\n続行しますか？</string>
     <string name="revanced_extended_restart_title">再起動が必要です</string>
@@ -50,6 +52,7 @@
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">キューから削除して動画を再読み込み</string>
     <string name="revanced_queue_manager_remove_queue">キューを削除</string>
     <string name="revanced_queue_manager_save_queue">キューを保存</string>
+    <string name="revanced_queue_manager_show_original_video_information">元の動画情報を表示</string>
     <string name="revanced_queue_manager_user_dialog_message">"外部ダウンローダーを開く代わりに、キューマネージャーダイアログを開きます。
 
 ナビゲーションバーの戻るボタンを長押ししてキューマネージャーを開くこともできます。
@@ -57,6 +60,26 @@
 この機能はまだ開発中であるため、ほとんどの機能が動作しない可能性があります。
 
 デバッグ目的でのみ使用してください。"</string>
+    <string name="revanced_queue_manager_video_information">動画情報</string>
+    <string name="revanced_queue_manager_video_information_copy">コピー</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"チャンネル名
+══════════════
+%1$s
+
+タイトル
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"チャンネル名
+══════════════
+%1$s
+
+タイトル
+══════════════
+%2$s
+
+概要
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">ログインが必要です。</string>
     <string name="revanced_queue_manager_check_failed_generic">キューマネージャーは利用できません (%s)。</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">再生リストを識別できませんでした。</string>
@@ -67,11 +90,13 @@
     <string name="revanced_queue_manager_fetch_failed_delete">キューを削除できませんでした。</string>
     <string name="revanced_queue_manager_fetch_failed_remove">動画を削除できませんでした。</string>
     <string name="revanced_queue_manager_fetch_failed_save">キューを保存できませんでした。</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">動画情報を取得できませんでした。</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">動画を追加しました。</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">キューを作成しました。</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">キューを削除しました。</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">動画を削除しました。</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">キューを「%s」に保存しました。</string>
+    <string name="revanced_share_copy_video_information_success">動画情報をクリップボードにコピーしました。</string>
     <string name="revanced_language_title">Revanced Extended 設定の言語</string>
     <string name="revanced_language_DEFAULT">アプリの設定言語に従う</string>
     <string name="revanced_language_AM">"アムハラ語

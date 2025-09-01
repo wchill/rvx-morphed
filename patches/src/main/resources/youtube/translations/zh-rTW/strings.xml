@@ -50,6 +50,7 @@
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">從佇列移除並重新載入影片</string>
     <string name="revanced_queue_manager_remove_queue">移除佇列</string>
     <string name="revanced_queue_manager_save_queue">儲存佇列</string>
+    <string name="revanced_queue_manager_show_original_video_information">顯示原始影片資訊</string>
     <string name="revanced_queue_manager_user_dialog_message">"不要開啟外部下載器，而是開啟佇列管理器對話方塊。
 
 您也可以按住導覽列上的返回按鈕來開啟佇列管理器。
@@ -57,6 +58,26 @@
 此功能仍在開發中，因此大部分功能可能無法使用。
 
 請僅將其用於偵錯目的。"</string>
+    <string name="revanced_queue_manager_video_information">影片資訊</string>
+    <string name="revanced_queue_manager_video_information_copy">複製</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"頻道
+══════════════
+%1$s
+
+標題
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"頻道
+══════════════
+%1$s
+
+標題
+══════════════
+%2$s
+
+描述
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">需要登入</string>
     <string name="revanced_queue_manager_check_failed_generic">佇列管理器不可用 (%s)。</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">無法辨識播放清單</string>
@@ -67,11 +88,13 @@
     <string name="revanced_queue_manager_fetch_failed_delete">刪除佇列失敗。</string>
     <string name="revanced_queue_manager_fetch_failed_remove">刪除影片失敗。</string>
     <string name="revanced_queue_manager_fetch_failed_save">儲存佇列失敗。</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">取得影片資訊失敗。</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">影片新增成功。</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">佇列建立成功。</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">佇列刪除成功。</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">影片移除成功。</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">佇列已成功儲存至「%s」。</string>
+    <string name="revanced_share_copy_video_information_success">影片資訊已複製到剪貼簿。</string>
     <string name="revanced_language_title">RVX 語言</string>
     <string name="revanced_language_DEFAULT">應用程式語言</string>
     <string name="revanced_language_AM">"阿姆哈拉語

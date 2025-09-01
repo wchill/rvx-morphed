@@ -50,6 +50,7 @@ Por favor, descarga %2$s desde el sitio web."</string>
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Eliminar de la cola y recargar vídeo</string>
     <string name="revanced_queue_manager_remove_queue">Eliminar cola</string>
     <string name="revanced_queue_manager_save_queue">Guardar cola</string>
+    <string name="revanced_queue_manager_show_original_video_information">Mostrar información original del vídeo</string>
     <string name="revanced_queue_manager_user_dialog_message">"En lugar de abrir un descargador externo, abre el diálogo del gestor de colas.
 
 También puedes abrir el gestor de colas manteniendo presionado el botón Atrás en la barra de navegación.
@@ -57,6 +58,26 @@ También puedes abrir el gestor de colas manteniendo presionado el botón Atrás
 Esta función aún está en desarrollo, por lo que es posible que la mayoría de las funciones no funcionen.
 
 Por favor, utilízala solo con fines de depuración."</string>
+    <string name="revanced_queue_manager_video_information">Información del vídeo</string>
+    <string name="revanced_queue_manager_video_information_copy">Copiar</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Canal
+══════════════
+%1$s
+
+Título
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Canal
+══════════════
+%1$s
+
+Título
+══════════════
+%2$s
+
+Descripción
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Es necesario iniciar sesión</string>
     <string name="revanced_queue_manager_check_failed_generic">Gestor de colas no disponible (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">No se pudo identificar la lista</string>
@@ -67,11 +88,13 @@ Por favor, utilízala solo con fines de depuración."</string>
     <string name="revanced_queue_manager_fetch_failed_delete">Error al eliminar la cola.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">Error al eliminar el vídeo.</string>
     <string name="revanced_queue_manager_fetch_failed_save">Error al guardar la cola.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Error al obtener la información del vídeo.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">Vídeo añadido correctamente.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">Cola creada correctamente.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">Cola eliminada correctamente.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">Vídeo eliminado correctamente.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Cola guardada correctamente en \'%s\'.</string>
+    <string name="revanced_share_copy_video_information_success">Información del vídeo copiada al portapapeles.</string>
     <string name="revanced_language_title">Idioma de RVX</string>
     <string name="revanced_language_DEFAULT">Idioma de la app</string>
     <string name="revanced_language_AM">"Amárico

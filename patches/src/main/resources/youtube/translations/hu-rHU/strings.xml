@@ -8,6 +8,13 @@
     <string name="revanced_extended_settings_search_title">%s keresése</string>
     <string name="revanced_extended_reset_to_default_toast">Visszaállítás az alapértelmezett értékekre.</string>
     <string name="revanced_preference_category_experimental_flag">Kísérleti funkciók</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"Ez a beállítás jelenleg nem érhető el.
+
+A funkció használatához módosítsa az 'Alapértelmezett kliens (hamis streamelési adatok)' beállítást iOS TV, TV vagy TV egyszerű értékre.
+
+Megjegyzés:
+• Az iOS TV nem támogatja bizonyos videók, például zenei videók lejátszását.
+• Ezért, ha az alapértelmezett kliens az iOS TV-re van állítva, ez a beállítás egyes videók esetében nem biztos, hogy működik."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Szeretné folytatni?</string>
     <string name="revanced_extended_restart_first_run">Indítsa újra a rendszert a normál elrendezés betöltéséhez</string>
     <string name="revanced_extended_restart_title">Újraindítás szükséges</string>
@@ -45,6 +52,7 @@ Töltsd le a(z) %2$s weboldalról."</string>
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Eltávolítás a várólistáról és a videó lejátszása</string>
     <string name="revanced_queue_manager_remove_queue">Várólista eltávolítása</string>
     <string name="revanced_queue_manager_save_queue">Várólista mentése</string>
+    <string name="revanced_queue_manager_show_original_video_information">Eredeti videó információ mutatása</string>
     <string name="revanced_queue_manager_user_dialog_message">"Külső letöltő megnyitása helyett nyissa meg a várólista párbeszédpanelt.
 
 A várólistát a navigációs sáv vissza gombjának lenyomva tartásával is megnyithatja.
@@ -52,6 +60,26 @@ A várólistát a navigációs sáv vissza gombjának lenyomva tartásával is m
 Ez a funkció még fejlesztés alatt áll, így előfordulhat, hogy több funkció nem működik.
 
 Kérjük, csak hibakeresési célokra használja."</string>
+    <string name="revanced_queue_manager_video_information">Videó információ</string>
+    <string name="revanced_queue_manager_video_information_copy">Másolás</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Csatorna
+══════════════
+%1$s
+
+Cím
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Csatorna
+══════════════
+%1$s
+
+Cím
+══════════════
+%2$s
+
+Leírás
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Bejelentkezés szükséges</string>
     <string name="revanced_queue_manager_check_failed_generic">A várólista párbeszédpanel nem elérhető (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Nem azonosítható lejátszási lista</string>
@@ -62,11 +90,13 @@ Kérjük, csak hibakeresési célokra használja."</string>
     <string name="revanced_queue_manager_fetch_failed_delete">A várólista törlése nem sikerült.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">A videó törlése nem sikerült.</string>
     <string name="revanced_queue_manager_fetch_failed_save">A várólista mentése nem sikerült.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Nem sikerült beszerezni a videó információt.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">A videó sikeresen hozzáadva.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">A várólista sikeresen létrehozva.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">A várólista sikeresen törölve.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">A videó sikeresen törölve.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">A várólista sikeresen mentve ide: \'%s\'.</string>
+    <string name="revanced_share_copy_video_information_success">Videó információ vágólapra másolva.</string>
     <string name="revanced_language_title">RVX nyelve</string>
     <string name="revanced_language_DEFAULT">Alkalmazás nyelve</string>
     <string name="revanced_language_AM">"Amhara
@@ -334,7 +364,7 @@ Koppints ide, ha többet szeretnél megtudni a DeArrow-ról."</string>
     <string name="revanced_hide_carousel_shelf_search_summary_on">Elrejtve a keresési eredményekben.</string>
     <string name="revanced_hide_carousel_shelf_search_summary_off">Látható a keresési eredményekben.</string>
     <string name="revanced_hide_carousel_shelf_about_title">A karusszelről</string>
-    <string name="revanced_hide_carousel_shelf_about_summary">Példák a karusszelre:&lt;br&gt;&lt;br&gt;&lt;b&gt;Friss hírek&lt;/b&gt;, &lt;b&gt;Nézés folytatása&lt;/b&gt;, &lt;b&gt;További csatornák felfedezése&lt;/b&gt;, &lt;b&gt;Hallgassa meg újra&lt;/b&gt;, &lt;b&gt;Legrelevánsabb&lt;/b&gt;, &lt;b&gt;Vásárlás&lt;/b&gt;, &lt;b&gt;Nézze meg újra&lt;/b&gt;</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Példák a karusszelre:&lt;br&gt;&lt;br&gt;&lt;b&gt;Friss hírek&lt;/b&gt;, &lt;b&gt;Nézés folytatása&lt;/b&gt;, &lt;b&gt;További csatornák felfedezése&lt;/b&gt;, &lt;b&gt;Neked&lt;/b&gt;, &lt;b&gt;Hallgassa meg újra&lt;/b&gt;, &lt;b&gt;Legrelevánsabb&lt;/b&gt;, &lt;b&gt;Vásárlás&lt;/b&gt;, &lt;b&gt;Nézze meg újra&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Kategória sáv</string>
     <string name="revanced_preference_screen_category_bar_summary">Rejtse el vagy jelenítse meg a kategória sávot a hírfolyamban, keresésben és a kapcsolódó videókban.</string>
@@ -2191,8 +2221,8 @@ Kattintson a folytatás gombra és kapcsolja ki az akkumulátor optimalizáláso
 <small>(fejlesztés alatt)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Hamisítás mellékhatásai</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• A hangsáv menü hiányzik.
-• A stabil hangerő nem áll rendelkezésre.
 • A kényszerített automatikus hangsávok letiltása nem elérhető.
+• A stabil hangerő nem áll rendelkezésre.
 • Előfordulhat, hogy a gyerekeknek szánt tartalmat nem lehet lejátszani, ha ki van jelentkezve vagy inkognitó módban van."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• A stabil hangerő nem érhető el.
 • Előfordulhat, hogy a filmeket vagy a fizetős videókat nem lehet lejátszani.

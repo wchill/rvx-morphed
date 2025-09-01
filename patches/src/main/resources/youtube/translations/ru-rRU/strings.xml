@@ -8,6 +8,12 @@
     <string name="revanced_extended_settings_search_title">Поиск %s</string>
     <string name="revanced_extended_reset_to_default_toast">К значениям по умолчанию.</string>
     <string name="revanced_preference_category_experimental_flag">Экспериментальные опции</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"Эта настройка недоступна.
+Чтобы использовать эту функцию, измените «Клиент по умолчанию (Подмена потоковых данных)» на iOS TV, TV или TV простой.
+
+Примечание:
+• iOS TV не поддерживает некоторые видео, например музыкальных клипов.
+• Если по умолчанию выбран iOS TV, эта настройка игнорируется в некоторых видео."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Подтверждаете действие?</string>
     <string name="revanced_extended_restart_first_run">Перезапустить для правильной загрузки интерфейса</string>
     <string name="revanced_extended_restart_title">Требование перезапуска</string>
@@ -45,6 +51,7 @@
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Удалить из очереди и обновить</string>
     <string name="revanced_queue_manager_remove_queue">Удалить очередь</string>
     <string name="revanced_queue_manager_save_queue">Сохранить очередь</string>
+    <string name="revanced_queue_manager_show_original_video_information">Оригинальная информация о видео</string>
     <string name="revanced_queue_manager_user_dialog_message">"Вместо открытия внешнего загрузчика открывается диалог управления очередью.
 
 Также можно открыть управление нажатием и удерживанием кнопки назад на панели навигации.
@@ -52,6 +59,26 @@
 Эта функция все ещё находится в процессе разработки, поэтому большинство функций не работает.
 
 Пожалуйста, используйте её только для отладки."</string>
+    <string name="revanced_queue_manager_video_information">Информация о видео</string>
+    <string name="revanced_queue_manager_video_information_copy">Копия</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Канал
+══════════════
+%1$s
+
+Заголовок
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Канал
+══════════════
+%1$s
+
+Заголовок
+══════════════
+%2$s
+
+Описание
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Требуется авторизация</string>
     <string name="revanced_queue_manager_check_failed_generic">Управление очередью недоступно (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Не определился список просмотра</string>
@@ -62,11 +89,13 @@
     <string name="revanced_queue_manager_fetch_failed_delete">Не удалось удалить очередь.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">Не удалось удалить видео.</string>
     <string name="revanced_queue_manager_fetch_failed_save">Не удалось сохранить очередь.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Нет информации о видео.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">Видео добавлено успешно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">Очередь создана успешно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">Очередь удалена успешно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">Видео удалено успешно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Очередь была успешно сохранена до: \'%s\'.</string>
+    <string name="revanced_share_copy_video_information_success">Информация о видео в буфере обмена.</string>
     <string name="revanced_language_title">Язык RVX</string>
     <string name="revanced_language_DEFAULT">Язык приложения</string>
     <string name="revanced_language_AM">"Амхарский

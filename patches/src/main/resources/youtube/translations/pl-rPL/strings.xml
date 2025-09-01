@@ -8,7 +8,8 @@
     <string name="revanced_extended_settings_search_title">Wyszukaj w %s</string>
     <string name="revanced_extended_reset_to_default_toast">Przywrócono domyślne wartości.</string>
     <string name="revanced_preference_category_experimental_flag">Eksperymentalne flagi</string>
-    <string name="revanced_extended_audio_tracks_unavailable">"Aby używać tej fukcji, zmień domyślnego klienta oszukiwania strumienia danych na iOS TV, TV lub Uproszczony TV.
+    <string name="revanced_extended_audio_tracks_unavailable">"Opcja jest obecnie niedostępna.
+Aby używać tej fukcji, zmień domyślnego klienta oszukiwania strumienia danych na iOS TV, TV lub Uproszczony TV.
 
 Notki:
 • iOS TV nie obsługuje odtwarzania niektórych filmów, jak muzycznych
@@ -50,6 +51,7 @@ Pobierz %2$s ze strony internetowej."</string>
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Usuń z kolejki i odśwież film</string>
     <string name="revanced_queue_manager_remove_queue">Usuń kolejkę</string>
     <string name="revanced_queue_manager_save_queue">Zapisz kolejkę</string>
+    <string name="revanced_queue_manager_show_original_video_information">Pokaż oryginalne informacje o filmie</string>
     <string name="revanced_queue_manager_user_dialog_message">"Zamiast otwierać zewnętrzną aplikację od pobierania, otwiera okno menedżera kolejki.
 
 Możesz również otworzyć menedżer kolejek poprzez kliknięcie i przytrzymanie przycisku cofania na pasku nawigacyjnym.
@@ -57,6 +59,26 @@ Możesz również otworzyć menedżer kolejek poprzez kliknięcie i przytrzymani
 Funkcja jest nadal rozwijana, więc większość funkcji może nie działać.
 
 Proszę używać tej funkcji wyłącznie w celach debugowania."</string>
+    <string name="revanced_queue_manager_video_information">Informacje o filmie</string>
+    <string name="revanced_queue_manager_video_information_copy">Kopiuj</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Kanał
+══════════════
+%1$s
+
+Tytuł
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Kanał
+══════════════
+%1$s
+
+Tytuł
+══════════════
+%2$s
+
+Opis
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Wymagane logowanie</string>
     <string name="revanced_queue_manager_check_failed_generic">Menedżer kolejki jest niedostępny (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Nie można zidentyfikować playlisty</string>
@@ -67,11 +89,13 @@ Proszę używać tej funkcji wyłącznie w celach debugowania."</string>
     <string name="revanced_queue_manager_fetch_failed_delete">Nie udało się usunąć kolejki.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">Nie udało się usunąć filmu.</string>
     <string name="revanced_queue_manager_fetch_failed_save">Nie udało się zapisać kolejki.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Nie udało się zdobyć informacji o filmie.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">Pomyślnie dodano film.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">Pomyślnie utworzono kolejkę.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">Pomyślnie usunięto kolejkę.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">Pomyślnie usunięto film.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Pomyślnie zapisano kolejkę do \'%s\'.</string>
+    <string name="revanced_share_copy_video_information_success">Skopiowano informacje o filmie.</string>
     <string name="revanced_language_title">Język RVX</string>
     <string name="revanced_language_DEFAULT">Język aplikacji</string>
     <string name="revanced_language_AM">"Amharski
