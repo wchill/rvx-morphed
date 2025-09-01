@@ -44,7 +44,7 @@ import app.revanced.extension.youtube.utils.ThemeUtils;
 /**
  * Controller for managing the search view in ReVanced settings.
  */
-@SuppressWarnings({"deprecated", "DiscouragedApi"})
+@SuppressWarnings({"deprecation", "DiscouragedApi"})
 public class SearchViewController {
     private static final int MAX_HISTORY_SIZE = 5;
 
