@@ -14,8 +14,7 @@
 To use this feature, change 'Default client (Spoof streaming data)' to iOS TV, TV or TV Simply.
 
 Note:
-• iOS TV does not support playback of some videos, such as music videos.
-• Therefore, if the Default client is set to iOS TV, this setting may not work for some videos."</string>
+• iOS TV is not available in some regions, in which case this setting may still not work."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Are you sure you want to proceed?</string>
     <string name="revanced_extended_restart_first_run">Restart to load the layout normally</string>
     <string name="revanced_extended_restart_title">Restart required</string>
@@ -2379,10 +2378,12 @@ If you are a YouTube Premium user or have excluded the 'GmsCore support' patch, 
 <small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Spoofing side effects</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Audio track menu is missing.
-• Stable volume is not available.
 • Disable forced auto audio tracks is not available.
+• Stable volume is not available.
 • Kids videos may not play when logged out or in incognito mode."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Stable volume is not available.
+    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Audio track menu may be missing.
+• Disable forced auto audio tracks may not be available.
+• Stable volume is not available.
 • Movies or paid videos may not play.
 • Kids videos may not play when logged out or in incognito mode."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Audio track menu is missing.
