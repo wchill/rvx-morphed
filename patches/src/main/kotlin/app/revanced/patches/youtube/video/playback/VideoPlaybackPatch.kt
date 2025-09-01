@@ -9,7 +9,7 @@ import app.revanced.patcher.util.smali.ExternalLabel
 import app.revanced.patches.shared.customspeed.customPlaybackSpeedPatch
 import app.revanced.patches.shared.litho.addLithoFilter
 import app.revanced.patches.shared.litho.lithoFilterPatch
-import app.revanced.patches.youtube.utils.auth.authHookPatch
+import app.revanced.patches.shared.opus.baseOpusCodecsPatch
 import app.revanced.patches.youtube.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.revanced.patches.youtube.utils.extension.Constants.COMPONENTS_PATH
 import app.revanced.patches.youtube.utils.extension.Constants.PATCH_STATUS_CLASS_DESCRIPTOR
@@ -22,6 +22,9 @@ import app.revanced.patches.youtube.utils.playertype.playerTypeHookPatch
 import app.revanced.patches.youtube.utils.qualityMenuViewInflateFingerprint
 import app.revanced.patches.youtube.utils.recyclerview.recyclerViewTreeObserverHook
 import app.revanced.patches.youtube.utils.recyclerview.recyclerViewTreeObserverPatch
+import app.revanced.patches.youtube.utils.request.buildRequestPatch
+import app.revanced.patches.youtube.utils.request.hookBuildRequest
+import app.revanced.patches.youtube.utils.request.hookInitPlaybackBuildRequest
 import app.revanced.patches.youtube.utils.resourceid.sharedResourceIdPatch
 import app.revanced.patches.youtube.utils.settings.ResourceUtils.addPreference
 import app.revanced.patches.youtube.utils.settings.settingsPatch
@@ -29,7 +32,6 @@ import app.revanced.patches.youtube.video.information.hookBackgroundPlayVideoInf
 import app.revanced.patches.youtube.video.information.hookVideoInformation
 import app.revanced.patches.youtube.video.information.speedSelectionInsertMethod
 import app.revanced.patches.youtube.video.information.videoInformationPatch
-import app.revanced.patches.youtube.video.videoid.hookPlayerResponseVideoId
 import app.revanced.patches.youtube.video.videoid.videoIdPatch
 import app.revanced.util.findMethodOrThrow
 import app.revanced.util.fingerprint.definingClassOrThrow
@@ -77,10 +79,11 @@ val videoPlaybackPatch = bytecodePatch(
             "$VIDEO_PATH/CustomPlaybackSpeedPatch;",
             8.0f
         ),
-        authHookPatch,
+        baseOpusCodecsPatch(),
         flyoutMenuHookPatch,
         lithoFilterPatch,
         lithoLayoutPatch,
+        buildRequestPatch,
         disableHdrPatch,
         playerTypeHookPatch,
         recyclerViewTreeObserverPatch,
@@ -153,7 +156,8 @@ val videoPlaybackPatch = bytecodePatch(
 
         hookBackgroundPlayVideoInformation("$EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
         hookVideoInformation("$EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR->newVideoStarted(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZ)V")
-        hookPlayerResponseVideoId("$EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR->fetchRequest(Ljava/lang/String;Z)V")
+        hookBuildRequest("$EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR->fetchRequest(Ljava/lang/String;Ljava/util/Map;)V")
+        hookInitPlaybackBuildRequest("$EXTENSION_PLAYBACK_SPEED_CLASS_DESCRIPTOR->fetchRequest(Ljava/lang/String;Ljava/util/Map;)V")
 
         updatePatchStatus(PATCH_STATUS_CLASS_DESCRIPTOR, "VideoPlayback")
 

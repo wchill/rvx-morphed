@@ -5,9 +5,9 @@ import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.patch.bytecodePatch
 import app.revanced.patches.shared.litho.addLithoFilter
 import app.revanced.patches.shared.litho.lithoFilterPatch
+import app.revanced.patches.youtube.utils.YOUTUBE_VIDEO_QUALITY_CLASS_TYPE
 import app.revanced.patches.youtube.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.revanced.patches.youtube.utils.extension.Constants.COMPONENTS_PATH
-import app.revanced.patches.youtube.utils.extension.Constants.PATCH_STATUS_CLASS_DESCRIPTOR
 import app.revanced.patches.youtube.utils.extension.Constants.PLAYER_CLASS_DESCRIPTOR
 import app.revanced.patches.youtube.utils.fix.litho.lithoLayoutPatch
 import app.revanced.patches.youtube.utils.indexOfAddHeaderViewInstruction
@@ -26,8 +26,8 @@ import app.revanced.util.REGISTER_TEMPLATE_REPLACEMENT
 import app.revanced.util.fingerprint.injectLiteralInstructionBooleanCall
 import app.revanced.util.fingerprint.injectLiteralInstructionViewCall
 import app.revanced.util.fingerprint.methodOrThrow
-import app.revanced.util.updatePatchStatus
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 
 private const val PANELS_FILTER_CLASS_DESCRIPTOR =
     "$COMPONENTS_PATH/PlayerFlyoutMenuFilter;"
@@ -88,6 +88,26 @@ val playerFlyoutMenuPatch = bytecodePatch(
 
         // endregion
 
+        // region patch for hide '1080p Premium' label
+
+        currentVideoFormatConstructorFingerprint.methodOrThrow(
+            currentVideoFormatToStringFingerprint
+        ).apply {
+            val videoQualitiesIndex =
+                indexOfVideoQualitiesInstruction(this)
+            val videoQualitiesRegister =
+                getInstruction<TwoRegisterInstruction>(videoQualitiesIndex).registerA
+
+            addInstructions(
+                1, """
+                    invoke-static/range { v$videoQualitiesRegister .. v$videoQualitiesRegister }, $PLAYER_CLASS_DESCRIPTOR->hidePlayerFlyoutMenuEnhancedBitrate([$YOUTUBE_VIDEO_QUALITY_CLASS_TYPE)[$YOUTUBE_VIDEO_QUALITY_CLASS_TYPE
+                    move-result-object v$videoQualitiesRegister
+                    """
+            )
+        }
+
+        // endregion
+
         // region patch for hide pip mode menu
 
         if (is_18_39_or_greater) {
@@ -120,8 +140,6 @@ val playerFlyoutMenuPatch = bytecodePatch(
         // endregion
 
         addLithoFilter(PANELS_FILTER_CLASS_DESCRIPTOR)
-
-        updatePatchStatus(PATCH_STATUS_CLASS_DESCRIPTOR, "PlayerFlyoutMenu")
 
         // region add settings
 

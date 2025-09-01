@@ -8,6 +8,10 @@
     <string name="revanced_extended_settings_search_title">Cerca su %s</string>
     <string name="revanced_extended_reset_to_default_toast">Ripristinato ai valori predefiniti</string>
     <string name="revanced_preference_category_experimental_flag">Opzioni sperimentali</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"Questa impostazione non è al momento disponibile.
+Per usare questa impostazione, cambia il client predefinito in iOS TV, TV o TV Simply.
+
+Nota: iOS TV non supporta la riproduzione di alcuni video, come i video musicali, quindi se il client predefinito è impostato su iOS TV, questa impostazione potrebbe non funzionare per alcuni video."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Sei sicuro di voler procedere?</string>
     <string name="revanced_extended_restart_first_run">Riavvia per caricare l\'interfaccia normalmente</string>
     <string name="revanced_extended_restart_title">Riavvio richiesto</string>
@@ -45,6 +49,7 @@ Si prega di scaricare %2$s dal sito web."</string>
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Rimuovi dalla coda e ricarica il video</string>
     <string name="revanced_queue_manager_remove_queue">Rimuovi la coda</string>
     <string name="revanced_queue_manager_save_queue">Salva la coda</string>
+    <string name="revanced_queue_manager_show_original_video_information">Mostra le informazioni del video originale</string>
     <string name="revanced_queue_manager_user_dialog_message">"Invece di aprire un downloader esterno, apri la finestra di dialogo del gestore delle code.
 
 Puoi anche aprire il gestore delle code tenendo premuto il pulsante Indietro sulla barra di navigazione.
@@ -52,6 +57,26 @@ Puoi anche aprire il gestore delle code tenendo premuto il pulsante Indietro sul
 Questa impostazione è ancora in fase di sviluppo, pertanto la maggior parte delle funzionalità potrebbe non funzionare.
 
 Usala solo per scopi di debug."</string>
+    <string name="revanced_queue_manager_video_information">Informazioni del video originale</string>
+    <string name="revanced_queue_manager_video_information_copy">Copia</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Canale
+══════════════
+%1$s
+
+Titolo
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Canale
+══════════════
+%1$s
+
+Titolo
+══════════════
+%2$s
+
+Descrizione
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Accesso richiesto</string>
     <string name="revanced_queue_manager_check_failed_generic">Gestore delle code non disponibile (%s)</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Impossibile identificare la playlist</string>
@@ -62,11 +87,13 @@ Usala solo per scopi di debug."</string>
     <string name="revanced_queue_manager_fetch_failed_delete">Eliminazione della coda non riuscita</string>
     <string name="revanced_queue_manager_fetch_failed_remove">Rimozione del video non riuscita</string>
     <string name="revanced_queue_manager_fetch_failed_save">Salvataggio della coda non riuscito</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Ottenimento delle informazioni del video non riuscito</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">Video aggiunto con successo</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">Coda creata con successo</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">Coda eliminata con successo</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">Video rimosso con successo</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Coda salvata con successo in \'%s\'</string>
+    <string name="revanced_share_copy_video_information_success">Informazioni video copiate negli appunti</string>
     <string name="revanced_language_title">Lingua di RVX</string>
     <string name="revanced_language_DEFAULT">Lingua dell\'app</string>
     <string name="revanced_language_AM">"Amarico
@@ -338,6 +365,7 @@ Tocca qui per saperne di più su DeArrow."</string>
 • Ultime notizie&lt;br&gt;
 • Continua a guardare&lt;br&gt;
 • Esplora altri canali&lt;br&gt;
+• Per te&lt;br&gt;
 • Ascolta di nuovo&lt;br&gt;
 • Più pertinenti&lt;br&gt;
 • Shopping&lt;br&gt;
@@ -368,9 +396,6 @@ Tocca qui per saperne di più su DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Playlist
 Negozio"</string>
-    <string name="revanced_hide_for_you_shelf_title">Nascondi lo scaffale Per Te</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Lo scaffale Per Te è nascosto.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Lo scaffale Per Te è visibile.</string>
     <string name="revanced_hide_links_preview_title">Nascondi l\'anteprima dei link</string>
     <string name="revanced_hide_links_preview_summary_on">L\'anteprima dei link è nascosta.</string>
     <string name="revanced_hide_links_preview_summary_off">L\'anteprima dei link è visibile.</string>
@@ -468,7 +493,7 @@ Nota: i video live, con 0 visualizzazioni e gli Shorts non possono essere nascos
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Generali</string>
     <string name="revanced_change_start_page_title">Cambia la scheda iniziale</string>
-    <string name="revanced_change_start_page_entry_default">Predefinita (Home)</string>
+    <string name="revanced_change_start_page_entry_default">Home (Predefinita)</string>
     <string name="revanced_change_start_page_entry_all_subscriptions">Tutte le iscrizioni</string>
     <string name="revanced_change_start_page_entry_browse">Esplora canali</string>
     <string name="revanced_change_start_page_entry_courses">Apprendimento</string>
@@ -503,13 +528,12 @@ Nota: il pulsante Indietro della barra degli strumenti potrebbe non funzionare."
     <string name="revanced_disable_auto_audio_tracks_title">Disattiva la traccia audio automatica forzata</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">La traccia audio automatica forzata è disattivata.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">La traccia audio automatica forzata è attivata.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Per usare questa impostazione, cambia il client predefinito in TV o iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Disattiva i sottotitoli automatici forzati</string>
     <string name="revanced_disable_auto_captions_summary_on">I sottotitoli automatici forzati sono disattivati.</string>
     <string name="revanced_disable_auto_captions_summary_off">I sottotitoli automatici forzati sono attivati.</string>
-    <string name="revanced_disable_signin_to_tv_popup_title">Disattiva il pannello a comparsa Accedi alla TV</string>
-    <string name="revanced_disable_signin_to_tv_popup_summary_on">Il pannello a comparsa Accedi alla TV è disattivato.</string>
-    <string name="revanced_disable_signin_to_tv_popup_summary_off">Il pannello a comparsa Accedi alla TV è attivato.</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">Disattiva il pannello a comparsa Accedi sulla TV</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">Il pannello a comparsa Accedi sulla TV è disattivato.</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">Il pannello a comparsa Accedi sulla TV è attivato.</string>
     <string name="revanced_disable_splash_animation_title">Disattiva l\'animazione di avvio</string>
     <string name="revanced_disable_splash_animation_summary_on">L\'animazione di avvio è disattivata.</string>
     <string name="revanced_disable_splash_animation_summary_off">L\'animazione di avvio è attivata.</string>
@@ -634,7 +658,7 @@ Per mostrare il pulsante Scarica Playlist nativo, attiva il camuffamento della v
     <string name="revanced_override_video_download_button_title">Sovrascrivi il pulsante Scarica Video</string>
     <string name="revanced_override_video_download_button_summary_on">Il pulsante Scarica Video nativo apre il downloader esterno.</string>
     <string name="revanced_override_video_download_button_summary_off">Il pulsante Scarica Video nativo apre il downloader nativo.</string>
-    <string name="revanced_override_video_download_button_queue_manager_title">Gestore delle code</string>
+    <string name="revanced_override_video_download_button_queue_manager_title">Apri il gestore delle code</string>
     <string name="revanced_override_video_download_button_queue_manager_summary_on">Il pulsante Scarica Video nativo apre il gestore delle code.</string>
     <string name="revanced_override_video_download_button_queue_manager_summary_off">Il pulsante Scarica Video nativo apre il downloader esterno.</string>
     <string name="revanced_external_downloader_package_name_playlist_title">Nome del pacchetto del downloader esterno delle playlist</string>
@@ -1014,9 +1038,9 @@ Note:
     <string name="revanced_hide_ai_chat_summary_title">Nascondi la sezione Riepilogo IA della Chat nella chat live</string>
     <string name="revanced_hide_ai_chat_summary_summary_on">La sezione Riepilogo IA della Chat nella chat live è nascosta.</string>
     <string name="revanced_hide_ai_chat_summary_summary_off">La sezione Riepilogo IA della Chat nella chat live è visibile.</string>
-    <string name="revanced_hide_ai_comments_summary_title">Nascondi il riepilogo IA dei commenti</string>
-    <string name="revanced_hide_ai_comments_summary_summary_on">Il riepilogo IA dei commenti è nascosto.</string>
-    <string name="revanced_hide_ai_comments_summary_summary_off">Il riepilogo IA dei commenti è visibile.</string>
+    <string name="revanced_hide_ai_comments_summary_title">Nascondi i riepiloghi IA nei commenti</string>
+    <string name="revanced_hide_ai_comments_summary_summary_on">I riepiloghi IA nei commenti sono nascosti.</string>
+    <string name="revanced_hide_ai_comments_summary_summary_off">I riepiloghi IA nei commenti sono visibili.</string>
     <string name="revanced_hide_channel_guidelines_title">Nascondi le linee guida dei canali</string>
     <string name="revanced_hide_channel_guidelines_summary_on">Le linee guida dei canali sono nascoste.</string>
     <string name="revanced_hide_channel_guidelines_summary_off">Le linee guida dei canali sono visibili.</string>
@@ -1067,9 +1091,6 @@ Nota: alcuni link di ricerca evidenziati che non hanno uno stile di testo predef
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Nascondi il menù Traccia Audio</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Il menù Traccia Audio è nascosto.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Il menù Traccia Audio è visibile.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Il menù Traccia Audio è nascosto.
-
-Nota: per mostrare il menù Traccia Audio, cambia il client predefinito in TV o iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Nascondi il menù Sottotitoli</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Il menù Sottotitoli è nascosto.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Il menù Sottotitoli è visibile.</string>
@@ -1317,7 +1338,7 @@ Tocca e tieni premuto per copiare il timestamp del video."</string>
 Tocca di nuovo per riattivare l\'audio.</string>
     <string name="revanced_overlay_button_external_downloader_title">Mostra il pulsante Downloader Esterno</string>
     <string name="revanced_overlay_button_external_downloader_summary">Tocca per avviare il downloader esterno.</string>
-    <string name="revanced_overlay_button_external_downloader_queue_manager_title">Gestore delle code</string>
+    <string name="revanced_overlay_button_external_downloader_queue_manager_title">Apri il gestore delle code</string>
     <string name="revanced_overlay_button_external_downloader_queue_manager_summary">Invece di aprire un downloader esterno, apri la finestra di dialogo del gestore delle code.</string>
     <string name="revanced_overlay_button_speed_dialog_title">Mostra il pulsante Velocità di Riproduzione</string>
     <string name="revanced_overlay_button_speed_dialog_summary">"Tocca per aprire la finestra della velocità di riproduzione.
@@ -1778,6 +1799,8 @@ Note:
 • La riproduzione userà più dati internet di VP9.
 • VP9 è comunque usato per la riproduzione HDR."</string>
     <string name="revanced_disable_vp9_codec_summary_off">Il codec VP9 è attivato.</string>
+    <string name="revanced_enable_opus_codec_title">Attiva il codec audio Opus</string>
+    <string name="revanced_enable_opus_codec_summary">Attiva il codec audio Opus se la risposta del riproduttore lo include.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Velocità di riproduzione</string>
     <string name="revanced_default_playback_speed_title">Velocità di riproduzione predefinita dei video</string>
@@ -2125,8 +2148,6 @@ Tocca il pulsante Continua e consenti le modifiche di ottimizzazione."</string>
     <string name="revanced_change_share_sheet_title">Cambia la schermata di condivisione</string>
     <string name="revanced_change_share_sheet_summary_on">Sistema</string>
     <string name="revanced_change_share_sheet_summary_off">Nativo</string>
-    <string name="revanced_enable_opus_codec_title">Attiva il codec audio Opus</string>
-    <string name="revanced_enable_opus_codec_summary">Attiva il codec audio Opus se la risposta del riproduttore lo include.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Debug</string>
     <string name="revanced_preference_screen_debugging_summary">Attiva o disattiva le impostazioni di debug.</string>
@@ -2280,16 +2301,16 @@ Questa impostazione è ancora in fase di sviluppo, quindi potrebbe non funzionar
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"L'attivazione di questa impostazione potrebbe migliorare la durata della batteria e risolvere il problema della riproduzione a scatti.
 
 Nota: AVC ha una risoluzione massima di 1080p, il codec Opus non è disponibile e la riproduzione userà più dati internet rispetto a VP9 o AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
-    <string name="revanced_preference_category_js">JavaScript (In fase di sviluppo)</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
+    <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Mostra il client JavaScript tra i client disponibili</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">Il client JavaScript è visibile tra i client disponibili.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">Il client JavaScript non è visibile tra i client disponibili.</string>
-    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"L'app userà più risorse di sistema per trovare o decodificare il pattern n-sig e i video si avvieranno più lentamente.
+    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"L'app userà più risorse di sistema per trovare o decodificare il pattern n-sig, e i video si avvieranno più lentamente.
 
 Il pattern n-sig cambia piuttosto frequentemente sui server di YouTube e la riproduzione potrebbe non funzionare se il regex non riesce a trovare il pattern.
 
-Questa impostazione è ancora in fase di sviluppo, quindi usala solo per scopi di debug."</string>
+Tra i client JavaScript, il client consigliato è TV Simply."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Usa il client JavaScript per tutti i video</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"Il client JavaScript viene usato indipendentemente dal tipo di video.
 

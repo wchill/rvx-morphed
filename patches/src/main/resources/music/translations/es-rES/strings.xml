@@ -17,7 +17,7 @@
     <string name="revanced_hide_handle_title">Ocultar asa</string>
     <string name="revanced_hide_handle_summary">Oculta el asa en el conmutador de cuenta.</string>
     <string name="revanced_hide_terms_container_title">Ocultar contenedor de términos</string>
-    <string name="revanced_hide_terms_container_summary">Oculta los términos del contenedor de servicio.</string>
+    <string name="revanced_hide_terms_container_summary">Oculta el contenedor de Términos de Servicio.</string>
     <!-- PreferenceScreen: Action bar -->
     <string name="revanced_preference_screen_action_bar_title">Barra de Acción</string>
     <string name="revanced_change_action_bar_position_title">Cambiar posición de la barra de acción</string>
@@ -72,12 +72,6 @@ Descarga %2$s desde el sitio web."</string>
     <string name="revanced_hide_promotion_alert_banner_summary">Oculta el banner de alerta de promoción.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Menú desplegable</string>
-    <string name="revanced_enable_trim_silence_title">Añadir interruptor para recortar silencios</string>
-    <string name="revanced_enable_trim_silence_summary">"Añade un interruptor para recortar silencios en el menú desplegable de velocidad de reproducción.
-
-Información:
-Esta función es para podcasts.
-Esta función aún está en desarrollo, por lo que puede ser inestable."</string>
     <string name="revanced_enable_compact_dialog_title">Activar diálogo compacto</string>
     <string name="revanced_enable_compact_dialog_summary">"Activa el diálogo compacto en el teléfono.
 
@@ -298,6 +292,8 @@ Algunas características pueden no funcionar correctamente en la disposición de
     <string name="revanced_preference_screen_video_title">Video</string>
     <string name="revanced_custom_playback_speeds_title">Editar velocidades de reproducción personalizadas</string>
     <string name="revanced_custom_playback_speeds_summary">Agregar o cambiar las velocidades de reproducción disponibles.</string>
+    <string name="revanced_enable_opus_codec_title">Activar códec opus</string>
+    <string name="revanced_enable_opus_codec_summary">"Activa el códec Opus 250/251 al reproducir audio."</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Recordar cambios de velocidad de reproducción</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Recuerda la última velocidad de reproducción seleccionada.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Mostrar un mensaje</string>
@@ -448,13 +444,11 @@ Limitantes: Vídeos para niños puede que no se redirijan."</string>
     <string name="revanced_debug_protobuffer_summary">Incluye el búfer proto en el registro de depuración.</string>
     <string name="revanced_debug_spannable_title">Spannable en registro</string>
     <string name="revanced_debug_spannable_summary">Incluye spannable dentro del registro de depuración.</string>
-    <string name="revanced_enable_opus_codec_title">Activar códec opus</string>
-    <string name="revanced_enable_opus_codec_summary">"Activa el códec Opus 250/251 al reproducir audio."</string>
     <string name="revanced_sanitize_sharing_links_title">Desinfectar enlaces compartidos</string>
     <string name="revanced_sanitize_sharing_links_summary">Elimina los parámetros de consulta de seguimiento de las URL al compartir enlaces.</string>
     <string name="revanced_spoof_client_title">Falsificar cliente</string>
     <string name="revanced_spoof_client_type_title">Cliente por defecto</string>
-    <string name="revanced_spoof_client_type_summary">Define un cliente de por defecto para el falsificado.</string>
+    <string name="revanced_spoof_client_type_summary">"Define un cliente de por defecto para el falsificado."</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_watch_history_type_title">Tipo de vista del historial</string>

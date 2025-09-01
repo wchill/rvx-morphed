@@ -73,12 +73,6 @@ Limitazioni:
     <string name="revanced_hide_promotion_alert_banner_summary">Nasconde il banner di avviso promozionale.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Menù a comparsa</string>
-    <string name="revanced_enable_trim_silence_title">Aggiungi interruttore per tagliare le parti di silenzio</string>
-    <string name="revanced_enable_trim_silence_summary">"Aggiunge un interruttore per tagliare le parti di silenzio, nel menù a comparsa della velocità di riproduzione.
-
-Info:
-• Questa funzione è per i podcast.
-• Questa funzione è ancora in fase di sviluppo, potrebbe essere instabile."</string>
     <string name="revanced_enable_compact_dialog_title">Abilita dialogo compatto</string>
     <string name="revanced_enable_compact_dialog_summary">"Abilita il menù a comparsa compatto sui telefoni.
 
@@ -304,6 +298,8 @@ Alcune funzionalità potrebbero non funzionare correttamente nell'interfaccia de
     <string name="revanced_preference_screen_video_title">Video</string>
     <string name="revanced_custom_playback_speeds_title">Modifica velocità di riproduzione personalizzate</string>
     <string name="revanced_custom_playback_speeds_summary">Aggiungi o modifica le velocità di riproduzione disponibili</string>
+    <string name="revanced_enable_opus_codec_title">Abilita il codec opus</string>
+    <string name="revanced_enable_opus_codec_summary">"Abilita il codec Opus 250/251 durante la riproduzione dell'audio."</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Ricorda le modifiche alla velocità di riproduzione</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Ricorda l\'ultima velocità di riproduzione selezionata.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Mostra una notifica toast</string>
@@ -454,13 +450,11 @@ Limitazioni: I video per bambini potrebbero non essere reindirizzati."</string>
     <string name="revanced_debug_protobuffer_summary">Include il proto buffer nel registro di debug.</string>
     <string name="revanced_debug_spannable_title">Log espandibile</string>
     <string name="revanced_debug_spannable_summary">Include espansione nel registro debug.</string>
-    <string name="revanced_enable_opus_codec_title">Abilita il codec opus</string>
-    <string name="revanced_enable_opus_codec_summary">"Abilita il codec Opus 250/251 durante la riproduzione dell'audio."</string>
     <string name="revanced_sanitize_sharing_links_title">Sanitizza i link di condivisione</string>
     <string name="revanced_sanitize_sharing_links_summary">Sanifica i link di condivisione rimuovendo i parametri di tracciamento.</string>
     <string name="revanced_spoof_client_title">Falsifica client</string>
     <string name="revanced_spoof_client_type_title">Client predefinito</string>
-    <string name="revanced_spoof_client_type_summary">Definisce un client predefinito per la falsificazione.</string>
+    <string name="revanced_spoof_client_type_summary">"Definisce un client predefinito per la falsificazione."</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_watch_history_type_title">Guarda il tipo di cronologia</string>

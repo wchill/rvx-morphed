@@ -59,12 +59,6 @@
     <string name="revanced_hide_premium_renewal_summary">Скриване на банера за подновяване на Premium.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Падащо меню</string>
-    <string name="revanced_enable_trim_silence_title">Добавете опция „Скриване на мълчанията“</string>
-    <string name="revanced_enable_trim_silence_summary">"Добавя „Скриване на мълчанията“ към падащото меню „Скорост на възпроизвеждане“.
-
-Информация:
-• Тази функция е предназначена за подкасти.
-• Тази функция все още е в процес на разработка, така че може да е нестабилна."</string>
     <string name="revanced_enable_compact_dialog_title">Компактен изглед на прозореца</string>
     <string name="revanced_enable_compact_dialog_summary">"Активира компактно изскачащо меню на телефони.
 
@@ -180,6 +174,7 @@
     <!-- PreferenceScreen: Video -->
     <string name="revanced_custom_playback_speeds_title">Редактиране на скоростите по избор на видеото</string>
     <string name="revanced_custom_playback_speeds_summary">Добавяне или смяна на възможните скорости</string>
+    <string name="revanced_enable_opus_codec_title">Включване на OPUS аудио кодек</string>
     <string name="revanced_custom_playback_speeds_invalid">Невалидна скорост на видеото. Връщане на стойности по подразбиране.</string>
     <!-- PreferenceScreen: Return YouTube Dislike -->
     <string name="revanced_ryd_dislike_percentage_title">Нехаресвания като процент</string>
@@ -193,5 +188,4 @@
     <string name="revanced_extended_settings_import_export_summary">Импортирайте или експортирайте настройки като текст.</string>
     <string name="revanced_extended_settings_import">Внасяне</string>
     <string name="revanced_extended_settings_import_copy">Копиране</string>
-    <string name="revanced_enable_opus_codec_title">Включване на OPUS аудио кодек</string>
 </resources>

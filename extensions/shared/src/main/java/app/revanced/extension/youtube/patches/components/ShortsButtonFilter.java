@@ -1,7 +1,5 @@
 package app.revanced.extension.youtube.patches.components;
 
-import androidx.annotation.Nullable;
-
 import org.apache.commons.lang3.StringUtils;
 
 import app.revanced.extension.shared.patches.components.ByteArrayFilterGroup;
@@ -10,7 +8,7 @@ import app.revanced.extension.shared.patches.components.Filter;
 import app.revanced.extension.shared.patches.components.StringFilterGroup;
 import app.revanced.extension.youtube.settings.Settings;
 
-@SuppressWarnings("unused")
+@SuppressWarnings({"deprecation", "unused"})
 public final class ShortsButtonFilter extends Filter {
     private static final String REEL_CHANNEL_BAR_PATH = "reel_channel_bar.eml";
     private static final String REEL_LIVE_HEADER_PATH = "immersive_live_header.eml";
@@ -237,54 +235,39 @@ public final class ShortsButtonFilter extends Filter {
     }
 
     @Override
-    public boolean isFiltered(String path, @Nullable String identifier, String allValue, byte[] protobufBufferArray,
+    public boolean isFiltered(String path, String identifier, String allValue, byte[] buffer,
                               StringFilterGroup matchedGroup, FilterContentType contentType, int contentIndex) {
         if (matchedGroup == subscribeButton || matchedGroup == joinButton) {
             // Selectively filter to avoid false positive filtering of other subscribe/join buttons.
-            if (StringUtils.startsWithAny(path, REEL_CHANNEL_BAR_PATH, REEL_LIVE_HEADER_PATH, REEL_METAPANEL_PATH)) {
-                return super.isFiltered(path, identifier, allValue, protobufBufferArray, matchedGroup, contentType, contentIndex);
-            }
-            return false;
+            return StringUtils.startsWithAny(path, REEL_CHANNEL_BAR_PATH, REEL_LIVE_HEADER_PATH, REEL_METAPANEL_PATH);
         }
 
         if (matchedGroup == metaPanelButton) {
-            if (path.startsWith(REEL_METAPANEL_PATH) && useThisSoundButton.check(protobufBufferArray).isFiltered()) {
-                return super.isFiltered(path, identifier, allValue, protobufBufferArray, matchedGroup, contentType, contentIndex);
-            }
-            return false;
+            return path.startsWith(REEL_METAPANEL_PATH) && useThisSoundButton.check(buffer).isFiltered();
         }
 
         // Video action buttons (like, dislike, comment, share, remix) have the same path.
         if (matchedGroup == actionButton) {
-            if (videoActionButtonGroupList.check(protobufBufferArray).isFiltered()) {
-                return super.isFiltered(path, identifier, allValue, protobufBufferArray, matchedGroup, contentType, contentIndex);
-            }
-            return false;
+            return videoActionButtonGroupList.check(buffer).isFiltered();
         }
 
         if (matchedGroup == suggestedAction) {
             if (isEverySuggestedActionFilterEnabled()) {
-                return super.isFiltered(path, identifier, allValue, protobufBufferArray, matchedGroup, contentType, contentIndex);
+                return true;
             }
             // Suggested actions can be at the start or in the middle of a path.
-            if (suggestedActionsGroupList.check(protobufBufferArray).isFiltered()) {
-                return super.isFiltered(path, identifier, allValue, protobufBufferArray, matchedGroup, contentType, contentIndex);
-            }
-            return false;
+            return suggestedActionsGroupList.check(buffer).isFiltered();
         }
 
         if (matchedGroup == pausedOverlayButtons) {
             if (Settings.HIDE_SHORTS_PAUSED_OVERLAY_BUTTONS.get()) {
-                return super.isFiltered(path, identifier, allValue, protobufBufferArray, matchedGroup, contentType, contentIndex);
+                return true;
             } else if (StringUtils.contains(path, SHORTS_PAUSED_STATE_BUTTON_PATH)) {
-                if (pausedOverlayButtonsGroupList.check(protobufBufferArray).isFiltered()) {
-                    return super.isFiltered(path, identifier, allValue, protobufBufferArray, matchedGroup, contentType, contentIndex);
-                }
+                return pausedOverlayButtonsGroupList.check(buffer).isFiltered();
             }
             return false;
         }
 
-        // Super class handles logging.
-        return super.isFiltered(path, identifier, allValue, protobufBufferArray, matchedGroup, contentType, contentIndex);
+        return true;
     }
 }

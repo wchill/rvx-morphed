@@ -201,9 +201,6 @@
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 播放列表
 商店"</string>
-    <string name="revanced_hide_for_you_shelf_title">隐藏”个性化“功能架</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">“个性化” 功能架已隐藏</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">“个性化” 功能架已显示</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">社区帖子</string>
     <string name="revanced_preference_screen_community_posts_summary">在首页和频道中隐藏或显示社区帖子</string>
@@ -1181,6 +1178,8 @@
 • 视频播放将使用比 VP9 更多的网络数据
 要获取 HDR 播放，HDR 视频仍使用VP9 编解码器"</string>
     <string name="revanced_disable_vp9_codec_summary_off">VP9 编解码器已启用</string>
+    <string name="revanced_enable_opus_codec_title">启用 OPUS 编解码器</string>
+    <string name="revanced_enable_opus_codec_summary">如果播放器支持 OPUS 编解码器，则启用 OPUS 编解码器</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_default_playback_speed_title">默认播放速度</string>
     <string name="revanced_remember_playback_speed_last_selected_title">记住播放速度更改</string>
@@ -1469,8 +1468,6 @@
     <string name="revanced_change_share_sheet_title">更改分享菜单</string>
     <string name="revanced_change_share_sheet_summary_on">系统分享菜单已启用</string>
     <string name="revanced_change_share_sheet_summary_off">应用内分享菜单已启用</string>
-    <string name="revanced_enable_opus_codec_title">启用 OPUS 编解码器</string>
-    <string name="revanced_enable_opus_codec_summary">如果播放器支持 OPUS 编解码器，则启用 OPUS 编解码器</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">导入/导出设置</string>
@@ -1506,7 +1503,7 @@
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">用于获取流媒体数据的客户端已在统计信息中隐藏</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">观看历史</string>
     <string name="revanced_preference_screen_watch_history_summary">更改与观看历史记录相关的设置</string>

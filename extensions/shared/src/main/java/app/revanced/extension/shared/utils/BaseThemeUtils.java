@@ -41,6 +41,20 @@ public class BaseThemeUtils {
      * Updates dark/light mode since YT settings can force light/dark mode
      * which can differ from the global device settings.
      */
+    public static void updateLightDarkModeStatus(int newOrdinalValue) {
+        final Boolean newDarkModeEnabled = newOrdinalValue == 2;
+        if (isDarkModeEnabled != newDarkModeEnabled) {
+            isDarkModeEnabled = newDarkModeEnabled;
+            Logger.printDebug(() -> "Dark mode status: " + newDarkModeEnabled);
+        }
+    }
+
+    /**
+     * Injection point.
+     * <p>
+     * Updates dark/light mode since YT settings can force light/dark mode
+     * which can differ from the global device settings.
+     */
     public static void updateLightDarkModeStatus(Enum<?> value) {
         final int newOrdinalValue = value.ordinal();
         if (currentThemeValueOrdinal != newOrdinalValue) {

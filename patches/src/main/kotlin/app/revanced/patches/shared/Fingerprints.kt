@@ -1,6 +1,7 @@
 package app.revanced.patches.shared
 
 import app.revanced.patches.shared.extension.Constants.EXTENSION_SETTING_CLASS_DESCRIPTOR
+import app.revanced.util.containsStringInstruction
 import app.revanced.util.fingerprint.legacyFingerprint
 import app.revanced.util.getReference
 import app.revanced.util.indexOfFirstInstruction
@@ -14,6 +15,15 @@ import com.android.tools.smali.dexlib2.iface.reference.StringReference
 
 internal const val CLIENT_INFO_CLASS_DESCRIPTOR =
     "Lcom/google/protos/youtube/api/innertube/InnertubeContext\$ClientInfo;"
+
+internal val clientEnumFingerprint = legacyFingerprint(
+    name = "clientEnumFingerprint",
+    returnType = "V",
+    strings = listOf("ANDROID_MUSIC"),
+    customFingerprint = { method, _ ->
+        !method.containsStringInstruction("android_music")
+    }
+)
 
 internal val clientTypeFingerprint = legacyFingerprint(
     name = "clientTypeFingerprint",
@@ -57,7 +67,8 @@ internal val createPlayerRequestBodyWithModelFingerprint = legacyFingerprint(
         indexOfBrandInstruction(method) >= 0 &&
                 indexOfManufacturerInstruction(method) >= 0 &&
                 indexOfModelInstruction(method) >= 0 &&
-                indexOfReleaseInstruction(method) >= 0
+                indexOfReleaseInstruction(method) >= 0 &&
+                indexOfSdkInstruction(method) >= 0
     }
 )
 
@@ -72,6 +83,9 @@ fun indexOfModelInstruction(method: Method) =
 
 fun indexOfReleaseInstruction(method: Method) =
     method.indexOfFieldReference("Landroid/os/Build${'$'}VERSION;->RELEASE:Ljava/lang/String;")
+
+fun indexOfSdkInstruction(method: Method) =
+    method.indexOfFieldReference("Landroid/os/Build${'$'}VERSION;->SDK_INT:I")
 
 private fun Method.indexOfFieldReference(string: String) = indexOfFirstInstruction {
     val reference = getReference<FieldReference>() ?: return@indexOfFirstInstruction false

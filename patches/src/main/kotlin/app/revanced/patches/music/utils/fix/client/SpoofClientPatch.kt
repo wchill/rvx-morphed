@@ -1,9 +1,12 @@
+@file:Suppress("CONTEXT_RECEIVERS_DEPRECATED")
+
 package app.revanced.patches.music.utils.fix.client
 
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
+import app.revanced.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.revanced.patcher.patch.BytecodePatchContext
 import app.revanced.patcher.patch.PatchException
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
@@ -12,8 +15,12 @@ import app.revanced.patches.music.utils.extension.Constants.SPOOF_PATH
 import app.revanced.patches.music.utils.playbackRateBottomSheetClassFingerprint
 import app.revanced.patches.music.utils.playbackSpeedBottomSheetFingerprint
 import app.revanced.patches.music.utils.playservice.is_6_36_or_greater
+import app.revanced.patches.music.utils.playservice.is_7_16_or_greater
+import app.revanced.patches.music.utils.playservice.is_7_33_or_greater
+import app.revanced.patches.music.utils.playservice.is_8_12_or_greater
 import app.revanced.patches.music.utils.resourceid.varispeedUnavailableTitle
 import app.revanced.patches.shared.CLIENT_INFO_CLASS_DESCRIPTOR
+import app.revanced.patches.shared.clientEnumFingerprint
 import app.revanced.patches.shared.clientTypeFingerprint
 import app.revanced.patches.shared.createPlayerRequestBodyFingerprint
 import app.revanced.patches.shared.createPlayerRequestBodyWithModelFingerprint
@@ -22,16 +29,18 @@ import app.revanced.patches.shared.indexOfClientInfoInstruction
 import app.revanced.patches.shared.indexOfManufacturerInstruction
 import app.revanced.patches.shared.indexOfModelInstruction
 import app.revanced.patches.shared.indexOfReleaseInstruction
+import app.revanced.patches.shared.indexOfSdkInstruction
 import app.revanced.util.findFieldFromToString
+import app.revanced.util.fingerprint.definingClassOrThrow
 import app.revanced.util.fingerprint.injectLiteralInstructionBooleanCall
 import app.revanced.util.fingerprint.legacyFingerprint
 import app.revanced.util.fingerprint.matchOrThrow
 import app.revanced.util.fingerprint.methodOrThrow
 import app.revanced.util.fingerprint.mutableClassOrThrow
 import app.revanced.util.fingerprint.originalMethodOrThrow
-import app.revanced.util.fingerprint.resolvable
 import app.revanced.util.getReference
 import app.revanced.util.getWalkerMethod
+import app.revanced.util.indexOfFirstInstruction
 import app.revanced.util.indexOfFirstInstructionOrThrow
 import app.revanced.util.indexOfFirstInstructionReversedOrThrow
 import app.revanced.util.indexOfFirstLiteralInstructionOrThrow
@@ -39,6 +48,8 @@ import app.revanced.util.or
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
+import com.android.tools.smali.dexlib2.iface.Method
+import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.Instruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
@@ -56,6 +67,7 @@ private const val EXTENSION_CLASS_DESCRIPTOR =
 context(BytecodePatchContext)
 internal fun patchSpoofClient() {
 
+    lateinit var androidSDKVersionReference: Reference
     lateinit var clientInfoReference: Reference
     lateinit var clientIdReference: Reference
     lateinit var clientVersionReference: Reference
@@ -70,10 +82,23 @@ internal fun patchSpoofClient() {
 
     // region Get field references to be used below.
 
+    val enumClass = clientEnumFingerprint.definingClassOrThrow()
+
     clientTypeFingerprint.matchOrThrow().let {
         it.method.apply {
             val clientInfoIndex = indexOfClientInfoInstruction(this)
-            val clientIdIndex = it.patternMatch!!.endIndex
+            val ordinalIndex = indexOfFirstInstructionOrThrow {
+                val reference = getReference<FieldReference>()
+                opcode == Opcode.IGET &&
+                        reference?.type == "I" &&
+                        reference.definingClass == enumClass
+            }
+            val clientIdIndex = indexOfFirstInstructionOrThrow(ordinalIndex) {
+                val reference = getReference<FieldReference>()
+                opcode == Opcode.IPUT &&
+                        reference?.type == "I" &&
+                        reference.definingClass == CLIENT_INFO_CLASS_DESCRIPTOR
+            }
             val dummyClientVersionIndex = it.stringMatches!!.first().index
             val dummyClientVersionRegister =
                 getInstruction<OneRegisterInstruction>(dummyClientVersionIndex).registerA
@@ -95,7 +120,7 @@ internal fun patchSpoofClient() {
 
     fun MutableMethod.getClientInfoIndex(
         startIndex: Int,
-        reversed: Boolean = false
+        reversed: Boolean = false,
     ): Int {
         val filter: Instruction.() -> Boolean = {
             val reference = getReference<FieldReference>()
@@ -111,31 +136,44 @@ internal fun patchSpoofClient() {
     }
 
     createPlayerRequestBodyWithModelFingerprint.methodOrThrow().apply {
+        val androidSDKIndex =
+            indexOfSdkInstruction(this)
+        val androidSDKRegister =
+            getInstruction<OneRegisterInstruction>(androidSDKIndex).registerA
+        val androidSDKFieldIndex = indexOfFirstInstructionOrThrow(androidSDKIndex) {
+            val reference = getReference<FieldReference>()
+            opcode == Opcode.IPUT &&
+                    reference?.definingClass == CLIENT_INFO_CLASS_DESCRIPTOR &&
+                    reference.type == "I" &&
+                    (this as TwoRegisterInstruction).registerA == androidSDKRegister
+        }
         val buildManufacturerIndex =
             indexOfManufacturerInstruction(this)
-        val deviceBrandIndex =
+        val deviceBrandFieldIndex =
             getClientInfoIndex(indexOfBrandInstruction(this))
-        val deviceMakeIndex =
+        val deviceMakeFieldIndex =
             getClientInfoIndex(buildManufacturerIndex)
-        val deviceModelIndex =
+        val deviceModelFieldIndex =
             getClientInfoIndex(indexOfModelInstruction(this))
-        val chipSetIndex =
+        val chipSetFieldIndex =
             getClientInfoIndex(buildManufacturerIndex, true)
-        val osNameIndex =
-            getClientInfoIndex(chipSetIndex - 1, true)
-        val osVersionIndex =
+        val osNameFieldIndex =
+            getClientInfoIndex(chipSetFieldIndex - 1, true)
+        val osVersionFieldIndex =
             getClientInfoIndex(indexOfReleaseInstruction(this))
 
+        androidSDKVersionReference =
+            getFieldReference(androidSDKFieldIndex)
         deviceBrandReference =
-            getFieldReference(deviceBrandIndex)
+            getFieldReference(deviceBrandFieldIndex)
         deviceMakeReference =
-            getFieldReference(deviceMakeIndex)
+            getFieldReference(deviceMakeFieldIndex)
         deviceModelReference =
-            getFieldReference(deviceModelIndex)
+            getFieldReference(deviceModelFieldIndex)
         osNameReference =
-            getFieldReference(osNameIndex)
+            getFieldReference(osNameFieldIndex)
         osVersionReference =
-            getFieldReference(osVersionIndex)
+            getFieldReference(osVersionFieldIndex)
     }
 
     // endregion
@@ -185,7 +223,13 @@ internal fun patchSpoofClient() {
                             if-eqz v0, :disabled
                             
                             iget-object v0, p0, $clientInfoReference
-                            
+
+                            # Set android sdk version.
+                            iget v1, v0, $androidSDKVersionReference
+                            invoke-static { v1 }, $EXTENSION_CLASS_DESCRIPTOR->getAndroidSDKVersion(I)I
+                            move-result v1
+                            iput v1, v0, $androidSDKVersionReference
+
                             # Set client id.
                             iget v1, v0, $clientIdReference
                             invoke-static { v1 }, $EXTENSION_CLASS_DESCRIPTOR->getClientId(I)I
@@ -240,6 +284,85 @@ internal fun patchSpoofClient() {
     // endregion
 
     // region Spoof user-agent
+
+    buildRequestFingerprint.matchOrThrow().let {
+        fun indexOfCronetEngineInstruction(method: Method) =
+            method.indexOfFirstInstruction {
+                opcode == Opcode.CHECK_CAST &&
+                        getReference<TypeReference>()?.type == "Lorg/chromium/net/CronetEngine;"
+            }
+
+        fun indexOfUrlInstruction(method: Method) =
+            method.indexOfFirstInstruction {
+                val reference = getReference<MethodReference>()
+                reference?.returnType == "Ljava/lang/String;" &&
+                        reference.parameterTypes.isEmpty() &&
+                        reference.definingClass == it.method.parameterTypes[0].toString()
+            }
+
+        val (urlOpcodeName, urlReference) = with (
+            it.classDef.methods.find { method ->
+                indexOfCronetEngineInstruction(method) >= 0 &&
+                        indexOfUrlInstruction(method) >= 0
+            }!!
+        ) {
+            val urlIndex = indexOfUrlInstruction(this)
+
+            Pair(
+                // invoke-virtual or invoke-interface
+                getInstruction(urlIndex).opcode.name,
+                getInstruction<ReferenceInstruction>(urlIndex).reference
+            )
+        }
+
+        it.method.apply {
+            val buildRequestIndex = indexOfUrlRequestBuilderInstruction(this)
+            val requestBuilderRegister =
+                getInstruction<FiveRegisterInstruction>(buildRequestIndex).registerC
+            val requestBuilderInstruction =
+                getInstruction<ReferenceInstruction>(buildRequestIndex).reference as MethodReference
+
+            // Replace "requestBuilder.build(): Request" with "overrideUserAgent(requestBuilder, url): Request".
+            replaceInstruction(
+                buildRequestIndex,
+                "invoke-static { v$requestBuilderRegister }, " +
+                        "$EXTENSION_CLASS_DESCRIPTOR->" +
+                        "overrideUserAgent(${requestBuilderInstruction.definingClass})${requestBuilderInstruction.returnType}"
+            )
+
+            addInstructions(
+                0, """
+                    $urlOpcodeName/range { p0 .. p0 }, $urlReference
+                    move-result-object v0
+                    invoke-static { v0 }, $EXTENSION_CLASS_DESCRIPTOR->setUrl(Ljava/lang/String;)V
+                    """
+            )
+        }
+    }
+
+    netFetchFingerprint.methodOrThrow().apply {
+        val urlRequestBuilderIndex =
+            indexOfCronetUrlRequestBuilderInstruction(this)
+        val listIndex =
+            indexOfSizeInstruction(this, urlRequestBuilderIndex)
+        val listRegister =
+            getInstruction<FiveRegisterInstruction>(listIndex).registerC
+
+        addInstructions(
+            listIndex, """
+                invoke-static { v$listRegister }, $EXTENSION_CLASS_DESCRIPTOR->overrideUserAgent(Ljava/util/List;)Ljava/util/List;
+                move-result-object v$listRegister
+                """
+        )
+
+        val urlRegister =
+            getInstruction<FiveRegisterInstruction>(urlRequestBuilderIndex).registerD
+
+        addInstruction(
+            urlRequestBuilderIndex,
+            "invoke-static { v$urlRegister }, $EXTENSION_CLASS_DESCRIPTOR->setUrl(Ljava/lang/String;)V"
+        )
+    }
 
     userAgentHeaderBuilderFingerprint.methodOrThrow().apply {
         val insertIndex = implementation!!.instructions.lastIndex
@@ -334,11 +457,23 @@ internal fun patchSpoofClient() {
 
     // region fix for feature flags
 
-    if (playbackFeatureFlagFingerprint.resolvable()) {
-        playbackFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
-            PLAYBACK_FEATURE_FLAG,
-            "$EXTENSION_CLASS_DESCRIPTOR->forceDisablePlaybackFeatureFlag(Z)Z"
+    if (is_7_16_or_greater) {
+        fallbackFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
+            FALLBACK_FEATURE_FLAG,
+            "$EXTENSION_CLASS_DESCRIPTOR->forceDisableFallbackFeatureFlag(Z)Z"
         )
+        if (is_7_33_or_greater) {
+            playbackFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
+                PLAYBACK_FEATURE_FLAG,
+                "$EXTENSION_CLASS_DESCRIPTOR->forceDisablePlaybackFeatureFlag(Z)Z"
+            )
+            if (is_8_12_or_greater) {
+                formatsFeatureFlagFingerprint.injectLiteralInstructionBooleanCall(
+                    FORMATS_FEATURE_FLAG,
+                    "$EXTENSION_CLASS_DESCRIPTOR->forceDisableFormatsFeatureFlag(Z)Z"
+                )
+            }
+        }
     }
 
     // endregion

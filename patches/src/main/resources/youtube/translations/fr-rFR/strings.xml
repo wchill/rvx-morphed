@@ -24,6 +24,7 @@
     <string name="revanced_extended_settings_search_no_results_title">Aucun résultat trouvé pour \'%s\'.</string>
     <string name="revanced_extended_settings_search_no_results_summary">Essayez un autre mot-clé.</string>
     <string name="revanced_extended_settings_search_remove_message">Supprimer de l\'historique des recherches ?</string>
+    <string name="revanced_dismiss_player_not_available_toast">Id de vidéo pas disponible. S\'il vous plaît rouvrez la vidéo.</string>
     <string name="revanced_playback_speed_normal">Normal</string>
     <string name="revanced_external_downloader_package_name_video_title">Nom du paquet du téléchargeur vidéo</string>
     <string name="revanced_external_downloader_package_name_video_summary">Nom du paquet de l\'appli de téléchargement externe installée, telle que NewPipe ou YTDLnis.</string>
@@ -330,9 +331,6 @@ Cliquez ici pour en savoir plus sur DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Playlists
 Boutique"</string>
-    <string name="revanced_hide_for_you_shelf_title">Masquer la catégorie \'Pour vous\'</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">La catégorie \'Pour vous\' est masquée.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">La catégorie \'Pour vous\' est affichée.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Posts communautaires</string>
     <string name="revanced_preference_screen_community_posts_summary">Masque ou affiche les posts communautaires dans les flux et sur les chaînes.</string>
@@ -454,7 +452,6 @@ Limitation : Le bouton Retour de la barre d'outils peut ne pas fonctionner."</st
     <string name="revanced_disable_auto_audio_tracks_title">Désact. les pistes audio forcés</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Les pistes audio automatiques forcées sont désactivé.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Les pistes audio automatiques forcées sont activés.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Pour utiliser cette fonctionnalité, changez \'Client par défaut (Falsifier les données de lecture en direct)\' en iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Désact. les sous-titres forcés</string>
     <string name="revanced_disable_auto_captions_summary_on">Les sous-titres automatiques forcés sont désactivés.</string>
     <string name="revanced_disable_auto_captions_summary_off">Les sous-titres automatiques forcés sont activés.</string>
@@ -944,9 +941,6 @@ Info:
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Masquer le menu \'Piste audio\'</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Le menu \'Piste audio\' est masqué.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Le menu \'Piste audio\' est affiché.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Le menu des pistes audio est masqué.
-
-Pour afficher le menu des pistes audio, changez \"Client par défaut (Falsifier les données de lecteur en direct)\" en iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Masquer le menu \'Sous-titres\'</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Le menu \'Sous-titres\' est masqué.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Le menu \'Sous-titres\' est affiché.</string>
@@ -1623,6 +1617,8 @@ Ajustez le volume en balayant verticalement sur le côté droit de l'écran."</s
 • La lecture vidéo utilisera plus de données internet que le VP9.
 • Le codec VP9 est également utilisé pour les vidéos HDR."</string>
     <string name="revanced_disable_vp9_codec_summary_off">Le codec VP9 est activé.</string>
+    <string name="revanced_enable_opus_codec_title">Activer le Codec OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">Active le codec OPUS si la réponse du lecteur inclut le codec OPUS.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Vitesse de lecture</string>
     <string name="revanced_default_playback_speed_title">Vitesse de lecture par défaut</string>
@@ -1973,8 +1969,6 @@ Cliquez sur le bouton Continuer et autorisez les modifications d'optimisations."
     <string name="revanced_change_share_sheet_title">Modifier l\'onglet \'Partager avec\'</string>
     <string name="revanced_change_share_sheet_summary_on">L\'onglet \'Partager avec\' du système est utilisée.</string>
     <string name="revanced_change_share_sheet_summary_off">L\'onglet \'Partager avec\' de l\'application est utilisée.</string>
-    <string name="revanced_enable_opus_codec_title">Activer le Codec OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Active le codec OPUS si la réponse du lecteur inclut le codec OPUS.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Debogage</string>
     <string name="revanced_preference_screen_debugging_summary">Activer ou désactiver les options de débogage.</string>
@@ -2044,7 +2038,7 @@ Cliquez sur le bouton Continuer et autorisez les modifications d'optimisations."
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Activer ceci peut améliorer la durée de vie de la batterie et résoudre les problèmes de lecture saccadée.
 
 AVC a une résolution maximale de 1080p, le codec audio Opus n'est pas disponible et la lecture vidéo utilisera plus de données internet que VP9 ou AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Historique de visionnage</string>
     <string name="revanced_preference_screen_watch_history_summary">Modifie les paramètres liés à l\'historique de visionnage.</string>

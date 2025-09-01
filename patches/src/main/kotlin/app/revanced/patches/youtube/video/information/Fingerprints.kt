@@ -1,6 +1,7 @@
 package app.revanced.patches.youtube.video.information
 
 import app.revanced.patches.youtube.utils.PLAYER_RESPONSE_MODEL_CLASS_DESCRIPTOR
+import app.revanced.patches.youtube.utils.YOUTUBE_FORMAT_STREAM_MODEL_CLASS_TYPE
 import app.revanced.patches.youtube.utils.YOUTUBE_VIDEO_QUALITY_CLASS_TYPE
 import app.revanced.patches.youtube.utils.resourceid.notificationBigPictureIconWidth
 import app.revanced.patches.youtube.utils.resourceid.qualityAuto
@@ -13,6 +14,7 @@ import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.Method
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
+import com.android.tools.smali.dexlib2.iface.reference.TypeReference
 
 internal val channelIdFingerprint = legacyFingerprint(
     name = "channelIdFingerprint",
@@ -224,6 +226,28 @@ internal val formatStreamingModelQualityLabelBuilderFingerprint = legacyFingerpr
     parameters = emptyList(),
     strings = listOf("60")
 )
+
+internal val initFormatStreamParentFingerprint = legacyFingerprint(
+    name = "initFormatStreamParentFingerprint",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.CONSTRUCTOR,
+    returnType = "V",
+    strings = listOf("noopytm")
+)
+
+internal val initFormatStreamFingerprint = legacyFingerprint(
+    name = "initFormatStreamFingerprint",
+    accessFlags = AccessFlags.PRIVATE or AccessFlags.FINAL,
+    returnType = "V",
+    customFingerprint = { method, _ ->
+        indexOfPreferredFormatStreamInstruction(method) >= 0
+    }
+)
+
+internal fun indexOfPreferredFormatStreamInstruction(method: Method) =
+    method.indexOfFirstInstruction {
+        opcode == Opcode.IGET_OBJECT &&
+                getReference<FieldReference>()?.type == YOUTUBE_FORMAT_STREAM_MODEL_CLASS_TYPE
+    }
 
 internal val videoQualityArrayFingerprint = legacyFingerprint(
     name = "videoQualityArrayFingerprint",

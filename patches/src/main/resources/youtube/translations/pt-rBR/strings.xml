@@ -336,9 +336,6 @@ Toque aqui para saber mais sobre o DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Playlists
 Loja"</string>
-    <string name="revanced_hide_for_you_shelf_title">Ocultar painel \'Para Você\'</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">O painel \'Para Você\' está oculto.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">O painel \'Para Você\' será exibido.</string>
     <string name="revanced_hide_links_preview_title">Ocultar amostra dos links</string>
     <string name="revanced_hide_links_preview_summary_on">Amostra dos links ocultada.</string>
     <string name="revanced_hide_links_preview_summary_off">Amostra dos vídeos visível.</string>
@@ -1598,6 +1595,8 @@ Sem margens na parte superior e inferior do reprodutor."</string>
 • A reprodução de vídeos usará mais dados na internet do que VP9.
 • Para fazer com que o HDR reproduza, o vídeo HDR ainda usa o codec VP9."</string>
     <string name="revanced_disable_vp9_codec_summary_off">O codec VP9 está ativado.</string>
+    <string name="revanced_enable_opus_codec_title">Ativar codec OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">Ative o codec OPUS se a resposta do reprodutor incluir o codec OPUS.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Velocidade de reprodução</string>
     <string name="revanced_default_playback_speed_title">Velocidade de reprodução padrão</string>
@@ -1931,8 +1930,6 @@ Toque no botão continuar e desative as otimizações da bateria."</string>
     <string name="revanced_change_share_sheet_title">Alterar menu de compartilhamento</string>
     <string name="revanced_change_share_sheet_summary_on">O menu de compartilhamento do sistema é utilizado.</string>
     <string name="revanced_change_share_sheet_summary_off">O menu de compartilhamento do aplicativo é utilizado.</string>
-    <string name="revanced_enable_opus_codec_title">Ativar codec OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Ative o codec OPUS se a resposta do reprodutor incluir o codec OPUS.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">Importar / Exportar configurações</string>
@@ -1976,7 +1973,7 @@ Toque no botão continuar e desative as otimizações da bateria."</string>
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Ativar isso pode melhorar a duração da bateria e corrigir travamentos na reprodução.
 
 O AVC tem uma resolução máxima de 1080p, o codec de áudio Opus não está disponível e a reprodução de vídeo usará mais dados da internet do que VP9 ou AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Histórico de exibição</string>
     <string name="revanced_preference_screen_watch_history_summary">Altere as configurações relacionadas ao histórico de exibição.</string>

@@ -37,6 +37,8 @@
     <string name="revanced_hide_action_button_song_video_title">Ẩn nút chuyển đổi giữa Bài hát và Video</string>
     <string name="revanced_hide_action_button_song_video_summary">"Ẩn nút chuyển đổi giữa Bài hát và Video trên thanh tương tác.
 (Nút chỉ có sẵn với một số người dùng)"</string>
+    <string name="revanced_hide_action_button_disabled_title">Ẩn nút bị vô hiệu hóa</string>
+    <string name="revanced_hide_action_button_disabled_summary">Ẩn các nút bị vô hiệu hóa, chẳng hạn như nút Bình luận bị vô hiệu hóa khi nhà sáng tạo tắt tính năng bình luận cho video.</string>
     <string name="revanced_hide_action_button_label_title">Ẩn tên nút</string>
     <string name="revanced_hide_action_button_label_summary">Ẩn tên nút trong thanh tương tác.</string>
     <string name="revanced_external_downloader_action_title">Ghi đè nút tải xuống</string>
@@ -73,8 +75,8 @@ Hạn chế: Đôi khi mở thẻ Trang chủ, bạn chỉ thấy một màn hì
     <string name="revanced_hide_promotion_alert_banner_summary">Ẩn biểu ngữ thông báo khuyến mãi.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Trình đơn tuỳ chọn</string>
-    <string name="revanced_enable_trim_silence_title">Cắt bỏ khoảng lặng</string>
-    <string name="revanced_enable_trim_silence_summary">"Thêm tính năng Cắt bỏ khoảng lặng vào mục tuỳ chọn tốc độ phát.
+    <string name="revanced_disable_trim_silence_title">Vô hiệu hoá nút Cắt bỏ khoảng lặng</string>
+    <string name="revanced_disable_trim_silence_summary">"Vô hiệu hoá nút Cắt bỏ khoảng lặng trong trình đơn tuỳ chọn tốc độ phát.
 
  Chi tiết:
  • Tính năng này dành cho podcast.
@@ -259,6 +261,8 @@ Nếu có thể, hãy sử dụng màu tối vì ứng dụng không hỗ trợ 
     <string name="revanced_disable_player_gesture_summary">Tắt vuốt để chuyển bài hát trong trình phát.</string>
     <string name="revanced_enable_forced_miniplayer_title">Luôn phát trong trình phát thu nhỏ</string>
     <string name="revanced_enable_forced_miniplayer_summary">Luôn phát nhạc trong trình phát thu nhỏ bất cứ khi nào bạn nghe một bài hát mới.</string>
+    <string name="revanced_enable_smooth_transition_animation_title">Hiệu ứng chuyển tiếp</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">"Làm cho hiệu ứng mượt hơn khi phóng to trình phát thu nhỏ."</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Vuốt để đóng trình phát thu nhỏ</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Vuốt xuống để đóng trình phát thu nhỏ.</string>
     <string name="revanced_enable_comments_scroll_top_title">Cuộn lên đầu trang trong bình luận</string>
@@ -281,6 +285,8 @@ Hạn chế: các phân đoạn SponsorBlock không được hiển thị trên 
     <string name="revanced_hide_comment_timestamp_and_emoji_buttons_summary">Ẩn biểu tượng cảm xúc và nút dấu thời gian khi đang nhập bình luận.</string>
     <string name="revanced_hide_fullscreen_share_button_title">Ẩn nút Chia sẻ trong trình phát toàn màn hình</string>
     <string name="revanced_hide_fullscreen_share_button_summary">Ẩn nút Chia sẻ trong trình phát toàn màn hình.</string>
+    <string name="revanced_hide_lyrics_share_button_title">Ẩn nút Chia sẻ lời bài hát</string>
+    <string name="revanced_hide_lyrics_share_button_summary">Ẩn nút Chia sẻ trong lời nhạc.</string>
     <string name="revanced_hide_song_video_toggle_title">Ẩn công tắc chuyển đổi giữa Bài hát và Video</string>
     <string name="revanced_hide_song_video_toggle_summary">Ẩn công tắc chuyển đổi giữa Bài hát và Video trong trình phát.</string>
     <string name="revanced_remember_repeat_state_title">Lưu trạng thái phát lặp lại</string>
@@ -310,6 +316,12 @@ Một số tính năng có thể không hoạt động bình thường trong b�
     <string name="revanced_preference_screen_video_title">Video</string>
     <string name="revanced_custom_playback_speeds_title">Chỉnh sửa tốc độ phát</string>
     <string name="revanced_custom_playback_speeds_summary">Thêm giá trị tốc độ phát mà bạn muốn thay đổi hoặc chỉnh sửa các giá trị tốc độ phát hiện có.</string>
+    <string name="revanced_enable_opus_codec_title">Codec OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">"Áp dụng codec OPUS nếu phản hồi của trình phát bao gồm nó.
+
+Chi tiết:
+• Các phiên bản YouTube Music mới nhất sử dụng codec OPUS như mặc định.
+• Có thể cần thiết nếu giả mạo client hoặc luồng video."</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Lưu lựa chọn tốc độ phát</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Ghi nhớ lựa chọn tốc độ phát đã chọn gần nhất.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Thông báo ngắn</string>
@@ -462,32 +474,38 @@ Hạn chế: Video dành cho trẻ em có thể không được chuyển hướn
     <string name="revanced_debug_protobuffer_summary">Bao gồm protobuf trong nhật ký gỡ lỗi.</string>
     <string name="revanced_debug_spannable_title">Ghi nhật ký spannable</string>
     <string name="revanced_debug_spannable_summary">Bao gồm spannable trong nhật ký gỡ lỗi.</string>
-    <string name="revanced_enable_opus_codec_title">Codec OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">"Áp dụng codec OPUS nếu phản hồi của trình phát bao gồm nó.
-
-Chi tiết:
-• Các phiên bản YouTube Music mới nhất sử dụng codec OPUS như mặc định.
-• Điều này chỉ áp dụng cho người dùng giả mạo với các phiên bản ứng dụng rất cũ."</string>
     <string name="revanced_sanitize_sharing_links_title">Liên kết sạch khi chia sẻ</string>
     <string name="revanced_sanitize_sharing_links_summary">Loại bỏ các tham số truy vấn theo dõi khỏi URL khi chia sẻ liên kết.</string>
     <string name="revanced_spoof_client_title">Giả mạo client</string>
+    <string name="revanced_spoof_client_summary">Giả mạo client để tránh lỗi khi phát.</string>
     <string name="revanced_spoof_client_type_title">Loại client mặc định</string>
-    <string name="revanced_spoof_client_type_summary">Chọn loại client để giả mạo.</string>
+    <string name="revanced_spoof_client_type_summary">"Hạn chế:
+• Các nút thao tác hoặc trình đơn tuỳ chọn trong trình phát có thể không hiển thị đúng. Trong trường hợp đó, hãy thử xoá dữ liệu ứng dụng và đăng nhập lại.
+
+Hạn chế (Chặn truy vấn):
+• Ứng dụng có thể bị buộc đóng khi đang dùng VPN hoặc DNS."</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34">iOS Music 8.34</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_6_21_block_requst">iOS Music 6.21 (Chặn truy vấn)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_7_04_block_requst">iOS Music 7.04 (Chặn truy vấn)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_12_block_requst">iOS Music 8.12 (Chặn truy vấn)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34_block_requst">iOS Music 8.34 (Chặn truy vấn)</string>
     <string name="revanced_spoof_video_streams_title">Giả mạo luồng video</string>
-    <string name="revanced_spoof_video_streams_summary">"Giả mạo luồng video của client để tránh lỗi khi phát.
-
-Hạn chế:
+    <string name="revanced_spoof_video_streams_summary">Giả mạo luồng video của client để tránh lỗi khi phát.</string>
+    <string name="revanced_spoof_video_streams_default_client_title">Client mặc định</string>
+    <string name="revanced_spoof_video_streams_default_client_summary">"Hạn chế:
 • Ứng dụng có thể bị buộc đóng khi dùng VPN hoặc DNS.
 • Âm thanh có thể bị ngắt quãng khi phát trên client dùng truyền phát bit thích ứng (trừ Android VR 1.43.32)."</string>
-    <string name="revanced_spoof_video_streams_default_client_title">Client mặc định</string>
-    <string name="revanced_spoof_video_streams_default_client_summary">Chọn client để giả mạo.</string>
     <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32">Android VR 1.43.32</string>
     <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09">Android VR 1.65.09</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32_no_auth">Android VR 1.43.32 (Không xác thực)</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09_no_auth">Android VR 1.65.09 (Không xác thực)</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_watch_history_type_title">Kiểu nhật ký</string>
     <string name="revanced_watch_history_type_summary">"• Gốc: Tuân theo cài đặt nhật ký xem của tài khoản Google, nhưng có thể không hoạt động do DNS hoặc VPN.
 • Thay thế miền: Vẫn tuân theo cài đặt nhật ký xem của tài khoản Google.
@@ -513,4 +531,8 @@ Tắt tối ưu hoá pin cho GmsCore sẽ không làm ảnh hưởng đáng kể
 
 Nhấn vào Tiếp tục và cho phép thay đổi lựa chọn tối ưu hoá pin."</string>
     <string name="gms_core_dialog_continue_text">Tiếp tục</string>
+    <string name="revanced_app_info_title">Thông tin ứng dụng</string>
+    <string name="revanced_app_info_summary">Nhấn để xem thông tin ứng dụng và bản vá.</string>
+    <string name="revanced_app_info_dialog_title">Thông tin</string>
+    <string name="revanced_app_info_dialog_message">&lt;b&gt;Tên&lt;/b&gt;&lt;br&gt;&lt;small&gt;%1$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Phiên bản&lt;/b&gt;&lt;br&gt;&lt;small&gt;%2$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Bản vá&lt;/b&gt;&lt;br&gt;&lt;small&gt;%3$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Ngày vá&lt;/b&gt;&lt;br&gt;&lt;small&gt;%4$s&lt;/small&gt;</string>
 </resources>

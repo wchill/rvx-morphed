@@ -63,12 +63,6 @@ Lütfen web sitesinden %2$s dosyasını indirin."</string>
     <string name="revanced_hide_promotion_alert_banner_summary">Promosyon uyarı başlığını gizler.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Açılır menü</string>
-    <string name="revanced_enable_trim_silence_title">Kırpma sessizliğini etkinleştir</string>
-    <string name="revanced_enable_trim_silence_summary">"Oynatma hızı açılır menüsüne 'Sessizliği kırp' geçişini etkinleştirir.
-
-Bilgi:
-• Bu özellik podcast'ler içindir.
-• Bu özellik henüz geliştirme aşamasında olduğundan kararsız olabilir."</string>
     <string name="revanced_enable_compact_dialog_title">Kompakt diyaloğu etkinleştir</string>
     <string name="revanced_enable_compact_dialog_summary">"Telefonda kompakt iletişim kutusunu etkinleştirin. 
 
@@ -244,6 +238,12 @@ Eski oynatıcı düzeninde bazı ayarlar düzgün çalışmayabilir."</string>
     <string name="revanced_preference_screen_video_title">Video</string>
     <string name="revanced_custom_playback_speeds_title">Özel oynatma hızlarını düzenle</string>
     <string name="revanced_custom_playback_speeds_summary">Mevcut oynatma hızlarını değiştirin.</string>
+    <string name="revanced_enable_opus_codec_title">Opus kodeğini etkinleştir</string>
+    <string name="revanced_enable_opus_codec_summary">"Mp4a ses codec bileşeni yerine opus ses codec bileşenini etkinleştirir.
+
+Bilgi:
+• En yeni Android istemcileri varsayılan olarak opus ses codec bileşenini kullanır.
+• Bu yalnızca çok eski istemcilerle sahtecilik yapan kullanıcılar için geçerlidir."</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Oynatma hızı değişimlerini hatırla</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Oynatma hızını değiştirdiğinizde en son seçili oynatma hızı değerini hatırlar.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Tost göster</string>
@@ -388,17 +388,11 @@ APl anahtarının nasıl verileceğini görmek için tıklayın."</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_redirect">Yönlendirme</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_on_click">Şarkı / Video geçişi için dokunun</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_on_long_click">Şarkı / Video geçişi iççin basılı tutun</string>
-    <string name="revanced_enable_opus_codec_title">Opus kodeğini etkinleştir</string>
-    <string name="revanced_enable_opus_codec_summary">"Mp4a ses codec bileşeni yerine opus ses codec bileşenini etkinleştirir.
-
-Bilgi:
-• En yeni Android istemcileri varsayılan olarak opus ses codec bileşenini kullanır.
-• Bu yalnızca çok eski istemcilerle sahtecilik yapan kullanıcılar için geçerlidir."</string>
     <string name="revanced_sanitize_sharing_links_title">Paylaşılan bağlantıları sterilize edin</string>
     <string name="revanced_sanitize_sharing_links_summary">Bağlantıları paylaşırken, tracking query parametrelerini URL\'lerden kaldırır.</string>
     <string name="revanced_spoof_client_title">Sahte istemci</string>
     <string name="revanced_spoof_client_type_title">Varsayılan istemci</string>
-    <string name="revanced_spoof_client_type_summary">Taklit etmek için varsayılan bir istemci tanımlar.</string>
+    <string name="revanced_spoof_client_type_summary">"Taklit etmek için varsayılan bir istemci tanımlar."</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_watch_history_type_title">İzleme geçmişi türü</string>

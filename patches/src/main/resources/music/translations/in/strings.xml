@@ -74,12 +74,6 @@ Keterbatasan:
     <string name="revanced_hide_promotion_alert_banner_summary">Sembunyikan banner peringatan promosi.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Menu flyout</string>
-    <string name="revanced_enable_trim_silence_title">Tambah tombol Pangkas keheningan</string>
-    <string name="revanced_enable_trim_silence_summary">"Menambahkan tombol Pangkas keheningan ke menu flyout kecepatan pemutaran.
-
-Info:
-• Fitur ini hanya untuk podcast.
-• Fitur ini masih dalam pengembangan, jadi mungkin tidak stabil."</string>
     <string name="revanced_enable_compact_dialog_title">Aktifkan dialog ringkas</string>
     <string name="revanced_enable_compact_dialog_summary">"Mengaktifkan dialog ringkas di ponsel.
 
@@ -305,6 +299,12 @@ Beberapa fitur mungkin tidak berfungsi dengan baik dalam tata letak pemutar lama
     <string name="revanced_preference_screen_video_title">Video</string>
     <string name="revanced_custom_playback_speeds_title">Edit kecepatan pemutaran khusus</string>
     <string name="revanced_custom_playback_speeds_summary">Menambah atau mengubah kecepatan pemutaran yang tersedia.</string>
+    <string name="revanced_enable_opus_codec_title">Aktifkan codec opus</string>
+    <string name="revanced_enable_opus_codec_summary">"Mengaktifkan codec OPUS jika respon pemutar menyertakannya.
+
+Info:
+• Klien YouTube Music terbaru menggunakan codec audio OPUS secara default.
+• Ini hanya berlaku untuk pengguna yang memalsukan dengan klien yang sangat lama."</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Ingat perubahan kecepatan pemutaran</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Remembers the last playback speed selected.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Tampilkan toast</string>
@@ -449,17 +449,11 @@ Keterbatasan: Video anak-anak mungkin tidak dapat dialihkan."</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_on_long_click">Ketuk dan tahan tombol Lagu / Video</string>
     <string name="revanced_disable_quic_protocol_title">Nonaktifkan protokol QUIC</string>
     <string name="revanced_disable_quic_protocol_summary">"Menonaktifkan protokol QUIC CronetEngine."</string>
-    <string name="revanced_enable_opus_codec_title">Aktifkan codec opus</string>
-    <string name="revanced_enable_opus_codec_summary">"Mengaktifkan codec OPUS jika respon pemutar menyertakannya.
-
-Info:
-• Klien YouTube Music terbaru menggunakan codec audio OPUS secara default.
-• Ini hanya berlaku untuk pengguna yang memalsukan dengan klien yang sangat lama."</string>
     <string name="revanced_sanitize_sharing_links_title">Bersihkan tautan berbagi</string>
     <string name="revanced_sanitize_sharing_links_summary">Membersihkan tautan berbagi dengan menghapus parameter kueri pelacakan.</string>
     <string name="revanced_spoof_client_title">Palsukan klien</string>
     <string name="revanced_spoof_client_type_title">Klien bawaan</string>
-    <string name="revanced_spoof_client_type_summary">Menentukan klien bawaan untuk pemalsuan.</string>
+    <string name="revanced_spoof_client_type_summary">"Menentukan klien bawaan untuk pemalsuan."</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">Musik iOS 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">Musik iOS 7.04</string>
     <string name="revanced_watch_history_type_title">Jenis riwayat tontonan</string>

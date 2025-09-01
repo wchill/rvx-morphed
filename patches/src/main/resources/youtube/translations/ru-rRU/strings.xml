@@ -8,6 +8,12 @@
     <string name="revanced_extended_settings_search_title">Поиск %s</string>
     <string name="revanced_extended_reset_to_default_toast">К значениям по умолчанию.</string>
     <string name="revanced_preference_category_experimental_flag">Экспериментальные опции</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"Эта настройка недоступна.
+Чтобы использовать эту функцию, измените «Клиент по умолчанию (Подмена потоковых данных)» на iOS TV, TV или TV простой.
+
+Примечание:
+• iOS TV не поддерживает некоторые видео, например музыкальных клипов.
+• Если по умолчанию выбран iOS TV, эта настройка игнорируется в некоторых видео."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Подтверждаете действие?</string>
     <string name="revanced_extended_restart_first_run">Перезапустить для правильной загрузки интерфейса</string>
     <string name="revanced_extended_restart_title">Требование перезапуска</string>
@@ -45,6 +51,7 @@
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Удалить из очереди и обновить</string>
     <string name="revanced_queue_manager_remove_queue">Удалить очередь</string>
     <string name="revanced_queue_manager_save_queue">Сохранить очередь</string>
+    <string name="revanced_queue_manager_show_original_video_information">Оригинальная информация о видео</string>
     <string name="revanced_queue_manager_user_dialog_message">"Вместо открытия внешнего загрузчика открывается диалог управления очередью.
 
 Также можно открыть управление нажатием и удерживанием кнопки назад на панели навигации.
@@ -52,6 +59,26 @@
 Эта функция все ещё находится в процессе разработки, поэтому большинство функций не работает.
 
 Пожалуйста, используйте её только для отладки."</string>
+    <string name="revanced_queue_manager_video_information">Информация о видео</string>
+    <string name="revanced_queue_manager_video_information_copy">Копия</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Канал
+══════════════
+%1$s
+
+Заголовок
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Канал
+══════════════
+%1$s
+
+Заголовок
+══════════════
+%2$s
+
+Описание
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Требуется авторизация</string>
     <string name="revanced_queue_manager_check_failed_generic">Управление очередью недоступно (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Не определился список просмотра</string>
@@ -62,11 +89,13 @@
     <string name="revanced_queue_manager_fetch_failed_delete">Не удалось удалить очередь.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">Не удалось удалить видео.</string>
     <string name="revanced_queue_manager_fetch_failed_save">Не удалось сохранить очередь.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Нет информации о видео.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">Видео добавлено успешно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">Очередь создана успешно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">Очередь удалена успешно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">Видео удалено успешно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Очередь была успешно сохранена до: \'%s\'.</string>
+    <string name="revanced_share_copy_video_information_success">Информация о видео в буфере обмена.</string>
     <string name="revanced_language_title">Язык RVX</string>
     <string name="revanced_language_DEFAULT">Язык приложения</string>
     <string name="revanced_language_AM">"Амхарский
@@ -365,9 +394,6 @@
 Shorts
 Плейлисты
 Магазин"</string>
-    <string name="revanced_hide_for_you_shelf_title">Полка \"Для вас\"</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Полка \"Для вас\" скрыта.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Полка \"Для вас\" отображена.</string>
     <string name="revanced_hide_links_preview_title">Предпросмотр ссылок</string>
     <string name="revanced_hide_links_preview_summary_on">Предпросмотр ссылок включен.</string>
     <string name="revanced_hide_links_preview_summary_off">Предпросмотр ссылок отключен.</string>
@@ -510,10 +536,12 @@ Shorts
     <string name="revanced_disable_auto_audio_tracks_title">Принудительные автоматические звуковые дорожки</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Принудительные автоматические звуковые дорожки отключены.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Принудительные автоматические звуковые дорожки включены.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Эта функция, требует изменения \'Подмена потоковых данных\' на iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Принудительные автоматические субтитры</string>
     <string name="revanced_disable_auto_captions_summary_on">Принудительные автоматические субтитры отключены.</string>
     <string name="revanced_disable_auto_captions_summary_off">Принудительные автоматические субтитры включены.</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">Отключить всплывающее окно \"Вход на ТВ\"</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">Всплывающее окно \"Вход на ТВ\" отключено.</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">Всплывающее окно \"Вход на ТВ\" включено.</string>
     <string name="revanced_disable_splash_animation_title">Анимированная заставка</string>
     <string name="revanced_disable_splash_animation_summary_on">Анимированная заставка отключена.</string>
     <string name="revanced_disable_splash_animation_summary_off">Анимированная заставка включена.</string>
@@ -1073,8 +1101,6 @@ Shorts
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Меню \"Звуковая дорожка\"</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Меню \"Звуковая дорожка\" скрыто.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Меню \"Звуковая дорожка\" отображено.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Меню аудио дорожек скрыто.
-Для отображения измените 'Подмена потоковых данных' на iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Меню \"Субтитры\"</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Меню \"Субтитры\" скрыто.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Меню \"Субтитры\" отображено.</string>
@@ -1789,6 +1815,8 @@ Shorts
 • Просмотр будет использовать больше трафика, чем с VP9.
 • HDR просмотр недоступен, HDR видео все еще использует VP9 кодек."</string>
     <string name="revanced_disable_vp9_codec_summary_off">VP9 кодек включен.</string>
+    <string name="revanced_enable_opus_codec_title">Включить кодек OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">Включить кодек OPUS, если содержимое в плеере подходит для кодека.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Скорость просмотра</string>
     <string name="revanced_default_playback_speed_title">Скорость по умолчанию</string>
@@ -2137,8 +2165,6 @@ Shorts
     <string name="revanced_change_share_sheet_title">Изменить диалог \"Поделиться\"</string>
     <string name="revanced_change_share_sheet_summary_on">Используется системный диалог.</string>
     <string name="revanced_change_share_sheet_summary_off">Используется встроенный диалог.</string>
-    <string name="revanced_enable_opus_codec_title">Включить кодек OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Включить кодек OPUS, если содержимое в плеере подходит для кодека.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Отладка</string>
     <string name="revanced_preference_screen_debugging_summary">Включить или отключить параметры отладки.</string>
@@ -2196,20 +2222,20 @@ Shorts
 Просмотр может быть не доступен."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Отключение этой настройки вызовет проблемы с просмотром.</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Клиент по умолчанию</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
+    <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android ТВ
 <small>(Необходим вход)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
 <small>(Без авторизац.)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
+    <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS ТВ
 <small>(Необходим вход)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web
 <small>(В разработке)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv">"ТВ
 <small>(В разработке)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Встроенный TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"Встроенный ТВ
 <small>(В разработке)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"Простой TV
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"Простой ТВ
 <small>(В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Эффекты от подмены</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Меню аудио дорожки отсутствует.
@@ -2300,7 +2326,7 @@ VP9 более продвинутый кодек, чем AVC, но некото�
 - устранить прерывания при воспроизведении.
 
 Максимальное разрешение AVC - 1080p. Кодек Opus недоступен. Потребление трафика больше, чем при VP9 или AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (В разработке)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Использовать клиент JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">Клиент JavaScript используется.</string>

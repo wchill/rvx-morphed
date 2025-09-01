@@ -1,12 +1,35 @@
 package app.revanced.extension.music.patches.spoof;
 
+import android.net.Uri;
+
+import com.google.android.libraries.youtube.media.interfaces.HttpHeader;
+
+import org.apache.commons.lang3.StringUtils;
+import org.chromium.net.ExperimentalUrlRequest;
+import org.chromium.net.UrlRequest;
+
+import java.util.List;
+
 import app.revanced.extension.music.settings.Settings;
+import app.revanced.extension.shared.utils.Logger;
 
 @SuppressWarnings("unused")
-public class SpoofClientPatch {
+public class SpoofClientPatch extends BlockRequestPatch {
     private static final boolean SETTINGS_INITIALIZED = Settings.SETTINGS_INITIALIZED.get();
-    private static final boolean SPOOF_CLIENT = Settings.SPOOF_CLIENT.get();
-    private static final ClientType CLIENT_TYPE = Settings.SPOOF_CLIENT_TYPE.get();
+
+    /**
+     * Injection point.
+     */
+    public static int getAndroidSDKVersion(int original) {
+        if (SPOOF_CLIENT) {
+            String androidSdkVersion = CLIENT_TYPE.androidSdkVersion;
+            return androidSdkVersion == null
+                    ? 0
+                    : Integer.parseInt(androidSdkVersion);
+        }
+
+        return original;
+    }
 
     /**
      * Injection point.
@@ -89,11 +112,71 @@ public class SpoofClientPatch {
      * Injection point.
      */
     public static String getUserAgent(String original) {
-        if (SPOOF_CLIENT) {
+        if (SPOOF_CLIENT_WITHOUT_BLOCK_REQUEST) {
             return CLIENT_TYPE.userAgent;
         }
 
         return original;
+    }
+
+    private static volatile boolean shouldOverrideUserAgent;
+
+    /**
+     * Injection point.
+     */
+    public static void setUrl(String url) {
+        if (SPOOF_CLIENT_WITH_BLOCK_REQUEST) {
+            shouldOverrideUserAgent = false;
+            if (StringUtils.isNotEmpty(url)) {
+                try {
+                    Uri uri = Uri.parse(url);
+                    String path = uri.getPath();
+
+                    if (path != null) {
+                        shouldOverrideUserAgent = path.contains("/get_watch") ||
+                                path.contains("/player") ||
+                                url.contains("/videoplayback");
+                    }
+                } catch (Exception ex) {
+                    Logger.printException(() -> "setUrl failed", ex);
+                }
+            }
+        }
+    }
+
+    /**
+     * Injection point.
+     */
+    public static ExperimentalUrlRequest overrideUserAgent(ExperimentalUrlRequest.Builder builder) {
+        if (SPOOF_CLIENT_WITH_BLOCK_REQUEST && shouldOverrideUserAgent) {
+            return builder.addHeader("User-Agent", CLIENT_TYPE.userAgent).build();
+        }
+
+        return builder.build();
+    }
+
+    /**
+     * Injection point.
+     */
+    public static UrlRequest overrideUserAgent(UrlRequest.Builder builder) {
+        if (SPOOF_CLIENT_WITH_BLOCK_REQUEST && shouldOverrideUserAgent) {
+            return builder.addHeader("User-Agent", CLIENT_TYPE.userAgent).build();
+        }
+
+        return builder.build();
+    }
+
+    /**
+     * Injection point.
+     */
+    public static List<HttpHeader> overrideUserAgent(List<HttpHeader> header) {
+        if (SPOOF_CLIENT_WITH_BLOCK_REQUEST && shouldOverrideUserAgent &&
+                header != null && !header.isEmpty()) {
+            HttpHeader userAgent = new HttpHeader("User-Agent", CLIENT_TYPE.userAgent);
+            header.add(userAgent);
+        }
+
+        return header;
     }
 
     /**
@@ -146,6 +229,30 @@ public class SpoofClientPatch {
      * Return false to force create the playback speed menu.
      */
     public static boolean forceCreatePlaybackSpeedMenuInverse(boolean original) {
+        if (SPOOF_CLIENT) {
+            return false;
+        }
+        return original;
+    }
+
+    /**
+     * Injection point.
+     * <p>
+     * Return false to force disable fallback feature flag.
+     */
+    public static boolean forceDisableFallbackFeatureFlag(boolean original) {
+        if (SPOOF_CLIENT) {
+            return false;
+        }
+        return original;
+    }
+
+    /**
+     * Injection point.
+     * <p>
+     * Return false to force disable formats feature flag.
+     */
+    public static boolean forceDisableFormatsFeatureFlag(boolean original) {
         if (SPOOF_CLIENT) {
             return false;
         }

@@ -210,7 +210,7 @@ internal object ResourceUtils {
                         setAttribute("android:title", "@string/$key" + "_title")
                         setAttribute("android:summary", "@string/$key" + "_summary")
                         setAttribute("android:key", key)
-                        if (dependencyKey != "") {
+                        if (dependencyKey.isNotEmpty()) {
                             setAttribute("android:dependency", dependencyKey)
                         }
                         this.adoptChild("intent") {
@@ -223,6 +223,23 @@ internal object ResourceUtils {
                         }
                     }
                 }
+        }
+    }
+
+    fun replaceSwitchPreference(
+        key: String,
+        defaultValue: String,
+    ) {
+        context.document(SETTINGS_HEADER_PATH).use { document ->
+            document.doRecursively node@{
+                if (it !is Element) return@node
+
+                it.getAttributeNode("android:key")?.let { attribute ->
+                    if (attribute.textContent == key) {
+                        it.setAttribute("android:defaultValue", defaultValue)
+                    }
+                }
+            }
         }
     }
 

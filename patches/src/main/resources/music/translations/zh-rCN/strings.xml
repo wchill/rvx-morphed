@@ -70,12 +70,6 @@
     <string name="revanced_hide_promotion_alert_banner_summary">隐藏推广提醒横幅。</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">弹出菜单</string>
-    <string name="revanced_enable_trim_silence_title">新增修改静音开关</string>
-    <string name="revanced_enable_trim_silence_summary">"在播放速度弹出菜单中添加修改静音开关。
-
-信息：
-• 此功能适用于播客。
-• 此功能仍在开发中，因此可能不稳定。"</string>
     <string name="revanced_enable_compact_dialog_title">启用紧凑对话框</string>
     <string name="revanced_enable_compact_dialog_summary">"在手机上启用紧凑弹出菜单。
 
@@ -283,6 +277,8 @@
     <string name="revanced_preference_screen_video_title">视频</string>
     <string name="revanced_custom_playback_speeds_title">编辑自定义播放速度</string>
     <string name="revanced_custom_playback_speeds_summary">添加或更改可用的播放速度</string>
+    <string name="revanced_enable_opus_codec_title">OPUS 编解码器</string>
+    <string name="revanced_enable_opus_codec_summary">"播放音频使用 250/251 opus 编码"</string>
     <string name="revanced_remember_playback_speed_last_selected_title">记住播放速度的变更</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">记住上次选择的播放速度。</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">显示 Toast</string>
@@ -420,13 +416,11 @@
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_redirect">重定向</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_on_click">轻点歌曲/视频切换</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_on_long_click">轻点并按住歌曲/视频切换</string>
-    <string name="revanced_enable_opus_codec_title">OPUS 编解码器</string>
-    <string name="revanced_enable_opus_codec_summary">"播放音频使用 250/251 opus 编码"</string>
     <string name="revanced_sanitize_sharing_links_title">清理分享链接</string>
     <string name="revanced_sanitize_sharing_links_summary">分享链接时删除跟踪查询参数</string>
     <string name="revanced_spoof_client_title">伪装客户端</string>
     <string name="revanced_spoof_client_type_title">默认客户端</string>
-    <string name="revanced_spoof_client_type_summary">定义用于伪装的默认客户端。</string>
+    <string name="revanced_spoof_client_type_summary">"定义用于伪装的默认客户端。"</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS 音乐 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS 音乐 7.04</string>
     <string name="revanced_watch_history_type_title">观看历史记录类型</string>

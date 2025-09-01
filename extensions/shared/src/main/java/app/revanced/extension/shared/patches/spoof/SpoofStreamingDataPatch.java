@@ -33,7 +33,8 @@ public class SpoofStreamingDataPatch {
     private static final boolean SPOOF_STREAMING_DATA_PRIORITIZE_VIDEO_QUALITY =
             SPOOF_STREAMING_DATA && BaseSettings.SPOOF_STREAMING_DATA_PRIORITIZE_VIDEO_QUALITY.get();
     private static final boolean SPOOF_STREAMING_DATA_USE_JS =
-            SPOOF_STREAMING_DATA && BaseSettings.SPOOF_STREAMING_DATA_USE_JS.get();
+            SPOOF_STREAMING_DATA && PatchStatus.GmsCoreSupport() &&
+                    BaseSettings.SPOOF_STREAMING_DATA_USE_JS.get();
     private static final boolean SPOOF_STREAMING_DATA_USE_JS_ALL =
             SPOOF_STREAMING_DATA_USE_JS && BaseSettings.SPOOF_STREAMING_DATA_USE_JS_ALL.get();
     private static final boolean SPOOF_STREAMING_DATA_USE_LATEST_JS =
@@ -85,18 +86,19 @@ public class SpoofStreamingDataPatch {
      * @return Whether the J2V8 library exists.
      */
     private static boolean checkJ2V8() {
-        if (SPOOF_STREAMING_DATA && !isInitialized) {
-            try {
-                String libraryDir = Utils.getContext()
-                        .getApplicationContext()
-                        .getApplicationInfo()
-                        .nativeLibraryDir;
-                File j2v8 = new File(libraryDir + "/libj2v8.so");
-                return j2v8.exists();
-            } catch (Exception ex) {
-                Logger.printException(() -> "J2V8 native library not found", ex);
-            } finally {
-                isInitialized = true;
+        if (!isInitialized) {
+            isInitialized = true;
+            if (SPOOF_STREAMING_DATA && PatchStatus.GmsCoreSupport()) {
+                try {
+                    String libraryDir = Utils.getContext()
+                            .getApplicationContext()
+                            .getApplicationInfo()
+                            .nativeLibraryDir;
+                    File j2v8 = new File(libraryDir + "/libj2v8.so");
+                    return j2v8.exists();
+                } catch (Exception ex) {
+                    Logger.printException(() -> "J2V8 native library not found", ex);
+                }
             }
         }
 
@@ -128,27 +130,23 @@ public class SpoofStreamingDataPatch {
         return playerRequestUri;
     }
 
-    /**
-     * Injection point.
-     * <p>
-     * Blocks /initplayback requests.
-     */
-    public static Uri blockInitPlaybackRequest(Uri initPlaybackRequestUri) {
+    public static String blockInitPlaybackRequest(String originalUrlString) {
         if (SPOOF_STREAMING_DATA) {
             try {
-                String path = initPlaybackRequestUri.getPath();
+                var originalUri = Uri.parse(originalUrlString);
+                String path = originalUri.getPath();
 
                 if (path != null && path.contains("initplayback")) {
                     Logger.printDebug(() -> "Blocking 'initplayback' by clearing query");
 
-                    return initPlaybackRequestUri.buildUpon().clearQuery().build();
+                    return originalUri.buildUpon().clearQuery().build().toString();
                 }
             } catch (Exception ex) {
                 Logger.printException(() -> "blockInitPlaybackRequest failure", ex);
             }
         }
 
-        return initPlaybackRequestUri;
+        return originalUrlString;
     }
 
     /**
@@ -349,7 +347,7 @@ public class SpoofStreamingDataPatch {
         return format;
     }
 
-    public static boolean notSpoofingToAndroid() {
+    public static boolean multiAudioTrackAvailable() {
         if (!PatchStatus.SpoofStreamingData()) {
             return true;
         }
@@ -357,7 +355,9 @@ public class SpoofStreamingDataPatch {
             return true;
         }
         String defaultClient = BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().name();
-        return defaultClient.equals("IOS_UNPLUGGED") || defaultClient.startsWith("TV");
+        // iOS TV is not available in some regions or for some users.
+        return defaultClient.equals("IOS_UNPLUGGED")
+                || defaultClient.startsWith("TV");
     }
 
     public static final class ClientAndroidVRAvailability implements Setting.Availability {
@@ -395,13 +395,13 @@ public class SpoofStreamingDataPatch {
     }
 
     public static final class ForceOriginalAudioAvailability implements Setting.Availability {
-        private static final boolean AVAILABLE_ON_LAUNCH = SpoofStreamingDataPatch.notSpoofingToAndroid();
+        private static final boolean AVAILABLE_ON_LAUNCH = SpoofStreamingDataPatch.multiAudioTrackAvailable();
 
         @Override
         public boolean isAvailable() {
             // Check conditions of launch and now. Otherwise if spoofing is changed
             // without a restart the setting will show as available when it's not.
-            return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.notSpoofingToAndroid();
+            return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.multiAudioTrackAvailable();
         }
     }
 
@@ -414,13 +414,13 @@ public class SpoofStreamingDataPatch {
     }
 
     public static final class HideAudioFlyoutMenuAvailability implements Setting.Availability {
-        private static final boolean AVAILABLE_ON_LAUNCH = SpoofStreamingDataPatch.notSpoofingToAndroid();
+        private static final boolean AVAILABLE_ON_LAUNCH = SpoofStreamingDataPatch.multiAudioTrackAvailable();
 
         @Override
         public boolean isAvailable() {
             // Check conditions of launch and now. Otherwise if spoofing is changed
             // without a restart the setting will show as available when it's not.
-            return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.notSpoofingToAndroid();
+            return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.multiAudioTrackAvailable();
         }
     }
 

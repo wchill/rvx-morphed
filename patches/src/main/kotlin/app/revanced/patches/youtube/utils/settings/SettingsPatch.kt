@@ -23,7 +23,7 @@ import app.revanced.patches.youtube.utils.fix.playbackspeed.playbackSpeedWhilePl
 import app.revanced.patches.youtube.utils.fix.splash.darkModeSplashScreenPatch
 import app.revanced.patches.youtube.utils.mainactivity.mainActivityResolvePatch
 import app.revanced.patches.youtube.utils.patch.PatchList.SETTINGS_FOR_YOUTUBE
-import app.revanced.patches.youtube.utils.playservice.is_19_15_or_greater
+import app.revanced.patches.youtube.utils.playservice.is_19_16_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_19_34_or_greater
 import app.revanced.patches.youtube.utils.playservice.versionCheckPatch
 import app.revanced.patches.youtube.utils.resourceid.sharedResourceIdPatch
@@ -39,6 +39,7 @@ import app.revanced.util.copyXmlNode
 import app.revanced.util.findFreeRegister
 import app.revanced.util.findInstructionIndicesReversedOrThrow
 import app.revanced.util.findMethodOrThrow
+import app.revanced.util.fingerprint.definingClassOrThrow
 import app.revanced.util.fingerprint.methodCall
 import app.revanced.util.fingerprint.methodOrThrow
 import app.revanced.util.fingerprint.mutableClassOrThrow
@@ -52,6 +53,8 @@ import app.revanced.util.returnEarly
 import app.revanced.util.valueOrThrow
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import com.android.tools.smali.dexlib2.util.MethodUtil
 import org.w3c.dom.Element
@@ -59,9 +62,6 @@ import java.nio.file.Files
 
 private const val EXTENSION_INITIALIZATION_CLASS_DESCRIPTOR =
     "$UTILS_PATH/InitializationPatch;"
-
-private const val EXTENSION_THEME_METHOD_DESCRIPTOR =
-    "$EXTENSION_THEME_UTILS_CLASS_DESCRIPTOR->updateLightDarkModeStatus(Ljava/lang/Enum;)V"
 
 private lateinit var bytecodeContext: BytecodePatchContext
 
@@ -134,13 +134,8 @@ private val settingsBytecodePatch = bytecodePatch(
 
         // endregion.
 
-        val targetActivityFingerprint = if (is_19_15_or_greater)
-            proxyBillingActivityV2OnCreateFingerprint
-        else
-            licenseMenuActivityOnCreateFingerprint
-
         val hostActivityClass = settingsHostActivityOnCreateFingerprint.mutableClassOrThrow()
-        val targetActivityClass = targetActivityFingerprint.mutableClassOrThrow()
+        val targetActivityClass = licenseMenuActivityOnCreateFingerprint.mutableClassOrThrow()
 
         hookClassHierarchy(
             hostActivityClass,
@@ -182,8 +177,29 @@ private val settingsBytecodePatch = bytecodePatch(
 
                 addInstructionsAtControlFlowLabel(
                     index,
-                    "invoke-static { v$register }, $EXTENSION_THEME_METHOD_DESCRIPTOR"
+                    "invoke-static { v$register }, $EXTENSION_THEME_UTILS_CLASS_DESCRIPTOR->updateLightDarkModeStatus(Ljava/lang/Enum;)V"
                 )
+            }
+        }
+
+        if (is_19_16_or_greater) {
+            val userInterfaceThemeEnum = userInterfaceThemeEnumFingerprint
+                .definingClassOrThrow()
+
+            clientContextBodyBuilderFingerprint.methodOrThrow().apply {
+                findInstructionIndicesReversedOrThrow {
+                    val fieldReference = getReference<FieldReference>()
+                    opcode == Opcode.IGET &&
+                            fieldReference?.definingClass == userInterfaceThemeEnum &&
+                            fieldReference.type == "I"
+                }.forEach { index ->
+                    val register = getInstruction<TwoRegisterInstruction>(index).registerA
+
+                    addInstruction(
+                        index + 1,
+                        "invoke-static { v$register }, $EXTENSION_THEME_UTILS_CLASS_DESCRIPTOR->updateLightDarkModeStatus(I)V",
+                    )
+                }
             }
         }
 

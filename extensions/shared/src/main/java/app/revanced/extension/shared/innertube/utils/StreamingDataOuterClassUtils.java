@@ -122,27 +122,38 @@ public class StreamingDataOuterClassUtils {
             int maxAVCHeight = -1;
             int maxVP9Height = -1;
             for (Object adaptiveFormat : adaptiveFormats) {
-                String mimeType = getMimeType(adaptiveFormat);
-                if (StringUtils.startsWith(mimeType, "video")) {
-                    int height = getHeight(adaptiveFormat);
-                    if (mimeType.contains("avc")) {
-                        maxAVCHeight = Math.max(maxAVCHeight, height);
-                    } else {
-                        maxVP9Height = Math.max(maxVP9Height, height);
-                    }
-                    if (maxAVCHeight != -1 && maxVP9Height != -1) {
-                        break;
+                if (adaptiveFormat instanceof MessageLite messageLite) {
+                    var parsedAdaptiveFormat = PlayerResponseOuterClass.Format.parseFrom(messageLite.toByteArray());
+                    if (parsedAdaptiveFormat != null) {
+                        String mimeType = parsedAdaptiveFormat.getMimeType();
+                        if (StringUtils.startsWith(mimeType, "video")) {
+                            int height = parsedAdaptiveFormat.getHeight();
+                            if (mimeType.contains("avc")) {
+                                maxAVCHeight = Math.max(maxAVCHeight, height);
+                            } else {
+                                maxVP9Height = Math.max(maxVP9Height, height);
+                            }
+                            if (maxAVCHeight != -1 && maxVP9Height != -1) {
+                                break;
+                            }
+                        }
                     }
                 }
             }
             if (maxAVCHeight > maxVP9Height) {
                 ArrayList<Object> arrayList = new ArrayList<>(adaptiveFormats.size());
-                for (Object adaptiveFormat : adaptiveFormats) {
-                    String mimeType = getMimeType(adaptiveFormat);
-                    boolean isVideoType = StringUtils.startsWith(mimeType, "video");
 
-                    if (!isVideoType || mimeType.contains("avc")) {
-                        arrayList.add(adaptiveFormat);
+                for (Object adaptiveFormat : adaptiveFormats) {
+                    if (adaptiveFormat instanceof MessageLite messageLite) {
+                        var parsedAdaptiveFormat = PlayerResponseOuterClass.Format.parseFrom(messageLite.toByteArray());
+                        if (parsedAdaptiveFormat != null) {
+                            String mimeType = parsedAdaptiveFormat.getMimeType();
+                            boolean isVideoType = StringUtils.startsWith(mimeType, "video");
+
+                            if (!isVideoType || mimeType.contains("avc")) {
+                                arrayList.add(adaptiveFormat);
+                            }
+                        }
                     }
                 }
                 return arrayList;
@@ -214,20 +225,20 @@ public class StreamingDataOuterClassUtils {
             // No audio track found.
             if (!hasAudioTrack) return null;
 
-            Map<String, String> audioTrackMap = new LinkedHashMap<>(30);
+            Map<String, String> audioTrackMap = new LinkedHashMap<>(1);
 
             // For faster navigation, the search is performed in reverse order.
             for (int i = adaptiveFormatsCount - 1; i > 0; i--) {
                 var audioTrack = parsedStreamingData.getAdaptiveFormats(i).getAudioTrack();
                 if (audioTrack != null) {
-                    String displayName = audioTrack.getDisplayName();
-                    if (displayName == null) continue;
                     String id = audioTrack.getId();
-                    if (id == null) continue;
+                    if (id == null || !id.contains(".")) continue;
+                    String displayName = audioTrack.getDisplayName();
+                    if (StringUtils.isEmpty(displayName)) continue;
                     if (audioTrackMap.get(displayName) == null) {
                         audioTrackMap.put(displayName, id);
                     } else {
-                        // One adaptiveFormats contains duplicate AudioTrack Ids.
+                        // AdaptiveFormats contains duplicate AudioTrack Ids.
                         // (Two or more AudioTrack Ids with different audio formats)
                         // If an element already exists in the audioTrackMap, this indicates that a cycle has ended.
                         // Since only duplicate audio tracks will be found, the search can be aborted.

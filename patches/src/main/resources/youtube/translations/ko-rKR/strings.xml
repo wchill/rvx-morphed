@@ -8,6 +8,11 @@
     <string name="revanced_extended_settings_search_title">%s 검색</string>
     <string name="revanced_extended_reset_to_default_toast">기본값으로 초기화하였습니다.</string>
     <string name="revanced_preference_category_experimental_flag">실험 기능</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"이 설정은 현재 사용할 수 없습니다.
+이 기능을 사용하려면, '스트리밍 데이터 변경하기'에서 기본 클라이언트를 iOS TV, TV 또는 TV Simply로 변경하세요.
+
+알림:
+• 일부 지역에서는 iOS TV를 사용할 수 없으며, 이 경우에 이 설정이 여전히 작동하지 않을 수 있습니다."</string>
     <string name="revanced_extended_confirm_user_dialog_title">계속하시겠습니까?</string>
     <string name="revanced_extended_restart_first_run">레이아웃을 정상적으로 불러오기 위해 다시 시작합니다.</string>
     <string name="revanced_extended_restart_title">앱을 다시 시작하세요</string>
@@ -45,6 +50,7 @@
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">현재 재생목록에서 제거하고 동영상 다시 로드</string>
     <string name="revanced_queue_manager_remove_queue">현재 재생목록 제거</string>
     <string name="revanced_queue_manager_save_queue">현재 재생목록 저장</string>
+    <string name="revanced_queue_manager_show_original_video_information">원본 동영상 정보 표시</string>
     <string name="revanced_queue_manager_user_dialog_message">"외부 다운로더가 아닌 현재 재생목록 관리자 다이얼로그를 실행할 수 있습니다.
 
 시스템 네비게이션 바에서 '뒤로 가기' 버튼을 길게 탭하여 현재 재생목록 관리자를 실행할 수도 있습니다.
@@ -52,6 +58,26 @@
 이 기능은 아직 개발 중이므로 대부분의 기능이 작동하지 않을 수 있습니다.
 
 디버깅 목적으로만 사용하세요."</string>
+    <string name="revanced_queue_manager_video_information">동영상 정보</string>
+    <string name="revanced_queue_manager_video_information_copy">복사</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"채널
+══════════════
+%1$s
+
+제목
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"채널
+══════════════
+%1$s
+
+제목
+══════════════
+%2$s
+
+설명
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">로그인이 요구됨</string>
     <string name="revanced_queue_manager_check_failed_generic">현재 재생목록 관리자를 실행할 수 없습니다 (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">재생목록을 식별할 수 없음</string>
@@ -62,11 +88,13 @@
     <string name="revanced_queue_manager_fetch_failed_delete">현재 재생목록을 제거할 수 없습니다.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">동영상을 제거할 수 없습니다.</string>
     <string name="revanced_queue_manager_fetch_failed_save">현재 재생목록을 저장할 수 없습니다.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">동영상 정보를 가져올 수 없습니다.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">동영상을 성공적으로 추가하였습니다.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">현재 재생목록을 성공적으로 만들었습니다.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">현재 재생목록을 성공적으로 제거하였습니다.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">동영상을 성공적으로 제거하였습니다.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">현재 재생목록을 \'%s\'에 성공적으로 저장하였습니다.</string>
+    <string name="revanced_share_copy_video_information_success">동영상 정보를 클립보드에 복사하였습니다.</string>
     <string name="revanced_language_title">RVX 언어</string>
     <string name="revanced_language_DEFAULT">앱 언어</string>
     <string name="revanced_language_AM">"암하라어
@@ -300,9 +328,9 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
     <string name="revanced_hide_notify_me_button_title">\'알림 받기\' 버튼 숨기기</string>
     <string name="revanced_hide_notify_me_button_summary_on">예정 동영상 하단에서 \'알림 받기\' 버튼이 숨겨집니다.</string>
     <string name="revanced_hide_notify_me_button_summary_off">예정 동영상 하단에서 \'알림 받기\' 버튼이 표시됩니다.</string>
-    <string name="revanced_hide_playables_title">게임 룸 선반 숨기기</string>
-    <string name="revanced_hide_playables_summary_on">게임 룸 선반이 숨겨집니다.</string>
-    <string name="revanced_hide_playables_summary_off">게임 룸 선반이 표시됩니다.</string>
+    <string name="revanced_hide_playables_title">게임 룸 숨기기</string>
+    <string name="revanced_hide_playables_summary_on">게임 룸이 숨겨집니다.</string>
+    <string name="revanced_hide_playables_summary_off">게임 룸이 표시됩니다.</string>
     <string name="revanced_hide_feed_search_bar_title">피드 검색창 숨기기</string>
     <string name="revanced_hide_feed_search_bar_summary_on">피드 검색창이 숨겨집니다.</string>
     <string name="revanced_hide_feed_search_bar_summary_off">피드 검색창이 표시됩니다.</string>
@@ -334,7 +362,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
     <string name="revanced_hide_carousel_shelf_search_summary_on">검색 결과에서 숨겨집니다.</string>
     <string name="revanced_hide_carousel_shelf_search_summary_off">검색 결과에서 표시됩니다.</string>
     <string name="revanced_hide_carousel_shelf_about_title">좌우 슬라이드형 선반에 대한 정보</string>
-    <string name="revanced_hide_carousel_shelf_about_summary">좌우 슬라이드형 선반에 대한 예시:&lt;br&gt;&lt;b&gt;다시 듣기&lt;/b&gt;, &lt;b&gt;다시 시청하기&lt;/b&gt;, &lt;b&gt;이어서 시청하기&lt;/b&gt;, &lt;b&gt;채널 더보기&lt;/b&gt;, &lt;b&gt;이 게임 더보기&lt;/b&gt;, &lt;b&gt;주요 뉴스&lt;/b&gt;, &lt;b&gt;뉴스 속보&lt;/b&gt;, &lt;b&gt;맞춤 실시간 스트림&lt;/b&gt;, &lt;b&gt;라이브 쇼핑&lt;/b&gt;, &lt;b&gt;보건 정보 출처&lt;/b&gt;, &lt;b&gt;관련성&lt;/b&gt;, &lt;b&gt;etc.&lt;/b&gt;</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">좌우 슬라이드형 선반에 대한 예시:&lt;br&gt;&lt;b&gt;다시 듣기&lt;/b&gt;, &lt;b&gt;다시 시청하기&lt;/b&gt;, &lt;b&gt;이어서 시청하기&lt;/b&gt;, &lt;b&gt;채널 더보기&lt;/b&gt;, &lt;b&gt;이 게임 더보기&lt;/b&gt;, &lt;b&gt;주요 뉴스&lt;/b&gt;, &lt;b&gt;뉴스 속보&lt;/b&gt;, &lt;b&gt;맞춤 실시간 스트림&lt;/b&gt;, &lt;b&gt;라이브 쇼핑&lt;/b&gt;, &lt;b&gt;보건 정보 출처&lt;/b&gt;, &lt;b&gt;관련성&lt;/b&gt;, &lt;b&gt;추천&lt;/b&gt;, &lt;b&gt;etc.&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">카테고리 바</string>
     <string name="revanced_preference_screen_category_bar_summary">피드, 관련 동영상, 검색 결과 그리고 시청 기록에서 카테고리 바를 숨기거나 표시할 수 있습니다.</string>
@@ -361,9 +389,6 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 재생목록
 스토어"</string>
-    <string name="revanced_hide_for_you_shelf_title">추천 선반 숨기기</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">추천 선반이 숨겨집니다.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">추천 선반이 표시됩니다.</string>
     <string name="revanced_hide_links_preview_title">링크 미리보기 숨기기</string>
     <string name="revanced_hide_links_preview_summary_on">링크 미리보기가 숨겨집니다.</string>
     <string name="revanced_hide_links_preview_summary_off">링크 미리보기가 표시됩니다.</string>
@@ -495,13 +520,12 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
 제한 사항:
 • 툴바에서 '뒤로 가기' 버튼이 작동되지 않을 수 있습니다."</string>
     <string name="revanced_change_start_page_type_summary_off">앱 시작 페이지가 한 번만 변경됩니다.</string>
-    <string name="revanced_disable_auto_audio_tracks_title">자동 오디오 트랙 비활성화하기</string>
-    <string name="revanced_disable_auto_audio_tracks_summary_on">자동 오디오 트랙을 비활성화합니다.</string>
-    <string name="revanced_disable_auto_audio_tracks_summary_off">자동 오디오 트랙을 활성화합니다.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">이 기능을 사용하려면, \'스트리밍 데이터 변경하기\'에서 기본 클라이언트를 TV 또는 iOS TV로 변경하세요.</string>
-    <string name="revanced_disable_auto_captions_title">자동 자막 비활성화하기</string>
-    <string name="revanced_disable_auto_captions_summary_on">자동 자막을 비활성화합니다.</string>
-    <string name="revanced_disable_auto_captions_summary_off">자동 자막을 활성화합니다.</string>
+    <string name="revanced_disable_auto_audio_tracks_title">강제된 자동 오디오 트랙 비활성화하기</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_on">강제 사용이 설정된 오디오 트랙을 비활성화합니다.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_off">강제 사용이 설정된 오디오 트랙을 활성화합니다.</string>
+    <string name="revanced_disable_auto_captions_title">강제된 자동 자막 비활성화하기</string>
+    <string name="revanced_disable_auto_captions_summary_on">강제 사용이 설정된 자막을 비활성화합니다.</string>
+    <string name="revanced_disable_auto_captions_summary_off">강제 사용이 설정된 자막을 활성화합니다.</string>
     <string name="revanced_disable_signin_to_tv_popup_title">\'TV에 로그인\' 팝업 비활성화하기</string>
     <string name="revanced_disable_signin_to_tv_popup_summary_on">\'TV에 로그인\' 팝업을 비활성화합니다.</string>
     <string name="revanced_disable_signin_to_tv_popup_summary_off">\'TV에 로그인\' 팝업을 활성화합니다.</string>
@@ -858,9 +882,9 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
     <string name="revanced_hide_channel_watermark_title">채널 워터마크 숨기기</string>
     <string name="revanced_hide_channel_watermark_summary_on">플레이어 하단에서 채널 워터마크가 숨겨집니다.</string>
     <string name="revanced_hide_channel_watermark_summary_off">플레이어 하단에서 채널 워터마크가 표시됩니다.</string>
-    <string name="revanced_hide_crowdfunding_box_title">크라우드 펀딩 박스 숨기기</string>
-    <string name="revanced_hide_crowdfunding_box_summary_on">플레이어 하단에서 크라우드 펀딩 박스가 숨겨집니다.</string>
-    <string name="revanced_hide_crowdfunding_box_summary_off">플레이어 하단에서 크라우드 펀딩 박스가 표시됩니다.</string>
+    <string name="revanced_hide_crowdfunding_box_title">모금 행사 패널 숨기기</string>
+    <string name="revanced_hide_crowdfunding_box_summary_on">모금 행사 패널이 숨겨집니다.</string>
+    <string name="revanced_hide_crowdfunding_box_summary_off">모금 행사 패널이 표시됩니다.</string>
     <string name="revanced_hide_double_tap_overlay_filter_title">두 번 탭하기 오버레이 필터 숨기기</string>
     <string name="revanced_hide_double_tap_overlay_filter_summary_on">두 번 탭하기 오버레이 필터가 숨겨집니다.</string>
     <string name="revanced_hide_double_tap_overlay_filter_summary_off">두 번 탭하기 오버레이 필터가 표시됩니다.</string>
@@ -904,8 +928,8 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
     <string name="revanced_hide_zoom_overlay_summary_on">줌 오버레이가 숨겨집니다.</string>
     <string name="revanced_hide_zoom_overlay_summary_off">줌 오버레이가 표시됩니다.</string>
     <string name="revanced_sanitize_video_subtitle_title">동영상 제목 하단 정리하기</string>
-    <string name="revanced_sanitize_video_subtitle_summary_on">"제목 하단에서 다음 문구들이 숨겨집니다:\n#(해시태그), 모금 행사, 쇼핑, n개 제품,\n자동 더빙, 회원 전용, etc."</string>
-    <string name="revanced_sanitize_video_subtitle_summary_off">"제목 하단에서 다음 문구들이 표시됩니다:\n#(해시태그), 모금 행사, 쇼핑, n개 제품,\n자동 더빙, 회원 전용, etc."</string>
+    <string name="revanced_sanitize_video_subtitle_summary_on">"제목 하단에서 다음 문구들이 숨겨집니다:\n#(해시태그), 모금 행사, 쇼핑, n개 제품,\nHype 순위 n위, 자동 더빙, 회원 전용, etc."</string>
+    <string name="revanced_sanitize_video_subtitle_summary_off">"제목 하단에서 다음 문구들이 표시됩니다:\n#(해시태그), 모금 행사, 쇼핑, n개 제품,\nHype 순위 n위, 자동 더빙, 회원 전용, etc."</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Experimental flags -->
     <string name="revanced_hide_related_videos_title">관련 동영상 숨기기</string>
     <string name="revanced_hide_related_videos_summary_on">관련 동영상이 숨겨집니다.</string>
@@ -1065,9 +1089,6 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_title">오디오 트랙 메뉴 숨기기</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">오디오 트랙 메뉴가 숨겨집니다.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">오디오 트랙 메뉴가 표시됩니다.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"오디오 트랙 메뉴가 숨겨집니다.
-
-오디오 트랙 메뉴를 표시하려면, '스트리밍 데이터 변경하기'에서 기본 클라이언트를 TV 또는 iOS TV로 변경하세요."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">자막 메뉴 숨기기</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">자막 메뉴가 숨겨집니다.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">자막 메뉴가 표시됩니다.</string>
@@ -1779,6 +1800,8 @@ Shorts 플레이어 배경을 탭하면 상태바 및 플레이어 구성요소�
 • 동영상 재생 시 VP9보다 더 많은 모바일 데이터가 사용됩니다.
 • HDR 동영상에는 여전히 VP9 코덱이 사용됩니다."</string>
     <string name="revanced_disable_vp9_codec_summary_off">동영상 코덱이 VP9으로 결정됩니다.</string>
+    <string name="revanced_enable_opus_codec_title">OPUS 코덱 활성화하기</string>
+    <string name="revanced_enable_opus_codec_summary">플레이어 응답에 OPUS 코덱이 포함된 경우에 OPUS 코덱을 활성화합니다.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">재생 속도</string>
     <string name="revanced_default_playback_speed_title">기본 동영상 재생 속도</string>
@@ -1852,8 +1875,8 @@ Shorts 플레이어 배경을 탭하면 상태바 및 플레이어 구성요소�
     <string name="revanced_disable_default_playback_speed_music_on">음악 동영상에서 기본 동영상 재생 속도를 비활성화합니다.</string>
     <string name="revanced_disable_default_playback_speed_music_off">음악 동영상에서 기본 동영상 재생 속도를 활성화합니다.</string>
     <string name="revanced_disable_default_playback_speed_music_type_title">카테고리를 사용하여 유효성 검사하기</string>
-    <string name="revanced_disable_default_playback_speed_music_type_on">동영상 카테고리가 음악인 경우에는 기본 동영상 재생 속도를 비활성화합니다.</string>
-    <string name="revanced_disable_default_playback_speed_music_type_off">YouTube Music에서 재생할 수 있는 동영상인 경우에는 기본 동영상 재생 속도를 비활성화합니다.</string>
+    <string name="revanced_disable_default_playback_speed_music_type_on">동영상 카테고리가 음악인 경우에만 기본 동영상 재생 속도를 비활성화합니다.</string>
+    <string name="revanced_disable_default_playback_speed_music_type_off">YouTube Music에서 재생할 수 있는 동영상인 경우에만 기본 동영상 재생 속도를 비활성화합니다.</string>
     <!-- PreferenceScreen: Return YouTube Dislike -->
     <string name="revanced_preference_screen_ryd_title">Return YouTube Dislike</string>
     <string name="revanced_ryd_enable_title">Return YouTube Dislike 활성화하기</string>
@@ -2127,10 +2150,8 @@ GmsCore 앱 배터리 최적화를 비활성화(제한 없음)하더라도, 배�
     <string name="gms_core_dialog_continue_text">계속하기</string>
     <string name="gms_core_offline_account_login_error">최근에 계정 로그인 정보를 변경한 경우에는 GmsCore를 삭제했다가 다시 설치하세요.</string>
     <string name="revanced_change_share_sheet_title">공유 시트 변경하기</string>
-    <string name="revanced_change_share_sheet_summary_on">Android 시스템 공유 시트를 사용합니다.\n\n• 공유 버튼으로 바로 Android 시스템 공유 메뉴를 실행할 수 있습니다.</string>
-    <string name="revanced_change_share_sheet_summary_off">YouTube 기본 공유 시트를 사용합니다.</string>
-    <string name="revanced_enable_opus_codec_title">OPUS 코덱 활성화하기</string>
-    <string name="revanced_enable_opus_codec_summary">플레이어 응답에 OPUS 코덱이 포함된 경우에는 OPUS 코덱을 활성화합니다.</string>
+    <string name="revanced_change_share_sheet_summary_on">시스템 공유 시트를 사용합니다.</string>
+    <string name="revanced_change_share_sheet_summary_off">기본 공유 시트를 사용합니다.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">디버깅</string>
     <string name="revanced_preference_screen_debugging_summary">디버깅 옵션을 활성화하거나 비활성화할 수 있습니다.</string>
@@ -2206,14 +2227,16 @@ YouTube Premium 사용자이거나 ‘GmsCore support’ 패치가 제외된 경
 <small>(개발 중)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">변경에 따른 부작용</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• 오디오 트랙 메뉴가 표시되지 않습니다.
+• 강제 사용이 설정된 오디오 트랙을 비활성화할 수 없습니다.
 • 안정적인 볼륨을 사용할 수 없습니다.
-• 자동 오디오 트랙을 비활성화할 수 없습니다.
 • 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• 안정적인 볼륨을 사용할 수 없습니다.
+    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• 오디오 트랙 메뉴가 표시되지 않을 수 있습니다.
+• 강제 사용이 설정된 오디오 트랙을 비활성화되지 않을 수 있습니다.
+• 안정적인 볼륨을 사용할 수 없습니다.
 • 영화 또는 유료 동영상이 재생되지 않을 수 있습니다.
 • 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• 오디오 트랙 메뉴가 표시되지 않습니다.
-• 자동 오디오 트랙을 비활성화할 수 없습니다.
+• 강제 사용이 설정된 오디오 트랙을 비활성화할 수 없습니다.
 • 복호화에 실패하면 재생이 실패할 수 있습니다.
 • 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 다시 로드 버튼을 탭해야 합니다.
 • 동영상이 늦게 시작될 수 있습니다."</string>
@@ -2293,8 +2316,8 @@ VP9은 AVC보다 고급 코덱이지만, 일부 사용자는 '360p VP9'보다 '1
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"이 설정를 활성화하면 배터리 수명이 향상되고, 동영상 재생 끊김 문제가 해결될 수 있습니다.
 
 AVC의 최대 화질 값은 1080p이고, OPUS 코덱을 사용불가 및 HDR 동영상을 재생할 수 없으며, 동영상을 재생했을 경우에는 VP9 또는 AV1보다 더 많은 모바일 데이터를 사용되오니 주의하세요."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
-    <string name="revanced_preference_category_js">JavaScript (개발 중)</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
+    <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">JavaScript 클라이언트 사용하기</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">JavaScript 클라이언트가 사용 가능한 클라이언트에 추가됩니다.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">JavaScript 클라이언트가 사용 가능한 클라이언트에 추가되지 않습니다.</string>
@@ -2302,7 +2325,7 @@ AVC의 최대 화질 값은 1080p이고, OPUS 코덱을 사용불가 및 HDR 동
 
 n-sig 패턴은 YouTube 서버에서 자주 변경되며, 정규식이 n-sig 패턴을 찾지 못하면 재생이 실패할 수 있습니다.
 
-이 기능은 아직 개발 중이므로 디버깅 목적으로만 사용하시기 바랍니다."</string>
+JavaScript 클라이언트 중에서 권장되는 클라이언트는 TV Simply입니다."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">모든 동영상에 JavaScript 클라이언트 사용하기</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"JavaScript 클라이언트가 동영상 유형에 관계없이 사용됩니다.
 

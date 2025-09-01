@@ -210,9 +210,6 @@ Ketuk di sini untuk mempelajari lebih lanjut tentang DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Daftar putar
 Toko"</string>
-    <string name="revanced_hide_for_you_shelf_title">Sembunyikan rak Untuk Anda</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Rak Untuk Anda disembunyikan.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Rak Untuk Anda ditampilkan.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Postingan Komunitas</string>
     <string name="revanced_preference_screen_community_posts_summary">Sembunyikan atau tampilkan postingan komunitas di feed dan saluran.</string>
@@ -403,7 +400,7 @@ Jika tata letak layar pemutar berubah karena perubahan di sisi server, tata leta
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceCategory: Patch information -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Patch information -->

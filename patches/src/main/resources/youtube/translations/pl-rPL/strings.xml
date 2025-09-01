@@ -8,6 +8,12 @@
     <string name="revanced_extended_settings_search_title">Wyszukaj w %s</string>
     <string name="revanced_extended_reset_to_default_toast">Przywrócono domyślne wartości.</string>
     <string name="revanced_preference_category_experimental_flag">Eksperymentalne flagi</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"Opcja jest obecnie niedostępna.
+Aby używać tej fukcji, zmień domyślnego klienta oszukiwania strumienia danych na iOS TV, TV lub Uproszczony TV.
+
+Notki:
+• iOS TV nie obsługuje odtwarzania niektórych filmów, jak muzycznych
+• dlatego jeśli domyślnym klientem jest iOS TV, ustawienie te może nie działać dla niektórych filmów"</string>
     <string name="revanced_extended_confirm_user_dialog_title">Czy chcesz kontynuować?</string>
     <string name="revanced_extended_restart_first_run">Uruchom ponownie, aby wczytać poprawnie układ aplikacji</string>
     <string name="revanced_extended_restart_title">Wymagane ponowne uruchomienie</string>
@@ -45,6 +51,7 @@ Pobierz %2$s ze strony internetowej."</string>
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Usuń z kolejki i odśwież film</string>
     <string name="revanced_queue_manager_remove_queue">Usuń kolejkę</string>
     <string name="revanced_queue_manager_save_queue">Zapisz kolejkę</string>
+    <string name="revanced_queue_manager_show_original_video_information">Pokaż oryginalne informacje o filmie</string>
     <string name="revanced_queue_manager_user_dialog_message">"Zamiast otwierać zewnętrzną aplikację od pobierania, otwiera okno menedżera kolejki.
 
 Możesz również otworzyć menedżer kolejek poprzez kliknięcie i przytrzymanie przycisku cofania na pasku nawigacyjnym.
@@ -52,6 +59,26 @@ Możesz również otworzyć menedżer kolejek poprzez kliknięcie i przytrzymani
 Funkcja jest nadal rozwijana, więc większość funkcji może nie działać.
 
 Proszę używać tej funkcji wyłącznie w celach debugowania."</string>
+    <string name="revanced_queue_manager_video_information">Informacje o filmie</string>
+    <string name="revanced_queue_manager_video_information_copy">Kopiuj</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Kanał
+══════════════
+%1$s
+
+Tytuł
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Kanał
+══════════════
+%1$s
+
+Tytuł
+══════════════
+%2$s
+
+Opis
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Wymagane logowanie</string>
     <string name="revanced_queue_manager_check_failed_generic">Menedżer kolejki jest niedostępny (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Nie można zidentyfikować playlisty</string>
@@ -62,11 +89,13 @@ Proszę używać tej funkcji wyłącznie w celach debugowania."</string>
     <string name="revanced_queue_manager_fetch_failed_delete">Nie udało się usunąć kolejki.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">Nie udało się usunąć filmu.</string>
     <string name="revanced_queue_manager_fetch_failed_save">Nie udało się zapisać kolejki.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Nie udało się zdobyć informacji o filmie.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">Pomyślnie dodano film.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">Pomyślnie utworzono kolejkę.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">Pomyślnie usunięto kolejkę.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">Pomyślnie usunięto film.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Pomyślnie zapisano kolejkę do \'%s\'.</string>
+    <string name="revanced_share_copy_video_information_success">Skopiowano informacje o filmie.</string>
     <string name="revanced_language_title">Język RVX</string>
     <string name="revanced_language_DEFAULT">Język aplikacji</string>
     <string name="revanced_language_AM">"Amharski
@@ -334,7 +363,7 @@ Stuknij tutaj, aby dowiedzieć się więcej o DeArrow."</string>
     <string name="revanced_hide_carousel_shelf_search_summary_on">Ukryte</string>
     <string name="revanced_hide_carousel_shelf_search_summary_off">Widoczne</string>
     <string name="revanced_hide_carousel_shelf_about_title">O półkach karuzelowych</string>
-    <string name="revanced_hide_carousel_shelf_about_summary">Przykłady półek karuzelowych:&lt;br&gt;&lt;br&gt;&lt;b&gt;Najważniejsze wiadomości&lt;/b&gt;, &lt;b&gt;Kontynuuj oglądanie&lt;/b&gt;, &lt;b&gt;Odkryj więcej kanałów&lt;/b&gt;, &lt;b&gt;Posłuchaj jeszcze raz&lt;/b&gt;, &lt;b&gt;Najbardziej istotne&lt;/b&gt;, &lt;b&gt;Zakupy&lt;/b&gt;, &lt;b&gt;Obejrzyj ponownie&lt;/b&gt;</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Przykłady półek karuzelowych:&lt;br&gt;&lt;br&gt;&lt;b&gt;Najważniejsze wiadomości&lt;/b&gt;, &lt;b&gt;Kontynuuj oglądanie&lt;/b&gt;, &lt;b&gt;Odkryj więcej kanałów&lt;/b&gt;, &lt;b&gt;Dla Ciebie&lt;/b&gt;, &lt;b&gt;Posłuchaj jeszcze raz&lt;/b&gt;, &lt;b&gt;Najbardziej istotne&lt;/b&gt;, &lt;b&gt;Zakupy&lt;/b&gt;, &lt;b&gt;Obejrzyj ponownie&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Pasek kategorii</string>
     <string name="revanced_preference_screen_category_bar_summary">Ukryj lub pokazuj pasek z kategoriami na stronie głównej, nad wynikami wyszukiwania, powiązanymi filmami i historią wyszukiwania</string>
@@ -361,9 +390,6 @@ Stuknij tutaj, aby dowiedzieć się więcej o DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shortsy
 Playlisty
 Sklep"</string>
-    <string name="revanced_hide_for_you_shelf_title">Półka \'Dla Ciebie\'</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Ukryta</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Widoczna</string>
     <string name="revanced_hide_links_preview_title">Podgląd linków</string>
     <string name="revanced_hide_links_preview_summary_on">Ukryty</string>
     <string name="revanced_hide_links_preview_summary_off">Widoczny</string>
@@ -498,7 +524,6 @@ Ograniczenie: Przycisk wstecz na pasku narzędzi może nie działać."</string>
     <string name="revanced_disable_auto_audio_tracks_title">Automatyczne wymuszanie ścieżki dźwiękowej</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Wyłączone</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Włączone</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Aby używać tej funkcji, zmień domyślnego klienta (oszukiwanie strumienia danych) na TV lub iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Automatyczne wymuszanie napisów</string>
     <string name="revanced_disable_auto_captions_summary_on">Wyłączone</string>
     <string name="revanced_disable_auto_captions_summary_off">Włączone</string>
@@ -1070,9 +1095,6 @@ Ograniczenie: niektóre najciekawsze wyniki wyszukiwania w postaci linków, któ
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Menu od ścieżki dźwiękowej</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Ukryte</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Widoczne</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Menu od ścieżki dźwiękowej jest ukryte.
-
-Aby wyświetlało się menu od ścieżki dźwiękowej, zmień domyślnego klienta (oszukiwanie strumienia danych) na TV lub iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Menu od napisów</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Ukryte</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Widoczne</string>
@@ -1781,6 +1803,8 @@ Dostosuj głośność, przesuwając pionowo po prawej stronie ekranu."</string>
 • Odtwarzanie filmów wykorzystuje więcej danych internetowych niż VP9
 • Kodek VP9 jest używany do filmów z HDR"</string>
     <string name="revanced_disable_vp9_codec_summary_off">Włączone</string>
+    <string name="revanced_enable_opus_codec_title">Włącz kodek OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">Włącza kodek OPUS, jeśli odpowiedź odtwarzacza zawiera ten kodek.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Prędkość odtwarzania</string>
     <string name="revanced_default_playback_speed_title">Domyślna prędkość odtwarzania</string>
@@ -2130,8 +2154,6 @@ Stuknij przycisk kontynuacji i zezwól na zmiany w optymalizacji."</string>
     <string name="revanced_change_share_sheet_title">Wygląd panelu udostępniania</string>
     <string name="revanced_change_share_sheet_summary_on">Systemowy</string>
     <string name="revanced_change_share_sheet_summary_off">Aplikacji</string>
-    <string name="revanced_enable_opus_codec_title">Włącz kodek OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Włącza kodek OPUS, jeśli odpowiedź odtwarzacza zawiera ten kodek.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Debugowanie</string>
     <string name="revanced_preference_screen_debugging_summary">Włącz lub wyłącz opcje debugowania</string>
@@ -2194,7 +2216,7 @@ Jeśli jesteś użytkownikiem YouTube Premium lub odznaczono przy łataniu 'GmsC
 <small>(Wymagane zalogowanie)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
-<small>(Wymagane zalogowanie)</small>"</string>
+<small>(Bez autoryzacji)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
 <small>(Wymagane zalogowanie)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobilny przeglądarkowy
@@ -2294,8 +2316,8 @@ Funkcja jest nadal w fazie rozwoju, więc może przerwać się jej działanie w 
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Włączenie tego może poprawić czas pracy baterii i naprawić zacinanie się odtwarzacza.
 
 AVC obsługuje maksymalnie rozdzielczość 1080p, kodek audio OPUS nie jest dostępny, a odtwarzanie wideo będzie zużywać więcej danych internetowych niż VP9 lub AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
-    <string name="revanced_preference_category_js">JavaScript (w fazie rozwoju)</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
+    <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Włącz klienta JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">Tak</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">Nie</string>
@@ -2303,7 +2325,7 @@ AVC obsługuje maksymalnie rozdzielczość 1080p, kodek audio OPUS nie jest dost
 
 Wzorzec n-sig zmienia się dość często na serwerach YouTube, a odtwarzanie może się nie powieść, jeśli wyrażenie regularne nie znajdzie takowego wzorca.
 
-Ta funkcja jest nadal w rozwoju, więc używaj jej tylko w celach debugowania."</string>
+Spośród klientów JavaScript, rekomendowanym klientem jest Uproszczony TV."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Włącz klienta JavaScript na wszystkie filmy</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"Tak
 

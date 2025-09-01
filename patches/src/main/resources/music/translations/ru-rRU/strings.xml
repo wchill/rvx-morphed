@@ -37,6 +37,8 @@
     <string name="revanced_hide_action_button_song_video_title">Скрыть кнопку Песня / Видео</string>
     <string name="revanced_hide_action_button_song_video_summary">"Скрывает кнопку Песня/Видео.
 (Эта кнопка доступна только некоторым пользователям)"</string>
+    <string name="revanced_hide_action_button_disabled_title">Скрыть кнопку отключения</string>
+    <string name="revanced_hide_action_button_disabled_summary">Скрывает отключенные кнопки, например отключенную кнопку \"Комментарии\".</string>
     <string name="revanced_hide_action_button_label_title">Скрыть подписи кнопок действий</string>
     <string name="revanced_hide_action_button_label_summary">Скрывает подписи на кнопках действий.</string>
     <string name="revanced_external_downloader_action_title">Подменить кнопку \"Скачать\"</string>
@@ -73,13 +75,13 @@
     <string name="revanced_hide_promotion_alert_banner_title">Скрыть баннер с уведомлением о промо акции</string>
     <string name="revanced_hide_promotion_alert_banner_summary">Скрывает баннер с уведомлением о промо акции.</string>
     <!-- PreferenceScreen: Flyout menu -->
-    <string name="revanced_preference_screen_flyout_title">Выдвижное меню</string>
-    <string name="revanced_enable_trim_silence_title">Включить обрезание тишины</string>
-    <string name="revanced_enable_trim_silence_summary">"Включает переключатель \"Обрезать тишину\" во всплывающем меню скорости воспроизведения.
+    <string name="revanced_preference_screen_flyout_title">Всплывающее меню</string>
+    <string name="revanced_disable_trim_silence_title">Отключить переключатель \"Пропуск тишины\"</string>
+    <string name="revanced_disable_trim_silence_summary">"Отключает переключатель \"Пропуск тишины\" во всплывающем меню скорости воспроизведения.
 
 Информация:
 • Эта функция предназначена для подкастов.
-• Эта функция все еще находится в разработке, поэтому может работать нестабильно."</string>
+• Эта функция всё ещё находится в стадии разработки, поэтому может работать нестабильно."</string>
     <string name="revanced_enable_compact_dialog_title">Компактный вид окна</string>
     <string name="revanced_enable_compact_dialog_summary">"Включает компактное всплывающее меню на телефонах.
 
@@ -259,6 +261,8 @@
     <string name="revanced_disable_player_gesture_summary">Отключает свайп для переключения треков в плеере.</string>
     <string name="revanced_enable_forced_miniplayer_title">Включить миниплеер на постоянной основе</string>
     <string name="revanced_enable_forced_miniplayer_summary">Включает миниплеер на постоянной основе при переходе на новый трек.</string>
+    <string name="revanced_enable_smooth_transition_animation_title">Включить плавную анимацию перехода</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">"Включает плавную анимацию при разворачивании миниплеера из свернутого состояния."</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Включить жест закрытия миниплеера</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Включает жест вниз для закрытия миниплеера.</string>
     <string name="revanced_enable_comments_scroll_top_title">Включить прокрутку к началу в комментариях</string>
@@ -279,6 +283,8 @@
     <string name="revanced_hide_comment_timestamp_and_emoji_buttons_summary">Скрывает кнопки метки времени и эмодзи при вводе комментариев.</string>
     <string name="revanced_hide_fullscreen_share_button_title">Скрыть кнопку \"Поделиться\" в полноэкранном режиме</string>
     <string name="revanced_hide_fullscreen_share_button_summary">Скрывает кнопку \"Поделиться\" в полноэкранном проигрывателе.</string>
+    <string name="revanced_hide_lyrics_share_button_title">Скрыть кнопку \"Поделиться\"</string>
+    <string name="revanced_hide_lyrics_share_button_summary">Скрывает кнопку \"Поделиться\" в текстах.</string>
     <string name="revanced_hide_song_video_toggle_title">Скрыть переключатель \"песня | видео\"</string>
     <string name="revanced_hide_song_video_toggle_summary">Скрывает переключатель \"песня | видео\" в плеере.</string>
     <string name="revanced_remember_repeat_state_title">Запоминать состояние повтора</string>
@@ -308,6 +314,12 @@
     <string name="revanced_preference_screen_video_title">Видео</string>
     <string name="revanced_custom_playback_speeds_title">Изменить скорости</string>
     <string name="revanced_custom_playback_speeds_summary">Настройте доступные скорости воспроизведения.</string>
+    <string name="revanced_enable_opus_codec_title">Кодек Opus</string>
+    <string name="revanced_enable_opus_codec_summary">"Включает аудио кодек opus вместо аудио кодека mp4a.
+
+Информация:
+• Последние Android клиенты используют аудио кодек opus по умолчанию.
+• Эта функция подходит только для очень старых клиентов."</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Запоминать изменения скорости</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Запоминает последнюю выбранную скорость воспроизведения.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Показывать всплывающее уведомление</string>
@@ -460,32 +472,41 @@
     <string name="revanced_debug_protobuffer_summary">Включает протобуфер в журнал отладки.</string>
     <string name="revanced_debug_spannable_title">Охват журнала</string>
     <string name="revanced_debug_spannable_summary">Включает охват в журнал отладки.</string>
-    <string name="revanced_enable_opus_codec_title">Кодек Opus</string>
-    <string name="revanced_enable_opus_codec_summary">"Включает аудио кодек opus вместо аудио кодека mp4a.
-
-Информация:
-• Последние Android клиенты используют аудио кодек opus по умолчанию.
-• Эта функция подходит только для очень старых клиентов."</string>
     <string name="revanced_sanitize_sharing_links_title">Подчищать ссылки</string>
     <string name="revanced_sanitize_sharing_links_summary">Убирает параметры отслеживания запросов из адресов при отправке ссылки.</string>
     <string name="revanced_spoof_client_title">Подмена клиента</string>
+    <string name="revanced_spoof_client_summary">Подменяет клиент для предотвращения проблем с воспроизведением.
+
+Побочный эффект:
+• Кнопки действий могут быть всегда скрыты в YouTube Music 7.17+.
+• Всплывающее меню плеера может отображаться некорректно.
+• Эти побочные эффекты можно устранить, очистив данные приложения и повторно войдя в систему.</string>
     <string name="revanced_spoof_client_type_title">Клиент по умолчанию</string>
-    <string name="revanced_spoof_client_type_summary">Определяет клиент по умолчанию для подмены.</string>
+    <string name="revanced_spoof_client_type_summary">"Определяет клиент по умолчанию для подмены."</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34">iOS Music 8.34</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_6_21_block_requst">iOS Music 6.21 (Блокировка запросов)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_7_04_block_requst">iOS Music 7.04 (Блокировка запросов)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_12_block_requst">iOS Music 8.12 (Блокировка запросов)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34_block_requst">iOS Music 8.34 (Блокировка запросов)</string>
     <string name="revanced_spoof_video_streams_title">Подменить видеопотоки</string>
-    <string name="revanced_spoof_video_streams_summary">"Подменять клиентские видеопотоки для предотвращения проблем с воспроизведением.
+    <string name="revanced_spoof_video_streams_summary">Подменять клиентские видеопотоки для предотвращения проблем с воспроизведением.
 
 Побочный эффект:
 • Приложение может принудительно закрываться при использовании VPN или DNS.
-• Звук может периодически прерываться во время воспроизведения на клиентах потоковой передачи с адаптивным битрейтом (все клиенты, кроме Android VR 1.43.32)."</string>
+• Звук может периодически прерываться во время воспроизведения на клиентах потоковой передачи с адаптивным битрейтом (все клиенты, кроме Android VR 1.43.32).</string>
     <string name="revanced_spoof_video_streams_default_client_title">Клиент по умолчанию</string>
-    <string name="revanced_spoof_video_streams_default_client_summary">Определяет клиент по умолчанию для подмены.</string>
+    <string name="revanced_spoof_video_streams_default_client_summary">"Определяет клиент по умолчанию для подмены."</string>
     <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32">Android VR 1.43.32</string>
     <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09">Android VR 1.65.09</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32_no_auth">Android VR 1.43.32 (Без авторизации)</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09_no_auth">Android VR 1.65.09 (Без авторизации)</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_watch_history_type_title">Тип истории просмотра</string>
     <string name="revanced_watch_history_type_summary">"• Оригинальный: Соответствует настройкам истории просмотров аккаунта Google, но история просмотров может не работать через DNS или VPN.
 • Заменить домен: Настройка истории просмотров аккаунта Google.
@@ -509,4 +530,8 @@
 
 Нажмите кнопку \"Продолжить\" и отключите оптимизацию батареи."</string>
     <string name="gms_core_dialog_continue_text">Продолжить</string>
+    <string name="revanced_app_info_title">О приложении</string>
+    <string name="revanced_app_info_summary">Нажмите для проверки названия, версии, патча и когда пропатчено.</string>
+    <string name="revanced_app_info_dialog_title">Информация о приложении</string>
+    <string name="revanced_app_info_dialog_message">&lt;b&gt;Название&lt;/b&gt;&lt;br&gt;&lt;small&gt;%1$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Версия&lt;/b&gt;&lt;br&gt;&lt;small&gt;%2$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;ReVanced Патчи&lt;/b&gt;&lt;br&gt;&lt;small&gt;%3$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Пропатчено&lt;/b&gt;&lt;br&gt;&lt;small&gt;%4$s&lt;/small&gt;</string>
 </resources>

@@ -1,3 +1,5 @@
+@file:Suppress("CONTEXT_RECEIVERS_DEPRECATED")
+
 package app.revanced.patches.music.utils.fix.streamingdata
 
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
@@ -20,7 +22,6 @@ import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
-import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
@@ -35,34 +36,14 @@ private const val EXTENSION_STREAMING_DATA_INTERFACE =
 context(BytecodePatchContext)
 internal fun patchSpoofVideoStreams() {
 
-    // region Block /initplayback requests to fall back to /get_watch requests.
-
-    buildInitPlaybackRequestFingerprint.methodOrThrow().apply {
-        val index = indexOfUriToStringInstruction(this) + 1
-        val register =
-            getInstruction<OneRegisterInstruction>(index).registerA
-
-        addInstructions(
-            index + 1,
-            """
-                invoke-static { v$register }, $EXTENSION_CLASS_DESCRIPTOR->blockInitPlaybackRequest(Ljava/lang/String;)Ljava/lang/String;
-                move-result-object v$register
-                """,
-        )
-    }
-
-    // endregion
-
     buildRequestFingerprint.methodOrThrow(buildRequestParentFingerprint).apply {
         val newRequestBuilderIndex = indexOfNewUrlRequestBuilderInstruction(this)
         val urlRegister =
             getInstruction<FiveRegisterInstruction>(newRequestBuilderIndex).registerD
 
         addInstructions(
-            newRequestBuilderIndex, """
-                invoke-static { v$urlRegister, p1 }, $EXTENSION_CLASS_DESCRIPTOR->blockGetWatchRequest(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
-                move-result-object v$urlRegister
-                """
+            newRequestBuilderIndex,
+            "invoke-static { v$urlRegister, p1 }, $EXTENSION_CLASS_DESCRIPTOR->fetchStreams(Ljava/lang/String;Ljava/util/Map;)V"
         )
     }
 
@@ -201,34 +182,10 @@ internal fun patchSpoofVideoStreams() {
 
     // endregion
 
-    // region Remove /videoplayback request body to fix playback.
-
-    buildMediaDataSourceFingerprint.methodOrThrow().apply {
-        val targetIndex = instructions.lastIndex
-
-        addInstructions(
-            targetIndex,
-            """
-                # Field a: Stream uri.
-                # Field c: Http method.
-                # Field d: Post data.
-                move-object/from16 v0, p0
-                iget-object v1, v0, $definingClass->a:Landroid/net/Uri;
-                iget v2, v0, $definingClass->c:I
-                iget-object v3, v0, $definingClass->d:[B
-                invoke-static { v1, v2, v3 }, $EXTENSION_CLASS_DESCRIPTOR->removeVideoPlaybackPostBody(Landroid/net/Uri;I[B)[B
-                move-result-object v1
-                iput-object v1, v0, $definingClass->d:[B
-                """,
-        )
-    }
-
     hlsCurrentTimeFingerprint.injectLiteralInstructionBooleanCall(
         HLS_CURRENT_TIME_FEATURE_FLAG,
         "$EXTENSION_CLASS_DESCRIPTOR->fixHLSCurrentTime(Z)Z"
     )
-
-    // endregion
 
     // region Skip response encryption in OnesiePlayerRequest
 

@@ -17,6 +17,7 @@ import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ExecutionException;
@@ -41,25 +42,41 @@ import app.revanced.extension.shared.utils.Utils;
  */
 public class StreamingDataRequest {
 
+    private static final List<ClientType> AVAILABLE_CLIENT_TYPES = List.of(
+            ClientType.IOS_MUSIC_8_34,
+            ClientType.IOS_MUSIC_8_12,
+            ClientType.IOS_MUSIC_7_04,
+            ClientType.IOS_MUSIC_6_21,
+            ClientType.ANDROID_VR_1_43_32,
+            ClientType.ANDROID_VR_1_43_32_NO_AUTH,
+            ClientType.ANDROID_VR_1_65_09,
+            ClientType.ANDROID_VR_1_65_09_NO_AUTH
+    );
     private static final ClientType[] CLIENT_ORDER_TO_USE;
 
     static {
-        ClientType[] allClientTypes = ClientType.values();
         ClientType preferredClient = Settings.SPOOF_VIDEO_STREAMS_DEFAULT_CLIENT.get();
 
-        CLIENT_ORDER_TO_USE = new ClientType[allClientTypes.length];
+        if (!AVAILABLE_CLIENT_TYPES.contains(preferredClient)) {
+            Settings.SPOOF_VIDEO_STREAMS_DEFAULT_CLIENT.resetToDefault();
+            preferredClient = Settings.SPOOF_VIDEO_STREAMS_DEFAULT_CLIENT.defaultValue;
+        }
+
+        CLIENT_ORDER_TO_USE = new ClientType[AVAILABLE_CLIENT_TYPES.size()];
         CLIENT_ORDER_TO_USE[0] = preferredClient;
 
         int i = 1;
-        for (ClientType c : allClientTypes) {
+        for (ClientType c : AVAILABLE_CLIENT_TYPES) {
             if (c != preferredClient) {
                 CLIENT_ORDER_TO_USE[i++] = c;
             }
         }
     }
 
+    private static final String AUTHORIZATION_HEADER = "Authorization";
+
     private static final String[] REQUEST_HEADER_KEYS = {
-            "Authorization", // Available only to logged-in users.
+            AUTHORIZATION_HEADER, // Available only to logged-in users.
             "X-GOOG-API-FORMAT-VERSION",
             "X-Goog-Visitor-Id"
     };
@@ -126,6 +143,14 @@ public class StreamingDataRequest {
                 String value = playerHeaders.get(key);
 
                 if (value != null) {
+                    if (key.equals(AUTHORIZATION_HEADER)) {
+                        if (!clientType.useAuth) {
+                            Logger.printDebug(() -> "Not including request header: " + key);
+                            continue;
+                        }
+                    }
+
+                    Logger.printDebug(() -> "Including request header: " + key);
                     connection.setRequestProperty(key, value);
                 }
             }

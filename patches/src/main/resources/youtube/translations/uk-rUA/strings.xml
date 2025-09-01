@@ -8,6 +8,12 @@
     <string name="revanced_extended_settings_search_title">Пошук %s</string>
     <string name="revanced_extended_reset_to_default_toast">Скинуто.</string>
     <string name="revanced_preference_category_experimental_flag">Експериментальні опції</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"Це налаштування наразі недоступне.
+Щоб скористатися цією функцією, змініть 'Основний клієнт (Підробка даних трансляції)' на iOS TV, TV або Простий TV.
+
+Примітка:
+• iOS TV не підтримує відтворення деяких відео, наприклад, музичних відео.
+• Отже, якщо Основний клієнт вибрано iOS TV, це налаштування може не працювати для деяких відео."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Впевнені, що бажаєте продовжити?</string>
     <string name="revanced_extended_restart_first_run">Перезапустіть, щоб нормально завантажився макет</string>
     <string name="revanced_extended_restart_title">Потрібно перезапустити</string>
@@ -45,6 +51,7 @@
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Видалити з черги та перевантажити відео</string>
     <string name="revanced_queue_manager_remove_queue">Вилучити чергу</string>
     <string name="revanced_queue_manager_save_queue">Зберегти чергу</string>
+    <string name="revanced_queue_manager_show_original_video_information">Показувати оригінальну інформацію про відео</string>
     <string name="revanced_queue_manager_user_dialog_message">"Замість відкривання зовнішнього завантажувача відкриває діалог керування чергою.
 
 Також можливо відкрити керування чергою натисканням та утриманням кнопки назад на панелі навігації.
@@ -52,6 +59,26 @@
 Ця функція все ще перебуває в процесі розробки, тому більшість функцій не працюють.
 
 Будь ласка, використовуйте її лише для налагодження."</string>
+    <string name="revanced_queue_manager_video_information">Інформація про відео</string>
+    <string name="revanced_queue_manager_video_information_copy">Копіювати</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Канал
+══════════════
+%1$s
+
+Назва
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Канал
+══════════════
+%1$s
+
+Назва
+══════════════
+%2$s
+
+Опис
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Необхідна авторизація</string>
     <string name="revanced_queue_manager_check_failed_generic">Керування чергою недоступне (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Не вдалося ідентифікувати список відтворення</string>
@@ -62,11 +89,13 @@
     <string name="revanced_queue_manager_fetch_failed_delete">Не вдалося видалити чергу.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">Не вдалося вилучити відео.</string>
     <string name="revanced_queue_manager_fetch_failed_save">Не вдалося зберегти чергу.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Не вдалося отримати інформацію про відео.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">Відео додано успішно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">Чергу створено успішно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">Чергу видалено успішно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">Відео вилучено успішно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Чергу збережено успішно до: \'%s\'.</string>
+    <string name="revanced_share_copy_video_information_success">Інформацію про відео скопійовано в буфер обміну.</string>
     <string name="revanced_language_title">Мова RVX</string>
     <string name="revanced_language_DEFAULT">Мова додатка</string>
     <string name="revanced_language_AM">"Амхарська
@@ -334,7 +363,7 @@
     <string name="revanced_hide_carousel_shelf_search_summary_on">Приховано у результатах пошуку.</string>
     <string name="revanced_hide_carousel_shelf_search_summary_off">Показується у результатах пошуку.</string>
     <string name="revanced_hide_carousel_shelf_about_title">Про карусельну полицю</string>
-    <string name="revanced_hide_carousel_shelf_about_summary">Приклади карусельних полиць:&lt;br&gt;&lt;br&gt;&lt;b&gt;Важливі новини&lt;/b&gt;, &lt;b&gt;Продовжити перегляд&lt;/b&gt;, &lt;b&gt;Переглянути більше каналів&lt;/b&gt;, &lt;b&gt;Прослухати знову&lt;/b&gt;, &lt;b&gt;Найактуальніші&lt;/b&gt;, &lt;b&gt;Покупки&lt;/b&gt;, &lt;b&gt;Переглянути ще раз&lt;/b&gt;</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Приклади карусельних полиць:&lt;br&gt;&lt;br&gt;&lt;b&gt;Важливі новини&lt;/b&gt;, &lt;b&gt;Продовжити перегляд&lt;/b&gt;, &lt;b&gt;Переглянути більше каналів&lt;/b&gt;, &lt;b&gt;;Для Вас&lt;/b&gt;, &lt;b&gt;Прослухати знову&lt;/b&gt;, &lt;b&gt;Найактуальніші&lt;/b&gt;, &lt;b&gt;Покупки&lt;/b&gt;, &lt;b&gt;Переглянути ще раз&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Панель категорій</string>
     <string name="revanced_preference_screen_category_bar_summary">Приховувати чи показувати панель категорій у стрічці, пошуку та пов\'язаних відео.</string>
@@ -361,9 +390,6 @@
     <string name="revanced_hide_channel_tab_filter_strings_hint">"YouTube Shorts
 Списки відтворення
 Магазин"</string>
-    <string name="revanced_hide_for_you_shelf_title">Приховати полицю \'Для вас\'</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Полицю \'Для вас\' приховано.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Полицю \'Для вас\' показується.</string>
     <string name="revanced_hide_links_preview_title">Приховати попередній перегляд посилань</string>
     <string name="revanced_hide_links_preview_summary_on">Попередній перегляд посилань приховано.</string>
     <string name="revanced_hide_links_preview_summary_off">Попередній перегляд посилань показується.</string>
@@ -498,7 +524,6 @@
     <string name="revanced_disable_auto_audio_tracks_title">Вимкнути примусові автоматичні звукові доріжки</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Примусові автоматичні звукові доріжки вимкнено.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Примусові автоматичні звукові доріжки увімкнено.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Щоб скористатися цією функцією, змініть \'Основний клієнт (Підробка даних трансляції)\' на TV або iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Вимкнути примусові авто субтитри</string>
     <string name="revanced_disable_auto_captions_summary_on">Примусові авто субтитри вимкнено.</string>
     <string name="revanced_disable_auto_captions_summary_off">Примусові авто субтитри увімкнено.</string>
@@ -1068,9 +1093,6 @@
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Приховати меню Звукова доріжка</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Меню Звукова доріжка приховано.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Меню Звукова доріжка показується.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Меню Звукова доріжка приховано.
-
-Для показу меню Звукова доріжка, змініть 'Основний клієнт (Підробка даних трансляції)' на TV або iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Приховати меню субтитрів</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Меню субтитрів приховано.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Меню субтитрів показується.</string>
@@ -1783,6 +1805,8 @@
 • Відтворення відео використовуватиме більше інтернет даних ніж VP9.
 • Кодек VP9 все ще використовується для HDR відео."</string>
     <string name="revanced_disable_vp9_codec_summary_off">Кодек VP9 увімкнено.</string>
+    <string name="revanced_enable_opus_codec_title">Увімкнути кодек OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">Вмикає кодек OPUS, якщо відповідь плеєра включає його.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Швидкість відтворення</string>
     <string name="revanced_default_playback_speed_title">Типова швидкість відтворення</string>
@@ -2128,8 +2152,6 @@
     <string name="revanced_change_share_sheet_title">Змінити діалог Поділитися</string>
     <string name="revanced_change_share_sheet_summary_on">Використовується системний діалог поширення.</string>
     <string name="revanced_change_share_sheet_summary_off">Використовується діалог Поділитися додатка.</string>
-    <string name="revanced_enable_opus_codec_title">Увімкнути кодек OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Вмикає кодек OPUS, якщо відповідь плеєра включає його.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Налагодження</string>
     <string name="revanced_preference_screen_debugging_summary">Увімкнути чи вимкнути опції налагодження.</string>
@@ -2292,8 +2314,8 @@
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Увімкнення може зменшити споживання акумулятора та виправити затинання відтворення.
 
 AVC має максимальну роздільну здатність 1080p, аудіокодек Opus недоступний, а відтворення відео використовуватиме більше інтернет-даних, ніж кодек VP9 чи AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
-    <string name="revanced_preference_category_js">JavaScript (ще в розробці)</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
+    <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Використовувати клієнт JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">Клієнт JavaScript доданий до доступних клієнтів.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">Клієнт JavaScript не доданий до доступних клієнтів.</string>
@@ -2301,7 +2323,7 @@ AVC має максимальну роздільну здатність 1080p, �
 
 Шаблон n-sig досить часто змінюється на серверах YouTube, і відтворення може завершитися невдало, якщо regex не вдасться знайти шаблон n-sig.
 
-Ця функція все ще перебуває у стадії розробки, тому, будь ласка, використовуйте її лише з метою налагодження."</string>
+Серед клієнтів JavaScript рекомендується Простий TV."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Використовувати клієнт JavaScript для всіх відео</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"Клієнт JavaScript використовується незалежно від типу відео.
 

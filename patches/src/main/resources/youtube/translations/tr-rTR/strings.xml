@@ -284,9 +284,6 @@ DeArrow hakkında daha fazla bilgi edinmek için buraya dokunun."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Oynatma listeleri
 Mağaza"</string>
-    <string name="revanced_hide_for_you_shelf_title">\'Sizin için\' rafını gizle</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">\'Sizin için\' rafları gizleniyor.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">\'Sizin için\' rafları gizlenmiyor.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Topluluk gönderileri</string>
     <string name="revanced_preference_screen_community_posts_summary">Akıştaki ve kanaldaki topluluk gönderilerini gizleyin veya gösterin.</string>
@@ -1130,6 +1127,8 @@ Sınırlamalar:
     <string name="revanced_disable_hdr_video_title">HDR\'lı videolarda, HDR\'ı devre dışı bırak</string>
     <string name="revanced_disable_hdr_video_summary_on">HDR devre dışı</string>
     <string name="revanced_disable_hdr_video_summary_off">HDR etkin</string>
+    <string name="revanced_enable_opus_codec_title">OPUS kodek bileşenini etkinleştir</string>
+    <string name="revanced_enable_opus_codec_summary">Oynatıcı yanıtı OPUS codec bileşenini içeriyorsa OPUS codec bileşenini etkinleştirin.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_default_playback_speed_title">Varsayılan oynatma hızı</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Oynatma hızı değişimlerini hatırla</string>
@@ -1384,8 +1383,6 @@ Bu uygulamanın çalışması için gereklidir."</string>
 
 Devam düğmesine dokunun ve pil optimizasyonlarını devre dışı bırakın."</string>
     <string name="gms_core_dialog_continue_text">Devam Et</string>
-    <string name="revanced_enable_opus_codec_title">OPUS kodek bileşenini etkinleştir</string>
-    <string name="revanced_enable_opus_codec_summary">Oynatıcı yanıtı OPUS codec bileşenini içeriyorsa OPUS codec bileşenini etkinleştirin.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">Ayarları içe / dışa aktar</string>
@@ -1411,7 +1408,7 @@ Devam düğmesine dokunun ve pil optimizasyonlarını devre dışı bırakın."<
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">İzleme geçmişi</string>
     <string name="revanced_preference_screen_watch_history_summary">İzlemek geçmişi ile alakalı ayarları değiştirir.</string>

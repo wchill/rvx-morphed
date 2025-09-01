@@ -74,12 +74,6 @@ Limitações:
     <string name="revanced_hide_promotion_alert_banner_summary">Oculta o banner de alerta de promoção.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Menu flutuante</string>
-    <string name="revanced_enable_trim_silence_title">Adicionar alternador para Cortar silêncio</string>
-    <string name="revanced_enable_trim_silence_summary">"Adiciona a opção Cortar silêncio ao menu flutuante de velocidade de reprodução.
-
-Informações:
-• Este recurso é para podcasts.
-• Este recurso ainda está em desenvolvimento, portanto pode ser instável."</string>
     <string name="revanced_enable_compact_dialog_title">Ativar diálogo compacto</string>
     <string name="revanced_enable_compact_dialog_summary">"Ativa o menu flutuante compacto em telefones.
 
@@ -310,6 +304,12 @@ Alguns recursos podem não funcionar corretamente no layout antigo do reprodutor
     <string name="revanced_preference_screen_video_title">Vídeo</string>
     <string name="revanced_custom_playback_speeds_title">Editar velocidades de reprodução personalizadas</string>
     <string name="revanced_custom_playback_speeds_summary">Adicionar ou alterar as velocidades de reprodução disponíveis.</string>
+    <string name="revanced_enable_opus_codec_title">Ativar codec OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">"Ativa o codec OPUS se a resposta do reprodutor o incluir.
+
+Informações:
+• Os clientes mais recentes do YouTube Music usam o codec de áudio OPUS por padrão.
+• Isto só é válido para usuários que falsificam com clientes muito antigos."</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Lembrar mudança na velocidade de reprodução</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Lembra a última velocidade de reprodução selecionada.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Exibir uma notificação flutuante</string>
@@ -460,17 +460,11 @@ Limitações: Vídeos infantis não podem ser redirecionados."</string>
     <string name="revanced_debug_protobuffer_summary">Inclui o \"proto buffer\" no registro de debug.</string>
     <string name="revanced_debug_spannable_title">Registro extendido</string>
     <string name="revanced_debug_spannable_summary">Inclui o \"spannable\" no registro de debug.</string>
-    <string name="revanced_enable_opus_codec_title">Ativar codec OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">"Ativa o codec OPUS se a resposta do reprodutor o incluir.
-
-Informações:
-• Os clientes mais recentes do YouTube Music usam o codec de áudio OPUS por padrão.
-• Isto só é válido para usuários que falsificam com clientes muito antigos."</string>
     <string name="revanced_sanitize_sharing_links_title">Limpar links compartilhados</string>
     <string name="revanced_sanitize_sharing_links_summary">Limpa links de compartilhamento removendo parâmetros de consulta de rastreamento.</string>
     <string name="revanced_spoof_client_title">Falsificar cliente</string>
     <string name="revanced_spoof_client_type_title">Cliente padrão</string>
-    <string name="revanced_spoof_client_type_summary">Define um cliente padrão para falsificar.</string>
+    <string name="revanced_spoof_client_type_summary">"Define um cliente padrão para falsificar."</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_watch_history_type_title">Tipo de histórico de exibição</string>

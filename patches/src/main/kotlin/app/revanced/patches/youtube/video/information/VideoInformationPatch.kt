@@ -680,7 +680,15 @@ val videoInformationPatch = bytecodePatch(
             ).let {
                 with(it.method) {
                     val formatStreamIndex = it.patternMatch!!.startIndex + 1
-                    getInstruction<ReferenceInstruction>(formatStreamIndex).reference as MethodReference
+                    val formatStreamResolutionReference =
+                        getInstruction<ReferenceInstruction>(formatStreamIndex).reference as MethodReference
+
+                    addInstructions(
+                        0,
+                        "invoke-static { p0 }, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->setVideoFormat(Ljava/util/List;)V"
+                    )
+
+                    formatStreamResolutionReference
                 }
             }
 
@@ -724,6 +732,28 @@ val videoInformationPatch = bytecodePatch(
                 )
         }
 
+        initFormatStreamFingerprint.methodOrThrow(initFormatStreamParentFingerprint)
+            .apply {
+                val preferredFormatStreamIndex =
+                    indexOfPreferredFormatStreamInstruction(this)
+                val preferredFormatStreamReference =
+                    getInstruction<ReferenceInstruction>(preferredFormatStreamIndex).reference
+                val preferredFormatStreamInstruction =
+                    getInstruction<TwoRegisterInstruction>(preferredFormatStreamIndex)
+                val preferredFormatStreamRegister =
+                    preferredFormatStreamInstruction.registerA
+                val definingClassRegister =
+                    preferredFormatStreamInstruction.registerB
+
+                addInstructions(
+                    preferredFormatStreamIndex + 1, """
+                        invoke-static { v$preferredFormatStreamRegister }, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->getVideoFormat($YOUTUBE_FORMAT_STREAM_MODEL_CLASS_TYPE)$YOUTUBE_FORMAT_STREAM_MODEL_CLASS_TYPE
+                        move-result-object v$preferredFormatStreamRegister
+                        iput-object v$preferredFormatStreamRegister, v$definingClassRegister, $preferredFormatStreamReference
+                        """
+                )
+            }
+
         val initialResolutionField =
             playbackStartParametersToStringFingerprint.originalMethodOrThrow()
                 .findFieldFromToString(", initialPlaybackVideoQualityFixedResolution=")
@@ -752,7 +782,7 @@ val videoInformationPatch = bytecodePatch(
 
                 addInstructionsAtControlFlowLabel(
                     index, """
-                        invoke-static { v$register }, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->removeVideoQualities(Ljava/util/List;)Ljava/util/List;
+                        invoke-static { v$register }, $EXTENSION_VIDEO_QUALITY_CLASS_DESCRIPTOR->removeLowFpsVideoQualities(Ljava/util/List;)Ljava/util/List;
                         move-result-object v$register
                         """
                 )

@@ -8,6 +8,10 @@
     <string name="revanced_extended_settings_search_title">Αναζήτηση %s</string>
     <string name="revanced_extended_reset_to_default_toast">Έγινε επαναφορά στις προεπιλεγμένες τιμές.</string>
     <string name="revanced_preference_category_experimental_flag">Πειραματικές λειτουργίες</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"Αυτή η ρύθμιση δεν είναι διαθέσιμη προς το παρόν.
+Για να χρησιμοποιήσετε αυτή τη λειτουργία, αλλάξτε το «Προεπιλεγμένο πρόγραμμα πελάτη» στις ρυθμίσεις «Παραποίηση δεδομένων ροής» σε iOS TV, TV ή TV Simply.
+
+Σημείωση: Το πρόγραμμα πελάτη iOS TV δεν υποστηρίζει την αναπαραγωγή ορισμένων βίντεο, όπως μουσικών βίντεο. Άρα, αν το προεπιλεγμένο πρόγραμμα πελάτη οριστεί σε iOS TV, αυτή η ρύθμιση μπορεί να μη λειτουργεί σε κάποια βίντεο."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Είστε βέβαιοι ότι θέλετε να συνεχίσετε;</string>
     <string name="revanced_extended_restart_first_run">Επανεκκίνηση ώστε να φορτωθεί σωστά η διάταξη</string>
     <string name="revanced_extended_restart_title">Απαιτείται επανεκκίνηση</string>
@@ -45,6 +49,7 @@
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Αφαίρεση από την ουρά και επαναφόρτωση του βίντεο</string>
     <string name="revanced_queue_manager_remove_queue">Κατάργηση ουράς</string>
     <string name="revanced_queue_manager_save_queue">Αποθήκευση ουράς</string>
+    <string name="revanced_queue_manager_show_original_video_information">Εμφάνιση αρχικών πληροφοριών βίντεο</string>
     <string name="revanced_queue_manager_user_dialog_message">"Αντί να ανοίξετε μια εξωτερική εφαρμογή λήψης, θα ανοίξει το παράθυρο διαχείρισης ουράς.
 
 Μπορείτε επίσης να ανοίξετε τον διαχειριστή ουράς πατώντας παρατεταμένα το κουμπί επιστροφής στη γραμμή πλοήγησης.
@@ -52,6 +57,26 @@
 Αυτή η λειτουργία είναι ακόμη υπό ανάπτυξη, οπότε οι περισσότερες λειτουργίες ενδέχεται να μη λειτουργούν.
 
 Παρακαλούμε χρησιμοποιήστε την για σκοπούς εντοπισμού σφαλμάτων μόνο."</string>
+    <string name="revanced_queue_manager_video_information">Πληροφορίες βίντεο</string>
+    <string name="revanced_queue_manager_video_information_copy">Αντιγραφή</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Κανάλι
+══════════════
+%1$s
+
+Τίτλος
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Κανάλι
+══════════════
+%1$s
+
+Τίτλος
+══════════════
+%2$s
+
+Περιγραφή
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Απαιτείται σύνδεση</string>
     <string name="revanced_queue_manager_check_failed_generic">Διαχειριστής ουράς μη διαθέσιμος (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Αδυναμία αναγνώρισης λίστας αναπαραγωγής</string>
@@ -62,11 +87,13 @@
     <string name="revanced_queue_manager_fetch_failed_delete">Αποτυχία διαγραφής ουράς.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">Αποτυχία αφαίρεσης βίντεο.</string>
     <string name="revanced_queue_manager_fetch_failed_save">Αποτυχία αποθήκευσης της ουράς.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Αποτυχία λήψης πληροφοριών βίντεο.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">Το βίντεο προστέθηκε επιτυχώς.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">Η ουρά δημιουργήθηκε επιτυχώς.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">Η ουρά διαγράφηκε επιτυχώς.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">Το βίντεο αφαιρέθηκε επιτυχώς.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Η ουρά αποθηκεύτηκε επιτυχώς στο \'%s\'.</string>
+    <string name="revanced_share_copy_video_information_success">Οι πληροφορίες βίντεο αντιγράφηκαν στο πρόχειρο.</string>
     <string name="revanced_language_title">Γλώσσα ρυθμίσεων RVX</string>
     <string name="revanced_language_DEFAULT">Γλώσσα εφαρμογής</string>
     <string name="revanced_language_AM">"Αμχαρικά
@@ -332,7 +359,7 @@
     <string name="revanced_hide_carousel_shelf_search_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_carousel_shelf_search_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_carousel_shelf_about_title">Σχετικά με την ενότητα καρουζέλ προτάσεων</string>
-    <string name="revanced_hide_carousel_shelf_about_summary">Παραδείγματα ενοτήτων καρουζέλ προτάσεων:&lt;br&gt;&lt;br&gt;&lt;b&gt;Έκτακτη είδηση&lt;/b&gt;, &lt;b&gt;Συνέχεια παρακολούθησης&lt;/b&gt;, &lt;b&gt;Εξερευνήστε περισσότερα κανάλια&lt;/b&gt;, &lt;b&gt;Ακούστε ξανά&lt;/b&gt;, &lt;b&gt;Πιο σχετικά&lt;/b&gt;, &lt;b&gt;Shopping&lt;/b&gt;, &lt;b&gt;Παρακολουθήστε ξανά&lt;/b&gt;</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Παραδείγματα ενοτήτων καρουζέλ προτάσεων:&lt;br&gt;&lt;br&gt;&lt;b&gt;Έκτακη είδηση&lt;/b&gt;, &lt;b&gt;Συνέχεια παρακολούθησης&lt;/b&gt;, &lt;b&gt;Εξερευνήστε περισσότερα κανάλια&lt;/b&gt;, &lt;b&gt;Για εσάς&lt;/b&gt;, &lt;b&gt;Ακούστε ξανά&lt;/b&gt;, &lt;b&gt;Πιο σχετικά&lt;/b&gt;, &lt;b&gt;Shopping&lt;/b&gt;, &lt;b&gt;Παρακολούθηση ξανά&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Γραμμή κατηγοριών</string>
     <string name="revanced_preference_screen_category_bar_summary">Απόκρυψη ή εμφάνιση της γραμμής κατηγοριών στις ροές, στα σχετικά βίντεο, στα αποτελέσματα αναζήτησης και στο ιστορικό παρακολούθησης.</string>
@@ -359,9 +386,6 @@
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Playlists
 Κοινότητα"</string>
-    <string name="revanced_hide_for_you_shelf_title">Ενότητα «Για εσάς»</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">Κρυμμένη.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_links_preview_title">Προεπισκόπηση συνδέσμων</string>
     <string name="revanced_hide_links_preview_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_links_preview_summary_off">Εμφανίζεται.</string>
@@ -494,7 +518,6 @@ Playlists
     <string name="revanced_disable_auto_audio_tracks_title">Απενεργοποίηση υποχρεωτικών κομματιών ήχου</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Τα υποχρεωτικά κομμάτια ήχου είναι απενεργοποιημένα.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Τα υποχρεωτικά κομμάτια ήχου είναι ενεργοποιημένα.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">Για να χρησιμοποιήσετε αυτή τη λειτουργία, πρέπει να γίνει αλλαγή του προεπιλεγμένου προγράμματος πελάτη σε TV ή iOS TV στις ρυθμίσεις «Παραποίηση δεδομένων ροής».</string>
     <string name="revanced_disable_auto_captions_title">Απενεργοποίηση υποχρεωτικών αυτόματων υπότιτλων</string>
     <string name="revanced_disable_auto_captions_summary_on">Οι υποχρεωτικοί αυτόματοι υπότιτλοι είναι απενεργοποιημένοι.</string>
     <string name="revanced_disable_auto_captions_summary_off">Οι υποχρεωτικοί αυτόματοι υπότιτλοι εμφανίζονται.</string>
@@ -617,8 +640,8 @@ Playlists
     <string name="revanced_custom_filter_strings_summary">Λίστα από συμβολοσειρές στοιχείων που θα φιλτραριστούν, διαχωρισμένες με νέες γραμμές.</string>
     <string name="revanced_custom_filter_toast_invalid_syntax">Μη έγκυρο φίλτρο: %s.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Hook buttons -->
-    <string name="revanced_preference_screen_hook_buttons_title">Μετατροπή κουμπιών</string>
-    <string name="revanced_preference_screen_hook_buttons_summary">Αλλαγή λειτουργίας κατά το πάτημα των ενσωματωμένων κουμπιών της εφαρμογής.</string>
+    <string name="revanced_preference_screen_hook_buttons_title">Αλλαγή λειτουργίας κουμπιών</string>
+    <string name="revanced_preference_screen_hook_buttons_summary">Αλλαγή λειτουργίας των ενσωματωμένων κουμπιών της εφαρμογής κατά το πάτημά τους.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Hook buttons, PreferenceCategory: Download button -->
     <string name="revanced_preference_category_download_button">Κουμπί «Λήψη»</string>
     <string name="revanced_override_playlist_download_button_title">Αλλαγή λειτουργίας κουμπιού λήψης λίστας αναπαραγωγής</string>
@@ -1054,17 +1077,14 @@ Playlists
     <string name="revanced_preference_screen_player_flyout_menu_title">Αναδυόμενο μενού ρυθμίσεων</string>
     <string name="revanced_preference_screen_player_flyout_menu_summary">Απόκρυψη ή αλλαγή στοιχείων του αναδυόμενου μενού της οθόνης αναπαραγωγής βίντεο.</string>
     <string name="revanced_change_player_flyout_menu_toggle_title">Τύπος εναλλαγής ρυθμίσεων</string>
-    <string name="revanced_change_player_flyout_menu_toggle_summary_on">Εμφανίζονται εναλλαγές κειμένου.</string>
-    <string name="revanced_change_player_flyout_menu_toggle_summary_off">Εμφανίζονται εναλλαγές διακόπτη.</string>
+    <string name="revanced_change_player_flyout_menu_toggle_summary_on">Χρησιμοποιούνται εναλλαγές κειμένου.</string>
+    <string name="revanced_change_player_flyout_menu_toggle_summary_off">Χρησιμοποιούνται εναλλαγές διακοπτών.</string>
     <string name="revanced_hide_player_flyout_menu_enhanced_bitrate_title">Μενού επιλογής ποιότητας 1080p Premium</string>
     <string name="revanced_hide_player_flyout_menu_enhanced_bitrate_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_player_flyout_menu_enhanced_bitrate_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Μενού «Κομμάτι ήχου»</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Εμφανίζεται.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Κρυμμένο.
-
-Για να εμφανίζεται το μενού «Κομμάτι ήχου», πρέπει να γίνει αλλαγή του προεπιλεγμένου προγράμματος πελάτη σε TV ή iOS TV στις ρυθμίσεις «Παραποίηση δεδομένων ροής»."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Μενού «Υπότιτλοι»</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Εμφανίζεται.</string>
@@ -1788,6 +1808,8 @@ Playlists
 • Η αναπαραγωγή βίντεο θα χρησιμοποιεί περισσότερα δεδομένα Internet από τον VP9.
 • Για την αναπαραγωγή βίντεο τύπου HDR, ο κωδικοποιητής VP9 εξακολουθεί να χρησιμοποιείται."</string>
     <string name="revanced_disable_vp9_codec_summary_off">Ο κωδικοποιητής VP9 είναι ενεργοποιημένος.</string>
+    <string name="revanced_enable_opus_codec_title">Ενεργοποίηση κωδικοποιητή OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">Ενεργοποίηση του κωδικοποιητή OPUS αν η ανταπόκριση του προγράμματος αναπαραγωγής τον περιλαμβάνει.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Ταχύτητα αναπαραγωγής</string>
     <string name="revanced_default_playback_speed_title">Προεπιλεγμένη ταχύτητα αναπαραγωγής</string>
@@ -2138,8 +2160,6 @@ Playlists
     <string name="revanced_change_share_sheet_title">Αλλαγή μενού κοινοποίησης</string>
     <string name="revanced_change_share_sheet_summary_on">Χρησιμοποιείται το μενού κοινοποίηση της συστήματός σας.</string>
     <string name="revanced_change_share_sheet_summary_off">Χρησιμοποιείται το μενού κοινοποίηση της εφαρμογής.</string>
-    <string name="revanced_enable_opus_codec_title">Ενεργοποίηση κωδικοποιητή OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Ενεργοποίηση του κωδικοποιητή OPUS αν η ανταπόκριση του προγράμματος αναπαραγωγής τον περιλαμβάνει.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Εντοπισμός σφαλμάτων</string>
     <string name="revanced_preference_screen_debugging_summary">Ενεργοποίηση ή απενεργοποίηση επιλογών εντοπισμού σφαλμάτων.</string>
@@ -2279,7 +2299,7 @@ Playlists
     <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Απενεργοποίηση κωδικοποιητή VR AV1</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">Ο κωδικοποιητής βίντεο είναι ο AVC (H.264) ή ο VP9.</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">Ο κωδικοποιητής βίντεο ορίζεται αυτόματα.</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_title">Εμφάνιση κουμπιού κομματιού ήχου κατά τη χρήση VR</string>
+    <string name="revanced_spoof_streaming_data_vr_audio_track_button_title">Εμφάνιση κουμπιού κομματιού ήχου VR</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_on">Το κουμπί κομματιού ήχου VR εμφανίζεται.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_off">Το κουμπί κομματιού ήχου VR δεν εμφανίζεται.</string>
     <string name="revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message">"Προαπαιτούμενα:
@@ -2301,16 +2321,16 @@ Playlists
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Η ενεργοποίηση αυτής της λειτουργίας ενδέχεται να βελτιώσει τη διάρκεια ζωής της μπαταρίας και να διορθώσει κολλήματα αναπαραγωγής.
 
 Ο AVC έχει μέγιστη ανάλυση 1080p, ο κωδικοποιητής ήχου Opus δεν είναι διαθέσιμος και η αναπαραγωγή βίντεο θα χρησιμοποιεί περισσότερα δεδομένα ίντερνετ από τον VP9 ή τον AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
-    <string name="revanced_preference_category_js">JavaScript (λειτουργία σε εξέλιξη)</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
+    <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Χρήση προγράμματος πελάτη JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">Το JavaScript προστέθηκε στα διαθέσιμα προγράμματα πελάτη.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">Το JavaScript δεν προστέθηκε στα διαθέσιμα προγράμματα πελάτη.</string>
     <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"Η εφαρμογή χρησιμοποιεί περισσότερους πόρους συστήματος για την εύρεση ή την αποκωδικοποίηση του μοτίβου n-sig, και υπάρχει μια μικρή καθυστέρηση στην έναρξη αναπαραγωγής βίντεο.
 
-Το μοτίβο n-sig αλλάζει αρκετά συχνά στον διακομιστή YouTube, και η αναπαραγωγή βίντεο ενδέχεται να αποτύχει αν ο αλγόριθμος δεν καταφέρει να βρει το μοτίβο n-sig.
+Το μοτίβο n-sig αλλάζει αρκετά συχνά στον διακομιστή YouTube, και η αναπαραγωγή βίντεο μπορεί να αποτύχει αν ο αλγόριθμος δεν καταφέρει να βρει το μοτίβο n-sig.
 
-Αυτή η λειτουργία είναι ακόμη προς ανάπτυξη, επομένως χρησιμοποιήστε τη για σκοπούς εντοπισμού σφαλμάτων μόνο."</string>
+Μεταξύ των προγραμμάτων πελάτη JavaScript, το προτεινόμενο είναι το TV Simply."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Χρήση του προγράμματος πελάτη JavaScript για όλα τα βίντεο</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"Το πρόγραμμα πελάτη JavaScript χρησιμοποιείται ανεξάρτητα από τον τύπο βίντεο.
 

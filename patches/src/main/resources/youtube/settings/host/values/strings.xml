@@ -10,6 +10,11 @@
     <string name="revanced_extended_reset_to_default_toast">Reset to default values.</string>
 
     <string name="revanced_preference_category_experimental_flag">Experimental flags</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"This setting is currently unavailable.
+To use this feature, change 'Default client (Spoof streaming data)' to iOS TV, TV or TV Simply.
+
+Note:
+• iOS TV is not available in some regions, in which case this setting may still not work."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Are you sure you want to proceed?</string>
     <string name="revanced_extended_restart_first_run">Restart to load the layout normally</string>
     <string name="revanced_extended_restart_title">Restart required</string>
@@ -49,6 +54,7 @@ Please download %2$s from the website."</string>
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Remove from queue and reload video</string>
     <string name="revanced_queue_manager_remove_queue">Remove queue</string>
     <string name="revanced_queue_manager_save_queue">Save queue</string>
+    <string name="revanced_queue_manager_show_original_video_information">Show original video information</string>
     <string name="revanced_queue_manager_user_dialog_message">"Instead of opening an external downloader, open the queue manager dialog.
 
 You can also open the queue manager by pressing and holding the back button on the navigation bar.
@@ -56,6 +62,26 @@ You can also open the queue manager by pressing and holding the back button on t
 This feature is still in progress, so most features may not work.
 
 Please use it for debugging purposes only."</string>
+    <string name="revanced_queue_manager_video_information">Video information</string>
+    <string name="revanced_queue_manager_video_information_copy">Copy</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Channel
+══════════════
+%1$s
+
+Title
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Channel
+══════════════
+%1$s
+
+Title
+══════════════
+%2$s
+
+Description
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Login required</string>
     <string name="revanced_queue_manager_check_failed_generic">Queue manager unavailable (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Could not identify playlist</string>
@@ -66,11 +92,13 @@ Please use it for debugging purposes only."</string>
     <string name="revanced_queue_manager_fetch_failed_delete">Failed to delete queue.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">Failed to remove video.</string>
     <string name="revanced_queue_manager_fetch_failed_save">Failed to save queue.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Failed to get video information.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">Video successfully added.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">Queue successfully created.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">Queue successfully deleted.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">Video successfully removed.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Queue successfully saved to \'%s\'.</string>
+    <string name="revanced_share_copy_video_information_success">Video information copied to clipboard.</string>
 
     <string name="revanced_language_title">RVX language</string>
     <string name="revanced_language_DEFAULT">App language</string>
@@ -349,7 +377,7 @@ Tap here to learn more about DeArrow."</string>
     <string name="revanced_hide_carousel_shelf_search_summary_on">Hidden in search results.</string>
     <string name="revanced_hide_carousel_shelf_search_summary_off">Shown in search results.</string>
     <string name="revanced_hide_carousel_shelf_about_title">About carousel shelf</string>
-    <string name="revanced_hide_carousel_shelf_about_summary">Examples of carousel shelves:&lt;br>&lt;br>&lt;b>Breaking news&lt;/b>, &lt;b>Continue watching&lt;/b>, &lt;b>Explore more channels&lt;/b>, &lt;b>Listen again&lt;/b>, &lt;b>Most relevant&lt;/b>, &lt;b>Shopping&lt;/b>, &lt;b>Watch it again&lt;/b></string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Examples of carousel shelves:&lt;br>&lt;br>&lt;b>Breaking news&lt;/b>, &lt;b>Continue watching&lt;/b>, &lt;b>Explore more channels&lt;/b>, &lt;b>For You&lt;/b>, &lt;b>Listen again&lt;/b>, &lt;b>Most relevant&lt;/b>, &lt;b>Shopping&lt;/b>, &lt;b>Watch it again&lt;/b></string>
 
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Category bar</string>
@@ -380,9 +408,6 @@ Tap here to learn more about DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Playlists
 Store"</string>
-    <string name="revanced_hide_for_you_shelf_title">Hide For You shelf</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">For You shelf is hidden.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">For You shelf is shown.</string>
     <string name="revanced_hide_links_preview_title">Hide links preview</string>
     <string name="revanced_hide_links_preview_summary_on">Links preview is hidden.</string>
     <string name="revanced_hide_links_preview_summary_off">Links preview is shown.</string>
@@ -527,7 +552,6 @@ Limitation: Back button on the toolbar may not work."</string>
     <string name="revanced_disable_auto_audio_tracks_title">Disable forced auto audio tracks</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Forced auto audio tracks are disabled.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Forced auto audio tracks are enabled.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">To use this feature, change \'Default client (Spoof streaming data)\' to TV or iOS TV.</string>
     <string name="revanced_disable_auto_captions_title">Disable forced auto captions</string>
     <string name="revanced_disable_auto_captions_summary_on">Forced auto captions are disabled.</string>
     <string name="revanced_disable_auto_captions_summary_off">Forced auto captions are enabled.</string>
@@ -1135,9 +1159,6 @@ Limitation: Some highlighted search links that do not have a default text style 
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Hide Audio track menu</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Audio track menu is hidden.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Audio track menu is shown.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Audio track menu is hidden.
-
-To show the Audio track menu, change \'Default client (Spoof streaming data)\' to TV or iOS TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Hide Captions menu</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Captions menu is hidden.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Captions menu is shown.</string>
@@ -1888,6 +1909,8 @@ Info:
 • Video playback will use more internet data than VP9.
 • VP9 codec is still used for HDR video."</string>
     <string name="revanced_disable_vp9_codec_summary_off">VP9 codec is enabled.</string>
+    <string name="revanced_enable_opus_codec_title">Enable OPUS codec</string>
+    <string name="revanced_enable_opus_codec_summary">Enables the OPUS codec if the player response includes it.</string>
 
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Playback speed</string>
@@ -2272,8 +2295,6 @@ Tap the continue button and allow optimization changes."</string>
     <string name="revanced_change_share_sheet_title">Change share sheet</string>
     <string name="revanced_change_share_sheet_summary_on">System share sheet is used.</string>
     <string name="revanced_change_share_sheet_summary_off">In-app share sheet is used.</string>
-    <string name="revanced_enable_opus_codec_title">Enable OPUS codec</string>
-    <string name="revanced_enable_opus_codec_summary">Enables the OPUS codec if the player response includes it.</string>
 
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Debugging</string>
@@ -2357,10 +2378,12 @@ If you are a YouTube Premium user or have excluded the 'GmsCore support' patch, 
 <small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Spoofing side effects</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Audio track menu is missing.
-• Stable volume is not available.
 • Disable forced auto audio tracks is not available.
+• Stable volume is not available.
 • Kids videos may not play when logged out or in incognito mode."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Stable volume is not available.
+    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Audio track menu may be missing.
+• Disable forced auto audio tracks may not be available.
+• Stable volume is not available.
 • Movies or paid videos may not play.
 • Kids videos may not play when logged out or in incognito mode."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Audio track menu is missing.
@@ -2447,8 +2470,8 @@ This feature is still in development, so it may break at any time due to server-
 
 AVC has a maximum resolution of 1080p, Opus audio codec is not available, and video playback will use more internet data than VP9 or AV1."</string>
 
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
-    <string name="revanced_preference_category_js">JavaScript (WIP)</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
+    <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Use JavaScript client</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">JavaScript client added to the available clients.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">JavaScript client not added to available clients.</string>
@@ -2456,7 +2479,7 @@ AVC has a maximum resolution of 1080p, Opus audio codec is not available, and vi
 
 The n-sig pattern changes quite frequently on YouTube servers, and playback may fail if the regex fails to find the n-sig pattern.
 
-This feature is still WIP, so please use it for debugging purposes only."</string>
+Among JavaScript clients, the recommended client is TV Simply."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Use JavaScript client for all videos</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"JavaScript client is used regardless of video type.
 

@@ -112,7 +112,7 @@ public class AudioTrackPatch extends SpoofStreamingDataPatch {
                 StreamingData streamingData = streamingDataMaps.get(newlyLoadedVideoId);
                 if (streamingData != null) {
                     var audioTracks = StreamingDataOuterClassUtils.getAudioTrackMap(streamingData);
-                    if (MapUtils.isNotEmpty(audioTracks)) {
+                    if (MapUtils.isNotEmpty(audioTracks) && audioTracks.size() > 1) {
                         synchronized (audioTrackMaps) {
                             audioTrackMaps.putIfAbsent(newlyLoadedVideoId, audioTracks);
                         }
@@ -130,12 +130,14 @@ public class AudioTrackPatch extends SpoofStreamingDataPatch {
      * Since the patch has a prerequisite of using 'Android VR (No auth)', the value of the current audioTrackId is always used.
      */
     public static void setAudioTrackId(String newlyLoadedAudioTrackId) {
-        if (SPOOF_STREAMING_DATA_AUDIO_TRACK_BUTTON) {
-            if (newlyLoadedAudioTrackId != null
-                    && !Objects.equals(audioTrackId, newlyLoadedAudioTrackId)) {
-                audioTrackId = newlyLoadedAudioTrackId;
-                Logger.printDebug(() -> "new AudioTrackId: " + newlyLoadedAudioTrackId);
-            }
+        if (SPOOF_STREAMING_DATA_AUDIO_TRACK_BUTTON &&
+                getLastSpoofedAudioClientIsAndroidVRNoAuth() &&
+                newlyLoadedAudioTrackId != null &&
+                newlyLoadedAudioTrackId.contains(".") &&
+                !audioTrackId.equals(newlyLoadedAudioTrackId)
+        ) {
+            audioTrackId = newlyLoadedAudioTrackId;
+            Logger.printDebug(() -> "new AudioTrackId: " + newlyLoadedAudioTrackId);
         }
     }
 

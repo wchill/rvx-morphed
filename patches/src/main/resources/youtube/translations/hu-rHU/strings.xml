@@ -8,6 +8,13 @@
     <string name="revanced_extended_settings_search_title">%s keresése</string>
     <string name="revanced_extended_reset_to_default_toast">Visszaállítás az alapértelmezett értékekre.</string>
     <string name="revanced_preference_category_experimental_flag">Kísérleti funkciók</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"Ez a beállítás jelenleg nem érhető el.
+
+A funkció használatához módosítsa az 'Alapértelmezett kliens (hamis streamelési adatok)' beállítást iOS TV, TV vagy TV egyszerű értékre.
+
+Megjegyzés:
+• Az iOS TV nem támogatja bizonyos videók, például zenei videók lejátszását.
+• Ezért, ha az alapértelmezett kliens az iOS TV-re van állítva, ez a beállítás egyes videók esetében nem biztos, hogy működik."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Szeretné folytatni?</string>
     <string name="revanced_extended_restart_first_run">Indítsa újra a rendszert a normál elrendezés betöltéséhez</string>
     <string name="revanced_extended_restart_title">Újraindítás szükséges</string>
@@ -45,6 +52,7 @@ Töltsd le a(z) %2$s weboldalról."</string>
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Eltávolítás a várólistáról és a videó lejátszása</string>
     <string name="revanced_queue_manager_remove_queue">Várólista eltávolítása</string>
     <string name="revanced_queue_manager_save_queue">Várólista mentése</string>
+    <string name="revanced_queue_manager_show_original_video_information">Eredeti videó információ mutatása</string>
     <string name="revanced_queue_manager_user_dialog_message">"Külső letöltő megnyitása helyett nyissa meg a várólista párbeszédpanelt.
 
 A várólistát a navigációs sáv vissza gombjának lenyomva tartásával is megnyithatja.
@@ -52,6 +60,26 @@ A várólistát a navigációs sáv vissza gombjának lenyomva tartásával is m
 Ez a funkció még fejlesztés alatt áll, így előfordulhat, hogy több funkció nem működik.
 
 Kérjük, csak hibakeresési célokra használja."</string>
+    <string name="revanced_queue_manager_video_information">Videó információ</string>
+    <string name="revanced_queue_manager_video_information_copy">Másolás</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Csatorna
+══════════════
+%1$s
+
+Cím
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Csatorna
+══════════════
+%1$s
+
+Cím
+══════════════
+%2$s
+
+Leírás
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Bejelentkezés szükséges</string>
     <string name="revanced_queue_manager_check_failed_generic">A várólista párbeszédpanel nem elérhető (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Nem azonosítható lejátszási lista</string>
@@ -62,11 +90,13 @@ Kérjük, csak hibakeresési célokra használja."</string>
     <string name="revanced_queue_manager_fetch_failed_delete">A várólista törlése nem sikerült.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">A videó törlése nem sikerült.</string>
     <string name="revanced_queue_manager_fetch_failed_save">A várólista mentése nem sikerült.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Nem sikerült beszerezni a videó információt.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">A videó sikeresen hozzáadva.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">A várólista sikeresen létrehozva.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">A várólista sikeresen törölve.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">A videó sikeresen törölve.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">A várólista sikeresen mentve ide: \'%s\'.</string>
+    <string name="revanced_share_copy_video_information_success">Videó információ vágólapra másolva.</string>
     <string name="revanced_language_title">RVX nyelve</string>
     <string name="revanced_language_DEFAULT">Alkalmazás nyelve</string>
     <string name="revanced_language_AM">"Amhara
@@ -334,7 +364,7 @@ Koppints ide, ha többet szeretnél megtudni a DeArrow-ról."</string>
     <string name="revanced_hide_carousel_shelf_search_summary_on">Elrejtve a keresési eredményekben.</string>
     <string name="revanced_hide_carousel_shelf_search_summary_off">Látható a keresési eredményekben.</string>
     <string name="revanced_hide_carousel_shelf_about_title">A karusszelről</string>
-    <string name="revanced_hide_carousel_shelf_about_summary">Példák a karusszelre:&lt;br&gt;&lt;br&gt;&lt;b&gt;Friss hírek&lt;/b&gt;, &lt;b&gt;Nézés folytatása&lt;/b&gt;, &lt;b&gt;További csatornák felfedezése&lt;/b&gt;, &lt;b&gt;Hallgassa meg újra&lt;/b&gt;, &lt;b&gt;Legrelevánsabb&lt;/b&gt;, &lt;b&gt;Vásárlás&lt;/b&gt;, &lt;b&gt;Nézze meg újra&lt;/b&gt;</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">Példák a karusszelre:&lt;br&gt;&lt;br&gt;&lt;b&gt;Friss hírek&lt;/b&gt;, &lt;b&gt;Nézés folytatása&lt;/b&gt;, &lt;b&gt;További csatornák felfedezése&lt;/b&gt;, &lt;b&gt;Neked&lt;/b&gt;, &lt;b&gt;Hallgassa meg újra&lt;/b&gt;, &lt;b&gt;Legrelevánsabb&lt;/b&gt;, &lt;b&gt;Vásárlás&lt;/b&gt;, &lt;b&gt;Nézze meg újra&lt;/b&gt;</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Kategória sáv</string>
     <string name="revanced_preference_screen_category_bar_summary">Rejtse el vagy jelenítse meg a kategória sávot a hírfolyamban, keresésben és a kapcsolódó videókban.</string>
@@ -361,9 +391,6 @@ Koppints ide, ha többet szeretnél megtudni a DeArrow-ról."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shortok
 Lejátszási listák
 Áruház"</string>
-    <string name="revanced_hide_for_you_shelf_title">\"Neked\" polc elrejtése a csatorna oldalon</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">A neked polc el van rejtve.</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">A neked polc látható.</string>
     <string name="revanced_hide_links_preview_title">Linkek előnézetének elrejtése</string>
     <string name="revanced_hide_links_preview_summary_on">A linkek előnézete rejtett.</string>
     <string name="revanced_hide_links_preview_summary_off">A linkek előnézete látható.</string>
@@ -498,7 +525,6 @@ Korlátozás: Előfordulhat, hogy az eszköztár Vissza gombja nem működik."</
     <string name="revanced_disable_auto_audio_tracks_title">Kényszerített automatikus hangsávok letiltása</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">A kényszerített automatikus hangsávok le vannak tiltva.</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">A kényszerített automatikus hangsávok engedélyezve vannak.</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">A funkció használatához módosítsa az \"Alapértelmezett kliens (adatfolyam hamisításhoz)” beállítást iOS TV-re.</string>
     <string name="revanced_disable_auto_captions_title">Kényszerített automatikus feliratok letiltása</string>
     <string name="revanced_disable_auto_captions_summary_on">A kényszerített automatikus feliratok le vannak tiltva.</string>
     <string name="revanced_disable_auto_captions_summary_off">A kényszerített automatikus feliratok engedélyezve vannak.</string>
@@ -1060,9 +1086,6 @@ Korlátozások:
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Hangsáv menü elrejtése</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">A hangsáv menü el van rejtve.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">A hangsáv menü látható.</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"A hangsáv menü el van rejtve.
-
-A hangsáv menü megjelenítéséhez módosítsa az \"Alapértelmezett kliens (adatfolyam hamisításhoz)” beállítást iOS TV-re."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Feliratok menü elrejtése</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">A feliratok menü el van rejtve.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">A feliratok menü látható.</string>
@@ -1774,6 +1797,8 @@ Megjegyzés: Ezzel a képernyőterület méretét is megváltoztatja, ahol érz�
 • A videolejátszás több internetes adatot használ, mint a VP9.
 • A HDR lejátszáshoz a HDR videó továbbra is a VP9 kodeket használja."</string>
     <string name="revanced_disable_vp9_codec_summary_off">VP9 kodek engedélyezve van.</string>
+    <string name="revanced_enable_opus_codec_title">OPUS kodek engedélyezése</string>
+    <string name="revanced_enable_opus_codec_summary">Engedélyezi az OPUS kodeket, ha a lejátszó válasza tartalmazza az OPUS kodeket.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Lejátszási sebesség</string>
     <string name="revanced_default_playback_speed_title">Alapértelmezett lejátszási sebesség</string>
@@ -2123,8 +2148,6 @@ Kattintson a folytatás gombra és kapcsolja ki az akkumulátor optimalizáláso
     <string name="revanced_change_share_sheet_title">Megosztási lap módosítása</string>
     <string name="revanced_change_share_sheet_summary_on">A rendszer megosztási lap van használatban.</string>
     <string name="revanced_change_share_sheet_summary_off">Az app-on belüli megosztási lap van használatban.</string>
-    <string name="revanced_enable_opus_codec_title">OPUS kodek engedélyezése</string>
-    <string name="revanced_enable_opus_codec_summary">Engedélyezi az OPUS kodeket, ha a lejátszó válasza tartalmazza az OPUS kodeket.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">Hibakeresés</string>
     <string name="revanced_preference_screen_debugging_summary">Hibakeresési beállítások engedélyezése vagy tiltása.</string>
@@ -2198,8 +2221,8 @@ Kattintson a folytatás gombra és kapcsolja ki az akkumulátor optimalizáláso
 <small>(fejlesztés alatt)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Hamisítás mellékhatásai</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• A hangsáv menü hiányzik.
-• A stabil hangerő nem áll rendelkezésre.
 • A kényszerített automatikus hangsávok letiltása nem elérhető.
+• A stabil hangerő nem áll rendelkezésre.
 • Előfordulhat, hogy a gyerekeknek szánt tartalmat nem lehet lejátszani, ha ki van jelentkezve vagy inkognitó módban van."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• A stabil hangerő nem érhető el.
 • Előfordulhat, hogy a filmeket vagy a fizetős videókat nem lehet lejátszani.
@@ -2285,8 +2308,8 @@ Ez a funkció még fejlesztés alatt áll, így a szerveroldali változások mia
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Ennek engedélyezése javíthatja az akkumulátor élettartamát és javíthatja a lejátszás akadozását.
 
 Az AVC maximális felbontása 1080p, az Opus hangkodek nem érhető el, és a videolejátszás több adatforgalmat igényel, mint a VP9 vagy az AV1."</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
-    <string name="revanced_preference_category_js">JavaScript (fejlesztés alatt)</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
+    <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">JavaScript kliens használata</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">A JavaScript kliens hozzáadva az elérhető kliensekhez.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">A JavaScript kliens nem lett hozzáadva az elérhető kliensekhez.</string>
@@ -2294,7 +2317,7 @@ Az AVC maximális felbontása 1080p, az Opus hangkodek nem érhető el, és a vi
 
 Az n-sig minta elég gyakran változik a YouTube szerverein, és a lejátszás sikertelen lehet, ha a reguláris kifejezés nem találja meg az n-sig mintát.
 
-Ez a funkció még fejlesztés alatt van, ezért kérjük, csak hibakeresési célokra használja."</string>
+A JavaScript kliensek közül az ajánlott a TV egyszerű."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">JavaScript kliens használata minden videóhoz</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"A JavaScript klienst a videó típusától függetlenül használjuk.
 

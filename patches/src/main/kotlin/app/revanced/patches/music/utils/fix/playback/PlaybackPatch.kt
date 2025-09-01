@@ -4,19 +4,31 @@ import app.revanced.patcher.patch.booleanOption
 import app.revanced.patcher.patch.bytecodePatch
 import app.revanced.patches.music.misc.backgroundplayback.backgroundPlaybackPatch
 import app.revanced.patches.music.utils.compatibility.Constants.COMPATIBLE_PACKAGE
+import app.revanced.patches.music.utils.extension.Constants.PATCH_STATUS_CLASS_DESCRIPTOR
+import app.revanced.patches.music.utils.extension.Constants.SPOOF_PATH
 import app.revanced.patches.music.utils.extension.Constants.VIDEO_PATH
 import app.revanced.patches.music.utils.fix.client.patchSpoofClient
 import app.revanced.patches.music.utils.fix.streamingdata.patchSpoofVideoStreams
 import app.revanced.patches.music.utils.patch.PatchList.FIX_PLAYBACK
+import app.revanced.patches.music.utils.patch.PatchList.GMSCORE_SUPPORT
 import app.revanced.patches.music.utils.playservice.versionCheckPatch
 import app.revanced.patches.music.utils.settings.CategoryType
 import app.revanced.patches.music.utils.settings.ResourceUtils.updatePatchStatus
 import app.revanced.patches.music.utils.settings.addPreferenceWithIntent
 import app.revanced.patches.music.utils.settings.addSwitchPreference
+import app.revanced.patches.music.utils.settings.replaceSwitchPreference
 import app.revanced.patches.music.utils.settings.settingsPatch
 import app.revanced.patches.shared.customspeed.customPlaybackSpeedPatch
+import app.revanced.patches.shared.spoof.blockrequest.baseBlockRequestPatch
 import app.revanced.util.Utils.printWarn
 import app.revanced.util.Utils.trimIndentMultiline
+import app.revanced.util.findMethodOrThrow
+import app.revanced.util.returnEarly
+
+private const val EXTENSION_CLASS_DESCRIPTOR =
+    "$SPOOF_PATH/BlockRequestPatch;"
+
+private var spoofVideoStreamsEnabled = false
 
 @Suppress("unused")
 val playbackPatch = bytecodePatch(
@@ -29,6 +41,7 @@ val playbackPatch = bytecodePatch(
         settingsPatch,
         // required to fix background playback issue of live stream on iOS client.
         backgroundPlaybackPatch,
+        baseBlockRequestPatch(EXTENSION_CLASS_DESCRIPTOR),
         customPlaybackSpeedPatch(
             "$VIDEO_PATH/CustomPlaybackSpeedPatch;",
             5.0f
@@ -44,16 +57,18 @@ val playbackPatch = bytecodePatch(
             Includes the 'Spoof client' patch.
             
             Side effect:
-            • Action buttons may always be hidden in YouTube Music 7.17+.
-            • Audio may intermittently stutter during playback.
-            • Player flyout menu may not show properly.
+            • Action buttons or player flyout menus may not show properly.
+            • These side effects may be resolved by clearing the app data and logging in again.
+            
+            Side effect (Block request):
+            • App may be forced to close when using a VPN or DNS.
             """.trimIndentMultiline(),
         required = true
     )
 
     val spoofVideoStreams = booleanOption(
         key = "spoofVideoStreams",
-        default = false,
+        default = true,
         title = "Spoof video streams",
         description = """
             Includes the 'Spoof video streams' patch.
@@ -66,21 +81,25 @@ val playbackPatch = bytecodePatch(
     )
 
     execute {
-        var spoofClientEnabled = spoofClient.value == true
-        val spoofVideoStreamsEnabled = spoofVideoStreams.value == true
+        val spoofClientEnabled = spoofClient.value == true
+        spoofVideoStreamsEnabled = spoofVideoStreams.value == true
 
         if (!spoofClientEnabled && !spoofVideoStreamsEnabled) {
-            printWarn("At least one patch option must be enabled. \"${spoofClient.title}\" patch is used.")
-            spoofClientEnabled = true
+            printWarn("At least one patch option must be enabled. \"${spoofVideoStreams.title}\" patch is used.")
+            spoofVideoStreamsEnabled = true
         }
 
         if (spoofClientEnabled) {
             patchSpoofClient()
 
+            findMethodOrThrow(PATCH_STATUS_CLASS_DESCRIPTOR) {
+                name == "SpoofClient"
+            }.returnEarly(true)
+
             addSwitchPreference(
                 CategoryType.MISC,
                 "revanced_spoof_client",
-                "true"
+                "false"
             )
             addPreferenceWithIntent(
                 CategoryType.MISC,
@@ -92,10 +111,14 @@ val playbackPatch = bytecodePatch(
         if (spoofVideoStreamsEnabled) {
             patchSpoofVideoStreams()
 
+            findMethodOrThrow(PATCH_STATUS_CLASS_DESCRIPTOR) {
+                name == "SpoofVideoStreams"
+            }.returnEarly(true)
+
             addSwitchPreference(
                 CategoryType.MISC,
                 "revanced_spoof_video_streams",
-                "false"
+                "true"
             )
             addPreferenceWithIntent(
                 CategoryType.MISC,
@@ -105,5 +128,14 @@ val playbackPatch = bytecodePatch(
         }
 
         updatePatchStatus(FIX_PLAYBACK)
+    }
+
+    finalize {
+        if (spoofVideoStreamsEnabled && GMSCORE_SUPPORT.included != true) {
+            replaceSwitchPreference(
+                "revanced_spoof_video_streams",
+                "false"
+            )
+        }
     }
 }

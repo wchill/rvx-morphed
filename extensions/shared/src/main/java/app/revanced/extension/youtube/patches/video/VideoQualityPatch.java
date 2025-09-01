@@ -8,8 +8,10 @@ import androidx.annotation.Nullable;
 import com.google.android.libraries.youtube.innertube.model.media.FormatStreamModel;
 import com.google.android.libraries.youtube.innertube.model.media.VideoQuality;
 
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
@@ -33,9 +35,6 @@ public class VideoQualityPatch {
         void patch_setQuality(VideoQuality quality);
     }
 
-    private static final boolean HIDE_PLAYER_FLYOUT_MENU_ENHANCED_BITRATE =
-            PatchStatus.PlayerFlyoutMenu() && Settings.HIDE_PLAYER_FLYOUT_MENU_ENHANCED_BITRATE.get();
-
     /**
      * Video resolution of the automatic quality option..
      */
@@ -47,6 +46,19 @@ public class VideoQualityPatch {
     private static final IntegerSetting videoQualityWifi = Settings.DEFAULT_VIDEO_QUALITY_WIFI;
 
     private static boolean qualityNeedsUpdating;
+    private static boolean userChangedQuality;
+
+    /**
+     * The available formats of the current video.
+     */
+    @Nullable
+    private static List<FormatStreamModel> currentFormats;
+
+    /**
+     * The preferred format.
+     */
+    @Nullable
+    private static FormatStreamModel preferredFormat;
 
     /**
      * The available qualities of the current video.
@@ -96,6 +108,7 @@ public class VideoQualityPatch {
     }
 
     public static boolean shouldRememberVideoQuality() {
+        userChangedQuality = true;
         if (!PatchStatus.VideoPlayback()) {
             return false;
         }
@@ -172,6 +185,68 @@ public class VideoQualityPatch {
             }
         }
         return optional;
+    }
+
+    /**
+     * Injection point.
+     *
+     * @param formats Formats available, ordered from largest to smallest.
+     */
+    public static void setVideoFormat(List<FormatStreamModel> formats) {
+        if (PatchStatus.VideoPlayback() && !userChangedQuality && !CollectionUtils.isEmpty(formats) &&
+                (currentFormats == null || !CollectionUtils.isEqualCollection(currentFormats, formats))) {
+            try {
+                final int preferredQuality = getDefaultQualityResolution();
+                if (preferredQuality == AUTOMATIC_VIDEO_QUALITY_VALUE) {
+                    userChangedQuality = true;
+                    return;
+                }
+                currentFormats = formats;
+                List<String> videoFormats = new ArrayList<>(formats.size());
+                for (FormatStreamModel format : formats) {
+                    final int itag = format.patch_getITag();
+                    final String qualityName = format.patch_getQualityName();
+                    final int qualityResolution = format.patch_getResolution();
+                    videoFormats.add(getQualityNameWithITag(qualityName, itag));
+                    if (preferredFormat == null && qualityResolution <= preferredQuality) {
+                        preferredFormat = format;
+                    }
+                }
+                Logger.printDebug(() -> "VideoFormats: " + videoFormats);
+            } catch (Exception ex) {
+                Logger.printException(() -> "setVideoFormat failure", ex);
+            }
+        }
+    }
+
+    /**
+     * Injection point.
+     * <p>
+     * Overrides the initial video quality to not follow the 'Video quality preferences' in YouTube settings.
+     * (e.g. 'Auto (recommended)' - 360p/480p, 'Higher picture quality' - 720p/1080p...)
+     * Called after {@link #setVideoFormat(List)}.
+     * Called before {@link #setVideoQuality(VideoQuality[], VideoQualityMenuInterface, int)}.
+     */
+    public static FormatStreamModel getVideoFormat(FormatStreamModel format) {
+        if (PatchStatus.VideoPlayback() && format != null && !userChangedQuality && preferredFormat != null) {
+            try {
+                final String currentQuality = format.patch_getQualityName();
+                final String preferredQuality = preferredFormat.patch_getQualityName();
+                final int currentITag = format.patch_getITag();
+                final int preferredITag = preferredFormat.patch_getITag();
+                final String currentQualityWithITag = getQualityNameWithITag(currentQuality, currentITag);
+                final String preferredQualityWithITag = getQualityNameWithITag(preferredQuality, preferredITag);
+                final boolean qualityNeedsChange = currentITag != preferredITag;
+                Logger.printDebug(() -> qualityNeedsChange
+                        ? "Changing video format from: " + currentQualityWithITag + " to: " + preferredQualityWithITag
+                        : "Video format already has the preferred quality: " + currentQualityWithITag
+                );
+                return preferredFormat;
+            } catch (Exception ex) {
+                Logger.printException(() -> "getVideoFormat failure", ex);
+            }
+        }
+        return format;
     }
 
     /**
@@ -281,7 +356,6 @@ public class VideoQualityPatch {
         }
     }
 
-
     /**
      * Injection point.
      */
@@ -289,10 +363,13 @@ public class VideoQualityPatch {
         Utils.verifyOnMainThread();
 
         Logger.printDebug(() -> "newVideoStarted");
+        currentFormats = null;
         currentQualities = null;
         currentQuality = null;
         currentMenuInterface = null;
+        preferredFormat = null;
         qualityNeedsUpdating = true;
+        userChangedQuality = false;
 
         // Hide the quality until playback starts and the qualities are available.
         updateQualityString(null);
@@ -345,7 +422,7 @@ public class VideoQualityPatch {
      * @param streams Format streams available, ordered from largest to smallest.
      * @return Patched format streams.
      */
-    public static List<FormatStreamModel> removeVideoQualities(List<FormatStreamModel> streams) {
+    public static List<FormatStreamModel> removeLowFpsVideoQualities(List<FormatStreamModel> streams) {
         if (streams != null && streams.size() > 2) {
             try {
                 int previousQualityFps = -1;
@@ -362,12 +439,7 @@ public class VideoQualityPatch {
                     // 1080p, 1080p60, 1080p HDR...
                     String qualityName = stream.patch_getQualityName();
                     if (qualityName == null) continue;
-                    if (qualityName.endsWith("Premium")) {
-                        if (HIDE_PLAYER_FLYOUT_MENU_ENHANCED_BITRATE) {
-                            final int itag = stream.patch_getITag();
-                            streams.remove(i);
-                            Logger.printDebug(() -> "Removing Enhanced bitrate: " + getQualityNameWithITag(qualityName, itag));
-                        }
+                    if (qualityName.contains("Premium")) {
                         // Skip '1080p Premium'
                         continue;
                     }
@@ -393,7 +465,7 @@ public class VideoQualityPatch {
                     }
                 }
             } catch (Exception ex) {
-                Logger.printException(() -> "removeVideoQualities failure", ex);
+                Logger.printException(() -> "removeLowFpsVideoQualities failure", ex);
             }
         }
 

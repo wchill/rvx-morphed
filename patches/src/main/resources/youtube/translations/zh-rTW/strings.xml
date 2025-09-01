@@ -8,6 +8,11 @@
     <string name="revanced_extended_settings_search_title">搜尋 %s</string>
     <string name="revanced_extended_reset_to_default_toast">重設為預設值。</string>
     <string name="revanced_preference_category_experimental_flag">實驗性功能</string>
+    <string name="revanced_extended_audio_tracks_unavailable">"若要使用此功能，請將 '預設用戶端（偽裝串流資料）' 變更為 iOS TV, TV 或 TV Simply。
+
+注意：
+• iOS TV 不支援播放某些影片，例如音樂影片。
+• 因此，如果將預設用戶端設定為 iOS TV，此設定可能不適用於某些影片。"</string>
     <string name="revanced_extended_confirm_user_dialog_title">你想繼續嗎？</string>
     <string name="revanced_extended_restart_first_run">重新啟動以正常載入版面配置</string>
     <string name="revanced_extended_restart_title">需要重新啟動</string>
@@ -45,6 +50,7 @@
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">從佇列移除並重新載入影片</string>
     <string name="revanced_queue_manager_remove_queue">移除佇列</string>
     <string name="revanced_queue_manager_save_queue">儲存佇列</string>
+    <string name="revanced_queue_manager_show_original_video_information">顯示原始影片資訊</string>
     <string name="revanced_queue_manager_user_dialog_message">"不要開啟外部下載器，而是開啟佇列管理器對話方塊。
 
 您也可以按住導覽列上的返回按鈕來開啟佇列管理器。
@@ -52,6 +58,26 @@
 此功能仍在開發中，因此大部分功能可能無法使用。
 
 請僅將其用於偵錯目的。"</string>
+    <string name="revanced_queue_manager_video_information">影片資訊</string>
+    <string name="revanced_queue_manager_video_information_copy">複製</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"頻道
+══════════════
+%1$s
+
+標題
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"頻道
+══════════════
+%1$s
+
+標題
+══════════════
+%2$s
+
+描述
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">需要登入</string>
     <string name="revanced_queue_manager_check_failed_generic">佇列管理器不可用 (%s)。</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">無法辨識播放清單</string>
@@ -62,11 +88,13 @@
     <string name="revanced_queue_manager_fetch_failed_delete">刪除佇列失敗。</string>
     <string name="revanced_queue_manager_fetch_failed_remove">刪除影片失敗。</string>
     <string name="revanced_queue_manager_fetch_failed_save">儲存佇列失敗。</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">取得影片資訊失敗。</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">影片新增成功。</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">佇列建立成功。</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">佇列刪除成功。</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">影片移除成功。</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">佇列已成功儲存至「%s」。</string>
+    <string name="revanced_share_copy_video_information_success">影片資訊已複製到剪貼簿。</string>
     <string name="revanced_language_title">RVX 語言</string>
     <string name="revanced_language_DEFAULT">應用程式語言</string>
     <string name="revanced_language_AM">"阿姆哈拉語
@@ -361,9 +389,6 @@
     <string name="revanced_hide_channel_tab_filter_strings_hint">"短影音
 播放清單
 商店"</string>
-    <string name="revanced_hide_for_you_shelf_title">隱藏「為你推薦」功能列</string>
-    <string name="revanced_hide_for_you_shelf_summary_on">「為你推薦」功能列已隱藏</string>
-    <string name="revanced_hide_for_you_shelf_summary_off">「為你推薦」功能列已顯示。</string>
     <string name="revanced_hide_links_preview_title">隱藏連結預覽</string>
     <string name="revanced_hide_links_preview_summary_on">連結預覽已隱藏。</string>
     <string name="revanced_hide_links_preview_summary_off">連結預覽已顯示。</string>
@@ -498,7 +523,6 @@
     <string name="revanced_disable_auto_audio_tracks_title">停用強制自動音軌</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">強制自動音軌已停用</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">強制自動音軌已啟用</string>
-    <string name="revanced_disable_auto_audio_tracks_not_available">若要使用此功能，請將「預設用戶端（偽裝串流資料）」變更為 iOS TV。</string>
     <string name="revanced_disable_auto_captions_title">停用強制顯示字幕</string>
     <string name="revanced_disable_auto_captions_summary_on">強制顯示字幕已停用</string>
     <string name="revanced_disable_auto_captions_summary_off">強制顯示字幕已啟用</string>
@@ -1066,9 +1090,6 @@
     <string name="revanced_hide_player_flyout_menu_audio_track_title">隱藏音軌選單</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">音軌選單已隱藏</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">音軌選單已顯示</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"音軌選單已隱藏。
-
-若要顯示音軌選單，請將 '預設用戶端 (偽裝串流資料)' 變更為 iOS TV。"</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">隱藏字幕選單</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">字幕選單已隱藏</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">字幕選單已顯示</string>
@@ -1773,6 +1794,8 @@
 • 影片播放將使用比 VP9 更多的網路數據。
 • 若要獲得 HDR 播放，HDR 影片仍會使用 VP9 編解碼器。"</string>
     <string name="revanced_disable_vp9_codec_summary_off">VP9 編解碼器已啟用。</string>
+    <string name="revanced_enable_opus_codec_title">啟用 OPUS 編解碼器</string>
+    <string name="revanced_enable_opus_codec_summary">如果播放器回應包含 OPUS 編解碼器，則啟用 OPUS 編解碼器。</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">播放速度</string>
     <string name="revanced_default_playback_speed_title">預設播放速度</string>
@@ -2126,8 +2149,6 @@
     <string name="revanced_change_share_sheet_title">更改分享擴展</string>
     <string name="revanced_change_share_sheet_summary_on">使用系統分享擴展。</string>
     <string name="revanced_change_share_sheet_summary_off">使用應用程式內分享擴展。</string>
-    <string name="revanced_enable_opus_codec_title">啟用 OPUS 編解碼器</string>
-    <string name="revanced_enable_opus_codec_summary">如果播放器回應包含 OPUS 編解碼器，則啟用 OPUS 編解碼器。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Debugging -->
     <string name="revanced_preference_screen_debugging_title">偵錯</string>
     <string name="revanced_preference_screen_debugging_summary">啟用或停用偵錯選項。</string>
@@ -2288,7 +2309,7 @@
     <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"啟用此功能可能會延長電池壽命並修復播放卡頓問題。
 
 AVC 的最大解析度為 1080p，Opus 音訊編解碼器不可用，影片播放將使用比 VP9 或 AV1 更多的網路資料。"</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript (WIP) -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript(開發中)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">使用 JavaScript 用戶端</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">JavaScript 用戶端已新增至可用用戶端。</string>

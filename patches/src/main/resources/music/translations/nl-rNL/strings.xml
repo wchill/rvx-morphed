@@ -59,12 +59,6 @@
     <string name="revanced_hide_premium_renewal_summary">Verbergt de banner voor premiumverlenging.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Flyout-menu</string>
-    <string name="revanced_enable_trim_silence_title">Voeg een trimstilteschakelaar toe</string>
-    <string name="revanced_enable_trim_silence_summary">"Voegt de schakelaar 'Trim stilte' toe aan het vervolgmenu voor afspeelsnelheid.
-
- Info:
- • Deze functie is voor podcasts.
- • Deze functie is nog in ontwikkeling en kan dus instabiel zijn."</string>
     <string name="revanced_enable_compact_dialog_title">Compacte dialoog inschakelen op telefoon</string>
     <string name="revanced_enable_compact_dialog_summary">"Zet compact dialoogvenster aan op telefoon.
 
@@ -152,6 +146,8 @@ Bekende problemen:
     <!-- PreferenceScreen: Video -->
     <string name="revanced_custom_playback_speeds_title">Bewerk aangepaste afspeelsnelheden</string>
     <string name="revanced_custom_playback_speeds_summary">Voeg toe of verander de beschikbare afspeelsnelheden</string>
+    <string name="revanced_enable_opus_codec_title">Opus codec inschakelen</string>
+    <string name="revanced_enable_opus_codec_summary">"Zet 250/251 opus codec aan tijdens het afspelen van audio."</string>
     <string name="revanced_custom_playback_speeds_invalid">Ongeldige aangepaste afspeelsnelheden. Herstel naar standaardwaarden.</string>
     <!-- PreferenceScreen: Return YouTube Dislike -->
     <string name="revanced_ryd_enabled_summary">Laat de \"vind ik niet leuk\"s zien van video\'s.</string>
@@ -181,8 +177,6 @@ Bekende problemen:
     <string name="revanced_extended_settings_import_reset">Instellingen teruggezet naar standaard</string>
     <string name="revanced_extended_settings_import_success">Geïmporteerde %d instellingen</string>
     <string name="revanced_share_copy_settings_success">Instellingen naar het klembord gekopieerd.</string>
-    <string name="revanced_enable_opus_codec_title">Opus codec inschakelen</string>
-    <string name="revanced_enable_opus_codec_summary">"Zet 250/251 opus codec aan tijdens het afspelen van audio."</string>
     <string name="revanced_sanitize_sharing_links_title">Koppelingen delen</string>
     <string name="revanced_sanitize_sharing_links_summary">Verwijdert tracking query parameters uit de URL\'s bij het delen van links.</string>
 </resources>

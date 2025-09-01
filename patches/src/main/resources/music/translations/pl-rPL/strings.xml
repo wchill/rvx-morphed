@@ -37,6 +37,8 @@
     <string name="revanced_hide_action_button_song_video_title">Ukryj przycisk utwór/teledysk</string>
     <string name="revanced_hide_action_button_song_video_summary">"Ukrywa przycisk utwór/teledysk.
 (Ten przycisk jest jedynie dostępny u niektórych użytkowników)"</string>
+    <string name="revanced_hide_action_button_disabled_title">Ukryj wyłączone przyciski</string>
+    <string name="revanced_hide_action_button_disabled_summary">Ukrywa wyłączone przyciski, jak wyłączony przycisk od komentarzy.</string>
     <string name="revanced_hide_action_button_label_title">Ukryj nazwy przycisków akcji</string>
     <string name="revanced_hide_action_button_label_summary">Ukrywa nazwy przycisków akcji.</string>
     <string name="revanced_external_downloader_action_title">Zastąp przycisk od pobierania</string>
@@ -74,12 +76,12 @@ Ograniczenie:
     <string name="revanced_hide_promotion_alert_banner_summary">Ukrywa banery z alertami promocyjnymi.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Menu ustawień utworu</string>
-    <string name="revanced_enable_trim_silence_title">Włącz przełącznik do pomijania ciszy</string>
-    <string name="revanced_enable_trim_silence_summary">"Dodaje przycisk pomijania ciszy do menu od prędkości odtwarzania.
+    <string name="revanced_disable_trim_silence_title">Wyłącz przełącznik do pomijania ciszy</string>
+    <string name="revanced_disable_trim_silence_summary">"Wyłącza przycisk od pomijania ciszy do menu od prędkości odtwarzania.
 
 Informacje:
-• Ta funkcja jest dostępna tylko dla podcastów.
-• Ta funkcja jest nadal w fazie rozwoju, więc może być niestabilna."</string>
+• funkcja jest dostępna tylko dla podcastów.
+• funkcja jest nadal w fazie rozwoju, więc może być niestabilna."</string>
     <string name="revanced_enable_compact_dialog_title">Włącz kompaktowe menu</string>
     <string name="revanced_enable_compact_dialog_summary">"Włącza kompaktowe menu ustawień utworu na telefonie.
 
@@ -260,6 +262,10 @@ Jeśli to możliwe, użyj ciemnych kolorów, gdyż aplikacja nie obsługuje jasn
     <string name="revanced_disable_player_gesture_summary">Wyłącza gest przesuwania, aby zmienić utwór w odtwarzaczu.</string>
     <string name="revanced_enable_forced_miniplayer_title">Włącz wymuszenie miniodtwarzacza</string>
     <string name="revanced_enable_forced_miniplayer_summary">Zostawia odtwarzacz zminimalizowany, nawet jeśli zostanie odtworzony inny utwór.</string>
+    <string name="revanced_enable_smooth_transition_animation_title">Włącz płynną animację przejścia</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">"Włącza płynną animację, gdy miniodtwarzacz jest zmaksymalizowany ze zminimalizowanego stanu.
+
+Ograniczenie: interfejs tekstów utworów synchronizowanych czasowo może być popsuty dla niektórych użytkowników."</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Włącz przesunięcie, by zamknąć miniodtwarzacz</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Włącza przesunięcie, by zamknąć miniodtwarzacz.</string>
     <string name="revanced_enable_comments_scroll_top_title">Przewijanie do góry komentarzy przyciskiem</string>
@@ -282,6 +288,8 @@ Ograniczenie: segmenty SponsorBlocka nie są pokazywane na pasku."</string>
     <string name="revanced_hide_comment_timestamp_and_emoji_buttons_summary">Ukrywa przyciski czasu i emotikon podczas pisania komentarzy.</string>
     <string name="revanced_hide_fullscreen_share_button_title">Ukryj przycisk udostępniania w trybie pełnoekranowym</string>
     <string name="revanced_hide_fullscreen_share_button_summary">Ukrywa przycisk udostępniania w trybie pełnoekranowym.</string>
+    <string name="revanced_hide_lyrics_share_button_title">Ukryj przycisk udostępniania tekstu utworu</string>
+    <string name="revanced_hide_lyrics_share_button_summary">Ukrywa przycisk udostępniania w tekście utworu.</string>
     <string name="revanced_hide_song_video_toggle_title">Ukryj przełącznik utwór/teledysk</string>
     <string name="revanced_hide_song_video_toggle_summary">Ukrywa przełącznik utwór/teledysk w odtwarzaczu.</string>
     <string name="revanced_remember_repeat_state_title">Zapamiętaj stan pętli</string>
@@ -311,6 +319,12 @@ Niektóre ustawienia mogą nie działać poprawnie ze starym układem odtwarzacz
     <string name="revanced_preference_screen_video_title">Teledyski</string>
     <string name="revanced_custom_playback_speeds_title">Edytuj niestandardowe prędkości odtwarzania</string>
     <string name="revanced_custom_playback_speeds_summary">Skonfiguruj dostępne prędkości odtwarzania.</string>
+    <string name="revanced_enable_opus_codec_title">Włącz kodek OPUS</string>
+    <string name="revanced_enable_opus_codec_summary">"Włącza kodek OPUS, jeśli odpowiedź odtwarzacza zawiera ten kodek.
+
+Informacje:
+• najnowsze klienty YouTube Music domyślnie używają kodeka OPUS
+• opcja może być niepotrzebna, jeśli klient bądź strumień filmu jest oszukiwany"</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Zapamiętuj zmiany prędkości odtwarzania</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Zapisuje ostatnią wybraną prędkość odtwarzania.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Komunikaty o zmianie domyślnej prędkości odtwarzania</string>
@@ -463,39 +477,39 @@ Ograniczenie: utwory sklasyfikowane dla dzieci mogą nie być przekierowywane."<
     <string name="revanced_debug_protobuffer_summary">Zawiera protokół buforu w logach od debugowania.</string>
     <string name="revanced_debug_spannable_title">Włącz logi od obiektów spannable</string>
     <string name="revanced_debug_spannable_summary">Zawiera obiekty spannable w logach od debugowania.</string>
-    <string name="revanced_enable_opus_codec_title">Włącz kodek OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">"Włącza kodek OPUS, jeśli odpowiedź odtwarzacza zawiera ten kodek.
-
-Informacje:
-• Najnowsze klienty YouTube Music domyślnie używają kodeka OPUS
-• Działa jedynie dla użytkowników używających oszukiwania aplikacji na bardzo starych klientach"</string>
     <string name="revanced_sanitize_sharing_links_title">Oczyść udostępniane linki</string>
     <string name="revanced_sanitize_sharing_links_summary">Usuwa parametry śledzących zapytań z adresów URL podczas udostępniania linków.</string>
     <string name="revanced_spoof_client_title">Oszukuj klienta</string>
-    <string name="revanced_spoof_client_summary">"Oszukuje klienta, by zapobiec problemom z odtwarzaniem.
-
-Efekty uboczne:
-• przyciski akcji mogą być zawsze ukryte w wersjach YouTube Music powyżej 7.17
-• menu ustawień odtwarzacza może nie wyświetlać się poprawnie
-• te efekty uboczne można rozwiązać czyszcząc dane aplikacji i logując się ponownie"</string>
+    <string name="revanced_spoof_client_summary">Oszukuje klienta, by zapobiec problemom z odtwarzaniem.</string>
     <string name="revanced_spoof_client_type_title">Domyślny klient</string>
-    <string name="revanced_spoof_client_type_summary">Definiuje domyślny klient do oszukiwania.</string>
+    <string name="revanced_spoof_client_type_summary">"Efekt uboczny:
+• przyciski akcji oraz menu ustawień odtwarzacza mogą nie wyświetlać się poprawnie
+• ten efekt uboczny można rozwiązać czyszcząc dane aplikacji i logując się ponownie
+
+Efekt uboczny (blokada żądania):
+• aplikacja może wymusić zamknięcie się podczas korzystania z VPN lub DNS"</string>
     <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34">iOS Music 8.34</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_6_21_block_requst">iOS Music 6.21 (Blokada żądania)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_7_04_block_requst">iOS Music 7.04 (Blokada żądania)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_12_block_requst">iOS Music 8.12 (Blokada żądania)</string>
+    <string name="revanced_spoof_client_type_entry_ios_music_8_34_block_requst">iOS Music 8.34 (Blokada żądania)</string>
     <string name="revanced_spoof_video_streams_title">Oszukuj strumienie filmu</string>
-    <string name="revanced_spoof_video_streams_summary">"Oszukuje strumienie filmu klienta, by zapobiec problemom z odtwarzaniem.
-
-Efekty uboczne:
+    <string name="revanced_spoof_video_streams_summary">Oszukuje strumienie filmu klienta, by zapobiec problemom z odtwarzaniem.</string>
+    <string name="revanced_spoof_video_streams_default_client_title">Domyślny klient</string>
+    <string name="revanced_spoof_video_streams_default_client_summary">"Efekty uboczne:
 • aplikacja może wymusić zamknięcie się podczas korzystania z VPN lub DNS
 • dźwięk może sporadycznie się zacinać podczas odtwarzania na strumieniach klienta z adaptacyjną przepływnością (każdy z wyjątkiem Android VR 1.43.32)"</string>
-    <string name="revanced_spoof_video_streams_default_client_title">Domyślny klient</string>
-    <string name="revanced_spoof_video_streams_default_client_summary">Definiuje domyślnego klienta do oszukiwania.</string>
     <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32">Android VR 1.43.32</string>
     <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09">Android VR 1.65.09</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32_no_auth">Android VR 1.43.32 (Bez autoryzacji)</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09_no_auth">Android VR 1.65.09 (Bez autoryzacji)</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
+    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_watch_history_type_title">Typ historii oglądania</string>
     <string name="revanced_watch_history_type_summary">"• Oryginalny: Stosuje się do ustawień historii oglądania konta Google, lecz historia oglądania może nie działać przy używaniu DNS lub VPN
 • Zastąpienie domeny: Stosuje się do ustawień historii oglądania konta Google
@@ -521,4 +535,8 @@ Wyłączenie optymalizacji baterii dla GmsCore nie wpłynie negatywnie na zużyc
 
 Stuknij przycisk kontynuacji i zezwól na zmiany w optymalizacji."</string>
     <string name="gms_core_dialog_continue_text">Kontynuuj</string>
+    <string name="revanced_app_info_title">Informacje o aplikacji</string>
+    <string name="revanced_app_info_summary">Kliknij, by sprawdzić nazwę aplikacji, wersję aplikacji, wersję łatek oraz datę załatania.</string>
+    <string name="revanced_app_info_dialog_title">Informacje o aplikacji</string>
+    <string name="revanced_app_info_dialog_message">&lt;b&gt;Nazwa aplikacji&lt;/b&gt;&lt;br&gt;&lt;small&gt;%1$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Wersja aplikacji&lt;/b&gt;&lt;br&gt;&lt;small&gt;%2$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;ReVanced Patches&lt;/b&gt;&lt;br&gt;&lt;small&gt;%3$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Data załatania&lt;/b&gt;&lt;br&gt;&lt;small&gt;%4$s&lt;/small&gt;</string>
 </resources>

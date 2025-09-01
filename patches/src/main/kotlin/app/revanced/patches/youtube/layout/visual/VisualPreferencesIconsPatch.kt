@@ -311,7 +311,6 @@ private var rvxPreferenceKey = setOf(
     "revanced_disable_resuming_shorts_player",
     "revanced_disable_shorts_background_playback",
     "revanced_disable_swipe_to_switch_video",
-    "revanced_enable_opus_codec",
     "revanced_extended_settings_search_history",
     "revanced_hide_ask_button",
     "revanced_hide_clip_button",

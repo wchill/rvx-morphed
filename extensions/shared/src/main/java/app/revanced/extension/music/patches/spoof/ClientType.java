@@ -21,9 +21,53 @@ public enum ClientType {
             "NGI77B",
             "com.google.android.apps.youtube.vr.oculus",
             "ANDROID_VR",
-            "1.43.32"
+            "1.43.32",
+            true,
+            false
     ),
-    IOS_MUSIC_7_04(26,
+    ANDROID_VR_1_65_09(ANDROID_VR_1_43_32.id,
+            ANDROID_VR_1_43_32.deviceBrand,
+            ANDROID_VR_1_43_32.deviceMake,
+            "Quest 3",
+            ANDROID_VR_1_43_32.osName,
+            "14",
+            "34",
+            "UP1A.231005.007.A1",
+            ANDROID_VR_1_43_32.packageName,
+            ANDROID_VR_1_43_32.clientName,
+            "1.65.09",
+            true,
+            false
+    ),
+    ANDROID_VR_1_43_32_NO_AUTH(ANDROID_VR_1_43_32.id,
+            ANDROID_VR_1_43_32.deviceBrand,
+            ANDROID_VR_1_43_32.deviceMake,
+            ANDROID_VR_1_43_32.deviceModel,
+            ANDROID_VR_1_43_32.osName,
+            ANDROID_VR_1_43_32.osVersion,
+            ANDROID_VR_1_43_32.androidSdkVersion,
+            ANDROID_VR_1_43_32.buildId,
+            ANDROID_VR_1_43_32.packageName,
+            ANDROID_VR_1_43_32.clientName,
+            ANDROID_VR_1_43_32.clientVersion,
+            false,
+            false
+    ),
+    ANDROID_VR_1_65_09_NO_AUTH(ANDROID_VR_1_65_09.id,
+            ANDROID_VR_1_65_09.deviceBrand,
+            ANDROID_VR_1_65_09.deviceMake,
+            ANDROID_VR_1_65_09.deviceModel,
+            ANDROID_VR_1_65_09.osName,
+            ANDROID_VR_1_65_09.osVersion,
+            ANDROID_VR_1_65_09.androidSdkVersion,
+            ANDROID_VR_1_65_09.buildId,
+            ANDROID_VR_1_65_09.packageName,
+            ANDROID_VR_1_65_09.clientName,
+            ANDROID_VR_1_65_09.clientVersion,
+            false,
+            false
+    ),
+    IOS_MUSIC_6_21(26,
             "Apple",
             "Apple",
             "iPhone16,2",
@@ -33,9 +77,67 @@ public enum ClientType {
             null,
             "com.google.ios.youtubemusic",
             "IOS_MUSIC",
-            "7.04"
+            "6.21",
+            true,
+            false
     ),
-    IOS_MUSIC_6_21(IOS_MUSIC_7_04.id,
+    IOS_MUSIC_7_04(IOS_MUSIC_6_21.id,
+            IOS_MUSIC_6_21.deviceBrand,
+            IOS_MUSIC_6_21.deviceMake,
+            IOS_MUSIC_6_21.deviceModel,
+            IOS_MUSIC_6_21.osName,
+            IOS_MUSIC_6_21.osVersion,
+            IOS_MUSIC_6_21.androidSdkVersion,
+            IOS_MUSIC_6_21.buildId,
+            IOS_MUSIC_6_21.packageName,
+            IOS_MUSIC_6_21.clientName,
+            "7.04",
+            true,
+            false
+    ),
+    IOS_MUSIC_8_12(IOS_MUSIC_6_21.id,
+            IOS_MUSIC_6_21.deviceBrand,
+            IOS_MUSIC_6_21.deviceMake,
+            IOS_MUSIC_6_21.deviceModel,
+            IOS_MUSIC_6_21.osName,
+            "18.6.1.22G90",
+            IOS_MUSIC_6_21.androidSdkVersion,
+            IOS_MUSIC_6_21.buildId,
+            IOS_MUSIC_6_21.packageName,
+            IOS_MUSIC_6_21.clientName,
+            "8.12",
+            true,
+            false
+    ),
+    IOS_MUSIC_8_34(IOS_MUSIC_8_12.id,
+            IOS_MUSIC_8_12.deviceBrand,
+            IOS_MUSIC_8_12.deviceMake,
+            IOS_MUSIC_8_12.deviceModel,
+            IOS_MUSIC_8_12.osName,
+            IOS_MUSIC_8_12.osVersion,
+            IOS_MUSIC_8_12.androidSdkVersion,
+            IOS_MUSIC_8_12.buildId,
+            IOS_MUSIC_8_12.packageName,
+            IOS_MUSIC_8_12.clientName,
+            "8.34",
+            true,
+            false
+    ),
+    IOS_MUSIC_6_21_BLOCK_REQUEST(IOS_MUSIC_6_21.id,
+            IOS_MUSIC_6_21.deviceBrand,
+            IOS_MUSIC_6_21.deviceMake,
+            IOS_MUSIC_6_21.deviceModel,
+            IOS_MUSIC_6_21.osName,
+            IOS_MUSIC_6_21.osVersion,
+            IOS_MUSIC_6_21.androidSdkVersion,
+            IOS_MUSIC_6_21.buildId,
+            IOS_MUSIC_6_21.packageName,
+            IOS_MUSIC_6_21.clientName,
+            IOS_MUSIC_6_21.clientVersion,
+            true,
+            true
+    ),
+    IOS_MUSIC_7_04_BLOCK_REQUEST(IOS_MUSIC_7_04.id,
             IOS_MUSIC_7_04.deviceBrand,
             IOS_MUSIC_7_04.deviceMake,
             IOS_MUSIC_7_04.deviceModel,
@@ -45,31 +147,37 @@ public enum ClientType {
             IOS_MUSIC_7_04.buildId,
             IOS_MUSIC_7_04.packageName,
             IOS_MUSIC_7_04.clientName,
-            "6.21"
+            IOS_MUSIC_7_04.clientVersion,
+            true,
+            true
     ),
-    IOS_MUSIC_8_12(IOS_MUSIC_7_04.id,
-            IOS_MUSIC_7_04.deviceBrand,
-            IOS_MUSIC_7_04.deviceMake,
-            IOS_MUSIC_7_04.deviceModel,
-            IOS_MUSIC_7_04.osName,
-            "18.6.1.22G90",
-            IOS_MUSIC_7_04.androidSdkVersion,
-            IOS_MUSIC_7_04.buildId,
-            IOS_MUSIC_7_04.packageName,
-            IOS_MUSIC_7_04.clientName,
-            "8.12"
+    IOS_MUSIC_8_12_BLOCK_REQUEST(IOS_MUSIC_8_12.id,
+            IOS_MUSIC_8_12.deviceBrand,
+            IOS_MUSIC_8_12.deviceMake,
+            IOS_MUSIC_8_12.deviceModel,
+            IOS_MUSIC_8_12.osName,
+            IOS_MUSIC_8_12.osVersion,
+            IOS_MUSIC_8_12.androidSdkVersion,
+            IOS_MUSIC_8_12.buildId,
+            IOS_MUSIC_8_12.packageName,
+            IOS_MUSIC_8_12.clientName,
+            IOS_MUSIC_8_12.clientVersion,
+            true,
+            true
     ),
-    ANDROID_VR_1_65_09(ANDROID_VR_1_43_32.id,
-            ANDROID_VR_1_43_32.deviceBrand,
-            ANDROID_VR_1_43_32.deviceModel,
-            "Quest 3",
-            ANDROID_VR_1_43_32.osName,
-            "14",
-            "34",
-            "UP1A.231005.007.A1",
-            ANDROID_VR_1_43_32.packageName,
-            ANDROID_VR_1_43_32.clientName,
-            "1.65.09"
+    IOS_MUSIC_8_34_BLOCK_REQUEST(IOS_MUSIC_8_34.id,
+            IOS_MUSIC_8_34.deviceBrand,
+            IOS_MUSIC_8_34.deviceMake,
+            IOS_MUSIC_8_34.deviceModel,
+            IOS_MUSIC_8_34.osName,
+            IOS_MUSIC_8_34.osVersion,
+            IOS_MUSIC_8_34.androidSdkVersion,
+            IOS_MUSIC_8_34.buildId,
+            IOS_MUSIC_8_34.packageName,
+            IOS_MUSIC_8_34.clientName,
+            IOS_MUSIC_8_34.clientVersion,
+            true,
+            true
     );
 
     /**
@@ -137,6 +245,16 @@ public enum ClientType {
      */
     public final String userAgent;
 
+    /**
+     * If the client should use authentication if available.
+     */
+    public final boolean useAuth;
+
+    /**
+     * Whether the '/initplayback' request should be blocked.
+     */
+    public final boolean blockRequest;
+
     @SuppressWarnings("ConstantLocale")
     ClientType(int id,
                String deviceBrand,
@@ -148,7 +266,9 @@ public enum ClientType {
                @Nullable String buildId,
                String packageName,
                String clientName,
-               String clientVersion) {
+               String clientVersion,
+               boolean useAuth,
+               boolean blockRequest) {
         this.id = id;
         this.deviceBrand = deviceBrand;
         this.deviceMake = deviceMake;
@@ -160,6 +280,8 @@ public enum ClientType {
         this.packageName = packageName;
         this.clientName = clientName;
         this.clientVersion = clientVersion;
+        this.useAuth = useAuth;
+        this.blockRequest = blockRequest;
 
         Locale defaultLocale = Locale.getDefault();
         if (androidSdkVersion == null) {
