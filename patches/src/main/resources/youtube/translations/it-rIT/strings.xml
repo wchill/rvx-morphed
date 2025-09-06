@@ -11,7 +11,7 @@
     <string name="revanced_extended_audio_tracks_unavailable">"Questa impostazione non è al momento disponibile.
 Per usare questa impostazione, cambia il client predefinito in iOS TV, TV o TV Simply.
 
-Nota: iOS TV non supporta la riproduzione di alcuni video, come i video musicali, quindi se il client predefinito è impostato su iOS TV, questa impostazione potrebbe non funzionare per alcuni video."</string>
+Nota: iOS TV non è disponibile in alcune regioni, nel tal caso questa impostazione potrebbe comunque non funzionare."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Sei sicuro di voler procedere?</string>
     <string name="revanced_extended_restart_first_run">Riavvia per caricare l\'interfaccia normalmente</string>
     <string name="revanced_extended_restart_title">Riavvio richiesto</string>
@@ -94,6 +94,23 @@ Descrizione
     <string name="revanced_queue_manager_fetch_succeeded_remove">Video rimosso con successo</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Coda salvata con successo in \'%s\'</string>
     <string name="revanced_share_copy_video_information_success">Informazioni video copiate negli appunti</string>
+    <string name="revanced_webview_title">WebView</string>
+    <string name="revanced_webview_summary">Apri WebView per ottenere i cookie.</string>
+    <string name="revanced_webview_contextual_menu_get_cookies">Ottieni i cookie</string>
+    <string name="revanced_webview_contextual_menu_get_data_sync_id">Ottieni l\'ID di sincronizzazione dati</string>
+    <string name="revanced_webview_contextual_menu_get_visitor_data">Ottieni i dati del visitatore</string>
+    <string name="revanced_webview_contextual_menu_refresh">Ricarica</string>
+    <string name="revanced_webview_cookies">Cookie</string>
+    <string name="revanced_webview_data_sync_id">ID di sincronizzazione dati</string>
+    <string name="revanced_webview_visitor_data">Dati del visitatore</string>
+    <string name="revanced_webview_intent_clear_cookies_on_startup">Cancella i cookie all\'avvio</string>
+    <string name="revanced_webview_intent_clear_cookies_on_shutdown">Cancella i cookie allo spegnimento</string>
+    <string name="revanced_webview_intent_use_desktop_user_agent">Usa desktop user-agent</string>
+    <string name="revanced_webview_copy">Copia</string>
+    <string name="revanced_webview_toast_copy_success">%s copiato negli appunti</string>
+    <string name="revanced_webview_toast_empty">%s è vuota</string>
+    <string name="revanced_webview_toast_no_network">Controlla la tua connessione di rete</string>
+    <string name="revanced_webview_toast_unavailable">WebView non è disponibile</string>
     <string name="revanced_language_title">Lingua di RVX</string>
     <string name="revanced_language_DEFAULT">Lingua dell\'app</string>
     <string name="revanced_language_AM">"Amarico
@@ -619,6 +636,48 @@ Se in seguito verrà disattivata, si consiglia di cancellare i dati dell'app per
     <string name="revanced_fix_spoof_app_version_side_effect_user_dialog_message">"Se la versione dell'app è stata cammuffata alla 19.30 o a una versione precedente anche solo una volta, l'impostazione \"Riproduzione\" potrebbe non funzionare. Ciò dipende dalla risposta che l'app riceve dal server.
 
 Se l'impostazione \"Riproduzione\" non funziona, attivarla potrebbe risolvere il problema. Se l'impostazione \"Riproduzione\" continua a non funzionare anche dopo averla attivata o disattivata, è necessario cancellare i dati dell'app."</string>
+    <string name="revanced_set_transcript_cookies_title">Imposta i cookie di trascrizione</string>
+    <string name="revanced_set_transcript_cookies_summary_on">I cookie di trascrizione sono impostati.</string>
+    <string name="revanced_set_transcript_cookies_summary_off">I cookie di trascrizione non sono impostati.</string>
+    <string name="revanced_set_transcript_cookies_user_dialog_message">"Al momento su YouTube è presente un bug che non consente la traduzione automatica dei sottotitoli.
+Si tratta di un problema con l'API di trascrizione di YouTube e Google deve risolverlo.
+Come soluzione temporanea, puoi risolvere il problema impostando i cookie.
+
+Note: 
+• L'uso dei cookie non è una soluzione definitiva.
+• Questa soluzione potrebbe non funzionare se i cookie sono scaduti o non validi, oppure se l'API di trascrizione di YouTube non convalida più i cookie."</string>
+    <string name="revanced_set_transcript_cookies_all_title">Imposta i cookie per tutte le richieste API di trascrizione</string>
+    <string name="revanced_set_transcript_cookies_all_summary_on">I cookie sono impostati per tutte le richieste API di trascrizione.</string>
+    <string name="revanced_set_transcript_cookies_all_summary_off">I cookie non sono impostati per tutte le richieste API di trascrizione.</string>
+    <string name="revanced_transcript_cookies_title">Cookie di trascrizione</string>
+    <string name="revanced_transcript_cookies_summary">I cookie da usare per le richieste API di trascrizione.</string>
+    <string name="revanced_transcript_cookies_about_title">Informazioni sui cookie di trascrizione</string>
+    <string name="revanced_transcript_cookies_about_summary">Tocca qui per vedere come ottenere i cookie.</string>
+    <string name="revanced_transcript_cookies_dialog_title">Esporta i cookie di trascrizione</string>
+    <string name="revanced_transcript_cookies_dialog_message">"Autenticazione
+══════════════
+1. Tocca su \"Autenticazione\" per aprire la pagina di accesso in WebView.
+2. Accedi al tuo account Google.
+3. Riproduci qualsiasi video che supporti i sottotitoli tradotti automaticamente.
+4. Attiva i sottotitoli tradotti automaticamente e verifica se funzionano.
+4.1. Se i sottotitoli tradotti automaticamente non funzionano, passa a un altro video che li supporti e riprova il passaggio 4.
+5. Fai clic sui tre puntini sulla barra degli strumenti per aprire il menu contestuale.
+6. Fai clic su \"Ottieni i cookie\".
+7. Fai clic su \"Copia\" per copiare i cookie.
+8. Chiudi WebView e incolla i cookie copiati nelle impostazioni \"Cookie di trascrizione\".
+
+Nessuna autenticazione
+══════════════
+1. Fai clic su \"Nessuna autenticazione\" per aprire il video in WebView.
+2. Riproduci il video per almeno 3 secondi.
+3. Fai clic sui tre puntini sulla barra degli strumenti per aprire il menu contestuale.
+4. Fai clic su \"Ottieni i cookie\".
+5. Fai clic su \"Copia\" per copiare i cookie.
+6. Chiudi WebView e incolla i cookie copiati nelle impostazioni \"Cookie di trascrizione\".
+
+Nota: i cookie generati senza effettuare l'accesso potrebbero non essere validi o potrebbero richiedere del tempo prima di essere disponibili per l'API di trascrizione."</string>
+    <string name="revanced_transcript_cookies_dialog_auth_text">Autenticazione</string>
+    <string name="revanced_transcript_cookies_dialog_no_auth_text">Nessuna autenticazione</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">Menù dell\'account</string>
     <string name="revanced_preference_screen_account_menu_summary">Personalizza i componenti dei menù dell\'account e della scheda Tu.</string>
@@ -2223,12 +2282,14 @@ Nota: se sei un utente YouTube Premium o hai escluso la patch \"GmsCore support\
 <small>(In fase di sviluppo)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Effetti collaterali del camuffamento</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Il menù Traccia Audio è nascosto.
-• Il menù Volume Stabile è nascosto.
 • La disattivazione delle tracce audio automatiche forzate non funziona.
-• I video per bambini potrebbero non essere riprodotti se si è disconnessi o navigando in incognito."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Il menù Volume Stabile è nascosto.
+• Il menù Volume Stabile è nascosto.
+• I video per bambini potrebbero non essere riprodotti se si è disconnessi o in incognito."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Il menù Traccia Audio potrebbe essere nascosto.
+• La disattivazione delle tracce audio automatiche forzate potrebbe non funzionare.
+• Il menù Volume Stabile è nascosto.
 • I film o i video a pagamento potrebbero non essere riproducibili.
-• I video per bambini potrebbero non essere riprodotti se si è disconnessi o navigando in incognito."</string>
+• I video per bambini potrebbero non essere riprodotti se si è disconnessi o in incognito."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Il menù Traccia Audio è nascosto.
 • La disattivazione delle tracce audio automatiche forzate non funziona.
 • Se il deoffuscamento fallisce, la riproduzione potrebbe non funzionare.

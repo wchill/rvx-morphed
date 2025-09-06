@@ -12,8 +12,7 @@
 Щоб скористатися цією функцією, змініть 'Основний клієнт (Підробка даних трансляції)' на iOS TV, TV або Простий TV.
 
 Примітка:
-• iOS TV не підтримує відтворення деяких відео, наприклад, музичних відео.
-• Отже, якщо Основний клієнт вибрано iOS TV, це налаштування може не працювати для деяких відео."</string>
+• iOS TV недоступний у деяких регіонах, і в цьому випадку це налаштування може все ще не працювати."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Впевнені, що бажаєте продовжити?</string>
     <string name="revanced_extended_restart_first_run">Перезапустіть, щоб нормально завантажився макет</string>
     <string name="revanced_extended_restart_title">Потрібно перезапустити</string>
@@ -96,6 +95,23 @@
     <string name="revanced_queue_manager_fetch_succeeded_remove">Відео вилучено успішно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Чергу збережено успішно до: \'%s\'.</string>
     <string name="revanced_share_copy_video_information_success">Інформацію про відео скопійовано в буфер обміну.</string>
+    <string name="revanced_webview_title">WebView</string>
+    <string name="revanced_webview_summary">Відкрийте WebView, щоб отримати куки.</string>
+    <string name="revanced_webview_contextual_menu_get_cookies">Отримати куки</string>
+    <string name="revanced_webview_contextual_menu_get_data_sync_id">Отримати ідентифікатор синхронізації даних</string>
+    <string name="revanced_webview_contextual_menu_get_visitor_data">Отримати дані відвідувача</string>
+    <string name="revanced_webview_contextual_menu_refresh">Поновити</string>
+    <string name="revanced_webview_cookies">Куки</string>
+    <string name="revanced_webview_data_sync_id">Ідентифікатор синхронізації даних</string>
+    <string name="revanced_webview_visitor_data">Дані відвідувача</string>
+    <string name="revanced_webview_intent_clear_cookies_on_startup">Очищувати куки при запуску</string>
+    <string name="revanced_webview_intent_clear_cookies_on_shutdown">Очищувати куки при закритті</string>
+    <string name="revanced_webview_intent_use_desktop_user_agent">Використовувати настільний агент користувача</string>
+    <string name="revanced_webview_copy">Скопіювати</string>
+    <string name="revanced_webview_toast_copy_success">%s скопійовано в буфер обміну.</string>
+    <string name="revanced_webview_toast_empty">%s порожній.</string>
+    <string name="revanced_webview_toast_no_network">Будь ласка, перевірте мережеве з\'єднання.</string>
+    <string name="revanced_webview_toast_unavailable">WebView недоступний.</string>
     <string name="revanced_language_title">Мова RVX</string>
     <string name="revanced_language_DEFAULT">Мова додатка</string>
     <string name="revanced_language_AM">"Амхарська
@@ -623,6 +639,56 @@
 Якщо налаштування 'Відтворення' порушене, увімкнення цього налаштування може вирішити проблему.
 
 Якщо налаштування 'Відтворення' не працює навіть після увімкнення або вимкнення цього налаштування, слід очистити дані програми."</string>
+    <string name="revanced_set_transcript_cookies_title">Встановити куки транскрипції</string>
+    <string name="revanced_set_transcript_cookies_summary_on">Куки транскрипції встановлено.</string>
+    <string name="revanced_set_transcript_cookies_summary_off">Куки транскрипції не встановлено.</string>
+    <string name="revanced_set_transcript_cookies_user_dialog_message">"Наразі на YouTube є баг, коли автоперекладені субтитри недоступні.
+
+Це проблема з API транскрипції YouTube, і Google має її виправити.
+
+Як тимчасовий обхідний шлях, можна вирішити цю проблему налаштувавши куки.
+
+[Застереження]
+
+Використання куків не є панацеєю.
+
+Це може не працювати, якщо:
+• Термін дії куків закінчився.
+• Використовуються недійсні куки.
+• API транскрипції YouTube більше не перевіряє куки."</string>
+    <string name="revanced_set_transcript_cookies_all_title">Встановити куки для всіх запитів API транскрипції</string>
+    <string name="revanced_set_transcript_cookies_all_summary_on">Куки встановлено для всіх запитів API транскрипції.</string>
+    <string name="revanced_set_transcript_cookies_all_summary_off">Куки встановлено лише для запитів автоперекладених субтитрів.</string>
+    <string name="revanced_transcript_cookies_title">Куки транскрипції</string>
+    <string name="revanced_transcript_cookies_summary">Куки для використання в запитах API транскрипції.</string>
+    <string name="revanced_transcript_cookies_about_title">Про куки транскрипції</string>
+    <string name="revanced_transcript_cookies_about_summary">Натисніть, щоб побачити, як отримати куки.</string>
+    <string name="revanced_transcript_cookies_dialog_title">Експортувати куки транскрипції</string>
+    <string name="revanced_transcript_cookies_dialog_message">"Авторизація
+══════════════
+1. Натисніть 'Авторизація', щоб відкрити сторінку входу в WebView.
+2. Увійдіть у свій обліковий запис Google.
+3. Відтворіть будь-яке відео, яке підтримує автопереклад субтитрів.
+4. Увімкніть автоперекладені субтитри і переконайтеся чи це працює.
+4-1. Якщо автоперекладені субтитри не працюють, перемкніть на інше відео, яке підтримує автоперекладені субтитри і повторіть крок 4.
+5. Натисніть три крапки на панелі інструментів, щоб відкрити контекстне меню.
+6. Натисніть 'Отримати куки'.
+7. Натисніть 'Скопіювати', щоб скопіювати куки.
+8. Закрийте WebView і вставте скопійовані куки в налаштування 'Куки транскрипції'.
+
+
+Без авторизації
+══════════════
+1. Натисніть 'Без авторизації'', щоб відкрити відео в WebView.
+2. Відтворіть відео щонайменше 3 секунди.
+3. Натисніть три крапки на панелі інструментів, щоб відкрити контекстне меню.
+4. Натисніть 'Отримати куки'.
+5. Натисніть 'Скопіювати', щоб скопіювати куки.
+6. Закрийте WebView і вставте скопійовані куки в налаштування 'Куки транскрипції'.
+
+Застереження: Куки, видані без входу, можуть бути недійсними або зайняти деякий час, щоб стати доступними для API транскрипції."</string>
+    <string name="revanced_transcript_cookies_dialog_auth_text">Авторизація</string>
+    <string name="revanced_transcript_cookies_dialog_no_auth_text">Без авторизації</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">Меню облікового запису</string>
     <string name="revanced_preference_screen_account_menu_summary">Приховувати чи показувати елементи меню облікового запису і вкладки Ви.</string>
@@ -2227,10 +2293,12 @@
 <small>(ще в розробці)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Побічні ефекти імітування</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• Меню звукової доріжки відсутнє.
-• Стабілізація гучності недоступна.
 • Вимкнення примусових авто звукових доріжок недоступне.
+• Стабілізація гучності недоступна.
 • Відео для дітей можуть не відтворюватися коли вийшли з облікового запису або в анонімному режимі."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Стабілізація гучності недоступна.
+    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Меню звукової доріжки може бути відсутнє.
+• Вимкнення примусових авто звукових доріжок може бути недоступне.
+• Стабілізація гучності недоступна.
 • Фільми та платні відео можуть не відтворюватися.
 • Відео для дітей можуть не відтворюватися коли вийшли з облікового запису або в анонімному режимі."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Меню звукової доріжки відсутнє.

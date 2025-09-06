@@ -12,8 +12,7 @@
 Aby używać tej fukcji, zmień domyślnego klienta oszukiwania strumienia danych na iOS TV, TV lub Uproszczony TV.
 
 Notki:
-• iOS TV nie obsługuje odtwarzania niektórych filmów, jak muzycznych
-• dlatego jeśli domyślnym klientem jest iOS TV, ustawienie te może nie działać dla niektórych filmów"</string>
+• iOS TV nie jest dostępne w niektórych regionach, w czego rezultacie opcja ta może nie działać"</string>
     <string name="revanced_extended_confirm_user_dialog_title">Czy chcesz kontynuować?</string>
     <string name="revanced_extended_restart_first_run">Uruchom ponownie, aby wczytać poprawnie układ aplikacji</string>
     <string name="revanced_extended_restart_title">Wymagane ponowne uruchomienie</string>
@@ -96,6 +95,23 @@ Opis
     <string name="revanced_queue_manager_fetch_succeeded_remove">Pomyślnie usunięto film.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Pomyślnie zapisano kolejkę do \'%s\'.</string>
     <string name="revanced_share_copy_video_information_success">Skopiowano informacje o filmie.</string>
+    <string name="revanced_webview_title">WebView</string>
+    <string name="revanced_webview_summary">Otwiera WebView w celu pobrania plików cookie.</string>
+    <string name="revanced_webview_contextual_menu_get_cookies">Pobierz pliki cookie</string>
+    <string name="revanced_webview_contextual_menu_get_data_sync_id">Pobierz ID synchronizacji danych</string>
+    <string name="revanced_webview_contextual_menu_get_visitor_data">Pobierz Visitor Data</string>
+    <string name="revanced_webview_contextual_menu_refresh">Odśwież</string>
+    <string name="revanced_webview_cookies">Pliki cookie</string>
+    <string name="revanced_webview_data_sync_id">ID synchronizacji danych</string>
+    <string name="revanced_webview_visitor_data">Visitor Data</string>
+    <string name="revanced_webview_intent_clear_cookies_on_startup">Wyczyść pliki cookie po otwarciu</string>
+    <string name="revanced_webview_intent_clear_cookies_on_shutdown">Wyczyść pliki cookie po zamknięciu</string>
+    <string name="revanced_webview_intent_use_desktop_user_agent">Użyj komputerowego User-Agent</string>
+    <string name="revanced_webview_copy">Kopiuj</string>
+    <string name="revanced_webview_toast_copy_success">%s skopiowane do schowka.</string>
+    <string name="revanced_webview_toast_empty">%s jest puste.</string>
+    <string name="revanced_webview_toast_no_network">Sprawdź swoje połączenie internetowe.</string>
+    <string name="revanced_webview_toast_unavailable">WebView jest niedostępne.</string>
     <string name="revanced_language_title">Język RVX</string>
     <string name="revanced_language_DEFAULT">Język aplikacji</string>
     <string name="revanced_language_AM">"Amharski
@@ -623,6 +639,55 @@ Jest to zależne od odpowiedzi, jaką aplikacja dostanie z serwera.
 Jeśli ustawienie 'Odtwarzanie' jest uszkodzone, włączenie tego ustawienia powinno rozwiązać problem.
 
 Jeśli nadal występują problemy z tym ustawieniem nawet po włączeniu/wyłączeniu tego ustawienia, należy wyczyścić dane aplikacji."</string>
+    <string name="revanced_set_transcript_cookies_title">Transkrypcyjne pliki cookie</string>
+    <string name="revanced_set_transcript_cookies_summary_on">Włączone</string>
+    <string name="revanced_set_transcript_cookies_summary_off">Wyłączone</string>
+    <string name="revanced_set_transcript_cookies_user_dialog_message">"Obecnie jest błąd na YouTube, gdzie napisy przetłumaczone automatycznie są niedostępne.
+
+Jest to problem wynikający z transkrypcyjnego API YouTube, który Google musi naprawić.
+
+Jako tymczasowe obejście, możesz rozwiązać ten problem ustawiając pliki cookie.
+
+[Zastrzeżenie]
+
+Korzystanie z plików cookie nie jest panaceum.
+
+Może to nie działać, jeśli:
+• pliki cookie wygasły
+• używane są nieprawidłowe pliki cookie
+• transkrypcyjne API YouTube nie weryfikuje już plików cookie"</string>
+    <string name="revanced_set_transcript_cookies_all_title">Pliki cookie dla wszystkich żądań transkrypcyjnego API</string>
+    <string name="revanced_set_transcript_cookies_all_summary_on">Tak</string>
+    <string name="revanced_set_transcript_cookies_all_summary_off">Nie</string>
+    <string name="revanced_transcript_cookies_title">Transkrypcyjne pliki cookie</string>
+    <string name="revanced_transcript_cookies_summary">Pliki cookie używane w żądaniach transkrypcyjnego API.</string>
+    <string name="revanced_transcript_cookies_about_title">O transkrypcyjnych plikach cookie</string>
+    <string name="revanced_transcript_cookies_about_summary">Kliknij, by zobaczyć jak pobrać pliki cookie.</string>
+    <string name="revanced_transcript_cookies_dialog_title">Eksportuj transkrypcyjne pliki cookie</string>
+    <string name="revanced_transcript_cookies_dialog_message">"Z autoryzacją
+══════════════
+1. Kliknij 'Z autoryzacją', by otworzyć okno logowania w WebView
+2. Zaloguj się na swoje konto Google
+3. Odtwórz jakikolwiek film wspierający napisy przetłumaczone automatycznie
+4. Włącz napisy przetłumaczone automatycznie i sprawdź, czy działają
+4-1. Jeśli napisy przetłumaczone automatycznie nie działają, odtwórz inny film wspierający napisy przetłumaczone automatycznie i powtórz krok 4
+5. Kliknij trzy kropki w pasku narzędzi i otwórz menu kontekstowe
+6. Kliknij 'Pobierz pliki cookie'
+7. Kliknij 'Kopiuj', by skopiować pliki cookie
+8. Zamknij WebView i wklej skopiowane pliki cookie do ustawień 'Transkrypcyjne pliki cookie'
+
+Bez autoryzacji
+══════════════
+1. Kliknij 'Bez autoryzacji', by otworzyć okno logowania w WebView
+2. Odtwórz film na co najmniej 3 sekundy
+3. Kliknij trzy kropki w pasku narzędzi i otwórz menu kontekstowe
+4. Kliknij 'Pobierz pliki cookie'
+5. Kliknij 'Kopiuj', by skopiować pliki cookie
+6. Zamknij WebView i wklej skopiowane pliki cookie do ustawień 'Transkrypcyjne pliki cookie'
+
+Zastrzeżenie: Pliki cookie wydane bez logowania mogą być nieprawidłowe lub ich udostępnienie w transkrypcyjnym API może potrwać."</string>
+    <string name="revanced_transcript_cookies_dialog_auth_text">Z autoryzacją</string>
+    <string name="revanced_transcript_cookies_dialog_no_auth_text">Bez autoryzacji</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">Menu konta</string>
     <string name="revanced_preference_screen_account_menu_summary">Ukryj bądź pokaż elementy w menu konta i zakładki Ty</string>
@@ -2229,10 +2294,12 @@ Jeśli jesteś użytkownikiem YouTube Premium lub odznaczono przy łataniu 'GmsC
 <small>(W fazie rozwoju)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Efekty uboczne oszukiwania</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• brakuje menu od ścieżki dźwiękowej
-• stabilna głośność nie jest dostępna
 • automatyczne wymuszenie ścieżki dźwiękowej nie jest dostępne
+• stabilna głośność nie jest dostępna
 • filmy dla dzieci mogą się nie odtwarzać będąc zalogowanym lub w trybie incognito"</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• stabilna głośność nie jest dostępna
+    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• stabilna głośność może nie być dostępna
+• automatyczne wymuszenie ścieżki dźwiękowej może nie być dostępne
+• stabilna głośność nie jest dostępna
 • filmy kinowe lub płatne mogą się nie odtwarzać
 • filmy dla dzieci mogą się nie odtwarzać będąc zalogowanym lub w trybie incognito"</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• brakuje menu od ścieżki dźwiękowej

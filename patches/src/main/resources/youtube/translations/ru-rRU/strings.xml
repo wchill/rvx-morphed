@@ -96,6 +96,23 @@
     <string name="revanced_queue_manager_fetch_succeeded_remove">Видео удалено успешно.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">Очередь была успешно сохранена до: \'%s\'.</string>
     <string name="revanced_share_copy_video_information_success">Информация о видео в буфере обмена.</string>
+    <string name="revanced_webview_title">Webview</string>
+    <string name="revanced_webview_summary">Откройте WebView для получения куки.</string>
+    <string name="revanced_webview_contextual_menu_get_cookies">Получить куки</string>
+    <string name="revanced_webview_contextual_menu_get_data_sync_id">Получить ID синхр. данных</string>
+    <string name="revanced_webview_contextual_menu_get_visitor_data">Получить данные посещаемости</string>
+    <string name="revanced_webview_contextual_menu_refresh">Обновить</string>
+    <string name="revanced_webview_cookies">Куки</string>
+    <string name="revanced_webview_data_sync_id">ID синхр. данных</string>
+    <string name="revanced_webview_visitor_data">Данные посещаемости</string>
+    <string name="revanced_webview_intent_clear_cookies_on_startup">Очистить куки при запуске</string>
+    <string name="revanced_webview_intent_clear_cookies_on_shutdown">Очистить куки при выключении</string>
+    <string name="revanced_webview_intent_use_desktop_user_agent">Использовать User-Agent рабочего стола</string>
+    <string name="revanced_webview_copy">Копия</string>
+    <string name="revanced_webview_toast_copy_success">%s в буфер обмена.</string>
+    <string name="revanced_webview_toast_empty">%s пуст.</string>
+    <string name="revanced_webview_toast_no_network">Проверьте подключение к Интернету.</string>
+    <string name="revanced_webview_toast_unavailable">WebView недоступен.</string>
     <string name="revanced_language_title">Язык RVX</string>
     <string name="revanced_language_DEFAULT">Язык приложения</string>
     <string name="revanced_language_AM">"Амхарский
@@ -632,6 +649,55 @@ Shorts
 Если настройка 'Просмотр' повреждена, эта настройка может решить проблему.
 
 Если настройка 'Просмотр' по-прежнему повреждена, даже, после включения или отключения этой настройки, попробуйте очистить данные приложения."</string>
+    <string name="revanced_set_transcript_cookies_title">Установить расшифровки куки</string>
+    <string name="revanced_set_transcript_cookies_summary_on">Расшифровки куки установлены.</string>
+    <string name="revanced_set_transcript_cookies_summary_off">Расшифровки куки не установлены.</string>
+    <string name="revanced_set_transcript_cookies_user_dialog_message">"Есть ошибка на стороне YouTube, из-за которой автоперевод субтитров недоступен.
+
+Это проблема с API субтитров YouTube, и Google должен ее исправить.
+
+Временное решение - установить куки.
+
+[Отказ от ответственности]
+Использование Cookies не является панацеей.
+
+Может не работать, если:
+• Cookies просрочены.
+• Используются недопустимые Cookies.
+• API субтитров YouTube больше не проверяет cookies."</string>
+    <string name="revanced_set_transcript_cookies_all_title">Установить куки, для всех расшифровок, запросов API</string>
+    <string name="revanced_set_transcript_cookies_all_summary_on">Куки установлены, для всех расшифровок, запросов API.</string>
+    <string name="revanced_set_transcript_cookies_all_summary_off">Куки установлены только для авто-перевода запросов субтитров.</string>
+    <string name="revanced_transcript_cookies_title">Расшифровки куки</string>
+    <string name="revanced_transcript_cookies_summary">Куки для запросов расшифровок API.</string>
+    <string name="revanced_transcript_cookies_about_title">О расшифровках куки</string>
+    <string name="revanced_transcript_cookies_about_summary">Нажмите, чтобы посмотреть, как получить куки.</string>
+    <string name="revanced_transcript_cookies_dialog_title">Экспорт расшифровок куки</string>
+    <string name="revanced_transcript_cookies_dialog_message">"Авторизация
+═══════════════
+1. Нажмите \"Авторизация\"\", чтобы открыть страницу входа в WebView.
+2. Войдите в свою учётную запись Google.
+3. Воспроизведите любое видео с поддержкой авто-перевода субтитров.
+4. Включите автоматический перевод субтитров и проверьте, работает ли он.
+4-1. Если авто-перевод субтитров не работает, переключитесь на другое видео с поддержкой авто-перевода субтитров и повторите шаг 4.
+5. Нажмите три точки на панели инструментов, чтобы открыть контекстное меню.
+6. Нажмите \"Получить файлы куки\".
+7. Нажмите \"Копировать\", чтобы скопировать файлы куки.
+8. Закройте WebView и вставьте скопированные файлы куки в настройки \"Расшифровки куки\".
+
+Без авторизации
+═══════════════
+1. Нажмите \"Без авторизации\", чтобы открыть видео в WebView.
+2. Воспроизведите видео не менее 3 секунд.
+3. Нажмите три точки на панели инструментов, чтобы открыть контекстное меню.
+4. Нажмите \"Получить файлы куки\".
+5. Нажмите \"Копировать\", чтобы скопировать файлы куки.
+6. Закройте WebView и вставьте скопированные файлы куки в настройки \"Файлы куки для расшифровки\".
+
+Отказ от ответственности:
+Файлы куки, созданные без входа в систему, могут быть недействительными или могут потребовать времени для того, чтобы стать доступными для API Transcript."</string>
+    <string name="revanced_transcript_cookies_dialog_auth_text">Авторизация</string>
+    <string name="revanced_transcript_cookies_dialog_no_auth_text">Без авторизации</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">Меню аккаунта</string>
     <string name="revanced_preference_screen_account_menu_summary">Настройка меню аккаунта и вкладки Вы.</string>

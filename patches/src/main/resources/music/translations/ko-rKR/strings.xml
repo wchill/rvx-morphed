@@ -227,7 +227,7 @@
     <string name="revanced_replace_navigation_upgrade_button_title">업그레이드 버튼 변경</string>
     <string name="revanced_replace_navigation_upgrade_button_summary">업그레이드 버튼을 설정 버튼으로 변경합니다.</string>
     <string name="revanced_replace_navigation_button_about_title">버튼 변경에 대한 정보</string>
-    <string name="revanced_replace_navigation_button_about_summary">"이 기능은 실험 기능입니다.
+    <string name="revanced_replace_navigation_button_about_summary">"이 기능은 실험 단계입니다.
 YouTube Music의 검색 및 설정과 같은 활동은 공개되지 않으므로 패치에는 구조적인 제한이 있습니다.
 
 제한 사항:

@@ -97,6 +97,23 @@ Leírás
     <string name="revanced_queue_manager_fetch_succeeded_remove">A videó sikeresen törölve.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">A várólista sikeresen mentve ide: \'%s\'.</string>
     <string name="revanced_share_copy_video_information_success">Videó információ vágólapra másolva.</string>
+    <string name="revanced_webview_title">Webes nézet</string>
+    <string name="revanced_webview_summary">Nyissa meg a webes nézetet a sütikhez.</string>
+    <string name="revanced_webview_contextual_menu_get_cookies">Sütik fogadása</string>
+    <string name="revanced_webview_contextual_menu_get_data_sync_id">Adatszinkron azonosító lekérése</string>
+    <string name="revanced_webview_contextual_menu_get_visitor_data">Látogató adatok lekérése</string>
+    <string name="revanced_webview_contextual_menu_refresh">Frissít</string>
+    <string name="revanced_webview_cookies">Sütik</string>
+    <string name="revanced_webview_data_sync_id">Adatszinkron azonosító</string>
+    <string name="revanced_webview_visitor_data">Látogató adatok</string>
+    <string name="revanced_webview_intent_clear_cookies_on_startup">Sütik törlése indításkor</string>
+    <string name="revanced_webview_intent_clear_cookies_on_shutdown">Sütik törlése bezáráskor</string>
+    <string name="revanced_webview_intent_use_desktop_user_agent">Asztali felhasználó használata</string>
+    <string name="revanced_webview_copy">Másol</string>
+    <string name="revanced_webview_toast_copy_success">%s vágólapra másolva.</string>
+    <string name="revanced_webview_toast_empty">%s üres.</string>
+    <string name="revanced_webview_toast_no_network">Kérem ellenőrizze a hálózati kapcsolatot.</string>
+    <string name="revanced_webview_toast_unavailable">A webes nézet nem elérhető.</string>
     <string name="revanced_language_title">RVX nyelve</string>
     <string name="revanced_language_DEFAULT">Alkalmazás nyelve</string>
     <string name="revanced_language_AM">"Amhara
@@ -622,6 +639,31 @@ Ez attól függ, hogy milyen választ kap az alkalmazás a szervertől.
 Ha a 'Lejátszás' beállítás hibás, a beállítás bekapcsolása megoldhatja a problémát.
 
 Ha a 'Lejátszás' beállítás a beállítás engedélyezése vagy letiltása után is hibás, akkor törölnie kell az alkalmazás adatait."</string>
+    <string name="revanced_set_transcript_cookies_title">Átirati sütik beállítása</string>
+    <string name="revanced_set_transcript_cookies_summary_on">Az átirati sütik be lettek állítva.</string>
+    <string name="revanced_set_transcript_cookies_summary_off">Az átirati sütik nincsenek beállítva.</string>
+    <string name="revanced_set_transcript_cookies_user_dialog_message">"Jelenleg egy hiba van a YouTube-on, amely miatt nem érhetők el az automatikusan lefordított feliratok.
+
+Ez a YouTube Átirat API-val kapcsolatos probléma, és a Google-nek kell kijavítania.
+
+Ideiglenes megoldásként a problémát a sütik beállításával oldhatja meg.
+
+[Jogi nyilatkozat]
+
+A sütik használata nem csodaszer.
+
+A következő esetekben esetleg nem működik:
+• A sütik lejártak.
+• Érvénytelen sütiket használ.
+• A YouTube Átirat API már nem ellenőrzi a sütiket."</string>
+    <string name="revanced_set_transcript_cookies_all_title">Sütik beállítása minden Átirat API kéréshez</string>
+    <string name="revanced_set_transcript_cookies_all_summary_on">A rendszer minden Átirat API kéréshez beállítja a sütiket.</string>
+    <string name="revanced_set_transcript_cookies_all_summary_off">A sütik csak az automatikusan lefordított feliratokra vonatkozó kérésekhez vannak beállítva.</string>
+    <string name="revanced_transcript_cookies_title">Átirati sütik</string>
+    <string name="revanced_transcript_cookies_summary">Az Átirat API kérésekben használandó sütik.</string>
+    <string name="revanced_transcript_cookies_about_title">Átirati sütikről</string>
+    <string name="revanced_transcript_cookies_about_summary">Kattintson ide a sütik fogadásának módjáról.</string>
+    <string name="revanced_transcript_cookies_dialog_title">Átirati sütik eportálása</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">Fiók menü</string>
     <string name="revanced_preference_screen_account_menu_summary">Elemek elrejtése vagy megjelenítése a fiók menüben és a Te fülön.</string>
@@ -2224,8 +2266,10 @@ Kattintson a folytatás gombra és kapcsolja ki az akkumulátor optimalizáláso
 • A kényszerített automatikus hangsávok letiltása nem elérhető.
 • A stabil hangerő nem áll rendelkezésre.
 • Előfordulhat, hogy a gyerekeknek szánt tartalmat nem lehet lejátszani, ha ki van jelentkezve vagy inkognitó módban van."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• A stabil hangerő nem érhető el.
-• Előfordulhat, hogy a filmeket vagy a fizetős videókat nem lehet lejátszani.
+    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• A hangsáv menü hiányzik.
+• A kényszerített automatikus hangsávok letiltása nem elérhető.
+• A stabil hangerő nem áll rendelkezésre.
+• Előfordulhat, hogy a filmeket vagy fizetős videókat nem játsza le.
 • Előfordulhat, hogy a gyerekeknek szánt tartalmat nem lehet lejátszani, ha ki van jelentkezve vagy inkognitó módban van."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Hiányzik a hangsáv menü.
 • A kényszerített automatikus hangsávok letiltása nem érhető el.

@@ -9,12 +9,10 @@
     <string name="revanced_extended_reset_to_default_toast">إعادة التعيين إلى القيم الافتراضية.</string>
     <string name="revanced_preference_category_experimental_flag">تعديلات تجريبية</string>
     <string name="revanced_extended_audio_tracks_unavailable">"هذا الإعداد غير متاح حاليًا.
-
 لاستخدام هذه الميزة، غيّر 'العميل الافتراضي (Spoof Streaming Data)' إلى iOS TV, TV أو TV Simply.
 
 ملاحظة:
-• لا يدعم iOS TV تشغيل بعض الفيديوهات، مثل الفيديوهات الموسيقية.
-• لذلك، إذا تم ضبط العميل الافتراضي على iOS TV، فقد لا يعمل هذا الإعداد مع بعض الفيديوهات."</string>
+• لا يتوفر iOS TV في بعض المناطق، وفي هذه الحالة قد لا يعمل هذا الإعداد."</string>
     <string name="revanced_extended_confirm_user_dialog_title">هل انت متاكد انك تريد المتابعة؟</string>
     <string name="revanced_extended_restart_first_run">إعادة التشغيل لتحميل التخطيط بشكل طبيعي</string>
     <string name="revanced_extended_restart_title">يلزم إعادة التشغيل</string>
@@ -81,6 +79,23 @@
     <string name="revanced_queue_manager_fetch_succeeded_remove">تم إزالة الفيديو بنجاح.</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">تم حفظ قائمة الانتظار بنجاح في \'%s\'.</string>
     <string name="revanced_share_copy_video_information_success">تم نسخ معلومات الفيديو إلى الحافظة.</string>
+    <string name="revanced_webview_title">WebView</string>
+    <string name="revanced_webview_summary">فتح WebView للحصول على ملفات تعريف الارتباط.</string>
+    <string name="revanced_webview_contextual_menu_get_cookies">الحصول على ملفات تعريف الارتباط</string>
+    <string name="revanced_webview_contextual_menu_get_data_sync_id">الحصول على معرف مزامنة البيانات</string>
+    <string name="revanced_webview_contextual_menu_get_visitor_data">الحصول على بيانات الزائر</string>
+    <string name="revanced_webview_contextual_menu_refresh">تحديث</string>
+    <string name="revanced_webview_cookies">ملفات تعريف الارتباط</string>
+    <string name="revanced_webview_data_sync_id">معرف مزامنة البيانات</string>
+    <string name="revanced_webview_visitor_data">بيانات الزائر</string>
+    <string name="revanced_webview_intent_clear_cookies_on_startup">مسح ملفات تعريف الارتباط عند بدء التشغيل</string>
+    <string name="revanced_webview_intent_clear_cookies_on_shutdown">مسح ملفات تعريف الارتباط عند إيقاف التشغيل</string>
+    <string name="revanced_webview_intent_use_desktop_user_agent">استخدام وكيل مستخدم سطح المكتب</string>
+    <string name="revanced_webview_copy">نسخ</string>
+    <string name="revanced_webview_toast_copy_success">%s نُسخ إلى الحافظة.</string>
+    <string name="revanced_webview_toast_empty">%s فارغ.</string>
+    <string name="revanced_webview_toast_no_network">يرجى التحقق من اتصالك بالشبكة.</string>
+    <string name="revanced_webview_toast_unavailable">WebView غير متاح.</string>
     <string name="revanced_language_title">لغة RVX</string>
     <string name="revanced_language_DEFAULT">لغة التطبيق</string>
     <string name="revanced_language_AM">"الأمهرية
@@ -336,6 +351,8 @@
     <string name="revanced_hide_video_recommendation_labels_summary_on">"علامات المصغرات - مثل 'الناس شاهدوا أيضًا' و 'قد يعجبك أيضًا' - مخفية."</string>
     <string name="revanced_hide_video_recommendation_labels_summary_off">"يتم عرض علامات المصغرات - مثل 'الناس شاهدوا أيضًا' و 'قد يعجبك أيضًا'."</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
+    <string name="revanced_preference_screen_carousel_shelf_title">Carousel Shelf</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">إخفاء أو عرض Carousel Shelf في الصفحة الرئيسية، نتائج البحث، والاشتراكات.</string>
     <string name="revanced_hide_carousel_shelf_home_title">إخفاء في موجز الصفحة الرئيسية والفيديوهات ذات الصلة</string>
     <string name="revanced_hide_carousel_shelf_home_summary_on">مخفي في موجز الصفحة الرئيسية والفيديوهات ذات الصلة.</string>
     <string name="revanced_hide_carousel_shelf_home_summary_off">يُعرض في موجز الصفحة الرئيسية والفيديوهات ذات الصلة.</string>
@@ -345,6 +362,8 @@
     <string name="revanced_hide_carousel_shelf_search_title">إخفاء في نتائج البحث</string>
     <string name="revanced_hide_carousel_shelf_search_summary_on">مخفي في نتائج البحث.</string>
     <string name="revanced_hide_carousel_shelf_search_summary_off">يُعرض في نتائج البحث.</string>
+    <string name="revanced_hide_carousel_shelf_about_title">لمحة عن Carousel Shelf</string>
+    <string name="revanced_hide_carousel_shelf_about_summary">أمثلة على الرفوف الدوارة:&lt;br&gt;&lt;br&gt;&lt;b&gt;الأخبار العاجلة&lt;/b&gt;، &lt;b&gt;استمر في المشاهدة&lt;/b&gt;، &lt;b&gt;استكشف المزيد من القنوات&lt;/b&gt;، &lt;b&gt;لك&lt;/b&gt;، &lt;b&gt;استمع مرة أخرى&lt;/b&gt;، &lt;b&gt;الأكثر صلة&lt;/b&gt;، &lt;b&gt;التسوق&lt;/b&gt;، &lt;b&gt;شاهده مرة أخرى&lt;/b&amp;gt؛</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">شريط الفئة</string>
     <string name="revanced_preference_screen_category_bar_summary">إخفاء أو عرض شريط الفئة في الموجز، الفيديوهات ذات الصلة، نتائج البحث، والسجلّ.</string>
@@ -478,6 +497,7 @@
     <string name="revanced_change_start_page_entry_fashion">الموضة &amp; الجمال</string>
     <string name="revanced_change_start_page_entry_gaming">ألعاب فيديو</string>
     <string name="revanced_change_start_page_entry_history">السجلّ</string>
+    <string name="revanced_change_start_page_entry_hype">التشجيع</string>
     <string name="revanced_change_start_page_entry_library">المكتبة</string>
     <string name="revanced_change_start_page_entry_liked_videos">فيديوهات أعجبتني</string>
     <string name="revanced_change_start_page_entry_live">بث مباشر</string>
@@ -562,6 +582,16 @@
     <string name="revanced_disable_translucent_status_bar_summary_on">شريط الحالة غير شفاف.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">شريط الحالة معتم أو شفاف.</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">بالنسبة لبعض الـ ROM الخاصة بالشركة المصنعة التي تعمل بنظام Android 12 أو أحدث، قد يؤدي تمكين هذه الميزة إلى جعل شريط التنقل في النظام شفافًا.</string>
+    <string name="revanced_fix_hype_button_icon_title">إصلاح أيقونة زر التشجيع</string>
+    <string name="revanced_fix_hype_button_icon_summary_on">يتم عرض زر ايقونة التشجيع.</string>
+    <string name="revanced_fix_hype_button_icon_summary_off">تم إخفاء زر ايقونة التشجيع.</string>
+    <string name="revanced_fix_hype_button_icon_user_dialog_message">"في إصدار YouTube 19.25.39 أو إصدار أقدم، يكون رمز 'التشجيع' مخفيًا في شريط إجراءات الفيديو ولوحة وصف الفيديو.
+
+كحل مؤقت، يتم تغيير إصدار التطبيق إلى 19.26.42 في نقطة النهاية '/get_watch' ونقطة النهاية '/next'.
+
+إذا أوقفت هذا الإعداد، فقد لا يظهر رمز 'التشجيع' في شريط إجراءات الفيديو ولوحة وصف الفيديو.
+
+※ حتى مع إيقاف هذا الإعداد، قد لا يكون زر 'التشجيع' مخفيًا."</string>
     <string name="revanced_spoof_app_version_title">إصدار تطبيق وهمي</string>
     <string name="revanced_spoof_app_version_summary_on">تم تغيير اصدار التطبيق</string>
     <string name="revanced_spoof_app_version_summary_off">لم يتم تغيير اصدار التطبيق</string>
@@ -592,6 +622,55 @@
 إذا كان إعداد 'التشغيل' معطوبًا، فقد يؤدي تشغيل هذا الإعداد إلى حل المشكلة.
 
 إذا استمر إعداد 'التشغيل' معطوبًا حتى بعد تمكينه أو تعطيله، فعليك مسح بيانات التطبيق."</string>
+    <string name="revanced_set_transcript_cookies_title">تعيين ملفات تعريف ارتباط Transcript</string>
+    <string name="revanced_set_transcript_cookies_summary_on">تم تعيين ملفات تعريف ارتباط Transcript.</string>
+    <string name="revanced_set_transcript_cookies_summary_off">لم يتم تعيين ملفات تعريف ارتباط Transcript.</string>
+    <string name="revanced_set_transcript_cookies_user_dialog_message">"يوجد حاليًا خلل في YouTube يُؤدي إلى عدم توفر الترجمة التلقائية.
+
+هذه مشكلة في واجهة برمجة تطبيقات YouTube Transcript، وعلى جوجل إصلاحها.
+
+كحل مؤقت، يمكنك حل هذه المشكلة عن طريق ضبط ملفات تعريف الارتباط.
+
+[إخلاء مسؤولية]
+
+استخدام ملفات تعريف الارتباط ليس حلاً سحريًا.
+
+قد لا يعمل هذا الحل في الحالات التالية:
+• انتهاء صلاحية ملفات تعريف الارتباط.
+• استخدام ملفات تعريف ارتباط غير صالحة.
+• لم تعد واجهة برمجة تطبيقات YouTube Transcript تُصادق على ملفات تعريف الارتباط."</string>
+    <string name="revanced_set_transcript_cookies_all_title">تعيين ملفات تعريف الارتباط لجميع طلبات API Transcript</string>
+    <string name="revanced_set_transcript_cookies_all_summary_on">تم تعيين ملفات تعريف الارتباط لجميع طلبات API Transcript.</string>
+    <string name="revanced_set_transcript_cookies_all_summary_off">تم تعيين ملفات تعريف الارتباط فقط لطلبات الترجمة التلقائية.</string>
+    <string name="revanced_transcript_cookies_title">ملفات تعريف ارتباط Transcript</string>
+    <string name="revanced_transcript_cookies_summary">ملفات تعريف الارتباط التي سيتم استخدامها في طلبات API Transcript.</string>
+    <string name="revanced_transcript_cookies_about_title">لمحة عن ملفات تعريف ارتباط Transcript</string>
+    <string name="revanced_transcript_cookies_about_summary">انقر لمعرفة كيفية الحصول على ملفات تعريف الارتباط.</string>
+    <string name="revanced_transcript_cookies_dialog_title">تصدير ملفات تعريف ارتباط Transcript</string>
+    <string name="revanced_transcript_cookies_dialog_message">"المصادقة
+══════════════
+1. انقر على 'المصادقة' لفتح صفحة تسجيل الدخول في WebView.
+2. سجّل الدخول إلى حسابك في Google.
+3. تشغيل أي فيديو يدعم الترجمة التلقائية.
+4. شغّل الترجمة التلقائية وتحقق من عملها.
+4-1. إذا لم تعمل الترجمة التلقائية، فانتقل إلى فيديو آخر يدعمها، ثم جرّب الخطوة 4 مرة أخرى.
+5. انقر على النقاط الثلاث في شريط الأدوات لفتح القائمة السياقية.
+6. انقر على 'الحصول على ملفات تعريف الارتباط'.
+7. انقر على 'نسخ' لنسخ ملفات تعريف الارتباط.
+8. أغلق WebView والصق ملفات تعريف الارتباط المنسوخة في إعدادات 'ملفات تعريف ارتباط Transcript'.
+
+ بدون المصادقة
+══════════════
+1. انقر على 'بدون مصادقة' لفتح الفيديو في WebView.
+2. شغّل الفيديو لمدة 3 ثوانٍ على الأقل.
+3. انقر على النقاط الثلاث في شريط الأدوات لفتح القائمة السياقية.
+4. انقر على 'الحصول على ملفات تعريف الارتباط'.
+5. انقر على 'نسخ' لنسخ ملفات تعريف الارتباط.
+6. أغلق WebView والصق ملفات تعريف الارتباط المنسوخة في إعدادات 'ملفات تعريف ارتباط Transcript'.
+
+إخلاء المسؤولية: قد تكون ملفات تعريف الارتباط الصادرة دون تسجيل الدخول غير صالحة أو قد تستغرق بعض الوقت لتصبح متاحة لواجهة برمجة تطبيقات Transcript."</string>
+    <string name="revanced_transcript_cookies_dialog_auth_text">المصادقة</string>
+    <string name="revanced_transcript_cookies_dialog_no_auth_text">بدون المصادقة</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">قائمة الحساب</string>
     <string name="revanced_preference_screen_account_menu_summary">إخفاء أو عرض العناصر في قائمة الحساب وعلامة التبويب أنت.</string>
@@ -932,6 +1011,9 @@
     <string name="revanced_hide_download_button_title">إخفاء زر التنزيل</string>
     <string name="revanced_hide_download_button_summary_on">تم إخفاء زر التنزيل.</string>
     <string name="revanced_hide_download_button_summary_off">يتم عرض زر التنزيل.</string>
+    <string name="revanced_hide_hype_button_title">إخفاء زر التشجيع</string>
+    <string name="revanced_hide_hype_button_summary_on">تم إخفاء زر التشجيع.</string>
+    <string name="revanced_hide_hype_button_summary_off">يتم عرض زر التشجيع.</string>
     <string name="revanced_hide_like_dislike_button_title">إخفاء أزرار أعجبني ولم يعجبني</string>
     <string name="revanced_hide_like_dislike_button_summary_on">تم إخفاء أزرار أعجبني ولم يعجبني.</string>
     <string name="revanced_hide_like_dislike_button_summary_off">يتم عرض أزرار أعجبني ولم يعجبني.</string>
@@ -1658,11 +1740,11 @@
 • يؤدي تفعيل الطابع الزمني إلى ترك مساحة فارغة أسفل شريط الإجراءات.
 • بما أن هذه الميزة قيد التطوير من قِبل Google، فقد يكون التخطيط معطلاً."</string>
     <string name="revanced_enable_shorts_time_stamp_summary_off">تم تعطيل الطابع الزمني.</string>
-    <string name="revanced_enable_shorts_clear_mode_title">تمكين الوضع الواضح</string>
-    <string name="revanced_enable_shorts_clear_mode_summary_on">"تم تمكين الوضع الواضح.
+    <string name="revanced_enable_shorts_clear_mode_title">تمكين الوضع الشفاف</string>
+    <string name="revanced_enable_shorts_clear_mode_summary_on">"تم تمكين الوضع الشفاف.
 
 انقر على خلفية المشغل لإخفاء واجهة المستخدم."</string>
-    <string name="revanced_enable_shorts_clear_mode_summary_off">تم تعطيل الوضع الواضح.</string>
+    <string name="revanced_enable_shorts_clear_mode_summary_off">تم تعطيل الوضع الشفاف.</string>
     <string name="revanced_hide_shorts_navigation_bar_title">إخفاء شريط التنقل</string>
     <string name="revanced_hide_shorts_navigation_bar_summary_on">تم إخفاء شريط التنقل.</string>
     <string name="revanced_hide_shorts_navigation_bar_summary_off">يتم عرض شريط التنقل.</string>
@@ -2193,10 +2275,12 @@
     <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV Simply <small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">التأثيرات الجانبية للتزييف</string>
     <string name="revanced_spoof_streaming_data_side_effects_android">"• قائمة المقطع الصوتي مفقودة.
-• مستوى الصوت الثابت غير متاح.
 • لا يتوفر تعطيل المقطع الصوتي التلقائي المفروض.
+• مستوى الصوت الثابت غير متاح.
 • قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• مستوى الصوت الثابت غير متوفر.
+    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• قد لا تكون قائمة المقطع الصوتي متاحة.
+• قد لا يتوفر تعطيل المقطع الصوتي التلقائي المفروض.
+• مستوى الصوت الثابت غير متاح.
 • قد لا يتم تشغيل الأفلام أو الفيديوهات المدفوعة.
 • قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• قائمة المقطع الصوتي مفقودة.

@@ -269,6 +269,7 @@ Limitazioni: i segmenti SponsorBlock non vengono mostrati nella barra di ricerca
     <string name="revanced_hide_comment_timestamp_and_emoji_buttons_summary">Nasconde i pulsanti emoji e timestamp durante la digitazione dei commenti.</string>
     <string name="revanced_hide_fullscreen_share_button_title">Nascondi il pulsante Condividi a schermo intero</string>
     <string name="revanced_hide_fullscreen_share_button_summary">Nasconde il pulsante Condividi nel lettore a schermo intero.</string>
+    <string name="revanced_hide_lyrics_share_button_title">Nascondi il pulsante Condividi testi</string>
     <string name="revanced_hide_song_video_toggle_title">Nascondi l\'interruttore Brano / Video</string>
     <string name="revanced_hide_song_video_toggle_summary">Nasconde l\'interruttore Brano / Video nel lettore.</string>
     <string name="revanced_remember_repeat_state_title">Ricorda lo stato di ripetizione</string>
