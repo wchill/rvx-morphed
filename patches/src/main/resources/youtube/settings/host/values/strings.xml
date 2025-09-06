@@ -100,6 +100,27 @@ Description
     <string name="revanced_queue_manager_fetch_succeeded_save">Queue successfully saved to \'%s\'.</string>
     <string name="revanced_share_copy_video_information_success">Video information copied to clipboard.</string>
 
+    <string name="revanced_webview_title">WebView</string>
+    <string name="revanced_webview_summary">Open WebView to get Cookies.</string>
+
+    <string name="revanced_webview_contextual_menu_get_cookies">Get Cookies</string>
+    <string name="revanced_webview_contextual_menu_get_data_sync_id">Get Data Sync Id</string>
+    <string name="revanced_webview_contextual_menu_get_visitor_data">Get Visitor Data</string>
+    <string name="revanced_webview_contextual_menu_refresh">Refresh</string>
+    <string name="revanced_webview_cookies">Cookies</string>
+    <string name="revanced_webview_data_sync_id">Data Sync Id</string>
+    <string name="revanced_webview_visitor_data">Visitor Data</string>
+
+    <string name="revanced_webview_intent_clear_cookies_on_startup">Clear Cookies on Startup</string>
+    <string name="revanced_webview_intent_clear_cookies_on_shutdown">Clear Cookies on Shutdown</string>
+    <string name="revanced_webview_intent_use_desktop_user_agent">Use Desktop User-Agent</string>
+
+    <string name="revanced_webview_copy">Copy</string>
+    <string name="revanced_webview_toast_copy_success">%s copied to clipboard.</string>
+    <string name="revanced_webview_toast_empty">%s is empty.</string>
+    <string name="revanced_webview_toast_no_network">Please check your network connection.</string>
+    <string name="revanced_webview_toast_unavailable">WebView is not available.</string>
+
     <string name="revanced_language_title">RVX language</string>
     <string name="revanced_language_DEFAULT">App language</string>
     <string name="revanced_language_AM">"Amharic
@@ -656,6 +677,57 @@ This depends on what response the app receives from the server.
 If the 'Playback' setting is broken, turning on this setting may resolve the issue.
 
 If the 'Playback' setting is still broken even after enabling or disabling this setting, then you should clear the app data."</string>
+
+    <string name="revanced_set_transcript_cookies_title">Set Transcript Cookies</string>
+    <string name="revanced_set_transcript_cookies_summary_on">Transcript Cookies are set.</string>
+    <string name="revanced_set_transcript_cookies_summary_off">Transcript Cookies are not set.</string>
+    <string name="revanced_set_transcript_cookies_user_dialog_message">"There is currently a bug on YouTube where auto-translated subtitles are unavailable.
+
+This is an issue with the YouTube Transcript API, and Google needs to fix it.
+
+As a temporary workaround, you can resolve this issue by setting Cookies.
+
+[Disclaimer]
+
+Using Cookies is not a silver bullet.
+
+This may not work if:
+• Cookies have expired.
+• Invalid Cookies are being used.
+• YouTube Transcript API no longer validates Cookies."</string>
+    <string name="revanced_set_transcript_cookies_all_title">Set Cookies for all Transcript API requests</string>
+    <string name="revanced_set_transcript_cookies_all_summary_on">Cookies are set for all Transcript API requests.</string>
+    <string name="revanced_set_transcript_cookies_all_summary_off">Cookies are set only for auto-translated subtitle requests.</string>
+    <string name="revanced_transcript_cookies_title">Transcript Cookies</string>
+    <string name="revanced_transcript_cookies_summary">Cookies to use in Transcript API requests.</string>
+    <string name="revanced_transcript_cookies_about_title">About Transcript Cookies</string>
+    <string name="revanced_transcript_cookies_about_summary">Click to see how to get Cookies.</string>
+    <string name="revanced_transcript_cookies_dialog_title">Export Transcript Cookies</string>
+    <string name="revanced_transcript_cookies_dialog_message">"Auth
+══════════════
+1. Click 'Auth' to open the sign in page in WebView.
+2. Sign in to your Google Account.
+3. Plays any video that supports auto-translated subtitles.
+4. Turn on auto-translated subtitles and see if it works.
+4-1. If auto-translated subtitles don't work, switch to another video that supports auto-translated subtitles and try step 4 again.
+5. Click the three dots on the toolbar to open the contextual menu.
+6. Click 'Get Cookies'.
+7. Click 'Copy' to copy the Cookies.
+8. Close WebView and paste the copied Cookies into the 'Transcript Cookies' settings.
+
+
+No Auth
+══════════════
+1. Click 'No Auth' to open the video in WebView.
+2. Play the video for at least 3 seconds.
+3. Click the three dots on the toolbar to open the contextual menu.
+4. Click 'Get Cookies'.
+5. Click 'Copy' to copy the Cookies.
+6. Close WebView and paste the copied Cookies into the 'Transcript Cookies' settings.
+
+Disclaimer: Cookies issued without signing in may be invalid or may take time to become available to the Transcript API."</string>
+    <string name="revanced_transcript_cookies_dialog_auth_text">Auth</string>
+    <string name="revanced_transcript_cookies_dialog_no_auth_text">No Auth</string>
 
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">Account menu</string>

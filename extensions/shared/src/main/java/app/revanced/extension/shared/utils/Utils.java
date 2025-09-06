@@ -47,6 +47,7 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.view.Window;
 import android.view.WindowManager;
+import android.webkit.CookieManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -150,6 +151,15 @@ public class Utils {
             return;
 
         viewGroup.removeView(view);
+    }
+
+    public static boolean isWebViewSupported() {
+        try {
+            CookieManager.getInstance();
+            return true;
+        } catch (final Throwable ignored) {
+            return false;
+        }
     }
 
     /**
