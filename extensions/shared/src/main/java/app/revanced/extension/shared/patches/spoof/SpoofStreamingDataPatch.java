@@ -10,7 +10,6 @@ import androidx.annotation.Nullable;
 
 import com.google.protos.youtube.api.innertube.StreamingDataOuterClass.StreamingData;
 
-import java.io.File;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
@@ -29,12 +28,10 @@ import app.revanced.extension.youtube.shared.VideoInformation;
 public class SpoofStreamingDataPatch {
     public static final boolean SPOOF_STREAMING_DATA =
             BaseSettings.SPOOF_STREAMING_DATA.get() && PatchStatus.SpoofStreamingData();
-    private static final boolean J2V8_LIBRARY_AVAILABILITY = checkJ2V8();
     private static final boolean SPOOF_STREAMING_DATA_PRIORITIZE_VIDEO_QUALITY =
             SPOOF_STREAMING_DATA && BaseSettings.SPOOF_STREAMING_DATA_PRIORITIZE_VIDEO_QUALITY.get();
     private static final boolean SPOOF_STREAMING_DATA_USE_JS =
-            SPOOF_STREAMING_DATA && PatchStatus.GmsCoreSupport() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_USE_JS.get();
+            SPOOF_STREAMING_DATA && BaseSettings.SPOOF_STREAMING_DATA_USE_JS.get();
     private static final boolean SPOOF_STREAMING_DATA_USE_JS_ALL =
             SPOOF_STREAMING_DATA_USE_JS && BaseSettings.SPOOF_STREAMING_DATA_USE_JS_ALL.get();
     private static final boolean SPOOF_STREAMING_DATA_USE_LATEST_JS =
@@ -78,7 +75,6 @@ public class SpoofStreamingDataPatch {
             "heartbeat",        // This request determines whether to pause playback when the user is AFK.
             "refresh",          // Waiting for a livestream to start.
     };
-    private static volatile boolean isInitialized = false;
     /**
      * If {@link SpoofStreamingDataPatch#SPOOF_STREAMING_DATA_USE_JS_ALL} is false,
      * Autoplay in feed, Clips, and Shorts will not use the JS client for fast playback.
@@ -86,35 +82,6 @@ public class SpoofStreamingDataPatch {
      */
     @NonNull
     private static volatile String reasonSkipped = "";
-
-    /**
-     * If the app is installed via mounting, it will fail to load the J2V8 library.
-     * So, when the class is loaded, it should first check if the J2V8 library is present.
-     * <p>
-     * TODO: A feature should be implemented in revanced-library to copy external libraries
-     *       to the original app's path (/data/data/com.google.android.youtube/lib/*).
-     *
-     * @return Whether the J2V8 library exists.
-     */
-    private static boolean checkJ2V8() {
-        if (!isInitialized) {
-            isInitialized = true;
-            if (SPOOF_STREAMING_DATA && PatchStatus.GmsCoreSupport()) {
-                try {
-                    String libraryDir = Utils.getContext()
-                            .getApplicationContext()
-                            .getApplicationInfo()
-                            .nativeLibraryDir;
-                    File j2v8 = new File(libraryDir + "/libj2v8.so");
-                    return j2v8.exists();
-                } catch (Exception ex) {
-                    Logger.printException(() -> "J2V8 native library not found", ex);
-                }
-            }
-        }
-
-        return false;
-    }
 
     /**
      * Injection point.
@@ -173,9 +140,9 @@ public class SpoofStreamingDataPatch {
 
     /**
      * Injection point.
-     * Skip response encryption in OnesiePlayerRequest.
+     * Turns off a feature flag that interferes with spoofing.
      */
-    public static boolean skipResponseEncryption(boolean original) {
+    public static boolean useMediaFetchHotConfigReplacement(boolean original) {
         if (!SPOOF_STREAMING_DATA) {
             return original;
         }
@@ -301,6 +268,14 @@ public class SpoofStreamingDataPatch {
 
     /**
      * Injection point.
+     */
+    @Nullable
+    public static String newPlayerResponseParameter(@NonNull String newlyLoadedVideoId, @Nullable String playerParameter) {
+        return newPlayerResponseParameter(newlyLoadedVideoId, playerParameter, null, false);
+    }
+
+    /**
+     * Injection point.
      * <p>
      * Since {@link SpoofStreamingDataPatch} is on a shared path,
      * {@link VideoInformation#newPlayerResponseParameter(String, String, String, boolean)} is not used.
@@ -380,7 +355,6 @@ public class SpoofStreamingDataPatch {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    J2V8_LIBRARY_AVAILABILITY &&
                     BaseSettings.SPOOF_STREAMING_DATA_USE_JS.get() &&
                     BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().getRequireJS();
         }
@@ -391,14 +365,6 @@ public class SpoofStreamingDataPatch {
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
                     !BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().getSupportsCookies();
-        }
-    }
-
-    public static final class J2V8Availability implements Setting.Availability {
-        @Override
-        public boolean isAvailable() {
-            return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    J2V8_LIBRARY_AVAILABILITY;
         }
     }
 

@@ -69,10 +69,6 @@ internal enum class PatchList(
         "Enable landscape mode",
         "Adds an option to enable landscape mode when rotating the screen on phones."
     ),
-    FIX_PLAYBACK(
-        "Fix playback",
-        "Adds options to fix playback issues."
-    ),
     FLYOUT_MENU_COMPONENTS(
         "Flyout menu components",
         "Adds options to hide or change flyout menu components."

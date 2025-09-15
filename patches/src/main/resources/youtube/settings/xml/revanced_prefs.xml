@@ -999,7 +999,6 @@
                 <Preference android:title="Open links externally" android:summary="@string/revanced_patches_excluded" android:selectable="false"/>
                 <Preference android:title="Remove background playback restrictions" android:summary="@string/revanced_patches_excluded" android:selectable="false"/>
                 <Preference android:title="Sanitize sharing links" android:summary="@string/revanced_patches_excluded" android:selectable="false"/>
-                <Preference android:title="Spoof streaming data" android:summary="@string/revanced_patches_excluded" android:selectable="false"/>
                 <Preference android:title="Watch history" android:summary="@string/revanced_patches_excluded" android:selectable="false"/>
             </PreferenceCategory>
 
