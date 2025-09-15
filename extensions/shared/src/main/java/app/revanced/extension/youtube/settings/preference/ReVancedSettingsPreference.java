@@ -13,6 +13,7 @@ import java.util.Date;
 
 import app.revanced.extension.shared.settings.BaseSettings;
 import app.revanced.extension.shared.settings.Setting;
+import app.revanced.extension.shared.settings.preference.SortedListPreference;
 import app.revanced.extension.shared.utils.ResourceUtils;
 import app.revanced.extension.youtube.patches.general.ChangeFormFactorPatch;
 import app.revanced.extension.youtube.patches.utils.PatchStatus;
@@ -254,6 +255,13 @@ public class ReVancedSettingsPreference extends ReVancedPreferenceFragment {
 
             listPreference.setEntries(ResourceUtils.getArrayIdentifier(entriesKey));
             listPreference.setEntryValues(ResourceUtils.getArrayIdentifier(entryValueKey));
+        }
+        if (mPreferenceManager.findPreference(BaseSettings.SPOOF_STREAMING_DATA_NO_AUTH_LANGUAGE.key) instanceof SortedListPreference sortedListPreference) {
+            boolean isAvailable = BaseSettings.SPOOF_STREAMING_DATA.get() &&
+                    !BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().getSupportsCookies() &&
+                    !BaseSettings.DISABLE_AUTO_AUDIO_TRACKS.get();
+
+            sortedListPreference.setEnabled(isAvailable);
         }
     }
 

@@ -9,8 +9,8 @@ import app.revanced.extension.shared.innertube.client.YouTubeClient.ClientType;
 import app.revanced.extension.shared.patches.ReturnYouTubeUsernamePatch.DisplayFormat;
 import app.revanced.extension.shared.patches.WatchHistoryPatch.WatchHistoryType;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientAndroidVRAvailability;
-import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientAndroidVRNoAuthAvailability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientJSAvailability;
+import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientNoAuthAvailability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.J2V8Availability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ShowReloadVideoButtonAvailability;
 
@@ -41,9 +41,10 @@ public class BaseSettings {
     public static final BooleanSetting SPOOF_STREAMING_DATA_STATS_FOR_NERDS = new BooleanSetting("revanced_spoof_streaming_data_stats_for_nerds", TRUE, parent(SPOOF_STREAMING_DATA));
 
     public static final BooleanSetting SPOOF_STREAMING_DATA_VR_DISABLE_AV1 = new BooleanSetting("revanced_spoof_streaming_data_vr_disable_av1", FALSE, true, new ClientAndroidVRAvailability());
-    public static final EnumSetting<AppLanguage> SPOOF_STREAMING_DATA_VR_LANGUAGE = new EnumSetting<>("revanced_spoof_streaming_data_vr_language", AppLanguage.DEFAULT, new ClientAndroidVRNoAuthAvailability());
-    public static final BooleanSetting SPOOF_STREAMING_DATA_VR_AUDIO_TRACK_BUTTON = new BooleanSetting("revanced_spoof_streaming_data_vr_audio_track_button", FALSE, true,
-            "revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message", new ClientAndroidVRNoAuthAvailability());
+
+    public static final EnumSetting<AppLanguage> SPOOF_STREAMING_DATA_NO_AUTH_LANGUAGE = new EnumSetting<>("revanced_spoof_streaming_data_no_auth_language", AppLanguage.DEFAULT);
+    public static final BooleanSetting SPOOF_STREAMING_DATA_AUDIO_TRACK_BUTTON = new BooleanSetting("revanced_spoof_streaming_data_audio_track_button", FALSE, true,
+            "revanced_spoof_streaming_data_audio_track_button_user_dialog_message", new ClientNoAuthAvailability());
 
     public static final BooleanSetting SPOOF_STREAMING_DATA_USE_JS = new BooleanSetting("revanced_spoof_streaming_data_use_js", FALSE, true,
             "revanced_spoof_streaming_data_use_js_user_dialog_message", new J2V8Availability());
@@ -53,6 +54,7 @@ public class BaseSettings {
     // Client type must be last spoof setting due to cyclic references.
     public static final EnumSetting<ClientType> SPOOF_STREAMING_DATA_DEFAULT_CLIENT = new EnumSetting<>("revanced_spoof_streaming_data_default_client",
             ClientType.ANDROID_VR, true, parent(SPOOF_STREAMING_DATA));
+    public static final BooleanSetting DISABLE_AUTO_AUDIO_TRACKS = new BooleanSetting("revanced_disable_auto_audio_tracks", FALSE);
 
     /**
      * These settings are used by YouTube and YouTube Music.

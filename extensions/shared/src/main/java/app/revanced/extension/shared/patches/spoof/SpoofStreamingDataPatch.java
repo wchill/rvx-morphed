@@ -361,15 +361,7 @@ public class SpoofStreamingDataPatch {
         @Override
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().name().startsWith("ANDROID_VR");
-        }
-    }
-
-    public static final class ClientAndroidVRNoAuthAvailability implements Setting.Availability {
-        @Override
-        public boolean isAvailable() {
-            return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get() == ClientType.ANDROID_VR_NO_AUTH;
+                    BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get() == ClientType.ANDROID_VR;
         }
     }
 
@@ -383,14 +375,11 @@ public class SpoofStreamingDataPatch {
         }
     }
 
-    public static final class ForceOriginalAudioAvailability implements Setting.Availability {
-        private static final boolean AVAILABLE_ON_LAUNCH = SpoofStreamingDataPatch.multiAudioTrackAvailable();
-
+    public static final class ClientNoAuthAvailability implements Setting.Availability {
         @Override
         public boolean isAvailable() {
-            // Check conditions of launch and now. Otherwise if spoofing is changed
-            // without a restart the setting will show as available when it's not.
-            return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.multiAudioTrackAvailable();
+            return BaseSettings.SPOOF_STREAMING_DATA.get() &&
+                    !BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().getSupportsCookies();
         }
     }
 

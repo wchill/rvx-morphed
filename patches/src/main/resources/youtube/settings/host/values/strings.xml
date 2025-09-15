@@ -10,8 +10,6 @@
     <string name="revanced_extended_reset_to_default_toast">Reset to default values.</string>
 
     <string name="revanced_preference_category_experimental_flag">Experimental flags</string>
-    <string name="revanced_extended_audio_tracks_unavailable">"This setting is currently unavailable.
-To use this feature, change 'Default client (Spoof streaming data)' to TV or TV Simply."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Are you sure you want to proceed?</string>
     <string name="revanced_extended_restart_first_run">Restart to load the layout normally</string>
     <string name="revanced_extended_restart_title">Restart required</string>
@@ -569,6 +567,11 @@ Limitation: Back button on the toolbar may not work."</string>
     <string name="revanced_change_start_page_type_summary_off">Start page changes only once.</string>
     <string name="revanced_disable_auto_audio_tracks_title">Disable forced auto audio tracks</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Forced auto audio tracks are disabled.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_on_disclaimer">"Forced auto audio tracks are disabled.
+
+This may not work for some users, if it doesn't work for you:
+1. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and turn on 'Use JavaScript client'.
+2. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and change 'Default client' to 'TV' or 'TV Simply'."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Forced auto audio tracks are enabled.</string>
     <string name="revanced_disable_auto_captions_title">Disable forced auto captions</string>
     <string name="revanced_disable_auto_captions_summary_on">Forced auto captions are disabled.</string>
@@ -1228,6 +1231,11 @@ Limitation: Some highlighted search links that do not have a default text style 
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Hide Audio track menu</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Audio track menu is hidden.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Audio track menu is shown.</string>
+    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Audio track menu is hidden.
+
+To show the Audio track menu:
+1. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and turn on 'Use JavaScript client'.
+2. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and change 'Default client' to 'TV' or 'TV Simply'."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Hide Captions menu</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Captions menu is hidden.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Captions menu is shown.</string>
@@ -2518,11 +2526,15 @@ Example 2:
     <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Disable VR AV1</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">Video codec is AVC (H.264) or VP9.</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">Video codec is determined automatically.</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_title">Show VR audio track button</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_on">VR audio track button is shown.</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_off">VR audio track button is not shown.</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message">"Prerequisites:
-• The audio client used to fetch the streaming data is 'Android VR (No auth)'.
+
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
+    <string name="revanced_preference_category_no_auth">No Auth</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_title">Default audio stream language</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_title">Show audio track button</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Audio track button is shown when the client used to fetch streaming data is 'Android VR', 'Mobile Web', or 'visionOS'."</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Audio track button is not shown.</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Prerequisites:
+• The client used to fetch the streaming data is 'Android VR', 'Mobile Web', or 'visionOS'.
 • A video with multiple audio tracks is being played.
 
 Known issues:
@@ -2531,7 +2543,6 @@ Known issues:
 • Some audio tracks, such as 'English descriptive', are not supported.
 
 This feature is still in development, so it may break at any time due to server-side changes."</string>
-    <string name="revanced_spoof_streaming_data_vr_language_title">VR default audio stream language</string>
 
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
