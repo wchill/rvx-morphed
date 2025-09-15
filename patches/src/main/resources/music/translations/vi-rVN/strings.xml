@@ -314,6 +314,8 @@ Một số tính năng có thể không hoạt động bình thường trong b�
     <string name="revanced_hide_settings_menu_about_title">Ẩn mục Giới thiệu về Youtube Music</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Video</string>
+    <string name="revanced_disable_drc_audio_title">Vô hiệu hoá DRC âm thanh</string>
+    <string name="revanced_disable_drc_audio_summary">Vô hiệu hoá tính năng nén dải động cho âm thanh.</string>
     <string name="revanced_custom_playback_speeds_title">Chỉnh sửa tốc độ phát</string>
     <string name="revanced_custom_playback_speeds_summary">Thêm giá trị tốc độ phát mà bạn muốn thay đổi hoặc chỉnh sửa các giá trị tốc độ phát hiện có.</string>
     <string name="revanced_enable_opus_codec_title">Codec OPUS</string>
@@ -401,9 +403,11 @@ Nhấp vào đây để xem các bước phát hành khóa API."</string>
     <string name="revanced_sb_segments_intro_sum">Một khoảng thời gian không chứa nội dung thực tế nào. Có thể chỉ là tạm dừng, khung hình tĩnh hoặc hoạt ảnh lặp lại. Không bao gồm các phần chuyển cảnh chứa thông tin.</string>
     <string name="revanced_sb_segments_outro">Đoạn kết thúc/Phần Credit</string>
     <string name="revanced_sb_segments_outro_sum">Phần danh đề hoặc đoạn Youtube chèn các thẻ liên kết video khác ở cuối video. Không chứa thông tin quan trọng.</string>
-    <string name="revanced_sb_segments_preview">Đoạn xem trước/Phần tóm tắt/Gây chú ý</string>
+    <string name="revanced_sb_segments_hook">Gây chú ý/Lời chào</string>
+    <string name="revanced_sb_segments_hook_sum">Phân đoạn lồng tiếng trong trailer giới thiệu video sắp phát, lời chào mở đầu và kết thúc. Không bao gồm các đoạn chứa nội dung bổ sung.</string>
+    <string name="revanced_sb_segments_preview">Đoạn xem trước/Phần tóm tắt</string>
     <string name="revanced_sb_segments_preview_sum">Đoạn cắt thể hiện những gì đã xảy ra hoặc sắp xảy ra trong video này hoặc trong loạt video khác cùng bộ.</string>
-    <string name="revanced_sb_segments_filler">Cảnh phụ/Lạc đề/Hài hước</string>
+    <string name="revanced_sb_segments_filler">Lạc đề/Hài hước</string>
     <string name="revanced_sb_segments_filler_sum">Phân cảnh được thêm vào chỉ để câu giờ hoặc gây cười nhưng không cần thiết cho nội dung chính của video. Không bao gồm phân đoạn cung cấp bối cảnh hoặc chi tiết nền.</string>
     <string name="revanced_sb_segments_nomusic">Âm nhạc: Phần không phải nhạc</string>
     <string name="revanced_sb_segments_nomusic_sum">Phần của video âm nhạc nhưng không có âm nhạc, cũng không thuộc danh mục nào.</string>
@@ -414,10 +418,11 @@ Nhấp vào đây để xem các bước phát hành khóa API."</string>
     <string name="revanced_sb_skipped_intro_middle">Đã bỏ qua Đoạn tạm dừng.</string>
     <string name="revanced_sb_skipped_intro_end">Đã bỏ qua Đoạn tạm dừng.</string>
     <string name="revanced_sb_skipped_outro">Đã bỏ qua Phần Outro.</string>
+    <string name="revanced_sb_skipped_hook">Đã bỏ qua đoạn gây chú ý.</string>
     <string name="revanced_sb_skipped_preview_beginning">Đã bỏ qua Đoạn xem trước.</string>
     <string name="revanced_sb_skipped_preview_middle">Đã bỏ qua Đoạn xem trước.</string>
     <string name="revanced_sb_skipped_preview_end">Đã bỏ qua Phần tóm tắt.</string>
-    <string name="revanced_sb_skipped_filler">Đã bỏ qua Cảnh phụ - lạc đề.</string>
+    <string name="revanced_sb_skipped_filler">Đã bỏ qua đoạn lạc đề.</string>
     <string name="revanced_sb_skipped_nomusic">Đã bỏ qua Phần không phải nhạc.</string>
     <string name="revanced_sb_skipped_multiple_segments">Đã bỏ qua nhiều phân đoạn.</string>
     <string name="revanced_sb_skip_automatically">Tự động bỏ qua</string>
@@ -453,8 +458,6 @@ Nhấp vào đây để xem các bước phát hành khóa API."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Bỏ qua miền bị chặn ở một số khu vực để có thể thu được được hình thu nhỏ video của danh sách phát, ảnh đại diện kênh, v. v.</string>
     <string name="revanced_change_share_sheet_title">Thay đổi bảng chia sẻ</string>
     <string name="revanced_change_share_sheet_summary">Chuyển bảng chia sẻ trong ứng dụng Youtube sang của hệ thống Android.</string>
-    <string name="revanced_disable_drc_audio_title">Vô hiệu hoá audio DRC</string>
-    <string name="revanced_disable_drc_audio_summary">Vô hiệu hoá tính năng nén dải âm thanh động.</string>
     <string name="revanced_disable_music_video_in_album_title">Tắt video âm nhạc trong đĩa nhạc</string>
     <string name="revanced_disable_music_video_in_album_summary">"Khi người dùng không mua gói Premium, đôi khi nghe nhạc có trong đĩa nhạc, video âm nhạc được phát thay vì bài hát chính thức.
 
@@ -476,36 +479,22 @@ Hạn chế: Video dành cho trẻ em có thể không được chuyển hướn
     <string name="revanced_debug_spannable_summary">Bao gồm spannable trong nhật ký gỡ lỗi.</string>
     <string name="revanced_sanitize_sharing_links_title">Liên kết sạch khi chia sẻ</string>
     <string name="revanced_sanitize_sharing_links_summary">Loại bỏ các tham số truy vấn theo dõi khỏi URL khi chia sẻ liên kết.</string>
-    <string name="revanced_spoof_client_title">Giả mạo client</string>
-    <string name="revanced_spoof_client_summary">Giả mạo client để tránh lỗi khi phát.</string>
-    <string name="revanced_spoof_client_type_title">Loại client mặc định</string>
-    <string name="revanced_spoof_client_type_summary">"Hạn chế:
-• Các nút thao tác hoặc trình đơn tuỳ chọn trong trình phát có thể không hiển thị đúng. Trong trường hợp đó, hãy thử xoá dữ liệu ứng dụng và đăng nhập lại.
+    <string name="revanced_spoof_streaming_data_title">Giả mạo dữ liệu phát</string>
+    <string name="revanced_spoof_streaming_data_summary">"Giả mạo client phát video để tránh lỗi khi phát.
 
-Hạn chế (Chặn truy vấn):
-• Ứng dụng có thể bị buộc đóng khi đang dùng VPN hoặc DNS."</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_8_34">iOS Music 8.34</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_6_21_block_requst">iOS Music 6.21 (Chặn truy vấn)</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_7_04_block_requst">iOS Music 7.04 (Chặn truy vấn)</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_8_12_block_requst">iOS Music 8.12 (Chặn truy vấn)</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_8_34_block_requst">iOS Music 8.34 (Chặn truy vấn)</string>
-    <string name="revanced_spoof_video_streams_title">Giả mạo luồng video</string>
-    <string name="revanced_spoof_video_streams_summary">Giả mạo luồng video của client để tránh lỗi khi phát.</string>
-    <string name="revanced_spoof_video_streams_default_client_title">Client mặc định</string>
-    <string name="revanced_spoof_video_streams_default_client_summary">"Hạn chế:
-• Ứng dụng có thể bị buộc đóng khi dùng VPN hoặc DNS.
-• Âm thanh có thể bị ngắt quãng khi phát trên client dùng truyền phát bit thích ứng (trừ Android VR 1.43.32)."</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32">Android VR 1.43.32</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09">Android VR 1.65.09</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32_no_auth">Android VR 1.43.32 (Không xác thực)</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09_no_auth">Android VR 1.65.09 (Không xác thực)</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_34">iOS Music 8.34</string>
+Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết phải bật cài đặt này."</string>
+    <string name="revanced_spoof_streaming_data_default_client_title">Client mặc định</string>
+    <string name="revanced_spoof_streaming_data_default_client_summary">Chọn client mặc định để giả mạo.
+
+Sự cố đã biết:
+• Âm thanh có thể bị ngắt quãng trong khi phát.</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Creator</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobile Web</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
+    <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_watch_history_type_title">Kiểu nhật ký</string>
     <string name="revanced_watch_history_type_summary">"• Gốc: Tuân theo cài đặt nhật ký xem của tài khoản Google, nhưng có thể không hoạt động do DNS hoặc VPN.
 • Thay thế miền: Vẫn tuân theo cài đặt nhật ký xem của tài khoản Google.

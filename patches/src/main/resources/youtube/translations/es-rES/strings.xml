@@ -8,11 +8,6 @@
     <string name="revanced_extended_settings_search_title">Buscar en %s</string>
     <string name="revanced_extended_reset_to_default_toast">Restablecer valores predeterminados.</string>
     <string name="revanced_preference_category_experimental_flag">Funciones experimentales</string>
-    <string name="revanced_extended_audio_tracks_unavailable">"Para utilizar esta función, cambie «Cliente predeterminado (falsificación de datos de transmisión)» a iOS TV, TV o TV simple.
-
-Nota:
-• iOS TV no admite la reproducción de algunos vídeos, como vídeos musicales.
-• Por lo tanto, si el cliente predeterminado está configurado en iOS TV, este ajuste puede no funcionar para algunos vídeos."</string>
     <string name="revanced_extended_confirm_user_dialog_title">¿Quieres continuar?</string>
     <string name="revanced_extended_restart_first_run">Reiniciar para cargar el diseño normalmente</string>
     <string name="revanced_extended_restart_title">Reinicio requerido</string>
@@ -389,6 +384,9 @@ Pulsa aquí para saber más sobre DeArrow."</string>
     <string name="revanced_hide_category_bar_in_related_videos_title">Ocultar en vídeos relacionados</string>
     <string name="revanced_hide_category_bar_in_related_videos_summary_on">Oculto en los vídeos relacionados.</string>
     <string name="revanced_hide_category_bar_in_related_videos_summary_off">Visible en los vídeos relacionados.</string>
+    <string name="revanced_hide_category_bar_in_playlist_title">Ocultar en lista de reproducción</string>
+    <string name="revanced_hide_category_bar_in_playlist_summary_on">Oculto en la lista de reproducción.</string>
+    <string name="revanced_hide_category_bar_in_playlist_summary_off">Visible en la lista de reproducción.</string>
     <string name="revanced_hide_category_bar_in_search_title">Ocultar en resultados de búsqueda</string>
     <string name="revanced_hide_category_bar_in_search_summary_on">Oculto en los resultados de búsqueda.</string>
     <string name="revanced_hide_category_bar_in_search_summary_off">Visible en los resultados de búsqueda.</string>
@@ -1150,6 +1148,9 @@ Limitaciones:
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Ocultar menú \"Pista de audio\"</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">El menú \"Pista de audio\" está oculto.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">El menú \"Pista de audio\" está visible.</string>
+    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"El menú de la pista de audio está oculto.
+
+Para mostrar el menú de la pista de audio, cambie «Cliente predeterminado (falsificación de datos de transmisión)» a TV o TV simple."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Ocultar menú \"Subtítulos\"</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">El menú \"Subtítulos\" está oculto.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">El menú \"Subtítulos\" está visible.</string>
@@ -1570,7 +1571,7 @@ Información:
     <string name="revanced_hide_shorts_shelf_video_description_summary_on">Oculto en la descripción del vídeo.</string>
     <string name="revanced_hide_shorts_shelf_video_description_summary_off">Visible en la descripción del vídeo.</string>
     <string name="revanced_hide_shorts_shelf_history_title">Ocultar en historial de reproducciones</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_on">Oculto en el historial de reproducciones.</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_on">"Oculto en el historial de reproducciones."</string>
     <string name="revanced_hide_shorts_shelf_history_summary_off">Visible en el historial de reproducciones.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Experimental flags -->
     <string name="revanced_change_shorts_background_repeat_state_title">Cambiar estado de repetición de fondo de Shorts</string>
@@ -1845,6 +1846,9 @@ Ajusta el volumen deslizando verticalmente en el lado derecho de la pantalla."</
     <string name="revanced_preference_screen_video_title">Vídeo</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Codec -->
     <string name="revanced_preference_category_codec">Códec</string>
+    <string name="revanced_disable_drc_audio_title">Desactivar audio DRC</string>
+    <string name="revanced_disable_drc_audio_summary_on">El audio DRC (compresión de rango dinámico) está desactivado.</string>
+    <string name="revanced_disable_drc_audio_summary_off">El audio DRC (compresión de rango dinámico) está activado.</string>
     <string name="revanced_disable_hdr_video_title">Desactivar vídeo HDR</string>
     <string name="revanced_disable_hdr_video_summary_on">El vídeo HDR está desactivado.</string>
     <string name="revanced_disable_hdr_video_summary_off">El vídeo HDR está activado.</string>
@@ -2024,6 +2028,8 @@ Toca para ver cómo crear una clave de API."</string>
     <string name="revanced_sb_segments_intro_sum">Un intervalo sin contenido real. Puede ser una pausa, un fotograma estático o una animación que se repite. No incluye transiciones que contengan información.</string>
     <string name="revanced_sb_segments_outro">Tarjetas finales / Créditos</string>
     <string name="revanced_sb_segments_outro_sum">Créditos o cuando aparecen las tarjetas finales de YouTube. No es para conclusiones con información.</string>
+    <string name="revanced_sb_segments_hook">Enganche / Saludos</string>
+    <string name="revanced_sb_segments_hook_sum">Tráileres narrados para el próximo vídeo, saludos y despedidas. No incluye secciones que añadan contenido adicional.</string>
     <string name="revanced_sb_segments_preview">Adelanto / Resumen / Enganche</string>
     <string name="revanced_sb_segments_preview_sum">Colección de clips que muestran lo que está por venir o lo que sucedió en el vídeo o en otros vídeos de una serie, donde toda la información se repite en otra parte.</string>
     <string name="revanced_sb_segments_filler">Tangente de relleno / Bromas</string>
@@ -2040,6 +2046,7 @@ Toca para ver cómo crear una clave de API."</string>
     <string name="revanced_sb_skip_button_intro_middle">Omitir intermedio</string>
     <string name="revanced_sb_skip_button_intro_end">Omitir intermedio</string>
     <string name="revanced_sb_skip_button_outro">Omitir créditos</string>
+    <string name="revanced_sb_skip_button_hook">Omitir enganche</string>
     <string name="revanced_sb_skip_button_preview_beginning">Omitir adelanto</string>
     <string name="revanced_sb_skip_button_preview_middle">Omitir adelanto</string>
     <string name="revanced_sb_skip_button_preview_end">Omitir resumen</string>
@@ -2054,6 +2061,7 @@ Toca para ver cómo crear una clave de API."</string>
     <string name="revanced_sb_skipped_intro_middle">Intermedio omitido.</string>
     <string name="revanced_sb_skipped_intro_end">Intermedio omitido.</string>
     <string name="revanced_sb_skipped_outro">Créditos omitidos.</string>
+    <string name="revanced_sb_skipped_hook">Enganche omitido.</string>
     <string name="revanced_sb_skipped_preview_beginning">Adelanto omitido.</string>
     <string name="revanced_sb_skipped_preview_middle">Adelanto omitido.</string>
     <string name="revanced_sb_skipped_preview_end">Resumen omitido.</string>
@@ -2261,28 +2269,26 @@ Pulsa el botón de continuar y desactiva las optimizaciones de la batería."</st
     <string name="revanced_spoof_streaming_data_summary_off">"Los datos de transmisión no están falsificados. Es posible que la reproducción de vídeo no funcione."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Desactivar este ajuste puede causar problemas de reproducción de vídeo.</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Cliente predeterminado</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
+    <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio 
 <small>(Inicio de sesión requerido)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
-<small>(Sin inicio de sesión)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
-<small>(Inicio de sesión requerido)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web móvil
 <small>(todavía en desarrollo)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
-<small>(todavía en desarrollo)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV integrado
-<small>(todavía en desarrollo)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV simple
-<small>(todavía en desarrollo)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">TV
+<small>(todavía en desarrollo)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV integrado
+<small>(todavía en desarrollo)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV simple
+<small>(todavía en desarrollo)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
+<small>(no publicado, sin autenticación)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Efectos secundarios de falsificación</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android">"• Falta el menú de la pista de audio.
+    <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Falta el menú de la pista de audio.
 • El volumen estable no está disponible.
-• La opción de desactivar las pistas de audio automáticas forzadas no está disponible.
-• Es posible que los vídeos para niños no se reproduzcan cuando se cierra la sesión o en modo incógnito."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• El volumen estable no está disponible.
-• Es posible que no se reproduzcan películas o vídeos de pago.
+• Es posible que los vídeos para niños no se reproduzcan cuando se cierra la sesión o en modo incógnito.
+• No se admiten 1080p+, AV1 y HDR."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Falta el menú de la pista de audio.
+• El volumen estable no está disponible.
 • Es posible que los vídeos para niños no se reproduzcan cuando se cierra la sesión o en modo incógnito."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Falta el menú de la pista de audio.
 • La opción de desactivar las pistas de audio automáticas forzadas no está disponible.
@@ -2293,6 +2299,9 @@ Pulsa el botón de continuar y desactiva las optimizaciones de la batería."</st
 • Si la desofuscación falla, la reproducción puede fallar.
 • A veces, el vídeo no se reproducirá incluso después de 10 segundos, en cuyo caso deberás pulsar en el botón de recargar vídeo.
 • El vídeo puede comenzar tarde."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Falta el menú de la pista de audio.
+• Es posible que los vídeos para niños no se reproduzcan cuando se cierra la sesión o en modo incógnito.
+• Dado que se trata de un cliente no publicado, puede dejar de funcionar en cualquier momento."</string>
     <string name="revanced_spoof_streaming_data_side_effects_unknown">• Desconocido</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Priorizar calidad de vídeo</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">Se prioriza la calidad del vídeo.</string>
@@ -2344,28 +2353,22 @@ Se utiliza→ 1080p VP9."</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Desactivar VR AV1</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">El códec de vídeo es AVC (H.264) o VP9.</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">El códec de vídeo se determina automáticamente.</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_title">Mostrar botón de pista de audio de VR</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_on">El botón de la pista de audio de VR está visible.</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_off">El botón de la pista de audio de VR está oculto.</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message">"Requisitos previos:
-• El cliente utilizado para obtener los datos de transmisión debe ser «Android VR (sin inicio de sesión)».
-• Se debe estar reproduciendo un vídeo con varias pistas de audio.
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
+    <string name="revanced_preference_category_no_auth">Sin autenticación</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_title">Idioma predeterminado de la transmisión de audio</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_title">Mostrar botón de pista de audio</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"El botón de pista de audio se muestra cuando el cliente utilizado para obtener datos de transmisión es «Android VR», «Web móvil» o «visionOS»."</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">No se muestra el botón de pista de audio.</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Requisitos previos:
+• El cliente utilizado para obtener los datos de transmisión es «Android VR», «Web móvil» o «visionOS».
+• Se está reproduciendo un vídeo con varias pistas de audio.
 
 Problemas conocidos:
 • Si se cambia el idioma de la aplicación en la configuración de YouTube y no se reinicia la aplicación, es posible que el idioma utilizado en el diálogo de la pista de audio no cambie.
 • A veces se selecciona el idioma incorrecto en el diálogo de la pista de audio.
-• Algunas pistas de audio, como «Inglés descriptivo», no son compatibles.
+• Algunas pistas de audio, como «inglés descriptivo», no son compatibles.
 
 Esta función todavía está en desarrollo, por lo que puede fallar en cualquier momento debido a cambios en el servidor."</string>
-    <string name="revanced_spoof_streaming_data_vr_language_title">Idioma por defecto de la transmisión de audio de RV</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
-    <string name="revanced_preference_category_ios">iOS</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_title">Forzar iOS AVC (H.264)</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_summary_on">El códec de vídeo es AVC (H.264).</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_summary_off">El códec de vídeo se determina automáticamente.</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Activar este ajuste podría mejorar la duración de la batería y solucionar el problema de la reproducción entrecortada.
-
-AVC tiene una resolución máxima de 1080p, el códec de audio Opus no está disponible y la reproducción de vídeo utilizará más datos de Internet que VP9 o AV1."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (todavía en desarrollo)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Usar cliente JavaScript</string>

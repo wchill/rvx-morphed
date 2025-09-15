@@ -296,6 +296,8 @@ Certaines fonctions peuvent ne pas fonctionner sur l'ancienne mise en page."</st
     <string name="revanced_hide_settings_menu_about_title">Masquer le menu \'À propos\'</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Qualité et vitesse vidéo</string>
+    <string name="revanced_disable_drc_audio_title">Désactiver l\'audio DRC</string>
+    <string name="revanced_disable_drc_audio_summary">Désactive la DRC (compression de plage dynamique) appliquée à l\'audio.</string>
     <string name="revanced_custom_playback_speeds_title">Éditez les vitesses de lecture personnalisées</string>
     <string name="revanced_custom_playback_speeds_summary">Ajoute ou modifie les vitesses de lecture disponibles.</string>
     <string name="revanced_enable_opus_codec_title">Activer le Codec OPUS</string>
@@ -433,8 +435,6 @@ Cliquez ici pour découvrir comment créer une clé API."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Remplace le domaine qui est bloqué dans certaines régions afin que les miniatures des listes de lecture, les avatars des chaînes, etc. puissent être reçus.</string>
     <string name="revanced_change_share_sheet_title">Modifier la fiche de partage</string>
     <string name="revanced_change_share_sheet_summary">Remplace la fiche de partage de l\'appli par celui du système.</string>
-    <string name="revanced_disable_drc_audio_title">Désactiver l\'audio DRC</string>
-    <string name="revanced_disable_drc_audio_summary">Désactive la DRC (compression de plage dynamique) appliquée à l\'audio.</string>
     <string name="revanced_disable_music_video_in_album_title">Désactiver le clip vidéo dans l\'album</string>
     <string name="revanced_disable_music_video_in_album_summary">"Lorsqu'un utilisateur non premium écoute un morceau inclus dans un album, le clip vidéo est parfois diffusé à la place du titre officiel.
 
@@ -450,11 +450,6 @@ Restrictions : les vidéos pour enfants peuvent ne pas être redirigées."</str
     <string name="revanced_disable_quic_protocol_summary">"Protocole CronetEngine QUIC désactivé."</string>
     <string name="revanced_sanitize_sharing_links_title">Nettoyer les liens partagés</string>
     <string name="revanced_sanitize_sharing_links_summary">Supprime les paramètres de suivi (tracking) des URL lors du partage de liens.</string>
-    <string name="revanced_spoof_client_title">Usurpation de client</string>
-    <string name="revanced_spoof_client_type_title">Client par défaut</string>
-    <string name="revanced_spoof_client_type_summary">"Définit un client par défaut pour l'usurpation d'identité."</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_watch_history_type_title">Type d\'historique des vidéos regardées</string>
     <string name="revanced_watch_history_type_summary">"• Original : Respecte les paramètres d'historique des vidéos regardées du compte Google, mais l'historique des vidéos regardées peut ne pas fonctionner en raison du DNS ou du VPN.
 • Remplacer le domaine : Respecte les paramètres d'historique des vidéos regardées du compte Google.

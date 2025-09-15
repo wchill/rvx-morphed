@@ -297,6 +297,8 @@ Alcune funzionalità potrebbero non funzionare correttamente nell'interfaccia de
     <string name="revanced_hide_settings_menu_about_title">Nascondi il menù Informazioni</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Video</string>
+    <string name="revanced_disable_drc_audio_title">Disabilita audio DRC</string>
+    <string name="revanced_disable_drc_audio_summary">Disabilita DRC (Compressione Gamma Dinamica) applicato all\'audio.</string>
     <string name="revanced_custom_playback_speeds_title">Modifica velocità di riproduzione personalizzate</string>
     <string name="revanced_custom_playback_speeds_summary">Aggiungi o modifica le velocità di riproduzione disponibili</string>
     <string name="revanced_enable_opus_codec_title">Abilita il codec opus</string>
@@ -430,8 +432,6 @@ Fai clic per vedere come emettere una chiave API."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Ignora il dominio bloccato in alcune regioni in modo che le miniature della playlist, gli avatar del canale, ecc. possano essere ricevuti.</string>
     <string name="revanced_change_share_sheet_title">Cambia foglio di condivisione</string>
     <string name="revanced_change_share_sheet_summary">Sostituisce il foglio di condivisione in-app con il foglio di condivisione di sistema.</string>
-    <string name="revanced_disable_drc_audio_title">Disabilita audio DRC</string>
-    <string name="revanced_disable_drc_audio_summary">Disabilita DRC (Compressione Gamma Dinamica) applicato all\'audio.</string>
     <string name="revanced_disable_music_video_in_album_title">Disabilita video musicali nell\'album</string>
     <string name="revanced_disable_music_video_in_album_summary">"Quando un utente non premium riproduce una canzone inclusa in un album, a volte viene riprodotto il video musicale al posto della canzone ufficiale.
 
@@ -453,11 +453,6 @@ Limitazioni: I video per bambini potrebbero non essere reindirizzati."</string>
     <string name="revanced_debug_spannable_summary">Include espansione nel registro debug.</string>
     <string name="revanced_sanitize_sharing_links_title">Sanitizza i link di condivisione</string>
     <string name="revanced_sanitize_sharing_links_summary">Sanifica i link di condivisione rimuovendo i parametri di tracciamento.</string>
-    <string name="revanced_spoof_client_title">Falsifica client</string>
-    <string name="revanced_spoof_client_type_title">Client predefinito</string>
-    <string name="revanced_spoof_client_type_summary">"Definisce un client predefinito per la falsificazione."</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_watch_history_type_title">Guarda il tipo di cronologia</string>
     <string name="revanced_watch_history_type_summary">"• Originale: segue le impostazioni della cronologia delle visualizzazioni dell'account Google, ma la cronologia delle visualizzazioni potrebbe non funzionare a causa di DNS o VPN.
 • Sostituisci dominio: segue le impostazioni della cronologia delle visualizzazioni dell'account Google.

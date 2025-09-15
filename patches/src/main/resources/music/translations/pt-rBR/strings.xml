@@ -37,6 +37,8 @@
     <string name="revanced_hide_action_button_song_video_title">Ocultar botão de Música / Vídeo</string>
     <string name="revanced_hide_action_button_song_video_summary">"Oculta o botão de Música / Vídeo.
 (Este botão só está disponível para alguns usuários)"</string>
+    <string name="revanced_hide_action_button_disabled_title">Esconder botão desabilitado</string>
+    <string name="revanced_hide_action_button_disabled_summary">Oculta botões desabilitados, como o botão \"Comentários\" desabilitado.</string>
     <string name="revanced_hide_action_button_label_title">Ocultar rótulo do botão de ação</string>
     <string name="revanced_hide_action_button_label_summary">Oculta os rótulos dos botões de ação.</string>
     <string name="revanced_external_downloader_action_title">Substituir ação do botão de Download</string>
@@ -74,6 +76,7 @@ Limitações:
     <string name="revanced_hide_promotion_alert_banner_summary">Oculta o banner de alerta de promoção.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Menu flutuante</string>
+    <string name="revanced_disable_trim_silence_title">Desativar alternador de Cortar silêncio</string>
     <string name="revanced_enable_compact_dialog_title">Ativar diálogo compacto</string>
     <string name="revanced_enable_compact_dialog_summary">"Ativa o menu flutuante compacto em telefones.
 
@@ -253,6 +256,7 @@ Use cores escuras se possível, pois o aplicativo não suporta temas claros."</s
     <string name="revanced_disable_player_gesture_summary">Desativa a função de deslizar para alterar faixa no reprodutor.</string>
     <string name="revanced_enable_forced_miniplayer_title">Ativar mini reprodutor forçado</string>
     <string name="revanced_enable_forced_miniplayer_summary">Ativa o mini reprodutor forçado ao alternar para uma nova faixa.</string>
+    <string name="revanced_enable_smooth_transition_animation_title">Ativar animação de transição suave</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Ativar deslizar para dispensar o mini reprodutor</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Ativa deslizar para baixo para fechar o mini reprodutor.</string>
     <string name="revanced_enable_comments_scroll_top_title">Habilitar rolar para o topo dos comentários</string>
@@ -302,6 +306,8 @@ Alguns recursos podem não funcionar corretamente no layout antigo do reprodutor
     <string name="revanced_hide_settings_menu_about_title">Ocultar menu Sobre o YouTube Music</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Vídeo</string>
+    <string name="revanced_disable_drc_audio_title">Desativar áudio DRC</string>
+    <string name="revanced_disable_drc_audio_summary">Desativa o DRC (Compressão de faixa dinâmica) aplicada ao áudio.</string>
     <string name="revanced_custom_playback_speeds_title">Editar velocidades de reprodução personalizadas</string>
     <string name="revanced_custom_playback_speeds_summary">Adicionar ou alterar as velocidades de reprodução disponíveis.</string>
     <string name="revanced_enable_opus_codec_title">Ativar codec OPUS</string>
@@ -439,8 +445,6 @@ Clique para ver como emitir uma chave de API."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Ignora o domínio que está bloqueado em algumas regiões para que miniaturas para playlists, avatares de canais, etc. possam ser recebidos.</string>
     <string name="revanced_change_share_sheet_title">Alterar menu de compartilhamento</string>
     <string name="revanced_change_share_sheet_summary">Altera o menu de compartilhamento do app para o meno de compartilhamento do sistema.</string>
-    <string name="revanced_disable_drc_audio_title">Desativar áudio DRC</string>
-    <string name="revanced_disable_drc_audio_summary">Desativa o DRC (Compressão de faixa dinâmica) aplicada ao áudio.</string>
     <string name="revanced_disable_music_video_in_album_title">Desativar vídeo da música no álbum</string>
     <string name="revanced_disable_music_video_in_album_summary">"Quando um usuário não premium reproduz uma música incluída em um álbum, o vídeo da música é tocado às vezes em vez da música oficial.
 
@@ -462,11 +466,6 @@ Limitações: Vídeos infantis não podem ser redirecionados."</string>
     <string name="revanced_debug_spannable_summary">Inclui o \"spannable\" no registro de debug.</string>
     <string name="revanced_sanitize_sharing_links_title">Limpar links compartilhados</string>
     <string name="revanced_sanitize_sharing_links_summary">Limpa links de compartilhamento removendo parâmetros de consulta de rastreamento.</string>
-    <string name="revanced_spoof_client_title">Falsificar cliente</string>
-    <string name="revanced_spoof_client_type_title">Cliente padrão</string>
-    <string name="revanced_spoof_client_type_summary">"Define um cliente padrão para falsificar."</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
     <string name="revanced_watch_history_type_title">Tipo de histórico de exibição</string>
     <string name="revanced_watch_history_type_summary">"• Original: segue as configurações do histórico de exibição da conta do Google, mas o histórico de exibição pode não funcionar devido a DNS ou VPN.
 • Substituir domínio: segue as configurações do histórico de exibição da conta do Google.
@@ -492,4 +491,7 @@ Desativar as otimizações de bateria do GmsCore não afetará negativamente o u
 
 Toque no botão continuar e permita as alterações de otimização."</string>
     <string name="gms_core_dialog_continue_text">Continuar</string>
+    <string name="revanced_app_info_title">Informações do aplicativo</string>
+    <string name="revanced_app_info_summary">Clique para checar o nome e versão do aplicativo, como também a versão e data do patch.</string>
+    <string name="revanced_app_info_dialog_title">Informações do aplicativo</string>
 </resources>

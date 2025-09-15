@@ -17,6 +17,9 @@
     <string name="revanced_extended_settings_color_picker">Renk seçici</string>
     <string name="revanced_extended_settings_reset">Sıfırla</string>
     <string name="revanced_extended_settings_reset_color">Rengi sıfırla</string>
+    <string name="revanced_extended_settings_search_history_title">Ayarlar arama geçmişini göster</string>
+    <string name="revanced_extended_settings_search_history_summary_on">Ayarlar arama geçmişi gösteriliyor.</string>
+    <string name="revanced_extended_settings_search_history_summary_off">Ayarlar arama geçmişi gösterilmiyor.</string>
     <string name="revanced_extended_settings_search_hint">Ayarlarda ara</string>
     <string name="revanced_extended_settings_search_no_results_title">\'%s\' için hiçbir sonuç bulunamadı.</string>
     <string name="revanced_extended_settings_search_no_results_summary">Başka bir anahtar kelime deneyin.</string>
@@ -42,6 +45,7 @@ Lütfen web sitesinden %2$s dosyasını indirin."</string>
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">Sıradan kaldır ve videoyu yeniden yükle</string>
     <string name="revanced_queue_manager_remove_queue">Sırayı kaldır</string>
     <string name="revanced_queue_manager_save_queue">Sırayı kaydet</string>
+    <string name="revanced_queue_manager_show_original_video_information">Orijinal video bilgilerini göster</string>
     <string name="revanced_queue_manager_user_dialog_message">"Harici bir indirici açmak yerine, sıra yöneticisi diyaloğunu açın.
 
 Navigasyon çubuğundaki geri düğmesini basılı tutarak da sıra yöneticisini açabilirsiniz.
@@ -49,6 +53,26 @@ Navigasyon çubuğundaki geri düğmesini basılı tutarak da sıra yöneticisin
 Bu özellik hala geliştirme aşamasındadır, bu nedenle çoğu özellik çalışmayabilir.
 
 Lütfen yalnızca hata ayıklama amacıyla kullanın."</string>
+    <string name="revanced_queue_manager_video_information">Video bilgisi</string>
+    <string name="revanced_queue_manager_video_information_copy">Kopyala</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"Kanal
+══════════════
+%1$s
+
+Başlık
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"Kanal
+══════════════
+%1$s
+
+Başlık
+══════════════
+%2$s
+
+Açıklama
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">Kullanıcı girişi gerekli</string>
     <string name="revanced_queue_manager_check_failed_generic">Sıra yöneticisi kullanılamıyor (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">Oynatma listesi tanımlanamadı</string>
@@ -59,10 +83,30 @@ Lütfen yalnızca hata ayıklama amacıyla kullanın."</string>
     <string name="revanced_queue_manager_fetch_failed_delete">Sıra silinemedi.</string>
     <string name="revanced_queue_manager_fetch_failed_remove">Video kaldırılamadı.</string>
     <string name="revanced_queue_manager_fetch_failed_save">Sıra kaydedilemedi.</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">Kanal bilgileri yüklenemedi.</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">Video başarıyla eklendi.</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">Sıra başarıyla oluşturuldu.</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">Sıra başarıyla silindi.</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">Video başarıyla kaldırıldı.</string>
+    <string name="revanced_queue_manager_fetch_succeeded_save">\'%s\' konusunu başarıyla kaydedildi.</string>
+    <string name="revanced_share_copy_video_information_success">Video bilgisi panoya kopyalandı.</string>
+    <string name="revanced_webview_title">Web Görünümü</string>
+    <string name="revanced_webview_summary">Çerezleri almak için WebView\'i açın.</string>
+    <string name="revanced_webview_contextual_menu_get_cookies">Çerezleri al</string>
+    <string name="revanced_webview_contextual_menu_get_data_sync_id">Veri Senkronizasyon Kimliği</string>
+    <string name="revanced_webview_contextual_menu_get_visitor_data">Ziyaretçi Verisi</string>
+    <string name="revanced_webview_contextual_menu_refresh">Yenile</string>
+    <string name="revanced_webview_cookies">Çerezler</string>
+    <string name="revanced_webview_data_sync_id">Veri Senkronizasyon Kimliği</string>
+    <string name="revanced_webview_visitor_data">Ziyaretçi Verisi</string>
+    <string name="revanced_webview_intent_clear_cookies_on_startup">Başlangıçta Çerezleri Temizle</string>
+    <string name="revanced_webview_intent_clear_cookies_on_shutdown">Başlangıçta Çerezleri Temizle</string>
+    <string name="revanced_webview_intent_use_desktop_user_agent">Masaüstü Kullanıcı Aracını Kullan</string>
+    <string name="revanced_webview_copy">Kopyala</string>
+    <string name="revanced_webview_toast_copy_success">%s panoya kopyalandı.</string>
+    <string name="revanced_webview_toast_empty">%s boş.</string>
+    <string name="revanced_webview_toast_no_network">Lütfen ağ bağlantınızı kontrol edin.</string>
+    <string name="revanced_webview_toast_unavailable">WebView mevcut değil.</string>
     <string name="revanced_language_title">RVX dili</string>
     <string name="revanced_language_DEFAULT">Uygulama dili</string>
     <string name="revanced_language_AM">"Amharca
@@ -129,6 +173,10 @@ Lütfen yalnızca hata ayıklama amacıyla kullanın."</string>
 <small>Македонски</small>"</string>
     <string name="revanced_language_MN">"Moğolca
 <small>Монгол</small>"</string>
+    <string name="revanced_language_MR">"<small>Marathi</small>"</string>
+    <string name="revanced_language_MY">"Burmese
+<small>Burmese</small>"</string>
+    <string name="revanced_language_NL">"Hollanda Dili <small>Hollanda</small>"</string>
     <string name="revanced_language_PL">"Lehçe
 <small>Polski</small>"</string>
     <string name="revanced_language_PT">"Portekizce
@@ -147,6 +195,9 @@ Lütfen yalnızca hata ayıklama amacıyla kullanın."</string>
 <small>中文</small>"</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Reklamlar</string>
+    <string name="revanced_hide_creator_store_shelf_title">Yaratıcı mağaza rafını gizle</string>
+    <string name="revanced_hide_creator_store_shelf_summary_on">Yaratıcı mağaza rafı videoların altında gizlidir.</string>
+    <string name="revanced_hide_creator_store_shelf_summary_off">Yaratıcı mağaza rafı videoların altında gizlidir.</string>
     <string name="revanced_hide_end_screen_store_banner_title">Bitiş ekranındaki mağaza afişini gizle</string>
     <string name="revanced_hide_end_screen_store_banner_summary_on">Mağaza afişi gizli.</string>
     <string name="revanced_hide_end_screen_store_banner_summary_off">Mağaza afişi gösteriliyor.</string>
@@ -177,7 +228,7 @@ Lütfen yalnızca hata ayıklama amacıyla kullanın."</string>
     <string name="revanced_hide_video_ads_summary_off">Video reklamları gösteriliyor</string>
     <string name="revanced_hide_view_products_title">Ürünleri görüntüle yazısını gizle</string>
     <string name="revanced_hide_view_products_summary_on">Gizleniyor</string>
-    <string name="revanced_hide_view_products_summary_off">Gizlenmiyor</string>
+    <string name="revanced_hide_view_products_summary_off">Video katmanındaki ürünleri görüntüle afişi görünür.</string>
     <string name="revanced_hide_web_search_results_title">Web arama sonuçlarını gizle</string>
     <string name="revanced_hide_web_search_results_summary_on">Gizleniyor</string>
     <string name="revanced_hide_web_search_results_summary_off">Gizlenmiyor</string>
@@ -187,7 +238,7 @@ Lütfen yalnızca hata ayıklama amacıyla kullanın."</string>
     <!-- PreferenceScreen: Alternative thumbnails -->
     <string name="revanced_preference_screen_alt_thumbnails_title">Alternatif kapak fotoğrafları</string>
     <string name="revanced_alt_thumbnail_home_title">Ana Sayfa Sekmesi</string>
-    <string name="revanced_alt_thumbnail_player_title">Oynatıcı çalma listeleri, öneriler</string>
+    <string name="revanced_alt_thumbnail_player_title">Oyuncu çalma listesi &amp; önerileri</string>
     <string name="revanced_alt_thumbnail_search_title">Arama sonuçları</string>
     <string name="revanced_alt_thumbnail_subscriptions_title">Abonelikler sekmesi</string>
     <string name="revanced_alt_thumbnail_library_title">\'Siz\' sekmesi</string>
@@ -232,6 +283,15 @@ DeArrow hakkında daha fazla bilgi edinmek için buraya dokunun."</string>
     <string name="revanced_hide_chips_shelf_title">Buna benzer daha çok video çipini gizle</string>
     <string name="revanced_hide_chips_shelf_on">Silindirik öneri butonları ve menüleri gizleniyor</string>
     <string name="revanced_hide_chips_shelf_off">Silindirik öneri butonları ve menüleri gösteriliyor</string>
+    <string name="revanced_hide_expandable_card_title">Genişletilebilir kartı gizle</string>
+    <string name="revanced_hide_expandable_card_summary_on">Videoların altında yer alan genişletilebilir kart gizli.</string>
+    <string name="revanced_hide_expandable_card_summary_off">Videoların altında yer alan genişletilebilir kart gizli.</string>
+    <string name="revanced_hide_expandable_shelf_title">Ürün raflarını gizle</string>
+    <string name="revanced_hide_expandable_shelf_summary_on">Genişletilebilir raflar gösterilmiyor.</string>
+    <string name="revanced_hide_expandable_shelf_summary_off">Ürün rafları gösteriliyor.</string>
+    <string name="revanced_hide_floating_button_title">Kayan düğmeyi gizle</string>
+    <string name="revanced_hide_floating_button_summary_on">Kayan düğme gösterilmiyor.</string>
+    <string name="revanced_hide_floating_button_summary_off">Kayan düğme gösteriliyor.</string>
     <string name="revanced_hide_image_shelf_title">Görüntü rafını gizle</string>
     <string name="revanced_hide_image_shelf_summary_on">Aramalarda çıkan resimler gizleniyor.</string>
     <string name="revanced_hide_image_shelf_summary_off">Aramalarda çıkan resimler gizlenmiyor.</string>
@@ -259,10 +319,22 @@ DeArrow hakkında daha fazla bilgi edinmek için buraya dokunun."</string>
     <string name="revanced_hide_show_more_button_title">\'Daha fazla göster\' düğmesini gizle</string>
     <string name="revanced_hide_show_more_button_summary_on">\"Daha fazla göster\" butonu gizleniyor.</string>
     <string name="revanced_hide_show_more_button_summary_off">\"Daha fazla göster\" butonu gizlenmiyor.</string>
+    <string name="revanced_hide_subscribed_channels_bar_title">Abone olduğunuz kanallar çubuğunu gizle</string>
+    <string name="revanced_hide_subscribed_channels_bar_summary_on">Abone olunan kanallar çubuğu gizli.</string>
+    <string name="revanced_hide_subscribed_channels_bar_summary_off">Abone olunan kanallar çubuğu gösteriliyor.</string>
+    <string name="revanced_hide_surveys_title">Anketleri gizle</string>
+    <string name="revanced_hide_surveys_summary_on">Anketler gizlendi.</string>
+    <string name="revanced_hide_surveys_summary_off">Anketler gösteriliyor.</string>
     <string name="revanced_hide_ticket_shelf_title">Biletler kısmını gizle</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Gizleniyor</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Gizlenmiyor</string>
+    <string name="revanced_hide_video_recommendation_labels_title">Video öneri etiketlerini gizle</string>
+    <string name="revanced_hide_video_recommendation_labels_summary_on">"Küçük resim etiketleri - 'İnsanlar ayrıca izledi' ve 'Bunu da beğenebilirsiniz' gibi - gizlenmiştir."</string>
+    <string name="revanced_hide_video_recommendation_labels_summary_off">"Küçük resim etiketleri - 'İnsanlar ayrıca izledi' ve 'Bunu da beğenebilirsiniz' gibi - gizlenmiştir."</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
+    <string name="revanced_preference_screen_carousel_shelf_title">Carousel rafı</string>
+    <string name="revanced_preference_screen_carousel_shelf_summary">Ana sayfada, arama sonuçlarında ve aboneliklerde carousel rafını gizle veya göster.</string>
+    <string name="revanced_hide_carousel_shelf_about_title">Carousel rafı hakkında</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Kategori çubuğu</string>
     <string name="revanced_preference_screen_category_bar_summary">Akışta, arama sonuçlarında ve ilgili videolardaki kategori barını gizle veya göster.</string>
@@ -272,6 +344,7 @@ DeArrow hakkında daha fazla bilgi edinmek için buraya dokunun."</string>
     <string name="revanced_hide_category_bar_in_related_videos_title">İlgili videolarda gizle</string>
     <string name="revanced_hide_category_bar_in_related_videos_summary_on">İlgili videolarda gizli.</string>
     <string name="revanced_hide_category_bar_in_related_videos_summary_off">İlgili videolarda görünür.</string>
+    <string name="revanced_hide_category_bar_in_playlist_title">Oynatma listelerini gizle</string>
     <string name="revanced_hide_category_bar_in_search_title">Arama sonuçlarında gizle</string>
     <string name="revanced_hide_category_bar_in_search_summary_on">Arama sonuçlarında gizli.</string>
     <string name="revanced_hide_category_bar_in_search_summary_off">Arama sonuçlarında gizlenmiyor.</string>
@@ -1003,7 +1076,7 @@ Bilinen sorun: Arama sonuçlarındaki resmi başlıklar da gizlenebiliyor.</stri
     <string name="revanced_hide_shorts_shelf_subscriptions_summary_on">Abonelikler akışındaki Shorts rafı gizli</string>
     <string name="revanced_hide_shorts_shelf_subscriptions_summary_off">Abonelikler akışındaki Shorts rafı gizlenmiyor</string>
     <string name="revanced_hide_shorts_shelf_history_title">İzleme geçmişinde gizle</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_on">İzleme geçmişinde gizli.</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_on">"İzleme geçmişinde gizli."</string>
     <string name="revanced_hide_shorts_shelf_history_summary_off">İzleme geçmişinde gizlenmiyor.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Experimental flags -->
     <string name="revanced_change_shorts_repeat_state_title">Shorts tekrarlama durumunu değiştirme</string>
@@ -1407,7 +1480,7 @@ Devam düğmesine dokunun ve pil optimizasyonlarını devre dışı bırakın."<
     <string name="revanced_share_copy_settings_success">Ayarlar panoya kopyalandı</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">İzleme geçmişi</string>

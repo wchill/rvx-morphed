@@ -1289,7 +1289,7 @@ Info:
     <string name="revanced_hide_shorts_shelf_subscriptions_summary_on">Community-Beiträge im Abonnement-Feed sind versteckt.</string>
     <string name="revanced_hide_shorts_shelf_subscriptions_summary_off">Community-Beiträge im Abonnement-Feed werden angezeigt.</string>
     <string name="revanced_hide_shorts_shelf_history_title">Verstecke im Beobachtungsverlauf</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_on">Versteckt im Verlauf.</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_on">"Versteckt im Verlauf."</string>
     <string name="revanced_hide_shorts_shelf_history_summary_off">Im Verlauf angezeigt.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Experimental flags -->
     <string name="revanced_change_shorts_background_repeat_state_title">Shorts-Hintergrundwiederholungsstatus ändern</string>
@@ -1863,13 +1863,7 @@ Drücke Weiter und deaktiviere Akku-Optimierungen."</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Client zum Abrufen von Streaming-Daten wird in Statistiken für Nerds versteckt.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Du bist möglicherweise nicht eingeloggt.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
-    <string name="revanced_spoof_streaming_data_ios_force_avc_title">iOS AVC (H.264) erzwingen</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_summary_on">Video Codec ist zum AVC (H.264) gezwungen.</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_summary_off">Video Codec wird automatisch ermittelt.</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Aktivieren Sie dies, um die Akkulaufzeit zu verbessern und Ruckeln bei der Wiedergabe zu beheben.
-
-AVC hat eine maximale Auflösung von 1080p, Opus-Audiocodec ist nicht verfügbar und die Videowiedergabe verbraucht mehr Internetdaten als VP9 oder AV1."</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Historie ansehen</string>

@@ -315,6 +315,8 @@ Előfordulhat, hogy egyes funkciók nem működnek megfelelően a régi lejátsz
     <string name="revanced_hide_settings_menu_about_title">A Youtube Music névjegye menü elrejtése</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Videó</string>
+    <string name="revanced_disable_drc_audio_title">DRC hang letiltása</string>
+    <string name="revanced_disable_drc_audio_summary">Letiltja a hangra alkalmazott DRC-t (dinamikatartomány-kompresszió).</string>
     <string name="revanced_custom_playback_speeds_title">Egyéni lejátszási sebességek szerkesztése</string>
     <string name="revanced_custom_playback_speeds_summary">Az elérhető lejátszási sebességek módosítása vagy hozzáadása.</string>
     <string name="revanced_enable_opus_codec_title">Opus codec engedélyezése</string>
@@ -402,9 +404,9 @@ Kattintson ide az API-kulcs kiadásának megtekintéséhez."</string>
     <string name="revanced_sb_segments_intro_sum">Egy részlet tartalom nélkül. Lehet szünet, álló képkocka, vagy ismétlődő animáció. Nem használandó információt tartalmazó átmeneteknél.</string>
     <string name="revanced_sb_segments_outro">Zárókártyák / Stáblista</string>
     <string name="revanced_sb_segments_outro_sum">Stáblista, vagy amikor megjelennek a YouTube zárókártyák. Nem tartozik bele az információt tartalmazó összegzés.</string>
-    <string name="revanced_sb_segments_preview">Előzetes / Összefoglaló / Hook</string>
+    <string name="revanced_sb_segments_preview">Előzetes / Összefoglaló / Bevezető</string>
     <string name="revanced_sb_segments_preview_sum">Olyan klipek gyűjteménye, amelyek megmutatják, hogy mi következik vagy mi történt a videóban vagy egy sorozat más videóiban, ahol minden információ máshol ismétlődik.</string>
-    <string name="revanced_sb_segments_filler">Kitöltések / Viccek</string>
+    <string name="revanced_sb_segments_filler">Kitöltő / Vicces részek</string>
     <string name="revanced_sb_segments_filler_sum">Csak töltelék vagy humornak hozzáadott részek, amik nem szükségesek a videó fő tartalmának megértéséhez. Ne tartalmazzon olyan részeket, amik összefüggést, vagy háttérinformációt szolgáltatnak.</string>
     <string name="revanced_sb_segments_nomusic">Zene: nem-zene szegmens</string>
     <string name="revanced_sb_segments_nomusic_sum">Csak zenei videókhoz használható. Zenei videók zene nélküli részei, amelyek még nem tartoznak más kategóriába.</string>
@@ -454,8 +456,6 @@ Kattintson ide az API-kulcs kiadásának megtekintéséhez."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Helyettesíti az egyes régiókban blokkolt domaint, így a lejátszási lista miniatűrjei, csatorna avatarok stb. fogadhatóak.</string>
     <string name="revanced_change_share_sheet_title">Megosztási lap megváltoztatása</string>
     <string name="revanced_change_share_sheet_summary">Az alkalmazáson belüli megosztási lapot a rendszer megosztási lapjára változtatja.</string>
-    <string name="revanced_disable_drc_audio_title">DRC hang letiltása</string>
-    <string name="revanced_disable_drc_audio_summary">Letiltja a hangra alkalmazott DRC-t (dinamikatartomány-kompresszió).</string>
     <string name="revanced_disable_music_video_in_album_title">Zenei videó letiltása az albumban</string>
     <string name="revanced_disable_music_video_in_album_summary">"Amikor egy nem prémium felhasználó lejátszik egy albumban szereplő dalt, néha a hivatalos dal helyett a videoklip játszódik le.
 
@@ -477,32 +477,6 @@ Korlátozások: A gyerekeknek szánt videók átirányítása nem mindig működ
     <string name="revanced_debug_spannable_summary">A spannable-t is beleveszi a hibakeresési naplóba.</string>
     <string name="revanced_sanitize_sharing_links_title">Megosztási linkek tisztítása</string>
     <string name="revanced_sanitize_sharing_links_summary">A megosztási linkeket a nyomkövető lekérdezési paraméterek eltávolításával tisztítja.</string>
-    <string name="revanced_spoof_client_title">Kliens hamisítása</string>
-    <string name="revanced_spoof_client_summary">Kliens hamisítása a lejátszási problémák elkerülése érdekében.</string>
-    <string name="revanced_spoof_client_type_title">Alapértelmezett kliens</string>
-    <string name="revanced_spoof_client_type_summary">"Meghatároz egy alapértelmezett klienst a hamisításhoz."</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_8_34">iOS Music 8.34</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_6_21_block_requst">iOS Music 6.21 (Kérés blokkolása)</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_7_04_block_requst">iOS Music 7.04 (Kérés blokkolása)</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_8_12_block_requst">iOS Music 8.12 (Kérés blokkolása)</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_8_34_block_requst">iOS Music 8.34 (Kérés blokkolása)</string>
-    <string name="revanced_spoof_video_streams_title">Videófolyamok hamisítása</string>
-    <string name="revanced_spoof_video_streams_summary">A kliens videófolyamainak hamisítása a lejátszási problémák elkerülése érdekében.</string>
-    <string name="revanced_spoof_video_streams_default_client_title">Alapértelmezett kliens</string>
-    <string name="revanced_spoof_video_streams_default_client_summary">"Mellékhatás:
-• Az alkalmazás kényszerbezáródhat VPN vagy DNS használatakor.
-• A hang időnként akadozhat lejátszás közben adaptív bitrátájú streaming klienseken (Minden kliens, kivéve az Android VR 1.43.32-t)."</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32">Android VR 1.43.32</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09">Android VR 1.65.09</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32_no_auth">Android VR 1.43.32 (Nincs hitelesítés)</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09_no_auth">Android VR 1.65.09 (Nincs hitelesítés)</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_watch_history_type_title">Megtekintési előzmények típusa</string>
     <string name="revanced_watch_history_type_summary">"• Eredeti: A Google-fiók megtekintési előzményeinek beállításait követi, de előfordulhat, hogy a DNS vagy a VPN miatt nem működik.
 • Domain cseréje: Követi a Google-fiók megtekintési előzmények beállításait.

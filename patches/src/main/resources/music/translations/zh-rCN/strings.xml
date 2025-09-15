@@ -275,6 +275,8 @@
     <string name="revanced_hide_settings_menu_about_title">隐藏关于菜单</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">视频</string>
+    <string name="revanced_disable_drc_audio_title">禁用动态范围压缩音频</string>
+    <string name="revanced_disable_drc_audio_summary">禁用应用于音频的 DRC（动态范围压缩）。</string>
     <string name="revanced_custom_playback_speeds_title">编辑自定义播放速度</string>
     <string name="revanced_custom_playback_speeds_summary">添加或更改可用的播放速度</string>
     <string name="revanced_enable_opus_codec_title">OPUS 编解码器</string>
@@ -408,8 +410,6 @@
     <string name="revanced_bypass_image_region_restrictions_summary">绕过部分地区屏蔽的网域，以便可以接收播放列表缩略图、频道头像等。</string>
     <string name="revanced_change_share_sheet_title">更改分享菜单</string>
     <string name="revanced_change_share_sheet_summary">将应用内共享菜单更改为系统共享菜单。</string>
-    <string name="revanced_disable_drc_audio_title">禁用动态范围压缩音频</string>
-    <string name="revanced_disable_drc_audio_summary">禁用应用于音频的 DRC（动态范围压缩）。</string>
     <string name="revanced_disable_music_video_in_album_title">禁用专辑中的音乐视频</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_title">重定向类型</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_summary">指定如何重定向到官方歌曲。</string>
@@ -418,11 +418,6 @@
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_on_long_click">轻点并按住歌曲/视频切换</string>
     <string name="revanced_sanitize_sharing_links_title">清理分享链接</string>
     <string name="revanced_sanitize_sharing_links_summary">分享链接时删除跟踪查询参数</string>
-    <string name="revanced_spoof_client_title">伪装客户端</string>
-    <string name="revanced_spoof_client_type_title">默认客户端</string>
-    <string name="revanced_spoof_client_type_summary">"定义用于伪装的默认客户端。"</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS 音乐 6.21</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS 音乐 7.04</string>
     <string name="revanced_watch_history_type_title">观看历史记录类型</string>
     <string name="revanced_watch_history_type_summary">"• 原始：遵循 Google 账号的观看历史记录设置，但观看历史记录可能因 DNS 或 VPN 而无法使用。
 • 替换网域：遵循 Google 账号的观看历史记录设置。

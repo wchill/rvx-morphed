@@ -314,6 +314,8 @@ YouTube Music の検索や設定などのアクティビティは公開されて
     <string name="revanced_hide_settings_menu_about_title">「YouTube Music について」を非表示</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">動画</string>
+    <string name="revanced_disable_drc_audio_title">DRCオーディオを無効にする</string>
+    <string name="revanced_disable_drc_audio_summary">音声に適用されるDRC (Dynamic Range Compression) を無効にします。</string>
     <string name="revanced_custom_playback_speeds_title">カスタム再生速度の編集</string>
     <string name="revanced_custom_playback_speeds_summary">利用可能な再生速度を編集します。</string>
     <string name="revanced_enable_opus_codec_title">Opus コーデックを有効化</string>
@@ -449,8 +451,6 @@ API キーの発行方法については、ここをタップしてください�
     <string name="revanced_bypass_image_region_restrictions_summary">プレイリストのサムネイルやチャンネルアバターなどを受信できるように、一部の地域でブロックされているドメインを置き換えます。</string>
     <string name="revanced_change_share_sheet_title">共有メニューを変更</string>
     <string name="revanced_change_share_sheet_summary">アプリ内共有メニューからシステムの共有メニューに置き換えます。</string>
-    <string name="revanced_disable_drc_audio_title">DRCオーディオを無効にする</string>
-    <string name="revanced_disable_drc_audio_summary">音声に適用されるDRC (Dynamic Range Compression) を無効にします。</string>
     <string name="revanced_disable_music_video_in_album_title">アルバム内のミュージックビデオを無効にする</string>
     <string name="revanced_disable_music_video_in_album_summary">"非プレミアムユーザーがアルバムに含まれる曲を再生すると、公式の曲ではなくMVが再生されることがあります。
 
@@ -472,32 +472,6 @@ API キーの発行方法については、ここをタップしてください�
     <string name="revanced_debug_spannable_summary">デバッグログにSpannableを含めます。</string>
     <string name="revanced_sanitize_sharing_links_title">共有リンクのクリーンアップ</string>
     <string name="revanced_sanitize_sharing_links_summary">リンクを共有する際に、URL からトラッキングクエリパラメーターを削除します。</string>
-    <string name="revanced_spoof_client_title">クライアントを偽装</string>
-    <string name="revanced_spoof_client_summary">再生の問題を防ぐためにクライアントを偽装します。</string>
-    <string name="revanced_spoof_client_type_title">既定のクライアント</string>
-    <string name="revanced_spoof_client_type_summary">"偽装するデフォルトのクライアントを定義します。"</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_6_21">iOS Music 6.21</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_7_04">iOS Music 7.04</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_8_12">iOS Music 8.12</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_8_34">iOS Music 8.34</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_6_21_block_requst">iOS Music 6.21 (ブロックリクエスト)</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_7_04_block_requst">iOS Music 7.04 (ブロックリクエスト)</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_8_12_block_requst">iOS Music 8.12 (ブロックリクエスト)</string>
-    <string name="revanced_spoof_client_type_entry_ios_music_8_34_block_requst">iOS Music 8.34 (ブロックリクエスト)</string>
-    <string name="revanced_spoof_video_streams_title">ビデオストリームを偽装します</string>
-    <string name="revanced_spoof_video_streams_summary">クライアントのビデオストリームを偽装して再生の問題を防ぎます。
-
-副作用:
-・VPNまたは DNSを使用している場合アプリが強制終了する可能性があります。
-・アダプティブビットレートストリーミングのクライアント（Android VR 1.43.32以外のすべて）では再生中に音声が断続的に途切れることがあります。</string>
-    <string name="revanced_spoof_video_streams_default_client_title">デフォルトのクライアント</string>
-    <string name="revanced_spoof_video_streams_default_client_summary">"偽装するデフォルトのクライアントを定義します。"</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_43_32">Android VR 1.43.32</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_android_vr_1_65_09">Android VR 1.65.09</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_6_21">iOS Music 6.21</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_7_04">iOS Music 7.04</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_12">iOS Music 8.12</string>
-    <string name="revanced_spoof_video_streams_default_client_entry_ios_music_8_34">iOS Music 8.34</string>
     <string name="revanced_watch_history_type_title">再生履歴の種類</string>
     <string name="revanced_watch_history_type_summary">"・オリジナル：　Google アカウントの視聴履歴設定に従いますが、DNSやVPNにより視聴履歴が機能しない場合があります。
 ・ドメインを置き換えます：　 Google アカウントの視聴履歴設定に従います。

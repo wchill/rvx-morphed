@@ -8,13 +8,6 @@
     <string name="revanced_extended_settings_search_title">%s keresése</string>
     <string name="revanced_extended_reset_to_default_toast">Visszaállítás az alapértelmezett értékekre.</string>
     <string name="revanced_preference_category_experimental_flag">Kísérleti funkciók</string>
-    <string name="revanced_extended_audio_tracks_unavailable">"Ez a beállítás jelenleg nem érhető el.
-
-A funkció használatához módosítsa az 'Alapértelmezett kliens (hamis streamelési adatok)' beállítást iOS TV, TV vagy TV egyszerű értékre.
-
-Megjegyzés:
-• Az iOS TV nem támogatja bizonyos videók, például zenei videók lejátszását.
-• Ezért, ha az alapértelmezett kliens az iOS TV-re van állítva, ez a beállítás egyes videók esetében nem biztos, hogy működik."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Szeretné folytatni?</string>
     <string name="revanced_extended_restart_first_run">Indítsa újra a rendszert a normál elrendezés betöltéséhez</string>
     <string name="revanced_extended_restart_title">Újraindítás szükséges</string>
@@ -664,6 +657,38 @@ A következő esetekben esetleg nem működik:
     <string name="revanced_transcript_cookies_about_title">Átirati sütikről</string>
     <string name="revanced_transcript_cookies_about_summary">Kattintson ide a sütik fogadásának módjáról.</string>
     <string name="revanced_transcript_cookies_dialog_title">Átirati sütik eportálása</string>
+    <string name="revanced_transcript_cookies_dialog_message">"Hitelesítés
+══════════════
+1. Kattintson a 'Hitelesítés' gombra a webes nézet bejelentkezési oldalának megnyitásához.
+
+2. Jelentkezzen be Google-fiókjába.
+
+3. Lejátszik minden olyan videót, amely támogatja az automatikusan lefordított feliratokat.
+
+4. Kapcsolja be az automatikusan lefordított feliratokat, és nézze meg, hogy működnek-e.
+
+4-1. Ha az automatikusan lefordított feliratok nem működnek, váltson egy másik videóra, amely támogatja az automatikusan lefordított feliratokat, és próbálja újra a 4. lépést.
+
+5. Kattintson az eszköztáron található három pontra a helyi menü megnyitásához.
+
+6. Kattintson a 'Sütik beszerzése' gombra.
+
+7. Kattintson a 'Másolás' gombra a sütik másolásához.
+
+8. Zárja be a webes nézetet, és illessze be a másolt sütiket az 'Átirati sütik' beállításaiba.
+
+Nincs hitelesítés
+══════════════
+1. Kattintson a 'Nincs hitelesítés' gombra a videó webes nézetben való megnyitásához.
+2. Játssza le a videót legalább 3 másodpercig.
+3. Kattintson az eszköztáron található három pontra a helyi menü megnyitásához.
+4. Kattintson a 'Sütik beszerzése' gombra.
+5. Kattintson a 'Másolás' gombra a sütik másolásához.
+6. Zárja be a webes nézetet, és illessze be a másolt sütiket a 'Transcript Cookies' beállításokba.
+
+Jogi nyilatkozat: A bejelentkezés nélkül kibocsátott sütik érvénytelenek lehetnek, vagy időbe telhet, mire elérhetővé válnak a Transcript API számára."</string>
+    <string name="revanced_transcript_cookies_dialog_auth_text">Hitelesítés</string>
+    <string name="revanced_transcript_cookies_dialog_no_auth_text">Nincs hitelesítés</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">Fiók menü</string>
     <string name="revanced_preference_screen_account_menu_summary">Elemek elrejtése vagy megjelenítése a fiók menüben és a Te fülön.</string>
@@ -1554,7 +1579,7 @@ Mellékhatás: A hivatalos fejlécek rejtve lesznek a keresési eredményekben."
     <string name="revanced_hide_shorts_shelf_video_description_summary_on">Elrejtve a videó leírásában.</string>
     <string name="revanced_hide_shorts_shelf_video_description_summary_off">Látható a videó leírásában.</string>
     <string name="revanced_hide_shorts_shelf_history_title">Elrejtés a nézési előzmények között</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_on">Elrejtve a nézési előzmények között.</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_on">"Elrejtve a nézési előzmények között."</string>
     <string name="revanced_hide_shorts_shelf_history_summary_off">Megjelenítve a nézési előzmények között.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Experimental flags -->
     <string name="revanced_change_shorts_background_repeat_state_title">Shorts háttér ismétlési állapotának módosítása</string>
@@ -2246,31 +2271,16 @@ Kattintson a folytatás gombra és kapcsolja ki az akkumulátor optimalizáláso
     <string name="revanced_spoof_streaming_data_summary_off">"Az adatfolyam nincs meghamisítva. Lehet, hogy a videó lejátszás nem működik."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">A beállítás kikapcsolása videólejátszási problémákat okozhat.</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Alapértelmezett kliens</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
-<small>(Belépés szükséges)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
-<small>(Nincs hitelesítés)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
-<small>(Belépés szükséges)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobil webböngésző
 <small>(fejlesztés alatt)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
-<small>(fejlesztés alatt)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV beágyazott
-<small>(fejlesztés alatt)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV egyszerű
-<small>(fejlesztés alatt)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">TV
+<small>(fejlesztés alatt)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV beágyazott
+<small>(fejlesztés alatt)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV egyszerű
+<small>(fejlesztés alatt)</small></string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Hamisítás mellékhatásai</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android">"• A hangsáv menü hiányzik.
-• A kényszerített automatikus hangsávok letiltása nem elérhető.
-• A stabil hangerő nem áll rendelkezésre.
-• Előfordulhat, hogy a gyerekeknek szánt tartalmat nem lehet lejátszani, ha ki van jelentkezve vagy inkognitó módban van."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• A hangsáv menü hiányzik.
-• A kényszerített automatikus hangsávok letiltása nem elérhető.
-• A stabil hangerő nem áll rendelkezésre.
-• Előfordulhat, hogy a filmeket vagy fizetős videókat nem játsza le.
-• Előfordulhat, hogy a gyerekeknek szánt tartalmat nem lehet lejátszani, ha ki van jelentkezve vagy inkognitó módban van."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Hiányzik a hangsáv menü.
 • A kényszerített automatikus hangsávok letiltása nem érhető el.
 • Ha az élesítés sikertelen, a lejátszás sikertelen lehet.
@@ -2330,28 +2340,7 @@ Ha ez a beállítás engedélyezve van, a szerver válaszából származó legma
     <string name="revanced_spoof_streaming_data_vr_disable_av1_title">VR AV1 letiltása</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">A videó kodek AVC (H.264) vagy VP9.</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">A videokodek meghatározása automatikusan történik.</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_title">VR hangsáv megjelenítése gomb</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_on">A VR hangsáv megjelenítése gomb látható.</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_summary_off">A VR hangsáv megjelenítése gomb nem látható.</string>
-    <string name="revanced_spoof_streaming_data_vr_audio_track_button_user_dialog_message">"Előfeltételek:
-• A streamelési adatok lekéréséhez használt kliens az „Android VR (nincs hitelesítés)”.
-• Több hangsávval rendelkező videó lejátszása folyamatban van.
-
-Ismert problémák:
-• Ha az alkalmazás nyelvét megváltoztatják a YouTube beállításaiban, és az alkalmazást nem indítják újra, előfordulhat, hogy a hangsáv párbeszédpanelén használt nyelv nem változik.
-• Előfordulhat, hogy a hangsáv párbeszédpanelén rossz nyelv van kiválasztva.
-• Egyes hangsávok, például az „angol leíró”, nem támogatottak.
-
-Ez a funkció még fejlesztés alatt áll, így a szerveroldali változások miatt bármikor meghibásodhat."</string>
-    <string name="revanced_spoof_streaming_data_vr_language_title">VR hangfolyam alapértelmezett nyelve</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
-    <string name="revanced_preference_category_ios">iOS</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_title">Kényszerített iOS AVC (H.264)</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_summary_on">A kényszerített videó kodek az AVC (H.264).</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_summary_off">A videokodek meghatározása automatikusan történik.</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Ennek engedélyezése javíthatja az akkumulátor élettartamát és javíthatja a lejátszás akadozását.
-
-Az AVC maximális felbontása 1080p, az Opus hangkodek nem érhető el, és a videolejátszás több adatforgalmat igényel, mint a VP9 vagy az AV1."</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">JavaScript kliens használata</string>
