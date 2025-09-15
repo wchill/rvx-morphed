@@ -41,10 +41,21 @@ public class SpoofStreamingDataPatch {
             SPOOF_STREAMING_DATA_USE_JS && BaseSettings.SPOOF_STREAMING_DATA_USE_LATEST_JS.get();
 
     /**
-     * Any unreachable ip address.  Used to intentionally fail requests.
+     * Domain used for internet connectivity verification.
+     * It has an empty response body and is only used to check for a 204 response code.
+     * <p>
+     * If an unreachable IP address (127.0.0.1) is used, no response code is provided.
+     * <p>
+     * YouTube handles unreachable IP addresses without issue.
+     * YouTube Music has an issue with waiting for the Cronet connect timeout of 30_000L on mobile networks.
+     * <p>
+     * Using a VPN or DNS can temporarily resolve this issue,
+     * But the ideal workaround is to avoid using unreachable IP addresses.
      */
-    private static final String UNREACHABLE_HOST_URI_STRING = "https://127.0.0.0";
-    private static final Uri UNREACHABLE_HOST_URI = Uri.parse(UNREACHABLE_HOST_URI_STRING);
+    private static final String INTERNET_CONNECTION_CHECK_URI_STRING =
+            "https://www.google.com/gen_204";
+    private static final Uri INTERNET_CONNECTION_CHECK_URI =
+            Uri.parse(INTERNET_CONNECTION_CHECK_URI_STRING);
 
     /**
      * Parameters used when playing scrim.
@@ -118,9 +129,9 @@ public class SpoofStreamingDataPatch {
                 String path = playerRequestUri.getPath();
 
                 if (path != null && path.contains("get_watch")) {
-                    Logger.printDebug(() -> "Blocking 'get_watch' by returning unreachable uri");
+                    Logger.printDebug(() -> "Blocking 'get_watch' by returning internet connection check uri");
 
-                    return UNREACHABLE_HOST_URI;
+                    return INTERNET_CONNECTION_CHECK_URI;
                 }
             } catch (Exception ex) {
                 Logger.printException(() -> "blockGetWatchRequest failure", ex);
@@ -137,9 +148,9 @@ public class SpoofStreamingDataPatch {
                 String path = originalUri.getPath();
 
                 if (path != null && path.contains("initplayback")) {
-                    Logger.printDebug(() -> "Blocking 'initplayback' by clearing query");
+                    Logger.printDebug(() -> "Blocking 'initplayback' by returning internet connection check uri");
 
-                    return originalUri.buildUpon().clearQuery().build().toString();
+                    return INTERNET_CONNECTION_CHECK_URI_STRING;
                 }
             } catch (Exception ex) {
                 Logger.printException(() -> "blockInitPlaybackRequest failure", ex);
