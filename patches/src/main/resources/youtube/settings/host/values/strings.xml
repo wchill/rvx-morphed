@@ -11,10 +11,7 @@
 
     <string name="revanced_preference_category_experimental_flag">Experimental flags</string>
     <string name="revanced_extended_audio_tracks_unavailable">"This setting is currently unavailable.
-To use this feature, change 'Default client (Spoof streaming data)' to iOS TV, TV or TV Simply.
-
-Note:
-• iOS TV is not available in some regions, in which case this setting may still not work."</string>
+To use this feature, change 'Default client (Spoof streaming data)' to TV or TV Simply."</string>
     <string name="revanced_extended_confirm_user_dialog_title">Are you sure you want to proceed?</string>
     <string name="revanced_extended_restart_first_run">Restart to load the layout normally</string>
     <string name="revanced_extended_restart_title">Restart required</string>

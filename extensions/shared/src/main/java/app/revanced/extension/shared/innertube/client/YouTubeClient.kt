@@ -503,34 +503,25 @@ object YouTubeClient {
 
         companion object {
             val CLIENT_ORDER_TO_USE: Array<ClientType> = arrayOf(
-                IOS_UNPLUGGED,
                 ANDROID_VR,
-                ANDROID_CREATOR,
-                ANDROID_UNPLUGGED,
-                ANDROID_VR_NO_AUTH,
                 VISIONOS,
+                ANDROID_CREATOR,
             )
             val CLIENT_ORDER_TO_USE_JS: Array<ClientType> = arrayOf(
-                IOS_UNPLUGGED,
                 ANDROID_VR,
+                VISIONOS,
                 ANDROID_CREATOR,
-                ANDROID_UNPLUGGED,
-                ANDROID_VR_NO_AUTH,
                 TV,
                 TV_SIMPLY,
                 MWEB,
-                VISIONOS,
             )
             val CLIENT_ORDER_TO_USE_JS_PREFER_TV: Array<ClientType> = arrayOf(
                 TV_SIMPLY,
-                IOS_UNPLUGGED,
                 ANDROID_VR,
+                VISIONOS,
                 ANDROID_CREATOR,
-                ANDROID_UNPLUGGED,
-                ANDROID_VR_NO_AUTH,
                 TV,
                 MWEB,
-                VISIONOS,
             )
         }
     }
