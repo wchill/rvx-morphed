@@ -1,6 +1,7 @@
 package app.revanced.extension.youtube.settings.preference;
 
 import static app.revanced.extension.shared.patches.PatchStatus.PatchVersion;
+import static app.revanced.extension.shared.settings.BaseSettings.SPOOF_STREAMING_DATA_USE_JS;
 import static app.revanced.extension.shared.settings.preference.AbstractPreferenceFragment.showRestartDialog;
 import static app.revanced.extension.shared.settings.preference.AbstractPreferenceFragment.updateListPreferenceSummary;
 import static app.revanced.extension.shared.utils.ResourceUtils.getDrawableIdentifier;
@@ -74,6 +75,7 @@ import app.revanced.extension.shared.utils.Utils;
 import app.revanced.extension.youtube.sponsorblock.ui.SponsorBlockPreferenceGroup;
 import app.revanced.extension.youtube.utils.ExtendedUtils;
 import app.revanced.extension.youtube.utils.ThemeUtils;
+import app.revanced.extension.shared.innertube.client.YouTubeClient;
 
 @SuppressWarnings("deprecation")
 public class ReVancedPreferenceFragment extends PreferenceFragment {
@@ -133,6 +135,8 @@ public class ReVancedPreferenceFragment extends PreferenceFragment {
                     ExtendedUtils.setPlayerFlyoutMenuAdditionalSettings();
                 } else if (setting.equals(HIDE_PREVIEW_COMMENT) || setting.equals(HIDE_PREVIEW_COMMENT_TYPE)) {
                     ExtendedUtils.setCommentPreviewSettings();
+                } else if (setting.equals(SPOOF_STREAMING_DATA_USE_JS)) {
+                    YouTubeClient.availableClientTypes(BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get());
                 }
             } else if (mPreference instanceof EditTextPreference editTextPreference) {
                 if (settingImportInProgress) {
