@@ -45,10 +45,6 @@ internal enum class PatchList(
         "Disable Cairo splash animation",
         "Adds an option to disable Cairo splash animation."
     ),
-    DISABLE_DRC_AUDIO(
-        "Disable DRC audio",
-        "Adds an option to disable DRC (Dynamic Range Compression) audio."
-    ),
     DISABLE_FORCED_AUTO_CAPTIONS(
         "Disable forced auto captions",
         "Adds an option to disable captions from being automatically enabled."

@@ -11,6 +11,8 @@ import app.revanced.patches.music.utils.patch.PatchList.VIDEO_PLAYBACK
 import app.revanced.patches.music.utils.playbackSpeedBottomSheetFingerprint
 import app.revanced.patches.music.utils.playbackSpeedFingerprint
 import app.revanced.patches.music.utils.playbackSpeedParentFingerprint
+import app.revanced.patches.music.utils.playservice.is_7_13_or_greater
+import app.revanced.patches.music.utils.playservice.versionCheckPatch
 import app.revanced.patches.music.utils.resourceid.qualityAuto
 import app.revanced.patches.music.utils.resourceid.sharedResourceIdPatch
 import app.revanced.patches.music.utils.settings.CategoryType
@@ -21,6 +23,7 @@ import app.revanced.patches.music.utils.settings.settingsPatch
 import app.revanced.patches.music.video.information.onCreateHook
 import app.revanced.patches.music.video.information.videoInformationPatch
 import app.revanced.patches.shared.customspeed.customPlaybackSpeedPatch
+import app.revanced.patches.shared.drc.drcAudioPatch
 import app.revanced.patches.shared.opus.baseOpusCodecsPatch
 import app.revanced.patches.shared.playbackStartParametersConstructorFingerprint
 import app.revanced.patches.shared.playbackStartParametersToStringFingerprint
@@ -59,11 +62,13 @@ val videoPlaybackPatch = bytecodePatch(
 
     dependsOn(
         settingsPatch,
+        versionCheckPatch,
         customPlaybackSpeedPatch(
             "$VIDEO_PATH/CustomPlaybackSpeedPatch;",
             5.0f
         ),
         baseOpusCodecsPatch(),
+        drcAudioPatch { is_7_13_or_greater },
         sharedResourceIdPatch,
         videoInformationPatch,
     )
@@ -216,6 +221,11 @@ val videoPlaybackPatch = bytecodePatch(
 
         // endregion
 
+        addSwitchPreference(
+            CategoryType.VIDEO,
+            "revanced_disable_drc_audio",
+            "false"
+        )
         addPreferenceWithIntent(
             CategoryType.VIDEO,
             "revanced_custom_playback_speeds"

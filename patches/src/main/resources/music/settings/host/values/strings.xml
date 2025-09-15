@@ -344,6 +344,8 @@ Some features may not work properly in the old player layout."</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Video</string>
 
+    <string name="revanced_disable_drc_audio_title">Disable DRC audio</string>
+    <string name="revanced_disable_drc_audio_summary">Disables DRC (Dynamic Range Compression) applied to audio.</string>
     <string name="revanced_custom_playback_speeds_title">Edit custom playback speeds</string>
     <string name="revanced_custom_playback_speeds_summary">Add or change available playback speeds.</string>
     <string name="revanced_enable_opus_codec_title">Enable OPUS codec</string>
@@ -507,8 +509,6 @@ Click to see how to issue an API key."</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Bypasses the domain that is blocked in some regions so that playlist thumbnails, channel avatars, etc. can be received.</string>
     <string name="revanced_change_share_sheet_title">Change share sheet</string>
     <string name="revanced_change_share_sheet_summary">Changes the in-app share sheet to system share sheet.</string>
-    <string name="revanced_disable_drc_audio_title">Disable DRC audio</string>
-    <string name="revanced_disable_drc_audio_summary">Disables DRC (Dynamic Range Compression) applied to audio.</string>
     <string name="revanced_disable_music_video_in_album_title">Disable music video in album</string>
     <string name="revanced_disable_music_video_in_album_summary">"When a non-premium user plays a song included in an album, the music video is sometimes played instead of the official song.
 
