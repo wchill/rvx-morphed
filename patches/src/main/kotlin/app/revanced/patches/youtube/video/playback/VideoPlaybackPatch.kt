@@ -7,6 +7,7 @@ import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.patch.bytecodePatch
 import app.revanced.patcher.util.smali.ExternalLabel
 import app.revanced.patches.shared.customspeed.customPlaybackSpeedPatch
+import app.revanced.patches.shared.drc.drcAudioPatch
 import app.revanced.patches.shared.litho.addLithoFilter
 import app.revanced.patches.shared.litho.lithoFilterPatch
 import app.revanced.patches.shared.opus.baseOpusCodecsPatch
@@ -19,6 +20,8 @@ import app.revanced.patches.youtube.utils.fix.shortsplayback.shortsPlaybackPatch
 import app.revanced.patches.youtube.utils.flyoutmenu.flyoutMenuHookPatch
 import app.revanced.patches.youtube.utils.patch.PatchList.VIDEO_PLAYBACK
 import app.revanced.patches.youtube.utils.playertype.playerTypeHookPatch
+import app.revanced.patches.youtube.utils.playservice.is_19_30_or_greater
+import app.revanced.patches.youtube.utils.playservice.versionCheckPatch
 import app.revanced.patches.youtube.utils.qualityMenuViewInflateFingerprint
 import app.revanced.patches.youtube.utils.recyclerview.recyclerViewTreeObserverHook
 import app.revanced.patches.youtube.utils.recyclerview.recyclerViewTreeObserverPatch
@@ -75,11 +78,13 @@ val videoPlaybackPatch = bytecodePatch(
 
     dependsOn(
         settingsPatch,
+        versionCheckPatch,
         customPlaybackSpeedPatch(
             "$VIDEO_PATH/CustomPlaybackSpeedPatch;",
             8.0f
         ),
         baseOpusCodecsPatch(),
+        drcAudioPatch { is_19_30_or_greater },
         flyoutMenuHookPatch,
         lithoFilterPatch,
         lithoLayoutPatch,
