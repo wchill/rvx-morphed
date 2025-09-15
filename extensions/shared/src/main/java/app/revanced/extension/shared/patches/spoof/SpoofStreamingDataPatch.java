@@ -129,6 +129,14 @@ public class SpoofStreamingDataPatch {
 
     /**
      * Injection point.
+     * Fix audio stuttering in YouTube Music.
+     */
+    public static boolean disableSABR() {
+        return SPOOF_STREAMING_DATA;
+    }
+
+    /**
+     * Injection point.
      * This method is only invoked when playing a livestream on an iOS client.
      */
     public static boolean fixHLSCurrentTime(boolean original) {

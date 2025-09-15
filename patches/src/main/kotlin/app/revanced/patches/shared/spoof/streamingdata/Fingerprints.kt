@@ -165,6 +165,18 @@ internal val videoStreamingDataToStringFingerprint = legacyFingerprint(
     },
 )
 
+internal const val DISABLED_BY_SABR_STREAMING_URI_STRING = "DISABLED_BY_SABR_STREAMING_URI"
+
+internal val mediaFetchEnumConstructorFingerprint = legacyFingerprint(
+    name = "mediaFetchEnumConstructorFingerprint",
+    returnType = "V",
+    strings = listOf(
+        "ENABLED",
+        "DISABLED_FOR_PLAYBACK",
+        DISABLED_BY_SABR_STREAMING_URI_STRING
+    )
+)
+
 internal const val HLS_CURRENT_TIME_FEATURE_FLAG = 45355374L
 
 internal val hlsCurrentTimeFingerprint = legacyFingerprint(

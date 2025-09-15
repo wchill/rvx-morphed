@@ -11,7 +11,6 @@ import app.revanced.extension.shared.innertube.requests.InnerTubeRoutes.GET_STRE
 import app.revanced.extension.shared.innertube.utils.PlayerResponseOuterClass.PlayerResponse
 import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.getAdaptiveFormats
 import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.getFormats
-import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.setServerAbrStreamingUrl
 import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.setUrl
 import app.revanced.extension.shared.innertube.utils.ThrottlingParameterUtils
 import app.revanced.extension.shared.patches.components.ByteArrayFilterGroup
@@ -229,7 +228,7 @@ class StreamingDataRequest private constructor(
             clientType: ClientType,
             videoId: String,
             streamBytes: ByteArray,
-        ): Triple<ArrayList<String>?, ArrayList<String>?, String?>? {
+        ): Pair<ArrayList<String>?, ArrayList<String>?>? {
             val startTime = System.currentTimeMillis()
 
             try {
@@ -356,20 +355,9 @@ class StreamingDataRequest private constructor(
                         }
                     }
 
-                    var serverAbrStreamingUrl = streamingData.serverAbrStreamingUrl
-                    if (!serverAbrStreamingUrl.isNullOrEmpty()) {
-                        serverAbrStreamingUrl = ThrottlingParameterUtils
-                            .getUrlWithThrottlingParameterDeobfuscated(
-                                videoId,
-                                serverAbrStreamingUrl,
-                                isTV
-                            )
-                    }
-
-                    return Triple(
+                    return Pair(
                         deobfuscatedAdaptiveFormatsArrayList,
-                        deobfuscatedFormatsArrayList,
-                        serverAbrStreamingUrl
+                        deobfuscatedFormatsArrayList
                     )
                 }
             } catch (ex: Exception) {
@@ -654,7 +642,6 @@ class StreamingDataRequest private constructor(
                                                             arrayLists.first
                                                         val deobfuscatedFormatsArrayList =
                                                             arrayLists.second
-                                                        val serverAbrStreamingUrl = arrayLists.third
                                                         if (!deobfuscatedAdaptiveFormatsArrayList.isNullOrEmpty()) {
                                                             streamingData =
                                                                 deobfuscateStreamingData(
@@ -670,12 +657,6 @@ class StreamingDataRequest private constructor(
                                                                     isAdaptiveFormats = false,
                                                                     streamingData = streamingData
                                                                 )
-                                                        }
-                                                        if (!serverAbrStreamingUrl.isNullOrEmpty()) {
-                                                            setServerAbrStreamingUrl(
-                                                                streamingData,
-                                                                serverAbrStreamingUrl
-                                                            )
                                                         }
 
                                                         lastSpoofedClient = clientType

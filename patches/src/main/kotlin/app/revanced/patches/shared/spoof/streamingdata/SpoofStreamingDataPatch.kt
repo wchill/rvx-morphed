@@ -592,6 +592,55 @@ fun spoofStreamingDataPatch(
 
         // endregion
 
+        // region Disable SABR playback.
+        // If SABR is disabled, it seems 'MediaFetchHotConfig' may no longer need to be overridden, but I'm not sure.
+
+        val (mediaFetchEnumClass, sabrFieldReference) =
+            with (mediaFetchEnumConstructorFingerprint.methodOrThrow()) {
+                val mediaFetchEnumClass = definingClass
+                val stringIndex =
+                    indexOfFirstStringInstructionOrThrow(DISABLED_BY_SABR_STREAMING_URI_STRING)
+                val sabrFieldIndex = indexOfFirstInstructionOrThrow(stringIndex) {
+                    opcode == Opcode.SPUT_OBJECT &&
+                            getReference<FieldReference>()?.type == mediaFetchEnumClass
+                }
+
+                Pair(
+                    mediaFetchEnumClass,
+                    getInstruction<ReferenceInstruction>(sabrFieldIndex).reference
+                )
+            }
+
+        // The method pattern is slightly different in YouTube Music 6.20.51.
+        // TODO: If support for YouTube Music 6.20.51 is dropped, implement this as a generic fingerprint.
+        val getMediaFetchEnumFingerprint = legacyFingerprint(
+            name = "getMediaFetchEnumFingerprint",
+            returnType = mediaFetchEnumClass,
+            opcodes = listOf(
+                Opcode.SGET_OBJECT,
+                Opcode.RETURN_OBJECT,
+            ),
+            customFingerprint = { method, _ ->
+                !method.parameterTypes.isEmpty()
+            }
+        )
+
+        getMediaFetchEnumFingerprint
+            .methodOrThrow()
+            .addInstructionsWithLabels(
+                0, """
+                    invoke-static { }, $EXTENSION_CLASS_DESCRIPTOR->disableSABR()Z
+                    move-result v0
+                    if-eqz v0, :ignore
+                    sget-object v0, $sabrFieldReference
+                    return-object v0
+                    :ignore
+                    nop
+                    """
+            )
+
+        // endregion
+
         // region Fix iOS livestream current time.
 
         hlsCurrentTimeFingerprint.injectLiteralInstructionBooleanCall(
