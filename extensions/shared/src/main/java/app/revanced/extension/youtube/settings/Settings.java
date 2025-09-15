@@ -11,6 +11,7 @@ import static app.revanced.extension.youtube.patches.player.MiniplayerPatch.Mini
 import static app.revanced.extension.youtube.patches.player.MiniplayerPatch.MiniplayerType.MODERN_2;
 import static app.revanced.extension.youtube.patches.player.MiniplayerPatch.MiniplayerType.MODERN_3;
 import static app.revanced.extension.youtube.patches.player.MiniplayerPatch.MiniplayerType.MODERN_4;
+import static app.revanced.extension.youtube.sponsorblock.objects.CategoryBehaviour.IGNORE;
 import static app.revanced.extension.youtube.sponsorblock.objects.CategoryBehaviour.MANUAL_SKIP;
 import static app.revanced.extension.youtube.sponsorblock.objects.CategoryBehaviour.SKIP_AUTOMATICALLY;
 import static app.revanced.extension.youtube.sponsorblock.objects.CategoryBehaviour.SKIP_AUTOMATICALLY_ONCE;
@@ -686,6 +687,9 @@ public class Settings extends BaseSettings {
     public static final StringSetting SB_CATEGORY_HIGHLIGHT = new StringSetting("sb_highlight", MANUAL_SKIP.reVancedKeyValue);
     public static final StringSetting SB_CATEGORY_HIGHLIGHT_COLOR = new StringSetting("sb_highlight_color", "#FF1684");
     public static final FloatSetting SB_CATEGORY_HIGHLIGHT_OPACITY = new FloatSetting("sb_highlight_opacity", 0.8f);
+    public static final StringSetting SB_CATEGORY_HOOK = new StringSetting("sb_hook", IGNORE.reVancedKeyValue);
+    public static final StringSetting SB_CATEGORY_HOOK_COLOR = new StringSetting("sb_hook_color", "#395699");
+    public static final FloatSetting  SB_CATEGORY_HOOK_OPACITY = new FloatSetting("sb_hook_opacity", 0.8f);
     public static final StringSetting SB_CATEGORY_INTRO = new StringSetting("sb_intro", SKIP_AUTOMATICALLY_ONCE.reVancedKeyValue);
     public static final StringSetting SB_CATEGORY_INTRO_COLOR = new StringSetting("sb_intro_color", "#00FFFF");
     public static final FloatSetting SB_CATEGORY_INTRO_OPACITY = new FloatSetting("sb_intro_opacity", 0.8f);

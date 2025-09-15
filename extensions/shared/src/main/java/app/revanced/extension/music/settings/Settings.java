@@ -3,6 +3,7 @@ package app.revanced.extension.music.settings;
 import static java.lang.Boolean.FALSE;
 import static java.lang.Boolean.TRUE;
 import static app.revanced.extension.music.patches.utils.PatchStatus.DefaultClientType;
+import static app.revanced.extension.music.sponsorblock.objects.CategoryBehaviour.IGNORE;
 import static app.revanced.extension.music.sponsorblock.objects.CategoryBehaviour.SKIP_AUTOMATICALLY;
 import static app.revanced.extension.shared.patches.PatchStatus.GmsCoreSupport;
 import static app.revanced.extension.shared.utils.StringRef.str;
@@ -234,6 +235,8 @@ public class Settings extends BaseSettings {
     public static final StringSetting SB_CATEGORY_SELF_PROMO_COLOR = new StringSetting("sb_selfpromo_color", "#FFFF00");
     public static final StringSetting SB_CATEGORY_INTERACTION = new StringSetting("sb_interaction", SKIP_AUTOMATICALLY.reVancedKeyValue);
     public static final StringSetting SB_CATEGORY_INTERACTION_COLOR = new StringSetting("sb_interaction_color", "#CC00FF");
+    public static final StringSetting SB_CATEGORY_HOOK = new StringSetting("sb_hook", IGNORE.reVancedKeyValue);
+    public static final StringSetting SB_CATEGORY_HOOK_COLOR = new StringSetting("sb_hook_color", "#395699");
     public static final StringSetting SB_CATEGORY_INTRO = new StringSetting("sb_intro", SKIP_AUTOMATICALLY.reVancedKeyValue);
     public static final StringSetting SB_CATEGORY_INTRO_COLOR = new StringSetting("sb_intro_color", "#00FFFF");
     public static final StringSetting SB_CATEGORY_OUTRO = new StringSetting("sb_outro", SKIP_AUTOMATICALLY.reVancedKeyValue);
