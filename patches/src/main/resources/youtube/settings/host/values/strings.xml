@@ -405,6 +405,9 @@ Tap here to learn more about DeArrow."</string>
     <string name="revanced_hide_category_bar_in_related_videos_title">Hide in related videos</string>
     <string name="revanced_hide_category_bar_in_related_videos_summary_on">Hidden in related videos.</string>
     <string name="revanced_hide_category_bar_in_related_videos_summary_off">Shown in related videos.</string>
+    <string name="revanced_hide_category_bar_in_playlist_title">Hide in playlist</string>
+    <string name="revanced_hide_category_bar_in_playlist_summary_on">Hidden in playlist.</string>
+    <string name="revanced_hide_category_bar_in_playlist_summary_off">Shown in playlist.</string>
     <string name="revanced_hide_category_bar_in_search_title">Hide in search results</string>
     <string name="revanced_hide_category_bar_in_search_summary_on">Hidden in search results.</string>
     <string name="revanced_hide_category_bar_in_search_summary_off">Shown in search results.</string>
