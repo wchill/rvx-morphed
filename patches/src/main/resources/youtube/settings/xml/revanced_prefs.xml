@@ -874,9 +874,6 @@
             <SwitchPreference android:title="@string/revanced_spoof_streaming_data_vr_audio_track_button_title" android:key="revanced_spoof_streaming_data_vr_audio_track_button" android:summaryOn="@string/revanced_spoof_streaming_data_vr_audio_track_button_summary_on" android:summaryOff="@string/revanced_spoof_streaming_data_vr_audio_track_button_summary_off" />
             <app.revanced.extension.shared.settings.preference.SortedListPreference android:entries="@array/revanced_language_entries" android:title="@string/revanced_spoof_streaming_data_vr_language_title" android:key="revanced_spoof_streaming_data_vr_language" android:entryValues="@array/revanced_language_entry_values" />
 
-            <PreferenceCategory android:title="@string/revanced_preference_category_ios" android:layout="@layout/revanced_settings_preferences_category"/>
-            <SwitchPreference android:title="@string/revanced_spoof_streaming_data_ios_force_avc_title" android:key="revanced_spoof_streaming_data_ios_force_avc" android:summaryOn="@string/revanced_spoof_streaming_data_ios_force_avc_summary_on" android:summaryOff="@string/revanced_spoof_streaming_data_ios_force_avc_summary_off" />
-
             <PreferenceCategory android:title="@string/revanced_preference_category_js" android:layout="@layout/revanced_settings_preferences_category"/>
             <SwitchPreference android:title="@string/revanced_spoof_streaming_data_use_js_title" android:key="revanced_spoof_streaming_data_use_js" android:summaryOn="@string/revanced_spoof_streaming_data_use_js_summary_on" android:summaryOff="@string/revanced_spoof_streaming_data_use_js_summary_off" />
             <SwitchPreference android:title="@string/revanced_spoof_streaming_data_use_js_all_title" android:key="revanced_spoof_streaming_data_use_js_all" android:summaryOn="@string/revanced_spoof_streaming_data_use_js_all_summary_on" android:summaryOff="@string/revanced_spoof_streaming_data_use_js_all_summary_off" />

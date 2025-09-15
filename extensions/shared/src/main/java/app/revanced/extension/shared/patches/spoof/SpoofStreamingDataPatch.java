@@ -354,10 +354,7 @@ public class SpoofStreamingDataPatch {
         if (!BaseSettings.SPOOF_STREAMING_DATA.get()) {
             return true;
         }
-        String defaultClient = BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().name();
-        // iOS TV is not available in some regions or for some users.
-        return defaultClient.equals("IOS_UNPLUGGED")
-                || defaultClient.startsWith("TV");
+        return BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().name().startsWith("TV");
     }
 
     public static final class ClientAndroidVRAvailability implements Setting.Availability {
@@ -373,14 +370,6 @@ public class SpoofStreamingDataPatch {
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
                     BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get() == ClientType.ANDROID_VR_NO_AUTH;
-        }
-    }
-
-    public static final class ClientiOSAvailability implements Setting.Availability {
-        @Override
-        public boolean isAvailable() {
-            return BaseSettings.SPOOF_STREAMING_DATA.get() &&
-                    BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().name().equals("IOS_UNPLUGGED");
         }
     }
 

@@ -13,7 +13,6 @@ import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtil
 import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.setServerAbrStreamingUrl
 import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.setUrl
 import app.revanced.extension.shared.innertube.utils.ThrottlingParameterUtils
-import app.revanced.extension.shared.patches.PatchStatus.SpoofStreamingDataMobileWeb
 import app.revanced.extension.shared.patches.components.ByteArrayFilterGroup
 import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.parseFrom
 import app.revanced.extension.shared.settings.BaseSettings
@@ -108,13 +107,8 @@ class StreamingDataRequest private constructor(
             BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get()
         private val DEFAULT_CLIENT_IS_ANDROID_VR_NO_AUTH: Boolean =
             SPOOF_STREAMING_DATA_DEFAULT_CLIENT == ClientType.ANDROID_VR_NO_AUTH
-        private val DEFAULT_CLIENT_IS_MWEB: Boolean =
-            SpoofStreamingDataMobileWeb() && SPOOF_STREAMING_DATA_DEFAULT_CLIENT == ClientType.MWEB
         private val CLIENT_ORDER_TO_USE: Array<ClientType> =
-            YouTubeClient.availableClientTypes(
-                SPOOF_STREAMING_DATA_DEFAULT_CLIENT,
-                DEFAULT_CLIENT_IS_MWEB
-            )
+            YouTubeClient.availableClientTypes(SPOOF_STREAMING_DATA_DEFAULT_CLIENT)
         private val liveStreams: ByteArrayFilterGroup =
             ByteArrayFilterGroup(
                 null,

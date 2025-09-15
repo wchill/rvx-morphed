@@ -2433,43 +2433,39 @@ Tap the continue button and allow optimization changes."</string>
     <string name="revanced_spoof_streaming_data_title">Spoof streaming data</string>
     <string name="revanced_spoof_streaming_data_summary_on">"Streaming data is spoofed.
 
-If you are a YouTube Premium user or have excluded the 'GmsCore support' patch, this setting may not be necessary."</string>
+If you are a YouTube Premium user, this setting may not be necessary."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Streaming data is not spoofed. Video playback may not work."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Turning off this setting may cause video playback issues.</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Default client</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_unplugged">"Android TV
+    <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio
 <small>(Login required)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_no_auth">"Android VR
-<small>(No auth)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ios_unplugged">"iOS TV
-<small>(Login required)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
+<small>(No Auth)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
-<small>(WIP)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv">"TV
-<small>(WIP)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">"TV Embedded
-<small>(WIP)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">"TV Simply
-<small>(WIP)</small>"</string>
+<small>(WIP, No Auth)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
+    <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
+<small>(Unreleased, No Auth)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Spoofing side effects</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android">"• Audio track menu is missing.
-• Disable forced auto audio tracks is not available.
+    <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Audio track menu is missing.
 • Stable volume is not available.
-• Kids videos may not play when logged out or in incognito mode."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ios_unplugged">"• Audio track menu may be missing.
-• Disable forced auto audio tracks may not be available.
+• Kids videos may not play when logged out or in incognito mode.
+• 1080p+, AV1, and HDR are not supported."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Audio track menu is missing.
 • Stable volume is not available.
-• Movies or paid videos may not play.
 • Kids videos may not play when logged out or in incognito mode."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Audio track menu is missing.
-• Disable forced auto audio tracks is not available.
 • If deobfuscation fails, playback may fail.
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
 • Video may start late."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• If deobfuscation fails, playback may fail.
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
 • Video may start late."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Audio track menu is missing.
+• Kids videos may not play when logged out or in incognito mode.
+• Since this is an unreleased client, it may stop working at any time."</string>
     <string name="revanced_spoof_streaming_data_side_effects_unknown">• Unknown</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Prioritize video quality</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">Video quality is prioritized.</string>
@@ -2537,23 +2533,18 @@ Known issues:
 This feature is still in development, so it may break at any time due to server-side changes."</string>
     <string name="revanced_spoof_streaming_data_vr_language_title">VR default audio stream language</string>
 
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
-    <string name="revanced_preference_category_ios">iOS</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_title">Force iOS AVC (H.264)</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_summary_on">Video codec is forced to AVC (H.264).</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_summary_off">Video codec is determined automatically.</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Enabling this might improve battery life and fix playback stuttering.
-
-AVC has a maximum resolution of 1080p, Opus audio codec is not available, and video playback will use more internet data than VP9 or AV1."</string>
-
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Use JavaScript client</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">JavaScript client added to the available clients.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">JavaScript client not added to available clients.</string>
-    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"The app uses more system resources to find or decode the n-sig pattern, and the video starts more slowly.
+    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"JavaScript clients may experience a slight delay in starting the video due to the requirement to decode the n-sig pattern.
 
-The n-sig pattern changes quite frequently on YouTube servers, and playback may fail if the regex fails to find the n-sig pattern.
+Occasionally, the n-sig pattern fails to be decoded, causing the video to start late or the video stream to stutter.
+
+This can be easily resolved by clicking the 'Reload video button' in the player to reload the video.
+
+(Prerequisites: Both 'Show reload video button' and 'Always show reload video button' are enabled)
 
 Among JavaScript clients, the recommended client is TV Simply."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Use JavaScript client for all videos</string>
