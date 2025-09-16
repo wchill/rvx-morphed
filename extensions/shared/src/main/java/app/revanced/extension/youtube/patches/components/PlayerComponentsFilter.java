@@ -22,6 +22,13 @@ public final class PlayerComponentsFilter extends Filter {
                 "shorts"
         );
 
+        final StringFilterGroup crowdFundingBox = new StringFilterGroup(
+                Settings.HIDE_CROWDFUNDING_BOX,
+                "donation_shelf"
+        );
+
+        addIdentifierCallbacks(crowdFundingBox);
+
         // The player audio track button does the exact same function as the audio track flyout menu option.
         // But if the copy url button is shown, these button clashes and the the audio button does not work.
         // Previously this was a setting to show/hide the player button.

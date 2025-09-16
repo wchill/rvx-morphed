@@ -62,7 +62,7 @@ private const val MARGIN_MINIMUM = "0.1dip"
 private const val MARGIN_DEFAULT = "2.5dip"
 private const val MARGIN_WIDER = "5.0dip"
 
-private const val DEFAULT_ICON = "bold"
+private const val DEFAULT_ICON = "thin"
 
 @Suppress("unused")
 val overlayButtonsPatch = resourcePatch(
@@ -86,9 +86,9 @@ val overlayButtonsPatch = resourcePatch(
         key = "iconType",
         default = DEFAULT_ICON,
         values = mapOf(
-            "Bold" to DEFAULT_ICON,
+            "Bold" to "bold",
             "Rounded" to "rounded",
-            "Thin" to "thin"
+            "Thin" to DEFAULT_ICON
         ),
         title = "Icon type",
         description = "The icon type.",
@@ -118,7 +118,7 @@ val overlayButtonsPatch = resourcePatch(
 
     val changeTopButtons by booleanOption(
         key = "changeTopButtons",
-        default = false,
+        default = true,
         title = "Change top buttons",
         description = "Change the icons at the top of the player.",
         required = true

@@ -9,7 +9,15 @@
     <string name="revanced_preference_category_experimental_flag">Експериментални настройки</string>
     <string name="revanced_extended_confirm_user_dialog_title">Желаете ли да продължите?</string>
     <string name="revanced_extended_restart_first_run">Рестартирайте, за да заредите оформлението нормално</string>
+    <string name="revanced_extended_restart_dialog_message">Рестартирайте приложението, за да влязат в сила тези промени.</string>
+    <string name="revanced_extended_settings_color_invalid">Невалиден цвят.</string>
     <string name="revanced_extended_settings_reset">Нулирай</string>
+    <string name="revanced_extended_settings_reset_color">Нулиране на цвят</string>
+    <string name="revanced_extended_settings_search_history_summary_on">Историята на търсенията в настройките е показана.</string>
+    <string name="revanced_extended_settings_search_history_summary_off">Историята на търсенията в настройките не е показана.</string>
+    <string name="revanced_extended_settings_search_hint">Настройки на търсенето</string>
+    <string name="revanced_extended_settings_search_no_results_title">Няма намерени резултати за \",%s\".</string>
+    <string name="revanced_extended_settings_search_no_results_summary">Опитайте друга ключова дума.</string>
     <string name="revanced_playback_speed_normal">Нормално</string>
     <string name="revanced_external_downloader_package_name_video_title">Име на приложението за изтегляне на видео</string>
     <string name="revanced_external_downloader_package_name_video_summary">Име на пакета на приложението за изтегляне като NewPipe или YTDLnis.</string>
@@ -19,6 +27,13 @@
 Моля, изтеглете %2$s от уебсайта."</string>
     <string name="revanced_external_downloader_not_installed_warning">%s не е инсталирано. Моля инсталирайте го.</string>
     <string name="revanced_queue_manager_add_to_queue">Добави към опашката</string>
+    <string name="revanced_queue_manager_external_downloader">Външна програма за изтегляне</string>
+    <string name="revanced_queue_manager_queue">Опашка</string>
+    <string name="revanced_queue_manager_remove_from_queue">Премахни от опашката</string>
+    <string name="revanced_queue_manager_save_queue">Запиши опашката</string>
+    <string name="revanced_queue_manager_video_information_copy">Копирай</string>
+    <string name="revanced_queue_manager_check_failed_auth">Изисква се влизане</string>
+    <string name="revanced_webview_toast_empty">%s е празно.</string>
     <string name="revanced_language_title">RVX език</string>
     <string name="revanced_language_DEFAULT">Език на приложението</string>
     <!-- PreferenceScreen: Ads -->
@@ -138,6 +153,7 @@
     <string name="revanced_hide_ticket_shelf_title">Секция за билети</string>
     <string name="revanced_hide_ticket_shelf_summary_on">Рафтовете с билети са скрити.</string>
     <string name="revanced_hide_ticket_shelf_summary_off">Рафтовете с билети се показват.</string>
+    <string name="revanced_hide_video_recommendation_labels_title">Скриване на етикетите с видео препоръки</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Carousel shelf -->
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Панел с категорий</string>
@@ -1065,7 +1081,7 @@
     <string name="revanced_hide_shorts_shelf_subscriptions_summary_on">Лавицата за кратки видеоклипове в емисията за абонаменти е скрита.</string>
     <string name="revanced_hide_shorts_shelf_subscriptions_summary_off">Показва се в емисията „Абонаменти“.</string>
     <string name="revanced_hide_shorts_shelf_history_title">Скриване в историята на гледане</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_on">Скрити в историята на гледане.</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_on">"Скрити в историята на гледане."</string>
     <string name="revanced_hide_shorts_shelf_history_summary_off">Показват се в историята на гледане.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Experimental flags -->
     <string name="revanced_change_shorts_background_repeat_state_title">Промяна на фона на Shorts приповторение</string>
@@ -1590,13 +1606,7 @@
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Клиентът, използван за получаване на данни за потока, се показва в Статистика за системни администратори.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Клиентът, използван за получаване на данни за поток, е скрит в Статистика за системни администратори.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
-    <string name="revanced_spoof_streaming_data_ios_force_avc_title">Принудително AVC (H.264) за iOS</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_summary_on">Видео кодек по подразбиране AVC (H.264).</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_summary_off">Видео кодекът се определя автоматично.</string>
-    <string name="revanced_spoof_streaming_data_ios_force_avc_user_dialog_message">"Активирането на това може да подобри живота на батерията и да поправи заекването на възпроизвеждането.
-
-AVC има максимална разделителна способност от 1080p, аудио кодекът Opus не е наличен, а видеовъзпроизвеждането ще използва повече интернет данни от VP9 или AV1."</string>
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">История на гледане</string>

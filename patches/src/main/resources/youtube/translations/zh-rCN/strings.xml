@@ -1026,7 +1026,7 @@
     <string name="revanced_hide_shorts_shelf_subscriptions_summary_on">订阅中的短视频已隐藏</string>
     <string name="revanced_hide_shorts_shelf_subscriptions_summary_off">订阅中的短视频已显示</string>
     <string name="revanced_hide_shorts_shelf_history_title">在观看历史中隐藏</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_on">在观看历史中隐藏</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_on">"在观看历史中隐藏"</string>
     <string name="revanced_hide_shorts_shelf_history_summary_off">在观看历史中显示</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Experimental flags -->
     <string name="revanced_change_shorts_repeat_state_title">更改 Shorts 重复状态</string>
@@ -1502,7 +1502,7 @@
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">用于获取流媒体数据的客户端已在统计信息中显示</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">用于获取流媒体数据的客户端已在统计信息中隐藏</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: iOS -->
+    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">观看历史</string>

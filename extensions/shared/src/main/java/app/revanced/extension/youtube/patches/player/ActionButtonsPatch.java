@@ -101,6 +101,7 @@ public class ActionButtonsPatch {
     private static final String VIDEO_ACTION_BAR_PATH_PREFIX = "video_action_bar.eml";
     private static final boolean HIDE_ACTION_BUTTON_INDEX = Settings.HIDE_ACTION_BUTTON_INDEX.get();
     private static final int REMIX_INDEX = Settings.REMIX_BUTTON_INDEX.get() - 1;
+    private static String lastFetchedVideoId = "";
 
     /**
      * Injection point.
@@ -114,13 +115,15 @@ public class ActionButtonsPatch {
                     if (path != null) {
                         if (path.contains("player") && uri.getQueryParameter("t") != null) {
                             String id = uri.getQueryParameter("id");
-                            if (id != null) {
+                            if (id != null && !id.equals(lastFetchedVideoId)) {
+                                lastFetchedVideoId = id;
                                 ActionButtonRequest.fetchRequestIfNeeded(id, requestHeaders);
                             }
                         } else if (path.contains("initplayback")) {
                             if (!VideoInformation.lastPlayerResponseIsShort()) {
                                 String id = VideoInformation.getPlayerResponseVideoId();
-                                if (!id.isEmpty()) {
+                                if (!id.isEmpty() && !id.equals(lastFetchedVideoId)) {
+                                    lastFetchedVideoId = id;
                                     ActionButtonRequest.fetchRequestIfNeeded(
                                             id,
                                             requestHeaders

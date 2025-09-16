@@ -36,6 +36,7 @@ public class PlaybackSpeedPatch {
             DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC && Settings.DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC_TYPE.get();
     private static final long TOAST_DELAY_MILLISECONDS = 750;
     private static long lastTimeSpeedChanged;
+    private static String lastFetchedVideoId = "";
 
     /**
      * The last used playback speed.
@@ -105,7 +106,8 @@ public class PlaybackSpeedPatch {
                     if (path != null) {
                         if (path.contains("player") && uri.getQueryParameter("t") != null) {
                             String id = uri.getQueryParameter("id");
-                            if (id != null) {
+                            if (id != null && !id.equals(lastFetchedVideoId)) {
+                                lastFetchedVideoId = id;
                                 MusicRequest.fetchRequestIfNeeded(
                                         id,
                                         DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC_TYPE,
@@ -115,7 +117,8 @@ public class PlaybackSpeedPatch {
                         } else if (path.contains("initplayback")) {
                             if (!VideoInformation.lastPlayerResponseIsShort()) {
                                 String id = VideoInformation.getPlayerResponseVideoId();
-                                if (!id.isEmpty()) {
+                                if (!id.isEmpty() && !id.equals(lastFetchedVideoId)) {
+                                    lastFetchedVideoId = id;
                                     MusicRequest.fetchRequestIfNeeded(
                                             id,
                                             DISABLE_DEFAULT_PLAYBACK_SPEED_MUSIC_TYPE,
