@@ -81,6 +81,19 @@ internal fun hookBuildRequest(descriptor: String) {
     }
 }
 
+internal fun hookBuildRequestUrl(descriptor: String) {
+    buildRequestMethod.apply {
+        val insertIndex = indexOfNewUrlRequestBuilderInstruction(this)
+
+        addInstructions(
+            insertIndex, """
+                invoke-static { v$urlRegister }, $descriptor
+                move-result-object v$urlRegister
+                """
+        )
+    }
+}
+
 internal fun hookInitPlaybackBuildRequest(descriptor: String) {
     buildInitPlaybackRequestMethod.apply {
         val insertIndex = indexOfUriToStringInstruction(this) + 2
