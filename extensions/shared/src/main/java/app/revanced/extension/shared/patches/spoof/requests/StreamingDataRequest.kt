@@ -108,6 +108,8 @@ class StreamingDataRequest private constructor(
             BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get()
         private val CLIENT_ORDER_TO_USE: Array<ClientType> =
             YouTubeClient.availableClientTypes(SPOOF_STREAMING_DATA_DEFAULT_CLIENT)
+        private val SPOOF_STREAMING_DATA_USE_JS_BYPASS_FAKE_BUFFERING: Boolean =
+            BaseSettings.SPOOF_STREAMING_DATA_USE_JS_BYPASS_FAKE_BUFFERING.get()
         private val liveStreams: ByteArrayFilterGroup =
             ByteArrayFilterGroup(
                 null,
@@ -407,6 +409,7 @@ class StreamingDataRequest private constructor(
                         videoId = videoId,
                         language = overrideLanguage,
                         isGVS = true,
+                        bypassFakeBuffering = SPOOF_STREAMING_DATA_USE_JS_BYPASS_FAKE_BUFFERING,
                     )
                 } else {
                     createApplicationRequestBody(

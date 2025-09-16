@@ -2583,6 +2583,23 @@ Among JavaScript clients, the recommended client is TV Simply."</string>
     <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"JavaScript for deobfuscation is not kept up to date.
 
 • JavaScript that succeeds in deobfuscation is used, but it is still somewhat server-dependent."</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Bypass fake buffering</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Bypass fake buffering is enabled.
+
+Limitations:
+• Due to server-side changes, this may stop working at any time."</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_off">Bypass fake buffering is disabled.</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_title">About fake buffering</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_summary">Click for more information.</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_title">"YouTube's new anti-adblock measures"</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_message">"One reason videos start too late in the JavaScript client is due to YouTube's new anti-adblock measures.
+
+When a video ad is blocked, GVS (Google Video Server) generate fake buffering proportional to the ad duration (A/B testing).
+
+uBlock Origin has found a workaround for this issue, which can be enabled via the 'Bypass fake buffering' setting.
+
+Click 'Open' to read the article."</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_open_text">Open</string>
 
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Watch history</string>
