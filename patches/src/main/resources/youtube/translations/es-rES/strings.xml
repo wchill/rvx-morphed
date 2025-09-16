@@ -2404,6 +2404,23 @@ Esta función todavía está en desarrollo, así que úsala solo para fines de d
     <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"El JavaScript para la desofuscación no se mantiene actualizado.
 
 • Se utiliza JavaScript que tiene éxito en la desofuscación, pero sigue dependiendo en cierta medida del servidor."</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Omitir búfer falso</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Omitir búfer falso está activado.
+
+Limitaciones:
+• Debido a cambios en el servidor, esto puede dejar de funcionar en cualquier momento."</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_off">Omitir búfer falso está desactivado.</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_title">Acerca de búfer falso</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_summary">Pulsa para más información.</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_title">"Nuevas medidas de YouTube contra el bloqueo de anuncios"</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_message">"Una de las razones por las que los vídeos se inician demasiado tarde en el cliente de JavaScript se debe a las nuevas medidas de YouTube contra el bloqueo de anuncios.
+
+Cuando se bloquea un anuncio de vídeo, GVS (Google Video Server) genera un búfer falso proporcional a la duración del anuncio (prueba A/B).
+
+uBlock Origin ha encontrado una solución para este problema, que se puede activar a través del ajuste «Omitir búfer falso».
+
+Pulsa en «Abrir» para leer el artículo."</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_open_text">Abrir</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Historial de reproducciones</string>
     <string name="revanced_preference_screen_watch_history_summary">Cambiar ajustes relacionados con el historial de reproducciones.</string>

@@ -2295,6 +2295,8 @@ YouTube Premium に加入している場合は、この設定は必要ない可�
 <small>(ログインが必要)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
 <small>(認証なし)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
+<small>(古い、認証なし)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
 <small>(開発途中、認証なし)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
@@ -2310,6 +2312,8 @@ YouTube Premium に加入している場合は、この設定は必要ない可�
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"・[音声トラック] メニューは表示されません。
 ・[一定音量] は利用できません。
 ・ログインしていない場合やシークレットモードでは、子ども向け動画は再生できない可能性があります。"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_ipados">"・AV1 コーデックには対応していません。
+・動画を再生して 1 分後に止まる、または一部の地域では利用できない可能性があります。"</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"・[音声トラック] メニューは表示されません。
 ・難読化の解除に失敗すると、動画の再生に失敗する可能性があります。
 ・10 秒経っても動画が再生されない可能性があります。その場合は、動画の再読み込みボタンをタップする必要があります。
@@ -2365,7 +2369,7 @@ VP9 は AVC よりも高度なコーデックですが、利用者によって�
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">統計情報に偽装したクライアントを表示します。</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">統計情報に偽装したクライアントを表示します。</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">クライアントストリームを取得できませんでした。</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">ログインしていない可能性があります。</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">偽装するクライアントを「TV」または「TV Simply」に変更してみてください。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Android VR で AV1 コーデックを無効化</string>
@@ -2378,7 +2382,7 @@ VP9 は AVC よりも高度なコーデックですが、利用者によって�
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"ストリーミングデータの取得に使用するクライアントが「Android VR」、「Mobile Web」、または「visionOS」の場合に [音声トラック] ボタンを表示します。"</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">ストリーミングデータの取得に使用するクライアントが「Android VR」、「Mobile Web」、または「visionOS」の場合に [音声トラック] ボタンを表示します。</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"前提条件:
-・ストリーミングデータの取得に使用するクライアントは「Android VR (認証なし)」、「Mobile Web」、または「visionOS」であること。
+・ストリーミングデータの取得に使用するクライアントは「Android VR (認証なし)」、「Mobile Web」、「iPadOS」、「visionOS」のいずれかであること。
 ・複数の音声トラックがある動画を再生していること。
 
 既知の問題:
@@ -2409,6 +2413,22 @@ JavaScript クライアントの中では、「TV Simply」が推奨されます
 
 注意: サーバーに大きく依存し、難読化解除の成功または失敗はサーバー上で現在使用されている JavaScript に依存します。"</string>
     <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"難読化解除用の JavaScript を最新の状態に保ちます。\n\n注意: サーバーに大きく依存し、難読化解除の成功または失敗はサーバー上で現在使用されている JavaScript に依存します。"</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">偽バッファリングを回避</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"偽バッファリングを回避します。
+
+注意: サーバー側の変更により、いつでも動作しなくなる可能性があります。"</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_off">偽バッファリングを回避します。\n\n注意: サーバー側の変更により、いつでも動作しなくなる可能性があります。</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_title">偽バッファリングについて</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_summary">詳細についてはタップしてください。</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_title">"YouTube の新しい広告ブロック対策"</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_message">"JavaScript クライアントで動画の再生開始が遅れる理由の 1 つは、YouTube の新しい広告ブロック対策によるものです。
+
+動画広告がブロックされると、GVS (Google Video Server) は広告の継続時間に比例した偽のバッファリングを生成します (A/B テスト)。
+
+uBlock Origin はこの問題の回避策を見つけました。これは、[偽のバッファリングを回避] 設定を有効にすることで回避できます。
+
+記事を読むには [開く] をタップしてください。"</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_open_text">開く</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">再生履歴</string>
     <string name="revanced_preference_screen_watch_history_summary">再生履歴に関連する設定を変更します。</string>

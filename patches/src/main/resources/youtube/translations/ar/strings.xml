@@ -2283,6 +2283,8 @@
 <small>(يتطلب تسجيل الدخول)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
 <small>(بدون مصادقة)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
+<small>(قديم، بدون مصادقة)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
 <small>(WIP, بدون مصادقة)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
@@ -2298,6 +2300,8 @@
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• قائمة المقطع الصوتي مفقودة.
 • مستوى الصوت الثابت غير متاح.
 • قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 غير مدعوم.
+• قد يتوقف الفيديو عند الدقيقة 1:00، أو قد لا يكون متاحًا في بعض المناطق."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• قائمة المقطع الصوتي مفقودة.
 • في حال فشل إزالة التشويش، قد يفشل التشغيل.
 • في بعض الأحيان، قد لا يعمل الفيديو حتى بعد 10 ثوانٍ، وفي هذه الحالة، ستحتاج إلى الضغط على زر إعادة تحميل الفيديو.
@@ -2353,7 +2357,7 @@
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">يتم عرض العميل المستخدم لجلب بيانات البث في إحصاءات تقنية.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">تم إخفاء العميل المستخدم لجلب بيانات البث في إحصاءات تقنية.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">لم يتمكن من جلب أي تدفقات عميل.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">ربما لم تتمكن من تسجيل الدخول.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">جرب تغيير العميل الافتراضي إلى TV أو TV Simply.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_title">تعطيل VR AV1</string>
@@ -2366,7 +2370,7 @@
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"يتم عرض زر المقطع الصوتي عندما يكون العميل المستخدم لجلب بيانات البث هو 'Android VR' أو 'Mobile Web' أو 'visionOS'."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">لا يتم عرض زر المقطع الصوتي.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"المتطلبات الأساسية:
-• العميل المُستخدم لجلب بيانات البث هو 'Android VR'، أو 'Mobile Web'، أو 'visionOS'.
+• العميل المُستخدم لجلب بيانات البث هو 'Android VR'، أو 'Mobile Web'، أو 'iPadOS'، أو 'visionOS'.
 • يتم تشغيل فيديو يحتوي على مقاطع صوتية متعددة.
 
 المشاكل المعروفة:
@@ -2405,6 +2409,23 @@
     <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"لا يتم تحديث JavaScript لإزالة التشويش.
 
 • يُستخدم JavaScript الذي ينجح في إزالة التشويش، ولكنه لا يزال يعتمد إلى حد ما على الخادم."</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">تجاوز التخزين المؤقت الزائف</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"تم تمكين تجاوز التخزين المؤقت الزائف.
+
+القيود:
+• بسبب تغييرات من جانب الخادم، قد يتوقف هذا عن العمل في أي وقت."</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_off">تم تعطيل تجاوز التخزين المؤقت الزائف.</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_title">لمحة عن تجاوز التخزين المؤقت الزائف</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_summary">انقر لمزيد من المعلومات.</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_title">"إجراءات جديدة لمكافحة حظر الإعلانات على YouTube"</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_message">"أحد أسباب تأخر بدء تشغيل الفيديوهات في عميل JavaScript هو إجراءات YouTube الجديدة لمكافحة حظر الإعلانات.
+
+عند حظر إعلان فيديو، يُنشئ GVS (خادم فيديو Google) تخزينًا مؤقتًا زائفًا يتناسب مع مدة الإعلان (اختبار A/B).
+
+وجد uBlock Origin حلاً لهذه المشكلة، ويمكن تفعيله عبر إعداد 'تجاوز التخزين المؤقت الزائف'.
+
+انقر على 'فتح' لقراءة المقال."</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_open_text">فتح</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">سجل المشاهدة</string>
     <string name="revanced_preference_screen_watch_history_summary">تغيير الإعدادات المتعلقة بسجل المشاهدة.</string>
