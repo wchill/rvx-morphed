@@ -478,7 +478,7 @@ class StreamingDataRequest private constructor(
                 if (!clientType.supportsCookies
                     && BaseSettings.DISABLE_AUTO_AUDIO_TRACKS.get()
                     && overrideLanguage.isEmpty()) {
-                    // Volapuk (ISO 639-1 language code: vo) is a constructed language created in 1879 for academic purposes and is not used anywhere else.
+                    // Volapük (ISO 639-1 language code: vo) is a constructed language created in 1879 for academic purposes and is not used anywhere else.
                     // Using this language code disables auto-dubbing.
                     //
                     // However, the 'Mobile Web' client did not receive a valid player response when using this language code.
