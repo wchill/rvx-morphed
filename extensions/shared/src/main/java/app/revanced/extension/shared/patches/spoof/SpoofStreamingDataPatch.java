@@ -380,7 +380,9 @@ public class SpoofStreamingDataPatch {
         if (!BaseSettings.SPOOF_STREAMING_DATA.get()) {
             return true;
         }
-        return BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().name().startsWith("TV");
+        final String clientName = BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().name();
+
+        return clientName.equals("IPADOS") || clientName.startsWith("TV");
     }
 
     public static final class ClientAndroidVRAvailability implements Setting.Availability {

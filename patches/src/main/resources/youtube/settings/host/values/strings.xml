@@ -2454,6 +2454,8 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
 <small>(Login required)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
 <small>(No Auth)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
+<small>(Outdated, No Auth)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
 <small>(WIP, No Auth)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
@@ -2469,6 +2471,8 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Audio track menu is missing.
 • Stable volume is not available.
 • Kids videos may not play when logged out or in incognito mode."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 is not supported.
+• Video may stop at 1:00, or may not be available in some regions."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Audio track menu is missing.
 • If deobfuscation fails, playback may fail.
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
@@ -2539,7 +2543,7 @@ Example 2:
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Audio track button is shown when the client used to fetch streaming data is 'Android VR', 'Mobile Web', or 'visionOS'."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Audio track button is not shown.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Prerequisites:
-• The client used to fetch the streaming data is 'Android VR', 'Mobile Web', or 'visionOS'.
+• The client used to fetch the streaming data is 'Android VR', 'Mobile Web', 'iPadOS', or 'visionOS'.
 • A video with multiple audio tracks is being played.
 
 Known issues:
