@@ -382,6 +382,9 @@
     <string name="revanced_hide_category_bar_in_related_videos_title">Γραμμή κατηγοριών στα σχετικά βίντεο</string>
     <string name="revanced_hide_category_bar_in_related_videos_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_category_bar_in_related_videos_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_category_bar_in_playlist_title">Γραμμή κατηγορίων στις λίστες αναπαραγωγής</string>
+    <string name="revanced_hide_category_bar_in_playlist_summary_on">Κρυμμένη.</string>
+    <string name="revanced_hide_category_bar_in_playlist_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_category_bar_in_search_title">Γραμμή κατηγοριών στα αποτελέσματα αναζήτησης</string>
     <string name="revanced_hide_category_bar_in_search_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_category_bar_in_search_summary_off">Εμφανίζεται.</string>
@@ -530,6 +533,11 @@ Playlists
     <string name="revanced_change_start_page_type_summary_off">Η αρχική σελίδα αλλάζει μόνο μία φορά.</string>
     <string name="revanced_disable_auto_audio_tracks_title">Απενεργοποίηση υποχρεωτικών κομματιών ήχου</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Τα υποχρεωτικά κομμάτια ήχου είναι απενεργοποιημένα.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_on_disclaimer">"Τα υποχρεωτικά κομμάτια ήχου είναι απενεργοποιημένα.
+
+Αυτή η ρύθμιση μπορεί να μη λειτουργεί για ορισμένους χρήστες, αν δε λειτουργεί για εσάς:
+1. Στις ρυθμίσεις RVX - Διάφορα - Παραποίηση δεδομένων ροής, ενεργοποιήστε τη ρύθμιση «Χρήση προγράμματος πελάτη JavaScript».
+2. Στις ρυθμίσεις RVX - Διάφορα - Παραποίηση δεδομένων ροής, αλλάξτε το «Προεπιλεγμένο πρόγραμμα πελάτη» σε «TV» ή «TV Simply»."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Τα υποχρεωτικά κομμάτια ήχου είναι ενεργοποιημένα.</string>
     <string name="revanced_disable_auto_captions_title">Απενεργοποίηση υποχρεωτικών αυτόματων υπότιτλων</string>
     <string name="revanced_disable_auto_captions_summary_on">Οι υποχρεωτικοί αυτόματοι υπότιτλοι είναι απενεργοποιημένοι.</string>
@@ -1147,6 +1155,11 @@ Playlists
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Μενού «Κομμάτι ήχου»</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Κρυμμένο.
+
+Για να εμφανίζεται το μενού «Κομμάτι ήχου»:
+1. Στις ρυθμίσεις RVX - Διάφορα - Παραποίηση δεδομένων ροής, ενεργοποιήστε τη ρύθμιση «Χρήση προγράμματος πελάτη JavaScript».
+2. Στις ρυθμίσεις RVX - Διάφορα - Παραποίηση δεδομένων ροής, αλλάξτε το «Προεπιλεγμένο πρόγραμμα πελάτη» σε «TV» ή «TV Simply»."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Μενού «Υπότιτλοι»</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Εμφανίζεται.</string>
@@ -1586,7 +1599,9 @@ Playlists
     <string name="revanced_hide_shorts_shelf_video_description_summary_on">Κρυμμένα.</string>
     <string name="revanced_hide_shorts_shelf_video_description_summary_off">Εμφανίζονται.</string>
     <string name="revanced_hide_shorts_shelf_history_title">Shorts στο ιστορικό παρακολούθησης</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_on">"Κρυμμένη."</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_on">"Κρυμμένη.
+
+Παρενέργεια: Η ενότητα ιστορικού παρακολούθησης στην καρτέλα «Εσείς» μπορεί να μην εμφανίζεται."</string>
     <string name="revanced_hide_shorts_shelf_history_summary_off">Εμφανίζεται.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Experimental flags -->
     <string name="revanced_change_shorts_background_repeat_state_title">Αλλαγή κατάστασης επανάληψης Shorts στο παρασκήνιο</string>
@@ -1860,6 +1875,9 @@ Playlists
     <string name="revanced_preference_screen_video_title">Βίντεο</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Codec -->
     <string name="revanced_preference_category_codec">Κωδικοποιητής</string>
+    <string name="revanced_disable_drc_audio_title">Απενεργοποίηση ήχου DRC</string>
+    <string name="revanced_disable_drc_audio_summary_on">Ο ήχος DRC (Συμπίεση Δυναμικού Εύρους) είναι απενεργοποιημένος.</string>
+    <string name="revanced_disable_drc_audio_summary_off">Ο ήχος DRC (Συμπίεση Δυναμικού Εύρους) είναι ενεργοποιημένος.</string>
     <string name="revanced_disable_hdr_video_title">Απενεργοποίηση βίντεο HDR</string>
     <string name="revanced_disable_hdr_video_summary_on">Τα βίντεο που υποστηρίζουν HDR δεν αναπαράγονται σε HDR ποιότητα.</string>
     <string name="revanced_disable_hdr_video_summary_off">Τα βίντεο που υποστηρίζουν HDR αναπαράγονται σε HDR ποιότητα.</string>
@@ -2037,10 +2055,12 @@ Playlists
     <string name="revanced_sb_segments_intro_sum">Χρονικό διάστημα χωρίς πραγματικό περιεχόμενο. Θα μπορούσε να είναι μια παύση, ένα στατικό καρέ ή μια επαναλαμβανόμενη κίνηση. Δεν περιλαμβάνει μεταβάσεις που περιέχουν πληροφορίες.</string>
     <string name="revanced_sb_segments_outro">Τελική Οθόνη / Συντελεστές</string>
     <string name="revanced_sb_segments_outro_sum">Όταν εμφανίζονται οι συντελεστές ή τα προτεινόμενα βίντεο των καναλιών. Όχι για επίλογους που περιέχουν πληροφορίες.</string>
-    <string name="revanced_sb_segments_preview">Προεπισκόπηση / Περίληψη / Έναρξη</string>
+    <string name="revanced_sb_segments_hook">Έναρξη / Χαιρετισμός</string>
+    <string name="revanced_sb_segments_hook_sum">Αφηγηματικά τρέιλερ για το επερχόμενο βίντεο, χαιρετισμοί και αποχαιρετισμοί. Δεν περιλαμβάνει τμήματα που προσθέτουν επιπλέον περιεχόμενο.</string>
+    <string name="revanced_sb_segments_preview">Προεπισκόπηση / Περίληψη</string>
     <string name="revanced_sb_segments_preview_sum">Συλλογή από κλιπ που δείχνουν τι έρχεται ή τι συνέβη στο βίντεο ή σε άλλα βίντεο μιας σειράς, όπου όλες οι πληροφορίες επαναλαμβάνονται αλλού.</string>
     <string name="revanced_sb_segments_filler">Εφαπτομενικές Σκηνές / Αστεία</string>
-    <string name="revanced_sb_segments_filler_sum">Παρεμβατικές σκηνές που προστίθενται μόνο για γέμισμα ή χιούμορ και δεν είναι απαραίτητες για την κατανόηση του κύριου περιεχομένου του βίντεο. Δεν περιλαμβάνει τμήματα που παρέχουν πλαίσιο ή λεπτομέρειες υποβάθρου.</string>
+    <string name="revanced_sb_segments_filler_sum">Παρεμβατικές σκηνές ή αστεία που δεν είναι απαραίτητα για την κατανόηση του κύριου περιεχομένου του βίντεο. Δεν περιλαμβάνει τμήματα που παρέχουν πλαίσιο ή λεπτομέρειες υποβάθρου</string>
     <string name="revanced_sb_segments_nomusic">Μουσική: Τμήμα χωρίς μουσική</string>
     <string name="revanced_sb_segments_nomusic_sum">Μόνο για χρήση σε βίντεο μουσικής. Τμήματα χωρίς μουσική σε βίντεο μουσικής, που δεν καλύπτονται ήδη από άλλη κατηγορία.</string>
     <string name="revanced_sb_skip_button_compact">Παράλειψη</string>
@@ -2053,6 +2073,7 @@ Playlists
     <string name="revanced_sb_skip_button_intro_middle">Παράλειψη διακοπής</string>
     <string name="revanced_sb_skip_button_intro_end">Παράλειψη διακοπής</string>
     <string name="revanced_sb_skip_button_outro">Παράλειψη επιλόγου</string>
+    <string name="revanced_sb_skip_button_hook">Παράλειψη έναρξης</string>
     <string name="revanced_sb_skip_button_preview_beginning">Παράλειψη προεπισκόπησης</string>
     <string name="revanced_sb_skip_button_preview_middle">Παράλειψη προεπισκόπησης</string>
     <string name="revanced_sb_skip_button_preview_end">Παράλειψη ανακεφαλαίωσης</string>
@@ -2067,6 +2088,7 @@ Playlists
     <string name="revanced_sb_skipped_intro_middle">Παραλείφθηκε η διακοπή.</string>
     <string name="revanced_sb_skipped_intro_end">Παραλείφθηκε η διακοπή.</string>
     <string name="revanced_sb_skipped_outro">Παραλείφθηκε ο επίλογος.</string>
+    <string name="revanced_sb_skipped_hook">Παραλείφθηκε η έναρξη.</string>
     <string name="revanced_sb_skipped_preview_beginning">Παραλείφθηκε η προεπισκόπηση.</string>
     <string name="revanced_sb_skipped_preview_middle">Παραλείφθηκε η προεπισκόπηση.</string>
     <string name="revanced_sb_skipped_preview_end">Παραλείφθηκε η ανακεφαλαίωση.</string>
@@ -2276,28 +2298,43 @@ Playlists
     <string name="revanced_spoof_streaming_data_title">Παραποίηση δεδομένων ροής</string>
     <string name="revanced_spoof_streaming_data_summary_on">"Τα δεδομένα ροής παραποιούνται.
 
-Αν είστε χρήστης του YouTube Premium ή, σε περίπτωση εγκατάστασης με δικαιώματα root, έχετε εξαιρέσει την τροποποίηση «GmsCore support», αυτή η ρύθμιση ενδεχομένως δεν είναι απαραίτητη."</string>
+Αν είστε χρήστης του YouTube Premium, αυτή η ρύθμιση μπορεί να μην είναι απαραίτητη."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Τα δεδομένα ροής δεν παραποιούνται. Η αναπαραγωγή βίντεο ενδέχεται να μη λειτουργεί σωστά."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Η απενεργοποίηση αυτής της ρύθμισης ενδέχεται να προκαλέσει προβλήματα αναπαραγωγής βίντεο.</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Προεπιλεγμένο πρόγραμμα πελάτη</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio
+<small>(Απαιτείται σύνδεση)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
+<small>(χωρίς σύνδεση χρήστη)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
+<small>(Ξεπερασμένο, χωρίς σύνδεση χρήστη)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web Κινητού
-<small>(λειτουργία σε εξέλιξη)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv">TV
-<small>(Λειτουργία σε εξέλιξη)</small></string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded
-<small>(Λειτουργία σε εξέλιξη)</small></string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply
-<small>(Λειτουργία σε εξέλιξη)</small></string>
+<small>(λειτουργία σε εξέλιξη, χωρίς σύνδεση χρήστη)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
+    <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
+<small>(Ακυκλοφόρητο, χωρίς σύνδεση χρήστη)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Παρενέργειες παραποίησης</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Το μενού «Κομμάτι ήχου» λείπει.
+• Η λειτουργία «Σταθερή ένταση» δεν είναι διαθέσιμη.
+• Τα βίντεο για παιδιά ενδέχεται να μην αναπαράγονται αν είστε αποσυνδεμένοι ή σε λειτουργία ανώνυμης περιήγησης.
+• Η ποιότητα 1080p+, HDR, και ο κωδικοποιητής AV1 δεν υποστηρίζονται."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Το μενού «Κομμάτι ήχου» λείπει.
+• Η λειτουργία «Σταθερή ένταση» δεν είναι διαθέσιμη.
+• Τα βίντεο για παιδιά ενδέχεται να μην αναπαράγονται αν είστε αποσυνδεμένοι ή σε λειτουργία ανώνυμης περιήγησης."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• Ο κωδικοποιητής AV1 δεν υποστηρίζεται.
+• Το βίντεο μπορεί να σταματήσει στο 1:00, ή μπορεί να μην είναι διαθέσιμο σε ορισμένες περιοχές."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Το μενού «Κομμάτι ήχου» λείπει.
-• Η ρύθμιση «Απενεργοποίηση υποχρεωτικών κομματιών ήχου» δε λειτουργεί.
 • Αν η αποσυσκότιση αποτύχει, θα αποτύχει και η αναπαραγωγή.
-• Η αναπαραγωγή ενδέχεται να ξεκινήσει με καθυστέρηση.
-• Αν το βίντεο δεν ξεκινήσει εντός 10 δευτερολέπτων, πατήστε το κουμπί επαναφόρτωσης βίντεο."</string>
+• Αν το βίντεο δεν ξεκινήσει εντός 10 δευτερολέπτων, πατήστε το κουμπί επαναφόρτωσης βίντεο.
+• Η αναπαραγωγή μπορεί να ξεκινήσει με καθυστέρηση."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Αν η αποσυσκότιση αποτύχει, θα αποτύχει και η αναπαραγωγή.
 • Η αναπαραγωγή ενδέχεται να ξεκινάει με καθυστέρηση.
 • Αν το βίντεο δεν ξεκινήσει εντός 10 δευτερολέπτων, πατήστε το κουμπί επαναφόρτωσης βίντεο."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Το μενού «Κομμάτι ήχου» λείπει.
+• Τα βίντεο για παιδιά ενδέχεται να μην αναπαράγονται αν είστε αποσυνδεμένοι ή σε λειτουργία ανώνυμης περιήγησης.
+• Πρόκεται για ένα ακυκλοφόρητο πρόγραμμα πελάτη, οπότε μπορεί να σταματήσει να λειτουργεί ανά πάσα στιγμή."</string>
     <string name="revanced_spoof_streaming_data_side_effects_unknown">• Άγνωστες</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Προτεραιοποίηση ποιότητας βίντεο</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">Προτεραιοποιείται η ποιότητα βίντεο.</string>
@@ -2349,16 +2386,35 @@ Playlists
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">Ο κωδικοποιητής βίντεο είναι ο AVC (H.264) ή ο VP9.</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">Ο κωδικοποιητής βίντεο ορίζεται αυτόματα.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
+    <string name="revanced_preference_category_no_auth">Χωρίς σύνδεση χρήστη</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_title">Προεπιλεγμένη γλώσσα ροής ήχου</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_title">Εμφάνιση κουμπιού κομματιού ήχου</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Το κουμπί αλλαγής κομματιού ήχου εμφανίζεται όταν το πρόγραμμα πελάτη που χρησιμοποιείται για την παραποίηση δεδομένων ροής είναι το «Android VR», το «Web Κινητού», ή το «visionOS»."</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Το κουμπί κομματιού ήχου δεν εμφανίζεται.</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Προαπαιτούμενο:
+• Το πρόγραμμα πελάτη για την παραποίηση των δεδομένων ροής είναι το «Android VR», το «Web Κινητού», το «iPadOS» ή το «visionOS».
+• Αναπαράγεται ένα βίντεο με πολλά διαθέσιμα κομμάτια ήχου.
+
+Γνωστά θέματα:
+• Αν αλλάξει η γλώσσα εφαρμογής από τις ρυθμίσεις του YouTube χωρίς επανεκκίνηση, η γλώσσα στο παράθυρο επιλογής κομματιού ήχου ενδέχεται να μην ενημερωθεί.
+• Κάποιες φορές μπορεί να επιλεχτεί λάθος κομμάτι ήχου.
+• Ορισμένα κομμάτια ήχου, όπως τα «Αγγλικά με περιγραφή», δεν υποστηρίζονται.
+
+Η λειτουργία αυτή είναι ακόμη υπό ανάπτυξη, και μπορεί να πάψει να λειτουργεί ανά πάσα στιγμή λόγω αλλαγών από πλευράς διακομιστή."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Χρήση προγράμματος πελάτη JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">Το JavaScript προστέθηκε στα διαθέσιμα προγράμματα πελάτη.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">Το JavaScript δεν προστέθηκε στα διαθέσιμα προγράμματα πελάτη.</string>
-    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"Η εφαρμογή χρησιμοποιεί περισσότερους πόρους συστήματος για την εύρεση ή την αποκωδικοποίηση του μοτίβου n-sig, και υπάρχει μια μικρή καθυστέρηση στην έναρξη αναπαραγωγής βίντεο.
+    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"Τα προγράμματα πελάτη τύπου JavaScript ενδέχεται να αντιμετωπίσουν μια μικρή καθυστέρηση στην έναρξη του βίντεο λόγω της ανάγκης αποκωδικοποίησης του μοτίβου n-sig.
 
-Το μοτίβο n-sig αλλάζει αρκετά συχνά στον διακομιστή YouTube, και η αναπαραγωγή βίντεο μπορεί να αποτύχει αν ο αλγόριθμος δεν καταφέρει να βρει το μοτίβο n-sig.
+Στις περιπτώσεις που το μοτίβο n-sig δεν αποκωδικοποιείται σωστά, το βίντεο ενδέχεται να ξεκινήσει αργότερα ή να εμφανίσει διακοπές στη ροή.
 
-Μεταξύ των προγραμμάτων πελάτη JavaScript, το προτεινόμενο είναι το TV Simply."</string>
+Αυτό μπορεί να επιλυθεί εύκολα πατώντας το κουμπί επαναφόρτωσης βίντεο στην οθόνη αναπαραγωγής για να επαναφορτωθεί το βίντεο.
+
+(Προαπαιτούμενα: Οι ρυθμίσεις «Εμφάνιση κουμπιού επαναφόρτωσης βίντεο» και «Να εμφανίζεται πάντα το κουμπί επαναφόρτωσης βίντεο» πρέπει να είναι ενεργοποιημένες»)
+
+Μεταξύ των προγραμμάτων πελάτη JavaScript, το προτεινόμενο είναι TV Simply."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Χρήση του προγράμματος πελάτη JavaScript για όλα τα βίντεο</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"Το πρόγραμμα πελάτη JavaScript χρησιμοποιείται ανεξάρτητα από τον τύπο βίντεο.
 

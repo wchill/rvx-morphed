@@ -411,22 +411,22 @@ Nhấp vào đây để xem các bước phát hành khóa API."</string>
     <string name="revanced_sb_segments_filler_sum">Phân cảnh được thêm vào chỉ để câu giờ hoặc gây cười nhưng không cần thiết cho nội dung chính của video. Không bao gồm phân đoạn cung cấp bối cảnh hoặc chi tiết nền.</string>
     <string name="revanced_sb_segments_nomusic">Âm nhạc: Phần không phải nhạc</string>
     <string name="revanced_sb_segments_nomusic_sum">Phần của video âm nhạc nhưng không có âm nhạc, cũng không thuộc danh mục nào.</string>
-    <string name="revanced_sb_skipped_sponsor">Đã bỏ qua Nhà tài trợ.</string>
-    <string name="revanced_sb_skipped_selfpromo">Đã bỏ qua đoạn Tự quảng cáo.</string>
-    <string name="revanced_sb_skipped_interaction">Đã bỏ qua Nhắc nhở tương tác.</string>
-    <string name="revanced_sb_skipped_intro_beginning">Đã bỏ qua Phần Intro.</string>
-    <string name="revanced_sb_skipped_intro_middle">Đã bỏ qua Đoạn tạm dừng.</string>
-    <string name="revanced_sb_skipped_intro_end">Đã bỏ qua Đoạn tạm dừng.</string>
-    <string name="revanced_sb_skipped_outro">Đã bỏ qua Phần Outro.</string>
+    <string name="revanced_sb_skipped_sponsor">Đã bỏ qua nhà tài trợ.</string>
+    <string name="revanced_sb_skipped_selfpromo">Đã bỏ qua đoạn tự quảng cáo.</string>
+    <string name="revanced_sb_skipped_interaction">Đã bỏ qua nhắc nhở tương tác.</string>
+    <string name="revanced_sb_skipped_intro_beginning">Đã bỏ qua phần intro.</string>
+    <string name="revanced_sb_skipped_intro_middle">Đã bỏ qua đoạn tạm dừng.</string>
+    <string name="revanced_sb_skipped_intro_end">Đã bỏ qua đoạn tạm dừng.</string>
+    <string name="revanced_sb_skipped_outro">Đã bỏ qua phần outro.</string>
     <string name="revanced_sb_skipped_hook">Đã bỏ qua đoạn gây chú ý.</string>
-    <string name="revanced_sb_skipped_preview_beginning">Đã bỏ qua Đoạn xem trước.</string>
-    <string name="revanced_sb_skipped_preview_middle">Đã bỏ qua Đoạn xem trước.</string>
-    <string name="revanced_sb_skipped_preview_end">Đã bỏ qua Phần tóm tắt.</string>
+    <string name="revanced_sb_skipped_preview_beginning">Đã bỏ qua đoạn xem trước.</string>
+    <string name="revanced_sb_skipped_preview_middle">Đã bỏ qua đoạn xem trước.</string>
+    <string name="revanced_sb_skipped_preview_end">Đã bỏ qua phần tóm tắt.</string>
     <string name="revanced_sb_skipped_filler">Đã bỏ qua đoạn lạc đề.</string>
-    <string name="revanced_sb_skipped_nomusic">Đã bỏ qua Phần không phải nhạc.</string>
+    <string name="revanced_sb_skipped_nomusic">Đã bỏ qua phần không phải nhạc.</string>
     <string name="revanced_sb_skipped_multiple_segments">Đã bỏ qua nhiều phân đoạn.</string>
     <string name="revanced_sb_skip_automatically">Tự động bỏ qua</string>
-    <string name="revanced_sb_skip_ignore">Vô hiệu hoá</string>
+    <string name="revanced_sb_skip_ignore">Tắt</string>
     <string name="revanced_sb_sponsorblock_connection_failure_generic">SponsorBlock tạm thời không khả dụng.</string>
     <string name="revanced_sb_sponsorblock_connection_failure_status">SponsorBlock tạm thời không khả dụng (trạng thái %d).</string>
     <string name="revanced_sb_sponsorblock_connection_failure_timeout">SponsorBlock tạm thời không khả dụng (API đã hết thời gian chờ).</string>
@@ -484,11 +484,8 @@ Hạn chế: Video dành cho trẻ em có thể không được chuyển hướn
 
 Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết phải bật cài đặt này."</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Client mặc định</string>
-    <string name="revanced_spoof_streaming_data_default_client_summary">Chọn client mặc định để giả mạo.
-
-Sự cố đã biết:
-• Âm thanh có thể bị ngắt quãng trong khi phát.</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Creator</string>
+    <string name="revanced_spoof_streaming_data_default_client_summary">Chọn client mặc định để giả mạo.</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobile Web</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>

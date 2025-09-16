@@ -534,6 +534,11 @@ Limitación: Es posible que el botón Atrás de la barra de herramientas no func
     <string name="revanced_change_start_page_type_summary_off">La página de inicio solo cambia una vez.</string>
     <string name="revanced_disable_auto_audio_tracks_title">Desactivar pistas de audio automáticas forzadas</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Las pistas de audio automáticas forzadas están desactivadas.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_on_disclaimer">"Las pistas de audio automáticas forzadas están desactivadas.
+
+Es posible que esto no funcione para algunos usuarios. Si no funciona para ti:
+1. Ve a Configuración - RVX - Otros - Falsificar datos de transmisión, y activa «Usar cliente JavaScript».
+2. Ve a Configuración - RVX - Otros - Falsificar datos de transmisión, y cambia «Cliente predeterminado» a «TV» o «TV simple»."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Las pistas de audio automáticas forzadas están activadas.</string>
     <string name="revanced_disable_auto_captions_title">Desactivar subtítulos automáticos forzados</string>
     <string name="revanced_disable_auto_captions_summary_on">Los subtítulos automáticos forzados están desactivados.</string>
@@ -2272,6 +2277,8 @@ Pulsa el botón de continuar y desactiva las optimizaciones de la batería."</st
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio 
 <small>(Inicio de sesión requerido)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
+<small>(obsoleto, sin autenticación)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web móvil
 <small>(todavía en desarrollo)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV
@@ -2290,6 +2297,8 @@ Pulsa el botón de continuar y desactiva las optimizaciones de la batería."</st
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Falta el menú de la pista de audio.
 • El volumen estable no está disponible.
 • Es posible que los vídeos para niños no se reproduzcan cuando se cierra la sesión o en modo incógnito."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 no es compatible.
+• El vídeo puede detenerse en 1:00 o no estar disponible en algunas regiones."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Falta el menú de la pista de audio.
 • La opción de desactivar las pistas de audio automáticas forzadas no está disponible.
 • Si la desofuscación falla, la reproducción puede fallar.

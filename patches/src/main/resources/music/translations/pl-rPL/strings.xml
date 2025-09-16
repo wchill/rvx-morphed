@@ -487,11 +487,8 @@ Ograniczenie: utwory sklasyfikowane dla dzieci mogą nie być przekierowywane."<
 
 Jeśli jesteś użytkownikiem YouTube Premium lub odznaczono przy łataniu łatkę 'GmsCore support', to ustawienie te nie jest konieczne."</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Domyślny klient</string>
-    <string name="revanced_spoof_streaming_data_default_client_summary">Definiuje domyślnego klienta do oszukiwania.
-
-Znane problemy:
-• może przerywać dźwięk podczas odtwarzania</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Creator</string>
+    <string name="revanced_spoof_streaming_data_default_client_summary">Definiuje domyślnego klienta do oszukiwania.</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobilny przeglądarkowy</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>

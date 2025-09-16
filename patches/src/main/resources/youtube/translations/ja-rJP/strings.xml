@@ -537,6 +537,11 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_change_start_page_type_summary_off">現在の設定: 起動時のページを一度のみ変更します。</string>
     <string name="revanced_disable_auto_audio_tracks_title">音声トラックの強制を無効化</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">音声トラックが自動で吹き替えに切り替わるのを無効にします。</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_on_disclaimer">"音声トラックが自動で吹き替えに切り替わるのを無効にします。
+
+一部の環境下では機能しない可能性があります。機能しない場合は、以下の手順に従ってください:
+1. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[JavaScript クライアントを使用] をオンにします。
+2. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[偽装するクライアントを選択] で「TV」または「TV Simply」を選択します。"</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">音声トラックが自動で吹き替えに切り替わるのを無効にします。</string>
     <string name="revanced_disable_auto_captions_title">字幕の強制を無効化</string>
     <string name="revanced_disable_auto_captions_summary_on">投稿者が設定している字幕の強制を無効にします。</string>
@@ -1162,7 +1167,7 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"[音声トラック] メニューは非表示になっています。
 
 [音声トラック] メニューを表示するには:
-1. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、「JavaScript クライアントを使用] をオンにします。
+1. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[JavaScript クライアントを使用] をオンにします。
 2. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[偽装するクライアントを選択] で「TV」または「TV Simply」を選択します。"</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">[字幕] メニューを非表示</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">[字幕] メニューを非表示にします。</string>
@@ -1584,8 +1589,10 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_hide_shorts_shelf_video_description_summary_on">概要欄から非表示にします。</string>
     <string name="revanced_hide_shorts_shelf_video_description_summary_off">概要欄から非表示にします。</string>
     <string name="revanced_hide_shorts_shelf_history_title">再生履歴から非表示</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_on">"再生履歴から非表示にします。"</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_off">再生履歴から非表示にします。</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_on">"再生履歴から非表示にします。
+
+注意: [マイページ] タブから [履歴] 欄が非表示になる可能性があります。"</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_off">再生履歴から非表示にします。\n\n注意: [マイページ] タブから [履歴] 欄が非表示になる可能性があります。</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Experimental flags -->
     <string name="revanced_change_shorts_background_repeat_state_title">ショートのバックグラウンド再生時のリピート状態を変更</string>
     <string name="revanced_change_shorts_repeat_state_title">リピート状態を変更</string>
@@ -2290,12 +2297,9 @@ YouTube Premium に加入している場合は、この設定は必要ない可�
 <small>(認証なし)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
 <small>(開発途中、認証なし)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv">TV
-<small>(開発途中)</small></string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded
-<small>(開発途中)</small></string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply
-<small>(開発途中)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(未リリース、認証なし)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">このクライアントの使用時に生じる副作用</string>
@@ -2371,8 +2375,8 @@ VP9 は AVC よりも高度なコーデックですが、利用者によって�
     <string name="revanced_preference_category_no_auth">認証なし</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">デフォルトの音声トラック</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">[音声トラック] ボタンを表示</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"ストリーミングデータの取得に使用されるクライアントが「Android VR」、「Mobile Web」、または「visionOS」の場合に [音声トラック] ボタンを表示します。"</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">ストリーミングデータの取得に使用されるクライアントが「Android VR」、「Mobile Web」、または「visionOS」の場合に [音声トラック] ボタンを表示します。</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"ストリーミングデータの取得に使用するクライアントが「Android VR」、「Mobile Web」、または「visionOS」の場合に [音声トラック] ボタンを表示します。"</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">ストリーミングデータの取得に使用するクライアントが「Android VR」、「Mobile Web」、または「visionOS」の場合に [音声トラック] ボタンを表示します。</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"前提条件:
 ・ストリーミングデータの取得に使用するクライアントは「Android VR (認証なし)」、「Mobile Web」、または「visionOS」であること。
 ・複数の音声トラックがある動画を再生していること。

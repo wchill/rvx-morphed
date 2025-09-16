@@ -549,6 +549,11 @@ Shorts
     <string name="revanced_change_start_page_type_summary_off">Начальная страница меняется только один раз.</string>
     <string name="revanced_disable_auto_audio_tracks_title">Принудительные автоматические звуковые дорожки</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Принудительные автоматические звуковые дорожки отключены.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_on_disclaimer">"Принудительные аудио авто дорожки отключены.
+
+Вероятность исправить проблему:
+1. Включить в \"Настройки\" → RVX → Разное → Подмена потоковых данных → \"Использовать клиент JavaScript\".
+2. Изменить в \"Настройки\" → RVX → Разное → Подмена потоковых данных → \"Клиент по умолчанию\" на \"TV\" или \"TV простой\"."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Принудительные автоматические звуковые дорожки включены.</string>
     <string name="revanced_disable_auto_captions_title">Принудительные автоматические субтитры</string>
     <string name="revanced_disable_auto_captions_summary_on">Принудительные автоматические субтитры отключены.</string>
@@ -1168,7 +1173,7 @@ Shorts
 
 Для отображения аудио меню нужно:
 1. Включить в \"Настройки\" → RVX → Разное → Подмена потоковых данных → \"Использовать клиент JavaScript\".
-2. Изменить в \"Настройки\" → RVX → Разное → Подмена потоковых данных → \"Клиент по умолчанию\" на \"TV\" or \"TV простой\"."</string>
+2. Изменить в \"Настройки\" → RVX → Разное → Подмена потоковых данных → \"Клиент по умолчанию\" на \"TV\" или \"TV простой\"."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Меню \"Субтитры\"</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Меню \"Субтитры\" скрыто.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Меню \"Субтитры\" отображено.</string>

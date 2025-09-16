@@ -537,6 +537,11 @@
     <string name="revanced_change_start_page_type_summary_off">Початкова сторінка змінюється лише один раз.</string>
     <string name="revanced_disable_auto_audio_tracks_title">Вимкнути примусові автоматичні звукові доріжки</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Примусові автоматичні звукові доріжки вимкнено.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_on_disclaimer">"Примусові автоматичні звукові доріжки вимкнено.
+
+Це може не працювати для деяких користувачів, якщо не працює то:
+1. Перейдіть до Налаштування - RVX - Різне - Підробка даних трансляції та увімкніть 'Використовувати клієнт JavaScript'.
+2. Перейдіть до Налаштування - RVX - Різне - Підробка даних трансляції і змініть 'Основний клієнт' на 'TV' чи 'Простий TV'."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Примусові автоматичні звукові доріжки увімкнено.</string>
     <string name="revanced_disable_auto_captions_title">Вимкнути примусові авто субтитри</string>
     <string name="revanced_disable_auto_captions_summary_on">Примусові авто субтитри вимкнено.</string>
@@ -1160,8 +1165,8 @@
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Меню Звукова доріжка приховано.
 
 Для показу меню Звукова доріжка:
-1. Перейдіть до Налаштування → RVX → Різне → Підробка даних трансляції та увімкніть 'Використовувати клієнт JavaScript'.
-2. Перейдіть до Налаштування → RVX → Різне → Підробка даних трансляції і змініть 'Основний клієнт' на 'TV' чи 'Простий TV'."</string>
+1. Перейдіть до Налаштування - RVX - Різне - Підробка даних трансляції та увімкніть 'Використовувати клієнт JavaScript'.
+2. Перейдіть до Налаштування - RVX - Різне - Підробка даних трансляції і змініть 'Основний клієнт' на 'TV' чи 'Простий TV'."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Приховати меню субтитрів</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Меню субтитрів приховано.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Меню субтитрів показується.</string>
@@ -1589,7 +1594,9 @@
     <string name="revanced_hide_shorts_shelf_video_description_summary_on">Приховано в описі відео.</string>
     <string name="revanced_hide_shorts_shelf_video_description_summary_off">Показується в описі відео.</string>
     <string name="revanced_hide_shorts_shelf_history_title">Приховати в історії перегляду</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_on">"Приховано в історії перегляду."</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_on">"Приховано в історії перегляду.
+
+Публічний ефект: Полиця історії перегляду у вкладці Ви може бути прихована."</string>
     <string name="revanced_hide_shorts_shelf_history_summary_off">Показується в історії перегляду.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Experimental flags -->
     <string name="revanced_change_shorts_background_repeat_state_title">Змінити стан повторення Shorts у фоні</string>
@@ -2292,12 +2299,9 @@
 <small>(Без авторизації)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web мобільний
 <small>(ще в розробці, Без авторизації)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv">TV
-<small>(ще в розробці)</small></string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Вбудований TV
-<small>(ще в розробці)</small></string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">Простий TV
-<small>(ще в розробці)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Вбудований TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">Простий TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Невипущений, Без авторизації)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Побічні ефекти імітування</string>

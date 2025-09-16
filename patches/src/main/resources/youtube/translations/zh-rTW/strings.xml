@@ -30,7 +30,7 @@
     <string name="revanced_external_downloader_package_name_video_summary">您安裝的外部下載器應用程式的套件名稱，例如 NewPipe 或 YTDLnis。</string>
     <string name="revanced_external_downloader_dialog_title">外部下載器</string>
     <string name="revanced_external_downloader_not_installed_dialog_title">警告</string>
-    <string name="revanced_external_downloader_not_installed_dialog_message">"未安裝 %1$s。
+    <string name="revanced_external_downloader_not_installed_dialog_message">"%1$s 未安裝。
 請從網站下載 %2$s。"</string>
     <string name="revanced_external_downloader_not_installed_warning">未安裝 %s。請安裝該應用程式。</string>
     <string name="revanced_queue_manager_add_to_queue">加入佇列清單</string>
@@ -384,11 +384,14 @@
     <string name="revanced_hide_category_bar_in_related_videos_title">隱藏相關影片</string>
     <string name="revanced_hide_category_bar_in_related_videos_summary_on">在相關影片中隱藏</string>
     <string name="revanced_hide_category_bar_in_related_videos_summary_off">在相關影片中顯示</string>
+    <string name="revanced_hide_category_bar_in_playlist_title">隱藏在播放清單中</string>
+    <string name="revanced_hide_category_bar_in_playlist_summary_on">隱藏在播放清單中。</string>
+    <string name="revanced_hide_category_bar_in_playlist_summary_off">顯示在播放清單中。</string>
     <string name="revanced_hide_category_bar_in_search_title">在搜尋結果中隱蔵</string>
     <string name="revanced_hide_category_bar_in_search_summary_on">隱藏在搜尋結果中。</string>
     <string name="revanced_hide_category_bar_in_search_summary_off">顯示在搜尋結果中。</string>
     <string name="revanced_hide_category_bar_in_history_title">在觀看歷史記錄中隱藏</string>
-    <string name="revanced_hide_category_bar_in_history_summary_on">已在觀看紀錄中隱藏。</string>
+    <string name="revanced_hide_category_bar_in_history_summary_on">從觀看紀錄中隱藏。</string>
     <string name="revanced_hide_category_bar_in_history_summary_off">已在觀看記錄中顯示。</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Channel page -->
     <string name="revanced_preference_screen_channel_page_title">頻道頁面</string>
@@ -534,6 +537,11 @@
     <string name="revanced_change_start_page_type_summary_off">起始頁僅更改一次。</string>
     <string name="revanced_disable_auto_audio_tracks_title">停用強制自動音軌</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">強制自動音軌已停用</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_on_disclaimer">"強制自動音軌功能已停用。
+
+此功能可能對某些使用者無效，如果您無法使用此功能：
+1. 前往設定  - RVX - 雜項 - 偽裝串流資料，然後開啟 '使用 JavaScript 用戶端'。
+2. 前往設定 - RVX - 雜項 - 偽裝串流資料，並將 '預設客戶端' 變更為 'TV' 或 'TV Simply'。"</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">強制自動音軌已啟用</string>
     <string name="revanced_disable_auto_captions_title">停用強制顯示字幕</string>
     <string name="revanced_disable_auto_captions_summary_on">強制顯示字幕已停用</string>
@@ -708,7 +716,7 @@
     <string name="revanced_custom_filter_strings_summary">依行分隔的名稱篩選元件</string>
     <string name="revanced_custom_filter_toast_invalid_syntax">無效的自訂篩選器：%s</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Hook buttons -->
-    <string name="revanced_preference_screen_hook_buttons_title">掛鉤按鈕</string>
+    <string name="revanced_preference_screen_hook_buttons_title">開場白按鈕</string>
     <string name="revanced_preference_screen_hook_buttons_summary">覆蓋應用程式內按鈕的點選操作。</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Hook buttons, PreferenceCategory: Download button -->
     <string name="revanced_preference_category_download_button">下載按鈕</string>
@@ -1151,6 +1159,11 @@
     <string name="revanced_hide_player_flyout_menu_audio_track_title">隱藏音軌選單</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">音軌選單已隱藏</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">音軌選單已顯示</string>
+    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"音軌選單已隱藏。
+
+若要顯示音軌選單：
+1. 前往設定  - RVX - 雜項 - 偽裝串流資料，然後開啟 '使用 JavaScript 用戶端'。
+2. 前往設定 - RVX - 雜項 - 偽裝串流資料，並將 '預設客戶端' 變更為 'TV' 或 'TV Simply'。"</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">隱藏字幕選單</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">字幕選單已隱藏</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">字幕選單已顯示</string>
@@ -1214,9 +1227,9 @@
     <string name="revanced_disable_engagement_panel_summary_on">停用互動面板</string>
     <string name="revanced_disable_engagement_panel_summary_off">啟用互動面板</string>
     <string name="revanced_enter_fullscreen_title">影片開始時進入全螢幕模式</string>
-    <string name="revanced_enter_fullscreen_summary_on">"\"影片開始時進入全螢幕模式。
+    <string name="revanced_enter_fullscreen_summary_on">"影片開始時進入全螢幕模式。
 
-限制：如果播放器最小化、處於畫中畫模式或處於後台，則不起作用。"</string>
+限制：如果播放器最小化, 處於畫中畫模式或處於後台, 則不起作用。"</string>
     <string name="revanced_enter_fullscreen_summary_off">影片開始時請勿進入全螢幕模式。</string>
     <string name="revanced_exit_fullscreen_title">影片結束時退出全螢幕模式</string>
     <string name="revanced_exit_fullscreen_entry_1">已停用</string>
@@ -1553,16 +1566,16 @@
 
 副作用：搜索結果中的官方標題將被隱藏</string>
     <string name="revanced_hide_shorts_shelf_channel_title">隱藏在頻道中</string>
-    <string name="revanced_hide_shorts_shelf_channel_summary_on">"隱藏在頻道中。
+    <string name="revanced_hide_shorts_shelf_channel_summary_on">"在頻道頁面中隱藏。
 
-資訊:
-• 僅隱藏主頁標籤上有 Shorts 標題的書架。"</string>
+說明：只有首頁標籤中標題為短影音的區塊會被隱藏。"</string>
     <string name="revanced_hide_shorts_shelf_channel_summary_off">顯示在頻道中。</string>
     <string name="revanced_hide_shorts_shelf_home_related_videos_title">在首頁和相關影片中隱藏</string>
     <string name="revanced_hide_shorts_shelf_home_related_videos_summary_on">在首頁和相關影片中隱藏</string>
     <string name="revanced_hide_shorts_shelf_home_related_videos_summary_off">在首頁和相關影片中顯示</string>
     <string name="revanced_hide_shorts_shelf_search_title">在搜尋結果中隱藏</string>
-    <string name="revanced_hide_shorts_shelf_search_summary_on">"隱藏在搜尋結果中。"</string>
+    <string name="revanced_hide_shorts_shelf_search_summary_on">"隱藏在搜尋結果中。
+可能影響：你分頁中的觀看紀錄可能會一併被隱藏。"</string>
     <string name="revanced_hide_shorts_shelf_search_summary_off">顯示在搜尋結果中。</string>
     <string name="revanced_hide_shorts_shelf_subscriptions_title">在訂閱內容動態中隱藏</string>
     <string name="revanced_hide_shorts_shelf_subscriptions_summary_on">隱藏在訂閱內容動態中。</string>
@@ -1571,7 +1584,8 @@
     <string name="revanced_hide_shorts_shelf_video_description_summary_on">隱藏在影片說明中。</string>
     <string name="revanced_hide_shorts_shelf_video_description_summary_off">顯示在影片描述中。</string>
     <string name="revanced_hide_shorts_shelf_history_title">在觀看歷史中隱藏</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_on">"在觀看歷史中隱藏"</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_on">"從觀看紀錄中隱藏。
+可能影響：你分頁中的觀看紀錄區塊可能會一併被隱藏。"</string>
     <string name="revanced_hide_shorts_shelf_history_summary_off">在觀看歷史中顯示</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Experimental flags -->
     <string name="revanced_change_shorts_background_repeat_state_title">變更短影音背景重複狀態</string>
@@ -1845,6 +1859,9 @@
     <string name="revanced_preference_screen_video_title">影片</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Codec -->
     <string name="revanced_preference_category_codec">編解碼器</string>
+    <string name="revanced_disable_drc_audio_title">禁用 DRC 音頻</string>
+    <string name="revanced_disable_drc_audio_summary_on">DRC (動態範圍壓縮) 音頻已停用。</string>
+    <string name="revanced_disable_drc_audio_summary_off">DRC (動態範圍壓縮) 音頻已啟用。</string>
     <string name="revanced_disable_hdr_video_title">HDR 影片</string>
     <string name="revanced_disable_hdr_video_summary_on">HDR 影片已停用</string>
     <string name="revanced_disable_hdr_video_summary_off">HDR 影片已啟用</string>
@@ -2024,10 +2041,12 @@
     <string name="revanced_sb_segments_intro_sum">沒有實際內容的間隔。 可能是暫停、靜態影格或重複動畫。 不包括包含資訊的轉換。</string>
     <string name="revanced_sb_segments_outro">結束畫面/演職員表</string>
     <string name="revanced_sb_segments_outro_sum">鳴謝畫面或出現 YouTube 片尾畫面不包括含訊息的結尾</string>
+    <string name="revanced_sb_segments_hook">開場白 / 問候</string>
+    <string name="revanced_sb_segments_hook_sum">即將推出的影片的旁白預告片, 問候語和告別語。不包含增加額外內容的部分。</string>
     <string name="revanced_sb_segments_preview">預告/回顧</string>
     <string name="revanced_sb_segments_preview_sum">展示此影片或同系列後續影片將出現的畫面集錦，所有內容都將在之後再次出現</string>
-    <string name="revanced_sb_segments_filler">灌水內容/笑話</string>
-    <string name="revanced_sb_segments_filler_sum">跑題片段，例如閒聊或幽默，對理解影片主要內容並無幫助。這不會包含敘述環境與背景訊息的片段</string>
+    <string name="revanced_sb_segments_filler">離題片段/笑話</string>
+    <string name="revanced_sb_segments_filler_sum">與主題無關的離題搞笑片段 ，不影響理解影片內容。不包含背景說明部分。</string>
     <string name="revanced_sb_segments_nomusic">音樂：非音樂片段</string>
     <string name="revanced_sb_segments_nomusic_sum">僅用於音樂影片。音樂影片的非音樂部分，尚未包含在另一個類別中</string>
     <string name="revanced_sb_skip_button_compact">跳過</string>
@@ -2040,10 +2059,11 @@
     <string name="revanced_sb_skip_button_intro_middle">跳過中場</string>
     <string name="revanced_sb_skip_button_intro_end">跳過中場</string>
     <string name="revanced_sb_skip_button_outro">跳過片尾</string>
+    <string name="revanced_sb_skip_button_hook">跳過開場白</string>
     <string name="revanced_sb_skip_button_preview_beginning">跳過預告</string>
     <string name="revanced_sb_skip_button_preview_middle">跳過預告</string>
     <string name="revanced_sb_skip_button_preview_end">跳過總結</string>
-    <string name="revanced_sb_skip_button_filler">跳過閒聊</string>
+    <string name="revanced_sb_skip_button_filler">跳過離題片段</string>
     <string name="revanced_sb_skip_button_nomusic">跳過非音樂部分</string>
     <string name="revanced_sb_skip_button_unsubmitted">跳過未提交片段</string>
     <string name="revanced_sb_skipped_sponsor">跳過贊助內容</string>
@@ -2054,10 +2074,11 @@
     <string name="revanced_sb_skipped_intro_middle">跳過中場</string>
     <string name="revanced_sb_skipped_intro_end">跳過中場</string>
     <string name="revanced_sb_skipped_outro">跳過片尾</string>
+    <string name="revanced_sb_skipped_hook">跳過開場白。</string>
     <string name="revanced_sb_skipped_preview_beginning">跳過預告</string>
     <string name="revanced_sb_skipped_preview_middle">跳過預告</string>
     <string name="revanced_sb_skipped_preview_end">跳過總結</string>
-    <string name="revanced_sb_skipped_filler">已跳過閒聊</string>
+    <string name="revanced_sb_skipped_filler">已跳過離題片段。</string>
     <string name="revanced_sb_skipped_nomusic">跳過非音樂部份</string>
     <string name="revanced_sb_skipped_unsubmitted">跳過未提交的片段</string>
     <string name="revanced_sb_skipped_multiple_segments">跳過多個片段</string>
@@ -2265,16 +2286,29 @@
     <string name="revanced_spoof_streaming_data_summary_off">"串流資料未偽裝。 影片可能無法播放。"</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">關閉此設定可能會導致影片播放問題。</string>
     <string name="revanced_spoof_streaming_data_default_client_title">預設用戶端</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio
+<small>(需要登入)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
+<small>(無需驗證)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"行動網路
-<small>(開發中)</small>"</string>
+<small>(開發中, 無需驗證)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">電視
 <small>(開發中)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">電視內嵌功能
 <small>(開發中)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_simply">電視簡易功能
 <small>(開發中)</small></string>
-    <string name="revanced_spoof_streaming_data_side_effects_title">偽裝副作用</string>
+    <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
+<small>(未發布, 無需驗證)</small>"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_title">從觀看紀錄中隱藏。
+可能影響：你分頁中的觀看紀錄可能會一併被隱藏。</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• 缺少音軌選單。
+• 無法穩定音量。
+• 登出登入或隱身模式下可能無法播放兒童影片。
+• 不支援 1080p+, AV1 和 HDR。"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• 缺少音軌選單。
+• 無法穩定音量。
+• 登出登入或處於隱身模式時，兒童影片可能無法播放。"</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• 缺少音軌選單。
 • 無法停用強制自動音軌。
 • 如果反混淆失敗，播放可能會失敗。
@@ -2283,6 +2317,9 @@
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• 如果反混淆失敗，播放可能會失敗。
 • 有時影片即使播放 10 秒後也無法播放，在這種情況下，您需要點擊「重新載入影片」按鈕。
 • 影片可能會延遲播放。"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_visionos">"• 缺少音軌選單。
+• 在登出或隱身模式下，兒童影片可能無法播放。
+• 由於這是尚未發布的客戶端, 它可能隨時停止運作。"</string>
     <string name="revanced_spoof_streaming_data_side_effects_unknown">• 未知</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">優先考慮影片畫質</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">影片畫質優先。</string>
@@ -2335,6 +2372,21 @@
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">影皮編解碼器為 AVC (H.264)或 VP9。</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">影片編解碼器自動確定。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
+    <string name="revanced_preference_category_no_auth">無需驗證</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_title">預設音訊串流語言</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_title">顯示音軌按鈕</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"當用於取得串流資料的用戶端是 'Android VR', '行動網路' 或 'visionOS' 時，會顯示音軌按鈕。"</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">未顯示音軌按鈕。</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"使用前提：
+• 用來取得串流資料的用戶端是 'Android VR', '行動網路' 或 'visionOS'。
+• 正在播放包含多個音軌的影片。
+
+已知問題：
+• 如果在 YouTube 設定中變更了應用程式語言, 且未重新啟動應用, 則音軌對話方塊中使用的語言可能不會變更。
+• 有時在音軌對話框中選擇的語言是錯誤的。
+• 某些音軌, 例如 '英語描述' 支援。
+
+此功能仍在開發中, 因此可能隨時因伺服器端變更而中斷。"</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript(開發中)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">使用 JavaScript 用戶端</string>

@@ -537,6 +537,11 @@ Ograniczenie: Przycisk wstecz na pasku narzędzi może nie działać."</string>
     <string name="revanced_change_start_page_type_summary_off">Strona główna zmienia się tylko raz</string>
     <string name="revanced_disable_auto_audio_tracks_title">Automatyczne wymuszanie ścieżki dźwiękowej</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Wyłączone</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_on_disclaimer">"Automatyczne wymuszanie ścieżki dźwiękowej jest wyłączone
+
+Może to nie działać u niektórych użytkowników, więc jeśli nie działa u ciebie, to:
+1. Idź do ustawień → RVX → Pozostałe → Oszukuj strumień danych, i użyj opcji 'Włącz klienta JavaScript'
+2. Idź do ustawień → RVX → Pozostałe → Oszukuj strumień danych, i zmień domyślnego klienta na 'TV' lub 'Uproszczony TV'"</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Włączone</string>
     <string name="revanced_disable_auto_captions_title">Automatyczne wymuszanie napisów</string>
     <string name="revanced_disable_auto_captions_summary_on">Wyłączone</string>
@@ -1158,9 +1163,9 @@ Ograniczenie: niektóre najciekawsze wyniki wyszukiwania w postaci linków, któ
     <string name="revanced_hide_player_flyout_menu_audio_track_title">Menu od ścieżki dźwiękowej</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_on">Ukryte</string>
     <string name="revanced_hide_player_flyout_menu_audio_track_summary_off">Widoczne</string>
-    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Ukryty
+    <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Menu od ścieżki dźwiękowej jest ukryte:
 
-By wyświetlić menu od ścieżki dźwiękowej
+By wyświetlić menu od ścieżki dźwiękowej:
 1. Idź do ustawień → RVX → Pozostałe → Oszukuj strumień danych, i użyj opcji 'Włącz klienta JavaScript'
 2. Idź do ustawień → RVX → Pozostałe → Oszukuj strumień danych, i zmień domyślnego klienta na 'TV' lub 'Uproszczony TV'
 "</string>
@@ -1589,7 +1594,9 @@ Informacja:
     <string name="revanced_hide_shorts_shelf_video_description_summary_on">Ukryte</string>
     <string name="revanced_hide_shorts_shelf_video_description_summary_off">Widoczne</string>
     <string name="revanced_hide_shorts_shelf_history_title">W historii oglądania</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_on">"Ukryte"</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_on">"Ukryte
+
+Efekt uboczny: półka z historią oglądania w zakładce Ty może być ukryta."</string>
     <string name="revanced_hide_shorts_shelf_history_summary_off">Widoczne</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Experimental flags -->
     <string name="revanced_change_shorts_background_repeat_state_title">Zmień stan powtarzania w tle Shortsów</string>
@@ -2294,12 +2301,9 @@ Jeśli jesteś użytkownikiem YouTube Premium, to ustawienie te nie jest koniecz
 <small>(Bez autoryzacji)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobilny przeglądarkowy
 <small>(W fazie rozwoju, bez autoryzacji)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv">TV
-<small>(W fazie rozwoju)</small></string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Wbudowany TV
-<small>(W fazie rozwoju)</small></string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">Uproszczony TV
-<small>(W fazie rozwoju)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Wbudowany TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">Uproszczony TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Niewydany, bez autoryzacji)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Efekty uboczne oszukiwania</string>

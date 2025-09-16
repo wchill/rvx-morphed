@@ -385,7 +385,7 @@ Tocca qui per saperne di più su DeArrow."</string>
 • Guarda di nuovo</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Category bar -->
     <string name="revanced_preference_screen_category_bar_title">Barra dei filtri</string>
-    <string name="revanced_preference_screen_category_bar_summary">Personalizza la barra dei filtri nelle schede, nei video correlati, nei risultati di ricerca, nella cronologia e nelle playlist.</string>
+    <string name="revanced_preference_screen_category_bar_summary">Personalizza la barra dei filtri nelle schede, nei video correlati, nelle playlist, nei risultati di ricerca e nella cronologia.</string>
     <string name="revanced_hide_category_bar_in_feed_title">Nascondi nelle schede</string>
     <string name="revanced_hide_category_bar_in_feed_summary_on">È nascosta nelle schede.</string>
     <string name="revanced_hide_category_bar_in_feed_summary_off">È visibile nelle schede.</string>
@@ -543,6 +543,9 @@ Nota: il pulsante Indietro della barra degli strumenti potrebbe non funzionare."
     <string name="revanced_change_start_page_type_summary_off">La pagina iniziale cambia solo una volta.</string>
     <string name="revanced_disable_auto_audio_tracks_title">Disattiva la traccia audio automatica forzata</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">La traccia audio automatica forzata è disattivata.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_on_disclaimer">"La traccia audio automatica forzata è disattivata.
+
+Nota: questa impostazione potrebbe non funzionare per alcuni utenti. Se non funziona, vai alle impostazioni → RVX → Varie → Camuffa i dati in streaming → Mostra i client JavaScript tra i client disponibili e cambia il client predefinito in TV o TV Simply."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">La traccia audio automatica forzata è attivata.</string>
     <string name="revanced_disable_auto_captions_title">Disattiva i sottotitoli automatici forzati</string>
     <string name="revanced_disable_auto_captions_summary_on">I sottotitoli automatici forzati sono disattivati.</string>
@@ -1576,7 +1579,9 @@ Nota: solo gli scaffali con l'intestazione Shorts nella scheda Home sono nascost
     <string name="revanced_hide_shorts_shelf_video_description_summary_on">È nascosta nella descrizione dei video.</string>
     <string name="revanced_hide_shorts_shelf_video_description_summary_off">È visibile nella descrizione dei video.</string>
     <string name="revanced_hide_shorts_shelf_history_title">Nascondi nella cronologia</string>
-    <string name="revanced_hide_shorts_shelf_history_summary_on">"Sono nascosti nella cronologia."</string>
+    <string name="revanced_hide_shorts_shelf_history_summary_on">"Sono nascosti nella cronologia.
+
+Nota: lo scaffale Cronologia nella scheda Tu potrebbe essere nascosto."</string>
     <string name="revanced_hide_shorts_shelf_history_summary_off">Sono visibili nella cronologia.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Experimental flags -->
     <string name="revanced_change_shorts_background_repeat_state_title">Cambia lo stato di ripetizione in background</string>
@@ -2278,24 +2283,25 @@ Nota: questa impostazione potrebbe non essere necessaria se sei un utente YouTub
 <small>(Accesso richiesto)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
 <small>(Nessun accesso richiesto)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
+<small>(Obsoleto e nessun accesso richiesto)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web Mobile
 <small>(In fase di sviluppo e nessun accesso richiesto)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv">TV
-<small>(In fase di sviluppo)</small></string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded
-<small>(In fase di sviluppo)</small></string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply
-<small>(In fase di sviluppo)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Non rilasciato e nessun accesso richiesto)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Effetti collaterali del camuffamento</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Il menù Traccia Audio è nascosto.
 • Il menù Volume Stabile è nascosto.
 • I video per bambini potrebbero non essere riprodotti se si è disconnessi o in incognito.
-• 1080p+, AV1 e HDR non sono supportati."</string>
+• 1080p+, AV1 e HDR non funzionano."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Il menù Traccia Audio è nascosto.
 • Il menù Volume Stabile è nascosto.
 • I video per bambini potrebbero non essere riprodotti se si è disconnessi o in incognito."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 non funziona.
+• I video potrebbero interrompersi a 1:00 o non essere disponibili in alcune regioni."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Il menù Traccia Audio è nascosto.
 • Se il deoffuscamento fallisce, la riproduzione potrebbe non funzionare.
 • I video potrebbero iniziare in ritardo.
@@ -2355,7 +2361,7 @@ Esempio 2:
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Il pulsante Traccia Audio è visibile quando il client usato per recuperare i dati in streaming è Android VR, Mobile Web o visionOS."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Il pulsante Traccia Audio è nascosto.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Prerequisiti:
-• Il client usato per recuperare i dati in streaming è Android VR, Mobile Web o visionOS.
+• Il client usato per recuperare i dati in streaming è Android VR, Mobile Web, iPadOS o visionOS.
 • È in riproduzione un video con più tracce audio.
 
 Note:

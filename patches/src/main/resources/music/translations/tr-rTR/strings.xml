@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX Hakkında</string>
+    <string name="revanced_extended_settings_title">RVX Ayarları</string>
     <string name="revanced_extended_reset_to_default_toast">Varsayılan değerlere sıfırlayın.</string>
     <!-- Shared Category -->
     <string name="revanced_extended_restart_first_run">Düzeni normal şekilde yüklemek için yeniden başlatın</string>

@@ -187,7 +187,7 @@
     <string name="revanced_restore_old_style_library_shelf_title">이전 보관함 선반으로 복원</string>
     <string name="revanced_restore_old_style_library_shelf_summary">이전 보관함 탭으로 복원합니다. (실험 기능)</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">시청 경고 다이얼로그 제거</string>
-    <string name="revanced_remove_viewer_discretion_dialog_summary">"다음 콘텐츠를 재생하기 전에 표시되는 시청 경고 다이얼로그를 제거합니다:\n• 연령 제한 콘텐츠\n• 자살 또는 자해와 관련된 콘텐츠, etc.\n\n이 설정은 다이얼로그를 자동으로 허용하기만 하며 연령 제한(성인인증 절차)을 우회할 수 없습니다."</string>
+    <string name="revanced_remove_viewer_discretion_dialog_summary">"일부 콘텐츠를 재생하기 전에 표시되는 시청 경고 다이얼로그를 제거합니다.\n\n이 설정은 다이얼로그를 자동으로 허용하기만 하며 연령 제한(성인인증 절차)을 우회할 수 없습니다."</string>
     <string name="revanced_spoof_app_version_title">앱 버전 변경</string>
     <string name="revanced_spoof_app_version_summary">"클라이언트 버전을 이전 버전으로 변경합니다.
 
