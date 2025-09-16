@@ -109,8 +109,8 @@ object YouTubeClient {
 
     // IPAD OS
     /**
-     * Video not playable: Paid / Movie / Private / Age-restricted
-     * Note: Audio track available
+     * Video not playable: Paid / Movie / Private / Age-restricted.
+     * Note: Audio track available, AV1 hardware decoding is not supported.
      *
      * It appears that iOSGuard PoToken has been rolled out to YouTube 20+.
      * See: [uYouEnhanced#908](https://github.com/arichornlover/uYouEnhanced/issues/908) and
@@ -134,7 +134,6 @@ object YouTubeClient {
 
     /**
      * The device machine id for the iPad 6th Gen (iPad7,6).
-     * AV1 hardware decoding is not supported.
      * See [this GitHub Gist](https://gist.github.com/adamawolf/3048717) for more information.
      *
      * Based on Google's actions to date, PoToken may not be required on devices with very low specs.
