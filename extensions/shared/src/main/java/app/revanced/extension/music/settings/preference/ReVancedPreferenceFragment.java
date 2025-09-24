@@ -179,7 +179,7 @@ public class ReVancedPreferenceFragment extends PreferenceFragment {
                 ) {
                     ResettableListPreference.showDialog(mActivity, enumSetting, 0);
                 } else if (settings.equals(SPOOF_STREAMING_DATA_DEFAULT_CLIENT)) {
-                    ResettableListPreference.showDialog(mActivity, enumSetting, 3);
+                    ResettableListPreference.showDialog(mActivity, enumSetting, 1);
                 }
             }
         } catch (Exception ex) {

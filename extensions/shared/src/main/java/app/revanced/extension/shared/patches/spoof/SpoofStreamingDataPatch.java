@@ -38,8 +38,8 @@ public class SpoofStreamingDataPatch {
             SPOOF_STREAMING_DATA && BaseSettings.SPOOF_STREAMING_DATA_USE_JS.get();
     private static final boolean SPOOF_STREAMING_DATA_USE_JS_ALL =
             SPOOF_STREAMING_DATA_USE_JS && BaseSettings.SPOOF_STREAMING_DATA_USE_JS_ALL.get();
-    private static final boolean SPOOF_STREAMING_DATA_USE_LATEST_JS =
-            SPOOF_STREAMING_DATA_USE_JS && BaseSettings.SPOOF_STREAMING_DATA_USE_LATEST_JS.get();
+    private static final boolean SPOOF_STREAMING_DATA_USE_LATEST_PLAYER_JS =
+            SPOOF_STREAMING_DATA_USE_JS && BaseSettings.SPOOF_STREAMING_DATA_USE_LATEST_PLAYER_JS.get();
 
     /**
      * Domain used for internet connectivity verification.
@@ -338,7 +338,7 @@ public class SpoofStreamingDataPatch {
         if (SPOOF_STREAMING_DATA_USE_JS) {
             // Download JavaScript and initialize the Cipher class
             CompletableFuture.runAsync(() -> ThrottlingParameterUtils.initializeJavascript(
-                    SPOOF_STREAMING_DATA_USE_LATEST_JS,
+                    SPOOF_STREAMING_DATA_USE_LATEST_PLAYER_JS,
                     BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().getRequirePoToken()
             ));
         }
