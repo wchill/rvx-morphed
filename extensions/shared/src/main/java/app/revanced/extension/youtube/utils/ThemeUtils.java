@@ -3,15 +3,10 @@ package app.revanced.extension.youtube.utils;
 import static app.revanced.extension.shared.utils.ResourceUtils.getColor;
 import static app.revanced.extension.shared.utils.ResourceUtils.getDrawable;
 import static app.revanced.extension.shared.utils.ResourceUtils.getStyleIdentifier;
-import static app.revanced.extension.shared.utils.Utils.isSDKAbove;
 
 import android.graphics.drawable.Drawable;
-import android.view.Window;
-
-import androidx.annotation.Nullable;
 
 import app.revanced.extension.shared.utils.BaseThemeUtils;
-import app.revanced.extension.shared.utils.Logger;
 
 public class ThemeUtils extends BaseThemeUtils {
 
@@ -21,10 +16,6 @@ public class ThemeUtils extends BaseThemeUtils {
                 : "Theme.YouTube.Settings";
 
         return getStyleIdentifier(themeName);
-    }
-
-    public static Drawable getBackButtonDrawable() {
-        return getBackButtonDrawable(isDarkModeEnabled());
     }
 
     public static Drawable getBackButtonDrawable(boolean isDarkModeEnabled) {
@@ -93,23 +84,5 @@ public class ThemeUtils extends BaseThemeUtils {
                 : "yt_white1";  // Color names used in the dark theme
 
         return getColor(colorName);
-    }
-
-    /**
-     * More actions
-     * Sets the system navigation bar color for the activity.
-     * Applies the background color obtained from {@link #getAppBackgroundColor()} to the navigation bar.
-     * For Android 10 (API 29) and above, enforces navigation bar contrast to ensure visibility.
-     */
-    public static void setNavigationBarColor(@Nullable Window window) {
-        if (window == null) {
-            Logger.printDebug(() -> "Cannot set navigation bar color, window is null");
-            return;
-        }
-
-        window.setNavigationBarColor(getAppBackgroundColor());
-        if (isSDKAbove(29)) {
-            window.setNavigationBarContrastEnforced(true);
-        }
     }
 }

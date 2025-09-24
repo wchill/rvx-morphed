@@ -32,10 +32,10 @@
         <item>ON_CLICK</item>
         <item>ON_LONG_CLICK</item>
     </string-array>
-    <string-array name="revanced_extended_settings_import_export_entries">
-        <item>@string/revanced_extended_settings_export_as_file</item>
-        <item>@string/revanced_extended_settings_import_as_file</item>
-        <item>@string/revanced_extended_settings_import_export_as_text</item>
+    <string-array name="revanced_settings_import_export_entries">
+        <item>@string/revanced_settings_export_as_file</item>
+        <item>@string/revanced_settings_import_as_file</item>
+        <item>@string/revanced_settings_import_export_as_text</item>
     </string-array>
     <string-array name="revanced_external_downloader_label">
         <item>NewPipe</item>

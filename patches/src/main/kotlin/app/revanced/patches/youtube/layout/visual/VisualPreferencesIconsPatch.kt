@@ -76,7 +76,7 @@ val visualPreferencesIconsPatch = resourcePatch(
             "revanced_change_shorts_background_repeat_state" -> "revanced_change_shorts_repeat_state_icon"
             "revanced_default_app_settings" -> "revanced_preference_screen_settings_menu_icon"
             "revanced_disable_shorts_background_playback" -> "offline_key_icon"
-            "revanced_extended_settings_search_history" -> "history_key_icon"
+            "revanced_settings_search_history" -> "history_key_icon"
             "revanced_hide_download_button" -> "revanced_overlay_button_external_downloader_icon"
             "revanced_hide_keyword_content_home" -> "revanced_hide_navigation_home_button_icon"
             "revanced_hide_keyword_content_search" -> "revanced_hide_shorts_shelf_search_icon"
@@ -167,7 +167,7 @@ val visualPreferencesIconsPatch = resourcePatch(
         }
         val resourceGroup = ResourceGroup(
             "drawable",
-            "revanced_extended_settings_key_icon.xml"
+            "revanced_settings_key_icon.xml"
         )
 
         try {
@@ -311,7 +311,7 @@ private var rvxPreferenceKey = setOf(
     "revanced_disable_resuming_shorts_player",
     "revanced_disable_shorts_background_playback",
     "revanced_disable_swipe_to_switch_video",
-    "revanced_extended_settings_search_history",
+    "revanced_settings_search_history",
     "revanced_hide_ask_button",
     "revanced_hide_clip_button",
     "revanced_hide_download_button",
@@ -428,7 +428,7 @@ private var rvxPreferenceKey = setOf(
 )
 
 private val intentKey = setOf(
-    "revanced_extended_settings_key",
+    "revanced_settings_key",
 )
 
 val intentIcon = intentKey.associateWith { "${it}_icon" }

@@ -24,6 +24,7 @@ import org.apache.commons.lang3.StringUtils;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import app.revanced.extension.shared.ui.CustomDialog;
 import app.revanced.extension.shared.utils.BaseThemeUtils;
 import app.revanced.extension.shared.utils.Logger;
 import app.revanced.extension.shared.utils.Utils;
@@ -69,17 +70,26 @@ public class GmsCoreSupport {
         Utils.runOnMainThreadDelayed(() -> {
             if (BaseThemeUtils.isSupportModernDialog) {
                 // Create the custom dialog.
-                Pair<Dialog, LinearLayout> dialogPair = Utils.createCustomDialog(
+                Pair<Dialog, LinearLayout> dialogPair = CustomDialog.create(
                         context,
-                        str("gms_core_dialog_title"), // Title.
-                        str(dialogMessageRef),        // Message.
-                        null,                         // No EditText.
-                        str(positiveButtonTextRef),   // OK button text.
-                        () -> onPositiveClickListener.onClick(null, 0), // Convert DialogInterface.OnClickListener to Runnable.
-                        null,                         // No Cancel button action.
-                        null,                         // No Neutral button text.
-                        null,                         // No Neutral button action.
-                        true                          // Dismiss dialog when onNeutralClick.
+                        // Title.
+                        str("gms_core_dialog_title"),
+                        // Message.
+                        str(dialogMessageRef),
+                        // No EditText.
+                        null,
+                        // OK button text.
+                        str(positiveButtonTextRef),
+                        // Convert DialogInterface.OnClickListener to Runnable.
+                        () -> onPositiveClickListener.onClick(null, 0),
+                        // No Cancel button action.
+                        null,
+                        // No Neutral button text.
+                        null,
+                        // No Neutral button action.
+                        null,
+                        // Dismiss dialog when onNeutralClick.
+                        true
                 );
 
                 Dialog dialog = dialogPair.first;

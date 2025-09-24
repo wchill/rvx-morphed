@@ -379,6 +379,11 @@ public class SpoofStreamingDataPatch {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
                     BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get() == ClientType.ANDROID_VR;
         }
+
+        @Override
+        public List<Setting<?>> getParentSettings() {
+            return List.of(BaseSettings.SPOOF_STREAMING_DATA);
+        }
     }
 
     public static final class ClientJSAvailability implements Setting.Availability {
@@ -388,6 +393,14 @@ public class SpoofStreamingDataPatch {
                     BaseSettings.SPOOF_STREAMING_DATA_USE_JS.get() &&
                     BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().getRequireJS();
         }
+
+        @Override
+        public List<Setting<?>> getParentSettings() {
+            return List.of(
+                    BaseSettings.SPOOF_STREAMING_DATA,
+                    BaseSettings.SPOOF_STREAMING_DATA_USE_JS
+            );
+        }
     }
 
     public static final class ClientNoAuthAvailability implements Setting.Availability {
@@ -395,6 +408,11 @@ public class SpoofStreamingDataPatch {
         public boolean isAvailable() {
             return BaseSettings.SPOOF_STREAMING_DATA.get() &&
                     !BaseSettings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().getSupportsCookies();
+        }
+
+        @Override
+        public List<Setting<?>> getParentSettings() {
+            return List.of(BaseSettings.SPOOF_STREAMING_DATA);
         }
     }
 
@@ -406,6 +424,11 @@ public class SpoofStreamingDataPatch {
             // Check conditions of launch and now. Otherwise if spoofing is changed
             // without a restart the setting will show as available when it's not.
             return AVAILABLE_ON_LAUNCH && SpoofStreamingDataPatch.multiAudioTrackAvailable();
+        }
+
+        @Override
+        public List<Setting<?>> getParentSettings() {
+            return List.of(BaseSettings.SPOOF_STREAMING_DATA);
         }
     }
 
@@ -419,6 +442,14 @@ public class SpoofStreamingDataPatch {
             // without a restart the setting will show as available when it's not.
             return AVAILABLE_ON_LAUNCH && BaseSettings.SPOOF_STREAMING_DATA.get() &&
                     BaseSettings.SPOOF_STREAMING_DATA_RELOAD_VIDEO_BUTTON.get();
+        }
+
+        @Override
+        public List<Setting<?>> getParentSettings() {
+            return List.of(
+                    BaseSettings.SPOOF_STREAMING_DATA,
+                    BaseSettings.SPOOF_STREAMING_DATA_RELOAD_VIDEO_BUTTON
+            );
         }
     }
 }

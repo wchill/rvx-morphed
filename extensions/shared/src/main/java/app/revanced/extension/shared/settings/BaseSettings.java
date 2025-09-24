@@ -79,6 +79,9 @@ public class BaseSettings {
     public static final StringSetting RETURN_YOUTUBE_USERNAME_YOUTUBE_DATA_API_V3_DEVELOPER_KEY = new StringSetting("revanced_return_youtube_username_youtube_data_api_v3_developer_key", "",
             true, false, null, parent(RETURN_YOUTUBE_USERNAME_ENABLED));
 
+    public static final BooleanSetting SETTINGS_SEARCH_HISTORY = new BooleanSetting("revanced_settings_search_history", TRUE, true);
+    public static final StringSetting SETTINGS_SEARCH_ENTRIES = new StringSetting("revanced_settings_search_entries", "", true);
+
     /**
      * @noinspection DeprecatedIsStillUsed
      */

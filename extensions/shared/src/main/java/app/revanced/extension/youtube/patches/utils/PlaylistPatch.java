@@ -24,6 +24,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 import app.revanced.extension.shared.innertube.utils.AuthUtils;
+import app.revanced.extension.shared.ui.CustomDialog;
 import app.revanced.extension.shared.utils.Logger;
 import app.revanced.extension.shared.utils.ResourceUtils;
 import app.revanced.extension.shared.utils.Utils;
@@ -261,7 +262,7 @@ public class PlaylistPatch {
                     String message = request.getMessage();
                     if (message != null) {
                         Context mContext = getContext();
-                        Utils.createCustomDialog(
+                        CustomDialog.create(
                                 // context
                                 mContext,
                                 // title

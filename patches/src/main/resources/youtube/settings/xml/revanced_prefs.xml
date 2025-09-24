@@ -300,7 +300,7 @@
 
         <!-- SETTINGS: SPOOF_APP_VERSION
         <SwitchPreference android:title="@string/revanced_spoof_app_version_title" android:key="revanced_spoof_app_version" android:summaryOn="@string/revanced_spoof_app_version_summary_on" android:summaryOff="@string/revanced_spoof_app_version_summary_off" />
-        <app.revanced.extension.youtube.settings.preference.SpoofAppVersionPreference android:title="@string/revanced_spoof_app_version_target_title" android:key="revanced_spoof_app_version_target" android:entries="@array/revanced_spoof_app_version_target_entries" android:entryValues="@array/revanced_spoof_app_version_target_entry_values" />SETTINGS: SPOOF_APP_VERSION -->
+        <app.revanced.extension.youtube.settings.preference.SpoofAppVersionPreference android:title="@string/revanced_spoof_app_version_target_title" android:key="revanced_spoof_app_version_target" />SETTINGS: SPOOF_APP_VERSION -->
 
         <!-- SETTINGS: FIX_SPOOF_APP_VERSION_SIDE_EFFECT
         <SwitchPreference android:title="@string/revanced_fix_spoof_app_version_side_effect_title" android:key="revanced_fix_spoof_app_version_side_effect" android:summaryOn="@string/revanced_fix_spoof_app_version_side_effect_summary_on" android:summaryOff="@string/revanced_fix_spoof_app_version_side_effect_summary_off" />SETTINGS: FIX_SPOOF_APP_VERSION_SIDE_EFFECT -->
@@ -596,10 +596,8 @@
         <SwitchPreference android:title="@string/revanced_hide_info_cards_title" android:key="revanced_hide_info_cards" android:summaryOn="@string/revanced_hide_info_cards_summary_on" android:summaryOff="@string/revanced_hide_info_cards_summary_off" />
         <SwitchPreference android:title="@string/revanced_hide_info_panel_title" android:key="revanced_hide_info_panel" android:summaryOn="@string/revanced_hide_info_panel_summary_on" android:summaryOff="@string/revanced_hide_info_panel_summary_off" />
         <SwitchPreference android:title="@string/revanced_hide_medical_panel_title" android:key="revanced_hide_medical_panel" android:summaryOn="@string/revanced_hide_medical_panel_summary_on" android:summaryOff="@string/revanced_hide_medical_panel_summary_off" />
-        <SwitchPreference android:title="@string/revanced_hide_seek_message_title" android:key="revanced_hide_seek_message" android:summaryOn="@string/revanced_hide_seek_message_summary_on" android:summaryOff="@string/revanced_hide_seek_message_summary_off" />SETTINGS: PLAYER_COMPONENTS -->
-
-        <!-- SETTINGS: HIDE_SEEK_UNDO_MESSAGE
-        <SwitchPreference android:title="@string/revanced_hide_seek_undo_message_title" android:key="revanced_hide_seek_undo_message" android:summaryOn="@string/revanced_hide_seek_undo_message_summary_on" android:summaryOff="@string/revanced_hide_seek_undo_message_summary_off" />SETTINGS: HIDE_SEEK_UNDO_MESSAGE -->
+        <SwitchPreference android:title="@string/revanced_hide_seek_message_title" android:key="revanced_hide_seek_message" android:summaryOn="@string/revanced_hide_seek_message_summary_on" android:summaryOff="@string/revanced_hide_seek_message_summary_off" />
+        <SwitchPreference android:title="@string/revanced_hide_seek_undo_message_title" android:key="revanced_hide_seek_undo_message" android:summaryOn="@string/revanced_hide_seek_undo_message_summary_on" android:summaryOff="@string/revanced_hide_seek_undo_message_summary_off" />SETTINGS: PLAYER_COMPONENTS -->
 
         <!-- SETTINGS: PLAYER_COMPONENTS
         <SwitchPreference android:title="@string/revanced_hide_suggested_actions_title" android:key="revanced_hide_suggested_actions" android:summaryOn="@string/revanced_hide_suggested_actions_summary_on" android:summaryOff="@string/revanced_hide_suggested_actions_summary_off" />
@@ -855,10 +853,10 @@
 
         <PreferenceScreen android:title="@string/revanced_preference_screen_import_export_title" android:key="revanced_preference_screen_import_export" android:summary="@string/revanced_preference_screen_import_export_summary">
             <PreferenceCategory android:title="@string/revanced_preference_category_import_export_as_file" android:layout="@layout/revanced_settings_preferences_category" />
-            <Preference android:title="@string/revanced_extended_settings_export_title" android:key="revanced_extended_settings_export" android:summary="@string/revanced_extended_settings_export_summary" />
-            <Preference android:title="@string/revanced_extended_settings_import_title" android:key="revanced_extended_settings_import" android:summary="@string/revanced_extended_settings_import_summary" />
+            <Preference android:title="@string/revanced_settings_export_title" android:key="revanced_settings_export" android:summary="@string/revanced_settings_export_summary" />
+            <Preference android:title="@string/revanced_settings_import_title" android:key="revanced_settings_import" android:summary="@string/revanced_settings_import_summary" />
             <PreferenceCategory android:title="@string/revanced_preference_category_import_export_as_text" android:layout="@layout/revanced_settings_preferences_category" />
-            <app.revanced.extension.youtube.settings.preference.ImportExportPreference android:title="@string/revanced_extended_settings_import_export_as_text_title" android:summary="@string/revanced_extended_settings_import_export_as_text_summary" android:inputType="textMultiLine" />
+            <app.revanced.extension.youtube.settings.preference.ImportExportPreference android:title="@string/revanced_settings_import_export_as_text_title" android:summary="@string/revanced_settings_import_export_as_text_summary" android:inputType="textMultiLine" />
         </PreferenceScreen>
 
         <!-- SETTINGS: SPOOF_STREAMING_DATA
@@ -915,7 +913,7 @@
         </Preference>PREFERENCE: GMS_CORE_SETTINGS -->
 
         <app.revanced.extension.shared.settings.preference.SortedListPreference android:entries="@array/revanced_language_entries" android:title="@string/revanced_language_title" android:key="revanced_language" android:entryValues="@array/revanced_language_entry_values" />
-        <SwitchPreference android:title="@string/revanced_extended_settings_search_history_title" android:key="revanced_extended_settings_search_history" android:summaryOn="@string/revanced_extended_settings_search_history_summary_on" android:summaryOff="@string/revanced_extended_settings_search_history_summary_off" />
+        <SwitchPreference android:title="@string/revanced_settings_search_history_title" android:key="revanced_settings_search_history" android:summaryOn="@string/revanced_settings_search_history_summary_on" android:summaryOff="@string/revanced_settings_search_history_summary_off" />
 
         <!-- PREFERENCE_CATEGORY: MISC_EXPERIMENTAL_FLAGS
         <PreferenceCategory android:title="@string/revanced_preference_category_experimental_flag" android:layout="@layout/revanced_settings_preferences_category"/>PREFERENCE_CATEGORY: MISC_EXPERIMENTAL_FLAGS -->

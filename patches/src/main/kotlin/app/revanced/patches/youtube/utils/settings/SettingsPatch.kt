@@ -134,12 +134,14 @@ private val settingsBytecodePatch = bytecodePatch(
 
         // endregion.
 
-        val hostActivityClass = settingsHostActivityOnCreateFingerprint.mutableClassOrThrow()
+        val hostAbstractActivityClass = baseHostActivityOnCreateFingerprint.mutableClassOrThrow()
+        val hostActivityClass = youtubeHostActivityOnCreateFingerprint.mutableClassOrThrow()
         val targetActivityClass = licenseMenuActivityOnCreateFingerprint.mutableClassOrThrow()
 
         hookClassHierarchy(
             hostActivityClass,
-            targetActivityClass
+            targetActivityClass,
+            hostAbstractActivityClass,
         )
 
         targetActivityClass.methods.forEach { method ->
@@ -152,7 +154,7 @@ private val settingsBytecodePatch = bytecodePatch(
 
                         addInstructionsWithLabels(
                             insertIndex, """
-                                invoke-virtual {p0}, ${hostActivityClass.type}->isInitialized()Z
+                                invoke-virtual {p0}, ${hostAbstractActivityClass.type}->isInitialized()Z
                                 move-result v$freeRegister
                                 if-eqz v$freeRegister, :ignore
                                 return-void
@@ -333,11 +335,12 @@ val settingsPatch = resourcePatch(
             ResourceGroup(
                 "drawable",
                 "revanced_settings_arrow_time.xml",
-                "revanced_settings_circle_background.xml",
                 "revanced_settings_cursor.xml",
                 "revanced_settings_custom_checkmark.xml",
+                "revanced_settings_icon.xml",
                 "revanced_settings_rounded_corners_background.xml",
                 "revanced_settings_search_icon.xml",
+                "revanced_settings_search_remove.xml",
                 "revanced_settings_toolbar_arrow_left.xml",
             ),
             ResourceGroup(
@@ -345,8 +348,14 @@ val settingsPatch = resourcePatch(
                 "revanced_color_dot_widget.xml",
                 "revanced_color_picker.xml",
                 "revanced_custom_list_item_checked.xml",
-                "revanced_preference_with_icon_no_search_result.xml",
-                "revanced_search_suggestion_item.xml",
+                "revanced_preference_search_history_item.xml",
+                "revanced_preference_search_history_screen.xml",
+                "revanced_preference_search_no_result.xml",
+                "revanced_preference_search_result_color.xml",
+                "revanced_preference_search_result_group_header.xml",
+                "revanced_preference_search_result_list.xml",
+                "revanced_preference_search_result_regular.xml",
+                "revanced_preference_search_result_switch.xml",
                 "revanced_settings_preferences_category.xml",
                 "revanced_settings_with_toolbar.xml",
             ),
@@ -366,7 +375,7 @@ val settingsPatch = resourcePatch(
          * initialize ReVanced Extended Settings
          */
         ResourceUtils.addPreferenceFragment(
-            "revanced_extended_settings",
+            "revanced_settings",
             insertKey,
             targetActivityClassName,
         )
@@ -402,11 +411,11 @@ val settingsPatch = resourcePatch(
          */
         if (settingsLabel != DEFAULT_LABEL) {
             removeStringsElements(
-                arrayOf("revanced_extended_settings_title")
+                arrayOf("revanced_settings_title")
             )
             document("res/values/strings.xml").use { document ->
                 mapOf(
-                    "revanced_extended_settings_title" to settingsLabel
+                    "revanced_settings_title" to settingsLabel
                 ).forEach { (k, v) ->
                     val stringElement = document.createElement("string")
 

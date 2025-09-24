@@ -274,7 +274,7 @@ val settingsPatch = resourcePatch(
          */
         addPreferenceWithIntent(
             CategoryType.MISC,
-            "revanced_extended_settings_import_export"
+            "revanced_settings_import_export"
         )
     }
 
@@ -285,11 +285,11 @@ val settingsPatch = resourcePatch(
          */
         if (settingsLabel != DEFAULT_LABEL) {
             removeStringsElements(
-                arrayOf("revanced_extended_settings_title")
+                arrayOf("revanced_settings_title")
             )
             document("res/values/strings.xml").use { document ->
                 mapOf(
-                    "revanced_extended_settings_title" to settingsLabel
+                    "revanced_settings_title" to settingsLabel
                 ).forEach { (k, v) ->
                     val stringElement = document.createElement("string")
 
@@ -379,11 +379,4 @@ internal fun addPreferenceWithIntent(
     val categoryValue = category.value
     ResourceUtils.addPreferenceCategory(categoryValue)
     ResourceUtils.addPreferenceWithIntent(categoryValue, key, dependencyKey)
-}
-
-internal fun replaceSwitchPreference(
-    key: String,
-    defaultValue: String
-) {
-    ResourceUtils.replaceSwitchPreference(key, defaultValue)
 }

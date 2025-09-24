@@ -22,7 +22,7 @@
                 android:layout_height="?android:attr/actionBarSize"
                 android:background="@android:color/white"
                 app:navigationIcon="@drawable/revanced_settings_toolbar_arrow_left"
-                app:title="@string/revanced_extended_settings_title" />
+                app:title="@string/revanced_settings_title" />
 
     </FrameLayout>
 
