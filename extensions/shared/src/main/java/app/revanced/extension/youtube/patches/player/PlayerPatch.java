@@ -525,6 +525,10 @@ public class PlayerPatch {
         VideoUtils.openVideo(newlyLoadedVideoId);
     }
 
+    public static boolean disableDoubleTapChapters(boolean original) {
+        return !Settings.DISABLE_CHAPTER_SKIP_DOUBLE_TAP.get() && original;
+    }
+
     public static boolean disableSpeedOverlay() {
         return disableSpeedOverlay(true);
     }

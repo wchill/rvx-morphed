@@ -509,6 +509,24 @@ val playerComponentsPatch = bytecodePatch(
 
         // endregion
 
+        // region patch for disable double tap chapters
+
+        mapOf(
+            doubleTapInfoConstructorFingerprint to "p3",
+            doubleTapInfoGetSeekSourceFingerprint to "p1",
+        ).forEach { (fingerprint, parameter) ->
+            fingerprint
+                .methodOrThrow(doubleTapInfoFloatFingerprint)
+                .addInstructions(
+                    0, """
+                        invoke-static { $parameter }, $PLAYER_CLASS_DESCRIPTOR->disableDoubleTapChapters(Z)Z
+                        move-result $parameter
+                        """
+                )
+        }
+
+        // endregion
+
         // region patch for hide channel watermark
 
         watermarkFingerprint.matchOrThrow(watermarkParentFingerprint).let {

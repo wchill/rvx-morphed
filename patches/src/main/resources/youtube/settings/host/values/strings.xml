@@ -1020,6 +1020,9 @@ Tap and hold to open RVX settings."</string>
 Autoplay can be changed in YouTube settings:
 Settings → Autoplay / Playback → Autoplay next video"</string>
     <string name="revanced_disable_auto_switch_mix_playlists_user_dialog_message">Enabling this feature will disable automatic switching to YouTube Mix when playing music while autoplay is turned on.</string>
+    <string name="revanced_disable_chapter_skip_double_tap_title">Disable double tap chapter skip</string>
+    <string name="revanced_disable_chapter_skip_double_tap_summary_on">Double tap can never trigger a skip to the next / previous chapter.</string>
+    <string name="revanced_disable_chapter_skip_double_tap_summary_off">Double tap can occasionally trigger a skip to the next / previous chapter.</string>
     <string name="revanced_disable_auto_player_popup_panels_title">Disable player popup panels</string>
     <string name="revanced_disable_auto_player_popup_panels_summary_on">Auto player popup panels are disabled.</string>
     <string name="revanced_disable_auto_player_popup_panels_summary_off">Auto player popup panels are enabled.</string>
