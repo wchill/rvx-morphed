@@ -325,8 +325,11 @@ public final class AlternativeThumbnailsPatch {
      * <p>
      * Cronet considers all completed connections as a success, even if the response is 404 or 5xx.
      */
-    public static void handleCronetSuccess(UrlRequest request, @NonNull UrlResponseInfo responseInfo) {
+    public static void handleCronetSuccess(UrlRequest request, @Nullable UrlResponseInfo responseInfo) {
         try {
+            if (responseInfo == null) {
+                return;
+            }
             final int statusCode = responseInfo.getHttpStatusCode();
             if (statusCode == 200) {
                 return;
@@ -388,13 +391,15 @@ public final class AlternativeThumbnailsPatch {
                                            @Nullable UrlResponseInfo responseInfo,
                                            IOException exception) {
         try {
-            String url = ((CronetUrlRequest) request).getHookedUrl();
-            if (urlIsDeArrow(url)) {
-                Logger.printDebug(() -> "handleCronetFailure, exception: " + exception);
-                final int statusCode = (responseInfo != null)
-                        ? responseInfo.getHttpStatusCode()
-                        : 0;
-                handleDeArrowError(url, statusCode);
+            if (request instanceof CronetUrlRequest cronetUrlRequest) {
+                String url = cronetUrlRequest.getHookedUrl();
+                if (urlIsDeArrow(url)) {
+                    Logger.printDebug(() -> "handleCronetFailure, exception: " + exception);
+                    final int statusCode = (responseInfo != null)
+                            ? responseInfo.getHttpStatusCode()
+                            : 0;
+                    handleDeArrowError(url, statusCode);
+                }
             }
         } catch (Exception ex) {
             Logger.printException(() -> "Callback failure error", ex);
