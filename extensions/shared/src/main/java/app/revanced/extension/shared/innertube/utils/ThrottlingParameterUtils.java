@@ -1,5 +1,7 @@
 package app.revanced.extension.shared.innertube.utils;
 
+import static app.revanced.extension.shared.innertube.utils.DeviceHardwareSupport.hasAV1Decoder;
+
 import android.util.Pair;
 
 import androidx.annotation.NonNull;
@@ -194,6 +196,7 @@ public class ThrottlingParameterUtils {
             return;
         }
         isInitialized = true;
+        hasAV1Decoder();
         ThrottlingParameterUtils.useLatestPlayerJs = useLatestPlayerJs;
 
         if (!useLatestPlayerJs) {
