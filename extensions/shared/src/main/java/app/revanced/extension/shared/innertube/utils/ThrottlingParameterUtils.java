@@ -62,11 +62,11 @@ public class ThrottlingParameterUtils {
     /**
      * Hardcoded javascript url path (Mobile Web).
      */
-    private static final String PLAYER_JS_HARDCODED_URL_PATH_MOBILE_WEB = "4f8fa943";
+    private static final String PLAYER_JS_HARDCODED_URL_PATH_MOBILE_WEB = "b66835e2";
     /**
      * Hardcoded javascript url path (TV).
      */
-    private static final String PLAYER_JS_HARDCODED_URL_PATH_TV = "9bae1a63";
+    private static final String PLAYER_JS_HARDCODED_URL_PATH_TV = "b66835e2";
     /**
      * Regular expression pattern to find variables used in JavaScript url.
      */
@@ -511,6 +511,8 @@ public class ThrottlingParameterUtils {
 
     @Nullable
     private static String fetchUrl(@NonNull String uri, boolean isTV) {
+        Utils.verifyOffMainThread();
+
         final long startTime = System.currentTimeMillis();
         Logger.printDebug(() -> "fetching url: " + uri);
 
