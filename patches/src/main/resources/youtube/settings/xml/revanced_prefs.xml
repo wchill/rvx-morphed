@@ -848,7 +848,13 @@
             <SwitchPreference android:title="@string/revanced_debug_toast_on_error_title" android:key="revanced_debug_toast_on_error" android:summaryOn="@string/revanced_debug_toast_on_error_summary_on" android:summaryOff="@string/revanced_debug_toast_on_error_summary_off" />
             <Preference android:title="@string/revanced_debug_logs_clear_buffer_title" android:key="revanced_debug_logs_clear_buffer" android:summary="@string/revanced_debug_logs_clear_buffer_summary" />
             <Preference android:title="@string/revanced_debug_export_logs_to_clipboard_title" android:key="revanced_debug_export_logs_to_clipboard" android:summary="@string/revanced_debug_export_logs_to_clipboard_summary" />
-            <Preference android:title="@string/revanced_debug_export_logs_to_file_title" android:key="revanced_debug_export_logs_to_file" android:summary="@string/revanced_debug_export_logs_to_file_summary" />
+            <Preference android:title="@string/revanced_debug_export_logs_to_file_title" android:key="revanced_debug_export_logs_to_file" android:summary="@string/revanced_debug_export_logs_to_file_summary" />SETTINGS: DEBUGGING -->
+
+            <!-- SETTINGS: WATCH_NEXT_PROCESSING_DELAY
+            <SwitchPreference android:title="@string/revanced_enable_watch_next_processing_delay_title" android:key="revanced_enable_watch_next_processing_delay" android:summaryOn="@string/revanced_enable_watch_next_processing_delay_summary_on" android:summaryOff="@string/revanced_enable_watch_next_processing_delay_summary_off" />
+            <app.revanced.extension.shared.settings.preference.ResettableEditTextPreference android:title="@string/revanced_watch_next_processing_delay_title" android:key="revanced_watch_next_processing_delay" android:summary="@string/revanced_watch_next_processing_delay_summary" android:inputType="number" />SETTINGS: WATCH_NEXT_PROCESSING_DELAY -->
+
+            <!-- SETTINGS: DEBUGGING
             <app.revanced.extension.youtube.settings.preference.WebViewPreference android:title="@string/revanced_webview_title" android:summary="@string/revanced_webview_summary" />
         </PreferenceScreen>SETTINGS: DEBUGGING -->
 

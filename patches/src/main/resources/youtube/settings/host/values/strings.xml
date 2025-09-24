@@ -2446,6 +2446,15 @@ Tap the continue button and allow optimization changes."</string>
     <string name="revanced_debug_logs_clear_toast">Logs cleared.</string>
     <string name="revanced_debug_logs_export_success">Logs were successfully exported.</string>
 
+    <string name="revanced_enable_watch_next_processing_delay_title">Enable watch next processing delay</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_on">Watch next processing delay is enabled.</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_off">Watch next processing delay is disabled.</string>
+    <string name="revanced_enable_watch_next_processing_delay_user_dialog_message">"This setting forces a delay before the player UI loads.
+
+This can be used when testing something on the MainThread."</string>
+    <string name="revanced_watch_next_processing_delay_title">Watch next processing delay</string>
+    <string name="revanced_watch_next_processing_delay_summary">The amount of milliseconds delay in processing the watch next response.</string>
+
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">Import / Export settings</string>
     <string name="revanced_preference_screen_import_export_summary">Import / Export RVX settings.</string>
