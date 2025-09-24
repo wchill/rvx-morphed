@@ -118,6 +118,7 @@ val spoofAppVersionPatch = resourcePatch(
             "19.43.41",
             "19.44.39",
             "19.47.53",
+            "20.05.46",
         ),
     )
 

@@ -422,16 +422,20 @@ public class VideoUtils extends IntentUtils {
         if (videoId.isEmpty()) {
             showToastShort(str("revanced_dismiss_player_not_available_toast"));
         } else {
-            dismissPlayer();
+            try {
+                dismissPlayer();
 
-            Utils.runOnMainThreadDelayed(() -> {
-                // Open the video.
-                if (playlistId.isEmpty()) {
-                    openVideo(videoId);
-                } else { // If the video is playing from a playlist, the url must include the playlistId.
-                    openPlaylist(playlistId, videoId, true);
-                }
-            }, 500);
+                Utils.runOnMainThreadDelayed(() -> {
+                    // Open the video.
+                    if (playlistId.isEmpty()) {
+                        openVideo(videoId);
+                    } else { // If the video is playing from a playlist, the url must include the playlistId.
+                        openPlaylist(playlistId, videoId, true);
+                    }
+                }, 500);
+            } catch (Exception ex) {
+                Logger.printException(() -> "reloadVideo failed", ex);
+            }
         }
     }
 
@@ -936,7 +940,7 @@ public class VideoUtils extends IntentUtils {
      * @param speed The playback speed value to format.
      * @return A string representation of the speed with 'x' (e.g. "1.25x" or "1.00x").
      */
-    private static String formatSpeedStringX(float speed, int minimumFractionDigits) {
+    public static String formatSpeedStringX(float speed, int minimumFractionDigits) {
         speedFormatter.setMinimumFractionDigits(minimumFractionDigits);
         return speedFormatter.format(speed) + 'x';
     }
