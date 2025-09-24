@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX</string>
-    <string name="revanced_extended_reset_to_default_toast">Przywrócono domyślne wartości.</string>
+    <string name="revanced_settings_title">RVX</string>
+    <string name="revanced_reset_to_default_toast">Przywrócono domyślne wartości.</string>
     <!-- Shared Category -->
-    <string name="revanced_extended_restart_first_run">Uruchom ponownie, aby wczytać układ poprawnie</string>
-    <string name="revanced_extended_restart_message">Odśwież i uruchom ponownie</string>
+    <string name="revanced_restart_first_run">Uruchom ponownie, aby wczytać poprawnie układ aplikacji</string>
+    <string name="revanced_restart_message">Odśwież i uruchom ponownie</string>
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">Konto</string>
     <string name="revanced_hide_account_menu_title">Ukryj menu konta</string>
@@ -443,19 +443,19 @@ Kliknij, by zobaczyć, jak zgłosić klucz API."</string>
     <string name="revanced_sb_about_api">sponsor.ajay.app</string>
     <!-- PreferenceScreen: Miscellaneous -->
     <string name="revanced_preference_screen_misc_title">Pozostałe</string>
-    <string name="revanced_extended_settings_import_export_title">Importuj/Eksportuj ustawienia</string>
-    <string name="revanced_extended_settings_import_export_summary">Zaimportuj / wyeksportuj ustawienia RVX Music</string>
-    <string name="revanced_extended_settings_export_as_file">Wyeksportuj ustawienia do pliku</string>
-    <string name="revanced_extended_settings_import_as_file">Zaimportuj ustawienia z pliku</string>
-    <string name="revanced_extended_settings_import_export_as_text">Zaimportuj/Wyeksportuj ustawienia jako tekst</string>
-    <string name="revanced_extended_settings_export_failed">Nie udało się wyeksportować ustawień.</string>
-    <string name="revanced_extended_settings_export_success">Ustawienia zostały pomyślnie wyeksportowane.</string>
-    <string name="revanced_extended_settings_import">Import</string>
-    <string name="revanced_extended_settings_import_copy">Kopiuj</string>
-    <string name="revanced_extended_settings_import_failed">Nie udało się zaimportować: %s.</string>
-    <string name="revanced_extended_settings_import_reset">Ustawienia zostały zresetowane do domyślnych.</string>
-    <string name="revanced_extended_settings_import_success">Zaimportowano ustawienia %d.</string>
-    <string name="revanced_extended_settings_reset">Zresetuj</string>
+    <string name="revanced_settings_import_export_title">Importuj/eksportuj ustawienia</string>
+    <string name="revanced_settings_import_export_summary">Importuje/Eksportuje ustawienia RVX Music</string>
+    <string name="revanced_settings_export_as_file">Wyeksportuj ustawienia do pliku</string>
+    <string name="revanced_settings_import_as_file">Zaimportuj ustawienia z pliku</string>
+    <string name="revanced_settings_import_export_as_text">Zaimportuj/Wyeksportuj ustawienia jako tekst</string>
+    <string name="revanced_settings_export_failed">Nie udało się wyeksportować ustawień.</string>
+    <string name="revanced_settings_export_success">Ustawienia zostały pomyślnie wyeksportowane.</string>
+    <string name="revanced_settings_import">Zaimportuj</string>
+    <string name="revanced_settings_import_copy">Kopiuj</string>
+    <string name="revanced_settings_import_failed">Nie udało się zaimportować: %s.</string>
+    <string name="revanced_settings_import_reset">Ustawienia zostały zresetowane do domyślnych.</string>
+    <string name="revanced_settings_import_success">Zaimportowano %d ustawień.</string>
+    <string name="revanced_settings_reset">Zresetuj</string>
     <string name="revanced_share_copy_settings_success">Skopiowano ustawienia do schowka.</string>
     <string name="revanced_bypass_image_region_restrictions_title">Pomiń ograniczenia regionu dla obrazów</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Zastępuje domenę, która jest blokowana w niektórych regionach, aby można było otrzymywać miniaturki playlist, awatary kanałów itp.</string>
@@ -485,7 +485,7 @@ Ograniczenie: utwory sklasyfikowane dla dzieci mogą nie być przekierowywane."<
     <string name="revanced_spoof_streaming_data_title">Oszukuj strumień danych</string>
     <string name="revanced_spoof_streaming_data_summary">"Oszukuje strumień filmu klienta, by zapobiec problemom z odtwarzaniem.
 
-Jeśli jesteś użytkownikiem YouTube Premium lub odznaczono przy łataniu łatkę 'GmsCore support', to ustawienie te nie jest konieczne."</string>
+Jeśli jesteś użytkownikiem YouTube Premium, to ustawienie te nie jest konieczne."</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Domyślny klient</string>
     <string name="revanced_spoof_streaming_data_default_client_summary">Definiuje domyślnego klienta do oszukiwania.</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>

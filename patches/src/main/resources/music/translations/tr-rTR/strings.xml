@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX Ayarları</string>
-    <string name="revanced_extended_reset_to_default_toast">Varsayılan değerlere sıfırlayın.</string>
     <!-- Shared Category -->
-    <string name="revanced_extended_restart_first_run">Düzeni normal şekilde yüklemek için yeniden başlatın</string>
-    <string name="revanced_extended_restart_message">Yenile ve yeniden başlat</string>
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">Hesap</string>
     <string name="revanced_hide_account_menu_title">Hesap menüsünü gizle</string>
@@ -448,19 +444,6 @@ APl anahtarının nasıl verileceğini görmek için tıklayın."</string>
     <string name="revanced_sb_about_api">sponsor.ajay.app</string>
     <!-- PreferenceScreen: Miscellaneous -->
     <string name="revanced_preference_screen_misc_title">Diğer ayarlar</string>
-    <string name="revanced_extended_settings_import_export_title">Ayarları içe / dışa aktar</string>
-    <string name="revanced_extended_settings_import_export_summary">Ayarları içe veya dışa aktarın.</string>
-    <string name="revanced_extended_settings_export_as_file">Ayarları bir dosyaya dışa aktar</string>
-    <string name="revanced_extended_settings_import_as_file">Ayarları dosyadan içe aktar</string>
-    <string name="revanced_extended_settings_import_export_as_text">Ayarları yazı olarak içe / dışa aktar</string>
-    <string name="revanced_extended_settings_export_failed">Ayarlar dışa aktarılamadı.</string>
-    <string name="revanced_extended_settings_export_success">Ayarlar başarıyla dışa aktarıldı.</string>
-    <string name="revanced_extended_settings_import">İçe aktar</string>
-    <string name="revanced_extended_settings_import_copy">Kopyala</string>
-    <string name="revanced_extended_settings_import_failed">İçe aktarma başarısız oldu: %s.</string>
-    <string name="revanced_extended_settings_import_reset">Ayarlar varsayılana sıfırlandı.</string>
-    <string name="revanced_extended_settings_import_success">%d ayar içe aktarıldı.</string>
-    <string name="revanced_extended_settings_reset">Sıfırla</string>
     <string name="revanced_share_copy_settings_success">Ayarlar panoya kopyalandı</string>
     <string name="revanced_bypass_image_region_restrictions_title">Resimlerin bölge kısıtlamalarını atla</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Bazı bölgelerde engellenen alan adını değiştirerek oynatma listesi küçük resimlerinin, kanal avatarlarının vb. alınabilmesini sağlar.</string>

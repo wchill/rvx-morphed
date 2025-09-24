@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX</string>
-    <string name="revanced_extended_reset_to_default_toast">Скинуто до значень за замовчуванням.</string>
+    <string name="revanced_settings_title">RVX</string>
+    <string name="revanced_reset_to_default_toast">Скинуто до значень за замовчуванням.</string>
     <!-- Shared Category -->
-    <string name="revanced_extended_restart_first_run">Перезапустіть, щоб нормально завантажився макет</string>
-    <string name="revanced_extended_restart_message">Оновити та перезавантажити?</string>
+    <string name="revanced_restart_first_run">Перезапустіть, щоб нормально завантажився макет</string>
+    <string name="revanced_restart_message">Оновити та перезавантажити?</string>
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">Обліковий запис</string>
     <string name="revanced_hide_account_menu_title">Приховати меню облікового запису</string>
@@ -402,6 +402,8 @@
     <string name="revanced_sb_segments_intro_sum">Інтервал без фактичного контенту. Може бути паузою, статичним кадром або повторюваною анімацією. Не включає переходи, що містять інформацію.</string>
     <string name="revanced_sb_segments_outro">Кінцеві картки / Титри</string>
     <string name="revanced_sb_segments_outro_sum">Титри або коли з\'являються кінцеві картки YouTube. Не для підсумків з інформацією.</string>
+    <string name="revanced_sb_segments_hook">Хук / Привітання</string>
+    <string name="revanced_sb_segments_hook_sum">Озвучені трейлери до майбутнього відео, вітання та прощання. Не містить розділів із додатковим контентом.</string>
     <string name="revanced_sb_segments_preview">Прев\'ю / Коментарі / Підсумок</string>
     <string name="revanced_sb_segments_preview_sum">Колекція кліпів, які показують, що відбувається або що сталося у відео чи в інших відео серій, де вся інформація повторюється в іншому місці.</string>
     <string name="revanced_sb_segments_filler">Дотичне наповнення / Жарти</string>
@@ -415,6 +417,7 @@
     <string name="revanced_sb_skipped_intro_middle">Пропущено паузу.</string>
     <string name="revanced_sb_skipped_intro_end">Пропущено паузу.</string>
     <string name="revanced_sb_skipped_outro">Пропущено закінчення.</string>
+    <string name="revanced_sb_skipped_hook">Пропущено хук.</string>
     <string name="revanced_sb_skipped_preview_beginning">Пропущено попередній перегляд.</string>
     <string name="revanced_sb_skipped_preview_middle">Пропущено попередній перегляд.</string>
     <string name="revanced_sb_skipped_preview_end">Пропущено підсумок.</string>
@@ -436,19 +439,19 @@
     <string name="revanced_sb_about_api">sponsor.ajay.app</string>
     <!-- PreferenceScreen: Miscellaneous -->
     <string name="revanced_preference_screen_misc_title">Різне</string>
-    <string name="revanced_extended_settings_import_export_title">Імпорт / Експорт налаштувань</string>
-    <string name="revanced_extended_settings_import_export_summary">Імпортує або експортує налаштування RVX Music.</string>
-    <string name="revanced_extended_settings_export_as_file">Експорт налаштувань у файл</string>
-    <string name="revanced_extended_settings_import_as_file">Імпорт налаштувань із файлу</string>
-    <string name="revanced_extended_settings_import_export_as_text">Імпорт або експорт налаштувань у вигляді тексту</string>
-    <string name="revanced_extended_settings_export_failed">Не вдалося експортувати налаштування.</string>
-    <string name="revanced_extended_settings_export_success">Налаштування було вдало експортовано.</string>
-    <string name="revanced_extended_settings_import">Імпортувати</string>
-    <string name="revanced_extended_settings_import_copy">Копіювати</string>
-    <string name="revanced_extended_settings_import_failed">Не вдалося імпортувати налаштування: %s.</string>
-    <string name="revanced_extended_settings_import_reset">Налаштування скинуто до стандартних.</string>
-    <string name="revanced_extended_settings_import_success">Налаштування в кількості: %d успішно відновлено</string>
-    <string name="revanced_extended_settings_reset">Скинути</string>
+    <string name="revanced_settings_import_export_title">Імпорт / Експорт налаштувань</string>
+    <string name="revanced_settings_import_export_summary">Імпортує або Експортує налаштування RVX Music.</string>
+    <string name="revanced_settings_export_as_file">Експорт налаштувань у файл</string>
+    <string name="revanced_settings_import_as_file">Імпорт налаштувань із файлу</string>
+    <string name="revanced_settings_import_export_as_text">Імпорт або експорт налаштувань у вигляді тексту</string>
+    <string name="revanced_settings_export_failed">Не вдалося експортувати налаштування.</string>
+    <string name="revanced_settings_export_success">Налаштування було вдало експортовано.</string>
+    <string name="revanced_settings_import">Імпортувати</string>
+    <string name="revanced_settings_import_copy">Копіювати</string>
+    <string name="revanced_settings_import_failed">Не вдалося імпортувати налаштування: %s.</string>
+    <string name="revanced_settings_import_reset">Налаштування скинуто до стандартних.</string>
+    <string name="revanced_settings_import_success">Налаштування в кількості: %d успішно відновлено.</string>
+    <string name="revanced_settings_reset">Скинути</string>
     <string name="revanced_share_copy_settings_success">Налаштування скопійовано до буфера обміну.</string>
     <string name="revanced_bypass_image_region_restrictions_title">Змінити домен зображень</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Обходить домен для зображень, заблокований у деяких регіонах, що дозволить отримувати мініатюри списків відтворення, аватари каналів тощо.</string>
@@ -475,6 +478,19 @@
     <string name="revanced_debug_spannable_summary">Включає охоплення журналу налагодження.</string>
     <string name="revanced_sanitize_sharing_links_title">Обробляти поширення посилань</string>
     <string name="revanced_sanitize_sharing_links_summary">Видаляє параметри запиту відстеження з посилання перед тим, як поділитися ним.</string>
+    <string name="revanced_spoof_streaming_data_title">Підробка потокових даних</string>
+    <string name="revanced_spoof_streaming_data_summary">"Підміняє клієнтські відеопотоки, щоб запобігти відтворенню проблем.
+
+Якщо ви користувач YouTube Premium, цей параметр може бути не потрібен."</string>
+    <string name="revanced_spoof_streaming_data_default_client_title">Клієнт за замовчуванням</string>
+    <string name="revanced_spoof_streaming_data_default_client_summary">Визначає клієнт за замовчуванням для підробки.</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_client_entry_mweb">Мобільний веб</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">ТБ</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Вбудоване ТБ</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">Просте ТБ</string>
+    <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_watch_history_type_title">Тип історії перегляду</string>
     <string name="revanced_watch_history_type_summary">"• Оригінальний: Відповідає налаштуванням історії переглядів облікового запису Google, але історія переглядів може не працювати через DNS або VPN.
 • Замінити домен: Дотримується налаштувань історії переглядів облікового запису Google.

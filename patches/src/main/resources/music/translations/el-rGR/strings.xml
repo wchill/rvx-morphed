@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX</string>
-    <string name="revanced_extended_reset_to_default_toast">Επαναφέρθηκε στην προεπιλεγμένη τιμή.</string>
+    <string name="revanced_settings_title">RVX</string>
+    <string name="revanced_reset_to_default_toast">Έγινε επαναφορά στις προεπιλεγμένες τιμές.</string>
     <!-- Shared Category -->
-    <string name="revanced_extended_restart_first_run">Επανεκκίνηση ώστε να φορτωθεί σωστά η διάταξη</string>
-    <string name="revanced_extended_restart_message">Ανανέωση και επανεκκίνηση</string>
+    <string name="revanced_restart_first_run">Επανεκκίνηση ώστε να φορτωθεί σωστά η διάταξη</string>
+    <string name="revanced_restart_message">Ανανέωση και επανεκκίνηση</string>
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">Λογαριασμός</string>
     <string name="revanced_hide_account_menu_title">Φιλτράρισμα του μενού λογαριασμού</string>
@@ -443,19 +443,19 @@
     <string name="revanced_sb_about_api">sponsor.ajay.app</string>
     <!-- PreferenceScreen: Miscellaneous -->
     <string name="revanced_preference_screen_misc_title">Διάφορα</string>
-    <string name="revanced_extended_settings_import_export_title">Εισαγωγή / Εξαγωγή</string>
-    <string name="revanced_extended_settings_import_export_summary">Εισαγωγή ή εξαγωγή των ρυθμίσεών RVX σας.</string>
-    <string name="revanced_extended_settings_export_as_file">Εξαγωγή ρυθμίσεων σε αρχείο</string>
-    <string name="revanced_extended_settings_import_as_file">Εισαγωγή ρυθμίσεων από αρχείο</string>
-    <string name="revanced_extended_settings_import_export_as_text">Εισαγωγή / Εξαγωγή ρυθμίσεων ως κείμενο</string>
-    <string name="revanced_extended_settings_export_failed">Αποτυχία εξαγωγής ρυθμίσεων.</string>
-    <string name="revanced_extended_settings_export_success">Οι ρυθμίσεις εξήχθησαν με επιτυχία.</string>
-    <string name="revanced_extended_settings_import">Εισαγωγή</string>
-    <string name="revanced_extended_settings_import_copy">Αντιγραφή</string>
-    <string name="revanced_extended_settings_import_failed">Η εισαγωγή απέτυχε: %s.</string>
-    <string name="revanced_extended_settings_import_reset">Οι ρυθμίσεις επαναφέρθηκαν στις προεπιλογές.</string>
-    <string name="revanced_extended_settings_import_success">Έγινε εισαγωγή %d ρυθμίσεων.</string>
-    <string name="revanced_extended_settings_reset">Επαναφορά</string>
+    <string name="revanced_settings_import_export_title">Εισαγωγή / Εξαγωγή ρυθμίσεων</string>
+    <string name="revanced_settings_import_export_summary">Εισαγωγή ή εξαγωγή των ρυθμίσεων RVX Music.</string>
+    <string name="revanced_settings_export_as_file">Εξαγωγή ρυθμίσεων σε αρχείο</string>
+    <string name="revanced_settings_import_as_file">Εισαγωγή ρυθμίσεων από αρχείο</string>
+    <string name="revanced_settings_import_export_as_text">Εισαγωγή / Εξαγωγή ρυθμίσεων ως κείμενο</string>
+    <string name="revanced_settings_export_failed">Αποτυχία εξαγωγής ρυθμίσεων.</string>
+    <string name="revanced_settings_export_success">Η εξαγωγή ρυθμίσεων ολοκληρώθηκε επιτυχώς.</string>
+    <string name="revanced_settings_import">Εισαγωγή</string>
+    <string name="revanced_settings_import_copy">Αντιγραφή</string>
+    <string name="revanced_settings_import_failed">Η εισαγωγή απέτυχε: %s.</string>
+    <string name="revanced_settings_import_reset">Οι ρυθμίσεις επαναφέρθηκαν στις προεπιλογές.</string>
+    <string name="revanced_settings_import_success">Έγινε εισαγωγή %d ρυθμίσεων.</string>
+    <string name="revanced_settings_reset">Επαναφορά</string>
     <string name="revanced_share_copy_settings_success">Οι ρυθμίσεις αντιγράφηκαν στο πρόχειρο.</string>
     <string name="revanced_bypass_image_region_restrictions_title">Παράκαμψη μπλοκαρίσματος φόρτωσης εικόνων</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Αντικατάσταση του domain για την φόρτωση εικόνων όπου είναι μπλοκαρισμένες σε ορισμένες περιοχές ώστε να μπορούν να ληφθούν μικρογραφίες βίντεο, εικόνες δημοσιεύσεων, κλπ.</string>

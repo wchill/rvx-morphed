@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX</string>
-    <string name="revanced_extended_reset_to_default_toast">Redefinir para os valores padrão.</string>
+    <string name="revanced_settings_title">RVX</string>
+    <string name="revanced_reset_to_default_toast">Redefinir para os valores padrão.</string>
     <!-- Shared Category -->
-    <string name="revanced_extended_restart_first_run">Reinicie para carregar o layout normalmente</string>
-    <string name="revanced_extended_restart_message">Atualizar e reiniciar</string>
+    <string name="revanced_restart_first_run">Reinicie para carregar o layout normalmente</string>
+    <string name="revanced_restart_message">Atualizar e reiniciar</string>
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">Conta</string>
     <string name="revanced_hide_account_menu_title">Ocultar menu de contas</string>
@@ -37,8 +37,8 @@
     <string name="revanced_hide_action_button_song_video_title">Ocultar botão de Música / Vídeo</string>
     <string name="revanced_hide_action_button_song_video_summary">"Oculta o botão de Música / Vídeo.
 (Este botão só está disponível para alguns usuários)"</string>
-    <string name="revanced_hide_action_button_disabled_title">Esconder botão desabilitado</string>
-    <string name="revanced_hide_action_button_disabled_summary">Oculta botões desabilitados, como o botão \"Comentários\" desabilitado.</string>
+    <string name="revanced_hide_action_button_disabled_title">Ocultar o botão desativado</string>
+    <string name="revanced_hide_action_button_disabled_summary">Oculta os botões desativados, como o botão de Comentários desativado.</string>
     <string name="revanced_hide_action_button_label_title">Ocultar rótulo do botão de ação</string>
     <string name="revanced_hide_action_button_label_summary">Oculta os rótulos dos botões de ação.</string>
     <string name="revanced_external_downloader_action_title">Substituir ação do botão de Download</string>
@@ -77,6 +77,11 @@ Limitações:
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Menu flutuante</string>
     <string name="revanced_disable_trim_silence_title">Desativar alternador de Cortar silêncio</string>
+    <string name="revanced_disable_trim_silence_summary">"Desativa o alternador de Cortar silêncio no menu flutuante de velocidade de reprodução.
+
+Informações:
+• Este recurso é para podcasts.
+• Este recurso ainda está em desenvolvimento, portanto, pode ser instável."</string>
     <string name="revanced_enable_compact_dialog_title">Ativar diálogo compacto</string>
     <string name="revanced_enable_compact_dialog_summary">"Ativa o menu flutuante compacto em telefones.
 
@@ -187,11 +192,12 @@ Isso não ignora a restrição de idade, apenas aceita isso automaticamente."</s
     <string name="revanced_spoof_app_version_title">Falsificar a versão do aplicativo</string>
     <string name="revanced_spoof_app_version_summary">"Falsifica a versão do cliente para uma versão mais antiga.
 
-• Isto alterará a aparência do aplicativo e consequentemente pode ocorrer efeitos colaterais desconhecidos.
-• Se for desativada posteriormente, a \"interface\" do usuário antiga poderá permanecer até que os dados do aplicativo sejam apagados."</string>
+• Isto alterará a aparência do aplicativo, mas poderão ocorrer efeitos colaterais desconhecidos.
+• Se estiver ativado, mas não funcionar, tente alterar para uma conta diferente.
+• Se for desativada posteriormente, a interface do usuário antiga poderá permanecer até que os dados do aplicativo sejam apagados."</string>
     <string name="revanced_spoof_app_version_target_title">Versão da falsificação do aplicativo</string>
     <string name="revanced_spoof_app_version_target_summary">Selecione a versão do app para falsificação.</string>
-    <string name="revanced_spoof_app_version_target_entry_6_35_52">6.35.52 - Restaurar o painel flyout antigo</string>
+    <string name="revanced_spoof_app_version_target_entry_6_35_52">6.35.52 - Restaurar painel flutuante antigo</string>
     <string name="revanced_spoof_app_version_target_entry_6_42_55">6.42.55 - Desativar letras em tempo real</string>
     <string name="revanced_spoof_app_version_target_entry_7_16_53">7.16.53 - Restaurar barra de ação antiga</string>
     <string name="revanced_spoof_app_version_target_entry_7_17_52">7.17.52 - A seção de comentários não aparece no feed inicial</string>
@@ -257,12 +263,15 @@ Use cores escuras se possível, pois o aplicativo não suporta temas claros."</s
     <string name="revanced_enable_forced_miniplayer_title">Ativar mini reprodutor forçado</string>
     <string name="revanced_enable_forced_miniplayer_summary">Ativa o mini reprodutor forçado ao alternar para uma nova faixa.</string>
     <string name="revanced_enable_smooth_transition_animation_title">Ativar animação de transição suave</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">"Permite animação suave quando o mini reprodutor é maximizado do estado minimizado.
+
+Limitações: A interface das letras em tempo real pode ser quebrada para alguns usuários."</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Ativar deslizar para dispensar o mini reprodutor</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Ativa deslizar para baixo para fechar o mini reprodutor.</string>
-    <string name="revanced_enable_comments_scroll_top_title">Habilitar rolar para o topo dos comentários</string>
-    <string name="revanced_enable_comments_scroll_top_summary">"Clicar no título do painel de comentários (\"Comentários\") rola para a parte superior.
+    <string name="revanced_enable_comments_scroll_top_title">Ativar rolar para o topo nos comentários</string>
+    <string name="revanced_enable_comments_scroll_top_summary">"Clicando no título do painel de comentários ('Comentários') rola para o topo.
 
-Limitações: Não se aplica a respostas a comentários."</string>
+Limitações: Não se aplica a respostas de comentários."</string>
     <string name="revanced_enable_thick_seekbar_title">Ativar barra de busca espessa</string>
     <string name="revanced_enable_thick_seekbar_summary">"Ativar a barra de busca espessa.
 
@@ -279,6 +288,8 @@ Limitações: segmentos de patrocinadores não são exibidos na barra de busca."
     <string name="revanced_hide_comment_timestamp_and_emoji_buttons_summary">Oculta os botões de emoji e marcação de tempo ao escrever comentários.</string>
     <string name="revanced_hide_fullscreen_share_button_title">Ocultar botão Compartilhar em tela cheia</string>
     <string name="revanced_hide_fullscreen_share_button_summary">Oculta o botão Compartilhar no reprodutor de tela cheia.</string>
+    <string name="revanced_hide_lyrics_share_button_title">Ocultar botão de Compartilhar letra da música</string>
+    <string name="revanced_hide_lyrics_share_button_summary">Oculta o botão de Compartilhar letra da música.</string>
     <string name="revanced_hide_song_video_toggle_title">Ocultar alternador de Música / Vídeo</string>
     <string name="revanced_hide_song_video_toggle_summary">Oculta o alternador de Música / Vídeo no reprodutor.</string>
     <string name="revanced_remember_repeat_state_title">Lembrar estado de repetição</string>
@@ -315,7 +326,7 @@ Alguns recursos podem não funcionar corretamente no layout antigo do reprodutor
 
 Informações:
 • Os clientes mais recentes do YouTube Music usam o codec de áudio OPUS por padrão.
-• Isto só é válido para usuários que falsificam com clientes muito antigos."</string>
+• Isto pode ser necessário se o cliente ou reprodução de vídeo é falsificado."</string>
     <string name="revanced_remember_playback_speed_last_selected_title">Lembrar mudança na velocidade de reprodução</string>
     <string name="revanced_remember_playback_speed_last_selected_summary">Lembra a última velocidade de reprodução selecionada.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Exibir uma notificação flutuante</string>
@@ -327,6 +338,8 @@ Informações:
     <string name="revanced_custom_playback_speeds_invalid">Velocidades personalizadas devem ser menores que %sx.</string>
     <string name="revanced_custom_playback_speeds_parse_exception">Velocidades de reprodução personalizadas inválidas.</string>
     <string name="revanced_remember_playback_speed_toast">Alterando a velocidade padrão para %s.</string>
+    <string name="revanced_remember_video_quality_auto_mobile">Alterando a qualidade padrão de dados móveis para Automático.</string>
+    <string name="revanced_remember_video_quality_auto_wifi">Alterando a qualidade padrão do Wi-Fi para Automático.</string>
     <string name="revanced_remember_video_quality_mobile">Alterando a qualidade padrão de dados móveis para %s.</string>
     <string name="revanced_remember_video_quality_none">Falha ao definir qualidade.</string>
     <string name="revanced_remember_video_quality_wifi">Alterando a qualidade padrão do Wi-Fi para %s.</string>
@@ -393,10 +406,12 @@ Clique para ver como emitir uma chave de API."</string>
     <string name="revanced_sb_segments_intro_sum">Um intervalo sem conteúdo real. Pode ser uma pausa, um quadro estático ou uma animação repetida. Não inclui transições contendo informações.</string>
     <string name="revanced_sb_segments_outro">Cartões finais / Créditos</string>
     <string name="revanced_sb_segments_outro_sum">Créditos ou quando os cartões finais do YouTube aparecem. Não para conclusões com informações.</string>
-    <string name="revanced_sb_segments_preview">Pré-visualização / Recapitulação / Hook</string>
+    <string name="revanced_sb_segments_hook">Gancho / Saudações</string>
+    <string name="revanced_sb_segments_hook_sum">Trailers narrados para o próximo vídeo, cumprimentos e despedidas. Não inclui seções que adicionam conteúdo adicional.</string>
+    <string name="revanced_sb_segments_preview">Pré-visualização / Recapitulação</string>
     <string name="revanced_sb_segments_preview_sum">Coleção de clipes que mostram o que está por vir ou o que aconteceu no vídeo ou em outros vídeos de uma série, onde todas as informações são repetidas em outro lugar.</string>
     <string name="revanced_sb_segments_filler">Enrolação / Piadas</string>
-    <string name="revanced_sb_segments_filler_sum">Cenas tangenciais inseridas apenas por enrolação ou humor que não são necessárias para compreender o tópico principal do vídeo. Isto não deve incluir segmentos que fornecem contexto ou detalhes de segundo plano.</string>
+    <string name="revanced_sb_segments_filler_sum">Cenas ou piadas que não são necessárias para entender o conteúdo principal do vídeo. Não inclui seções fornecendo contexto ou detalhes de fundo.</string>
     <string name="revanced_sb_segments_nomusic">Música: Seção sem música</string>
     <string name="revanced_sb_segments_nomusic_sum">Somente para uso em vídeos de música. Seções de vídeos de música sem música, que já não estão cobertas por outra categoria.</string>
     <string name="revanced_sb_skipped_sponsor">Patrocinador pulado.</string>
@@ -406,6 +421,7 @@ Clique para ver como emitir uma chave de API."</string>
     <string name="revanced_sb_skipped_intro_middle">Intervalo pulado.</string>
     <string name="revanced_sb_skipped_intro_end">Intervalo pulado.</string>
     <string name="revanced_sb_skipped_outro">Outro pulado.</string>
+    <string name="revanced_sb_skipped_hook">Gancho pulado.</string>
     <string name="revanced_sb_skipped_preview_beginning">Pré-visualização pulada.</string>
     <string name="revanced_sb_skipped_preview_middle">Pré-visualização pulada.</string>
     <string name="revanced_sb_skipped_preview_end">Recapitulação pulada.</string>
@@ -427,19 +443,19 @@ Clique para ver como emitir uma chave de API."</string>
     <string name="revanced_sb_about_api">sponsor.ajay.app</string>
     <!-- PreferenceScreen: Miscellaneous -->
     <string name="revanced_preference_screen_misc_title">Diversos</string>
-    <string name="revanced_extended_settings_import_export_title">Importar / Exportar configurações</string>
-    <string name="revanced_extended_settings_import_export_summary">Importar / Exportar configurações do RVX Music.</string>
-    <string name="revanced_extended_settings_export_as_file">Exportar configurações para um arquivo</string>
-    <string name="revanced_extended_settings_import_as_file">Importar configurações de um arquivo</string>
-    <string name="revanced_extended_settings_import_export_as_text">Importar / Exportar as configurações como texto</string>
-    <string name="revanced_extended_settings_export_failed">Falha ao exportar configurações.</string>
-    <string name="revanced_extended_settings_export_success">As configurações foram exportadas com sucesso.</string>
-    <string name="revanced_extended_settings_import">Importar</string>
-    <string name="revanced_extended_settings_import_copy">Copiar</string>
-    <string name="revanced_extended_settings_import_failed">A importação falhou: %s.</string>
-    <string name="revanced_extended_settings_import_reset">Configurações redefinidas para o padrão</string>
-    <string name="revanced_extended_settings_import_success">Configurações %d importadas</string>
-    <string name="revanced_extended_settings_reset">Reiniciar</string>
+    <string name="revanced_settings_import_export_title">Importar / Exportar configurações</string>
+    <string name="revanced_settings_import_export_summary">Importar / Exportar configurações do RVX Music.</string>
+    <string name="revanced_settings_export_as_file">Exportar configurações para um arquivo</string>
+    <string name="revanced_settings_import_as_file">Importar configurações de um arquivo</string>
+    <string name="revanced_settings_import_export_as_text">Importar / Exportar as configurações como texto</string>
+    <string name="revanced_settings_export_failed">Falha ao exportar configurações.</string>
+    <string name="revanced_settings_export_success">As configurações foram exportadas com sucesso.</string>
+    <string name="revanced_settings_import">Importar</string>
+    <string name="revanced_settings_import_copy">Copiar</string>
+    <string name="revanced_settings_import_failed">A importação falhou: %s.</string>
+    <string name="revanced_settings_import_reset">Configurações redefinidas para o padrão.</string>
+    <string name="revanced_settings_import_success">Configurações %d importadas.</string>
+    <string name="revanced_settings_reset">Reiniciar</string>
     <string name="revanced_share_copy_settings_success">Configurações copiadas para área de transferência.</string>
     <string name="revanced_bypass_image_region_restrictions_title">Ignorar restrições de imagem por região</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Ignora o domínio que está bloqueado em algumas regiões para que miniaturas para playlists, avatares de canais, etc. possam ser recebidos.</string>
@@ -458,14 +474,27 @@ Limitações: Vídeos infantis não podem ser redirecionados."</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_on_long_click">Tocar e segurar alternador de Música / Vídeo</string>
     <string name="revanced_disable_quic_protocol_title">Desativar protocolo QUIC</string>
     <string name="revanced_disable_quic_protocol_summary">"Desativa o protocolo QUIC da CronetEngine."</string>
-    <string name="revanced_debug_title">Ativar registro de debug</string>
-    <string name="revanced_debug_summary">Exibir o registro de debug.</string>
-    <string name="revanced_debug_protobuffer_title">Log do buffer de protocolo</string>
-    <string name="revanced_debug_protobuffer_summary">Inclui o \"proto buffer\" no registro de debug.</string>
-    <string name="revanced_debug_spannable_title">Registro extendido</string>
-    <string name="revanced_debug_spannable_summary">Inclui o \"spannable\" no registro de debug.</string>
+    <string name="revanced_debug_title">Ativar o registro de depuração</string>
+    <string name="revanced_debug_summary">Captura o registro de depuração.</string>
+    <string name="revanced_debug_protobuffer_title">Registro do buffer do protocolo</string>
+    <string name="revanced_debug_protobuffer_summary">Inclui o buffer do protocolo no registro de depuração.</string>
+    <string name="revanced_debug_spannable_title">Registro expansível</string>
+    <string name="revanced_debug_spannable_summary">Inclui expansíveis no registro de depuração.</string>
     <string name="revanced_sanitize_sharing_links_title">Limpar links compartilhados</string>
     <string name="revanced_sanitize_sharing_links_summary">Limpa links de compartilhamento removendo parâmetros de consulta de rastreamento.</string>
+    <string name="revanced_spoof_streaming_data_title">Dados de transmissão falsos</string>
+    <string name="revanced_spoof_streaming_data_summary">"Falsificar o cliente de reprodução de vídeo para prevenir problemas de reprodução. 
+
+Se você é um usuário de YouTube Premium, essa configuração pode não ser necessária."</string>
+    <string name="revanced_spoof_streaming_data_default_client_title">Cliente padrão</string>
+    <string name="revanced_spoof_streaming_data_default_client_summary">Define um cliente padrão para falsificar.</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobile Web</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Integrada</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simples</string>
+    <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_watch_history_type_title">Tipo de histórico de exibição</string>
     <string name="revanced_watch_history_type_summary">"• Original: segue as configurações do histórico de exibição da conta do Google, mas o histórico de exibição pode não funcionar devido a DNS ou VPN.
 • Substituir domínio: segue as configurações do histórico de exibição da conta do Google.
@@ -492,6 +521,7 @@ Desativar as otimizações de bateria do GmsCore não afetará negativamente o u
 Toque no botão continuar e permita as alterações de otimização."</string>
     <string name="gms_core_dialog_continue_text">Continuar</string>
     <string name="revanced_app_info_title">Informações do aplicativo</string>
-    <string name="revanced_app_info_summary">Clique para checar o nome e versão do aplicativo, como também a versão e data do patch.</string>
+    <string name="revanced_app_info_summary">Clique para verificar o nome do aplicativo, versão do aplicativo, versão do patch e data da atualização.</string>
     <string name="revanced_app_info_dialog_title">Informações do aplicativo</string>
+    <string name="revanced_app_info_dialog_message">&lt;b&gt;Nome do aplicativo&lt;/b&gt;&lt;br&gt;&lt;small&gt;%1$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt; Versão do aplicativo&lt;/b&gt;&lt;br&gt;&lt;small&gt;%2$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;ReVanced Patches&lt;/b&gt;&lt;br&gt;&lt;small&gt;%3$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Data do atualização&lt;/b&gt;&lt;br&gt;&lt;small&gt;%4$s&lt;/small&gt;</string>
 </resources>

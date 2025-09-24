@@ -4,21 +4,12 @@
     <string name="accessibility_settings_edu_opt_in_text">开启视频播放器的访问控制？</string>
     <string name="accessibility_settings_edu_opt_out_text">由于无障碍服务已启用，您的控制被修改</string>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX</string>
-    <string name="revanced_extended_settings_search_title">搜索 %s</string>
-    <string name="revanced_extended_reset_to_default_toast">重置为默认值</string>
     <string name="revanced_preference_category_experimental_flag">实验性功能</string>
-    <string name="revanced_extended_confirm_user_dialog_title">你想继续吗?</string>
-    <string name="revanced_extended_restart_first_run">重启应用以正常加载界面布局</string>
-    <string name="revanced_extended_settings_reset">重置</string>
     <string name="revanced_playback_speed_normal">正常</string>
     <string name="revanced_external_downloader_package_name_video_title">视频下载器应用包名</string>
     <string name="revanced_external_downloader_package_name_video_summary">已安装的外部下载器应用的包名，例如 NewPipe 或 YTDLnis</string>
-    <string name="revanced_external_downloader_dialog_title">外部下载器</string>
-    <string name="revanced_external_downloader_not_installed_dialog_title">警告</string>
-    <string name="revanced_external_downloader_not_installed_dialog_message">"%1$s 未安装
-请从网站下载 %2$s"</string>
     <string name="revanced_external_downloader_not_installed_warning">%s 未安装，请先安装它。</string>
+    <string name="revanced_external_downloader_dialog_title">外部下载器</string>
     <string name="revanced_queue_manager_add_to_queue">添加到队列</string>
     <string name="revanced_queue_manager_add_to_queue_and_open_queue">添加到队列并打开队列</string>
     <string name="revanced_queue_manager_add_to_queue_and_play_video">添加到队列并播放视频</string>
@@ -376,8 +367,6 @@
     <string name="revanced_third_party_youtube_music_package_name_title">RVX Music 包名</string>
     <string name="revanced_third_party_youtube_music_package_name_summary">已安装的 RVX Music 包名</string>
     <string name="revanced_third_party_youtube_music_dialog_title">RVX Music</string>
-    <string name="revanced_third_party_youtube_music_not_installed_dialog_title">警告</string>
-    <string name="revanced_third_party_youtube_music_not_installed_warning">%s 未安装，请先安装</string>
     <string name="revanced_override_youtube_music_button_about_prerequisite_title">前提条件</string>
     <string name="revanced_override_youtube_music_button_about_prerequisite_summary">需要 YouTube Music 来覆盖按钮操作，点击此处下载 YouTube Music</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Navigation bar -->
@@ -578,8 +567,8 @@
     <string name="revanced_hide_medical_panel_summary_on">医疗面板已隐藏</string>
     <string name="revanced_hide_medical_panel_summary_off">医疗面板已显示</string>
     <string name="revanced_hide_seek_message_title">隐藏进度条信息</string>
-    <string name="revanced_hide_seek_message_summary_on">进度条信息已隐藏</string>
-    <string name="revanced_hide_seek_message_summary_off">进度条信息已显示</string>
+    <string name="revanced_hide_seek_message_summary_on">"进度条信息已隐藏"</string>
+    <string name="revanced_hide_seek_message_summary_off">"进度条信息已显示"</string>
     <string name="revanced_hide_seek_undo_message_title">隐藏进度条跳转撤销消息</string>
     <string name="revanced_hide_seek_undo_message_summary_on">进度条撤销消息已隐藏</string>
     <string name="revanced_hide_seek_undo_message_summary_off">进度条跳转撤销讯息已显示</string>
@@ -1356,9 +1345,6 @@
     <string name="revanced_sb_guidelines_popup_open">查看</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: General -->
     <string name="revanced_sb_general">常规设置</string>
-    <string name="revanced_sb_toast_on_connection_error_title">如果 API 不可用，则显示提示</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_on">如果 SponsorBlock 不可用，则显示提示</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_off">如果 SponsorBlock 不可用，则不显示提示</string>
     <string name="revanced_sb_general_skipcount">启用跳过计数跟踪</string>
     <string name="revanced_sb_general_skipcount_sum_on">允许 SponsorBlock 排行榜了解节省了多少时间每次跳过片段时都会向排行榜发送消息</string>
     <string name="revanced_sb_general_skipcount_sum_off">未启用跳过计数跟踪</string>
@@ -1474,21 +1460,8 @@
     <string name="revanced_preference_screen_import_export_summary">导入或导出设置</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as file -->
     <string name="revanced_preference_category_import_export_as_file">导入 / 导出为文件</string>
-    <string name="revanced_extended_settings_export_title">导出配置</string>
-    <string name="revanced_extended_settings_export_summary">导出配置到文件</string>
-    <string name="revanced_extended_settings_import_title">导入配置</string>
-    <string name="revanced_extended_settings_import_summary">从文件导入配置</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as text -->
     <string name="revanced_preference_category_import_export_as_text">导入 / 导出为文本</string>
-    <string name="revanced_extended_settings_import_export_as_text_title">导入 / 导出配置文本</string>
-    <string name="revanced_extended_settings_import_export_as_text_summary">导入 / 导出配置文本</string>
-    <string name="revanced_extended_settings_export_failed">导出配置失败</string>
-    <string name="revanced_extended_settings_export_success">导出配置成功</string>
-    <string name="revanced_extended_settings_import">导入</string>
-    <string name="revanced_extended_settings_import_copy">复制</string>
-    <string name="revanced_extended_settings_import_failed">导入配置失败</string>
-    <string name="revanced_extended_settings_import_reset">配置已被重置为默认值</string>
-    <string name="revanced_extended_settings_import_success">导入配置成功</string>
     <string name="revanced_share_copy_settings_success">设置已复制到剪贴板</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <string name="revanced_preference_screen_spoof_streaming_data_title">伪装流媒体数据</string>

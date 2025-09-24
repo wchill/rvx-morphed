@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">Impostazioni RVX</string>
-    <string name="revanced_extended_reset_to_default_toast">Resetta ai valori iniziali.</string>
     <!-- Shared Category -->
-    <string name="revanced_extended_restart_first_run">Riavvia per caricare il layout normalmente</string>
-    <string name="revanced_extended_restart_message">Aggiorna e riavvia</string>
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">Account</string>
     <string name="revanced_hide_account_menu_title">Nascondi il menu dell\'account</string>
@@ -414,19 +410,6 @@ Fai clic per vedere come emettere una chiave API."</string>
     <string name="revanced_sb_about_api">sponsor.ajay.app</string>
     <!-- PreferenceScreen: Miscellaneous -->
     <string name="revanced_preference_screen_misc_title">Varie</string>
-    <string name="revanced_extended_settings_import_export_title">Importa/Esporta</string>
-    <string name="revanced_extended_settings_import_export_summary">Importa o esporta le impostazioni come testo.</string>
-    <string name="revanced_extended_settings_export_as_file">Esporta le impostazioni in un file</string>
-    <string name="revanced_extended_settings_import_as_file">Importa le impostazioni da un file</string>
-    <string name="revanced_extended_settings_import_export_as_text">Importa / Esporta le impostazioni come testo</string>
-    <string name="revanced_extended_settings_export_failed">Esportazione impostazioni fallita.</string>
-    <string name="revanced_extended_settings_export_success">Impostazioni esportate con successo.</string>
-    <string name="revanced_extended_settings_import">Importa</string>
-    <string name="revanced_extended_settings_import_copy">Copia</string>
-    <string name="revanced_extended_settings_import_failed">Importazione fallita: %s.</string>
-    <string name="revanced_extended_settings_import_reset">Ripristino impostazioni ai valori predefiniti</string>
-    <string name="revanced_extended_settings_import_success">Impostazioni %d importate</string>
-    <string name="revanced_extended_settings_reset">Reimposta</string>
     <string name="revanced_share_copy_settings_success">Impostazioni copiate negli appunti.</string>
     <string name="revanced_bypass_image_region_restrictions_title">Aggira le restrizioni regionali delle immagini</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Ignora il dominio bloccato in alcune regioni in modo che le miniature della playlist, gli avatar del canale, ecc. possano essere ricevuti.</string>

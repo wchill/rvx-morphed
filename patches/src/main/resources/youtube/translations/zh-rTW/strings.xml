@@ -1,38 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Translations for YouTube -->
-    <string name="accessibility_settings_edu_opt_in_text">要啟用影片播放器的無障礙控制功能嗎？</string>
-    <string name="accessibility_settings_edu_opt_out_text">由於已啟用無障礙服務，因此你的控制選項已被修改。</string>
+    <string name="accessibility_settings_edu_opt_in_text">啟用影片播放器的無障礙控制功能嗎？</string>
+    <string name="accessibility_settings_edu_opt_out_text">由於已啟用無障礙服務，你的控制選項已被修改。</string>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX</string>
-    <string name="revanced_extended_settings_search_title">搜尋 %s</string>
-    <string name="revanced_extended_reset_to_default_toast">重設為預設值。</string>
     <string name="revanced_preference_category_experimental_flag">實驗性功能</string>
-    <string name="revanced_extended_confirm_user_dialog_title">你想繼續嗎？</string>
-    <string name="revanced_extended_restart_first_run">重新啟動以套用介面</string>
-    <string name="revanced_extended_restart_title">需要重新啟動</string>
-    <string name="revanced_extended_restart_dialog_message">重新啟動應用程式以此變更生效。</string>
-    <string name="revanced_extended_restart">重新啟動</string>
-    <string name="revanced_extended_settings_color_invalid">無效顏色。</string>
-    <string name="revanced_extended_settings_color_picker">取色工具</string>
-    <string name="revanced_extended_settings_reset">重置</string>
-    <string name="revanced_extended_settings_reset_color">重置顏色</string>
-    <string name="revanced_extended_settings_search_history_title">顯示設定搜尋記錄</string>
-    <string name="revanced_extended_settings_search_history_summary_on">顯示設定搜尋記錄。</string>
-    <string name="revanced_extended_settings_search_history_summary_off">不顯示設定搜尋記錄。</string>
-    <string name="revanced_extended_settings_search_hint">搜尋設定</string>
-    <string name="revanced_extended_settings_search_no_results_title">未找到“%s”的結果。</string>
-    <string name="revanced_extended_settings_search_no_results_summary">嘗試其他關鍵字。</string>
-    <string name="revanced_extended_settings_search_remove_message">要從搜尋記錄中移除嗎？</string>
     <string name="revanced_dismiss_player_not_available_toast">影片ID無法使用。請手動重新開啟影片。</string>
     <string name="revanced_playback_speed_normal">正常</string>
     <string name="revanced_external_downloader_package_name_video_title">影片下載套件名稱</string>
     <string name="revanced_external_downloader_package_name_video_summary">您安裝的外部下載器應用程式的套件名稱，例如 NewPipe 或 YTDLnis。</string>
-    <string name="revanced_external_downloader_dialog_title">外部下載器</string>
-    <string name="revanced_external_downloader_not_installed_dialog_title">警告</string>
-    <string name="revanced_external_downloader_not_installed_dialog_message">"%1$s 未安裝。
-請從網站下載 %2$s。"</string>
     <string name="revanced_external_downloader_not_installed_warning">未安裝 %s。請安裝該應用程式。</string>
+    <string name="revanced_external_downloader_dialog_title">外部下載器</string>
     <string name="revanced_queue_manager_add_to_queue">加入佇列清單</string>
     <string name="revanced_queue_manager_add_to_queue_and_open_queue">加到佇列並開啟佇列</string>
     <string name="revanced_queue_manager_add_to_queue_and_play_video">加到佇列並播放影片</string>
@@ -677,7 +655,7 @@
 5. 點選工具列上的三個點來開啟選單。
 6. 點選「取得 Cookie」。
 7. 點選「複製」複製 Cookie。
-8. 關閉 WebView，並將複製的 Cookie 貼到「字幕 Cookie」設定中。
+8. 關閉 WebView 並將複製的 Cookie 貼到「字幕 Cookie」設定中。
 
 無需驗證
 ════════════════
@@ -686,7 +664,7 @@
 3. 點選工具列上的三個點開啟選單。
 4. 點選「取得 Cookie」。
 5. 點選「複製」以複製 Cookie。
-6. 關閉 Web 檢視並將複製的 Cookie 貼到「字幕 Cookie」設定中。
+6. 關閉 WebView 並將複製的 Cookie 貼到「字幕 Cookie」設定中。
 
 免責聲明：未登入時發出的 Cookie 可能無效，或可能需要一些時間才能提供給轉錄 API。"</string>
     <string name="revanced_transcript_cookies_dialog_auth_text">驗證</string>
@@ -742,8 +720,6 @@
     <string name="revanced_third_party_youtube_music_package_name_title">RVX 音樂包名稱</string>
     <string name="revanced_third_party_youtube_music_package_name_summary">已安裝的 RVX 音樂 套件名稱。</string>
     <string name="revanced_third_party_youtube_music_dialog_title">RVX 音樂</string>
-    <string name="revanced_third_party_youtube_music_not_installed_dialog_title">警告</string>
-    <string name="revanced_third_party_youtube_music_not_installed_warning">%s 未安裝。 請安裝它。</string>
     <string name="revanced_override_youtube_music_button_about_prerequisite_title">先決條件</string>
     <string name="revanced_override_youtube_music_button_about_prerequisite_summary">YouTube音樂 需要覆蓋按鈕操作。 按此下載 YouTube音樂。</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Navigation bar -->
@@ -924,10 +900,10 @@
     <string name="revanced_replace_toolbar_create_button_title">替換創作按鈕</string>
     <string name="revanced_replace_toolbar_create_button_summary">將創作按鈕替換成設定按鈕</string>
     <string name="revanced_replace_toolbar_create_button_type_title">分配給按鈕的操作類型</string>
-    <string name="revanced_replace_toolbar_create_button_type_summary_on">"輕觸開啟 RVX 設定
-按住開啟 YouTube 設定"</string>
-    <string name="revanced_replace_toolbar_create_button_type_summary_off">"輕觸開啟 YouTube 設定
-按住開啟 RVX 設定"</string>
+    <string name="revanced_replace_toolbar_create_button_type_summary_on">"輕觸開啟 RVX 設定。
+按住開啟 YouTube 設定。"</string>
+    <string name="revanced_replace_toolbar_create_button_type_summary_off">"輕觸開啟 YouTube 設定。
+按住開啟 RVX 設定。"</string>
     <!-- PreferenceScreen: Player -->
     <string name="revanced_preference_screen_player_title">播放器</string>
     <string name="revanced_custom_player_overlay_opacity_title">自訂播放器的不透明度</string>
@@ -940,6 +916,9 @@
 可以在 YouTube 設定中變更自動播放：
 設定 → 自動播放 → 自動播放下一個影片"</string>
     <string name="revanced_disable_auto_switch_mix_playlists_user_dialog_message">啟用此功能將禁止在自動播放開啟時播放音樂時自動切換到 YouTube Mix。</string>
+    <string name="revanced_disable_chapter_skip_double_tap_title">停用雙擊跳轉章節</string>
+    <string name="revanced_disable_chapter_skip_double_tap_summary_on">雙擊將永遠不會觸發跳轉至下一章或上一章。</string>
+    <string name="revanced_disable_chapter_skip_double_tap_summary_off">雙擊有時可能會觸發跳轉至下一章或上一章。</string>
     <string name="revanced_disable_auto_player_popup_panels_title">停用播放器彈出面板</string>
     <string name="revanced_disable_auto_player_popup_panels_summary_on">自動播放器彈出面板已啟用</string>
     <string name="revanced_disable_auto_player_popup_panels_summary_off">自動播放器彈出面板已停用</string>
@@ -986,8 +965,8 @@
     <string name="revanced_hide_medical_panel_summary_on">醫療面板已隱藏</string>
     <string name="revanced_hide_medical_panel_summary_off">醫療面板已顯示</string>
     <string name="revanced_hide_seek_message_title">隱藏進度條訊息</string>
-    <string name="revanced_hide_seek_message_summary_on">進度條訊息已隱藏</string>
-    <string name="revanced_hide_seek_message_summary_off">進度條訊息已顯示</string>
+    <string name="revanced_hide_seek_message_summary_on">"進度條訊息已隱藏"</string>
+    <string name="revanced_hide_seek_message_summary_off">"進度條訊息已顯示"</string>
     <string name="revanced_hide_seek_undo_message_title">隱藏進度條跳轉撤銷訊息</string>
     <string name="revanced_hide_seek_undo_message_summary_on">進度條撤銷訊息已隱藏</string>
     <string name="revanced_hide_seek_undo_message_summary_off">進度條跳轉撤銷訊息已顯示</string>
@@ -1139,8 +1118,8 @@
     <string name="revanced_hide_preview_comment_on">預覽評論已隱藏</string>
     <string name="revanced_hide_preview_comment_off">預覽評論已顯示</string>
     <string name="revanced_hide_preview_comment_type_title">預覽評論類型</string>
-    <string name="revanced_hide_preview_comment_type_on">這不會改變評論區的大小，因此可以在評論區打開直播聊天重播。</string>
-    <string name="revanced_hide_preview_comment_type_off">這會改變評論區的大小，因此無法在評論區打開直播聊天重播。</string>
+    <string name="revanced_hide_preview_comment_type_on">這不會改變評論區的大小，因此可以在評論區開啟直播聊天重播。</string>
+    <string name="revanced_hide_preview_comment_type_off">這會改變評論區的大小，因此無法在評論區開啟直播聊天重播。</string>
     <string name="revanced_hide_comments_thanks_button_title">隱藏感謝按鈕</string>
     <string name="revanced_hide_comments_thanks_button_summary_on">感謝按鈕已隱藏。</string>
     <string name="revanced_hide_comments_thanks_button_summary_off">感謝按鈕已顯示。</string>
@@ -1269,12 +1248,12 @@
     <string name="revanced_hide_quick_actions_more_button_title">隱藏更多按鈕</string>
     <string name="revanced_hide_quick_actions_more_button_summary_on">更多按鈕已隱藏</string>
     <string name="revanced_hide_quick_actions_more_button_summary_off">更多按鈕已顯示</string>
-    <string name="revanced_hide_quick_actions_open_mix_playlist_button_title">隱藏打開混合播放列表按鈕</string>
-    <string name="revanced_hide_quick_actions_open_mix_playlist_button_summary_on">打開混合播放列表按鈕已隱藏</string>
-    <string name="revanced_hide_quick_actions_open_mix_playlist_button_summary_off">打開混合播放列表按鈕已顯示</string>
-    <string name="revanced_hide_quick_actions_open_playlist_button_title">隱藏打開播放列表按鈕</string>
-    <string name="revanced_hide_quick_actions_open_playlist_button_summary_on">打開播放列表按鈕已隱藏</string>
-    <string name="revanced_hide_quick_actions_open_playlist_button_summary_off">打開播放列表按鈕已顯示</string>
+    <string name="revanced_hide_quick_actions_open_mix_playlist_button_title">隱藏開啟混合播放列表按鈕</string>
+    <string name="revanced_hide_quick_actions_open_mix_playlist_button_summary_on">開啟混合播放列表按鈕已隱藏。</string>
+    <string name="revanced_hide_quick_actions_open_mix_playlist_button_summary_off">開啟混合播放列表按鈕已顯示。</string>
+    <string name="revanced_hide_quick_actions_open_playlist_button_title">隱藏開啟播放清單按鈕</string>
+    <string name="revanced_hide_quick_actions_open_playlist_button_summary_on">開啟播放清單按鈕被隱藏。</string>
+    <string name="revanced_hide_quick_actions_open_playlist_button_summary_off">開啟播放列表按鈕已顯示。</string>
     <string name="revanced_hide_quick_actions_save_to_playlist_button_title">隱藏保存到播放列表按鈕</string>
     <string name="revanced_hide_quick_actions_save_to_playlist_button_summary_on">保存到播放列表按鈕已隱藏</string>
     <string name="revanced_hide_quick_actions_save_to_playlist_button_summary_off">保存到播放列表按鈕已顯示</string>
@@ -1406,7 +1385,7 @@
     <string name="revanced_overlay_button_mute_volume_title">顯示靜音按鈕</string>
     <string name="revanced_overlay_button_mute_volume_summary">點選可將目前影片靜音。 再次點擊即可取消靜音。</string>
     <string name="revanced_overlay_button_external_downloader_title">外部下載按鈕</string>
-    <string name="revanced_overlay_button_external_downloader_summary">點擊以打開外部下載器</string>
+    <string name="revanced_overlay_button_external_downloader_summary">點擊以開啟外部下載器。</string>
     <string name="revanced_overlay_button_external_downloader_queue_manager_title">佇列管理器</string>
     <string name="revanced_overlay_button_external_downloader_queue_manager_summary">不要啟動外部下載程序，而是開啟佇列管理器。</string>
     <string name="revanced_overlay_button_speed_dialog_title">播放速度按鈕</string>
@@ -1470,7 +1449,7 @@
     <string name="revanced_append_time_stamp_information_video_quality_menu_type_summary_on">使用自訂對話框。</string>
     <string name="revanced_append_time_stamp_information_video_quality_menu_type_summary_off">使用舊版彈出式選單。</string>
     <string name="revanced_replace_time_stamp_action_title">替換時間戳操作</string>
-    <string name="revanced_replace_time_stamp_action_summary_on">點擊打開播放速度或影片畫質彈出選單</string>
+    <string name="revanced_replace_time_stamp_action_summary_on">點擊開啟播放速度或影片畫質彈出選單。</string>
     <string name="revanced_replace_time_stamp_action_summary_off">點擊顯示剩餘時間</string>
     <string name="revanced_disable_seekbar_chapters_title">停用搜尋列章節</string>
     <string name="revanced_disable_seekbar_chapters_summary_on">搜尋欄中的章節已停用。</string>
@@ -2106,9 +2085,6 @@
     <string name="revanced_sb_guidelines_popup_open">查看</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: General -->
     <string name="revanced_sb_general">一般設定</string>
-    <string name="revanced_sb_toast_on_connection_error_title">如果 API 無法使用，則顯示提示訊息</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_on">如果 SponsorBlock 無法使用，顯示提示訊息</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_off">如果 SponsorBlock 無法使用，不顯示提示訊息</string>
     <string name="revanced_sb_general_skipcount">啟用跳過計數追蹤</string>
     <string name="revanced_sb_general_skipcount_sum_on">允許 SponsorBlock 排行榜了解節省了多少時間每次跳過片段時都會向排行榜發送訊息</string>
     <string name="revanced_sb_general_skipcount_sum_off">不啟用跳過計數追蹤</string>
@@ -2212,7 +2188,7 @@
     <string name="revanced_sanitize_sharing_links_summary">共享連結時，刪除連結中的跟蹤查詢參數。</string>
     <string name="revanced_default_app_settings_title">開啟預設應用程式設定</string>
     <string name="revanced_default_app_settings_summary">若要以外部瀏覽器開啟 RVX，請在設定開啟「開啟支援連結」並啟用支援的網址。</string>
-    <string name="gms_core_settings_title">打開 GmsCore</string>
+    <string name="gms_core_settings_title">開啟 GmsCore 設定</string>
     <string name="gms_core_settings_summary">啟用雲端訊息傳遞以接收通知</string>
     <string name="gms_core_toast_not_installed_message">GMSCore未安裝 請安裝</string>
     <string name="gms_core_dialog_title">需要採取行動</string>
@@ -2221,7 +2197,7 @@
 遵循“不要殺死我的應用程式！”指南，並將說明應用於您的 GmsCore 安裝。
 
 這是應用程序運行所必需的"</string>
-    <string name="gms_core_dialog_open_website_text">打開網站</string>
+    <string name="gms_core_dialog_open_website_text">開啟網站</string>
     <string name="gms_core_dialog_not_whitelisted_using_battery_optimizations_message">"必須停用 GmsCore 電池優化才能防止問題
 
 點擊繼續按鈕並停用電池優化"</string>
@@ -2262,21 +2238,8 @@
     <string name="revanced_preference_screen_import_export_summary">導入或導出設定</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as file -->
     <string name="revanced_preference_category_import_export_as_file">導入 / 導出為文件</string>
-    <string name="revanced_extended_settings_export_title">導出配置</string>
-    <string name="revanced_extended_settings_export_summary">導出配置到文件</string>
-    <string name="revanced_extended_settings_import_title">匯入設定</string>
-    <string name="revanced_extended_settings_import_summary">從已儲存的檔案匯入設定。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as text -->
     <string name="revanced_preference_category_import_export_as_text">導入 / 導出為檔案</string>
-    <string name="revanced_extended_settings_import_export_as_text_title">導入 / 導出設定檔案</string>
-    <string name="revanced_extended_settings_import_export_as_text_summary">導入 / 導出設定檔案。</string>
-    <string name="revanced_extended_settings_export_failed">導出配置失敗</string>
-    <string name="revanced_extended_settings_export_success">導出配置成功</string>
-    <string name="revanced_extended_settings_import">匯入</string>
-    <string name="revanced_extended_settings_import_copy">複製</string>
-    <string name="revanced_extended_settings_import_failed">匯入設定失敗。</string>
-    <string name="revanced_extended_settings_import_reset">設定重設為預設值</string>
-    <string name="revanced_extended_settings_import_success">匯入設定成功。</string>
     <string name="revanced_share_copy_settings_success">設定已複製到剪貼簿。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <string name="revanced_preference_screen_spoof_streaming_data_title">偽裝串流數據</string>
@@ -2290,6 +2253,8 @@
 <small>(需要登入)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
 <small>(無需驗證)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
+<small>(已過期, 無需驗證)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"行動網路
 <small>(開發中, 無需驗證)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">電視
@@ -2309,6 +2274,8 @@
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• 缺少音軌選單。
 • 無法穩定音量。
 • 登出登入或處於隱身模式時，兒童影片可能無法播放。"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 不支援。
+• 影片可能會在 1:00 處停止，或在某些地區可能無法觀看。 "</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• 缺少音軌選單。
 • 無法停用強制自動音軌。
 • 如果反混淆失敗，播放可能會失敗。
@@ -2406,13 +2373,23 @@ YouTube 伺服器上的 n-sig 模式變化頻繁，如果正規表示式無法�
 • 動態中自動播放
 • 短片
 • Shorts 短片"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_js_title">使用最新的 JavaScript</string>
-    <string name="revanced_spoof_streaming_data_use_latest_js_summary_on">"用於反混淆的 JavaScript 會保持最新狀態。
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">繞過虛假緩衝</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"繞過虛假緩衝已啟用。
 
-• 它高度依賴伺服器，反混淆的成功或失敗取決於伺服器上目前使用的 JavaScript。"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"用於反混淆的 JavaScript 未保持最新。
+限制：
+• 由於伺服器端變更，此功能可能隨時停止運作。"</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_off">繞過虛假緩衝功能已停用。</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_title">關於虛假緩衝</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_summary">點擊查看更多資訊。</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_title">"YouTube 的新反廣告攔截措施"</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_message">"JavaScript 用戶端影片啟動過晚的原因之一是 YouTube 新的反廣告攔截措施。
 
-• 雖然使用了可成功反混淆的 JavaScript，但它仍然在一定程度上依賴伺服器。"</string>
+當影片廣告被攔截時，GVS (Google 影片伺服器)  會產生與廣告時長成比例的虛假緩衝 (A/B 測試)。
+
+uBlock Origin 已找到解決此問題的方案，可透過 '繞過虛假緩衝' 設定啟用。
+
+點擊 '開啟' 閱讀文章。"</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_open_text">開啟</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">觀看歷史記錄</string>
     <string name="revanced_preference_screen_watch_history_summary">變更與觀看歷史記錄相關的設定。</string>

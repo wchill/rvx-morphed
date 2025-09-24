@@ -4,35 +4,50 @@
     <string name="accessibility_settings_edu_opt_in_text">Bật các điều khiển trợ năng cho trình phát video?</string>
     <string name="accessibility_settings_edu_opt_out_text">Các điều khiển của bạn đã được sửa đổi vì dịch vụ trợ năng đang bật.</string>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX</string>
-    <string name="revanced_extended_settings_search_title">Tìm kiếm trong %s</string>
-    <string name="revanced_extended_reset_to_default_toast">Đã đặt lại giá trị về mặc định.</string>
+    <string name="revanced_settings_title">RVX</string>
+    <string name="revanced_settings_search_title">Tìm kiếm trong %s</string>
+    <string name="revanced_reset_to_default_toast">Đã đặt lại giá trị về mặc định.</string>
     <string name="revanced_preference_category_experimental_flag">Tính năng thử nghiệm</string>
-    <string name="revanced_extended_confirm_user_dialog_title">Bạn có chắc chắn muốn tiếp tục không?</string>
-    <string name="revanced_extended_restart_first_run">Vui lòng khởi động lại ứng dụng trong lần đầu khởi chạy để hiển thị đúng giao diện</string>
-    <string name="revanced_extended_restart_title">Yêu cầu khởi động lại</string>
-    <string name="revanced_extended_restart_dialog_message">Khởi động lại ứng dụng để thay đổi này có hiệu lực.</string>
-    <string name="revanced_extended_restart">Khởi động lại</string>
-    <string name="revanced_extended_settings_color_invalid">Màu không hợp lệ.</string>
-    <string name="revanced_extended_settings_color_picker">Bộ chọn màu</string>
-    <string name="revanced_extended_settings_reset">Đặt lại</string>
-    <string name="revanced_extended_settings_reset_color">Đặt lại màu</string>
-    <string name="revanced_extended_settings_search_history_title">Lịch sử tìm kiếm cài đặt</string>
-    <string name="revanced_extended_settings_search_history_summary_on">Lịch sử tìm kiếm cài đặt đã được hiển thị.</string>
-    <string name="revanced_extended_settings_search_history_summary_off">Lịch sử tìm kiếm cài đặt không được hiển thị.</string>
-    <string name="revanced_extended_settings_search_hint">Tìm kiếm cài đặt</string>
-    <string name="revanced_extended_settings_search_no_results_title">Không tìm thấy kết quả nào cho \'%s\'.</string>
-    <string name="revanced_extended_settings_search_no_results_summary">Hãy thử từ khóa khác.</string>
-    <string name="revanced_extended_settings_search_remove_message">Xoá khỏi lịch sử tìm kiếm?</string>
+    <string name="revanced_confirm_user_dialog_title">Bạn có chắc chắn muốn tiếp tục không?</string>
+    <string name="revanced_restart_first_run">Vui lòng khởi động lại ứng dụng trong lần đầu khởi chạy để hiển thị đúng giao diện</string>
+    <string name="revanced_restart_title">Yêu cầu khởi động lại</string>
+    <string name="revanced_restart_dialog_message">Khởi động lại ứng dụng để thay đổi này có hiệu lực.</string>
+    <string name="revanced_restart">Khởi động lại</string>
+    <string name="revanced_settings_color_invalid">Màu không hợp lệ.</string>
+    <string name="revanced_settings_color_picker">Bộ chọn màu</string>
+    <string name="revanced_settings_reset">Đặt lại</string>
+    <string name="revanced_settings_reset_color">Đặt lại màu</string>
+    <string name="revanced_settings_search_hint">Tìm kiếm cài đặt</string>
+    <string name="revanced_settings_search_no_results_title">Không tìm thấy kết quả nào cho \'%s\'.</string>
+    <string name="revanced_settings_search_no_results_summary">Hãy thử từ khóa khác.</string>
+    <string name="revanced_settings_search_recent_searches">Tìm kiếm gần đây</string>
+    <string name="revanced_settings_search_remove_message">Xoá khỏi lịch sử tìm kiếm?</string>
+    <string name="revanced_settings_search_clear_history">Xóa lịch sử tìm kiếm</string>
+    <string name="revanced_settings_search_clear_history_message">Bạn chắc chắn muốn xóa toàn bộ lịch sử tìm kiếm không?</string>
+    <string name="revanced_settings_search_tips_title">Mẹo tìm kiếm</string>
+    <string name="revanced_settings_search_tips_summary">"• Nhấn vào đường dẫn để đi tới đó.
+• Nhấn và giữ một cài đặt để đi tới đó.
+• Nhấn Enter để lưu từ khoá vào lịch sử tìm kiếm.
+• Tìm kiếm không phân biệt viết hoa và dấu câu.
+• Các cài đặt lớn sẽ xuất hiện trên các cài đặt nhỏ bị vô hiệu hoá."</string>
+    <string name="revanced_settings_search_empty_history_title">Lịch sử tìm kiếm trống</string>
+    <string name="revanced_settings_search_empty_history_summary">Để lưu lịch sử tìm kiếm, hãy nhập từ khoá và ấn Enter.</string>
+    <string name="revanced_settings_search_history_title">Lịch sử tìm kiếm cài đặt</string>
+    <string name="revanced_settings_search_history_summary_on">Lịch sử tìm kiếm cài đặt đã được hiển thị.</string>
+    <string name="revanced_settings_search_history_summary_off">Lịch sử tìm kiếm cài đặt không được hiển thị.</string>
     <string name="revanced_dismiss_player_not_available_toast">ID của video không khả dụng. Vui lòng tự mở lại video.</string>
     <string name="revanced_playback_speed_normal">Bình thường</string>
     <string name="revanced_external_downloader_package_name_video_title">Tên gói trình tải xuống video</string>
-    <string name="revanced_external_downloader_package_name_video_summary">Chọn hoặc nhập tên gói ứng dụng trình tải xuống đã được cài đặt trên thiết bị của bạn, chẳng hạn như NewPipe hoặc YTDLnis.</string>
-    <string name="revanced_external_downloader_dialog_title">Trình tải xuống bên ngoài</string>
-    <string name="revanced_external_downloader_not_installed_dialog_title">Cảnh báo</string>
-    <string name="revanced_external_downloader_not_installed_dialog_message">"Có vẻ như %1$s chưa được cài đặt.
- Vui lòng tải xuống %2$s từ trang web."</string>
+    <string name="revanced_external_downloader_package_name_video_summary">Chọn hoặc nhập tên gói ứng dụng trình tải xuống đã được cài đặt trên thiết bị của bạn.</string>
+    <string name="revanced_external_downloader_other_item">Khác</string>
+    <string name="revanced_external_downloader_other_item_hint">Nhập tên gói</string>
+    <string name="revanced_external_downloader_not_found_title">Chưa cài đặt ứng dụng.</string>
     <string name="revanced_external_downloader_not_installed_warning">Hiện %s chưa được cài đặt. Hãy cài đặt và thử lại.</string>
+    <string name="revanced_external_downloader_package_not_found_warning">"Không tìm thấy ứng dụng đã cài với tên gói: %s.
+
+Vui lòng kiểm tra lại tên gói và đảm bảo ứng dụng đã được cài trên thiết bị."</string>
+    <string name="revanced_external_downloader_empty_warning">Tên gói không thể bỏ trống</string>
+    <string name="revanced_external_downloader_dialog_title">Trình tải xuống bên ngoài</string>
     <string name="revanced_queue_manager_add_to_queue">Thêm vào hàng chờ</string>
     <string name="revanced_queue_manager_add_to_queue_and_open_queue">Thêm vào hàng chờ và xem hàng chờ</string>
     <string name="revanced_queue_manager_add_to_queue_and_play_video">Thêm vào hàng chờ và phát video</string>
@@ -462,6 +477,11 @@ Cửa hàng"</string>
 Từ khóa có thể là tên kênh hoặc bất kỳ văn bản nào hiển thị trong tiêu đề video.
 
 Bộ lọc có phân biệt chữ hoa chữ thường, vì vậy bạn cần nhập chính xác định dạng để lọc (Ví dụ: iPhone, TikTok, LeBlanc)."</string>
+    <string name="revanced_hide_keyword_content_use_and_operator_title">Toán tử \'AND\' (\'&amp;\')</string>
+    <string name="revanced_hide_keyword_content_use_and_operator_summary_on">Toán tử \'AND\' (\'&amp;\') đã bật.
+&lt;br&gt;&lt;br&gt;Khi dùng từ khoá &lt;strong&gt;\"Xanh\" &amp; \"Đỏ\"&lt;/strong&gt;, thì kết quả chứa cả &lt;strong&gt;Xanh&lt;/strong&gt; và &lt;strong&gt;Đỏ&lt;/strong&gt; sẽ bị lọc.</string>
+    <string name="revanced_hide_keyword_content_use_and_operator_summary_off">Toán tử \'AND\' (\'&amp;\') đã tắt.
+&lt;br&gt;&lt;br&gt;Khi dùng từ khoá &lt;strong&gt;\"Xanh\" &amp; \"Đỏ\"&lt;/strong&gt;, thì kết quả chứa &lt;strong&gt;\"Xanh\" &amp; \"Đỏ\"&lt;/strong&gt; sẽ bị lọc.</string>
     <string name="revanced_hide_keyword_content_about_title">Giới thiệu về bộ lọc từ khoá</string>
     <string name="revanced_hide_keyword_content_about_summary">"Nội dung khớp với từ khoá bạn đã đặt sẽ bị ẩn trên thẻ Trang chủ/Kênh đăng ký và kết quả tìm kiếm.
 
@@ -631,6 +651,9 @@ Nếu muốn tắt tính năng này sau đó, bạn nên xóa dữ liệu ứng 
     <string name="revanced_spoof_app_version_target_entry_19_26_42">19.26.42 - Tắt biểu tượng Cairo trong thanh điều hướng và thanh công cụ</string>
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Khôi phục tiêu đề danh sách phát kiểu cũ</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Khôi phục bảng trình đơn tốc độ phát cũ</string>
+    <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - Khôi phục tính năng bản chép lời</string>
+    <string name="revanced_spoof_app_version_other_item">Khác</string>
+    <string name="revanced_spoof_app_version_other_item_hint">Nhập phiên bản ứng dụng</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Phiên bản ứng dụng đã chọn không hợp lệ: %s.</string>
     <string name="revanced_fix_spoof_app_version_side_effect_title">Khắc phục hạn chế khi giả mạo phiên bản</string>
     <string name="revanced_fix_spoof_app_version_side_effect_summary_on">"Cài đặt \"Tự động phát\" đã thay thế cho cài đặt \"Phát\"."</string>
@@ -729,7 +752,7 @@ Một số thành phần có thể không bị ẩn."</string>
     <string name="revanced_override_video_download_button_queue_manager_summary_on">Khi tương tác với nút tải xuống video sẽ mở hộp thoại quản lý hàng chờ của bạn.</string>
     <string name="revanced_override_video_download_button_queue_manager_summary_off">Khi tương tác với nút tải xuống video sẽ mở trình tải xuống bên ngoài của bạn.</string>
     <string name="revanced_external_downloader_package_name_playlist_title">Tên gói trình tải xuống danh sách phát</string>
-    <string name="revanced_external_downloader_package_name_playlist_summary">Chọn hoặc nhập tên gói ứng dụng trình tải xuống đã được cài đặt trên thiết bị của bạn, chẳng hạn như YTDLnis.</string>
+    <string name="revanced_external_downloader_package_name_playlist_summary">Chọn hoặc nhập tên gói ứng dụng trình tải xuống đã được cài đặt trên thiết bị của bạn.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Hook buttons, PreferenceCategory: Experimental flags -->
     <string name="revanced_override_youtube_music_button_title">Ghi đè nút Youtube Music</string>
     <string name="revanced_override_youtube_music_button_summary_on">Nút Youtube Music sẽ mở ứng dụng RVX Music.</string>
@@ -737,8 +760,6 @@ Một số thành phần có thể không bị ẩn."</string>
     <string name="revanced_third_party_youtube_music_package_name_title">Tên gói của RVX Music</string>
     <string name="revanced_third_party_youtube_music_package_name_summary">Tên gói của RVX Music đã được cài đặt.</string>
     <string name="revanced_third_party_youtube_music_dialog_title">RVX Music</string>
-    <string name="revanced_third_party_youtube_music_not_installed_dialog_title">Chú ý</string>
-    <string name="revanced_third_party_youtube_music_not_installed_warning">Hiện %s chưa được cài đặt. Hãy cài đặt và thử lại.</string>
     <string name="revanced_override_youtube_music_button_about_prerequisite_title">Điều kiện tiên quyết</string>
     <string name="revanced_override_youtube_music_button_about_prerequisite_summary">Cần phải có YouTube Music để ghi đè chức năng của nút. Nhấn vào đây để tải YouTube Music.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Navigation bar -->
@@ -933,6 +954,9 @@ Nhấn và giữ để mở cài đặt RVX."</string>
 Tính năng Tự động phát có thể thay đổi trong Cài đặt YouTube:
 Cài đặt → Tự động phát/Phát → Tự động phát video tiếp theo"</string>
     <string name="revanced_disable_auto_switch_mix_playlists_user_dialog_message">Bật tính năng này sẽ tắt việc tự động chuyển sang YouTube Mix khi phát nhạc trong khi chế độ phát tự động cũng đang bật.</string>
+    <string name="revanced_disable_chapter_skip_double_tap_title">Tắt chạm 2 lần bỏ qua chương</string>
+    <string name="revanced_disable_chapter_skip_double_tap_summary_on">Chạm 2 lần có thể không bao giờ chuyển sang chương tiếp theo hoặc trước đó.</string>
+    <string name="revanced_disable_chapter_skip_double_tap_summary_off">Chạm 2 lần đôi khi có thể chuyển sang chương tiếp theo hoặc trước đó.</string>
     <string name="revanced_disable_auto_player_popup_panels_title">Tắt bảng tự động bật lên khi phát</string>
     <string name="revanced_disable_auto_player_popup_panels_summary_on">Bảng tự động bật lên khi phát video (Danh sách phát, Trò chuyện trực tiếp,...) đã tắt.</string>
     <string name="revanced_disable_auto_player_popup_panels_summary_off">Bảng tự động bật lên khi phát video (Danh sách phát, Trò chuyện trực tiếp,...) đã bật.</string>
@@ -978,9 +1002,13 @@ Cài đặt → Tự động phát/Phát → Tự động phát video tiếp the
     <string name="revanced_hide_medical_panel_title">Ẩn bảng thông tin y tế</string>
     <string name="revanced_hide_medical_panel_summary_on">Bảng thông tin y tế đã ẩn.</string>
     <string name="revanced_hide_medical_panel_summary_off">Bảng thông tin y tế được hiển thị.</string>
-    <string name="revanced_hide_seek_message_title">Ẩn thông báo khi trượt để tua</string>
-    <string name="revanced_hide_seek_message_summary_on">Thông báo \"Trượt sang trái hoặc phải để tua\" đã ẩn.</string>
-    <string name="revanced_hide_seek_message_summary_off">Thông báo \"Trượt sang trái hoặc phải để tua\" được hiển thị.</string>
+    <string name="revanced_hide_seek_message_title">Ẩn thông báo khi trượt để tua (Đã ngừng hỗ trợ)</string>
+    <string name="revanced_hide_seek_message_summary_on">"Thông báo \"Trượt sang trái hoặc phải để tua\" đã ẩn.
+
+Chi tiết: Cài đặt này dường như đã bị máy chủ loại bỏ. Thay vào đó, hãy dùng \"Tắt tua chính xác\" hoặc \"Ẩn thông báo khi huỷ tua\"."</string>
+    <string name="revanced_hide_seek_message_summary_off">"Thông báo \"Trượt sang trái hoặc phải để tua\" được hiển thị.
+
+Chi tiết: Cài đặt này dường như đã bị máy chủ loại bỏ. Thay vào đó, hãy dùng \"Tắt tua chính xác\" hoặc \"Ẩn thông báo khi huỷ tua\"."</string>
     <string name="revanced_hide_seek_undo_message_title">Ẩn thông báo khi huỷ tua</string>
     <string name="revanced_hide_seek_undo_message_summary_on">Thông báo \"Thả ra để huỷ\" đã ẩn.</string>
     <string name="revanced_hide_seek_undo_message_summary_off">Thông báo \"Thả ra để huỷ\" được hiển thị.</string>
@@ -2110,9 +2138,9 @@ Nhấn vào đây để xem các bước tạo khóa API."</string>
     <string name="revanced_sb_guidelines_popup_open">Xem ngay</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: General -->
     <string name="revanced_sb_general">Tổng quan</string>
-    <string name="revanced_sb_toast_on_connection_error_title">Hiện thông báo ngắn nếu API không khả dụng</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_on">Hiển thị thông báo ngắn nếu SponsorBlock không khả dụng.</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_off">Không hiện thông báo ngắn nếu SponsorBlock không khả dụng.</string>
+    <string name="revanced_sb_toast_on_connection_error">Hiện thông báo ngắn nếu API không khả dụng</string>
+    <string name="revanced_sb_toast_on_connection_error_sum_on">Hiển thị thông báo ngắn nếu SponsorBlock không khả dụng.</string>
+    <string name="revanced_sb_toast_on_connection_error_sum_off">Không hiện thông báo ngắn nếu SponsorBlock không khả dụng.</string>
     <string name="revanced_sb_general_skipcount">Theo dõi số lần bỏ qua</string>
     <string name="revanced_sb_general_skipcount_sum_on">Cho bảng xếp hạng của SponsorBlock biết lượng thời gian đã tiết kiệm được. Một thông báo sẽ được gửi tới bảng xếp hạng mỗi khi một phân đoạn đã bỏ qua.</string>
     <string name="revanced_sb_general_skipcount_sum_off">Theo dõi số lần bỏ qua không được bật.</string>
@@ -2264,21 +2292,21 @@ Nhấn Tiếp tục và cho phép thay đổi lựa chọn tối ưu hoá pin."<
     <string name="revanced_preference_screen_import_export_summary">Nhập hoặc xuất tuỳ chọn cài đặt RVX của bạn.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as file -->
     <string name="revanced_preference_category_import_export_as_file">Nhập/Xuất dưới dạng tập tin</string>
-    <string name="revanced_extended_settings_export_title">Xuất cài đặt</string>
-    <string name="revanced_extended_settings_export_summary">Xuất toàn bộ cài đặt của bạn dưới dạng tệp.</string>
-    <string name="revanced_extended_settings_import_title">Nhập cài đặt</string>
-    <string name="revanced_extended_settings_import_summary">Nhập toàn bộ cài đặt của bạn từ tệp đã lưu trước đó.</string>
+    <string name="revanced_settings_export_title">Xuất cài đặt</string>
+    <string name="revanced_settings_export_summary">Xuất toàn bộ cài đặt của bạn dưới dạng tệp.</string>
+    <string name="revanced_settings_import_title">Nhập cài đặt</string>
+    <string name="revanced_settings_import_summary">Nhập toàn bộ cài đặt của bạn từ tệp đã lưu trước đó.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as text -->
     <string name="revanced_preference_category_import_export_as_text">Nhập/Xuất dưới dạng văn bản</string>
-    <string name="revanced_extended_settings_import_export_as_text_title">Nhập/Xuất dưới dạng văn bản</string>
-    <string name="revanced_extended_settings_import_export_as_text_summary">Nhập hoặc xuất toàn bộ tuỳ chọn cài đặt của bạn dưới dạng văn bản.</string>
-    <string name="revanced_extended_settings_export_failed">Xuất cài đặt thất bại.</string>
-    <string name="revanced_extended_settings_export_success">Cài đặt đã được xuất thành công.</string>
-    <string name="revanced_extended_settings_import">Nhập</string>
-    <string name="revanced_extended_settings_import_copy">Sao chép</string>
-    <string name="revanced_extended_settings_import_failed">Nhập cài đặt thất bại.</string>
-    <string name="revanced_extended_settings_import_reset">Đã đặt lại cài đặt về mặc định.</string>
-    <string name="revanced_extended_settings_import_success">Cài đặt đã được nhập thành công.</string>
+    <string name="revanced_settings_import_export_as_text_title">Nhập/Xuất dưới dạng văn bản</string>
+    <string name="revanced_settings_import_export_as_text_summary">Nhập hoặc xuất toàn bộ cài đặt của bạn dưới dạng văn bản.</string>
+    <string name="revanced_settings_export_failed">Không thể xuất cài đặt.</string>
+    <string name="revanced_settings_export_success">Đã xuất cài đặt.</string>
+    <string name="revanced_settings_import">Nhập</string>
+    <string name="revanced_settings_import_copy">Sao chép</string>
+    <string name="revanced_settings_import_failed">Không thể nhập cài đặt.</string>
+    <string name="revanced_settings_import_reset">Đã đặt lại cài đặt về mặc định.</string>
+    <string name="revanced_settings_import_success">Đã nhập cài đặt.</string>
     <string name="revanced_share_copy_settings_success">Đã sao chép cài đặt sang bảng nhớ tạm.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <string name="revanced_preference_screen_spoof_streaming_data_title">Giả mạo dữ liệu phát video</string>
@@ -2298,18 +2326,17 @@ Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết
 <small>(Lỗi thời, Không xác thực)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
 <small>(Thử nghiệm, Không xác thực)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv">TV
-<small>(Thử nghiệm)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply
-<small>(Thử nghiệm)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Chưa phát hành, Không xác thực)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Hạn chế</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Thiếu mục bản âm thanh.
+• Tắt buộc bản âm thanh tự động không khả dụng.
 • Âm lượng ổn định không khả dụng.
 • Video dành cho trẻ em có thể không phát được khi bạn đã đăng xuất hoặc bật chế độ ẩn danh.
-• Không hỗ trợ chất lượng cao hơn 1080p, codec AV1 và video HDR."</string>
+• Không hỗ trợ chất lượng cao hơn 1080p, codec AV1 và video HDR có thể không khả dụng."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Thiếu mục bản âm thanh.
 • Âm lượng ổn định không khả dụng.
 • Video dành cho trẻ em có thể không phát được khi bạn đã đăng xuất hoặc bật chế độ ẩn danh."</string>
@@ -2408,15 +2435,22 @@ Hạn chế: JavaScript vẫn không thể phát một số video."</string>
 • Tự động phát trên trang video
 • Các đoạn video
 • Video Shorts"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_js_title">JavaScript mới nhất</string>
-    <string name="revanced_spoof_streaming_data_use_latest_js_summary_on">"JavaScript dùng để giải mã sẽ luôn được cập nhật thường xuyên.
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Bỏ qua bộ đệm giả</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Bỏ qua bộ đệm giả đã bật.
 
-Chi tiết:
-• Phụ thuộc vào máy chủ: giải mã thành công hay không, phụ thuộc vào JavaScript mà máy chủ đang dùng."</string>
-    <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"JavaScript dùng để giải mã không luôn được cập nhật thường xuyên.
+Hạn chế: Do những thay đổi từ phía máy chủ, cài đặt này có thể ngừng hoạt động bất cứ lúc nào."</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_off">Bỏ qua bộ đệm giả đã tắt.</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_title">Giới thiệu về bộ đệm giả</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_summary">Nhấn để biết thêm chi tiết.</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_title">"Biện pháp chặn quảng cáo mới của YouTube"</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_message">"Một lý do khiến video phát chậm trên client JavaScript là do biện pháp chặn quảng cáo mới của Youtube.
 
-Chi tiết:
-• Dù JavaScript đã giải mã thành công, nhưng vẫn bị ảnh hưởng từ máy chủ."</string>
+Rằng khi một quảng cáo dạng video bị chặn, GVS (Google Video Server) sẽ tạo ra một bộ đệm giả (trông như video đang tải nhưng không phải) tương ứng với tỷ lệ thời lượng quảng cáo đó (kiểu thử nghiệm A/B).
+
+Nhưng đừng lo, uBlock Origin đã tìm ra giải pháp và bạn có thể bật nó thông qua cài đặt \"Bỏ qua bộ đệm giả\".
+
+Nhấn Mở để đọc chi tiết bài viết."</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_open_text">Mở</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">Nhật ký xem</string>
     <string name="revanced_preference_screen_watch_history_summary">Thay đổi cài đặt liên quan đến nhật ký xem.</string>

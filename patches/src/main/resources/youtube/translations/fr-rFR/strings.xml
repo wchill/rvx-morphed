@@ -4,35 +4,13 @@
     <string name="accessibility_settings_edu_opt_in_text">Activer les contrôles d\'accessibilité pour le lecteur vidéo ?</string>
     <string name="accessibility_settings_edu_opt_out_text">Vos contrôles sont modifiés car un service d\'accessibilité est activé.</string>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX</string>
-    <string name="revanced_extended_settings_search_title">Rechercher sur %s</string>
-    <string name="revanced_extended_reset_to_default_toast">Réinitialiser les valeurs par défaut.</string>
     <string name="revanced_preference_category_experimental_flag">Options expérimentales</string>
-    <string name="revanced_extended_confirm_user_dialog_title">Voulez-vous continuer ?</string>
-    <string name="revanced_extended_restart_first_run">Redémarrer pour charger l\'interface correctement</string>
-    <string name="revanced_extended_restart_title">Redémarrage requis</string>
-    <string name="revanced_extended_restart_dialog_message">Redémarrez l\'application pour que cette modification prenne effet.</string>
-    <string name="revanced_extended_restart">Redémarrer</string>
-    <string name="revanced_extended_settings_color_invalid">Couleur invalide.</string>
-    <string name="revanced_extended_settings_color_picker">Sélecteur de couleur</string>
-    <string name="revanced_extended_settings_reset">Réinitialiser</string>
-    <string name="revanced_extended_settings_reset_color">Réinitialiser la couleur</string>
-    <string name="revanced_extended_settings_search_history_title">Afficher l\'historique de recherche des paramètres</string>
-    <string name="revanced_extended_settings_search_history_summary_on">L\'historique de recherche des paramètres est affiché.</string>
-    <string name="revanced_extended_settings_search_history_summary_off">L\'historique de recherche des paramètres n\'est pas affiché.</string>
-    <string name="revanced_extended_settings_search_hint">Recherche de paramètres</string>
-    <string name="revanced_extended_settings_search_no_results_title">Aucun résultat trouvé pour \'%s\'.</string>
-    <string name="revanced_extended_settings_search_no_results_summary">Essayez un autre mot-clé.</string>
-    <string name="revanced_extended_settings_search_remove_message">Supprimer de l\'historique des recherches ?</string>
     <string name="revanced_dismiss_player_not_available_toast">Id de vidéo pas disponible. S\'il vous plaît rouvrez la vidéo.</string>
     <string name="revanced_playback_speed_normal">Normal</string>
     <string name="revanced_external_downloader_package_name_video_title">Nom du paquet du téléchargeur vidéo</string>
     <string name="revanced_external_downloader_package_name_video_summary">Nom du paquet de l\'appli de téléchargement externe installée, telle que NewPipe ou YTDLnis.</string>
-    <string name="revanced_external_downloader_dialog_title">Téléchargeur externe</string>
-    <string name="revanced_external_downloader_not_installed_dialog_title">Attention</string>
-    <string name="revanced_external_downloader_not_installed_dialog_message">"%1$s n'est pas installé.
-Veuillez télécharger %2$s à partir du site web."</string>
     <string name="revanced_external_downloader_not_installed_warning">%s n\'est pas installé. Veuillez l’installer.</string>
+    <string name="revanced_external_downloader_dialog_title">Téléchargeur externe</string>
     <string name="revanced_queue_manager_add_to_queue">Ajouter à la file d\'attente</string>
     <string name="revanced_queue_manager_add_to_queue_and_open_queue">Ajouter à la file d\'attente et ouvrir la file d\'attente</string>
     <string name="revanced_queue_manager_add_to_queue_and_play_video">Ajouter à la file d\'attente et lire la vidéo</string>
@@ -570,8 +548,6 @@ Certains composants peuvent ne pas être masqués."</string>
     <string name="revanced_third_party_youtube_music_package_name_title">Nom du paquet de RVX Music</string>
     <string name="revanced_third_party_youtube_music_package_name_summary">Nom du paquet de RVX Music installé.</string>
     <string name="revanced_third_party_youtube_music_dialog_title">RVX Music</string>
-    <string name="revanced_third_party_youtube_music_not_installed_dialog_title">Attention</string>
-    <string name="revanced_third_party_youtube_music_not_installed_warning">%s n\'est pas installé. Veuillez l’installer.</string>
     <string name="revanced_override_youtube_music_button_about_prerequisite_title">Prérequis</string>
     <string name="revanced_override_youtube_music_button_about_prerequisite_summary">YouTube Music est requis pour remplacer l\'action du bouton. Cliquez ici pour télécharger YouTube Music.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Navigation bar -->
@@ -805,8 +781,8 @@ Note :
     <string name="revanced_hide_medical_panel_summary_on">Les panneaux d\'infos médicaux sont masqués.</string>
     <string name="revanced_hide_medical_panel_summary_off">Les panneaux d\'infos médicaux sont affichés.</string>
     <string name="revanced_hide_seek_message_title">Masquer les bandeaux de messages</string>
-    <string name="revanced_hide_seek_message_summary_on">Les bandeaux de messages sont masqués.</string>
-    <string name="revanced_hide_seek_message_summary_off">Les bandeaux de messages sont affichés.</string>
+    <string name="revanced_hide_seek_message_summary_on">"Les bandeaux de messages sont masqués."</string>
+    <string name="revanced_hide_seek_message_summary_off">"Les bandeaux de messages sont affichés."</string>
     <string name="revanced_hide_seek_undo_message_title">Masquer le bandeau \'Relâchez pour annuler\'</string>
     <string name="revanced_hide_seek_undo_message_summary_on">Le bandeau \'Relâchez pour annuler\' est masqué.</string>
     <string name="revanced_hide_seek_undo_message_summary_off">Le bandeau \'Relâchez pour annuler\' est affiché.</string>
@@ -1847,9 +1823,6 @@ Cliquez ici pour découvrir comment créer une clé API."</string>
     <string name="revanced_sb_guidelines_popup_open">Afficher</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: General -->
     <string name="revanced_sb_general">Général</string>
-    <string name="revanced_sb_toast_on_connection_error_title">Afficher un message si l\'API est indisponible</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_on">Affiche un message si SponsorBlock est indisponible.</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_off">N\'affiche pas de message si SponsorBlock est indisponible.</string>
     <string name="revanced_sb_general_skipcount">Activer le compteur de segments passés</string>
     <string name="revanced_sb_general_skipcount_sum_on">Permet au classement de SponsorBlock de savoir combien de temps a été gagné. Un message est envoyé au classement chaque fois qu\'un segment est sauté.</string>
     <string name="revanced_sb_general_skipcount_sum_off">Le compteur de segments passés n\'est pas activé.</string>
@@ -2001,21 +1974,8 @@ Cliquez sur le bouton Continuer et autorisez les modifications d'optimisations."
     <string name="revanced_preference_screen_import_export_summary">Importer ou exporter les paramètres RVX.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as file -->
     <string name="revanced_preference_category_import_export_as_file">Importer / Exporter sous forme de fichier</string>
-    <string name="revanced_extended_settings_export_title">Exporter les paramètres</string>
-    <string name="revanced_extended_settings_export_summary">Exporter les paramètres vers un fichier.</string>
-    <string name="revanced_extended_settings_import_title">Importer les paramètres</string>
-    <string name="revanced_extended_settings_import_summary">Importer les paramètres depuis un fichier enregistré.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as text -->
     <string name="revanced_preference_category_import_export_as_text">Importer / Exporter sous forme de texte</string>
-    <string name="revanced_extended_settings_import_export_as_text_title">Importer / Exporter sous forme de texte</string>
-    <string name="revanced_extended_settings_import_export_as_text_summary">Importer ou exporter les paramètres sous forme de texte.</string>
-    <string name="revanced_extended_settings_export_failed">Échec de l\'exportation des paramètres.</string>
-    <string name="revanced_extended_settings_export_success">Les paramètres ont été exportés avec succès.</string>
-    <string name="revanced_extended_settings_import">Importer</string>
-    <string name="revanced_extended_settings_import_copy">Copier</string>
-    <string name="revanced_extended_settings_import_failed">Échec de l\'importation des paramètres.</string>
-    <string name="revanced_extended_settings_import_reset">Les paramètres ont étés réinitialisés.</string>
-    <string name="revanced_extended_settings_import_success">Les paramètres ont été importés avec succès.</string>
     <string name="revanced_share_copy_settings_success">Paramètres copiés dans le presse-papier.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <string name="revanced_preference_screen_spoof_streaming_data_title">Falsifier les données de diffusion en direct</string>

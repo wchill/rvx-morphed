@@ -4,28 +4,12 @@
     <string name="accessibility_settings_edu_opt_in_text">Включване на контролите за достъпност на видеоплеaра?</string>
     <string name="accessibility_settings_edu_opt_out_text">Вашите контроли са променени, защото е активирана услуга за достъпност.</string>
     <!-- Shared -->
-    <string name="revanced_extended_settings_search_title">Търсене %s</string>
-    <string name="revanced_extended_reset_to_default_toast">Възстановяване на стандартните стойности.</string>
     <string name="revanced_preference_category_experimental_flag">Експериментални настройки</string>
-    <string name="revanced_extended_confirm_user_dialog_title">Желаете ли да продължите?</string>
-    <string name="revanced_extended_restart_first_run">Рестартирайте, за да заредите оформлението нормално</string>
-    <string name="revanced_extended_restart_dialog_message">Рестартирайте приложението, за да влязат в сила тези промени.</string>
-    <string name="revanced_extended_settings_color_invalid">Невалиден цвят.</string>
-    <string name="revanced_extended_settings_reset">Нулирай</string>
-    <string name="revanced_extended_settings_reset_color">Нулиране на цвят</string>
-    <string name="revanced_extended_settings_search_history_summary_on">Историята на търсенията в настройките е показана.</string>
-    <string name="revanced_extended_settings_search_history_summary_off">Историята на търсенията в настройките не е показана.</string>
-    <string name="revanced_extended_settings_search_hint">Настройки на търсенето</string>
-    <string name="revanced_extended_settings_search_no_results_title">Няма намерени резултати за \",%s\".</string>
-    <string name="revanced_extended_settings_search_no_results_summary">Опитайте друга ключова дума.</string>
     <string name="revanced_playback_speed_normal">Нормално</string>
     <string name="revanced_external_downloader_package_name_video_title">Име на приложението за изтегляне на видео</string>
     <string name="revanced_external_downloader_package_name_video_summary">Име на пакета на приложението за изтегляне като NewPipe или YTDLnis.</string>
-    <string name="revanced_external_downloader_dialog_title">Външна програма за изтегляне</string>
-    <string name="revanced_external_downloader_not_installed_dialog_title">Внимание</string>
-    <string name="revanced_external_downloader_not_installed_dialog_message">"%1$s не е инсталиран.
-Моля, изтеглете %2$s от уебсайта."</string>
     <string name="revanced_external_downloader_not_installed_warning">%s не е инсталирано. Моля инсталирайте го.</string>
+    <string name="revanced_external_downloader_dialog_title">Външна програма за изтегляне</string>
     <string name="revanced_queue_manager_add_to_queue">Добави към опашката</string>
     <string name="revanced_queue_manager_external_downloader">Външна програма за изтегляне</string>
     <string name="revanced_queue_manager_queue">Опашка</string>
@@ -357,8 +341,6 @@
     <string name="revanced_third_party_youtube_music_package_name_title">Име на пакета RVX Music</string>
     <string name="revanced_third_party_youtube_music_package_name_summary">Името на пакета с инсталиран RVX Music.</string>
     <string name="revanced_third_party_youtube_music_dialog_title">RVX Music</string>
-    <string name="revanced_third_party_youtube_music_not_installed_dialog_title">Внимание</string>
-    <string name="revanced_third_party_youtube_music_not_installed_warning">%s не е инсталирано. Моля инсталирайте го.</string>
     <string name="revanced_override_youtube_music_button_about_prerequisite_title">Изисквания</string>
     <string name="revanced_override_youtube_music_button_about_prerequisite_summary">Изисква се YouTube Music, за да замени действието на бутона. Докоснете тук, за да изтеглите YouTube Music.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Navigation bar -->
@@ -577,8 +559,8 @@
     <string name="revanced_hide_medical_panel_summary_on">Медицински панел скрит.</string>
     <string name="revanced_hide_medical_panel_summary_off">Медицински панел се показва.</string>
     <string name="revanced_hide_seek_message_title">Скриване на съобщение при превъртане</string>
-    <string name="revanced_hide_seek_message_summary_on">Съобщението при превъртане е скрито.</string>
-    <string name="revanced_hide_seek_message_summary_off">Съобщението при превъртане се показва.</string>
+    <string name="revanced_hide_seek_message_summary_on">"Съобщението при превъртане е скрито."</string>
+    <string name="revanced_hide_seek_message_summary_off">"Съобщението при превъртане се показва."</string>
     <string name="revanced_hide_seek_undo_message_title">Съобщение при пренавиване</string>
     <string name="revanced_hide_seek_undo_message_summary_on">Съобщение при пренавиване е скрито.</string>
     <string name="revanced_hide_seek_undo_message_summary_off">Съобщение при пренавиване се показва.</string>
@@ -1463,9 +1445,6 @@
     <string name="revanced_sb_guidelines_popup_open">Покажи ми</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: General -->
     <string name="revanced_sb_general">Основен</string>
-    <string name="revanced_sb_toast_on_connection_error_title">Показване на известие, ако API не е наличен</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_on">Показва се известие, ако Api на SponsorBlock не е наличен.</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_off">Не се показва известие, ако Api на SponsorBlock не е наличен.</string>
     <string name="revanced_sb_general_skipcount">Активиране проследяването на броя пропускания</string>
     <string name="revanced_sb_general_skipcount_sum_on">Показва в класацията на SponsorBlock колко време е спестено. Съобщение се изпраща при всяка пропусната част.</string>
     <string name="revanced_sb_general_skipcount_sum_off">Прослед. на броя пропускания е изкл.</string>
@@ -1578,21 +1557,8 @@
     <string name="revanced_preference_screen_import_export_summary">Импортиране / Експортиране на настройките.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as file -->
     <string name="revanced_preference_category_import_export_as_file">Импортиране / Експортиране като файл</string>
-    <string name="revanced_extended_settings_export_title">Експорт на настройки</string>
-    <string name="revanced_extended_settings_export_summary">Експортирайте настройките във файл.</string>
-    <string name="revanced_extended_settings_import_title">Внасяне на настройки</string>
-    <string name="revanced_extended_settings_import_summary">Импортиране на настройки от файл.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as text -->
     <string name="revanced_preference_category_import_export_as_text">Импортирайте / Експортирайте настройки в текст</string>
-    <string name="revanced_extended_settings_import_export_as_text_title">Импортирайте / Експортирайте настройки в текст</string>
-    <string name="revanced_extended_settings_import_export_as_text_summary">Импортирайте или експортирайте настройки като текст.</string>
-    <string name="revanced_extended_settings_export_failed">Неуспешно експортиране на настройките.</string>
-    <string name="revanced_extended_settings_export_success">Настройките са експортирани успешно.</string>
-    <string name="revanced_extended_settings_import">Внасяне на настройки</string>
-    <string name="revanced_extended_settings_import_copy">Копирай</string>
-    <string name="revanced_extended_settings_import_failed">Неуспешно импортиране на настройките.</string>
-    <string name="revanced_extended_settings_import_reset">Настройките се нулират до стойностите по подразбиране.</string>
-    <string name="revanced_extended_settings_import_success">Настройките са импортирани успешно.</string>
     <string name="revanced_share_copy_settings_success">Настройките са копирани в клипборда.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <string name="revanced_preference_screen_spoof_streaming_data_title">Подправяне на поточни данни</string>
