@@ -2436,6 +2436,7 @@ Tap the continue button and allow optimization changes."</string>
     <string name="revanced_debug_logs_disabled">Debug logging is disabled.</string>
     <string name="revanced_debug_logs_none_found">No logs found.</string>
     <string name="revanced_debug_logs_copied_to_clipboard">Logs copied.</string>
+    <string name="revanced_debug_logs_failed_to_copy_to_clipboard">Logs are too large to copy.</string>
     <string name="revanced_debug_logs_failed_to_export">Failed to export logs: $s.</string>
     <string name="revanced_debug_logs_clear_buffer_title">Clear debug logs</string>
     <string name="revanced_debug_logs_clear_buffer_summary">Clears all stored RVX debug logs.</string>
