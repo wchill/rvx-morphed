@@ -137,6 +137,13 @@ public class GeneralPatch {
         return !Settings.DISABLE_SPLASH_ANIMATION.get() && original;
     }
 
+    public static int disableSplashAnimation(int i, int i2) {
+        if (!Settings.DISABLE_SPLASH_ANIMATION.get() || i != i2) {
+            return i;
+        }
+        return i - 1;
+    }
+
     // endregion
 
     // region [Enable gradient loading screen] patch
