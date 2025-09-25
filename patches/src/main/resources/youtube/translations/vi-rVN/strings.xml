@@ -30,7 +30,7 @@
 • Nhấn Enter để lưu từ khoá vào lịch sử tìm kiếm.
 • Tìm kiếm không phân biệt viết hoa và dấu câu.
 • Các cài đặt lớn sẽ xuất hiện trên các cài đặt nhỏ bị vô hiệu hoá."</string>
-    <string name="revanced_settings_search_empty_history_title">Lịch sử tìm kiếm trống</string>
+    <string name="revanced_settings_search_empty_history_title">Trống</string>
     <string name="revanced_settings_search_empty_history_summary">Để lưu lịch sử tìm kiếm, hãy nhập từ khoá và ấn Enter.</string>
     <string name="revanced_settings_search_history_title">Lịch sử tìm kiếm cài đặt</string>
     <string name="revanced_settings_search_history_summary_on">Lịch sử tìm kiếm cài đặt đã được hiển thị.</string>
@@ -2282,11 +2282,20 @@ Nhấn Tiếp tục và cho phép thay đổi lựa chọn tối ưu hoá pin."<
     <string name="revanced_debug_logs_disabled">Nhật ký gỡ lỗi đã tắt.</string>
     <string name="revanced_debug_logs_none_found">Không tìm thấy nhật ký.</string>
     <string name="revanced_debug_logs_copied_to_clipboard">Đã sao chép nhật ký.</string>
+    <string name="revanced_debug_logs_failed_to_copy_to_clipboard">Nhật ký quá dài, không thể sao chép.</string>
     <string name="revanced_debug_logs_failed_to_export">Không thể xuất nhật ký: $s.</string>
     <string name="revanced_debug_logs_clear_buffer_title">Dọn dẹp nhật ký gỡ lỗi</string>
     <string name="revanced_debug_logs_clear_buffer_summary">Xoá tất cả nhật ký gỡ lỗi RVX đã lưu trữ.</string>
     <string name="revanced_debug_logs_clear_toast">Đã xoá nhật ký.</string>
     <string name="revanced_debug_logs_export_success">Nhật ký đã được xuất thành công.</string>
+    <string name="revanced_enable_watch_next_processing_delay_title">Độ trễ xử lý phát video tiếp theo</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_on">Độ trễ xử lý phát video tiếp theo đã được bật.</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_off">Độ trễ xử lý phát video tiếp theo đã tắt.</string>
+    <string name="revanced_enable_watch_next_processing_delay_user_dialog_message">"Cài đặt này thêm một khoảng trễ trước khi giao diện trình phát được tải.
+
+Có thể sử dụng để thử nghiệm gì đó trên MainThread."</string>
+    <string name="revanced_watch_next_processing_delay_title">Độ trễ</string>
+    <string name="revanced_watch_next_processing_delay_summary">Nhập khoảng trễ (tính bằng mili giây) trong xử lý phản hồi phát video tiếp theo.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">Nhập/Xuất cài đặt</string>
     <string name="revanced_preference_screen_import_export_summary">Nhập hoặc xuất tuỳ chọn cài đặt RVX của bạn.</string>
@@ -2435,6 +2444,15 @@ Hạn chế: JavaScript vẫn không thể phát một số video."</string>
 • Tự động phát trên trang video
 • Các đoạn video
 • Video Shorts"</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Dùng Player JavaScript mới nhất</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"Player JS luôn được cập nhật để hỗ trợ gỡ rối mã.
+
+Chi tiết:
+• Quá trình gỡ rối mã phụ thuộc rất nhiều vào Player JS mà máy chủ đang sử dụng, nên đôi khi có thể thành công hoặc thất bại.
+• Nếu bạn gặp sự cố với client JavaScript, hãy thử tắt cài đặt này trước."</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"Player JS không được cập nhật để hỗ trợ gỡ rối mã.
+
+Chi tiết: Tiếp tục sử dụng Player JS từng hỗ trợ gỡ rối mã thành công, nhưng kết quả vẫn phụ thuộc vào máy chủ."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Bỏ qua bộ đệm giả</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Bỏ qua bộ đệm giả đã bật.
 

@@ -2262,11 +2262,20 @@ Pulsa el botón de continuar y desactiva las optimizaciones de la batería."</st
     <string name="revanced_debug_logs_disabled">El registro de depuración está desactivado.</string>
     <string name="revanced_debug_logs_none_found">No se encontraron registros.</string>
     <string name="revanced_debug_logs_copied_to_clipboard">Registros copiados.</string>
+    <string name="revanced_debug_logs_failed_to_copy_to_clipboard">Los registros son demasiado grandes para copiarlos.</string>
     <string name="revanced_debug_logs_failed_to_export">Error al exportar los registros: $s.</string>
     <string name="revanced_debug_logs_clear_buffer_title">Borrar registros de depuración</string>
     <string name="revanced_debug_logs_clear_buffer_summary">Borra todos los registros de depuración de RVX almacenados.</string>
     <string name="revanced_debug_logs_clear_toast">Registros borrados.</string>
     <string name="revanced_debug_logs_export_success">Los registros se han exportado correctamente.</string>
+    <string name="revanced_enable_watch_next_processing_delay_title">Activar demora de procesamiento de «ver siguiente»</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_on">La demora de procesamiento de «ver siguiente» está activada.</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_off">La demora de procesamiento de «ver siguiente» está desactivada.</string>
+    <string name="revanced_enable_watch_next_processing_delay_user_dialog_message">"Este ajuste fuerza una demora antes de que se cargue la interfaz de usuario del reproductor.
+
+Esto se puede utilizar al probar algo en el MainThread."</string>
+    <string name="revanced_watch_next_processing_delay_title">Demora de procesamiento de «ver siguiente»</string>
+    <string name="revanced_watch_next_processing_delay_summary">La cantidad de milisegundos de demora en el procesamiento de la respuesta de «ver siguiente».</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">Importar / Exportar ajustes</string>
     <string name="revanced_preference_screen_import_export_summary">Importar o exportar los ajustes.</string>
@@ -2419,6 +2428,14 @@ Esta función todavía está en desarrollo, así que úsala solo para fines de d
 • Reproducción automática en el feed
 • Clips
 • Shorts"</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Usar último reproductor JavaScript</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"El reproductor JavaScript para la desofuscación se mantiene actualizado.
+
+• Depende en gran medida del servidor, y el éxito o el fracaso de la desofuscación depende del reproductor JavaScript que se utilice actualmente en el servidor.
+• Si tienes problemas con el cliente de JavaScript, intenta desactivar esto primero."</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"El reproductor JavaScript para la desofuscación no se mantiene actualizado.
+
+• Se utiliza el reproductor JavaScript que logra la desofuscación, pero sigue siendo algo dependiente del servidor."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Omitir búfer falso</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Omitir búfer falso está activado.
 

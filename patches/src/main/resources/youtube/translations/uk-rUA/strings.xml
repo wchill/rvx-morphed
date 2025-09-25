@@ -2287,11 +2287,20 @@
     <string name="revanced_debug_logs_disabled">Журналювання налагодження вимкнено.</string>
     <string name="revanced_debug_logs_none_found">Журналів не знайдено.</string>
     <string name="revanced_debug_logs_copied_to_clipboard">Журнали скопійовано.</string>
+    <string name="revanced_debug_logs_failed_to_copy_to_clipboard">Логи завеликі для копіювання.</string>
     <string name="revanced_debug_logs_failed_to_export">Не вдалося експортувати журнали: $s.</string>
     <string name="revanced_debug_logs_clear_buffer_title">Очистити журнали налагодження</string>
     <string name="revanced_debug_logs_clear_buffer_summary">Очищення всіх збережених журналів налагодження RVX.</string>
     <string name="revanced_debug_logs_clear_toast">Журнали очищено.</string>
     <string name="revanced_debug_logs_export_success">Журнали успішно експортовано.</string>
+    <string name="revanced_enable_watch_next_processing_delay_title">Увімкнути затримку при обробці перегляду наступного</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_on">Затримку при обробці перегляду наступного увімкнено.</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_off">Затримку при обробці перегляду наступного вимкнено.</string>
+    <string name="revanced_enable_watch_next_processing_delay_user_dialog_message">"Це налаштування спричиняє затримку перед завантаженням інтерфейсу плеєра.
+
+Це може бути використано при тестуванні чогось на MainThread."</string>
+    <string name="revanced_watch_next_processing_delay_title">Затримка обробки перегляду наступного</string>
+    <string name="revanced_watch_next_processing_delay_summary">Кількість мілісекунд затримки при обробці відповіді перегляду наступного.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">Імпорт/Експорт налаштувань</string>
     <string name="revanced_preference_screen_import_export_summary">Імпортувати / експортувати налаштування.</string>
@@ -2447,6 +2456,14 @@
 • Автовідтворення у стрічці
 • Кліпи
 • YouTube Shorts"</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Використовувати останній JavaScript відтворювача</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"JavaScript відтворювача для деобфускації підтримується в актуальному стані.
+
+• Він значною мірою залежить від сервера, і успіх чи невдача деобфускації залежить від JavaScript відтворювача, який наразі використовується на сервері.
+• Якщо виникли проблеми з клієнтом JavaScript, спробуйте спочатку вимкнути його."</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"JavaScript відтворювача для деобфускації не підтримується в актуальному стані.
+
+• Використовується JavaScript відтворювача, який успішно виконує деобфускацію, але він все одно дещо залежний від сервера."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Обходити фальшиву буферизацію</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Обхід фальшивої буферизації увімкнено.
 

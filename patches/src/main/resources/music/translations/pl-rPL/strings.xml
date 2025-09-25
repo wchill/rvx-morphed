@@ -2,10 +2,29 @@
 <resources>
     <!-- Shared -->
     <string name="revanced_settings_title">RVX</string>
+    <string name="revanced_settings_search_title">Wyszukaj w %s</string>
     <string name="revanced_reset_to_default_toast">Przywrócono domyślne wartości.</string>
     <!-- Shared Category -->
     <string name="revanced_restart_first_run">Uruchom ponownie, aby wczytać poprawnie układ aplikacji</string>
     <string name="revanced_restart_message">Odśwież i uruchom ponownie</string>
+    <string name="revanced_settings_search_hint">Ustawienia wyszukiwania</string>
+    <string name="revanced_settings_search_no_results_title">Nie znaleziono wyników dla \'%s\'.</string>
+    <string name="revanced_settings_search_no_results_summary">Spróbuj użyć innego słowa kluczowego.</string>
+    <string name="revanced_settings_search_recent_searches">Ostatnio wyszukiwane</string>
+    <string name="revanced_settings_search_remove_message">Usunąć z historii wyszukiwania?</string>
+    <string name="revanced_settings_search_clear_history">Usuń historię wyszukiwania</string>
+    <string name="revanced_settings_search_clear_history_message">Czy na pewno chcesz usunąć całą historię wyszukiwania?</string>
+    <string name="revanced_settings_search_tips_title">Wskazówki dotyczące wyszukiwania</string>
+    <string name="revanced_settings_search_tips_summary">"• kliknij ścieżkę, aby do niej przejść
+• naciśnij i przytrzymaj ustawienie, aby do niego przejść
+• naciśnij Enter, aby zapisać zapytanie wyszukiwania w historii
+• wyszukiwanie ignoruje wielkość liter i znaki interpunkcyjne
+• ustawienia nadrzędne pojawiają się nad wyłączonymi ustawieniami podrzędnymi"</string>
+    <string name="revanced_settings_search_empty_history_title">Historia wyszukiwania jest pusta</string>
+    <string name="revanced_settings_search_empty_history_summary">By zapisać historię wyszukiwania, wpisz zapytanie i kliknij enter.</string>
+    <string name="revanced_settings_search_history_title">Historia wyszukiwania w ustawieniach</string>
+    <string name="revanced_settings_search_history_summary_on">Widoczna</string>
+    <string name="revanced_settings_search_history_summary_off">Ukryta</string>
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">Konto</string>
     <string name="revanced_hide_account_menu_title">Ukryj menu konta</string>
@@ -495,6 +514,12 @@ Jeśli jesteś użytkownikiem YouTube Premium, to ustawienie te nie jest koniecz
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Wbudowany TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_simply">Uproszczony TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Użyj najnowszego JavaScript odtwarzacza</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"Po włączeniu, najnowszy JavaScript odtwarzacza będzie używany do odszyfrowywania URL strumienia na klientach 'TV', 'Uproszczony TV' i 'Mobilny przeglądarkowy'.
+
+Jeśli masz problemy z klientem JavaScript, w pierwszej kolejności spróbuj to wyłączyć."</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden">Nie można przechwycić żadnego ze strumieni klienta.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Spróbuj zmienić domyślnego klienta na TV lub Uproszczony TV.</string>
     <string name="revanced_watch_history_type_title">Typ historii oglądania</string>
     <string name="revanced_watch_history_type_summary">"• Oryginalny: Stosuje się do ustawień historii oglądania konta Google, lecz historia oglądania może nie działać przy używaniu DNS lub VPN
 • Zastąpienie domeny: Stosuje się do ustawień historii oglądania konta Google

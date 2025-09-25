@@ -38,7 +38,7 @@
     <string name="revanced_dismiss_player_not_available_toast">A videó azonosítója nem érhető el. Kérem, manuálisan nyissa meg újra a videót.</string>
     <string name="revanced_playback_speed_normal">Normál</string>
     <string name="revanced_external_downloader_package_name_video_title">Videó letöltő csomag neve</string>
-    <string name="revanced_external_downloader_package_name_video_summary">A telepített külső letöltő alkalmazás csomagneve, például NewPipe vagy YTDLnis.</string>
+    <string name="revanced_external_downloader_package_name_video_summary">A telepített külső letöltő alkalmazás csomagneve.</string>
     <string name="revanced_external_downloader_other_item">Egyéb</string>
     <string name="revanced_external_downloader_other_item_hint">Írja be a csomag nevét</string>
     <string name="revanced_external_downloader_not_found_title">Az alkalmazás nincs telepítve.</string>
@@ -648,7 +648,7 @@ Ha kikapcsolja, akkor ajánlott törölni az app adatait, hogy elkerülje a UI h
     <string name="revanced_spoof_app_version_target_entry_19_26_42">19.26.42 - Cairo ikon letiltása a navigációban és az eszköztárban</string>
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Régi lejátszási lista fejléc visszállítása</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - A régi lejátszási sebesség felugró menü visszaállítása</string>
-    <string name="revanced_spoof_app_version_target_entry_20_05_46">Hungary</string>
+    <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - Átirat funkció visszaállítása</string>
     <string name="revanced_spoof_app_version_other_item">Egyéb</string>
     <string name="revanced_spoof_app_version_other_item_hint">Alkalmazás verzió megadása</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Érvénytelen hamisított alkalmazásverzió: %s.</string>
@@ -762,7 +762,7 @@ A natív lejátszási lista letöltése gomb megjelenítéséhez kapcsolja be a 
     <string name="revanced_override_video_download_button_queue_manager_summary_on">A beépített videó letöltés gomb megnyitja a várólista kezelőt.</string>
     <string name="revanced_override_video_download_button_queue_manager_summary_off">Az eredeti videó letöltése gomb megnyitja a külső letöltőt.</string>
     <string name="revanced_external_downloader_package_name_playlist_title">Lejátszási lista letöltő csomag neve</string>
-    <string name="revanced_external_downloader_package_name_playlist_summary">A telepített külső letöltő alkalmazás csomagneve, például YTDLnis.</string>
+    <string name="revanced_external_downloader_package_name_playlist_summary">A telepített külső letöltő alkalmazás csomagneve.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Hook buttons, PreferenceCategory: Experimental flags -->
     <string name="revanced_override_youtube_music_button_title">YouTube Music gomb felülbírálása</string>
     <string name="revanced_override_youtube_music_button_summary_on">A YouTube Music gomb az RVX Music-ot indítja.</string>
@@ -2147,6 +2147,9 @@ Kattintson az API-kulcs kiadás folyamatának megtekintéséhez."</string>
     <string name="revanced_sb_guidelines_popup_open">Mutasd</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: General -->
     <string name="revanced_sb_general">Általános</string>
+    <string name="revanced_sb_toast_on_connection_error">Üzenet megjelenítése, ha az API nem elérhető</string>
+    <string name="revanced_sb_toast_on_connection_error_sum_on">Üzenet látható, ha a SponsorBlock nem elérhető.</string>
+    <string name="revanced_sb_toast_on_connection_error_sum_off">Nem látható üzenet, ha a SponsorBlock nem elérhető.</string>
     <string name="revanced_sb_general_skipcount">Átugrások számolásának engedélyezése</string>
     <string name="revanced_sb_general_skipcount_sum_on">Értesíti a SponsorBlock ranglistáját, hogy mennyi időt takarított meg. Minden egyes szakasz kihagyásakor üzenetet küld a ranglistának.</string>
     <string name="revanced_sb_general_skipcount_sum_off">A kihagyások számának követése nem engedélyezett.</string>
@@ -2288,18 +2291,40 @@ Kattintson a folytatás gombra és kapcsolja ki az akkumulátor optimalizáláso
     <string name="revanced_debug_logs_disabled">A hibakeresési naplózás nem engedélyezett.</string>
     <string name="revanced_debug_logs_none_found">Nem találhatók naplók.</string>
     <string name="revanced_debug_logs_copied_to_clipboard">Naplók átmásolva.</string>
+    <string name="revanced_debug_logs_failed_to_copy_to_clipboard">A napló fájlok túl nagyok a másoláshoz.</string>
     <string name="revanced_debug_logs_failed_to_export">Sikertelen napló exportálás: $s.</string>
     <string name="revanced_debug_logs_clear_buffer_title">Hibakeresési naplók törlése</string>
     <string name="revanced_debug_logs_clear_buffer_summary">Törli az összes tárolt RVX hibakeresési naplót.</string>
     <string name="revanced_debug_logs_clear_toast">Naplók törölve.</string>
     <string name="revanced_debug_logs_export_success">A naplók exportálása sikeres.</string>
+    <string name="revanced_enable_watch_next_processing_delay_title">Következő a lejátszási sorban feldolgozási késleltetésének engedélyezése</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_on">A Következő a lejátszási sorban feldolgozási késleltetése engedélyezett.</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_off">A Következő a lejátszási sorban feldolgozási késleltetése tiltott.</string>
+    <string name="revanced_enable_watch_next_processing_delay_user_dialog_message">"Ez a beállítás késleltetést kényszerít ki a lejátszó felhasználói felületének betöltése előtt.
+
+Ez akkor hasznos, ha valamit tesztelni kell a MainThread-en."</string>
+    <string name="revanced_watch_next_processing_delay_title">Következő a lejátszási sorban feldolgozási késleltetés</string>
+    <string name="revanced_watch_next_processing_delay_summary">A következő a lejátszási listában válaszának feldolgozási késleltetése ezredmásodpercben.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">Beállítások importálása / exportálása</string>
     <string name="revanced_preference_screen_import_export_summary">RVX beállítások importálása / exportálása.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as file -->
     <string name="revanced_preference_category_import_export_as_file">Import / Export fájlként</string>
+    <string name="revanced_settings_export_title">Beállítások exportálása</string>
+    <string name="revanced_settings_export_summary">Beállítások exportálása fájlba.</string>
+    <string name="revanced_settings_import_title">Beállítások importálása</string>
+    <string name="revanced_settings_import_summary">Beállítások importálása mentett fájlból.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as text -->
     <string name="revanced_preference_category_import_export_as_text">Import / Export szövegként</string>
+    <string name="revanced_settings_import_export_as_text_title">Importálás / Exportálás szövegként</string>
+    <string name="revanced_settings_import_export_as_text_summary">Beállítások importálása vagy exportálása szövegként.</string>
+    <string name="revanced_settings_export_failed">A beállítások exportálása sikertelen.</string>
+    <string name="revanced_settings_export_success">A beállítások exportálása sikeres.</string>
+    <string name="revanced_settings_import">Importálás</string>
+    <string name="revanced_settings_import_copy">Másolás</string>
+    <string name="revanced_settings_import_failed">A beállítások importálása sikertelen.</string>
+    <string name="revanced_settings_import_reset">Beállítások visszaállítása alapértelmezettre.</string>
+    <string name="revanced_settings_import_success">A beállítások sikeresen importálva.</string>
     <string name="revanced_share_copy_settings_success">A beállítások a vágólapra másolva.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <string name="revanced_preference_screen_spoof_streaming_data_title">Adatfolyam meghamisítása</string>
@@ -2435,6 +2460,14 @@ A JavaScript kliensek közül az ajánlott kliens a TV egyszerű."</string>
 • Automatikus lejátszás a hírfolyamban
 • Klipek
 • Shortok"</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Használja a legújabb lejátszó JavaScriptjét</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"A deobfuszkációhoz használt lejátszó JavaScriptje naprakészen tartandó.
+
+• Ez nagymértékben szerverfüggő, és a deobfuszkáció sikere vagy sikertelensége a szerveren aktuálisan használt lejátszó JavaScripttől függ.
+• Ha problémái vannak a JavaScript klienssel, először próbálja meg letiltani ezt."</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"A deobfuszkációhoz használt lejátszó JavaScriptje nincs naprakészen.
+
+• A deobfuszkációban sikeresen részt vevő lejátszó JavaScriptjét használjuk, de ez még mindig némileg szerverfüggő."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Kerülje a hamis pufferelést</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"A hamis pufferelés megkerülése engedélyezett.
 

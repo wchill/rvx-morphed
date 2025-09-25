@@ -492,6 +492,10 @@ Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Dùng Player JavaScript mới nhất</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"Khi bật, Player JS mới nhất sẽ được sử dụng để gỡ rối URL phát trên TV, TV Simply và Mobile Web.
+
+Nếu bạn gặp sự cố với client JavaScript, hãy thử tắt cài đặt này trước."</string>
     <string name="revanced_watch_history_type_title">Kiểu nhật ký</string>
     <string name="revanced_watch_history_type_summary">"• Gốc: Tuân theo cài đặt nhật ký xem của tài khoản Google, nhưng có thể không hoạt động do DNS hoặc VPN.
 • Thay thế miền: Vẫn tuân theo cài đặt nhật ký xem của tài khoản Google.

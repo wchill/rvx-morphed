@@ -2,10 +2,29 @@
 <resources>
     <!-- Shared -->
     <string name="revanced_settings_title">RVX</string>
+    <string name="revanced_settings_search_title">Pesquisar %s</string>
     <string name="revanced_reset_to_default_toast">Redefinir para os valores padrão.</string>
     <!-- Shared Category -->
     <string name="revanced_restart_first_run">Reinicie para carregar o layout normalmente</string>
     <string name="revanced_restart_message">Atualizar e reiniciar</string>
+    <string name="revanced_settings_search_hint">Configurações de pesquisa</string>
+    <string name="revanced_settings_search_no_results_title">Nenhum resultado encontrado para \'%s\'.</string>
+    <string name="revanced_settings_search_no_results_summary">Tentar outra palavra-chave.</string>
+    <string name="revanced_settings_search_recent_searches">Pesquisas recentes</string>
+    <string name="revanced_settings_search_remove_message">Remover do histórico de pesquisa?</string>
+    <string name="revanced_settings_search_clear_history">Limpar histórico de pesquisa</string>
+    <string name="revanced_settings_search_clear_history_message">Tem certeza que deseja limpar todo o histórico de pesquisa?</string>
+    <string name="revanced_settings_search_tips_title">Dicas para busca</string>
+    <string name="revanced_settings_search_tips_summary">"• Toque em um caminho para navegar até ele.
+• Pressione e segure uma configuração para navegar até ele.
+• Pressione Enter para salvar uma consulta de pesquisa no histórico.
+• Pesquisa ignora o caso e a pontuação.
+• Configurações dos pais aparecem acima das configurações dos filhos desativadas."</string>
+    <string name="revanced_settings_search_empty_history_title">O histórico de pesquisa está vazio</string>
+    <string name="revanced_settings_search_empty_history_summary">Para salvar o histórico de pesquisa, digite uma consulta de pesquisa e pressione Enter.</string>
+    <string name="revanced_settings_search_history_title">Exibir histórico de pesquisa de configurações</string>
+    <string name="revanced_settings_search_history_summary_on">O histórico de pesquisa de configurações será exibido.</string>
+    <string name="revanced_settings_search_history_summary_off">O histórico de pesquisa de configurações não será exibido.</string>
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">Conta</string>
     <string name="revanced_hide_account_menu_title">Ocultar menu de contas</string>
@@ -495,6 +514,12 @@ Se você é um usuário de YouTube Premium, essa configuração pode não ser ne
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Integrada</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simples</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Use JavaScript do reprodutor mais recente</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"Quando ativado, o JavaScript do reprodutor mais recente será usado para desofuscar a URL de transmissão na 'TV', 'TV Simples' e 'Mobile Web'.
+
+Se você estiver tendo problemas com seu cliente JavaScript, tente desativar isto primeiro."</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden">Não foi possível obter nenhum fluxo de cliente.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Tente alterar o cliente padrão para TV ou TV Simples.</string>
     <string name="revanced_watch_history_type_title">Tipo de histórico de exibição</string>
     <string name="revanced_watch_history_type_summary">"• Original: segue as configurações do histórico de exibição da conta do Google, mas o histórico de exibição pode não funcionar devido a DNS ou VPN.
 • Substituir domínio: segue as configurações do histórico de exibição da conta do Google.

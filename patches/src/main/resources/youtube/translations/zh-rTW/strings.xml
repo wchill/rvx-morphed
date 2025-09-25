@@ -4,6 +4,8 @@
     <string name="accessibility_settings_edu_opt_in_text">啟用影片播放器的無障礙控制功能嗎？</string>
     <string name="accessibility_settings_edu_opt_out_text">由於已啟用無障礙服務，你的控制選項已被修改。</string>
     <!-- Shared -->
+    <string name="revanced_settings_title">RVX</string>
+    <string name="revanced_settings_search_title">搜尋 %s</string>
     <string name="revanced_preference_category_experimental_flag">實驗性功能</string>
     <string name="revanced_dismiss_player_not_available_toast">影片ID無法使用。請手動重新開啟影片。</string>
     <string name="revanced_playback_speed_normal">正常</string>
@@ -2238,8 +2240,16 @@
     <string name="revanced_preference_screen_import_export_summary">導入或導出設定</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as file -->
     <string name="revanced_preference_category_import_export_as_file">導入 / 導出為文件</string>
+    <string name="revanced_settings_import_title">匯入設定</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as text -->
     <string name="revanced_preference_category_import_export_as_text">導入 / 導出為檔案</string>
+    <string name="revanced_settings_export_failed">匯出設定失敗。</string>
+    <string name="revanced_settings_export_success">設定已成功匯出。</string>
+    <string name="revanced_settings_import">匯入</string>
+    <string name="revanced_settings_import_copy">複製</string>
+    <string name="revanced_settings_import_failed">匯入設定失敗。</string>
+    <string name="revanced_settings_import_reset">設定重設為預設值。</string>
+    <string name="revanced_settings_import_success">設定已成功匯入。</string>
     <string name="revanced_share_copy_settings_success">設定已複製到剪貼簿。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <string name="revanced_preference_screen_spoof_streaming_data_title">偽裝串流數據</string>
@@ -2373,6 +2383,7 @@ YouTube 伺服器上的 n-sig 模式變化頻繁，如果正規表示式無法�
 • 動態中自動播放
 • 短片
 • Shorts 短片"</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">使用最新的播放器 JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">繞過虛假緩衝</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"繞過虛假緩衝已啟用。
 

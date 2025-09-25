@@ -2266,11 +2266,20 @@ Toque no botão continuar e desative as otimizações da bateria."</string>
     <string name="revanced_debug_logs_disabled">O registro de depuração está desativado.</string>
     <string name="revanced_debug_logs_none_found">Nenhum registro encontrado.</string>
     <string name="revanced_debug_logs_copied_to_clipboard">Registros copiados.</string>
+    <string name="revanced_debug_logs_failed_to_copy_to_clipboard">Os registros são muito grandes para copiar.</string>
     <string name="revanced_debug_logs_failed_to_export">Falha ao exportar registros: $s.</string>
     <string name="revanced_debug_logs_clear_buffer_title">Limpar registros de depuração</string>
     <string name="revanced_debug_logs_clear_buffer_summary">Limpa todos os registros de depuração do RVX armazenados.</string>
     <string name="revanced_debug_logs_clear_toast">Registros limpos.</string>
     <string name="revanced_debug_logs_export_success">Os registros foram exportados com sucesso.</string>
+    <string name="revanced_enable_watch_next_processing_delay_title">Ativar atraso de processamento do assistir ao próximo</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_on">Atraso de processamento do assistir ao próximo está ativado.</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_off">Atraso de processamento do assistir ao próximo está desativado.</string>
+    <string name="revanced_enable_watch_next_processing_delay_user_dialog_message">"Esta configuração força um atraso antes do carregamento da interface do reprodutor.
+
+Isso pode ser usado ao testar algo no MainThread."</string>
+    <string name="revanced_watch_next_processing_delay_title">Atraso de processamento do assistir ao próximo</string>
+    <string name="revanced_watch_next_processing_delay_summary">A quantidade de milissegundos do atraso no processamento da resposta do assistir ao próximo.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">Importar / Exportar configurações</string>
     <string name="revanced_preference_screen_import_export_summary">Importar ou exportar configurações.</string>
@@ -2423,6 +2432,14 @@ Entre os clientes JavaScript, o cliente recomendado é TV Simplis."</string>
 • Reprodução automática no feed
 • Clips
 • Shorts"</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Use JavaScript do reprodutor mais recente</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"O JavaScript do reprodutor para desfuscação é mantido atualizado.
+
+• É altamente dependente do servidor, e o sucesso ou a falha da desobfuscação depende do JavaScript do reprodutor usado atualmente no servidor.
+• Se você estiver tendo problemas com o cliente JavaScript, tente desativar isto primeiro."</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"O JavaScript do reprodutor para desfuscação não é mantido atualizado.
+
+• O JavaScript do reprodutor que tem sucesso na desofuscação é usado, mas ainda é algo dependente do servidor."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Ignorar buffers falsos</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Ignorar buffers falsos está ativado.
 

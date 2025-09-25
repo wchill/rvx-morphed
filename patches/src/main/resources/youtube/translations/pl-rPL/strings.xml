@@ -649,6 +649,9 @@ Jeśli później zostanie to wyłączone, rekomendowane jest usunięcie danych a
     <string name="revanced_spoof_app_version_target_entry_19_26_42">19.26.42 - Wyłącza ikony Cairo w pasku nawigacji oraz narzędzi</string>
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Przywraca stary nagłówek playlist</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Przywraca stare menu szybkości odtwarzania</string>
+    <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - Przywraca funkcjonalność transkrypcji</string>
+    <string name="revanced_spoof_app_version_other_item">Inne</string>
+    <string name="revanced_spoof_app_version_other_item_hint">Wprowadź wersję aplikacji</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Nieprawidłowa oszukiwana wersja aplikacji: %s.</string>
     <string name="revanced_fix_spoof_app_version_side_effect_title">Napraw efekty uboczne oszukiwania wersji aplikacji</string>
     <string name="revanced_fix_spoof_app_version_side_effect_summary_on">"'Autoodtwarzanie' zamiast 'Odtwarzanie'"</string>
@@ -2286,11 +2289,20 @@ Stuknij przycisk kontynuacji i zezwól na zmiany w optymalizacji."</string>
     <string name="revanced_debug_logs_disabled">Logi od debugowania są wyłączone.</string>
     <string name="revanced_debug_logs_none_found">Nie znaleziono logów.</string>
     <string name="revanced_debug_logs_copied_to_clipboard">Skopiowano logi.</string>
+    <string name="revanced_debug_logs_failed_to_copy_to_clipboard">Logi są zbyt wielkie, by je skopiować.</string>
     <string name="revanced_debug_logs_failed_to_export">Nie udało się wyeksportować logów: $s.</string>
     <string name="revanced_debug_logs_clear_buffer_title">Wyczyść logi od debugowania</string>
     <string name="revanced_debug_logs_clear_buffer_summary">Czyści wszystkie przechowane logi od debugowania RVX</string>
     <string name="revanced_debug_logs_clear_toast">Wyczyszczono logi.</string>
     <string name="revanced_debug_logs_export_success">Logi zostały pomyślnie wyeksportowane.</string>
+    <string name="revanced_enable_watch_next_processing_delay_title">Opóźnienie przetwarzania oglądania dalej</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_on">Włączone</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_off">Wyłączone</string>
+    <string name="revanced_enable_watch_next_processing_delay_user_dialog_message">"Ustawienie wymusza opóźnienie zanim interfejs odtwarzacza się załaduje.
+
+Może być używane podczas testowania czegokolwiek na głównym wątku (MainThread)."</string>
+    <string name="revanced_watch_next_processing_delay_title">Ustaw opóźnienie przetwarzania oglądania dalej</string>
+    <string name="revanced_watch_next_processing_delay_summary">Ilość milisekund opóźnieniu w przetwarzaniu odpowiedzi na oglądanie dalej.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">Zaimportuj / Wyeksportuj ustawienia</string>
     <string name="revanced_preference_screen_import_export_summary">Zaimportuj / wyeksportuj ustawienia RVX</string>
@@ -2446,6 +2458,14 @@ Spośród klientów JavaScript, rekomendowanym klientem jest Uproszczony TV."</s
 • autoodtwarzanie na stronie głównej
 • klipy
 • shortsy"</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Najnowszy JavaScript odtwarzacza</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"Włączony
+
+• jest to wysoce zależne od serwera, a sukces lub porażka odszyfrowywania zależy od wersji JavaScript odtwarzacza obecnie używanego na serwerze
+• jeśli masz problemy z klientem JavaScript, w pierwszej kolejności spróbuj to wyłączyć"</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"Wyłączony
+
+• wersja JavaScript odtwarzacza nadająca się do odszyfrowywania, jednakże nadal jest to nieco zależne od serwera"</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Obejście fałszywego buforowania</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Włączone
 

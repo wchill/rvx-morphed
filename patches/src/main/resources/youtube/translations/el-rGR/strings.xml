@@ -23,7 +23,7 @@
     <string name="revanced_settings_search_recent_searches">Πρόσφατες αναζητήσεις</string>
     <string name="revanced_settings_search_remove_message">Κατάργηση από το ιστορικό αναζήτησης;</string>
     <string name="revanced_settings_search_clear_history">Εκκαθάριση ιστορικού αναζήτησης</string>
-    <string name="revanced_settings_search_clear_history_message">Είστε σίγουροι ότι θέλετε να εκκαθαρίσετε όλο το ιστορικό αναζήτησης;</string>
+    <string name="revanced_settings_search_clear_history_message">Είστε βέβαιοι ότι θέλετε να εκκαθαρίσετε όλο το ιστορικό αναζήτησης;</string>
     <string name="revanced_settings_search_tips_title">Συμβουλές Αναζήτησης</string>
     <string name="revanced_settings_search_tips_summary">"• Πατήστε μια διαδρομή για να μεταβείτε σε αυτήν.
 • Πατήστε παρατεταμένα μια ρύθμιση για να μεταβείτε σε αυτήν.
@@ -1325,7 +1325,7 @@ Playlists
     <string name="revanced_keep_landscape_mode_summary_on">Τα βίντεο συνεχίζουν να αναπαράγονται σε οριζόντια λειτουργία ακόμη και όταν κλείνεται και ξανανοίγεται η οθόνη.</string>
     <string name="revanced_keep_landscape_mode_summary_off">Τα βίντεο αναπαράγονται σε κάθετη λειτουργία όταν κλείνεται και ξανανοίγεται η οθόνη.</string>
     <string name="revanced_keep_landscape_mode_timeout_title">Χρονικό όριο οριζόντιας λειτουργίας</string>
-    <string name="revanced_keep_landscape_mode_timeout_summary">Ο αριθμός των χιλιοστών δευτερολέπτου που θα εξαναγκάζεται η οριζόντια λειτουργία.</string>
+    <string name="revanced_keep_landscape_mode_timeout_summary">Ο αριθμός των χιλιοστών του δευτερολέπτου που θα εξαναγκάζεται η οριζόντια λειτουργία μετά την ενεργοποίηση της οθόνης.</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Haptic feedback -->
     <string name="revanced_preference_screen_haptic_feedback_title">Απόκριση δόνησης</string>
     <string name="revanced_preference_screen_haptic_feedback_summary">Απενεργοποίηση η ενεργοποίηση της απόκρισης δόνησης.</string>
@@ -1878,7 +1878,7 @@ Playlists
     <string name="revanced_swipe_text_overlay_size_summary">Το μέγεθος κειμένου στο φόντο της σάρωσης μεταξύ 1-30.</string>
     <string name="revanced_swipe_text_overlay_size_invalid_toast">Το μέγεθος κειμένου πρέπει να είναι μεταξύ 1-30.</string>
     <string name="revanced_swipe_overlay_timeout_title">Χρονικό όριο φόντου σάρωσης</string>
-    <string name="revanced_swipe_overlay_timeout_summary">Το χρονικό διάστημα των χιλιοστών του δευτερολέπτου που είναι ορατό το φόντο σάρωσης.</string>
+    <string name="revanced_swipe_overlay_timeout_summary">Ο αριθμός των χιλιοστών του δευτερολέπτου που είναι ορατό το φόντο σάρωσης.</string>
     <string name="revanced_swipe_brightness_distance_dip_title">Απόσταση σάρωσης φωτεινότητας</string>
     <string name="revanced_swipe_brightness_distance_dip_summary">Ελάχιστη απόσταση σάρωσης, σε pixels.</string>
     <string name="revanced_swipe_brightness_distance_dip_invalid_toast">Η απόσταση σάρωσης πρέπει να είναι μεταξύ 0.1dip - 10.0dip.</string>
@@ -1919,7 +1919,7 @@ Playlists
 • Για την αναπαραγωγή βίντεο τύπου HDR, ο κωδικοποιητής VP9 εξακολουθεί να χρησιμοποιείται."</string>
     <string name="revanced_disable_vp9_codec_summary_off">Ο κωδικοποιητής VP9 είναι ενεργοποιημένος.</string>
     <string name="revanced_enable_opus_codec_title">Ενεργοποίηση κωδικοποιητή OPUS</string>
-    <string name="revanced_enable_opus_codec_summary">Ενεργοποίηση του κωδικοποιητή OPUS αν η ανταπόκριση του προγράμματος αναπαραγωγής τον περιλαμβάνει.</string>
+    <string name="revanced_enable_opus_codec_summary">Ενεργοποίηση του κωδικοποιητή OPUS αν η απόκριση του προγράμματος αναπαραγωγής τον περιλαμβάνει.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Ταχύτητα αναπαραγωγής</string>
     <string name="revanced_default_playback_speed_title">Προεπιλεγμένη ταχύτητα αναπαραγωγής</string>
@@ -2296,11 +2296,20 @@ Playlists
     <string name="revanced_debug_logs_disabled">Η καταγραφή εντοπισμού σφαλμάτων είναι απενεργοποιημένη.</string>
     <string name="revanced_debug_logs_none_found">Δεν βρέθηκαν αρχεία καταγραφής.</string>
     <string name="revanced_debug_logs_copied_to_clipboard">Τα αρχεία καταγραφής αντιγράφηκαν.</string>
+    <string name="revanced_debug_logs_failed_to_copy_to_clipboard">Τα αρχεία καταγραφής είναι πολύ μεγάλα για αντιγραφή.</string>
     <string name="revanced_debug_logs_failed_to_export">Αποτυχία εξαγωγής αρχείων καταγραφής: $s.</string>
     <string name="revanced_debug_logs_clear_buffer_title">Εκκαθάριση αρχείων καταγραφής εντοπισμού σφαλμάτων</string>
     <string name="revanced_debug_logs_clear_buffer_summary">Εκκαθάριση όλων των αποθηκευμένων αρχειών καταγραφής εντοπισμού σφαλμάτων RVX.</string>
     <string name="revanced_debug_logs_clear_toast">Τα αρχεία καταγραφής εκκαθαρίστηκαν.</string>
     <string name="revanced_debug_logs_export_success">Τα αρχεία καταγραφής εξήχθησαν με επιτυχία.</string>
+    <string name="revanced_enable_watch_next_processing_delay_title">Ενεργοποίηση καθυστέρησης επεξεργασίας επόμενης παρακολούθησης</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_on">Η καθυστέρηση επεξεργασίας επόμενης παρακολούθησης είναι ενεργοποιημένη.</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_off">Η καθυστέρηση επεξεργασίας επόμενης παρακολούθησης είναι απενεργοποιημένη.</string>
+    <string name="revanced_enable_watch_next_processing_delay_user_dialog_message">"Αυτή η ρύθμιση εξαναγκάζει μια καθυστέρηση πριν τη φόρτωση της διεπαφής του προγράμματος αναπαραγωγής.
+
+Αυτό μπορεί να χρησιμοποιηθεί όταν δοκιμάζεται κάτι στο MainThread."</string>
+    <string name="revanced_watch_next_processing_delay_title">Καθυστέρηση επεξεργασίας επόμενης παρακολούθησης</string>
+    <string name="revanced_watch_next_processing_delay_summary">Ο αριθμός των χιλιοστών του δευτερολέπτου που κρατάει η καθυστέρηση επεξεργασίας της απόκρισης επόμενης παρακολούθησης.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">Εισαγωγή / Εξαγωγή ρυθμίσεων</string>
     <string name="revanced_preference_screen_import_export_summary">Εισαγωγή ή εξαγωγή των ρυθμίσεών RVX σας.</string>
@@ -2455,6 +2464,14 @@ Playlists
 • Αυτόματη αναπαραγωγή των βίντεο στη ροή
 • Κλιπ
 • Shorts"</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Χρήση Player JavaScript τελευταίας έκδοσης</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"Η Player JavaScript για αποσυσκότιση τηρείται ενημερωμένη.
+
+• Είναι ιδιαίτερα εξαρτημένη από τον διακομιστή, και η επιτυχία ή η αποτυχία της αποσυσκότισης εξαρτάται από την έκδοση Player JavaScript που χρησιμοποιείται αυτή τη στιγμή στον διακομιστή.
+• Αν αντιμετωπίζετε προβλήματα με τον πελάτη JavaScript, δοκιμάστε πρώτα να απενεργοποιήσετε αυτή τη ρύθμιση."</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"Η Player JavaScript για αποσυσκότιση δεν τηρείται ενημερωμένη.
+
+• Χρησιμοποιείται η έκδοση Player JavaScript που πετυχαίνει στην αποσυσκότιση, αλλά παραμένει σε κάποιο βαθμό εξαρτημένη από τον διακομιστή."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Παράκαμψη ψεύτικου κολλήματος</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Η παράκαμψη ψεύτικου κολλήματος είναι ενεργοποιημένη.
 
