@@ -1080,7 +1080,8 @@
     "use": true,
     "dependencies": [
       "ResourcePatch",
-      "Settings for YouTube"
+      "Settings for YouTube",
+      "ResourcePatch"
     ],
     "compatiblePackages": {
       "com.google.android.youtube": [
