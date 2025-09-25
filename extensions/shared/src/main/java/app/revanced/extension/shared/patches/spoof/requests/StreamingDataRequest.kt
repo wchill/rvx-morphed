@@ -446,38 +446,38 @@ class StreamingDataRequest private constructor(
                         connection.disconnect()
                         continue
                     }
-                    val json = Requester.parseJSONObject(connection)
+                    val json = Requester.parseJSONObjectAndDisconnect(connection)
 
                     if (!json.has("captions")) {
-                        return
+                        continue
                     }
                     val captions =
                         json.getJSONObject("captions")
                     if (!captions.has("playerCaptionsTracklistRenderer")) {
-                        return
+                        continue
                     }
                     val playerCaptionsTracklistRenderer =
                         captions.getJSONObject("playerCaptionsTracklistRenderer")
                     if (!playerCaptionsTracklistRenderer.has("audioTracks")) {
-                        return
+                        continue
                     }
                     val audioTracks =
                         playerCaptionsTracklistRenderer.getJSONArray("audioTracks")
                     if (audioTracks.length() < 2) {
-                        return
+                        continue
                     }
                     if (!json.has("streamingData")) {
-                        return
+                        continue
                     }
                     val streamingData =
                         json.getJSONObject("streamingData")
                     if (!streamingData.has("adaptiveFormats")) {
-                        return
+                        continue
                     }
                     val adaptiveFormats =
                         streamingData.getJSONArray("adaptiveFormats")
                     if (adaptiveFormats.length() < 2) {
-                        return
+                        continue
                     }
                     for (i in adaptiveFormats.length() - 1 downTo 0) {
                         val adaptiveFormat = adaptiveFormats.getJSONObject(i)
@@ -505,6 +505,14 @@ class StreamingDataRequest private constructor(
                 } finally {
                     Logger.printDebug { "Fetching audio track request end (videoId: $videoId, took: ${(System.currentTimeMillis() - startTime)} ms)" }
                 }
+            }
+            if (overrideLanguage.isEmpty()) {
+                // If client spoofing does not use authentication and lacks multi-audio streams,
+                // then can use any language code for the request and if that requested language is
+                // not available YT uses the original audio language. Authenticated requests ignore
+                // the language code and always use the account language. Use a language that is
+                // not auto-dubbed by YouTube: https://support.google.com/youtube/answer/15569972
+                overrideLanguage = "sv"
             }
         }
 
