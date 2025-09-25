@@ -1,4 +1,4 @@
-package app.revanced.extension.youtube.settings;
+package app.revanced.extension.music.settings;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -8,19 +8,18 @@ import android.preference.PreferenceFragment;
 import android.view.View;
 import android.widget.Toolbar;
 
-import app.revanced.extension.shared.utils.BaseThemeUtils;
+import app.revanced.extension.music.settings.preference.YouTubeMusicPreferenceFragment;
+import app.revanced.extension.music.settings.search.YouTubeMusicSearchViewController;
 import app.revanced.extension.shared.settings.BaseHostActivity;
-import app.revanced.extension.youtube.settings.preference.YouTubePreferenceFragment;
-import app.revanced.extension.youtube.settings.search.YouTubeSearchViewController;
-import app.revanced.extension.youtube.utils.ThemeUtils;
+import app.revanced.extension.shared.utils.BaseThemeUtils;
+import app.revanced.extension.shared.utils.ResourceUtils;
 
-public class YouTubeHostActivity extends BaseHostActivity {
+public class YouTubeMusicHostActivity extends BaseHostActivity {
+    private final int REVANCED_SETTINGS_BACKGROUND_COLOR =
+            ResourceUtils.getColor("yt_black_pure");
 
-    /**
-     * Controller for managing search view components in the toolbar.
-     */
     @SuppressLint("StaticFieldLeak")
-    public static YouTubeSearchViewController searchViewController;
+    public static YouTubeMusicSearchViewController searchViewController;
 
     @Override
     protected void onCreate(Bundle bundle) {
@@ -35,15 +34,18 @@ public class YouTubeHostActivity extends BaseHostActivity {
     }
 
     /**
-     * Customizes the activity theme based on dark/light mode.
+     * Sets the fixed theme for the activity.
      */
     @Override
     protected void customizeActivityTheme(Activity activity) {
-        activity.setTheme(ThemeUtils.getThemeId());
+        // Override the default YouTube Music theme to increase start padding of list items.
+        // Custom style located in resources/music/values/style.xml
+        activity.setTheme(ResourceUtils.getStyleIdentifier("Theme.ReVanced.YouTubeMusic.Settings"));
+        activity.getWindow().getDecorView().setBackgroundColor(REVANCED_SETTINGS_BACKGROUND_COLOR);
     }
 
     /**
-     * Returns the resource ID for the YouTube settings layout.
+     * Returns the resource ID for the YouTube Music settings layout.
      */
     @Override
     protected int getContentViewResourceId() {
@@ -55,7 +57,7 @@ public class YouTubeHostActivity extends BaseHostActivity {
      */
     @Override
     protected int getToolbarBackgroundColor() {
-        return ThemeUtils.getToolbarBackgroundColor();
+        return REVANCED_SETTINGS_BACKGROUND_COLOR;
     }
 
     /**
@@ -67,15 +69,21 @@ public class YouTubeHostActivity extends BaseHostActivity {
     }
 
     /**
-     * Returns the click listener for the navigation icon.
+     * Returns the click listener that finishes the activity when the navigation icon is clicked.
      */
     @Override
     protected View.OnClickListener getNavigationClickListener(Activity activity) {
-        return null;
+        return view -> {
+            if (searchViewController != null && searchViewController.isSearchActive()) {
+                searchViewController.closeSearch();
+            } else {
+                activity.finish();
+            }
+        };
     }
 
     /**
-     * Adds search view components to the toolbar for {@link YouTubePreferenceFragment}.
+     * Adds search view components to the toolbar for {@link YouTubeMusicPreferenceFragment}.
      *
      * @param activity The activity hosting the toolbar.
      * @param toolbar  The configured toolbar.
@@ -83,18 +91,18 @@ public class YouTubeHostActivity extends BaseHostActivity {
      */
     @Override
     protected void onPostToolbarSetup(Activity activity, Toolbar toolbar, PreferenceFragment fragment) {
-        if (fragment instanceof YouTubePreferenceFragment preferenceFragment) {
-            searchViewController = YouTubeSearchViewController.addSearchViewComponents(
+        if (fragment instanceof YouTubeMusicPreferenceFragment preferenceFragment) {
+            searchViewController = YouTubeMusicSearchViewController.addSearchViewComponents(
                     activity, toolbar, preferenceFragment);
         }
     }
 
     /**
-     * Creates a new {@link YouTubePreferenceFragment} for the activity.
+     * Creates a new {@link YouTubeMusicPreferenceFragment} for the activity.
      */
     @Override
     protected PreferenceFragment createPreferenceFragment() {
-        return new YouTubePreferenceFragment();
+        return new YouTubeMusicPreferenceFragment();
     }
 
     /**
@@ -106,6 +114,6 @@ public class YouTubeHostActivity extends BaseHostActivity {
      */
     @Override
     protected boolean handleFinish() {
-        return YouTubeSearchViewController.handleFinish(searchViewController);
+        return YouTubeMusicSearchViewController.handleFinish(searchViewController);
     }
 }

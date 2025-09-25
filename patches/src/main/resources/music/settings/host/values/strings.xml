@@ -2,11 +2,30 @@
 <resources>
     <!-- Shared -->
     <string name="revanced_settings_title">RVX</string>
+    <string name="revanced_settings_search_title">Search %s</string>
     <string name="revanced_reset_to_default_toast">Reset to default values.</string>
 
     <!-- Shared Category -->
     <string name="revanced_restart_first_run">Restart to load the layout normally</string>
     <string name="revanced_restart_message">Refresh and restart</string>
+    <string name="revanced_settings_search_hint">Search settings</string>
+    <string name="revanced_settings_search_no_results_title">No results found for \'%s\'.</string>
+    <string name="revanced_settings_search_no_results_summary">Try another keyword.</string>
+    <string name="revanced_settings_search_recent_searches">Recent searches</string>
+    <string name="revanced_settings_search_remove_message">Remove from search history?</string>
+    <string name="revanced_settings_search_clear_history">Clear search history</string>
+    <string name="revanced_settings_search_clear_history_message">Are you sure you want to clear all search history?</string>
+    <string name="revanced_settings_search_tips_title">Search Tips</string>
+    <string name="revanced_settings_search_tips_summary">"• Tap a path to navigate to it.
+• Long-press a setting to navigate to it.
+• Press Enter to save a search query to history.
+• Search ignores casing and punctuation.
+• Parent settings appear above disabled child settings."</string>
+    <string name="revanced_settings_search_empty_history_title">Search history is empty</string>
+    <string name="revanced_settings_search_empty_history_summary">To save search history, type a search query and press Enter.</string>
+    <string name="revanced_settings_search_history_title">Show settings search history</string>
+    <string name="revanced_settings_search_history_summary_on">Settings search history is shown.</string>
+    <string name="revanced_settings_search_history_summary_off">Settings search history is not shown.</string>
 
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">Account</string>
@@ -547,6 +566,9 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
     <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"When enabled, the latest player JavaScript will be used to deobfuscate streaming Url on 'TV', 'TV Simply' and 'Mobile Web'.
 
 If you're having issues with your JavaScript client, try disabling this first."</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden">Could not fetch any client streams.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Try changing the default client to TV or TV Simply.</string>
+
     <string name="revanced_watch_history_type_title">Watch history type</string>
     <string name="revanced_watch_history_type_summary">"• Original: Follows the watch history settings of Google account, but watch history may not work due to DNS or VPN.
 • Replace domain: Follows the watch history settings of Google account.
