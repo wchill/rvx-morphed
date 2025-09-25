@@ -265,40 +265,14 @@ class StreamingDataRequest private constructor(
                         val adaptiveFormats = streamingData.getAdaptiveFormats(i)
 
                         if (adaptiveFormats != null) {
-                            var streamUrl: String?
-                            val url: String? = adaptiveFormats.url
-                            val signatureCipher: String? = adaptiveFormats.signatureCipher
-
-                            if (!url.isNullOrEmpty()) {
-                                streamUrl = url
-                            } else if (!signatureCipher.isNullOrEmpty()) {
-                                streamUrl =
-                                    ThrottlingParameterUtils.getUrlWithThrottlingParameterObfuscated(
-                                        videoId,
-                                        signatureCipher,
-                                        isTV
-                                    )
-                            } else {
-                                // Neither streamingUrl nor signatureCipher are present in the response.
-                                // In this case, decoding serverAbrStreamingUrl is required to obtain streamingUrl.
-                                // This feature is not yet implemented in RVX.
-                                Logger.printDebug { "Neither streamingUrl nor signatureCipher were found, legacy client will be used" }
-                                return null
-                            }
-                            // streamUrl not found, trying to fetch with legacy client.
-                            if (streamUrl.isNullOrEmpty()) {
-                                Logger.printDebug { "StreamUrl was not found, legacy client will be used" }
-                                return null
-                            }
-                            var deobfuscatedUrl =
-                                ThrottlingParameterUtils.getUrlWithThrottlingParameterDeobfuscated(
+                            val deobfuscatedUrl =
+                                ThrottlingParameterUtils.deobfuscateStreamingUrl(
                                     videoId,
-                                    streamUrl,
+                                    adaptiveFormats.url,
+                                    adaptiveFormats.signatureCipher,
+                                    sessionPoToken,
                                     isTV
                                 )
-                            if (!deobfuscatedUrl.isNullOrEmpty() && !sessionPoToken.isNullOrEmpty()) {
-                                deobfuscatedUrl += "&pot=$sessionPoToken"
-                            }
                             if (deobfuscatedUrl.isNullOrEmpty()) {
                                 Logger.printDebug { "Failed to decrypt n-sig or signatureCipher, please check if latest regular expressions are being used" }
                                 return null
@@ -317,42 +291,14 @@ class StreamingDataRequest private constructor(
                                 deobfuscatedFormatsArrayList.clear()
                                 break
                             }
-                            var streamUrl: String?
-                            val url: String? = formats.url
-                            val signatureCipher: String? = formats.signatureCipher
-
-                            if (!url.isNullOrEmpty()) {
-                                streamUrl = url
-                            } else if (!signatureCipher.isNullOrEmpty()) {
-                                streamUrl =
-                                    ThrottlingParameterUtils.getUrlWithThrottlingParameterObfuscated(
-                                        videoId,
-                                        signatureCipher,
-                                        isTV
-                                    )
-                            } else {
-                                // Neither streamingUrl nor signatureCipher are present in the response.
-                                // In this case, decoding serverAbrStreamingUrl is required to obtain streamingUrl.
-                                // This feature is not yet implemented in RVX.
-                                Logger.printDebug { "Neither streamingUrl nor signatureCipher were found" }
-                                deobfuscatedFormatsArrayList.clear()
-                                break
-                            }
-                            // streamUrl not found, trying to fetch with legacy client.
-                            if (streamUrl.isNullOrEmpty()) {
-                                Logger.printDebug { "StreamUrl was not found" }
-                                deobfuscatedFormatsArrayList.clear()
-                                break
-                            }
-                            var deobfuscatedUrl =
-                                ThrottlingParameterUtils.getUrlWithThrottlingParameterDeobfuscated(
+                            val deobfuscatedUrl =
+                                ThrottlingParameterUtils.deobfuscateStreamingUrl(
                                     videoId,
-                                    streamUrl,
+                                    formats.url,
+                                    formats.signatureCipher,
+                                    sessionPoToken,
                                     isTV
                                 )
-                            if (!deobfuscatedUrl.isNullOrEmpty() && !sessionPoToken.isNullOrEmpty()) {
-                                deobfuscatedUrl += "&pot=$sessionPoToken"
-                            }
                             if (deobfuscatedUrl.isNullOrEmpty()) {
                                 Logger.printDebug { "Failed to decrypt n-sig or signatureCipher" }
                                 deobfuscatedFormatsArrayList.clear()
@@ -365,9 +311,11 @@ class StreamingDataRequest private constructor(
                     var serverAbrStreamingUrl = streamingData.serverAbrStreamingUrl
                     if (!serverAbrStreamingUrl.isNullOrEmpty()) {
                         serverAbrStreamingUrl = ThrottlingParameterUtils
-                            .getUrlWithThrottlingParameterDeobfuscated(
+                            .deobfuscateStreamingUrl(
                                 videoId,
                                 serverAbrStreamingUrl,
+                                null,
+                                sessionPoToken,
                                 isTV
                             )
                     }

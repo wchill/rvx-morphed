@@ -547,6 +547,37 @@ public class ThrottlingParameterUtils {
         return null;
     }
 
+    @Nullable
+    public static String deobfuscateStreamingUrl(
+            @NonNull String videoId,
+            @Nullable String url,
+            @Nullable String signatureCipher,
+            @Nullable String poToken,
+            boolean isTV) {
+        String streamUrl = null;
+        if (StringUtils.isNotEmpty(url)) {
+            streamUrl = url;
+        } else if (StringUtils.isNotEmpty(signatureCipher)) {
+            streamUrl = getUrlWithThrottlingParameterObfuscated(
+                    videoId,
+                    signatureCipher,
+                    isTV
+            );
+        }
+        if (StringUtils.isNotEmpty(streamUrl)) {
+            String deobfuscatedUrl = getUrlWithThrottlingParameterDeobfuscated(
+                    videoId,
+                    streamUrl,
+                    isTV
+            );
+            if (StringUtils.isNotEmpty(poToken)) {
+                deobfuscatedUrl += "&pot=" + poToken;
+            }
+            return deobfuscatedUrl;
+        }
+        return null;
+    }
+
     /**
      * Convert signatureCipher to streaming url with obfuscated 'n' parameter.
      * <p>
@@ -556,7 +587,7 @@ public class ThrottlingParameterUtils {
      * @return Streaming url with obfuscated 'n' parameter.
      */
     @Nullable
-    public static String getUrlWithThrottlingParameterObfuscated(@NonNull String videoId, @NonNull String signatureCipher,
+    private static String getUrlWithThrottlingParameterObfuscated(@NonNull String videoId, @NonNull String signatureCipher,
                                                                  boolean isTV) {
         try {
             PlayerDataExtractor extractor = getExtractor(isTV);
@@ -596,7 +627,7 @@ public class ThrottlingParameterUtils {
      * @return Deobfuscated streaming url.
      */
     @Nullable
-    public static String getUrlWithThrottlingParameterDeobfuscated(@NonNull String videoId, @Nullable String obfuscatedUrl,
+    private static String getUrlWithThrottlingParameterDeobfuscated(@NonNull String videoId, @NonNull String obfuscatedUrl,
                                                                    boolean isTV) {
         try {
             // Obfuscated url is empty.
