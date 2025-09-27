@@ -136,6 +136,11 @@ object YouTubeClient {
      * 2. Over the past few months, BotGuard PoToken has not been used on WEB_SAFARI (iPadOS).
      *
      * It may still not work for some users.
+     *
+     * Update:
+     * Playback issue occurs when the value of 'iosPlayerConfig.requestIosguardDataAfterPlaybackStarts' in the player response is 'true'.
+     * It appears that blocking the '/att/get' endpoint can prevent this, but I'm not sure.
+     * (More samples are needed)
      */
     private const val PACKAGE_NAME_IPADOS = "com.google.ios.youtube"
 
