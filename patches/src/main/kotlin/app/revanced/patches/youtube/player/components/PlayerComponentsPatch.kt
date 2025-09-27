@@ -819,8 +819,8 @@ val playerComponentsPatch = bytecodePatch(
 
                 addInstructions(
                     targetIndex + 1, """
-                        invoke-static {}, $PLAYER_CLASS_DESCRIPTOR->hideSeekMessage(Landroid/view/ViewStub;)Landroid/view/ViewStub;
-                        move-result-object v0
+                        invoke-static { v$targetRegister }, $PLAYER_CLASS_DESCRIPTOR->hideSeekMessage(Landroid/view/ViewStub;)Landroid/view/ViewStub;
+                        move-result-object v$targetRegister
                         """
                 )
             }
