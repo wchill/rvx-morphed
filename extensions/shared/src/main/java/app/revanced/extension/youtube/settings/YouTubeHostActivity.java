@@ -98,10 +98,6 @@ public class YouTubeHostActivity extends BaseHostActivity {
     }
 
     /**
-     * Injection point.
-     * <p>
-     * Overrides {@link Activity#finish()} of the injection Activity.
-     *
      * @return if the original activity finish method should be allowed to run.
      */
     @Override
