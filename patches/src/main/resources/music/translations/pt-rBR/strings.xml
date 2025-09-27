@@ -512,7 +512,6 @@ Se você é um usuário de YouTube Premium, essa configuração pode não ser ne
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobile Web</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Integrada</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simples</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Use JavaScript do reprodutor mais recente</string>
     <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"Quando ativado, o JavaScript do reprodutor mais recente será usado para desofuscar a URL de transmissão na 'TV', 'TV Simples' e 'Mobile Web'.

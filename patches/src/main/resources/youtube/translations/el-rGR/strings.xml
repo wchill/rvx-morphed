@@ -2131,7 +2131,6 @@ Playlists
     <string name="revanced_sb_skip_showbutton">Εμφάνιση κουμπιού παράλειψης</string>
     <string name="revanced_sb_skip_seekbaronly">Εμφάνιση στη γραμμή προόδου</string>
     <string name="revanced_sb_skip_ignore">Απενεργοποίηση</string>
-    <string name="revanced_sb_color_opacity_label">Αδιαφάνεια:</string>
     <string name="revanced_sb_color_dot_label">Χρώμα:</string>
     <string name="revanced_sb_share_copy_settings_success">Οι ρυθμίσεις αντιγράφηκαν στο πρόχειρο.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->
@@ -2351,7 +2350,6 @@ Playlists
 <small>(λειτουργία σε εξέλιξη, χωρίς σύνδεση χρήστη)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Ακυκλοφόρητο, χωρίς σύνδεση χρήστη)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Παρενέργειες παραποίησης</string>

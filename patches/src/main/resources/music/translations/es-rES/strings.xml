@@ -469,7 +469,6 @@ Problemas conocidos:
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Web Móvil</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV integrado</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV simplemente</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_watch_history_type_title">Tipo de vista del historial</string>
     <string name="revanced_watch_history_type_summary">"• Original: Sigue la configuración del registro del historial de su cuenta de Google, pero la opción del registro del historial pueda no funcionar al tener un DNS o VPN.

@@ -2107,7 +2107,6 @@
     <string name="revanced_sb_skip_showbutton">عرض زر التخطي</string>
     <string name="revanced_sb_skip_seekbaronly">عرض في شريط تقدم الفيديو</string>
     <string name="revanced_sb_skip_ignore">تعطيل</string>
-    <string name="revanced_sb_color_opacity_label">الشفافية:</string>
     <string name="revanced_sb_color_dot_label">اللون:</string>
     <string name="revanced_sb_share_copy_settings_success">تم نسخ الإعدادات إلى الحافظة.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->
@@ -2276,6 +2275,9 @@
     <string name="revanced_debug_logs_clear_buffer_summary">مسح جميع سجلات تصحيح أخطاء RVX المخزنة.</string>
     <string name="revanced_debug_logs_clear_toast">تم مسح السجلات.</string>
     <string name="revanced_debug_logs_export_success">تم تصدير السجلات بنجاح.</string>
+    <string name="revanced_enable_watch_next_processing_delay_user_dialog_message">"يفرض هذا الإعداد تأخيرًا قبل تحميل واجهة المستخدم.
+
+يمكن استخدامه عند اختبار شيء ما على MainThread."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">استيراد / تصدير الإعدادات</string>
     <string name="revanced_preference_screen_import_export_summary">إستيراد \ تصدير إعدادات RVX.</string>
@@ -2317,7 +2319,6 @@
 <small>(WIP, بدون مصادقة)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(لم يصدر ، بدون مصادقة)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">التأثيرات الجانبية للتزييف</string>
@@ -2431,6 +2432,14 @@
 • التشغيل التلقائي في الموجز
 • المقاطع
 • Shorts"</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">استخدام أحدث مشغل JavaScript</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"يتم تحديث مشغل JavaScript لإزالة التشويش باستمرار.
+
+• يعتمد بشكل كبير على الخادم، ويعتمد نجاح أو فشل إزالة التشويش على JavaScript المشغل المُستخدم حاليًا على الخادم.
+• إذا كنت تواجه مشاكل مع عميل JavaScript، فحاول تعطيله أولًا."</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"لا يتم تحديث مشغل JavaScript لإزالة التشويش.
+
+• يستخدم JavaScript المشغل الذي ينجح في إزالة التشويش، ولكنه لا يزال يعتمد إلى حد ما على الخادم."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">تجاوز التخزين المؤقت الزائف</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"تم تمكين تجاوز التخزين المؤقت الزائف.
 

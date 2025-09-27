@@ -2105,7 +2105,6 @@ Tocca qui per vedere come emettere una chiave API."</string>
     <string name="revanced_sb_skip_showbutton">Mostra un pulsante salta</string>
     <string name="revanced_sb_skip_seekbaronly">Mostra nella barra di avanzamento</string>
     <string name="revanced_sb_skip_ignore">Disabilita</string>
-    <string name="revanced_sb_color_opacity_label">Opacità:</string>
     <string name="revanced_sb_color_dot_label">Colore:</string>
     <string name="revanced_sb_share_copy_settings_success">Impostazioni copiate negli appunti</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->
@@ -2320,7 +2319,6 @@ Nota: questa impostazione potrebbe non essere necessaria se sei un utente YouTub
 <small>(In fase di sviluppo e nessun accesso richiesto)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Non rilasciato e nessun accesso richiesto)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Effetti collaterali del camuffamento</string>

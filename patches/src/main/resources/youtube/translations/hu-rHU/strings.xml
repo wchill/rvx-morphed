@@ -2128,7 +2128,6 @@ Kattintson az API-kulcs kiadás folyamatának megtekintéséhez."</string>
     <string name="revanced_sb_skip_showbutton">Kihagyás gomb megjelenítése</string>
     <string name="revanced_sb_skip_seekbaronly">Megjelenítés a folyamatsávban</string>
     <string name="revanced_sb_skip_ignore">Letiltás</string>
-    <string name="revanced_sb_color_opacity_label">Áttetszőség:</string>
     <string name="revanced_sb_color_dot_label">Szín:</string>
     <string name="revanced_sb_share_copy_settings_success">A beállításokat a vágólapra másoltuk.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->
@@ -2346,7 +2345,6 @@ Ha YouTube Premium felhasználó vagy, akkor ez a beállítás nem feltétlenül
 <small>(fejlesztés alatt, nincs hitelesítés)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV beágyazott</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV egyszerű</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Kiadatlan, nincs hitelesítés)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Hamisítás mellékhatásai</string>

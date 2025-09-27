@@ -484,7 +484,6 @@ Bilinen Sorunlar:
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobil İnternet</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Gömülü TV</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">Basitçe TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">vizyon işletim sistemi</string>
     <string name="revanced_watch_history_type_title">İzleme geçmişi türü</string>
     <string name="revanced_watch_history_type_summary">"- Orijinal: Google hesabının izleme geçmişi ayarlarını takip eder, ancak izleme geçmişi DNS veya VPN nedeniyle çalışmayabilir.

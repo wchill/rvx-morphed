@@ -2122,7 +2122,6 @@ API キーの発行方法については、ここをタップしてください�
     <string name="revanced_sb_skip_showbutton">[スキップ] ボタンを表示</string>
     <string name="revanced_sb_skip_seekbaronly">シークバーに表示</string>
     <string name="revanced_sb_skip_ignore">無効</string>
-    <string name="revanced_sb_color_opacity_label">不透明度:</string>
     <string name="revanced_sb_color_dot_label">色:</string>
     <string name="revanced_sb_share_copy_settings_success">設定をクリップボードにコピーしました。</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->
@@ -2292,13 +2291,13 @@ GmsCore の電池の最適化を無効にしても、バッテリーの使用に
     <string name="revanced_debug_logs_clear_toast">ログを消去しました。</string>
     <string name="revanced_debug_logs_export_success">ログをエクスポートしました。</string>
     <string name="revanced_enable_watch_next_processing_delay_title">自動再生時の事前読み込み処理の遅延を有効化</string>
-    <string name="revanced_enable_watch_next_processing_delay_summary_on">自動再生時の事前読み込み処理の遅延を有効化します。</string>
-    <string name="revanced_enable_watch_next_processing_delay_summary_off">自動再生時の事前読み込み処理の遅延を有効化します。</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_on">自動再生する際の事前読み込み処理に遅延を追加します。</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_off">自動再生する際の事前読み込み処理に遅延を追加します。</string>
     <string name="revanced_enable_watch_next_processing_delay_user_dialog_message">"この設定により、プレーヤーの UI が読み込まれる前に遅延が強制されます。
 
 これは、MainThread で何かをテストする際に使用できます。"</string>
     <string name="revanced_watch_next_processing_delay_title">自動再生時の事前読み込み処理の遅延</string>
-    <string name="revanced_watch_next_processing_delay_summary">自動再生の準備を開始するまでの遅延時間（ミリ秒）。</string>
+    <string name="revanced_watch_next_processing_delay_summary">自動再生の準備を開始するまでの遅延時間 (ミリ秒)。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">設定のインポート/エクスポート</string>
     <string name="revanced_preference_screen_import_export_summary">設定をインポートまたはエクスポートします。</string>
@@ -2340,7 +2339,6 @@ YouTube Premium に加入している場合は、この設定は必要ない可�
 <small>(開発途中、認証なし)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(未リリース、認証なし)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">このクライアントの使用時に生じる副作用</string>

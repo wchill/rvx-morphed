@@ -514,14 +514,13 @@ YouTube Premium 사용자라면 이 설정은 필요하지 않을 수 있습니�
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobile Web</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_spoof_streaming_data_use_latest_player_js_title">최신 플레이어 JavaScript 사용</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"이 기능을 활성화하면, ‘TV’, ‘TV Simply’ 그리고 'Mobile Web'에서 최신 플레이어 JavaScript가 스트리밍 URL을 복호화하는 데 사용됩니다.
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"이 기능을 활성화하면, ‘TV’ 및 'Mobile Web'에서 최신 플레이어 JavaScript가 스트리밍 URL을 복호화하는 데 사용됩니다.
 
 JavaScript 클라이언트에 문제가 발생할 경우에 먼저 이 기능을 비활성화해보세요."</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">클라이언트 스트림을 가져올 수 없습니다.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">기본 클라이언트를 TV 또는 TV Simply로 변경해 보세요.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">기본 클라이언트를 TV로 변경해 보세요.</string>
     <string name="revanced_watch_history_type_title">시청 기록 유형</string>
     <string name="revanced_watch_history_type_summary">"• 원본: Google 계정의 시청 기록 설정을 따르지만 DNS 또는 VPN으로 인하여 시청 기록이 작동되지 않을 수 있습니다.
 • 도메인 변경: Google 계정의 시청 기록 설정을 따릅니다.

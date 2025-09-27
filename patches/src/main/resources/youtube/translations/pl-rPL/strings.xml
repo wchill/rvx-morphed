@@ -2126,7 +2126,6 @@ Kliknij, by zobaczyć, jak zgłosić klucz API."</string>
     <string name="revanced_sb_skip_showbutton">Pokaż przycisk od pomijania</string>
     <string name="revanced_sb_skip_seekbaronly">Pokazuj w pasku postępu filmu</string>
     <string name="revanced_sb_skip_ignore">Wyłącz</string>
-    <string name="revanced_sb_color_opacity_label">Przezroczystość:</string>
     <string name="revanced_sb_color_dot_label">Kolor:</string>
     <string name="revanced_sb_share_copy_settings_success">Skopiowano ustawienia do schowka.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->
@@ -2344,7 +2343,6 @@ Jeśli jesteś użytkownikiem YouTube Premium, to ustawienie te nie jest koniecz
 <small>(W fazie rozwoju, bez autoryzacji)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Wbudowany TV</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">Uproszczony TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Niewydany, bez autoryzacji)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Efekty uboczne oszukiwania</string>

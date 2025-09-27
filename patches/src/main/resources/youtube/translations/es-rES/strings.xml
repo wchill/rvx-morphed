@@ -2101,7 +2101,6 @@ Toca para ver cómo crear una clave de API."</string>
     <string name="revanced_sb_skip_showbutton">Mostrar botón de omitir</string>
     <string name="revanced_sb_skip_seekbaronly">Mostrar en barra de progreso</string>
     <string name="revanced_sb_skip_ignore">Desactivado</string>
-    <string name="revanced_sb_color_opacity_label">Opacidad:</string>
     <string name="revanced_sb_color_dot_label">Color:</string>
     <string name="revanced_sb_share_copy_settings_success">Ajustes copiados en el portapapeles.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->
@@ -2315,8 +2314,6 @@ Esto se puede utilizar al probar algo en el MainThread."</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV
 <small>(todavía en desarrollo)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV integrado
-<small>(todavía en desarrollo)</small></string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV simple
 <small>(todavía en desarrollo)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(no publicado, sin autenticación)</small>"</string>

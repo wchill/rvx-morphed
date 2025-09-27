@@ -1804,7 +1804,6 @@ Cliquez ici pour découvrir comment créer une clé API."</string>
     <string name="revanced_sb_skip_showbutton">Afficher un bouton \'Passer\'</string>
     <string name="revanced_sb_skip_seekbaronly">Afficher dans la barre de progression</string>
     <string name="revanced_sb_skip_ignore">Désactiver</string>
-    <string name="revanced_sb_color_opacity_label">Opacité :</string>
     <string name="revanced_sb_color_dot_label">Couleur :</string>
     <string name="revanced_sb_share_copy_settings_success">Paramètres copiés dans le presse-papier.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->

@@ -512,7 +512,6 @@ Jeśli jesteś użytkownikiem YouTube Premium, to ustawienie te nie jest koniecz
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobilny przeglądarkowy</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Wbudowany TV</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">Uproszczony TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Użyj najnowszego JavaScript odtwarzacza</string>
     <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"Po włączeniu, najnowszy JavaScript odtwarzacza będzie używany do odszyfrowywania URL strumienia na klientach 'TV', 'Uproszczony TV' i 'Mobilny przeglądarkowy'.

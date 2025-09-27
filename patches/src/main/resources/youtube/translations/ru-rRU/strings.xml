@@ -2128,7 +2128,6 @@ Shorts
     <string name="revanced_sb_skip_showbutton">Показывать кнопку \"Пропуск\"</string>
     <string name="revanced_sb_skip_seekbaronly">Показывать в шкале воспроизведения</string>
     <string name="revanced_sb_skip_ignore">Ничего не делать</string>
-    <string name="revanced_sb_color_opacity_label">Непрозрачность:</string>
     <string name="revanced_sb_color_dot_label">Цвет:</string>
     <string name="revanced_sb_share_copy_settings_success">Настройки скопированы в буфер обмена.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->
@@ -2343,8 +2342,6 @@ Shorts
     <string name="revanced_spoof_streaming_data_client_entry_tv">ТВ
 <small>(В разработке)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Встроенный ТВ
-<small>(В разработке)</small></string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">Простой ТВ
 <small>(В разработке)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Не релизный, Не авторизован)</small>"</string>

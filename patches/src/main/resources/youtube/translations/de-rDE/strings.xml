@@ -1666,7 +1666,6 @@ Klicken Sie hier, um zu sehen, wie Sie einen API-Schlüssel ausgeben."</string>
     <string name="revanced_sb_skip_showbutton">Überspringen Schaltfläche anzeigen</string>
     <string name="revanced_sb_skip_seekbaronly">In der Suchleiste anzeigen</string>
     <string name="revanced_sb_skip_ignore">Deaktivieren</string>
-    <string name="revanced_sb_color_opacity_label">Deckfähigkeit:</string>
     <string name="revanced_sb_color_dot_label">Farbe:</string>
     <string name="revanced_sb_share_copy_settings_success">Einstellungen in Zwischenablage kopiert.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->

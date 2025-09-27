@@ -2,10 +2,15 @@
 <resources>
     <!-- Shared -->
     <string name="revanced_settings_title">RVX</string>
+    <string name="revanced_settings_search_title">Поиск %s</string>
     <string name="revanced_reset_to_default_toast">Сброшены до значений по умолчанию.</string>
     <!-- Shared Category -->
     <string name="revanced_restart_first_run">Перезапустите для правильной загрузки интерфейса</string>
     <string name="revanced_restart_message">Обновите и перезапустите</string>
+    <string name="revanced_settings_search_hint">Настройки поиска</string>
+    <string name="revanced_settings_search_recent_searches">Недавние запросы</string>
+    <string name="revanced_settings_search_clear_history">Очистить историю поиска</string>
+    <string name="revanced_settings_search_empty_history_title">Нет истории поиска</string>
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">Аккаунт</string>
     <string name="revanced_hide_account_menu_title">Скрыть меню аккаунта</string>
@@ -488,7 +493,6 @@
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Мобильный веб</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">ТВ</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Встроенный ТВ</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">Простой ТВ</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_watch_history_type_title">Тип истории просмотра</string>
     <string name="revanced_watch_history_type_summary">"• Оригинальный: Соответствует настройкам истории просмотров аккаунта Google, но история просмотров может не работать через DNS или VPN.

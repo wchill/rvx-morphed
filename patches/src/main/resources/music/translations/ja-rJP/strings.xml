@@ -469,7 +469,6 @@ YouTube Premiumを利用の場合この設定は不要かもしれません。"<
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobile Web</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_watch_history_type_title">再生履歴の種類</string>
     <string name="revanced_watch_history_type_summary">"・オリジナル：　Google アカウントの視聴履歴設定に従いますが、DNSやVPNにより視聴履歴が機能しない場合があります。

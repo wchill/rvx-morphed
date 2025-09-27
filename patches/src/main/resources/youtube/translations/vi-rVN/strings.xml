@@ -2119,7 +2119,6 @@ Nhấn vào đây để xem các bước tạo khóa API."</string>
     <string name="revanced_sb_skip_showbutton">Hiển thị nút Bỏ qua</string>
     <string name="revanced_sb_skip_seekbaronly">Hiển thị trong thanh tiến trình</string>
     <string name="revanced_sb_skip_ignore">Tắt</string>
-    <string name="revanced_sb_color_opacity_label">Độ mờ:</string>
     <string name="revanced_sb_color_dot_label">Màu:</string>
     <string name="revanced_sb_share_copy_settings_success">Đã sao chép cài đặt vào bảng nhớ tạm.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->
@@ -2337,7 +2336,6 @@ Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết
 <small>(Thử nghiệm, Không xác thực)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Chưa phát hành, Không xác thực)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Hạn chế</string>

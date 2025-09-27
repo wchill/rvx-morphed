@@ -6,12 +6,47 @@
     <!-- Shared -->
     <string name="revanced_settings_title">RVX</string>
     <string name="revanced_settings_search_title">搜尋 %s</string>
+    <string name="revanced_reset_to_default_toast">重設為預設值。</string>
     <string name="revanced_preference_category_experimental_flag">實驗性功能</string>
+    <string name="revanced_confirm_user_dialog_title">您確定要繼續嗎？</string>
+    <string name="revanced_restart_first_run">重新啟動以正常載入介面佈局</string>
+    <string name="revanced_restart_title">需要重新啟動</string>
+    <string name="revanced_restart_dialog_message">重新啟動應用程式以此變更生效。</string>
+    <string name="revanced_restart">重新啟動</string>
+    <string name="revanced_settings_color_invalid">無效顏色。</string>
+    <string name="revanced_settings_color_picker">顏色選取器</string>
+    <string name="revanced_settings_reset">重置</string>
+    <string name="revanced_settings_reset_color">重置顏色</string>
+    <string name="revanced_settings_search_hint">搜尋設定</string>
+    <string name="revanced_settings_search_no_results_title">未找到“%s”的結果。</string>
+    <string name="revanced_settings_search_no_results_summary">嘗試另一個關鍵字。</string>
+    <string name="revanced_settings_search_recent_searches">最近的搜尋</string>
+    <string name="revanced_settings_search_remove_message">從搜尋紀錄中移除？</string>
+    <string name="revanced_settings_search_clear_history">清除搜尋記錄</string>
+    <string name="revanced_settings_search_clear_history_message">您確定要清除所有搜尋紀錄嗎？</string>
+    <string name="revanced_settings_search_tips_title">搜尋提示</string>
+    <string name="revanced_settings_search_tips_summary">"• 點選路徑即可導覽至該路徑。
+• 長按某個設定即可導覽至該設定。
+• 按 Enter 鍵可將搜尋查詢儲存至記錄。
+• 搜尋會忽略大小寫和標點符號。
+• 父級設定顯示在已停用的子級設定上方。"</string>
+    <string name="revanced_settings_search_empty_history_title">搜尋紀錄為空</string>
+    <string name="revanced_settings_search_empty_history_summary">若要儲存搜尋記錄，請輸入搜尋查詢並按 Enter。</string>
+    <string name="revanced_settings_search_history_title">顯示設定搜尋記錄</string>
+    <string name="revanced_settings_search_history_summary_on">顯示設定搜尋記錄。</string>
+    <string name="revanced_settings_search_history_summary_off">不顯示設定搜尋記錄。</string>
     <string name="revanced_dismiss_player_not_available_toast">影片ID無法使用。請手動重新開啟影片。</string>
     <string name="revanced_playback_speed_normal">正常</string>
     <string name="revanced_external_downloader_package_name_video_title">影片下載套件名稱</string>
     <string name="revanced_external_downloader_package_name_video_summary">您安裝的外部下載器應用程式的套件名稱，例如 NewPipe 或 YTDLnis。</string>
+    <string name="revanced_external_downloader_other_item">其他</string>
+    <string name="revanced_external_downloader_other_item_hint">輸入套件名稱</string>
+    <string name="revanced_external_downloader_not_found_title">應用程式未安裝。</string>
     <string name="revanced_external_downloader_not_installed_warning">未安裝 %s。請安裝該應用程式。</string>
+    <string name="revanced_external_downloader_package_not_found_warning">"找不到已安裝的應用程式，套件名稱為：%s。
+
+請驗證套件名稱正確，且該應用程式已安裝。"</string>
+    <string name="revanced_external_downloader_empty_warning">套件名稱不能為空</string>
     <string name="revanced_external_downloader_dialog_title">外部下載器</string>
     <string name="revanced_queue_manager_add_to_queue">加入佇列清單</string>
     <string name="revanced_queue_manager_add_to_queue_and_open_queue">加到佇列並開啟佇列</string>
@@ -442,6 +477,9 @@
 關鍵字可以是頻道名稱或影片標題中顯示的任何文字。
 
 中間有大寫字母的詞必須保持原有大小寫（例如：iPhone, TikTok, LeBlanc）。"</string>
+    <string name="revanced_hide_keyword_content_use_and_operator_title">使用 \'AND\' 運算 (\'&amp;\')</string>
+    <string name="revanced_hide_keyword_content_use_and_operator_summary_on">\'AND\' 運算 (\'&amp;\') 已被啟用。&lt;br&gt;&lt;br&gt;當 &lt;strong&gt;\"Blue\" &amp; \"Red\"&lt;/strong&gt; 用作關鍵字時，包含兩者的關鍵字 &lt;strong&gt;Blue&lt;/strong&gt; 和 &lt;strong&gt;Red&lt;/strong&gt; 將被過濾。</string>
+    <string name="revanced_hide_keyword_content_use_and_operator_summary_off">\'AND\' 運算 (\'&amp;\') 已被停用。&lt;br&gt;&lt;br&gt;當 &lt;strong&gt;\"Blue\" &amp; \"Red\"&lt;/strong&gt; 用作關鍵字時，包含該關鍵字 &lt;strong&gt;\"Blue\" &amp; \"Red\"&lt;/strong&gt; 將被過濾。</string>
     <string name="revanced_hide_keyword_content_about_title">關於關鍵詞篩選</string>
     <string name="revanced_hide_keyword_content_about_summary">"搜尋、首頁、訂閱和留言會篩選隱藏包含關鍵字詞的內容。
 
@@ -455,7 +493,7 @@
     <string name="revanced_hide_keyword_toast_invalid_common_whole_word_required">添加引號以使用關鍵字：%s.</string>
     <string name="revanced_hide_keyword_toast_invalid_conflicting">關鍵字有衝突的聲明：%s.</string>
     <string name="revanced_hide_keyword_toast_invalid_length">關鍵字太短，需要引號：%s.</string>
-    <string name="revanced_hide_keyword_toast_invalid_broad">關鍵字 \'%1$s\' 將隱藏所有影片。</string>
+    <string name="revanced_hide_keyword_toast_invalid_broad">將隱藏所有影片關鍵字: %s 。</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">觀看次數篩選器</string>
     <string name="revanced_hide_video_by_view_counts_home_title">依觀看次數隱藏家庭影片</string>
@@ -611,6 +649,9 @@
     <string name="revanced_spoof_app_version_target_entry_19_26_42">19.26.42 - 停用導航和工具列中的開羅圖標</string>
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - 恢復舊版的播放清單標題</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - 恢復舊的播放速度彈出面板</string>
+    <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - 恢復逐字稿功能</string>
+    <string name="revanced_spoof_app_version_other_item">其他</string>
+    <string name="revanced_spoof_app_version_other_item_hint">輸入應用程式版本</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">無效的偽裝應用程式版本: %s。</string>
     <string name="revanced_fix_spoof_app_version_side_effect_title">修復偽裝應用程式版本副作用</string>
     <string name="revanced_fix_spoof_app_version_side_effect_summary_on">"使用 '自動播放' 設定代替 '播放' 設定。"</string>
@@ -1420,12 +1461,12 @@
     <string name="revanced_overlay_button_play_all_not_available_toast">由於頻道ID不匹配 因此無法產生播放清單。</string>
     <string name="revanced_whitelist_settings_title">頻道白名單</string>
     <string name="revanced_whitelist_settings_summary">查看或刪除已新增至白名單的頻道清單。</string>
-    <string name="revanced_whitelist_added">頻道 %1$s 已加入 %2$s 白名單。</string>
-    <string name="revanced_whitelist_add_failed">無法將頻道 %1$s 新增至 %2$s 白名單。</string>
+    <string name="revanced_whitelist_added">頻道 \'%1$s\' 已加入 %2$s 白名單。</string>
+    <string name="revanced_whitelist_add_failed">無法將頻道 \'%1$s\' 新增至 %2$s 白名單。</string>
     <string name="revanced_whitelist_reload_video">你想現在重新加載影片嗎？</string>
-    <string name="revanced_whitelist_removed">頻道 %1$s 已從 %2$s 白名單中刪除。</string>
-    <string name="revanced_whitelist_remove_failed">無法從 %2$s 白名單中刪除頻道 %1$s 。</string>
-    <string name="revanced_whitelist_remove_dialog_message">從 %2$s 白名單中刪除頻道 %1$s 嗎？</string>
+    <string name="revanced_whitelist_removed">頻道 \'%1$s\' 已從 %2$s 白名單中刪除。</string>
+    <string name="revanced_whitelist_remove_failed">無法從 %2$s 白名單中刪除頻道 \'%1$s\' 。</string>
+    <string name="revanced_whitelist_remove_dialog_message">從 %2$s 白名單中刪除頻道 \'%1$s\' 嗎？</string>
     <string name="revanced_whitelist_empty">沒有列入白名單的頻道。</string>
     <string name="revanced_whitelist_excluded">未加入白名單。</string>
     <string name="revanced_whitelist_included">已新增至白名單。</string>
@@ -2068,7 +2109,6 @@
     <string name="revanced_sb_skip_showbutton">顯示跳過按鈕</string>
     <string name="revanced_sb_skip_seekbaronly">僅在進度條中顯示</string>
     <string name="revanced_sb_skip_ignore">停用</string>
-    <string name="revanced_sb_color_opacity_label">不透明度：</string>
     <string name="revanced_sb_color_dot_label">顏色：</string>
     <string name="revanced_sb_share_copy_settings_success">設定已複製到剪貼簿。</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->
@@ -2087,6 +2127,9 @@
     <string name="revanced_sb_guidelines_popup_open">查看</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: General -->
     <string name="revanced_sb_general">一般設定</string>
+    <string name="revanced_sb_toast_on_connection_error">當 API 無法使用時顯示提示訊息</string>
+    <string name="revanced_sb_toast_on_connection_error_sum_on">如果 SponsorBlock 無法使用，顯示提示訊息</string>
+    <string name="revanced_sb_toast_on_connection_error_sum_off">如果 SponsorBlock 無法使用，不顯示提示訊息。</string>
     <string name="revanced_sb_general_skipcount">啟用跳過計數追蹤</string>
     <string name="revanced_sb_general_skipcount_sum_on">允許 SponsorBlock 排行榜了解節省了多少時間每次跳過片段時都會向排行榜發送訊息</string>
     <string name="revanced_sb_general_skipcount_sum_off">不啟用跳過計數追蹤</string>
@@ -2230,19 +2273,33 @@
     <string name="revanced_debug_logs_disabled">偵錯記錄已停用。</string>
     <string name="revanced_debug_logs_none_found">找不到記錄。</string>
     <string name="revanced_debug_logs_copied_to_clipboard">記錄已複製。</string>
+    <string name="revanced_debug_logs_failed_to_copy_to_clipboard">日誌太大，無法複製。</string>
     <string name="revanced_debug_logs_failed_to_export">無法匯出紀錄: $s。</string>
     <string name="revanced_debug_logs_clear_buffer_title">清除偵錯紀錄</string>
     <string name="revanced_debug_logs_clear_buffer_summary">清除所有儲存的 RVX 偵錯紀錄。</string>
     <string name="revanced_debug_logs_clear_toast">紀錄已清除。</string>
     <string name="revanced_debug_logs_export_success">紀錄已成功匯出。</string>
+    <string name="revanced_enable_watch_next_processing_delay_title">啟用觀察下一部影片處理延遲</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_on">觀看下一部影片處理延遲已啟用。</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_off">觀看下一部影片處理延遲已禁用。</string>
+    <string name="revanced_enable_watch_next_processing_delay_user_dialog_message">"此設定會強制延遲播放器 UI 的載入。
+
+此功能可用於在主執行緒上測試某些內容。"</string>
+    <string name="revanced_watch_next_processing_delay_title">觀看下一部影片的處理延遲</string>
+    <string name="revanced_watch_next_processing_delay_summary">觀看下一部影片的處理延遲 (毫秒)。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">導入/導出設定</string>
     <string name="revanced_preference_screen_import_export_summary">導入或導出設定</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as file -->
     <string name="revanced_preference_category_import_export_as_file">導入 / 導出為文件</string>
+    <string name="revanced_settings_export_title">匯出設定</string>
+    <string name="revanced_settings_export_summary">將設定匯出到檔案。</string>
     <string name="revanced_settings_import_title">匯入設定</string>
+    <string name="revanced_settings_import_summary">從已儲存的檔案匯入設定。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as text -->
     <string name="revanced_preference_category_import_export_as_text">導入 / 導出為檔案</string>
+    <string name="revanced_settings_import_export_as_text_title">以文字形式匯入/匯出</string>
+    <string name="revanced_settings_import_export_as_text_summary">使用文字匯入 / 匯出設定</string>
     <string name="revanced_settings_export_failed">匯出設定失敗。</string>
     <string name="revanced_settings_export_success">設定已成功匯出。</string>
     <string name="revanced_settings_import">匯入</string>
@@ -2270,8 +2327,6 @@
     <string name="revanced_spoof_streaming_data_client_entry_tv">電視
 <small>(開發中)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">電視內嵌功能
-<small>(開發中)</small></string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">電視簡易功能
 <small>(開發中)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(未發布, 無需驗證)</small>"</string>
@@ -2384,6 +2439,12 @@ YouTube 伺服器上的 n-sig 模式變化頻繁，如果正規表示式無法�
 • 短片
 • Shorts 短片"</string>
     <string name="revanced_spoof_streaming_data_use_latest_player_js_title">使用最新的播放器 JavaScript</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"用於反混淆的播放器 JavaScript 會保持最新狀態。
+
+• 它高度依賴伺服器，反混淆的成功或失敗取決於伺服器上目前使用的播放器 JavaScript。
+• 如果您在使用 JavaScript 用戶端時遇到問題，請先嘗試停用此功能。"</string>
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"用於反混淆的播放器 JavaScript 不會保持最新狀態。 
+• 使用的是已成功進行反混淆的播放器 JavaScript，但仍在某種程度上依賴伺服器。"</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">繞過虛假緩衝</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"繞過虛假緩衝已啟用。
 

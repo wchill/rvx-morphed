@@ -4,11 +4,49 @@
     <string name="accessibility_settings_edu_opt_in_text">开启视频播放器的访问控制？</string>
     <string name="accessibility_settings_edu_opt_out_text">由于无障碍服务已启用，您的控制被修改</string>
     <!-- Shared -->
+    <string name="revanced_settings_title">RVX</string>
+    <string name="revanced_settings_search_title">搜索 %s</string>
+    <string name="revanced_reset_to_default_toast">重置为默认值。</string>
     <string name="revanced_preference_category_experimental_flag">实验性功能</string>
+    <string name="revanced_confirm_user_dialog_title">您确定要继续吗？</string>
+    <string name="revanced_restart_first_run">重启即可正常加载布局</string>
+    <string name="revanced_restart_title">需要重启</string>
+    <string name="revanced_restart_dialog_message">重启应用以使更改生效。</string>
+    <string name="revanced_restart">重启</string>
+    <string name="revanced_settings_color_invalid">无效的颜色。</string>
+    <string name="revanced_settings_color_picker">拾色器</string>
+    <string name="revanced_settings_reset">重置</string>
+    <string name="revanced_settings_reset_color">重置颜色</string>
+    <string name="revanced_settings_search_hint">搜索设置</string>
+    <string name="revanced_settings_search_no_results_title">未找到“%s”的结果。</string>
+    <string name="revanced_settings_search_no_results_summary">请尝试其他关键字。</string>
+    <string name="revanced_settings_search_recent_searches">近期搜索</string>
+    <string name="revanced_settings_search_remove_message">从搜索历史记录中删除？</string>
+    <string name="revanced_settings_search_clear_history">清空搜索历史记录</string>
+    <string name="revanced_settings_search_clear_history_message">您确定要清除所有搜索历史记录吗？</string>
+    <string name="revanced_settings_search_tips_title">搜索提示</string>
+    <string name="revanced_settings_search_tips_summary">"• 点击路径即可导航至该路径。
+• 长按某设置即可导航至该设置。
+• 按 Enter 键可将搜索查询保存到历史记录。
+• 搜索会忽略大小写和标点符号。
+• 父级设置显示在已禁用的子级设置上方。"</string>
+    <string name="revanced_settings_search_empty_history_title">搜索历史记录为空</string>
+    <string name="revanced_settings_search_empty_history_summary">要保存搜索历史记录，请键入搜索查询并按 Enter 键。</string>
+    <string name="revanced_settings_search_history_title">显示设置搜索历史记录</string>
+    <string name="revanced_settings_search_history_summary_on">已显示设置搜索历史记录。</string>
+    <string name="revanced_settings_search_history_summary_off">不显示设置搜索历史记录。</string>
+    <string name="revanced_dismiss_player_not_available_toast">视频 ID 不可用。请手动重新打开视频。</string>
     <string name="revanced_playback_speed_normal">正常</string>
     <string name="revanced_external_downloader_package_name_video_title">视频下载器应用包名</string>
     <string name="revanced_external_downloader_package_name_video_summary">已安装的外部下载器应用的包名，例如 NewPipe 或 YTDLnis</string>
+    <string name="revanced_external_downloader_other_item">其他</string>
+    <string name="revanced_external_downloader_other_item_hint">输入包名</string>
+    <string name="revanced_external_downloader_not_found_title">应用未安装。</string>
     <string name="revanced_external_downloader_not_installed_warning">%s 未安装，请先安装它。</string>
+    <string name="revanced_external_downloader_package_not_found_warning">"找不到已安装的应用，包名为：%s。
+
+请验证包名是否正确以及应用是否已安装。"</string>
+    <string name="revanced_external_downloader_empty_warning">包名不能为空</string>
     <string name="revanced_external_downloader_dialog_title">外部下载器</string>
     <string name="revanced_queue_manager_add_to_queue">添加到队列</string>
     <string name="revanced_queue_manager_add_to_queue_and_open_queue">添加到队列并打开队列</string>
@@ -22,6 +60,7 @@
     <string name="revanced_queue_manager_remove_from_queue_and_reload_video">从队列中移除并重新加载视频</string>
     <string name="revanced_queue_manager_remove_queue">移除队列</string>
     <string name="revanced_queue_manager_save_queue">保存队列</string>
+    <string name="revanced_queue_manager_show_original_video_information">显示原始视频信息</string>
     <string name="revanced_queue_manager_user_dialog_message">"不是打开外部下载器，而是打开队列管理器对话框
 
 你也可以通过按住导航栏上的返回按钮来打开队列管理器
@@ -29,6 +68,26 @@
 此功能仍在开发中，因此大多数功能可能无法正常工作
 
 请仅将其用于调试目的"</string>
+    <string name="revanced_queue_manager_video_information">视频信息</string>
+    <string name="revanced_queue_manager_video_information_copy">复制</string>
+    <string name="revanced_queue_manager_video_information_no_description_user_dialog_message">"频道
+══════════════
+%1$s
+
+标题
+══════════════
+%2$s"</string>
+    <string name="revanced_queue_manager_video_information_user_dialog_message">"频道
+══════════════
+%1$s
+
+标题
+══════════════
+%2$s
+
+说明
+══════════════
+%3$s"</string>
     <string name="revanced_queue_manager_check_failed_auth">需要登录</string>
     <string name="revanced_queue_manager_check_failed_generic">队列管理器不可用 (%s)</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">无法识别播放列表</string>
@@ -39,13 +98,144 @@
     <string name="revanced_queue_manager_fetch_failed_delete">删除队列失败</string>
     <string name="revanced_queue_manager_fetch_failed_remove">移除视频失败</string>
     <string name="revanced_queue_manager_fetch_failed_save">保存队列失败</string>
+    <string name="revanced_queue_manager_fetch_failed_video_information">获取视频信息失败。</string>
     <string name="revanced_queue_manager_fetch_succeeded_add">视频添加成功</string>
     <string name="revanced_queue_manager_fetch_succeeded_create">队列创建成功</string>
     <string name="revanced_queue_manager_fetch_succeeded_delete">队列删除成功</string>
     <string name="revanced_queue_manager_fetch_succeeded_remove">视频移除成功</string>
     <string name="revanced_queue_manager_fetch_succeeded_save">队列成功保存到 \'%s\'</string>
+    <string name="revanced_share_copy_video_information_success">视频信息已复制到剪贴板。</string>
+    <string name="revanced_webview_title">WebView</string>
+    <string name="revanced_webview_summary">打开 WebView 来获取 Cookie。</string>
+    <string name="revanced_webview_contextual_menu_get_cookies">获取 Cookie</string>
+    <string name="revanced_webview_contextual_menu_get_data_sync_id">获取数据同步 ID</string>
+    <string name="revanced_webview_contextual_menu_get_visitor_data">获取访客数据</string>
+    <string name="revanced_webview_contextual_menu_refresh">刷新</string>
+    <string name="revanced_webview_cookies">Cookie</string>
+    <string name="revanced_webview_data_sync_id">数据同步 ID</string>
+    <string name="revanced_webview_visitor_data">访客数据</string>
+    <string name="revanced_webview_intent_clear_cookies_on_startup">启动时清除 Cookie</string>
+    <string name="revanced_webview_intent_clear_cookies_on_shutdown">关机时清除 Cookie</string>
+    <string name="revanced_webview_intent_use_desktop_user_agent">使用桌面用户代理</string>
+    <string name="revanced_webview_copy">复制</string>
+    <string name="revanced_webview_toast_copy_success">%s 已复制到剪贴板。</string>
+    <string name="revanced_webview_toast_empty">%s 为空。</string>
+    <string name="revanced_webview_toast_no_network">请检查您的网络连接。</string>
+    <string name="revanced_webview_toast_unavailable">WebView 不可用。</string>
     <string name="revanced_language_title">RVX 语言</string>
     <string name="revanced_language_DEFAULT">应用程序语言</string>
+    <string name="revanced_language_AM">"阿姆哈拉语
+<small>አማርኛ</small>"</string>
+    <string name="revanced_language_AR">"阿拉伯语
+<small>العربية</small>"</string>
+    <string name="revanced_language_AZ">"阿塞拜疆语
+<small>Azərbaycan</small>"</string>
+    <string name="revanced_language_BE">"白俄罗斯语
+<small>беларуская</small>"</string>
+    <string name="revanced_language_BG">"保加利亚语
+<small>Български</small>"</string>
+    <string name="revanced_language_BN">"孟加拉语
+<small>বাংলা</small>"</string>
+    <string name="revanced_language_CA">"加泰罗尼亚语
+<small>Català</small>"</string>
+    <string name="revanced_language_CS">"捷克语
+<small>Čeština</small>"</string>
+    <string name="revanced_language_DA">"丹麦语
+<small>Dansk</small>"</string>
+    <string name="revanced_language_DE">"德语
+<small>Deutsch</small>"</string>
+    <string name="revanced_language_EL">"希腊语
+<small>Ελληνικά</small>"</string>
+    <string name="revanced_language_EN">"英语
+<small>English</small>"</string>
+    <string name="revanced_language_ES">"西班牙语
+<small>Español</small>"</string>
+    <string name="revanced_language_ET">"爱沙尼亚语
+<small>Eesti</small>"</string>
+    <string name="revanced_language_FA">"波斯语
+<small>فارسی</small>"</string>
+    <string name="revanced_language_FI">"芬兰语
+<small>Suomi</small>"</string>
+    <string name="revanced_language_FR">"法语
+<small>Français</small>"</string>
+    <string name="revanced_language_GA">"爱尔兰语
+<small>Gaeilge</small>"</string>
+    <string name="revanced_language_GU">"古吉拉特语
+<small>ગુજરાતી</small>"</string>
+    <string name="revanced_language_HE">"希伯来语
+<small>עברי</small>"</string>
+    <string name="revanced_language_HI">"印地语
+<small>हिन्दी</small>"</string>
+    <string name="revanced_language_HR">"克罗地亚语
+<small>Hrvatski</small>"</string>
+    <string name="revanced_language_HU">"匈牙利语
+<small>Magyar</small>"</string>
+    <string name="revanced_language_ID">"印度尼西亚语
+<small>Indonesia</small>"</string>
+    <string name="revanced_language_IT">"意大利语
+<small>Italiano</small>"</string>
+    <string name="revanced_language_JA">"日语
+<small>日本語</small>"</string>
+    <string name="revanced_language_KK">"哈萨克语
+<small>Қазақ тілі</small>"</string>
+    <string name="revanced_language_KO">"韩语
+<small>한국어</small>"</string>
+    <string name="revanced_language_LT">"立陶宛语
+<small>Lietuvių</small>"</string>
+    <string name="revanced_language_LV">"拉脱维亚语
+<small>Latviešu</small>"</string>
+    <string name="revanced_language_MK">"马其顿语
+<small>Македонски</small>"</string>
+    <string name="revanced_language_MN">"蒙古语
+<small>Монгол</small>"</string>
+    <string name="revanced_language_MR">"马拉地语
+<small>मराठी</small>"</string>
+    <string name="revanced_language_MS">"马来语
+<small>Melayu</small>"</string>
+    <string name="revanced_language_MY">"缅甸语
+<small>ဗမာ</small>"</string>
+    <string name="revanced_language_NL">"荷兰语
+<small>Nederlands</small>"</string>
+    <string name="revanced_language_OR">"奥里亚语
+<small>ଓଡ଼ିଆ</small>"</string>
+    <string name="revanced_language_PA">"旁遮普语
+<small>ਪੰਜਾਬੀ</small>"</string>
+    <string name="revanced_language_PL">"波兰语
+<small>Polski</small>"</string>
+    <string name="revanced_language_PT">"葡萄牙语
+<small>Português</small>"</string>
+    <string name="revanced_language_RO">"罗马尼亚语
+<small>Română</small>"</string>
+    <string name="revanced_language_RU">"俄语
+<small>Русский</small>"</string>
+    <string name="revanced_language_SK">"斯洛伐克语
+<small>Slovenčina</small>"</string>
+    <string name="revanced_language_SQ">"阿尔巴尼亚语
+<small>Shqip</small>"</string>
+    <string name="revanced_language_SL">"斯洛文尼亚语
+<small>Slovenščina</small>"</string>
+    <string name="revanced_language_SR">"塞尔维亚语
+<small>Српски</small>"</string>
+    <string name="revanced_language_SV">"瑞典语
+<small>Svenska</small>"</string>
+    <string name="revanced_language_SW">"斯瓦希里语
+<small>Kiswahili</small>"</string>
+    <string name="revanced_language_TA">"泰米尔语
+<small>தமிழ்</small>"</string>
+    <string name="revanced_language_TE">"泰卢固语
+<small>తెలుగు</small>"</string>
+    <string name="revanced_language_TH">"泰语
+<small>ไทย</small>"</string>
+    <string name="revanced_language_TR">"土耳其语
+<small>Türkçe</small>"</string>
+    <string name="revanced_language_UK">"乌克兰语
+<small>Українська</small>"</string>
+    <string name="revanced_language_UR">"乌尔都语
+<small>اردو</small>"</string>
+    <string name="revanced_language_VI">"越南语
+<small>Tiếng Việt</small>"</string>
+    <string name="revanced_language_ZH">"中文
+<small>中文</small>"</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">广告</string>
     <string name="revanced_hide_end_screen_store_banner_title">隐藏片尾商店横幅</string>

@@ -2128,7 +2128,6 @@
     <string name="revanced_sb_skip_showbutton">Показувати кнопку пропуску</string>
     <string name="revanced_sb_skip_seekbaronly">Показувати в панелі прогресу</string>
     <string name="revanced_sb_skip_ignore">Вимкнути</string>
-    <string name="revanced_sb_color_opacity_label">Непрозорість:</string>
     <string name="revanced_sb_color_dot_label">Колір:</string>
     <string name="revanced_sb_share_copy_settings_success">Налаштування скопійовано до буфера обміну.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->
@@ -2342,7 +2341,6 @@
 <small>(ще в розробці, Без авторизації)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Вбудований TV</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">Простий TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Невипущений, Без авторизації)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Побічні ефекти імітування</string>

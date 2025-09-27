@@ -512,7 +512,6 @@
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Web Κινητού</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Χρήση Player JavaScript τελευταίας έκδοσης</string>
     <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"Όταν ενεργοποιείται, θα χρησιμοποιείται η Player JavaScript τελευταίας έκδοσης για την αποσυσκότιση των streaming Url στους πελάτες «TV», «TV Simply», και «Web Κινητού».
