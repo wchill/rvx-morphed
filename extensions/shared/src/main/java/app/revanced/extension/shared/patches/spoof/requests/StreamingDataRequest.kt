@@ -359,7 +359,7 @@ class StreamingDataRequest private constructor(
             videoId: String,
             requestHeader: Map<String, String>,
         ) {
-            for (clientType in arrayOf(ClientType.ANDROID, ClientType.TV_SIMPLY_NO_AUTH, ClientType.ANDROID_VR)) {
+            for (clientType in arrayOf(ClientType.ANDROID, ClientType.ANDROID_VR)) {
                 val startTime = System.currentTimeMillis()
                 Logger.printDebug { "Fetching audio track for: $videoId using client: $clientType" }
 

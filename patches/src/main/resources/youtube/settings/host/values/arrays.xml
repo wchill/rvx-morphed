@@ -437,7 +437,6 @@
         <item>@string/revanced_spoof_streaming_data_client_entry_ipados</item>
         <item>@string/revanced_spoof_streaming_data_client_entry_mweb</item>
         <item>@string/revanced_spoof_streaming_data_client_entry_tv</item>
-        <item>@string/revanced_spoof_streaming_data_client_entry_tv_simply</item>
         <item>@string/revanced_spoof_streaming_data_client_entry_visionos</item>
     </string-array>
     <string-array name="revanced_spoof_streaming_data_default_client_with_js_entry_values">
@@ -446,7 +445,6 @@
         <item>IPADOS</item>
         <item>MWEB</item>
         <item>TV</item>
-        <item>TV_SIMPLY</item>
         <item>VISIONOS</item>
     </string-array>
     <string-array name="revanced_swipe_overlay_style_entries">
