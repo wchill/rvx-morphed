@@ -18,7 +18,6 @@ import app.revanced.patches.shared.textcomponent.textComponentPatch
 import app.revanced.patches.shared.startVideoInformerFingerprint
 import app.revanced.patches.youtube.utils.bottomsheet.bottomSheetHookPatch
 import app.revanced.patches.youtube.utils.compatibility.Constants.COMPATIBLE_PACKAGE
-import app.revanced.patches.youtube.utils.controlsoverlay.controlsOverlayConfigPatch
 import app.revanced.patches.youtube.utils.dismiss.dismissPlayerHookPatch
 import app.revanced.patches.youtube.utils.dismiss.hookDismissObserver
 import app.revanced.patches.youtube.utils.engagement.engagementPanelBuilderMethod
@@ -35,13 +34,16 @@ import app.revanced.patches.youtube.utils.fix.endscreensuggestedvideo.endScreenS
 import app.revanced.patches.youtube.utils.fix.litho.lithoLayoutPatch
 import app.revanced.patches.youtube.utils.patch.PatchList.PLAYER_COMPONENTS
 import app.revanced.patches.youtube.utils.playertype.playerTypeHookPatch
+import app.revanced.patches.youtube.utils.playservice.is_18_39_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_19_18_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_20_02_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_20_03_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_20_05_or_greater
+import app.revanced.patches.youtube.utils.playservice.is_20_09_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_20_12_or_greater
 import app.revanced.patches.youtube.utils.playservice.versionCheckPatch
 import app.revanced.patches.youtube.utils.resourceid.darkBackground
+import app.revanced.patches.youtube.utils.resourceid.eduOverlayStub
 import app.revanced.patches.youtube.utils.resourceid.fadeDurationFast
 import app.revanced.patches.youtube.utils.resourceid.scrimOverlay
 import app.revanced.patches.youtube.utils.resourceid.seekUndoEduOverlayStub
@@ -81,6 +83,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.WideLiteralInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
+import com.android.tools.smali.dexlib2.iface.reference.TypeReference
 
 private val speedOverlayPatch = bytecodePatch(
     description = "speedOverlayPatch"
@@ -354,7 +357,6 @@ val playerComponentsPatch = bytecodePatch(
     dependsOn(
         settingsPatch,
         bottomSheetHookPatch,
-        controlsOverlayConfigPatch,
         endScreenSuggestedVideoPatch,
         engagementPanelHookPatch,
         dismissPlayerHookPatch,
@@ -792,6 +794,34 @@ val playerComponentsPatch = bytecodePatch(
                         move-result v$insertRegister
                         if-nez v$insertRegister, :default
                         """, ExternalLabel("default", getInstruction(onClickListenerIndex + 1))
+                )
+            }
+        }
+
+        if (is_18_39_or_greater && !is_20_03_or_greater) {
+            playerEduOverlayFeatureFlagFingerprint.methodOrThrow().apply {
+                val targetIndex = implementation!!.instructions.size - 1
+                val targetRegister = getInstruction<OneRegisterInstruction>(targetIndex).registerA
+
+                addInstruction(
+                    targetIndex,
+                    "const/4 v$targetRegister, 0x0"
+                )
+            }
+        } else if (is_20_03_or_greater && !is_20_09_or_greater) {
+            youtubeControlsOverlayFingerprint.methodOrThrow().apply {
+                val constIndex = indexOfFirstLiteralInstructionOrThrow(eduOverlayStub)
+                val targetIndex = indexOfFirstInstructionOrThrow(constIndex) {
+                    opcode == Opcode.CHECK_CAST &&
+                            getReference<TypeReference>()?.type == "Landroid/view/ViewStub;"
+                }
+                val targetRegister = getInstruction<OneRegisterInstruction>(targetIndex).registerA
+
+                addInstructions(
+                    targetIndex + 1, """
+                        invoke-static {}, $PLAYER_CLASS_DESCRIPTOR->hideSeekMessage(Landroid/view/ViewStub;)Landroid/view/ViewStub;
+                        move-result-object v0
+                        """
                 )
             }
         }
