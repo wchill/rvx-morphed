@@ -12,6 +12,7 @@ import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.Clien
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientJSAvailability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientSingleAudioTrackAvailability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ShowReloadVideoButtonAvailability;
+import com.liskovsoft.youtubeapi.app.nsigsolver.provider.JsChallengeRequest;
 
 /**
  * Settings shared across multiple apps.
@@ -48,6 +49,9 @@ public class BaseSettings {
     public static final BooleanSetting SPOOF_STREAMING_DATA_USE_JS = new BooleanSetting("revanced_spoof_streaming_data_use_js", !SpoofStreamingDataYouTube(), true,
             "revanced_spoof_streaming_data_use_js_user_dialog_message", parent(SPOOF_STREAMING_DATA));
     public static final BooleanSetting SPOOF_STREAMING_DATA_USE_JS_ALL = new BooleanSetting("revanced_spoof_streaming_data_use_js_all", FALSE, true, new ClientJSAvailability());
+    /**
+     * TODO: Once the implementation of {@link JsChallengeRequest} is complete, restore this setting.
+     */
     public static final BooleanSetting SPOOF_STREAMING_DATA_USE_LATEST_PLAYER_JS = new BooleanSetting("revanced_spoof_streaming_data_use_latest_player_js", FALSE, true, new ClientJSAvailability());
     public static final BooleanSetting SPOOF_STREAMING_DATA_USE_JS_BYPASS_FAKE_BUFFERING = new BooleanSetting("revanced_spoof_streaming_data_use_js_bypass_fake_buffering", FALSE, true, new ClientJSAvailability());
 
