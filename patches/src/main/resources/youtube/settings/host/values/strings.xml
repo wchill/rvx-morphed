@@ -2578,11 +2578,14 @@ Example 2:
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">No Auth</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">Default audio stream language</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">To select a specific audio stream language, turn off \'Disable forced auto audio tracks\'.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">Default audio stream language selection is not available with Android Studio.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">Default audio stream language selection is not available with iPadOS.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">Show audio track button</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Audio track button is shown when the client used to fetch streaming data is 'Android VR', 'Mobile Web', or 'visionOS'."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Audio track button is not shown.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Prerequisites:
-• The client used to fetch the streaming data is 'Android VR', 'Mobile Web', 'iPadOS', or 'visionOS'.
+• The client used to fetch the streaming data is 'Android VR', 'Mobile Web', or 'visionOS'.
 • A video with multiple audio tracks is being played.
 
 Known issues:

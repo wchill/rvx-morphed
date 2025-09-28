@@ -312,6 +312,10 @@ object YouTubeClient {
          */
         val supportsCookies: Boolean = true,
         /**
+         * Whether it supports multiple audio tracks.
+         */
+        val supportsMultiAudioTracks: Boolean = false,
+        /**
          * Referer of contentPlaybackContext.
          */
         val refererFormat: String? = null,
@@ -343,6 +347,7 @@ object YouTubeClient {
             userAgent = USER_AGENT_ANDROID,
             androidSdkVersion = Build.VERSION.SDK,
             clientVersion = CLIENT_VERSION_ANDROID,
+            supportsMultiAudioTracks = true,
             clientName = "ANDROID",
             friendlyName = "Android"
         ),
@@ -384,6 +389,7 @@ object YouTubeClient {
             clientVersion = CLIENT_VERSION_IPADOS,
             clientPlatform = CLIENT_PLATFORM_TABLET,
             supportsCookies = false,
+            supportsMultiAudioTracks = true,
             clientName = "IOS",
             friendlyName = "iPadOS"
         ),
@@ -408,6 +414,7 @@ object YouTubeClient {
             userAgent = USER_AGENT_TVHTML5,
             requireJS = true,
             refererFormat = CLIENT_REFERER_FORMAT_TV,
+            supportsMultiAudioTracks = true,
             clientName = "TVHTML5",
             friendlyName = "TV"
         ),
@@ -421,6 +428,7 @@ object YouTubeClient {
             userAgent = USER_AGENT_TVHTML5,
             requireJS = true,
             refererFormat = CLIENT_REFERER_FORMAT_TV,
+            supportsMultiAudioTracks = true,
             clientName = "TVHTML5_SIMPLY_EMBEDDED_PLAYER",
             friendlyName = "TV Embedded"
         ),
