@@ -45,10 +45,6 @@ abstract class BaseGestureController(
         if (!controller.config.enableSwipeControls) {
             return false
         }
-        // Fix https://github.com/inotia00/ReVanced_Extended/issues/3052
-        if (!isFullscreenEngagementPanelVisible) {
-            return false
-        }
 
         // create a copy of the event so we can modify it
         // without causing any issues downstream
@@ -75,6 +71,8 @@ abstract class BaseGestureController(
         // do not consume dropped events
         // or events outside of any swipe zone
         return !dropped && consumed && isInSwipeZone(me)
+                // Fix https://github.com/inotia00/ReVanced_Extended/issues/3052
+                && isFullscreenEngagementPanelAttached
     }
 
     /**
