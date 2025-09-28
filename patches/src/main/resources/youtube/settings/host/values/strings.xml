@@ -2498,6 +2498,8 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
 <small>(WIP, No Auth)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
+<small>(No PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Unreleased, No Auth)</small>"</string>
@@ -2517,6 +2519,10 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
 • Video may start late."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• If deobfuscation fails, playback may fail.
+• Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
+• Video may start late."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• If deobfuscation fails, playback may fail.
+• Some accounts may require a PoToken, in which case the playback will fail.
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
 • Video may start late."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Audio track menu is missing.
