@@ -514,11 +514,11 @@ Se você é um usuário de YouTube Premium, essa configuração pode não ser ne
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Integrada</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Use JavaScript do reprodutor mais recente</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"Quando ativado, o JavaScript do reprodutor mais recente será usado para desofuscar a URL de transmissão na 'TV', 'TV Simples' e 'Mobile Web'.
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"Quando ativado, o JavaScript do reprodutor mais recente será usado para desofuscar a URL de transmissão na 'TV' e 'Mobile Web'.
 
 Se você estiver tendo problemas com seu cliente JavaScript, tente desativar isto primeiro."</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Não foi possível obter nenhum fluxo de cliente.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Tente alterar o cliente padrão para TV ou TV Simples.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Tente alterar o cliente padrão para TV.</string>
     <string name="revanced_watch_history_type_title">Tipo de histórico de exibição</string>
     <string name="revanced_watch_history_type_summary">"• Original: segue as configurações do histórico de exibição da conta do Google, mas o histórico de exibição pode não funcionar devido a DNS ou VPN.
 • Substituir domínio: segue as configurações do histórico de exibição da conta do Google.

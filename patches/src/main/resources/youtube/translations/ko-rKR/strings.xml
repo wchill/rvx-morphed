@@ -2341,6 +2341,8 @@ YouTube Premium 사용자라면 이 설정이 필요하지 않을 수 있습니�
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
 <small>(개발 중, 인증 없음)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
+<small>(PoToken 없음)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(미출시, 인증 없음)</small>"</string>
@@ -2360,6 +2362,10 @@ YouTube Premium 사용자라면 이 설정이 필요하지 않을 수 있습니�
 • 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 새로고침 버튼을 탭해야 합니다.
 • 동영상이 늦게 시작될 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• 복호화에 실패하면 재생이 실패할 수 있습니다.
+• 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 새로고침 버튼을 탭해야 합니다.
+• 동영상이 늦게 시작될 수 있습니다."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• 복호화에 실패하면 재생이 실패할 수 있습니다.
+• 일부 계정은 PoToken이 필요할 수 있으며, 이 경우에 재생이 실패합니다.
 • 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 새로고침 버튼을 탭해야 합니다.
 • 동영상이 늦게 시작될 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• 오디오 트랙 메뉴가 표시되지 않습니다.
@@ -2419,11 +2425,14 @@ VP9은 AVC보다 고급 코덱이지만, 일부 사용자는 '360p VP9'보다 '1
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">인증 없음</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">기본 오디오 스트림 언어</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">특정 오디오 스트림 언어를 선택하려면, \'강제된 자동 오디오 트랙 비활성화하기\'를 끄세요.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">Android Studio에서는 기본 오디오 스트림 언어를 선택할 수 없습니다.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">iPadOS에서는 기본 오디오 스트림 언어를 선택할 수 없습니다.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">오디오 트랙 버튼 표시하기</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"오디오 트랙 버튼이 스트리밍 데이터를 가져오는 데 사용되는 클라이언트가 ‘Android VR’, ‘Mobile Web’ 또는 'visionOS'일 때 표시됩니다."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">오디오 트랙 버튼이 표시되지 않습니다.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"전제 조건:
-• 스트리밍 데이터를 가져오는 데 사용되는 클라이언트가 'Android VR', 'Mobile Web', 'iPadOS' 또는 'visionOS'로 선택되어야 합니다.
+• 스트리밍 데이터를 가져오는 데 사용되는 클라이언트가 'Android VR', 'Mobile Web' 또는 'visionOS'로 선택되어야 합니다.
 • 다양한 오디오 트랙이 포함된 동영상을 재생되어야 합니다.
 
 알려진 문제:

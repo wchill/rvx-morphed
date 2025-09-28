@@ -540,7 +540,7 @@
 
 قد لا ينجح هذا الأمر مع بعض المستخدمين، إذا لم ينجح معك:
 1. انتقل إلى الإعدادات - RVX - خيارات متنوعة - Spoof Streaming Data، ثم فعّل 'استخدام عميل JavaScript'.
-2. انتقل إلى الإعدادات - RVX - خيارات متنوعة - Spoof Streaming Data، ثم غيّر 'العميل الافتراضي' إلى 'TV' أو 'TV Simply'."</string>
+2. انتقل إلى الإعدادات - RVX - خيارات متنوعة - Spoof Streaming Data، ثم غيّر 'العميل الافتراضي' إلى 'TV'."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">تم تمكين المقطع الصوتي التلقائي المفروض.</string>
     <string name="revanced_disable_auto_captions_title">تعطيل الترجمة التلقائية المفروضة</string>
     <string name="revanced_disable_auto_captions_summary_on">تم تعطيل الترجمة التلقائية المفروضة.</string>
@@ -1175,7 +1175,7 @@
 
 لعرض قائمة المقطع الصوتي:
 1. انتقل إلى الإعدادات - RVX - خيارات متنوعة - Spoof Streaming Data، ثم فعّل 'استخدام عميل JavaScript'.
-2. انتقل إلى الإعدادات - RVX - خيارات متنوعة - Spoof Streaming Data، ثم غيّر 'العميل الافتراضي' إلى 'TV' أو 'TV Simply'."</string>
+2. انتقل إلى الإعدادات - RVX - خيارات متنوعة - Spoof Streaming Data، ثم غيّر 'العميل الافتراضي' إلى 'TV'."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">إخفاء قائمة الترجمة</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">تم إخفاء قائمة الترجمة.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">يتم عرض قائمة الترجمة.</string>
@@ -2318,6 +2318,8 @@
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
 <small>(WIP, بدون مصادقة)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
+<small>(بدون رمز PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(لم يصدر ، بدون مصادقة)</small>"</string>
@@ -2337,6 +2339,10 @@
 • في بعض الأحيان، قد لا يعمل الفيديو حتى بعد 10 ثوانٍ، وفي هذه الحالة، ستحتاج إلى الضغط على زر إعادة تحميل الفيديو.
 • قد يبدأ الفيديو متأخرًا."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• في حال فشل إزالة التشويش، قد يفشل التشغيل.
+• في بعض الأحيان، قد لا يعمل الفيديو حتى بعد 10 ثوانٍ، وفي هذه الحالة، ستحتاج إلى الضغط على زر إعادة تحميل الفيديو.
+• قد يبدأ الفيديو متأخرًا."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• في حال فشل إزالة التشويش، قد يفشل التشغيل.
+• قد تتطلب بعض الحسابات رمز PoToken، وفي هذه الحالة سوف تفشل عملية التشغيل.
 • في بعض الأحيان، قد لا يعمل الفيديو حتى بعد 10 ثوانٍ، وفي هذه الحالة، ستحتاج إلى الضغط على زر إعادة تحميل الفيديو.
 • قد يبدأ الفيديو متأخرًا."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• قائمة المقطع الصوتي مفقودة.
@@ -2387,7 +2393,7 @@
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">يتم عرض العميل المستخدم لجلب بيانات البث في إحصاءات تقنية.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">تم إخفاء العميل المستخدم لجلب بيانات البث في إحصاءات تقنية.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">لم يتمكن من جلب أي تدفقات عميل.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">جرب تغيير العميل الافتراضي إلى TV أو TV Simply.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">جرب تغيير العميل الافتراضي إلى TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_title">تعطيل VR AV1</string>
@@ -2422,7 +2428,7 @@
 
 (المتطلبات الأساسية: تفعيل كلٍّ من 'عرض زر إعادة تحميل الفيديو' و 'عرض زر إعادة تحميل الفيديو دائمًا').
 
-من بين عملاء JavaScript، يُنصح باستخدام TV Simply."</string>
+من بين عملاء JavaScript، يُنصح باستخدام TV."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">استخدام عميل JavaScript لجميع الفيديوهات</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"يتم استخدام عميل JavaScript بغض النظر عن نوع الفيديو.
 

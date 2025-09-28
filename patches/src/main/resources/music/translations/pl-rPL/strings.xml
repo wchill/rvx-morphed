@@ -514,11 +514,11 @@ Jeśli jesteś użytkownikiem YouTube Premium, to ustawienie te nie jest koniecz
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Wbudowany TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Użyj najnowszego JavaScript odtwarzacza</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"Po włączeniu, najnowszy JavaScript odtwarzacza będzie używany do odszyfrowywania URL strumienia na klientach 'TV', 'Uproszczony TV' i 'Mobilny przeglądarkowy'.
+    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"Po włączeniu, najnowszy JavaScript odtwarzacza będzie używany do odszyfrowywania URL strumienia na klientach 'TV' i 'Mobilny przeglądarkowy'.
 
 Jeśli masz problemy z klientem JavaScript, w pierwszej kolejności spróbuj to wyłączyć."</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Nie można przechwycić żadnego ze strumieni klienta.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Spróbuj zmienić domyślnego klienta na TV lub Uproszczony TV.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Spróbuj zmienić domyślnego klienta na TV.</string>
     <string name="revanced_watch_history_type_title">Typ historii oglądania</string>
     <string name="revanced_watch_history_type_summary">"• Oryginalny: Stosuje się do ustawień historii oglądania konta Google, lecz historia oglądania może nie działać przy używaniu DNS lub VPN
 • Zastąpienie domeny: Stosuje się do ustawień historii oglądania konta Google

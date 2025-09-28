@@ -559,7 +559,7 @@ DeArrow について詳しく知るには、ここをタップしてください
 
 一部の環境下では機能しない可能性があります。機能しない場合は、以下の手順に従ってください:
 1. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[JavaScript クライアントを使用] をオンにします。
-2. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[偽装するクライアントを選択] で「TV」または「TV Simply」を選択します。"</string>
+2. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[偽装するクライアントを選択] で「TV」を選択します。"</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">音声トラックが自動で吹き替えに切り替わるのを無効にします。</string>
     <string name="revanced_disable_auto_captions_title">字幕の強制を無効化</string>
     <string name="revanced_disable_auto_captions_summary_on">投稿者が設定している字幕の強制を無効にします。</string>
@@ -641,16 +641,16 @@ DeArrow について詳しく知るには、ここをタップしてください
 
 後でこの機能をオフにする場合は、UI のバグを防ぐためにアプリのデータを消去することをおすすめします。"</string>
     <string name="revanced_spoof_app_version_target_title">偽装するバージョン</string>
-    <string name="revanced_spoof_app_version_target_entry_17_41_37">17.41.37 - 旧バージョンの再生リスト欄を復元</string>
-    <string name="revanced_spoof_app_version_target_entry_18_05_40">18.05.40 - 旧バージョンのコメント入力欄を復元</string>
-    <string name="revanced_spoof_app_version_target_entry_18_17_43">18.17.43 - 旧バージョンのプレーヤーフライアウトパネルを復元</string>
-    <string name="revanced_spoof_app_version_target_entry_18_33_40">18.33.40 - 旧バージョンのショートのアクションバーを復元</string>
-    <string name="revanced_spoof_app_version_target_entry_18_38_45">18.38.45 - 旧バージョンのデフォルトの画質の動作を復元</string>
+    <string name="revanced_spoof_app_version_target_entry_17_41_37">17.41.37 - 昔のスタイルの再生リスト欄を復元</string>
+    <string name="revanced_spoof_app_version_target_entry_18_05_40">18.05.40 - 昔のスタイルのコメント入力欄を復元</string>
+    <string name="revanced_spoof_app_version_target_entry_18_17_43">18.17.43 - 昔のスタイルのプレーヤーフライアウトパネルを復元</string>
+    <string name="revanced_spoof_app_version_target_entry_18_33_40">18.33.40 - 昔のスタイルのショートのアクションバーを復元</string>
+    <string name="revanced_spoof_app_version_target_entry_18_38_45">18.38.45 - 昔のスタイルのデフォルトの画質の動作を復元</string>
     <string name="revanced_spoof_app_version_target_entry_18_48_39">18.48.39 - リアルタイムで更新される再生回数と高評価数を無効化</string>
     <string name="revanced_spoof_app_version_target_entry_19_01_34">19.01.34 - 概要欄の操作を無効化</string>
     <string name="revanced_spoof_app_version_target_entry_19_26_42">19.26.42 - ナビゲーションとツールバーで Cairo アイコンを無効化</string>
-    <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - 旧バージョンの再生リストヘッダーを復元</string>
-    <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - 旧バージョンの再生速度のフライアウトパネルを復元</string>
+    <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - 昔のスタイルの再生リストヘッダーを復元</string>
+    <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - 昔のスタイルの再生速度のフライアウトパネルを復元</string>
     <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - 文字起こし機能を復元</string>
     <string name="revanced_spoof_app_version_other_item">その他</string>
     <string name="revanced_spoof_app_version_other_item_hint">アプリのバージョンを入力してください</string>
@@ -972,7 +972,7 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_disable_speed_overlay_summary">"画面を長押しして 2 倍速で再生する機能を無効にします。
 
 注意: 
-・倍速再生オーバーレイを無効にすると、旧バージョンのレイアウトの「スライドしてシーク」動作が復元されます。
+・倍速再生オーバーレイを無効にすると、以前のレイアウトの「スライドしてシーク」動作が復元されます。
 ・この設定を無効にしても、倍速再生オーバーレイが強制的に有効になるわけではありません。"</string>
     <string name="revanced_speed_overlay_value_title">倍速再生オーバーレイの値</string>
     <string name="revanced_speed_overlay_value_summary">倍速再生オーバーレイの値は 0 ~ 8.0 の間です。</string>
@@ -1198,7 +1198,7 @@ Cookie の使用は万能薬ではありません。
 
 [音声トラック] メニューを表示するには:
 1. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[JavaScript クライアントを使用] をオンにします。
-2. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[偽装するクライアントを選択] で「TV」または「TV Simply」を選択します。"</string>
+2. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[偽装するクライアントを選択] で「TV」を選択します。"</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">[字幕] メニューを非表示</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">[字幕] メニューを非表示にします。</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">[字幕] メニューを非表示にします。</string>
@@ -1506,7 +1506,7 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_append_time_stamp_information_playback_speed_menu_type_title">再生速度メニューの種類</string>
     <string name="revanced_append_time_stamp_information_video_quality_menu_type_title">画質設定メニューの種類</string>
     <string name="revanced_append_time_stamp_information_video_quality_menu_type_summary_on">現在の設定: カスタムダイアログが使用されます。</string>
-    <string name="revanced_append_time_stamp_information_video_quality_menu_type_summary_off">現在の設定: 旧バージョンのフライアウトパネルが使用されます。</string>
+    <string name="revanced_append_time_stamp_information_video_quality_menu_type_summary_off">現在の設定: 昔のスタイルのフライアウトパネルが使用されます。</string>
     <string name="revanced_replace_time_stamp_action_title">タイムスタンプを置換</string>
     <string name="revanced_replace_time_stamp_action_summary_on">現在の設定: プレーヤー左下のタイムスタンプをタップすると、再生速度または画質のフライアウトメニューが開きます。</string>
     <string name="revanced_replace_time_stamp_action_summary_off">現在の設定: プレーヤー左下のタイムスタンプをタップすると、残り時間が表示されます。</string>
@@ -1536,7 +1536,7 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_hide_time_stamp_title">タイムスタンプを非表示</string>
     <string name="revanced_hide_time_stamp_summary_on">タイムスタンプを非表示にします。</string>
     <string name="revanced_hide_time_stamp_summary_off">タイムスタンプを非表示にします。</string>
-    <string name="revanced_restore_old_seekbar_thumbnails_title">旧バージョンのシークバーサムネイルを復元</string>
+    <string name="revanced_restore_old_seekbar_thumbnails_title">昔のスタイルのシークバーサムネイルを復元</string>
     <string name="revanced_restore_old_seekbar_thumbnails_summary_on">現在の設定: シークバーの上にサムネイルを表示します。</string>
     <string name="revanced_restore_old_seekbar_thumbnails_summary_off">現在の設定: 全画面表示時にシークバーの上にサムネイルを表示します。</string>
     <string name="revanced_enable_seekbar_thumbnails_high_quality_title">高画質のサムネイルを有効化</string>
@@ -1810,10 +1810,10 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_replace_channel_handle_title">ショートのチャンネル名を復元</string>
     <string name="revanced_replace_channel_handle_summary_on">現在の設定: チャンネル名が表示されます。</string>
     <string name="revanced_replace_channel_handle_summary_off">現在の設定: チャンネルのハンドル名が表示されます。</string>
-    <string name="revanced_restore_shorts_old_player_layout_title">旧バージョンのプレーヤーレイアウトを復元</string>
-    <string name="revanced_restore_shorts_old_player_layout_summary_on">"旧バージョンのプレーヤーレイアウトを復元します。
+    <string name="revanced_restore_shorts_old_player_layout_title">昔のスタイルのプレーヤーレイアウトを復元</string>
+    <string name="revanced_restore_shorts_old_player_layout_summary_on">"昔のスタイルのプレーヤーレイアウトを復元します。
 これによりプレーヤーの上部と下部から余白が削除されます。"</string>
-    <string name="revanced_restore_shorts_old_player_layout_summary_off">旧バージョンのプレーヤーレイアウトを復元します。\nこれによりプレーヤーの上部と下部から余白が削除されます。</string>
+    <string name="revanced_restore_shorts_old_player_layout_summary_off">昔のスタイルのプレーヤーレイアウトを復元します。\nこれによりプレーヤーの上部と下部から余白が削除されます。</string>
     <!-- PreferenceScreen: Swipe controls -->
     <string name="revanced_preference_screen_swipe_controls_title">スワイプコントロール</string>
     <string name="revanced_swipe_lowest_value_enable_auto_brightness_title">自動明るさ調整ジェスチャーを有効化</string>
@@ -1971,7 +1971,7 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_advanced_video_quality_menu_summary_off">画質の詳細設定メニューを表示します。</string>
     <string name="revanced_advanced_video_quality_menu_type_title">ショートの画質の詳細設定メニュー</string>
     <string name="revanced_advanced_video_quality_menu_type_summary_on">現在の設定: カスタムダイアログが使用されます。</string>
-    <string name="revanced_advanced_video_quality_menu_type_summary_off">現在の設定: 旧バージョンのフライアウトパネルが使用されます。</string>
+    <string name="revanced_advanced_video_quality_menu_type_summary_off">現在の設定: 昔のスタイルのフライアウトパネルが使用されます。</string>
     <string name="revanced_spoof_device_dimensions_title">デバイスの解像度を偽装</string>
     <string name="revanced_spoof_device_dimensions_summary">"デバイスの解像度を最大値に偽装します。
 
@@ -2407,7 +2407,7 @@ VP9 は AVC よりも高度なコーデックですが、利用者によって�
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">統計情報に偽装したクライアントを表示します。</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">統計情報に偽装したクライアントを表示します。</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">クライアントストリームを取得できませんでした。</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">偽装するクライアントを「TV」または「TV Simply」に変更してみてください。</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">偽装するクライアントを「TV」に変更してみてください。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Android VR で AV1 コーデックを無効化</string>
@@ -2438,9 +2438,9 @@ VP9 は AVC よりも高度なコーデックですが、利用者によって�
 
 場合によっては、n-sig パターンのデコードに失敗し、動画の再生開始が遅れたり、動画のストリーミングが途切れたりする可能性があります。
 
-この問題は、プレーヤーの「リロードボタン」をタップして動画を再読み込みすることで簡単に解決できます。(前提条件:「リロードボタンを表示」と「リロードボタンを常に表示」の両方が有効になっていること)
+この問題は、プレーヤーの「リロードボタン」をタップして動画を再読み込みすることで簡単に解決できます (前提条件:「リロードボタンを表示」と「リロードボタンを常に表示」の両方が有効になっていること)。
 
-JavaScript クライアントの中では、「TV Simply」が推奨されます。"</string>
+JavaScript クライアントの中では、「TV」が推奨されます。"</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">すべての動画に JavaScript クライアントを使用</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"現在の設定: 動画の種類に関係なく JavaScript クライアントを使用します。
 

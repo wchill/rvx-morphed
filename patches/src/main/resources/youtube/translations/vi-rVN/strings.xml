@@ -561,7 +561,7 @@ Hạn chế: Nút Quay lại trên thanh công cụ có thể không hoạt đ�
 
 Tính năng này có thể không hoạt động với một số người dùng, nếu bạn trong số đó:
 1. Đi tới Cài đặt - RVX - Khác - Giả mạo dữ liệu phát video, và bật \"Giả mạo JavaScript\".
-2. Đi tới Cài đặt - RVX - Khác - Giả mạo dữ liệu phát video, và chuyển \"Client mặc định\" sang TV hoặc TV Simpy."</string>
+2. Đi tới Cài đặt - RVX - Khác - Giả mạo dữ liệu phát video, và chuyển \"Client mặc định\" sang TV."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Tự động phát bản âm thanh khi phát video có bản âm thanh đã bật.</string>
     <string name="revanced_disable_auto_captions_title">Tắt tự động hiển thị phụ đề</string>
     <string name="revanced_disable_auto_captions_summary_on">Tự động hiển thị phụ đề khi phát video có phụ đề đã tắt.</string>
@@ -1186,7 +1186,7 @@ Hạn chế: Các bình luận chữ xanh không dùng kiểu chữ mặc địn
 
 Để hiện mục bản âm thanh:
 1. Đi tới Cài đặt → RVX → Khác → Giả mạo dữ liệu phát video, và bật \"Giả mạo JavaScript\".
-2. Đi tới Cài đặt → RVX → Khác → Giả mạo dữ liệu phát video, và chuyển \"Client mặc định\" sang \"TV\" hoặc \"TV Simply\"."</string>
+2. Đi tới Cài đặt → RVX → Khác → Giả mạo dữ liệu phát video, và chuyển \"Client mặc định\" sang TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Ẩn mục Phụ đề</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Mục Phụ đề đã ẩn.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Mục Phụ đề được hiển thị.</string>
@@ -2335,6 +2335,8 @@ Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
 <small>(Thử nghiệm, Không xác thực)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
+<small>(Không PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Chưa phát hành, Không xác thực)</small>"</string>
@@ -2354,6 +2356,10 @@ Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết
 • Đôi khi video không phát dù đã chờ 10 giây, khi đó bạn cần nhấn vào nút tải lại video.
 • Video có thể bắt đầu trễ hơn."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Nếu giải mã thất bại, video có thể không phát được.
+• Đôi khi video không phát dù đã chờ 10 giây, khi đó bạn cần nhấn vào nút tải lại video.
+• Video có thể bắt đầu trễ hơn."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• Nếu giải mã thất bại, video có thể không phát được.
+• Một số tài khoản có thể yêu cầu PoToken, khi đó video có thể không phát được.
 • Đôi khi video không phát dù đã chờ 10 giây, khi đó bạn cần nhấn vào nút tải lại video.
 • Video có thể bắt đầu trễ hơn."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Thiếu mục bản âm thanh.
@@ -2400,7 +2406,7 @@ Ví dụ 2:
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Client dùng để lấy dữ liệu phát được hiển thị trong Thống kê chi tiết.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Client dùng để lấy dữ liệu phát đã ẩn trong Thống kê chi tiết.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Không truy xuất được luồng phát từ client đã chọn.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Hãy thử chuyển client mặc định sang TV hoặc TV Simply.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Hãy thử chuyển client mặc định sang TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Vô hiệu hóa AV1 (VR)</string>
@@ -2409,11 +2415,14 @@ Ví dụ 2:
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">Không xác thực</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">Ngôn ngữ âm thanh mặc định</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Để chọn ngôn ngữ luồng âm thanh, hãy tắt \"Tắt tự động phát bản âm thanh\".</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">Chọn ngôn ngữ luồng âm thanh mặc định không khả dụng với Android Studio.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">Chọn ngôn ngữ luồng âm thanh mặc định không khả dụng với iPadOS.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">Nút bản âm thanh</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Nút bản âm thanh sẽ được hiển thị khi client dùng để lấy dữ liệu phát là “Android VR”, “Mobile Web” hoặc “visionOS”."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Nút bản âm thanh không được hiển thị.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Điều kiện tiên quyết:
-• Client dùng để lấy dữ liệu phát là “Android VR”, “Mobile Web”, “iPadOS” hoặc “visionOS”.
+• Client dùng để lấy dữ liệu phát là “Android VR”, “Mobile Web” hoặc “visionOS”.
 • Video đang phát có nhiều bản âm thanh.
 
 Sự cố đã biết:
@@ -2432,7 +2441,7 @@ Tính năng này vẫn đang trong quá trình phát triển, vì vậy nó có 
 Cách khắc phục: nhấn nút Tải lại video trong trình phát để phát lại.
 (Điều kiện tiên quyết: phải bật cả “Nút tải lại video” và “Luôn hiện nút tải lại video”)
 
-Trong số các client JavaScript, lựa chọn khuyên dùng là TV Simply."</string>
+Trong số các client JavaScript, lựa chọn khuyên dùng là TV."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Giả mạo JavaScript cho tất cả video</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"JavaScript được sử dụng cho bất kể loại video nào.
 

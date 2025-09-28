@@ -559,7 +559,7 @@
 
 Це може не працювати для деяких користувачів, якщо не працює то:
 1. Перейдіть до Налаштування - RVX - Різне - Підробка даних трансляції та увімкніть 'Використовувати клієнт JavaScript'.
-2. Перейдіть до Налаштування - RVX - Різне - Підробка даних трансляції і змініть 'Основний клієнт' на 'TV' чи 'Простий TV'."</string>
+2. Перейдіть до Налаштування - RVX - Різне - Підробка даних трансляції і змініть 'Основний клієнт' на 'TV'."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Примусові автоматичні звукові доріжки увімкнено.</string>
     <string name="revanced_disable_auto_captions_title">Вимкнути примусові авто субтитри</string>
     <string name="revanced_disable_auto_captions_summary_on">Примусові авто субтитри вимкнено.</string>
@@ -1196,7 +1196,7 @@
 
 Для показу меню Звукова доріжка:
 1. Перейдіть до Налаштування - RVX - Різне - Підробка даних трансляції та увімкніть 'Використовувати клієнт JavaScript'.
-2. Перейдіть до Налаштування - RVX - Різне - Підробка даних трансляції і змініть 'Основний клієнт' на 'TV' чи 'Простий TV'."</string>
+2. Перейдіть до Налаштування - RVX - Різне - Підробка даних трансляції і змініть 'Основний клієнт' на 'TV'."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Приховати меню субтитрів</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Меню субтитрів приховано.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Меню субтитрів показується.</string>
@@ -2409,7 +2409,7 @@
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Клієнт, що використовується для отримання даних трансляції показується у Статистика для сисадмінів.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Клієнт, що використовується для отримання даних трансляції приховано у Статистика для сисадмінів.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Не вдалося отримати трансляції клієнта.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Спробуйте змінити основний клієнт на TV або Простий TV.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Спробуйте змінити основний клієнт на TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Вимкнути AV1 VR</string>
@@ -2444,7 +2444,7 @@
 
 (Необхідні умови: 'Показувати кнопку перезавантаження відео' і 'Завжди показувати кнопку перезавантаження відео' увімкнені)
 
-Серед клієнтів JavaScript рекомендується Простий TV."</string>
+Серед клієнтів JavaScript рекомендується TV."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Використовувати клієнт JavaScript для всіх відео</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"Клієнт JavaScript використовується незалежно від типу відео.
 

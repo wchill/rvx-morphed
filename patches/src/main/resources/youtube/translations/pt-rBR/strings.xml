@@ -556,7 +556,7 @@ Limitação: O botão voltar na barra de ferramentas pode não funcionar."</stri
 
 Isto pode não funcionar para alguns usuários, se não funcionar para você:
 1. Vá para Configurações - RVX - Diversos - Dados de transmissão falsos e ative 'Usar cliente JavaScript'.
-2. Vá para Configurações - RVX - Diversos - Dados de transmissão falsos e altere o 'Cliente Padrão' para 'TV' ou 'TV Simples'."</string>
+2. Vá para Configurações - RVX - Diversos - Dados de transmissão falsos e altere o 'Cliente Padrão' para 'TV'."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">As faixas de áudio automáticas forçadas estão ativadas.</string>
     <string name="revanced_disable_auto_captions_title">Desativar legendas automáticas forçadas</string>
     <string name="revanced_disable_auto_captions_summary_on">As legendas automáticas forçadas estão desativadas.</string>
@@ -1180,7 +1180,7 @@ Limitação: Alguns links de pesquisa destacados que não possuem um estilo de t
 
 Para exibir o menu de faixa de áudio:
 1. Vá para Configurações - RVX - Diversos - Dados de transmissão falsos e ative 'Usar cliente JavaScript'.
-2. Vá para Configurações - RVX - Diversos - Dados de transmissão falsos e altere o 'Cliente Padrão' para 'TV' ou 'TV Simples'."</string>
+2. Vá para Configurações - RVX - Diversos - Dados de transmissão falsos e altere o 'Cliente Padrão' para 'TV'."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Ocultar menu legendas</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">O menu legendas está oculto.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">O menu legendas será exibido.</string>
@@ -2385,7 +2385,7 @@ Exemplo 2:
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">O cliente usado para buscar dados de transmissão é exibido em Estatísticas para nerds.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">O cliente usado para buscar dados de transmissão está oculto em Estatísticas para nerds.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Não foi possível obter nenhum fluxo de cliente.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Tente alterar o cliente padrão para TV ou TV Simples.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Tente alterar o cliente padrão para TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Desativar VR AV1</string>
@@ -2420,7 +2420,7 @@ Isto pode ser facilmente resolvido clicando no 'botão recarregar vídeo' no rep
 
 (Pré-requisitos: Tanto 'Exibir botão de recarregar vídeo' quanto 'Sempre exibir botão de recarregar vídeo' estão ativados)
 
-Entre os clientes JavaScript, o cliente recomendado é TV Simplis."</string>
+Entre os clientes JavaScript, o cliente recomendado é TV."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Usar cliente JavaScript para todos os vídeos</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"O cliente JavaScript é usado independentemente do tipo de vídeo.
 
