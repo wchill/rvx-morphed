@@ -36,6 +36,7 @@ import app.revanced.patches.youtube.utils.patch.PatchList.PLAYER_COMPONENTS
 import app.revanced.patches.youtube.utils.playertype.playerTypeHookPatch
 import app.revanced.patches.youtube.utils.playservice.is_18_39_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_19_18_or_greater
+import app.revanced.patches.youtube.utils.playservice.is_19_43_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_20_02_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_20_03_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_20_05_or_greater
@@ -584,9 +585,9 @@ val playerComponentsPatch = bytecodePatch(
         // region patch for hide end screen cards
 
         listOf(
-            layoutCircleFingerprint,
-            layoutIconFingerprint,
-            layoutVideoFingerprint
+            endScreenElementLayoutCircleFingerprint,
+            endScreenElementLayoutIconFingerprint,
+            endScreenElementLayoutVideoFingerprint
         ).forEach { fingerprint ->
             fingerprint.matchOrThrow().let {
                 it.method.apply {
@@ -599,6 +600,21 @@ val playerComponentsPatch = bytecodePatch(
                     )
                 }
             }
+        }
+
+        if (is_19_43_or_greater) {
+            endScreenPlayerResponseModelFingerprint
+                .methodOrThrow()
+                .addInstructionsWithLabels(
+                0, """
+                    invoke-static {}, $PLAYER_CLASS_DESCRIPTOR->hideEndScreenCards()Z
+                    move-result v0
+                    if-eqz v0, :show
+                    return-void
+                    :show
+                    nop
+                    """
+            )
         }
 
         // endregion
