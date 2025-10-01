@@ -666,6 +666,11 @@ public final class app/revanced/patches/shared/spoof/useragent/FingerprintsKt {
 	public static final field CLIENT_PACKAGE_NAME Ljava/lang/String;
 }
 
+public final class app/revanced/patches/shared/spoof/watchnext/SpoofAppVersionWatchNextPatchKt {
+	public static final fun spoofAppVersionWatchNextPatch (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lapp/revanced/patcher/patch/BytecodePatch;
+	public static synthetic fun spoofAppVersionWatchNextPatch$default (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
 public final class app/revanced/patches/shared/textcomponent/TextComponentPatchKt {
 	public static final fun getTextComponentPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
