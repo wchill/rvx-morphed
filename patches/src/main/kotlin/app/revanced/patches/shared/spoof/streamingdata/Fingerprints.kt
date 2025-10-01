@@ -122,7 +122,6 @@ internal val protobufClassParseByteBufferFingerprint = legacyFingerprint(
     customFingerprint = { method, _ -> method.name == "parseFrom" },
 )
 
-
 internal val playbackStartParametersFingerprint = legacyFingerprint(
     name = "playbackStartParametersFingerprint",
     accessFlags = AccessFlags.PUBLIC or AccessFlags.CONSTRUCTOR,

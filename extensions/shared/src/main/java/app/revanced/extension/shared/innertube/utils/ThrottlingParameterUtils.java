@@ -202,6 +202,7 @@ public class ThrottlingParameterUtils {
         }
 
         extractorTV = getExtractor(true);
+        playerJsTV = getPlayerJs(true);
         playerJsUrlTV = getPlayerJsUrl(true);
         signatureTimestampTV = getSignatureTimestamp(true);
 
@@ -212,6 +213,7 @@ public class ThrottlingParameterUtils {
 
         if (useMobileWeb) {
             extractorMobileWeb = getExtractor(false);
+            playerJsMobileWeb = getPlayerJs(false);
             playerJsUrlMobileWeb = getPlayerJsUrl(false);
             signatureTimestampMobileWeb = getSignatureTimestamp(false);
             visitorIdMobileWeb = getVisitorId(false);
