@@ -550,6 +550,7 @@ public class ThrottlingParameterUtils {
     @Nullable
     public static String deobfuscateStreamingUrl(
             @NonNull String videoId,
+            @NonNull String cpn,
             @Nullable String url,
             @Nullable String signatureCipher,
             @Nullable String poToken,
@@ -570,6 +571,9 @@ public class ThrottlingParameterUtils {
                     streamUrl,
                     isTV
             );
+            if (StringUtils.isNotEmpty(cpn)) {
+                deobfuscatedUrl += "&cpn=" + cpn;
+            }
             if (StringUtils.isNotEmpty(poToken)) {
                 deobfuscatedUrl += "&pot=" + poToken;
             }

@@ -437,6 +437,13 @@ fun spoofStreamingDataPatch(
             }
         }
 
+        playbackStartParametersFingerprint
+            .methodOrThrow()
+            .addInstruction(
+                1,
+                "invoke-static {p3}, $EXTENSION_CLASS_DESCRIPTOR->newPlayerResponseCpn(Ljava/lang/String;)V"
+            )
+
         // endregion
 
         // region JavaScript client
