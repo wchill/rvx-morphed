@@ -2187,12 +2187,26 @@ Click to see how to issue an API key."</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">Automatically hide skip button</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">Skip button hides after several seconds.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">Skip button displayed for entire segment.</string>
-    <string name="revanced_sb_general_skiptoast">Show a toast when skipping automatically</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">Toast is shown when a segment is automatically skipped. Tap here to see an example.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">Toast is not shown. Tap here to see an example.</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration">Skip button duration</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration_sum">How long to show the skip and skip to highlight buttons before automatically hiding.</string>
+    <string name="revanced_sb_general_skiptoast">Show undo skip toast</string>
+    <string name="revanced_sb_general_skiptoast_sum_on">Toast is shown when a segment is automatically skipped. Tap the toast notification to undo the skip.</string>
+    <string name="revanced_sb_general_skiptoast_sum_off">Toast is not shown.</string>
+    <string name="revanced_sb_toast_on_skip_duration">Skip toast duration</string>
+    <string name="revanced_sb_toast_on_skip_duration_sum">How long to show the undo skip toast.</string>
     <string name="revanced_sb_general_time_without">Show video length without segments</string>
-    <string name="revanced_sb_general_time_without_sum_on">Video length minus the combined segment length is shown in parentheses next to the full video length.</string>
+    <string name="revanced_sb_general_time_without_sum_on">Video length minus all segments is shown on the seekbar.</string>
     <string name="revanced_sb_general_time_without_sum_off">Full video length shown.</string>
+    <string name="revanced_sb_duration_1s">1 second</string>
+    <string name="revanced_sb_duration_2s">2 seconds</string>
+    <string name="revanced_sb_duration_3s">3 seconds</string>
+    <string name="revanced_sb_duration_4s">4 seconds</string>
+    <string name="revanced_sb_duration_5s">5 seconds</string>
+    <string name="revanced_sb_duration_6s">6 seconds</string>
+    <string name="revanced_sb_duration_7s">7 seconds</string>
+    <string name="revanced_sb_duration_8s">8 seconds</string>
+    <string name="revanced_sb_duration_9s">9 seconds</string>
+    <string name="revanced_sb_duration_10s">10 seconds</string>
 
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Change segment behavior -->
     <string name="revanced_sb_diff_segments">Change segment behavior</string>
