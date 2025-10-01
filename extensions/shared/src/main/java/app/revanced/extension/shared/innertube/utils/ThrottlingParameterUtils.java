@@ -169,7 +169,7 @@ public class ThrottlingParameterUtils {
     private volatile static String visitorIdTV = null;
 
     private volatile static boolean isInitialized = false;
-    private static final boolean useLatestPlayerJs = false;
+    private volatile static boolean useEJS = false;
 
     /**
      * Typically, there are 10 to 30 available formats for a video.
@@ -186,7 +186,7 @@ public class ThrottlingParameterUtils {
         }
     };
 
-    public static void initializeJavascript(boolean useMobileWeb) {
+    public static void initializeJavascript(boolean useEJS, boolean useMobileWeb) {
         if (isInitialized) {
             return;
         }
@@ -194,30 +194,29 @@ public class ThrottlingParameterUtils {
             return;
         }
         isInitialized = true;
+        ThrottlingParameterUtils.useEJS = useEJS;
 
-        if (!useLatestPlayerJs) {
+        if (!useEJS) {
             playerJsUrlMobileWeb = String.format(PLAYER_JS_URL_FORMAT_MOBILE_WEB, PLAYER_JS_HARDCODED_URL_PATH_MOBILE_WEB);
             playerJsUrlTV = String.format(PLAYER_JS_URL_FORMAT_TV, PLAYER_JS_HARDCODED_URL_PATH_TV);
         }
 
         extractorTV = getExtractor(true);
-        playerJsTV = getPlayerJs(true);
         playerJsUrlTV = getPlayerJsUrl(true);
         signatureTimestampTV = getSignatureTimestamp(true);
 
-        if (useLatestPlayerJs) {
+        if (useEJS) {
             clientVersionTV = getClientVersion(true);
             serviceWorkerJsonArrayTV = getServiceWorkerJsonArray(true);
         }
 
         if (useMobileWeb) {
             extractorMobileWeb = getExtractor(false);
-            playerJsMobileWeb = getPlayerJs(false);
             playerJsUrlMobileWeb = getPlayerJsUrl(false);
             signatureTimestampMobileWeb = getSignatureTimestamp(false);
             visitorIdMobileWeb = getVisitorId(false);
             serviceWorkerJsonArrayMobileWeb = getServiceWorkerJsonArray(false);
-            if (useLatestPlayerJs) {
+            if (useEJS) {
                 clientVersionMobileWeb = getClientVersion(false);
             }
         }
@@ -357,7 +356,7 @@ public class ThrottlingParameterUtils {
 
     public static String getClientVersion(YouTubeClient.ClientType clientType) {
         String hardCodedClientVersion = clientType.getClientVersion();
-        if (useLatestPlayerJs) {
+        if (useEJS) {
             if (clientType == YouTubeClient.ClientType.TV || clientType == YouTubeClient.ClientType.MWEB) {
                 boolean isTV = clientType == YouTubeClient.ClientType.TV;
                 String clientVersion = getClientVersion(isTV);
@@ -472,7 +471,7 @@ public class ThrottlingParameterUtils {
     private static PlayerDataExtractor setExtractor(boolean isTV) {
         String playerJs = getPlayerJs(isTV);
         if (playerJs != null) {
-            return new PlayerDataExtractor(playerJs);
+            return new PlayerDataExtractor(playerJs, useEJS);
         }
         return null;
     }
@@ -498,7 +497,7 @@ public class ThrottlingParameterUtils {
     }
 
     @Nullable
-    private static String fetch(@NonNull String url, boolean isTV) {
+    public static String fetch(@NonNull String url, boolean isTV) {
         try {
             return Utils.submitOnBackgroundThread(() -> fetchUrl(url, isTV)).get();
         } catch (ExecutionException | InterruptedException ex) {

@@ -509,6 +509,11 @@ fun spoofStreamingDataPatch(
                 ResourceGroup(
                     "raw",
                     "po_token.html",
+                    // External JavaScript for yt-dlp: https://github.com/yt-dlp/ejs
+                    "astring.bundle.min.js",
+                    "meriyah.bundle.min.js",
+                    "polyfill.js",
+                    "yt.solver.core.js",
                 )
             ).forEach { resourceGroup ->
                 copyResources("shared/spoof/shared", resourceGroup)
