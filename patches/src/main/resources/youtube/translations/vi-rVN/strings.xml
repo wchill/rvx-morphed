@@ -2053,12 +2053,26 @@ Nhấn vào đây để xem các bước tạo khóa API."</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">Tự động ẩn nút Bỏ qua</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">Nút bỏ qua sẽ ẩn sau vài giây.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">Nút bỏ qua được hiển thị cho toàn bộ phân đoạn.</string>
-    <string name="revanced_sb_general_skiptoast">Hiện thông báo ngắn khi tự động bỏ qua</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">Hiển thị thông báo ngắn mỗi khi tự động bỏ qua phân đoạn. Nhấn vào đây để xem ví dụ.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">Không hiện thông báo ngắn mỗi khi tự động bỏ qua phân đoạn. Nhấn vào đây để xem ví dụ.</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration">Thời gian hiện nút bỏ qua</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration_sum">Thời gian hiển thị nút bỏ qua và nút bỏ qua đến khoảng khắc nổi bật trước khi tự động ẩn.</string>
+    <string name="revanced_sb_general_skiptoast">Hiện thông báo ngắn hoàn tác bỏ qua</string>
+    <string name="revanced_sb_general_skiptoast_sum_on">Hiển thị thông báo ngắn mỗi khi tự động bỏ qua một phân đoạn. Nhấn vào thông báo này để hoàn tác bỏ qua.</string>
+    <string name="revanced_sb_general_skiptoast_sum_off">Không hiển thị thông báo ngắn.</string>
+    <string name="revanced_sb_toast_on_skip_duration">Thời gian hiện thông báo ngắn</string>
+    <string name="revanced_sb_toast_on_skip_duration_sum">Thời gian hiển thị thông báo ngắn để hoàn tác.</string>
     <string name="revanced_sb_general_time_without">Hiển thị thời lượng video không có phân đoạn</string>
     <string name="revanced_sb_general_time_without_sum_on">Thời lượng video trừ đi tất cả các phân đoạn, được hiển thị trong dấu ngoặc đơn bên cạnh thời lượng video đầy đủ.</string>
     <string name="revanced_sb_general_time_without_sum_off">Độ dài video đầy đủ được hiển thị.</string>
+    <string name="revanced_sb_duration_1s">1 giây</string>
+    <string name="revanced_sb_duration_2s">2 giây</string>
+    <string name="revanced_sb_duration_3s">3 giây</string>
+    <string name="revanced_sb_duration_4s">4 giây</string>
+    <string name="revanced_sb_duration_5s">5 giây</string>
+    <string name="revanced_sb_duration_6s">6 giây</string>
+    <string name="revanced_sb_duration_7s">7 giây</string>
+    <string name="revanced_sb_duration_8s">8 giây</string>
+    <string name="revanced_sb_duration_9s">9 giây</string>
+    <string name="revanced_sb_duration_10s">10 giây</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Change segment behavior -->
     <string name="revanced_sb_diff_segments">Cài đặt phân đoạn</string>
     <string name="revanced_sb_segments_sponsor">Nhà tài trợ</string>
@@ -2451,15 +2465,22 @@ Hạn chế: JavaScript vẫn không thể phát một số video."</string>
 • Tự động phát trên trang video
 • Các đoạn video
 • Video Shorts"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Dùng Player JavaScript mới nhất</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"Player JS luôn được cập nhật để hỗ trợ gỡ rối mã.
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_title">Dùng yt-dlp ejs (Thử nghiệm)</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_on">"JavaScript bên ngoài từ yt-dlp (yt-dlp-ejs) được sử dụng.
 
 Chi tiết:
-• Quá trình gỡ rối mã phụ thuộc rất nhiều vào Player JS mà máy chủ đang sử dụng, nên đôi khi có thể thành công hoặc thất bại.
-• Nếu bạn gặp sự cố với client JavaScript, hãy thử tắt cài đặt này trước."</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"Player JS không được cập nhật để hỗ trợ gỡ rối mã.
+• Player JS luôn cập nhật để hỗ trợ gỡ rối mã.
+• Quá trình này mất khoảng 5 đến 15 giây trước khi video bắt đầu."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_off">"Trình trích xuất SmartTube được sử dụng.
 
-Chi tiết: Tiếp tục sử dụng Player JS từng hỗ trợ gỡ rối mã thành công, nhưng kết quả vẫn phụ thuộc vào máy chủ."</string>
+Chi tiết:
+• Player JS luôn cập nhật để hỗ trợ gỡ rối mã.
+• Quá trình này mất khoảng 5 đến 15 giây trước khi video bắt đầu."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_user_dialog_message">"Vì YouTube áp dụng biện pháp mới, các cách thông thường không còn giải mã được URL phát trong Player JS mới nhất.
+
+Thay vào đó, ứng dụng sẽ dùng JavaScript bên ngoài từ yt-dlp (yt-dlp-ejs) để giải mã.
+
+Hiện tại tính năng này vẫn đang trong quá trình phát triển và sẽ dùng nhiều tài nguyên phần cứng hơn."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Bỏ qua bộ đệm giả</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Bỏ qua bộ đệm giả đã bật.
 

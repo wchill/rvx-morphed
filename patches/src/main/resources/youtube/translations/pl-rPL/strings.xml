@@ -2060,12 +2060,26 @@ Kliknij, by zobaczyć, jak zgłosić klucz API."</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">Automatyczne ukrywanie przycisku od pomijania</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">Przycisk od pomijania znika po kilku sekundach</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">Przycisk od pomijania jest wyświetlany podczas całego segmentu</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration">Długość widoczności przycisku pomijania</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration_sum">Określa długość pokazywania się przycisków od pomijania segmentów i pominięcia aż do najważniejszego momentu filmu przed automatycznym ukryciem</string>
     <string name="revanced_sb_general_skiptoast">Komunikaty po automatycznych pominięciach</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">Komunikaty są pokazywane, gdy segmenty są automatycznie pomijane. Stuknij tutaj, aby zobaczyć przykład.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">Komunikaty nie są pokazywane. Stuknij tutaj, aby zobaczyć przykład.</string>
+    <string name="revanced_sb_general_skiptoast_sum_on">Włączone. Kliknij komunikat, by cofnąć pominięcie</string>
+    <string name="revanced_sb_general_skiptoast_sum_off">Wyłączone</string>
+    <string name="revanced_sb_toast_on_skip_duration">Długość trwania komunikatu o pominięciu</string>
+    <string name="revanced_sb_toast_on_skip_duration_sum">Określa, jak długo ma trwać wyświetlanie komunikatu po automatycznym pominięciu segmentu</string>
     <string name="revanced_sb_general_time_without">Czas bez segmentów</string>
     <string name="revanced_sb_general_time_without_sum_on">Pokazuje czas trwania filmu, odejmując czas trwania zsumowanej długości segmentów, pojawia się w nawiasach obok czasu trwania filmu.</string>
     <string name="revanced_sb_general_time_without_sum_off">Nie</string>
+    <string name="revanced_sb_duration_1s">1 sekunda</string>
+    <string name="revanced_sb_duration_2s">2 sekundy</string>
+    <string name="revanced_sb_duration_3s">3 sekundy</string>
+    <string name="revanced_sb_duration_4s">4 sekundy</string>
+    <string name="revanced_sb_duration_5s">5 sekund</string>
+    <string name="revanced_sb_duration_6s">6 sekund</string>
+    <string name="revanced_sb_duration_7s">7 sekund</string>
+    <string name="revanced_sb_duration_8s">8 sekund</string>
+    <string name="revanced_sb_duration_9s">9 sekund</string>
+    <string name="revanced_sb_duration_10s">10 sekund</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Change segment behavior -->
     <string name="revanced_sb_diff_segments">Zmień sposoby pomijania segmentów</string>
     <string name="revanced_sb_segments_sponsor">Treści Sponsorowane</string>
@@ -2342,6 +2356,7 @@ Jeśli jesteś użytkownikiem YouTube Premium, to ustawienie te nie jest koniecz
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobilny przeglądarkowy
 <small>(W fazie rozwoju, bez autoryzacji)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"Uproszczony TV <small>(Bez PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Wbudowany TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Niewydany, bez autoryzacji)</small>"</string>
@@ -2361,6 +2376,10 @@ Jeśli jesteś użytkownikiem YouTube Premium, to ustawienie te nie jest koniecz
 • czasem film nie odtwarza się nawet po 10 sekundach, dlatego należy kliknąć przycisk od odświeżenia filmu
 • filmy mogą zacząć się z opóźnieniem"</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• jeśli odszyfrowywanie się nie powiedzie, odtwarzanie może się nie powieść
+• czasem film nie odtwarza się nawet po 10 sekundach, dlatego należy kliknąć przycisk od odświeżenia filmu
+• filmy mogą zacząć się z opóźnieniem"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• jeśli odszyfrowywanie się nie powiedzie, odtwarzanie może się nie powieść
+• niektóre konto wymagają PoToken, w rezultacie czego odtwarzanie może się nie powieść
 • czasem film nie odtwarza się nawet po 10 sekundach, dlatego należy kliknąć przycisk od odświeżenia filmu
 • filmy mogą zacząć się z opóźnieniem"</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• brakuje menu od ścieżki dźwiękowej
@@ -2420,11 +2439,14 @@ Przykład 2:
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">Bez autoryzacji</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">Domyślny język dla transmisji na żywo</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">By wybrać określoną ścieżkę dźwiękową transmisji na żywo, wyłącz \'Automatyczne wymuszanie ścieżki dźwiękowej\'.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">Domyślny język ścieżki dźwiękowej transmisji na żywo nie jest dostępny w Android Studio.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">Domyślny język ścieżki dźwiękowej transmisji na żywo nie jest dostępny w iPadOS.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">Przycisk od ścieżki dźwiękowej</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Widoczny, lecz pod warunkiem używania klientów 'Android VR', 'Mobilny przeglądarkowy' bądź 'visionOS'"</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Ukryty</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Warunki:
-• używanym klientem przy przechwytywaniu strumienia danych jest 'Android VR', 'Mobilny przeglądarkowy', 'iPadOS' lub 'visionOS'
+• używanym klientem przy przechwytywaniu strumienia danych jest 'Android VR', 'Mobilny przeglądarkowy', lub 'visionOS'
 • odtwarzany jest film z wieloma ścieżkami dźwiękowymi
 
 Znane problemy:
@@ -2456,14 +2478,20 @@ Spośród klientów JavaScript, rekomendowanym klientem jest TV."</string>
 • autoodtwarzanie na stronie głównej
 • klipy
 • shortsy"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Najnowszy JavaScript odtwarzacza</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"Włączony
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_title">Typ JavaScript odtwarzacza</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_on">"yt-dlp-ejs (w fazie rozwoju)
 
-• jest to wysoce zależne od serwera, a sukces lub porażka odszyfrowywania zależy od wersji JavaScript odtwarzacza obecnie używanego na serwerze
-• jeśli masz problemy z klientem JavaScript, w pierwszej kolejności spróbuj to wyłączyć"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"Wyłączony
+• JavaScript odtwarzacza do odszyfrowywania jest aktualizowany na bieżąco
+• film może się wczytywać od 5 do 15 sekund"</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_off">"Ekstraktor SmartTube
 
-• wersja JavaScript odtwarzacza nadająca się do odszyfrowywania, jednakże nadal jest to nieco zależne od serwera"</string>
+• JavaScript odtwarzacza do odszyfrowywania nie jest aktualny
+• może być porzucony przez serwery w najbliższej przyszłości"</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_user_dialog_message">"W związku z nowymi środkami YouTube, nie jest już dłużej możliwe odszyfrowywać URL strumieni przy użyciu ogólnych metód w JavaScript odtwarzacza.
+
+Zewnętrzny JavaScript dla yt-dlp (yt-dlp-ejs) jest używany do odszyfrowywania URL strumieni w najnowszym JavaScript odtwarzacza.
+
+Obecnie jest w fazie rozwoju i może używać większej ilości zasobów sprzętowych."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Obejście fałszywego buforowania</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Włączone
 

@@ -1323,10 +1323,6 @@ Kısıtlama: Gizli modda beğenmeme sayıları görünmeyebilir."</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">Atla düğmesini otomatik olarak gizle</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">Atla düğmesi birkaç saniye sonra gizlenir.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">Atlama düğmesi tüm segmentler için görüntülenir.</string>
-    <string name="revanced_sb_general_skiptoast">Bir kısım otomatikman atlanırken uyarı ver</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">Uyarı, bir bölüm otomatik olarak atlandığında gösterilir.
-Bir örnek görmek için buraya dokunun.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">Uyarı gizleniyor. Bir örnek görmek için buraya dokunun.</string>
     <string name="revanced_sb_general_time_without">Video uzunluğunu bölümler olmadan göster</string>
     <string name="revanced_sb_general_time_without_sum_on">Video uzunluğu eksi tüm segmentler, tam video uzunluğunun yanında parantez içinde gösterilir.</string>
     <string name="revanced_sb_general_time_without_sum_off">Tam video uzunluğu gizlenmiyor.</string>

@@ -295,9 +295,9 @@ Descripción
 Si se activa, las URL de vídeo se enviarán al servidor API y no se enviará ningún otro dato. Si un video no tiene miniaturas de DeArrow, entonces se muestran las capturas originales o fijas.
 
 Pulsa aquí para saber más sobre DeArrow."</string>
-    <string name="revanced_alt_thumbnail_dearrow_connection_toast_title">Mostrar mensaje si la API no está disponible</string>
-    <string name="revanced_alt_thumbnail_dearrow_connection_toast_summary_on">Se muestra el mensaje si DeArrow no está disponible.</string>
-    <string name="revanced_alt_thumbnail_dearrow_connection_toast_summary_off">No se muestra el mensaje si DeArrow no está disponible.</string>
+    <string name="revanced_alt_thumbnail_dearrow_connection_toast_title">Mostrar aviso si la API no está disponible</string>
+    <string name="revanced_alt_thumbnail_dearrow_connection_toast_summary_on">Se muestra un aviso si DeArrow no está disponible.</string>
+    <string name="revanced_alt_thumbnail_dearrow_connection_toast_summary_off">No se muestra un aviso si DeArrow no está disponible.</string>
     <string name="revanced_alt_thumbnail_dearrow_api_url_title">Punto final de la API de DeArrow</string>
     <string name="revanced_alt_thumbnail_dearrow_api_url_summary">La URL del punto final de la caché de miniaturas de DeArrow.</string>
     <string name="revanced_alt_thumbnail_dearrow_api_url_invalid_toast">URL de la API de DeArrow no válida.</string>
@@ -1894,9 +1894,9 @@ Ajusta el volumen deslizando verticalmente en el lado derecho de la pantalla."</
     <string name="revanced_remember_playback_speed_last_selected_title">Recordar cambios de velocidad de reproducción</string>
     <string name="revanced_remember_playback_speed_last_selected_summary_on">Los cambios de velocidad de reproducción se aplican a todos los vídeos.</string>
     <string name="revanced_remember_playback_speed_last_selected_summary_off">Los cambios de velocidad de reproducción solo se aplican al vídeo actual.</string>
-    <string name="revanced_remember_playback_speed_last_selected_toast_title">Mostrar un mensaje</string>
-    <string name="revanced_remember_playback_speed_last_selected_toast_summary_on">Se mostrará un mensaje al cambiar la velocidad de reproducción predeterminada.</string>
-    <string name="revanced_remember_playback_speed_last_selected_toast_summary_off">No se mostrará un mensaje al cambiar la velocidad de reproducción predeterminada.</string>
+    <string name="revanced_remember_playback_speed_last_selected_toast_title">Mostrar un aviso</string>
+    <string name="revanced_remember_playback_speed_last_selected_toast_summary_on">Se mostrará un aviso al cambiar la velocidad de reproducción predeterminada.</string>
+    <string name="revanced_remember_playback_speed_last_selected_toast_summary_off">No se mostrará un aviso al cambiar la velocidad de reproducción predeterminada.</string>
     <string name="revanced_default_playback_speed_shorts_title">Velocidad predeterminada de reproducción en Shorts</string>
     <string name="revanced_remember_playback_speed_shorts_last_selected_title">Recordar cambios de velocidad de reproducción en Shorts</string>
     <string name="revanced_remember_playback_speed_shorts_last_selected_summary_on">"Los cambios en la velocidad de reproducción se aplican a todos los Shorts.
@@ -1905,9 +1905,9 @@ Información:
 • La única forma de cambiar la velocidad de reproducción en el reproductor de Shorts es usar el 'Diálogo de velocidad' en 'Acciones personalizadas'.
 • Si no incluyó el parche 'Componentes de Shorts', esto no estaría disponible."</string>
     <string name="revanced_remember_playback_speed_shorts_last_selected_summary_off">Los cambios de velocidad de reproducción solo se aplican al Short actual.</string>
-    <string name="revanced_remember_playback_speed_shorts_last_selected_toast_title">Mostrar un mensaje</string>
-    <string name="revanced_remember_playback_speed_shorts_last_selected_toast_summary_on">Se mostrará un mensaje al cambiar la velocidad predeterminada de reproducción en los Shorts.</string>
-    <string name="revanced_remember_playback_speed_shorts_last_selected_toast_summary_off">No se mostrará un mensaje al cambiar la velocidad predeterminada de reproducción en los Shorts.</string>
+    <string name="revanced_remember_playback_speed_shorts_last_selected_toast_title">Mostrar un aviso</string>
+    <string name="revanced_remember_playback_speed_shorts_last_selected_toast_summary_on">Se mostrará un aviso al cambiar la velocidad predeterminada de reproducción en los Shorts.</string>
+    <string name="revanced_remember_playback_speed_shorts_last_selected_toast_summary_off">No se mostrará un aviso al cambiar la velocidad predeterminada de reproducción en los Shorts.</string>
     <string name="revanced_remember_playback_speed_toast">Se ha cambiado la velocidad predeterminada de reproducción a: %s.</string>
     <string name="revanced_remember_playback_speed_toast_shorts">Se ha cambiado la velocidad predeterminada de reproducción de Shorts a: %s.</string>
     <string name="revanced_enable_custom_playback_speed_title">Activar velocidad personalizada de reproducción</string>
@@ -1929,17 +1929,17 @@ Información:
     <string name="revanced_remember_video_quality_last_selected_title">Recordar cambios de calidad de vídeo</string>
     <string name="revanced_remember_video_quality_last_selected_summary_on">Los cambios de calidad se aplican a todos los vídeos.</string>
     <string name="revanced_remember_video_quality_last_selected_summary_off">Los cambios de calidad solo se aplican al vídeo actual.</string>
-    <string name="revanced_remember_video_quality_last_selected_toast_title">Mostrar un mensaje</string>
-    <string name="revanced_remember_video_quality_last_selected_toast_summary_on">Se mostrará un mensaje al cambiar la calidad de vídeo predeterminada.</string>
-    <string name="revanced_remember_video_quality_last_selected_toast_summary_off">No se mostrará un mensaje al cambiar la calidad de vídeo predeterminada.</string>
+    <string name="revanced_remember_video_quality_last_selected_toast_title">Mostrar un aviso</string>
+    <string name="revanced_remember_video_quality_last_selected_toast_summary_on">Se mostrará un aviso al cambiar la calidad de vídeo predeterminada.</string>
+    <string name="revanced_remember_video_quality_last_selected_toast_summary_off">No se mostrará un aviso al cambiar la calidad de vídeo predeterminada.</string>
     <string name="revanced_default_video_quality_mobile_shorts_title">Calidad predeterminada de Shorts en red móvil</string>
     <string name="revanced_default_video_quality_wifi_shorts_title">Calidad predeterminada de Shorts en red Wi-Fi</string>
     <string name="revanced_remember_video_quality_shorts_last_selected_title">Recordar cambios de calidad de Shorts</string>
     <string name="revanced_remember_video_quality_shorts_last_selected_summary_on">Los cambios de calidad se aplican a todos los Shorts.</string>
     <string name="revanced_remember_video_quality_shorts_last_selected_summary_off">Los cambios de calidad solo se aplican al Short actual.</string>
-    <string name="revanced_remember_video_quality_shorts_last_selected_toast_title">Mostrar un mensaje</string>
-    <string name="revanced_remember_video_quality_shorts_last_selected_toast_summary_on">Se mostrará un mensaje al cambiar la calidad predeterminada de los Shorts.</string>
-    <string name="revanced_remember_video_quality_shorts_last_selected_toast_summary_off">No se mostrará un mensaje al cambiar la calidad predeterminada de los Shorts.</string>
+    <string name="revanced_remember_video_quality_shorts_last_selected_toast_title">Mostrar un aviso</string>
+    <string name="revanced_remember_video_quality_shorts_last_selected_toast_summary_on">Se mostrará un aviso al cambiar la calidad predeterminada de los Shorts.</string>
+    <string name="revanced_remember_video_quality_shorts_last_selected_toast_summary_off">No se mostrará un aviso al cambiar la calidad predeterminada de los Shorts.</string>
     <string name="revanced_remember_video_quality_mobile">móvil</string>
     <string name="revanced_remember_video_quality_wifi">Wi-Fi</string>
     <string name="revanced_remember_video_quality_toast">Se ha cambiado la calidad %1$s predeterminada a: %2$s.</string>
@@ -1983,9 +1983,9 @@ Limitación: es posible que los no me gusta no aparezcan en modo incógnito."</s
     <string name="revanced_ryd_estimated_like_title">Activar me gusta estimados</string>
     <string name="revanced_ryd_estimated_like_summary_on">Los me gusta estimados están visibles.</string>
     <string name="revanced_ryd_estimated_like_summary_off">Los me gusta estimados están ocultos.</string>
-    <string name="revanced_ryd_toast_on_connection_error_title">Mostrar mensaje si la API no está disponible</string>
-    <string name="revanced_ryd_toast_on_connection_error_summary_on">Se muestra el mensaje si Return YouTube Dislike no está disponible.</string>
-    <string name="revanced_ryd_toast_on_connection_error_summary_off">No se muestra el mensaje si Return YouTube Dislike no está disponible.</string>
+    <string name="revanced_ryd_toast_on_connection_error_title">Mostrar aviso si la API no está disponible</string>
+    <string name="revanced_ryd_toast_on_connection_error_summary_on">Se muestra un aviso si Return YouTube Dislike no está disponible.</string>
+    <string name="revanced_ryd_toast_on_connection_error_summary_off">No se muestra un aviso si Return YouTube Dislike no está disponible.</string>
     <!-- PreferenceScreen: Return YouTube Dislike, PreferenceCategory: About -->
     <string name="revanced_ryd_about">Información</string>
     <string name="revanced_ryd_attribution_title">ReturnYouTubeDislike.com</string>
@@ -2035,12 +2035,26 @@ Toca para ver cómo crear una clave de API."</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">Ocultar automáticamente el botón de omitir</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">El botón de omitir se oculta después de unos segundos.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">El botón de omitir se muestra durante todo el segmento.</string>
-    <string name="revanced_sb_general_skiptoast">Mostrar mensaje al omitir segmento automáticamente</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">Mensaje que se muestra cuando un segmento se omite automáticamente. Pulse aquí para ver un ejemplo.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">Mensaje no mostrado. Pulse aquí para ver un ejemplo.</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration">Duración del botón «Omitir»</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration_sum">Cuánto tiempo se muestran los botones de «Omitir» e «Ir a destacado» antes de ocultarse automáticamente.</string>
+    <string name="revanced_sb_general_skiptoast">Mostrar aviso de deshacer omisión</string>
+    <string name="revanced_sb_general_skiptoast_sum_on">Se muestra un aviso cuando un segmento se omite automáticamente. Toque la notificación del aviso para deshacer la omisión.</string>
+    <string name="revanced_sb_general_skiptoast_sum_off">No se muestra un aviso.</string>
+    <string name="revanced_sb_toast_on_skip_duration">Duración de aviso de omisión</string>
+    <string name="revanced_sb_toast_on_skip_duration_sum">Cuánto tiempo se muestra el aviso de deshacer omisión.</string>
     <string name="revanced_sb_general_time_without">Mostrar duración del vídeo sin segmentos</string>
     <string name="revanced_sb_general_time_without_sum_on">Duración del vídeo sin todos los segmentos, que se muestran entre paréntesis junto a la duración completa del vídeo.</string>
     <string name="revanced_sb_general_time_without_sum_off">La duración completa del vídeo está visible.</string>
+    <string name="revanced_sb_duration_1s">1 segundo</string>
+    <string name="revanced_sb_duration_2s">2 segundos</string>
+    <string name="revanced_sb_duration_3s">3 segundos</string>
+    <string name="revanced_sb_duration_4s">4 segundos</string>
+    <string name="revanced_sb_duration_5s">5 segundos</string>
+    <string name="revanced_sb_duration_6s">6 segundos</string>
+    <string name="revanced_sb_duration_7s">7 segundos</string>
+    <string name="revanced_sb_duration_8s">8 segundos</string>
+    <string name="revanced_sb_duration_9s">9 segundos</string>
+    <string name="revanced_sb_duration_10s">10 segundos</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Change segment behavior -->
     <string name="revanced_sb_diff_segments">Cambiar comportamiento de segmentos</string>
     <string name="revanced_sb_segments_sponsor">Patrocinador</string>
@@ -2119,9 +2133,9 @@ Toca para ver cómo crear una clave de API."</string>
     <string name="revanced_sb_guidelines_popup_open">Muéstrame</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: General -->
     <string name="revanced_sb_general">General</string>
-    <string name="revanced_sb_toast_on_connection_error">Mostrar mensaje si la API no está disponible</string>
-    <string name="revanced_sb_toast_on_connection_error_sum_on">Se muestra el mensaje si SponsorBlock no está disponible.</string>
-    <string name="revanced_sb_toast_on_connection_error_sum_off">No se muestra el mensaje si SponsorBlock no está disponible.</string>
+    <string name="revanced_sb_toast_on_connection_error">Mostrar aviso si la API no está disponible</string>
+    <string name="revanced_sb_toast_on_connection_error_sum_on">Se muestra un aviso si SponsorBlock no está disponible.</string>
+    <string name="revanced_sb_toast_on_connection_error_sum_off">No se muestra un aviso si SponsorBlock no está disponible.</string>
     <string name="revanced_sb_general_skipcount">Activar seguimiento del conteo de omisiones</string>
     <string name="revanced_sb_general_skipcount_sum_on">Permite que la tabla de clasificación de SponsorBlock sepa cuánto tiempo se ha ahorrado. Se envía un mensaje a la tabla de clasificación cada vez que se omite un segmento.</string>
     <string name="revanced_sb_general_skipcount_sum_off">El seguimiento del conteo de omisiones no está activado.</string>
@@ -2251,9 +2265,9 @@ Pulsa el botón de continuar y desactiva las optimizaciones de la batería."</st
     <string name="revanced_debug_spannable_title">Registrar Spannable</string>
     <string name="revanced_debug_spannable_summary_on">Los registros de depuración incluyen Spannable.</string>
     <string name="revanced_debug_spannable_summary_off">Los registros de depuración no incluyen Spannable.</string>
-    <string name="revanced_debug_toast_on_error_title">Mostrar mensaje en error RVX</string>
-    <string name="revanced_debug_toast_on_error_summary_on">Se muestra un mensaje si se produce un error.</string>
-    <string name="revanced_debug_toast_on_error_summary_off">No se muestra un mensaje si se produce un error.</string>
+    <string name="revanced_debug_toast_on_error_title">Mostrar aviso en error de RVX</string>
+    <string name="revanced_debug_toast_on_error_summary_on">Se muestra un aviso si se produce un error.</string>
+    <string name="revanced_debug_toast_on_error_summary_off">No se muestra un aviso si se produce un error.</string>
     <string name="revanced_debug_export_logs_to_clipboard_title">Copiar registros de depuración</string>
     <string name="revanced_debug_export_logs_to_clipboard_summary">Copia los registros de depuración de RVX al portapapeles.</string>
     <string name="revanced_debug_export_logs_to_file_title">Exportar registros de depuración</string>
@@ -2313,6 +2327,8 @@ Esto se puede utilizar al probar algo en el MainThread."</string>
 <small>(todavía en desarrollo)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV
 <small>(todavía en desarrollo)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV simple
+<small>(Sin PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV integrado
 <small>(todavía en desarrollo)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
@@ -2334,6 +2350,10 @@ Esto se puede utilizar al probar algo en el MainThread."</string>
 • El vídeo puede comenzar tarde."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• El códec AVC (H.264) puede no estar disponible.
 • Si la desofuscación falla, la reproducción puede fallar.
+• A veces, el vídeo no se reproducirá incluso después de 10 segundos, en cuyo caso deberás pulsar en el botón de recargar vídeo.
+• El vídeo puede comenzar tarde."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• Si la desofuscación falla, la reproducción puede fallar.
+• Algunas cuentas pueden requerir un PoToken, en cuyo caso la reproducción fallará.
 • A veces, el vídeo no se reproducirá incluso después de 10 segundos, en cuyo caso deberás pulsar en el botón de recargar vídeo.
 • El vídeo puede comenzar tarde."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Falta el menú de la pista de audio.
@@ -2393,6 +2413,9 @@ Se utiliza→ 1080p VP9."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">Sin autenticación</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">Idioma predeterminado de la transmisión de audio</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Para seleccionar un idioma de transmisión de audio específico, desactive «Desactivar pistas de audio automáticas forzadas».</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">La selección predeterminada del idioma de la transmisión de audio no está disponible con Android Studio.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">La selección predeterminada del idioma de la transmisión de audio no está disponible con iPadOS.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">Mostrar botón de pista de audio</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"El botón de pista de audio se muestra cuando el cliente utilizado para obtener datos de transmisión es «Android VR», «Web móvil» o «visionOS»."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">No se muestra el botón de pista de audio.</string>
@@ -2425,14 +2448,20 @@ Esta función todavía está en desarrollo, así que úsala solo para fines de d
 • Reproducción automática en el feed
 • Clips
 • Shorts"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Usar último reproductor JavaScript</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"El reproductor JavaScript para la desofuscación se mantiene actualizado.
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_title">Usar yt-dlp ejs (todavía en desarrollo)</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_on">"Se utiliza JavaScript externo para yt-dlp (yt-dlp-ejs).
 
-• Depende en gran medida del servidor, y el éxito o el fracaso de la desofuscación depende del reproductor JavaScript que se utilice actualmente en el servidor.
-• Si tienes problemas con el cliente de JavaScript, intenta desactivar esto primero."</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"El reproductor JavaScript para la desofuscación no se mantiene actualizado.
+• El reproductor JavaScript para la desofuscación se mantiene actualizado.
+• El vídeo puede tardar entre 5 y 15 segundos en iniciarse."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_off">"Se utiliza el extractor de SmartTube.
 
-• Se utiliza el reproductor JavaScript que logra la desofuscación, pero sigue siendo algo dependiente del servidor."</string>
+• El reproductor JavaScript para la desofuscación no está actualizado.
+• Esto será obsoleto para los servidores en un futuro próximo."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_user_dialog_message">"Debido a las nuevas medidas de YouTube, ya no es posible descifrar las URL de transmisión utilizando métodos generales en el último reproductor JavaScript.
+
+El JavaScript externo para yt-dlp (yt-dlp-ejs) se utiliza para desencriptar las URL de transmisión en el último reproductor JavaScript.
+
+Actualmente está en desarrollo y utilizará más recursos de hardware."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Omitir búfer falso</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Omitir búfer falso está activado.
 

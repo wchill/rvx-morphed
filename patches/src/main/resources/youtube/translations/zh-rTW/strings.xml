@@ -2043,9 +2043,6 @@
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">自動隱藏跳過按鈕</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">幾秒後隱藏跳過按鈕</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">整個片段顯示跳過按鈕</string>
-    <string name="revanced_sb_general_skiptoast">自動跳過時顯示提示</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">自動跳過片段時顯示提示點擊此處查看範例</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">不顯示提示點擊此處查看範例</string>
     <string name="revanced_sb_general_time_without">顯示不含片段的影片長度</string>
     <string name="revanced_sb_general_time_without_sum_on">顯示影片長度減去所有片段的長度，括號中顯示完整影片長度</string>
     <string name="revanced_sb_general_time_without_sum_off">顯示完整影片長度</string>
@@ -2326,6 +2323,8 @@
 <small>(開發中, 無需驗證)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">電視
 <small>(開發中)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
+<small>(無 PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">電視內嵌功能
 <small>(開發中)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
@@ -2343,12 +2342,16 @@
 • 影片可能會在 1:00 處停止，或在某些地區可能無法觀看。 "</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• 缺少音軌選單。
 • 無法停用強制自動音軌。
-• 如果反混淆失敗，播放可能會失敗。
+• 如果解碼去混淆失敗，播放可能會失敗。
 • 有時影片即使播放 10 秒後也無法播放，在這種情況下，您需要點擊重新載入影片按鈕。
 • 影片可能會延遲開始。"</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• 如果反混淆失敗，播放可能會失敗。
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"• 如果解碼去混淆失敗，播放可能會失敗。
 • 有時影片即使播放 10 秒後也無法播放，在這種情況下，您需要點擊「重新載入影片」按鈕。
 • 影片可能會延遲播放。"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• 如果解碼去混淆失敗，播放可能會失敗。
+• 某些帳號可能需要 PoToken，在這種情況下播放將會失敗。
+• 有時影片即使播放 10 秒後也無法播放，在這種情況下，您需要點擊重新載入影片按鈕。
+• 影片可能會延遲開始。"</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• 缺少音軌選單。
 • 在登出或隱身模式下，兒童影片可能無法播放。
 • 由於這是尚未發布的客戶端, 它可能隨時停止運作。"</string>
@@ -2406,6 +2409,9 @@
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">無需驗證</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">預設音訊串流語言</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">若要選擇特定的音訊串流語言，請關閉 \'停用強制自動音軌\'。</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">Android Studio 不提供預設音訊串流語言選擇。</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">IPadOS 不提供預設音訊串流語言選擇。</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">顯示音軌按鈕</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"當用於取得串流資料的用戶端是 'Android VR', '行動網路' 或 'visionOS' 時，會顯示音軌按鈕。"</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">未顯示音軌按鈕。</string>
@@ -2438,13 +2444,6 @@ YouTube 伺服器上的 n-sig 模式變化頻繁，如果正規表示式無法�
 • 動態中自動播放
 • 短片
 • Shorts 短片"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">使用最新的播放器 JavaScript</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"用於反混淆的播放器 JavaScript 會保持最新狀態。
-
-• 它高度依賴伺服器，反混淆的成功或失敗取決於伺服器上目前使用的播放器 JavaScript。
-• 如果您在使用 JavaScript 用戶端時遇到問題，請先嘗試停用此功能。"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"用於反混淆的播放器 JavaScript 不會保持最新狀態。 
-• 使用的是已成功進行反混淆的播放器 JavaScript，但仍在某種程度上依賴伺服器。"</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">繞過虛假緩衝</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"繞過虛假緩衝已啟用。
 

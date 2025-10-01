@@ -1555,7 +1555,7 @@ Questa impostazione funziona meglio con una connessione internet molto veloce."<
     <string name="revanced_hide_info_cards_section_summary_off">La sezione Schede Informative è visibile.</string>
     <string name="revanced_hide_key_concepts_section_title">Nascondi la sezione Momenti Chiave</string>
     <string name="revanced_hide_key_concepts_section_summary_on">La sezione Momenti Chiave è nascosta.</string>
-    <string name="revanced_hide_key_concepts_section_summary_off">La sezione Momenti Chiave è mostrata.</string>
+    <string name="revanced_hide_key_concepts_section_summary_off">La sezione Momenti Chiave è visibile.</string>
     <string name="revanced_hide_transcript_section_title">Nascondi la sezione Trascrizione</string>
     <string name="revanced_hide_transcript_section_summary_on">La sezione Trascrizione è nascosta.</string>
     <string name="revanced_hide_transcript_section_summary_off">La sezione Trascrizione è visibile.</string>
@@ -1900,8 +1900,8 @@ Note:
     <string name="revanced_remember_playback_speed_last_selected_summary_on">I cambiamenti alla velocità di riproduzione si applicano a tutti i video.</string>
     <string name="revanced_remember_playback_speed_last_selected_summary_off">I cambiamenti alla velocità di riproduzione si applicano solo al video corrente.</string>
     <string name="revanced_remember_playback_speed_last_selected_toast_title">Mostra una notifica toast al cambio della velocità di riproduzione predefinita dei video</string>
-    <string name="revanced_remember_playback_speed_last_selected_toast_summary_on">Una notifica toast verrà mostrata al cambio della velocità di riproduzione predefinita dei video.</string>
-    <string name="revanced_remember_playback_speed_last_selected_toast_summary_off">Una notifica toast non verrà mostrata al cambio della velocità di riproduzione predefinita dei video.</string>
+    <string name="revanced_remember_playback_speed_last_selected_toast_summary_on">La notifica toast è visibile al cambio della velocità di riproduzione predefinita dei video.</string>
+    <string name="revanced_remember_playback_speed_last_selected_toast_summary_off">La notifica toast è nascosta al cambio della velocità di riproduzione predefinita dei video.</string>
     <string name="revanced_default_playback_speed_shorts_title">Velocità di riproduzione predefinita degli Shorts</string>
     <string name="revanced_remember_playback_speed_shorts_last_selected_title">Ricorda i cambiamenti della velocità di riproduzione degli Shorts</string>
     <string name="revanced_remember_playback_speed_shorts_last_selected_summary_on">"I cambiamenti alla velocità di riproduzione si applicano a tutti gli Shorts.
@@ -1911,8 +1911,8 @@ Note:
 • Se non hai incluso la patch \"Componenti Shorts\", questa impostazione non sarà disponibile."</string>
     <string name="revanced_remember_playback_speed_shorts_last_selected_summary_off">I cambiamenti alla velocità di riproduzione si applicano solo allo Short corrente.</string>
     <string name="revanced_remember_playback_speed_shorts_last_selected_toast_title">Mostra una notifica toast al cambio della velocità di riproduzione predefinita degli Shorts</string>
-    <string name="revanced_remember_playback_speed_shorts_last_selected_toast_summary_on">Una notifica toast verrà mostrata al cambio della velocità di riproduzione predefinita degli Shorts.</string>
-    <string name="revanced_remember_playback_speed_shorts_last_selected_toast_summary_off">Una notifica toast non verrà mostrata al cambio della velocità di riproduzione predefinita degli Shorts.</string>
+    <string name="revanced_remember_playback_speed_shorts_last_selected_toast_summary_on">La notifica toast è visibile al cambio della velocità di riproduzione predefinita degli Shorts.</string>
+    <string name="revanced_remember_playback_speed_shorts_last_selected_toast_summary_off">La notifica toast è nascosta al cambio della velocità di riproduzione predefinita degli Shorts.</string>
     <string name="revanced_remember_playback_speed_toast">La velocità di riproduzione predefinita dei video è stata cambiata a %s</string>
     <string name="revanced_remember_playback_speed_toast_shorts">La velocità di riproduzione predefinita degli Shorts è stata cambiata a %s</string>
     <string name="revanced_enable_custom_playback_speed_title">Attiva la velocità di riproduzione personalizzata</string>
@@ -1935,16 +1935,16 @@ Note:
     <string name="revanced_remember_video_quality_last_selected_summary_on">I cambiamenti alla qualità si applicano a tutti i video.</string>
     <string name="revanced_remember_video_quality_last_selected_summary_off">I cambiamenti alla qualità si applicano solo al video corrente.</string>
     <string name="revanced_remember_video_quality_last_selected_toast_title">Mostra una notifica toast al cambio della qualità predefinita dei video</string>
-    <string name="revanced_remember_video_quality_last_selected_toast_summary_on">Una notifica toast verrà mostrata al cambio della qualità predefinita dei video.</string>
-    <string name="revanced_remember_video_quality_last_selected_toast_summary_off">Una notifica toast non verrà mostrata al cambio della qualità predefinita dei video.</string>
+    <string name="revanced_remember_video_quality_last_selected_toast_summary_on">La notifica toast è visibile al cambio della qualità predefinita dei video.</string>
+    <string name="revanced_remember_video_quality_last_selected_toast_summary_off">La notifica toast è nascosta al cambio della qualità predefinita dei video.</string>
     <string name="revanced_default_video_quality_mobile_shorts_title">Qualità predefinita degli Shorts con connessione dati</string>
     <string name="revanced_default_video_quality_wifi_shorts_title">Qualità predefinita degli Shorts con Wi-Fi</string>
     <string name="revanced_remember_video_quality_shorts_last_selected_title">Ricorda i cambiamenti della qualità degli Shorts</string>
     <string name="revanced_remember_video_quality_shorts_last_selected_summary_on">I cambiamenti alla qualità si applicano a tutti gli Shorts.</string>
     <string name="revanced_remember_video_quality_shorts_last_selected_summary_off">I cambiamenti alla qualità si applicano solo allo Short corrente.</string>
     <string name="revanced_remember_video_quality_shorts_last_selected_toast_title">Mostra una notifica toast al cambio della qualità predefinita degli Shorts</string>
-    <string name="revanced_remember_video_quality_shorts_last_selected_toast_summary_on">Una notifica toast verrà mostrata al cambio della qualità predefinita degli Shorts.</string>
-    <string name="revanced_remember_video_quality_shorts_last_selected_toast_summary_off">Una notifica toast non verrà mostrata al cambio della qualità predefinita degli Shorts.</string>
+    <string name="revanced_remember_video_quality_shorts_last_selected_toast_summary_on">La notifica toast è visibile al cambio della qualità predefinita degli Shorts.</string>
+    <string name="revanced_remember_video_quality_shorts_last_selected_toast_summary_off">La notifica toast è nascosta al cambio della qualità predefinita degli Shorts.</string>
     <string name="revanced_remember_video_quality_mobile">Cellulare</string>
     <string name="revanced_remember_video_quality_wifi">Wi-Fi</string>
     <string name="revanced_remember_video_quality_toast">La qualità predefinita dei video è stata cambiata da %1$s a %2$s</string>
@@ -2039,12 +2039,26 @@ Tocca qui per vedere come emettere una chiave API."</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">Nascondi automaticamente il pulsante Salta</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">Il pulsante Salta è nascosto dopo alcuni secondi.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">Il pulsante Salta è visibile per l\'intero segmento.</string>
-    <string name="revanced_sb_general_skiptoast">Mostra una notifica toast quando un segmento è stato saltato automaticamente</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">La notifica toast è visibile quando un segmento è saltato automaticamente. Tocca qui per vedere un esempio.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">La notifica toast è nascosta.</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration">Durata del pulsante Salta</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration_sum">Il tempo da mostrare i pulsanti Salta e Salta al Momento Saliente.</string>
+    <string name="revanced_sb_general_skiptoast">Mostra una notifica toast per annullare il salto</string>
+    <string name="revanced_sb_general_skiptoast_sum_on">La notifica toast è visibile quando un segmento viene saltato automaticamente. Tocca la notifica per annullare il salto.</string>
+    <string name="revanced_sb_general_skiptoast_sum_off">La notifica toast è nascosta quando un segmento viene saltato automaticamente.</string>
+    <string name="revanced_sb_toast_on_skip_duration">Durata della notifica toast per annullare il salto</string>
+    <string name="revanced_sb_toast_on_skip_duration_sum">Il tempo da mostrare la notifica toast per annullare il salto.</string>
     <string name="revanced_sb_general_time_without">Mostra la durata dei video senza segmenti</string>
-    <string name="revanced_sb_general_time_without_sum_on">La durata del video senza la durata complessiva dei segmenti è mostrata tra parentesi accanto alla durata completa del video.</string>
-    <string name="revanced_sb_general_time_without_sum_off">La durata completa del video è mostrata.</string>
+    <string name="revanced_sb_general_time_without_sum_on">La durata del video, senza tutti i segmenti, è visibile sulla barra di ricerca.</string>
+    <string name="revanced_sb_general_time_without_sum_off">La durata completa del video è visibile sulla barra di ricerca.</string>
+    <string name="revanced_sb_duration_1s">1 secondo</string>
+    <string name="revanced_sb_duration_2s">2 secondi</string>
+    <string name="revanced_sb_duration_3s">3 secondi</string>
+    <string name="revanced_sb_duration_4s">4 secondi</string>
+    <string name="revanced_sb_duration_5s">5 secondi</string>
+    <string name="revanced_sb_duration_6s">6 secondi</string>
+    <string name="revanced_sb_duration_7s">7 secondi</string>
+    <string name="revanced_sb_duration_8s">8 secondi</string>
+    <string name="revanced_sb_duration_9s">9 secondi</string>
+    <string name="revanced_sb_duration_10s">10 secondi</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Change segment behavior -->
     <string name="revanced_sb_diff_segments">Cambia il comportamento dei segmenti</string>
     <string name="revanced_sb_segments_sponsor">Sponsor</string>
@@ -2318,6 +2332,8 @@ Nota: questa impostazione potrebbe non essere necessaria se sei un utente YouTub
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web Mobile
 <small>(In fase di sviluppo e nessun accesso richiesto)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
+<small>(Nessun PoToken richiesto)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Non rilasciato e nessun accesso richiesto)</small>"</string>
@@ -2337,6 +2353,10 @@ Nota: questa impostazione potrebbe non essere necessaria se sei un utente YouTub
 • I video potrebbero iniziare in ritardo.
 • A volte i video non vengono riprodotti neanche dopo 10 secondi, in tal caso è necessario toccare il pulsante \"Ricarica Video\"."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Se il deoffuscamento fallisce, la riproduzione potrebbe non funzionare.
+• I video potrebbero iniziare in ritardo.
+• A volte i video non vengono riprodotti neanche dopo 10 secondi, in tal caso è necessario toccare il pulsante \"Ricarica Video\"."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• Se il deoffuscamento fallisce, la riproduzione potrebbe non funzionare.
+• Alcuni account potrebbero richiedere un PoToken, in tal caso la riproduzione non funzionerà.
 • I video potrebbero iniziare in ritardo.
 • A volte i video non vengono riprodotti neanche dopo 10 secondi, in tal caso è necessario toccare il pulsante \"Ricarica Video\"."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Il menù Traccia Audio è nascosto.
@@ -2386,12 +2406,15 @@ Esempio 2:
     <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">Il codec video è determinato automaticamente.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">Nessun accesso richiesto</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_title">Lingua predefinita del flusso audio</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_title">Lingua predefinita dell\'audio</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Disattivare \"Disattiva la traccia audio automatica forzata\" per selezionare una lingua specifica per l\'audio</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">La selezione della lingua predefinita per l\'audio non è disponibile con il client Android Studio</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">La selezione della lingua predefinita per l\'audio non è disponibile con il client iPadOS</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">Mostra il pulsante Traccia Audio</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Il pulsante Traccia Audio è visibile quando il client usato per recuperare i dati in streaming è Android VR, Mobile Web o visionOS."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Il pulsante Traccia Audio è nascosto.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Prerequisiti:
-• Il client usato per recuperare i dati in streaming è Android VR, Mobile Web, iPadOS o visionOS.
+• Il client usato per recuperare i dati in streaming è Android VR, Mobile Web o visionOS.
 • È in riproduzione un video con più tracce audio.
 
 Note:
@@ -2416,15 +2439,19 @@ Tra i client JavaScript, il client consigliato è TV."</string>
 
 Nota: questo client non riesce ancora a riprodurre clip, riproduzione automatica nelle schede e Shorts."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_off">"Il client JavaScript non viene usato per clip, riproduzione automatica nelle schede e Shorts, poichè richiedono una riproduzione rapida."</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Usa l\'ultima versione di JavaScript</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"La versione di JavaScript per il deoffuscamento viene mantenuta aggiornata.
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_title">Usa yt-dlp ejs (In fase di sviluppo)</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_on">"È in uso il JavaScript esterno per yt-dlp-ejs.
 
 Note:
-• È altamente dipendente dal server, e il successo o il fallimento del deoffuscamento dipende dal JavaScript attualmente usato sul server.
-• Se riscontri problemi con il client JavaScript, prova prima a disattivarlo."</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"La versione di JavaScript per il deoffuscamento non viene mantenuta aggiornata.
+• Il JavaScript del riproduttore per il deoffuscamento è mantenuto aggiornato.
+• L'avvio dei video potrebbe richiedere dai 5 ai 15 secondi."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_off">"È in uso l'estrattore SmartTube.
 
-Nota: viene usata la versione di JavaScript che riesce nel deoffuscamento, ma l'operazione è comunque in qualche modo dipendente dal server."</string>
+Note:
+• Il JavaScript del riproduttore per il deoffuscamento non è mantenuto aggiornato.
+• Questa impostazione verrà rimossa dai server in futuro."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_user_dialog_message">"A causa delle nuove misure di YouTube, non è più possibile decriptare gli URL di streaming usando i metodi generali nell'ultimo JavaScript del riproduttore.
+Per decriptare gli URL di streaming nell'ultimo JavaScript, viene usato un JavaScript esterno per yt-dlp-ejs, ma è attualmente in fase di sviluppo e richiede maggiori risorse hardware."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Bypassa il falso buffering</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Il bypass del falso buffering è attivato.
 

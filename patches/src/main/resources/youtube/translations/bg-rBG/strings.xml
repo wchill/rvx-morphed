@@ -1364,9 +1364,6 @@
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">Авт. скриване на бутона за пропускане</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">Бутона за пропускане се скрива след няколко секунди.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">Бутона за пропускане се показва за цялата част.</string>
-    <string name="revanced_sb_general_skiptoast">Показв. известие при автом. пропуск. част</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">Показване на известие при автоматично пропусната част. Докоснете тук за пример.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">Известието не се показва. Докоснете тук за пример.</string>
     <string name="revanced_sb_general_time_without">Показване на дължината на видеото без сигментите</string>
     <string name="revanced_sb_general_time_without_sum_on">Дължината на видеоклипа минус комбинираната дължина на сегмента е показана в скоби до пълната дължина на видеоклипа.</string>
     <string name="revanced_sb_general_time_without_sum_off">Цялата дължина на видето се показва.</string>

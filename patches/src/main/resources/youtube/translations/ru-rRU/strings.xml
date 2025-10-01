@@ -2062,9 +2062,7 @@ Shorts
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">Скрытие кнопки \"Пропуск\"</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">Кнопка \"Пропуск\" скрывается через несколько секунд.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">Кнопка \"Пропуск\" отображается до конца сегмента.</string>
-    <string name="revanced_sb_general_skiptoast">Уведомление при автоматическом пропуске сегмента</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">Уведомление при автоматическом пропуске сегмента включено.\nНажмите для примера.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">Уведомление при автоматическом пропуске сегмента отключено.\nНажмите для примера.</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration">Кнопка \"Пропустить\" время автоскрытия</string>
     <string name="revanced_sb_general_time_without">Продолжительность без сегментов</string>
     <string name="revanced_sb_general_time_without_sum_on">Продолжительность видео без всех сегментов отображена в скобках рядом с общей продолжительностью видео.</string>
     <string name="revanced_sb_general_time_without_sum_off">Отображается общая продолжительность видео.</string>
@@ -2341,6 +2339,8 @@ Shorts
 <small>(В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">ТВ
 <small>(В разработке)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"ТВ Простой
+<small>(Без PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Встроенный ТВ
 <small>(В разработке)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
@@ -2364,6 +2364,10 @@ Shorts
 • Если деобфускация не удалась, воспроизведение может быть прервано.
 • Иногда видео не воспроизводится даже через 10 секунд, в этом случае необходимо нажать кнопку \"Перезагрузить видео\".
 • Видео может запускаться с опозданием."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• Если деобфускация не удается, просмотр может завершиться неудачей.
+• Может потребоваться PoToken, без него просмотр завершится ошибкой.
+• Иногда просмотр видео не будет доступен даже через 10 сек, тогда перезагрузить видео.
+• Видео может начинаться с опозданием."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Аудио меню пропадет.
 • Детские видео могут не проигрываться без логина или в режиме инкогнито.
 • Примененный, не релизный, клиент может прекратить работу в любой момент."</string>
@@ -2417,6 +2421,9 @@ VP9 более продвинутый кодек, чем AVC, но некото�
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">Не авторизован</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">Язык аудио потока по умолчанию</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Чтобы выбрать язык звукового потока, отключите \'Принудительные звуковые авто дорожки\'.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">Язык звукового потока, по умолчанию, не доступен для Android Studio.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">Язык звукового потока, по умолчанию, не доступен для iPadOS.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">Кнопка звуковой дорожки</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Отображена, при использовании подмены потоковых данных, как 'Android VR', 'Mobile Web' или 'visionOS'."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Кнопка звуковой дорожки скрыта.</string>
@@ -2449,14 +2456,6 @@ VP9 более продвинутый кодек, чем AVC, но некото�
 • Автозапуск в ленте
 • Клипы
 • Shorts"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Использовать актуальный JavaScript проигрыватель</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"Плеер JavaScript для хранения деобфускации в актуальном состоянии.
-
-• Сильная зависимость деобфускации от сервера и плеера JavaScript, на сервере.
-• Если у вас возникли проблемы с JavaScript-клиентом, попробуйте сначала отключить его."</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"JavaScript для деобфускации не хранится в актуальном состоянии.
-
-• Используется JavaScript, но все еще зависит от сервера."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Обход поддельной буферизации</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Обход поддельной буферизации включен.
 

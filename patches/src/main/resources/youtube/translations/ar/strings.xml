@@ -2041,12 +2041,26 @@
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">إخفاء زر التخطي تلقائيًا</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">يختفي زر التخطي بعد بضع ثوانٍ.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">يتم عرض زر \"التخطي\" للمقطع بأكمله.</string>
-    <string name="revanced_sb_general_skiptoast">عرض ملاحظة عند تخطي المقطع تلقائيًا</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">تظهر الملاحظة عند تخطي مقطع تلقائيًا. اضغط هنا لمشاهدة مثال.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">لا تظهر الملاحظة. اضغط هنا لمشاهدة مثال.</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration">مدة زر التخطي</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration_sum">كم من الوقت يجب إظهار أزرار التخطي والتخطي للأبرز قبل إخفائها تلقائيًا.</string>
+    <string name="revanced_sb_general_skiptoast">عرض التراجع عن التخطي</string>
+    <string name="revanced_sb_general_skiptoast_sum_on">تظهر ملاحظة عند تخطي مقطع تلقائيًا. انقر على الملاحظة للتراجع عن التخطي.</string>
+    <string name="revanced_sb_general_skiptoast_sum_off">لا يتم عرض الملاحظة.</string>
+    <string name="revanced_sb_toast_on_skip_duration">مدة ملاحظة التخطي</string>
+    <string name="revanced_sb_toast_on_skip_duration_sum">المدة اللازمة لإظهار التراجع عن التخطي.</string>
     <string name="revanced_sb_general_time_without">عرض مدة الفيديو بدون المقاطع</string>
-    <string name="revanced_sb_general_time_without_sum_on">يعرض مدة الفيديو ناقصًا منها مدة المقطع المدمج بين قوسين بجوار مدة الفيديو الكامل.</string>
+    <string name="revanced_sb_general_time_without_sum_on">يعرض مدة الفيديو ناقصًا منه جميع المقاطع على شريط التقدم.</string>
     <string name="revanced_sb_general_time_without_sum_off">يتم عرض مدة الفيديو كاملةً.</string>
+    <string name="revanced_sb_duration_1s">1 ثانية</string>
+    <string name="revanced_sb_duration_2s">ثانيتان</string>
+    <string name="revanced_sb_duration_3s">3 ثوانٍ</string>
+    <string name="revanced_sb_duration_4s">4 ثوانٍ</string>
+    <string name="revanced_sb_duration_5s">5 ثوانٍ</string>
+    <string name="revanced_sb_duration_6s">6 ثوانٍ</string>
+    <string name="revanced_sb_duration_7s">7 ثوانٍ</string>
+    <string name="revanced_sb_duration_8s">8 ثوانٍ</string>
+    <string name="revanced_sb_duration_9s">9 ثوانٍ</string>
+    <string name="revanced_sb_duration_10s">10 ثوانٍ</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Change segment behavior -->
     <string name="revanced_sb_diff_segments">تغيير سلوك المقطع</string>
     <string name="revanced_sb_segments_sponsor">الراعي</string>
@@ -2402,11 +2416,14 @@
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">بدون المصادقة</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">لغة البث الصوتي الافتراضية</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">لتحديد لغة بث صوتي معينة، قم بإيقاف تشغيل \'تعطيل المقطع الصوتي التلقائي المفروض\'.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">لا يتوفر اختيار لغة بث الصوت الافتراضية مع Android Studio.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">لا يتوفر اختيار لغة بث الصوت الافتراضية مع iPadOS.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">عرض زر المقطع الصوتي</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"يتم عرض زر المقطع الصوتي عندما يكون العميل المستخدم لجلب بيانات البث هو 'Android VR' أو 'Mobile Web' أو 'visionOS'."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">لا يتم عرض زر المقطع الصوتي.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"المتطلبات الأساسية:
-• العميل المُستخدم لجلب بيانات البث هو 'Android VR'، أو 'Mobile Web'، أو 'iPadOS'، أو 'visionOS'.
+• العميل المُستخدم لجلب بيانات البث هو 'Android VR'، أو 'Mobile Web'، أو 'visionOS'.
 • يتم تشغيل فيديو يحتوي على مقاطع صوتية متعددة.
 
 المشاكل المعروفة:
@@ -2438,14 +2455,21 @@
 • التشغيل التلقائي في الموجز
 • المقاطع
 • Shorts"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">استخدام أحدث مشغل JavaScript</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"يتم تحديث مشغل JavaScript لإزالة التشويش باستمرار.
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_title">استخدام yt-dlp ejs (WIP)</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_on">"يُستخدم JavaScript خارجي لـ yt-dlp (yt-dlp-ejs).
 
-• يعتمد بشكل كبير على الخادم، ويعتمد نجاح أو فشل إزالة التشويش على JavaScript المشغل المُستخدم حاليًا على الخادم.
-• إذا كنت تواجه مشاكل مع عميل JavaScript، فحاول تعطيله أولًا."</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"لا يتم تحديث مشغل JavaScript لإزالة التشويش.
+• يتم تحديث مشغل JavaScript لإزالة التشويش باستمرار.
+• قد يستغرق بدء الفيديو من 5 إلى 15 ثانية."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_off">"تم استخدام مُستخرج SmartTube.
 
-• يستخدم JavaScript المشغل الذي ينجح في إزالة التشويش، ولكنه لا يزال يعتمد إلى حد ما على الخادم."</string>
+• مُشغِّل JavaScript لإزالة التشويش غير مُحدَّث.
+
+• سيتم إيقاف هذا من قِبل الخوادم قريبًا."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_user_dialog_message">"بسبب إجراءات YouTube الجديدة، لم يعد من الممكن فك تشفير روابط البث باستخدام الطرق العامة في أحدث إصدار من مشغل JavaScript.
+
+يُستخدم JavaScript خارجي لـ yt-dlp (yt-dlp-ejs) لفك تشفير روابط البث في أحدث إصدار من مشغل JavaScript.
+
+لا يزال هذا البرنامج قيد التطوير وسيستخدم موارد أجهزة إضافية."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">تجاوز التخزين المؤقت الزائف</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"تم تمكين تجاوز التخزين المؤقت الزائف.
 

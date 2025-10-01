@@ -2062,12 +2062,26 @@
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">Автоматично приховувати кнопку пропуску</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">Кнопку пропуску приховується після декількох секунд</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">Кнопку пропуску показується для всього сегменту</string>
-    <string name="revanced_sb_general_skiptoast">Показати тост коли пропущено сегмент автоматично</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">Тост показується, коли сегмент автоматично пропущено. Натисніть тут, щоб побачити приклад.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">Тост не показується. Натисніть тут, щоб побачити приклад.</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration">Тривалість кнопки пропуску</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration_sum">Як довго показувати кнопки пропуску та переходу до Основного перед автоматичним приховуванням.</string>
+    <string name="revanced_sb_general_skiptoast">Показувати тост скасування пропуску</string>
+    <string name="revanced_sb_general_skiptoast_sum_on">Тост показується, коли сегмент автоматично пропущено. Натисніть на нього, щоб скасувати пропуск.</string>
+    <string name="revanced_sb_general_skiptoast_sum_off">Тост не показується.</string>
+    <string name="revanced_sb_toast_on_skip_duration">Тривалість тосту пропуску</string>
+    <string name="revanced_sb_toast_on_skip_duration_sum">Як довго показувати тост скасування пропуску.</string>
     <string name="revanced_sb_general_time_without">Показати тривалість відео без сегментів</string>
-    <string name="revanced_sb_general_time_without_sum_on">Тривалість відео мінус всі сегменти, вказано в дужках поруч з повною тривалістю відео</string>
+    <string name="revanced_sb_general_time_without_sum_on">Тривалість відео мінус всі сегменти показується на панелі прогресу.</string>
     <string name="revanced_sb_general_time_without_sum_off">Тривалість повного відео показується</string>
+    <string name="revanced_sb_duration_1s">1 секунда</string>
+    <string name="revanced_sb_duration_2s">2 секунди</string>
+    <string name="revanced_sb_duration_3s">3 секунди</string>
+    <string name="revanced_sb_duration_4s">4 секунди</string>
+    <string name="revanced_sb_duration_5s">5 секунд</string>
+    <string name="revanced_sb_duration_6s">6 секунд</string>
+    <string name="revanced_sb_duration_7s">7 секунд</string>
+    <string name="revanced_sb_duration_8s">8 секунд</string>
+    <string name="revanced_sb_duration_9s">9 секунд</string>
+    <string name="revanced_sb_duration_10s">10 секунд</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Change segment behavior -->
     <string name="revanced_sb_diff_segments">Змінити поведінку сегмента</string>
     <string name="revanced_sb_segments_sponsor">Спонсор</string>
@@ -2340,6 +2354,8 @@
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web мобільний
 <small>(ще в розробці, Без авторизації)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"Простий TV
+<small>(Без PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Вбудований TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Невипущений, Без авторизації)</small>"</string>
@@ -2359,6 +2375,10 @@
 • Іноді відео не відтворюється навіть через 10 секунд, і тоді потрібно натиснути кнопку перезавантаження відео.
 • Відео може розпочинається із запізненням."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Якщо деобфускація не вдасться, відтворення може завершитися зі збоями.
+• Іноді відео не відтворюється навіть через 10 секунд, і тоді потрібно натиснути кнопку перезавантаження відео.
+• Відео може розпочинається із запізненням."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• Якщо деобфускація не вдасться, відтворення може завершитися зі збоями.
+• Для деяких акаунтів може знадобитися PoToken, і в цьому випадку відтворення завершиться зі збоями.
 • Іноді відео не відтворюється навіть через 10 секунд, і тоді потрібно натиснути кнопку перезавантаження відео.
 • Відео може розпочинається із запізненням."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Меню звукової доріжки відсутнє.
@@ -2418,11 +2438,14 @@
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">Без авторизації</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">Основна мова трансляції звуку</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Щоб вибрати конкретну мову трансляції звуку, вимкніть \'Вимкнути примусові автоматичні звукові доріжки\'.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">Вибір основної мови трансляції звуку недоступний з Android Studio.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">Вибір основної мови трансляції звуку недоступний з iPadOS.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">Показувати кнопку звукової доріжки</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Кнопку звукової доріжки показується, якщо клієнтом для отримання даних трансляції є 'Android VR', 'Web мобільний', чи 'visionOS'."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Кнопку звукової доріжки не показується.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Необхідні умови:
-• Клієнтом, який використовується для отримання даних трансляції, є 'Android VR', 'Web мобільний', 'iPadOS', чи 'visionOS'.
+• Клієнтом, який використовується для отримання даних трансляції, є 'Android VR', 'Web мобільний', чи 'visionOS'.
 • Відтворюється відео з кількома звуковими доріжками.
 
 Відомі проблеми:
@@ -2454,14 +2477,20 @@
 • Автовідтворення у стрічці
 • Кліпи
 • YouTube Shorts"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Використовувати останній JavaScript відтворювача</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"JavaScript відтворювача для деобфускації підтримується в актуальному стані.
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_title">Використовувати ejs yt-dlp (Ще в розробці)</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_on">"Використовується зовнішній JavaScript для yt-dlp (yt-dlp-ejs).
 
-• Він значною мірою залежить від сервера, і успіх чи невдача деобфускації залежить від JavaScript відтворювача, який наразі використовується на сервері.
-• Якщо виникли проблеми з клієнтом JavaScript, спробуйте спочатку вимкнути його."</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"JavaScript відтворювача для деобфускації не підтримується в актуальному стані.
+• JavaScript відтворювача для деобфускації підтримується в актуальному стані.
+• Запуск відео може зайняти від 5 до 15 секунд."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_off">"Використовується екстрактор SmartTube.
 
-• Використовується JavaScript відтворювача, який успішно виконує деобфускацію, але він все одно дещо залежний від сервера."</string>
+• JavaScript відтворювача для деобфускації не в актуальному стані.
+• Найближчим часом це буде застаріле на серверах."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_user_dialog_message">"У зв'язку з новими заходами YouTube більше неможливо розшифрувати посилання трансляції загальними методами в останніх JavaScript відтворювача.
+
+Використовується зовнішній JavaScript для yt-dlp (yt-dlp-ejs) для розшифрування посилань трансляції в останніх JavaScript відтворювача.
+
+Наразі це перебуває на стадії розробки і використовуватиме більше апаратних ресурсів."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Обходити фальшиву буферизацію</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Обхід фальшивої буферизації увімкнено.
 

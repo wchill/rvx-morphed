@@ -2039,9 +2039,6 @@ Clique para ver como emitir uma chave de API."</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">Ocultar automaticamente o botão pular</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">O botão pular se oculta após alguns segundos.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">O botão pular é exibido para todo o segmento.</string>
-    <string name="revanced_sb_general_skiptoast">Exibir uma notificação flutuante quando pular automaticamente</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">Uma notificação flutuante é exibida quando um segmento é automaticamente pulado. Toque aqui para ver um exemplo.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">Uma notificação flutuante não é exibida. Toque aqui para ver um exemplo.</string>
     <string name="revanced_sb_general_time_without">Exibir duração do vídeo sem segmentos</string>
     <string name="revanced_sb_general_time_without_sum_on">Duração do vídeo sem os segmentos, exibido entre parênteses ao lado da duração total do vídeo.</string>
     <string name="revanced_sb_general_time_without_sum_off">Exibindo duração total do vídeo.</string>
@@ -2430,14 +2427,6 @@ Entre os clientes JavaScript, o cliente recomendado é TV."</string>
 • Reprodução automática no feed
 • Clips
 • Shorts"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Use JavaScript do reprodutor mais recente</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"O JavaScript do reprodutor para desfuscação é mantido atualizado.
-
-• É altamente dependente do servidor, e o sucesso ou a falha da desobfuscação depende do JavaScript do reprodutor usado atualmente no servidor.
-• Se você estiver tendo problemas com o cliente JavaScript, tente desativar isto primeiro."</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"O JavaScript do reprodutor para desfuscação não é mantido atualizado.
-
-• O JavaScript do reprodutor que tem sucesso na desofuscação é usado, mas ainda é algo dependente do servidor."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Ignorar buffers falsos</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Ignorar buffers falsos está ativado.
 

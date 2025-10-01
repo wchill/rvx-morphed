@@ -2056,9 +2056,6 @@ API キーの発行方法については、ここをタップしてください�
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">[スキップ] ボタンを自動的に非表示</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">[スキップ] ボタンを数秒後に非表示にします。</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">[スキップ] ボタンを数秒後に非表示にします。</string>
-    <string name="revanced_sb_general_skiptoast">自動的にスキップした際にトーストを表示</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">セグメントが自動的にスキップされた際にトーストを表示します。ここをタップすると、サンプルのトーストが表示されます。</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">セグメントが自動的にスキップされた際にトーストを表示します。ここをタップすると、サンプルのトーストが表示されます。</string>
     <string name="revanced_sb_general_time_without">セグメントを除いた動画の時間を表示</string>
     <string name="revanced_sb_general_time_without_sum_on">セグメントを除いた時間をタイムスタンプの横の括弧内に表示します。</string>
     <string name="revanced_sb_general_time_without_sum_off">セグメントを除いた時間をタイムスタンプの横の括弧内に表示します。</string>
@@ -2338,6 +2335,8 @@ YouTube Premium に加入している場合は、この設定は必要ない可�
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
 <small>(開発途中、認証なし)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
+<small>(PoToken なし)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(未リリース、認証なし)</small>"</string>
@@ -2357,6 +2356,10 @@ YouTube Premium に加入している場合は、この設定は必要ない可�
 ・10 秒経っても動画が再生されない可能性があります。その場合は、動画の再読み込みボタンをタップする必要があります。
 ・動画の再生開始に時間がかかる可能性があります。"</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"・難読化の解除に失敗すると、動画の再生に失敗する可能性があります。
+・10 秒経っても動画が再生されない可能性があります。その場合は、動画の再読み込みボタンをタップする必要があります。
+・動画の再生開始に時間がかかる可能性があります。"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"・難読化の解除に失敗した場合、動画の再生に失敗する可能性があります。
+・一部のアカウントでは PoToken が必要になる可能性があり、その場合は再生に失敗します。
 ・10 秒経っても動画が再生されない可能性があります。その場合は、動画の再読み込みボタンをタップする必要があります。
 ・動画の再生開始に時間がかかる可能性があります。"</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"・[音声トラック] メニューは表示されません。
@@ -2416,11 +2419,14 @@ VP9 は AVC よりも高度なコーデックですが、利用者によって�
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">認証なし</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">デフォルトの音声トラック</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">特定の音声トラック言語を選択するには、[音声トラックの強制を無効化] をオフにしてください。</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">Android Studio では、デフォルトの音声トラック言語を選択することはできません。</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">iPadOS では、デフォルトの音声トラック言語を選択することはできません。</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">[音声トラック] ボタンを表示</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"ストリーミングデータの取得に使用するクライアントが「Android VR」、「Mobile Web」、または「visionOS」の場合に [音声トラック] ボタンを表示します。"</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">ストリーミングデータの取得に使用するクライアントが「Android VR」、「Mobile Web」、または「visionOS」の場合に [音声トラック] ボタンを表示します。</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"前提条件:
-・ストリーミングデータの取得に使用するクライアントは「Android VR (認証なし)」、「Mobile Web」、「iPadOS」、「visionOS」のいずれかであること。
+・ストリーミングデータの取得に使用するクライアントは「Android VR」、「Mobile Web」、「visionOS」のいずれかであること。
 ・複数の音声トラックがある動画を再生していること。
 
 既知の問題:
@@ -2446,15 +2452,6 @@ JavaScript クライアントの中では、「TV」が推奨されます。"</s
 
 注意: JavaScript クライアントでは、まだ一部の動画を再生できません。"</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_off">"現在の設定: 高速再生が必要な一部の動画 (フィードの動画の自動再生、クリップ、ショート) では JavaScript クライアントを使用しません。"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">最新のプレーヤー JavaScript を使用</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"難読化解除用のプレーヤー JavaScript を最新の状態に保ちます。
-
-・サーバーに大きく依存しており、難読化解除の成功または失敗は、サーバー上で現在使用されているプレーヤー JavaScript によって決まります。
-・JavaScript クライアントに問題がある場合は、まずこれを無効にしてみてください。"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"難読化解除用のプレーヤー JavaScript を最新の状態に保ちます。
-
-・サーバーに大きく依存しており、難読化解除の成功または失敗は、サーバー上で現在使用されているプレーヤー JavaScript によって決まります。
-・JavaScript クライアントに問題がある場合は、まずこれを無効にしてみてください。"</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">偽バッファリングを回避</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"偽バッファリングを回避します。
 

@@ -513,10 +513,11 @@ Jeśli jesteś użytkownikiem YouTube Premium, to ustawienie te nie jest koniecz
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Wbudowany TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Użyj najnowszego JavaScript odtwarzacza</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"Po włączeniu, najnowszy JavaScript odtwarzacza będzie używany do odszyfrowywania URL strumienia na klientach 'TV' i 'Mobilny przeglądarkowy'.
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_title">Użyj yt-dlp ejs (W fazie rozwoju)</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary">"Gdy opcja jest włączona, \"Zewnętrzny JavaScript dla yt-dlp (yt-dlp-ejs)' będzie używany do odszyfrowywania URL strumieni na klientach TV i 'Mobilny przeglądarkowy'
 
-Jeśli masz problemy z klientem JavaScript, w pierwszej kolejności spróbuj to wyłączyć."</string>
+• JavaScript odtwarzacza do odszyfrowywania jest aktualizowany na bieżąco
+• film może się wczytywać od 5 do 15 sekund"</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Nie można przechwycić żadnego ze strumieni klienta.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Spróbuj zmienić domyślnego klienta na TV.</string>
     <string name="revanced_watch_history_type_title">Typ historii oglądania</string>

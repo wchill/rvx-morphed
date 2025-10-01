@@ -2062,9 +2062,6 @@ Kattintson az API-kulcs kiadás folyamatának megtekintéséhez."</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">Automatikusan elrejti a kihagyás gombot</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">A kihagyás gomb néhány másodperc után eltűnik.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">A kihagyás gomb a teljes szakasz alatt megjelenik.</string>
-    <string name="revanced_sb_general_skiptoast">Felugró üzenet megjelenítése az automatikusan kihagyott szakaszoknál</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">Felugró üzenet megjelenítése szakasz automatikus kihagyásakor. Koppintson ide egy példa megtekintéséhez.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">Felugró üzenet nem látható. Koppintson ide egy példa megtekintéséhez.</string>
     <string name="revanced_sb_general_time_without">Videó hosszának megjelenítése szegmensek nélkül</string>
     <string name="revanced_sb_general_time_without_sum_on">A videó teljes hossza mellett zárójelben látható a szegmensek nélküli hossza.</string>
     <string name="revanced_sb_general_time_without_sum_off">A videó teljes hossza látható.</string>
@@ -2458,14 +2455,6 @@ A JavaScript kliensek közül az ajánlott kliens a TV egyszerű."</string>
 • Automatikus lejátszás a hírfolyamban
 • Klipek
 • Shortok"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Használja a legújabb lejátszó JavaScriptjét</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_on">"A deobfuszkációhoz használt lejátszó JavaScriptje naprakészen tartandó.
-
-• Ez nagymértékben szerverfüggő, és a deobfuszkáció sikere vagy sikertelensége a szerveren aktuálisan használt lejátszó JavaScripttől függ.
-• Ha problémái vannak a JavaScript klienssel, először próbálja meg letiltani ezt."</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary_off">"A deobfuszkációhoz használt lejátszó JavaScriptje nincs naprakészen.
-
-• A deobfuszkációban sikeresen részt vevő lejátszó JavaScriptjét használjuk, de ez még mindig némileg szerverfüggő."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Kerülje a hamis pufferelést</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"A hamis pufferelés megkerülése engedélyezett.
 

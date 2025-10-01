@@ -513,10 +513,11 @@
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_title">Χρήση Player JavaScript τελευταίας έκδοσης</string>
-    <string name="revanced_spoof_streaming_data_use_latest_player_js_summary">"Όταν ενεργοποιείται, θα χρησιμοποιείται η Player JavaScript τελευταίας έκδοσης για την αποσυσκότιση των streaming Url στους πελάτες «TV» και «Web Κινητού».
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_title">Χρήση του yt-dlp ejs (λειτουργία σε εξέλιξη)</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary">"Όταν είναι ενεργοποιημένο, θα χρησιμοποιείται η εξωτερική JavaScript για το yt-dlp (yt-dlp-ejs) για την αποσυσκότιση Url ροής στους πελάτες «TV» και «Web Κινητού».
 
-Αν αντιμετωπίζετε προβλήματα με τον πελάτη JavaScript, δοκιμάστε πρώτα να απενεργοποιήσετε αυτή τη ρύθμιση."</string>
+• Η Player JavaScript για την αποσυσκότιση διατηρείται ενημερωμένη.
+• Μπορεί να χρειαστούν από 5 έως 15 δευτερόλεπτα για να ξεκινήσει η αναπαραγωγή του βίντεο."</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Αδυναμία λήψης ροής του προγράμματος πελάτη.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Δοκιμάστε να αλλάξετε το προεπιλεγμένο πρόγραμμα πελάτη παραποίησης δεδομένων ροής σε TV.</string>
     <string name="revanced_watch_history_type_title">Τύπος ιστορικού παρακολούθησης</string>

@@ -1742,9 +1742,6 @@ Cliquez ici pour découvrir comment créer une clé API."</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">Masquer auto. le bouton \'Passer\'</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">Masque le bouton \'Passer\' après quelques secondes.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">Le bouton \'Passer\' est affichée tout le long du segment.</string>
-    <string name="revanced_sb_general_skiptoast">Afficher un message lors du passage auto</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">Affiche un message lorsqu\'un segment est automatiquement passé. Appuyez ici pour voir un exemple.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">N\'affiche pas de message. Appuyez ici pour voir un exemple.</string>
     <string name="revanced_sb_general_time_without">Afficher le temps sans compter les segments</string>
     <string name="revanced_sb_general_time_without_sum_on">Affiche la durée de la vidéo sans compter les segments (à côté de la durée totale de la vidéo).</string>
     <string name="revanced_sb_general_time_without_sum_off">La durée complète de la vidéo est affichée.</string>
