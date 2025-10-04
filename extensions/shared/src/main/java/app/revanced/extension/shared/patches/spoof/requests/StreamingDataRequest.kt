@@ -452,7 +452,7 @@ class StreamingDataRequest private constructor(
                     // not available YT uses the original audio language. Authenticated requests ignore
                     // the language code and always use the account language. Use a language that is
                     // not auto-dubbed by YouTube: https://support.google.com/youtube/answer/15569972
-                    overrideLanguage = "no"
+                    overrideLanguage = "nb" // Norwegian Bokmal.
                 }
 
                 val connection = send(

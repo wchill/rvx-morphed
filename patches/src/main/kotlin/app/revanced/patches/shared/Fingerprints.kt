@@ -110,6 +110,31 @@ internal val formatStreamModelConstructorFingerprint = legacyFingerprint(
     literals = listOf(45374643L),
 )
 
+internal const val IS_DEFAULT_AUDIO_TRACK_STRING =
+    "isDefaultAudioTrack="
+internal const val AUDIO_TRACK_DISPLAY_NAME_STRING =
+    "audioTrackDisplayName="
+internal const val AUDIO_TRACK_ID_STRING =
+    "audioTrackId="
+
+/**
+ * On YouTube, this class is 'Lcom/google/android/libraries/youtube/innertube/model/media/FormatStreamModel;'
+ * On YouTube Music, class names are obfuscated.
+ */
+internal val formatStreamModelToStringFingerprint = legacyFingerprint(
+    name = "formatStreamModelToStringFingerprint",
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
+    returnType = "Ljava/lang/String;",
+    strings = listOf(
+        IS_DEFAULT_AUDIO_TRACK_STRING,
+        AUDIO_TRACK_DISPLAY_NAME_STRING,
+        AUDIO_TRACK_ID_STRING
+    ),
+    customFingerprint = { method, classDef ->
+        method.name == "toString"
+    }
+)
+
 internal val mdxPlayerDirectorSetVideoStageFingerprint = legacyFingerprint(
     name = "mdxPlayerDirectorSetVideoStageFingerprint",
     strings = listOf("MdxDirector setVideoStage ad should be null when videoStage is not an Ad state ")

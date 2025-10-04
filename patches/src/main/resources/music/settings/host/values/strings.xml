@@ -182,6 +182,10 @@ Limitations:
     <string name="revanced_disable_cairo_splash_animation_summary">Disables Cairo splash animation when the app starts up.</string>
     <string name="revanced_disable_dislike_redirection_title">Disable dislike redirection</string>
     <string name="revanced_disable_dislike_redirection_summary">Disables redirection to the next track when clicking the Dislike button.</string>
+    <string name="revanced_disable_auto_audio_tracks_title">Disable forced auto audio tracks</string>
+    <string name="revanced_disable_auto_audio_tracks_summary">"Disables forced auto audio tracks for podcasts.
+
+Limitation: If 'Spoof streaming data' is enabled and the default client is 'Android VR Auth', this may not work."</string>
     <string name="revanced_disable_auto_captions_title">Disable forced auto captions</string>
     <string name="revanced_disable_auto_captions_summary">Disables auto captions from being forced on.</string>
     <string name="revanced_enable_landscape_mode_title">Enable landscape mode</string>
