@@ -144,7 +144,7 @@ class StreamingDataRequest private constructor(
         val lastSpoofedClientHasSingleAudioTrack: Boolean
             get() = lastSpoofedClient?.let {
                 !it.supportsCookies && !it.supportsMultiAudioTracks
-            }?: false
+            } ?: false
 
         @JvmStatic
         fun overrideLanguage(language: String) {
@@ -207,7 +207,8 @@ class StreamingDataRequest private constructor(
                 }
                 return finalRequestHeader
             } else if (clientType == ClientType.ANDROID_VR_AUTH &&
-                AuthPatch.isAuthorizationAvailable()) {
+                AuthPatch.isAuthorizationAvailable()
+            ) {
                 val finalRequestHeader: MutableMap<String, String> =
                     LinkedHashMap(requestHeader.size)
                 for (key in requestHeader.keys) {
@@ -274,9 +275,7 @@ class StreamingDataRequest private constructor(
 
                     val deobfuscatedAdaptiveFormatsArrayList: ArrayList<String> =
                         ArrayList(adaptiveFormatsCount)
-                    val requirePoToken = clientType.requirePoToken
-                    val isTV = !requirePoToken
-                    val sessionPoToken = if (requirePoToken)
+                    val sessionPoToken = if (clientType.requirePoToken)
                         PoTokenGate.getSessionPoToken(videoId)
                     else
                         null
@@ -406,7 +405,10 @@ class StreamingDataRequest private constructor(
 
                 val connection =
                     getInnerTubeResponseConnectionFromRoute(
-                        getStreamingDataRoute(tParameter, SPOOF_STREAMING_DATA_USE_JS_BYPASS_FAKE_BUFFERING),
+                        getStreamingDataRoute(
+                            tParameter,
+                            SPOOF_STREAMING_DATA_USE_JS_BYPASS_FAKE_BUFFERING
+                        ),
                         clientType,
                         replaceHeader(clientType, videoId, requestHeader)
                     )
@@ -462,7 +464,8 @@ class StreamingDataRequest private constructor(
                 if (!clientType.supportsCookies
                     && !clientType.supportsMultiAudioTracks
                     && BaseSettings.DISABLE_AUTO_AUDIO_TRACKS.get()
-                    && overrideLanguage.isEmpty()) {
+                    && overrideLanguage.isEmpty()
+                ) {
                     // If client spoofing does not use authentication and lacks multi-audio streams,
                     // then can use any language code for the request and if that requested language is
                     // not available YT uses the original audio language. Authenticated requests ignore

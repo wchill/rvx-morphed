@@ -274,7 +274,8 @@ public class PlaylistPatch {
                                 // okButtonText
                                 null,
                                 // onOkClick
-                                () -> {},
+                                () -> {
+                                },
                                 // onCancelClick
                                 null,
                                 // neutralButtonText

@@ -1,10 +1,8 @@
 package com.liskovsoft.youtubeapi.app.playerdata
 
 import app.revanced.extension.shared.utils.Logger
-
 import com.google.gson.Gson
 import com.liskovsoft.googlecommon.common.js.JSInterpret
-import com.liskovsoft.sharedutils.helpers.Helpers
 import java.util.regex.Pattern
 
 internal object CommonExtractor {

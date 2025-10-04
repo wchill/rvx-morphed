@@ -13,9 +13,9 @@ import app.revanced.patches.shared.litho.addLithoFilter
 import app.revanced.patches.shared.litho.lithoFilterPatch
 import app.revanced.patches.shared.spans.addSpanFilter
 import app.revanced.patches.shared.spans.inclusiveSpanPatch
+import app.revanced.patches.shared.startVideoInformerFingerprint
 import app.revanced.patches.shared.textcomponent.hookSpannableString
 import app.revanced.patches.shared.textcomponent.textComponentPatch
-import app.revanced.patches.shared.startVideoInformerFingerprint
 import app.revanced.patches.youtube.utils.bottomsheet.bottomSheetHookPatch
 import app.revanced.patches.youtube.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.revanced.patches.youtube.utils.dismiss.dismissPlayerHookPatch
@@ -606,7 +606,7 @@ val playerComponentsPatch = bytecodePatch(
             endScreenPlayerResponseModelFingerprint
                 .methodOrThrow()
                 .addInstructionsWithLabels(
-                0, """
+                    0, """
                     invoke-static {}, $PLAYER_CLASS_DESCRIPTOR->hideEndScreenCards()Z
                     move-result v0
                     if-eqz v0, :show
@@ -614,7 +614,7 @@ val playerComponentsPatch = bytecodePatch(
                     :show
                     nop
                     """
-            )
+                )
         }
 
         // endregion

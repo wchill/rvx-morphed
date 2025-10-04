@@ -225,7 +225,8 @@ internal val playbackStartParametersConstructorFingerprint = legacyFingerprint(
 )
 
 internal const val FIXED_RESOLUTION_STRING = ", initialPlaybackVideoQualityFixedResolution="
-internal const val WATCH_NEXT_RESPONSE_PROCESSING_DELAY_STRING = ", watchNextResponseProcessingDelay="
+internal const val WATCH_NEXT_RESPONSE_PROCESSING_DELAY_STRING =
+    ", watchNextResponseProcessingDelay="
 
 internal val playbackStartParametersToStringFingerprint = legacyFingerprint(
     name = "playbackStartParametersToStringFingerprint",

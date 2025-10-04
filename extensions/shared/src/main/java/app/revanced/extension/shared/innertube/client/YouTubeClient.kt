@@ -165,6 +165,7 @@ object YouTubeClient {
      */
     private const val DEVICE_MODEL_IPADOS = "iPad7,6"
     private const val OS_NAME_IPADOS = "iPadOS"
+
     /**
      * iPadOS 17 is the minimum version that supports the OPUS codec.
      */
@@ -404,6 +405,7 @@ object YouTubeClient {
             clientName = "ANDROID_CREATOR",
             friendlyName = "Android Studio"
         ),
+
         // PoToken required?
         IPADOS(
             id = 5,
@@ -419,6 +421,7 @@ object YouTubeClient {
             clientName = "IOS",
             friendlyName = "iPadOS"
         ),
+
         // Unreleased.
         VISIONOS(
             id = 101,
@@ -455,6 +458,7 @@ object YouTubeClient {
             refererFormat = CLIENT_REFERER_FORMAT_TV,
             friendlyName = "TV Simply No PoToken"
         ),
+
         // Unused client.
         TV_EMBEDDED(
             id = 85,

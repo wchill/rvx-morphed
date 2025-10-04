@@ -63,7 +63,8 @@ public class AuthRequest {
                 case GET_ACTIVATION_CODE -> body = createActivationCodeBody(YOUTUBE_VR_CLIENT);
                 case GET_REFRESH_TOKEN -> body = createRefreshTokenBody(token);
                 case GET_ACCESS_TOKEN -> body = createAccessTokenBody(token);
-                default -> Logger.printException(() -> "Unknown request type: " + requestType); // Should never happen.
+                default ->
+                        Logger.printException(() -> "Unknown request type: " + requestType); // Should never happen.
             }
             RequestBody requestBody = RequestBody.create(
                     MediaType.parse("application/json; charset=utf-8"),

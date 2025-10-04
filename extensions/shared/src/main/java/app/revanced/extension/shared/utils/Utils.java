@@ -296,7 +296,7 @@ public class Utils {
 
     public static Context getContext() {
         if (context == null) {
-            Logger.printException(() -> "Context is not set by extension hook, returning null",  null);
+            Logger.printException(() -> "Context is not set by extension hook, returning null", null);
         }
         return context;
     }
@@ -586,11 +586,11 @@ public class Utils {
      * The width is calculated as a percentage of the screen's portrait width and the vertical offset is specified in DIP.
      * The default dialog background is removed to allow for custom styling.
      *
-     * @param window The {@link Window} object to configure.
-     * @param gravity The gravity for positioning the dialog (e.g., {@link Gravity#BOTTOM}).
-     * @param yOffsetDip The vertical offset from the gravity position in DIP.
+     * @param window          The {@link Window} object to configure.
+     * @param gravity         The gravity for positioning the dialog (e.g., {@link Gravity#BOTTOM}).
+     * @param yOffsetDip      The vertical offset from the gravity position in DIP.
      * @param widthPercentage The width of the dialog as a percentage of the screen's portrait width (0-100).
-     * @param dimAmount If true, sets the background dim amount to 0 (no dimming); if false, leaves the default dim amount.
+     * @param dimAmount       If true, sets the background dim amount to 0 (no dimming); if false, leaves the default dim amount.
      */
     public static void setDialogWindowParameters(Window window, int gravity, int yOffsetDip, int widthPercentage, boolean dimAmount) {
         WindowManager.LayoutParams params = window.getAttributes();
@@ -836,7 +836,7 @@ public class Utils {
      * Safe to call from any thread.
      *
      * @param messageToToast Message to show.
-     * @param toastDuration Either {@link Toast#LENGTH_SHORT} or {@link Toast#LENGTH_LONG}.
+     * @param toastDuration  Either {@link Toast#LENGTH_SHORT} or {@link Toast#LENGTH_LONG}.
      */
     public static void showToast(String messageToToast, int toastDuration) {
         Objects.requireNonNull(messageToToast);

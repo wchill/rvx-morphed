@@ -5,9 +5,9 @@ import static app.revanced.extension.shared.utils.StringRef.str;
 import android.content.Context;
 import android.util.AttributeSet;
 
+import app.revanced.extension.shared.innertube.client.YouTubeClient.ClientType;
 import app.revanced.extension.shared.patches.PatchStatus;
 import app.revanced.extension.shared.settings.preference.SortedListPreference;
-import app.revanced.extension.shared.innertube.client.YouTubeClient.ClientType;
 import app.revanced.extension.youtube.settings.Settings;
 
 @SuppressWarnings({"deprecation", "unused"})
@@ -42,12 +42,15 @@ public class SpoofAudioSelectorListPreference extends SortedListPreference {
     public SpoofAudioSelectorListPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
+
     public SpoofAudioSelectorListPreference(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
+
     public SpoofAudioSelectorListPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
+
     public SpoofAudioSelectorListPreference(Context context) {
         super(context);
     }
