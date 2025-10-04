@@ -275,8 +275,7 @@ class StreamingDataRequest private constructor(
                                     cpn,
                                     adaptiveFormats.url,
                                     adaptiveFormats.signatureCipher,
-                                    sessionPoToken,
-                                    isTV
+                                    sessionPoToken
                                 )
                             if (deobfuscatedUrl.isNullOrEmpty()) {
                                 Logger.printDebug { "Failed to decrypt n-sig or signatureCipher, please check if latest regular expressions are being used" }
@@ -302,8 +301,7 @@ class StreamingDataRequest private constructor(
                                     cpn,
                                     formats.url,
                                     formats.signatureCipher,
-                                    sessionPoToken,
-                                    isTV
+                                    sessionPoToken
                                 )
                             if (deobfuscatedUrl.isNullOrEmpty()) {
                                 Logger.printDebug { "Failed to decrypt n-sig or signatureCipher" }
@@ -322,8 +320,7 @@ class StreamingDataRequest private constructor(
                                 "",
                                 serverAbrStreamingUrl,
                                 null,
-                                sessionPoToken,
-                                isTV
+                                sessionPoToken
                             )
                     }
 

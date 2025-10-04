@@ -70,38 +70,6 @@ internal abstract class JsRuntimeChalBaseJCP: JsChallengeProvider() {
         }
     }
 
-    /*
-    override fun realBulkSolve(requests: List<JsChallengeRequest>): Sequence<JsChallengeProviderResponse> = sequence {
-        val grouped: Map<String, List<JsChallengeRequest>> = requests.groupBy { it.input.playerJS }
-
-        for ((playerJS, groupedRequests) in grouped) {
-            val stdin = constructStdin(playerJS = playerJS, requests = groupedRequests)
-            val stdout = runJsRuntime(stdin)
-
-            val gson = Gson()
-            val output: SolverOutput = try {
-                gson.fromJson(stdout, solverOutputType)
-            } catch (e: JsonSyntaxException) {
-                throw JsChallengeProviderError("Cannot parse solver output", e)
-            }
-
-            if (output.type == "error")
-                throw JsChallengeProviderError(output.error ?: "Unknown solver output error")
-
-            for ((request, responseData) in groupedRequests.zip(output.responses)) {
-                if (responseData.type == "error") {
-                    yield(JsChallengeProviderResponse(
-                        request, null, JsChallengeProviderError(responseData.error ?: "Unknown solver output error")))
-                } else {
-                    yield(JsChallengeProviderResponse(
-                        request, JsChallengeResponse(request.type, ChallengeOutput(responseData.data))
-                    ))
-                }
-            }
-        }
-    }
-     */
-
     private fun constructStdin(playerJS: String, preprocessed: Boolean = false, requests: List<JsChallengeRequest>): String {
         val jsonRequests = requests.map { request ->
             mapOf(
