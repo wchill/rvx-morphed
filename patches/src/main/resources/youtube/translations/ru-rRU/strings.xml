@@ -2063,9 +2063,25 @@ Shorts
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">Кнопка \"Пропуск\" скрывается через несколько секунд.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">Кнопка \"Пропуск\" отображается до конца сегмента.</string>
     <string name="revanced_sb_auto_hide_skip_button_duration">Кнопка \"Пропустить\" время автоскрытия</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration_sum">Длительность пропуска и пропуск подсветки кнопок перед автоскрытием.</string>
+    <string name="revanced_sb_general_skiptoast">Уведомление отмены пропуска</string>
+    <string name="revanced_sb_general_skiptoast_sum_on">Включено. Нажмите на всплывающее уведомление для отмены пропуска.</string>
+    <string name="revanced_sb_general_skiptoast_sum_off">Отключено.</string>
+    <string name="revanced_sb_toast_on_skip_duration">Длительность всплывающего уведомления</string>
+    <string name="revanced_sb_toast_on_skip_duration_sum">Как долго отображать уведомление отмены пропуска.</string>
     <string name="revanced_sb_general_time_without">Продолжительность без сегментов</string>
     <string name="revanced_sb_general_time_without_sum_on">Продолжительность видео без всех сегментов отображена в скобках рядом с общей продолжительностью видео.</string>
     <string name="revanced_sb_general_time_without_sum_off">Отображается общая продолжительность видео.</string>
+    <string name="revanced_sb_duration_1s">1 сек.</string>
+    <string name="revanced_sb_duration_2s">2 сек.</string>
+    <string name="revanced_sb_duration_3s">3 сек.</string>
+    <string name="revanced_sb_duration_4s">4 сек.</string>
+    <string name="revanced_sb_duration_5s">5 сек.</string>
+    <string name="revanced_sb_duration_6s">6 сек.</string>
+    <string name="revanced_sb_duration_7s">7 сек.</string>
+    <string name="revanced_sb_duration_8s">8 сек.</string>
+    <string name="revanced_sb_duration_9s">9 сек.</string>
+    <string name="revanced_sb_duration_10s">10 сек.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Change segment behavior -->
     <string name="revanced_sb_diff_segments">Изменить поведение сегмента</string>
     <string name="revanced_sb_segments_sponsor">Спонсорская реклама</string>
@@ -2333,6 +2349,8 @@ Shorts
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio
 <small>(Требуется вход)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
+<small>(Необходима авторизация)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
 <small>(Просрочено, Не авторизовано)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web
@@ -2353,6 +2371,10 @@ Shorts
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Аудио меню пропадет.
 • Стабильная громкость не доступна.
 • Детские видео могут не проигрываться без логина или в режиме инкогнито."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Отсутствует меню аудиодорожки.
+• Отключение принудительных авто дорожек звука недоступно.
+• Стабильная громкость недоступна.
+• Детские видео не проигрываются при выходе из системы или в режиме инкогнито."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 не поддерживается.
 • Видео может останавливаться в 1:00, или не работать в некоторых регионах."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Отсутствует меню аудиодорожки.
@@ -2415,15 +2437,47 @@ VP9 более продвинутый кодек, чем AVC, но некото�
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Возможно, Вы не вошли в систему.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Отключить VR AV1</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">Видео кодек AVC (H.264) или VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">Видео кодек определяется автоматически.</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Включить VR AV1</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"Видео кодек AVC (H.264), VP9 или AV1.
+
+Проигрывание может запинаться или будут потери кадров."</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">Видео кодек AVC (H.264) или VP9.</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"При включении используется программный кодек AV1.
+
+Проигрывание может запинаться или будут потери кадров."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">О Android VR авторизации</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Нажмите, чтобы посмотреть, как получить токен авторизации.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Получить токен авторизации</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Для получения токена авторизации Android VR, войдите в YouTube VR, используя код активации:
+
+1. Нажмите \"Получить код активации\" для генерации кода активации.
+2. Нажмите 'Открыть веб-сайт', чтобы перейти на 'https://yt.be/activate' и введите код активации.
+3. Когда появится запрос войдите в аккаунт Google, который используете для YouTube. Если вход уже выполнен, перейдите к следующему шагу.
+4. После входа вернитесь к RVX и снова нажмите \"О Android VR авторизации\".
+5. Нажмите 'Получить токен авторизации'.
+
+※ нажмите 'Сброс', чтобы удалить токен аутентификации или код активации."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Получить код активации</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Получить токен авторизации</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Сброс</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Токен аутентификации и код активации сброшены.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Токен авторизации сохранен.</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Код активации</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Код активации:
+%s
+
+1. Нажмите 'Открыть веб-сайт', чтобы перейти к 'https://yt.be/activate'.
+2. Введите код активации.
+3. Когда появится запрос войдите в аккаунт Google, который используете для YouTube. Если вход уже выполнен, перейдите к следующему шагу.
+4. После входа вернитесь к RVX и нажмите 'О Android VR авторизации' снова.
+5. Нажмите 'Получить токен авторизации', чтобы получить токен авторизации."</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Открыть сайт</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Код активации скопирован в буфер обмена: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">Не авторизован</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">Язык аудио потока по умолчанию</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Чтобы выбрать язык звукового потока, отключите \'Принудительные звуковые авто дорожки\'.</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">Язык звукового потока, по умолчанию, не доступен для Android Studio.</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">Язык звукового потока, по умолчанию, не доступен для iPadOS.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">Язык аудио потока по умолчанию не доступен для %s.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">Кнопка звуковой дорожки</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Отображена, при использовании подмены потоковых данных, как 'Android VR', 'Mobile Web' или 'visionOS'."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Кнопка звуковой дорожки скрыта.</string>
@@ -2456,6 +2510,20 @@ VP9 более продвинутый кодек, чем AVC, но некото�
 • Автозапуск в ленте
 • Клипы
 • Shorts"</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_title">Использовать yt-dlp ejs (В разработке)</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_on">"Используется внешний JavaScript для yt-dlp (yt-dlp-ejs).
+
+• JavaScript для деобфускации сохраняется в актуальном состоянии.
+• Для запуска видео может потребоваться от 5 до 15 секунд."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_off">"Используется экстрактор SmartTube.
+
+• JavaScript для деобфускации не актуальный.
+• Это, через время, устареет на сервере."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_user_dialog_message">"Новые меры YouTube не позволяют расшифровать URL-адреса потокового воспроизведения, общими методами в JavaScript.
+
+Внешний JavaScript для yt-dlp (yt-dlp-ejs) используется для расшифровки URL-адресов трансляций в последних JavaScript.
+
+Компонент в разработке и будет использовать больше ресурсов оборудования."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Обход поддельной буферизации</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Обход поддельной буферизации включен.
 

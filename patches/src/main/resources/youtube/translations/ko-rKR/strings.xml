@@ -690,7 +690,7 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
 2. Google 계정에 로그인합니다.
 3. 자동 번역 자막을 지원하는 동영상을 재생합니다.
 4. 자동 번역 자막을 켜고 작동하는지 확인합니다.
-4-1. 자동 번역 자막이 작동하지 않으면 자동 번역 자막을 지원하는 다른 동영상으로 전환한 후 4단계를 다시 시도하세요.
+4-1. 자동 번역 자막이 작동하지 않으면 자동 번역 자막을 지원하는 다른 동영상으로 전환한 후 4단계를 다시 시도합니다.
 5. 툴바에서 점 3개를 탭하여 상황에 맞는 메뉴를 엽니다.
 6. 'Cookies 가져오기'를 탭합니다.
 7. '복사'를 탭하여 Cookies를 복사합니다.
@@ -2062,9 +2062,9 @@ API Key를 발급받는 방법을 보려면 여기를 탭하세요."</string>
     <string name="revanced_sb_auto_hide_skip_button_duration">건너뛰기 버튼 표시 시간</string>
     <string name="revanced_sb_auto_hide_skip_button_duration_sum">건너뛰기 및 하이라이트로 건너뛰기 버튼이 자동으로 숨겨지기 전까지 표시되는 시간을 지정할 수 있습니다.</string>
     <string name="revanced_sb_general_skiptoast">건너뛰기 취소 메시지 표시하기</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">팝업 메시지를 구간이 자동으로 건너뛴 경우에 표시합니다. 건너뛰기를 취소하려면 팝업 메시지 알림을 탭하세요.</string>
+    <string name="revanced_sb_general_skiptoast_sum_on">구간을 자동으로 건너뛰는 경우에 팝업 메시지를 표시합니다.\n\n팝업 메시지를 탭하여 건너뛰기를 취소할 수 있습니다.</string>
     <string name="revanced_sb_general_skiptoast_sum_off">팝업 메시지를 표시하지 않습니다.</string>
-    <string name="revanced_sb_toast_on_skip_duration">건너뛰기 메시지 표시 시간</string>
+    <string name="revanced_sb_toast_on_skip_duration">건너뛰기 취소 메시지 표시 시간</string>
     <string name="revanced_sb_toast_on_skip_duration_sum">건너뛰기 취소 팝업 메시지가 표시되는 시간을 지정할 수 있습니다.</string>
     <string name="revanced_sb_general_time_without">건너뛸 구간을 제외한 시간 표시하기</string>
     <string name="revanced_sb_general_time_without_sum_on">건너뛸 구간이 제외된 동영상 길이를 재생바에 표시합니다.</string>
@@ -2350,6 +2350,8 @@ YouTube Premium 사용자라면 이 설정이 필요하지 않을 수 있습니�
 <small>(로그인이 요구됨)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
 <small>(인증 없음)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
+<small>(인증, 작업이 필요함)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
 <small>(구형, 인증 없음)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
@@ -2367,6 +2369,10 @@ YouTube Premium 사용자라면 이 설정이 필요하지 않을 수 있습니�
 • 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다.
 • 1080p+, AV1 그리고 HDR 동영상은 지원되지 않습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• 오디오 트랙 메뉴가 표시되지 않습니다.
+• 안정적인 볼륨을 사용할 수 없습니다.
+• 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• 오디오 트랙 메뉴가 표시되지 않습니다.
+• 강제 사용이 설정된 오디오 트랙을 비활성화할 수 없습니다.
 • 안정적인 볼륨을 사용할 수 없습니다.
 • 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1이 지원되지 않습니다.
@@ -2433,15 +2439,48 @@ VP9은 AVC보다 고급 코덱이지만, 일부 사용자는 '360p VP9'보다 '1
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">기본 클라이언트를 TV로 변경해 보세요.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_title">VR AV1 비활성화하기</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">동영상 코덱이 AVC (H.264) 또는 VP9으로 결정됩니다.</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">동영상 코덱이 자동으로 결정됩니다.</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">VR AV1 활성화하기</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"동영상 코덱이 AVC(H.264), VP9 또는 AV1으로 결정됩니다.
+
+동영상 재생이 끊기거나 프레임이 손실될 수 있습니다."</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">동영상 코덱이 AVC (H.264) 또는 VP9으로 결정됩니다.</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"이 설정을 활성화하면, 소프트웨어 AV1 디코딩이 사용될 수 있습니다.
+
+동영상 재생이 끊기거나 프레임이 손실될 수 있습니다."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Android VR 인증에 대한 정보</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">인증 토큰을 받는 방법을 보려면 여기를 탭하세요.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">인증 토큰 받기</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Android VR을 위한 인증 토큰을 받으려면 활성화 코드를 사용하여 YouTube VR에 로그인해야 합니다:
+
+1. '활성화 코드 받기'를 탭하여 활성화 코드를 생성합니다.
+2. '웹사이트 열기'를 탭하여 'https://yt.be/activate'로 이동합니다.
+3. 활성화 코드를 입력합니다.
+4. 로그인을 요청하면 로그인합니다. 여러 Google 계정이 있는 경우에는 YouTube에서 사용하는 계정을 선택합니다. 이미 로그인된 상태라면 다음 단계로 건너뜁니다.
+5. 로그인 후에 RVX로 돌아가서 'Android VR 인증에 대한 정보'를 다시 탭합니다.
+6. '인증 토큰 받기'를 탭하여 인증 토큰을 받습니다.
+
+※ 인증 토큰 또는 활성화 코드를 삭제하려면 '초기화'를 탭하세요."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">활성화 코드 받기</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">인증 토큰 받기</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">초기화</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">인증 토큰과 활성화 코드를 초기화하였습니다.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">인증 토큰을 저장하였습니다.</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">활성화 코드</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"활성화 코드:
+%s
+
+1. '웹사이트 열기'를 탭하여 'https://yt.be/activate'로 이동합니다.
+2. 활성화 코드를 입력합니다.
+3. 로그인을 요청하면 로그인합니다. 여러 Google 계정이 있는 경우에는 YouTube에서 사용하는 계정을 선택합니다. 이미 로그인된 상태라면 다음 단계로 건너뜁니다.
+4. 로그인 후에 RVX로 돌아가서 'Android VR 인증에 대한 정보'를 다시 탭합니다.
+5. '인증 토큰 받기'를 탭하여 인증 토큰을 받습니다."</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">웹사이트 열기</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">활성화 코드를 클립보드에 복사하였습니다: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">인증 없음</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">기본 오디오 스트림 언어</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_not_available">특정 오디오 스트림 언어를 선택하려면, \'강제된 자동 오디오 트랙 비활성화하기\'를 끄세요.</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">Android Studio에서는 기본 오디오 스트림 언어를 선택할 수 없습니다.</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">iPadOS에서는 기본 오디오 스트림 언어를 선택할 수 없습니다.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">기본 오디오 스트림 언어는 %s에서 선택할 수 없습니다.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">오디오 트랙 버튼 표시하기</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"오디오 트랙 버튼이 스트리밍 데이터를 가져오는 데 사용되는 클라이언트가 ‘Android VR’, ‘Mobile Web’ 또는 'visionOS'일 때 표시됩니다."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">오디오 트랙 버튼이 표시되지 않습니다.</string>

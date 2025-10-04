@@ -2349,6 +2349,8 @@
 <small>(Потрібна авторизація)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
 <small>(Без авторизації)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
+<small>(Авторизація, Необхідна дія)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
 <small>(Застарілий, Без авторизації)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web мобільний
@@ -2366,6 +2368,10 @@
 • Відео для дітей можуть не відтворюватися коли вийшли з облікового запису або в анонімному режимі.
 • 1080p+, AV1 та HDR не підтримуються."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Меню звукової доріжки відсутнє.
+• Стабілізація гучності недоступна.
+• Відео для дітей можуть не відтворюватися коли вийшли з облікового запису або в анонімному режимі."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Меню звукової доріжки відсутнє.
+• Вимкнення примусових авто звукових доріжок недоступне.
 • Стабілізація гучності недоступна.
 • Відео для дітей можуть не відтворюватися коли вийшли з облікового запису або в анонімному режимі."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 не підтримується.
@@ -2432,15 +2438,48 @@
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Спробуйте змінити основний клієнт на TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Вимкнути AV1 VR</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">Відеокодек AVC (H.264) або VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">Відеокодек визначається автоматично.</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Увімкнути AV1 VR</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"Відеокодек AVC (H.264), VP9 або AV1.
+
+Відтворення може затинатися або втрачати кадри."</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">Відеокодек AVC (H.264) або VP9.</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Якщо увімкнути це налаштування, може використовуватися програмне декодування AV1.
+
+Відтворення може затинатися або втрачати кадри."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Про авторизацію Android VR</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Натисніть, щоб побачити, як отримати токен автентифікації.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Отримати токен авторизації</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Щоб отримати токен авторизації дляAndroid VR, необхідно увійти в YouTube VR за допомогою коду активації:
+
+1. Натисніть 'Отримати код активації', щоб згенерувати код активації.
+2. Натисніть 'Відкрити сайт', щоб перейти до 'https://yt.be/activate'.
+3. Введіть код активації.
+4. Увійдіть, коли з'явиться запит. Якщо у вас кілька облікових записів Google, виберіть обліковий запис, який використовуєте для YouTube. Якщо вже увійшли, перейдіть до наступного кроку.
+5. Після входу поверніться до RVX і знову натисніть 'Про авторизацію Android VR'.
+6. Натисніть 'Отримати токен авторизації', щоб отримати токен авторизації.
+
+※ Натисніть 'Скинути', щоб вилучити токен автентифікації або код активації."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Отримати код активації</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Отримати токен авторизації</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Скинути</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Токен автентифікації та код активації скинуто.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Токен автентифікації збережено.</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Код активації</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Код активації:
+%s
+
+1. Натисніть 'Відкрити сайт', щоб перейти до 'https://yt.be/activate'.
+2. Введіть код активації.
+3. Увійдіть, коли з'явиться запит. Якщо у вас кілька облікових записів Google, виберіть обліковий запис, який використовуєте для YouTube. Якщо вже увійшли, перейдіть до наступного кроку.
+4. Після входу поверніться до RVX і знову натисніть 'Про авторизацію Android VR'.
+5. Натисніть 'Отримати токен авторизації', щоб отримати токен авторизації."</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Відкрити сайт</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Код активації скопійовано в буфер обміну: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">Без авторизації</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">Основна мова трансляції звуку</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Щоб вибрати конкретну мову трансляції звуку, вимкніть \'Вимкнути примусові автоматичні звукові доріжки\'.</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">Вибір основної мови трансляції звуку недоступний з Android Studio.</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">Вибір основної мови трансляції звуку недоступний з iPadOS.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">Вибір основної мови трансляції звуку недоступний з %s.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">Показувати кнопку звукової доріжки</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Кнопку звукової доріжки показується, якщо клієнтом для отримання даних трансляції є 'Android VR', 'Web мобільний', чи 'visionOS'."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Кнопку звукової доріжки не показується.</string>

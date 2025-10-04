@@ -2056,9 +2056,26 @@ API キーの発行方法については、ここをタップしてください�
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">[スキップ] ボタンを自動的に非表示</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">[スキップ] ボタンを数秒後に非表示にします。</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">[スキップ] ボタンを数秒後に非表示にします。</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration">[スキップ] ボタンが表示される時間</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration_sum">[スキップ] ボタンと [ハイライトにスキップ] ボタンが自動的に非表示になるまでの時間を設定できます。</string>
+    <string name="revanced_sb_general_skiptoast">自動スキップ時にトーストを表示</string>
+    <string name="revanced_sb_general_skiptoast_sum_on">セグメントを自動的にスキップした際にトーストを表示します。そのトーストをタップすると、スキップを取り消すことができます。</string>
+    <string name="revanced_sb_general_skiptoast_sum_off">セグメントを自動的にスキップした際にトーストを表示します。そのトーストをタップすると、スキップを取り消すことができます。</string>
+    <string name="revanced_sb_toast_on_skip_duration">スキップ時のトーストの表示時間</string>
+    <string name="revanced_sb_toast_on_skip_duration_sum">自動スキップした際のトースト通知の表示される時間の長さを設定できます。</string>
     <string name="revanced_sb_general_time_without">セグメントを除いた動画の時間を表示</string>
     <string name="revanced_sb_general_time_without_sum_on">セグメントを除いた時間をタイムスタンプの横の括弧内に表示します。</string>
     <string name="revanced_sb_general_time_without_sum_off">セグメントを除いた時間をタイムスタンプの横の括弧内に表示します。</string>
+    <string name="revanced_sb_duration_1s">1 秒</string>
+    <string name="revanced_sb_duration_2s">2 秒</string>
+    <string name="revanced_sb_duration_3s">3 秒</string>
+    <string name="revanced_sb_duration_4s">4 秒</string>
+    <string name="revanced_sb_duration_5s">5 秒</string>
+    <string name="revanced_sb_duration_6s">6 秒</string>
+    <string name="revanced_sb_duration_7s">7 秒</string>
+    <string name="revanced_sb_duration_8s">8 秒</string>
+    <string name="revanced_sb_duration_9s">9 秒</string>
+    <string name="revanced_sb_duration_10s">10 秒</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Change segment behavior -->
     <string name="revanced_sb_diff_segments">セグメントの設定</string>
     <string name="revanced_sb_segments_sponsor">スポンサー</string>
@@ -2330,6 +2347,8 @@ YouTube Premium に加入している場合は、この設定は必要ない可�
 <small>(ログインが必要)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
 <small>(認証なし)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
+<small>(認証あり、操作が必要)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
 <small>(古い、認証なし)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
@@ -2347,6 +2366,10 @@ YouTube Premium に加入している場合は、この設定は必要ない可�
 ・ログインしていない場合やシークレットモードでは、子ども向け動画は再生できない可能性があります。
 ・1080p+、AV1、HDR には対応していません。"</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"・[音声トラック] メニューは表示されません。
+・[一定音量] は利用できません。
+・ログインしていない場合やシークレットモードでは、子ども向け動画は再生できない可能性があります。"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"・[音声トラック] メニューは表示されません。
+・[音声トラックの強制を無効化] は利用できません。
 ・[一定音量] は利用できません。
 ・ログインしていない場合やシークレットモードでは、子ども向け動画は再生できない可能性があります。"</string>
     <string name="revanced_spoof_streaming_data_side_effects_ipados">"・AV1 コーデックには対応していません。
@@ -2413,15 +2436,47 @@ VP9 は AVC よりも高度なコーデックですが、利用者によって�
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">偽装するクライアントを「TV」に変更してみてください。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Android VR で AV1 コーデックを無効化</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">偽装するクライアントを「Android VR」に設定している場合、AVC (H.264) または VP9 コーデックを使用します。</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">偽装するクライアントを「Android VR」に設定している場合、AVC (H.264) または VP9 コーデックを使用します。</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Android VR で AV1 コーデックを有効化</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"Android VR クライアントで AV1 コーデックを使用できるようにします。
+
+注意: 再生がカクついたり、フレームが落ちたりする可能性があります。"</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">Android VR クライアントで AV1 コーデックを使用できるようにします。\n\n注意: 再生がカクついたり、フレームが落ちたりする可能性があります。</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"この設定を有効にすると、ソフトウェア AV1 デコードが使用される可能性があります。
+
+注意: 再生がカクついたり、フレームが落ちたりする可能性があります。"</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Android VR の認証について</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">認証トークンを取得する方法を確認するにはタップしてください。</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">認証トークンを取得</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Android VR の認証トークンを取得するには、アクティベーションコードを使用して YouTube VR にログインする必要があります。
+
+1. 「アクティベーションコードを取得」をタップしてアクティベーショ コードを生成します。
+2. 「ウェブサイトを開く」をタップして、「https://yt.be/activate」に移動します。
+3. アクティベーションコードを入力します。
+4. プロンプトが表示されたらログインします。複数の Google アカウントを持っている場合は、YouTube で使用しているアカウントを選択してください。すでにログインしている場合は、次の手順に進んでください。
+5. ログインしたら、RVX に戻り、もう一度「Android VR の認証について」をタップします。
+6. 「認証トークンを取得」をタップして認証トークンを取得します。
+
+※認証トークンまたはアクティベーションコードを削除するには、「リセット」をタップしてください。"</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">アクティベーションコードを取得</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">認証トークンを取得</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">リセット</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">認証トークンとアクティベーションコードをリセットします。</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">認証トークンを保存しました。</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">アクティベーションコード</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"アクティベーションコード: %s
+
+1.「ウェブサイトを開く」をタップして、「https://yt.be/activate」に移動します。
+2. アクティベーションコードを入力します。
+3. プロンプトが表示されたらログインします。複数の Google アカウントを持っている場合は、YouTube で使用しているアカウントを選択してください。すでにログインしている場合は、次の手順に進んでください。
+4. ログインしたら、RVX に戻り、もう一度「Android VR の認証について」をタップします。
+5. 「認証トークンを取得」をタップして認証トークンを取得します。"</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">ウェブサイトを開く</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">アクティベーションコードをクリップボードにコピーしました: %s</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">認証なし</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">デフォルトの音声トラック</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_not_available">特定の音声トラック言語を選択するには、[音声トラックの強制を無効化] をオフにしてください。</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">Android Studio では、デフォルトの音声トラック言語を選択することはできません。</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">iPadOS では、デフォルトの音声トラック言語を選択することはできません。</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">「%s」ではデフォルトの音声トラック言語を選択することはできません。</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">[音声トラック] ボタンを表示</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"ストリーミングデータの取得に使用するクライアントが「Android VR」、「Mobile Web」、または「visionOS」の場合に [音声トラック] ボタンを表示します。"</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">ストリーミングデータの取得に使用するクライアントが「Android VR」、「Mobile Web」、または「visionOS」の場合に [音声トラック] ボタンを表示します。</string>
@@ -2452,6 +2507,22 @@ JavaScript クライアントの中では、「TV」が推奨されます。"</s
 
 注意: JavaScript クライアントでは、まだ一部の動画を再生できません。"</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_off">"現在の設定: 高速再生が必要な一部の動画 (フィードの動画の自動再生、クリップ、ショート) では JavaScript クライアントを使用しません。"</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_title">yt-dlp ejs を使用 (開発途中)</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_on">"現在の設定: yt-dlp 用の外部 JavaScript (yt-dlp-ejs) を使用します。
+
+注意:
+・難読化解除用のプレーヤー JavaScript を最新の状態に保ちます。
+・動画が再生開始されるまでに 5 ~ 15 秒かかる可能性があります。"</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_off">"現在の設定: SmartTube エクストラクターを使用します。
+
+注意:
+・難読化解除用のプレーヤー JavaScript は最新ではありません。
+・これは近い将来サーバーによって廃止される予定です。"</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_user_dialog_message">"YouTube の新しい対策により、最新のプレーヤー JavaScript では、一般的な方法を使用してストリーミング URL を復号化することができなくなりました。
+
+最新のプレーヤー JavaScript でストリーミング URL を復号化するために、yt-dlp 用の外部 JavaScript (yt-dlp-ejs) を使用します。
+
+現在開発中であり、より多くのハードウェアリソースを使用する予定です。"</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">偽バッファリングを回避</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"偽バッファリングを回避します。
 

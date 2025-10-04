@@ -1050,9 +1050,9 @@
     <string name="revanced_hide_remix_button_title">إخفاء زر ريمكس</string>
     <string name="revanced_hide_remix_button_summary_on">تم إخفاء زر ريمكس.</string>
     <string name="revanced_hide_remix_button_summary_off">يتم عرض زر ريمكس.</string>
-    <string name="revanced_hide_report_button_title">إخفاء زر الإبلاغ</string>
-    <string name="revanced_hide_report_button_summary_on">تم إخفاء زر الإبلاغ.</string>
-    <string name="revanced_hide_report_button_summary_off">يتم عرض زر الإبلاغ.</string>
+    <string name="revanced_hide_report_button_title">إخفاء زر إبلاغ</string>
+    <string name="revanced_hide_report_button_summary_on">تم إخفاء زر إبلاغ.</string>
+    <string name="revanced_hide_report_button_summary_off">يتم عرض زر إبلاغ.</string>
     <string name="revanced_hide_rewards_button_title">إخفاء زر المكافآت</string>
     <string name="revanced_hide_rewards_button_summary_on">تم إخفاء زر المكافآت.</string>
     <string name="revanced_hide_rewards_button_summary_off">يتم عرض زر المكافآت.</string>
@@ -1841,12 +1841,12 @@
     <string name="revanced_swipe_overlay_progress_brightness_color_summary">لون شريط عناصر التحكم في مستوى السطوع.</string>
     <string name="revanced_swipe_overlay_progress_volume_color_title">لون نمط إيماءة الصوت</string>
     <string name="revanced_swipe_overlay_progress_volume_color_summary">لون شريط عناصر التحكم في مستوى الصوت.</string>
-    <string name="revanced_swipe_overlay_background_opacity_title">تعتيم خلفية واجهة التمرير السريع</string>
+    <string name="revanced_swipe_overlay_background_opacity_title">تعتيم خلفية واجهة التمرير</string>
     <string name="revanced_swipe_overlay_background_opacity_summary">قيمة الشفافية بين 0-100.</string>
     <string name="revanced_swipe_overlay_background_opacity_invalid_toast">يجب أن تكون شفافية التمرير بين 0-100.</string>
     <string name="revanced_swipe_overlay_rect_size_title">حجم واجهة إيماءة التمرير</string>
-    <string name="revanced_swipe_overlay_rect_size_summary">النسبة المئوية لمساحة الشاشة القابلة للتمرير السريع.\n\nملاحظة: سيؤدي هذا أيضًا إلى تغيير حجم مساحة الشاشة لإيماءة النقر المزدوج للتقديم أو التأخير.</string>
-    <string name="revanced_swipe_overlay_rect_size_invalid_toast">لا يمكن أن يزيد حجم المنطقة القابلة للتمرير السريع عن 50.</string>
+    <string name="revanced_swipe_overlay_rect_size_summary">النسبة المئوية لمساحة الشاشة القابلة للتمرير.\n\nملاحظة: سيؤدي هذا أيضًا إلى تغيير حجم مساحة الشاشة لإيماءة النقر المزدوج للتقديم أو التأخير.</string>
+    <string name="revanced_swipe_overlay_rect_size_invalid_toast">لا يمكن أن يزيد حجم المنطقة القابلة للتمرير عن 50.</string>
     <string name="revanced_swipe_text_overlay_size_title">حجم نص نمط إيماءة التمرير</string>
     <string name="revanced_swipe_text_overlay_size_summary">حجم النص لنمط التمرير بين 1-30.</string>
     <string name="revanced_swipe_text_overlay_size_invalid_toast">يجب أن يكون حجم النص بين 1-30.</string>
@@ -2410,15 +2410,10 @@
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">جرب تغيير العميل الافتراضي إلى TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_title">تعطيل VR AV1</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">ترميز الفيديو هو AVC (H.264) أو VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">يتم تحديد ترميز الفيديو تلقائيًا.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">بدون المصادقة</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">لغة البث الصوتي الافتراضية</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_not_available">لتحديد لغة بث صوتي معينة، قم بإيقاف تشغيل \'تعطيل المقطع الصوتي التلقائي المفروض\'.</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">لا يتوفر اختيار لغة بث الصوت الافتراضية مع Android Studio.</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">لا يتوفر اختيار لغة بث الصوت الافتراضية مع iPadOS.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">عرض زر المقطع الصوتي</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"يتم عرض زر المقطع الصوتي عندما يكون العميل المستخدم لجلب بيانات البث هو 'Android VR' أو 'Mobile Web' أو 'visionOS'."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">لا يتم عرض زر المقطع الصوتي.</string>

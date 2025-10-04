@@ -30,7 +30,7 @@
 • Nhấn Enter để lưu từ khoá vào lịch sử tìm kiếm.
 • Tìm kiếm không phân biệt viết hoa và dấu câu.
 • Các cài đặt lớn sẽ xuất hiện trên các cài đặt nhỏ bị vô hiệu hoá."</string>
-    <string name="revanced_settings_search_empty_history_title">Trống</string>
+    <string name="revanced_settings_search_empty_history_title">Lịch sử tìm kiếm trống</string>
     <string name="revanced_settings_search_empty_history_summary">Để lưu lịch sử tìm kiếm, hãy nhập từ khoá và ấn Enter.</string>
     <string name="revanced_settings_search_history_title">Lịch sử tìm kiếm cài đặt</string>
     <string name="revanced_settings_search_history_summary_on">Lịch sử tìm kiếm cài đặt đã được hiển thị.</string>
@@ -116,7 +116,7 @@ Mô tả
     <string name="revanced_webview_visitor_data">Dữ liệu khách</string>
     <string name="revanced_webview_intent_clear_cookies_on_startup">Dọn dẹp Cookie khi khởi động</string>
     <string name="revanced_webview_intent_clear_cookies_on_shutdown">Dọn dẹp Cookie khi thoát ứng dụng</string>
-    <string name="revanced_webview_intent_use_desktop_user_agent">Dùng User-Agent Desktop</string>
+    <string name="revanced_webview_intent_use_desktop_user_agent">Dùng Tác nhân người dùng máy tính để bàn</string>
     <string name="revanced_webview_copy">Sao chép</string>
     <string name="revanced_webview_toast_copy_success">Đã sao chép %s vào bảng nhớ tạm.</string>
     <string name="revanced_webview_toast_empty">%s trống.</string>
@@ -557,7 +557,7 @@ Hạn chế: Nút Quay lại trên thanh công cụ có thể không hoạt đ�
     <string name="revanced_change_start_page_type_summary_off">Trang khởi động chỉ thay đổi một lần.</string>
     <string name="revanced_disable_auto_audio_tracks_title">Tắt tự động phát bản âm thanh</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Tự động phát bản âm thanh khi phát video có bản âm thanh đã tắt.</string>
-    <string name="revanced_disable_auto_audio_tracks_summary_on_disclaimer">"Buộc bản âm thanh tự động đã tắt.
+    <string name="revanced_disable_auto_audio_tracks_summary_on_disclaimer">"Tự động phát bản âm thanh đã tắt.
 
 Tính năng này có thể không hoạt động với một số người dùng, nếu bạn trong số đó:
 1. Đi tới Cài đặt - RVX - Khác - Giả mạo dữ liệu phát video, và bật \"Giả mạo JavaScript\".
@@ -2344,6 +2344,8 @@ Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết
 <small>(Yêu cầu Đăng nhập)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
 <small>(Không xác thực)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
+<small>(Xác thực, Cần thao tác)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
 <small>(Lỗi thời, Không xác thực)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
@@ -2356,11 +2358,15 @@ Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết
 <small>(Chưa phát hành, Không xác thực)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Hạn chế</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Thiếu mục bản âm thanh.
-• Tắt buộc bản âm thanh tự động không khả dụng.
+• Tắt tự động phát bản âm thanh không khả dụng.
 • Âm lượng ổn định không khả dụng.
 • Video dành cho trẻ em có thể không phát được khi bạn đã đăng xuất hoặc bật chế độ ẩn danh.
 • Không hỗ trợ chất lượng cao hơn 1080p, codec AV1 và video HDR có thể không khả dụng."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Thiếu mục bản âm thanh.
+• Âm lượng ổn định không khả dụng.
+• Video dành cho trẻ em có thể không phát được khi bạn đã đăng xuất hoặc bật chế độ ẩn danh."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Thiếu trình đơn Bản âm thanh.
+• Tắt tự động phát bản âm thanh không khả dụng.
 • Âm lượng ổn định không khả dụng.
 • Video dành cho trẻ em có thể không phát được khi bạn đã đăng xuất hoặc bật chế độ ẩn danh."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ipados">"• Không hỗ trợ codec AV1.
@@ -2423,15 +2429,48 @@ Ví dụ 2:
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Hãy thử chuyển client mặc định sang TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Vô hiệu hóa AV1 (VR)</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">Codec video là AVC (H.264) hoặc VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">Codec video sẽ được xác định tự động.</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Kích hoạt AV1 trên VR</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"Video dùng codec AVC (H.264), VP9 or AV1.
+
+Có thể gặp hiện tượng giật lag hoặc tụt fps khi phát video."</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">Video dùng codec AVC (H.264), VP9.</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Bật cài đặt này có thể sử dụng giải mã AV1 bằng phần mềm.
+
+Có thể gặp hiện tượng giật lag hoặc tụt fps khi phát video."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Giới thiệu về Android VR Auth</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Nhấn để biết cách lấy mã xác thực.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Nhận mã xác thực</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Để lấy mã xác thực cho Android VR, bạn cần đăng nhập vào Youtube VR bằng mã kích hoạt:
+
+1. Nhấn \"Lấy mã kích hoạt\" để tạo mã.
+2. Nhấn \"Mở trang web\" để đi tới https://yt.be/activate.
+3. Nhập mã kích hoạt.
+4. Đăng nhập khi được yêu cầu. Nếu bạn có nhiều tài khoản Google, hãy chọn tài khoản mà bạn sử dụng để xem Youtube. Còn nếu bạn đã đăng nhập thì hãy bỏ qua bước này.
+5. Sau khi đã đăng nhập, quay lại RVX và nhấn \"Giới thiệu Android VR Xác thực\" lần nữa.
+6. Nhấn \"Lấy mã xác thực\" để lấy mã.
+
+※ Nhấn \"Đặt lại\" để xoá mã xác thực hoặc mã kích hoạt."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Lấy mã kích hoạt</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Lấy mã xác thực</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Đặt lại</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Đặt lại mã xác thực và mã kích hoạt.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Đã lưu mã xác thực.</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Mã kích hoạt</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Mã kích hoạt:
+%s
+
+1. Nhấn \"Mở trang web\" để đi tới https://yt.be/activate.
+2. Nhập mã kích hoạt.
+3. Đăng nhập khi được yêu cầu. Nếu bạn có nhiều tài khoản Google, hãy chọn tài khoản mà bạn sử dụng để xem Youtube. Còn nếu bạn đã đăng nhập thì hãy bỏ qua bước này.
+4. Sau khi đã đăng nhập, quay lại RVX và nhấn \"Giới thiệu Android VR Xác thực\" lần nữa.
+5. Nhấn \"Lấy mã xác thực\" để lấy mã."</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Mở trang web</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Đã sao chép mã kích hoạt vào bảng nhớ tạm: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">Không xác thực</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">Ngôn ngữ âm thanh mặc định</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Để chọn ngôn ngữ luồng âm thanh, hãy tắt \"Tắt tự động phát bản âm thanh\".</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_android_studio">Chọn ngôn ngữ luồng âm thanh mặc định không khả dụng với Android Studio.</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_ipados">Chọn ngôn ngữ luồng âm thanh mặc định không khả dụng với iPadOS.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">Chọn ngôn ngữ luồng âm thanh mặc định không khả dụng với %s.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">Nút bản âm thanh</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Nút bản âm thanh sẽ được hiển thị khi client dùng để lấy dữ liệu phát là “Android VR”, “Mobile Web” hoặc “visionOS”."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Nút bản âm thanh không được hiển thị.</string>
@@ -2442,7 +2481,7 @@ Ví dụ 2:
 Sự cố đã biết:
 • Nếu đổi ngôn ngữ ứng dụng trong cài đặt YouTube mà không khởi động lại, ngôn ngữ trong hộp thoại bản âm thanh có thể không đổi.
 • Đôi khi hộp thoại bản âm thanh hiển thị sai ngôn ngữ.
-• Một số bản âm thanh không được hỗ trợ, ví dụ như \"English descriptive\".
+• Một số bản âm thanh không được hỗ trợ, ví dụ như \"Mô tả tiếng anh\".
 
 Tính năng này vẫn đang trong quá trình phát triển, vì vậy nó có thể ngừng hoạt động bất kỳ lúc nào do thay đổi từ phía máy chủ."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
@@ -2474,8 +2513,8 @@ Chi tiết:
     <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_off">"Trình trích xuất SmartTube được sử dụng.
 
 Chi tiết:
-• Player JS luôn cập nhật để hỗ trợ gỡ rối mã.
-• Quá trình này mất khoảng 5 đến 15 giây trước khi video bắt đầu."</string>
+• Trình phát JavaScript cho gỡ rối mã không luôn cập nhật để hỗ trợ phát tạm thời.
+• Tùy chọn này sẽ không còn được hỗ trợ bởi các máy chủ youtube trong tương lai gần."</string>
     <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_user_dialog_message">"Vì YouTube áp dụng biện pháp mới, các cách thông thường không còn giải mã được URL phát trong Player JS mới nhất.
 
 Thay vào đó, ứng dụng sẽ dùng JavaScript bên ngoài từ yt-dlp (yt-dlp-ejs) để giải mã.
