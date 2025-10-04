@@ -13,6 +13,7 @@ import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtil
 import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.setServerAbrStreamingUrl
 import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.setUrl
 import app.revanced.extension.shared.innertube.utils.ThrottlingParameterUtils
+import app.revanced.extension.shared.patches.auth.AuthPatch
 import app.revanced.extension.shared.patches.components.ByteArrayFilterGroup
 import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.parseFrom
 import app.revanced.extension.shared.settings.BaseSettings
@@ -183,10 +184,7 @@ class StreamingDataRequest private constructor(
             Logger.printInfo({ toastMessage }, ex)
         }
 
-        /**
-         * Replace with visitorData bound to PoToken.
-         */
-        private fun replaceVisitorData(
+        private fun replaceHeader(
             clientType: ClientType,
             videoId: String,
             requestHeader: Map<String, String>,
@@ -203,6 +201,24 @@ class StreamingDataRequest private constructor(
                                 finalRequestHeader.put(VISITOR_ID_HEADER, visitorData)
                                 continue
                             }
+                        }
+                        finalRequestHeader.put(key, value)
+                    }
+                }
+                return finalRequestHeader
+            } else if (clientType == ClientType.ANDROID_VR_AUTH &&
+                AuthPatch.isAuthorizationAvailable()) {
+                val finalRequestHeader: MutableMap<String, String> =
+                    LinkedHashMap(requestHeader.size)
+                for (key in requestHeader.keys) {
+                    val value = requestHeader[key]
+                    if (value != null) {
+                        if (key == AUTHORIZATION_HEADER) {
+                            finalRequestHeader.put(
+                                AUTHORIZATION_HEADER,
+                                AuthPatch.getAuthorization()
+                            )
+                            continue
                         }
                         finalRequestHeader.put(key, value)
                     }
@@ -392,7 +408,7 @@ class StreamingDataRequest private constructor(
                     getInnerTubeResponseConnectionFromRoute(
                         getStreamingDataRoute(tParameter, SPOOF_STREAMING_DATA_USE_JS_BYPASS_FAKE_BUFFERING),
                         clientType,
-                        replaceVisitorData(clientType, videoId, requestHeader)
+                        replaceHeader(clientType, videoId, requestHeader)
                     )
 
                 connection.setFixedLengthStreamingMode(requestBody.size)

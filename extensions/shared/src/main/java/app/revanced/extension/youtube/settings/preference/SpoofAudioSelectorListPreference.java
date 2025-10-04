@@ -16,25 +16,24 @@ public class SpoofAudioSelectorListPreference extends SortedListPreference {
     private final boolean available;
 
     {
+        final ClientType defaultClient =
+                Settings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get();
         final boolean forcedOriginalAudioTrackEnabled =
                 PatchStatus.SpoofStreamingData() && Settings.SPOOF_STREAMING_DATA.get() &&
-                        Settings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().getSupportsCookies() &&
-                        Settings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().getSupportsMultiAudioTracks() &&
+                        defaultClient.getSupportsCookies() &&
+                        defaultClient.getSupportsMultiAudioTracks() &&
                         Settings.DISABLE_AUTO_AUDIO_TRACKS.get();
-        final boolean isAndroidStudio =
-                Settings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get() == ClientType.ANDROID_CREATOR;
-        final boolean isIPadOS =
-                Settings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get() == ClientType.IPADOS;
+        final boolean disabledByClient = defaultClient == ClientType.ANDROID_CREATOR ||
+                defaultClient == ClientType.ANDROID_VR_AUTH ||
+                defaultClient == ClientType.IPADOS;
 
-        if (forcedOriginalAudioTrackEnabled || isAndroidStudio || isIPadOS) {
+        if (forcedOriginalAudioTrackEnabled || disabledByClient) {
             available = false;
-            String summaryString = isAndroidStudio
-                    ? "revanced_spoof_streaming_data_no_auth_language_android_studio"
-                    : isIPadOS
-                    ? "revanced_spoof_streaming_data_no_auth_language_ipados"
-                    : "revanced_spoof_streaming_data_no_auth_language_not_available";
+            String summary = disabledByClient
+                    ? str("revanced_spoof_streaming_data_no_auth_language_not_available_by_client", defaultClient.getFriendlyName())
+                    : str("revanced_spoof_streaming_data_no_auth_language_not_available");
             super.setEnabled(false);
-            super.setSummary(str(summaryString));
+            super.setSummary(summary);
         } else {
             available = true;
         }

@@ -377,6 +377,21 @@ object YouTubeClient {
             else
                 "Android VR"
         ),
+        ANDROID_VR_AUTH(
+            id = 28,
+            deviceMake = DEVICE_MAKE_ANDROID_VR,
+            deviceModel = DEVICE_MODEL_ANDROID_VR,
+            osVersion = OS_VERSION_ANDROID_VR,
+            userAgent = USER_AGENT_ANDROID_VR,
+            androidSdkVersion = ANDROID_SDK_VERSION_ANDROID_VR,
+            clientVersion = CLIENT_VERSION_ANDROID_VR,
+            requireAuth = true,
+            clientName = "ANDROID_VR",
+            friendlyName = if (useAV1())
+                "Android VR Auth AV1"
+            else
+                "Android VR Auth"
+        ),
         ANDROID_CREATOR(
             id = 14,
             deviceMake = DEVICE_MAKE_ANDROID_CREATOR,
@@ -472,6 +487,7 @@ object YouTubeClient {
                 VISIONOS,
                 ANDROID_CREATOR,
                 IPADOS,
+                ANDROID_VR_AUTH,
             )
             val CLIENT_ORDER_TO_USE_JS: Array<ClientType> = arrayOf(
                 ANDROID_VR,
@@ -481,6 +497,7 @@ object YouTubeClient {
                 TV,
                 TV_SIMPLY_NO_POTOKEN,
                 MWEB,
+                ANDROID_VR_AUTH,
             )
             val CLIENT_ORDER_TO_USE_JS_PREFER_TV: Array<ClientType> = arrayOf(
                 TV,
@@ -490,6 +507,7 @@ object YouTubeClient {
                 IPADOS,
                 TV_SIMPLY_NO_POTOKEN,
                 MWEB,
+                ANDROID_VR_AUTH,
             )
         }
     }

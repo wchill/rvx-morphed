@@ -785,6 +785,14 @@ public class Utils {
         fragment.show(activity.getFragmentManager(), null);
     }
 
+    @SuppressWarnings("deprecation")
+    public static AlertDialog.Builder getDialogBuilder(@NonNull Context context) {
+        return new AlertDialog.Builder(context, isSDKAbove(22)
+                ? android.R.style.Theme_DeviceDefault_Dialog_Alert
+                : AlertDialog.THEME_DEVICE_DEFAULT_DARK
+        );
+    }
+
     /**
      * If {@link Fragment} uses [Android library] rather than [AndroidX library],
      * the Dialog theme corresponding to [Android library] should be used.
