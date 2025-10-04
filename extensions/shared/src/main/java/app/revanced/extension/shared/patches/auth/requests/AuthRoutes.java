@@ -46,14 +46,14 @@ public class AuthRoutes {
         }
     }
 
-    static byte[] createActivationCodeBody() {
+    static byte[] createActivationCodeBody(ClientType clientType) {
         JSONObject jsonObject = new JSONObject();
 
         try {
             jsonObject.put("client_id", YOUTUBE_VR_CLIENT_ID);
             jsonObject.put("scope", OAUTH2_YOUTUBE_SCOPE);
             jsonObject.put("device_id", UUID.randomUUID().toString());
-            jsonObject.put("device_model", ClientType.QUEST3S.name());
+            jsonObject.put("device_model", clientType.name());
         } catch (JSONException e) {
             Logger.printException(() -> "createActivationCodeBody failed", e);
         }
