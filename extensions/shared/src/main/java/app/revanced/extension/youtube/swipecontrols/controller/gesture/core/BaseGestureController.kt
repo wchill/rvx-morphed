@@ -16,10 +16,10 @@ abstract class BaseGestureController(
     private val controller: SwipeControlsHostActivity,
 ) : GestureController,
     GestureDetector.SimpleOnGestureListener(),
-    PlayerControlsVisibilityObserver by PlayerControlsVisibilityObserverImpl(controller),
     SwipeDetector by SwipeDetectorImpl(
         controller.config.swipeMagnitudeThreshold.toDouble(),
     ),
+    PlayerControlsVisibilityObserver by PlayerControlsVisibilityObserverImpl(controller),
     VolumeAndBrightnessScroller by VolumeAndBrightnessScrollerImpl(
         controller.audio,
         controller.screen,
@@ -43,9 +43,6 @@ abstract class BaseGestureController(
     override fun submitTouchEvent(motionEvent: MotionEvent): Boolean {
         // ignore if swipe is disabled
         if (!controller.config.enableSwipeControls) {
-            return false
-        }
-        if (isFullscreenEngagementPanelVisible) {
             return false
         }
 
@@ -74,6 +71,8 @@ abstract class BaseGestureController(
         // do not consume dropped events
         // or events outside of any swipe zone
         return !dropped && consumed && isInSwipeZone(me)
+                // Fix https://github.com/inotia00/ReVanced_Extended/issues/3052
+                && isFullscreenEngagementPanelAttached
     }
 
     /**

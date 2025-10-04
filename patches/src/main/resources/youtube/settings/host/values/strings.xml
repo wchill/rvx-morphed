@@ -5,37 +5,52 @@
     <string name="accessibility_settings_edu_opt_out_text">Your controls are modified because an accessibility service is on.</string>
 
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX</string>
-    <string name="revanced_extended_settings_search_title">Search %s</string>
-    <string name="revanced_extended_reset_to_default_toast">Reset to default values.</string>
+    <string name="revanced_settings_title">RVX</string>
+    <string name="revanced_settings_search_title">Search %s</string>
+    <string name="revanced_reset_to_default_toast">Reset to default values.</string>
 
     <string name="revanced_preference_category_experimental_flag">Experimental flags</string>
-    <string name="revanced_extended_confirm_user_dialog_title">Are you sure you want to proceed?</string>
-    <string name="revanced_extended_restart_first_run">Restart to load the layout normally</string>
-    <string name="revanced_extended_restart_title">Restart required</string>
-    <string name="revanced_extended_restart_dialog_message">Restart the app for this change to take effect.</string>
-    <string name="revanced_extended_restart">Restart</string>
-    <string name="revanced_extended_settings_color_invalid">Invalid color.</string>
-    <string name="revanced_extended_settings_color_picker">Color picker</string>
-    <string name="revanced_extended_settings_reset">Reset</string>
-    <string name="revanced_extended_settings_reset_color">Reset color</string>
-    <string name="revanced_extended_settings_search_history_title">Show settings search history</string>
-    <string name="revanced_extended_settings_search_history_summary_on">Settings search history is shown.</string>
-    <string name="revanced_extended_settings_search_history_summary_off">Settings search history is not shown.</string>
-    <string name="revanced_extended_settings_search_hint">Search settings</string>
-    <string name="revanced_extended_settings_search_no_results_title">No results found for \'%s\'.</string>
-    <string name="revanced_extended_settings_search_no_results_summary">Try another keyword.</string>
-    <string name="revanced_extended_settings_search_remove_message">Remove from search history?</string>
+    <string name="revanced_confirm_user_dialog_title">Are you sure you want to proceed?</string>
+    <string name="revanced_restart_first_run">Restart to load the layout normally</string>
+    <string name="revanced_restart_title">Restart required</string>
+    <string name="revanced_restart_dialog_message">Restart the app for this change to take effect.</string>
+    <string name="revanced_restart">Restart</string>
+    <string name="revanced_settings_color_invalid">Invalid color.</string>
+    <string name="revanced_settings_color_picker">Color picker</string>
+    <string name="revanced_settings_reset">Reset</string>
+    <string name="revanced_settings_reset_color">Reset color</string>
+    <string name="revanced_settings_search_hint">Search settings</string>
+    <string name="revanced_settings_search_no_results_title">No results found for \'%s\'.</string>
+    <string name="revanced_settings_search_no_results_summary">Try another keyword.</string>
+    <string name="revanced_settings_search_recent_searches">Recent searches</string>
+    <string name="revanced_settings_search_remove_message">Remove from search history?</string>
+    <string name="revanced_settings_search_clear_history">Clear search history</string>
+    <string name="revanced_settings_search_clear_history_message">Are you sure you want to clear all search history?</string>
+    <string name="revanced_settings_search_tips_title">Search Tips</string>
+    <string name="revanced_settings_search_tips_summary">"• Tap a path to navigate to it.
+• Long-press a setting to navigate to it.
+• Press Enter to save a search query to history.
+• Search ignores casing and punctuation.
+• Parent settings appear above disabled child settings."</string>
+    <string name="revanced_settings_search_empty_history_title">Search history is empty</string>
+    <string name="revanced_settings_search_empty_history_summary">To save search history, type a search query and press Enter.</string>
+    <string name="revanced_settings_search_history_title">Show settings search history</string>
+    <string name="revanced_settings_search_history_summary_on">Settings search history is shown.</string>
+    <string name="revanced_settings_search_history_summary_off">Settings search history is not shown.</string>
     <string name="revanced_dismiss_player_not_available_toast">Video id is unavailable. Please manually reopen the video.</string>
     <string name="revanced_playback_speed_normal">Normal</string>
 
     <string name="revanced_external_downloader_package_name_video_title">Video downloader package name</string>
-    <string name="revanced_external_downloader_package_name_video_summary">Package name of your installed external downloader app, such as NewPipe or YTDLnis.</string>
-    <string name="revanced_external_downloader_dialog_title">External downloader</string>
-    <string name="revanced_external_downloader_not_installed_dialog_title">Warning</string>
-    <string name="revanced_external_downloader_not_installed_dialog_message">"%1$s is not installed.
-Please download %2$s from the website."</string>
+    <string name="revanced_external_downloader_package_name_video_summary">Package name of your installed external downloader app.</string>
+    <string name="revanced_external_downloader_other_item">Other</string>
+    <string name="revanced_external_downloader_other_item_hint">Enter the package name</string>
+    <string name="revanced_external_downloader_not_found_title">App not installed.</string>
     <string name="revanced_external_downloader_not_installed_warning">%s is not installed. Please install it.</string>
+    <string name="revanced_external_downloader_package_not_found_warning">"Could not find installed app with package name: %s.
+
+Verify the package name is correct and the app is installed."</string>
+    <string name="revanced_external_downloader_empty_warning">The package name cannot be empty</string>
+    <string name="revanced_external_downloader_dialog_title">External downloader</string>
 
     <string name="revanced_queue_manager_add_to_queue">Add to queue</string>
     <string name="revanced_queue_manager_add_to_queue_and_open_queue">Add to queue and open queue</string>
@@ -491,6 +506,9 @@ Store"</string>
 Keywords can be channel names or any text shown in video titles.
 
 Words with uppercase letters in the middle must be entered with the casing (ie: iPhone, TikTok, LeBlanc)."</string>
+    <string name="revanced_hide_keyword_content_use_and_operator_title">Use \'AND\' operator (\'&amp;\')</string>
+    <string name="revanced_hide_keyword_content_use_and_operator_summary_on">\'AND\' operator (\'&amp;\') is enabled.&lt;br>&lt;br>When &lt;strong>\"Blue\" &amp; \"Red\"&lt;/strong> is used as a keyword, keywords containing both &lt;strong>Blue&lt;/strong> and &lt;strong>Red&lt;/strong> will be filtered.</string>
+    <string name="revanced_hide_keyword_content_use_and_operator_summary_off">\'AND\' operator (\'&amp;\') is disabled.&lt;br>&lt;br>When &lt;strong>\"Blue\" &amp; \"Red\"&lt;/strong> is used as a keyword, keywords containing &lt;strong>\"Blue\" &amp; \"Red\"&lt;/strong> will be filtered.</string>
     <string name="revanced_hide_keyword_content_about_title">About keyword filtering</string>
     <string name="revanced_hide_keyword_content_about_summary">"Home / Subscriptions / Search results are filtered to hide content that matches keyword phrases.
 
@@ -499,7 +517,7 @@ Limitations:
 • Some UI components may not be hidden.
 • Searching for a keyword may show no results."</string>
     <string name="revanced_hide_keyword_content_about_whole_words_title">Match whole words</string>
-    <string name="revanced_hide_keyword_content_about_whole_words_summary">Surrounding a keyword/phrase with double-quotes will prevent partial matches of video titles and channel names.&lt;br>&lt;br>For example,&lt;br>&lt;b>\"ai\"&lt;/b> will hide the video: &lt;b>How does AI work?&lt;/b>&lt;br>but will not hide: &lt;b>What does fair use mean?&lt;/b></string>
+    <string name="revanced_hide_keyword_content_about_whole_words_summary">Surrounding a keyword / phrase with double-quotes will prevent partial matches of video titles and channel names.&lt;br>&lt;br>For example,&lt;br>&lt;b>\"ai\"&lt;/b> will hide the video: &lt;b>How does AI work?&lt;/b>&lt;br>but will not hide: &lt;b>What does fair use mean?&lt;/b></string>
     <string name="revanced_hide_keyword_toast_invalid_common">Cannot use keyword: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_common_whole_word_required">Add quotes to use keyword: %s.</string>
     <string name="revanced_hide_keyword_toast_invalid_conflicting">Keyword has conflicting declarations: %s.</string>
@@ -574,7 +592,7 @@ Limitation: Back button on the toolbar may not work."</string>
 
 This may not work for some users, if it doesn't work for you:
 1. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and turn on 'Use JavaScript client'.
-2. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and change 'Default client' to 'TV' or 'TV Simply'."</string>
+2. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and change 'Default client' to 'TV'."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Forced auto audio tracks are enabled.</string>
     <string name="revanced_disable_auto_captions_title">Disable forced auto captions</string>
     <string name="revanced_disable_auto_captions_summary_on">Forced auto captions are disabled.</string>
@@ -668,6 +686,9 @@ If later turned off, it is recommended to clear the app data to prevent UI bugs.
     <string name="revanced_spoof_app_version_target_entry_19_26_42">19.26.42 - Disable Cairo icon in navigation and toolbar</string>
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Restore old playlist header</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Restore old playback speed flyout panel</string>
+    <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - Restore Transcript functionality</string>
+    <string name="revanced_spoof_app_version_other_item">Other</string>
+    <string name="revanced_spoof_app_version_other_item_hint">Enter the app version</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Invalid spoof app version: %s.</string>
 
     <string name="revanced_fix_spoof_app_version_side_effect_title">Fix Spoof app version side effect</string>
@@ -781,7 +802,7 @@ To show the native playlist download button, turn on \'Spoof app version\' and c
     <string name="revanced_override_video_download_button_queue_manager_summary_on">Native video download button opens the queue manager.</string>
     <string name="revanced_override_video_download_button_queue_manager_summary_off">Native video download button opens your external downloader.</string>
     <string name="revanced_external_downloader_package_name_playlist_title">Playlist downloader package name</string>
-    <string name="revanced_external_downloader_package_name_playlist_summary">Package name of your installed external downloader app, such as YTDLnis.</string>
+    <string name="revanced_external_downloader_package_name_playlist_summary">Package name of your installed external downloader app.</string>
 
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Hook buttons, PreferenceCategory: Experimental flags -->
     <string name="revanced_override_youtube_music_button_title">Override YouTube Music button</string>
@@ -790,8 +811,6 @@ To show the native playlist download button, turn on \'Spoof app version\' and c
     <string name="revanced_third_party_youtube_music_package_name_title">RVX Music package name</string>
     <string name="revanced_third_party_youtube_music_package_name_summary">Package name of installed RVX Music.</string>
     <string name="revanced_third_party_youtube_music_dialog_title">RVX Music</string>
-    <string name="revanced_third_party_youtube_music_not_installed_dialog_title">Warning</string>
-    <string name="revanced_third_party_youtube_music_not_installed_warning">%s is not installed. Please install it.</string>
     <string name="revanced_override_youtube_music_button_about_prerequisite_title">Prerequisite</string>
     <string name="revanced_override_youtube_music_button_about_prerequisite_summary">YouTube Music is required to override button action. Tap here to download YouTube Music.</string>
 
@@ -1001,6 +1020,9 @@ Tap and hold to open RVX settings."</string>
 Autoplay can be changed in YouTube settings:
 Settings → Autoplay / Playback → Autoplay next video"</string>
     <string name="revanced_disable_auto_switch_mix_playlists_user_dialog_message">Enabling this feature will disable automatic switching to YouTube Mix when playing music while autoplay is turned on.</string>
+    <string name="revanced_disable_chapter_skip_double_tap_title">Disable double tap chapter skip</string>
+    <string name="revanced_disable_chapter_skip_double_tap_summary_on">Double tap can never trigger a skip to the next / previous chapter.</string>
+    <string name="revanced_disable_chapter_skip_double_tap_summary_off">Double tap can occasionally trigger a skip to the next / previous chapter.</string>
     <string name="revanced_disable_auto_player_popup_panels_title">Disable player popup panels</string>
     <string name="revanced_disable_auto_player_popup_panels_summary_on">Auto player popup panels are disabled.</string>
     <string name="revanced_disable_auto_player_popup_panels_summary_off">Auto player popup panels are enabled.</string>
@@ -1046,9 +1068,17 @@ Settings → Autoplay / Playback → Autoplay next video"</string>
     <string name="revanced_hide_medical_panel_title">Hide medical panels</string>
     <string name="revanced_hide_medical_panel_summary_on">Medical panels are hidden.</string>
     <string name="revanced_hide_medical_panel_summary_off">Medical panels are shown.</string>
-    <string name="revanced_hide_seek_message_title">Hide seek message</string>
-    <string name="revanced_hide_seek_message_summary_on">Seek message is hidden.</string>
-    <string name="revanced_hide_seek_message_summary_off">Seek message is shown.</string>
+    <string name="revanced_hide_seek_message_title">Hide seek message (Deprecated)</string>
+    <string name="revanced_hide_seek_message_summary_on">"Seek message is hidden.
+
+Info:
+• This setting seems to be deprecated on the server.
+• Use 'Hide filmstrip overlay' or 'Hide seek undo message' instead."</string>
+    <string name="revanced_hide_seek_message_summary_off">"Seek message is shown.
+
+Info:
+• This setting seems to be deprecated on the server.
+• Use 'Hide filmstrip overlay' or 'Hide seek undo message' instead."</string>
     <string name="revanced_hide_seek_undo_message_title">Hide seek undo message</string>
     <string name="revanced_hide_seek_undo_message_summary_on">Seek undo message is hidden.</string>
     <string name="revanced_hide_seek_undo_message_summary_off">Seek undo message is shown.</string>
@@ -1238,7 +1268,7 @@ Limitation: Some highlighted search links that do not have a default text style 
 
 To show the Audio track menu:
 1. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and turn on 'Use JavaScript client'.
-2. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and change 'Default client' to 'TV' or 'TV Simply'."</string>
+2. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and change 'Default client' to 'TV'."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Hide Captions menu</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Captions menu is hidden.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Captions menu is shown.</string>
@@ -2157,12 +2187,26 @@ Click to see how to issue an API key."</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">Automatically hide skip button</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">Skip button hides after several seconds.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">Skip button displayed for entire segment.</string>
-    <string name="revanced_sb_general_skiptoast">Show a toast when skipping automatically</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">Toast is shown when a segment is automatically skipped. Tap here to see an example.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">Toast is not shown. Tap here to see an example.</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration">Skip button duration</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration_sum">How long to show the skip and skip to highlight buttons before automatically hiding.</string>
+    <string name="revanced_sb_general_skiptoast">Show undo skip toast</string>
+    <string name="revanced_sb_general_skiptoast_sum_on">Toast is shown when a segment is automatically skipped. Tap the toast notification to undo the skip.</string>
+    <string name="revanced_sb_general_skiptoast_sum_off">Toast is not shown.</string>
+    <string name="revanced_sb_toast_on_skip_duration">Skip toast duration</string>
+    <string name="revanced_sb_toast_on_skip_duration_sum">How long to show the undo skip toast.</string>
     <string name="revanced_sb_general_time_without">Show video length without segments</string>
-    <string name="revanced_sb_general_time_without_sum_on">Video length minus the combined segment length is shown in parentheses next to the full video length.</string>
+    <string name="revanced_sb_general_time_without_sum_on">Video length minus all segments is shown on the seekbar.</string>
     <string name="revanced_sb_general_time_without_sum_off">Full video length shown.</string>
+    <string name="revanced_sb_duration_1s">1 second</string>
+    <string name="revanced_sb_duration_2s">2 seconds</string>
+    <string name="revanced_sb_duration_3s">3 seconds</string>
+    <string name="revanced_sb_duration_4s">4 seconds</string>
+    <string name="revanced_sb_duration_5s">5 seconds</string>
+    <string name="revanced_sb_duration_6s">6 seconds</string>
+    <string name="revanced_sb_duration_7s">7 seconds</string>
+    <string name="revanced_sb_duration_8s">8 seconds</string>
+    <string name="revanced_sb_duration_9s">9 seconds</string>
+    <string name="revanced_sb_duration_10s">10 seconds</string>
 
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Change segment behavior -->
     <string name="revanced_sb_diff_segments">Change segment behavior</string>
@@ -2228,7 +2272,6 @@ Click to see how to issue an API key."</string>
     <string name="revanced_sb_skip_seekbaronly">Show in seekbar</string>
     <string name="revanced_sb_skip_ignore">Disable</string>
 
-    <string name="revanced_sb_color_opacity_label">Opacity:</string>
     <string name="revanced_sb_color_dot_label">Color:</string>
     <string name="revanced_sb_share_copy_settings_success">Settings copied to clipboard.</string>
 
@@ -2249,9 +2292,9 @@ Click to see how to issue an API key."</string>
 
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: General -->
     <string name="revanced_sb_general">General</string>
-    <string name="revanced_sb_toast_on_connection_error_title">Show a toast if API is unavailable</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_on">Toast is shown if SponsorBlock is unavailable.</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_off">Toast is not shown if SponsorBlock is unavailable.</string>
+    <string name="revanced_sb_toast_on_connection_error">Show a toast if API is unavailable</string>
+    <string name="revanced_sb_toast_on_connection_error_sum_on">Toast is shown if SponsorBlock is unavailable.</string>
+    <string name="revanced_sb_toast_on_connection_error_sum_off">Toast is not shown if SponsorBlock is unavailable.</string>
     <string name="revanced_sb_general_skipcount">Enable skip count tracking</string>
     <string name="revanced_sb_general_skipcount_sum_on">Lets the SponsorBlock leaderboard know how much time is saved. A message is sent to the leaderboard each time a segment is skipped.</string>
     <string name="revanced_sb_general_skipcount_sum_off">Skip count tracking is not enabled.</string>
@@ -2409,11 +2452,21 @@ Tap the continue button and allow optimization changes."</string>
     <string name="revanced_debug_logs_disabled">Debug logging is disabled.</string>
     <string name="revanced_debug_logs_none_found">No logs found.</string>
     <string name="revanced_debug_logs_copied_to_clipboard">Logs copied.</string>
+    <string name="revanced_debug_logs_failed_to_copy_to_clipboard">Logs are too large to copy.</string>
     <string name="revanced_debug_logs_failed_to_export">Failed to export logs: $s.</string>
     <string name="revanced_debug_logs_clear_buffer_title">Clear debug logs</string>
     <string name="revanced_debug_logs_clear_buffer_summary">Clears all stored RVX debug logs.</string>
     <string name="revanced_debug_logs_clear_toast">Logs cleared.</string>
     <string name="revanced_debug_logs_export_success">Logs were successfully exported.</string>
+
+    <string name="revanced_enable_watch_next_processing_delay_title">Enable watch next processing delay</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_on">Watch next processing delay is enabled.</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_off">Watch next processing delay is disabled.</string>
+    <string name="revanced_enable_watch_next_processing_delay_user_dialog_message">"This setting forces a delay before the player UI loads.
+
+This can be used when testing something on the MainThread."</string>
+    <string name="revanced_watch_next_processing_delay_title">Watch next processing delay</string>
+    <string name="revanced_watch_next_processing_delay_summary">The amount of milliseconds delay in processing the watch next response.</string>
 
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">Import / Export settings</string>
@@ -2421,23 +2474,23 @@ Tap the continue button and allow optimization changes."</string>
 
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as file -->
     <string name="revanced_preference_category_import_export_as_file">Import / Export as file</string>
-    <string name="revanced_extended_settings_export_title">Export settings</string>
-    <string name="revanced_extended_settings_export_summary">Export settings to a file.</string>
-    <string name="revanced_extended_settings_import_title">Import settings</string>
-    <string name="revanced_extended_settings_import_summary">Import settings from a saved file.</string>
+    <string name="revanced_settings_export_title">Export settings</string>
+    <string name="revanced_settings_export_summary">Export settings to a file.</string>
+    <string name="revanced_settings_import_title">Import settings</string>
+    <string name="revanced_settings_import_summary">Import settings from a saved file.</string>
 
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as text -->
     <string name="revanced_preference_category_import_export_as_text">Import / Export as text</string>
-    <string name="revanced_extended_settings_import_export_as_text_title">Import / Export as text</string>
-    <string name="revanced_extended_settings_import_export_as_text_summary">Import / Export settings as text.</string>
+    <string name="revanced_settings_import_export_as_text_title">Import / Export as text</string>
+    <string name="revanced_settings_import_export_as_text_summary">Import / Export settings as text.</string>
 
-    <string name="revanced_extended_settings_export_failed">Failed to export settings.</string>
-    <string name="revanced_extended_settings_export_success">Settings were successfully exported.</string>
-    <string name="revanced_extended_settings_import">Import</string>
-    <string name="revanced_extended_settings_import_copy">Copy</string>
-    <string name="revanced_extended_settings_import_failed">Failed to import settings.</string>
-    <string name="revanced_extended_settings_import_reset">Settings reset to default.</string>
-    <string name="revanced_extended_settings_import_success">Settings were successfully imported.</string>
+    <string name="revanced_settings_export_failed">Failed to export settings.</string>
+    <string name="revanced_settings_export_success">Settings were successfully exported.</string>
+    <string name="revanced_settings_import">Import</string>
+    <string name="revanced_settings_import_copy">Copy</string>
+    <string name="revanced_settings_import_failed">Failed to import settings.</string>
+    <string name="revanced_settings_import_reset">Settings reset to default.</string>
+    <string name="revanced_settings_import_success">Settings were successfully imported.</string>
     <string name="revanced_share_copy_settings_success">Settings copied to clipboard.</string>
 
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
@@ -2454,21 +2507,29 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
 <small>(Login required)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
 <small>(No Auth)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
+<small>(Auth, Action needed)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
 <small>(Outdated, No Auth)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
 <small>(WIP, No Auth)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
+<small>(No PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Unreleased, No Auth)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Spoofing side effects</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Audio track menu is missing.
+• Disable forced auto audio tracks is not available.
 • Stable volume is not available.
 • Kids videos may not play when logged out or in incognito mode.
 • 1080p+, AV1, and HDR are not supported."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Audio track menu is missing.
+• Stable volume is not available.
+• Kids videos may not play when logged out or in incognito mode."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Audio track menu is missing.
+• Disable forced auto audio tracks is not available.
 • Stable volume is not available.
 • Kids videos may not play when logged out or in incognito mode."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 is not supported.
@@ -2478,6 +2539,10 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
 • Video may start late."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• If deobfuscation fails, playback may fail.
+• Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
+• Video may start late."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• If deobfuscation fails, playback may fail.
+• Some accounts may require a PoToken, in which case the playback will fail.
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
 • Video may start late."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Audio track menu is missing.
@@ -2528,22 +2593,58 @@ Example 2:
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Client used to fetch streaming data is shown in Stats for nerds.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Client used to fetch streaming data is hidden in Stats for nerds.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Could not fetch any client streams.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Try changing the default client to TV or TV Simply.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Try changing the default client to TV.</string>
 
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_title">Disable VR AV1</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">Video codec is AVC (H.264) or VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">Video codec is determined automatically.</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Enable VR AV1</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"Video codec is AVC (H.264), VP9 or AV1.
+
+Playback may stutter or drop frames."</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">Video codec is AVC (H.264) or VP9.</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Enabling this setting may use software AV1 decoding.
+
+Playback may stutter or drop frames."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">About Android VR Auth</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Click to see how to get an authentication token.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Get Authorization Token</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"To get an authorization token for Android VR, you should log in to YouTube VR using an activation code:
+
+1. Click 'Get activation code' to generate an activation code.
+2. Click 'Open website' to go to 'https://yt.be/activate'.
+3. Enter the activation code.
+4. Sign in when prompted. If you have multiple Google Accounts, select the account you use with YouTube. If you're already signed in, skip to the next step.
+5. Once signed in, return to RVX and click 'About Android VR Auth' again.
+6. Click 'Get authorization token' to get an authorization token.
+
+※ Click 'Reset' to remove an authentication token or activation code."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Get activation code</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Get authorization token</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Reset</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Authentication token and activation code reset.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Authentication token saved.</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Activation code</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Activation code:
+%s
+
+1. Click 'Open website' to go to 'https://yt.be/activate'.
+2. Enter the activation code.
+3. Sign in when prompted. If you have multiple Google Accounts, select the account you use with YouTube. If you're already signed in, skip to the next step.
+4. Once signed in, return to RVX and click 'About Android VR Auth' again.
+5. Click 'Get authorization token' to get an authorization token."</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Open website</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Activation code copied to clipboard: %s.</string>
 
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">No Auth</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">Default audio stream language</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">To select a specific audio stream language, turn off \'Disable forced auto audio tracks\'.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">Default audio stream language selection is not available with %s.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">Show audio track button</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Audio track button is shown when the client used to fetch streaming data is 'Android VR', 'Mobile Web', or 'visionOS'."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Audio track button is not shown.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Prerequisites:
-• The client used to fetch the streaming data is 'Android VR', 'Mobile Web', 'iPadOS', or 'visionOS'.
+• The client used to fetch the streaming data is 'Android VR', 'Mobile Web', or 'visionOS'.
 • A video with multiple audio tracks is being played.
 
 Known issues:
@@ -2566,7 +2667,7 @@ This can be easily resolved by clicking the 'Reload video button' in the player 
 
 (Prerequisites: Both 'Show reload video button' and 'Always show reload video button' are enabled)
 
-Among JavaScript clients, the recommended client is TV Simply."</string>
+Among JavaScript clients, the recommended client is TV."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Use JavaScript client for all videos</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"JavaScript client is used regardless of video type.
 
@@ -2576,13 +2677,20 @@ Among JavaScript clients, the recommended client is TV Simply."</string>
 • Autoplay in feed
 • Clips
 • Shorts"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_js_title">Use latest JavaScript</string>
-    <string name="revanced_spoof_streaming_data_use_latest_js_summary_on">"JavaScript for deobfuscation is kept up to date.
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_title">Use yt-dlp ejs (WIP)</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_on">"External JavaScript for yt-dlp (yt-dlp-ejs) is used.
 
-• It is highly server-dependent, and the success or failure of deobfuscation depends on the JavaScript currently used on the server."</string>
-    <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"JavaScript for deobfuscation is not kept up to date.
+• Player JavaScript for deobfuscation is kept up to date.
+• It may take 5 to 15 seconds for the video to start."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_off">"SmartTube extractor is used.
 
-• JavaScript that succeeds in deobfuscation is used, but it is still somewhat server-dependent."</string>
+• Player JavaScript for deobfuscation is not up to date.
+• This will be deprecated by servers in the near future."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_user_dialog_message">"Due to YouTube's new measures, it is no longer possible to decrypt streaming urls using general methods in the latest player JavaScript.
+
+External JavaScript for yt-dlp (yt-dlp-ejs) is used to decrypt streaming urls in the latest player JavaScript.
+
+It is currently under development and will use more hardware resources."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">Bypass fake buffering</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"Bypass fake buffering is enabled.
 

@@ -76,7 +76,7 @@ val visualPreferencesIconsPatch = resourcePatch(
         }
         val resourceGroup = ResourceGroup(
             "drawable",
-            "revanced_extended_settings_icon.xml"
+            "revanced_settings_icon.xml"
         )
 
         try {
@@ -135,7 +135,7 @@ private val preferenceKey = setOf(
     "settings_header_about_youtube_music",
 
     // RVX settings.
-    "revanced_extended_settings",
+    "revanced_settings",
 
     "revanced_preference_screen_account",
     "revanced_preference_screen_action_bar",

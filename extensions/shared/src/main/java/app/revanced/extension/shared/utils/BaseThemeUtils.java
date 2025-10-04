@@ -1,9 +1,15 @@
 package app.revanced.extension.shared.utils;
 
+import static app.revanced.extension.shared.utils.ResourceUtils.getDrawable;
 import static app.revanced.extension.shared.utils.Utils.clamp;
+import static app.revanced.extension.shared.utils.Utils.isSDKAbove;
 
+import android.annotation.SuppressLint;
 import android.content.res.Configuration;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.view.ViewGroup;
+import android.view.Window;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
@@ -256,9 +262,9 @@ public class BaseThemeUtils {
             blue = Math.round(blue + (255 - blue) * t);
         } else {
             // Darken or no change: Scale toward black.
-            red = (int) (red * factor);
-            green = (int) (green * factor);
-            blue = (int) (blue * factor);
+            red = Math.round(red * factor);
+            green = Math.round(green * factor);
+            blue = Math.round(blue * factor);
         }
 
         // Ensure values are within [0, 255].
@@ -267,6 +273,50 @@ public class BaseThemeUtils {
         blue = clamp(blue, 0, 255);
 
         return Color.argb(alpha, red, green, blue);
+    }
+
+    /**
+     * Returns the drawable for the back button.
+     */
+    @SuppressLint("UseCompatLoadingForDrawables")
+    public static Drawable getBackButtonDrawable() {
+        Drawable drawable = getDrawable("revanced_settings_toolbar_arrow_left");
+        customizeBackButtonDrawable(drawable);
+        return drawable;
+    }
+
+    /**
+     * Customizes the back button drawable.
+     */
+    public static void customizeBackButtonDrawable(Drawable drawable) {
+        if (drawable != null) {
+            drawable.setTint(getAppForegroundColor());
+        }
+    }
+
+    /**
+     * Allows subclasses to customize the dialog's root view background.
+     */
+    public static void customizeDialogBackground(ViewGroup rootView) {
+        rootView.setBackgroundColor(getAppBackgroundColor());
+    }
+
+    /**
+     * More actions
+     * Sets the system navigation bar color for the activity.
+     * Applies the background color obtained from {@link #getAppBackgroundColor()} to the navigation bar.
+     * For Android 10 (API 29) and above, enforces navigation bar contrast to ensure visibility.
+     */
+    public static void setNavigationBarColor(@Nullable Window window) {
+        if (window == null) {
+            Logger.printDebug(() -> "Cannot set navigation bar color, window is null");
+            return;
+        }
+
+        window.setNavigationBarColor(getAppBackgroundColor());
+        if (isSDKAbove(29)) {
+            window.setNavigationBarContrastEnforced(true);
+        }
     }
 
 }

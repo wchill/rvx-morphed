@@ -4,7 +4,6 @@ import app.revanced.patches.youtube.player.components.playerComponentsPatch
 import app.revanced.patches.youtube.utils.resourceid.autoNavPreviewStub
 import app.revanced.patches.youtube.utils.resourceid.autoNavToggle
 import app.revanced.patches.youtube.utils.resourceid.fadeDurationFast
-import app.revanced.patches.youtube.utils.resourceid.fullScreenEngagementPanel
 import app.revanced.patches.youtube.utils.resourceid.inlineTimeBarColorizedBarPlayedColorDark
 import app.revanced.patches.youtube.utils.resourceid.inlineTimeBarPlayedNotHighlightedColor
 import app.revanced.patches.youtube.utils.resourceid.insetOverlayViewLayout
@@ -75,16 +74,6 @@ internal val cairoFragmentConfigFingerprint = legacyFingerprint(
     returnType = "Z",
     accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
     literals = listOf(CAIRO_FRAGMENT_FEATURE_FLAG),
-)
-
-internal val formatStreamModelToStringFingerprint = legacyFingerprint(
-    name = "formatStreamModelToStringFingerprint",
-    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    returnType = "Ljava/lang/String;",
-    customFingerprint = { method, classDef ->
-        method.name == "toString"
-                && classDef.type == YOUTUBE_FORMAT_STREAM_MODEL_CLASS_TYPE
-    }
 )
 
 internal val layoutConstructorFingerprint = legacyFingerprint(
@@ -306,6 +295,7 @@ internal val youtubeControlsOverlayFingerprint = legacyFingerprint(
     parameters = emptyList(),
     literals = listOf(
         // Removed in YouTube 20.09.40+
+        // eduOverlayStub,
         // fadeDurationFast,
         insetOverlayViewLayout,
         scrimOverlay,

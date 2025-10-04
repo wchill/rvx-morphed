@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import app.revanced.extension.shared.utils.ResourceUtils.ResourceType
 import app.revanced.extension.shared.utils.ResourceUtils.getIdentifier
+import app.revanced.extension.youtube.utils.ExtendedUtils.IS_19_20_OR_GREATER
 import java.lang.ref.WeakReference
 
 /**
@@ -99,14 +100,14 @@ class PlayerControlsVisibilityObserverImpl(
     override val arePlayerControlsVisible: Boolean
         get() = playerControlsVisibility == View.VISIBLE
 
-    override val fullscreenEngagementPanelVisibility: Int
+    override val isFullscreenEngagementPanelAttached: Boolean
         get() {
+            if (!IS_19_20_OR_GREATER) {
+                return true
+            }
             maybeAttach()
-            return fullscreenEngagementPanelHolderView.get()?.visibility ?: View.GONE
+            return fullscreenEngagementPanelHolderView.get()?.isAttachedToWindow == true
         }
-
-    override val isFullscreenEngagementPanelVisible: Boolean
-        get() = fullscreenEngagementPanelVisibility == View.VISIBLE
 }
 
 /**
@@ -125,12 +126,7 @@ interface PlayerControlsVisibilityObserver {
     val arePlayerControlsVisible: Boolean
 
     /**
-     * current visibility int of the fullscreen_engagement_panel_holder view
+     * is the fullscreenEngagementPanelHolderView attached?
      */
-    val fullscreenEngagementPanelVisibility: Int
-
-    /**
-     * is the value of [fullscreenEngagementPanelVisibility] equal to [View.VISIBLE]?
-     */
-    val isFullscreenEngagementPanelVisible: Boolean
+    val isFullscreenEngagementPanelAttached: Boolean
 }

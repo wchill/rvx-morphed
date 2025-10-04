@@ -4,35 +4,13 @@
     <string name="accessibility_settings_edu_opt_in_text">Video oynatıcı için erişilebilirlik kontrolleri açılsın mı?</string>
     <string name="accessibility_settings_edu_opt_out_text">Bir erişilebilirlik hizmeti açık olduğundan kontrolleriniz değiştirildi.</string>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX</string>
-    <string name="revanced_extended_settings_search_title">Arama %s</string>
-    <string name="revanced_extended_reset_to_default_toast">Varsayılan değerlere sıfırla.</string>
     <string name="revanced_preference_category_experimental_flag">Deneysel Parametreler</string>
-    <string name="revanced_extended_confirm_user_dialog_title">Devam etmek istediğinizden emin misiniz?</string>
-    <string name="revanced_extended_restart_first_run">Düzeni normal şekilde yüklemek için yeniden başlatın</string>
-    <string name="revanced_extended_restart_title">Yeniden başlatma gerekli</string>
-    <string name="revanced_extended_restart_dialog_message">Değişikliklerin geçerli olması için uygulamayı yeniden başlatın.</string>
-    <string name="revanced_extended_restart">Yeniden Başlat</string>
-    <string name="revanced_extended_settings_color_invalid">Geçersiz renk.</string>
-    <string name="revanced_extended_settings_color_picker">Renk seçici</string>
-    <string name="revanced_extended_settings_reset">Sıfırla</string>
-    <string name="revanced_extended_settings_reset_color">Rengi sıfırla</string>
-    <string name="revanced_extended_settings_search_history_title">Ayarlar arama geçmişini göster</string>
-    <string name="revanced_extended_settings_search_history_summary_on">Ayarlar arama geçmişi gösteriliyor.</string>
-    <string name="revanced_extended_settings_search_history_summary_off">Ayarlar arama geçmişi gösterilmiyor.</string>
-    <string name="revanced_extended_settings_search_hint">Ayarlarda ara</string>
-    <string name="revanced_extended_settings_search_no_results_title">\'%s\' için hiçbir sonuç bulunamadı.</string>
-    <string name="revanced_extended_settings_search_no_results_summary">Başka bir anahtar kelime deneyin.</string>
-    <string name="revanced_extended_settings_search_remove_message">Arama geçmişinden kaldırılsın mı?</string>
     <string name="revanced_dismiss_player_not_available_toast">Video kimliği mevcut değil. Lütfen videoyu manuel olarak yeniden açın.</string>
     <string name="revanced_playback_speed_normal">Normal</string>
     <string name="revanced_external_downloader_package_name_video_title">Video indirici paket adı</string>
     <string name="revanced_external_downloader_package_name_video_summary">Yüklü olan harici indirme uygulamanızın paket adı, örneğin NewPipe veya YTDLnis gibi.</string>
-    <string name="revanced_external_downloader_dialog_title">Harici indirici</string>
-    <string name="revanced_external_downloader_not_installed_dialog_title">Dikkat</string>
-    <string name="revanced_external_downloader_not_installed_dialog_message">"%1$s yüklü değil.
-Lütfen web sitesinden %2$s dosyasını indirin."</string>
     <string name="revanced_external_downloader_not_installed_warning">%s kurulmamış. Lütfen önce indiriniz.</string>
+    <string name="revanced_external_downloader_dialog_title">Harici indirici</string>
     <string name="revanced_queue_manager_add_to_queue">Kuyruğa ekle</string>
     <string name="revanced_queue_manager_add_to_queue_and_open_queue">Sıraya ekle ve sırayı aç</string>
     <string name="revanced_queue_manager_add_to_queue_and_play_video">Sıraya ekle ve videoyu oynat</string>
@@ -411,6 +389,13 @@ Kısıtlamalar:
     <string name="revanced_hide_keyword_toast_invalid_broad">\'%1$s\' anahtar kelimesi tüm videoları gizleyecek.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Video filter, PreferenceCategory: View count filter -->
     <string name="revanced_preference_category_view_counts_filter">İzlenme sayısı filtresi</string>
+    <string name="revanced_hide_video_by_view_counts_home_title">Ana Sayfa vid. görüntüleme sayısına göre gizle</string>
+    <string name="revanced_hide_video_by_view_counts_home_summary_on">Ana sayfadaki videolar gizlendi.</string>
+    <string name="revanced_hide_video_by_view_counts_home_summary_off">Ana sayfadaki videolar gizlenmedi.</string>
+    <string name="revanced_hide_video_by_view_counts_search_summary_off">Arama sonuçları filtrelenmemiştir.</string>
+    <string name="revanced_hide_video_by_view_counts_subscriptions_title">Abonelikler videolarını görüntüleme sayısına göre gizle</string>
+    <string name="revanced_hide_video_by_view_counts_subscriptions_summary_on">Abonelikler sayfasındaki videolar filtrelendi.</string>
+    <string name="revanced_hide_video_by_view_counts_subscriptions_summary_off">Abonelikler sayfasındaki videolar filtrelenmedi.</string>
     <string name="revanced_hide_video_view_counts_greater_than_title">Görüntülemelerden büyük</string>
     <string name="revanced_hide_video_view_counts_greater_than_summary">Görüntüleme sayısı bu sayıdan fazla olan videolar gizlenecektir.</string>
     <string name="revanced_hide_video_view_counts_less_than_title">Görüntülemelerden az</string>
@@ -418,6 +403,12 @@ Kısıtlamalar:
     <string name="revanced_hide_video_view_counts_multiplier_title">Anahtarları göster</string>
     <string name="revanced_hide_video_view_counts_multiplier_summary">Kullanıcı arayüzünde her videonun altında gösterilen görüntüleme sayısı için dil şablonunuzu belirtin. Her tuş (dilinizde bir harf/kelime) -&gt; değer (anahtarın anlamı) yeni bir satırda olmalıdır. Tuşlar \"-&gt;\"den önce gelir imza. Uygulamayı veya sistem dilini değiştirirseniz bu ayarı sıfırlamanız gerekir.\n\nÖrnekler:\nTürkçe: 10K görüntüleme = K -&gt; 1000, görüntülemeler -&gt; görüntüleme\nİspanyolca: 10 K manzara = K -&gt; 1000, manzaralar -&gt; Görüntüleme</string>
     <string name="revanced_hide_video_view_counts_multiplier_default_value">K -&gt; 1 000\nM -&gt; 1 000 000\nB -&gt; 1 000 000 000\ngörüntüleme -&gt; Görüntüleme</string>
+    <string name="revanced_hide_video_by_view_counts_about_title">Görüntüleme sayısı filtrelemesi hakkında</string>
+    <string name="revanced_hide_video_by_view_counts_about_summary">"Anasayfa / Abonelikler / Arama sonuçlarındaki belirli bir sayıdan az veya çok izlenen videoları gizlemek için filtrelenir.
+
+Sınırlamalar:
+• Canlı yayınlar veya kısa videolar gizlenemez.
+• 0 izlenme sayısına sahip videolar filtrelenmez."</string>
     <!-- PreferenceScreen: General -->
     <string name="revanced_preference_screen_general_title">Genel</string>
     <string name="revanced_change_start_page_title">Başlangıç ​​sayfasını değiştir</string>
@@ -429,6 +420,7 @@ Kısıtlamalar:
     <string name="revanced_change_start_page_entry_fashion">Moda &amp; Güzellik</string>
     <string name="revanced_change_start_page_entry_gaming">Gaming</string>
     <string name="revanced_change_start_page_entry_history">Geçmiş</string>
+    <string name="revanced_change_start_page_entry_hype">Hype</string>
     <string name="revanced_change_start_page_entry_library">Kitaplık</string>
     <string name="revanced_change_start_page_entry_liked_videos">Beğenilen videolar</string>
     <string name="revanced_change_start_page_entry_live">Canlı</string>
@@ -447,12 +439,25 @@ Kısıtlamalar:
     <string name="revanced_change_start_page_entry_virtual_reality">Sanal Gerçeklik</string>
     <string name="revanced_change_start_page_entry_watch_later">Daha sonra izlenecekler</string>
     <string name="revanced_change_start_page_entry_your_clips">Klipleriniz</string>
+    <string name="revanced_change_start_page_type_title">Başlangıç ​​sayfası türünü değiştir</string>
+    <string name="revanced_change_start_page_type_summary_on">"Başlangıç ​​sayfası her zaman değişir.
+
+Sınırlama: Araç çubuğundaki Geri butonu çalışmayabilir."</string>
+    <string name="revanced_change_start_page_type_summary_off">Başlangıç ​​sayfası yalnızca bir kez değişir.</string>
     <string name="revanced_disable_auto_audio_tracks_title">Ses parçalarının kendiliğinden açılmasını kapat</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Ses parçalarının kendiliğinden açılması kapalı.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_on_disclaimer">"Zorunlu otomatik ses parçaları devre dışı bırakıldı.
+
+Bu, bazı kullanıcılar için işe yaramayabilir, eğer sizin için işe yaramazsa:
+1. Ayarlar - RVX - Çeşitli - Sahte veri akışı'na gidin ve 'JavaScript istemcisini kullan' seçeneğini açın.
+2. Ayarlar - RVX - Çeşitli - Sahte akış verileri bölümüne gidin ve 'Varsayılan istemci'yi 'TV' veya 'TV Simply' olarak değiştirin."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Ses parçalarının kendiliğinden açılması etkin.</string>
     <string name="revanced_disable_auto_captions_title">Altyazıların kendiliğinden açılmasını kapat</string>
     <string name="revanced_disable_auto_captions_summary_on">Altyazıların kendiliğinden açılması kapalı</string>
     <string name="revanced_disable_auto_captions_summary_off">Altyazılar kendiliğinden açılabiliyor</string>
+    <string name="revanced_disable_signin_to_tv_popup_title">TV\'de oturum açma açılır penceresini devre dışı bırak</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_on">TV\'ye giriş açılır penceresi devre dışı.</string>
+    <string name="revanced_disable_signin_to_tv_popup_summary_off">TV\'ye giriş açılır penceresi etkin.</string>
     <string name="revanced_disable_splash_animation_title">Açılış animasyonunu devre dışı bırak</string>
     <string name="revanced_disable_splash_animation_summary_on">Açılış animasyonu etkin değil.</string>
     <string name="revanced_disable_splash_animation_summary_off">Açılış animasyonu etkin.</string>
@@ -488,6 +493,55 @@ Daha sonra kapatılırsa kullanıcı arayüzü hatalarını önlemek için uygul
     <string name="revanced_spoof_app_version_target_entry_18_48_39">18.48.39 - Görüntülemelerin ve beğenilerin gerçek zamanlı olarak güncellenmesini devre dışı bırakır</string>
     <string name="revanced_spoof_app_version_target_entry_19_26_42">19.26.42 -  Cairo ikonunu gezinme ve araç çubuğunda devre dışı bırak</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Eski tarz oynatma hızı açılır panelini geri yükleyin</string>
+    <string name="revanced_set_transcript_cookies_title">Transkript Çerezlerini Ayarla</string>
+    <string name="revanced_set_transcript_cookies_summary_on">Transkript Çerezleri Ayarlandı.</string>
+    <string name="revanced_set_transcript_cookies_summary_off">Transkript Çerezleri Ayarlanmadı.</string>
+    <string name="revanced_set_transcript_cookies_user_dialog_message">"​Şu anda YouTube'da otomatik çevrilmiş altyazıların kullanılamadığı bir hata var.
+
+​Bu, YouTube Transcript API'sinde bir sorundur ve Google'ın bunu düzeltmesi gerekiyor.
+
+​Geçici bir çözüm olarak, Çerezleri ayarlayarak bu sorunu çözebilirsiniz.
+
+​[Uyarı]
+
+​Çerezleri kullanmak kesin bir çözüm değildir.
+
+• Bu, şu durumlarda işe yaramayabilir:
+• Çerezlerin süresi dolmuşsa.
+• Geçersiz Çerezler kullanılıyorsa.
+• ​YouTube Transcript API artık Çerezleri doğrulamıyorsa."</string>
+    <string name="revanced_set_transcript_cookies_all_title">Tüm Transkript API istekleri için Çerezleri ayarla</string>
+    <string name="revanced_set_transcript_cookies_all_summary_on">Tüm Transcript API istekleri için çerezler ayarlanır.</string>
+    <string name="revanced_set_transcript_cookies_all_summary_off">Çerezler yalnızca otomatik çevrilen altyazı istekleri için ayarlanır.</string>
+    <string name="revanced_transcript_cookies_title">Transkript Çerezleri</string>
+    <string name="revanced_transcript_cookies_summary">Transkript API isteklerinde kullanılacak çerezler.</string>
+    <string name="revanced_transcript_cookies_about_title">Transkript Çerezleri Hakkında</string>
+    <string name="revanced_transcript_cookies_about_summary">Çerezleri nasıl edineceğinizi görmek için tıklayın.</string>
+    <string name="revanced_transcript_cookies_dialog_title">Transkript Çerezlerini Dışa Aktar</string>
+    <string name="revanced_transcript_cookies_dialog_message">"Yetkilendirme
+═════════════
+1. WebView'da oturum açma sayfasını açmak için 'Yetkilendirme'ye tıklayın.
+2. Google Hesabınızda oturum açın.
+3. Otomatik çevrilmiş altyazıları destekleyen tüm videoları oynatır.
+4. Otomatik çevrilmiş altyazıları açın ve çalışıp çalışmadığına bakın.
+4-1. Otomatik çevrilmiş altyazılar çalışmıyorsa, otomatik çevrilmiş altyazıları destekleyen başka bir videoya geçin ve 4. adımı tekrar deneyin.
+5. Bağlam menüsünü açmak için araç çubuğundaki üç noktaya tıklayın.
+6. 'Çerezleri Al'a tıklayın.
+7. Çerezleri kopyalamak için 'Kopyala'ya tıklayın.
+8. WebView'ı kapatın ve kopyaladığınız Çerezleri 'Transkript Çerezleri' ayarlarına yapıştırın.
+
+Yetkilendirme Yok
+══════════════
+1. Videoyu WebView'da açmak için 'Yetkilendirme Yok'a tıklayın.
+2. Videoyu en az 3 saniye oynatın.
+3. Bağlamsal menüyü açmak için araç çubuğundaki üç noktaya tıklayın.
+4. 'Çerezleri Al'a tıklayın.
+5. Çerezleri kopyalamak için 'Kopyala'ya tıklayın.
+6. WebView'ı kapatın ve kopyalanan Çerezleri 'Transkript Çerezleri' ayarlarına yapıştırın.
+
+Sorumluluk Reddi: Oturum açmadan gönderilen çerezler geçersiz olabilir veya Transkript API'sine sunulması zaman alabilir."</string>
+    <string name="revanced_transcript_cookies_dialog_auth_text">Yetkilendirme</string>
+    <string name="revanced_transcript_cookies_dialog_no_auth_text">Yetkilendirme yok</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Account menu -->
     <string name="revanced_preference_screen_account_menu_title">Hesap Menüsü</string>
     <string name="revanced_preference_screen_account_menu_summary">Hesap menüsünde ve siz sekmesinde gizli veya göster.</string>
@@ -511,6 +565,7 @@ Daha sonra kapatılırsa kullanıcı arayüzü hatalarını önlemek için uygul
     <string name="revanced_custom_filter_toast_invalid_syntax">Geçersiz özel filtre: %s</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Hook buttons -->
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Hook buttons, PreferenceCategory: Download button -->
+    <string name="revanced_preference_category_download_button">İndir düğmesi</string>
     <string name="revanced_override_playlist_download_button_title">Oynatma listesi indirme butonunu geçersiz kıl</string>
     <string name="revanced_override_video_download_button_title">Video indirme butonunu geçersiz kıl</string>
     <string name="revanced_override_video_download_button_summary_on">İndirme düğmesi harici indiricinizi açar.</string>
@@ -656,8 +711,8 @@ Not: Bu özelliği devre dışı bırakmak, eski arayüzdeki \"Videoyu sarmak i�
     <string name="revanced_hide_medical_panel_summary_on">Tıbbi bilgi içeren paneller gizleniyor.</string>
     <string name="revanced_hide_medical_panel_summary_off">Tıbbi bilgi içeren paneller gizlenmiyor.</string>
     <string name="revanced_hide_seek_message_title">Zaman çubuğunu kaydırırken çıkan yazıları gizle</string>
-    <string name="revanced_hide_seek_message_summary_on">\"Videoyu sarmak için çubuğu sağa veya sola hareket ettirin\" gibi yazılar gizleniyor.</string>
-    <string name="revanced_hide_seek_message_summary_off">\"Videoyu sarmak için çubuğu sağa veya sola hareket ettirin\" gibi yazılar gizlenmiyor.</string>
+    <string name="revanced_hide_seek_message_summary_on">"\"Videoyu sarmak için çubuğu sağa veya sola hareket ettirin\" gibi yazılar gizleniyor."</string>
+    <string name="revanced_hide_seek_message_summary_off">"\"Videoyu sarmak için çubuğu sağa veya sola hareket ettirin\" gibi yazılar gizlenmiyor."</string>
     <string name="revanced_hide_seek_undo_message_title">\"İptal etmek için bırakın\" yazısını gizle</string>
     <string name="revanced_hide_seek_undo_message_summary_on">\"İptal etmek için bırakın\" gibi yazılar gizleniyor.</string>
     <string name="revanced_hide_seek_undo_message_summary_off">\"İptal etmek için bırakın\" gibi yazılar gizlenmiyor.</string>
@@ -1268,10 +1323,6 @@ Kısıtlama: Gizli modda beğenmeme sayıları görünmeyebilir."</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">Atla düğmesini otomatik olarak gizle</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">Atla düğmesi birkaç saniye sonra gizlenir.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">Atlama düğmesi tüm segmentler için görüntülenir.</string>
-    <string name="revanced_sb_general_skiptoast">Bir kısım otomatikman atlanırken uyarı ver</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">Uyarı, bir bölüm otomatik olarak atlandığında gösterilir.
-Bir örnek görmek için buraya dokunun.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">Uyarı gizleniyor. Bir örnek görmek için buraya dokunun.</string>
     <string name="revanced_sb_general_time_without">Video uzunluğunu bölümler olmadan göster</string>
     <string name="revanced_sb_general_time_without_sum_on">Video uzunluğu eksi tüm segmentler, tam video uzunluğunun yanında parantez içinde gösterilir.</string>
     <string name="revanced_sb_general_time_without_sum_off">Tam video uzunluğu gizlenmiyor.</string>
@@ -1349,9 +1400,6 @@ Bir örnek görmek için buraya dokunun.</string>
     <string name="revanced_sb_guidelines_popup_open">Göster bana</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: General -->
     <string name="revanced_sb_general">Genel</string>
-    <string name="revanced_sb_toast_on_connection_error_title">API mevcut değilse bir uyarı göster</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_on">SponsorBlock\'un mevcut olmaması durumunda uyarı gösterilir.</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_off">SponsorBlock\'un mevcut olmaması durumunda uyarı gösterilmez.</string>
     <string name="revanced_sb_general_skipcount">Atlama sayısı izlemeyi etkinleştir</string>
     <string name="revanced_sb_general_skipcount_sum_on">SponsorBlock liderlik tablosunun ne kadar zaman kazanıldığını bilmesini sağlar. Bir segment her atlandığında skor tablosuna bir mesaj gönderilir.</string>
     <string name="revanced_sb_general_skipcount_sum_off">Atlama sayısı izleme etkin değil</string>
@@ -1462,21 +1510,8 @@ Devam düğmesine dokunun ve pil optimizasyonlarını devre dışı bırakın."<
     <string name="revanced_preference_screen_import_export_summary">Ayarları içe veya dışa aktarın.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as file -->
     <string name="revanced_preference_category_import_export_as_file">İçe / Dışa dosya olarak aktar</string>
-    <string name="revanced_extended_settings_export_title">Ayarları dışa aktarın</string>
-    <string name="revanced_extended_settings_export_summary">Ayarlarınızı bir dosyaya kaydedin.</string>
-    <string name="revanced_extended_settings_import_title">Ayarları içe aktar</string>
-    <string name="revanced_extended_settings_import_summary">Ayarları kaydedilen dosyadan içe aktarın.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as text -->
     <string name="revanced_preference_category_import_export_as_text">İçe / Dışa yazı olarak aktar</string>
-    <string name="revanced_extended_settings_import_export_as_text_title">İçe / Dışa yazı olarak aktar</string>
-    <string name="revanced_extended_settings_import_export_as_text_summary">Ayarları yazı olarak içe veya dışa aktarın.</string>
-    <string name="revanced_extended_settings_export_failed">Ayarlar dışa aktarılamadı.</string>
-    <string name="revanced_extended_settings_export_success">Ayarlar başarıyla dışa aktarıldı.</string>
-    <string name="revanced_extended_settings_import">İçe aktar</string>
-    <string name="revanced_extended_settings_import_copy">Kopyala</string>
-    <string name="revanced_extended_settings_import_failed">İçe aktarma başarısız oldu: %s.</string>
-    <string name="revanced_extended_settings_import_reset">Ayarlar varsayılana sıfırlandı.</string>
-    <string name="revanced_extended_settings_import_success">%d ayar içe aktarıldı.</string>
     <string name="revanced_share_copy_settings_success">Ayarlar panoya kopyalandı</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->

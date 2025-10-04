@@ -4,45 +4,60 @@
     <string name="accessibility_settings_edu_opt_in_text">플레이어에서 접근성 컨트롤을 표시하시겠습니까?</string>
     <string name="accessibility_settings_edu_opt_out_text">접근성 서비스가 켜져있기 때문에 플레이어 컨트롤을 변경합니다.</string>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX</string>
-    <string name="revanced_extended_settings_search_title">%s 검색</string>
-    <string name="revanced_extended_reset_to_default_toast">기본값으로 초기화하였습니다.</string>
+    <string name="revanced_settings_title">RVX</string>
+    <string name="revanced_settings_search_title">%s 검색</string>
+    <string name="revanced_reset_to_default_toast">기본값으로 초기화하였습니다.</string>
     <string name="revanced_preference_category_experimental_flag">실험 기능</string>
-    <string name="revanced_extended_confirm_user_dialog_title">계속하시겠습니까?</string>
-    <string name="revanced_extended_restart_first_run">레이아웃을 정상적으로 불러오기 위해 다시 시작합니다.</string>
-    <string name="revanced_extended_restart_title">앱을 다시 시작하세요</string>
-    <string name="revanced_extended_restart_dialog_message">이 변경 사항을 적용하려면 앱을 다시 시작해야 합니다.</string>
-    <string name="revanced_extended_restart">다시 시작</string>
-    <string name="revanced_extended_settings_color_invalid">잘못된 색상입니다.</string>
-    <string name="revanced_extended_settings_color_picker">색상 선택기</string>
-    <string name="revanced_extended_settings_reset">초기화</string>
-    <string name="revanced_extended_settings_reset_color">색상 초기화</string>
-    <string name="revanced_extended_settings_search_history_title">설정 검색 기록 표시하기</string>
-    <string name="revanced_extended_settings_search_history_summary_on">설정 검색 기록을 표시합니다.</string>
-    <string name="revanced_extended_settings_search_history_summary_off">설정 검색 기록을 표시하지 않습니다.</string>
-    <string name="revanced_extended_settings_search_hint">설정 검색</string>
-    <string name="revanced_extended_settings_search_no_results_title">\'%s\'에 대한 검색 결과가 없습니다.</string>
-    <string name="revanced_extended_settings_search_no_results_summary">다른 키워드를 검색해 보세요.</string>
-    <string name="revanced_extended_settings_search_remove_message">검색 기록에서 삭제하시겠습니까?</string>
+    <string name="revanced_confirm_user_dialog_title">계속하시겠습니까?</string>
+    <string name="revanced_restart_first_run">레이아웃을 정상적으로 불러오기 위해 다시 시작합니다.</string>
+    <string name="revanced_restart_title">앱을 다시 시작하세요</string>
+    <string name="revanced_restart_dialog_message">이 변경 사항을 적용하려면 앱을 다시 시작해야 합니다.</string>
+    <string name="revanced_restart">다시 시작</string>
+    <string name="revanced_settings_color_invalid">잘못된 색상입니다.</string>
+    <string name="revanced_settings_color_picker">색상 선택기</string>
+    <string name="revanced_settings_reset">초기화</string>
+    <string name="revanced_settings_reset_color">색상 초기화</string>
+    <string name="revanced_settings_search_hint">설정 검색</string>
+    <string name="revanced_settings_search_no_results_title">\'%s\'에 대한 검색 결과가 없습니다.</string>
+    <string name="revanced_settings_search_no_results_summary">다른 키워드를 검색해 보세요.</string>
+    <string name="revanced_settings_search_recent_searches">최근 검색어</string>
+    <string name="revanced_settings_search_remove_message">검색 기록에서 삭제하시겠습니까?</string>
+    <string name="revanced_settings_search_clear_history">검색 기록 지우기</string>
+    <string name="revanced_settings_search_clear_history_message">모든 검색 기록을 지우시겠습니까?</string>
+    <string name="revanced_settings_search_tips_title">검색 팁</string>
+    <string name="revanced_settings_search_tips_summary">"• 경로를 탭하여 설정 카테고리로 이동할 수 있습니다.
+• 설정을 길게 탭하여 설정 위치로 이동할 수 있습니다.
+• 엔터키를 눌러서 검색어를 기록에 저장할 수 있습니다.
+• 검색할 경우에 대소문자와 구두점이 무시됩니다.
+• 상위 설정이 비활성화된 하위 설정 위에 표시됩니다."</string>
+    <string name="revanced_settings_search_empty_history_title">검색 기록이 비어 있습니다</string>
+    <string name="revanced_settings_search_empty_history_summary">검색 기록을 저장하려면 검색어를 입력하고 엔터키를 누르세요.</string>
+    <string name="revanced_settings_search_history_title">설정 검색 기록 표시하기</string>
+    <string name="revanced_settings_search_history_summary_on">설정 검색 기록을 표시합니다.</string>
+    <string name="revanced_settings_search_history_summary_off">설정 검색 기록을 표시하지 않습니다.</string>
     <string name="revanced_dismiss_player_not_available_toast">동영상 ID를 사용할 수 없습니다. 동영상을 수동으로 다시 재생하세요.</string>
     <string name="revanced_playback_speed_normal">일반</string>
     <string name="revanced_external_downloader_package_name_video_title">동영상 외부 다운로더 앱 패키지명</string>
-    <string name="revanced_external_downloader_package_name_video_summary">NewPipe 또는 YTDLnis와 같은 설치된 외부 다운로더 앱 패키지명을 설정하세요.</string>
-    <string name="revanced_external_downloader_dialog_title">외부 다운로더 앱</string>
-    <string name="revanced_external_downloader_not_installed_dialog_title">경고</string>
-    <string name="revanced_external_downloader_not_installed_dialog_message">"%1$s 가 설치되어 있지 않습니다.
-웹사이트에서 %2$s 를 다운로드하고 설치하세요."</string>
+    <string name="revanced_external_downloader_package_name_video_summary">설치된 외부 다운로더 앱 패키지명을 설정하세요.</string>
+    <string name="revanced_external_downloader_other_item">그 외</string>
+    <string name="revanced_external_downloader_other_item_hint">앱 패키지명을 입력하세요</string>
+    <string name="revanced_external_downloader_not_found_title">앱이 설치되지 않았습니다.</string>
     <string name="revanced_external_downloader_not_installed_warning">%s가 설치되지 않았습니다. 설치하세요.</string>
+    <string name="revanced_external_downloader_package_not_found_warning">"패키지명이 '%s'인 설치된 앱을 찾을 수 없습니다.
+
+패키지명이 올바르고 앱이 설치되어 있는지 확인하세요."</string>
+    <string name="revanced_external_downloader_empty_warning">패키지명은 비워둘 수 없습니다</string>
+    <string name="revanced_external_downloader_dialog_title">외부 다운로더 앱</string>
     <string name="revanced_queue_manager_add_to_queue">현재 재생목록에 추가</string>
     <string name="revanced_queue_manager_add_to_queue_and_open_queue">현재 재생목록에 추가하고 현재 재생목록 열기</string>
     <string name="revanced_queue_manager_add_to_queue_and_play_video">현재 재생목록에 추가하고 동영상 재생</string>
-    <string name="revanced_queue_manager_add_to_queue_and_reload_video">현재 재생목록에 추가하고 동영상 다시 로드</string>
+    <string name="revanced_queue_manager_add_to_queue_and_reload_video">현재 재생목록에 추가하고 동영상 새로고침</string>
     <string name="revanced_queue_manager_external_downloader">외부 다운로더</string>
     <string name="revanced_queue_manager_open_queue">현재 재생목록 열기</string>
     <string name="revanced_queue_manager_queue">현재 재생목록</string>
     <string name="revanced_queue_manager_remove_from_queue">현재 재생목록에서 제거</string>
     <string name="revanced_queue_manager_remove_from_queue_and_open_queue">현재 재생목록에서 제거하고 현재 재생목록 열기</string>
-    <string name="revanced_queue_manager_remove_from_queue_and_reload_video">현재 재생목록에서 제거하고 동영상 다시 로드</string>
+    <string name="revanced_queue_manager_remove_from_queue_and_reload_video">현재 재생목록에서 제거하고 동영상 새로고침</string>
     <string name="revanced_queue_manager_remove_queue">현재 재생목록 제거</string>
     <string name="revanced_queue_manager_save_queue">현재 재생목록 저장</string>
     <string name="revanced_queue_manager_show_original_video_information">원본 동영상 정보 표시</string>
@@ -76,7 +91,7 @@
     <string name="revanced_queue_manager_check_failed_auth">로그인이 요구됨</string>
     <string name="revanced_queue_manager_check_failed_generic">현재 재생목록 관리자를 실행할 수 없습니다 (%s).</string>
     <string name="revanced_queue_manager_check_failed_playlist_id">재생목록을 식별할 수 없음</string>
-    <string name="revanced_queue_manager_check_failed_queue">현재 재생목록이 비어져 있음</string>
+    <string name="revanced_queue_manager_check_failed_queue">현재 재생목록이 비어 있음</string>
     <string name="revanced_queue_manager_check_failed_video_id">동영상을 식별할 수 없음</string>
     <string name="revanced_queue_manager_fetch_failed_add">동영상을 추가할 수 없습니다.</string>
     <string name="revanced_queue_manager_fetch_failed_create">현재 재생목록을 만들 수 없습니다.</string>
@@ -104,7 +119,7 @@
     <string name="revanced_webview_intent_use_desktop_user_agent">Desktop User-Agent 사용하기</string>
     <string name="revanced_webview_copy">복사</string>
     <string name="revanced_webview_toast_copy_success">%s 를 클립보드에 복사하였습니다.</string>
-    <string name="revanced_webview_toast_empty">%s 가 비어져 있습니다.</string>
+    <string name="revanced_webview_toast_empty">%s 가 비어 있습니다.</string>
     <string name="revanced_webview_toast_no_network">네트워크 연결 상태를 확인하세요.</string>
     <string name="revanced_webview_toast_unavailable">WebView를 사용할 수 없습니다.</string>
     <string name="revanced_language_title">RVX 언어</string>
@@ -412,7 +427,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
     <string name="revanced_hide_members_shelf_summary_off">멤버십 선반이 표시됩니다.</string>
     <string name="revanced_hide_visit_community_button_title">커뮤니티 방문 버튼 숨기기</string>
     <string name="revanced_hide_visit_community_button_summary_on">커뮤니티 방문 버튼이 숨겨집니다.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">커뮤니티 방문 버튼이 숨겨집니다.</string>
+    <string name="revanced_hide_visit_community_button_summary_off">커뮤니티 방문 버튼이 표시됩니다.</string>
     <string name="revanced_hide_visit_store_button_title">스토어 방문 버튼 숨기기</string>
     <string name="revanced_hide_visit_store_button_summary_on">스토어 방문 버튼이 숨겨집니다.</string>
     <string name="revanced_hide_visit_store_button_summary_off">스토어 방문 버튼이 표시됩니다.</string>
@@ -461,12 +476,15 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
 
 • 필터링 키워드는 채널 이름 또는 동영상 제목에 표시되는 모든 텍스트가 될 수 있습니다.
 • 대문자가 있는 단어는 대소문자를 함께 입력해야 합니다 (예: iPhone, TikTok, LeBlanc)."</string>
+    <string name="revanced_hide_keyword_content_use_and_operator_title">\'AND\' 연산자 (\'&amp;\') 사용하기</string>
+    <string name="revanced_hide_keyword_content_use_and_operator_summary_on">\'AND\' 연산자 (‘&amp;’)를 활성화합니다.&lt;br&gt;&lt;br&gt;&lt;strong&gt;“파랑” &amp; “빨강”&lt;/strong&gt;을 키워드로 사용할 경우에 &lt;strong&gt;파랑&lt;/strong&gt;과 &lt;strong&gt;빨강&lt;/strong&gt;을 모두 포함하는 키워드가 필터링됩니다.</string>
+    <string name="revanced_hide_keyword_content_use_and_operator_summary_off">\'AND\' 연산자 (‘&amp;’)를 비활성화합니다.&lt;br&gt;&lt;br&gt;&lt;strong&gt;“파랑” &amp; “빨강”&lt;/strong&gt;을 키워드로 사용할 경우에 &lt;strong&gt;\"파랑\" &amp; “빨강”&lt;/strong&gt;을 포함하는 키워드가 필터링됩니다.</string>
     <string name="revanced_hide_keyword_content_about_title">키워드 필터링에 대한 정보</string>
     <string name="revanced_hide_keyword_content_about_summary">"홈 / 구독 / 검색 결과가 필터링되어 키워드 구문과 일치하는 콘텐츠가 숨겨집니다.
 
 제한 사항:
 • 채널 이름으로 Shorts를 숨길 수 없습니다.
-• 일부 화면 구성요소는 숨겨지지 않을 수 있습니다.
+• 일부 UI는 숨겨지지 않을 수 있습니다.
 • 필터링 키워드를 검색하면 검색 결과가 표시되지 않을 수 있습니다."</string>
     <string name="revanced_hide_keyword_content_about_whole_words_title">전체 단어 일치시키기</string>
     <string name="revanced_hide_keyword_content_about_whole_words_summary">필터링할 키워드 및 구문을 큰따옴표로 묶으면 동영상 제목과 채널 이름이 부분적으로 일치하지 않도록 방지할 수 있습니다.&lt;br&gt;&lt;br&gt;• 예를 들어, &lt;b&gt;\"ai\"&lt;/b&gt;라는 키워드로 &lt;b&gt;AI 커리어 완벽 가이드&lt;/b&gt;라는 동영상을 숨길 수 있지만, &lt;b&gt;생성형AI가 바꿔놓은 세계&lt;/b&gt; 또는 &lt;b&gt;What does fair use mean?&lt;/b&gt;라는 동영상은 숨길 수 없습니다.&lt;br&gt;• 그리고 구두점을 단어의 경계로 간주하기 때문에 &lt;b&gt;인공지능(AI)의 원리&lt;/b&gt;라는 동영상은 숨길 수 있습니다. 큰따옴표는 다른 단어 내부의 하위 문자열만 무시합니다 (예: &lt;b&gt;fair&lt;/b&gt;는 숨길 수 없지만, &lt;b&gt;f(ai)r&lt;/b&gt;는 숨김).</string>
@@ -541,7 +559,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
 
 일부 사용자에게는 작동하지 않을 수 있습니다. 작동하지 않는 경우에는:
 1. 설정 - RVX - 기타 - '스트리밍 데이터 변경하기'로 이동하여 'JavaScript 클라이언트 사용하기'를 활성화합니다.
-2. 설정 - RVX - 기타 - '스트리밍 데이터 변경하기'로 이동하여 ‘기본 클라이언트'를 'TV’ 또는 'TV Simply'로 변경합니다."</string>
+2. 설정 - RVX - 기타 - '스트리밍 데이터 변경하기'로 이동하여 ‘기본 클라이언트'를 'TV’로 변경합니다."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">강제 사용이 설정된 자동 오디오 트랙을 활성화합니다.</string>
     <string name="revanced_disable_auto_captions_title">강제된 자동 자막 비활성화하기</string>
     <string name="revanced_disable_auto_captions_summary_on">강제 사용이 설정된 자동 자막을 비활성화합니다.</string>
@@ -615,7 +633,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
     <string name="revanced_spoof_app_version_title">앱 버전 변경하기</string>
     <string name="revanced_spoof_app_version_summary_on">앱 버전을 변경합니다.</string>
     <string name="revanced_spoof_app_version_summary_off">앱 버전을 변경하지 않습니다.</string>
-    <string name="revanced_spoof_app_version_user_dialog_message">"앱 버전을 이전 YouTube 앱 버전으로 변경합니다.\n\n변경하면 앱 레이아웃과 기능이 변경되지만 알려지지 않은 부작용이 발생할 수 있습니다.\n\n나중에 이 기능을 비활성화하게 되면 앱 레이아웃 문제점을 방지하기 위해 앱 데이터를 지우는 것이 좋습니다."</string>
+    <string name="revanced_spoof_app_version_user_dialog_message">"앱 버전을 이전 YouTube 앱 버전으로 변경합니다.\n\n변경하면 앱 레이아웃과 기능이 변경되지만 알려지지 않은 부작용이 발생할 수 있습니다.\n\n나중에 이 기능을 비활성화하게 되면, UI 문제점을 방지하기 위해 앱 데이터를 지우는 것이 좋습니다."</string>
     <string name="revanced_spoof_app_version_target_title">변경할 앱 버전</string>
     <string name="revanced_spoof_app_version_target_entry_17_41_37">17.41.37 - 이전 재생목록 선반으로 복원합니다.</string>
     <string name="revanced_spoof_app_version_target_entry_18_05_40">18.05.40 - 이전 댓글 입력 상자로 복원합니다.</string>
@@ -627,6 +645,9 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
     <string name="revanced_spoof_app_version_target_entry_19_26_42">19.26.42 - 하단바와 툴바에서 Cairo 아이콘을 비활성화합니다.</string>
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - 이전 재생목록 헤더로 복원합니다.</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - 이전 동영상 재생 속도 구성요소 패널을 복원합니다.</string>
+    <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - 스크립트 기능을 복원합니다.</string>
+    <string name="revanced_spoof_app_version_other_item">그 외</string>
+    <string name="revanced_spoof_app_version_other_item_hint">앱 버전을 입력하세요.</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">변경할 앱 버전이 잘못되었습니다: %s</string>
     <string name="revanced_fix_spoof_app_version_side_effect_title">\'앱 버전 변경하기\' 부작용 수정하기</string>
     <string name="revanced_fix_spoof_app_version_side_effect_summary_on">"'재생' 설정 대신에 ‘자동재생’ 설정이 사용됩니다."</string>
@@ -669,7 +690,7 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
 2. Google 계정에 로그인합니다.
 3. 자동 번역 자막을 지원하는 동영상을 재생합니다.
 4. 자동 번역 자막을 켜고 작동하는지 확인합니다.
-4-1. 자동 번역 자막이 작동하지 않으면 자동 번역 자막을 지원하는 다른 동영상으로 전환한 후 4단계를 다시 시도하세요.
+4-1. 자동 번역 자막이 작동하지 않으면 자동 번역 자막을 지원하는 다른 동영상으로 전환한 후 4단계를 다시 시도합니다.
 5. 툴바에서 점 3개를 탭하여 상황에 맞는 메뉴를 엽니다.
 6. 'Cookies 가져오기'를 탭합니다.
 7. '복사'를 탭하여 Cookies를 복사합니다.
@@ -731,7 +752,7 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
     <string name="revanced_override_video_download_button_queue_manager_summary_on">기본 동영상 오프라인 저장 버튼으로 현재 재생목록 관리자를 실행할 수 있습니다.</string>
     <string name="revanced_override_video_download_button_queue_manager_summary_off">기본 동영상 오프라인 저장 버튼으로 외부 다운로더를 실행할 수 있습니다.</string>
     <string name="revanced_external_downloader_package_name_playlist_title">재생목록 외부 다운로더 앱 패키지명</string>
-    <string name="revanced_external_downloader_package_name_playlist_summary">YTDLnis와 같은 설치된 외부 다운로더 앱 패키지명을 설정하세요.</string>
+    <string name="revanced_external_downloader_package_name_playlist_summary">설치된 외부 다운로더 앱 패키지명을 설정하세요.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Hook buttons, PreferenceCategory: Experimental flags -->
     <string name="revanced_override_youtube_music_button_title">YouTube Music 버튼 재정의하기</string>
     <string name="revanced_override_youtube_music_button_summary_on">YouTube Music 버튼으로 RVX Music을 실행할 수 있습니다.</string>
@@ -739,8 +760,6 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
     <string name="revanced_third_party_youtube_music_package_name_title">RVX Music 앱 패키지명</string>
     <string name="revanced_third_party_youtube_music_package_name_summary">이 기기에 설치된 RVX Music 앱 패키지명을 설정하세요.</string>
     <string name="revanced_third_party_youtube_music_dialog_title">RVX Music</string>
-    <string name="revanced_third_party_youtube_music_not_installed_dialog_title">경고</string>
-    <string name="revanced_third_party_youtube_music_not_installed_warning">%s 이 설치되어 있지 않습니다. 설치하세요.</string>
     <string name="revanced_override_youtube_music_button_about_prerequisite_title">전제 조건</string>
     <string name="revanced_override_youtube_music_button_about_prerequisite_summary">버튼 동작을 재정의하려면 YouTube Music이 필요합니다. 여기를 탭하여 YouTube Music을 다운로드하세요.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Navigation bar -->
@@ -775,7 +794,7 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
 
 알림: 이 설정을 활성화하면 동영상 광고도 강제로 숨겨집니다."</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">만들기 버튼과 알림 버튼의 위치를 교환하지 않습니다.</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"이 설정을 비활성화하면 서버에서 더 많은 광고가 로드될 수 있습니다.
+    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"이 설정을 비활성화하면 서버에서 더 많은 광고가 불러오게 될 수 있습니다.
 
 또한, Shorts에서 광고가 더 이상 숨겨지지 않습니다.
 
@@ -937,9 +956,12 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
 자동재생은 YouTube 설정에서 변경할 수 있습니다:
 설정 → 자동재생 / 재생 → 다음 동영상 자동재생"</string>
     <string name="revanced_disable_auto_switch_mix_playlists_user_dialog_message">이 기능을 활성화하면 자동재생이 켜져 있는 동안에 음악 동영상을 재생하면 YouTube 믹스 재생목록으로 자동전환되지 않습니다.</string>
+    <string name="revanced_disable_chapter_skip_double_tap_title">\'두 번 탭하여 챕터 건너뛰기\' 비활성화하기</string>
+    <string name="revanced_disable_chapter_skip_double_tap_summary_on">두 번 탭하여 다음 / 이전 챕터로 절대 건너뛸 수 없습니다.</string>
+    <string name="revanced_disable_chapter_skip_double_tap_summary_off">두 번 탭하여 다음 / 이전 챕터로 가끔 건너뛸 수 있습니다.</string>
     <string name="revanced_disable_auto_player_popup_panels_title">플레이어 팝업 패널 비활성화하기</string>
-    <string name="revanced_disable_auto_player_popup_panels_summary_on">자동 플레이어 팝업 패널을 비활성화합니다.</string>
-    <string name="revanced_disable_auto_player_popup_panels_summary_off">자동 플레이어 팝업 패널을 활성화합니다.</string>
+    <string name="revanced_disable_auto_player_popup_panels_summary_on">자동 플레이어 팝업 패널을 비활성화합니다:\n실시간 채팅, 재생목록, 태그된 제품, etc.</string>
+    <string name="revanced_disable_auto_player_popup_panels_summary_off">자동 플레이어 팝업 패널을 활성화합니다:\n실시간 채팅, 재생목록, 태그된 제품, etc.</string>
     <string name="revanced_disable_speed_overlay_title">동영상 재생 속도 오버레이 비활성화하기</string>
     <string name="revanced_disable_speed_overlay_summary">"화면을 길게 탭하여 '2배속 &gt;&gt;'을 비활성화합니다.
 
@@ -982,9 +1004,17 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
     <string name="revanced_hide_medical_panel_title">보건 정보 패널 숨기기</string>
     <string name="revanced_hide_medical_panel_summary_on">보건 정보 패널이 숨겨집니다.</string>
     <string name="revanced_hide_medical_panel_summary_off">보건 정보 패널이 표시됩니다.</string>
-    <string name="revanced_hide_seek_message_title">탐색 메시지 숨기기</string>
-    <string name="revanced_hide_seek_message_summary_on">탐색 메시지가 숨겨집니다.</string>
-    <string name="revanced_hide_seek_message_summary_off">탐색 메시지가 표시됩니다.</string>
+    <string name="revanced_hide_seek_message_title">탐색 메시지 숨기기 (폐기 예정)</string>
+    <string name="revanced_hide_seek_message_summary_on">"탐색 메시지가 숨겨집니다.
+
+알림:
+• 이 설정은 서버에서 더 이상 사용되지 않는 것으로 보입니다.
+• 대신 ‘세밀한 탐색 제스처 비활성화하기’ 또는 '탐색 취소 메시지 숨기기'를 사용하세요."</string>
+    <string name="revanced_hide_seek_message_summary_off">"탐색 메시지가 표시됩니다.
+
+알림:
+• 이 설정은 서버에서 더 이상 사용되지 않는 것으로 보입니다.
+• 대신 ‘세밀한 탐색 제스처 비활성화하기’ 또는 '탐색 취소 메시지 숨기기'를 사용하세요."</string>
     <string name="revanced_hide_seek_undo_message_title">탐색 취소 메시지 숨기기</string>
     <string name="revanced_hide_seek_undo_message_summary_on">탐색 취소 메시지가 숨겨집니다.</string>
     <string name="revanced_hide_seek_undo_message_summary_off">탐색 취소 메시지가 표시됩니다.</string>
@@ -1004,7 +1034,7 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
     <string name="revanced_hide_related_videos_title">관련 동영상 숨기기</string>
     <string name="revanced_hide_related_videos_summary_on">관련 동영상이 숨겨집니다.</string>
     <string name="revanced_hide_related_videos_summary_off">관련 동영상이 표시됩니다.</string>
-    <string name="revanced_hide_related_videos_user_dialog_message">"이 설정은 플레이어 화면에서 로드할 수 있는 최대 레이아웃 수를 제한합니다.
+    <string name="revanced_hide_related_videos_user_dialog_message">"이 설정은 플레이어 화면에서 불러올 수 있는 최대 레이아웃 수를 제한합니다.
 
 일부 관련 동영상이 숨겨지지 않거나 동작 바 또는 댓글 섹션과 같은 의도하지 않은 레이아웃이 숨겨지는 경우에 오프셋을 변경하면 문제가 해결될 수 있습니다.
 
@@ -1163,7 +1193,7 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
 
 오디오 트랙 메뉴를 표시하려면:
 1. 설정 - RVX - 기타 - '스트리밍 데이터 변경하기'로 이동하여 'JavaScript 클라이언트 사용하기'를 활성화합니다.
-2. 설정 - RVX - 기타 - '스트리밍 데이터 변경하기'로 이동하여 ‘기본 클라이언트'를 'TV’ 또는 'TV Simply'로 변경합니다."</string>
+2. 설정 - RVX - 기타 - '스트리밍 데이터 변경하기'로 이동하여 ‘기본 클라이언트'를 'TV’로 변경합니다."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">자막 메뉴 숨기기</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">자막 메뉴가 숨겨집니다.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">자막 메뉴가 표시됩니다.</string>
@@ -1445,7 +1475,7 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
     <string name="revanced_whitelist_settings_summary">화이트리스트에 추가된 채널을 확인 또는 제거할 수 있습니다.</string>
     <string name="revanced_whitelist_added">\'%1$s\' 채널을 %2$s 화이트리스트에 추가하였습니다.</string>
     <string name="revanced_whitelist_add_failed">\'%1$s\' 채널을 %2$s 화이트리스트에 추가할 수 없습니다.</string>
-    <string name="revanced_whitelist_reload_video">지금 동영상을 다시 로드하시겠습니까?</string>
+    <string name="revanced_whitelist_reload_video">지금 동영상을 다시 불러오시겠습니까?</string>
     <string name="revanced_whitelist_removed">\'%1$s\' 채널을 %2$s 화이트리스트에서 제거하였습니다.</string>
     <string name="revanced_whitelist_remove_failed">\'%1$s\' 채널을 %2$s 화이트리스트에서 제거할 수 없습니다.</string>
     <string name="revanced_whitelist_remove_dialog_message">\'%1$s\' 채널을 %2$s 화이트리스트에서 제거하시겠습니까?</string>
@@ -1513,7 +1543,7 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
     <string name="revanced_enable_seekbar_thumbnails_high_quality_summary_off">일반 화질 재생바 썸네일을 활성화합니다.</string>
     <string name="revanced_enable_seekbar_thumbnails_high_quality_dialog_message">"이 기능을 활성화하면 재생바 썸네일이 없는 실시간 스트림에서 썸네일이 복원됩니다.
 
-재생바 썸네일이 표시되기 전에 약간의 지연이 발생하고, 더 많은 모바일 데이터가 사용되오니 주의하세요.
+인터넷 데이터 사용량이 더 높아질 수 있으며, 재생바 썸네일이 표시되기 전에 약간의 지연이 발생할 수 있습니다.
 
 이 기능은 인터넷 연결이 매우 좋을 때 가장 잘 작동합니다."</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Video description -->
@@ -1566,8 +1596,8 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
     <string name="revanced_disable_resuming_shorts_player_summary_on">앱 시작 시 Shorts 플레이어를 다시 실행하지 않습니다.</string>
     <string name="revanced_disable_resuming_shorts_player_summary_off">앱 시작 시  Shorts 플레이어를 다시 실행합니다.</string>
     <string name="revanced_hide_shorts_floating_button_title">플로팅 버튼 숨기기</string>
-    <string name="revanced_hide_shorts_floating_button_summary_on">Shorts 패이지에서 플로팅 버튼이 숨겨집니다.</string>
-    <string name="revanced_hide_shorts_floating_button_summary_off">Shorts 패이지에서 플로팅 버튼이 표시됩니다.</string>
+    <string name="revanced_hide_shorts_floating_button_summary_on">Shorts 페이지에서 플로팅 버튼이 숨겨집니다.</string>
+    <string name="revanced_hide_shorts_floating_button_summary_off">Shorts 페이지에서 플로팅 버튼이 표시됩니다.</string>
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts shelves -->
     <string name="revanced_preference_category_shorts_shelf">Shorts 선반</string>
     <string name="revanced_hide_shorts_shelf_title">\'Shorts 선반 숨기기\' 활성화하기</string>
@@ -1772,7 +1802,7 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
     <string name="revanced_enable_shorts_clear_mode_title">화면 클리어 모드 활성화하기</string>
     <string name="revanced_enable_shorts_clear_mode_summary_on">"화면 클리어 모드를 활성화합니다.
 
-Shorts 플레이어 배경을 탭하면 상태바 및 플레이어 구성요소를 숨길 수 있습니다."</string>
+Shorts 플레이어 배경을 탭하는 경우에 UI를 숨길 수 있습니다."</string>
     <string name="revanced_enable_shorts_clear_mode_summary_off">화면 클리어 모드를 비활성화합니다.</string>
     <string name="revanced_hide_shorts_navigation_bar_title">하단바 숨기기</string>
     <string name="revanced_hide_shorts_navigation_bar_summary_on">하단바가 숨겨집니다.</string>
@@ -1877,7 +1907,7 @@ Shorts 플레이어 배경을 탭하면 상태바 및 플레이어 구성요소�
 
 알림:
 • 최대 해상도는 1080p입니다.
-• 동영상 재생 시 VP9보다 더 많은 모바일 데이터가 사용됩니다.
+• 동영상 재생 시 VP9보다 더 많은 인터넷 데이터가 사용됩니다.
 • HDR 동영상에는 여전히 VP9 코덱이 사용됩니다."</string>
     <string name="revanced_disable_vp9_codec_summary_off">동영상 코덱이 VP9으로 결정됩니다.</string>
     <string name="revanced_enable_opus_codec_title">OPUS 코덱 활성화하기</string>
@@ -1989,7 +2019,7 @@ Shorts 플레이어 배경을 탭하면 상태바 및 플레이어 구성요소�
     <string name="revanced_ryd_failure_connection_status_code">싫어요 수를 표시할 수 없습니다 (상태 코드: %d).</string>
     <string name="revanced_ryd_failure_client_rate_limit_requested">싫어요 수를 표시할 수 없습니다 (클라이언트 API 제한 도달).</string>
     <string name="revanced_ryd_failure_generic">싫어요 수를 표시할 수 없습니다 (%s).</string>
-    <string name="revanced_ryd_failure_ryd_enabled_while_playing_video_then_user_voted">Return YouTube Dislike를 사용하여 투표하려면 동영상을 다시 로드하세요.</string>
+    <string name="revanced_ryd_failure_ryd_enabled_while_playing_video_then_user_voted">Return YouTube Dislike를 사용하여 투표하려면 동영상을 다시 불러오세요.</string>
     <string name="revanced_ryd_video_likes_hidden_by_video_owner">숨겨짐</string>
     <!-- PreferenceScreen: Return YouTube Username -->
     <string name="revanced_preference_screen_return_youtube_username_title">Return YouTube Username</string>
@@ -2029,12 +2059,26 @@ API Key를 발급받는 방법을 보려면 여기를 탭하세요."</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button">자동으로 건너뛰기 버튼 숨기기</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_on">건너뛰기 버튼이 몇 초 후에 사라집니다.</string>
     <string name="revanced_sb_enable_auto_hide_skip_segment_button_sum_off">건너뛰기 버튼을 해당 구간이 끝날 때까지 표시합니다.</string>
-    <string name="revanced_sb_general_skiptoast">자동 구간 건너뛰기 메시지 표시하기</string>
-    <string name="revanced_sb_general_skiptoast_sum_on">자동으로 구간을 건너뛸 경우에 팝업 메시지를 표시합니다. 예시를 보려면 여기를 탭하세요.</string>
-    <string name="revanced_sb_general_skiptoast_sum_off">자동으로 구간을 건너뛸 경우에 팝업 메시지를 표시하지 않습니다. 예시를 보려면 여기를 탭하세요.</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration">건너뛰기 버튼 표시 시간</string>
+    <string name="revanced_sb_auto_hide_skip_button_duration_sum">건너뛰기 및 하이라이트로 건너뛰기 버튼이 자동으로 숨겨지기 전까지 표시되는 시간을 지정할 수 있습니다.</string>
+    <string name="revanced_sb_general_skiptoast">건너뛰기 취소 메시지 표시하기</string>
+    <string name="revanced_sb_general_skiptoast_sum_on">구간을 자동으로 건너뛰는 경우에 팝업 메시지를 표시합니다.\n\n팝업 메시지를 탭하여 건너뛰기를 취소할 수 있습니다.</string>
+    <string name="revanced_sb_general_skiptoast_sum_off">팝업 메시지를 표시하지 않습니다.</string>
+    <string name="revanced_sb_toast_on_skip_duration">건너뛰기 취소 메시지 표시 시간</string>
+    <string name="revanced_sb_toast_on_skip_duration_sum">건너뛰기 취소 팝업 메시지가 표시되는 시간을 지정할 수 있습니다.</string>
     <string name="revanced_sb_general_time_without">건너뛸 구간을 제외한 시간 표시하기</string>
-    <string name="revanced_sb_general_time_without_sum_on">건너뛸 구간이 제외된 동영상 길이를 타임스탬프에 표시합니다.</string>
+    <string name="revanced_sb_general_time_without_sum_on">건너뛸 구간이 제외된 동영상 길이를 재생바에 표시합니다.</string>
     <string name="revanced_sb_general_time_without_sum_off">건너뛸 구간이 포함된 동영상 길이를 타임스탬프에 표시합니다.</string>
+    <string name="revanced_sb_duration_1s">1 초</string>
+    <string name="revanced_sb_duration_2s">2 초</string>
+    <string name="revanced_sb_duration_3s">3 초</string>
+    <string name="revanced_sb_duration_4s">4 초</string>
+    <string name="revanced_sb_duration_5s">5 초</string>
+    <string name="revanced_sb_duration_6s">6 초</string>
+    <string name="revanced_sb_duration_7s">7 초</string>
+    <string name="revanced_sb_duration_8s">8 초</string>
+    <string name="revanced_sb_duration_9s">9 초</string>
+    <string name="revanced_sb_duration_10s">10 초</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Change segment behavior -->
     <string name="revanced_sb_diff_segments">각 구간에 설정할 동작</string>
     <string name="revanced_sb_segments_sponsor">스폰서 광고</string>
@@ -2095,7 +2139,6 @@ API Key를 발급받는 방법을 보려면 여기를 탭하세요."</string>
     <string name="revanced_sb_skip_showbutton">건너뛰기 버튼 표시하기</string>
     <string name="revanced_sb_skip_seekbaronly">재생바에만 표시하기</string>
     <string name="revanced_sb_skip_ignore">사용 안 함</string>
-    <string name="revanced_sb_color_opacity_label">불투명도:</string>
     <string name="revanced_sb_color_dot_label">색상:</string>
     <string name="revanced_sb_share_copy_settings_success">설정을 클립보드에 복사하였습니다.</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: Creating new segments -->
@@ -2114,15 +2157,15 @@ API Key를 발급받는 방법을 보려면 여기를 탭하세요."</string>
     <string name="revanced_sb_guidelines_popup_open">보러가기</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: General -->
     <string name="revanced_sb_general">일반</string>
-    <string name="revanced_sb_toast_on_connection_error_title">API 사용 불가 메시지 표시하기</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_on">SponsorBlock을 사용할 수 없을 경우에 팝업 메시지를 표시합니다.</string>
-    <string name="revanced_sb_toast_on_connection_error_summary_off">SponsorBlock을 사용할 수 없을 경우에 팝업 메시지를 표시하지 않습니다.</string>
+    <string name="revanced_sb_toast_on_connection_error">API 사용 불가 메시지 표시하기</string>
+    <string name="revanced_sb_toast_on_connection_error_sum_on">SponsorBlock을 사용할 수 없을 경우에 팝업 메시지를 표시합니다.</string>
+    <string name="revanced_sb_toast_on_connection_error_sum_off">SponsorBlock을 사용할 수 없을 경우에 팝업 메시지를 표시하지 않습니다.</string>
     <string name="revanced_sb_general_skipcount">건너뛴 횟수 기록 활성화하기</string>
     <string name="revanced_sb_general_skipcount_sum_on">구간 건너뛰기를 통해 절약한 시간을 SponsorBlock의 리더보드 시스템에 알려줍니다. 건너뛴 구간에 대한 정보가 서버에 전송됩니다.</string>
     <string name="revanced_sb_general_skipcount_sum_off">건너뛴 횟수 기록을 비활성화합니다.</string>
     <string name="revanced_sb_general_min_duration">건너뛸 최소 구간 길이</string>
     <string name="revanced_sb_general_min_duration_sum">설정한 값(초)보다 작은 구간은 건너뛰지 않으며, 재생바에도 표시되지 않습니다.</string>
-    <string name="revanced_sb_general_min_duration_invalid">잘못된 지속 시간입니다.</string>
+    <string name="revanced_sb_general_min_duration_invalid">잘못된 표시 시간입니다.</string>
     <string name="revanced_sb_general_uuid">비공개 사용자 아이디</string>
     <string name="revanced_sb_general_uuid_sum">비공개 사용자 아이디는 SponsorBlock 서버에서 구간을 제출하거나 건너뛴 구간 정보를 기록하는데 사용되는 고유 아이디입니다. 절대 다른 이에게 공개하지 마세요.</string>
     <string name="revanced_sb_general_uuid_invalid">비공개 사용자 아이디는 30자 이상이어야 합니다.</string>
@@ -2213,7 +2256,7 @@ API Key를 발급받는 방법을 보려면 여기를 탭하세요."</string>
     <string name="revanced_open_links_externally_summary_on">앱 내에서 외부 링크를 열 경우에 외부 브라우저를 사용합니다.</string>
     <string name="revanced_open_links_externally_summary_off">앱 내에서 외부 링크를 열 경우에 내부 브라우저를 사용합니다.</string>
     <string name="revanced_sanitize_sharing_links_title">추적 쿼리를 제거한 링크 공유하기</string>
-    <string name="revanced_sanitize_sharing_links_summary">링크를 공유할 경우에 URL에서 추적 쿼리 매개변수를 제거합니다. (URL의 뒷부분 \'?si=...\' 이 제거됨.)</string>
+    <string name="revanced_sanitize_sharing_links_summary">링크를 공유할 경우에 URL에서 추적 쿼리 매개변수를 제거합니다.</string>
     <string name="revanced_default_app_settings_title">기본 앱 설정 열기</string>
     <string name="revanced_default_app_settings_summary">다른 앱에서 YouTube 링크를 RVX로 열려면 \'지원되는 링크 열기\'를 활성화하고 지원되는 링크를 추가하세요. 링크 추가가 잠겨있다면 순정 YouTube 앱 정보 → \'기본적으로 열기\'에서 \'지원되는 링크 열기\'를 비활성화한 후에 추가할 수 있습니다.</string>
     <string name="gms_core_settings_title">GmsCore 설정 열기</string>
@@ -2258,31 +2301,40 @@ GmsCore 앱 배터리 최적화를 비활성화(제한 없음)하더라도, 배�
     <string name="revanced_debug_logs_disabled">디버그 로깅이 비활성화되어 있습니다.</string>
     <string name="revanced_debug_logs_none_found">로그를 찾을 수 없습니다.</string>
     <string name="revanced_debug_logs_copied_to_clipboard">로그를 복사하였습니다.</string>
+    <string name="revanced_debug_logs_failed_to_copy_to_clipboard">로그가 너무 커서 복사할 수 없습니다.</string>
     <string name="revanced_debug_logs_failed_to_export">로그를 내보낼 수 없습니다: $s.</string>
     <string name="revanced_debug_logs_clear_buffer_title">디버그 로그 지우기</string>
     <string name="revanced_debug_logs_clear_buffer_summary">저장된 모든 RVX 디버그 로그를 지울 수 있습니다.</string>
     <string name="revanced_debug_logs_clear_toast">로그를 지웠습니다.</string>
     <string name="revanced_debug_logs_export_success">로그를 성공적으로 내보냈습니다.</string>
+    <string name="revanced_enable_watch_next_processing_delay_title">다음 시청 처리 지연 활성화하기</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_on">다음 시청 처리 지연을 활성화합니다.</string>
+    <string name="revanced_enable_watch_next_processing_delay_summary_off">다음 시청 처리 지연을 비활성화합니다.</string>
+    <string name="revanced_enable_watch_next_processing_delay_user_dialog_message">"이 설정은 플레이어 UI를 불러오기 전에 지연을 강제합니다.
+
+MainThread에서 무언가를 테스트할 경우에 사용할 수 있습니다."</string>
+    <string name="revanced_watch_next_processing_delay_title">다음 시청 처리 지연</string>
+    <string name="revanced_watch_next_processing_delay_summary">다음 시청 응답 처리할 때의 지연 시간을 지정할 수 있습니다. (밀리초)</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings -->
     <string name="revanced_preference_screen_import_export_title">설정 가져오기 / 내보내기</string>
     <string name="revanced_preference_screen_import_export_summary">RVX 설정을 가져오거나 내보낼 수 있습니다.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as file -->
     <string name="revanced_preference_category_import_export_as_file">파일로 가져오기 / 내보내기</string>
-    <string name="revanced_extended_settings_export_title">설정 내보내기</string>
-    <string name="revanced_extended_settings_export_summary">설정을 파일로 내보낼 수 있습니다.</string>
-    <string name="revanced_extended_settings_import_title">설정 가져오기</string>
-    <string name="revanced_extended_settings_import_summary">설정을 저장된 파일에서 가져올 수 있습니다.</string>
+    <string name="revanced_settings_export_title">설정 내보내기</string>
+    <string name="revanced_settings_export_summary">설정을 파일로 내보낼 수 있습니다.</string>
+    <string name="revanced_settings_import_title">설정 가져오기</string>
+    <string name="revanced_settings_import_summary">설정을 저장된 파일에서 가져올 수 있습니다.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Import / Export settings, PreferenceCategory: Import / Export as text -->
     <string name="revanced_preference_category_import_export_as_text">텍스트로 가져오기 / 내보내기</string>
-    <string name="revanced_extended_settings_import_export_as_text_title">텍스트로 가져오기 / 내보내기</string>
-    <string name="revanced_extended_settings_import_export_as_text_summary">설정을 텍스트로 가져오거나 내보낼 수 있습니다.</string>
-    <string name="revanced_extended_settings_export_failed">설정을 내보낼 수 없습니다.</string>
-    <string name="revanced_extended_settings_export_success">설정을 성공적으로 내보냈습니다.</string>
-    <string name="revanced_extended_settings_import">가져오기</string>
-    <string name="revanced_extended_settings_import_copy">복사하기</string>
-    <string name="revanced_extended_settings_import_failed">설정을 가져올 수 없습니다.</string>
-    <string name="revanced_extended_settings_import_reset">설정을 기본값으로 초기화합니다.</string>
-    <string name="revanced_extended_settings_import_success">설정을 성공적으로 가져왔습니다.</string>
+    <string name="revanced_settings_import_export_as_text_title">텍스트로 가져오기 / 내보내기</string>
+    <string name="revanced_settings_import_export_as_text_summary">설정을 텍스트로 가져오거나 내보낼 수 있습니다.</string>
+    <string name="revanced_settings_export_failed">설정을 내보낼 수 없습니다.</string>
+    <string name="revanced_settings_export_success">설정을 성공적으로 내보냈습니다.</string>
+    <string name="revanced_settings_import">가져오기</string>
+    <string name="revanced_settings_import_copy">복사하기</string>
+    <string name="revanced_settings_import_failed">설정을 가져올 수 없습니다.</string>
+    <string name="revanced_settings_import_reset">설정을 기본값으로 초기화합니다.</string>
+    <string name="revanced_settings_import_success">설정을 성공적으로 가져왔습니다.</string>
     <string name="revanced_share_copy_settings_success">설정을 클립보드에 복사하였습니다.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <string name="revanced_preference_screen_spoof_streaming_data_title">스트리밍 데이터 변경하기</string>
@@ -2298,31 +2350,43 @@ YouTube Premium 사용자라면 이 설정이 필요하지 않을 수 있습니�
 <small>(로그인이 요구됨)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
 <small>(인증 없음)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
+<small>(인증, 작업이 필요함)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
 <small>(구형, 인증 없음)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
 <small>(개발 중, 인증 없음)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
+<small>(PoToken 없음)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(미출시, 인증 없음)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">변경에 따른 부작용</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• 오디오 트랙 메뉴가 표시되지 않습니다.
+• 강제 사용이 설정된 자동 오디오 트랙을 비활성화할 수 없습니다.
 • 안정적인 볼륨을 사용할 수 없습니다.
 • 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다.
-• 1080p+, AV1 그리고 HDR 동영상이 지원되지 않습니다."</string>
+• 1080p+, AV1 그리고 HDR 동영상은 지원되지 않습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• 오디오 트랙 메뉴가 표시되지 않습니다.
+• 안정적인 볼륨을 사용할 수 없습니다.
+• 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• 오디오 트랙 메뉴가 표시되지 않습니다.
+• 강제 사용이 설정된 오디오 트랙을 비활성화할 수 없습니다.
 • 안정적인 볼륨을 사용할 수 없습니다.
 • 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1이 지원되지 않습니다.
 • 동영상이 1:00에 멈출 수 있으며, 일부 지역에서는 이용이 불가능할 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• 오디오 트랙 메뉴가 표시되지 않습니다.
 • 복호화에 실패하면 재생이 실패할 수 있습니다.
-• 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 다시 로드 버튼을 탭해야 합니다.
+• 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 새로고침 버튼을 탭해야 합니다.
 • 동영상이 늦게 시작될 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• 복호화에 실패하면 재생이 실패할 수 있습니다.
-• 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 다시 로드 버튼을 탭해야 합니다.
+• 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 새로고침 버튼을 탭해야 합니다.
+• 동영상이 늦게 시작될 수 있습니다."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• 복호화에 실패하면 재생이 실패할 수 있습니다.
+• 일부 계정은 PoToken이 필요할 수 있으며, 이 경우에 재생이 실패합니다.
+• 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 새로고침 버튼을 탭해야 합니다.
 • 동영상이 늦게 시작될 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• 오디오 트랙 메뉴가 표시되지 않습니다.
 • 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다.
@@ -2362,30 +2426,66 @@ VP9은 AVC보다 고급 코덱이지만, 일부 사용자는 '360p VP9'보다 '1
 • 720p VP9
 
 → 1080p VP9가 사용됩니다."</string>
-    <string name="revanced_spoof_streaming_data_reload_video_button_title">동영상 다시 로드 버튼 표시하기</string>
-    <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">동영상 다시 로드 버튼이 표시됩니다.</string>
-    <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">동영상 다시 로드 버튼이 숨겨집니다.</string>
-    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_title">동영상 다시 로드 버튼 항상 표시하기</string>
-    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_on">동영상 다시 로드 버튼을 항상 표시합니다.</string>
-    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_off">동영상 다시 로드 버튼이 버퍼링이 발생하는 동안에만 표시됩니다.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_title">동영상 새로고침 버튼 표시하기</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_summary_on">동영상 새로고침 버튼이 표시됩니다.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_summary_off">동영상 새로고침 버튼이 숨겨집니다.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_title">동영상 새로고침 버튼 항상 표시하기</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_on">동영상 새로고침 버튼이 항상 표시됩니다.</string>
+    <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_off">동영상 새로고침 버튼이 버퍼링이 발생하는 동안에만 표시됩니다.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">전문 통계에서 표시하기</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">스트리밍 데이터를 가져오는 데 사용되는 클라이언트가 전문 통계에서 표시됩니다.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">스트리밍 데이터를 가져오는 데 사용되는 클라이언트가 전문 통계에서 숨겨집니다.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">클라이언트 스트림을 가져올 수 없습니다.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">기본 클라이언트를 TV 또는 TV Simply로 변경해 보세요.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">기본 클라이언트를 TV로 변경해 보세요.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_title">VR AV1 비활성화하기</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_on">동영상 코덱이 AVC (H.264) 또는 VP9으로 결정됩니다.</string>
-    <string name="revanced_spoof_streaming_data_vr_disable_av1_summary_off">동영상 코덱이 자동으로 결정됩니다.</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">VR AV1 활성화하기</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"동영상 코덱이 AVC(H.264), VP9 또는 AV1으로 결정됩니다.
+
+동영상 재생이 끊기거나 프레임이 손실될 수 있습니다."</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">동영상 코덱이 AVC (H.264) 또는 VP9으로 결정됩니다.</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"이 설정을 활성화하면, 소프트웨어 AV1 디코딩이 사용될 수 있습니다.
+
+동영상 재생이 끊기거나 프레임이 손실될 수 있습니다."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Android VR 인증에 대한 정보</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">인증 토큰을 받는 방법을 보려면 여기를 탭하세요.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">인증 토큰 받기</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Android VR을 위한 인증 토큰을 받으려면 활성화 코드를 사용하여 YouTube VR에 로그인해야 합니다:
+
+1. '활성화 코드 받기'를 탭하여 활성화 코드를 생성합니다.
+2. '웹사이트 열기'를 탭하여 'https://yt.be/activate'로 이동합니다.
+3. 활성화 코드를 입력합니다.
+4. 로그인을 요청하면 로그인합니다. 여러 Google 계정이 있는 경우에는 YouTube에서 사용하는 계정을 선택합니다. 이미 로그인된 상태라면 다음 단계로 건너뜁니다.
+5. 로그인 후에 RVX로 돌아가서 'Android VR 인증에 대한 정보'를 다시 탭합니다.
+6. '인증 토큰 받기'를 탭하여 인증 토큰을 받습니다.
+
+※ 인증 토큰 또는 활성화 코드를 삭제하려면 '초기화'를 탭하세요."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">활성화 코드 받기</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">인증 토큰 받기</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">초기화</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">인증 토큰과 활성화 코드를 초기화하였습니다.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">인증 토큰을 저장하였습니다.</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">활성화 코드</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"활성화 코드:
+%s
+
+1. '웹사이트 열기'를 탭하여 'https://yt.be/activate'로 이동합니다.
+2. 활성화 코드를 입력합니다.
+3. 로그인을 요청하면 로그인합니다. 여러 Google 계정이 있는 경우에는 YouTube에서 사용하는 계정을 선택합니다. 이미 로그인된 상태라면 다음 단계로 건너뜁니다.
+4. 로그인 후에 RVX로 돌아가서 'Android VR 인증에 대한 정보'를 다시 탭합니다.
+5. '인증 토큰 받기'를 탭하여 인증 토큰을 받습니다."</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">웹사이트 열기</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">활성화 코드를 클립보드에 복사하였습니다: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">인증 없음</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">기본 오디오 스트림 언어</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">특정 오디오 스트림 언어를 선택하려면, \'강제된 자동 오디오 트랙 비활성화하기\'를 끄세요.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">기본 오디오 스트림 언어는 %s에서 선택할 수 없습니다.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">오디오 트랙 버튼 표시하기</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"오디오 트랙 버튼이 스트리밍 데이터를 가져오는 데 사용되는 클라이언트가 ‘Android VR’, ‘Mobile Web’ 또는 'visionOS'일 때 표시됩니다."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">오디오 트랙 버튼이 표시되지 않습니다.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"전제 조건:
-• 스트리밍 데이터를 가져오는 데 사용되는 클라이언트가 'Android VR', 'Mobile Web', 'iPadOS' 또는 'visionOS'로 선택되어야 합니다.
+• 스트리밍 데이터를 가져오는 데 사용되는 클라이언트가 'Android VR', 'Mobile Web' 또는 'visionOS'로 선택되어야 합니다.
 • 다양한 오디오 트랙이 포함된 동영상을 재생되어야 합니다.
 
 알려진 문제:
@@ -2403,11 +2503,11 @@ VP9은 AVC보다 고급 코덱이지만, 일부 사용자는 '360p VP9'보다 '1
 
 때때로 n-sig 패턴 디코딩이 실패하여 동영상 시작이 지연되거나 동영상 스트림이 끊길 수 있습니다.
 
-플레이어의 '동영상 다시 로드 버튼'을 클릭하여 동영상을 다시 로드하면 이 문제를 쉽게 해결할 수 있습니다.
+플레이어의 '동영상 새로고침 버튼'을 탭하여 동영상을 다시 불러오게 되면 이 문제를 쉽게 해결할 수 있습니다.
 
-(전제 조건: '동영상 다시 로드 버튼 표시하기'와 '동영상 다시 로드 버튼 항상 표시하기'가 모두 활성화된 상태)
+(전제 조건: '동영상 새로고침 버튼 표시하기'와 '동영상 새로고침 버튼 항상 표시하기'가 모두 활성화된 상태)
 
-JavaScript 클라이언트 중에서 권장되는 클라이언트는 TV Simply입니다."</string>
+JavaScript 클라이언트 중에서 권장되는 클라이언트는 TV입니다."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">모든 동영상에 JavaScript 클라이언트 사용하기</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"JavaScript 클라이언트가 동영상 유형에 관계없이 사용됩니다.
 
@@ -2417,19 +2517,26 @@ JavaScript 클라이언트 중에서 권장되는 클라이언트는 TV Simply�
 • 피드에서 자동재생
 • 클립
 • Shorts"</string>
-    <string name="revanced_spoof_streaming_data_use_latest_js_title">최신 JavaScript 사용하기</string>
-    <string name="revanced_spoof_streaming_data_use_latest_js_summary_on">"복호화를 위한 JavaScript가 최신 상태로 유지됩니다.
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_title">yt-dlp ejs 사용하기 (개발 중)</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_on">"yt-dlp를 위한 외부 JavaScript (yt-dlp-ejs)를 사용합니다.
 
-• 이는 서버에 따라 크게 달라지며, 복호화의 성공 여부는 현재 서버에서 사용되는 JavaScript에 따라 달라집니다."</string>
-    <string name="revanced_spoof_streaming_data_use_latest_js_summary_off">"복호화를 위한 JavaScript가 최신 상태로 유지되지 않습니다.
+• 복호화를 위한 플레이어 JavaScript가 최신 상태로 유지됩니다.
+• 동영상 재생 시작까지 5~15초가 소요될 수 있습니다."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_off">"SmartTube 추출기를 사용합니다.
 
-• 복호화에 성공한 JavaScript가 사용되지만 여전히 서버에 따라 다소 달라질 수 있습니다."</string>
+• 복호화를 위한 플레이어 JavaScript가 최신 상태로 유지되지 않습니다.
+• 가까운 시일 내에 서버에서 이 기능이 지원 중단될 예정입니다."</string>
+    <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_user_dialog_message">"YouTube의 새로운 조치로 인하여 최신 플레이어 JavaScript에서 일반적인 방법으로 스트리밍 URL을 복호화하는 것이 더 이상 불가능합니다.
+
+최신 플레이어 JavaScript에서 스트리밍 URL을 복호화하기 위하여 yt-dlp를 위한 외부 JavaScript (yt-dlp-ejs)가 사용됩니다.
+
+현재 개발 중이며, 더 많은 하드웨어 리소스를 사용할 예정입니다."</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_title">페이크 버퍼링 우회하기</string>
-    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"'페이크 버퍼링 우회하기'를 활성화합니다.
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_on">"페이크 버퍼링를 우회합니다.
 
 제한 사항:
 • 서버 측 변경으로 인하여 언제든지 작동이 중단될 수 있습니다."</string>
-    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_off">\'페이크 버퍼링 우회하기\'를 비활성화합니다.</string>
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_summary_off">페이크 버퍼링를 우회하지 않습니다.</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_title">페이크 버퍼링에 대한 정보</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_summary">자세한 정보를 보려면 여기를 탭하세요.</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_title">"YouTube의 새로운 광고 차단 방지 조치"</string>

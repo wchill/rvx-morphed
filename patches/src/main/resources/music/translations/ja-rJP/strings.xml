@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX</string>
-    <string name="revanced_extended_reset_to_default_toast">デフォルト値にリセット。</string>
     <!-- Shared Category -->
-    <string name="revanced_extended_restart_first_run">再起動してレイアウトを正常に読み込みます</string>
-    <string name="revanced_extended_restart_message">再起動して更新</string>
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">アカウント</string>
     <string name="revanced_hide_account_menu_title">アカウントメニューを非表示</string>
@@ -399,6 +395,8 @@ API キーの発行方法については、ここをタップしてください�
     <string name="revanced_sb_segments_intro_sum">本編ではない部分。一時停止、静止画面、アニメーションの繰り返しが含まれます。情報を含んだ転換画面は含まれません。</string>
     <string name="revanced_sb_segments_outro">エンドカード / クレジット</string>
     <string name="revanced_sb_segments_outro_sum">クレジットや動画のエンドカードが表示されている場面。情報を含む結論は含まれません。</string>
+    <string name="revanced_sb_segments_hook">フック / 挨拶</string>
+    <string name="revanced_sb_segments_hook_sum">今後の動画のナレーション付きの予告編、および開幕と別れの挨拶。重複しない内容や情報を追加する場面は含まれません。</string>
     <string name="revanced_sb_segments_preview">予告 / 要約 / フック</string>
     <string name="revanced_sb_segments_preview_sum">この動画やシリーズの他の動画で起きた、または今後起きる内容などをまとめたクリップのコレクション。すべての情報は、別の場所で繰り返し表示されます。</string>
     <string name="revanced_sb_segments_filler">繋ぎの話 / 冗談</string>
@@ -412,6 +410,7 @@ API キーの発行方法については、ここをタップしてください�
     <string name="revanced_sb_skipped_intro_middle">休憩をスキップしました。</string>
     <string name="revanced_sb_skipped_intro_end">休憩をスキップしました。</string>
     <string name="revanced_sb_skipped_outro">アウトロをスキップしました。</string>
+    <string name="revanced_sb_skipped_hook">フックをスキップしました。</string>
     <string name="revanced_sb_skipped_preview_beginning">予告をスキップしました。</string>
     <string name="revanced_sb_skipped_preview_middle">予告をスキップしました。</string>
     <string name="revanced_sb_skipped_preview_end">要約をスキップしました。</string>
@@ -433,19 +432,6 @@ API キーの発行方法については、ここをタップしてください�
     <string name="revanced_sb_about_api">sponsor.ajay.app</string>
     <!-- PreferenceScreen: Miscellaneous -->
     <string name="revanced_preference_screen_misc_title">その他</string>
-    <string name="revanced_extended_settings_import_export_title">設定のインポート/エクスポート</string>
-    <string name="revanced_extended_settings_import_export_summary">設定をテキストとしてインポート/エクスポートします。</string>
-    <string name="revanced_extended_settings_export_as_file">設定をファイルにエクスポート</string>
-    <string name="revanced_extended_settings_import_as_file">ファイルから設定をインポート</string>
-    <string name="revanced_extended_settings_import_export_as_text">テキストとしてインポート/エクスポート</string>
-    <string name="revanced_extended_settings_export_failed">設定のエクスポートに失敗しました。</string>
-    <string name="revanced_extended_settings_export_success">設定は正常にエクスポートされました。</string>
-    <string name="revanced_extended_settings_import">インポート</string>
-    <string name="revanced_extended_settings_import_copy">コピー</string>
-    <string name="revanced_extended_settings_import_failed">インポートに失敗: %s</string>
-    <string name="revanced_extended_settings_import_reset">設定をデフォルトにリセットしました。</string>
-    <string name="revanced_extended_settings_import_success">%d の設定をインポートしました。</string>
-    <string name="revanced_extended_settings_reset">リセット</string>
     <string name="revanced_share_copy_settings_success">設定をクリップボードにコピーしました。</string>
     <string name="revanced_bypass_image_region_restrictions_title">画像表示の地域制限を回避</string>
     <string name="revanced_bypass_image_region_restrictions_summary">プレイリストのサムネイルやチャンネルアバターなどを受信できるように、一部の地域でブロックされているドメインを置き換えます。</string>
@@ -472,6 +458,18 @@ API キーの発行方法については、ここをタップしてください�
     <string name="revanced_debug_spannable_summary">デバッグログにSpannableを含めます。</string>
     <string name="revanced_sanitize_sharing_links_title">共有リンクのクリーンアップ</string>
     <string name="revanced_sanitize_sharing_links_summary">リンクを共有する際に、URL からトラッキングクエリパラメーターを削除します。</string>
+    <string name="revanced_spoof_streaming_data_title">ストリーミングデータを偽装</string>
+    <string name="revanced_spoof_streaming_data_summary">"クライアントの動画ストリームを偽装し再生の問題を防止します。
+
+YouTube Premiumを利用の場合この設定は不要かもしれません。"</string>
+    <string name="revanced_spoof_streaming_data_default_client_title">デフォルトのクライアント</string>
+    <string name="revanced_spoof_streaming_data_default_client_summary">偽装するデフォルトのクライアントを定義します。</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobile Web</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
+    <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_watch_history_type_title">再生履歴の種類</string>
     <string name="revanced_watch_history_type_summary">"・オリジナル：　Google アカウントの視聴履歴設定に従いますが、DNSやVPNにより視聴履歴が機能しない場合があります。
 ・ドメインを置き換えます：　 Google アカウントの視聴履歴設定に従います。

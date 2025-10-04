@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Shared -->
-    <string name="revanced_extended_settings_title">RVX</string>
-    <string name="revanced_extended_reset_to_default_toast">Atur ulang ke nilai default.</string>
     <!-- Shared Category -->
-    <string name="revanced_extended_restart_first_run">Mulai ulang untuk memuat tata letak secara normal</string>
-    <string name="revanced_extended_restart_message">Segarkan dan mulai ulang</string>
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">Akun</string>
     <string name="revanced_hide_account_menu_title">Sembunyikan menu akun</string>
@@ -419,19 +415,6 @@ Klik untuk melihat cara menerbitkan kunci API."</string>
     <string name="revanced_sb_about_api">sponsor.ajay.app</string>
     <!-- PreferenceScreen: Miscellaneous -->
     <string name="revanced_preference_screen_misc_title">Lain-lain</string>
-    <string name="revanced_extended_settings_import_export_title">Ekspor / Impor</string>
-    <string name="revanced_extended_settings_import_export_summary">Impor / Ekspor pengaturan Musik RVX.</string>
-    <string name="revanced_extended_settings_export_as_file">Ekspor pengaturan ke berkas</string>
-    <string name="revanced_extended_settings_import_as_file">Impor pengaturan dari berkas</string>
-    <string name="revanced_extended_settings_import_export_as_text">Impor / Ekspor pengaturan sebagai teks</string>
-    <string name="revanced_extended_settings_export_failed">Gagal mengekspor pengaturan.</string>
-    <string name="revanced_extended_settings_export_success">Pengaturan berhasil diekspor.</string>
-    <string name="revanced_extended_settings_import">Impor</string>
-    <string name="revanced_extended_settings_import_copy">Salin</string>
-    <string name="revanced_extended_settings_import_failed">Impor gagal: %s.</string>
-    <string name="revanced_extended_settings_import_reset">Pengaturan diatur ulang ke bawaan.</string>
-    <string name="revanced_extended_settings_import_success">Setelan %d diimpor.</string>
-    <string name="revanced_extended_settings_reset">Atur ulang</string>
     <string name="revanced_share_copy_settings_success">Setelan disalin ke papan klip.</string>
     <string name="revanced_bypass_image_region_restrictions_title">Abaikan pembatasan wilayah gambar</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Mengabaikan domain yang diblokir di beberapa wilayah sehingga thumbnail playlist, avatar saluran, dll. dapat diterima.</string>

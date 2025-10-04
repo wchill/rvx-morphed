@@ -2,8 +2,6 @@
 <resources>
     <!-- Shared -->
     <!-- Shared Category -->
-    <string name="revanced_extended_restart_first_run">Start opnieuw op om de lay-out normaal te laden</string>
-    <string name="revanced_extended_restart_message">Vernieuwen en opnieuw opstarten</string>
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">Rekening</string>
     <string name="revanced_hide_account_menu_title">Accountmenu verbergen</string>
@@ -164,18 +162,6 @@ Bekende problemen:
     <!-- PreferenceScreen: Return YouTube Username -->
     <!-- PreferenceScreen: SponsorBlock -->
     <!-- PreferenceScreen: Miscellaneous -->
-    <string name="revanced_extended_settings_import_export_title">Importeren / exporteren</string>
-    <string name="revanced_extended_settings_import_export_summary">Importeer / Exporteer instellingen</string>
-    <string name="revanced_extended_settings_export_as_file">Instellingen exporteren naar bestand</string>
-    <string name="revanced_extended_settings_import_as_file">Instellingen importeren uit bestand</string>
-    <string name="revanced_extended_settings_import_export_as_text">Importeer / exporteer instellingen als tekst</string>
-    <string name="revanced_extended_settings_export_failed">Instellingen exporteren mislukt.</string>
-    <string name="revanced_extended_settings_export_success">Instellingen zijn succesvol geëxporteerd.</string>
-    <string name="revanced_extended_settings_import">Importeer</string>
-    <string name="revanced_extended_settings_import_copy">Kopiëer</string>
-    <string name="revanced_extended_settings_import_failed">Importeren mislukt: %s.</string>
-    <string name="revanced_extended_settings_import_reset">Instellingen teruggezet naar standaard</string>
-    <string name="revanced_extended_settings_import_success">Geïmporteerde %d instellingen</string>
     <string name="revanced_share_copy_settings_success">Instellingen naar het klembord gekopieerd.</string>
     <string name="revanced_sanitize_sharing_links_title">Koppelingen delen</string>
     <string name="revanced_sanitize_sharing_links_summary">Verwijdert tracking query parameters uit de URL\'s bij het delen van links.</string>
