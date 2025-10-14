@@ -2002,6 +2002,11 @@ Adjust volume by swiping vertically on the right side of the screen."</string>
     <string name="revanced_enable_swipe_to_switch_video_title">Enable swipe to change video</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_on">Swiping up / down in fullscreen mode will change to the next / previous video.</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_off">Swiping up / down in fullscreen mode will not change to the next / previous video.</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_title">Fix swipe controls tap and hold speed</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_on">"Tap and hold speed is only activated when the user taps and holds.
+
+Known issue: Sometimes the swipe overlay appears before switching to fullscreen mode."</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_off">Tap and hold speed may sometimes be activated even if the user does not tap and hold.</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">Auto</string>
 
 
