@@ -1894,6 +1894,11 @@ Dostosuj głośność, przesuwając pionowo po prawej stronie ekranu."</string>
     <string name="revanced_enable_swipe_to_switch_video_title">Gest zmiany filmu przesunięciem w górę lub dół</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_on">Włączony</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_off">Wyłączony</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_title">Naprawa sterowania prędkością odtwarzania przesunięciem</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_on">"Włączona
+
+Znany problem: czasem nakładka prędkości odtwarzania pojawia się przed przełączeniem do trybu pełnoekranowego."</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_off">Wyłączona</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">Automatyczna</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Filmy</string>
@@ -2452,7 +2457,7 @@ Podczas odtwarzania film może się zacinać lub pomijać klatki."</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Uzyskaj token uwierzytelniający</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"By uzyskać token uwierzytelniający dla Android VR, należy zalogować się do YouTube VR za pomocą kodu aktywacyjnego:
 
-1. Kliknij `Uzyskaj token uwierzytelniający', by wygenerować kod aktywacyjny
+1. Kliknij 'Uzyskaj token uwierzytelniający', by wygenerować kod aktywacyjny
 2. Kliknij 'Otwórz stronę', aby przejść do 'https://yt.be/activate'
 3. Wprowadź kod aktywacyjny
 4. Zaloguj się, gdy pojawi się monit. Jeśli masz wiele kont Google, użyj tego, którego używasz w YouTube. Jeśli jesteś już zalogowany, przejdź do następnego kroku

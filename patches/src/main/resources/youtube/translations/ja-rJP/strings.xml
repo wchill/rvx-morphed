@@ -1889,6 +1889,11 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_enable_swipe_to_switch_video_title">スワイプでの動画の切り替えを有効化</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_on">全画面表示時に、上/下にスワイプして次の動画/前の動画に切り替えられるようにします。</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_off">全画面表示時に、上/下にスワイプして次の動画/前の動画に切り替えられるようにします。</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_title">動画を長押しして倍速する際のバグを修正</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_on">"「動画を長押ししていない場合でも倍速再生が有効になる可能性がある」というバグを修正します。
+
+既知の問題: 全画面表示に切り替える前にスワイプオーバーレイが表示される可能性があります。"</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_off">「動画を長押ししていない場合でも倍速再生が有効になる可能性がある」というバグを修正します。\n\n既知の問題: 全画面表示に切り替える前にスワイプオーバーレイが表示される可能性があります。</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">自動</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">動画</string>

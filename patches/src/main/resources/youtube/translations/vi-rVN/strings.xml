@@ -30,7 +30,7 @@
 • Nhấn Enter để lưu từ khoá vào lịch sử tìm kiếm.
 • Tìm kiếm không phân biệt viết hoa và dấu câu.
 • Các cài đặt lớn sẽ xuất hiện trên các cài đặt nhỏ bị vô hiệu hoá."</string>
-    <string name="revanced_settings_search_empty_history_title">Lịch sử tìm kiếm trống</string>
+    <string name="revanced_settings_search_empty_history_title">Lịch sử tìm kiếm đang trống</string>
     <string name="revanced_settings_search_empty_history_summary">Để lưu lịch sử tìm kiếm, hãy nhập từ khoá và ấn Enter.</string>
     <string name="revanced_settings_search_history_title">Lịch sử tìm kiếm cài đặt</string>
     <string name="revanced_settings_search_history_summary_on">Lịch sử tìm kiếm cài đặt đã được hiển thị.</string>
@@ -116,7 +116,7 @@ Mô tả
     <string name="revanced_webview_visitor_data">Dữ liệu khách</string>
     <string name="revanced_webview_intent_clear_cookies_on_startup">Dọn dẹp Cookie khi khởi động</string>
     <string name="revanced_webview_intent_clear_cookies_on_shutdown">Dọn dẹp Cookie khi thoát ứng dụng</string>
-    <string name="revanced_webview_intent_use_desktop_user_agent">Dùng Tác nhân người dùng máy tính để bàn</string>
+    <string name="revanced_webview_intent_use_desktop_user_agent">Dùng User-Agent của máy tính</string>
     <string name="revanced_webview_copy">Sao chép</string>
     <string name="revanced_webview_toast_copy_success">Đã sao chép %s vào bảng nhớ tạm.</string>
     <string name="revanced_webview_toast_empty">%s trống.</string>
@@ -243,7 +243,7 @@ Mô tả
     <string name="revanced_hide_creator_store_shelf_summary_off">Kệ cửa hàng của nhà sáng tạo bên dưới video được hiển thị.</string>
     <string name="revanced_hide_end_screen_store_banner_title">Ẩn biểu ngữ cửa hàng ở màn hình kết thúc</string>
     <string name="revanced_hide_end_screen_store_banner_summary_on">Biểu ngữ cửa hàng ở màn hình kết thúc đã ẩn.</string>
-    <string name="revanced_hide_end_screen_store_banner_summary_off">Biểu ngữ cửa hàng ở màn hình kết thúc được hiển thị.</string>
+    <string name="revanced_hide_end_screen_store_banner_summary_off">Biển hiệu cửa hàng ở màn hình kết thúc được hiển thị.</string>
     <string name="revanced_hide_fullscreen_ads_title">Ẩn quảng cáo toàn màn hình</string>
     <string name="revanced_hide_fullscreen_ads_summary_on">Quảng cáo toàn màn hình đã ẩn.</string>
     <string name="revanced_hide_fullscreen_ads_summary_off">Quảng cáo toàn màn hình được hiển thị.</string>
@@ -561,7 +561,7 @@ Hạn chế: Nút Quay lại trên thanh công cụ có thể không hoạt đ�
 
 Tính năng này có thể không hoạt động với một số người dùng, nếu bạn trong số đó:
 1. Đi tới Cài đặt - RVX - Khác - Giả mạo dữ liệu phát video, và bật \"Giả mạo JavaScript\".
-2. Đi tới Cài đặt - RVX - Khác - Giả mạo dữ liệu phát video, và chuyển \"Client mặc định\" sang TV."</string>
+2. Đi tới Cài đặt - RVX - Khác - Giả mạo dữ liệu phát video, và chuyển \"Ứng dụng khách mặc định\" sang TV."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">Tự động phát bản âm thanh khi phát video có bản âm thanh đã bật.</string>
     <string name="revanced_disable_auto_captions_title">Tắt tự động hiển thị phụ đề</string>
     <string name="revanced_disable_auto_captions_summary_on">Tự động hiển thị phụ đề khi phát video có phụ đề đã tắt.</string>
@@ -1186,7 +1186,7 @@ Hạn chế: Các bình luận chữ xanh không dùng kiểu chữ mặc địn
 
 Để hiện mục bản âm thanh:
 1. Đi tới Cài đặt → RVX → Khác → Giả mạo dữ liệu phát video, và bật \"Giả mạo JavaScript\".
-2. Đi tới Cài đặt → RVX → Khác → Giả mạo dữ liệu phát video, và chuyển \"Client mặc định\" sang TV."</string>
+2. Đi tới Cài đặt → RVX → Khác → Giả mạo dữ liệu phát video, và chuyển \"Ứng dụng khách mặc định\" sang TV."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Ẩn mục Phụ đề</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Mục Phụ đề đã ẩn.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Mục Phụ đề được hiển thị.</string>
@@ -1886,6 +1886,11 @@ Không còn lề trên và dưới trong trình phát."</string>
     <string name="revanced_enable_swipe_to_switch_video_title">Vuốt để chuyển video</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_on">Vuốt lên hoặc xuống trong chế độ toàn màn hình sẽ phát video tiếp theo/trước đó.</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_off">Vuốt lên hoặc xuống trong chế độ toàn màn hình sẽ không phát video tiếp theo/trước đó.</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_title">Sửa tốc độ nhấn và giữ khi vuốt điều khiển</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_on">"Tốc độ nhấn và giữ chỉ được kích hoạt khi bạn thực sự nhấn và giữ.
+
+Hạn chế: Đôi khi lớp phủ vuốt hiển thị trước khi chuyển sang chế độ toàn màn hình."</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_off">Đôi khi tốc độ nhấn và giữ vẫn kích hoạt ngay cả khi bạn không thực sự nhấn và giữ.</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">Tự động</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Video</string>
@@ -2339,7 +2344,7 @@ Có thể sử dụng để thử nghiệm gì đó trên MainThread."</string>
 Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết phải bật cài đặt này."</string>
     <string name="revanced_spoof_streaming_data_summary_off">"Dữ liệu phát chưa được giả mạo. Khi phát video có thể gặp lỗi đứng hình."</string>
     <string name="revanced_spoof_streaming_data_user_dialog_message">Tắt cài đặt này có thể gây ra lỗi khi phát video.</string>
-    <string name="revanced_spoof_streaming_data_default_client_title">Client mặc định</string>
+    <string name="revanced_spoof_streaming_data_default_client_title">Ứng dụng khách mặc định</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio
 <small>(Yêu cầu Đăng nhập)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
@@ -2384,7 +2389,7 @@ Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết
 • Video có thể bắt đầu trễ hơn."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Thiếu mục bản âm thanh.
 • Video dành cho trẻ em có thể không phát được khi bạn đã đăng xuất hoặc bật chế độ ẩn danh.
-• Vì đây là client chưa phát hành, nên nó có thể ngừng hoạt động bất cứ lúc nào."</string>
+• Vì đây là ứng dụng khách chưa phát hành, nên nó có thể ngừng hoạt động bất cứ lúc nào."</string>
     <string name="revanced_spoof_streaming_data_side_effects_unknown">• Không rõ</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Ưu tiên chất lượng video</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_summary_on">Chất lượng video được ưu tiên.</string>
@@ -2423,10 +2428,10 @@ Ví dụ 2:
     <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_on">Nút tải lại video luôn được hiển thị.</string>
     <string name="revanced_spoof_streaming_data_reload_video_button_always_show_summary_off">Nút tải lại video chỉ hiển thị khi video bị đứng và đang tải (hoạt ảnh chờ đang hiển thị).</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_title">Hiển thị trong Thống kê chi tiết</string>
-    <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Client dùng để lấy dữ liệu phát được hiển thị trong Thống kê chi tiết.</string>
-    <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Client dùng để lấy dữ liệu phát đã ẩn trong Thống kê chi tiết.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden">Không truy xuất được luồng phát từ client đã chọn.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Hãy thử chuyển client mặc định sang TV.</string>
+    <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Ứng dụng khách dùng để lấy dữ liệu phát được hiển thị trong Thống kê chi tiết.</string>
+    <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Ứng dụng khách dùng để lấy dữ liệu phát đã ẩn trong Thống kê chi tiết.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden">Không truy xuất được luồng phát từ ứng dụng khách đã chọn.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Hãy thử chuyển ứng dụng khách mặc định sang TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Kích hoạt AV1 trên VR</string>
@@ -2472,10 +2477,10 @@ Có thể gặp hiện tượng giật lag hoặc tụt fps khi phát video."</s
     <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Để chọn ngôn ngữ luồng âm thanh, hãy tắt \"Tắt tự động phát bản âm thanh\".</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">Chọn ngôn ngữ luồng âm thanh mặc định không khả dụng với %s.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">Nút bản âm thanh</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Nút bản âm thanh sẽ được hiển thị khi client dùng để lấy dữ liệu phát là “Android VR”, “Mobile Web” hoặc “visionOS”."</string>
+    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Nút bản âm thanh sẽ được hiển thị khi ứng dụng khách dùng để lấy dữ liệu phát là “Android VR”, “Mobile Web” hoặc “visionOS”."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Nút bản âm thanh không được hiển thị.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Điều kiện tiên quyết:
-• Client dùng để lấy dữ liệu phát là “Android VR”, “Mobile Web” hoặc “visionOS”.
+• Ứng dụng khách dùng để lấy dữ liệu phát là “Android VR”, “Mobile Web” hoặc “visionOS”.
 • Video đang phát có nhiều bản âm thanh.
 
 Sự cố đã biết:
@@ -2489,12 +2494,12 @@ Tính năng này vẫn đang trong quá trình phát triển, vì vậy nó có 
     <string name="revanced_spoof_streaming_data_use_js_title">Giả mạo JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_on">JavaScript được thêm vào danh sách khả dụng.</string>
     <string name="revanced_spoof_streaming_data_use_js_summary_off">JavaScript không được thêm vào danh sách khả dụng.</string>
-    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"Các client JavaScript có thể bị trễ khi bắt đầu phát video do phải giải mã mẫu n-sig. Thỉnh thoảng quá trình giải mã thất bại, khiến video khởi động chậm hoặc giật lag trong khi phát.
+    <string name="revanced_spoof_streaming_data_use_js_user_dialog_message">"Các ứng dụng khách JavaScript có thể bị trễ khi bắt đầu phát video do phải giải mã mẫu n-sig. Thỉnh thoảng quá trình giải mã thất bại, khiến video khởi động chậm hoặc giật lag trong khi phát.
 
 Cách khắc phục: nhấn nút Tải lại video trong trình phát để phát lại.
 (Điều kiện tiên quyết: phải bật cả “Nút tải lại video” và “Luôn hiện nút tải lại video”)
 
-Trong số các client JavaScript, lựa chọn khuyên dùng là TV."</string>
+Trong số các ứng dụng khách JavaScript, lựa chọn khuyên dùng là TV."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Giả mạo JavaScript cho tất cả video</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"JavaScript được sử dụng cho bất kể loại video nào.
 
@@ -2508,13 +2513,13 @@ Hạn chế: JavaScript vẫn không thể phát một số video."</string>
     <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_on">"JavaScript bên ngoài từ yt-dlp (yt-dlp-ejs) được sử dụng.
 
 Chi tiết:
-• Player JS luôn cập nhật để hỗ trợ gỡ rối mã.
-• Quá trình này mất khoảng 5 đến 15 giây trước khi video bắt đầu."</string>
+• Player JS luôn được cập nhật để hỗ trợ gỡ rối mã.
+• Quá trình này có thể mất khoảng 5 đến 15 giây trước khi video bắt đầu."</string>
     <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_summary_off">"Trình trích xuất SmartTube được sử dụng.
 
 Chi tiết:
-• Trình phát JavaScript cho gỡ rối mã không luôn cập nhật để hỗ trợ phát tạm thời.
-• Tùy chọn này sẽ không còn được hỗ trợ bởi các máy chủ youtube trong tương lai gần."</string>
+• Player JS luôn cập nhật để hỗ trợ gỡ rối mã.
+• Máy chủ sẽ ngừng hỗ trợ tính năng này trong thời gian tới."</string>
     <string name="revanced_spoof_streaming_data_use_yt_dlp_ejs_user_dialog_message">"Vì YouTube áp dụng biện pháp mới, các cách thông thường không còn giải mã được URL phát trong Player JS mới nhất.
 
 Thay vào đó, ứng dụng sẽ dùng JavaScript bên ngoài từ yt-dlp (yt-dlp-ejs) để giải mã.
@@ -2528,7 +2533,7 @@ Hạn chế: Do những thay đổi từ phía máy chủ, cài đặt này có 
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_title">Giới thiệu về bộ đệm giả</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_about_summary">Nhấn để biết thêm chi tiết.</string>
     <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_title">"Biện pháp chặn quảng cáo mới của YouTube"</string>
-    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_message">"Một lý do khiến video phát chậm trên client JavaScript là do biện pháp chặn quảng cáo mới của Youtube.
+    <string name="revanced_spoof_streaming_data_use_js_bypass_fake_buffering_dialog_message">"Một lý do khiến video phát chậm trên ứng dụng khách JavaScript là do biện pháp chặn quảng cáo mới của Youtube.
 
 Rằng khi một quảng cáo dạng video bị chặn, GVS (Google Video Server) sẽ tạo ra một bộ đệm giả (trông như video đang tải nhưng không phải) tương ứng với tỷ lệ thời lượng quảng cáo đó (kiểu thử nghiệm A/B).
 

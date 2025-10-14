@@ -1868,6 +1868,11 @@ Ajusta el volumen deslizando verticalmente en el lado derecho de la pantalla."</
     <string name="revanced_enable_swipe_to_switch_video_title">Activar deslizamiento para cambiar de vídeo</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_on">Deslizar hacia arriba/abajo en modo de pantalla completa cambiará al vídeo siguiente/anterior.</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_off">Deslizar hacia arriba/abajo en modo de pantalla completa no cambiará al vídeo siguiente/anterior.</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_title">Arreglar controles de deslizamiento de pulsar y mantener la velocidad</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_on">"Pulsar y mantener la velocidad solo se activa cuando el usuario pulsa y mantiene pulsado.
+
+Problema conocido: a veces, la superposición de deslizamiento aparece antes de cambiar al modo de pantalla completa."</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_off">Pulsar y mantener la velocidad a veces se puede activar incluso si el usuario no pulsa y mantiene pulsado.</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">Automático</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Vídeo</string>
@@ -2340,13 +2345,13 @@ Esto se puede utilizar al probar algo en el MainThread."</string>
 • El volumen estable no está disponible.
 • Es posible que los vídeos para niños no se reproduzcan cuando se cierra la sesión o en modo incógnito.
 • No se admiten 1080p+, AV1 y HDR."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Falta el menú de la pista de audio.
+    <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Falta el menú de pista de audio.
 • El volumen estable no está disponible.
-• Es posible que los vídeos para niños no se reproduzcan cuando se cierra la sesión o en modo incógnito."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Falta el menú de pistas de audio.
+• Es posible que los vídeos para niños no se reproduzcan con la sesión cerrada o en modo incógnito."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Falta el menú de pista de audio.
 • Desactivar pistas de audio automáticas forzadas no está disponible.
 • El volumen estable no está disponible.
-• Es posible que los vídeos para niños no se reproduzcan al cerrar sesión o en modo incógnito."</string>
+• Es posible que los vídeos para niños no se reproduzcan con la sesión cerrada o en modo incógnito."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 no es compatible.
 • El vídeo puede detenerse en 1:00 o no estar disponible en algunas regiones."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Falta el menú de la pista de audio.
@@ -2418,7 +2423,7 @@ Se utiliza→ 1080p VP9."</string>
 
 La reproducción se puede atascar o perder fotogramas."</string>
     <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">El códec de vídeo es AVC (H.264) o VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Si activas este ajuste, es posible que se utilice la descodificación AV1 por software.
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Si activas este ajuste, es posible que se utilice la decodificación AV1 por software.
 
 La reproducción se puede atascar o perder fotogramas."</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Acerca de la autenticación de Android VR</string>

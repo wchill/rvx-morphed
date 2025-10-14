@@ -1895,6 +1895,11 @@
     <string name="revanced_enable_swipe_to_switch_video_title">Увімкнути зміну відео проведенням</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_on">Проведення вгору / вниз у повноекранному режимі змінюватиме на наступне / попереднє відео.</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_off">Проведення вгору / вниз у повноекранному режимі не змінюватиме на наступне / попереднє відео.</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_title">Виправити жест керування швидкістю натисканням і утриманням</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_on">"Натискання і утримання для швидкості активовується тільки коли користувач натискає і утримує.
+
+Відома проблема: Іноді жест з'являється перед переходом в повноекранний режим."</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_off">Натискання і утримання для швидкості може іноді активовуватись, навіть якщо користувач не натискав і утримував.</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">Авто</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Відео</string>
@@ -2449,7 +2454,7 @@
     <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Про авторизацію Android VR</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Натисніть, щоб побачити, як отримати токен автентифікації.</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Отримати токен авторизації</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Щоб отримати токен авторизації дляAndroid VR, необхідно увійти в YouTube VR за допомогою коду активації:
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Щоб отримати токен авторизації для Android VR, необхідно увійти в YouTube VR за допомогою коду активації:
 
 1. Натисніть 'Отримати код активації', щоб згенерувати код активації.
 2. Натисніть 'Відкрити сайт', щоб перейти до 'https://yt.be/activate'.

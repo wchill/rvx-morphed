@@ -1896,6 +1896,11 @@ Megjegyzés: Ezzel a képernyőterület méretét is megváltoztatja, ahol érz�
     <string name="revanced_enable_swipe_to_switch_video_title">Videóváltás lapozással engedélyezése</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_on">A felfelé / lefelé lapozás teljes képernyőn lejátssza a következő / előző videót.</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_off">A felfelé / lefelé lapozás teljes képernyőn nem játssza le a következő / előző videót.</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_title">A húzással vezérlés működésének javítása</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_on">"Az érintés és nyomva tartás csak akkor aktiválódik, ha a felhasználó kezdeményezi.
+
+Ismert probléma: Előfordul, hogy a húzás átfedése megjelenik a teljes képernyős módra váltás előtt."</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_off">Az érintés és nyomva tartás néha akkor is aktiválódhat, ha a felhasználó nem kezdeményezi.</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">Automatikus</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Videó</string>
@@ -2353,6 +2358,8 @@ Ha YouTube Premium felhasználó vagy, akkor ez a beállítás nem feltétlenül
 <small>(Belépés szükséges)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
 <small>(Nincs hitelesítés)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
+<small>(Hitelesítés, művelet szükséges)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
 <small>(Elavult, nincs hitelesítés)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobil webböngésző
@@ -2371,6 +2378,10 @@ Ha YouTube Premium felhasználó vagy, akkor ez a beállítás nem feltétlenül
 • Az 1080p+, AV1 és HDR felbontás nem támogatott."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Hiányzik a hangsáv menüje.
 • Nem érhető el stabil hangerő.
+• Előfordulhat, hogy a gyerekeknek szóló videók nem játszhatók le kijelentkezéskor vagy inkognitómódban."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Hiányzik a hangsáv menü.
+• A kényszerített automatikus hangsávok letiltása nem érhető el.
+• A stabil hangerő nem érhető el.
 • Előfordulhat, hogy a gyerekeknek szóló videók nem játszhatók le kijelentkezéskor vagy inkognitómódban."</string>
     <string name="revanced_spoof_streaming_data_side_effects_ipados">"• Az AV1 nem támogatott.
 • A videó 1:00-nál leállhat, vagy bizonyos régiókban nem érhető el."</string>
@@ -2436,10 +2447,48 @@ Ha ez a beállítás engedélyezve van, a szerver válaszából származó legma
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Próbálja meg az alapértelmezett klienst TV-re módosítani.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">VR AV1 engedélyezése</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"A videó kodek AVC (H.264), VP9 vagy AV1.
+
+A lejátszás akadozhat vagy kimaradhatnak képkockák."</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">A videó kodek AVC (H.264) vagy VP9.</string>
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Ennek a beállításnak az engedélyezése szoftveres AV1 dekódolást eredményezhet.
+
+A lejátszás akadozhat vagy kimaradhatnak képkockák."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Android VR hitelesítésről</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Kattintson ide, ha szeretné megtudni, hogyan szerezhet be hitelesítési tokent.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Hitelesítési token beszerzése</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Android VR hitelesítési token beszerzéséhez be kell jelentkezned a YouTube VR-ba egy aktiváló kóddal:
+
+1. Kattints az 'Aktiválási kód beszerzése' gombra az aktiváló kód létrehozásához.
+2. Kattints a 'Weboldal megnyitása' gombra a 'https://yt.be/activate' oldal eléréséhez.
+3. Add meg az aktiváló kódot.
+4. Jelentkezz be, amikor a rendszer kéri. Ha több Google-fiókod van, válaszd ki a YouTube-bal használt fiókot. Ha már be vagy jelentkezve, ugorj a következő lépésre.
+5. Miután bejelentkeztél, térj vissza az RVX-be, és kattints ismét az 'Android VR hitelesítésről' lehetőségre.
+6. Kattints az 'Engedélyezési token beszerzése' gombra az engedélyezési token beszerzéséhez.
+
+※ Kattintson a 'Visszaállítás' gombra a hitelesítési token vagy aktiválási kód eltávolításához."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Aktiváló kód beszerzése</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Hitelesítési token beszerzése</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Visszaállítás</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Hitelesítési token és aktiválási kód visszaállítása.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Hitelesítési token mentve.</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Aktivációs kód</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Aktiváló kód:
+%s
+
+1. Kattints a 'Weboldal megnyitása' gombra a 'https://yt.be/activate' oldal eléréséhez.
+2. Add meg az aktiváló kódot.
+3. Jelentkezz be, amikor a rendszer kéri. Ha több Google-fiókod van, válaszd ki azt a fiókot, amelyet a YouTube-bal használsz. Ha már be vagy jelentkezve, ugorj a következő lépésre.
+4. Miután bejelentkeztél, térj vissza az RVX-be, és kattints ismét az 'Android VR hitelesítésről' lehetőségre.
+5. Kattints az 'Engedélyezési token beszerzése' gombra az engedélyezési tokenek beszerzéséhez."</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Weboldal megnyitása</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Aktiváló kód a vágólapra másolva: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <string name="revanced_preference_category_no_auth">Nincs hitelesítés</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_title">Alapértelmezett hangfolyam nyelve</string>
     <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Egy adott hangfolyam nyelvének kiválasztásához kapcsold ki a \'Kényszerített automatikus hangsávok letiltása\' beállítást.</string>
+    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">Az alapértelmezett hangfolyam nyelvének kiválasztása nem érhető el a következővel: %s.</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_title">Hangsáv megjelenítése gomb</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"A hangsáv gomb akkor jelenik meg, ha a streamelt adatok lekéréséhez használt kliens az 'Android VR', a 'Mobile Web' vagy a 'visionOS'."</string>
     <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">A hangsáv gombja nem látható.</string>

@@ -528,7 +528,7 @@ Jeśli jesteś użytkownikiem YouTube Premium, to ustawienie te nie jest koniecz
     <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Uzyskaj token uwierzytelniający</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"By uzyskać token uwierzytelniający dla Android VR, należy zalogować się do YouTube VR za pomocą kodu aktywacyjnego:
 
-1. Kliknij `Uzyskaj token uwierzytelniający', by wygenerować kod aktywacyjny
+1. Kliknij 'Uzyskaj token uwierzytelniający', by wygenerować kod aktywacyjny
 2. Kliknij 'Otwórz stronę', aby przejść do 'https://yt.be/activate'
 3. Wprowadź kod aktywacyjny
 4. Zaloguj się, gdy pojawi się monit. Jeśli masz wiele kont Google, użyj tego, którego używasz w YouTube. Jeśli jesteś już zalogowany, przejdź do następnego kroku

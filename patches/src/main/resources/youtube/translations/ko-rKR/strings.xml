@@ -1891,6 +1891,11 @@ Shorts 플레이어 배경을 탭하는 경우에 UI를 숨길 수 있습니다.
     <string name="revanced_enable_swipe_to_switch_video_title">스와이프 제스처로 동영상 전환 활성화하기</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_on">전체 화면 중앙에서 위로/아래로 스와이프하여 다음/이전 동영상으로 전환합니다.</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_off">전체 화면 중앙에서 위로/아래로 스와이프하여 다음/이전 동영상으로 전환하지 않습니다.</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_title">스와이프 제스처 길게 탭하기 속도 수정하기</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_on">"길게 탭하기 속도는 사용자가 화면을 길게 탭했을 경우에만 작동됩니다.
+
+알려진 문제점: 전체 화면 모드로 전환하기 전에 가끔 스와이프 오버레이가 표시됩니다."</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_off">길게 탭하기 속도는 사용자가 화면을 길게 탭하지 않았더라도 작동될 수 있습니다.</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">자동</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">동영상</string>
@@ -2440,7 +2445,7 @@ VP9은 AVC보다 고급 코덱이지만, 일부 사용자는 '360p VP9'보다 '1
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_vr_enable_av1_title">VR AV1 활성화하기</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"동영상 코덱이 AVC(H.264), VP9 또는 AV1으로 결정됩니다.
+    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"동영상 코덱이 AVC (H.264), VP9 또는 AV1으로 결정됩니다.
 
 동영상 재생이 끊기거나 프레임이 손실될 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">동영상 코덱이 AVC (H.264) 또는 VP9으로 결정됩니다.</string>

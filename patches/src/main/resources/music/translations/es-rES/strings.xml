@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Shared -->
+    <string name="revanced_settings_title">RVX</string>
     <string name="revanced_settings_search_title">Buscar %s</string>
     <string name="revanced_reset_to_default_toast">Restaurar valores predeterminados.</string>
     <!-- Shared Category -->
+    <string name="revanced_settings_search_no_results_title">No se encontraron resultados para %s.</string>
+    <string name="revanced_settings_search_no_results_summary">Intenta otra palabra clave.</string>
+    <string name="revanced_settings_search_recent_searches">Búsquedas recientes</string>
+    <string name="revanced_settings_search_remove_message">¿Eliminar del historial?</string>
+    <string name="revanced_settings_search_clear_history">Eliminar historial</string>
+    <string name="revanced_settings_search_clear_history_message">¿Deseas borrar el historial?</string>
+    <string name="revanced_settings_search_empty_history_title">El historial está vacío</string>
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">Cuenta</string>
     <string name="revanced_hide_account_menu_title">Ocultar menú de cuenta</string>
@@ -429,6 +437,15 @@ Toca para ver cómo crear una clave de API."</string>
     <string name="revanced_sb_about_api">sponsor.ajay.app</string>
     <!-- PreferenceScreen: Miscellaneous -->
     <string name="revanced_preference_screen_misc_title">Otros</string>
+    <string name="revanced_settings_import_export_title">Importar / Exportar configuración</string>
+    <string name="revanced_settings_import_export_summary">Importar / Exportar la configuración de RVX Music.</string>
+    <string name="revanced_settings_export_as_file">Exportar configuración como un archivo</string>
+    <string name="revanced_settings_import_as_file">Importar configuración desde el archivo</string>
+    <string name="revanced_settings_import_export_as_text">Importar / Exportar configuración como texto</string>
+    <string name="revanced_settings_export_failed">Fallo al exportar configuración.</string>
+    <string name="revanced_settings_export_success">La configuración fue exportada exitosamente.</string>
+    <string name="revanced_settings_import">Importar</string>
+    <string name="revanced_settings_import_copy">Copiar</string>
     <string name="revanced_share_copy_settings_success">Ajustes copiados en el portapapeles.</string>
     <string name="revanced_bypass_image_region_restrictions_title">Eludir las restricciones regionales de imágenes</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Reemplaza el dominio que está bloqueado en algunas regiones para que las miniaturas de la lista de reproducción, avatares de canales, etc. puedan ser recibidas.</string>

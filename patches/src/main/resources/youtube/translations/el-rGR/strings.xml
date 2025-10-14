@@ -1275,10 +1275,10 @@ Playlists
     <string name="revanced_hide_related_videos_overlay_title">Σχετικά βίντεο</string>
     <string name="revanced_hide_related_videos_overlay_summary_on">Κρυμμένα.
 
-Αφορά την ενότητα «Περισσότερα βίντεο» στις γρήγορες ενέργειες και τα σχετικά βίντεο στην τελική οθόνη.</string>
+Αφορά την ενότητα «Περισσότερα βίντεο» στις γρήγορες ενέργειες και τα σχετικά βίντεο.</string>
     <string name="revanced_hide_related_videos_overlay_summary_off">Εμφανίζονται.
 
-Αφορά την ενότητα «Περισσότερα βίντεο» στις γρήγορες ενέργειες και τα σχετικά βίντεο στην τελική οθόνη.</string>
+Αφορά την ενότητα «Περισσότερα βίντεο» στις γρήγορες ενέργειες και τα σχετικά βίντεο.</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Fullscreen, PreferenceCategory: Quick actions -->
     <string name="revanced_preference_category_quick_actions">Γρήγορες ενέργειες</string>
     <string name="revanced_hide_quick_actions_title">Γρήγορες ενέργειες</string>
@@ -1900,6 +1900,11 @@ Playlists
     <string name="revanced_enable_swipe_to_switch_video_title">Χειρονομία σάρωσης για αλλαγή βίντεο</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_on">Η σάρωση προς τα πάνω / κάτω στη λειτουργία πλήρους οθόνης αλλάζει στο επόμενο / προηγούμενο βίντεο.</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_off">Η σάρωση προς τα πάνω / κάτω στη λειτουργία πλήρους οθόνης δεν αλλάζει στο επόμενο / προηγούμενο βίντεο.</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_title">Διόρθωση ελέγχων σάρωσης και διεπαφής ταχύτητας</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_on">"Το παρατεταμένο πάτημα για αλλαγή ταχύτητας ενεργοποιείται μόνο όταν ο χρήστης πατάει παρατεταμένα την οθόνη αναπαραγωγής.
+
+Γνωστό θέμα: Μερικές φορές εμφανίζεται η διάταξη ελέγχων σάρωσης πριν γίνει μετάβαση σε λειτουργία πλήρους οθόνης."</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_off">Το παρατεταμένο πάτημα για αλλαγή ταχύτητας μπορεί μερικές φορές να ενεργοποιείται ακόμη και αν ο χρήστης δεν πατάει παρατεταμένα την οθόνη αναπαραγωγής.</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">Αυτόματη</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Βίντεο</string>

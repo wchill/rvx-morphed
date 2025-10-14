@@ -1872,6 +1872,11 @@ Regola il volume scorrendo verticalmente sul lato destro dello schermo."</string
     <string name="revanced_enable_swipe_to_switch_video_title">Attiva il gesto per cambiare video</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_on">Trascinando verso l\'alto o il basso a schermo intero verrà riprodotto il video successivo o precedente.</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_off">Trascinando verso l\'alto o il basso a schermo intero non verrà riprodotto il video successivo o precedente.</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_title">Correggi il gesto Tocca e Tieni Premuto della velocità</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_on">"Il gesto Tocca e Tieni Premuto della velocità si attiva solo quando l'utente tocca e tiene premuto.
+
+Nota: a volte la sovrapposizione di scorrimento appare prima di passare alla modalità a schermo intero."</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_off">Il gesto Tocca e Tieni Premuto della velocità potrebbe attivarsi anche se l\'utente non tocca e non tiene premuto.</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">Automatico</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Video</string>
