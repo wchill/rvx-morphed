@@ -198,7 +198,7 @@ object YouTubeVRClient {
         QUEST_PRO(USER_AGENT_QUEST_PRO),
 
         /**
-         * Galaxy VR (October 22, 2025).
+         * Galaxy XR (October 22, 2025).
          */
         @Deprecated("This was the client name used before the release of Android XR in 2023-2025. Use ANDROID_XR instead.")
         MOOHAN,
@@ -226,7 +226,7 @@ object YouTubeVRClient {
         PICO4_ULTRA(USER_AGENT_PICO_4_ULTRA),
 
         /**
-         * Galaxy VR (October 22, 2025).
+         * Galaxy XR (October 22, 2025).
          */
         ANDROID_XR(USER_AGENT_MOOHAN);
     }

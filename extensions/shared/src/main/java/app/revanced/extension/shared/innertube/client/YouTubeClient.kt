@@ -71,7 +71,7 @@ object YouTubeClient {
      * Package name for YouTube VR (Google DayDream): com.google.android.apps.youtube.vr (Deprecated)
      * Package name for YouTube VR (Meta Quests): com.google.android.apps.youtube.vr.oculus
      * Package name for YouTube VR (ByteDance Pico): com.google.android.apps.youtube.vr.pico
-     * Package name for YouTube XR (Samsung Galaxy VR): com.google.android.apps.youtube.xr
+     * Package name for YouTube XR (Samsung Galaxy XR): com.google.android.apps.youtube.xr
      */
     private const val PACKAGE_NAME_ANDROID_VR = "com.google.android.apps.youtube.vr.oculus"
 
