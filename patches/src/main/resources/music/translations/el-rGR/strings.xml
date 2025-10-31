@@ -512,6 +512,7 @@
     <string name="revanced_spoof_streaming_data_default_client_title">Προεπιλεγμένο πρόγραμμα πελάτη</string>
     <string name="revanced_spoof_streaming_data_default_client_summary">Καθορισμός ενός προεπιλεγμένου πρόγραμμα πελάτη για παραποίηση.</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">Android (χωρίς SDK)</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">Android VR (με σύνδεση χρήστη, απαιτείται ενέργεια)</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Web Κινητού</string>

@@ -512,6 +512,7 @@ Se você é um usuário de YouTube Premium, essa configuração pode não ser ne
     <string name="revanced_spoof_streaming_data_default_client_title">Cliente padrão</string>
     <string name="revanced_spoof_streaming_data_default_client_summary">Define um cliente padrão para falsificar.</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">Android Não SDK</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">Android VR Autenticação(Ação necessária)</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobile Web</string>

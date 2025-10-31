@@ -507,6 +507,7 @@
     <string name="revanced_spoof_streaming_data_default_client_title">Клиент по умолчанию</string>
     <string name="revanced_spoof_streaming_data_default_client_summary">Определяет клиент по умолчанию для подмены.</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">Android без SDK</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">Android VR авторизация (требуется действие)</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Мобильный веб</string>

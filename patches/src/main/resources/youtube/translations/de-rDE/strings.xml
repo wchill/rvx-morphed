@@ -557,7 +557,7 @@ Einschränkung: Zurück-Taste in der Symbolleiste funktioniert möglicherweise n
 Bei einigen Benutzern funktioniert dies möglicherweise nicht. Wenn es bei Ihnen nicht funktioniert:
 1. Gehen Sie zu Einstellungen – RVX – Sonstiges – Streaming-Daten fälschen und aktivieren Sie „JavaScript-Client verwenden”.
 2. Gehen Sie zu Einstellungen – RVX – Sonstiges – Streaming-Daten fälschen und ändern Sie „Standard-Client” zu „TV”."</string>
-    <string name="revanced_disable_auto_audio_tracks_summary_off">Erzwungene automatische Audiospuren sind aktiviert.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_off">"Erzwungene automatische Audiospuren sind aktiviert."</string>
     <string name="revanced_disable_auto_captions_title">Deaktiviere erzwungene automatische Untertitel</string>
     <string name="revanced_disable_auto_captions_summary_on">Erzwungene automatische Untertitel sind deaktiviert.</string>
     <string name="revanced_disable_auto_captions_summary_off">Erzwungene automatische Untertitel sind aktiviert.</string>
@@ -1233,19 +1233,19 @@ So blenden Sie das Audiospur-Menü ein:
     <string name="revanced_hide_player_flyout_menu_pip_title">Bild-in-Bild Menü ausblenden</string>
     <string name="revanced_hide_player_flyout_menu_pip_summary_on">Bild-in-Bild Menü wird ausgeblendet.</string>
     <string name="revanced_hide_player_flyout_menu_pip_summary_off">Bild-in-Bild Menü wird angezeigt.</string>
-    <string name="revanced_hide_player_flyout_menu_premium_controls_title">Hide premium controls menu</string>
-    <string name="revanced_hide_player_flyout_menu_premium_controls_summary_on">Premium controls menu is hidden.</string>
-    <string name="revanced_hide_player_flyout_menu_premium_controls_summary_off">Premium controls menu is shown.</string>
+    <string name="revanced_hide_player_flyout_menu_premium_controls_title">Premium-Kontrollmenü ausblenden</string>
+    <string name="revanced_hide_player_flyout_menu_premium_controls_summary_on">Premium-Kontrollmenü wird ausgeblendet.</string>
+    <string name="revanced_hide_player_flyout_menu_premium_controls_summary_off">Premium-Kontrollmenü wird angezeigt.</string>
     <string name="revanced_hide_player_flyout_menu_sleep_timer_title">Schlaf-Timer-Menü ausblenden</string>
-    <string name="revanced_hide_player_flyout_menu_sleep_timer_summary_on">Schlaf-Timer-Menü ist ausgeblendet.</string>
+    <string name="revanced_hide_player_flyout_menu_sleep_timer_summary_on">Schlaf-Timer-Menü wird ausgeblendet.</string>
     <string name="revanced_hide_player_flyout_menu_sleep_timer_summary_off">Schlaf-Timer-Menü wird angezeigt.</string>
-    <string name="revanced_hide_player_flyout_menu_stable_volume_title">Hide stable volume menu</string>
-    <string name="revanced_hide_player_flyout_menu_stable_volume_summary_off">Stable volume menu is shown.</string>
-    <string name="revanced_hide_player_flyout_menu_stable_volume_summary_on">Stable volume menu is hidden.</string>
-    <string name="revanced_hide_player_flyout_menu_stats_for_nerds_title">Hide stats for nerds menu</string>
-    <string name="revanced_hide_player_flyout_menu_stats_for_nerds_summary_on">Stats for nerds menu is hidden.</string>
+    <string name="revanced_hide_player_flyout_menu_stable_volume_title">Stabile Lautstärke-Menü ausblenden</string>
+    <string name="revanced_hide_player_flyout_menu_stable_volume_summary_off">Stabile Lautstärke-Menü wird angezeigt.</string>
+    <string name="revanced_hide_player_flyout_menu_stable_volume_summary_on">Stabile Lautstärke-Menü wird ausgeblendet.</string>
+    <string name="revanced_hide_player_flyout_menu_stats_for_nerds_title">Statistiken für Nerds ausblenden</string>
+    <string name="revanced_hide_player_flyout_menu_stats_for_nerds_summary_on">Statistiken für Nerds werden ausgeblendet.</string>
     <string name="revanced_hide_player_flyout_menu_stats_for_nerds_summary_off">Statistiken für Nerds werden angezeigt.</string>
-    <string name="revanced_hide_player_flyout_menu_watch_in_vr_title">Verstecke in VR anschauen</string>
+    <string name="revanced_hide_player_flyout_menu_watch_in_vr_title">\'In VR ansehen\'-Menü ausblenden</string>
     <string name="revanced_hide_player_flyout_menu_watch_in_vr_summary_on">\'In VR ansehen\'-Menü wird ausgeblendet.</string>
     <string name="revanced_hide_player_flyout_menu_watch_in_vr_summary_off">\'In VR ansehen\'-Menü wird angezeigt.</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Fullscreen -->
@@ -1258,7 +1258,7 @@ So blenden Sie das Audiospur-Menü ein:
     <string name="revanced_enter_fullscreen_summary_on">"Vollbildmodus aktivieren, wenn das Video gestartet wird.
 
 Einschränkung: Funktioniert nicht, wenn der Player minimiert ist, im PiP Modus oder im Hintergrund."</string>
-    <string name="revanced_enter_fullscreen_summary_off">Vollbildmodus aktivieren, wenn das Video startet.</string>
+    <string name="revanced_enter_fullscreen_summary_off">Vollbildmodus nicht aktivieren, wenn das Video startet.</string>
     <string name="revanced_exit_fullscreen_title">Vollbildmodus am Ende des Videos beenden</string>
     <string name="revanced_exit_fullscreen_entry_1">Deaktiviert</string>
     <string name="revanced_exit_fullscreen_entry_2">Hochformat</string>
@@ -1269,28 +1269,28 @@ Einschränkung: Funktioniert nicht, wenn der Player minimiert ist, im PiP Modus 
 
 Einschränkung: Videotitel verschwindet beim Klicken auf den Bildschirm."</string>
     <string name="revanced_hide_autoplay_preview_title">Autoplay-Vorschau-Container ausblenden</string>
-    <string name="revanced_hide_autoplay_preview_summary_on">Autoplay-Vorschau-Container wird ausgeblendet</string>
-    <string name="revanced_hide_autoplay_preview_summary_off">Autoplay-Vorschau-Container wird angezeigt</string>
+    <string name="revanced_hide_autoplay_preview_summary_on">Autoplay-Vorschau-Container wird ausgeblendet.</string>
+    <string name="revanced_hide_autoplay_preview_summary_off">Autoplay-Vorschau-Container wird angezeigt.</string>
     <string name="revanced_hide_live_chat_replay_button_title">Live-Chat Replay-Button ausblenden</string>
-    <string name="revanced_hide_live_chat_replay_button_summary_on">Der Live-Chat-Replay-Button ist verborgen.\n\nEr erscheint im Vollbild, wenn Live-Chat geschlossen wird.</string>
-    <string name="revanced_hide_live_chat_replay_button_summary_off">Der Live-Chat-Replay-Button ist verborgen.\n\nEr erscheint im Vollbild, wenn Live-Chat geschlossen wird.</string>
-    <string name="revanced_hide_related_videos_overlay_title">Hide related videos overlay</string>
-    <string name="revanced_hide_related_videos_overlay_summary_on">More videos section in quick actions container and related videos overlay are hidden.</string>
-    <string name="revanced_hide_related_videos_overlay_summary_off">More videos section in quick actions container and related videos overlay are shown.</string>
+    <string name="revanced_hide_live_chat_replay_button_summary_on">Live-Chat-Replay-Button wird ausgeblendet.\n\nEr erscheint im Vollbild, wenn Live-Chat geschlossen wird.</string>
+    <string name="revanced_hide_live_chat_replay_button_summary_off">Live-Chat-Replay-Button wird angezeigt.\n\nEr erscheint im Vollbild, wenn Live-Chat geschlossen wird.</string>
+    <string name="revanced_hide_related_videos_overlay_title">Verwandtes Video-Overlay ausblenden</string>
+    <string name="revanced_hide_related_videos_overlay_summary_on">Der Abschnitt \'Weitere Videos\' im Container für Schnellaktionen und die Überlagerung verwandter Videos werden ausgeblendet.</string>
+    <string name="revanced_hide_related_videos_overlay_summary_off">Der Abschnitt \'Weitere Videos\' im Container für Schnellaktionen und die Überlagerung verwandter Videos werden angezeigt.</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Fullscreen, PreferenceCategory: Quick actions -->
     <string name="revanced_preference_category_quick_actions">Schnelle Aktionen</string>
     <string name="revanced_hide_quick_actions_title">Verstecke \"Schnellaktionen\" Container</string>
     <string name="revanced_hide_quick_actions_summary_on">\"Schnellaktionen\" Container wird versteckt</string>
     <string name="revanced_hide_quick_actions_summary_off">\"Schnellaktionen\" Container wird angezeigt</string>
-    <string name="revanced_hide_quick_actions_comment_button_title">Verstecke Kommentar Button</string>
-    <string name="revanced_hide_quick_actions_comment_button_summary_on">Kommentar Button wird versteckt.</string>
+    <string name="revanced_hide_quick_actions_comment_button_title">Kommentar Button ausblenden</string>
+    <string name="revanced_hide_quick_actions_comment_button_summary_on">Kommentar Button wird ausgeblendet.</string>
     <string name="revanced_hide_quick_actions_comment_button_summary_off">Kommentar Button wird angezeigt.</string>
-    <string name="revanced_hide_quick_actions_dislike_button_title">Verstecke den Dislike-Button</string>
-    <string name="revanced_hide_quick_actions_dislike_button_summary_on">Der Dislike-Button ist versteckt.</string>
-    <string name="revanced_hide_quick_actions_dislike_button_summary_off">Der Dislike-Button wird angezeigt.</string>
-    <string name="revanced_hide_quick_actions_like_button_title">Verstecke \"Gefällt mir\" Button</string>
-    <string name="revanced_hide_quick_actions_like_button_summary_on">\"Gefällt mir\" Schaltfläche ist versteckt.</string>
-    <string name="revanced_hide_quick_actions_like_button_summary_off">Schaltfläche \"Gefällt mir\" wird angezeigt.</string>
+    <string name="revanced_hide_quick_actions_dislike_button_title">Dislike-Button ausblenden</string>
+    <string name="revanced_hide_quick_actions_dislike_button_summary_on">Dislike-Button wird ausgeblendet.</string>
+    <string name="revanced_hide_quick_actions_dislike_button_summary_off">Dislike-Button wird angezeigt.</string>
+    <string name="revanced_hide_quick_actions_like_button_title">\'Gefällt mir\' Button ausblenden</string>
+    <string name="revanced_hide_quick_actions_like_button_summary_on">\'Gefällt mir\' Button wird ausgeblendet.</string>
+    <string name="revanced_hide_quick_actions_like_button_summary_off">\'Gefällt mir\' Button wird angezeigt.</string>
     <string name="revanced_hide_quick_actions_live_chat_button_title">Verstecke Live-Chat-Schaltfläche</string>
     <string name="revanced_hide_quick_actions_live_chat_button_summary_on">Live-Chat-Schaltfläche ist versteckt.</string>
     <string name="revanced_hide_quick_actions_live_chat_button_summary_off">Live-Chat-Schaltfläche wird angezeigt.</string>
@@ -2465,24 +2465,6 @@ Die Wiedergabe kann ruckeln oder Bilder auslassen."</string>
 5. Klicken Sie auf \"Autorisierungs-Token\" um ein Autorisierungs-Token-Token zu erhalten."</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Webseite öffnen</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Aktivierungscode in Zwischenablage kopiert: %s.</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
-    <string name="revanced_preference_category_no_auth">No Auth</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_title">Default audio stream language</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">To select a specific audio stream language, turn off \'Disable forced auto audio tracks\'.</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">Die Standard-Audio-Stream-Sprachauswahl ist mit %s nicht verfügbar.</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_title">Show audio track button</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Audio track button is shown when the client used to fetch streaming data is 'Android VR', 'Mobile Web', or 'visionOS'."</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Audio track button is not shown.</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Prerequisites:
-• The client used to fetch the streaming data is 'Android VR', 'Mobile Web', or 'visionOS'.
-• A video with multiple audio tracks is being played.
-
-Known issues:
-• If the app language is changed in YouTube settings and the app is not restarted, the language used in audio track dialog may not change.
-• Sometimes the wrong language is selected in audio track dialog.
-• Some audio tracks, such as 'English descriptive', are not supported.
-
-This feature is still in development, so it may break at any time due to server-side changes."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Use JavaScript client</string>

@@ -559,8 +559,9 @@ DeArrow について詳しく知るには、ここをタップしてください
 
 一部の環境下では機能しない可能性があります。機能しない場合は、以下の手順に従ってください:
 1. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[JavaScript クライアントを使用] をオンにします。
-2. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[偽装するクライアントを選択] で「TV」を選択します。"</string>
-    <string name="revanced_disable_auto_audio_tracks_summary_off">音声トラックが自動で吹き替えに切り替わるのを無効にします。</string>
+2. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[偽装するクライアントを選択] で「TV」を選択します。
+3. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[yt-dlp ejs を使用 (開発途中)] をオンにします。"</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_off">"音声トラックが自動で吹き替えに切り替わるのを無効にします。"</string>
     <string name="revanced_disable_auto_captions_title">字幕の強制を無効化</string>
     <string name="revanced_disable_auto_captions_summary_on">投稿者が設定している字幕の強制を無効にします。</string>
     <string name="revanced_disable_auto_captions_summary_off">投稿者が設定している字幕の強制を無効にします。</string>
@@ -1198,7 +1199,8 @@ Cookie の使用は万能薬ではありません。
 
 [音声トラック] メニューを表示するには:
 1. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[JavaScript クライアントを使用] をオンにします。
-2. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[偽装するクライアントを選択] で「TV」を選択します。"</string>
+2. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[偽装するクライアントを選択] で「TV」を選択します。
+3. [設定] → [RVX] → [その他] → [ストリーミングデータを偽装] に移動し、[yt-dlp ejs を使用 (開発途中)] をオンにします。"</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">[字幕] メニューを非表示</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">[字幕] メニューを非表示にします。</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">[字幕] メニューを非表示にします。</string>
@@ -2350,31 +2352,34 @@ YouTube Premium に加入している場合は、この設定は必要ない可�
     <string name="revanced_spoof_streaming_data_default_client_title">偽装するクライアントを選択</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio
 <small>(ログインが必要)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"Android
+<small>(SDK なし)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
 <small>(認証なし)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
 <small>(認証あり、操作が必要)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(古い、認証なし)</small>"</string>
+<small>(古い)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
-<small>(開発途中、認証なし)</small>"</string>
+<small>(開発途中)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
 <small>(PoToken なし)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
-<small>(未リリース、認証なし)</small>"</string>
+<small>(未リリース)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">このクライアントの使用時に生じる副作用</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"・[音声トラック] メニューは表示されません。
-・[音声トラックの強制を無効化] は利用できません。
+・[音声トラックの強制を無効化] は利用できない可能性があります。
 ・[一定音量] は利用できません。
 ・ログインしていない場合やシークレットモードでは、子ども向け動画は再生できない可能性があります。
 ・1080p+、AV1、HDR には対応していません。"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_no_sdk">・動画が 01:00 で停止する、または一部の地域では利用できない可能性があります。</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"・[音声トラック] メニューは表示されません。
 ・[一定音量] は利用できません。
 ・ログインしていない場合やシークレットモードでは、子ども向け動画は再生できない可能性があります。"</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"・[音声トラック] メニューは表示されません。
-・[音声トラックの強制を無効化] は利用できません。
+・[音声トラックの強制を無効化] は利用できない可能性があります。
 ・[一定音量] は利用できません。
 ・ログインしていない場合やシークレットモードでは、子ども向け動画は再生できない可能性があります。"</string>
     <string name="revanced_spoof_streaming_data_side_effects_ipados">"・AV1 コーデックには対応していません。
@@ -2477,24 +2482,6 @@ VP9 は AVC よりも高度なコーデックですが、利用者によって�
 5. 「認証トークンを取得」をタップして認証トークンを取得します。"</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">ウェブサイトを開く</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">アクティベーションコードをクリップボードにコピーしました: %s</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
-    <string name="revanced_preference_category_no_auth">認証なし</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_title">デフォルトの音声トラック</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">特定の音声トラック言語を選択するには、[音声トラックの強制を無効化] をオフにしてください。</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">「%s」ではデフォルトの音声トラック言語を選択することはできません。</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_title">[音声トラック] ボタンを表示</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"ストリーミングデータの取得に使用するクライアントが「Android VR」、「Mobile Web」、または「visionOS」の場合に [音声トラック] ボタンを表示します。"</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">ストリーミングデータの取得に使用するクライアントが「Android VR」、「Mobile Web」、または「visionOS」の場合に [音声トラック] ボタンを表示します。</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"前提条件:
-・ストリーミングデータの取得に使用するクライアントは「Android VR」、「Mobile Web」、「visionOS」のいずれかであること。
-・複数の音声トラックがある動画を再生していること。
-
-既知の問題:
-・YouTube の設定でアプリの言語を変更したが、アプリを再起動していない場合、音声トラックの選択ダイアログで動画内で使用される音声トラックの言語が変更されない可能性があります。
-・音声トラックの選択ダイアログで意図しない言語が選択される可能性があります。
-・「英語（解説）」など、一部の音声トラックには対応していません。
-
-この機能はまだ開発段階であるため、サーバー側の変更によりいつでも機能しなくなる可能性があります。"</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">JavaScript クライアントを使用</string>

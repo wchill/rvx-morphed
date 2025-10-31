@@ -562,7 +562,7 @@ Hạn chế: Nút Quay lại trên thanh công cụ có thể không hoạt đ�
 Tính năng này có thể không hoạt động với một số người dùng, nếu bạn trong số đó:
 1. Đi tới Cài đặt - RVX - Khác - Giả mạo dữ liệu phát video, và bật \"Giả mạo JavaScript\".
 2. Đi tới Cài đặt - RVX - Khác - Giả mạo dữ liệu phát video, và chuyển \"Ứng dụng khách mặc định\" sang TV."</string>
-    <string name="revanced_disable_auto_audio_tracks_summary_off">Tự động phát bản âm thanh khi phát video có bản âm thanh đã bật.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_off">"Tự động phát bản âm thanh khi phát video có bản âm thanh đã bật."</string>
     <string name="revanced_disable_auto_captions_title">Tắt tự động hiển thị phụ đề</string>
     <string name="revanced_disable_auto_captions_summary_on">Tự động hiển thị phụ đề khi phát video có phụ đề đã tắt.</string>
     <string name="revanced_disable_auto_captions_summary_off">Tự động hiển thị phụ đề khi phát video có phụ đề đã bật.</string>
@@ -2471,24 +2471,6 @@ Có thể gặp hiện tượng giật lag hoặc tụt fps khi phát video."</s
 5. Nhấn \"Lấy mã xác thực\" để lấy mã."</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Mở trang web</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Đã sao chép mã kích hoạt vào bảng nhớ tạm: %s.</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
-    <string name="revanced_preference_category_no_auth">Không xác thực</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_title">Ngôn ngữ âm thanh mặc định</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Để chọn ngôn ngữ luồng âm thanh, hãy tắt \"Tắt tự động phát bản âm thanh\".</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">Chọn ngôn ngữ luồng âm thanh mặc định không khả dụng với %s.</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_title">Nút bản âm thanh</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Nút bản âm thanh sẽ được hiển thị khi ứng dụng khách dùng để lấy dữ liệu phát là “Android VR”, “Mobile Web” hoặc “visionOS”."</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Nút bản âm thanh không được hiển thị.</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Điều kiện tiên quyết:
-• Ứng dụng khách dùng để lấy dữ liệu phát là “Android VR”, “Mobile Web” hoặc “visionOS”.
-• Video đang phát có nhiều bản âm thanh.
-
-Sự cố đã biết:
-• Nếu đổi ngôn ngữ ứng dụng trong cài đặt YouTube mà không khởi động lại, ngôn ngữ trong hộp thoại bản âm thanh có thể không đổi.
-• Đôi khi hộp thoại bản âm thanh hiển thị sai ngôn ngữ.
-• Một số bản âm thanh không được hỗ trợ, ví dụ như \"Mô tả tiếng anh\".
-
-Tính năng này vẫn đang trong quá trình phát triển, vì vậy nó có thể ngừng hoạt động bất kỳ lúc nào do thay đổi từ phía máy chủ."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Giả mạo JavaScript</string>

@@ -572,7 +572,7 @@ Shorts
 Вероятность исправить проблему:
 1. Включить в \"Настройки\" → RVX → Разное → Подмена потоковых данных → \"Использовать клиент JavaScript\".
 2. Изменить в \"Настройки\" → RVX → Разное → Подмена потоковых данных → \"Клиент по умолчанию\" на \"TV\" или \"TV простой\"."</string>
-    <string name="revanced_disable_auto_audio_tracks_summary_off">Принудительные автоматические звуковые дорожки включены.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_off">"Принудительные автоматические звуковые дорожки включены."</string>
     <string name="revanced_disable_auto_captions_title">Принудительные автоматические субтитры</string>
     <string name="revanced_disable_auto_captions_summary_on">Принудительные автоматические субтитры отключены.</string>
     <string name="revanced_disable_auto_captions_summary_off">Принудительные автоматические субтитры включены.</string>
@@ -2478,24 +2478,6 @@ VP9 более продвинутый кодек, чем AVC, но некото�
 5. Нажмите 'Получить токен авторизации', чтобы получить токен авторизации."</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Открыть сайт</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Код активации скопирован в буфер обмена: %s.</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
-    <string name="revanced_preference_category_no_auth">Не авторизован</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_title">Язык аудио потока по умолчанию</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Чтобы выбрать язык звукового потока, отключите \'Принудительные звуковые авто дорожки\'.</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">Язык аудио потока по умолчанию не доступен для %s.</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_title">Кнопка звуковой дорожки</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Отображена, при использовании подмены потоковых данных, как 'Android VR', 'Mobile Web' или 'visionOS'."</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Кнопка звуковой дорожки скрыта.</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Предварительные условия:
-• Клиент, используемый для получения потоковых данных - Android VR', 'Mobile Web', or 'visionOS'.
-• Начинают проигрываться видео с несколькими звуковыми дорожками.
-
-Известные проблемы:
-• Если язык изменен в настройках YouTube и приложение не перезапущено, язык может не измениться.
-• Иногда звуковая дорожка выбирается неправильно.
-• Некоторые звуковые дорожки, такие как \"Английский описательный\", не поддерживаются.
-
-Функция находится в разработке, и может перестать работать из-за изменений на стороне сервера."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (В разработке)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Использовать клиент JavaScript</string>

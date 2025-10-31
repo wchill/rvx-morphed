@@ -508,6 +508,7 @@
     <string name="revanced_spoof_streaming_data_default_client_title">Клієнт за замовчуванням</string>
     <string name="revanced_spoof_streaming_data_default_client_summary">Визначає клієнт за замовчуванням для підробки.</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">Android без SDK</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">Android VR автентифікації (потрібна дія)</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Мобільний веб</string>

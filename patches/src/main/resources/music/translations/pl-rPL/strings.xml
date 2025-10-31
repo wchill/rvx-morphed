@@ -512,6 +512,7 @@ Jeśli jesteś użytkownikiem YouTube Premium, to ustawienie te nie jest koniecz
     <string name="revanced_spoof_streaming_data_default_client_title">Domyślny klient</string>
     <string name="revanced_spoof_streaming_data_default_client_summary">Definiuje domyślnego klienta do oszukiwania.</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">Android (bez SDK)</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">Android VR z autoryzacją (wymaga akcji)</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobilny przeglądarkowy</string>

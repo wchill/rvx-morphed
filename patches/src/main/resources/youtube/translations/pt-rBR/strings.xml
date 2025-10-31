@@ -557,7 +557,7 @@ Limitação: O botão voltar na barra de ferramentas pode não funcionar."</stri
 Isto pode não funcionar para alguns usuários, se não funcionar para você:
 1. Vá para Configurações - RVX - Diversos - Dados de transmissão falsos e ative 'Usar cliente JavaScript'.
 2. Vá para Configurações - RVX - Diversos - Dados de transmissão falsos e altere o 'Cliente Padrão' para 'TV'."</string>
-    <string name="revanced_disable_auto_audio_tracks_summary_off">As faixas de áudio automáticas forçadas estão ativadas.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_off">"As faixas de áudio automáticas forçadas estão ativadas."</string>
     <string name="revanced_disable_auto_captions_title">Desativar legendas automáticas forçadas</string>
     <string name="revanced_disable_auto_captions_summary_on">As legendas automáticas forçadas estão desativadas.</string>
     <string name="revanced_disable_auto_captions_summary_off">As legendas automáticas forçadas estão ativadas.</string>
@@ -615,7 +615,7 @@ Alterações incluem:
     <string name="revanced_disable_translucent_status_bar_summary_on">A barra de status está opaca.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">A barra de status está opaca ou transparente.</string>
     <string name="revanced_disable_translucent_status_bar_user_dialog_message">Para as ROMs de alguns fabricantes rodando o Android 12+, ativar este recurso pode tornar a barra de navegação do sistema transparente.</string>
-    <string name="revanced_fix_hype_button_icon_title">Corrigir ícone do botão Hypar</string>
+    <string name="revanced_fix_hype_button_icon_title">Corrigir ícone do botão ‘hype’</string>
     <string name="revanced_fix_hype_button_icon_summary_on">O ícone do botão Hypar será exibido.</string>
     <string name="revanced_fix_hype_button_icon_summary_off">O ícone do botão Hypar está oculto.</string>
     <string name="revanced_fix_hype_button_icon_user_dialog_message">"No YouTube '19.25.39' ou versões anteriores, o ícone Hypar fica oculto na barra de ação do vídeo e no painel de descrição do vídeo.
@@ -1848,7 +1848,7 @@ Ajuste o volume deslizando verticalmente no lado direito da tela."</string>
     <string name="revanced_swipe_overlay_rect_size_invalid_toast">O tamanho da área deslizável não pode ser maior que 50. Redefinir ao valor padrão.</string>
     <string name="revanced_swipe_text_overlay_size_title">Tamanho do texto de sobreposição de deslize</string>
     <string name="revanced_swipe_text_overlay_size_summary">O tamanho do texto para a sobreposição de deslizar deve estar entre 1–30.</string>
-    <string name="revanced_swipe_text_overlay_size_invalid_toast">O tamanho do texto para a sobreposição de deslizar deve estar entre 1-30.</string>
+    <string name="revanced_swipe_text_overlay_size_invalid_toast">O tamanho do texto para a sobreposição de deslizar deve estar entre 1–30.</string>
     <string name="revanced_swipe_overlay_timeout_title">Tempo limite da sobreposição de gestos</string>
     <string name="revanced_swipe_overlay_timeout_summary">A quantidade de milissegundos em que a sobreposição é visível.</string>
     <string name="revanced_swipe_brightness_distance_dip_title">Distância de gesto de brilho</string>
@@ -1872,6 +1872,11 @@ Ajuste o volume deslizando verticalmente no lado direito da tela."</string>
     <string name="revanced_enable_swipe_to_switch_video_title">Ativar deslizar para alterar o vídeo</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_on">Deslizar para cima / para baixo em modo de tela cheia alterará para o vídeo seguinte / anterior.</string>
     <string name="revanced_enable_swipe_to_switch_video_summary_off">Deslizar para cima / para baixo em modo de tela cheia não alterará para o vídeo seguinte / anterior.</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_title">Corrigir a velocidade dos controles de deslizar e de toque prolongado</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_on">"A função de toque e segurar só ativa a velocidade quando o usuário toca e segura a tela.
+
+Problema conhecido: Às vezes, a sobreposição de deslizar aparece antes de alternar para o modo de tela cheia."</string>
+    <string name="revanced_fix_swipe_tap_and_hold_speed_summary_off">A função de toque e segurar pode, por vezes, ser ativada mesmo que o usuário não toque e segure.</string>
     <string name="revanced_swipe_lowest_value_auto_brightness_overlay_text">Automático</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">Vídeo</string>
@@ -2324,6 +2329,7 @@ Isso pode ser usado ao testar algo no MainThread."</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Cliente padrão</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio
 <small>(Login necessário)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"&lt;small&gt;(Sem SDK)&lt;/pequeno&gt;"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
 <small>(Sem Autenticação)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
@@ -2343,6 +2349,7 @@ Isso pode ser usado ao testar algo no MainThread."</string>
 • O volume estável não está disponível.
 • Os vídeos para crianças podem não reproduzir quando desconectado ou em modo anônimo.
 • 1080p+, AV1 e HDR não são suportados."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_no_sdk">O vídeo pode parar em 1:00 ou pode não estar disponível em algumas regiões.</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• O menu de faixa de áudio não está disponível.
 • O volume estável não está disponível.
 • Os vídeos para crianças podem não reproduzir quando desconectado ou em modo anônimo."</string>
@@ -2451,24 +2458,6 @@ A reprodução pode travar ou perder quadros."</string>
 5. Clique em 'Obter token de autorização' para obter um token de autorização."</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Abrir site</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Código de ativação copiado para a área de transferência: %s.</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
-    <string name="revanced_preference_category_no_auth">Sem Autenticação</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_title">Idioma padrão de áudio</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Para selecionar uma linguagem específica de transmissão do áudio, desative \"Desativar faixas de áudio automáticas forçadas\".</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">A seleção do idioma padrão de transmissão de áudio não está disponível com %s.</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_title">Exibir botão de faixa de áudio</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"O botão de faixa de áudio é exibido quando o cliente usado para buscar dados de transmissão é 'Android VR', 'Mobile Web' ou 'visionOS'."</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">O botão de faixa de áudio não é exibido.</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Pré-requisitos:
-• O cliente usado para buscar os dados de transmissão é 'Android VR', 'Mobile Web', 'iPadOS' ou 'visionOS'.
-• Um vídeo com multiplas faixas de áudio está sendo reproduzido.
-
-Problemas conhecidos:
-• Se o idioma do aplicativo for alterado nas configurações do YouTube e o aplicativo não for reiniciado, o idioma usado na caixa de diálogo da faixa de áudio poderá não mudar.
-• Às vezes, o idioma errado é selecionado na caixa de diálogo da faixa de áudio.
-• Algumas faixas de áudio, como 'Inglês descritivo', não são suportadas.
-
-Esse recurso ainda está em desenvolvimento, portanto pode quebrar a qualquer momento devido a alterações no lado do servidor."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Usar cliente JavaScript</string>

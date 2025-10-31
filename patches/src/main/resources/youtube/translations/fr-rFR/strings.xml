@@ -560,7 +560,7 @@ Limitation : Le bouton Retour de la barre d'outils peut ne pas fonctionner."</st
 Cela peut ne pas fonctionner pour certains utilisateurs, si cela ne fonctionne pas pour vous :
 1. Allez dans Paramètres - RVX - Paramètres avancés - Falsifier les données de diffusion en direct et activez 'Utiliser le client JavaScript'.
 2. Allez dans Paramètres - RVX - Paramètres avancés - Falsifier les données de diffusion en direct , et changez 'Client par défaut' en 'TV'."</string>
-    <string name="revanced_disable_auto_audio_tracks_summary_off">Les pistes audio automatiques forcées sont activés.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_off">"Les pistes audio automatiques forcées sont activés."</string>
     <string name="revanced_disable_auto_captions_title">Désact. les sous-titres forcés</string>
     <string name="revanced_disable_auto_captions_summary_on">Les sous-titres automatiques forcés sont désactivés.</string>
     <string name="revanced_disable_auto_captions_summary_off">Les sous-titres automatiques forcés sont activés.</string>
@@ -2463,24 +2463,6 @@ La lecture peut être saccadée ou présenter des pertes d'images."</string>
 5. Cliquez sur 'Obtenir un jeton d'autorisation' pour obtenir un jeton d'autorisation."</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Ouvrir le site web</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Code d\'activation copié dans le presse-papiers : %s.</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
-    <string name="revanced_preference_category_no_auth">Pas d\'authentification</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_title">Langue par défaut du flux audio</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Pour sélectionner une langue spécifique pour le flux audio, désactivez l\'option \'Désactiver les pistes audio automatiques forcées\'.</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">La sélection de la langue par défaut du flux audio n\'est pas disponible avec %s.</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_title">Afficher le bouton \'Piste audio\'</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"Le bouton piste audio s'affiche lorsque le client utilisé pour récupérer les données en streaming est 'Android VR', 'Mobile Web' ou 'visionOS'."</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">Le bouton \'Piste audio\' n\'est pas affiché.</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Conditions préalables :
-• Le client utilisé pour récupérer les données de diffusion en direct est 'Android VR ', 'Mobile Web' ou 'visionOS'.
-• Une vidéo comportant plusieurs pistes audio est en cours de lecture.
-
-Problèmes connus :
-• Si la langue de l'application est modifiée dans les paramètres YouTube et que l'application n'est pas redémarrée, la langue utilisée dans la boîte de dialogue de la piste audio peut ne pas changer.
-• Il arrive parfois que la mauvaise langue soit sélectionnée dans la boîte de dialogue de la piste audio.
-• Certaines pistes audio, telles que « Anglais descriptif », ne sont pas prises en charge.
-
-Cette fonctionnalité est encore en cours de développement et peut donc cesser de fonctionner à tout moment en raison de modifications apportées au niveau du serveur."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Utiliser le client JavaScript</string>

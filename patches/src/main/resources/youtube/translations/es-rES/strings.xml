@@ -557,7 +557,7 @@ Limitación: Es posible que el botón Atrás de la barra de herramientas no func
 Es posible que esto no funcione para algunos usuarios. Si no funciona para ti:
 1. Ve a Configuración - RVX - Otros - Falsificar datos de transmisión, y activa «Usar cliente JavaScript».
 2. Ve a Configuración - RVX - Otros - Falsificar datos de transmisión, y cambia «Cliente predeterminado» a «TV» o «TV simple»."</string>
-    <string name="revanced_disable_auto_audio_tracks_summary_off">Las pistas de audio automáticas forzadas están activadas.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_off">"Las pistas de audio automáticas forzadas están activadas."</string>
     <string name="revanced_disable_auto_captions_title">Desactivar subtítulos automáticos forzados</string>
     <string name="revanced_disable_auto_captions_summary_on">Los subtítulos automáticos forzados están desactivados.</string>
     <string name="revanced_disable_auto_captions_summary_off">Los subtítulos automáticos forzados están activados.</string>
@@ -2325,6 +2325,8 @@ Esto se puede utilizar al probar algo en el MainThread."</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Cliente predeterminado</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio 
 <small>(Inicio de sesión requerido)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"Android
+<small>(sin SDK)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
 <small>(Autenticación, acción necesaria)</small>"</string>
@@ -2345,6 +2347,7 @@ Esto se puede utilizar al probar algo en el MainThread."</string>
 • El volumen estable no está disponible.
 • Es posible que los vídeos para niños no se reproduzcan cuando se cierra la sesión o en modo incógnito.
 • No se admiten 1080p+, AV1 y HDR."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_android_no_sdk">• El vídeo puede detenerse en 1:00 o no estar disponible en algunas regiones.</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Falta el menú de pista de audio.
 • El volumen estable no está disponible.
 • Es posible que los vídeos para niños no se reproduzcan con la sesión cerrada o en modo incógnito."</string>
@@ -2455,24 +2458,6 @@ La reproducción se puede atascar o perder fotogramas."</string>
 5. Pulsa en «Obtener token de autorización» para obtener un token de autorización."</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Abrir sitio web</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Código de activación copiado al portapapeles: %s.</string>
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
-    <string name="revanced_preference_category_no_auth">Sin autenticación</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_title">Idioma predeterminado de la transmisión de audio</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_not_available">Para seleccionar un idioma de transmisión de audio específico, desactive «Desactivar pistas de audio automáticas forzadas».</string>
-    <string name="revanced_spoof_streaming_data_no_auth_language_not_available_by_client">La selección predeterminada del idioma de la transmisión de audio no está disponible con %s.</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_title">Mostrar botón de pista de audio</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_on">"El botón de pista de audio se muestra cuando el cliente utilizado para obtener datos de transmisión es «Android VR», «Web móvil» o «visionOS»."</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_summary_off">No se muestra el botón de pista de audio.</string>
-    <string name="revanced_spoof_streaming_data_audio_track_button_user_dialog_message">"Requisitos previos:
-• El cliente utilizado para obtener los datos de transmisión es «Android VR», «Web móvil» o «visionOS».
-• Se está reproduciendo un vídeo con varias pistas de audio.
-
-Problemas conocidos:
-• Si se cambia el idioma de la aplicación en la configuración de YouTube y no se reinicia la aplicación, es posible que el idioma utilizado en el diálogo de la pista de audio no cambie.
-• A veces se selecciona el idioma incorrecto en el diálogo de la pista de audio.
-• Algunas pistas de audio, como «inglés descriptivo», no son compatibles.
-
-Esta función todavía está en desarrollo, por lo que puede fallar en cualquier momento debido a cambios en el servidor."</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (todavía en desarrollo)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Usar cliente JavaScript</string>

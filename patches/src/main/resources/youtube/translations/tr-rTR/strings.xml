@@ -505,7 +505,7 @@ Sınırlama: Araç çubuğundaki Geri butonu çalışmayabilir."</string>
 Bu, bazı kullanıcılar için işe yaramayabilir, eğer sizin için işe yaramazsa:
 1. Ayarlar - RVX - Çeşitli - Sahte veri akışı'na gidin ve 'JavaScript istemcisini kullan' seçeneğini açın.
 2. Ayarlar - RVX - Çeşitli - Sahte akış verileri bölümüne gidin ve 'Varsayılan istemci'yi 'TV' veya 'TV Simply' olarak değiştirin."</string>
-    <string name="revanced_disable_auto_audio_tracks_summary_off">Ses parçalarının kendiliğinden açılması etkin.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_off">"Ses parçalarının kendiliğinden açılması etkin."</string>
     <string name="revanced_disable_auto_captions_title">Altyazıların kendiliğinden açılmasını kapat</string>
     <string name="revanced_disable_auto_captions_summary_on">Altyazıların kendiliğinden açılması kapalı</string>
     <string name="revanced_disable_auto_captions_summary_off">Altyazılar kendiliğinden açılabiliyor</string>
@@ -1569,7 +1569,6 @@ Devam düğmesine dokunun ve pil optimizasyonlarını devre dışı bırakın."<
     <string name="revanced_share_copy_settings_success">Ayarlar panoya kopyalandı</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">İzleme geçmişi</string>
