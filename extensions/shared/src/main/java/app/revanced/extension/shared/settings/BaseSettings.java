@@ -10,7 +10,6 @@ import app.revanced.extension.shared.patches.ReturnYouTubeUsernamePatch.DisplayF
 import app.revanced.extension.shared.patches.WatchHistoryPatch.WatchHistoryType;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientAndroidVRAvailability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientJSAvailability;
-import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ClientSingleAudioTrackAvailability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.J2V8Availability;
 import app.revanced.extension.shared.patches.spoof.SpoofStreamingDataPatch.ShowReloadVideoButtonAvailability;
 
@@ -42,10 +41,6 @@ public class BaseSettings {
 
     public static final BooleanSetting SPOOF_STREAMING_DATA_VR_ENABLE_AV1 = new BooleanSetting("revanced_spoof_streaming_data_vr_enable_av1", FALSE, true,
             "revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message", new ClientAndroidVRAvailability());
-
-    public static final EnumSetting<AppLanguage> SPOOF_STREAMING_DATA_NO_AUTH_LANGUAGE = new EnumSetting<>("revanced_spoof_streaming_data_no_auth_language", AppLanguage.DEFAULT, new ClientSingleAudioTrackAvailability());
-    public static final BooleanSetting SPOOF_STREAMING_DATA_AUDIO_TRACK_BUTTON = new BooleanSetting("revanced_spoof_streaming_data_audio_track_button", FALSE, true,
-            "revanced_spoof_streaming_data_audio_track_button_user_dialog_message", new ClientSingleAudioTrackAvailability());
 
     public static final BooleanSetting SPOOF_STREAMING_DATA_USE_JS = new BooleanSetting("revanced_spoof_streaming_data_use_js", !SpoofStreamingDataYouTube(), true,
             "revanced_spoof_streaming_data_use_js_user_dialog_message", new J2V8Availability());
