@@ -159,7 +159,7 @@ object InnerTubeRequestBody {
                 innerTubeBody.put("playbackContext", playbackContext)
 
                 if (requirePoToken) {
-                    val playerRequestPoToken = PoTokenGate.getContentPoToken(videoId)
+                    val playerRequestPoToken = PoTokenGate.getWebContentPoToken(videoId)
                     if (playerRequestPoToken != null) {
                         val serviceIntegrityDimensions = JSONObject()
                         serviceIntegrityDimensions.put("poToken", playerRequestPoToken)

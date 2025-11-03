@@ -8,6 +8,7 @@ agp = "8.2.2"
 annotation = "1.9.1"
 collections4 = "4.5.0"
 desugar = "2.1.5"
+diskLruCache = "2.0.2"
 kotlinx-coroutines-core = "1.9.0"
 lang3 = "3.19.0"
 nanojson = "1.10"
@@ -22,6 +23,7 @@ retrofit = "2.11.0"
 annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
 collections4 = { module = "org.apache.commons:commons-collections4", version.ref = "collections4" }
 desugar-jdk-libs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar" }
+diskLruCache = { module = "com.jakewharton:disklrucache", version.ref = "diskLruCache" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines-core" }
 lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "lang3" }

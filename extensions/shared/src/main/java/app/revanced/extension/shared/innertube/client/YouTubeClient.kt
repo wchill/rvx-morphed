@@ -212,9 +212,13 @@ object YouTubeClient {
      * Video not playable: None.
      * Note: Both 'Authorization' and 'Set-Cookie' are supported.
      */
-    private const val CLIENT_VERSION_TVHTML5 = "7.20250917.13.00"
+    private const val CLIENT_VERSION_TVHTML5 = "7.20251029.15.01"
+    /**
+     * The only dinosaur device where 'authenticatedConfig.flags.attest_botguard_on_tvhtml5' is FALSE.
+     * Cobalt (Browser), Fire OS, PlayStation, and Tizen OS all have the value of 'attest_botguard_on_tvhtml5' as TRUE.
+     */
     private const val USER_AGENT_TVHTML5 =
-        "Mozilla/5.0 (RokuOS) Cobalt/20.lts.5.272122-gold (unlike Gecko) v8/6.5.254.43 gles Starboard/11, Roku_TV_MT10_2017/12.0 (TCL, 7121X, Wired)"
+        "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; Xbox)"
 
 
     // TVHTML5 SIMPLY
@@ -223,8 +227,6 @@ object YouTubeClient {
      * Note: Only 'Authorization' is supported, PoToken required?
      */
     private const val CLIENT_VERSION_TVHTML5_SIMPLY = "1.1"
-    private const val USER_AGENT_TVHTML5_SIMPLY =
-        "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; Xbox)"
 
 
     // TVHTML5 EMBEDDED
@@ -241,7 +243,7 @@ object YouTubeClient {
      * Note: Audio track is not available.
      * Note: Only 'Set-Cookie' is supported.
      */
-    private const val CLIENT_VERSION_MWEB = "2.20250918.09.00"
+    private const val CLIENT_VERSION_MWEB = "2.20251031.00.00"
     private const val USER_AGENT_MWEB =
         "Mozilla/5.0 (Android 16; Mobile; rv:140.0) Gecko/140.0 Firefox/140.0"
 
@@ -474,7 +476,7 @@ object YouTubeClient {
         TV(
             id = 7,
             clientVersion = CLIENT_VERSION_TVHTML5,
-            clientPlatform = CLIENT_PLATFORM_TV,
+            clientPlatform = CLIENT_PLATFORM_GAME_CONSOLE,
             userAgent = USER_AGENT_TVHTML5,
             requireJS = true,
             refererFormat = CLIENT_REFERER_FORMAT_TV,
@@ -486,7 +488,7 @@ object YouTubeClient {
             id = 75,
             clientVersion = CLIENT_VERSION_TVHTML5_SIMPLY,
             clientPlatform = CLIENT_PLATFORM_GAME_CONSOLE,
-            userAgent = USER_AGENT_TVHTML5_SIMPLY,
+            userAgent = USER_AGENT_TVHTML5,
             requireJS = true,
             supportsMultiAudioTracks = true,
             clientName = "TVHTML5_SIMPLY",
@@ -498,7 +500,7 @@ object YouTubeClient {
         TV_EMBEDDED(
             id = 85,
             clientVersion = CLIENT_VERSION_TVHTML5_EMBEDDED,
-            clientPlatform = CLIENT_PLATFORM_TV,
+            clientPlatform = CLIENT_PLATFORM_GAME_CONSOLE,
             clientScreen = CLIENT_SCREEN_EMBED,
             userAgent = USER_AGENT_TVHTML5,
             requireJS = true,
@@ -507,6 +509,13 @@ object YouTubeClient {
             clientName = "TVHTML5_SIMPLY_EMBEDDED_PLAYER",
             friendlyName = "TV Embedded"
         ),
+
+        /**
+         * PoToken client is currently not working.
+         * Mobile Web has been temporarily removed from the available clients.
+         *
+         * TODO: Fix me when the SABR extractor is implemented in the future.
+         */
         MWEB(
             id = 2,
             clientVersion = CLIENT_VERSION_MWEB,
@@ -537,7 +546,7 @@ object YouTubeClient {
                 IPADOS,
                 TV,
                 TV_SIMPLY_NO_POTOKEN,
-                MWEB,
+                //MWEB,
                 ANDROID_VR_AUTH,
             )
             val CLIENT_ORDER_TO_USE_JS_PREFER_TV: Array<ClientType> = arrayOf(
@@ -548,7 +557,7 @@ object YouTubeClient {
                 ANDROID_NO_SDK,
                 IPADOS,
                 TV_SIMPLY_NO_POTOKEN,
-                MWEB,
+                //MWEB,
                 ANDROID_VR_AUTH,
             )
         }
