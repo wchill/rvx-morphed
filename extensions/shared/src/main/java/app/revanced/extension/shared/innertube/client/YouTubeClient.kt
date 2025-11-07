@@ -212,10 +212,9 @@ object YouTubeClient {
      * Video not playable: None.
      * Note: Both 'Authorization' and 'Set-Cookie' are supported.
      */
-    private const val CLIENT_VERSION_TVHTML5 = "7.20251029.15.01"
+    private const val CLIENT_VERSION_TVHTML5 = "7.20251105.10.00"
     /**
-     * The only dinosaur device where 'authenticatedConfig.flags.attest_botguard_on_tvhtml5' is FALSE.
-     * Cobalt (Browser), Fire OS, PlayStation, and Tizen OS all have the value of 'attest_botguard_on_tvhtml5' as TRUE.
+     * authenticatedConfig.flags.attest_botguard_on_tvhtml5: false.
      */
     private const val USER_AGENT_TVHTML5 =
         "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; Xbox)"
@@ -243,7 +242,7 @@ object YouTubeClient {
      * Note: Audio track is not available.
      * Note: Only 'Set-Cookie' is supported.
      */
-    private const val CLIENT_VERSION_MWEB = "2.20251031.00.00"
+    private const val CLIENT_VERSION_MWEB = "2.20251105.03.00"
     private const val USER_AGENT_MWEB =
         "Mozilla/5.0 (Android 16; Mobile; rv:140.0) Gecko/140.0 Firefox/140.0"
 
