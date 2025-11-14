@@ -5,6 +5,8 @@ import android.os.Build;
 import android.webkit.CookieManager;
 
 public final class DeviceHelpers {
+    private static int sMaxHeapMemoryMB = -1;
+
     /**
      * @return whether the device has support for WebView, see
      * <a href="https://stackoverflow.com/a/69626735">https://stackoverflow.com/a/69626735</a>
@@ -29,7 +31,20 @@ public final class DeviceHelpers {
     }
 
     public static int getMaxHeapMemoryMB() {
-        long maxHeapMemoryMB = Runtime.getRuntime().maxMemory() / (1024 * 1024);
-        return Math.toIntExact(maxHeapMemoryMB);
+        if (sMaxHeapMemoryMB == -1) {
+            long maxMemory = Runtime.getRuntime().maxMemory();
+            sMaxHeapMemoryMB = (int) (maxMemory / (1024 * 1024)); // Growth Limit
+        }
+
+        return sMaxHeapMemoryMB;
+    }
+
+    public static int getAllocatedHeapMemoryMB() {
+        long allocatedMemory = Runtime.getRuntime().totalMemory();
+        return (int) (allocatedMemory / (1024 * 1024));
+    }
+
+    public static boolean isMemoryCritical() {
+        return getAllocatedHeapMemoryMB() > getMaxHeapMemoryMB() * 0.5;
     }
 }
