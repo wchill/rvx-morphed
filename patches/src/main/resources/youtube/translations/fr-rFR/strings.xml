@@ -1550,15 +1550,6 @@ Cette fonction fonctionne mieux avec une connexion internet très rapide."</stri
     <string name="revanced_hide_chapters_section_title">Masquer la section des chapitres</string>
     <string name="revanced_hide_chapters_section_summary_on">La section des chapitres est masqué.</string>
     <string name="revanced_hide_chapters_section_summary_off">La section des chapitres est affiché.</string>
-    <string name="revanced_hide_contents_section_title">Masquer la section \'Contenu\'</string>
-    <string name="revanced_hide_contents_section_summary_on">La section \'Comment ce contenu a été créé\' est masqué.</string>
-    <string name="revanced_hide_contents_section_summary_off">La section \'Comment ce contenu a été créé\' est affiché.</string>
-    <string name="revanced_hide_podcast_section_title">Masquer la section \'Podcasts\'</string>
-    <string name="revanced_hide_podcast_section_summary_on">La section \'Podcasts\' est masquée.</string>
-    <string name="revanced_hide_podcast_section_summary_off">La section \'Podcasts\' est affiché.</string>
-    <string name="revanced_hide_info_cards_section_title">Masquer les fiches \'Infos\'</string>
-    <string name="revanced_hide_info_cards_section_summary_on">La section des fiches info est masquée.</string>
-    <string name="revanced_hide_info_cards_section_summary_off">La section des fiches info est affichée.</string>
     <string name="revanced_hide_key_concepts_section_title">Masquer la section \'Concepts clés\'</string>
     <string name="revanced_hide_key_concepts_section_summary_on">La section \'Concepts clés\' est masqué.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">La section \'Concepts clés\' est affiché.</string>

@@ -1004,17 +1004,6 @@
     <string name="revanced_hide_chapters_section_title">Скриване на секцията с глави</string>
     <string name="revanced_hide_chapters_section_summary_on">Разделът със секции е скрит.</string>
     <string name="revanced_hide_chapters_section_summary_off">Секцията с заглавия се показва.</string>
-    <string name="revanced_hide_contents_section_title">Секция със съдържание</string>
-    <string name="revanced_hide_contents_section_summary_on">Разделът „Как е създадено това съдържание“ е скрит.</string>
-    <string name="revanced_hide_contents_section_summary_off">Появява се.
-
-Относно раздела „Как е създадено това съдържание“.</string>
-    <string name="revanced_hide_podcast_section_title">Скрийте секцията „Подкасти“</string>
-    <string name="revanced_hide_podcast_section_summary_on">Разделът „Подкасти“ е скрит.</string>
-    <string name="revanced_hide_podcast_section_summary_off">Показва се секцията „Подкасти“.</string>
-    <string name="revanced_hide_info_cards_section_title">Скриване на раздела за информационни карти</string>
-    <string name="revanced_hide_info_cards_section_summary_on">Разделът за информационни карти е скрит.</string>
-    <string name="revanced_hide_info_cards_section_summary_off">Разделът за информационни карти е показан.</string>
     <string name="revanced_hide_key_concepts_section_title">Раздел „Ключови понятия“</string>
     <string name="revanced_hide_key_concepts_section_summary_on">Раздел „Ключови понятия“ са скрити.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Раздел „Ключови понятия“ се показват.</string>

@@ -509,7 +509,7 @@ Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết
     <string name="revanced_spoof_streaming_data_default_client_title">Client mặc định</string>
     <string name="revanced_spoof_streaming_data_default_client_summary">Chọn client mặc định để giả mạo.</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">Android Không SDK</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">Android No SDK</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">Android VR Auth (Cần thao tác)</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobile Web</string>

@@ -1139,15 +1139,6 @@ Beyaz liste ayarı iletişim kutusunu açmak için dokunun ve basılı tutun.</s
     <string name="revanced_hide_chapters_section_title">\"Öne çıkan yerler\"i gizle</string>
     <string name="revanced_hide_chapters_section_summary_on">Bölümler kısmı gizleniyor.</string>
     <string name="revanced_hide_chapters_section_summary_off">Bölümler kısmı gizlenmiyor.</string>
-    <string name="revanced_hide_contents_section_title">İçerikler bölümünü gizle</string>
-    <string name="revanced_hide_contents_section_summary_on">Bu içeriğin nasıl yapıldığı bölümü gizlidir.</string>
-    <string name="revanced_hide_contents_section_summary_off">Bu içeriğin nasıl yapıldığı bölümü gizlenmiyor.</string>
-    <string name="revanced_hide_podcast_section_title">\"Podcast\'i keşfedin\" kısmını gizle</string>
-    <string name="revanced_hide_podcast_section_summary_on">Podcast bölümleri gizleniyor.</string>
-    <string name="revanced_hide_podcast_section_summary_off">Podcast bölümlerini keşfet bölümleri gizlenmiyor.</string>
-    <string name="revanced_hide_info_cards_section_title">Video açıklamasındaki kanal bilgileri kısmını gizle</string>
-    <string name="revanced_hide_info_cards_section_summary_on">Video açıklamasındaki kanal bilgileri gizleniyor.</string>
-    <string name="revanced_hide_info_cards_section_summary_off">Bilgi kartları bölümü görünür.</string>
     <string name="revanced_hide_key_concepts_section_title">Anahtar kavramlar bölümünü gizle</string>
     <string name="revanced_hide_key_concepts_section_summary_on">Anahtar kavramlar bölümünü gizli.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Anahtar kavramlar bölümünü gizlenmiyor.</string>

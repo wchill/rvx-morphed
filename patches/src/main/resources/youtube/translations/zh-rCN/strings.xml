@@ -1541,15 +1541,6 @@
     <string name="revanced_hide_chapters_section_title">隐藏章节部分</string>
     <string name="revanced_hide_chapters_section_summary_on">章节部分已隐藏</string>
     <string name="revanced_hide_chapters_section_summary_off">章节部分已显示</string>
-    <string name="revanced_hide_contents_section_title">隐藏内容部分</string>
-    <string name="revanced_hide_contents_section_summary_on">此内容的制作过程部分已隐藏</string>
-    <string name="revanced_hide_contents_section_summary_off">此内容的制作过程部分已显示</string>
-    <string name="revanced_hide_podcast_section_title">隐藏播客部分</string>
-    <string name="revanced_hide_podcast_section_summary_on">播客部分已隐藏</string>
-    <string name="revanced_hide_podcast_section_summary_off">播客部分已显示</string>
-    <string name="revanced_hide_info_cards_section_title">隐藏视频中的信息卡片</string>
-    <string name="revanced_hide_info_cards_section_summary_on">信息卡片已隐藏</string>
-    <string name="revanced_hide_info_cards_section_summary_off">信息卡片已显示</string>
     <string name="revanced_hide_key_concepts_section_title">隐藏关键概念部分</string>
     <string name="revanced_hide_key_concepts_section_summary_on">关键概念部分已隐藏</string>
     <string name="revanced_hide_key_concepts_section_summary_off">关键概念部分已显示</string>

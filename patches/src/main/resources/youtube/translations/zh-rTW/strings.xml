@@ -1556,15 +1556,9 @@
     <string name="revanced_hide_chapters_section_title">隱藏章節部份</string>
     <string name="revanced_hide_chapters_section_summary_on">章節部份已隱藏</string>
     <string name="revanced_hide_chapters_section_summary_off">章節部份已顯示</string>
-    <string name="revanced_hide_contents_section_title">隱藏內容區</string>
-    <string name="revanced_hide_contents_section_summary_on">「此內容的製作過程」區已隱藏。</string>
-    <string name="revanced_hide_contents_section_summary_off">「此內容的製作過程」區已顯示。</string>
-    <string name="revanced_hide_podcast_section_title">隱藏播客部分</string>
-    <string name="revanced_hide_podcast_section_summary_on">Podcast 已隱藏</string>
-    <string name="revanced_hide_podcast_section_summary_off">Podcast 已顯示</string>
-    <string name="revanced_hide_info_cards_section_title">隱藏影片中的訊息卡片</string>
-    <string name="revanced_hide_info_cards_section_summary_on">訊息卡片已隱藏</string>
-    <string name="revanced_hide_info_cards_section_summary_off">訊息卡片已顯示</string>
+    <string name="revanced_hide_hype_points_section_title">隱藏粉絲熱推部分</string>
+    <string name="revanced_hide_hype_points_section_summary_on">粉絲熱推部分已隱藏。</string>
+    <string name="revanced_hide_hype_points_section_summary_off">粉絲熱推部分已顯示。</string>
     <string name="revanced_hide_key_concepts_section_title">隱藏關鍵概念部分</string>
     <string name="revanced_hide_key_concepts_section_summary_on">關鍵概念部分被隱藏。</string>
     <string name="revanced_hide_key_concepts_section_summary_off">關鍵概念部分已顯示。</string>
@@ -2359,6 +2353,8 @@
 <small>(開發中, 無需驗證)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">電視
 <small>(開發中)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"電視
+<small>(傳統)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
 <small>(無 PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">電視內嵌功能

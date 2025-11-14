@@ -7,7 +7,7 @@
     <string name="revanced_settings_title">RVX</string>
     <string name="revanced_settings_search_title">%s 검색</string>
     <string name="revanced_reset_to_default_toast">기본값으로 초기화하였습니다.</string>
-    <string name="revanced_preference_category_experimental_flag">실험 기능</string>
+    <string name="revanced_preference_category_experimental_flag">실험 플래그</string>
     <string name="revanced_confirm_user_dialog_title">계속하시겠습니까?</string>
     <string name="revanced_restart_first_run">레이아웃을 정상적으로 불러오기 위해 다시 시작합니다.</string>
     <string name="revanced_restart_title">앱을 다시 시작하세요</string>
@@ -983,12 +983,12 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
     <string name="revanced_hide_end_screen_cards_title">최종 화면 카드 숨기기</string>
     <string name="revanced_hide_end_screen_cards_summary_on">최종 화면 카드가 숨겨집니다.</string>
     <string name="revanced_hide_end_screen_cards_summary_off">최종 화면 카드가 표시됩니다.</string>
-    <string name="revanced_hide_end_screen_suggested_video_title">최종 화면 다음 재생 추천 동영상 숨기기</string>
-    <string name="revanced_hide_end_screen_suggested_video_summary_on">"자동재생이 꺼져 있으면 최종 화면에서 다음 재생 추천 동영상이 숨겨집니다.
+    <string name="revanced_hide_end_screen_suggested_video_title">최종 화면 추천 동영상 숨기기</string>
+    <string name="revanced_hide_end_screen_suggested_video_summary_on">"자동재생이 꺼져 있으면 최종 화면에서 추천 동영상이 숨겨집니다.
 
 자동재생은 YouTube 설정에서 변경할 수 있습니다:
 설정 → 자동재생 / 재생 → 다음 동영상 자동재생"</string>
-    <string name="revanced_hide_end_screen_suggested_video_summary_off">최종 화면에서 다음 재생 추천 동영상이 표시됩니다.</string>
+    <string name="revanced_hide_end_screen_suggested_video_summary_off">최종 화면에서 추천 동영상이 표시됩니다.</string>
     <string name="revanced_skip_autoplay_countdown_title">자동재생 카운트다운 건너뛰기</string>
     <string name="revanced_skip_autoplay_countdown_summary_on">자동재생이 활성화되어 있으면, 카운트다운 없이 다음 동영상을 재생합니다.</string>
     <string name="revanced_skip_autoplay_countdown_summary_off">자동재생이 활성화되어 있으면, 카운트다운 종료 후에 다음 동영상을 재생합니다</string>
@@ -1561,18 +1561,9 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
     <string name="revanced_hide_chapters_section_title">챕터 섹션 숨기기</string>
     <string name="revanced_hide_chapters_section_summary_on">챕터 섹션이 숨겨집니다.</string>
     <string name="revanced_hide_chapters_section_summary_off">챕터 섹션이 표시됩니다.</string>
-    <string name="revanced_hide_contents_section_title">이 콘텐츠가 제작된 방식 섹션 숨기기</string>
-    <string name="revanced_hide_contents_section_summary_on">이 콘텐츠가 제작된 방식 섹션이 숨겨집니다.</string>
-    <string name="revanced_hide_contents_section_summary_off">이 콘텐츠가 제작된 방식 섹션이 표시됩니다.</string>
     <string name="revanced_hide_hype_points_section_title">Hype 점수 섹션 숨기기</string>
     <string name="revanced_hide_hype_points_section_summary_on">Hype 점수 섹션이 숨겨집니다.</string>
     <string name="revanced_hide_hype_points_section_summary_off">Hype 점수 섹션이 표시됩니다.</string>
-    <string name="revanced_hide_podcast_section_title">팟캐스트 살펴보기 섹션 숨기기</string>
-    <string name="revanced_hide_podcast_section_summary_on">팟캐스트 살펴보기 섹션이 숨겨집니다.</string>
-    <string name="revanced_hide_podcast_section_summary_off">팟캐스트 살펴보기 섹션이 표시됩니다.</string>
-    <string name="revanced_hide_info_cards_section_title">크리에이터 정보 카드 섹션 숨기기</string>
-    <string name="revanced_hide_info_cards_section_summary_on">크리에이터 정보 카드 섹션이 숨겨집니다.</string>
-    <string name="revanced_hide_info_cards_section_summary_off">크리에이터 정보 카드 섹션이 표시됩니다.</string>
     <string name="revanced_hide_key_concepts_section_title">주요 개념 섹션 숨기기</string>
     <string name="revanced_hide_key_concepts_section_summary_on">주요 개념 섹션이 숨겨집니다.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">주요 개념 섹션이 표시됩니다.</string>
@@ -1850,7 +1841,7 @@ Shorts 플레이어 배경을 탭하는 경우에 UI를 숨길 수 있습니다.
     <string name="revanced_swipe_threshold_title">스와이프 한계치</string>
     <string name="revanced_swipe_threshold_summary">제스처 인식을 위해 얼마나 스와이프를 해야 할지를 지정할 수 있으며, 원하지 않은 제스처 인식을 방지합니다.</string>
     <string name="revanced_swipe_overlay_style_title">스와이프 오버레이 스타일</string>
-    <string name="revanced_swipe_overlay_style_entry_0">레거시</string>
+    <string name="revanced_swipe_overlay_style_entry_0">기존</string>
     <string name="revanced_swipe_overlay_style_entry_1">가로</string>
     <string name="revanced_swipe_overlay_style_entry_2">가로 (최소화 - 상단)</string>
     <string name="revanced_swipe_overlay_style_entry_3">가로 (최소화 - 중앙)</string>
@@ -1946,10 +1937,10 @@ Shorts 플레이어 배경을 탭하는 경우에 UI를 숨길 수 있습니다.
     <string name="revanced_enable_custom_playback_speed_summary_on">사용자 정의 동영상 재생 속도를 활성화합니다.</string>
     <string name="revanced_enable_custom_playback_speed_summary_off">사용자 정의 동영상 재생 속도를 비활성화합니다.</string>
     <string name="revanced_custom_playback_speed_menu_type_title">사용자 정의 동영상 재생 속도 메뉴 유형</string>
-    <string name="revanced_custom_playback_speed_menu_type_entry_custom_legacy">사용자 정의 (레거시)</string>
+    <string name="revanced_custom_playback_speed_menu_type_entry_custom_legacy">사용자 정의 (기존)</string>
     <string name="revanced_custom_playback_speed_menu_type_entry_custom_modern">사용자 정의 (모던)</string>
     <string name="revanced_custom_playback_speed_menu_type_entry_custom_no_theme">사용자 정의 (테마 없음)</string>
-    <string name="revanced_custom_playback_speed_menu_type_entry_youtube_legacy">YouTube 레거시</string>
+    <string name="revanced_custom_playback_speed_menu_type_entry_youtube_legacy">YouTube 기존</string>
     <string name="revanced_custom_playback_speeds_title">사용자 정의 동영상 재생 속도 편집하기</string>
     <string name="revanced_custom_playback_speeds_summary">사용하고 싶은 동영상 재생 속도 값을 추가 또는 변경할 수 있습니다.</string>
     <string name="revanced_custom_playback_speeds_invalid">사용자 정의 재생 속도는 %s 배속보다 작아야 합니다.</string>
@@ -2368,7 +2359,7 @@ YouTube Premium 사용자라면 이 설정이 필요하지 않을 수 있습니�
 <small>(개발 중)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
-<small>(구형)</small>"</string>
+<small>(기존)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
 <small>(PoToken 없음)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>

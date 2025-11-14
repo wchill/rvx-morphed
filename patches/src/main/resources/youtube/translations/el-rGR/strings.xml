@@ -1560,22 +1560,9 @@ Playlists
     <string name="revanced_hide_chapters_section_title">Ενότητα κεφαλαίων βίντεο</string>
     <string name="revanced_hide_chapters_section_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_chapters_section_summary_off">Εμφανίζεται.</string>
-    <string name="revanced_hide_contents_section_title">Ενότητα «Πώς δημιουργήθηκε αυτό το περιεχόμενο»</string>
-    <string name="revanced_hide_contents_section_summary_on">Κρυμμένη.
-
-Αφορά την ενότητα «Πως δημιουργήθηκε αυτό το περιεχόμενο».</string>
-    <string name="revanced_hide_contents_section_summary_off">Εμφανίζεται.
-
-Αφορά την ενότητα «Πως δημιουργήθηκε αυτό το περιεχόμενο».</string>
     <string name="revanced_hide_hype_points_section_title">Πόντοι Hype</string>
     <string name="revanced_hide_hype_points_section_summary_on">Κρυμμένοι.</string>
     <string name="revanced_hide_hype_points_section_summary_off">Εμφανίζονται.</string>
-    <string name="revanced_hide_podcast_section_title">Ενότητα «Εξερευνήστε του podcast»</string>
-    <string name="revanced_hide_podcast_section_summary_on">Κρυμμένη.</string>
-    <string name="revanced_hide_podcast_section_summary_off">Εμφανίζεται.</string>
-    <string name="revanced_hide_info_cards_section_title">Ενότητα καρτών πληροφοριών</string>
-    <string name="revanced_hide_info_cards_section_summary_on">Κρυμμένη.</string>
-    <string name="revanced_hide_info_cards_section_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_key_concepts_section_title">Ενότητα «Βασικές έννοιες»</string>
     <string name="revanced_hide_key_concepts_section_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Εμφανίζεται.</string>

@@ -1552,15 +1552,6 @@ Diese Funktion funktioniert am besten mit einer sehr schnellen Internetverbindun
     <string name="revanced_hide_chapters_section_title">Hide chapters sections</string>
     <string name="revanced_hide_chapters_section_summary_on">Chapters sections are hidden.</string>
     <string name="revanced_hide_chapters_section_summary_off">Chapters sections are shown.</string>
-    <string name="revanced_hide_contents_section_title">Inhaltsbereich ausblenden</string>
-    <string name="revanced_hide_contents_section_summary_on">Wie dieser Inhalt erstellt wurde, wird ausgeblendet.</string>
-    <string name="revanced_hide_contents_section_summary_off">Wie dieser Inhalt erstellt wurde Abschnitt angezeigt.</string>
-    <string name="revanced_hide_podcast_section_title">Podcast-Abschnitte ausblenden</string>
-    <string name="revanced_hide_podcast_section_summary_on">Podcast-Abschnitte sind ausgeblendet.</string>
-    <string name="revanced_hide_podcast_section_summary_off">Podcast-Abschnitte werden angezeigt.</string>
-    <string name="revanced_hide_info_cards_section_title">Infokarten-Abschnitte verstecken</string>
-    <string name="revanced_hide_info_cards_section_summary_on">Infokarten-Abschnitte sind versteckt</string>
-    <string name="revanced_hide_info_cards_section_summary_off">Infokarten-Abschnitte werden angezeigt</string>
     <string name="revanced_hide_key_concepts_section_title">Schlüsselkonzeptsektion ausblenden</string>
     <string name="revanced_hide_key_concepts_section_summary_on">Schlüsselkonzepte sind ausgeblendet.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Schlüsselkonzepte werden angezeigt.</string>

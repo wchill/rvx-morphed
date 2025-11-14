@@ -519,7 +519,7 @@ YouTube Premium 사용자라면 이 설정은 필요하지 않을 수 있습니�
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">Android VR 인증 있음 (작업이 필요함)</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobile Web</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">TV Legacy</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">TV 기존</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Android VR 인증 있음에 대한 정보</string>

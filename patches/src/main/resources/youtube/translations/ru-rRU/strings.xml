@@ -1559,15 +1559,9 @@ Shorts
     <string name="revanced_hide_chapters_section_title">Главы</string>
     <string name="revanced_hide_chapters_section_summary_on">Главы скрыты.</string>
     <string name="revanced_hide_chapters_section_summary_off">Главы отображены.</string>
-    <string name="revanced_hide_contents_section_title">Секция содержимого</string>
-    <string name="revanced_hide_contents_section_summary_on">Секция содержимого скрыта.</string>
-    <string name="revanced_hide_contents_section_summary_off">Секция содержимого отображена.</string>
-    <string name="revanced_hide_podcast_section_title">Секции подкастов</string>
-    <string name="revanced_hide_podcast_section_summary_on">Секции подкастов скрыты.</string>
-    <string name="revanced_hide_podcast_section_summary_off">Секции подкастов отображены.</string>
-    <string name="revanced_hide_info_cards_section_title">Секции информационных карт</string>
-    <string name="revanced_hide_info_cards_section_summary_on">Секции информационных карт скрыты.</string>
-    <string name="revanced_hide_info_cards_section_summary_off">Секции информационных карт отображены.</string>
+    <string name="revanced_hide_hype_points_section_title">Секция баллов \"хайпа\"</string>
+    <string name="revanced_hide_hype_points_section_summary_on">Скрыта.</string>
+    <string name="revanced_hide_hype_points_section_summary_off">Отображена.</string>
     <string name="revanced_hide_key_concepts_section_title">Секция \"Ключевые понятия\"</string>
     <string name="revanced_hide_key_concepts_section_summary_on">Секция \"Ключевые понятия\" скрыта.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Секция \"Ключевые понятия\" отображена.</string>
@@ -2364,6 +2358,8 @@ Shorts
 <small>(В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">ТВ
 <small>(В разработке)</small></string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
+<small>(Устаревший)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"ТВ Простой
 <small>(Без PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Встроенный ТВ
