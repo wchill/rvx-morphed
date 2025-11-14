@@ -109,21 +109,24 @@ public final class DescriptionsFilter extends Filter {
 
         final boolean hideCreatorSection = Settings.HIDE_CREATOR_SECTION.get();
         final boolean hideFeaturedSection = Settings.HIDE_FEATURED_SECTION.get();
+        final boolean hideSubscribeButton = Settings.HIDE_SUBSCRIBE_BUTTON.get();
 
-        if (hideCreatorSection && hideFeaturedSection) {
-            return true;
+        if (!hideCreatorSection && !hideFeaturedSection && !hideSubscribeButton) {
+            return false;
         }
 
-        if (!hideCreatorSection && !hideFeaturedSection) {
-            return false;
+        if (hideCreatorSection) {
+            return true;
         }
 
         // "media_lockup.", "structured_description_video_lockup."
         if (path.contains("compact_infocard.")) {
             return hideFeaturedSection;
+        } else if (path.contains("subscribe_button.")) {
+            return hideSubscribeButton;
+        } else {
+            return false;
         }
-
-        return hideCreatorSection;
     }
 
     @Override
