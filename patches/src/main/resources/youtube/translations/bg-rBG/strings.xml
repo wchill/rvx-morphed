@@ -266,7 +266,7 @@
     <string name="revanced_change_start_page_type_summary_off">Началната страница се променя само веднъж.</string>
     <string name="revanced_disable_auto_audio_tracks_title">Принудителните автоматични аудио пътеки са деактивирани</string>
     <string name="revanced_disable_auto_audio_tracks_summary_on">Задължителните аудио записи са деактивирани.</string>
-    <string name="revanced_disable_auto_audio_tracks_summary_off">Задължителните аудио записи са активирани.</string>
+    <string name="revanced_disable_auto_audio_tracks_summary_off">"Задължителните аудио записи са активирани."</string>
     <string name="revanced_disable_auto_captions_title">Изкл. принудителни автоматични субтититри</string>
     <string name="revanced_disable_auto_captions_summary_on">Принудителните автоматични субтититри са изключени.</string>
     <string name="revanced_disable_auto_captions_summary_off">Принудителните автоматични субтититри са включени.</string>
@@ -1004,17 +1004,6 @@
     <string name="revanced_hide_chapters_section_title">Скриване на секцията с глави</string>
     <string name="revanced_hide_chapters_section_summary_on">Разделът със секции е скрит.</string>
     <string name="revanced_hide_chapters_section_summary_off">Секцията с заглавия се показва.</string>
-    <string name="revanced_hide_contents_section_title">Секция със съдържание</string>
-    <string name="revanced_hide_contents_section_summary_on">Разделът „Как е създадено това съдържание“ е скрит.</string>
-    <string name="revanced_hide_contents_section_summary_off">Появява се.
-
-Относно раздела „Как е създадено това съдържание“.</string>
-    <string name="revanced_hide_podcast_section_title">Скрийте секцията „Подкасти“</string>
-    <string name="revanced_hide_podcast_section_summary_on">Разделът „Подкасти“ е скрит.</string>
-    <string name="revanced_hide_podcast_section_summary_off">Показва се секцията „Подкасти“.</string>
-    <string name="revanced_hide_info_cards_section_title">Скриване на раздела за информационни карти</string>
-    <string name="revanced_hide_info_cards_section_summary_on">Разделът за информационни карти е скрит.</string>
-    <string name="revanced_hide_info_cards_section_summary_off">Разделът за информационни карти е показан.</string>
     <string name="revanced_hide_key_concepts_section_title">Раздел „Ключови понятия“</string>
     <string name="revanced_hide_key_concepts_section_summary_on">Раздел „Ключови понятия“ са скрити.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Раздел „Ключови понятия“ се показват.</string>
@@ -1569,7 +1558,6 @@
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Клиентът, използван за получаване на данни за потока, се показва в Статистика за системни администратори.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Клиентът, използван за получаване на данни за поток, е скрит в Статистика за системни администратори.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
-    <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: No Auth -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Watch history -->
     <string name="revanced_preference_screen_watch_history_title">История на гледане</string>
