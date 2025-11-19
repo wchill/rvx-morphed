@@ -644,6 +644,7 @@ Playlists
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Επαναφορά παλιάς επικεφαλίδας λίστας αναπαραγωγής</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Επαναφορά αναδυόμενου πίνακα ταχύτητας αναπαραγωγής παλιού στυλ</string>
     <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - Επαναφορά λειτουργικότητας μεταγραφής</string>
+    <string name="revanced_spoof_app_version_target_entry_20_13_41">20.13.41 - Επαναφορά μη καταρρέουσας γραμμής ενέργειας βίντεο</string>
     <string name="revanced_spoof_app_version_other_item">Άλλη</string>
     <string name="revanced_spoof_app_version_other_item_hint">Εισάγετε την έκδοση της εφαρμογής</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Μη έγκυρη έκδοση για παραποίηση: %s.</string>
@@ -787,15 +788,16 @@ Playlists
     <string name="revanced_hide_navigation_label_summary_on">Κρυμμένες.</string>
     <string name="revanced_hide_navigation_label_summary_off">Εμφανίζονται.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Εναλλαγή «Δημιουργία» με «Ειδοποιήσεις»</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"Γίνεται εναλλαγή θέσεων των κουμπιών «Δημιουργία» και «Ειδοποιήσεις».
-
-Σημείωση: Η ενεργοποίηση αυτής της ρύθμισης εξαναγκάζει επίσης την απόκρυψη των διαφημίσεων βίντεο."</string>
+    <string name="revanced_switch_create_with_notifications_button_summary_on">Γίνεται εναλλαγή θέσεων του κουμπιού δημιουργίας με του κουμπιού ειδοποιήσεων.</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">Δεν γίνεται εναλλαγή θέσεων των κουμπιών «Δημιουργία» και «Ειδοποιήσεις».</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"Η απενεργοποίηση αυτής της ρύθμισης μπορεί να έχει ως αποτέλεσμα την φόρτωση περισσότερων διαφημίσεων από τον διακομιστή.
-
-Επίσης, ενδέχεται να εμφανίζονται διαφημίσεις στα Shorts.
-
-Αν η απενεργοποίηση δεν τεθεί σε ισχύ, δοκιμάστε να μεταβείτε σε λειτουργία ανώνυμης περιήγησης."</string>
+    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">Αν αυτή η ρύθμιση δεν τεθεί σε ισχύ, δοκιμάστε να ενεργοποιήσετε τη λειτουργία ανώνυμης περιήγησης.</string>
+    <string name="revanced_replace_navigation_button_title">Αντικατάσταση κουμπιού πλοήγησης</string>
+    <string name="revanced_replace_navigation_button_summary">Αντικατάσταση του κουμπιού πλοήγησης με το κουμπί αναζήτησης.</string>
+    <string name="revanced_replace_navigation_button_target_title">Αντικατάσταση κουμπιού πλοήγησης</string>
+    <string name="revanced_replace_navigation_button_target_entry_home">Αρχική</string>
+    <string name="revanced_replace_navigation_button_target_entry_shorts">Shorts</string>
+    <string name="revanced_replace_navigation_button_target_entry_subscriptions">Εγγραφές</string>
+    <string name="revanced_replace_navigation_button_target_entry_notifications">Ειδοποιήσεις</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Διαφανή γραμμή πλοήγησης</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">Η γραμμή πλοήγησης είναι διαφανής.</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">Η γραμμή πλοήγησης δεν είναι διαφανής.</string>
@@ -916,6 +918,11 @@ Playlists
     <string name="revanced_hide_toolbar_notification_button_title">Κουμπί ειδοποιήσεων</string>
     <string name="revanced_hide_toolbar_notification_button_summary_on">Κρυμμένο.</string>
     <string name="revanced_hide_toolbar_notification_button_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_toolbar_search_button_title">Απόκρυψη κουμπιού αναζήτησης</string>
+    <string name="revanced_hide_toolbar_search_button_summary_on">"Κρυμμένο.
+
+Αυτή η ρύθμιση ενδέχεται να μη λειτουργεί αν η ρύθμιση «Ευρεία γραμμή αναζήτησης» είναι ενεργοποιημένη."</string>
+    <string name="revanced_hide_toolbar_search_button_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_search_term_thumbnail_title">Μικρογραφίες όρων αναζήτησης</string>
     <string name="revanced_hide_search_term_thumbnail_summary_on">Κρυμμένες.</string>
     <string name="revanced_hide_search_term_thumbnail_summary_off">Εμφανίζονται.</string>
@@ -1554,18 +1561,36 @@ Playlists
     <string name="revanced_hide_ai_generated_video_summary_section_title">Σύνοψη βίντεο που δημιουργήθηκε από AI</string>
     <string name="revanced_hide_ai_generated_video_summary_section_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_ai_generated_video_summary_section_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_ask_section_title">Ενότητα ερώτησης</string>
+    <string name="revanced_hide_ask_section_summary_on">Κρυμμένη.</string>
+    <string name="revanced_hide_ask_section_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_attributes_section_title">Ενότητα ιδιοτήτων</string>
     <string name="revanced_hide_attributes_section_summary_on">Κρυμμένη.\n\nΑφορά τις ιδιότητες: Επιλεγμένα μέρη, Παιχνίδια, Μουσική, και «Οι χρήστες ανέφεραν».</string>
     <string name="revanced_hide_attributes_section_summary_off">Εμφανίζεται.\n\nΑφορά τις ιδιότητες: Επιλεγμένα μέρη, Παιχνίδια, Μουσική, και «Οι χρήστες ανέφεραν».</string>
     <string name="revanced_hide_chapters_section_title">Ενότητα κεφαλαίων βίντεο</string>
     <string name="revanced_hide_chapters_section_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_chapters_section_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_creator_section_title">Ενότητα δημιουργού</string>
+    <string name="revanced_hide_creator_section_summary_on">Κρυμμένη.</string>
+    <string name="revanced_hide_creator_section_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_explore_podcast_section_title">Ενότητα «Εξερευνήστε το podcast»</string>
+    <string name="revanced_hide_explore_podcast_section_summary_on">Κρυμμένη.</string>
+    <string name="revanced_hide_explore_podcast_section_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_featured_section_title">Ενότητα προτεινόμενου περιεχομένου</string>
+    <string name="revanced_hide_featured_section_summary_on">Κρυμμένη.</string>
+    <string name="revanced_hide_featured_section_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_how_this_was_made_section_title">Ενότητα «Πως δημιουργήθηκε»</string>
+    <string name="revanced_hide_how_this_was_made_section_summary_on">Κρυμμένη.</string>
+    <string name="revanced_hide_how_this_was_made_section_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_hype_points_section_title">Πόντοι Hype</string>
     <string name="revanced_hide_hype_points_section_summary_on">Κρυμμένοι.</string>
     <string name="revanced_hide_hype_points_section_summary_off">Εμφανίζονται.</string>
     <string name="revanced_hide_key_concepts_section_title">Ενότητα «Βασικές έννοιες»</string>
     <string name="revanced_hide_key_concepts_section_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Εμφανίζεται.</string>
+    <string name="revanced_hide_subscribe_button_title">Κουμπί «Εγγραφή»</string>
+    <string name="revanced_hide_subscribe_button_summary_on">Κρυμμένο.</string>
+    <string name="revanced_hide_subscribe_button_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_transcript_section_title">Ενότητα «Μεταγραφή»</string>
     <string name="revanced_hide_transcript_section_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_transcript_section_summary_off">Εμφανίζεται.</string>
@@ -2369,6 +2394,8 @@ Playlists
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Ακυκλοφόρητο)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
+<small>(λειτουργία σε εξέλιξη)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Παρενέργειες παραποίησης</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Το μενού «Κομμάτι ήχου» λείπει.
 • O εξαναγκασμός αρχικής γλώσσας ήχου δεν είναι διαθέσιμoς.

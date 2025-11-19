@@ -794,15 +794,7 @@ Pour afficher le bouton de téléchargement de playlist natif, activez l'option 
     <string name="revanced_hide_navigation_label_summary_on">Le nom des catégories sont masqués.</string>
     <string name="revanced_hide_navigation_label_summary_off">Le nom des catégories sont affichés.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Échanger \'Créer\' et \'Notifications\'</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"Le bouton 'Créer' est échangé avec le bouton 'Notification'.
-
-Note : Activer ceci masquera également les publicités vidéos."</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">Le bouton \'Créer\' n\'est pas échangé avec le bouton \'Notification\'.</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"Désactiver ceci pourrait charger plus de publicités depuis le serveur.
-
-Également, les publicités ne seront plus bloquées sur les Shorts.
-
-Si ce paramètre ne fait pas effet, essayer de passer en mode Incognito."</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Activer la barre de navigation translucide</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">La barre de navigation est translucide.</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">La barre de navigation est opaque.</string>

@@ -654,6 +654,7 @@ Nếu muốn tắt tính năng này sau đó, bạn nên xóa dữ liệu ứng 
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Khôi phục tiêu đề danh sách phát kiểu cũ</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Khôi phục bảng trình đơn tốc độ phát cũ</string>
     <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - Khôi phục tính năng bản chép lời</string>
+    <string name="revanced_spoof_app_version_target_entry_20_13_41">20.13.41 - Khôi phục thanh thao tác video mở rộng</string>
     <string name="revanced_spoof_app_version_other_item">Khác</string>
     <string name="revanced_spoof_app_version_other_item_hint">Nhập phiên bản ứng dụng</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Phiên bản ứng dụng đã chọn không hợp lệ: %s.</string>
@@ -792,15 +793,16 @@ Một số thành phần có thể không bị ẩn."</string>
     <string name="revanced_hide_navigation_label_summary_on">Tên các thẻ đã ẩn.</string>
     <string name="revanced_hide_navigation_label_summary_off">Tên các thẻ được hiển thị.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Hoán đổi nút Tạo và nút Thông báo</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"Nút Tạo đã được đổi vị trí với nút Thông báo.
-
-Lưu ý: Bật tuỳ chọn này cũng sẽ ẩn các quảng cáo dạng video."</string>
+    <string name="revanced_switch_create_with_notifications_button_summary_on">Nút Tạo đã đổi chỗ với nút Thông báo.</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">Nút Tạo và nút Thông báo như mặc định.</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"Tắt tùy chọn này có thể tải thêm quảng cáo từ máy chủ.
-
-Ngoài ra, quảng cáo sẽ không còn bị chặn trong trình phát Shorts.
-
-Nếu cài đặt này không có hiệu lực, hãy thử chuyển sang chế độ Ẩn danh."</string>
+    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">Nếu cài đặt này không có hiệu lực, hãy thử chuyển sang Chế độ ẩn danh.</string>
+    <string name="revanced_replace_navigation_button_title">Thay thế nút điều hướng</string>
+    <string name="revanced_replace_navigation_button_summary">Đổi chỗ nút điều hướng với nút Tìm kiếm.</string>
+    <string name="revanced_replace_navigation_button_target_title">Thay thế nút điều hướng</string>
+    <string name="revanced_replace_navigation_button_target_entry_home">Trang chủ</string>
+    <string name="revanced_replace_navigation_button_target_entry_shorts">Shorts</string>
+    <string name="revanced_replace_navigation_button_target_entry_subscriptions">Kênh đăng ký</string>
+    <string name="revanced_replace_navigation_button_target_entry_notifications">Thông báo</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Thanh điều hướng trong suốt</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">Thanh điều hướng đang trong suốt.</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">Thanh điều hướng như mặc định.</string>
@@ -919,6 +921,11 @@ Thẻ Bạn → Xem kênh → Trình đơn → Cài đặt"</string>
     <string name="revanced_hide_toolbar_notification_button_title">Ẩn nút Thông báo</string>
     <string name="revanced_hide_toolbar_notification_button_summary_on">Nút Thông báo đã ẩn.</string>
     <string name="revanced_hide_toolbar_notification_button_summary_off">Nút Thông báo được hiển thị.</string>
+    <string name="revanced_hide_toolbar_search_button_title">Ẩn nút Tìm kiếm</string>
+    <string name="revanced_hide_toolbar_search_button_summary_on">"Nút Tìm kiếm đã ẩn.
+
+Cài đặt này có thể không hoạt động nếu thanh tìm kiếm rộng đang bật."</string>
+    <string name="revanced_hide_toolbar_search_button_summary_off">Nút Tìm kiếm được hiển thị.</string>
     <string name="revanced_hide_search_term_thumbnail_title">Ẩn hình thu nhỏ của từ khoá tìm kiếm</string>
     <string name="revanced_hide_search_term_thumbnail_summary_on">Hình thu nhỏ của từ khoá tìm kiếm đã ẩn khỏi lịch sử tìm kiếm.</string>
     <string name="revanced_hide_search_term_thumbnail_summary_off">Hình thu nhỏ của từ khoá tìm kiếm được hiển thị trong lịch sử tìm kiếm.</string>
@@ -1550,18 +1557,36 @@ Vì vậy, bạn nên bật tính năng này khi có kết nối mạng ổn đ�
     <string name="revanced_hide_ai_generated_video_summary_section_title">Ẩn phần Bản tóm tắt video do AI tạo</string>
     <string name="revanced_hide_ai_generated_video_summary_section_summary_on">Phần \"Bản tóm tắt video do AI tạo\" đã ẩn.</string>
     <string name="revanced_hide_ai_generated_video_summary_section_summary_off">Phần \"Bản tóm tắt video do AI tạo\" được hiển thị.</string>
+    <string name="revanced_hide_ask_section_title">Ẩn phần Hỏi</string>
+    <string name="revanced_hide_ask_section_summary_on">Phần Hỏi đã ẩn.</string>
+    <string name="revanced_hide_ask_section_summary_off">Phần Hỏi được hiển thị.</string>
     <string name="revanced_hide_attributes_section_title">Ẩn phần Thuộc tính</string>
     <string name="revanced_hide_attributes_section_summary_on">Phần Địa điểm nổi bật, Trò chơi, Âm nhạc, và Người được đề cập đã ẩn.</string>
     <string name="revanced_hide_attributes_section_summary_off">Phần Địa điểm nổi bật, Trò chơi, Âm nhạc, và Người được đề cập được hiển thị.</string>
     <string name="revanced_hide_chapters_section_title">Ẩn phần Phân cảnh</string>
     <string name="revanced_hide_chapters_section_summary_on">Phần Phân cảnh đã ẩn.</string>
     <string name="revanced_hide_chapters_section_summary_off">Phần Phân cảnh được hiển thị.</string>
+    <string name="revanced_hide_creator_section_title">Ẩn phần Nhà sáng tạo</string>
+    <string name="revanced_hide_creator_section_summary_on">Phần Nhà sáng tạo đã ẩn.</string>
+    <string name="revanced_hide_creator_section_summary_off">Phần Nhà sáng tạo được hiển thị.</string>
+    <string name="revanced_hide_explore_podcast_section_title">Ẩn phần Khám phá podcast</string>
+    <string name="revanced_hide_explore_podcast_section_summary_on">Phần Khám phá podcast đã ẩn.</string>
+    <string name="revanced_hide_explore_podcast_section_summary_off">Phần Khám phá podcast được hiển thị.</string>
+    <string name="revanced_hide_featured_section_title">Ẩn phần Nội dung nổi bật</string>
+    <string name="revanced_hide_featured_section_summary_on">Phần Nội dung nổi bật trong phần Nhà sáng tạo đã ẩn.</string>
+    <string name="revanced_hide_featured_section_summary_off">Phần Nội dung nổi bật trong phần Nhà sáng tạo được hiển thị.</string>
+    <string name="revanced_hide_how_this_was_made_section_title">Ẩn phần Cách nội dung này được tạo ra</string>
+    <string name="revanced_hide_how_this_was_made_section_summary_on">Phần Cách nội dung này được tạo ra đã ẩn.</string>
+    <string name="revanced_hide_how_this_was_made_section_summary_off">Phần Cách nội dung này được tạo ra được hiển thị.</string>
     <string name="revanced_hide_hype_points_section_title">Ẩn phần Điểm khuấy động</string>
     <string name="revanced_hide_hype_points_section_summary_on">Phần Điểm khuấy động đã ẩn.</string>
     <string name="revanced_hide_hype_points_section_summary_off">Phần Điểm khuấy động được hiển thị.</string>
     <string name="revanced_hide_key_concepts_section_title">Ẩn phần Khái niệm chính</string>
     <string name="revanced_hide_key_concepts_section_summary_on">Phần Khái niệm chính đã ẩn.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Phần Khái niệm chính được hiển thị.</string>
+    <string name="revanced_hide_subscribe_button_title">Ẩn nút Đăng ký</string>
+    <string name="revanced_hide_subscribe_button_summary_on">Nút đăng ký trong phần Nhà sáng tạo đã ẩn.</string>
+    <string name="revanced_hide_subscribe_button_summary_off">Nút đăng ký trong phần Nhà sáng tạo được hiển thị.</string>
     <string name="revanced_hide_transcript_section_title">Ẩn phần Bản chép lời</string>
     <string name="revanced_hide_transcript_section_summary_on">Phần Bản chép lời đã ẩn.</string>
     <string name="revanced_hide_transcript_section_summary_off">Phần Bản chép lời được hiển thị.</string>
@@ -2361,6 +2386,8 @@ Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Chưa phát hành)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
+<small>(Cũ, Thử nghiệm)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Hạn chế</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Thiếu mục bản âm thanh.
 • Tắt tự động phát bản âm thanh có thể không khả dụng.

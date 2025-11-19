@@ -789,15 +789,7 @@ Para exibir o botão nativo para baixar a lista de reprodução, ative 'Falsific
     <string name="revanced_hide_navigation_label_summary_on">O rótulo de navegação está oculto.</string>
     <string name="revanced_hide_navigation_label_summary_off">O rótulo de navegação será exibido.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Alternar criar com notificações</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"O botão criar é alternado com o botão notificações.
-
-Nota: Ativar isso também oculta anúncios de vídeo à força."</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">O botão criar não está alternado com o botão Notificações.</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"Desativar isso pode carregar mais anúncios do servidor.
-
-Além disso, os anúncios não serão mais bloqueados no Shorts.
-
-Se essa configuração não surtir efeito, tente alternar para o modo anônimo."</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Ativar barra de navegação transparente</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">A barra de navegação está transparente.</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">A barra de navegação está opaca.</string>

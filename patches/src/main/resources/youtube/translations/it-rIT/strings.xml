@@ -649,6 +649,7 @@ Se in seguito verrà disattivata, si consiglia di cancellare i dati dell'app per
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Ripristina la vecchia intestazione delle playlist</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Ripristina il vecchio pannello della velocità di riproduzione</string>
     <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - Ripristina la trascrizione</string>
+    <string name="revanced_spoof_app_version_target_entry_20_13_41">20.13.41 - Ripristina la barra delle azioni non compressa dei video</string>
     <string name="revanced_spoof_app_version_other_item">Altro</string>
     <string name="revanced_spoof_app_version_other_item_hint">Immetti la versione dell\'app</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Versione dell\'app da camuffare non valida: %s</string>
@@ -781,15 +782,16 @@ Per mostrare il pulsante Scarica Playlist nativo, attiva il camuffamento della v
     <string name="revanced_hide_navigation_label_summary_on">I nomi sono nascosti.</string>
     <string name="revanced_hide_navigation_label_summary_off">I nomi sono visibili.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Sostituisci il pulsante Crea con il pulsante Notifiche</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"Il pulsante Crea è sostituito dal pulsante Notifiche.
-
-Nota: anche gli annunci video saranno nascosti."</string>
+    <string name="revanced_switch_create_with_notifications_button_summary_on">Il pulsante Crea è sostituito dal pulsante Notifiche.</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">Il pulsante Crea non è sostituito dal pulsante Notifiche.</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"La disattivazione di questa impostazione potrebbe caricare più annunci dal server.
-
-Inoltre, gli annunci degli Shorts non saranno più bloccati.
-
-Se questa impostazione non ha effetto, prova a passare alla navigazione in incognito."</string>
+    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">Se questa impostazione non ha effetto, prova a passare a in incognito.</string>
+    <string name="revanced_replace_navigation_button_title">Sostituisci il pulsante Navigazione con il pulsante Cerca</string>
+    <string name="revanced_replace_navigation_button_summary">Sostituisce il pulsante Navigazione con il pulsante Cerca.</string>
+    <string name="revanced_replace_navigation_button_target_title">Cambia la destinazione del pulsante Navigazione</string>
+    <string name="revanced_replace_navigation_button_target_entry_home">Home</string>
+    <string name="revanced_replace_navigation_button_target_entry_shorts">Shorts</string>
+    <string name="revanced_replace_navigation_button_target_entry_subscriptions">Iscrizioni</string>
+    <string name="revanced_replace_navigation_button_target_entry_notifications">Notifiche</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Attiva la barra di navigazione traslucida</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">La barra di navigazione è traslucida.</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">La barra di navigazione è opaca.</string>
@@ -912,6 +914,11 @@ Perciò segui questi percorsi per accedere alle impostazioni:
     <string name="revanced_hide_toolbar_notification_button_title">Nascondi il pulsante Notifiche</string>
     <string name="revanced_hide_toolbar_notification_button_summary_on">Il pulsante Notifiche è nascosto.</string>
     <string name="revanced_hide_toolbar_notification_button_summary_off">Il pulsante Notifiche è visibile.</string>
+    <string name="revanced_hide_toolbar_search_button_title">Nascondi il pulsante Cerca</string>
+    <string name="revanced_hide_toolbar_search_button_summary_on">"Il pulsante Cerca è nascosto.
+
+Nota: questa impostazione potrebbe non funzionare se la barra di ricerca estesa è attivata."</string>
+    <string name="revanced_hide_toolbar_search_button_summary_off">Il pulsante Cerca è visibile.</string>
     <string name="revanced_hide_search_term_thumbnail_title">Nascondi i thumbnails nella cronologia delle ricerche</string>
     <string name="revanced_hide_search_term_thumbnail_summary_on">I thumbnails nella cronologia delle ricerche sono nascosti.</string>
     <string name="revanced_hide_search_term_thumbnail_summary_off">I thumbnails nella cronologia delle ricerche sono visibili.</string>
@@ -2360,6 +2367,8 @@ Nota: questa impostazione potrebbe non essere necessaria se sei un utente YouTub
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Non rilasciato)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
+<small>(Vecchio e in fase di sviluppo)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Effetti collaterali del camuffamento</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Il menù Traccia Audio è nascosto.
 • Il menù Volume Stabile è nascosto.

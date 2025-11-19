@@ -371,15 +371,7 @@
     <string name="revanced_hide_navigation_label_summary_on">Навигационния панел е скрит.</string>
     <string name="revanced_hide_navigation_label_summary_off">Навигационния панел се показва.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Разменете бутоните „Създаване“ с „Известия“</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"Бутонът за създаване се заменя с бутона за известия
-
-Забележка: Активирането на тази опция също скрива видеореклами."</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">Бутоните \"Създаване\" и \"Известия\" не са разменени.</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"Деактивирането на тази настройка може да доведе до зареждане на повече реклами от сървъра.
-
- Освен това рекламите може да се показват в Shorts.
-
-Ако деактивирането не влезе в сила, опитайте да превключите към режим „инкогнито“."</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Полупрозрачна лента за навигация</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">Навигационната лента е полупрозрачна.</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">Навигационната лента е непрозрачна.</string>

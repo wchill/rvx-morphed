@@ -795,15 +795,7 @@
     <string name="revanced_hide_navigation_label_summary_on">導覽列已隱藏</string>
     <string name="revanced_hide_navigation_label_summary_off">導覽列已顯示</string>
     <string name="revanced_switch_create_with_notifications_button_title">交換創作和通知按鈕</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"「建立」按鈕已與「通知」按鈕交換。
-
-注意：啟用此功能也會強制隱藏影片廣告。"</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">「建立」按鈕未與「通知」按鈕交換。</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"停用此功能可能會從伺服器載入更多廣告。
-
-此外，廣告將不再在 Shorts 中被封鎖。
-
-若此設定未生效，請嘗試切換至無痕模式。"</string>
     <string name="revanced_enable_translucent_navigation_bar_title">啟用半透明導覽列</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">導覽列是半透明的。</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">導覽列不透明。</string>

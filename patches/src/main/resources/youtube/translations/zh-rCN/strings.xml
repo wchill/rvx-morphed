@@ -790,15 +790,7 @@
     <string name="revanced_hide_navigation_label_summary_on">导航栏已隐藏</string>
     <string name="revanced_hide_navigation_label_summary_off">导航栏已显示</string>
     <string name="revanced_switch_create_with_notifications_button_title">交换创建和通知按钮</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"创建按钮替换为通知按钮
-
-注意：启用此选项也强制隐藏视频广告"</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">创建按钮未替换为通知按钮</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"禁用此功能可能会从服务器加载更多广告
-
-此外，Shorts 中的广告将不再被屏蔽
-
-如果此设置未生效，请尝试切换到隐身模式"</string>
     <string name="revanced_enable_translucent_navigation_bar_title">启用半透明导航栏</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">导航栏为半透明。</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">导航栏为不透明。</string>

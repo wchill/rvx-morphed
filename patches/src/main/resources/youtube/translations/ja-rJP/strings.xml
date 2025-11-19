@@ -796,15 +796,7 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_hide_navigation_label_summary_on">ナビゲーションバーのラベルを非表示にします。</string>
     <string name="revanced_hide_navigation_label_summary_off">ナビゲーションバーのラベルを非表示にします。</string>
     <string name="revanced_switch_create_with_notifications_button_title">[作成] ボタンと [通知] ボタンを入れ替え</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"[作成] ボタンと [通知] ボタンを入れ替えます。
-
-注意: これを有効にすると、動画広告が強制的に非表示になります。"</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">[作成] ボタンと [通知] ボタンを入れ替えます。\n\n注意: これを有効にすると、動画広告が強制的に非表示になります。</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"これを無効にすると、サーバーからさらに多くの広告が読み込まれる可能性があります。
-
-また、ショートで広告がブロックされなくなります。
-
-この設定が有効にならない場合は、シークレットモードに切り替えてみてください。"</string>
     <string name="revanced_enable_translucent_navigation_bar_title">半透明のナビゲーションバーを有効化</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">ナビゲーションバー ([ホーム]、[登録チャンネル] などのボタン) を半透明にします。</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">ナビゲーションバー ([ホーム]、[登録チャンネル] などのボタン) を半透明にします。</string>
@@ -1568,6 +1560,9 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_hide_creator_section_title">クリエイター欄を非表示</string>
     <string name="revanced_hide_creator_section_summary_on">概要欄から投稿者の SNS リンクや動画を非表示にします。</string>
     <string name="revanced_hide_creator_section_summary_off">概要欄から投稿者の SNS リンクや動画を非表示にします。</string>
+    <string name="revanced_hide_explore_podcast_section_title">「ポッドキャストを検索」欄を非表示</string>
+    <string name="revanced_hide_explore_podcast_section_summary_on">概要欄から「ポッドキャストを検索」欄を非表示にします。</string>
+    <string name="revanced_hide_explore_podcast_section_summary_off">概要欄から「ポッドキャストを検索」欄を非表示にします。</string>
     <string name="revanced_hide_featured_section_title">注目のコンテンツ欄を非表示</string>
     <string name="revanced_hide_featured_section_summary_on">クリエイター欄内から注目の動画を非表示にします。</string>
     <string name="revanced_hide_featured_section_summary_off">クリエイター欄内から注目の動画を非表示にします。</string>

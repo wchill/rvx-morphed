@@ -803,15 +803,9 @@ Shorts
     <string name="revanced_hide_navigation_label_summary_on">Подписи кнопок навигации скрыты.</string>
     <string name="revanced_hide_navigation_label_summary_off">Подписи кнопок навигации отображены.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Подмена кнопки \"Создать\" на \"Уведомления\"</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"Кнопки \"Создать\" и \"Уведомления\" поменяны местами.
-
-Примечание: Включение опции принудительно скрывает видеорекламу."</string>
+    <string name="revanced_switch_create_with_notifications_button_summary_on">Кнопка \"Создать\" заменена на \"Уведомления\".</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">Кнопки \"Создать\" и \"Уведомления\" не поменяны местами.</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"Отключение этого параметра может привести к загрузке большего количества рекламы с сервера.
-
-Кроме того, реклама больше не будет блокироваться в Shorts.
-
-Если эта настройка не вступила в силу, попробуйте перейти в режим инкогнито."</string>
+    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">Если этот параметр не вступил в силу, попробуйте в режиме инкогнито.</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Полупрозрачность панели навигации</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">Полупрозрачность включена.</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">Полупрозрачность отключена.</string>
@@ -1958,10 +1952,10 @@ Shorts
     <string name="revanced_enable_custom_playback_speed_summary_on">Пользовательская скорость просмотра включена.</string>
     <string name="revanced_enable_custom_playback_speed_summary_off">Пользовательская скорость просмотра отключена.</string>
     <string name="revanced_custom_playback_speed_menu_type_title">Стиль меню скорости</string>
-    <string name="revanced_custom_playback_speed_menu_type_entry_custom_legacy">Свой (Предыдущий)</string>
+    <string name="revanced_custom_playback_speed_menu_type_entry_custom_legacy">Свой (Старый)</string>
     <string name="revanced_custom_playback_speed_menu_type_entry_custom_modern">Свой (Современный)</string>
     <string name="revanced_custom_playback_speed_menu_type_entry_custom_no_theme">Свой (Без темы)</string>
-    <string name="revanced_custom_playback_speed_menu_type_entry_youtube_legacy">YouTube Предыдущий</string>
+    <string name="revanced_custom_playback_speed_menu_type_entry_youtube_legacy">YouTube Старый</string>
     <string name="revanced_custom_playback_speeds_title">Пользовательская скорость воспроизведения</string>
     <string name="revanced_custom_playback_speeds_summary">Добавить или изменить скорости воспроизведения.</string>
     <string name="revanced_custom_playback_speeds_invalid">Значения пользовательской скорости не должны превышать %sx. Сброс к значениям по умолчанию.</string>
@@ -2377,13 +2371,15 @@ Shorts
     <string name="revanced_spoof_streaming_data_client_entry_tv">ТВ
 <small>(В разработке)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
-<small>(Устаревший)</small>"</string>
+<small>(Старый)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"ТВ Простой
 <small>(Без PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Встроенный ТВ
 <small>(В разработке)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Не релизный, Не авторизован)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
+<small>(Старый, В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Эффекты от подмены</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Аудио меню пропадет.
 • Стабильная громкость не доступна.

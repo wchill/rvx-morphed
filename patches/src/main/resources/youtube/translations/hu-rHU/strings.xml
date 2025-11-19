@@ -799,15 +799,7 @@ A natív lejátszási lista letöltése gomb megjelenítéséhez kapcsolja be a 
     <string name="revanced_hide_navigation_label_summary_on">A navigációs sáv el van rejtve.</string>
     <string name="revanced_hide_navigation_label_summary_off">A navigációs sáv látható.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Létrehozás és értesítések gombok felcserélése</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"A létrehozás gomb helyet cserél az értesítések gombbal.
-
-Megjegyzés: engedélyezés esetén a videó hirdetéseket is elrejti."</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">A Létrehozás gomb nincs felcserélve az Értesítések gombbal.</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"Ennek kikapcsolása esetleg több reklámot tölt be a szerverről.
-
-Tovább, a reklámok nem lesznek tiltva a Shortokban.
-
-Ha ez a beállítás nem működik, váltson inkognító módra."</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Átlátszó navigációs sáv engedélyezése</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">A navigációs sáv átlátszó.</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">A navigációs sáv nem átlátszó.</string>
@@ -1555,12 +1547,24 @@ Ez a funkció nagyon gyors internetkapcsolat mellett működik a legjobban."</st
     <string name="revanced_hide_ai_generated_video_summary_section_title">AI generált videó összefoglaló rész elrejtése</string>
     <string name="revanced_hide_ai_generated_video_summary_section_summary_on">Az AI generált videó összefoglaló rész el van rejtve.</string>
     <string name="revanced_hide_ai_generated_video_summary_section_summary_off">Az AI generált videó összefoglaló rész látható.</string>
+    <string name="revanced_hide_ask_section_title">Kérdés rész elrejtése</string>
+    <string name="revanced_hide_ask_section_summary_on">A kérdés rész rejtett.</string>
+    <string name="revanced_hide_ask_section_summary_off">A kérdés rész látható.</string>
     <string name="revanced_hide_attributes_section_title">Tulajdonságok szakasz elrejtése</string>
     <string name="revanced_hide_attributes_section_summary_on">A kiemelt helyek, a játékok, a zene és a megemlített emberek részek el vannak rejtve.</string>
     <string name="revanced_hide_attributes_section_summary_off">A kiemelt helyek, a Játékok és a Zene szakaszok láthatóak.</string>
     <string name="revanced_hide_chapters_section_title">Fejezetek elrejtése</string>
     <string name="revanced_hide_chapters_section_summary_on">A fejezetek el vannak rejtve.</string>
     <string name="revanced_hide_chapters_section_summary_off">A fejezetek láthatóak.</string>
+    <string name="revanced_hide_creator_section_title">Létrehozói rész elrejtése</string>
+    <string name="revanced_hide_creator_section_summary_on">A létrehozói rész rejtett.</string>
+    <string name="revanced_hide_creator_section_summary_off">A létrehozói rész látható.</string>
+    <string name="revanced_hide_explore_podcast_section_title">Podcastok felfedezése rész elrejtése</string>
+    <string name="revanced_hide_explore_podcast_section_summary_on">A podcastok felfedezése rész rejtett.</string>
+    <string name="revanced_hide_explore_podcast_section_summary_off">A podcastok felfedezése rész látható.</string>
+    <string name="revanced_hide_featured_section_title">Kiemelt tartalom rész elrejtése</string>
+    <string name="revanced_hide_featured_section_summary_on">A Kiemelt tartalom rész rejtett az Alkotó részben.</string>
+    <string name="revanced_hide_featured_section_summary_off">A Kiemelt tartalom rész látható az Alkotó részben.</string>
     <string name="revanced_hide_hype_points_section_title">Hype pontok rész elrejtése</string>
     <string name="revanced_hide_hype_points_section_summary_on">A Hype pontok rész rejtett.</string>
     <string name="revanced_hide_hype_points_section_summary_off">A Hype pontok rész látható.</string>

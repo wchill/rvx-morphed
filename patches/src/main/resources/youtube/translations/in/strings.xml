@@ -496,9 +496,6 @@ Jika kemudian dimatikan, disarankan untuk menghapus data aplikasi untuk mencegah
     <string name="revanced_hide_navigation_label_summary_on">Label navigasi disembunyikan.</string>
     <string name="revanced_hide_navigation_label_summary_off">Label navigasi ditampilkan.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Tukar tombol buat dan pemberitahuan</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"Tombol Buat ditukar dengan tombol Notifikasi.
-
-Catatan: Mengaktifkan ini juga secara paksa menyembunyikan iklan video."</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">Tombol Buat tidak bertukar posisi dengan tombol Pemberitahuan.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Settings menu -->
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Snack bar -->

@@ -646,6 +646,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - 이전 재생목록 헤더로 복원합니다.</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - 이전 동영상 재생 속도 구성요소 패널을 복원합니다.</string>
     <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - 스크립트 기능을 복원합니다.</string>
+    <string name="revanced_spoof_app_version_target_entry_20_13_41">20.13.41 - 접히지 않은 동영상 동작바를 복원합니다.</string>
     <string name="revanced_spoof_app_version_other_item">그 외</string>
     <string name="revanced_spoof_app_version_other_item_hint">앱 버전을 입력하세요.</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">변경할 앱 버전이 잘못되었습니다: %s</string>
@@ -790,15 +791,16 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
     <string name="revanced_hide_navigation_label_summary_on">하단바 버튼 라벨이 숨겨집니다.</string>
     <string name="revanced_hide_navigation_label_summary_off">하단바 버튼 라벨이 표시됩니다.</string>
     <string name="revanced_switch_create_with_notifications_button_title">만들기 버튼과 알림 버튼 위치 교환하기</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"만들기 버튼과 알림 버튼의 위치를 교환합니다.
-
-알림: 이 설정을 활성화하면 동영상 광고도 강제로 숨겨집니다."</string>
+    <string name="revanced_switch_create_with_notifications_button_summary_on">만들기 버튼과 알림 버튼의 위치를 교환합니다.</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">만들기 버튼과 알림 버튼의 위치를 교환하지 않습니다.</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"이 설정을 비활성화하면 서버에서 더 많은 광고가 불러오게 될 수 있습니다.
-
-또한, Shorts에서 광고가 더 이상 숨겨지지 않습니다.
-
-이 설정이 적용되지 않는 경우에는 시크릿 모드로 전환해 보세요."</string>
+    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">이 설정이 적용되지 않는 경우에는 시크릿 모드로 전환해 보세요.</string>
+    <string name="revanced_replace_navigation_button_title">탐색 버튼 변경하기</string>
+    <string name="revanced_replace_navigation_button_summary">탐색 버튼을 검색 버튼으로 변경합니다.</string>
+    <string name="revanced_replace_navigation_button_target_title">탐색 버튼 변경하기</string>
+    <string name="revanced_replace_navigation_button_target_entry_home">홈</string>
+    <string name="revanced_replace_navigation_button_target_entry_shorts">Shorts</string>
+    <string name="revanced_replace_navigation_button_target_entry_subscriptions">구독</string>
+    <string name="revanced_replace_navigation_button_target_entry_notifications">알림</string>
     <string name="revanced_enable_translucent_navigation_bar_title">반투명 하단바 활성화하기</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">하단바가 반투명합니다.</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">하단바가 불투명합니다.</string>
@@ -919,6 +921,11 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
     <string name="revanced_hide_toolbar_notification_button_title">알림 버튼 숨기기</string>
     <string name="revanced_hide_toolbar_notification_button_summary_on">알림 버튼이 숨겨집니다.</string>
     <string name="revanced_hide_toolbar_notification_button_summary_off">알림 버튼이 표시됩니다.</string>
+    <string name="revanced_hide_toolbar_search_button_title">검색 버튼 숨기기</string>
+    <string name="revanced_hide_toolbar_search_button_summary_on">"검색 버튼이 숨겨집니다.
+
+넓은 검색창이 활성화되어있는 경우에는 이 설정이 작동하지 않을 수 있습니다."</string>
+    <string name="revanced_hide_toolbar_search_button_summary_off">검색 버튼이 표시됩니다.</string>
     <string name="revanced_hide_search_term_thumbnail_title">검색어 썸네일 숨기기</string>
     <string name="revanced_hide_search_term_thumbnail_summary_on">검색어 기록에서 썸네일이 숨겨집니다.</string>
     <string name="revanced_hide_search_term_thumbnail_summary_off">검색어 기록에서 썸네일이 표시됩니다.</string>
@@ -2383,6 +2390,8 @@ YouTube Premium 사용자라면 이 설정이 필요하지 않을 수 있습니�
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(미출시)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
+<small>(기존, 개발 중)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">변경에 따른 부작용</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• 오디오 트랙 메뉴가 표시되지 않습니다.
 • 강제 사용이 설정된 오디오 트랙이 비활성화되지 않을 수 있습니다.
