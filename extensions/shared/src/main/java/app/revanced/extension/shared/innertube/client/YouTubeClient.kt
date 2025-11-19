@@ -83,9 +83,15 @@ object YouTubeClient {
      * in the `Additional details` section.
      */
     private val CLIENT_VERSION_ANDROID_VR = if (useAV1())
-        "1.65.10"
+        // Lowest version that supports AV1.
+        // According to the changelog, only Quest 3 supports the AV1 codec in this version.
+        // SABR is not used.
+        // Cronet version: 122.0.6238.3
+        "1.54.20"
     else
-        "1.43.32" // Last version of minSdkVersion 24.
+        // SABR is not used.
+        // Cronet version: 113.0.5672.24
+        "1.47.48"
 
     /**
      * The device machine id for the Meta Quest 3, used to get opus codec with the Android VR client.
@@ -99,15 +105,15 @@ object YouTubeClient {
     private val OS_VERSION_ANDROID_VR = if (useAV1())
         "14"
     else
-        "7.1.1"
+        "10"
     private val ANDROID_SDK_VERSION_ANDROID_VR = if (useAV1())
         "34"
     else
-        "25"
+        "29"
     private val BUILD_ID_ANDROID_VR = if (useAV1())
         "UP1A.231005.007.A1"
     else
-        "NGI77B"
+        "QQ3A.200805.001"
 
     private val USER_AGENT_ANDROID_VR = androidUserAgent(
         packageName = PACKAGE_NAME_ANDROID_VR,
