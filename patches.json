@@ -152,6 +152,7 @@
     "dependencies": [
       "Settings for YouTube",
       "BytecodePatch",
+      "BytecodePatch",
       "BytecodePatch"
     ],
     "compatiblePackages": {
@@ -1659,6 +1660,8 @@
       "BytecodePatch",
       "BytecodePatch",
       "ResourcePatch",
+      "BytecodePatch",
+      "ResourcePatch",
       "ResourcePatch"
     ],
     "compatiblePackages": {
@@ -2092,6 +2095,7 @@
       "ResourcePatch",
       "Settings for YouTube",
       "ResourcePatch",
+      "BytecodePatch",
       "BytecodePatch",
       "ResourcePatch"
     ],
