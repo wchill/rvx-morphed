@@ -59,6 +59,7 @@ public class ExtendedUtils extends PackageUtils {
     public static final boolean IS_19_29_OR_GREATER = isVersionOrGreater("19.29.00");
     public static final boolean IS_19_34_OR_GREATER = isVersionOrGreater("19.34.00");
     public static final boolean IS_20_09_OR_GREATER = isVersionOrGreater("20.09.00");
+    public static final boolean IS_20_10_OR_GREATER = isVersionOrGreater("20.10.00");
 
     public static boolean isFullscreenHidden() {
         return Settings.DISABLE_ENGAGEMENT_PANEL.get() || Settings.HIDE_QUICK_ACTIONS.get();
