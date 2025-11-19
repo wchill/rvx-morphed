@@ -8,19 +8,7 @@ import app.revanced.util.or
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 
-internal const val ANDROID_AUTOMOTIVE_STRING = "Android Automotive"
 internal const val TAB_ACTIVITY_CAIRO_STRING = "TAB_ACTIVITY_CAIRO"
-
-internal val autoMotiveFingerprint = legacyFingerprint(
-    name = "autoMotiveFingerprint",
-    opcodes = listOf(
-        Opcode.GOTO,
-        Opcode.INVOKE_STATIC,
-        Opcode.MOVE_RESULT,
-        Opcode.IF_EQZ
-    ),
-    strings = listOf(ANDROID_AUTOMOTIVE_STRING)
-)
 
 internal val imageEnumConstructorFingerprint = legacyFingerprint(
     name = "imageEnumConstructorFingerprint",

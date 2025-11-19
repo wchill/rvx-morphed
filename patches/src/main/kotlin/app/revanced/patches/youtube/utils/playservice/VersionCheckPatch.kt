@@ -75,6 +75,8 @@ var is_20_04_or_greater = false
     private set
 var is_20_05_or_greater = false
     private set
+var is_20_06_or_greater = false
+    private set
 var is_20_07_or_greater = false
     private set
 var is_20_09_or_greater = false
@@ -152,6 +154,7 @@ val versionCheckPatch = resourcePatch(
         is_20_03_or_greater = isGreaterThan(250405000)
         is_20_04_or_greater = isGreaterThan(250505000)
         is_20_05_or_greater = isGreaterThan(250605000)
+        is_20_06_or_greater = isGreaterThan(250705000)
         is_20_07_or_greater = isGreaterThan(250805000)
         is_20_09_or_greater = isGreaterThan(251006000)
         is_20_10_or_greater = isGreaterThan(251105000)

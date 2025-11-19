@@ -81,6 +81,22 @@ public final class NavigationButtonsPatch {
         return original;
     }
 
+    /**
+     * Toolbar buttons (including the YouTube logo) and navigation bar buttons depend on the
+     * '<a href="https://www.youtube.com/youtubei/v1/guide">'/guide' endpoint</a>' requests.
+     * <p>
+     * Therefore, the patch works if the 'osName' value is spoofed only in '/guide' endpoint requests.
+     *
+     * @return osName.
+     */
+    public static String getOSName() {
+        return SWITCH_CREATE_WITH_NOTIFICATIONS_BUTTON
+                ? "Android Automotive"
+                // If the setting is off, it should return the original osName (override).
+                // Otherwise, there may be interference with the 'Hide ads' patch.
+                : ExtendedUtils.getOSName();
+    }
+
     private static Map<NavigationButton, Boolean> getHideMap() {
         if (shouldHideMap == null || shouldHideMap.isEmpty()) {
             shouldHideMap = new EnumMap<>(NavigationButton.class) {
@@ -95,13 +111,6 @@ public final class NavigationButtonsPatch {
             };
         }
         return shouldHideMap;
-    }
-
-    /**
-     * Injection point.
-     */
-    public static boolean switchCreateWithNotificationButton(boolean original) {
-        return Settings.SWITCH_CREATE_WITH_NOTIFICATIONS_BUTTON.get() || original;
     }
 
     /**

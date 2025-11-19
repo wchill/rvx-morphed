@@ -5,6 +5,8 @@ import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.patch.bytecodePatch
 import app.revanced.patcher.patch.resourcePatch
+import app.revanced.patches.shared.spoof.guide.addClientOSVersionHook
+import app.revanced.patches.shared.spoof.guide.spoofClientGuideEndpointPatch
 import app.revanced.patches.youtube.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.revanced.patches.youtube.utils.extension.Constants.GENERAL_PATH
 import app.revanced.patches.youtube.utils.navigation.addBottomBarContainerHook
@@ -13,6 +15,7 @@ import app.revanced.patches.youtube.utils.navigation.navigationBarHookPatch
 import app.revanced.patches.youtube.utils.patch.PatchList.NAVIGATION_BAR_COMPONENTS
 import app.revanced.patches.youtube.utils.playservice.is_19_25_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_19_28_or_greater
+import app.revanced.patches.youtube.utils.playservice.is_20_06_or_greater
 import app.revanced.patches.youtube.utils.playservice.is_20_28_or_greater
 import app.revanced.patches.youtube.utils.playservice.versionCheckPatch
 import app.revanced.patches.youtube.utils.resourceid.sharedResourceIdPatch
@@ -86,6 +89,7 @@ val navigationBarComponentsPatch = bytecodePatch(
         settingsPatch,
         sharedResourceIdPatch,
         navigationBarHookPatch,
+        spoofClientGuideEndpointPatch,
         versionCheckPatch,
     )
 
@@ -140,17 +144,13 @@ val navigationBarComponentsPatch = bytecodePatch(
 
         // region patch for hide navigation buttons
 
-        autoMotiveFingerprint.methodOrThrow().apply {
-            val insertIndex = indexOfFirstStringInstructionOrThrow(ANDROID_AUTOMOTIVE_STRING) - 1
-            val insertRegister = getInstruction<OneRegisterInstruction>(insertIndex).registerA
-
-            addInstructions(
-                insertIndex, """
-                    invoke-static {v$insertRegister}, $EXTENSION_CLASS_DESCRIPTOR->switchCreateWithNotificationButton(Z)Z
-                    move-result v$insertRegister
-                    """
-            )
-        }
+        // Swap Create and Notifications buttons
+        addClientOSVersionHook(
+            "patch_setClientOSNameByNavigationBarPatch",
+            "$EXTENSION_CLASS_DESCRIPTOR->getOSName()Ljava/lang/String;",
+            is_20_06_or_greater,
+            true
+        )
 
         // endregion
 

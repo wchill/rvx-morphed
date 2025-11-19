@@ -846,15 +846,9 @@ To show the native playlist download button, turn on \'Spoof app version\' and c
     <string name="revanced_hide_navigation_label_summary_on">Navigation labels are hidden.</string>
     <string name="revanced_hide_navigation_label_summary_off">Navigation labels are shown.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Swap Create and Notifications buttons</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"Create button is switched with Notifications button.
-
-Note: Enabling this also forcibly hides video ads."</string>
+    <string name="revanced_switch_create_with_notifications_button_summary_on">Create button is switched with Notifications button.</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">Create button is not switched with Notifications button.</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"Disabling this might load more ads from the server.
-
-Also, ads will no longer be blocked in Shorts.
-
-If this setting do not take effect, try switching to Incognito mode."</string>
+    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">If this setting do not take effect, try switching to Incognito mode.</string>
 
     <string name="revanced_enable_translucent_navigation_bar_title">Enable translucent navigation bar</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">Navigation bar is translucent.</string>

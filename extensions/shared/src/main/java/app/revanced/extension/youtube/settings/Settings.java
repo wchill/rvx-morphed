@@ -188,7 +188,7 @@ public class Settings extends BaseSettings {
 
     // PreferenceScreen: General - Navigation bar
     public static final BooleanSetting ENABLE_NARROW_NAVIGATION_BUTTONS = new BooleanSetting("revanced_enable_narrow_navigation_buttons", FALSE, true);
-    public static final BooleanSetting HIDE_NAVIGATION_CREATE_BUTTON = new BooleanSetting("revanced_hide_navigation_create_button", TRUE, true);
+    public static final BooleanSetting HIDE_NAVIGATION_CREATE_BUTTON = new BooleanSetting("revanced_hide_navigation_create_button", FALSE, true);
     public static final BooleanSetting HIDE_NAVIGATION_HOME_BUTTON = new BooleanSetting("revanced_hide_navigation_home_button", FALSE, true);
     public static final BooleanSetting HIDE_NAVIGATION_LIBRARY_BUTTON = new BooleanSetting("revanced_hide_navigation_library_button", FALSE, true);
     public static final BooleanSetting HIDE_NAVIGATION_NOTIFICATIONS_BUTTON = new BooleanSetting("revanced_hide_navigation_notifications_button", FALSE, true);
