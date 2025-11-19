@@ -772,45 +772,46 @@ val playerComponentsPatch = bytecodePatch(
 
         // endregion
 
-        // region patch for hide seek message
+        // region patch for hide seek message (Removed in YouTube 20.03+)
 
-        seekEduContainerFingerprint.methodOrThrow().apply {
-            addInstructionsWithLabels(
-                0, """
+        if (!is_20_03_or_greater) {
+            seekEduContainerFingerprint.methodOrThrow().apply {
+                addInstructionsWithLabels(
+                    0, """
                     invoke-static {}, $PLAYER_CLASS_DESCRIPTOR->hideSeekMessage()Z
                     move-result v0
                     if-eqz v0, :default
                     return-void
                     """, ExternalLabel("default", getInstruction(0))
-            )
-        }
+                )
+            }
 
-        // Removed in YouTube 20.02+
-        if (!is_20_02_or_greater) {
-            youtubeControlsOverlayFingerprint.methodOrThrow().apply {
-                val insertIndex =
-                    indexOfFirstLiteralInstructionOrThrow(seekUndoEduOverlayStub)
-                val insertRegister = getInstruction<OneRegisterInstruction>(insertIndex).registerA
+            if (!is_20_02_or_greater) {
+                youtubeControlsOverlayFingerprint.methodOrThrow().apply {
+                    val insertIndex =
+                        indexOfFirstLiteralInstructionOrThrow(seekUndoEduOverlayStub)
+                    val insertRegister = getInstruction<OneRegisterInstruction>(insertIndex).registerA
 
-                val onClickListenerIndex = indexOfFirstInstructionOrThrow(insertIndex) {
-                    opcode == Opcode.INVOKE_VIRTUAL &&
-                            getReference<MethodReference>()?.name == "setOnClickListener"
-                }
-                val constComponent = getFirstLiteralComponent(insertIndex, onClickListenerIndex - 1)
+                    val onClickListenerIndex = indexOfFirstInstructionOrThrow(insertIndex) {
+                        opcode == Opcode.INVOKE_VIRTUAL &&
+                                getReference<MethodReference>()?.name == "setOnClickListener"
+                    }
+                    val constComponent = getFirstLiteralComponent(insertIndex, onClickListenerIndex - 1)
 
-                if (constComponent.isNotEmpty()) {
-                    addInstruction(
-                        onClickListenerIndex + 2,
-                        constComponent
-                    )
-                }
-                addInstructionsWithLabels(
-                    insertIndex, """
+                    if (constComponent.isNotEmpty()) {
+                        addInstruction(
+                            onClickListenerIndex + 2,
+                            constComponent
+                        )
+                    }
+                    addInstructionsWithLabels(
+                        insertIndex, """
                         invoke-static {}, $PLAYER_CLASS_DESCRIPTOR->hideSeekUndoMessage()Z
                         move-result v$insertRegister
                         if-nez v$insertRegister, :default
                         """, ExternalLabel("default", getInstruction(onClickListenerIndex + 1))
-                )
+                    )
+                }
             }
         }
 
