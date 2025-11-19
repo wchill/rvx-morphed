@@ -6,7 +6,7 @@ import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.patch.bytecodePatch
 import app.revanced.patcher.patch.resourcePatch
 import app.revanced.patches.youtube.utils.compatibility.Constants.COMPATIBLE_PACKAGE
-import app.revanced.patches.youtube.utils.extension.Constants.GENERAL_CLASS_DESCRIPTOR
+import app.revanced.patches.youtube.utils.extension.Constants.GENERAL_PATH
 import app.revanced.patches.youtube.utils.navigation.addBottomBarContainerHook
 import app.revanced.patches.youtube.utils.navigation.hookNavigationButtonCreated
 import app.revanced.patches.youtube.utils.navigation.navigationBarHookPatch
@@ -71,6 +71,9 @@ private val navigationBarComponentsResourcePatch = resourcePatch(
     }
 }
 
+private const val EXTENSION_CLASS_DESCRIPTOR =
+    "$GENERAL_PATH/NavigationButtonsPatch;"
+
 @Suppress("unused")
 val navigationBarComponentsPatch = bytecodePatch(
     NAVIGATION_BAR_COMPONENTS.title,
@@ -98,7 +101,7 @@ val navigationBarComponentsPatch = bytecodePatch(
         if (is_19_25_or_greater) {
             translucentNavigationBarFingerprint.injectLiteralInstructionBooleanCall(
                 TRANSLUCENT_NAVIGATION_BAR_FEATURE_FLAG,
-                "$GENERAL_CLASS_DESCRIPTOR->enableTranslucentNavigationBar()Z"
+                "$EXTENSION_CLASS_DESCRIPTOR->enableTranslucentNavigationBar()Z"
             )
 
             settingArray += "SETTINGS: TRANSLUCENT_NAVIGATION_BAR"
@@ -119,7 +122,7 @@ val navigationBarComponentsPatch = bytecodePatch(
 
                     addInstructions(
                         targetIndex + 1, """
-                            invoke-static {v$register}, $GENERAL_CLASS_DESCRIPTOR->enableNarrowNavigationButton(Z)Z
+                            invoke-static {v$register}, $EXTENSION_CLASS_DESCRIPTOR->enableNarrowNavigationButton(Z)Z
                             move-result v$register
                             """
                     )
@@ -131,7 +134,7 @@ val navigationBarComponentsPatch = bytecodePatch(
 
         // region patch for hide navigation bar
 
-        addBottomBarContainerHook("$GENERAL_CLASS_DESCRIPTOR->hideNavigationBar(Landroid/view/View;)V")
+        addBottomBarContainerHook("$EXTENSION_CLASS_DESCRIPTOR->hideNavigationBar(Landroid/view/View;)V")
 
         // endregion
 
@@ -143,7 +146,7 @@ val navigationBarComponentsPatch = bytecodePatch(
 
             addInstructions(
                 insertIndex, """
-                    invoke-static {v$insertRegister}, $GENERAL_CLASS_DESCRIPTOR->switchCreateWithNotificationButton(Z)Z
+                    invoke-static {v$insertRegister}, $EXTENSION_CLASS_DESCRIPTOR->switchCreateWithNotificationButton(Z)Z
                     move-result v$insertRegister
                     """
             )
@@ -163,7 +166,7 @@ val navigationBarComponentsPatch = bytecodePatch(
 
                 addInstruction(
                     targetIndex,
-                    "invoke-static {v$targetRegister}, $GENERAL_CLASS_DESCRIPTOR->hideNavigationLabel(Landroid/widget/TextView;)V"
+                    "invoke-static {v$targetRegister}, $EXTENSION_CLASS_DESCRIPTOR->hideNavigationLabel(Landroid/widget/TextView;)V"
                 )
             }
         }
@@ -211,7 +214,7 @@ val navigationBarComponentsPatch = bytecodePatch(
                 addInstructions(
                     enumMapIndex + 1, """
                         sget-object v$enumRegister, $cairoNotificationEnumReference
-                        invoke-static {v$enumMapRegister, v$enumRegister}, $GENERAL_CLASS_DESCRIPTOR->setCairoNotificationFilledIcon(Ljava/util/EnumMap;Ljava/lang/Enum;)V
+                        invoke-static {v$enumMapRegister, v$enumRegister}, $EXTENSION_CLASS_DESCRIPTOR->setCairoNotificationFilledIcon(Ljava/util/EnumMap;Ljava/lang/Enum;)V
                         """
                 )
             }
@@ -222,7 +225,7 @@ val navigationBarComponentsPatch = bytecodePatch(
 
                 addInstructions(
                     index + 1, """
-                        invoke-static {v$register}, $GENERAL_CLASS_DESCRIPTOR->getLibraryDrawableId(I)I
+                        invoke-static {v$register}, $EXTENSION_CLASS_DESCRIPTOR->getLibraryDrawableId(I)I
                         move-result v$register
                         """
                 )
@@ -232,7 +235,7 @@ val navigationBarComponentsPatch = bytecodePatch(
         // endregion
 
         // Hook navigation button created, in order to hide them.
-        hookNavigationButtonCreated(GENERAL_CLASS_DESCRIPTOR)
+        hookNavigationButtonCreated(EXTENSION_CLASS_DESCRIPTOR)
 
         // region add settings
 
