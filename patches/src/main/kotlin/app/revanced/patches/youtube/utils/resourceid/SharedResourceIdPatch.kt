@@ -130,6 +130,8 @@ var mdxSeamlessTVSignInDrawerFragmentTitle = -1L
     private set
 var menuItemView = -1L
     private set
+var menuSearch = -1L
+    private set
 var miniplayerMaxSize = -1L
     private set
 var modernMiniPlayerClose = -1L
@@ -342,6 +344,7 @@ internal val sharedResourceIdPatch = resourcePatch(
         mdxSeamlessTVSignInDrawerFragmentTitle =
             getResourceId(STRING, "mdx_seamless_tv_sign_in_drawer_fragment_title")
         menuItemView = getResourceId(ID, "menu_item_view")
+        menuSearch = getResourceId(STRING, "menu_search")
         miniplayerMaxSize = getResourceId(DIMEN, "miniplayer_max_size")
         modernMiniPlayerClose = getResourceId(ID, "modern_miniplayer_close")
         modernMiniPlayerExpand = getResourceId(ID, "modern_miniplayer_expand")

@@ -983,6 +983,11 @@ You tab → View channel → Menu → Settings"</string>
     <string name="revanced_hide_toolbar_notification_button_title">Hide Notifications button</string>
     <string name="revanced_hide_toolbar_notification_button_summary_on">Notifications button is hidden.</string>
     <string name="revanced_hide_toolbar_notification_button_summary_off">Notifications button is shown.</string>
+    <string name="revanced_hide_toolbar_search_button_title">Hide Search button</string>
+    <string name="revanced_hide_toolbar_search_button_summary_on">"Search button is hidden.
+
+This setting may not work if the wide search bar is enabled."</string>
+    <string name="revanced_hide_toolbar_search_button_summary_off">Search button is shown.</string>
     <string name="revanced_hide_search_term_thumbnail_title">Hide search term thumbnails</string>
     <string name="revanced_hide_search_term_thumbnail_summary_on">Thumbnails in search term history are hidden.</string>
     <string name="revanced_hide_search_term_thumbnail_summary_off">Thumbnails in search term history are shown.</string>

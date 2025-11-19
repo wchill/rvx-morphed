@@ -449,6 +449,21 @@ public class GeneralPatch {
         hideViewUnderCondition(isNotificationButton(enumString), view);
     }
 
+    public static void hideSearchButton(String enumString, View view) {
+        if (!Settings.HIDE_TOOLBAR_SEARCH_BUTTON.get())
+            return;
+
+        hideViewUnderCondition(isSearchButton(enumString), view);
+    }
+
+    public static void hideSearchButton(MenuItem menuItem, int original) {
+        menuItem.setShowAsAction(
+                Settings.HIDE_TOOLBAR_SEARCH_BUTTON.get()
+                        ? MenuItem.SHOW_AS_ACTION_NEVER
+                        : original
+        );
+    }
+
     public static boolean hideSearchTermThumbnail() {
         return Settings.HIDE_SEARCH_TERM_THUMBNAIL.get();
     }
@@ -656,7 +671,16 @@ public class GeneralPatch {
         return StringUtils.equalsAny(
                 enumString,
                 "TAB_ACTIVITY", // Notification button
-                "TAB_ACTIVITY_CAIRO" // Notification button (new layout)
+                "TAB_ACTIVITY_CAIRO" // Notification button (New layout)
+        );
+    }
+
+    private static boolean isSearchButton(String enumString) {
+        return StringUtils.equalsAny(
+                enumString,
+                "SEARCH", // Search button
+                "SEARCH_CAIRO", // Search button (New layout)
+                "SEARCH_BOLD" // Search button (Shorts)
         );
     }
 
