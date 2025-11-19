@@ -41,6 +41,7 @@ import app.revanced.util.fingerprint.definingClassOrThrow
 import app.revanced.util.fingerprint.matchOrThrow
 import app.revanced.util.fingerprint.methodOrThrow
 import app.revanced.util.getReference
+import app.revanced.util.indexOfFirstInstruction
 import app.revanced.util.indexOfFirstInstructionOrThrow
 import app.revanced.util.indexOfFirstInstructionReversedOrThrow
 import app.revanced.util.updatePatchStatus
@@ -136,14 +137,19 @@ val videoPlaybackPatch = bytecodePatch(
             }
         }
 
-        loadVideoParamsFingerprint.matchOrThrow(loadVideoParamsParentFingerprint).let {
+        mediaLibPlayerLoadVideoFingerprint.matchOrThrow().let {
             it.method.apply {
-                val targetIndex = it.patternMatch!!.endIndex
+                val startIndex = it.patternMatch!!.endIndex
+                val targetIndex = indexOfPlaybackSpeedInstruction(this, startIndex)
                 val targetReference =
-                    getInstruction<ReferenceInstruction>(targetIndex).reference as MethodReference
+                    getInstruction<ReferenceInstruction>(targetIndex).reference as FieldReference
 
-                findMethodOrThrow(definingClass) {
-                    name == targetReference.name
+                findMethodOrThrow(targetReference.definingClass) {
+                    returnType == "F" &&
+                            indexOfFirstInstruction {
+                                opcode == Opcode.IGET &&
+                                        getReference<FieldReference>() == targetReference
+                            } >= 0
                 }.apply {
                     val insertIndex = implementation!!.instructions.lastIndex
                     val insertRegister =
