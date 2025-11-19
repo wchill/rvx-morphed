@@ -117,6 +117,10 @@ public final class NavigationBar {
     @Nullable
     private static String lastYTNavigationEnumName;
 
+    public static String getLastAppNavigationEnum() {
+        return lastYTNavigationEnumName;
+    }
+
     /**
      * Injection point.
      */
@@ -277,7 +281,7 @@ public final class NavigationBar {
         /**
          * YouTube enum name for this tab.
          */
-        private final List<String> ytEnumNames;
+        public final List<String> ytEnumNames;
 
         NavigationButton(String... ytEnumNames) {
             this.ytEnumNames = Arrays.asList(ytEnumNames);

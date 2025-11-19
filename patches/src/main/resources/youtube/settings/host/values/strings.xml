@@ -849,6 +849,13 @@ To show the native playlist download button, turn on \'Spoof app version\' and c
     <string name="revanced_switch_create_with_notifications_button_summary_on">Create button is switched with Notifications button.</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">Create button is not switched with Notifications button.</string>
     <string name="revanced_switch_create_with_notifications_button_user_dialog_message">If this setting do not take effect, try switching to Incognito mode.</string>
+    <string name="revanced_replace_navigation_button_title">Replace navigation button</string>
+    <string name="revanced_replace_navigation_button_summary">Replaces the navigation button with the Search button.</string>
+    <string name="revanced_replace_navigation_button_target_title">Replace navigation button</string>
+    <string name="revanced_replace_navigation_button_target_entry_home">Home</string>
+    <string name="revanced_replace_navigation_button_target_entry_shorts">Shorts</string>
+    <string name="revanced_replace_navigation_button_target_entry_subscriptions">Subscriptions</string>
+    <string name="revanced_replace_navigation_button_target_entry_notifications">Notifications</string>
 
     <string name="revanced_enable_translucent_navigation_bar_title">Enable translucent navigation bar</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">Navigation bar is translucent.</string>

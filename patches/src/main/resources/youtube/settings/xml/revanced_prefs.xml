@@ -184,6 +184,8 @@
 
             <!-- SETTINGS: HIDE_NAVIGATION_COMPONENTS
             <SwitchPreference android:title="@string/revanced_hide_navigation_bar_title" android:key="revanced_hide_navigation_bar" android:summaryOn="@string/revanced_hide_navigation_bar_summary_on" android:summaryOff="@string/revanced_hide_navigation_bar_summary_off" />
+            <SwitchPreference android:title="@string/revanced_replace_navigation_button_title" android:key="revanced_replace_navigation_button" android:summary="@string/revanced_replace_navigation_button_summary" />
+            <app.revanced.extension.shared.settings.preference.CustomDialogListPreference android:entries="@array/revanced_replace_navigation_button_target_entries" android:title="@string/revanced_replace_navigation_button_target_title" android:key="revanced_replace_navigation_button_target" android:entryValues="@array/revanced_replace_navigation_button_target_entry_values" />
         </PreferenceScreen>SETTINGS: HIDE_NAVIGATION_COMPONENTS -->
 
         <!-- SETTINGS: HIDE_LAYOUT_COMPONENTS
