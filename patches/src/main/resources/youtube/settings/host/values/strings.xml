@@ -2542,6 +2542,8 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Unreleased)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
+<small>(Legacy, WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Spoofing side effects</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Audio track menu is missing.
 • Disable forced auto audio tracks may not be available.

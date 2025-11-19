@@ -266,6 +266,21 @@ object YouTubeClient {
     private const val CLIENT_VERSION_TVHTML5_EMBEDDED = "2.0"
 
 
+    // WEB (Downgraded)
+    /**
+     * Same as WEB, but for some reason SABR is not applied.
+     *
+     * Available version
+     * ===============
+     * '1.20160315'
+     * '1.20161001'
+     * '1.20170222'
+     */
+    private const val CLIENT_VERSION_WEB_LEGACY = "1.20160315"
+    private const val USER_AGENT_WEB_LEGACY =
+        "Mozilla/5.0 (X11; OpenBSD amd64; rv:45.0) Gecko/20100101 Firefox/45.0"
+
+
     // MWEB
     /**
      * Video not playable: Paid / Movie / Private / Age-restricted.
@@ -552,9 +567,9 @@ object YouTubeClient {
 
         /**
          * PoToken client is currently not working.
-         * Mobile Web has been temporarily removed from the available clients.
+         * Mobile Web / Web has been temporarily removed from the available clients.
          *
-         * TODO: Fix me when the SABR extractor is implemented in the future.
+         * TODO: Content PoToken must be generated using the '/att/get' endpoint.
          */
         MWEB(
             id = 2,
@@ -562,11 +577,31 @@ object YouTubeClient {
             userAgent = USER_AGENT_MWEB,
             requireJS = true,
             requirePoToken = true,
-            // Android YouTube app does not support 'Cookie'.
+            // Android YouTube app does not support 'Cookie'?.
             supportsCookies = false,
             refererFormat = CLIENT_REFERER_FORMAT_MWEB,
             clientName = "MWEB",
             friendlyName = "Mobile Web"
+        ),
+
+        /**
+         * PoToken client is currently not working.
+         * Mobile Web / Web has been temporarily removed from the available clients.
+         *
+         * TODO: Content PoToken must be generated using the '/att/get' endpoint.
+         */
+        WEB_LEGACY(
+            id = 1,
+            clientVersion = CLIENT_VERSION_WEB_LEGACY,
+            clientPlatform = CLIENT_PLATFORM_DESKTOP,
+            userAgent = USER_AGENT_WEB_LEGACY,
+            requireJS = true,
+            requirePoToken = true,
+            // Android YouTube app does not support 'Cookie'?.
+            supportsCookies = false,
+            refererFormat = CLIENT_REFERER_FORMAT_WEB,
+            clientName = "WEB",
+            friendlyName = "Web"
         );
 
         companion object {
@@ -587,7 +622,6 @@ object YouTubeClient {
                 TV,
                 TV_SIMPLY_NO_POTOKEN,
                 TV_LEGACY,
-                //MWEB,
                 ANDROID_VR_AUTH,
             )
             val CLIENT_ORDER_TO_USE_JS_PREFER_TV: Array<ClientType> = arrayOf(
@@ -599,7 +633,6 @@ object YouTubeClient {
                 IPADOS,
                 TV_SIMPLY_NO_POTOKEN,
                 TV_LEGACY,
-                //MWEB,
                 ANDROID_VR_AUTH,
             )
         }
