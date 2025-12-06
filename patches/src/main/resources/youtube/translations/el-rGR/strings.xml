@@ -1570,15 +1570,9 @@ Playlists
     <string name="revanced_hide_chapters_section_title">Ενότητα κεφαλαίων βίντεο</string>
     <string name="revanced_hide_chapters_section_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_chapters_section_summary_off">Εμφανίζεται.</string>
-    <string name="revanced_hide_creator_section_title">Ενότητα δημιουργού</string>
-    <string name="revanced_hide_creator_section_summary_on">Κρυμμένη.</string>
-    <string name="revanced_hide_creator_section_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_explore_podcast_section_title">Ενότητα «Εξερευνήστε το podcast»</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">Εμφανίζεται.</string>
-    <string name="revanced_hide_featured_section_title">Ενότητα προτεινόμενου περιεχομένου</string>
-    <string name="revanced_hide_featured_section_summary_on">Κρυμμένη.</string>
-    <string name="revanced_hide_featured_section_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_how_this_was_made_section_title">Ενότητα «Πως δημιουργήθηκε»</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">Εμφανίζεται.</string>

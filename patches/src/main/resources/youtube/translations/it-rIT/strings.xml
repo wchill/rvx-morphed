@@ -1554,15 +1554,9 @@ Questa impostazione funziona meglio con una connessione internet molto veloce."<
     <string name="revanced_hide_chapters_section_title">Nascondi la sezione Capitoli</string>
     <string name="revanced_hide_chapters_section_summary_on">La sezione Capitoli è nascosta.</string>
     <string name="revanced_hide_chapters_section_summary_off">La sezione Capitoli è visibile.</string>
-    <string name="revanced_hide_creator_section_title">Nascondi la sezione del canale</string>
-    <string name="revanced_hide_creator_section_summary_on">La sezione del canale è nascosta.</string>
-    <string name="revanced_hide_creator_section_summary_off">La sezione del canale è visibile.</string>
     <string name="revanced_hide_explore_podcast_section_title">Nascondi la sezione Esplora il Podcast</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">La sezione Esplora il Podcast è nascosta.</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">La sezione Esplora il Podcast è visibile.</string>
-    <string name="revanced_hide_featured_section_title">Nascondi la sezione dei contenuti in evidenza</string>
-    <string name="revanced_hide_featured_section_summary_on">La sezione dei contenuti in evidenza è nascosta.</string>
-    <string name="revanced_hide_featured_section_summary_off">La sezione dei contenuti in evidenza è visibile.</string>
     <string name="revanced_hide_how_this_was_made_section_title">Nascondi la sezione Come È Stato Realizzato</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">La sezione Come È Stato Realizzato è nascosta.</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">La sezione Come È Stato Realizzato è visibile.</string>
@@ -2435,7 +2429,7 @@ Esempio 2:
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Il client usato per recuperare i dati in streaming è visibile nelle statistiche per nerd.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Il client usato per recuperare i dati in streaming è nascosto nelle statistiche per nerd.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Non è stato possibile recuperare alcun flusso client</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Prova a cambiare il client predefinito in TV.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Prova a cambiare il client predefinito in TV</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Attiva il codec VR AV1</string>

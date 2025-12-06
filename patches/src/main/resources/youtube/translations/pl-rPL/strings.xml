@@ -1573,15 +1573,9 @@ Funkcja działa najlepiej przy bardzo szybkim połączeniu internetowym."</strin
     <string name="revanced_hide_chapters_section_title">Rozdziały nad opisami</string>
     <string name="revanced_hide_chapters_section_summary_on">Ukryte</string>
     <string name="revanced_hide_chapters_section_summary_off">Widoczne</string>
-    <string name="revanced_hide_creator_section_title">Sekcja twórcy</string>
-    <string name="revanced_hide_creator_section_summary_on">Ukryta</string>
-    <string name="revanced_hide_creator_section_summary_off">Widoczna</string>
     <string name="revanced_hide_explore_podcast_section_title">Sekcja eksplorowania podcastu</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">Ukryta</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">Widoczna</string>
-    <string name="revanced_hide_featured_section_title">Wyróżnione treści</string>
-    <string name="revanced_hide_featured_section_summary_on">Ukryte</string>
-    <string name="revanced_hide_featured_section_summary_off">Widoczne</string>
     <string name="revanced_hide_how_this_was_made_section_title">Sekcja \'Jak powstały te treści\'</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">Ukryta</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">Widoczna</string>

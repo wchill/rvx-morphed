@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Shared -->
+    <string name="revanced_settings_title">RVX</string>
+    <string name="revanced_settings_search_title">Rechercher %s</string>
+    <string name="revanced_reset_to_default_toast">Réinitialiser les valeurs par défaut.</string>
     <!-- Shared Category -->
+    <string name="revanced_restart_first_run">Redémarrez pour charger la mise en page normalement</string>
+    <string name="revanced_restart_message">Actualiser et redémarrer</string>
+    <string name="revanced_settings_search_hint">Paramètres de recherche</string>
+    <string name="revanced_settings_search_no_results_title">Aucun résultat trouvé pour \'%s\'.</string>
+    <string name="revanced_settings_search_no_results_summary">Essayez un autre mot-clé.</string>
+    <string name="revanced_settings_search_recent_searches">Recherches récentes</string>
+    <string name="revanced_settings_search_remove_message">Supprimer de l\'historique de recherche ?</string>
+    <string name="revanced_settings_search_clear_history">Effacer l\'historique de recherche</string>
+    <string name="revanced_settings_search_clear_history_message">Êtes-vous sûr de vouloir effacer tout l\'historique de recherche ?</string>
+    <string name="revanced_settings_search_tips_title">Conseils de recherche</string>
+    <string name="revanced_settings_search_tips_summary">"• Touchez un chemin pour y accéder.
+• Appuyez longuement sur un paramètre pour y accéder.
+• Appuyez sur Entrée pour enregistrer une requête de recherche dans l'historique.
+• La recherche ne tient pas compte de la casse ni de la ponctuation.
+• Les paramètres parents apparaissent au-dessus des paramètres enfants désactivés."</string>
+    <string name="revanced_settings_search_empty_history_title">L\'historique de recherche est vide</string>
+    <string name="revanced_settings_search_empty_history_summary">Pour enregistrer l\'historique de recherche, saisissez une requête et appuyez sur Entrée.</string>
+    <string name="revanced_settings_search_history_title">Afficher l\'historique de recherche des paramètres</string>
+    <string name="revanced_settings_search_history_summary_on">L\'historique de recherche des paramètres est affiché.</string>
+    <string name="revanced_settings_search_history_summary_off">L\'historique de recherche des paramètres n\'est pas affiché.</string>
     <!-- PreferenceScreen: Account -->
     <string name="revanced_preference_screen_account_title">Compte</string>
     <string name="revanced_hide_account_menu_title">Masquer le menu du compte</string>
@@ -32,6 +55,8 @@
     <string name="revanced_hide_action_button_share_summary">Masque le bouton \"Partager\".</string>
     <string name="revanced_hide_action_button_song_video_title">Masquer le bouton \"Chanson / Vidéo\"</string>
     <string name="revanced_hide_action_button_song_video_summary">"Masque le bouton \"Chanson / Vidéo\". (Ce bouton n'est accessible qu'à certains utilisateurs.)"</string>
+    <string name="revanced_hide_action_button_disabled_title">Masquer le bouton désactivé</string>
+    <string name="revanced_hide_action_button_disabled_summary">Masque les boutons désactivés, comme le bouton Commentaires désactivé.</string>
     <string name="revanced_hide_action_button_label_title">Masquer les noms de la barre d’action</string>
     <string name="revanced_hide_action_button_label_summary">Masque les noms de la barre d’action.</string>
     <string name="revanced_external_downloader_action_title">Remplacer l\'action du bouton \"Télécharger\"</string>
@@ -69,6 +94,12 @@ Limitations :
     <string name="revanced_hide_promotion_alert_banner_summary">Masque la bannière d\'alerte de promotion.</string>
     <!-- PreferenceScreen: Flyout menu -->
     <string name="revanced_preference_screen_flyout_title">Menu déroulant</string>
+    <string name="revanced_disable_trim_silence_title">Désactiver le commutateur de silencieux Trim</string>
+    <string name="revanced_disable_trim_silence_summary">"Désactive l'option de suppression des silences dans le menu contextuel de la vitesse de lecture.
+
+Informations :
+• Cette fonctionnalité est destinée aux podcasts.
+• Cette fonctionnalité est encore en développement et peut donc présenter des instabilités."</string>
     <string name="revanced_enable_compact_dialog_title">Activer la boîte de dialogue compacte</string>
     <string name="revanced_enable_compact_dialog_summary">"Active le menu déroulant compact sur téléphones.
 
@@ -135,6 +166,10 @@ Limitations :
     <string name="revanced_disable_cairo_splash_animation_summary">Désactive l\'animation Cairo lors du démarrage de l\'application.</string>
     <string name="revanced_disable_dislike_redirection_title">Désactiver la redirection du bouton \"Je n\'aime pas\"</string>
     <string name="revanced_disable_dislike_redirection_summary">Désactive le passage à la piste suivante lorsque vous cliquez sur le bouton \"Je n\'aime pas\".</string>
+    <string name="revanced_disable_auto_audio_tracks_title">Désactiver les pistes audio automatiques forcées</string>
+    <string name="revanced_disable_auto_audio_tracks_summary">"Désactiver la lecture automatique forcée des pistes audio pour les podcasts.
+
+Limitation : Si l’option « Fausser les données de diffusion » est activée et que le client par défaut est « Authentification VR Android », cette fonctionnalité risque de ne pas fonctionner."</string>
     <string name="revanced_disable_auto_captions_title">Désactiver les sous-titres forcés</string>
     <string name="revanced_disable_auto_captions_summary">Désactive les sous-titres automatiquement activés.</string>
     <string name="revanced_enable_landscape_mode_title">Activer le mode paysage</string>
@@ -183,6 +218,7 @@ Cela ne contourne pas la restriction d'âge, mais le confirme automatiquement."<
 • Si désactivée ultérieurement, l'ancienne interface peut subsister jusqu'à la suppression des données de l'application."</string>
     <string name="revanced_spoof_app_version_target_title">Choisir la version à falsifier</string>
     <string name="revanced_spoof_app_version_target_summary">Sélectionner la version de l\'application à falsifier.</string>
+    <string name="revanced_spoof_app_version_target_entry_6_35_52">6.35.52 - Restauration de l\'ancien panneau coulissant</string>
     <string name="revanced_spoof_app_version_target_entry_6_42_55">6.42.55 - Désactiver les paroles en temps réel</string>
     <string name="revanced_spoof_app_version_target_entry_7_16_53">7.16.53 - Restaurer l\'ancienne barre d\'action</string>
     <string name="revanced_spoof_app_version_target_entry_7_17_52">7.17.52 - La section commentaires n\'apparaît pas dans le fil d\'actualité</string>
@@ -247,8 +283,16 @@ Utilisez des couleurs sombres si possible, car l'application ne prend pas en cha
     <string name="revanced_disable_player_gesture_summary">Désactive les gestes pour changer de musique dans le lecteur.</string>
     <string name="revanced_enable_forced_miniplayer_title">Activer le mini-lecteur forcé</string>
     <string name="revanced_enable_forced_miniplayer_summary">Active le mini-lecteur forcé lors du passage à une nouvelle piste.</string>
+    <string name="revanced_enable_smooth_transition_animation_title">Activer l\'animation de transition fluide</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">"Permet une animation fluide lors du passage du mini-lecteur en mode plein écran.
+
+Limitations : L’affichage des paroles en temps réel peut être défectueux pour certains utilisateurs."</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Activer le balayage pour fermer le mini-lecteur</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Permet de glisser vers le bas pour fermer le mini-lecteur.</string>
+    <string name="revanced_enable_comments_scroll_top_title">Activer le défilement vers le haut dans les commentaires</string>
+    <string name="revanced_enable_comments_scroll_top_summary">"Cliquer sur le titre du panneau de commentaires (« Commentaires ») permet de remonter en haut de la page.
+
+Limitations : Ne s’applique pas aux réponses aux commentaires."</string>
     <string name="revanced_enable_thick_seekbar_title">Activer la barre de recherche épaisse</string>
     <string name="revanced_enable_thick_seekbar_summary">"Active la barre de recherche épaisse.
 
@@ -265,6 +309,8 @@ Limitations : Les segments SponsorBlock ne sont pas affichés dans la barre de 
     <string name="revanced_hide_comment_timestamp_and_emoji_buttons_summary">Masque les boutons \"émoji\" et \"horodatage\" lors de la rédaction d\'un commentaire.</string>
     <string name="revanced_hide_fullscreen_share_button_title">Masquer le bouton \"Partager\" en plein écran</string>
     <string name="revanced_hide_fullscreen_share_button_summary">Masque le bouton \"Partager\" sur le lecteur en plein écran.</string>
+    <string name="revanced_hide_lyrics_share_button_title">Masquer les paroles Bouton Partager</string>
+    <string name="revanced_hide_lyrics_share_button_summary">Masque le bouton Partager dans les paroles.</string>
     <string name="revanced_hide_song_video_toggle_title">Masquer la bascule Chanson / Vidéo</string>
     <string name="revanced_hide_song_video_toggle_summary">Masque la bascule Chanson / Vidéo dans le lecteur.</string>
     <string name="revanced_remember_repeat_state_title">Enregistrer l\'état du mode répétition</string>
@@ -313,6 +359,8 @@ Info :
     <string name="revanced_custom_playback_speeds_invalid">Les vitesses personnalisées doivent être inférieures à %sx.</string>
     <string name="revanced_custom_playback_speeds_parse_exception">Vitesses de lecture invalides.</string>
     <string name="revanced_remember_playback_speed_toast">Vitesse de lecture modifiée par %s.</string>
+    <string name="revanced_remember_video_quality_auto_mobile">Modification de la qualité des données mobiles par défaut sur Auto.</string>
+    <string name="revanced_remember_video_quality_auto_wifi">Modification de la qualité Wi-Fi par défaut en mode automatique.</string>
     <string name="revanced_remember_video_quality_mobile">La résolution sur les données mobiles a été modifiée par %s.</string>
     <string name="revanced_remember_video_quality_none">Impossible de définir la qualité.</string>
     <string name="revanced_remember_video_quality_wifi">La résolution sur le Wi-Fi a été modifiée par %s.</string>
@@ -379,6 +427,8 @@ Cliquez ici pour découvrir comment créer une clé API."</string>
     <string name="revanced_sb_segments_intro_sum">Un intervalle sans contenu réel. Il peut s\'agir d\'une pause, d\'une image fixe ou d\'une animation répétitive. Ne comprends pas des passages contenant des informations.</string>
     <string name="revanced_sb_segments_outro">Outro / Crédits</string>
     <string name="revanced_sb_segments_outro_sum">Crédits ou lorsque les cartes de fin de vidéo YouTube apparaissent. Ne pas utiliser pour des conclusions avec des informations.</string>
+    <string name="revanced_sb_segments_hook">Crochet / Salutations</string>
+    <string name="revanced_sb_segments_hook_sum">Bandes-annonces commentées pour la prochaine vidéo, salutations et adieux. Ne comprend pas les sections ajoutant du contenu supplémentaire.</string>
     <string name="revanced_sb_segments_preview">Aperçu / Récapitulatif</string>
     <string name="revanced_sb_segments_preview_sum">Un récapitulatif montrant ce qu\'il va se passer ou qui s\'est passé dans la vidéo ou dans d\'autres vidéos de la série, lorsque des informations se répètes.</string>
     <string name="revanced_sb_segments_filler">Remplissage / Blagues</string>
@@ -392,6 +442,7 @@ Cliquez ici pour découvrir comment créer une clé API."</string>
     <string name="revanced_sb_skipped_intro_middle">Entracte passé.</string>
     <string name="revanced_sb_skipped_intro_end">Entracte passé.</string>
     <string name="revanced_sb_skipped_outro">Outro passée.</string>
+    <string name="revanced_sb_skipped_hook">Crochet sauté.</string>
     <string name="revanced_sb_skipped_preview_beginning">Aperçu passé.</string>
     <string name="revanced_sb_skipped_preview_middle">Aperçu passé.</string>
     <string name="revanced_sb_skipped_preview_end">Résumé passé.</string>
@@ -413,6 +464,19 @@ Cliquez ici pour découvrir comment créer une clé API."</string>
     <string name="revanced_sb_about_api">sponsor.ajay.app</string>
     <!-- PreferenceScreen: Miscellaneous -->
     <string name="revanced_preference_screen_misc_title">Paramètres avancés</string>
+    <string name="revanced_settings_import_export_title">Paramètres d\'importation/exportation</string>
+    <string name="revanced_settings_import_export_summary">Importer/Exporter les paramètres musicaux RVX.</string>
+    <string name="revanced_settings_export_as_file">Paramètres d\'exportation vers un fichier</string>
+    <string name="revanced_settings_import_as_file">Importer les paramètres depuis un fichier</string>
+    <string name="revanced_settings_import_export_as_text">Paramètres d\'importation/exportation sous forme de texte</string>
+    <string name="revanced_settings_export_failed">Échec de l\'exportation des paramètres.</string>
+    <string name="revanced_settings_export_success">Les paramètres ont été exportés avec succès.</string>
+    <string name="revanced_settings_import">Importer</string>
+    <string name="revanced_settings_import_copy">Copie</string>
+    <string name="revanced_settings_import_failed">Échec de l\'importation : %s.</string>
+    <string name="revanced_settings_import_reset">Les paramètres sont réinitialisés aux valeurs par défaut.</string>
+    <string name="revanced_settings_import_success">Paramètres %d importés.</string>
+    <string name="revanced_settings_reset">Réinitialiser</string>
     <string name="revanced_share_copy_settings_success">Paramètres copiés dans le presse-papier.</string>
     <string name="revanced_bypass_image_region_restrictions_title">Contourner les restrictions d\'image selon les régions</string>
     <string name="revanced_bypass_image_region_restrictions_summary">Remplace le domaine qui est bloqué dans certaines régions afin que les miniatures des listes de lecture, les avatars des chaînes, etc. puissent être reçus.</string>
@@ -431,8 +495,65 @@ Restrictions : les vidéos pour enfants peuvent ne pas être redirigées."</str
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_on_long_click">Appuyez et maintenez enfoncé le bouton bascule Chanson / Vidéo</string>
     <string name="revanced_disable_quic_protocol_title">Désactiver le protocole QUIC</string>
     <string name="revanced_disable_quic_protocol_summary">"Protocole CronetEngine QUIC désactivé."</string>
+    <string name="revanced_debug_title">Activer la journalisation de débogage</string>
+    <string name="revanced_debug_summary">Affiche le journal de débogage.</string>
+    <string name="revanced_debug_protobuffer_title">Tampon de protocole de journalisation</string>
+    <string name="revanced_debug_protobuffer_summary">Inclut le tampon proto dans le journal de débogage.</string>
+    <string name="revanced_debug_spannable_title">Log étendu</string>
+    <string name="revanced_debug_spannable_summary">Inclut les éléments extensibles dans le journal de débogage.</string>
     <string name="revanced_sanitize_sharing_links_title">Nettoyer les liens partagés</string>
     <string name="revanced_sanitize_sharing_links_summary">Supprime les paramètres de suivi (tracking) des URL lors du partage de liens.</string>
+    <string name="revanced_spoof_streaming_data_title">Données de streaming falsifiées</string>
+    <string name="revanced_spoof_streaming_data_summary">"Modifiez le flux vidéo du client pour éviter les problèmes de lecture.
+
+Si vous êtes abonné à YouTube Premium, ce paramètre peut ne pas être nécessaire."</string>
+    <string name="revanced_spoof_streaming_data_default_client_title">Client par défaut</string>
+    <string name="revanced_spoof_streaming_data_default_client_summary">Définit un client par défaut pour l\'usurpation d\'identité.</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">Android sans SDK</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">Authentification Android VR (Action requise)</string>
+    <string name="revanced_spoof_streaming_data_client_entry_mweb">Site Web mobile</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv">Télévision</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">Héritage télévisuel</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Télévision intégrée</string>
+    <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">À propos de l\'authentification VR Android</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Cliquez ici pour savoir comment obtenir un gage d\'authentification.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Obtenir un gage d\'autorisation</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Pour obtenir un gage d'autorisation pour Android VR, connectez-vous à YouTube VR à l'aide d'un code d'activation : 
+
+1. Cliquez sur « Obtenir un code d'activation » pour générer un code. 
+2. Cliquez sur « Ouvrir le site web » pour accéder à « https://yt.be/activate ». 
+3. Saisissez le code d'activation. 
+4. Connectez-vous lorsque vous y êtes invité. Si vous possédez plusieurs comptes Google, sélectionnez celui que vous utilisez avec YouTube. Si vous êtes déjà connecté, passez à l'étape suivante. 
+5. Une fois connecté, retournez dans RVX et cliquez à nouveau sur « À propos de l'authentification Android VR ». 
+6. Cliquez sur « Obtenir un gage d'autorisation » pour obtenir un gage d'autorisation. 
+
+※ Cliquez sur « Réinitialiser » pour supprimer un gage d'authentification ou un code d'activation."</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Obtenir le code d\'activation</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Obtenir un gage d\'autorisation</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Réinitialiser</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Réinitialisation du gage d\'authentification et du code d\'activation.</string>
+    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Gage d\'authentification enregistré.</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Code d\'activation</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Code d'activation :
+
+%s
+
+1. Cliquez sur « Ouvrir le site web » pour accéder à « https://yt.be/activate ».
+
+2. Saisissez le code d'activation.
+
+3. Connectez-vous lorsque vous y êtes invité. Si vous possédez plusieurs comptes Google, sélectionnez celui que vous utilisez avec YouTube. Si vous êtes déjà connecté, passez à l'étape suivante.
+
+4. Une fois connecté, retournez dans RVX et cliquez à nouveau sur « À propos de l'authentification Android VR ».
+
+5. Cliquez sur « Obtenir un gage d'autorisation » pour obtenir un gage d'autorisation."</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Ouvrir le site web</string>
+    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Code d\'activation copié dans le presse-papiers : %s.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden">Impossible de récupérer les flux clients.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Essayez de changer le client par défaut en TV.</string>
     <string name="revanced_watch_history_type_title">Type d\'historique des vidéos regardées</string>
     <string name="revanced_watch_history_type_summary">"• Original : Respecte les paramètres d'historique des vidéos regardées du compte Google, mais l'historique des vidéos regardées peut ne pas fonctionner en raison du DNS ou du VPN.
 • Remplacer le domaine : Respecte les paramètres d'historique des vidéos regardées du compte Google.
@@ -456,4 +577,8 @@ Requis pour que l'application fonctionne."</string>
 
 Cliquez sur le bouton Continuer et désactivez les optimisations de la batterie."</string>
     <string name="gms_core_dialog_continue_text">Continuer</string>
+    <string name="revanced_app_info_title">Informations sur l\'application</string>
+    <string name="revanced_app_info_summary">Cliquez pour consulter le nom de l\'application, sa version, la version du correctif et la date de mise à jour.</string>
+    <string name="revanced_app_info_dialog_title">Informations sur l\'application</string>
+    <string name="revanced_app_info_dialog_message">&lt;b&gt;Nom de l\'application&lt;/b&gt;&lt;br&gt;&lt;small&gt;%1$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Version de l\'application&lt;/b&gt;&lt;br&gt;&lt;small&gt;%2$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Correctifs ReVanced&lt;/b&gt;&lt;br&gt;&lt;small&gt;%3$s&lt;/small&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Date du correctif&lt;/b&gt;&lt;br&gt;&lt;small&gt;%4$s&lt;/small&gt;</string>
 </resources>

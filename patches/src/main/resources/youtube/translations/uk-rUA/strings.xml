@@ -650,6 +650,7 @@
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Відновлення старого заголовка списку відтворення</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Відновлення старої висувної панелі швидкості відтворення</string>
     <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - Відновлення функції Транскрипція</string>
+    <string name="revanced_spoof_app_version_target_entry_20_13_41">20.13.41 - Відновлення не згорнутої панелі дій відео</string>
     <string name="revanced_spoof_app_version_other_item">Інша</string>
     <string name="revanced_spoof_app_version_other_item_hint">Введіть версію програми</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Недійсне підроблення версії програми: %s.</string>
@@ -797,6 +798,13 @@
     <string name="revanced_switch_create_with_notifications_button_summary_on">Кнопку Створити міняється з кнопкою Сповіщення.</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">Кнопку Створити не міняється з кнопкою Сповіщення.</string>
     <string name="revanced_switch_create_with_notifications_button_user_dialog_message">Якщо це налаштування не набуває чинності, спробуйте перемкнути в Анонімний режим.</string>
+    <string name="revanced_replace_navigation_button_title">Замінити кнопку навігації</string>
+    <string name="revanced_replace_navigation_button_summary">Заміна кнопки навігації кнопкою Пошук.</string>
+    <string name="revanced_replace_navigation_button_target_title">Замінити кнопку навігації</string>
+    <string name="revanced_replace_navigation_button_target_entry_home">Головна</string>
+    <string name="revanced_replace_navigation_button_target_entry_shorts">YouTube Shorts</string>
+    <string name="revanced_replace_navigation_button_target_entry_subscriptions">Підписки</string>
+    <string name="revanced_replace_navigation_button_target_entry_notifications">Сповіщення</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Увімкнути напівпрозорість панелі навігації</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">Панель навігації напівпрозора.</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">Панель навігації непрозора.</string>
@@ -917,6 +925,11 @@
     <string name="revanced_hide_toolbar_notification_button_title">Приховати кнопку сповіщень</string>
     <string name="revanced_hide_toolbar_notification_button_summary_on">Кнопку сповіщень приховано.</string>
     <string name="revanced_hide_toolbar_notification_button_summary_off">Кнопку сповіщень показується.</string>
+    <string name="revanced_hide_toolbar_search_button_title">Приховати кнопку Пошук</string>
+    <string name="revanced_hide_toolbar_search_button_summary_on">"Кнопку Пошук приховано.
+
+Це налаштування може не працювати, якщо увімкнено широку панель пошуку."</string>
+    <string name="revanced_hide_toolbar_search_button_summary_off">Кнопку Пошук показується.</string>
     <string name="revanced_hide_search_term_thumbnail_title">Приховати мініатюру пошукового запиту</string>
     <string name="revanced_hide_search_term_thumbnail_summary_on">Мініатюри в історії пошукового запиту приховано.</string>
     <string name="revanced_hide_search_term_thumbnail_summary_off">Мініатюри в історії пошукового запиту показується.</string>
@@ -1559,15 +1572,9 @@
     <string name="revanced_hide_chapters_section_title">Приховати секції розділів</string>
     <string name="revanced_hide_chapters_section_summary_on">Секції розділів приховано.</string>
     <string name="revanced_hide_chapters_section_summary_off">Секції розділів показується.</string>
-    <string name="revanced_hide_creator_section_title">Приховати секцію Автор</string>
-    <string name="revanced_hide_creator_section_summary_on">Секцію Автор приховано.</string>
-    <string name="revanced_hide_creator_section_summary_off">Секцію Автор показується.</string>
     <string name="revanced_hide_explore_podcast_section_title">Приховати секцію Послухайте подкаст</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">Секцію Послухайте подкаст приховано.</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">Секцію Послухайте подкаст показується.</string>
-    <string name="revanced_hide_featured_section_title">Приховати секцію Основний вміст</string>
-    <string name="revanced_hide_featured_section_summary_on">Секцію Основний вміст у секції Автор приховано.</string>
-    <string name="revanced_hide_featured_section_summary_off">Секцію Основний вміст у секції Автор показується.</string>
     <string name="revanced_hide_how_this_was_made_section_title">Приховати секцію Як створювався цей контент</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">Секцію Як створювався цей контент приховано.</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">Секцію Як створювався цей контент показується.</string>

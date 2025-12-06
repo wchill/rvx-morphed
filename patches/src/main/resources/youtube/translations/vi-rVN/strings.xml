@@ -1566,15 +1566,9 @@ Vì vậy, bạn nên bật tính năng này khi có kết nối mạng ổn đ�
     <string name="revanced_hide_chapters_section_title">Ẩn phần Phân cảnh</string>
     <string name="revanced_hide_chapters_section_summary_on">Phần Phân cảnh đã ẩn.</string>
     <string name="revanced_hide_chapters_section_summary_off">Phần Phân cảnh được hiển thị.</string>
-    <string name="revanced_hide_creator_section_title">Ẩn phần Nhà sáng tạo</string>
-    <string name="revanced_hide_creator_section_summary_on">Phần Nhà sáng tạo đã ẩn.</string>
-    <string name="revanced_hide_creator_section_summary_off">Phần Nhà sáng tạo được hiển thị.</string>
     <string name="revanced_hide_explore_podcast_section_title">Ẩn phần Khám phá podcast</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">Phần Khám phá podcast đã ẩn.</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">Phần Khám phá podcast được hiển thị.</string>
-    <string name="revanced_hide_featured_section_title">Ẩn phần Nội dung nổi bật</string>
-    <string name="revanced_hide_featured_section_summary_on">Phần Nội dung nổi bật trong phần Nhà sáng tạo đã ẩn.</string>
-    <string name="revanced_hide_featured_section_summary_off">Phần Nội dung nổi bật trong phần Nhà sáng tạo được hiển thị.</string>
     <string name="revanced_hide_how_this_was_made_section_title">Ẩn phần Cách nội dung này được tạo ra</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">Phần Cách nội dung này được tạo ra đã ẩn.</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">Phần Cách nội dung này được tạo ra được hiển thị.</string>

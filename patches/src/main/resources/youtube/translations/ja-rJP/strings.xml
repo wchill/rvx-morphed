@@ -652,6 +652,7 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - 昔のスタイルの再生リストヘッダーを復元</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - 昔のスタイルの再生速度のフライアウトパネルを復元</string>
     <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - 文字起こし機能を復元</string>
+    <string name="revanced_spoof_app_version_target_entry_20_13_41">20.13.41 - アクションボタンの文字表示を復元</string>
     <string name="revanced_spoof_app_version_other_item">その他</string>
     <string name="revanced_spoof_app_version_other_item_hint">アプリのバージョンを入力してください</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">無効な偽装アプリバージョンです: %s</string>
@@ -796,7 +797,16 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_hide_navigation_label_summary_on">ナビゲーションバーのラベルを非表示にします。</string>
     <string name="revanced_hide_navigation_label_summary_off">ナビゲーションバーのラベルを非表示にします。</string>
     <string name="revanced_switch_create_with_notifications_button_title">[作成] ボタンと [通知] ボタンを入れ替え</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_off">[作成] ボタンと [通知] ボタンを入れ替えます。\n\n注意: これを有効にすると、動画広告が強制的に非表示になります。</string>
+    <string name="revanced_switch_create_with_notifications_button_summary_on">[作成] ボタンと [通知] ボタンを入れ替えます。</string>
+    <string name="revanced_switch_create_with_notifications_button_summary_off">[作成] ボタンと [通知] ボタンを入れ替えます。</string>
+    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">この設定が有効にならない場合は、シークレットモードに切り替えてみてください。</string>
+    <string name="revanced_replace_navigation_button_title">ナビゲーションボタンを置換</string>
+    <string name="revanced_replace_navigation_button_summary">ナビゲーションボタンを [検索] ボタンに置​​き換えます。</string>
+    <string name="revanced_replace_navigation_button_target_title">ナビゲーションボタンを置換</string>
+    <string name="revanced_replace_navigation_button_target_entry_home">ホーム</string>
+    <string name="revanced_replace_navigation_button_target_entry_shorts">ショート</string>
+    <string name="revanced_replace_navigation_button_target_entry_subscriptions">登録チャンネル</string>
+    <string name="revanced_replace_navigation_button_target_entry_notifications">通知</string>
     <string name="revanced_enable_translucent_navigation_bar_title">半透明のナビゲーションバーを有効化</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">ナビゲーションバー ([ホーム]、[登録チャンネル] などのボタン) を半透明にします。</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">ナビゲーションバー ([ホーム]、[登録チャンネル] などのボタン) を半透明にします。</string>
@@ -918,6 +928,11 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_hide_toolbar_notification_button_title">[通知] ボタンを非表示</string>
     <string name="revanced_hide_toolbar_notification_button_summary_on">[通知] ボタンを非表示にします。</string>
     <string name="revanced_hide_toolbar_notification_button_summary_off">[通知] ボタンを非表示にします。</string>
+    <string name="revanced_hide_toolbar_search_button_title">[検索] ボタンを非表示</string>
+    <string name="revanced_hide_toolbar_search_button_summary_on">"[検索] ボタンを非表示にします。
+
+注意: [幅の広い検索バーを有効化] 設定がオンになっている場合、この設定は機能しない可能性があります。"</string>
+    <string name="revanced_hide_toolbar_search_button_summary_off">[検索] ボタンを非表示にします。\n\n注意: [幅の広い検索バーを有効化] 設定がオンになっている場合、この設定は機能しない可能性があります。</string>
     <string name="revanced_hide_search_term_thumbnail_title">検索履歴のサムネイルを非表示</string>
     <string name="revanced_hide_search_term_thumbnail_summary_on">検索履歴からサムネイルを非表示にします。</string>
     <string name="revanced_hide_search_term_thumbnail_summary_off">検索履歴からサムネイルを非表示にします。</string>
@@ -1557,15 +1572,9 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_hide_chapters_section_title">チャプターセクションを非表示</string>
     <string name="revanced_hide_chapters_section_summary_on">概要欄のチャプターセクションを非表示にします。</string>
     <string name="revanced_hide_chapters_section_summary_off">概要欄のチャプターセクションを非表示にします。</string>
-    <string name="revanced_hide_creator_section_title">クリエイター欄を非表示</string>
-    <string name="revanced_hide_creator_section_summary_on">概要欄から投稿者の SNS リンクや動画を非表示にします。</string>
-    <string name="revanced_hide_creator_section_summary_off">概要欄から投稿者の SNS リンクや動画を非表示にします。</string>
     <string name="revanced_hide_explore_podcast_section_title">「ポッドキャストを検索」欄を非表示</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">概要欄から「ポッドキャストを検索」欄を非表示にします。</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">概要欄から「ポッドキャストを検索」欄を非表示にします。</string>
-    <string name="revanced_hide_featured_section_title">注目のコンテンツ欄を非表示</string>
-    <string name="revanced_hide_featured_section_summary_on">クリエイター欄内から注目の動画を非表示にします。</string>
-    <string name="revanced_hide_featured_section_summary_off">クリエイター欄内から注目の動画を非表示にします。</string>
     <string name="revanced_hide_how_this_was_made_section_title">「制作の裏側」欄を非表示</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">概要欄から「制作の裏側」欄を非表示にします。</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">概要欄から「制作の裏側」欄を非表示にします。</string>
@@ -2372,6 +2381,8 @@ YouTube Premium に加入している場合は、この設定は必要ない可�
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(未リリース)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
+<small>(従来、開発途中)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">このクライアントの使用時に生じる副作用</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"・[音声トラック] メニューは表示されません。
 ・[音声トラックの強制を無効化] は利用できない可能性があります。

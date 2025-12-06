@@ -4,6 +4,18 @@
     <string name="revanced_settings_title">RVX</string>
     <string name="revanced_settings_search_title">%s 검색</string>
     <string name="revanced_reset_to_default_toast">기본값으로 초기화하였습니다.</string>
+    <string name="revanced_webview_contextual_menu_get_cookies">Cookies 가져오기</string>
+    <string name="revanced_webview_contextual_menu_get_data_sync_id">Data Sync ID 가져오기</string>
+    <string name="revanced_webview_contextual_menu_get_visitor_data">Visitor Data 가져오기</string>
+    <string name="revanced_webview_contextual_menu_refresh">새로고침</string>
+    <string name="revanced_webview_cookies">Cookies</string>
+    <string name="revanced_webview_data_sync_id">Data Sync ID</string>
+    <string name="revanced_webview_visitor_data">Visitor Data</string>
+    <string name="revanced_webview_copy">복사</string>
+    <string name="revanced_webview_toast_copy_success">%s 를 클립보드에 복사하였습니다.</string>
+    <string name="revanced_webview_toast_empty">%s 가 비워져있습니다.</string>
+    <string name="revanced_webview_toast_no_network">네트워크 연결상태를 확인하세요.</string>
+    <string name="revanced_webview_toast_unavailable">WebView를 사용할 수 없습니다.</string>
     <!-- Shared Category -->
     <string name="revanced_restart_first_run">레이아웃을 정상적으로 불러오기 위해 다시 시작합니다.</string>
     <string name="revanced_restart_message">새로고침 및 다시 시작</string>
@@ -522,6 +534,20 @@ YouTube Premium 사용자라면 이 설정은 필요하지 않을 수 있습니�
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">TV 기존</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_about_title">Android SDK 인증 없음에 대한 정보</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_about_summary">인증 토큰을 받는 방법을 보려면 여기를 탭하세요.</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_title">승인 토큰 받기</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_message">"Android SDK 없음용 승인 토큰을 받으려면 GmsCore를 사용할 때와 마찬가지로 Google 계정에 로그인해야 합니다.
+
+1. '승인 토큰 받기'를 클릭하여 WebView에서 로그인 페이지를 엽니다.
+
+2. Google 계정에 로그인합니다.
+
+* 인증 토큰을 제거하려면 '초기화'을 탭하세요."</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_get_authorization_token_text">승인 토큰 받기</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_reset_text">초기화</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_toast_reset">인증 토큰을 초기화하였습니다.</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_toast_success">인증 토큰을 저장하였습니다.</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Android VR 인증 있음에 대한 정보</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">인증 토큰을 받는 방법을 보려면 여기를 탭하세요.</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">인증 토큰 받기</string>
