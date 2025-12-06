@@ -41,8 +41,8 @@ object YouTubeClient {
 
     // ANDROID (NO SDK)
     /**
-     * Video not playable: Paid / Movie / Private / Age-restricted.
-     * Note: The 'Authorization' key must be excluded from the header.
+     * Video not playable: None.
+     * Note: Clients other than Android YouTube (com.google.android.youtube) require an OAuth2 token.
      *
      * According to TeamNewPipe in 2022, if the 'androidSdkVersion' field is missing, the GVS did not return a valid response:
      * [NewPipe#8713 (comment)](https://github.com/TeamNewPipe/NewPipe/issues/8713#issuecomment-1207443550).
@@ -433,7 +433,6 @@ object YouTubeClient {
             userAgent = USER_AGENT_ANDROID_NO_SDK,
             androidSdkVersion = ANDROID_SDK_VERSION_ANDROID_NO_SDK,
             clientVersion = CLIENT_VERSION_ANDROID_NO_SDK,
-            supportsCookies = false,
             supportsMultiAudioTracks = true,
             clientName = "ANDROID",
             friendlyName = "Android No SDK"
@@ -600,18 +599,18 @@ object YouTubeClient {
 
         companion object {
             val CLIENT_ORDER_TO_USE: Array<ClientType> = arrayOf(
+                ANDROID_NO_SDK,
                 ANDROID_VR,
                 VISIONOS,
                 ANDROID_CREATOR,
-                ANDROID_NO_SDK,
                 IPADOS,
                 ANDROID_VR_AUTH,
             )
             val CLIENT_ORDER_TO_USE_JS: Array<ClientType> = arrayOf(
+                ANDROID_NO_SDK,
                 ANDROID_VR,
                 VISIONOS,
                 ANDROID_CREATOR,
-                ANDROID_NO_SDK,
                 IPADOS,
                 TV,
                 TV_SIMPLY_NO_POTOKEN,
