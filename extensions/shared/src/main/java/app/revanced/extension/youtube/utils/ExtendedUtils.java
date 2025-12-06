@@ -149,44 +149,6 @@ public class ExtendedUtils extends PackageUtils {
         return additionalSettingsEnabled;
     }
 
-
-    public static void launchWebViewActivity(Context mContext,
-                                             boolean clearCookiesOnStartUp,
-                                             boolean clearCookiesOnShutDown,
-                                             boolean useDesktopUserAgent,
-                                             String url) {
-        launchWebViewActivity(
-                mContext,
-                clearCookiesOnStartUp,
-                clearCookiesOnShutDown,
-                useDesktopUserAgent,
-                false,
-                url
-        );
-    }
-
-    public static void launchWebViewActivity(Context mContext,
-                                             boolean clearCookiesOnStartUp,
-                                             boolean clearCookiesOnShutDown,
-                                             boolean useDesktopUserAgent,
-                                             boolean useReferer,
-                                             String url) {
-        try {
-            Intent intent = new Intent();
-            intent.setPackage(mContext.getPackageName());
-            intent.setData(Uri.parse("revanced_webview"));
-            intent.putExtra("clearCookiesOnStartUp", clearCookiesOnStartUp);
-            intent.putExtra("clearCookiesOnShutDown", clearCookiesOnShutDown);
-            intent.putExtra("useDesktopUserAgent", useDesktopUserAgent);
-            intent.putExtra("useReferer", useReferer);
-            intent.putExtra("url", url);
-            intent.setClassName(mContext, "com.google.android.libraries.youtube.player.features.gl.vr.VrWelcomeActivity");
-            mContext.startActivity(intent);
-        } catch (Exception ex) {
-            Logger.printException(() -> "launchWebViewActivity failed", ex);
-        }
-    }
-
     public static LinearLayout prepareMainLayout(Context mContext) {
         return prepareMainLayout(mContext, false);
     }

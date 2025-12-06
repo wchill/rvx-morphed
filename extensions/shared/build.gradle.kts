@@ -46,6 +46,7 @@ dependencies {
     implementation(libs.rxjava2)
     implementation(libs.rxjava2.android)
     implementation(project(":extensions:shared:j2v8"))
+    implementation(project(":extensions:shared:gplayapi"))
 
     coreLibraryDesugaring(libs.desugar.jdk.libs)
     compileOnly(project(":extensions:shared:stub"))

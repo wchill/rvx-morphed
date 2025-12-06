@@ -1,4 +1,4 @@
-package app.revanced.extension.youtube.settings;
+package app.revanced.extension.shared.settings;
 
 import static app.revanced.extension.shared.utils.ResourceUtils.getIdIdentifier;
 import static app.revanced.extension.shared.utils.ResourceUtils.getLayoutIdentifier;
@@ -34,23 +34,31 @@ import android.window.OnBackInvokedDispatcher;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import app.revanced.extension.shared.innertube.utils.AuthUtils;
+import app.revanced.extension.shared.patches.auth.YouTubeAuthPatch;
 import app.revanced.extension.shared.ui.CustomDialog;
+import app.revanced.extension.shared.utils.BaseThemeUtils;
 import app.revanced.extension.shared.utils.Logger;
 import app.revanced.extension.shared.utils.Utils;
-import app.revanced.extension.youtube.utils.ThemeUtils;
 
 /**
  * Note that the superclass is overwritten to the superclass of the VrWelcomeActivity at patch time.
  */
-@RequiresApi(26)
 @SuppressWarnings({"ExtractMethodRecommender", "deprecation", "unused"})
 public class WebViewHostActivity extends Activity {
 
     protected final String CHROME_VERSION = "140.0.0.0";
+    protected final String EMBEDDED_SETUP_URL =
+            "https://accounts.google.com/EmbeddedSetup";
+    protected final String JS_SCRIPT =
+            "(function() { return document.getElementById('profileIdentifier').innerHTML; })();";
+    protected final String OAUTH_TOKEN = "oauth_token";
     protected final String USER_AGENT_CHROME_FORMAT =
             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/%s Safari/537.36";
     protected final String USER_AGENT_CHROME_MOBILE_FORMAT =
@@ -66,11 +74,15 @@ public class WebViewHostActivity extends Activity {
 
     protected WebView webView;
 
+    protected boolean isEmbeddedSetup = false;
+
     protected boolean isInitialized = false;
 
     protected boolean clearCookiesOnStartUp;
 
     protected boolean clearCookiesOnShutDown;
+
+    protected boolean showToolBar;
 
     protected boolean useDesktopUserAgent;
 
@@ -111,6 +123,8 @@ public class WebViewHostActivity extends Activity {
                     intent.getBooleanExtra("clearCookiesOnStartUp", false);
             clearCookiesOnShutDown =
                     intent.getBooleanExtra("clearCookiesOnShutDown", false);
+            showToolBar =
+                    intent.getBooleanExtra("showToolBar", false);
             useDesktopUserAgent =
                     intent.getBooleanExtra("useDesktopUserAgent", false);
             useReferer =
@@ -125,11 +139,15 @@ public class WebViewHostActivity extends Activity {
             if (StringUtils.isNotEmpty(intentUrl)) {
                 url = intentUrl;
             }
+            isEmbeddedSetup = url.startsWith(EMBEDDED_SETUP_URL);
             setContentView(getLayoutIdentifier("revanced_webview"));
             Window window = getWindow();
             if (window != null) {
                 View decorView = window.getDecorView();
-                decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR | View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
+                int visibility = isSDKAbove(26)
+                        ? View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR | View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR
+                        : View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+                decorView.setSystemUiVisibility(visibility);
                 window.setStatusBarColor(Color.WHITE);
                 window.setNavigationBarColor(Color.WHITE);
 
@@ -164,6 +182,7 @@ public class WebViewHostActivity extends Activity {
 
             Logger.printDebug(() -> "onCreate{clearCookiesOnStartUp: " + clearCookiesOnStartUp +
                     ", clearCookiesOnShutDown: " + clearCookiesOnShutDown +
+                    ", showToolBar: " + showToolBar +
                     ", useDesktopUserAgent: " + useDesktopUserAgent +
                     ", useReferer: " + useReferer +
                     ", userAgent: " + userAgent +
@@ -216,7 +235,7 @@ public class WebViewHostActivity extends Activity {
 
         toolbar = new Toolbar(toolBarParent.getContext());
         toolbar.setBackgroundColor(Color.WHITE);
-        toolbar.setNavigationIcon(ThemeUtils.getBackButtonDrawable(false));
+        toolbar.setNavigationIcon(BaseThemeUtils.getBackButtonDrawable(false));
         toolbar.setNavigationOnClickListener(view -> this.finish());
         toolbar.setTitle(toolbarLabel);
         final int margin = Utils.dipToPixels(16);
@@ -226,44 +245,46 @@ public class WebViewHostActivity extends Activity {
         if (textView != null) {
             textView.setTextColor(Color.BLACK);
         }
-        toolbar.inflateMenu(getMenuIdentifier("revanced_webview_menu"));
-        LinearLayout menuParent = Utils.getChildView(toolbar, view -> view instanceof LinearLayout);
-        if (menuParent != null) {
-            ImageButton menuButton = Utils.getChildView(menuParent, view -> view instanceof ImageButton);
-            if (menuButton != null) {
-                menuButton.setImageDrawable(ThemeUtils.getMenuButtonDrawable(false));
+        if (showToolBar) {
+            toolbar.inflateMenu(getMenuIdentifier("revanced_webview_menu"));
+            LinearLayout menuParent = Utils.getChildView(toolbar, view -> view instanceof LinearLayout);
+            if (menuParent != null) {
+                ImageButton menuButton = Utils.getChildView(menuParent, view -> view instanceof ImageButton);
+                if (menuButton != null) {
+                    menuButton.setImageDrawable(BaseThemeUtils.getMenuButtonDrawable(false));
+                }
             }
-        }
-        int getCookies = getIdIdentifier("revanced_webview_get_cookies");
-        int getDataSyncId = getIdIdentifier("revanced_webview_get_data_sync_id");
-        int getVisitorData = getIdIdentifier("revanced_webview_get_visitor_data");
-        int refresh = getIdIdentifier("revanced_webview_refresh");
+            int getCookies = getIdIdentifier("revanced_webview_get_cookies");
+            int getDataSyncId = getIdIdentifier("revanced_webview_get_data_sync_id");
+            int getVisitorData = getIdIdentifier("revanced_webview_get_visitor_data");
+            int refresh = getIdIdentifier("revanced_webview_refresh");
 
-        // Set menu item click listener.
-        toolbar.setOnMenuItemClickListener(item -> {
-            try {
-                int itemId = item.getItemId();
-                if (itemId == getCookies) {
-                    showDialog(cookies, str("revanced_webview_cookies"));
-                    return true;
-                } else if (itemId == getDataSyncId) {
-                    showDialog(dataSyncId, str("revanced_webview_data_sync_id"));
-                    return true;
-                } else if (itemId == getVisitorData) {
-                    showDialog(visitorData, str("revanced_webview_visitor_data"));
-                    return true;
-                } else if (itemId == refresh) {
-                    if (webView != null) {
-                        webView.reload();
+            // Set menu item click listener.
+            toolbar.setOnMenuItemClickListener(item -> {
+                try {
+                    int itemId = item.getItemId();
+                    if (itemId == getCookies) {
+                        showDialog(cookies, str("revanced_webview_cookies"));
+                        return true;
+                    } else if (itemId == getDataSyncId) {
+                        showDialog(dataSyncId, str("revanced_webview_data_sync_id"));
+                        return true;
+                    } else if (itemId == getVisitorData) {
+                        showDialog(visitorData, str("revanced_webview_visitor_data"));
+                        return true;
+                    } else if (itemId == refresh) {
+                        if (webView != null) {
+                            webView.reload();
+                        }
+                        return true;
                     }
-                    return true;
+                    return false;
+                } catch (Exception ex) {
+                    Logger.printException(() -> "menu click failure", ex);
                 }
                 return false;
-            } catch (Exception ex) {
-                Logger.printException(() -> "menu click failure", ex);
-            }
-            return false;
-        });
+            });
+        }
         toolbar.setLayoutParams(lp);
         toolBarParent.addView(toolbar, 0);
     }
@@ -307,6 +328,9 @@ public class WebViewHostActivity extends Activity {
 
     // Generate a Chrome User-Agent that matches the version of Android System WebView
     protected void checkWebViewVersion() {
+        if (!isSDKAbove(26)) {
+            return;
+        }
         try {
             PackageInfo packageInfo = WebView.getCurrentWebViewPackage();
             if (packageInfo != null) {
@@ -348,6 +372,10 @@ public class WebViewHostActivity extends Activity {
         return isInitialized;
     }
 
+    protected boolean containsOAuthTokenIndicator(@NonNull String localCookies) {
+        return isEmbeddedSetup && localCookies.contains(OAUTH_TOKEN);
+    }
+
     protected boolean containsVisitorCookieIndicator(@NonNull String localCookies) {
         return localCookies.contains("VISITOR_INFO1_LIVE=");
     }
@@ -358,13 +386,20 @@ public class WebViewHostActivity extends Activity {
             WebSettings webSettings = webView.getSettings();
             webSettings.setJavaScriptEnabled(true);
             webSettings.setUserAgentString(userAgent);
-            webSettings.setSafeBrowsingEnabled(true);
+            if (isSDKAbove(26)) {
+                webSettings.setSafeBrowsingEnabled(true);
+            }
             webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
             webSettings.setDomStorageEnabled(true);
             webSettings.setGeolocationEnabled(true);
             webView.setWebViewClient(createWebViewClient());
-            webView.addJavascriptInterface(new Android(), "Android");
-            CookieManager.getInstance().setAcceptThirdPartyCookies(webView, true);
+            if (!isEmbeddedSetup) {
+                webView.addJavascriptInterface(new Android(), "Android");
+            }
+            CookieManager cookieManager = CookieManager.getInstance();
+            cookieManager.acceptThirdPartyCookies(webView);
+            cookieManager.setAcceptThirdPartyCookies(webView, true);
+
             if (useReferer) {
                 Map<String, String> extraHeaders = new HashMap<>();
                 extraHeaders.put("Referer", "https://www.google.com/");
@@ -410,7 +445,19 @@ public class WebViewHostActivity extends Activity {
                     cookies = localCookies;
                     Logger.printDebug(() -> "new Cookies loaded: " + localCookies);
 
-                    if (containsVisitorCookieIndicator(localCookies)) {
+                    if (containsOAuthTokenIndicator(localCookies)) {
+                        Map<String, String> cookieMap = AuthUtils.parseCookieString(localCookies);
+                        if (!cookieMap.isEmpty()) {
+                            String oauth_token = cookieMap.get(OAUTH_TOKEN);
+                            webView.evaluateJavascript(
+                                    JS_SCRIPT,
+                                    email -> {
+                                        email = email.replaceAll("\"", "");
+                                        YouTubeAuthPatch.setAccessToken(email, oauth_token);
+                                    });
+                            Utils.runOnMainThreadDelayed(WebViewHostActivity.this::finish, 5000L);
+                        }
+                    } else if (containsVisitorCookieIndicator(localCookies)) {
                         webView.loadUrl("javascript:Android.onRetrieveVisitorData(window.yt.config_.VISITOR_DATA)");
                         webView.loadUrl("javascript:Android.onRetrieveDataSyncId(window.yt.config_.DATASYNC_ID)");
                     }

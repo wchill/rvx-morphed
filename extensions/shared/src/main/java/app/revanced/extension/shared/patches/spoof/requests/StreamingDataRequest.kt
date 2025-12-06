@@ -13,7 +13,9 @@ import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtil
 import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.setServerAbrStreamingUrl
 import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.setUrl
 import app.revanced.extension.shared.innertube.utils.ThrottlingParameterUtils
-import app.revanced.extension.shared.patches.auth.AuthPatch
+import app.revanced.extension.shared.patches.AppCheckPatch.IS_YOUTUBE
+import app.revanced.extension.shared.patches.auth.YouTubeAuthPatch
+import app.revanced.extension.shared.patches.auth.YouTubeVRAuthPatch
 import app.revanced.extension.shared.patches.components.ByteArrayFilterGroup
 import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.parseFrom
 import app.revanced.extension.shared.settings.BaseSettings
@@ -169,14 +171,31 @@ class StreamingDataRequest private constructor(
             requestHeader: Map<String, String>,
         ): Map<String, String> {
             if (clientType == ClientType.ANDROID_VR_AUTH &&
-                AuthPatch.isAuthorizationAvailable()) {
+                YouTubeVRAuthPatch.isAuthorizationAvailable()) {
                 val finalRequestHeader: MutableMap<String, String> =
                     LinkedHashMap(requestHeader.size)
                 for (key in requestHeader.keys) {
                     val value = requestHeader[key]
                     if (value != null) {
                         if (key == AUTHORIZATION_HEADER) {
-                            finalRequestHeader[AUTHORIZATION_HEADER] = AuthPatch.getAuthorization()
+                            finalRequestHeader[AUTHORIZATION_HEADER] = YouTubeVRAuthPatch.getAuthorization()
+                            continue
+                        }
+                        finalRequestHeader[key] = value
+                    }
+                }
+                return finalRequestHeader
+            } else if (!IS_YOUTUBE &&
+                clientType == ClientType.ANDROID_NO_SDK) {
+                val finalRequestHeader: MutableMap<String, String> =
+                    LinkedHashMap(requestHeader.size)
+                for (key in requestHeader.keys) {
+                    val value = requestHeader[key]
+                    if (value != null) {
+                        if (key == AUTHORIZATION_HEADER) {
+                            if (YouTubeAuthPatch.isAuthorizationAvailable()) {
+                                finalRequestHeader[AUTHORIZATION_HEADER] = YouTubeAuthPatch.getAuthorization()
+                            }
                             continue
                         }
                         finalRequestHeader[key] = value

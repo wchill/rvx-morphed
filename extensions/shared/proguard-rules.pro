@@ -4,6 +4,12 @@
 -keep class app.revanced.** {
   *;
 }
+-keep class com.aurora.** {
+  *;
+}
+-keep class com.dragons.** {
+  *;
+}
 -keep class com.liskovsoft.** {
   *;
 }

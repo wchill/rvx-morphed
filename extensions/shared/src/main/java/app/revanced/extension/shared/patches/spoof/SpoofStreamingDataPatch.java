@@ -22,7 +22,8 @@ import java.util.concurrent.CompletableFuture;
 import app.revanced.extension.shared.innertube.client.YouTubeClient.ClientType;
 import app.revanced.extension.shared.innertube.utils.ThrottlingParameterUtils;
 import app.revanced.extension.shared.patches.PatchStatus;
-import app.revanced.extension.shared.patches.auth.AuthPatch;
+import app.revanced.extension.shared.patches.auth.YouTubeAuthPatch;
+import app.revanced.extension.shared.patches.auth.YouTubeVRAuthPatch;
 import app.revanced.extension.shared.patches.spoof.requests.StreamingDataRequest;
 import app.revanced.extension.shared.settings.BaseSettings;
 import app.revanced.extension.shared.settings.Setting;
@@ -224,7 +225,8 @@ public class SpoofStreamingDataPatch {
                 reasonSkipped = "";
             }
 
-            AuthPatch.checkAccessToken();
+            YouTubeAuthPatch.checkAccessToken();
+            YouTubeVRAuthPatch.checkAccessToken();
             StreamingDataRequest.fetchRequest(
                     id,
                     tParameter,

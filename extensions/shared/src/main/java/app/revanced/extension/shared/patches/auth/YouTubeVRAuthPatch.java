@@ -21,7 +21,7 @@ import app.revanced.extension.shared.utils.BaseThemeUtils;
 import app.revanced.extension.shared.utils.Logger;
 import app.revanced.extension.shared.utils.Utils;
 
-public class AuthPatch {
+public class YouTubeVRAuthPatch {
     /**
      * The last time the access token was updated.
      */

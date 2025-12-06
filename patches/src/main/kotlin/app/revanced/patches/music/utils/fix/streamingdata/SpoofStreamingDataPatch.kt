@@ -11,6 +11,7 @@ import app.revanced.patches.music.utils.settings.CategoryType
 import app.revanced.patches.music.utils.settings.addPreferenceWithIntent
 import app.revanced.patches.music.utils.settings.addSwitchPreference
 import app.revanced.patches.music.utils.settings.settingsPatch
+import app.revanced.patches.music.utils.webview.webViewPatch
 import app.revanced.patches.music.video.information.videoInformationPatch
 import app.revanced.patches.music.video.playerresponse.Hook
 import app.revanced.patches.music.video.playerresponse.addPlayerResponseMethodHook
@@ -28,6 +29,7 @@ val spoofStreamingDataPatch = spoofStreamingDataPatch(
             settingsPatch,
             versionCheckPatch,
             videoInformationPatch,
+            webViewPatch,
         )
     },
     isYouTube = {
@@ -77,6 +79,11 @@ val spoofStreamingDataPatch = spoofStreamingDataPatch(
             CategoryType.MISC,
             "revanced_spoof_streaming_data_default_client",
             "revanced_spoof_streaming_data",
+        )
+        addPreferenceWithIntent(
+            CategoryType.MISC,
+            "revanced_spoof_streaming_data_no_sdk_auth_token_about",
+            "revanced_spoof_streaming_data"
         )
         addPreferenceWithIntent(
             CategoryType.MISC,
