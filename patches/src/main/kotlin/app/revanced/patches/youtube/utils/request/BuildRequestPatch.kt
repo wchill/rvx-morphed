@@ -5,6 +5,10 @@ import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.extensions.InstructionExtensions.getInstruction
 import app.revanced.patcher.patch.bytecodePatch
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
+import app.revanced.patches.shared.buildRequestFingerprint
+import app.revanced.patches.shared.buildRequestParentFingerprint
+import app.revanced.patches.shared.indexOfEntrySetInstruction
+import app.revanced.patches.shared.indexOfNewUrlRequestBuilderInstruction
 import app.revanced.patches.youtube.utils.extension.sharedExtensionPatch
 import app.revanced.util.findFreeRegister
 import app.revanced.util.fingerprint.methodOrThrow
@@ -45,7 +49,7 @@ val buildRequestPatch = bytecodePatch(
             )
         }
 
-        buildRequestFingerprint.methodOrThrow().apply {
+        buildRequestFingerprint.methodOrThrow(buildRequestParentFingerprint).apply {
             buildRequestMethod = this
 
             val newRequestBuilderIndex = indexOfNewUrlRequestBuilderInstruction(this)

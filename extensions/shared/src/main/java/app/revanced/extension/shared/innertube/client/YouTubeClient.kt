@@ -317,13 +317,7 @@ object YouTubeClient {
     @JvmStatic
     fun availableClientTypes(preferredClient: ClientType): Array<ClientType> {
         val availableClientTypes: Array<ClientType> = if (useJS()) {
-            if (preferredClient == ClientType.MWEB) {
-                // If playback fails with MWEB, it will fall back to TV.
-                ClientType.CLIENT_ORDER_TO_USE_JS_PREFER_TV
-            } else {
-                // Default order of JS clients.
-                ClientType.CLIENT_ORDER_TO_USE_JS
-            }
+            ClientType.CLIENT_ORDER_TO_USE_JS
         } else {
             ClientType.CLIENT_ORDER_TO_USE
         }
@@ -620,17 +614,6 @@ object YouTubeClient {
                 ANDROID_NO_SDK,
                 IPADOS,
                 TV,
-                TV_SIMPLY_NO_POTOKEN,
-                TV_LEGACY,
-                ANDROID_VR_AUTH,
-            )
-            val CLIENT_ORDER_TO_USE_JS_PREFER_TV: Array<ClientType> = arrayOf(
-                TV,
-                ANDROID_VR,
-                VISIONOS,
-                ANDROID_CREATOR,
-                ANDROID_NO_SDK,
-                IPADOS,
                 TV_SIMPLY_NO_POTOKEN,
                 TV_LEGACY,
                 ANDROID_VR_AUTH,
