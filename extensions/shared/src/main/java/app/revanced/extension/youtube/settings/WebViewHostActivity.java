@@ -74,6 +74,8 @@ public class WebViewHostActivity extends Activity {
 
     protected boolean useDesktopUserAgent;
 
+    protected boolean useReferer;
+
     @NonNull
     protected String url = "https://www.youtube.com/signin";
 
@@ -111,6 +113,8 @@ public class WebViewHostActivity extends Activity {
                     intent.getBooleanExtra("clearCookiesOnShutDown", false);
             useDesktopUserAgent =
                     intent.getBooleanExtra("useDesktopUserAgent", false);
+            useReferer =
+                    intent.getBooleanExtra("useReferer", false);
             userAgent = String.format(
                     useDesktopUserAgent
                             ? USER_AGENT_CHROME_FORMAT
@@ -161,6 +165,7 @@ public class WebViewHostActivity extends Activity {
             Logger.printDebug(() -> "onCreate{clearCookiesOnStartUp: " + clearCookiesOnStartUp +
                     ", clearCookiesOnShutDown: " + clearCookiesOnShutDown +
                     ", useDesktopUserAgent: " + useDesktopUserAgent +
+                    ", useReferer: " + useReferer +
                     ", userAgent: " + userAgent +
                     ", url: " + url +
                     "}"
@@ -360,7 +365,13 @@ public class WebViewHostActivity extends Activity {
             webView.setWebViewClient(createWebViewClient());
             webView.addJavascriptInterface(new Android(), "Android");
             CookieManager.getInstance().setAcceptThirdPartyCookies(webView, true);
-            webView.loadUrl(url);
+            if (useReferer) {
+                Map<String, String> extraHeaders = new HashMap<>();
+                extraHeaders.put("Referer", "https://www.google.com/");
+                webView.loadUrl(url, extraHeaders);
+            } else {
+                webView.loadUrl(url);
+            }
         } catch (Exception ex) {
             Logger.printException(() -> "loadWebView failed", ex);
         }
