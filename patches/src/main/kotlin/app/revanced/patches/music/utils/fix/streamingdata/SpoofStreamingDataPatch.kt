@@ -14,6 +14,9 @@ import app.revanced.patches.music.utils.settings.settingsPatch
 import app.revanced.patches.music.video.information.videoInformationPatch
 import app.revanced.patches.music.video.playerresponse.Hook
 import app.revanced.patches.music.video.playerresponse.addPlayerResponseMethodHook
+import app.revanced.patches.shared.buildRequestFingerprint
+import app.revanced.patches.shared.buildRequestParentFingerprint
+import app.revanced.patches.shared.indexOfNewUrlRequestBuilderInstruction
 import app.revanced.patches.shared.spoof.streamingdata.EXTENSION_CLASS_DESCRIPTOR
 import app.revanced.patches.shared.spoof.streamingdata.spoofStreamingDataPatch
 import app.revanced.util.fingerprint.methodOrThrow
