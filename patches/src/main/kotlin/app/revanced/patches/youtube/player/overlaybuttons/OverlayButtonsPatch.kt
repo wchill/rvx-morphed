@@ -305,7 +305,7 @@ val overlayButtonsPatch = resourcePatch(
                             node.setAttribute("android:layout_height", "56.0dip")
                             node.setAttribute("android:layout_width", "56.0dip")
                         }
-                        
+
                         if (id.equals("@+id/revanced_overlay_buttons_bottom_margin")) {
                             node.setAttribute("android:layout_height", marginBottom)
                         } else if (id.equals("@id/time_bar_reference_view")) {
