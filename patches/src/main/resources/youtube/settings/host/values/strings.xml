@@ -1786,7 +1786,7 @@ Side effect: Watch history shelf in the You tab may be hidden."</string>
     <string name="revanced_hide_shorts_live_header_summary_on">Live chat header is hidden.\n\nBack button in header will not be hidden.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">Live chat header is shown.</string>
     <string name="revanced_hide_shorts_live_preview_title">Hide live preview</string>
-    <string name="revanced_hide_shorts_live_preview_summary_on">Live preview is hidden.</string>
+    <string name="revanced_hide_shorts_live_preview_summary_on">Live preview is hidden.\n\nEven if this is enabled, Shorts live streams are not completely removed from the Shorts sequence.</string>
     <string name="revanced_hide_shorts_live_preview_summary_off">Live preview is shown.</string>
     <string name="revanced_hide_shorts_paused_header_title">Hide paused header</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">Paused header is hidden.</string>
