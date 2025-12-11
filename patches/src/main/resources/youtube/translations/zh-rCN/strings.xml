@@ -425,12 +425,6 @@
     <string name="revanced_hide_members_shelf_title">隐藏会员专属栏</string>
     <string name="revanced_hide_members_shelf_summary_on">已隐藏会员专属栏。</string>
     <string name="revanced_hide_members_shelf_summary_off">已显示会员专属栏。</string>
-    <string name="revanced_hide_visit_community_button_title">隐藏访问社区按钮</string>
-    <string name="revanced_hide_visit_community_button_summary_on">已隐藏访问社区按钮。</string>
-    <string name="revanced_hide_visit_community_button_summary_off">已显示访问社区按钮。</string>
-    <string name="revanced_hide_visit_store_button_title">隐藏访问商店按钮</string>
-    <string name="revanced_hide_visit_store_button_summary_on">已隐藏访问商店按钮。</string>
-    <string name="revanced_hide_visit_store_button_summary_off">已显示访问商店按钮。</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">社区帖子</string>
     <string name="revanced_preference_screen_community_posts_summary">在首页和频道中隐藏或显示社区帖子</string>
@@ -573,9 +567,6 @@
     <string name="revanced_hide_floating_microphone_title">隐藏弹出麦克风按钮</string>
     <string name="revanced_hide_floating_microphone_summary_on">弹出麦克风按钮已隐藏</string>
     <string name="revanced_hide_floating_microphone_summary_off">弹出麦克风按钮已显示</string>
-    <string name="revanced_hide_visual_spacers_title">隐藏视觉间隔</string>
-    <string name="revanced_hide_visual_spacers_summary_on">已隐藏视觉间隔。</string>
-    <string name="revanced_hide_visual_spacers_summary_off">已显示视觉间隔。</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">移除查看器的自由裁量对话框</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"移除查看器的自由裁量对话框
 这不会绕过年龄限制它只会自动同意"</string>
@@ -1613,9 +1604,6 @@
     <string name="revanced_hide_shorts_live_header_title">隐藏实时聊天栏</string>
     <string name="revanced_hide_shorts_live_header_summary_on">实时聊天栏已隐藏\n\n其中的返回按钮不会隐藏</string>
     <string name="revanced_hide_shorts_live_header_summary_off">实时聊天栏已显示\n\n其中的返回按钮不会隐藏</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">隐藏付费推广横幅</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">付费推广横幅已隐藏</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">付费推广横幅标签已显示</string>
     <string name="revanced_hide_shorts_paused_header_title">隐藏已暂停的标题</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">已暂停的标题已隐藏</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">已暂停的标题已显示</string>

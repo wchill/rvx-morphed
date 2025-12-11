@@ -425,12 +425,6 @@ Tienda"</string>
     <string name="revanced_hide_members_shelf_title">Ocultar estante de miembros</string>
     <string name="revanced_hide_members_shelf_summary_on">El estante de miembros está oculto.</string>
     <string name="revanced_hide_members_shelf_summary_off">El estante de miembros está visible.</string>
-    <string name="revanced_hide_visit_community_button_title">Ocultar botón \"Visitar comunidad\"</string>
-    <string name="revanced_hide_visit_community_button_summary_on">El botón \"Visitar comunidad\" está oculto.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">El botón \"Visitar comunidad\" está visible.</string>
-    <string name="revanced_hide_visit_store_button_title">Ocultar botón \"Visitar tienda\"</string>
-    <string name="revanced_hide_visit_store_button_summary_on">El botón \"Visitar tienda\" está oculto.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">El botón \"Visitar tienda\" está visible.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Publicaciones de la comunidad</string>
     <string name="revanced_preference_screen_community_posts_summary">Ocultar o mostrar las publicaciones de la comunidad en el feed y el canal.</string>
@@ -573,9 +567,6 @@ Es posible que esto no funcione para algunos usuarios. Si no funciona para ti:
     <string name="revanced_hide_floating_microphone_title">Ocultar botón flotante del micrófono</string>
     <string name="revanced_hide_floating_microphone_summary_on">El botón flotante del micrófono está oculto.</string>
     <string name="revanced_hide_floating_microphone_summary_off">El botón flotante del micrófono está visible.</string>
-    <string name="revanced_hide_visual_spacers_title">Ocultar espaciadores visuales</string>
-    <string name="revanced_hide_visual_spacers_summary_on">Los espaciadores visuales están ocultos.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">Los espaciadores visuales están visibles.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Eliminar diálogo de discreción del espectador</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Elimina el diálogo de discreción del espectador.
 Esto no evita la restricción de edad. Solo la acepta automáticamente."</string>
@@ -1649,9 +1640,6 @@ Información:
     <string name="revanced_hide_shorts_live_header_title">Ocultar cabecera del chat en directo</string>
     <string name="revanced_hide_shorts_live_header_summary_on">La cabecera del chat en directo está oculta.\n\nEl botón de volver atrás en la cabecera no se ocultará.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">La cabecera del chat en directo está visible.\n\nEl botón de volver atrás en la cabecera no se ocultará.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Ocultar etiqueta de promoción pagada</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">La etiqueta de promoción pagada está oculta.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">La etiqueta de promoción pagada está visible.</string>
     <string name="revanced_hide_shorts_paused_header_title">Ocultar cabecera pausada</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">La cabecera pausada está oculta.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">La cabecera pausada está visible.</string>

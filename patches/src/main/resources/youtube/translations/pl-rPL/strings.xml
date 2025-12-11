@@ -425,12 +425,6 @@ Sklep"</string>
     <string name="revanced_hide_members_shelf_title">Półka z wspierającymi kanał</string>
     <string name="revanced_hide_members_shelf_summary_on">Ukryta</string>
     <string name="revanced_hide_members_shelf_summary_off">Widoczna</string>
-    <string name="revanced_hide_visit_community_button_title">Przycisk od odwiedzenia społeczności</string>
-    <string name="revanced_hide_visit_community_button_summary_on">Ukryty</string>
-    <string name="revanced_hide_visit_community_button_summary_off">Widoczny</string>
-    <string name="revanced_hide_visit_store_button_title">Przycisk od odwiedzenia sklepu</string>
-    <string name="revanced_hide_visit_store_button_summary_on">Ukryty</string>
-    <string name="revanced_hide_visit_store_button_summary_off">Widoczny</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Posty</string>
     <string name="revanced_preference_screen_community_posts_summary">Ukryj lub pokazuj posty na stronie głównej i kanałów</string>
@@ -576,9 +570,6 @@ Może to nie działać u niektórych użytkowników, więc jeśli nie działa u 
     <string name="revanced_hide_floating_microphone_title">Dolny przycisk od mikrofonu</string>
     <string name="revanced_hide_floating_microphone_summary_on">Ukryty</string>
     <string name="revanced_hide_floating_microphone_summary_off">Widoczny</string>
-    <string name="revanced_hide_visual_spacers_title">Wizualne odstępy</string>
-    <string name="revanced_hide_visual_spacers_summary_on">Ukryte</string>
-    <string name="revanced_hide_visual_spacers_summary_off">Widoczne</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Usuń okno dialogowe treści ograniczonej do oglądania</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Usuwa okno dialogowe treści ograniczonej do oglądania.
 Nie pomija to ograniczeń wiekowych, lecz akceptuje je automatycznie."</string>
@@ -1576,12 +1567,21 @@ Funkcja działa najlepiej przy bardzo szybkim połączeniu internetowym."</strin
     <string name="revanced_hide_explore_podcast_section_title">Sekcja eksplorowania podcastu</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">Ukryta</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">Widoczna</string>
+    <string name="revanced_hide_featured_links_section_title">Sekcja wyróżnionych linków</string>
+    <string name="revanced_hide_featured_links_section_summary_on">Ukryta</string>
+    <string name="revanced_hide_featured_links_section_summary_off">Widoczna</string>
+    <string name="revanced_hide_featured_videos_section_title">Sekcja wyróżnionych filmów</string>
+    <string name="revanced_hide_featured_videos_section_summary_on">Ukryta</string>
+    <string name="revanced_hide_featured_videos_section_summary_off">Widoczna</string>
     <string name="revanced_hide_how_this_was_made_section_title">Sekcja \'Jak powstały te treści\'</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">Ukryta</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">Widoczna</string>
     <string name="revanced_hide_hype_points_section_title">Sekcja punktów za podbijanie</string>
     <string name="revanced_hide_hype_points_section_summary_on">Ukryta</string>
     <string name="revanced_hide_hype_points_section_summary_off">Widoczna</string>
+    <string name="revanced_hide_info_cards_section_title">Sekcja kart informacyjnych</string>
+    <string name="revanced_hide_info_cards_section_summary_on">Ukryta</string>
+    <string name="revanced_hide_info_cards_section_summary_off">Widoczna</string>
     <string name="revanced_hide_key_concepts_section_title">Sekcja kluczowych pojęć</string>
     <string name="revanced_hide_key_concepts_section_summary_on">Ukryta</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Widoczna</string>
@@ -1665,9 +1665,6 @@ Efekt uboczny: półka z historią oglądania w zakładce Ty może być ukryta."
     <string name="revanced_hide_shorts_live_header_title">Nagłówek czatu transmisji na żywo</string>
     <string name="revanced_hide_shorts_live_header_summary_on">Ukryty\n\nPrzycisk cofania w nagłówku nie będzie ukryty.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">Widoczny</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Etykiety oznaczające płatne promocje</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">Ukryte</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">Widoczne</string>
     <string name="revanced_hide_shorts_paused_header_title">Nagłówek po spauzowaniu</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">Ukryty</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">Widoczny</string>

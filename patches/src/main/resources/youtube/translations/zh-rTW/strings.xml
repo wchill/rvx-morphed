@@ -425,12 +425,6 @@
     <string name="revanced_hide_members_shelf_title">隱藏會員專屬區塊</string>
     <string name="revanced_hide_members_shelf_summary_on">會員專屬區塊已隱藏。</string>
     <string name="revanced_hide_members_shelf_summary_off">會員專屬區塊已顯示。</string>
-    <string name="revanced_hide_visit_community_button_title">隱藏訪問社群按鈕</string>
-    <string name="revanced_hide_visit_community_button_summary_on">造訪社群按鈕已隱藏。</string>
-    <string name="revanced_hide_visit_community_button_summary_off">造訪社群按鈕已顯示。</string>
-    <string name="revanced_hide_visit_store_button_title">隱藏造訪商店按鈕</string>
-    <string name="revanced_hide_visit_store_button_summary_on">造訪商店按鈕已隱藏。</string>
-    <string name="revanced_hide_visit_store_button_summary_off">造訪商店按鈕已顯示。</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">社群貼文</string>
     <string name="revanced_preference_screen_community_posts_summary">在首頁和頻道中隱藏或顯示社群貼文</string>
@@ -576,9 +570,6 @@
     <string name="revanced_hide_floating_microphone_title">隱藏語音辨識按鈕</string>
     <string name="revanced_hide_floating_microphone_summary_on">語音辨識按鈕已隱藏</string>
     <string name="revanced_hide_floating_microphone_summary_off">語音辨識按鈕已顯示</string>
-    <string name="revanced_hide_visual_spacers_title">隱藏視覺間隔</string>
-    <string name="revanced_hide_visual_spacers_summary_on">視覺間隔已隱藏。</string>
-    <string name="revanced_hide_visual_spacers_summary_off">視覺間隔已顯示。</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">移除查看器的自由裁量對話框</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"移除觀眾酌情觀看對話方塊。
 這項選項不會繞過年齡限制，它只會自動接受。"</string>
@@ -1569,18 +1560,27 @@
     <string name="revanced_hide_explore_podcast_section_title">隱藏探索播客區</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">播客探索區已隱藏。</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">播客探索區已顯示。</string>
+    <string name="revanced_hide_featured_links_section_title">隱藏特色連結部分</string>
+    <string name="revanced_hide_featured_links_section_summary_on">特色連結部分已隱藏。</string>
+    <string name="revanced_hide_featured_links_section_summary_off">特色連結部分已顯示。</string>
+    <string name="revanced_hide_featured_videos_section_title">隱藏精選影片部分</string>
+    <string name="revanced_hide_featured_videos_section_summary_on">精選影片部分已隱藏。</string>
+    <string name="revanced_hide_featured_videos_section_summary_off">精選影片部分已顯示。</string>
     <string name="revanced_hide_how_this_was_made_section_title">隱藏內容製作過程區</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">內容製作過程區已隱藏。</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">內容製作過程區已顯示。</string>
     <string name="revanced_hide_hype_points_section_title">隱藏粉絲熱推部分</string>
     <string name="revanced_hide_hype_points_section_summary_on">粉絲熱推部分已隱藏。</string>
     <string name="revanced_hide_hype_points_section_summary_off">粉絲熱推部分已顯示。</string>
+    <string name="revanced_hide_info_cards_section_title">隱藏訊息卡片部分</string>
+    <string name="revanced_hide_info_cards_section_summary_on">訊息卡片部分已隱藏。</string>
+    <string name="revanced_hide_info_cards_section_summary_off">訊息卡片部分已顯示。</string>
     <string name="revanced_hide_key_concepts_section_title">隱藏關鍵概念部分</string>
     <string name="revanced_hide_key_concepts_section_summary_on">關鍵概念部分被隱藏。</string>
     <string name="revanced_hide_key_concepts_section_summary_off">關鍵概念部分已顯示。</string>
     <string name="revanced_hide_subscribe_button_title">隱藏訂閱按鈕</string>
-    <string name="revanced_hide_subscribe_button_summary_on">創作者區的訂閱按鈕已隱藏。</string>
-    <string name="revanced_hide_subscribe_button_summary_off">創作者區的訂閱按鈕已顯示。</string>
+    <string name="revanced_hide_subscribe_button_summary_on">訂閱按鈕已隱藏。</string>
+    <string name="revanced_hide_subscribe_button_summary_off">訂閱按鈕已顯示。</string>
     <string name="revanced_hide_transcript_section_title">隱藏轉寫文稿部分</string>
     <string name="revanced_hide_transcript_section_summary_on">轉寫文稿部分已隱藏</string>
     <string name="revanced_hide_transcript_section_summary_off">轉寫文稿部分已顯示</string>
@@ -1657,9 +1657,6 @@
     <string name="revanced_hide_shorts_live_header_title">隱藏即時聊天標題</string>
     <string name="revanced_hide_shorts_live_header_summary_on">即時聊天標題被隱藏。\n\n標題中的後退按鈕不會被隱藏。</string>
     <string name="revanced_hide_shorts_live_header_summary_off">顯示即時聊天標題。\n\n標題中的後退按鈕不會被隱藏。</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">隱藏付費促銷標籤</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">付費促銷標籤被隱藏</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">付費推廣橫幅標簽已顯示</string>
     <string name="revanced_hide_shorts_paused_header_title">隱藏暫停的標題</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">暫停的標題被隱藏。</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">顯示暫停的標題。</string>
@@ -1676,8 +1673,8 @@
     <string name="revanced_hide_shorts_stickers_summary_on">貼圖已隱藏。</string>
     <string name="revanced_hide_shorts_stickers_summary_off">貼圖已顯示。</string>
     <string name="revanced_hide_shorts_subscribe_button_title">隱藏訂閱按鈕</string>
-    <string name="revanced_hide_shorts_subscribe_button_summary_on">訂閱按鈕已隱藏</string>
-    <string name="revanced_hide_shorts_subscribe_button_summary_off">訂閱按鈕已顯示</string>
+    <string name="revanced_hide_shorts_subscribe_button_summary_on">訂閱按鈕已隱藏。</string>
+    <string name="revanced_hide_shorts_subscribe_button_summary_off">訂閱按鈕已顯示。</string>
     <string name="revanced_hide_shorts_trends_button_title">隱藏按鈕</string>
     <string name="revanced_hide_shorts_trends_button_summary_on">按鈕被隱藏。</string>
     <string name="revanced_hide_shorts_trends_button_summary_off">按鈕已顯示。</string>

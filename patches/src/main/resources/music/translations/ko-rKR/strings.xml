@@ -511,7 +511,7 @@ API Key를 발급받는 방법을 보려면 여기를 탭하세요."</string>
     <string name="revanced_disable_music_video_in_album_redirect_type_entry_on_long_click">노래 / 동영상 토글 길게 탭하기</string>
     <string name="revanced_disable_quic_protocol_title">QUIC 프로토콜 비활성화</string>
     <string name="revanced_disable_quic_protocol_summary">"CronetEngine's QUIC 프로토콜을 비활성화합니다."</string>
-    <string name="revanced_debug_title">디버그 로깅 활성화</string>
+    <string name="revanced_debug_title">디버그 로그 활성화</string>
     <string name="revanced_debug_summary">디버그 로그를 출력합니다.</string>
     <string name="revanced_debug_protobuffer_title">로그 프로토콜 버퍼</string>
     <string name="revanced_debug_protobuffer_summary">디버그 로그에 프로토콜 버퍼를 포함합니다.</string>
@@ -528,13 +528,13 @@ YouTube Premium 사용자라면 이 설정은 필요하지 않을 수 있습니�
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">Android SDK 없음</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">Android VR 인증 있음 (작업이 필요함)</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">Android VR 인증 있음 \n(작업이 필요함)</string>
     <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobile Web</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">TV 기존</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_about_title">Android SDK 인증 없음에 대한 정보</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_about_title">Android SDK 없음 인증 있음에 대한 정보</string>
     <string name="revanced_spoof_streaming_data_no_sdk_auth_token_about_summary">인증 토큰을 받는 방법을 보려면 여기를 탭하세요.</string>
     <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_title">승인 토큰 받기</string>
     <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_message">"Android SDK 없음용 승인 토큰을 받으려면 GmsCore를 사용할 때와 마찬가지로 Google 계정에 로그인해야 합니다.
@@ -578,7 +578,7 @@ YouTube Premium 사용자라면 이 설정은 필요하지 않을 수 있습니�
     <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">웹사이트 열기</string>
     <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">활성화 코드를 클립보드에 복사하였습니다: %s.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">클라이언트 스트림을 가져올 수 없습니다.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">기본 클라이언트를 TV로 변경해 보세요.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">VPN을 사용 중이라면 다른 국가로 변경하거나 기본 클라이언트를 TV로 변경해 보세요.</string>
     <string name="revanced_watch_history_type_title">시청 기록 유형</string>
     <string name="revanced_watch_history_type_summary">"• 원본: Google 계정의 시청 기록 설정을 따르지만 DNS 또는 VPN으로 인하여 시청 기록이 작동되지 않을 수 있습니다.
 • 도메인 변경: Google 계정의 시청 기록 설정을 따릅니다.

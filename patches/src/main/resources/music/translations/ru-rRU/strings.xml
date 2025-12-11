@@ -4,6 +4,18 @@
     <string name="revanced_settings_title">RVX</string>
     <string name="revanced_settings_search_title">Поиск %s</string>
     <string name="revanced_reset_to_default_toast">Сброшены до значений по умолчанию.</string>
+    <string name="revanced_webview_contextual_menu_get_cookies">Получить куки</string>
+    <string name="revanced_webview_contextual_menu_get_data_sync_id">Получить ID синхр. данных</string>
+    <string name="revanced_webview_contextual_menu_get_visitor_data">Получить данные посещаемости</string>
+    <string name="revanced_webview_contextual_menu_refresh">Обновить</string>
+    <string name="revanced_webview_cookies">Куки</string>
+    <string name="revanced_webview_data_sync_id">ID синхр. данных</string>
+    <string name="revanced_webview_visitor_data">Данные посещаемости</string>
+    <string name="revanced_webview_copy">Копия</string>
+    <string name="revanced_webview_toast_copy_success">%s в буфер обмена.</string>
+    <string name="revanced_webview_toast_empty">%s пуст.</string>
+    <string name="revanced_webview_toast_no_network">Проверьте подключение к Интернету.</string>
+    <string name="revanced_webview_toast_unavailable">WebView недоступен.</string>
     <!-- Shared Category -->
     <string name="revanced_restart_first_run">Перезапустите для правильной загрузки интерфейса</string>
     <string name="revanced_restart_message">Обновите и перезапустите</string>
@@ -363,7 +375,7 @@
     <string name="revanced_remember_video_quality_wifi">Качество по умолчанию при Wi-Fi изменено на %s.</string>
     <!-- PreferenceScreen: Return YouTube Dislike -->
     <string name="revanced_preference_screen_ryd_title">Вернуть YouTube Dislike</string>
-    <string name="revanced_ryd_enabled_title">Включить Return YouTube Dislike</string>
+    <string name="revanced_ryd_enabled_title">Включить Вернуть YouTube Dislike</string>
     <string name="revanced_ryd_enabled_summary">Отображает количество отметок \"Не нравится\" в видео.</string>
     <string name="revanced_ryd_dislike_percentage_title">Кол-во отметок \"Не нравится\" в процентах</string>
     <string name="revanced_ryd_dislike_percentage_summary">Вместо числа отметок \"Не нравится\", они отображаются как процент.</string>
@@ -515,6 +527,19 @@
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">Предыдущий ТВ</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Встроенный ТВ</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_about_title">О Android No SDK авторизации</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_about_summary">Нажмите, чтобы посмотреть, как получить токен авторизации.</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_title">Получить токен авторизации</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_message">"Для получения токена авторизации для Android No SDK, необходимо войти в свою учётную запись Google, как при использовании GmsCore:
+
+1. Нажмите 'Получить токен авторизации', чтобы открыть страницу входа в WebView.
+2. Войдите в свою учётную запись Google.
+
+※ Нажмите 'Сброс', чтобы удалить токен авторизации."</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_get_authorization_token_text">Получить токен авторизации</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_reset_text">Сброс</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_toast_reset">Токен аутентификации сброшен.</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_toast_success">Токен аутентификации сохранен.</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">О Android VR авторизации</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Нажмите, чтобы узнать, как получить токен аутентификации.</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Получить Токен Авторизации</string>

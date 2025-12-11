@@ -1068,9 +1068,6 @@
     <string name="revanced_hide_shorts_live_header_title">Скриване на раздела на чата на живо</string>
     <string name="revanced_hide_shorts_live_header_summary_on">Раздела Чата на живо е скрит.\n\nБутонът за връщане назад в Раздел няма да бъде скрит.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">Показва се раздела Чата на живо.\n\nБутонът за връщане назад в раздела няма да бъде скрит.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Скриване на платените промоции</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">Промоционалните етикети са скрити.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">Промоционалните етикети се показват.</string>
     <string name="revanced_hide_shorts_paused_header_title">Скриване на заглавието на пауза</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">Заглавието на пауза е скрито.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">При поставяне на пауза заглавие не се скрива.</string>

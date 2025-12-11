@@ -425,12 +425,6 @@
     <string name="revanced_hide_members_shelf_title">Приховати полицю спонсорів</string>
     <string name="revanced_hide_members_shelf_summary_on">Полицю спонсорів приховано.</string>
     <string name="revanced_hide_members_shelf_summary_off">Полицю спонсорів показується.</string>
-    <string name="revanced_hide_visit_community_button_title">Приховати кнопку Відвідати спільноту</string>
-    <string name="revanced_hide_visit_community_button_summary_on">Кнопку Відвідати спільноту приховано.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">Кнопку Відвідати спільноту показується.</string>
-    <string name="revanced_hide_visit_store_button_title">Приховати кнопку Відвідати магазин</string>
-    <string name="revanced_hide_visit_store_button_summary_on">Кнопку Відвідати магазин приховано.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">Кнопку Відвідати магазин показується.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Публікації спільноти</string>
     <string name="revanced_preference_screen_community_posts_summary">Приховувати чи показувати публікації спільноти у стрічці та каналі.</string>
@@ -576,9 +570,6 @@
     <string name="revanced_hide_floating_microphone_title">Приховати плавучу кнопку мікрофону</string>
     <string name="revanced_hide_floating_microphone_summary_on">Плавучу кнопку мікрофону приховано.</string>
     <string name="revanced_hide_floating_microphone_summary_off">Плавучу кнопку мікрофону показується.</string>
-    <string name="revanced_hide_visual_spacers_title">Приховати видимі пропуски</string>
-    <string name="revanced_hide_visual_spacers_summary_on">Видимі пропуски приховано.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">Видимі пропуски показується.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Вилучати діалогове вікно</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Вилучається діалогове вікно.
 Це не обходить вікові обмеження, а просто приймається автоматично."</string>
@@ -1575,12 +1566,21 @@
     <string name="revanced_hide_explore_podcast_section_title">Приховати секцію Послухайте подкаст</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">Секцію Послухайте подкаст приховано.</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">Секцію Послухайте подкаст показується.</string>
+    <string name="revanced_hide_featured_links_section_title">Приховати секцію Рекомендовані посилання</string>
+    <string name="revanced_hide_featured_links_section_summary_on">Секцію Рекомендовані посилання приховано.</string>
+    <string name="revanced_hide_featured_links_section_summary_off">Секцію Рекомендовані посилання показується.</string>
+    <string name="revanced_hide_featured_videos_section_title">Приховати секцію Рекомендовані відео</string>
+    <string name="revanced_hide_featured_videos_section_summary_on">Секцію Рекомендовані відео приховано.</string>
+    <string name="revanced_hide_featured_videos_section_summary_off">Секцію Рекомендовані відео показується.</string>
     <string name="revanced_hide_how_this_was_made_section_title">Приховати секцію Як створювався цей контент</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">Секцію Як створювався цей контент приховано.</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">Секцію Як створювався цей контент показується.</string>
     <string name="revanced_hide_hype_points_section_title">Приховати секцію з мітками Розголос</string>
     <string name="revanced_hide_hype_points_section_summary_on">Секцію з мітками Розголос приховано.</string>
     <string name="revanced_hide_hype_points_section_summary_off">Секцію з мітками Розголос показується.</string>
+    <string name="revanced_hide_info_cards_section_title">Приховати секцію Інформаційні картки</string>
+    <string name="revanced_hide_info_cards_section_summary_on">Секцію Інформаційні картки приховано.</string>
+    <string name="revanced_hide_info_cards_section_summary_off">Секцію Інформаційні картки показується.</string>
     <string name="revanced_hide_key_concepts_section_title">Приховати секцію Ключові концепції</string>
     <string name="revanced_hide_key_concepts_section_summary_on">Секцію Ключові концепції приховано.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Секцію Ключові концепції показується.</string>
@@ -1666,9 +1666,6 @@
     <string name="revanced_hide_shorts_live_header_title">Приховати заголовок Чату</string>
     <string name="revanced_hide_shorts_live_header_summary_on">Заголовок Чату приховано.\n\nКнопку назад у заголовку не приховуватиметься.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">Заголовок Чату показується.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Приховати мітку Містить пряму рекламу</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">Мітку Містить пряму рекламу приховано.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">Мітку Містить пряму рекламу показується.</string>
     <string name="revanced_hide_shorts_paused_header_title">Приховати заголовок при призупиненні</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">Заголовок при призупиненні приховано.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">Заголовок при призупиненні показується.</string>

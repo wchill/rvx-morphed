@@ -1199,9 +1199,6 @@ Bilinen sorun: Arama sonuçlarındaki resmi başlıklar da gizlenebiliyor.</stri
     <string name="revanced_hide_shorts_live_header_title">Canlı sohbet başlığını gizle</string>
     <string name="revanced_hide_shorts_live_header_summary_on">Canlı sohbet başlığı gizlendi.\n\nBaşlıktaki geri düğmesi gizlenmeyecek.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">Canlı sohbet başlığı gizlenmedi.\n\nBaşlıktaki geri düğmesi gizlenmeyecek.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Ücretli tanıtım etiketini gizle</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">Ücretli tanıtım etiketi gizli.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">Ücretli tanıtım etiketi gösteriliyor.</string>
     <string name="revanced_hide_shorts_paused_header_title">Durdurulmuş başlığı gizle</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">Durdurulmuş başlık gizli</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">Durdurulmuş başlık gizlenmiyor.</string>

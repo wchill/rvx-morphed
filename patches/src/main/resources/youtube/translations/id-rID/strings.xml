@@ -311,12 +311,6 @@ Toko"</string>
     <string name="revanced_hide_members_shelf_title">Sembunyikan rak anggota</string>
     <string name="revanced_hide_members_shelf_summary_on">Rak anggota disembunyikan.</string>
     <string name="revanced_hide_members_shelf_summary_off">Rak anggota ditampilkan.</string>
-    <string name="revanced_hide_visit_community_button_title">Sembunyikan tombol kunjungi komunitas</string>
-    <string name="revanced_hide_visit_community_button_summary_on">Tombol kunjungi komunitas tersembunyi.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">Tombol kunjungi komunitas ditampilkan.</string>
-    <string name="revanced_hide_visit_store_button_title">Sembunyikan tombol kunjungi toko</string>
-    <string name="revanced_hide_visit_store_button_summary_on">Tombol kunjungi toko tersembunyi.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">Tombol kunjungi toko ditampilkan.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Postingan Komunitas</string>
     <string name="revanced_preference_screen_community_posts_summary">Sembunyikan atau tampilkan postingan komunitas di feed dan saluran.</string>
@@ -447,9 +441,6 @@ Keterbatasan: Tombol Kembali pada bilah alat mungkin tidak berfungsi."</string>
     <string name="revanced_hide_floating_microphone_title">Sembunyikan tombol mikrofon mengambang</string>
     <string name="revanced_hide_floating_microphone_summary_on">Tombol mikrofon mengambang disembunyikan.</string>
     <string name="revanced_hide_floating_microphone_summary_off">Tombol mikrofon mengambang ditampilkan.</string>
-    <string name="revanced_hide_visual_spacers_title">Sembunyikan pembatas visual</string>
-    <string name="revanced_hide_visual_spacers_summary_on">Pembatas visual disembunyikan.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">Pembatas visual ditampilkan.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Hapus dialog kebijaksanaan pemirsa</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Menghapus dialog kebijaksanaan pemirsa.
 Ini tidak melewati batasan usia. Itu hanya menerimanya secara otomatis."</string>

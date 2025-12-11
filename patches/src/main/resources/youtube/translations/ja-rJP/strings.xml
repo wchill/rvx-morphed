@@ -425,12 +425,6 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_hide_members_shelf_title">メンバー欄を非表示</string>
     <string name="revanced_hide_members_shelf_summary_on">「メンバー限定の動画」欄を非表示にします。</string>
     <string name="revanced_hide_members_shelf_summary_off">「メンバー限定の動画」欄を非表示にします。</string>
-    <string name="revanced_hide_visit_community_button_title">[コミュニティにアクセス] ボタンを非表示</string>
-    <string name="revanced_hide_visit_community_button_summary_on">[コミュニティにアクセス] ボタンを非表示にします。</string>
-    <string name="revanced_hide_visit_community_button_summary_off">[コミュニティにアクセス] ボタンを非表示にします。</string>
-    <string name="revanced_hide_visit_store_button_title">[ストアに移動] ボタンを非表示</string>
-    <string name="revanced_hide_visit_store_button_summary_on">[ストアに移動] ボタンを非表示にします。</string>
-    <string name="revanced_hide_visit_store_button_summary_off">[ストアに移動] ボタンを非表示にします。</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">コミュニティ投稿</string>
     <string name="revanced_preference_screen_community_posts_summary">関連動画、[チャンネル] タブ、フィードにあるコミュニティ投稿を非表示または表示します。</string>
@@ -576,9 +570,6 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_hide_floating_microphone_title">音声入力のフローティングボタンを非表示</string>
     <string name="revanced_hide_floating_microphone_summary_on">動画を検索する際、右下に表示される音声入力のフローティングボタンを非表示にします。</string>
     <string name="revanced_hide_floating_microphone_summary_off">動画を検索する際、右下に表示される音声入力のフローティングボタンを非表示にします。</string>
-    <string name="revanced_hide_visual_spacers_title">スペーサーを非表示</string>
-    <string name="revanced_hide_visual_spacers_summary_on">ホームフィードの動画と動画の間に表示されるグレーの区切り線を非表示にします。</string>
-    <string name="revanced_hide_visual_spacers_summary_off">ホームフィードの動画と動画の間に表示されるグレーの区切り線を非表示にします。</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">年齢制限ダイアログを削除</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"年齢制限ダイアログを削除します。 
 
@@ -1661,9 +1652,6 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_hide_shorts_live_header_title">ライブチャットのヘッダーを非表示</string>
     <string name="revanced_hide_shorts_live_header_summary_on">縦型のライブ配信のプレーヤー内で上部に表示されるチャンネル名などを非表示にします。\n\nヘッダーの戻るボタンは非表示になりません。</string>
     <string name="revanced_hide_shorts_live_header_summary_off">縦型のライブ配信のプレーヤー内で上部に表示されるチャンネル名などを非表示にします。\n\nヘッダーの戻るボタンは非表示になりません。</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">有料プロモーションラベルを非表示</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">プレーヤー左上の「プロモーションを含みます」を非表示にします。</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">プレーヤー左上の「プロモーションを含みます」を非表示にします。</string>
     <string name="revanced_hide_shorts_paused_header_title">一時停止中のヘッダーを非表示</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">一時停止中に左上に表示される「ショート」を非表示にします。</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">一時停止中に左上に表示される「ショート」を非表示にします。</string>

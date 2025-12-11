@@ -425,12 +425,6 @@ Store"</string>
     <string name="revanced_hide_members_shelf_title">Mitgliederregal ausblenden</string>
     <string name="revanced_hide_members_shelf_summary_on">Mitgliederregal ist ausgeblendet.</string>
     <string name="revanced_hide_members_shelf_summary_off">Mitgliederregal wird angezeigt.</string>
-    <string name="revanced_hide_visit_community_button_title">Schaltfläche \'Community besuchen\' ausblenden</string>
-    <string name="revanced_hide_visit_community_button_summary_on">Schaltfläche \'Community besuchen\' ist ausgeblendet.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">Schaltfläche \'Community besuchen\' wird angezeigt.</string>
-    <string name="revanced_hide_visit_store_button_title">Schaltfläche \'Shop besuchen\' ausblenden</string>
-    <string name="revanced_hide_visit_store_button_summary_on">Schaltfläche \'Shop besuchen\' ist ausgeblendet.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">Schaltfläche \'Shop besuchen\' wird angezeigt.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Community Beiträge</string>
     <string name="revanced_preference_screen_community_posts_summary">Verstecke oder zeige Community-Beiträge im Feed und Kanal.</string>
@@ -573,9 +567,6 @@ Bei einigen Benutzern funktioniert dies möglicherweise nicht. Wenn es bei Ihnen
     <string name="revanced_hide_floating_microphone_title">Die schwebende \'Mikrofon\' Schaltfläche ausblenden</string>
     <string name="revanced_hide_floating_microphone_summary_on">Die schwebende \'Mikrofon\' Schaltfläche ist ausgeblendet.</string>
     <string name="revanced_hide_floating_microphone_summary_off">Die schwebende \'Mikrofon\' Schaltfläche wird angezeigt.</string>
-    <string name="revanced_hide_visual_spacers_title">Visuelle Abstandhalter ausblenden</string>
-    <string name="revanced_hide_visual_spacers_summary_on">Visuelle Abstandhalter sind ausgeblendet.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">Visuelle Abstandshalter werden angezeigt.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Dialogfeld \'Zuschauerdiskretion\' entfernen</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Entfernt den Diskretionsdialog des Betrachters.
 Dies umgeht nicht die Altersbeschränkung. Es akzeptiert ihn nur automatisch."</string>
@@ -1622,9 +1613,6 @@ Info:
     <string name="revanced_hide_shorts_live_header_title">Live-Chat-Kopfzeile ausblenden</string>
     <string name="revanced_hide_shorts_live_header_summary_on">Live-Chat-Kopfzeile wird ausgeblendet.\n\nZurück Button wird nicht ausgeblendet.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">Live-Chat-Kopfzeile wird angezeigt.\n\nZurück Button wird nicht ausgeblendet.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Verstecke Label für bezahlte Promotion</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">Label für bezahlte Promotion wird versteckt.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">Label für bezahlte Promotion wird angezeigt.</string>
     <string name="revanced_hide_shorts_paused_header_title">Pausierter Header ausblenden</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">Pausierter Header ist ausgeblendet.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">Pausierter Header wird angezeigt.</string>

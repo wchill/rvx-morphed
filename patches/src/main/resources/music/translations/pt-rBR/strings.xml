@@ -4,6 +4,17 @@
     <string name="revanced_settings_title">RVX</string>
     <string name="revanced_settings_search_title">Pesquisar %s</string>
     <string name="revanced_reset_to_default_toast">Redefinir para os valores padrão.</string>
+    <string name="revanced_webview_contextual_menu_get_data_sync_id">Obter Id de sincronização de dados</string>
+    <string name="revanced_webview_contextual_menu_get_visitor_data">Obter Dados do visitante</string>
+    <string name="revanced_webview_contextual_menu_refresh">Atualizar</string>
+    <string name="revanced_webview_cookies">Cookies</string>
+    <string name="revanced_webview_data_sync_id">Id de sincronização de dados</string>
+    <string name="revanced_webview_visitor_data">Dados do visitante</string>
+    <string name="revanced_webview_copy">Copiar</string>
+    <string name="revanced_webview_toast_copy_success">%s Copiado para a área de transferência.</string>
+    <string name="revanced_webview_toast_empty">%s está vazio.</string>
+    <string name="revanced_webview_toast_no_network">Por favor, verifique sua conexão de rede.</string>
+    <string name="revanced_webview_toast_unavailable">O WebView não está disponível.</string>
     <!-- Shared Category -->
     <string name="revanced_restart_first_run">Reinicie para carregar o layout normalmente</string>
     <string name="revanced_restart_message">Atualizar e reiniciar</string>
@@ -520,6 +531,17 @@ Se você é um usuário de YouTube Premium, essa configuração pode não ser ne
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">TV Legado</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Integrada</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_about_title">Sobre o Android: Sem autenticação do SDK</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_about_summary">Clique para ver como obter um token de autenticação.</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_title">Obter token de autorização</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_message">"Para obter um token de autorização para o Android No SDK, você precisa fazer login na sua conta do Google, assim como ao usar o GmsCore:
+
+1. Clique em \"Obter token de autorização\" para abrir a página de login no WebView.
+2."</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_get_authorization_token_text">Obter token de autorização</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_reset_text">Reiniciar</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_toast_reset">Redefinição do token de autenticação.</string>
+    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_toast_success">Token de autenticação salvo.</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Sobre o Android VR Autenticação</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Clique para ver como obter um token de autenticação.</string>
     <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Obter Token de autorização</string>

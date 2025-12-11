@@ -409,12 +409,6 @@
     <string name="revanced_hide_members_shelf_title">إخفاء رف الأعضاء</string>
     <string name="revanced_hide_members_shelf_summary_on">تم إخفاء رف الأعضاء.</string>
     <string name="revanced_hide_members_shelf_summary_off">يتم عرض رف الأعضاء.</string>
-    <string name="revanced_hide_visit_community_button_title">إخفاء زر زيارة المجتمع</string>
-    <string name="revanced_hide_visit_community_button_summary_on">تم إخفاء زر زيارة المجتمع.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">يتم عرض زر زيارة المجتمع.</string>
-    <string name="revanced_hide_visit_store_button_title">إخفاء زر زيارة المتجر</string>
-    <string name="revanced_hide_visit_store_button_summary_on">تم إخفاء زر زيارة المتجر.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">يتم عرض زر زيارة المتجر.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">مشاركات المجتمع</string>
     <string name="revanced_preference_screen_community_posts_summary">إخفاء أو عرض مشاركات المجتمع في صفحة القناة، الموجز، والفيديوهات ذات الصلة.</string>
@@ -560,9 +554,6 @@
     <string name="revanced_hide_floating_microphone_title">إخفاء زر الميكروفون العائم</string>
     <string name="revanced_hide_floating_microphone_summary_on">تم إخفاء زر الميكروفون العائم.</string>
     <string name="revanced_hide_floating_microphone_summary_off">يتم عرض زر الميكروفون العائم.</string>
-    <string name="revanced_hide_visual_spacers_title">إخفاء الفواصل المرئية</string>
-    <string name="revanced_hide_visual_spacers_summary_on">تم إخفاء الفواصل المرئية.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">يتم عرض الفواصل المرئية.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">إزالة مربع حوار تقدير المشاهد</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"يزيل مربع حوار تقدير المشاهد. هذا لا يتجاوز القيود العمرية. إنه يقبل ذلك تلقائيًا."</string>
     <string name="revanced_change_live_ring_click_action_title">تغيير إجراء النقر على البث المباشر</string>
@@ -1557,12 +1548,21 @@
     <string name="revanced_hide_explore_podcast_section_title">إخفاء قسم استكشاف البودكاست</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">تم إخفاء قسم استكشاف البودكاست.</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">يتم عرض قسم استكشاف البودكاست.</string>
+    <string name="revanced_hide_featured_links_section_title">إخفاء قسم الروابط المميزة</string>
+    <string name="revanced_hide_featured_links_section_summary_on">تم إخفاء قسم الروابط المميزة.</string>
+    <string name="revanced_hide_featured_links_section_summary_off">يتم عرض قسم الروابط المميزة.</string>
+    <string name="revanced_hide_featured_videos_section_title">إخفاء قسم الفيديوهات المميزة</string>
+    <string name="revanced_hide_featured_videos_section_summary_on">تم إخفاء قسم الفيديوهات المميزة.</string>
+    <string name="revanced_hide_featured_videos_section_summary_off">يتم عرض قسم الفيديوهات المميزة.</string>
     <string name="revanced_hide_how_this_was_made_section_title">إخفاء قسم كيف تم إنشاء هذا المحتوى</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">تم إخفاء قسم كيف تم إنشاء هذا المحتوى.</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">يتم عرض قسم كيف تم إنشاء هذا المحتوى.</string>
     <string name="revanced_hide_hype_points_section_title">إخفاء قسم نقاط التشجيع</string>
     <string name="revanced_hide_hype_points_section_summary_on">تم إخفاء قسم نقاط التشجيع.</string>
     <string name="revanced_hide_hype_points_section_summary_off">يتم عرض قسم نقاط التشجيع.</string>
+    <string name="revanced_hide_info_cards_section_title">إخفاء قسم بطاقات المعلومات</string>
+    <string name="revanced_hide_info_cards_section_summary_on">تم إخفاء قسم بطاقات المعلومات.</string>
+    <string name="revanced_hide_info_cards_section_summary_off">يتم عرض قسم بطاقات المعلومات.</string>
     <string name="revanced_hide_key_concepts_section_title">إخفاء قسم المفاهيم الأساسية</string>
     <string name="revanced_hide_key_concepts_section_summary_on">تم إخفاء قسم المفاهيم الأساسية.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">يتم عرض قسم المفاهيم الأساسية.</string>
@@ -1647,9 +1647,6 @@
     <string name="revanced_hide_shorts_live_header_title">إخفاء علامة المحادثات المباشرة</string>
     <string name="revanced_hide_shorts_live_header_summary_on">تم إخفاء علامة المحادثات المباشرة.\n\nزر رجوع في العلامة لن يتم إخفاؤه.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">يتم عرض علامة المحادثات المباشرة.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">إخفاء تصنيف الترويج المدفوع</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">تم إخفاء تصنيف الترويج المدفوع.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">يتم عرض تصنيف الترويج المدفوع.</string>
     <string name="revanced_hide_shorts_paused_header_title">إخفاء علامة Shorts أثناء التوقف</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">تم إخفاء علامة Shorts عند توقف الفيديو.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">يتم عرض علامة Shorts عند توقف الفيديو.</string>

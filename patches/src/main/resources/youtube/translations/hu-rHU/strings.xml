@@ -425,12 +425,6 @@ Lejátszási listák
     <string name="revanced_hide_members_shelf_title">Tagok polcának elrejtése</string>
     <string name="revanced_hide_members_shelf_summary_on">A tagok polca rejtett.</string>
     <string name="revanced_hide_members_shelf_summary_off">A tagok polca látható.</string>
-    <string name="revanced_hide_visit_community_button_title">Közösségi oldal meglátogatása gomb elrejtése</string>
-    <string name="revanced_hide_visit_community_button_summary_on">A közösség meglátogatása gomb rejtett.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">A közösség meglátogatása gomb látható.</string>
-    <string name="revanced_hide_visit_store_button_title">Áruház gomb elrejtése</string>
-    <string name="revanced_hide_visit_store_button_summary_on">Az áruház gomb rejtett.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">Az áruház gomb látható.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Közösségi bejegyzések</string>
     <string name="revanced_preference_screen_community_posts_summary">Közösségi bejegyzések elrejtése vagy mutatása a hírfolyamban és a csatornán.</string>
@@ -576,9 +570,6 @@ Ez egyes felhasználóknál nem biztos, hogy működik, ha Önnek nem működik:
     <string name="revanced_hide_floating_microphone_title">Lebegő mikrofon gomb elrejtése</string>
     <string name="revanced_hide_floating_microphone_summary_on">A lebegő mikrofon gomb el van rejtve.</string>
     <string name="revanced_hide_floating_microphone_summary_off">A lebegő mikrofon gomb látható.</string>
-    <string name="revanced_hide_visual_spacers_title">Vizuális távolságtartók elrejtése</string>
-    <string name="revanced_hide_visual_spacers_summary_on">A vizuális távolságtartók rejtettek.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">A vizuális távolságtartók láthatóak.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Távolítsa el a nézői diszkréciós párbeszédpanelt</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Eltávolítja a nézői belátás párbeszédpanelt.
 Ez nem kerüli meg a korhatárt. Csak automatikusan fogadja el."</string>
@@ -1574,12 +1565,21 @@ Ez a funkció nagyon gyors internetkapcsolat mellett működik a legjobban."</st
     <string name="revanced_hide_explore_podcast_section_title">Podcastok felfedezése rész elrejtése</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">A podcastok felfedezése rész rejtett.</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">A podcastok felfedezése rész látható.</string>
+    <string name="revanced_hide_featured_links_section_title">Kiemelt linkek rész elrejtése</string>
+    <string name="revanced_hide_featured_links_section_summary_on">A kiemelt linkek rész rejtett.</string>
+    <string name="revanced_hide_featured_links_section_summary_off">A kiemelt linkek rész látható.</string>
+    <string name="revanced_hide_featured_videos_section_title">Kiemelt videók rész elrejtése</string>
+    <string name="revanced_hide_featured_videos_section_summary_on">A kiemelt videók rész rejtett.</string>
+    <string name="revanced_hide_featured_videos_section_summary_off">A kiemelt videók rész látható.</string>
     <string name="revanced_hide_how_this_was_made_section_title">A tartalom elkészítésének módja rész rejtése</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">A tartalom elkészítésének módja rész rejtett.</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">A tartalom elkészítésének módja rész látható.</string>
     <string name="revanced_hide_hype_points_section_title">Hype pontok rész elrejtése</string>
     <string name="revanced_hide_hype_points_section_summary_on">A Hype pontok rész rejtett.</string>
     <string name="revanced_hide_hype_points_section_summary_off">A Hype pontok rész látható.</string>
+    <string name="revanced_hide_info_cards_section_title">Infó kártyák rész elrejtése</string>
+    <string name="revanced_hide_info_cards_section_summary_on">Az infó kártyák rész rejtett.</string>
+    <string name="revanced_hide_info_cards_section_summary_off">Az infó kártyák rész látható.</string>
     <string name="revanced_hide_key_concepts_section_title">Kulcs koncepciók rész elrejtése</string>
     <string name="revanced_hide_key_concepts_section_summary_on">A kulcs koncepciók rész elrejtve.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">A kulcs koncepciók rész látható.</string>
@@ -1664,9 +1664,6 @@ Mellékhatás: előfordulhat, hogy a 'Te' lapon a 'Videóelőzmények' polc rejt
     <string name="revanced_hide_shorts_live_header_title">Élő csevegés fejlécének elrejtése</string>
     <string name="revanced_hide_shorts_live_header_summary_on">Az élő csevegés fejléce el van rejtve.\n\nA fejlécben található Vissza gomb nem lesz elrejtve.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">Az élő csevegés fejléce látható.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Fizetett promóciós címke elrejtése</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">A fizetett promóciós címke el van rejtve.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">A fizetett promóciós címke látható.</string>
     <string name="revanced_hide_shorts_paused_header_title">Szüneteltetett fejléc elrejtése</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">A szüneteltetett fejléc elrejtve.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">A szüneteltetett fejléc látható.</string>

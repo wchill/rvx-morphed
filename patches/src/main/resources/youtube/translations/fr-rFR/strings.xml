@@ -425,12 +425,6 @@ Boutique"</string>
     <string name="revanced_hide_members_shelf_title">Masquer l\'étagère des membres</string>
     <string name="revanced_hide_members_shelf_summary_on">L\'étagère des membres est affiché.</string>
     <string name="revanced_hide_members_shelf_summary_off">L\'étagère des membres est masqué.</string>
-    <string name="revanced_hide_visit_community_button_title">Masquer le bouton \'Accéder à la communauté\'</string>
-    <string name="revanced_hide_visit_community_button_summary_on">Le bouton \'Accéder à la communauté\' est masqué.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">Le bouton \'Accéder à la communauté\' est affiché.</string>
-    <string name="revanced_hide_visit_store_button_title">Masquer le bouton \'Visiter la boutique\'</string>
-    <string name="revanced_hide_visit_store_button_summary_on">Le bouton \'Visiter la boutique\' est masqué.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">Le bouton \'Visiter la boutique\' est affiché.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Posts communautaires</string>
     <string name="revanced_preference_screen_community_posts_summary">Masque ou affiche les posts communautaires dans les flux et sur les chaînes.</string>
@@ -576,9 +570,6 @@ Cela peut ne pas fonctionner pour certains utilisateurs, si cela ne fonctionne p
     <string name="revanced_hide_floating_microphone_title">Masquer le bouton \'Micro\'</string>
     <string name="revanced_hide_floating_microphone_summary_on">Le bouton \'Micro\' est masqué.</string>
     <string name="revanced_hide_floating_microphone_summary_off">Le bouton \'Micro\' est affiché.</string>
-    <string name="revanced_hide_visual_spacers_title">Masquer les espaceurs visuels</string>
-    <string name="revanced_hide_visual_spacers_summary_on">Les espaceurs visuels sont maqués.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">Les espaceurs visuels sont affichés.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Suppr. Message \'Confirmer votre âge\'</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Supprime le message 'Confirmer votre âge'.
 Cela ne contourne pas la restriction d'âge, mais le confirme automatiquement."</string>
@@ -1563,12 +1554,21 @@ Cette fonction fonctionne mieux avec une connexion internet très rapide."</stri
     <string name="revanced_hide_explore_podcast_section_title">Masquer la section \'Découvrir le podcast\'</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">La section \'Découvrir le podcast\' est masquée.</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">La section \'Découvrir le podcast\' est affichée.</string>
-    <string name="revanced_hide_how_this_was_made_section_title">Masquer la section \'Comment ce contenu a été créé\'</string>
-    <string name="revanced_hide_how_this_was_made_section_summary_on">La section \'Comment ce contenu a été créé\' est masquée.</string>
-    <string name="revanced_hide_how_this_was_made_section_summary_off">La section « Comment ce contenu a été créé » s\'affiche.</string>
+    <string name="revanced_hide_featured_links_section_title">Masquer la section des liens en vedette</string>
+    <string name="revanced_hide_featured_links_section_summary_on">La section des liens en vedette est masquée.</string>
+    <string name="revanced_hide_featured_links_section_summary_off">La section des liens en vedette est affichée.</string>
+    <string name="revanced_hide_featured_videos_section_title">Masquer la section des vidéos en vedette</string>
+    <string name="revanced_hide_featured_videos_section_summary_on">La section des vidéos en vedette est masquée.</string>
+    <string name="revanced_hide_featured_videos_section_summary_off">La section des vidéos en vedette est affichée.</string>
+    <string name="revanced_hide_how_this_was_made_section_title">Masquer la section \'Comment la vidéo a été créée\'</string>
+    <string name="revanced_hide_how_this_was_made_section_summary_on">La section \'Comment la vidéo a été créée\' est masquée.</string>
+    <string name="revanced_hide_how_this_was_made_section_summary_off">La section \'Comment la vidéo a été créée\' est affiché.</string>
     <string name="revanced_hide_hype_points_section_title">Masquer la section des points hype</string>
     <string name="revanced_hide_hype_points_section_summary_on">La section des points hype est masquée.</string>
     <string name="revanced_hide_hype_points_section_summary_off">La section des points hype est affichée.</string>
+    <string name="revanced_hide_info_cards_section_title">Masquer la section des fiches d\'information</string>
+    <string name="revanced_hide_info_cards_section_summary_on">La section des fiches d\'information est masquée.</string>
+    <string name="revanced_hide_info_cards_section_summary_off">La section des fiches d\'information est affichée.</string>
     <string name="revanced_hide_key_concepts_section_title">Masquer la section \'Concepts clés\'</string>
     <string name="revanced_hide_key_concepts_section_summary_on">La section \'Concepts clés\' est masqué.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">La section \'Concepts clés\' est affiché.</string>
@@ -1650,9 +1650,6 @@ Information :
     <string name="revanced_hide_shorts_live_header_title">Masquer l\'en-tête du chat en direct</string>
     <string name="revanced_hide_shorts_live_header_summary_on">L\'en-tête du chat en direct est masqué.\n\nLe bouton de retour sur l\'en-tête ne sera pas masqué.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">L\'en-tête du chat en direct est affiché.\n\nLe bouton de retour sur l\'en-tête ne sera pas masqué.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Masquer bannière \'Communication commerciale\'</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">La bannière \'Inclut une communication commerciale\' est masquée.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">La bannière \'Inclut une communication commerciale\' est affichée.</string>
     <string name="revanced_hide_shorts_paused_header_title">Masquer l\'en-tête en pause</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">L\'en-tête en pause est masqué.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">L\'en-tête en pause est affiché.</string>

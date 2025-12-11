@@ -432,12 +432,6 @@ Negozio"</string>
     <string name="revanced_hide_members_shelf_title">Nascondi lo scaffale degli abbonati</string>
     <string name="revanced_hide_members_shelf_summary_on">Lo scaffale degli abbonati è nascosto.</string>
     <string name="revanced_hide_members_shelf_summary_off">Lo scaffale degli abbonati è visibile.</string>
-    <string name="revanced_hide_visit_community_button_title">Nascondi il pulsante Visita Community</string>
-    <string name="revanced_hide_visit_community_button_summary_on">Il pulsante Visita Community è nascosto.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">Il pulsante Visita Community è visibile.</string>
-    <string name="revanced_hide_visit_store_button_title">Nascondi il pulsante Visita Negozio</string>
-    <string name="revanced_hide_visit_store_button_summary_on">Il pulsante Visita Negozio è nascosto.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">Il pulsante Visita Negozio è visibile.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Post delle community</string>
     <string name="revanced_preference_screen_community_posts_summary">Personalizza i post delle community nel profilo del canale, nelle schede e nei video correlati.</string>
@@ -579,9 +573,6 @@ Nota: questa impostazione potrebbe non funzionare per alcuni utenti. Se non funz
     <string name="revanced_hide_floating_microphone_title">Nascondi il pulsante Microfono fluttuante</string>
     <string name="revanced_hide_floating_microphone_summary_on">Il pulsante Microfono fluttuante è nascosto.</string>
     <string name="revanced_hide_floating_microphone_summary_off">Il pulsante Microfono fluttuante è visibile.</string>
-    <string name="revanced_hide_visual_spacers_title">Nascondi gli spaziatori visivi</string>
-    <string name="revanced_hide_visual_spacers_summary_on">Gli spaziatori visivi sono nascosti.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">Gli spaziatori visivi sono visibili.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Rimuovi la finestra sulla discrezione dello spettatore</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Rimuove la finestra sulla discrezione dello spettatore.
 Nota: questo non bypassa la restrizione di età, ma la accetta automaticamente."</string>
@@ -1557,12 +1548,21 @@ Questa impostazione funziona meglio con una connessione internet molto veloce."<
     <string name="revanced_hide_explore_podcast_section_title">Nascondi la sezione Esplora il Podcast</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">La sezione Esplora il Podcast è nascosta.</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">La sezione Esplora il Podcast è visibile.</string>
+    <string name="revanced_hide_featured_links_section_title">Nascondi la sezione dei link in evidenza</string>
+    <string name="revanced_hide_featured_links_section_summary_on">La sezione dei link in evidenza è nascosta.</string>
+    <string name="revanced_hide_featured_links_section_summary_off">La sezione dei link in evidenza è visibile.</string>
+    <string name="revanced_hide_featured_videos_section_title">Nascondi la sezione dei video in evidenza</string>
+    <string name="revanced_hide_featured_videos_section_summary_on">La sezione dei video in evidenza è nascosta.</string>
+    <string name="revanced_hide_featured_videos_section_summary_off">La sezione dei video in evidenza è visibile.</string>
     <string name="revanced_hide_how_this_was_made_section_title">Nascondi la sezione Come È Stato Realizzato</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">La sezione Come È Stato Realizzato è nascosta.</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">La sezione Come È Stato Realizzato è visibile.</string>
     <string name="revanced_hide_hype_points_section_title">Nascondi i punti hype</string>
     <string name="revanced_hide_hype_points_section_summary_on">I punti hype sono nascosti.</string>
     <string name="revanced_hide_hype_points_section_summary_off">I punti hype sono visibili.</string>
+    <string name="revanced_hide_info_cards_section_title">Nascondi la sezione delle schede informative</string>
+    <string name="revanced_hide_info_cards_section_summary_on">La sezione delle schede informative è nascosta.</string>
+    <string name="revanced_hide_info_cards_section_summary_off">La sezione delle schede informative è visibile.</string>
     <string name="revanced_hide_key_concepts_section_title">Nascondi la sezione Momenti Chiave</string>
     <string name="revanced_hide_key_concepts_section_summary_on">La sezione Momenti Chiave è nascosta.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">La sezione Momenti Chiave è visibile.</string>
@@ -1644,9 +1644,6 @@ Nota: lo scaffale Cronologia nella scheda Tu potrebbe essere nascosto."</string>
     <string name="revanced_hide_shorts_live_header_title">Nascondi l\'intestazione della chat live</string>
     <string name="revanced_hide_shorts_live_header_summary_on">L\'intestazione della chat live è nascosta.\n\nNota: il pulsante Indietro dell\'intestazione non verrà nascosto.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">L\'intestazione della chat live è visibile.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Nascondi l\'etichetta della promozione a pagamento</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">L\'etichetta della promozione a pagamento è nascosta.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">L\'etichetta della promozione a pagamento è visibile.</string>
     <string name="revanced_hide_shorts_paused_header_title">Nascondi l\'intestazione in pausa</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">L\'intestazione in pausa è nascosta.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">L\'intestazione in pausa è visibile.</string>

@@ -425,12 +425,6 @@ Cửa hàng"</string>
     <string name="revanced_hide_members_shelf_title">Ẩn kệ thành viên</string>
     <string name="revanced_hide_members_shelf_summary_on">Kệ thành viên đã ẩn.</string>
     <string name="revanced_hide_members_shelf_summary_off">Kệ thành viên được hiển thị.</string>
-    <string name="revanced_hide_visit_community_button_title">Ẩn nút Chuyển đến trang Cộng đồng</string>
-    <string name="revanced_hide_visit_community_button_summary_on">Nút Chuyển đến trang Cộng đồng đã ẩn.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">Nút Chuyển đến trang Cộng đồng được hiển thị.</string>
-    <string name="revanced_hide_visit_store_button_title">Ẩn nút Chuyển đến cửa hàng</string>
-    <string name="revanced_hide_visit_store_button_summary_on">Nút Chuyển đến cửa hàng đã ẩn.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">Nút Chuyển đến cửa hàng được hiển thị.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Bài đăng cộng đồng</string>
     <string name="revanced_preference_screen_community_posts_summary">Ẩn hoặc hiển thị bài đăng cộng đồng trên trang kênh, các trang video và video liên quan.</string>
@@ -580,9 +574,6 @@ Chi tiết: Với một số tài khoản, bản âm thanh gốc sẽ được s
     <string name="revanced_hide_floating_microphone_title">Ẩn nút Tìm kiếm bằng giọng nói</string>
     <string name="revanced_hide_floating_microphone_summary_on">Nút Tìm kiếm bằng giọng nói đã ẩn khi tìm kiếm.</string>
     <string name="revanced_hide_floating_microphone_summary_off">Nút Tìm kiếm bằng giọng nói được hiển thị khi tìm kiếm.</string>
-    <string name="revanced_hide_visual_spacers_title">Ẩn khoảng cách giữa các mục</string>
-    <string name="revanced_hide_visual_spacers_summary_on">Ẩn khoảng cách giữa các mục đã ẩn.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">Ẩn khoảng cách giữa các mục được hiển thị.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Loại bỏ hộp thoại cảnh báo trước khi xem</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Loại bỏ hộp thoại cảnh báo nội dung cần cân nhắc trước khi xem.
 Tuỳ chọn này chỉ tự động chấp nhận hộp thoại cảnh báo, chứ không thể bỏ qua giới hạn về độ tuổi."</string>
@@ -1579,8 +1570,8 @@ Vì vậy, bạn nên bật tính năng này khi có kết nối mạng ổn đ�
     <string name="revanced_hide_key_concepts_section_summary_on">Phần Khái niệm chính đã ẩn.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Phần Khái niệm chính được hiển thị.</string>
     <string name="revanced_hide_subscribe_button_title">Ẩn nút Đăng ký</string>
-    <string name="revanced_hide_subscribe_button_summary_on">Nút đăng ký trong phần Nhà sáng tạo đã ẩn.</string>
-    <string name="revanced_hide_subscribe_button_summary_off">Nút đăng ký trong phần Nhà sáng tạo được hiển thị.</string>
+    <string name="revanced_hide_subscribe_button_summary_on">Nút đăng ký đã ẩn.</string>
+    <string name="revanced_hide_subscribe_button_summary_off">Nút đăng ký hiển thị.</string>
     <string name="revanced_hide_transcript_section_title">Ẩn phần Bản chép lời</string>
     <string name="revanced_hide_transcript_section_summary_on">Phần Bản chép lời đã ẩn.</string>
     <string name="revanced_hide_transcript_section_summary_off">Phần Bản chép lời được hiển thị.</string>
@@ -1659,9 +1650,6 @@ Hạn chế: Kệ nhật ký xem trong thẻ Bạn có thể bị ẩn."</string
     <string name="revanced_hide_shorts_live_header_title">Ẩn tiêu đề Trò chuyện trực tiếp</string>
     <string name="revanced_hide_shorts_live_header_summary_on">Tiêu đề Trò chuyện trực tiếp đã ẩn.\n\nNút Quay lại trong tiêu đề sẽ không bị ẩn.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">Tiêu đề Trò chuyện trực tiếp được hiển thị.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Ẩn nhãn nội dung được trả tiền để quảng cáo</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">Nhãn nội dung được trả tiền để quảng cáo đã ẩn.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">Nhãn nội dung được trả tiền để quảng cáo được hiển thị.</string>
     <string name="revanced_hide_shorts_paused_header_title">Ẩn tiêu đề tạm dừng</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">Tiêu đề tạm dừng đã ẩn.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">Tiêu đề tạm dừng được hiển thị.</string>

@@ -425,12 +425,6 @@ Loja"</string>
     <string name="revanced_hide_members_shelf_title">Ocultar prateleira de membros</string>
     <string name="revanced_hide_members_shelf_summary_on">A prateleira dos membros está oculta.</string>
     <string name="revanced_hide_members_shelf_summary_off">A prateleira dos membros será exibida.</string>
-    <string name="revanced_hide_visit_community_button_title">Ocultar botão Visitar Comunidade</string>
-    <string name="revanced_hide_visit_community_button_summary_on">O botão Visitar Comunidade está oculto.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">O botão Visitar Comunidade será exibido.</string>
-    <string name="revanced_hide_visit_store_button_title">Ocultar botão Visitar loja</string>
-    <string name="revanced_hide_visit_store_button_summary_on">O botão Visitar loja está oculto.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">O botão Visitar loja será exibido.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Publicações da comunidade</string>
     <string name="revanced_preference_screen_community_posts_summary">Ocultar ou exibir postagens na comunidade no feed e no canal.</string>
@@ -573,9 +567,6 @@ Isto pode não funcionar para alguns usuários, se não funcionar para você:
     <string name="revanced_hide_floating_microphone_title">Ocultar botão de microfone flutuante</string>
     <string name="revanced_hide_floating_microphone_summary_on">O botão do microfone flutuante está oculto.</string>
     <string name="revanced_hide_floating_microphone_summary_off">O botão do microfone flutuante será exibido.</string>
-    <string name="revanced_hide_visual_spacers_title">Ocultar espaçadores visuais</string>
-    <string name="revanced_hide_visual_spacers_summary_on">Os espaçadores visuais estão ocultos.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">Os espaçadores visuais serão exibidos.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Remover o diálogo discricionário do visualizador</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Remover o diálogo discricionário de visualização.
 Isso não ignora a restrição de idade, apenas aceita isso automaticamente."</string>
@@ -645,6 +636,7 @@ Se for desativado posteriormente, é recomendável limpar os dados do aplicativo
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Restaurar o cabeçalho antigo da playlist</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Restaurar painel flutuante antigo de velocidade de reprodução</string>
     <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - Restaurar funcionalidade de Transcrição</string>
+    <string name="revanced_spoof_app_version_target_entry_20_13_41">20.13.41 - Restaurar a barra de ação de vídeo não recolhida</string>
     <string name="revanced_spoof_app_version_other_item">Outro</string>
     <string name="revanced_spoof_app_version_other_item_hint">Digite a versão do aplicativo</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Versão da falsificação do app inválida: %s.</string>
@@ -789,7 +781,16 @@ Para exibir o botão nativo para baixar a lista de reprodução, ative 'Falsific
     <string name="revanced_hide_navigation_label_summary_on">O rótulo de navegação está oculto.</string>
     <string name="revanced_hide_navigation_label_summary_off">O rótulo de navegação será exibido.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Alternar criar com notificações</string>
+    <string name="revanced_switch_create_with_notifications_button_summary_on">O botão Criar foi trocado com o botão Notificações.</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">O botão criar não está alternado com o botão Notificações.</string>
+    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">Se essa configuração não surtir efeito, tente alternar para o modo de navegação anônima.</string>
+    <string name="revanced_replace_navigation_button_title">Substituir botão de navegação</string>
+    <string name="revanced_replace_navigation_button_summary">Substitui o botão de navegação pelo botão de pesquisa.</string>
+    <string name="revanced_replace_navigation_button_target_title">Substituir botão de navegação</string>
+    <string name="revanced_replace_navigation_button_target_entry_home">Tela inicial</string>
+    <string name="revanced_replace_navigation_button_target_entry_shorts">Shorts</string>
+    <string name="revanced_replace_navigation_button_target_entry_subscriptions">Assinaturas</string>
+    <string name="revanced_replace_navigation_button_target_entry_notifications">Notificações</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Ativar barra de navegação transparente</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_on">A barra de navegação está transparente.</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">A barra de navegação está opaca.</string>
@@ -910,6 +911,11 @@ Aba Você → Ver canal → Menu → Configurações"</string>
     <string name="revanced_hide_toolbar_notification_button_title">Ocultar botão de notificação</string>
     <string name="revanced_hide_toolbar_notification_button_summary_on">O botão de notificação está oculto.</string>
     <string name="revanced_hide_toolbar_notification_button_summary_off">O botão de notificação será exibido.</string>
+    <string name="revanced_hide_toolbar_search_button_title">Ocultar botão de pesquisa</string>
+    <string name="revanced_hide_toolbar_search_button_summary_on">"O botão de pesquisa está oculto.
+
+Esta configuração pode não funcionar se a barra de pesquisa ampla estiver ativada."</string>
+    <string name="revanced_hide_toolbar_search_button_summary_off">O botão de pesquisa é exibido.</string>
     <string name="revanced_hide_search_term_thumbnail_title">Ocultar miniatura do termo de pesquisa</string>
     <string name="revanced_hide_search_term_thumbnail_summary_on">As miniaturas do histórico de pesquisa estão ocultas.</string>
     <string name="revanced_hide_search_term_thumbnail_summary_off">As miniaturas do histórico de pesquisa serão exibidas.</string>
@@ -1528,18 +1534,38 @@ Este recurso funciona melhor com uma conexão de Internet muito rápida."</strin
     <string name="revanced_hide_ai_generated_video_summary_section_title">Ocultar a seção de resumo de vídeo gerado por IA</string>
     <string name="revanced_hide_ai_generated_video_summary_section_summary_on">A seção de resumo de vídeo gerado por IA está oculta.</string>
     <string name="revanced_hide_ai_generated_video_summary_section_summary_off">A seção de resumo de vídeo gerado por IA será exibida.</string>
+    <string name="revanced_hide_ask_section_title">Ocultar seção de perguntas</string>
+    <string name="revanced_hide_ask_section_summary_on">A seção de perguntas está oculta.</string>
+    <string name="revanced_hide_ask_section_summary_off">A seção \"Pergunte\" é exibida.</string>
     <string name="revanced_hide_attributes_section_title">Ocultar seção de Atributos</string>
     <string name="revanced_hide_attributes_section_summary_on">As seções de lugares em destaque, jogos e música estão ocultas.</string>
     <string name="revanced_hide_attributes_section_summary_off">As seções de lugares em destaque, jogos e música serão exibidas.</string>
     <string name="revanced_hide_chapters_section_title">Ocultar seções de capítulos</string>
     <string name="revanced_hide_chapters_section_summary_on">As seções de capítulos estão ocultas.</string>
     <string name="revanced_hide_chapters_section_summary_off">As seções de capítulos serão exibidas.</string>
+    <string name="revanced_hide_explore_podcast_section_title">Ocultar Explorar a seção de podcasts</string>
+    <string name="revanced_hide_explore_podcast_section_summary_on">A seção \"Explorar podcasts\" está oculta.</string>
+    <string name="revanced_hide_explore_podcast_section_summary_off">A seção \"Explorar podcast\" é exibida.</string>
+    <string name="revanced_hide_featured_links_section_title">Ocultar seção de links em destaque</string>
+    <string name="revanced_hide_featured_links_section_summary_on">A seção de links em destaque está oculta.</string>
+    <string name="revanced_hide_featured_links_section_summary_off">A seção de links em destaque é exibida.</string>
+    <string name="revanced_hide_featured_videos_section_title">Ocultar seção de vídeos em destaque</string>
+    <string name="revanced_hide_featured_videos_section_summary_on">A seção de vídeos em destaque está oculta.</string>
+    <string name="revanced_hide_featured_videos_section_summary_off">A seção de vídeos em destaque é exibida.</string>
+    <string name="revanced_hide_how_this_was_made_section_title">Ocultar a seção \"Como este conteúdo foi criado\"</string>
+    <string name="revanced_hide_how_this_was_made_section_summary_on">A seção \"Como este conteúdo foi criado\" está oculta.</string>
+    <string name="revanced_hide_how_this_was_made_section_summary_off">A seção \"Como este conteúdo foi criado\" é exibida.</string>
     <string name="revanced_hide_hype_points_section_title">Ocultar seção de pontos de hype</string>
     <string name="revanced_hide_hype_points_section_summary_on">A seção de pontos de hype está oculta.</string>
     <string name="revanced_hide_hype_points_section_summary_off">A seção de pontos de destaque é exibida.</string>
+    <string name="revanced_hide_info_cards_section_title">Ocultar seção de cartões de informações</string>
+    <string name="revanced_hide_info_cards_section_summary_on">A seção de cartões informativos está oculta.</string>
+    <string name="revanced_hide_info_cards_section_summary_off">A seção de cartões informativos é exibida.</string>
     <string name="revanced_hide_key_concepts_section_title">Ocultar seção de conceitos principais</string>
     <string name="revanced_hide_key_concepts_section_summary_on">A seção de conceitos principais está oculta.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">A seção de conceitos principais será exibida.</string>
+    <string name="revanced_hide_subscribe_button_title">Ocultar botão de inscrição</string>
+    <string name="revanced_hide_subscribe_button_summary_on">O botão de inscrição está oculto.</string>
     <string name="revanced_hide_transcript_section_title">Ocultar seções de transcrição</string>
     <string name="revanced_hide_transcript_section_summary_on">As seções de transcrição estão ocultas.</string>
     <string name="revanced_hide_transcript_section_summary_off">As seções de transcrição serão exibidas.</string>
@@ -1615,9 +1641,6 @@ info:
     <string name="revanced_hide_shorts_live_header_title">Ocultar o cabeçalho do chat ao vivo</string>
     <string name="revanced_hide_shorts_live_header_summary_on">O cabeçalho do chat ao vivo está oculto.\n\nO botão Voltar no cabeçalho não será ocultado.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">O cabeçalho do chat ao vivo será exibido.\n\nO botão Voltar no cabeçalho não será ocultado.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Ocultar rótulo de promoção paga</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">O rótulo de promoção pago está oculto.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">O rótulo de promoção pago será exibido.</string>
     <string name="revanced_hide_shorts_paused_header_title">Ocultar cabeçalho pausado</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">O cabeçalho pausado está oculto.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">O cabeçalho pausado será exibido.</string>
@@ -2332,6 +2355,8 @@ Isso pode ser usado ao testar algo no MainThread."</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Integrada</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Não lançado, Sem Autenticação)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
+<small>(Legado, em desenvolvimento)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Efeitos colaterais da falsificação</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• O menu de faixa de áudio não está disponível.
 • O volume estável não está disponível.

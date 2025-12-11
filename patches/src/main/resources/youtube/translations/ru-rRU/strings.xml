@@ -429,12 +429,6 @@ Shorts
     <string name="revanced_hide_members_shelf_title">Полка участников</string>
     <string name="revanced_hide_members_shelf_summary_on">Полка участников скрыта.</string>
     <string name="revanced_hide_members_shelf_summary_off">Полка участников отображена.</string>
-    <string name="revanced_hide_visit_community_button_title">Кнопка \"Сообщество\"</string>
-    <string name="revanced_hide_visit_community_button_summary_on">Кнопка \"Сообщество\" скрыта.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">Кнопка \"Сообщество\" отображена.</string>
-    <string name="revanced_hide_visit_store_button_title">Кнопка \"Магазин\"</string>
-    <string name="revanced_hide_visit_store_button_summary_on">Кнопка \"Магазин\" скрыта.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">Кнопка \"Магазин\" отображена.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Посты сообщества</string>
     <string name="revanced_preference_screen_community_posts_summary">Скрытие или отображение постов сообщества в ленте, подписках и канале.</string>
@@ -588,9 +582,6 @@ Shorts
     <string name="revanced_hide_floating_microphone_title">Плавающая кнопка микрофона</string>
     <string name="revanced_hide_floating_microphone_summary_on">Плавающая кнопка микрофона скрыта.</string>
     <string name="revanced_hide_floating_microphone_summary_off">Плавающая кнопка микрофона отображена.</string>
-    <string name="revanced_hide_visual_spacers_title">Визуальные пробелы</string>
-    <string name="revanced_hide_visual_spacers_summary_on">Визуальные пробелы скрыты.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">Визуальные пробелы отображены.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Скрыть диалог возрастного ограничения</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Возрастные ограничения будут приниматься автоматически."</string>
     <string name="revanced_change_live_ring_click_action_title">Действие нажатия на значок прямого эфира</string>
@@ -1572,12 +1563,21 @@ Shorts
     <string name="revanced_hide_explore_podcast_section_title">Секция обзора подкаста</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">Скрыта.</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">Отображена.</string>
+    <string name="revanced_hide_featured_links_section_title">Секция избранных ссылок</string>
+    <string name="revanced_hide_featured_links_section_summary_on">Скрыта.</string>
+    <string name="revanced_hide_featured_links_section_summary_off">Отображена.</string>
+    <string name="revanced_hide_featured_videos_section_title">Секция избранные видео</string>
+    <string name="revanced_hide_featured_videos_section_summary_on">Скрыта.</string>
+    <string name="revanced_hide_featured_videos_section_summary_off">Отображена.</string>
     <string name="revanced_hide_how_this_was_made_section_title">Секция \"Как этот контент был создан\"</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">Скрыта.</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">Отображена.</string>
     <string name="revanced_hide_hype_points_section_title">Секция баллов \"хайпа\"</string>
     <string name="revanced_hide_hype_points_section_summary_on">Скрыта.</string>
     <string name="revanced_hide_hype_points_section_summary_off">Отображена.</string>
+    <string name="revanced_hide_info_cards_section_title">Секция информационных карт</string>
+    <string name="revanced_hide_info_cards_section_summary_on">Скрыта.</string>
+    <string name="revanced_hide_info_cards_section_summary_off">Отображена.</string>
     <string name="revanced_hide_key_concepts_section_title">Секция \"Ключевые понятия\"</string>
     <string name="revanced_hide_key_concepts_section_summary_on">Секция \"Ключевые понятия\" скрыта.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Секция \"Ключевые понятия\" отображена.</string>
@@ -1664,9 +1664,6 @@ Shorts
     <string name="revanced_hide_shorts_live_header_summary_off">Заголовок чата трансляции отображен.
 
 Кнопка возврата в заголовке не будет скрыта.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Метка \"Содержит прямую рекламу\"</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">Метка \"Содержит прямую рекламу\" скрыта.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">Метка \"Содержит прямую рекламу\" отображена.</string>
     <string name="revanced_hide_shorts_paused_header_title">Надпись паузы</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">Надпись паузы скрыта.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">Надпись паузы отображена.</string>
@@ -1918,7 +1915,7 @@ Shorts
     <string name="revanced_preference_screen_video_title">Видео</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Codec -->
     <string name="revanced_preference_category_codec">Кодек</string>
-    <string name="revanced_disable_drc_audio_title">Отключить DRC аудио</string>
+    <string name="revanced_disable_drc_audio_title">DRC аудио</string>
     <string name="revanced_disable_drc_audio_summary_on">Аудио DRC (сжатие динамического диапазона) отключено.</string>
     <string name="revanced_disable_drc_audio_summary_off">Аудио DRC (сжатие динамического диапазона) включено.</string>
     <string name="revanced_disable_hdr_video_title">HDR видео</string>
@@ -1931,7 +1928,7 @@ Shorts
 • Просмотр будет использовать больше трафика, чем с VP9.
 • HDR просмотр недоступен, HDR видео все еще использует VP9 кодек."</string>
     <string name="revanced_disable_vp9_codec_summary_off">VP9 кодек включен.</string>
-    <string name="revanced_enable_opus_codec_title">Включить кодек OPUS</string>
+    <string name="revanced_enable_opus_codec_title">OPUS</string>
     <string name="revanced_enable_opus_codec_summary">Включить кодек OPUS, если содержимое в плеере подходит для кодека.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
     <string name="revanced_preference_category_playback_speed">Скорость просмотра</string>
@@ -2010,7 +2007,7 @@ Shorts
     <string name="revanced_disable_default_playback_speed_music_type_off">Скорость по умолчанию для категории YouTube Музыка включена.</string>
     <!-- PreferenceScreen: Return YouTube Dislike -->
     <string name="revanced_preference_screen_ryd_title">Вернуть YouTube Dislike</string>
-    <string name="revanced_ryd_enable_title">Включить Return YouTube Dislike</string>
+    <string name="revanced_ryd_enable_title">Включить Вернуть YouTube Dislike</string>
     <string name="revanced_ryd_enable_summary_on">Кнопка \"Дизлайк\" отображена.</string>
     <string name="revanced_ryd_enable_summary_off">Кнопка \"Дизлайк\" скрыта.</string>
     <string name="revanced_ryd_shorts_title">Кнопка \"Дизлайк\" в Shorts</string>
