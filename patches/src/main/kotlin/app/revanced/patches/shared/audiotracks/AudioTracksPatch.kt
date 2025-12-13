@@ -36,7 +36,8 @@ internal fun audioTracksPatch(
     executeBlock: BytecodePatchContext.() -> Unit = {},
     fixUseLocalizedAudioTrackFlag: Boolean,
 ) = bytecodePatch(
-    description = "audioTracksPatch",
+    name = "Disable forced auto audio tracks",
+    description = "Adds an option to disable audio tracks from being automatically enabled.",
 ) {
 
     block()
