@@ -255,7 +255,7 @@ object YouTubeClient {
         "$packageName/$clientVersion(Linux; U; Android $osVersion; ${Locale.getDefault()}; $deviceModel Build/$buildId) gzip"
 
     private fun useAV1(): Boolean {
-        return BaseSettings.SPOOF_STREAMING_DATA_VR_ENABLE_AV1.get()
+        return BaseSettings.SPOOF_STREAMING_DATA_ANDROID_VR_ENABLE_AV1_CODEC.get()
     }
 
     private fun useJS(): Boolean {
@@ -393,14 +393,13 @@ object YouTubeClient {
             userAgent = USER_AGENT_ANDROID_VR,
             androidSdkVersion = ANDROID_SDK_VERSION_ANDROID_VR,
             clientVersion = CLIENT_VERSION_ANDROID_VR,
-            supportsCookies = false,
             clientName = "ANDROID_VR",
             friendlyName = if (useAV1())
                 "Android VR AV1"
             else
                 "Android VR"
         ),
-        ANDROID_VR_AUTH(
+        ANDROID_VR_NO_AUTH(
             id = 28,
             deviceMake = DEVICE_MAKE_ANDROID_VR,
             deviceModel = DEVICE_MODEL_ANDROID_VR,
@@ -408,12 +407,12 @@ object YouTubeClient {
             userAgent = USER_AGENT_ANDROID_VR,
             androidSdkVersion = ANDROID_SDK_VERSION_ANDROID_VR,
             clientVersion = CLIENT_VERSION_ANDROID_VR,
-            requireAuth = true,
+            supportsCookies = false,
             clientName = "ANDROID_VR",
             friendlyName = if (useAV1())
-                "Android VR Auth AV1"
+                "Android VR AV1"
             else
-                "Android VR Auth"
+                "Android VR"
         ),
         ANDROID_CREATOR(
             id = 14,
@@ -532,20 +531,18 @@ object YouTubeClient {
         companion object {
             val CLIENT_ORDER_TO_USE: Array<ClientType> = arrayOf(
                 ANDROID_NO_SDK,
-                ANDROID_VR,
                 VISIONOS,
+                ANDROID_VR,
                 ANDROID_CREATOR,
-                ANDROID_VR_AUTH,
             )
             val CLIENT_ORDER_TO_USE_JS: Array<ClientType> = arrayOf(
                 ANDROID_NO_SDK,
-                ANDROID_VR,
                 VISIONOS,
+                ANDROID_VR,
                 ANDROID_CREATOR,
                 TV,
                 TV_SIMPLY,
                 TV_LEGACY,
-                ANDROID_VR_AUTH,
             )
         }
     }

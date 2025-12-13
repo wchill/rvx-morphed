@@ -9,35 +9,36 @@ import android.util.AttributeSet;
 import android.util.Pair;
 import android.widget.LinearLayout;
 
+import app.revanced.extension.shared.innertube.client.YouTubeClient;
 import app.revanced.extension.shared.patches.auth.YouTubeVRAuthPatch;
 import app.revanced.extension.shared.ui.CustomDialog;
 import app.revanced.extension.youtube.settings.Settings;
 
 @SuppressWarnings({"FieldCanBeLocal", "deprecation", "unused"})
-public class SpoofStreamingDataVRAuthTokenPreference extends Preference implements Preference.OnPreferenceClickListener {
+public class SpoofStreamingDataSignInPreference extends Preference implements Preference.OnPreferenceClickListener {
 
     private void init() {
         setSelectable(true);
         setOnPreferenceClickListener(this);
-        setEnabled(Settings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get().name().startsWith("ANDROID_VR"));
+        setEnabled(Settings.SPOOF_STREAMING_DATA_DEFAULT_CLIENT.get() == YouTubeClient.ClientType.ANDROID_VR);
     }
 
-    public SpoofStreamingDataVRAuthTokenPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public SpoofStreamingDataSignInPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init();
     }
 
-    public SpoofStreamingDataVRAuthTokenPreference(Context context, AttributeSet attrs, int defStyleAttr) {
+    public SpoofStreamingDataSignInPreference(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }
 
-    public SpoofStreamingDataVRAuthTokenPreference(Context context, AttributeSet attrs) {
+    public SpoofStreamingDataSignInPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public SpoofStreamingDataVRAuthTokenPreference(Context context) {
+    public SpoofStreamingDataSignInPreference(Context context) {
         super(context);
         init();
     }
@@ -46,9 +47,9 @@ public class SpoofStreamingDataVRAuthTokenPreference extends Preference implemen
     public boolean onPreferenceClick(Preference preference) {
         Context context = getContext();
         Pair<Dialog, LinearLayout> dialogPair;
-        String dialogTitle = str("revanced_spoof_streaming_data_vr_auth_token_dialog_title");
-        String dialogMessage = str("revanced_spoof_streaming_data_vr_auth_token_dialog_message");
-        String resetButtonText = str("revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text");
+        String dialogTitle = str("revanced_spoof_streaming_data_sign_in_android_vr_dialog_title");
+        String dialogMessage = str("revanced_spoof_streaming_data_sign_in_android_vr_dialog_message");
+        String resetButtonText = str("revanced_spoof_streaming_data_sign_in_android_vr_dialog_reset_text");
         if (YouTubeVRAuthPatch.isDeviceCodeAvailable()) {
             dialogPair = CustomDialog.create(
                     context,
@@ -59,11 +60,11 @@ public class SpoofStreamingDataVRAuthTokenPreference extends Preference implemen
                     // No EditText.
                     null,
                     // OK button text.
-                    str("revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text"),
+                    str("revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_authorization_token_text"),
                     // OK button action.
                     () -> {
                         YouTubeVRAuthPatch.setRefreshToken();
-                        YouTubeVRAuthPatch.setAccessToken(true);
+                        YouTubeVRAuthPatch.setAccessToken(context);
                     },
                     // Cancel button action.
                     null,
@@ -84,7 +85,7 @@ public class SpoofStreamingDataVRAuthTokenPreference extends Preference implemen
                     // No EditText.
                     null,
                     // OK button text.
-                    str("revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text"),
+                    str("revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_activation_code_text"),
                     // OK button action.
                     () -> YouTubeVRAuthPatch.setActivationCode(context),
                     // Cancel button action.
