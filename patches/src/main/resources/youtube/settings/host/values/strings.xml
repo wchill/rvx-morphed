@@ -2552,20 +2552,13 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
 <small>(No Auth)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
 <small>(Auth, Action needed)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(Outdated)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
-<small>(WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
 <small>(Legacy)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
-<small>(No PoToken)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Unreleased)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
-<small>(Legacy, WIP)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Spoofing side effects</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Audio track menu is missing.
 • Disable forced auto audio tracks may not be available.
@@ -2580,8 +2573,6 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
 • Disable forced auto audio tracks may not be available.
 • Stable volume is not available.
 • Kids videos may not play when logged out or in incognito mode."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 is not supported.
-• Video may stop at 1:00, or may not be available in some regions."</string>
     <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Audio track menu is missing.
 • If deobfuscation fails, playback may fail.
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
@@ -2589,7 +2580,7 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• If deobfuscation fails, playback may fail.
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
 • Video may start late."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• If deobfuscation fails, playback may fail.
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply">"• If deobfuscation fails, playback may fail.
 • Some accounts may require a PoToken, in which case the playback will fail.
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
 • Video may start late."</string>
