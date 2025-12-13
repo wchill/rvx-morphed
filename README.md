@@ -40,7 +40,6 @@ Report issues [here](https://github.com/inotia00/ReVanced_Extended).
 | `Custom header for YouTube` | Applies a custom header in the top left corner within the app. | 19.05.36 ~ 20.05.46 |
 | `Description components` | Adds options to hide and disable description components. | 19.05.36 ~ 20.05.46 |
 | `Disable QUIC protocol` | Adds an option to disable CronetEngine's QUIC protocol. | 19.05.36 ~ 20.05.46 |
-| `Disable forced auto audio tracks` | Adds an option to disable audio tracks from being automatically enabled. | 19.05.36 ~ 20.05.46 |
 | `Disable forced auto captions` | Adds an option to disable captions from being automatically enabled. | 19.05.36 ~ 20.05.46 |
 | `Disable haptic feedback` | Adds options to disable haptic feedback when swiping in the video player. | 19.05.36 ~ 20.05.46 |
 | `Disable layout updates` | Adds an option to disable layout updates by server. | 19.05.36 ~ 20.05.46 |
@@ -110,7 +109,6 @@ Report issues [here](https://github.com/inotia00/ReVanced_Extended).
 | `Disable Cairo splash animation` | Adds an option to disable Cairo splash animation. | 7.16.53 ~ 8.30.54 |
 | `Disable QUIC protocol` | Adds an option to disable CronetEngine's QUIC protocol. | 6.20.51 ~ 8.30.54 |
 | `Disable dislike redirection` | Adds an option to disable redirection to the next track when clicking the Dislike button. | 6.20.51 ~ 8.30.54 |
-| `Disable forced auto audio tracks` | Adds an option to disable audio tracks from being automatically enabled. | 6.20.51 ~ 8.30.54 |
 | `Disable forced auto captions` | Adds an option to disable captions from being automatically enabled. | 6.20.51 ~ 8.30.54 |
 | `Disable music video in album` | Adds option to redirect music videos from albums for non-premium users. | 6.20.51 ~ 8.30.54 |
 | `Enable debug logging` | Adds an option for debugging. | 6.20.51 ~ 8.30.54 |
