@@ -153,8 +153,7 @@ Limitations:
     <string name="revanced_hide_flyout_menu_remove_from_library_title">Hide Remove from library menu</string>
     <string name="revanced_hide_flyout_menu_remove_from_playlist_title">Hide Remove from playlist menu</string>
     <string name="revanced_hide_flyout_menu_report_title">Hide Report menu</string>
-    <string name="revanced_hide_flyout_menu_save_episode_for_later_title">Hide Save episode for later menu</string>
-    <string name="revanced_hide_flyout_menu_save_to_library_title">Hide Save to library menu</string>
+    <string name="revanced_hide_flyout_menu_save_episode_for_later_save_to_library_title">Hide Save episode for later and Save to library menus</string>
     <string name="revanced_hide_flyout_menu_save_to_playlist_title">Hide Save to playlist menu</string>
     <string name="revanced_hide_flyout_menu_share_title">Hide Share menu</string>
     <string name="revanced_hide_flyout_menu_shuffle_play_title">Hide Shuffle play menu</string>
