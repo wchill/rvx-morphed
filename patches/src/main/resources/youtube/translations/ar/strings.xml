@@ -1160,6 +1160,9 @@
 
 ملاحظة: قد لا تكون بعض روابط البحث المميزة التي لا تحتوي على نمط نص افتراضي مخفية."</string>
     <string name="revanced_hide_comments_highlighted_search_links_summary_off">يتم عرض روابط البحث المميزة.</string>
+    <string name="revanced_hide_comments_information_button_title">إخفاء زر المعلومات</string>
+    <string name="revanced_hide_comments_information_button_summary_on">تم إخفاء زر المعلومات.</string>
+    <string name="revanced_hide_comments_information_button_summary_off">يتم عرض زر المعلومات.</string>
     <string name="revanced_hide_live_chat_messages_title">إخفاء رسائل المحادثات المباشرة</string>
     <string name="revanced_hide_live_chat_messages_summary_on">تم إخفاء رسائل المحادثات المباشرة.\n\nينطبق هذا الإعداد على فيديوهات بث Shorts المباشر أيضًا.</string>
     <string name="revanced_hide_live_chat_messages_summary_off">يتم عرض رسائل المحادثات المباشرة.</string>
@@ -2373,8 +2376,10 @@
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio
 <small>(يتطلب تسجيل الدخول)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"Android <small>(No SDK)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV <small>(Legacy)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(لم يصدر)</small>"</string>
@@ -2386,9 +2391,14 @@
 • 1080p+, AV1, و HDR غير مدعومة."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_no_sdk">• قد يتوقف الفيديو عند الدقيقة 1:00، أو قد لا يكون متاحًا في بعض المناطق.</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• قائمة المقطع الصوتي مفقودة.
+• قد لا يتوفر تعطيل المقطع الصوتي التلقائي المفروض.
 • مستوى الصوت الثابت غير متاح.
 • قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• في حال فشل إزالة التشويش، قد يفشل التشغيل.
+• في بعض الأحيان، قد لا يعمل الفيديو حتى بعد 10 ثوانٍ، وفي هذه الحالة، ستحتاج إلى الضغط على زر إعادة تحميل الفيديو.
+• قد يبدأ الفيديو متأخرًا."</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply">"• في حال فشل إزالة التشويش، قد يفشل التشغيل.
+• قد تتطلب بعض الحسابات رمز PoToken، وفي هذه الحالة سوف تفشل عملية التشغيل.
 • في بعض الأحيان، قد لا يعمل الفيديو حتى بعد 10 ثوانٍ، وفي هذه الحالة، ستحتاج إلى الضغط على زر إعادة تحميل الفيديو.
 • قد يبدأ الفيديو متأخرًا."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• قائمة المقطع الصوتي مفقودة.
@@ -2442,6 +2452,50 @@
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">جرب تغيير العميل الافتراضي إلى TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_title">تمكين ترميز AV1</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_summary_on">"ترميز الفيديو هو AVC (H.264)، أو VP9، أو AV1.
+
+قد يتقطع التشغيل أو تنخفض الإطارات."</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_summary_off">ترميز الفيديو هو AVC (H.264) أو VP9.</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_user_dialog_message">"قد يؤدي تمكين هذا الإعداد إلى استخدام برنامج فك التشفير AV1.
+
+قد يتقطع التشغيل أو تنخفض الإطارات."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_title">تسجيل الدخول إلى Android VR</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_summary">انقر هنا لمعرفة كيفية تسجيل الدخول إلى Android VR.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_title">تسجيل الدخول إلى Android VR</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_message">"لتسجيل الدخول إلى Android VR (YouTube VR)، اتبع إرشادات Google (تفويض حساب جوجل - OAuth 2.0 لتطبيقات التلفزيون والأجهزة ذات الإدخال المحدود):
+
+1. انقر على 'الحصول على رمز التفعيل' لإنشاء رمز التفعيل.
+2. انقر على 'فتح الموقع' للانتقال إلى 'https://yt.be/activate'.
+3. أدخل رمز التفعيل.
+4. سجّل الدخول عند الطلب. إذا كان لديك حسابات Google متعددة، فحدد الحساب الذي تستخدمه مع YouTube. إذا كنت قد سجّلت الدخول بالفعل، فانتقل إلى الخطوة التالية.
+5. بعد تسجيل الدخول، ارجع إلى RVX وانقر على 'تسجيل الدخول إلى Android VR' مرة أخرى.
+6. انقر على 'الحصول على رمز المصادقة' للحصول على رمز التفويض.
+
+※ انقر على 'إعادة تعيين' لإزالة رمز المصادقة أو رمز التفعيل."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_activation_code_text">الحصول على رمز التفعيل</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_authorization_token_text">الحصول على رمز المصادقة</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_reset_text">إعادة تعيين</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_failed">فشل في إصدار رمز المصادقة.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_failed_suggestion">انقر فوق إعادة تعيين ثم حاول مرة أخرى.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_reset">إعادة تعيين رمز المصادقة و رمز التفعيل.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_title">تم تسجيل الدخول</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_message">"تم حفظ رمز المصادقة.
+
+- رمز المصادقة الصادر من خلال هذه العملية لا يمكن استخدامه إلا في YouTube VR(في RVX, يستخدم لجلب بيانات البث من YouTube VR).
+- رمز المصادقة غير مستخدم لأكثر من 6 أشهر سيتم إلغاؤه من خوادم Google.
+- إذا قمت بتغيير كلمة المرور الخاصة بك، أو ألغيت تسجيل جهاز في إعدادات حسابك، أو إلغاء تثبيت التطبيق، سوف تحتاج إلى إعادة إصدار رمز المصادقة."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_title">رمز التفعيل</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_message">"رمز التفعيل:
+%s
+
+1. انقر على 'فتح الموقع' للانتقال إلى 'https://yt.be/activate'.
+2. أدخل رمز التفعيل.
+3. سجّل الدخول عند الطلب. إذا كان لديك حسابات جوجل متعددة، فحدد الحساب الذي تستخدمه مع YouTube. إذا كنت قد سجّلت الدخول بالفعل، فانتقل إلى الخطوة التالية.
+4. بعد تسجيل الدخول، ارجع إلى RVX وانقر على 'تسجيل الدخول إلى Android VR' مرة أخرى.
+5. انقر على 'الحصول على رمز المصادقة' للحصول على رمز التفويض."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_open_website_text">فتح الموقع</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_toast_copy">تم نسخ رمز التفعيل إلى الحافظة: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">استخدام عميل JavaScript</string>

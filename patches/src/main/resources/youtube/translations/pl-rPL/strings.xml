@@ -1179,6 +1179,9 @@ Ograniczenia:
 
 Ograniczenie: niektóre najciekawsze wyniki wyszukiwania w postaci linków, które nie używają domyślnego stylu tekstowego, mogą nie być ukryte"</string>
     <string name="revanced_hide_comments_highlighted_search_links_summary_off">Widoczne</string>
+    <string name="revanced_hide_comments_information_button_title">Przycisk od informacji</string>
+    <string name="revanced_hide_comments_information_button_summary_on">Ukryty</string>
+    <string name="revanced_hide_comments_information_button_summary_off">Widoczny</string>
     <string name="revanced_hide_live_chat_messages_title">Wiadomości z czatu na żywo</string>
     <string name="revanced_hide_live_chat_messages_summary_on">Ukryte\n\nUstawienie te dotyczy również transmisji na żywo w Shortsach.</string>
     <string name="revanced_hide_live_chat_messages_summary_off">Widoczne</string>
@@ -2389,9 +2392,11 @@ Jeśli jesteś użytkownikiem YouTube Premium, to ustawienie te nie jest koniecz
 <small>(Wymagane zalogowanie)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"Android
 <small>(Bez SDK)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
 <small>(Stare)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">Uproszczony TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Wbudowany TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Niewydany)</small>"</string>
@@ -2406,6 +2411,10 @@ Jeśli jesteś użytkownikiem YouTube Premium, to ustawienie te nie jest koniecz
 • stabilna głośność nie jest dostępna
 • filmy dla dzieci mogą się nie odtwarzać będąc zalogowanym lub w trybie incognito"</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• jeśli odszyfrowywanie się nie powiedzie, odtwarzanie może się nie powieść
+• czasem film nie odtwarza się nawet po 10 sekundach, dlatego należy kliknąć przycisk od odświeżenia filmu
+• filmy mogą zacząć się z opóźnieniem"</string>
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply">"• jeśli odszyfrowywanie się nie uda, odtwarzanie może się nie powieść
+• niektóre konto wymagają PoToken, w rezultacie czego odtwarzanie może się nie powieść
 • czasem film nie odtwarza się nawet po 10 sekundach, dlatego należy kliknąć przycisk od odświeżenia filmu
 • filmy mogą zacząć się z opóźnieniem"</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• brakuje menu od ścieżki dźwiękowej
