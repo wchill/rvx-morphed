@@ -1175,6 +1175,9 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
 제한 사항:
 • 기본 텍스트 스타일이 없는 일부 강조 표시된 검색 링크는 숨겨지지 않을 수 있습니다."</string>
     <string name="revanced_hide_comments_highlighted_search_links_summary_off">강조 표시된 검색 링크가 표시됩니다.</string>
+    <string name="revanced_hide_comments_information_button_title">정보 버튼 숨기기</string>
+    <string name="revanced_hide_comments_information_button_summary_on">정보 버튼이 숨겨집니다.</string>
+    <string name="revanced_hide_comments_information_button_summary_off">정보 버튼이 표시됩니다.</string>
     <string name="revanced_hide_live_chat_messages_title">실시간 채팅 메시지 숨기기</string>
     <string name="revanced_hide_live_chat_messages_summary_on">실시간 채팅 메시지가 숨겨집니다.\n\n이 설정은 Shorts 실시간 스트림에도 적용됩니다.</string>
     <string name="revanced_hide_live_chat_messages_summary_off">실시간 채팅 메시지가 표시됩니다.</string>
@@ -1669,6 +1672,9 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player -->
     <string name="revanced_preference_screen_shorts_player_title">Shorts 플레이어</string>
     <string name="revanced_preference_screen_shorts_player_summary">Shorts 플레이어에서 구성요소를 숨기거나 표시할 수 있습니다.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_title">자동 더빙 라벨 숨기기</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_on">자동 더빙 라벨이 숨겨집니다.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_off">자동 더빙 라벨이 표시됩니다.</string>
     <string name="revanced_hide_shorts_channel_bar_title">채널바 숨기기</string>
     <string name="revanced_hide_shorts_channel_bar_summary_on">채널바가 숨겨집니다.</string>
     <string name="revanced_hide_shorts_channel_bar_summary_off">채널바가 표시됩니다.</string>
@@ -2386,24 +2392,14 @@ YouTube Premium 사용자라면 이 설정이 필요하지 않을 수 있습니�
 <small>(로그인이 요구됨)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"Android
 <small>(SDK 없음)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
-<small>(인증 없음)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
-<small>(인증 있음, 작업이 필요함)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(구형)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
-<small>(개발 중)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
 <small>(기존)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
-<small>(PoToken 없음)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(미출시)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
-<small>(기존, 개발 중)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">변경에 따른 부작용</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• 오디오 트랙 메뉴가 표시되지 않습니다.
 • 강제 사용이 설정된 오디오 트랙이 비활성화되지 않을 수 있습니다.
@@ -2412,22 +2408,13 @@ YouTube Premium 사용자라면 이 설정이 필요하지 않을 수 있습니�
 • 1080p+, AV1 그리고 HDR 동영상은 지원되지 않습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_no_sdk">• 동영상이 1:00에 멈출 수 있으며, 일부 지역에서는 이용이 불가능할 수 있습니다.</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• 오디오 트랙 메뉴가 표시되지 않습니다.
-• 안정적인 볼륨을 사용할 수 없습니다.
-• 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• 오디오 트랙 메뉴가 표시되지 않습니다.
 • 강제 사용이 설정된 오디오 트랙이 비활성화되지 않을 수 있습니다.
 • 안정적인 볼륨을 사용할 수 없습니다.
 • 로그인을 하지 않았거나 시크릿 모드에서는 Kids 동영상이 재생되지 않을 수 있습니다."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1이 지원되지 않습니다.
-• 동영상이 1:00에 멈출 수 있으며, 일부 지역에서는 이용이 불가능할 수 있습니다."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• 오디오 트랙 메뉴가 표시되지 않습니다.
-• 복호화에 실패하면 재생이 실패할 수 있습니다.
-• 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 새로고침 버튼을 탭해야 합니다.
-• 동영상이 늦게 시작될 수 있습니다."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• 복호화에 실패하면 재생이 실패할 수 있습니다.
 • 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 새로고침 버튼을 탭해야 합니다.
 • 동영상이 늦게 시작될 수 있습니다."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• 복호화에 실패하면 재생이 실패할 수 있습니다.
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply">"• 복호화에 실패하면 재생이 실패할 수 있습니다.
 • 일부 계정은 PoToken이 필요할 수 있으며, 이 경우에 재생이 실패합니다.
 • 간혹 10초가 지나도 동영상이 재생되지 않는 경우가 있습니다. 이 경우에는 동영상 새로고침 버튼을 탭해야 합니다.
 • 동영상이 늦게 시작될 수 있습니다."</string>
@@ -2482,43 +2469,50 @@ VP9은 AVC보다 고급 코덱이지만, 일부 사용자는 '360p VP9'보다 '1
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">기본 클라이언트를 TV로 변경해 보세요.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">VR AV1 활성화하기</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"동영상 코덱이 AVC (H.264), VP9 또는 AV1으로 결정됩니다.
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_title">AV1 코덱 활성화하기</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_summary_on">"동영상 코덱이 AVC (H.264), VP9 또는 AV1으로 결정됩니다.
 
 동영상 재생이 끊기거나 프레임이 손실될 수 있습니다."</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">동영상 코덱이 AVC (H.264) 또는 VP9으로 결정됩니다.</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"이 설정을 활성화하면, 소프트웨어 AV1 디코딩이 사용될 수 있습니다.
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_summary_off">동영상 코덱이 AVC (H.264) 또는 VP9으로 결정됩니다.</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_user_dialog_message">"이 설정을 활성화하면, 소프트웨어 AV1 디코딩이 사용될 수 있습니다.
 
 동영상 재생이 끊기거나 프레임이 손실될 수 있습니다."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Android VR 인증 있음에 대한 정보</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">인증 토큰을 받는 방법을 보려면 여기를 탭하세요.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">인증 토큰 받기</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Android VR을 위한 인증 토큰을 받으려면 활성화 코드를 사용하여 YouTube VR에 로그인해야 합니다:
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_title">Android VR에 로그인하기</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_summary">Android VR에 로그인하는 방법을 보려면 여기를 탭하세요.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_title">Android VR에 로그인하기</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_message">"Android VR (YouTube VR)에 로그인하기는 Google에서 제공하는 가이드라인 (Google 계정 승인 - TV 및 입력 제한 기기 애플리케이션을 위한 OAuth 2.0)을 따릅니다.
 
 1. '활성화 코드 받기'를 탭하여 활성화 코드를 생성합니다.
 2. '웹사이트 열기'를 탭하여 'https://yt.be/activate'로 이동합니다.
 3. 활성화 코드를 입력합니다.
-4. 로그인을 요청하면 로그인합니다. 여러 Google 계정이 있는 경우에는 YouTube에서 사용하는 계정을 선택합니다. 이미 로그인된 상태라면 다음 단계로 건너뜁니다.
-5. 로그인 후에 RVX로 돌아가서 'Android VR 인증 있음에 대한 정보'를 다시 탭합니다.
-6. '인증 토큰 받기'를 탭하여 인증 토큰을 받습니다.
+4. 로그인이 요청되면 로그인합니다. 여러 Google 계정이 있는 경우에는 YouTube에서 사용하는 계정을 선택합니다. 이미 로그인된 상태라면 다음 단계로 건너뜁니다.
+5. 로그인 후에 RVX로 돌아가서 'Android VR에 로그인하기'를 다시 탭합니다.
+6. '승인 토큰 받기'를 탭하여 승인 토큰을 받습니다.
 
-※ 인증 토큰 또는 활성화 코드를 삭제하려면 '초기화'를 탭하세요."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">활성화 코드 받기</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">인증 토큰 받기</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">초기화</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">인증 토큰과 활성화 코드를 초기화하였습니다.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">인증 토큰을 저장하였습니다.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">활성화 코드</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"활성화 코드:
+* '인증 토큰 또는 활성화 코드를 삭제하려면 '초기화'를 탭하세요."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_activation_code_text">활성화 코드 받기</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_authorization_token_text">승인 토큰 받기</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_reset_text">초기화</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_failed">인증 토큰을 발급할 수 없습니다.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_failed_suggestion">초기화를 탭하여 다시 시도하세요.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_reset">인증 토큰 및 활성화 코드를 초기화하였습니다.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_title">로그인하였습니다</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_message">"인증 토큰을 저장하였습니다.
+
+• 이 과정을 통해 발급된 인증 토큰은 YouTube VR에서만 사용할 수 있습니다 (RVX에서는 YouTube VR에서 스트리밍 데이터를 가져오는 데 사용됩니다).
+• 6개월 이상 사용되지 않은 인증 토큰은 Google 서버에서 취소됩니다.
+• 비밀번호를 변경하거나 계정 설정에서 기기 등록을 해제하거나 앱을 삭제하면 인증 토큰을 다시 발급받아야 합니다."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_title">활성화 코드</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_message">"활성화 코드:
 %s
 
 1. '웹사이트 열기'를 탭하여 'https://yt.be/activate'로 이동합니다.
 2. 활성화 코드를 입력합니다.
-3. 로그인을 요청하면 로그인합니다. 여러 Google 계정이 있는 경우에는 YouTube에서 사용하는 계정을 선택합니다. 이미 로그인된 상태라면 다음 단계로 건너뜁니다.
-4. 로그인 후에 RVX로 돌아가서 'Android VR 인증 있음에 대한 정보'를 다시 탭합니다.
-5. '인증 토큰 받기'를 탭하여 인증 토큰을 받습니다."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">웹사이트 열기</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">활성화 코드를 클립보드에 복사하였습니다: %s.</string>
+3. 로그인이 요청되면 로그인합니다. 여러 Google 계정이 있는 경우에는 YouTube에서 사용하는 계정을 선택합니다. 이미 로그인된 상태라면 다음 단계로 건너뜁니다.
+4. 로그인 후에 RVX로 돌아가서 'Android VR에 로그인하기'를 다시 탭합니다.
+5. '승인 토큰 받기'를 탭하여 승인 토큰을 받습니다."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_open_website_text">웹사이트 열기</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_toast_copy">활성화 코드를 클립보드에 복사하였습니다: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">JavaScript 클라이언트 사용하기</string>

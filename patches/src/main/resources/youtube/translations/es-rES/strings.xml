@@ -419,12 +419,24 @@ Pulsa aquí para saber más sobre DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Listas de reproducción
 Tienda"</string>
+    <string name="revanced_hide_community_button_title">Ocultar botón \"Comunidad\"</string>
+    <string name="revanced_hide_community_button_summary_on">El botón \"Comunidad\" está oculto.</string>
+    <string name="revanced_hide_community_button_summary_off">El botón \"Comunidad\" está visible.</string>
+    <string name="revanced_hide_join_button_in_channel_page_title">Ocultar botón \"Unirme\"</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_on">El botón \"Unirme\" está oculto.</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_off">El botón \"Unirme\" está visible.</string>
     <string name="revanced_hide_links_preview_title">Ocultar vista previa de enlaces</string>
     <string name="revanced_hide_links_preview_summary_on">La vista previa de enlaces está oculta.</string>
     <string name="revanced_hide_links_preview_summary_off">La vista previa de enlaces está visible.</string>
     <string name="revanced_hide_members_shelf_title">Ocultar estante de miembros</string>
     <string name="revanced_hide_members_shelf_summary_on">El estante de miembros está oculto.</string>
     <string name="revanced_hide_members_shelf_summary_off">El estante de miembros está visible.</string>
+    <string name="revanced_hide_store_button_title">Ocultar botón \"Tienda\"</string>
+    <string name="revanced_hide_store_button_summary_on">El botón \"Tienda\" está oculto.</string>
+    <string name="revanced_hide_store_button_summary_off">El botón \"Tienda\" está visible.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_title">Ocultar botón \"Suscribirme\"</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_on">El botón \"Suscribirme\" está oculto.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_off">El botón \"Suscribirme\" está visible.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Publicaciones de la comunidad</string>
     <string name="revanced_preference_screen_community_posts_summary">Ocultar o mostrar las publicaciones de la comunidad en el feed y el canal.</string>
@@ -567,6 +579,9 @@ Es posible que esto no funcione para algunos usuarios. Si no funciona para ti:
     <string name="revanced_hide_floating_microphone_title">Ocultar botón flotante del micrófono</string>
     <string name="revanced_hide_floating_microphone_summary_on">El botón flotante del micrófono está oculto.</string>
     <string name="revanced_hide_floating_microphone_summary_off">El botón flotante del micrófono está visible.</string>
+    <string name="revanced_hide_visual_spacer_title">Ocultar espaciador visual</string>
+    <string name="revanced_hide_visual_spacer_summary_on">El espaciador visual está oculto.</string>
+    <string name="revanced_hide_visual_spacer_summary_off">El espaciador visual está visible.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Eliminar diálogo de discreción del espectador</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Elimina el diálogo de discreción del espectador.
 Esto no evita la restricción de edad. Solo la acepta automáticamente."</string>
@@ -1628,6 +1643,9 @@ Información:
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player -->
     <string name="revanced_preference_screen_shorts_player_title">Reproductor de Shorts</string>
     <string name="revanced_preference_screen_shorts_player_summary">Ocultar o mostrar los componentes en el reproductor de Shorts.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_title">Ocultar etiqueta de doblaje automático</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_on">La etiqueta de doblaje automático está oculta.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_off">La etiqueta de doblaje automático está visible.</string>
     <string name="revanced_hide_shorts_channel_bar_title">Ocultar barra de canales</string>
     <string name="revanced_hide_shorts_channel_bar_summary_on">La barra de canales está oculta.</string>
     <string name="revanced_hide_shorts_channel_bar_summary_off">La barra de canales está visible.</string>
@@ -1640,12 +1658,18 @@ Información:
     <string name="revanced_hide_shorts_live_header_title">Ocultar cabecera del chat en directo</string>
     <string name="revanced_hide_shorts_live_header_summary_on">La cabecera del chat en directo está oculta.\n\nEl botón de volver atrás en la cabecera no se ocultará.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">La cabecera del chat en directo está visible.\n\nEl botón de volver atrás en la cabecera no se ocultará.</string>
+    <string name="revanced_hide_shorts_live_preview_title">Ocultar vista previa en directo</string>
+    <string name="revanced_hide_shorts_live_preview_summary_on">La vista previa en directo está oculta.\n\nAunque esté activada, las transmisiones en directo de Shorts no se eliminan por completo de la secuencia de Shorts.</string>
+    <string name="revanced_hide_shorts_live_preview_summary_off">La vista previa en directo está visible.</string>
     <string name="revanced_hide_shorts_paused_header_title">Ocultar cabecera pausada</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">La cabecera pausada está oculta.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">La cabecera pausada está visible.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_title">Ocultar botones superpuestos en pausa</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_on">Los botones superpuestos en pausa están ocultos.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_off">Los botones superpuestos en pausa están visibles.</string>
+    <string name="revanced_hide_shorts_preview_comment_title">Ocultar vista previa de comentarios</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_on">La vista previa de comentarios está oculta.</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_off">La vista previa de comentarios está visible.</string>
     <string name="revanced_hide_shorts_shopping_button_title">Ocultar botón de compras</string>
     <string name="revanced_hide_shorts_shopping_button_summary_on">El botón de compras está oculto.</string>
     <string name="revanced_hide_shorts_shopping_button_summary_off">El botón de compras está visible.</string>
@@ -2339,25 +2363,16 @@ Esto se puede utilizar al probar algo en el MainThread."</string>
 <small>(Inicio de sesión requerido)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"Android
 <small>(sin SDK)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
-<small>(Autenticación, acción necesaria)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(obsoleto, sin autenticación)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web móvil
-<small>(todavía en desarrollo)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV
 <small>(todavía en desarrollo)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
 <small>(Antiguo)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV simple
-<small>(Sin PoToken)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV integrado
 <small>(todavía en desarrollo)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(no publicado, sin autenticación)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
-<small>(antiguo, todavía en desarrollo)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Efectos secundarios de falsificación</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Falta el menú de la pista de audio.
 • El volumen estable no está disponible.
@@ -2367,22 +2382,11 @@ Esto se puede utilizar al probar algo en el MainThread."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Falta el menú de pista de audio.
 • El volumen estable no está disponible.
 • Es posible que los vídeos para niños no se reproduzcan con la sesión cerrada o en modo incógnito."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Falta el menú de pista de audio.
-• Desactivar pistas de audio automáticas forzadas no está disponible.
-• El volumen estable no está disponible.
-• Es posible que los vídeos para niños no se reproduzcan con la sesión cerrada o en modo incógnito."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 no es compatible.
-• El vídeo puede detenerse en 1:00 o no estar disponible en algunas regiones."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Falta el menú de la pista de audio.
-• La opción de desactivar las pistas de audio automáticas forzadas no está disponible.
-• Si la desofuscación falla, la reproducción puede fallar.
-• A veces, el vídeo no se reproducirá incluso después de 10 segundos, en cuyo caso deberás pulsar en el botón de recargar vídeo.
-• El vídeo puede comenzar tarde."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• El códec AVC (H.264) puede no estar disponible.
 • Si la desofuscación falla, la reproducción puede fallar.
 • A veces, el vídeo no se reproducirá incluso después de 10 segundos, en cuyo caso deberás pulsar en el botón de recargar vídeo.
 • El vídeo puede comenzar tarde."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• Si la desofuscación falla, la reproducción puede fallar.
+    <string name="revanced_spoof_streaming_data_side_effects_tv_simply">"• Si la desofuscación falla, la reproducción puede fallar.
 • Algunas cuentas pueden requerir un PoToken, en cuyo caso la reproducción fallará.
 • A veces, el vídeo no se reproducirá incluso después de 10 segundos, en cuyo caso deberás pulsar en el botón de recargar vídeo.
 • El vídeo puede comenzar tarde."</string>
@@ -2437,43 +2441,48 @@ Se utiliza→ 1080p VP9."</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Puede que no hayas iniciado sesión.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Activar VR AV1</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"El códec de vídeo es AVC (H.264), VP9 o AV1.
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_title">Activar códec AV1</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_summary_on">"El códec de vídeo es AVC (H.264), VP9 o AV1.
 
 La reproducción se puede atascar o perder fotogramas."</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">El códec de vídeo es AVC (H.264) o VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Si activas este ajuste, es posible que se utilice la decodificación AV1 por software.
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_summary_off">El códec de vídeo es AVC (H.264) o VP9.</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_user_dialog_message">"Si activas este ajuste, es posible que se utilice la decodificación AV1 por software.
 
 La reproducción se puede atascar o perder fotogramas."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Acerca de la autenticación de Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Pulsa para ver cómo obtener un token de autenticación.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Obtener token de autorización</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Para obtener un token de autorización para Android VR, debes iniciar sesión en YouTube VR utilizando un código de activación:
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_title">Iniciar sesión en Android VR</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_summary">Pulsa aquí para ver cómo iniciar sesión en Android VR.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_title">Iniciar sesión en Android VR</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_message">"El inicio de sesión en Android VR (YouTube VR) sigue las directrices proporcionadas por Google: \"Autorización de cuenta de Google - OAuth 2.0 para aplicaciones de TV y dispositivos de entrada limitada\":
 
 1. Pulsa en \"Obtener código de activación\" para generar un código de activación.
 2. Pulsa en \"Abrir sitio web\" para ir a \"https://yt.be/activate\".
 3. Introduce el código de activación.
-4. Inicia sesión cuando se te solicite. Si tienes varias cuentas de Google, selecciona la cuenta que utilizas con YouTube. Si ya has iniciado sesión, salta al siguiente paso.
-5. Una vez iniciada la sesión, vuelve a RVX y pulsa de nuevo en \"Acerca de la autenticación de Android VR\".
+4. Inicia sesión cuando se te solicite. Si tienes varias cuentas de Google, selecciona la cuenta que utilizas con YouTube. Si ya has iniciado sesión, ve al siguiente paso.
+5. Una vez que hayas iniciado sesión, vuelve a RVX y pulsa en \"Iniciar sesión en Android VR\" de nuevo.
 6. Pulsa en \"Obtener token de autorización\" para obtener un token de autorización.
 
-※ Pulsa \"Restablecer\" para eliminar un token de autenticación o un código de activación."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Obtener código de activación</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Obtener token de autorización</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Restablecer</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Token de autenticación y código de activación restablecido.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Token de autenticación guardado.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Código de activación</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Código de activación:
+※ Pulsa en \"Restablecer\" para eliminar un token de autenticación o un código de activación."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_activation_code_text">Obtener código de activación</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_authorization_token_text">Obtener token de autorización</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_reset_text">Restablecer</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_reset">Token de autenticación y código de activación restablecidos.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_title">Sesión iniciada</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_message">"Token de autenticación guardado.
+
+- El token de autenticación emitido a través de este proceso solo se puede utilizar en YouTube VR (en RVX, se utiliza para obtener datos de transmisión de YouTube VR).
+- Los servidores de Google revocarán el token de autenticación que no se haya utilizado durante más de 6 meses.
+- Si cambias tu contraseña, o cancelas el registro de un dispositivo en la configuración de tu cuenta, o desinstalas la aplicación, tendrás que volver a emitir el token de autenticación."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_title">Código de activación</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_message">"Código de activación:
 %s
 
 1. Pulsa en \"Abrir sitio web\" para ir a \"https://yt.be/activate\".
 2. Introduce el código de activación.
-3. Inicia sesión cuando se te solicite. Si tienes varias cuentas de Google, selecciona la cuenta que utilizas con YouTube. Si ya has iniciado sesión, pasa al siguiente paso.
+3. Inicia sesión cuando se te solicite. Si tienes varias cuentas de Google, selecciona la cuenta que utilizas con YouTube. Si ya has iniciado sesión, ve al siguiente paso.
 4. Una vez que hayas iniciado sesión, vuelve a RVX y pulsa de nuevo en \"Acerca de la autenticación de Android VR\".
 5. Pulsa en \"Obtener token de autorización\" para obtener un token de autorización."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Abrir sitio web</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Código de activación copiado al portapapeles: %s.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_open_website_text">Abrir sitio web</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_toast_copy">Código de activación copiado al portapapeles: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (todavía en desarrollo)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Usar cliente JavaScript</string>

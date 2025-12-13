@@ -423,12 +423,24 @@
 Shorts
 Плейлисты
 Магазин"</string>
+    <string name="revanced_hide_community_button_title">Кнопка \"Сообщество\"</string>
+    <string name="revanced_hide_community_button_summary_on">Скрыта.</string>
+    <string name="revanced_hide_community_button_summary_off">Отображена.</string>
+    <string name="revanced_hide_join_button_in_channel_page_title">Кнопка \"Присоединиться\"</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_on">Скрыта.</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_off">Отображена.</string>
     <string name="revanced_hide_links_preview_title">Предпросмотр ссылок</string>
     <string name="revanced_hide_links_preview_summary_on">Предпросмотр ссылок включен.</string>
     <string name="revanced_hide_links_preview_summary_off">Предпросмотр ссылок отключен.</string>
     <string name="revanced_hide_members_shelf_title">Полка участников</string>
     <string name="revanced_hide_members_shelf_summary_on">Полка участников скрыта.</string>
     <string name="revanced_hide_members_shelf_summary_off">Полка участников отображена.</string>
+    <string name="revanced_hide_store_button_title">Кнопка \"Магазин\"</string>
+    <string name="revanced_hide_store_button_summary_on">Скрыта.</string>
+    <string name="revanced_hide_store_button_summary_off">Отображена.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_title">Кнопка \"Подписаться\"</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_on">Скрыта.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_off">Отображена.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Посты сообщества</string>
     <string name="revanced_preference_screen_community_posts_summary">Скрытие или отображение постов сообщества в ленте, подписках и канале.</string>
@@ -582,6 +594,9 @@ Shorts
     <string name="revanced_hide_floating_microphone_title">Плавающая кнопка микрофона</string>
     <string name="revanced_hide_floating_microphone_summary_on">Плавающая кнопка микрофона скрыта.</string>
     <string name="revanced_hide_floating_microphone_summary_off">Плавающая кнопка микрофона отображена.</string>
+    <string name="revanced_hide_visual_spacer_title">Визуальный разделитель</string>
+    <string name="revanced_hide_visual_spacer_summary_on">Скрыт.</string>
+    <string name="revanced_hide_visual_spacer_summary_off">Отображен.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Скрыть диалог возрастного ограничения</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Возрастные ограничения будут приниматься автоматически."</string>
     <string name="revanced_change_live_ring_click_action_title">Действие нажатия на значок прямого эфира</string>
@@ -1648,6 +1663,9 @@ Shorts
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player -->
     <string name="revanced_preference_screen_shorts_player_title">Плеер Shorts</string>
     <string name="revanced_preference_screen_shorts_player_summary">Компоненты в плеере Shorts.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_title">Авто-дублированная метка</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_on">Скрыта.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_off">Отображена.</string>
     <string name="revanced_hide_shorts_channel_bar_title">Панель канала</string>
     <string name="revanced_hide_shorts_channel_bar_summary_on">Панель канала скрыта.</string>
     <string name="revanced_hide_shorts_channel_bar_summary_off">Панель канала отображена.</string>
@@ -1664,12 +1682,20 @@ Shorts
     <string name="revanced_hide_shorts_live_header_summary_off">Заголовок чата трансляции отображен.
 
 Кнопка возврата в заголовке не будет скрыта.</string>
+    <string name="revanced_hide_shorts_live_preview_title">Просмотр в реальном времени</string>
+    <string name="revanced_hide_shorts_live_preview_summary_on">Предпросмотр скрыт.
+
+Даже если функция включена, прямые трансляции Shorts не удаляются полностью из последовательности роликов.</string>
+    <string name="revanced_hide_shorts_live_preview_summary_off">Отображен.</string>
     <string name="revanced_hide_shorts_paused_header_title">Надпись паузы</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">Надпись паузы скрыта.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">Надпись паузы отображена.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_title">Фоновые кнопки во время паузы</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_on">Фоновые кнопки во время паузы скрыты.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_off">Фоновые кнопки во время паузы отображены.</string>
+    <string name="revanced_hide_shorts_preview_comment_title">Предпросмотр комментария</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_on">Скрыт.</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_off">Отображен.</string>
     <string name="revanced_hide_shorts_shopping_button_title">Кнопка \"Покупки\"</string>
     <string name="revanced_hide_shorts_shopping_button_summary_on">Кнопка \"Покупки\" скрыта.</string>
     <string name="revanced_hide_shorts_shopping_button_summary_off">Кнопка \"Покупки\" отображена.</string>
@@ -2365,25 +2391,14 @@ Shorts
 <small>(Требуется вход)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"Android
 <small>(без SDK)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
-<small>(Необходима авторизация)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(Просрочено, Не авторизовано)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web
-<small>(В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">ТВ
 <small>(В разработке)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
 <small>(Старый)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"ТВ Простой
-<small>(Без PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Встроенный ТВ
 <small>(В разработке)</small></string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Не релизный, Не авторизован)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
-<small>(Старый, В разработке)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Эффекты от подмены</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Аудио меню пропадет.
 • Стабильная громкость не доступна.
@@ -2393,25 +2408,10 @@ Shorts
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Аудио меню пропадет.
 • Стабильная громкость не доступна.
 • Детские видео могут не проигрываться без логина или в режиме инкогнито."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Отсутствует меню аудиодорожки.
-• Отключение принудительных авто дорожек звука недоступно.
-• Стабильная громкость недоступна.
-• Детские видео не проигрываются при выходе из системы или в режиме инкогнито."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 не поддерживается.
-• Видео может останавливаться в 1:00, или не работать в некоторых регионах."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Отсутствует меню аудиодорожки.
-• Отключить недоступные принудительные дорожки автозвука.
-• При ошибке разобфускации кода, просмотр может завершиться неудачей.
-• Иногда видео не проигрывается даже через 10 секунд, есть кнопка перезагрузить видео.
-• Видео может начинаться с опозданием."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Кодек AVC (H.264) может быть недоступен.
 • Если деобфускация не удалась, воспроизведение может быть прервано.
 • Иногда видео не воспроизводится даже через 10 секунд, в этом случае необходимо нажать кнопку \"Перезагрузить видео\".
 • Видео может запускаться с опозданием."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• Если деобфускация не удается, просмотр может завершиться неудачей.
-• Может потребоваться PoToken, без него просмотр завершится ошибкой.
-• Иногда просмотр видео не будет доступен даже через 10 сек, тогда перезагрузить видео.
-• Видео может начинаться с опозданием."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Аудио меню пропадет.
 • Детские видео могут не проигрываться без логина или в режиме инкогнито.
 • Примененный, не релизный, клиент может прекратить работу в любой момент."</string>
@@ -2459,42 +2459,6 @@ VP9 более продвинутый кодек, чем AVC, но некото�
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Возможно, Вы не вошли в систему.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Включить VR AV1</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"Видео кодек AVC (H.264), VP9 или AV1.
-
-Проигрывание может запинаться или будут потери кадров."</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">Видео кодек AVC (H.264) или VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"При включении используется программный кодек AV1.
-
-Проигрывание может запинаться или будут потери кадров."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">О Android VR авторизации</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Нажмите, чтобы посмотреть, как получить токен авторизации.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Получить токен авторизации</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Для получения токена авторизации Android VR, войдите в YouTube VR, используя код активации:
-
-1. Нажмите \"Получить код активации\" для генерации кода активации.
-2. Нажмите 'Открыть веб-сайт', чтобы перейти на 'https://yt.be/activate' и введите код активации.
-3. Когда появится запрос войдите в аккаунт Google, который используете для YouTube. Если вход уже выполнен, перейдите к следующему шагу.
-4. После входа вернитесь к RVX и снова нажмите \"О Android VR авторизации\".
-5. Нажмите 'Получить токен авторизации'.
-
-※ нажмите 'Сброс', чтобы удалить токен аутентификации или код активации."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Получить код активации</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Получить токен авторизации</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Сброс</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Токен аутентификации и код активации сброшены.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Токен авторизации сохранен.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Код активации</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Код активации:
-%s
-
-1. Нажмите 'Открыть веб-сайт', чтобы перейти к 'https://yt.be/activate'.
-2. Введите код активации.
-3. Когда появится запрос войдите в аккаунт Google, который используете для YouTube. Если вход уже выполнен, перейдите к следующему шагу.
-4. После входа вернитесь к RVX и нажмите 'О Android VR авторизации' снова.
-5. Нажмите 'Получить токен авторизации', чтобы получить токен авторизации."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Открыть сайт</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Код активации скопирован в буфер обмена: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript (В разработке)</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Использовать клиент JavaScript</string>

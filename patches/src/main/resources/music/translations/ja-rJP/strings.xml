@@ -104,8 +104,6 @@
     <string name="revanced_hide_flyout_menu_remove_from_library_title">「ライブラリから削除」を非表示</string>
     <string name="revanced_hide_flyout_menu_remove_from_playlist_title">「プレイリストから削除」を非表示</string>
     <string name="revanced_hide_flyout_menu_report_title">「報告」を非表示</string>
-    <string name="revanced_hide_flyout_menu_save_episode_for_later_title">「エピソードを保存」を非表示</string>
-    <string name="revanced_hide_flyout_menu_save_to_library_title">「ライブラリに保存」を非表示</string>
     <string name="revanced_hide_flyout_menu_save_to_playlist_title">「再生リストに保存」を非表示</string>
     <string name="revanced_hide_flyout_menu_share_title">「共有」を非表示</string>
     <string name="revanced_hide_flyout_menu_shuffle_play_title">シャッフル再生メニューを非表示</string>
@@ -464,11 +462,8 @@ API キーの発行方法については、ここをタップしてください�
 YouTube Premiumを利用の場合この設定は不要かもしれません。"</string>
     <string name="revanced_spoof_streaming_data_default_client_title">デフォルトのクライアント</string>
     <string name="revanced_spoof_streaming_data_default_client_summary">偽装するデフォルトのクライアントを定義します。</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobile Web</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
     <string name="revanced_watch_history_type_title">再生履歴の種類</string>
     <string name="revanced_watch_history_type_summary">"・オリジナル：　Google アカウントの視聴履歴設定に従いますが、DNSやVPNにより視聴履歴が機能しない場合があります。

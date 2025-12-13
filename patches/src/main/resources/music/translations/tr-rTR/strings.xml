@@ -105,8 +105,6 @@ Bilinen sorunlar:
     <string name="revanced_hide_flyout_menu_remove_from_library_title">Kitaplıktan kaldır menüsünü gizle</string>
     <string name="revanced_hide_flyout_menu_remove_from_playlist_title">\"Oynatma listesinden kaldır\" menüsünü gizle</string>
     <string name="revanced_hide_flyout_menu_report_title">Rapor menüsünü gizle</string>
-    <string name="revanced_hide_flyout_menu_save_episode_for_later_title">Bölümü daha sonra için kaydet menüsünü gizle</string>
-    <string name="revanced_hide_flyout_menu_save_to_library_title">Kitaplığa kaydet menüsünü gizle</string>
     <string name="revanced_hide_flyout_menu_save_to_playlist_title">Oynatma listesine kaydet menüsünü gizle</string>
     <string name="revanced_hide_flyout_menu_share_title">Paylaş menüsünü gizle</string>
     <string name="revanced_hide_flyout_menu_shuffle_play_title">Karışık çal menüsünü gizle</string>
@@ -481,11 +479,8 @@ YouTube Premium kullanıcısıysanız bu ayar gerekli olmayabilir."</string>
 
 Bilinen Sorunlar:
 • Oynatma sırasında ses aralıklı olarak takılabilir.</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Oluşturucu</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobil İnternet</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Gömülü TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">vizyon işletim sistemi</string>
     <string name="revanced_watch_history_type_title">İzleme geçmişi türü</string>
     <string name="revanced_watch_history_type_summary">"- Orijinal: Google hesabının izleme geçmişi ayarlarını takip eder, ancak izleme geçmişi DNS veya VPN nedeniyle çalışmayabilir.

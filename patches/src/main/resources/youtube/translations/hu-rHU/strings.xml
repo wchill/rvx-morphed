@@ -419,12 +419,24 @@ Koppints ide, ha többet szeretnél megtudni a DeArrow-ról."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shortok
 Lejátszási listák
 Áruház"</string>
+    <string name="revanced_hide_community_button_title">Közösség gomb elrejtése</string>
+    <string name="revanced_hide_community_button_summary_on">A közösség gomb rejtett.</string>
+    <string name="revanced_hide_community_button_summary_off">A közösség gomb látható.</string>
+    <string name="revanced_hide_join_button_in_channel_page_title">Csatlakozás gomb elrejtése</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_on">A csatlakozás gomb rejtett.</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_off">A csatlakozás gomb látható.</string>
     <string name="revanced_hide_links_preview_title">Linkek előnézetének elrejtése</string>
     <string name="revanced_hide_links_preview_summary_on">A linkek előnézete rejtett.</string>
     <string name="revanced_hide_links_preview_summary_off">A linkek előnézete látható.</string>
     <string name="revanced_hide_members_shelf_title">Tagok polcának elrejtése</string>
     <string name="revanced_hide_members_shelf_summary_on">A tagok polca rejtett.</string>
     <string name="revanced_hide_members_shelf_summary_off">A tagok polca látható.</string>
+    <string name="revanced_hide_store_button_title">Áruház gomb elrejtése</string>
+    <string name="revanced_hide_store_button_summary_on">Az áruház gomb rejtett.</string>
+    <string name="revanced_hide_store_button_summary_off">Az áruház gomb látható.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_title">Feliratkozás gomb elrejtése</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_on">A feliratkozás gomb rejtett.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_off">A feliratkozás gomb látható.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Közösségi bejegyzések</string>
     <string name="revanced_preference_screen_community_posts_summary">Közösségi bejegyzések elrejtése vagy mutatása a hírfolyamban és a csatornán.</string>
@@ -570,6 +582,9 @@ Ez egyes felhasználóknál nem biztos, hogy működik, ha Önnek nem működik:
     <string name="revanced_hide_floating_microphone_title">Lebegő mikrofon gomb elrejtése</string>
     <string name="revanced_hide_floating_microphone_summary_on">A lebegő mikrofon gomb el van rejtve.</string>
     <string name="revanced_hide_floating_microphone_summary_off">A lebegő mikrofon gomb látható.</string>
+    <string name="revanced_hide_visual_spacer_title">Vizuális távolságtartó elrejtése</string>
+    <string name="revanced_hide_visual_spacer_summary_on">A vizuális távolságtartó rejtett.</string>
+    <string name="revanced_hide_visual_spacer_summary_off">A vizuális távolságtartó látható.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Távolítsa el a nézői diszkréciós párbeszédpanelt</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Eltávolítja a nézői belátás párbeszédpanelt.
 Ez nem kerüli meg a korhatárt. Csak automatikusan fogadja el."</string>
@@ -1652,6 +1667,9 @@ Mellékhatás: előfordulhat, hogy a 'Te' lapon a 'Videóelőzmények' polc rejt
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player -->
     <string name="revanced_preference_screen_shorts_player_title">Shorts lejátszó</string>
     <string name="revanced_preference_screen_shorts_player_summary">Komponensek elrejtése vagy megjelenítése a Shorts lejátszójában.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_title">Automatikusan szinkronizált címke elrejtése</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_on">Az automatikusan szinkronizált címke rejtett.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_off">Az automatikusan szinkronizált címke látható.</string>
     <string name="revanced_hide_shorts_channel_bar_title">Csatornasáv elrejtése</string>
     <string name="revanced_hide_shorts_channel_bar_summary_on">A csatornasáv el van rejtve.</string>
     <string name="revanced_hide_shorts_channel_bar_summary_off">A csatornasáv látható.</string>
@@ -1664,12 +1682,18 @@ Mellékhatás: előfordulhat, hogy a 'Te' lapon a 'Videóelőzmények' polc rejt
     <string name="revanced_hide_shorts_live_header_title">Élő csevegés fejlécének elrejtése</string>
     <string name="revanced_hide_shorts_live_header_summary_on">Az élő csevegés fejléce el van rejtve.\n\nA fejlécben található Vissza gomb nem lesz elrejtve.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">Az élő csevegés fejléce látható.</string>
+    <string name="revanced_hide_shorts_live_preview_title">Élő előnézet elrejtése</string>
+    <string name="revanced_hide_shorts_live_preview_summary_on">Az élő előnézet rejtett.\n\nMég ha ez engedélyezve is van, a Shortok élő közvetítései nem törlődnek teljesen a rövid videók sorozatából.</string>
+    <string name="revanced_hide_shorts_live_preview_summary_off">Az élő előnézet látható.</string>
     <string name="revanced_hide_shorts_paused_header_title">Szüneteltetett fejléc elrejtése</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">A szüneteltetett fejléc elrejtve.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">A szüneteltetett fejléc látható.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_title">Szüneteltetett videóvezérlő gombok elrejtése</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_on">A szüneteltetett videóvezérlő gombok el vannak rejtve.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_off">A szüneteltetett fedő gombok láthatóak.</string>
+    <string name="revanced_hide_shorts_preview_comment_title">Megjegyzés előnézet elrejtése</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_on">A megjegyzés előnézet rejtett.</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_off">A megjegyzés előnézet látható.</string>
     <string name="revanced_hide_shorts_shopping_button_title">Vásárlás gomb elrejtése</string>
     <string name="revanced_hide_shorts_shopping_button_summary_on">A vásárlás gomb el van rejtve</string>
     <string name="revanced_hide_shorts_shopping_button_summary_off">A vásárlás gomb látható.</string>
@@ -2366,24 +2390,12 @@ Ha YouTube Premium felhasználó vagy, akkor ez a beállítás nem feltétlenül
 <small>(Belépés szükséges)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"Android
 <small>(Nincs SDK)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
-<small>(Nincs hitelesítés)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
-<small>(Hitelesítés, művelet szükséges)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(Elavult)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobil webböngésző
-<small>(fejlesztés alatt)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
 <small>(Örökölt)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Egyszerű
-<small>(Nincs PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV beágyazott</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Kiadatlan)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Böngésző
-<small>(Örökölt, fejlesztés alatt)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Hamisítás mellékhatásai</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Hiányzik a hangsáv menü.
 • A kényszerített automatikus hangsávok letiltása nem mindig érhető el.
@@ -2394,23 +2406,9 @@ Ha YouTube Premium felhasználó vagy, akkor ez a beállítás nem feltétlenül
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Hiányzik a hangsáv menüje.
 • Nem érhető el stabil hangerő.
 • Előfordulhat, hogy a gyerekeknek szóló videók nem játszhatók le kijelentkezéskor vagy inkognitómódban."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Hiányzik a hangsáv menü.
-• A kényszerített automatikus hangsávok letiltása nem mindig érhető el.
-• A stabil hangerő nem érhető el.
-• Előfordulhat, hogy a gyerekeknek szóló videók nem játszhatók le kijelentkezéskor vagy inkognitómódban."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• Az AV1 nem támogatott.
-• A videó 1:00-nál leállhat, vagy bizonyos régiókban nem érhető el."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Hiányzik a hangsáv menüje.
-• Ha a deobfuszkáció sikertelen, a lejátszás sikertelen lehet.
-• Előfordulhat, hogy a videó 10 másodperc után sem indul el, ilyenkor a videó újratöltése gombra kell kattintani.
-• Előfordulhat, hogy a videó késik."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Ha az élesítés sikertelen, a lejátszás sikertelen lehet.
 • Előfordulhat, hogy a videó 10 másodperc után sem indul el, ilyenkor a videó újratöltése gombra kell kattintani.
 • Előfordulhat, hogy a videó késik."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• Ha a deobfuszkáció sikertelen, a lejátszás sikertelen lehet.
-• Egyes fiókokhoz PoToken szükséges, ebben az esetben a lejátszás sikertelen lesz.
-• Előfordulhat, hogy a videó 10 másodperc után sem indul el, ilyenkor a videó újratöltése gombra kell kattintani.
-• Előfordulhat, hogy a videó késve indul el."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Hiányzik a hangsáv menüje.
 • Előfordulhat, hogy a gyerekeknek szóló videók nem játszhatók le kijelentkezéskor vagy inkognitómódban.
 • Mivel ez egy kiadatlan kliens, bármikor leállhat a működése."</string>
@@ -2462,43 +2460,6 @@ Ha ez a beállítás engedélyezve van, a szerver válaszából származó legma
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Próbálja meg az alapértelmezett klienst TV-re módosítani.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">VR AV1 engedélyezése</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"A videó kodek AVC (H.264), VP9 vagy AV1.
-
-A lejátszás akadozhat vagy kimaradhatnak képkockák."</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">A videó kodek AVC (H.264) vagy VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Ennek a beállításnak az engedélyezése szoftveres AV1 dekódolást eredményezhet.
-
-A lejátszás akadozhat vagy kimaradhatnak képkockák."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Android VR hitelesítésről</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Kattintson ide, ha szeretné megtudni, hogyan szerezhet be hitelesítési tokent.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Hitelesítési token beszerzése</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Android VR hitelesítési token beszerzéséhez be kell jelentkezned a YouTube VR-ba egy aktiváló kóddal:
-
-1. Kattints az 'Aktiválási kód beszerzése' gombra az aktiváló kód létrehozásához.
-2. Kattints a 'Weboldal megnyitása' gombra a 'https://yt.be/activate' oldal eléréséhez.
-3. Add meg az aktiváló kódot.
-4. Jelentkezz be, amikor a rendszer kéri. Ha több Google-fiókod van, válaszd ki a YouTube-bal használt fiókot. Ha már be vagy jelentkezve, ugorj a következő lépésre.
-5. Miután bejelentkeztél, térj vissza az RVX-be, és kattints ismét az 'Android VR hitelesítésről' lehetőségre.
-6. Kattints az 'Engedélyezési token beszerzése' gombra az engedélyezési token beszerzéséhez.
-
-※ Kattintson a 'Visszaállítás' gombra a hitelesítési token vagy aktiválási kód eltávolításához."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Aktiváló kód beszerzése</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Hitelesítési token beszerzése</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Visszaállítás</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Hitelesítési token és aktiválási kód visszaállítása.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Hitelesítési token mentve.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Aktivációs kód</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Aktiváló kód:
-%s
-
-1. Kattints a 'Weboldal megnyitása' gombra a 'https://yt.be/activate' oldal eléréséhez.
-2. Add meg az aktiváló kódot.
-3. Jelentkezz be, amikor a rendszer kéri. Ha több Google-fiókod van, válaszd ki azt a fiókot, amelyet a YouTube-bal használsz. Ha már be vagy jelentkezve, ugorj a következő lépésre.
-4. Miután bejelentkeztél, térj vissza az RVX-be, és kattints ismét az 'Android VR hitelesítésről' lehetőségre.
-5. Kattints az 'Engedélyezési token beszerzése' gombra az engedélyezési tokenek beszerzéséhez."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Weboldal megnyitása</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Aktiváló kód a vágólapra másolva: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">JavaScript kliens használata</string>

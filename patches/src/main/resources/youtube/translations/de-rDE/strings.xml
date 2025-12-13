@@ -2308,17 +2308,7 @@ This can be used when testing something on the MainThread."</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Default client</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio
 <small>(Login required)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
-<small>(No Auth)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
-<small>(Auth, Aktion erforderlich)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(Outdated, No Auth)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
-<small>(WIP, No Auth)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
-<small>(No PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Unreleased, No Auth)</small>"</string>
@@ -2331,21 +2321,7 @@ This can be used when testing something on the MainThread."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Audio track menu is missing.
 • Stable volume is not available.
 • Kids videos may not play when logged out or in incognito mode."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Audiospurmenü fehlt.
-• Stabile Lautstärke ist nicht verfügbar.
-• Erzwungene automatische Audiospuren deaktivieren ist nicht verfügbar.
-• Kindervideos können nicht abgespielt werden, wenn sie ausgeloggt oder im Inkognito-Modus sind."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 is not supported.
-• Video may stop at 1:00, or may not be available in some regions."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Audio track menu is missing.
-• If deobfuscation fails, playback may fail.
-• Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
-• Video may start late."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• If deobfuscation fails, playback may fail.
-• Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
-• Video may start late."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• If deobfuscation fails, playback may fail.
-• Some accounts may require a PoToken, in which case the playback will fail.
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
 • Video may start late."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Audio track menu is missing.
@@ -2399,43 +2375,6 @@ Example 2:
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Du bist möglicherweise nicht eingeloggt.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">VR AV1 aktivieren</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"Der Videocodec ist AVC (H.264), VP9 oder AV1.
-
-Die Wiedergabe kann ruckeln oder Bilder auslassen."</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">Video Codec ist AVC (H.264) oder VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Durch Aktivieren dieser Einstellung wird möglicherweise die Software-AV1-Decodierung verwendet.
-
-Die Wiedergabe kann ruckeln oder Bilder auslassen."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Über Android VR Auth</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Klicken Sie hier, um zu erfahren, wie Sie einen Authentifizierungstoken erhalten.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Autorisierungs-Token erhalten</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Um ein Autorisierungs-Token für Android VR zu erhalten, sollten Sie sich bei YouTube VR einloggen, indem Sie einen Aktivierungscode verwenden:
-
-1. Klicken Sie auf 'Aktivierungs-Code', um einen Aktivierungscode zu generieren.
-2. Klicke auf \"Webseite öffnen\" um auf \"https://yt.be/activate\" zu gelangen.
-3. Gib den Aktivierungscode ein.
-4. Melde dich an, wenn du dazu aufgefordert wirst. Wenn Sie mehrere Google-Konten haben, wählen Sie das Konto aus, das Sie mit YouTube verwenden. Wenn Sie bereits angemeldet sind, springen Sie zum nächsten Schritt.
-5. Sobald Sie sich angemeldet haben, zurück zu RVX und klicken Sie erneut auf 'Über Android VR Auth'.
-6. Klicken Sie auf \"Autorisierungs-Token\" um ein Autorisierungs-Token-Token zu erhalten.
-
-※ Klicken Sie auf \"Zurücksetzen\", um einen Authentifizierungs-Token-oder Aktivierungscode zu entfernen."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Aktivierungscode erhalten</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Autorisierungs-Token erhalten</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Zurücksetzen</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Authentifizierungs-Token und Aktivierungscode zurückgesetzt.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Authentifizierungs-Token gespeichert.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Aktivierungscode</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Aktivierungscode:
-%s
-
-1. Klicken Sie auf 'Webseite öffnen' um zu 'https://yt.be/activate' zu gelangen.
-2. Geben Sie den Aktivierungscode ein.
-3. Melden Sie sich an, wenn Sie aufgefordert werden. Wenn Sie mehrere Google-Konten haben, wählen Sie das Konto, das Sie mit YouTube verwenden. Wenn Sie bereits angemeldet sind, überspringen Sie zum nächsten Schritt.
-4. Sobald Sie sich angemeldet haben, kehren Sie zu RVX zurück und klicken Sie erneut auf 'Über Android VR Auth'.
-5. Klicken Sie auf \"Autorisierungs-Token\" um ein Autorisierungs-Token-Token zu erhalten."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Webseite öffnen</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Aktivierungscode in Zwischenablage kopiert: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Use JavaScript client</string>

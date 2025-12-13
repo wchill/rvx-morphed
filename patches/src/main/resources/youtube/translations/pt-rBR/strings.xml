@@ -2339,24 +2339,12 @@ Isso pode ser usado ao testar algo no MainThread."</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio
 <small>(Login necessário)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"&lt;small&gt;(Sem SDK)&lt;/pequeno&gt;"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
-<small>(Sem Autenticação)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
-<small>(Autenticação, Ação necessária)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(Desatualizado, Sem Autenticação)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
-<small>(WIP, Sem Autenticação)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
 <small>(Legado)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simples
-<small>(Sem PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Integrada</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Não lançado, Sem Autenticação)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
-<small>(Legado, em desenvolvimento)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Efeitos colaterais da falsificação</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• O menu de faixa de áudio não está disponível.
 • O volume estável não está disponível.
@@ -2366,21 +2354,7 @@ Isso pode ser usado ao testar algo no MainThread."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• O menu de faixa de áudio não está disponível.
 • O volume estável não está disponível.
 • Os vídeos para crianças podem não reproduzir quando desconectado ou em modo anônimo."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• O menu de faixa de áudio não está disponível.
-• Desativar faixas de áudio automáticas forçadas não estão disponíveis.
-• O volume estável não está disponível.
-• Os vídeos para crianças podem não reproduzir quando desconectado ou em modo anônimo."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 não é suportado.
-• O vídeo pode parar em 1:00 ou não pode estar disponível em algumas regiões."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• O menu da faixa de áudio não está disponível.
-• Se a desofuscação falhar, a reprodução poderá falhar.
-• Às vezes, o vídeo não será reproduzido mesmo após 10 segundos, caso em que você precisará clicar no botão recarregar vídeo.
-• O vídeo pode começar tarde."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Se a desofuscação falhar, a reprodução poderá falhar.
-• Às vezes, o vídeo não será reproduzido mesmo após 10 segundos, caso em que você precisará clicar no botão recarregar vídeo.
-• O vídeo pode começar tarde."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• Se a desofuscação falhar, a reprodução poderá falhar.
-• Algumas contas podem exigir um PoToken, caso em que a reprodução falhará.
 • Às vezes, o vídeo não será reproduzido mesmo após 10 segundos, caso em que você precisará clicar no botão recarregar vídeo.
 • O vídeo pode começar tarde."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• O menu de faixa de áudio não está disponível.
@@ -2434,43 +2408,6 @@ Exemplo 2:
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Tente alterar o cliente padrão para TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Ativar VR AV1</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"A codificação do vídeo é AVC (H.264), VP9 ou AV1.
-
-A reprodução pode travar ou perder quadros."</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">O codec de vídeo é AVC (H.264) ou VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Habilitar essa configuração pode usar o software de decodificação AV1.
-
-A reprodução pode travar ou perder quadros."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Sobre o Android VR Autenticação</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Clique para ver como obter um token de autenticação.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Obter Token de autorização</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Para obter um token de autorização para Android VR, você deve entrar no YouTube VR usando um código de ativação:
-
-1. Clique em 'Obter código de ativação' para gerar um código de ativação.
-2. Clique em 'Abrir site' para ir para 'https://yt.be/activate'.
-3. Insira o código de ativação.
-4. Faça o login quando solicitado. Se você tem várias Contas do Google, selecione a conta que você usa com o YouTube. Se você já está logado, pule para o próximo passo.
-5. Depois de entrar, volte ao RVX e clique 'Sobre o Android VR Autenticação' novamente.
-6. Clique em 'Obter token de autorização' para obter um token de autorização.
-
-※ Clique em 'Redefinir' para remover um token de autenticação ou código de ativação."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Obter código de ativação</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Obter token de autorização</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Redefinir</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Token de autenticação e código de ativação redefinido.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Token de autenticação salvo.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Código de ativação</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Código de ativação:
-%s
-
-1. Clique em 'Abrir site' para ir em 'https://yt.be/activate'.
-2. Digite o código de ativação.
-3. Faça o login quando solicitado. Se você tiver várias contas do Google, selecione a conta que você usa com o YouTube. Se você já está logado, pule para o próximo passo.
-4. Uma vez logado, retorne ao RVX e clique em 'Sobre o Android VR Autenticação' novamente.
-5. Clique em 'Obter token de autorização' para obter um token de autorização."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Abrir site</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Código de ativação copiado para a área de transferência: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Usar cliente JavaScript</string>

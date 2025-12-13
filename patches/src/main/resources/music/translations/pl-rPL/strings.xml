@@ -139,8 +139,6 @@ Ograniczenia:
     <string name="revanced_hide_flyout_menu_remove_from_library_title">Ukryj menu od usuwania z biblioteki</string>
     <string name="revanced_hide_flyout_menu_remove_from_playlist_title">Ukryj menu od usuwania z playlist</string>
     <string name="revanced_hide_flyout_menu_report_title">Ukryj menu od zgłaszania</string>
-    <string name="revanced_hide_flyout_menu_save_episode_for_later_title">Ukryj menu od zapisywania odcinka na później</string>
-    <string name="revanced_hide_flyout_menu_save_to_library_title">Ukryj menu od dodawania do biblioteki</string>
     <string name="revanced_hide_flyout_menu_save_to_playlist_title">Ukryj menu od dodawania do playlisty</string>
     <string name="revanced_hide_flyout_menu_share_title">Ukryj menu od udostępniania</string>
     <string name="revanced_hide_flyout_menu_shuffle_play_title">Ukryj menu od odtwarzania losowo</string>
@@ -523,57 +521,11 @@ Ograniczenie: utwory sklasyfikowane dla dzieci mogą nie być przekierowywane."<
 Jeśli jesteś użytkownikiem YouTube Premium, to ustawienie te nie jest konieczne."</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Domyślny klient</string>
     <string name="revanced_spoof_streaming_data_default_client_summary">Definiuje domyślnego klienta do oszukiwania.</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">Android (bez SDK)</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">Android VR z autoryzacją (wymaga akcji)</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobilny przeglądarkowy</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">TV (Stare)</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Wbudowany TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_about_title">O Androidzie bez autoryzacji SDK</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_about_summary">Kliknij, by zobaczyć jak uzyskać token uwierzytelniający.</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_title">Uzyskaj token uwierzytelniający</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_message">"By uzyskać token uwierzytelniający dla Android VR, należy zalogować się na swoje konto Google, tak jak do GmsCore:
-
-1. Kliknij 'Uzyskaj token uwierzytelniający', by zalogować się w trybie WebView
-2. Zaloguj się na swoje konto Google
-
-※ Kliknij 'Zresetuj', by usunąć token uwierzytelniający."</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_get_authorization_token_text">Uzyskaj token uwierzytelniający</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_reset_text">Zresetuj</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_toast_reset">Zresetowano token uwierzytelniający.</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_toast_success">Zapisano token uwierzytelniający.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">O Android VR z autoryzacją</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Kliknij, by zobaczyć jak uzyskać token uwierzytelniający.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Uzyskaj token uwierzytelniający</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"By uzyskać token uwierzytelniający dla Android VR, należy zalogować się do YouTube VR za pomocą kodu aktywacyjnego:
-
-1. Kliknij 'Uzyskaj token uwierzytelniający', by wygenerować kod aktywacyjny
-2. Kliknij 'Otwórz stronę', aby przejść do 'https://yt.be/activate'
-3. Wprowadź kod aktywacyjny
-4. Zaloguj się, gdy pojawi się monit. Jeśli masz wiele kont Google, użyj tego, którego używasz w YouTube. Jeśli jesteś już zalogowany, przejdź do następnego kroku
-5. Po zalogowaniu się, wróć do RVX i kliknij ponownie 'O Android VR z autoryzacją'
-6. Kliknij 'Uzyskaj token uwierzytelniający', by go zdobyć
-
-※ Kliknij 'Zresetuj', by usunąć token uwierzytelniający lub kod aktywacyjny."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Uzyskaj kod aktywacyjny</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Uzyskaj token uwierzytelniający</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Zresetuj</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Zresetowano token uwierzytelniający i kod aktywacyjny.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Zapisano token uwierzytelniający.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Kod aktywacyjny</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Kod aktywacyjny:
-%s
-
-1. Kliknij 'Otwórz stronę', aby przejść do 'https://yt.be/activate'
-2. Wprowadź kod aktywacyjny
-3. Zaloguj się, gdy pojawi się monit. Jeśli masz wiele kont Google, użyj tego, którego używasz w YouTube. Jeśli jesteś już zalogowany, przejdź do następnego kroku
-4. Po zalogowaniu się, wróć do RVX i kliknij ponownie 'O Android VR z autoryzacją'
-5. Kliknij 'Uzyskaj token uwierzytelniający', by go zdobyć"</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Otwórz stronę</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Skopiowano kod aktywacyjny do schowka: %s.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Nie można przechwycić żadnego ze strumieni klienta.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Spróbuj zmienić domyślnego klienta na TV.</string>
     <string name="revanced_watch_history_type_title">Typ historii oglądania</string>

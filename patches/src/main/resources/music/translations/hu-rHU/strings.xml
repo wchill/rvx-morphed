@@ -103,8 +103,6 @@ Korlátozások:
     <string name="revanced_hide_flyout_menu_remove_from_library_title">Eltávolítás a könyvtárból menü elrejtése</string>
     <string name="revanced_hide_flyout_menu_remove_from_playlist_title">Eltávolítás a lejátszási listáról menü elrejtése</string>
     <string name="revanced_hide_flyout_menu_report_title">Jelentés menü elrejtése</string>
-    <string name="revanced_hide_flyout_menu_save_episode_for_later_title">Rész elmentése későbbre menü elrejtése</string>
-    <string name="revanced_hide_flyout_menu_save_to_library_title">Mentés a könyvtárba menü elrejtése</string>
     <string name="revanced_hide_flyout_menu_save_to_playlist_title">Mentés a lejátszási listába menü elrejtése</string>
     <string name="revanced_hide_flyout_menu_share_title">Megosztás menü elrejtése</string>
     <string name="revanced_hide_flyout_menu_shuffle_play_title">Kevert lejátszás menü elrejtése</string>

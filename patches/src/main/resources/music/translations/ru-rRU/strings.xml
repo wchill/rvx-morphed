@@ -139,8 +139,6 @@
     <string name="revanced_hide_flyout_menu_remove_from_library_title">Скрыть пункт \"Удалить из библиотеки\"</string>
     <string name="revanced_hide_flyout_menu_remove_from_playlist_title">Скрыть пункт \"Удалить из плейлиста\"</string>
     <string name="revanced_hide_flyout_menu_report_title">Скрыть пункт \"Пожаловаться\"</string>
-    <string name="revanced_hide_flyout_menu_save_episode_for_later_title">Скрыть пункт \"Слушать позже\"</string>
-    <string name="revanced_hide_flyout_menu_save_to_library_title">Скрыть пункт \"Сохранить в библиотеке\"</string>
     <string name="revanced_hide_flyout_menu_save_to_playlist_title">Скрыть пункт \"Добавить в плейлист\"</string>
     <string name="revanced_hide_flyout_menu_share_title">Скрыть пункт \"Поделиться\"</string>
     <string name="revanced_hide_flyout_menu_shuffle_play_title">Скрыть пункт \"Перемешать\"</string>
@@ -518,57 +516,15 @@
 Если вы являетесь пользователем YouTube Premium, эта настройка может быть не нужна."</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Клиент по умолчанию</string>
     <string name="revanced_spoof_streaming_data_default_client_summary">Определяет клиент по умолчанию для подмены.</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">Android без SDK</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_music_no_sdk">Android Music без SDK</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">Android VR авторизация (требуется действие)</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">Мобильный веб</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">ТВ</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">Предыдущий ТВ</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Встроенный ТВ</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_about_title">О Android No SDK авторизации</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_about_summary">Нажмите, чтобы посмотреть, как получить токен авторизации.</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_title">Получить токен авторизации</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_message">"Для получения токена авторизации для Android No SDK, необходимо войти в свою учётную запись Google, как при использовании GmsCore:
-
-1. Нажмите 'Получить токен авторизации', чтобы открыть страницу входа в WebView.
-2. Войдите в свою учётную запись Google.
-
-※ Нажмите 'Сброс', чтобы удалить токен авторизации."</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_get_authorization_token_text">Получить токен авторизации</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_dialog_reset_text">Сброс</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_toast_reset">Токен аутентификации сброшен.</string>
-    <string name="revanced_spoof_streaming_data_no_sdk_auth_token_toast_success">Токен аутентификации сохранен.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">О Android VR авторизации</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Нажмите, чтобы узнать, как получить токен аутентификации.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Получить Токен Авторизации</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Для получения токена авторизации Android VR, войдите в YouTube VR, используя код активации:
-
-1. Нажмите \"Получить код активации\" для генерации кода активации.
-2. Нажмите 'Открыть веб-сайт', чтобы перейти на 'https://yt.be/activate' и введите код активации.
-3. Введите код активации.
-4. Когда появится запрос войдите в аккаунт Google, который используете для YouTube. Если вход уже выполнен, перейдите к следующему шагу.
-5. После входа вернитесь к RVX и снова нажмите \"О Android VR авторизации\".
-6. Нажмите 'Получить токен авторизации', для получения токена авторизации.
-
-※ нажмите 'Сброс', чтобы удалить токен аутентификации или код активации."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Получить код активации</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Получить токен авторизации</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Сбросить</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Токен аутентификации и код активации сброшены.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Токен аутентификации сохранен.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Код активации</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Код активации:
-%s
-
-1. Нажмите 'Открыть веб-сайт', чтобы перейти к 'https://yt.be/activate'.
-2. Введите код активации.
-3. Когда появится запрос войдите в аккаунт Google, который используете для YouTube. Если вход уже выполнен, перейдите к следующему шагу.
-4. После входа вернитесь к RVX и нажмите 'О Android VR авторизации' снова.
-5. Нажмите 'Получить токен авторизации', чтобы получить токен авторизации."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Открыть сайт</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Код активации скопирован в буфер обмена: %s.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_no_sdk_about_title">Войти в Android без SDK</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_no_sdk_dialog_title">Войти в Android без SDK</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_no_sdk_dialog_reset_text">Сброс</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Не получены клиентские потоки.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Попробуйте изменить клиент по умолчанию на ТВ.</string>
     <string name="revanced_watch_history_type_title">Тип истории просмотра</string>

@@ -1670,6 +1670,9 @@ Playlists
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player -->
     <string name="revanced_preference_screen_shorts_player_title">Οθόνη αναπαραγωγής Shorts</string>
     <string name="revanced_preference_screen_shorts_player_summary">Απόκρυψη ή εμφάνιση στοιχείων στην οθόνη αναπαραγωγής Shorts.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_title">Ετικέτα «Αυτόματη μεταγλώττιση»</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_on">Κρυμμένη.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_off">Εμφανίζεται.</string>
     <string name="revanced_hide_shorts_channel_bar_title">Γραμμή καναλιού</string>
     <string name="revanced_hide_shorts_channel_bar_summary_on">Κρυμμένη.</string>
     <string name="revanced_hide_shorts_channel_bar_summary_off">Εμφανίζεται.</string>
@@ -2390,24 +2393,12 @@ Playlists
 <small>(Απαιτείται σύνδεση)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"Android
 <small>(No SDK)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
-<small>(χωρίς σύνδεση χρήστη)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
-<small>(με σύνδεση χρήστη, απαιτείται ενέργεια)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(Ξεπερασμένο)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web Κινητού
-<small>(λειτουργία σε εξέλιξη)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
 <small>(Παλιό)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
-<small>(Χωρίς PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Ακυκλοφόρητο)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
-<small>(λειτουργία σε εξέλιξη)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Παρενέργειες παραποίησης</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Το μενού «Κομμάτι ήχου» λείπει.
 • O εξαναγκασμός αρχικής γλώσσας ήχου δεν είναι διαθέσιμoς.
@@ -2418,23 +2409,9 @@ Playlists
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Το μενού «Κομμάτι ήχου» λείπει.
 • Η λειτουργία «Σταθερή ένταση» δεν είναι διαθέσιμη.
 • Τα βίντεο για παιδιά ενδέχεται να μην αναπαράγονται αν είστε αποσυνδεμένοι ή σε λειτουργία ανώνυμης περιήγησης."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Το μενού «Κομμάτι ήχου» λείπει.
-• Η ρύθμιση «Απενεργοποίηση υποχρεωτικών κομματιών ήχου» δεν είναι διαθέσιμη.
-• Η λειτουργία «Σταθερή ένταση» δεν είναι διαθέσιμη.
-• Τα βίντεο για παιδιά ενδέχεται να μην αναπαράγονται αν είστε αποσυνδεμένοι ή σε λειτουργία ανώνυμης περιήγησης."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• Ο κωδικοποιητής AV1 δεν υποστηρίζεται.
-• Το βίντεο μπορεί να σταματήσει στο 1:00, ή να μην είναι διαθέσιμο σε ορισμένες περιοχές."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Το μενού «Κομμάτι ήχου» λείπει.
-• Αν η αποσυσκότιση αποτύχει, θα αποτύχει και η αναπαραγωγή.
-• Αν το βίντεο δεν ξεκινήσει εντός 10 δευτερολέπτων, πατήστε το κουμπί επαναφόρτωσης βίντεο.
-• Η αναπαραγωγή μπορεί να ξεκινήσει με καθυστέρηση."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Αν η αποσυσκότιση αποτύχει, θα αποτύχει και η αναπαραγωγή.
 • Η αναπαραγωγή ενδέχεται να ξεκινάει με καθυστέρηση.
 • Αν το βίντεο δεν ξεκινήσει εντός 10 δευτερολέπτων, πατήστε το κουμπί επαναφόρτωσης βίντεο."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• Αν η αποσυσκότιση αποτύχει, θα αποτύχει και η αναπαραγωγή.
-• Για κάποιους λογαριασμούς απαιτείται PoToken, οπότε σε αυτή την περίπτωση η αναπαραγωγή θα αποτύχει.
-• Αν το βίντεο δεν ξεκινήσει εντός 10 δευτερολέπτων, πατήστε το κουμπί επαναφόρτωσης βίντεο.
-• Η αναπαραγωγή ενδέχεται να ξεκινάει με καθυστέρηση."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Το μενού «Κομμάτι ήχου» λείπει.
 • Τα βίντεο για παιδιά ενδέχεται να μην αναπαράγονται αν είστε αποσυνδεμένοι ή σε λειτουργία ανώνυμης περιήγησης.
 • Πρόκεται για ένα ακυκλοφόρητο πρόγραμμα πελάτη, οπότε μπορεί να σταματήσει να λειτουργεί ανά πάσα στιγμή."</string>
@@ -2485,43 +2462,6 @@ Playlists
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Δοκιμάστε να αλλάξετε το προεπιλεγμένο πρόγραμμα πελάτη παραποίησης δεδομένων ροής σε TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Ενεργοποίηση VR AV1</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"Ο κωδικοποιητής βίντεο είναι ο AVC (H.264), ο VP9 ή ο AV1.
-
-Η αναπαραγωγή μπορεί να κομπιάζει ή να χάνει καρέ."</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">Ο κωδικοποιητής βίντεο είναι ο AVC (H.264) ή ο VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Η ενεργοποίηση αυτής της ρύθμισης ενδέχεται να έχει ως αποτέλεσμα τη χρήση αποκωδικοποίησης AV1.
-
-Η αναπαραγωγή μπορεί να κομπιάζει ή να χάνει καρέ."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Σχετικά με το Android VR (με σύνδεση χρήστη)</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Πατήστε για να δείτε πώς να αποκτήσετε ένα διακριτικό εξουσιοδότησης.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Λήψη Διακριτικού Εξουσιοδότησης</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Για να αποκτήσετε ένα διακριτικό εξουσιοδότησης για χρήση του πελάτη Android VR, θα πρέπει να συνδεθείτε στο YouTube VR χρησιμοποιώντας έναν κωδικό ενεργοποίησης:
-
-1. Πατήστε «Λήψη κωδικού ενεργοποίησης» για να δημιουργήσετε έναν κωδικό ενεργοποίησης.
-2. Πατήστε «Άνοιγμα ιστοσελίδας» για να μεταβείτε στο 'https://yt.be/activate'.
-3. Εισάγετε τον κωδικό ενεργοποίησης.
-4. Συνδεθείτε όταν σας ζητηθεί. Αν έχετε πολλαπλούς λογαριασμούς Google, επιλέξτε τον λογαριασμό που χρησιμοποιείτε με το YouTube. Αν έχετε συνδεθεί ήδη, συνεχίστε στο επόμενο βήμα.
-5. Μόλις συνδεθείτε, επιστρέψτε στο RVX και πατήστε το «Σχετικά με το Android VR (με σύνδεση χρήστη)» ξανά.
-6. Πατήστε «Λήψη διακριτικού εξουσιοδότησης» για να λάβετε διακριτικό εξουσιοδότησης.
-
-※ Πατήστε «Επαναφορά» για να καταργήσετε το διακριτικό εξουσιοδότησης ή τον κωδικό ενεργοποίησης."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Λήψη κωδικού ενεργοποίησης</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Λήψη διακριτικού εξουσιοδότησης</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Επαναφορά</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Το διακριτικό και ο κωδικός επαναφέρθηκαν.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Το διακριτικό εξουσιοδότησης αποθηκεύτηκε.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Κωδικός ενεργοποίησης</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Κωδικός ενεργοποίησης:
-%s
-
-1. Πατήστε «Άνοιγμα ιστοσελίδας» για να μεταβείτε στο 'https://yt.be/activate'.
-2. Εισάγετε τον κωδικό ενεργοποίησης.
-3. Συνδεθείτε όταν σας ζητηθεί. Αν έχετε πολλαπλούς λογαριασμούς Google, επιλέξτε τον λογαριασμό που χρησιμοποιείτε με το YouTube. Αν έχετε συνδεθεί ήδη, συνεχίστε στο επόμενο βήμα.
-4. Μόλις συνδεθείτε, επιστρέψτε στο RVX και πατήστε το «Σχετικά με το Android VR (με σύνδεση χρήστη)» ξανά.
-5. Πατήστε «Λήψη διακριτικού εξουσιοδότησης» για να λάβετε διακριτικό εξουσιοδότησης."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Άνοιγμα ιστοσελίδας</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Ο κωδικός αντιγράφηκε στο πρόχειρο: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Χρήση προγράμματος πελάτη JavaScript</string>

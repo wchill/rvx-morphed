@@ -126,8 +126,6 @@ Hạn chế:
     <string name="revanced_hide_flyout_menu_remove_from_library_title">Ẩn mục Xoá khỏi thư viện</string>
     <string name="revanced_hide_flyout_menu_remove_from_playlist_title">Ẩn mục Xóa khỏi danh sách phát</string>
     <string name="revanced_hide_flyout_menu_report_title">Ẩn mục Báo vi phạm</string>
-    <string name="revanced_hide_flyout_menu_save_episode_for_later_title">Ẩn mục Lưu tập này để thưởng thức sau</string>
-    <string name="revanced_hide_flyout_menu_save_to_library_title">Ẩn mục Lưu vào thư viện</string>
     <string name="revanced_hide_flyout_menu_save_to_playlist_title">Ẩn mục Lưu vào danh sách phát</string>
     <string name="revanced_hide_flyout_menu_share_title">Ẩn mục Chia sẻ</string>
     <string name="revanced_hide_flyout_menu_shuffle_play_title">Ẩn mục Phát ngẫu nhiên</string>
@@ -508,44 +506,11 @@ Hạn chế: Video dành cho trẻ em có thể không được chuyển hướn
 Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết phải bật cài đặt này."</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Client mặc định</string>
     <string name="revanced_spoof_streaming_data_default_client_summary">Chọn client mặc định để giả mạo.</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Android Studio</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">Android Không SDK</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">Android VR Auth (Cần thao tác)</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">Mobile Web</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">TV Legacy</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Giới thiệu về Android VR Auth</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Nhấn để biết cách lấy mã xác thực.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Lấy mã xác thực</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Để lấy mã xác thực cho Android VR, bạn cần đăng nhập vào Youtube VR bằng mã kích hoạt:
-
-1. Nhấn \"Lấy mã kích hoạt\" để tạo mã.
-2. Nhấn \"Mở trang web\" để đi tới https://yt.be/activate.
-3. Nhập mã kích hoạt.
-4. Đăng nhập khi được yêu cầu. Nếu bạn có nhiều tài khoản Google, hãy chọn tài khoản mà bạn sử dụng để xem Youtube. Còn nếu bạn đã đăng nhập thì hãy bỏ qua bước này.
-5. Sau khi đã đăng nhập, quay lại RVX và nhấn \"Giới thiệu Android VR Xác thực\" lần nữa.
-6. Nhấn \"Lấy mã xác thực\" để lấy mã.
-
-※ Nhấn \"Đặt lại\" để xoá mã xác thực hoặc mã kích hoạt."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Lấy mã kích hoạt</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Lấy mã xác thực</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Đặt lại</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Đặt lại mã xác thực và mã kích hoạt.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Đã lưu mã xác thực.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Mã kích hoạt</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Mã kích hoạt:
-%s
-
-1. Nhấn \"Mở trang web\" để đi tới https://yt.be/activate.
-2. Nhập mã kích hoạt.
-3. Đăng nhập khi được yêu cầu. Nếu bạn có nhiều tài khoản Google, hãy chọn tài khoản mà bạn sử dụng để xem Youtube. Còn nếu bạn đã đăng nhập thì hãy bỏ qua bước này.
-4. Sau khi đã đăng nhập, quay lại RVX và nhấn \"Giới thiệu Android VR Xác thực\" lần nữa.
-5. Nhấn \"Lấy mã xác thực\" để lấy mã."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Mở trang web</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Đã sao chép mã kích hoạt vào bảng nhớ tạm: %s.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Không truy xuất được luồng phát từ bất kỳ client nào.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Hãy thử chuyển client mặc định sang TV.</string>
     <string name="revanced_watch_history_type_title">Kiểu nhật ký</string>

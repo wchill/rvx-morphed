@@ -104,8 +104,6 @@
     <string name="revanced_hide_flyout_menu_remove_from_library_title">隱藏從媒體庫中移除選項</string>
     <string name="revanced_hide_flyout_menu_remove_from_playlist_title">隱藏從播放列表中移除選項</string>
     <string name="revanced_hide_flyout_menu_report_title">隱藏檢舉選項</string>
-    <string name="revanced_hide_flyout_menu_save_episode_for_later_title">隱藏儲存專輯以供日後使用選項</string>
-    <string name="revanced_hide_flyout_menu_save_to_library_title">隱藏新增至媒體庫中選項</string>
     <string name="revanced_hide_flyout_menu_save_to_playlist_title">隱藏儲存至播放清單選項</string>
     <string name="revanced_hide_flyout_menu_share_title">隱藏分享選項</string>
     <string name="revanced_hide_flyout_menu_shuffle_play_title">隱藏隨機播放選項</string>

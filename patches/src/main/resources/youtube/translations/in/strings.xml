@@ -135,6 +135,7 @@ Deskripsi
 <small>Български</small>"</string>
     <string name="revanced_language_BN">"Bengali
 <small>বাংলা</small>"</string>
+    <string name="revanced_language_CA">"Catalan"</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Iklan</string>
     <string name="revanced_hide_creator_store_shelf_title">Sembunyikan rak toko pembuat</string>

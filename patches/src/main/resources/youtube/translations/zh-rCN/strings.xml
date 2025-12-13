@@ -2299,17 +2299,7 @@
     <string name="revanced_spoof_streaming_data_default_client_title">默认客户端</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio
 <small>(需要登录)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
-<small>(无需身份验证)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
-<small>（需要认证、操作）</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(过时，无需身份验证)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"移动网页
-<small>(开发中，无需身份验证)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
-<small>(无PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">嵌入式 TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(未发布，无需身份验证)</small>"</string>
@@ -2322,21 +2312,7 @@
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• 缺少音轨菜单。
 • 稳定音量不可用。
 • 登出或无痕模式下可能无法播放儿童视频。"</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• 缺少音轨菜单。
-• 无法禁用强制自动音轨。
-• 稳定音量不可用。
-• 登出或无痕模式下可能无法播放儿童视频。"</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• 不支持 AV1。
-• 视频可能会在 1:00 处停止，或者在某些地区无法观看。"</string>
-    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• 缺少音轨菜单。
-• 若反混淆失败，播放可能会失败。
-• 有时视频甚至 10 秒后仍无法播放，在这种情况下你需要单击重新加载视频按钮。
-• 视频可能会延迟开始。"</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• 若反混淆失败，播放可能会失败。
-• 有时视频甚至 10 秒后仍无法播放，在这种情况下你需要单击重新加载视频按钮。
-• 视频可能会延迟开始。"</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• 若反混淆失败，播放可能会失败。
-• 某些账号可能需要 PoToken，在这种情况下播放将会失败。
 • 有时视频甚至 10 秒后仍无法播放，在这种情况下你需要单击重新加载视频按钮。
 • 视频可能会延迟开始。"</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• 缺少音轨菜单。
@@ -2390,43 +2366,6 @@
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">请尝试将默认客户端更改为TV。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">启用 VR AV1</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"视频编解码器为 AVC (H.264)、VP9 或 AV1。
-
-播放可能会出现卡顿或丢帧。"</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">视频编解码器为 AVC (H.264) 或 VP9。</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"启用此设置可能会使用软件 AV1 解码。
-
-播放可能会出现卡顿或丢帧。"</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">关于 Android VR 认证</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">点击查看如何获取认证令牌。</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">获取认证令牌</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"要获取 Android VR 的认证令牌，你应使用激活码登录 YouTube VR：
-
-1. 点击“获取激活码”生成激活码。
-2. 点击“打开网站”转到“https://yt.be/activate”。
-3. 输入激活码。
-4. 在出现提示时登录。若有多个 Google 账号，请选择你在 YouTube 上使用的账号。若已登录，请跳至下一步。
-5. 登录后，返回 RVX 并再次点击“关于 Android VR 认证”。
-6. 点击“获取认证令牌”以获取认证令牌。
-
-※ 点击“重置”可移除认证令牌或激活码。"</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">获取激活码</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">获取认证令牌</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">重置</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">认证令牌和激活码已重置。</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">认证令牌已保存。</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">激活码</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"激活码：
-%s
-
-1. 点击“打开网站”转到“https://yt.be/activate”。
-2. 输入激活码。
-3. 在出现提示时登录。若有多个 Google 账号，请选择你在 YouTube 上使用的账号。若已登录，请跳至下一步。
-4. 登录后，返回 RVX 并再次点击“关于 Android VR 认证”。
-5. 点击“获取认证令牌”以获取认证令牌。"</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">打开网站</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">激活码已复制到剪贴板：%s。</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">使用 JavaScript 客户端</string>

@@ -419,12 +419,24 @@ Nhấn vào đây để tìm hiểu thêm về DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Danh sách phát
 Cửa hàng"</string>
+    <string name="revanced_hide_community_button_title">Ẩn nút Cộng đồng</string>
+    <string name="revanced_hide_community_button_summary_on">Nút cộng đồng đã ẩn.</string>
+    <string name="revanced_hide_community_button_summary_off">Nút cộng đồng được hiển thị.</string>
+    <string name="revanced_hide_join_button_in_channel_page_title">Ẩn nút Tham gia</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_on">Nút tham gia đã ẩn.</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_off">Nút tham gia được hiển thị.</string>
     <string name="revanced_hide_links_preview_title">Ẩn xem trước liên kết</string>
     <string name="revanced_hide_links_preview_summary_on">Xem trước liên kết đã ẩn.</string>
     <string name="revanced_hide_links_preview_summary_off">Xem trước liên kết được hiển thị.</string>
     <string name="revanced_hide_members_shelf_title">Ẩn kệ thành viên</string>
     <string name="revanced_hide_members_shelf_summary_on">Kệ thành viên đã ẩn.</string>
     <string name="revanced_hide_members_shelf_summary_off">Kệ thành viên được hiển thị.</string>
+    <string name="revanced_hide_store_button_title">Ẩn nút Mua sắm</string>
+    <string name="revanced_hide_store_button_summary_on">Nút mua sắm đã ẩn.</string>
+    <string name="revanced_hide_store_button_summary_off">Nút mua sắm được hiển thị.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_title">Ẩn nút Đăng ký</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_on">Nút đăng ký đã ẩn.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_off">Nút đăng ký được hiển thị.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Bài đăng cộng đồng</string>
     <string name="revanced_preference_screen_community_posts_summary">Ẩn hoặc hiển thị bài đăng cộng đồng trên trang kênh, các trang video và video liên quan.</string>
@@ -574,6 +586,9 @@ Chi tiết: Với một số tài khoản, bản âm thanh gốc sẽ được s
     <string name="revanced_hide_floating_microphone_title">Ẩn nút Tìm kiếm bằng giọng nói</string>
     <string name="revanced_hide_floating_microphone_summary_on">Nút Tìm kiếm bằng giọng nói đã ẩn khi tìm kiếm.</string>
     <string name="revanced_hide_floating_microphone_summary_off">Nút Tìm kiếm bằng giọng nói được hiển thị khi tìm kiếm.</string>
+    <string name="revanced_hide_visual_spacer_title">Ẩn khoảng cách giữa các mục</string>
+    <string name="revanced_hide_visual_spacer_summary_on">Ẩn khoảng cách giữa các mục đã ẩn.</string>
+    <string name="revanced_hide_visual_spacer_summary_off">Ẩn khoảng cách giữa các mục được hiển thị.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Loại bỏ hộp thoại cảnh báo trước khi xem</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Loại bỏ hộp thoại cảnh báo nội dung cần cân nhắc trước khi xem.
 Tuỳ chọn này chỉ tự động chấp nhận hộp thoại cảnh báo, chứ không thể bỏ qua giới hạn về độ tuổi."</string>
@@ -1560,12 +1575,21 @@ Vì vậy, bạn nên bật tính năng này khi có kết nối mạng ổn đ�
     <string name="revanced_hide_explore_podcast_section_title">Ẩn phần Khám phá podcast</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">Phần Khám phá podcast đã ẩn.</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">Phần Khám phá podcast được hiển thị.</string>
+    <string name="revanced_hide_featured_links_section_title">Ẩn phần Liên kết nổi bật</string>
+    <string name="revanced_hide_featured_links_section_summary_on">Phần liên kết nổi bật đã ẩn.</string>
+    <string name="revanced_hide_featured_links_section_summary_off">Phần liên kết nổi bật được hiển thị.</string>
+    <string name="revanced_hide_featured_videos_section_title">Ẩn phần Video nổi bật</string>
+    <string name="revanced_hide_featured_videos_section_summary_on">Phần video nổi bật đã ẩn.</string>
+    <string name="revanced_hide_featured_videos_section_summary_off">Phần video nổi bật được hiển thị.</string>
     <string name="revanced_hide_how_this_was_made_section_title">Ẩn phần Cách nội dung này được tạo ra</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">Phần Cách nội dung này được tạo ra đã ẩn.</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">Phần Cách nội dung này được tạo ra được hiển thị.</string>
     <string name="revanced_hide_hype_points_section_title">Ẩn phần Điểm khuấy động</string>
     <string name="revanced_hide_hype_points_section_summary_on">Phần Điểm khuấy động đã ẩn.</string>
     <string name="revanced_hide_hype_points_section_summary_off">Phần Điểm khuấy động được hiển thị.</string>
+    <string name="revanced_hide_info_cards_section_title">Ẩn phần thẻ thông tin</string>
+    <string name="revanced_hide_info_cards_section_summary_on">Phần thẻ thông tin đã ẩn.</string>
+    <string name="revanced_hide_info_cards_section_summary_off">Phần thẻ thông tin được hiển thị.</string>
     <string name="revanced_hide_key_concepts_section_title">Ẩn phần Khái niệm chính</string>
     <string name="revanced_hide_key_concepts_section_summary_on">Phần Khái niệm chính đã ẩn.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Phần Khái niệm chính được hiển thị.</string>
@@ -1638,6 +1662,9 @@ Hạn chế: Kệ nhật ký xem trong thẻ Bạn có thể bị ẩn."</string
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player -->
     <string name="revanced_preference_screen_shorts_player_title">Trình phát Shorts</string>
     <string name="revanced_preference_screen_shorts_player_summary">Ẩn hoặc hiển thị các thành phần trong trình phát Shorts.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_title">Ẩn nhãn Bản lồng tiếng</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_on">Nhãn bản lồng tiếng đã ẩn.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_off">Nhãn bản lồng tiếng được hiển thị.</string>
     <string name="revanced_hide_shorts_channel_bar_title">Ẩn thanh kênh</string>
     <string name="revanced_hide_shorts_channel_bar_summary_on">Thanh kênh đã ẩn.</string>
     <string name="revanced_hide_shorts_channel_bar_summary_off">Thanh kênh được hiển thị.</string>
@@ -1650,12 +1677,18 @@ Hạn chế: Kệ nhật ký xem trong thẻ Bạn có thể bị ẩn."</string
     <string name="revanced_hide_shorts_live_header_title">Ẩn tiêu đề Trò chuyện trực tiếp</string>
     <string name="revanced_hide_shorts_live_header_summary_on">Tiêu đề Trò chuyện trực tiếp đã ẩn.\n\nNút Quay lại trong tiêu đề sẽ không bị ẩn.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">Tiêu đề Trò chuyện trực tiếp được hiển thị.</string>
+    <string name="revanced_hide_shorts_live_preview_title">Ẩn xem trước phát trực tiếp</string>
+    <string name="revanced_hide_shorts_live_preview_summary_on">Xem trước phát trực tiếp đã ẩn.\n\nDù có bật cài đặt này, phát trực tiếp trong Shorts cũng không bị loại bỏ hoàn toàn khỏi danh sách Shorts.</string>
+    <string name="revanced_hide_shorts_live_preview_summary_off">Xem trước phát trực tiếp được hiển thị.</string>
     <string name="revanced_hide_shorts_paused_header_title">Ẩn tiêu đề tạm dừng</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">Tiêu đề tạm dừng đã ẩn.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">Tiêu đề tạm dừng được hiển thị.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_title">Ẩn các nút phủ lên khi tạm dừng</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_on">Các nút phủ lên khi tạm dừng đã ẩn.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_off">Các nút phủ lên khi tạm dừng được hiển thị.</string>
+    <string name="revanced_hide_shorts_preview_comment_title">Ẩn xem trước bình luận</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_on">Xem trước bình luận đã ẩn.</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_off">Xem trước bình luận được hiển thị.</string>
     <string name="revanced_hide_shorts_shopping_button_title">Ẩn nút Mua sắm</string>
     <string name="revanced_hide_shorts_shopping_button_summary_on">Nút Mua sắm đã ẩn.</string>
     <string name="revanced_hide_shorts_shopping_button_summary_off">Nút Mua sắm được hiển thị.</string>
@@ -2352,24 +2385,12 @@ Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết
 <small>(Yêu cầu Đăng nhập)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"Android
 <small>(Không SDK)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
-<small>(Không xác thực)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
-<small>(Xác thực, Cần thao tác)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(Lỗi thời)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
-<small>(Thử nghiệm)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
 <small>(Cũ)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
-<small>(Không PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Chưa phát hành)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
-<small>(Cũ, Thử nghiệm)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Hạn chế</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Thiếu mục bản âm thanh.
 • Tắt tự động phát bản âm thanh có thể không khả dụng.
@@ -2380,21 +2401,7 @@ Nếu bạn đã đăng ký YouTube Premium, thì có thể không cần thiết
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Thiếu mục bản âm thanh.
 • Âm lượng ổn định không khả dụng.
 • Video dành cho trẻ em có thể không phát được khi bạn đã đăng xuất hoặc bật chế độ ẩn danh."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Thiếu trình đơn Bản âm thanh.
-• Tắt tự động phát bản âm thanh có thể không khả dụng.
-• Âm lượng ổn định không khả dụng.
-• Video dành cho trẻ em có thể không phát được khi bạn đã đăng xuất hoặc bật chế độ ẩn danh."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• Không hỗ trợ codec AV1.
-• Video có thể bị dừng ở 1 phút đầu, hoặc có thể không khả dụng ở một số khu vực."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Thiếu trình đơn Bản âm thanh.
-• Nếu giải mã thất bại, video có thể không phát được.
-• Đôi khi video không phát dù đã chờ 10 giây, khi đó bạn cần nhấn vào nút tải lại video.
-• Video có thể bắt đầu trễ hơn."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Nếu giải mã thất bại, video có thể không phát được.
-• Đôi khi video không phát dù đã chờ 10 giây, khi đó bạn cần nhấn vào nút tải lại video.
-• Video có thể bắt đầu trễ hơn."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• Nếu giải mã thất bại, video có thể không phát được.
-• Một số tài khoản có thể yêu cầu PoToken, khi đó video có thể không phát được.
 • Đôi khi video không phát dù đã chờ 10 giây, khi đó bạn cần nhấn vào nút tải lại video.
 • Video có thể bắt đầu trễ hơn."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Thiếu mục bản âm thanh.
@@ -2444,43 +2451,6 @@ Ví dụ 2:
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Hãy thử chuyển ứng dụng khách mặc định sang TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Kích hoạt AV1 trên VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"Video dùng codec AVC (H.264), VP9 or AV1.
-
-Có thể gặp hiện tượng giật lag hoặc tụt fps khi phát video."</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">Video dùng codec AVC (H.264), VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Bật cài đặt này có thể sử dụng giải mã AV1 bằng phần mềm.
-
-Có thể gặp hiện tượng giật lag hoặc tụt fps khi phát video."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Giới thiệu về Android VR Auth</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Nhấn để biết cách lấy mã xác thực.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Nhận mã xác thực</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Để lấy mã xác thực cho Android VR, bạn cần đăng nhập vào Youtube VR bằng mã kích hoạt:
-
-1. Nhấn \"Lấy mã kích hoạt\" để tạo mã.
-2. Nhấn \"Mở trang web\" để đi tới https://yt.be/activate.
-3. Nhập mã kích hoạt.
-4. Đăng nhập khi được yêu cầu. Nếu bạn có nhiều tài khoản Google, hãy chọn tài khoản mà bạn sử dụng để xem Youtube. Còn nếu bạn đã đăng nhập thì hãy bỏ qua bước này.
-5. Sau khi đã đăng nhập, quay lại RVX và nhấn \"Giới thiệu Android VR Xác thực\" lần nữa.
-6. Nhấn \"Lấy mã xác thực\" để lấy mã.
-
-※ Nhấn \"Đặt lại\" để xoá mã xác thực hoặc mã kích hoạt."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Lấy mã kích hoạt</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Lấy mã xác thực</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Đặt lại</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Đặt lại mã xác thực và mã kích hoạt.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Đã lưu mã xác thực.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Mã kích hoạt</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Mã kích hoạt:
-%s
-
-1. Nhấn \"Mở trang web\" để đi tới https://yt.be/activate.
-2. Nhập mã kích hoạt.
-3. Đăng nhập khi được yêu cầu. Nếu bạn có nhiều tài khoản Google, hãy chọn tài khoản mà bạn sử dụng để xem Youtube. Còn nếu bạn đã đăng nhập thì hãy bỏ qua bước này.
-4. Sau khi đã đăng nhập, quay lại RVX và nhấn \"Giới thiệu Android VR Xác thực\" lần nữa.
-5. Nhấn \"Lấy mã xác thực\" để lấy mã."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Mở trang web</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Đã sao chép mã kích hoạt vào bảng nhớ tạm: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Giả mạo JavaScript</string>

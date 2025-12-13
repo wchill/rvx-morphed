@@ -419,12 +419,24 @@
     <string name="revanced_hide_channel_tab_filter_strings_hint">"YouTube Shorts
 Списки відтворення
 Магазин"</string>
+    <string name="revanced_hide_community_button_title">Приховати кнопку Спільнота</string>
+    <string name="revanced_hide_community_button_summary_on">Кнопку Спільнота приховано.</string>
+    <string name="revanced_hide_community_button_summary_off">Кнопку Спільнота показується.</string>
+    <string name="revanced_hide_join_button_in_channel_page_title">Приховати кнопку Спонсорувати</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_on">Кнопку Спонсорувати приховано.</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_off">Кнопку Спонсорувати показується.</string>
     <string name="revanced_hide_links_preview_title">Приховати попередній перегляд посилань</string>
     <string name="revanced_hide_links_preview_summary_on">Попередній перегляд посилань приховано.</string>
     <string name="revanced_hide_links_preview_summary_off">Попередній перегляд посилань показується.</string>
     <string name="revanced_hide_members_shelf_title">Приховати полицю спонсорів</string>
     <string name="revanced_hide_members_shelf_summary_on">Полицю спонсорів приховано.</string>
     <string name="revanced_hide_members_shelf_summary_off">Полицю спонсорів показується.</string>
+    <string name="revanced_hide_store_button_title">Приховати кнопку Магазин</string>
+    <string name="revanced_hide_store_button_summary_on">Кнопку Магазин приховано.</string>
+    <string name="revanced_hide_store_button_summary_off">Кнопку Магазин показується.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_title">Приховати кнопку Підписатися</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_on">Кнопку Підписатися приховано.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_off">Кнопку Підписатися показується.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Публікації спільноти</string>
     <string name="revanced_preference_screen_community_posts_summary">Приховувати чи показувати публікації спільноти у стрічці та каналі.</string>
@@ -570,6 +582,9 @@
     <string name="revanced_hide_floating_microphone_title">Приховати плавучу кнопку мікрофону</string>
     <string name="revanced_hide_floating_microphone_summary_on">Плавучу кнопку мікрофону приховано.</string>
     <string name="revanced_hide_floating_microphone_summary_off">Плавучу кнопку мікрофону показується.</string>
+    <string name="revanced_hide_visual_spacer_title">Приховати видимий пропуск</string>
+    <string name="revanced_hide_visual_spacer_summary_on">Видимий пропуск приховано.</string>
+    <string name="revanced_hide_visual_spacer_summary_off">Видимий пропуск показується.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Вилучати діалогове вікно</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Вилучається діалогове вікно.
 Це не обходить вікові обмеження, а просто приймається автоматично."</string>
@@ -1654,6 +1669,9 @@
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player -->
     <string name="revanced_preference_screen_shorts_player_title">Плеєр Shorts</string>
     <string name="revanced_preference_screen_shorts_player_summary">Приховувати чи показувати компоненти у плеєрі Shorts.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_title">Приховати Автодубльовану мітку</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_on">Автодубльовану мітку приховано.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_off">Автодубльовану мітку показується.</string>
     <string name="revanced_hide_shorts_channel_bar_title">Приховати панель каналу</string>
     <string name="revanced_hide_shorts_channel_bar_summary_on">Панель каналу приховано.</string>
     <string name="revanced_hide_shorts_channel_bar_summary_off">Панель каналу показується.</string>
@@ -1666,12 +1684,18 @@
     <string name="revanced_hide_shorts_live_header_title">Приховати заголовок Чату</string>
     <string name="revanced_hide_shorts_live_header_summary_on">Заголовок Чату приховано.\n\nКнопку назад у заголовку не приховуватиметься.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">Заголовок Чату показується.</string>
+    <string name="revanced_hide_shorts_live_preview_title">Приховати попередній перегляд наживо</string>
+    <string name="revanced_hide_shorts_live_preview_summary_on">Попередній перегляд наживо приховано.\n\nНавіть якщо це увімкнене, прямі трансляції Shorts не повністю вилучаються з послідовності Shorts.</string>
+    <string name="revanced_hide_shorts_live_preview_summary_off">Попередній перегляд наживо показується.</string>
     <string name="revanced_hide_shorts_paused_header_title">Приховати заголовок при призупиненні</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">Заголовок при призупиненні приховано.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">Заголовок при призупиненні показується.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_title">Приховати кнопки накладені при паузі</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_on">Кнопки накладені при паузі приховано.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_off">Кнопки накладені при паузі показується.</string>
+    <string name="revanced_hide_shorts_preview_comment_title">Приховати Закріплений коментар</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_on">Закріплений коментар приховано.</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_off">Закріплений коментар показується.</string>
     <string name="revanced_hide_shorts_shopping_button_title">Приховати кнопку Магазин</string>
     <string name="revanced_hide_shorts_shopping_button_summary_on">Кнопку Магазин приховано.</string>
     <string name="revanced_hide_shorts_shopping_button_summary_off">Кнопку Магазин показується.</string>
@@ -2364,24 +2388,12 @@
 <small>(Потрібна авторизація)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"Android
 <small>(Без SDK)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
-<small>(Без авторизації)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
-<small>(Авторизація, Необхідна дія)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(Застарілий)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Web мобільний
-<small>(ще в розробці)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
 <small>(Застарілий)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"Простий TV
-<small>(Без PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Вбудований TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Невипущений)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_web_legacy">"Web
-<small>(Застарілий, Ще в розробці)</small>"</string>
     <string name="revanced_spoof_streaming_data_side_effects_title">Побічні ефекти імітування</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_creator">"• Меню звукової доріжки відсутнє.
 • Вимкнення примусових авто звукових доріжок може бути недоступне.
@@ -2392,21 +2404,7 @@
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Меню звукової доріжки відсутнє.
 • Стабілізація гучності недоступна.
 • Відео для дітей можуть не відтворюватися коли вийшли з облікового запису або в анонімному режимі."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Меню звукової доріжки відсутнє.
-• Вимкнення примусових авто звукових доріжок може бути недоступне.
-• Стабілізація гучності недоступна.
-• Відео для дітей можуть не відтворюватися коли вийшли з облікового запису або в анонімному режимі."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 не підтримується.
-• Відео може зупинитися на 1:00 або бути недоступним у деяких регіонах."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Меню звукової доріжки відсутнє.
-• Якщо деобфускація не вдасться, відтворення може завершитися зі збоями.
-• Іноді відео не відтворюється навіть через 10 секунд, і тоді потрібно натиснути кнопку перезавантаження відео.
-• Відео може розпочинається із запізненням."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Якщо деобфускація не вдасться, відтворення може завершитися зі збоями.
-• Іноді відео не відтворюється навіть через 10 секунд, і тоді потрібно натиснути кнопку перезавантаження відео.
-• Відео може розпочинається із запізненням."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• Якщо деобфускація не вдасться, відтворення може завершитися зі збоями.
-• Для деяких акаунтів може знадобитися PoToken, і в цьому випадку відтворення завершиться зі збоями.
 • Іноді відео не відтворюється навіть через 10 секунд, і тоді потрібно натиснути кнопку перезавантаження відео.
 • Відео може розпочинається із запізненням."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Меню звукової доріжки відсутнє.
@@ -2460,43 +2458,6 @@
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Спробуйте змінити основний клієнт на TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Увімкнути AV1 VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"Відеокодек AVC (H.264), VP9 або AV1.
-
-Відтворення може затинатися або втрачати кадри."</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">Відеокодек AVC (H.264) або VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Якщо увімкнути це налаштування, може використовуватися програмне декодування AV1.
-
-Відтворення може затинатися або втрачати кадри."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Про авторизацію Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Натисніть, щоб побачити, як отримати токен автентифікації.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Отримати токен авторизації</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Щоб отримати токен авторизації для Android VR, необхідно увійти в YouTube VR за допомогою коду активації:
-
-1. Натисніть 'Отримати код активації', щоб згенерувати код активації.
-2. Натисніть 'Відкрити сайт', щоб перейти до 'https://yt.be/activate'.
-3. Введіть код активації.
-4. Увійдіть, коли з'явиться запит. Якщо у вас кілька облікових записів Google, виберіть обліковий запис, який використовуєте для YouTube. Якщо вже увійшли, перейдіть до наступного кроку.
-5. Після входу поверніться до RVX і знову натисніть 'Про авторизацію Android VR'.
-6. Натисніть 'Отримати токен авторизації', щоб отримати токен авторизації.
-
-※ Натисніть 'Скинути', щоб вилучити токен автентифікації або код активації."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Отримати код активації</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Отримати токен авторизації</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Скинути</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Токен автентифікації та код активації скинуто.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Токен автентифікації збережено.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Код активації</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Код активації:
-%s
-
-1. Натисніть 'Відкрити сайт', щоб перейти до 'https://yt.be/activate'.
-2. Введіть код активації.
-3. Увійдіть, коли з'явиться запит. Якщо у вас кілька облікових записів Google, виберіть обліковий запис, який використовуєте для YouTube. Якщо вже увійшли, перейдіть до наступного кроку.
-4. Після входу поверніться до RVX і знову натисніть 'Про авторизацію Android VR'.
-5. Натисніть 'Отримати токен авторизації', щоб отримати токен авторизації."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Відкрити сайт</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Код активації скопійовано в буфер обміну: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Використовувати клієнт JavaScript</string>
