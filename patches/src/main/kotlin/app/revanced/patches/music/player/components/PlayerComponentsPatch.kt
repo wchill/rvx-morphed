@@ -890,6 +890,16 @@ val playerComponentsPatch = bytecodePatch(
             "false"
         )
 
+        // region patch for hide information button
+
+        addSwitchPreference(
+            CategoryType.PLAYER,
+            "revanced_hide_comments_information_button",
+            "false"
+        )
+
+        // endregion
+
         // region patch for hide lyrics share button
 
         if (is_8_05_or_greater) {
