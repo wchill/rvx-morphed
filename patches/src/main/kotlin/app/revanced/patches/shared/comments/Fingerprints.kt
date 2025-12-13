@@ -1,4 +1,4 @@
-package app.revanced.patches.shared.scrolltop
+package app.revanced.patches.shared.comments
 
 import app.revanced.util.fingerprint.legacyFingerprint
 import app.revanced.util.getReference
@@ -63,7 +63,7 @@ internal fun indexOfIfPresentInstruction(method: Method) =
 
 internal val engagementPanelTitleFingerprint = legacyFingerprint(
     name = "engagementPanelTitleFingerprint",
-    literals = listOf(modernTitle, title)
+    literals = listOf(informationButton, modernTitle, title)
 )
 
 internal val engagementPanelTitleParentFingerprint = legacyFingerprint(

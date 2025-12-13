@@ -1,4 +1,4 @@
-package app.revanced.patches.shared.scrolltop
+package app.revanced.patches.shared.comments
 
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
@@ -28,29 +28,32 @@ import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 
+var informationButton = -1L
+    private set
 var modernTitle = -1L
     private set
 var title = -1L
     private set
 
-private val commentsScrollTopResourcePatch = resourcePatch(
-    description = "commentsScrollTopResourcePatch"
+private val commentsPanelResourcePatch = resourcePatch(
+    description = "commentsPanelResourcePatch"
 ) {
     dependsOn(resourceMappingPatch)
 
     execute {
+        informationButton = getResourceId(ID, "information_button")
         modernTitle = getResourceId(ID, "modern_title")
         title = getResourceId(ID, "title")
     }
 }
 
 private const val EXTENSION_CLASS_DESCRIPTOR =
-    "$PATCHES_PATH/CommentsScrollTopPatch;"
+    "$PATCHES_PATH/CommentsPanelPatch;"
 
-val commentsScrollTopPatch = bytecodePatch(
-    description = "commentsScrollTopPatch"
+val commentsPanelPatch = bytecodePatch(
+    description = "commentsPanelPatch"
 ) {
-    dependsOn(commentsScrollTopResourcePatch)
+    dependsOn(commentsPanelResourcePatch)
 
     execute {
         // Method to find the engagement panel id.
@@ -148,15 +151,16 @@ val commentsScrollTopPatch = bytecodePatch(
             }
         }
 
-        arrayOf(
-            modernTitle,
-            title
-        ).forEach { literal ->
+        mapOf(
+            informationButton to "hideInformationButton",
+            modernTitle to "setContentHeader",
+            title to "setContentHeader"
+        ).forEach { (literal, methodName) ->
             engagementPanelTitleFingerprint
                 .methodOrThrow(engagementPanelTitleParentFingerprint)
                 .injectLiteralInstructionViewCall(
                     literal,
-                    "invoke-static {v$REGISTER_TEMPLATE_REPLACEMENT}, $EXTENSION_CLASS_DESCRIPTOR->setContentHeader(Landroid/view/View;)V"
+                    "invoke-static {v$REGISTER_TEMPLATE_REPLACEMENT}, $EXTENSION_CLASS_DESCRIPTOR->$methodName(Landroid/view/View;)V"
                 )
         }
 
