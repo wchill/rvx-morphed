@@ -2,6 +2,7 @@ package app.revanced.extension.shared.innertube.client
 
 import android.os.Build
 import app.revanced.extension.shared.innertube.utils.J2V8Support.supportJ2V8
+import app.revanced.extension.shared.patches.AppCheckPatch.IS_YOUTUBE
 import app.revanced.extension.shared.settings.BaseSettings
 import app.revanced.extension.shared.utils.PackageUtils
 import org.apache.commons.lang3.ArrayUtils
@@ -59,6 +60,27 @@ object YouTubeClient {
     private val ANDROID_SDK_VERSION_ANDROID_NO_SDK: String? = null
     private val USER_AGENT_ANDROID_NO_SDK =
         "$PACKAGE_NAME_ANDROID/$CLIENT_VERSION_ANDROID_NO_SDK (Linux; U; Android $OS_VERSION_ANDROID_NO_SDK) gzip"
+
+
+    // ANDROID_MUSIC (NO SDK)
+    /**
+     * Video not playable: All videos other than music.
+     *
+     * According to TeamNewPipe in 2022, if the 'androidSdkVersion' field is missing, the GVS did not return a valid response:
+     * [NewPipe#8713 (comment)](https://github.com/TeamNewPipe/NewPipe/issues/8713#issuecomment-1207443550).
+     * According to the latest commit in yt-dlp, the GVS returns a valid response even if the 'androidSdkVersion' field is missing:
+     * [yt-dlp#14693](https://github.com/yt-dlp/yt-dlp/pull/14693).
+     *
+     * For some reason, PoToken is not required.
+     */
+    private const val PACKAGE_NAME_ANDROID_MUSIC = "com.google.android.apps.youtube.music"
+    private const val CLIENT_VERSION_ANDROID_MUSIC_NO_SDK = "6.20.51"
+    private const val DEVICE_MODEL_ANDROID_MUSIC_NO_SDK = ""
+    private const val DEVICE_MAKE_ANDROID_MUSIC_NO_SDK = ""
+    private val OS_VERSION_ANDROID_MUSIC_NO_SDK = Build.VERSION.RELEASE
+    private val ANDROID_SDK_VERSION_ANDROID_MUSIC_NO_SDK: String? = null
+    private val USER_AGENT_ANDROID_MUSIC_NO_SDK =
+        "$PACKAGE_NAME_ANDROID_MUSIC/$CLIENT_VERSION_ANDROID_MUSIC_NO_SDK (Linux; U; Android $OS_VERSION_ANDROID_MUSIC_NO_SDK) gzip"
 
 
     // ANDROID VR
@@ -265,9 +287,17 @@ object YouTubeClient {
     @JvmStatic
     fun availableClientTypes(preferredClient: ClientType): Array<ClientType> {
         val availableClientTypes: Array<ClientType> = if (useJS()) {
-            ClientType.CLIENT_ORDER_TO_USE_JS
+            if (IS_YOUTUBE) {
+                ClientType.CLIENT_ORDER_TO_USE_JS_YOUTUBE
+            } else {
+                ClientType.CLIENT_ORDER_TO_USE_JS_YOUTUBE_MUSIC
+            }
         } else {
-            ClientType.CLIENT_ORDER_TO_USE
+            if (IS_YOUTUBE) {
+                ClientType.CLIENT_ORDER_TO_USE_YOUTUBE
+            } else {
+                ClientType.CLIENT_ORDER_TO_USE_YOUTUBE_MUSIC
+            }
         }
 
         if (ArrayUtils.contains(availableClientTypes, preferredClient)) {
@@ -384,6 +414,18 @@ object YouTubeClient {
             supportsMultiAudioTracks = true,
             clientName = "ANDROID",
             friendlyName = "Android No SDK"
+        ),
+        ANDROID_MUSIC_NO_SDK(
+            id = 21,
+            deviceMake = DEVICE_MAKE_ANDROID_MUSIC_NO_SDK,
+            deviceModel = DEVICE_MODEL_ANDROID_MUSIC_NO_SDK,
+            osVersion = OS_VERSION_ANDROID_MUSIC_NO_SDK,
+            userAgent = USER_AGENT_ANDROID_MUSIC_NO_SDK,
+            androidSdkVersion = ANDROID_SDK_VERSION_ANDROID_MUSIC_NO_SDK,
+            clientVersion = CLIENT_VERSION_ANDROID_MUSIC_NO_SDK,
+            requireAuth = true,
+            clientName = "ANDROID_MUSIC",
+            friendlyName = "Android Music No SDK"
         ),
         ANDROID_VR(
             id = 28,
@@ -529,17 +571,32 @@ object YouTubeClient {
         );
 
         companion object {
-            val CLIENT_ORDER_TO_USE: Array<ClientType> = arrayOf(
+            val CLIENT_ORDER_TO_USE_YOUTUBE: Array<ClientType> = arrayOf(
                 ANDROID_NO_SDK,
                 VISIONOS,
                 ANDROID_VR,
                 ANDROID_CREATOR,
             )
-            val CLIENT_ORDER_TO_USE_JS: Array<ClientType> = arrayOf(
+            val CLIENT_ORDER_TO_USE_JS_YOUTUBE: Array<ClientType> = arrayOf(
                 ANDROID_NO_SDK,
                 VISIONOS,
                 ANDROID_VR,
                 ANDROID_CREATOR,
+                TV,
+                TV_SIMPLY,
+                TV_LEGACY,
+            )
+            val CLIENT_ORDER_TO_USE_YOUTUBE_MUSIC: Array<ClientType> = arrayOf(
+                ANDROID_MUSIC_NO_SDK,
+                ANDROID_NO_SDK,
+                VISIONOS,
+                ANDROID_VR,
+            )
+            val CLIENT_ORDER_TO_USE_JS_YOUTUBE_MUSIC: Array<ClientType> = arrayOf(
+                ANDROID_MUSIC_NO_SDK,
+                ANDROID_NO_SDK,
+                VISIONOS,
+                ANDROID_VR,
                 TV,
                 TV_SIMPLY,
                 TV_LEGACY,
