@@ -8,6 +8,7 @@ import java.util.*;
 /**
  * @author akdeniz, yeriomin, whyorean
  */
+@SuppressWarnings("unused")
 public class GooglePlayAPI {
 
     private static final String URL = "https://android.clients.google.com/auth";
