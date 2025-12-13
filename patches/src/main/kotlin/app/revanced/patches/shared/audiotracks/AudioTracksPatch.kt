@@ -7,7 +7,6 @@ import app.revanced.patcher.patch.BytecodePatchBuilder
 import app.revanced.patcher.patch.BytecodePatchContext
 import app.revanced.patcher.patch.bytecodePatch
 import app.revanced.patcher.util.proxy.mutableTypes.MutableField.Companion.toMutable
-import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod
 import app.revanced.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.revanced.patches.shared.AUDIO_TRACK_DISPLAY_NAME_STRING
 import app.revanced.patches.shared.AUDIO_TRACK_ID_STRING
@@ -29,20 +28,15 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 private const val EXTENSION_CLASS_DESCRIPTOR =
     "$PATCHES_PATH/AutoAudioTracksPatch;"
 
-private lateinit var isDefaultAudioTrackMethod: MutableMethod
-private lateinit var audioTrackIdMethod: MutableMethod
-
-private const val helperMethodName = "patch_isDefaultAudioTrack"
-
 /**
  * Patch shared with YouTube and YT Music.
  */
-internal fun audioTracksHookPatch(
+internal fun audioTracksPatch(
     block: BytecodePatchBuilder.() -> Unit = {},
     executeBlock: BytecodePatchContext.() -> Unit = {},
     fixUseLocalizedAudioTrackFlag: Boolean,
 ) = bytecodePatch(
-    description = "audioTracksHookPatch",
+    description = "audioTracksPatch",
 ) {
 
     block()
@@ -58,11 +52,11 @@ internal fun audioTracksHookPatch(
         }
 
         val toStringMethod = formatStreamModelToStringFingerprint.originalMethodOrThrow()
-        isDefaultAudioTrackMethod = toStringMethod
+        val isDefaultAudioTrackMethod = toStringMethod
             .findMethodFromToString(IS_DEFAULT_AUDIO_TRACK_STRING)
         val audioTrackDisplayNameMethod = toStringMethod
             .findMethodFromToString(AUDIO_TRACK_DISPLAY_NAME_STRING)
-        audioTrackIdMethod = toStringMethod
+        val audioTrackIdMethod = toStringMethod
             .findMethodFromToString(AUDIO_TRACK_ID_STRING)
 
         proxy(classes.first {
@@ -145,28 +139,3 @@ internal fun audioTracksHookPatch(
         executeBlock()
     }
 }
-
-// Modify isDefaultAudioTrack() to call extension helper method.
-internal fun disableForcedAudioTracks() =
-    isDefaultAudioTrackMethod.apply {
-        val index = indexOfFirstInstructionOrThrow(Opcode.RETURN)
-        val register = getInstruction<OneRegisterInstruction>(index).registerA
-
-        addInstructions(
-            index, """
-                invoke-direct { p0, v$register }, $definingClass->$helperMethodName(Z)Z
-                move-result v$register
-                """
-        )
-    }
-
-internal fun hookAudioTrackId(descriptor: String) =
-    isDefaultAudioTrackMethod.apply {
-        addInstructions(
-            0, """
-                invoke-virtual { p0 }, $audioTrackIdMethod
-                move-result-object v0
-                invoke-static {v0}, $descriptor
-                """
-        )
-    }
