@@ -45,7 +45,8 @@ dependencies {
 
     implementation(libs.rxjava2)
     implementation(libs.rxjava2.android)
-    implementation(project(":extensions:shared:j2v8"))
+    //noinspection UseTomlInstead
+    implementation("com.eclipsesource.j2v8:j2v8:6.3.4@aar")
     implementation(project(":extensions:shared:gplayapi"))
 
     coreLibraryDesugaring(libs.desugar.jdk.libs)
