@@ -14,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.lang.reflect.Field;
+import java.util.Arrays;
 import java.util.List;
 
 import app.revanced.extension.music.patches.utils.PatchStatus;
@@ -126,12 +127,12 @@ public class NavigationPatch {
 
     private enum NavigationButton {
         HOME(
-                List.of("TAB_HOME"),
+                Arrays.asList("TAB_HOME"),
                 Settings.HIDE_NAVIGATION_HOME_BUTTON.get(),
                 "FEmusic_home"
         ),
         SAMPLES(
-                List.of("TAB_SAMPLES"),
+                Arrays.asList("TAB_SAMPLES"),
                 Settings.HIDE_NAVIGATION_SAMPLES_BUTTON.get(),
                 IS_6_27_OR_GREATER && !IS_8_29_OR_GREATER &&
                         Settings.REPLACE_NAVIGATION_SAMPLES_BUTTON.get(),
@@ -143,12 +144,12 @@ public class NavigationPatch {
                 ExtendedUtils::openSearch
         ),
         EXPLORE(
-                List.of("TAB_EXPLORE"),
+                Arrays.asList("TAB_EXPLORE"),
                 Settings.HIDE_NAVIGATION_EXPLORE_BUTTON.get(),
                 "FEmusic_explore"
         ),
         LIBRARY(
-                List.of(
+                Arrays.asList(
                         "LIBRARY_MUSIC",
                         "TAB_BOOKMARK" // YouTube Music 8.24+
                 ),
@@ -156,7 +157,7 @@ public class NavigationPatch {
                 "FEmusic_library_landing"
         ),
         UPGRADE(
-                List.of("TAB_MUSIC_PREMIUM"),
+                Arrays.asList("TAB_MUSIC_PREMIUM"),
                 Settings.HIDE_NAVIGATION_UPGRADE_BUTTON.get(),
                 Settings.REPLACE_NAVIGATION_UPGRADE_BUTTON.get(),
                 "SPunlimited",
