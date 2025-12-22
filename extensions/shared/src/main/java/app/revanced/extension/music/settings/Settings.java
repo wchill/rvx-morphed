@@ -124,6 +124,9 @@ public class Settings extends BaseSettings {
     public static final BooleanSetting SPOOF_APP_VERSION = new BooleanSetting("revanced_spoof_app_version", FALSE, true);
     public static final StringSetting SPOOF_APP_VERSION_TARGET = new StringSetting("revanced_spoof_app_version_target",
             PatchStatus.SpoofAppVersionDefaultString(), true);
+    public static final BooleanSetting SPOOF_APP_VERSION_FOR_LYRICS = new BooleanSetting("revanced_spoof_app_version_for_lyrics", FALSE, true);
+    public static final StringSetting SPOOF_APP_VERSION_FOR_LYRICS_TARGET = new StringSetting("revanced_spoof_app_version_for_lyrics_target",
+            "6.42.55", true);
 
 
     // PreferenceScreen: Navigation Bar
@@ -257,6 +260,13 @@ public class Settings extends BaseSettings {
             Logger.printInfo(() -> "Resetting spoof app version target");
             SPOOF_APP_VERSION_TARGET.resetToDefault();
         }
+        String spoofAppVersionLyricsTarget = SPOOF_APP_VERSION_FOR_LYRICS_TARGET.get();
+        if (spoofAppVersionLyricsTarget.compareTo(SPOOF_APP_VERSION_FOR_LYRICS_TARGET.defaultValue) < 0) {
+            Utils.showToastShort(str("revanced_spoof_app_version_target_invalid_toast", spoofAppVersionTarget));
+            Utils.showToastShort(str("revanced_reset_to_default_toast"));
+            Logger.printInfo(() -> "Resetting spoof app version for lyrics target");
+            SPOOF_APP_VERSION_FOR_LYRICS_TARGET.resetToDefault();
+        }
 
         // endregion
 
@@ -298,6 +308,7 @@ public class Settings extends BaseSettings {
             SB_API_URL.key,
             SETTINGS_IMPORT_EXPORT.key,
             SPOOF_APP_VERSION_TARGET.key,
+            SPOOF_APP_VERSION_FOR_LYRICS_TARGET.key,
             SPOOF_STREAMING_DATA_DEFAULT_CLIENT.key,
             SPOOF_STREAMING_DATA_SIGN_IN_ANDROID_NO_SDK_ABOUT.key,
             SPOOF_STREAMING_DATA_SIGN_IN_ANDROID_VR_ABOUT.key,

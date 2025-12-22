@@ -264,6 +264,15 @@ This does not bypass the age restriction. It just accepts it automatically."</st
     <string name="revanced_spoof_app_version_target_entry_7_17_52">7.17.52 - Comments section does not appear in home feed</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Invalid spoof app version: %s.</string>
 
+    <string name="revanced_spoof_app_version_for_lyrics_title">Spoof app version for lyrics</string>
+    <string name="revanced_spoof_app_version_for_lyrics_summary">Spoofs the client version used in the lyrics to an older version.</string>
+    <string name="revanced_spoof_app_version_for_lyrics_target_title">Spoof app version target for lyrics</string>
+    <string name="revanced_spoof_app_version_for_lyrics_target_summary">Select the spoof app version target for lyrics.</string>
+    <string name="revanced_spoof_app_version_for_lyrics_target_entry_6_42_55">6.42.55 - No real-time lyrics</string>
+    <string name="revanced_spoof_app_version_for_lyrics_target_entry_7_12_52">7.12.52 - Real-time lyrics</string>
+    <string name="revanced_spoof_app_version_for_lyrics_target_entry_8_06_52">8.06.52 - Real-time lyrics + Share button</string>
+    <string name="revanced_spoof_app_version_for_lyrics_target_entry_8_33_54">8.33.54 - Real-time lyrics + Share button + Translate button (Premium users only)</string>
+
 
     <!-- PreferenceScreen: Navigation bar -->
     <string name="revanced_preference_screen_navigation_title">Navigation bar</string>
@@ -330,9 +339,7 @@ Use dark colors if possible, as the app does not support light themes."</string>
     <string name="revanced_enable_forced_miniplayer_title">Enable forced miniplayer</string>
     <string name="revanced_enable_forced_miniplayer_summary">Enables forced miniplayer when switching to a new track.</string>
     <string name="revanced_enable_smooth_transition_animation_title">Enable smooth transition animation</string>
-    <string name="revanced_enable_smooth_transition_animation_summary">"Enables smooth animation when miniplayer is maximized from minimized state.
-
-Limitations: Real-time lyrics UI may be broken for some users."</string>
+    <string name="revanced_enable_smooth_transition_animation_summary">Enables smooth animation when miniplayer is maximized from minimized state.</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Enable swipe to dismiss miniplayer</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Enables swipe down to dismiss miniplayer.</string>
     <string name="revanced_enable_comments_scroll_top_title">Enable scroll to top in comments</string>
