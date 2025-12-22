@@ -259,9 +259,6 @@ Açıklama
     <string name="revanced_hide_web_search_results_title">Web arama sonuçlarını gizle</string>
     <string name="revanced_hide_web_search_results_summary_on">Gizleniyor</string>
     <string name="revanced_hide_web_search_results_summary_off">Gizlenmiyor</string>
-    <string name="revanced_hide_get_premium_title">YouTube Premium reklamlarını gizle</string>
-    <string name="revanced_hide_get_premium_summary_on">YouTube Premium promosyonu gizleniyor.</string>
-    <string name="revanced_hide_get_premium_summary_off">YouTube Premium promosyonu gösteriliyor.</string>
     <!-- PreferenceScreen: Alternative thumbnails -->
     <string name="revanced_preference_screen_alt_thumbnails_title">Alternatif kapak fotoğrafları</string>
     <string name="revanced_alt_thumbnail_home_title">Ana Sayfa Sekmesi</string>

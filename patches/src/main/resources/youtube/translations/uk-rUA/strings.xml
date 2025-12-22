@@ -275,9 +275,11 @@
     <string name="revanced_hide_web_search_results_title">Приховати результати вебпошуку</string>
     <string name="revanced_hide_web_search_results_summary_on">Результати вебпошуку приховано.</string>
     <string name="revanced_hide_web_search_results_summary_off">Результати вебпошуку показується.</string>
-    <string name="revanced_hide_get_premium_title">Приховати рекламу YouTube Premium</string>
-    <string name="revanced_hide_get_premium_summary_on">Рекламу YouTube Premium під відеоплеєром приховано.</string>
-    <string name="revanced_hide_get_premium_summary_off">Рекламу YouTube Premium під відеоплеєром показується.</string>
+    <string name="revanced_hide_youtube_premium_promotion_title">Приховати рекламу YouTube Premium</string>
+    <string name="revanced_hide_youtube_premium_promotion_summary_on">"Рекламу YouTube Premium приховано.
+
+Відома проблема: Коли це налаштування увімкнене, Yoodles не натискаються."</string>
+    <string name="revanced_hide_youtube_premium_promotion_summary_off">Рекламу YouTube Premium показується.</string>
     <!-- PreferenceScreen: Alternative thumbnails -->
     <string name="revanced_preference_screen_alt_thumbnails_title">Альтернативні мініатюри</string>
     <string name="revanced_alt_thumbnail_home_title">Вкладка Головна</string>
@@ -1178,6 +1180,9 @@
 
 Застереження: Деякі виділені пошукові посилання, які не мають стандартного стилю тексту, не можуть бути приховані."</string>
     <string name="revanced_hide_comments_highlighted_search_links_summary_off">Виділені пошукові посилання показується.</string>
+    <string name="revanced_hide_comments_information_button_title">Приховати кнопку інформації</string>
+    <string name="revanced_hide_comments_information_button_summary_on">Кнопку інформації приховано.</string>
+    <string name="revanced_hide_comments_information_button_summary_off">Кнопку інформації показується.</string>
     <string name="revanced_hide_live_chat_messages_title">Приховати повідомлення Чату</string>
     <string name="revanced_hide_live_chat_messages_summary_on">Повідомлення Чату приховано.\n\nЦе налаштування також застосовується до прямих трансляцій Shorts.</string>
     <string name="revanced_hide_live_chat_messages_summary_off">Повідомлення Чату показується.</string>
@@ -2388,9 +2393,11 @@
 <small>(Потрібна авторизація)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"Android
 <small>(Без SDK)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
 <small>(Застарілий)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">Простий TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">Вбудований TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Невипущений)</small>"</string>
@@ -2402,6 +2409,7 @@
 • 1080p+, AV1 та HDR не підтримуються."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_no_sdk">• Відео може зупинитися на 1:00 або бути недоступним у деяких регіонах.</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Меню звукової доріжки відсутнє.
+• Вимкнення примусових авто звукових доріжок може бути недоступне.
 • Стабілізація гучності недоступна.
 • Відео для дітей можуть не відтворюватися коли вийшли з облікового запису або в анонімному режимі."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Якщо деобфускація не вдасться, відтворення може завершитися зі збоями.
@@ -2458,6 +2466,50 @@
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Спробуйте змінити основний клієнт на TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_title">Увімкнути кодек AV1</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_summary_on">"Відеокодек AVC (H.264), VP9 або AV1.
+
+Відтворення може затинатися або втрачати кадри."</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_summary_off">Відеокодек AVC (H.264) або VP9.</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_user_dialog_message">"Якщо увімкнути це налаштування, може використовуватися програмне декодування AV1.
+
+Відтворення може затинатися або втрачати кадри."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_title">Авторизуватися в Android VR</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_summary">Натисніть тут, щоб побачити як увійти в Android VR.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_title">Авторизація в Android VR</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_message">"Вхід в Android VR (YouTube VR) здійснюється відповідно до інструкцій, наданих Google (авторизація облікового запису Google — OAuth 2.0 для TV та додатків з обмеженим введенням даних):
+
+1. Натисніть 'Отримати код активації', щоб згенерувати код активації.
+2. Натисніть 'Відкрити сайт', щоб перейти до 'https://yt.be/activate'.
+3. Введіть код активації.
+4. Увійдіть, коли з'явиться запит. Якщо у вас кілька облікових записів Google, виберіть обліковий запис, який використовуєте для YouTube. Якщо вже увійшли, перейдіть до наступного кроку.
+5. Після входу поверніться до RVX і знову натисніть 'Авторизуватися в Android VR'.
+6. Натисніть 'Отримати токен авторизації', щоб отримати токен авторизації.
+
+※ Натисніть 'Скинути', щоб вилучити токен автентифікації або код активації."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_activation_code_text">Отримати код активації</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_authorization_token_text">Отримати токен авторизації</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_reset_text">Скинути</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_failed">Не вдалося видати токен автентифікації.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_failed_suggestion">Натисніть Скинути та спробуйте ще раз.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_reset">Токен автентифікації та код активації скинуто.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_title">Авторизовано</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_message">"Токен автентифікації збережено.
+
+- Токен автентифікації, виданий за допомогою цього процесу, можна використовувати тільки в YouTube VR (У RVX він використовується для отримання даних трансляції із YouTube VR).
+- Токен автентифікації, який не використовувався протягом більше ніж 6 місяців, буде анульований серверами Google.
+- Якщо ви зміните пароль, скасуєте реєстрацію пристрою в налаштуваннях облікового запису чи видалите додаток, потрібно буде перевидати токен автентифікації."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_title">Код активації</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_message">"Код активації:
+%s
+
+1. Натисніть 'Відкрити сайт', щоб перейти до 'https://yt.be/activate'.
+2. Введіть код активації.
+3. Увійдіть, коли з'явиться запит. Якщо у вас кілька облікових записів Google, виберіть обліковий запис, який використовуєте для YouTube. Якщо вже увійшли, перейдіть до наступного кроку.
+4. Після входу поверніться до RVX і знову натисніть 'Авторизуватися в Android VR'.
+5. Натисніть 'Отримати токен авторизації', щоб отримати токен авторизації."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_open_website_text">Відкрити сайт</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_toast_copy">Код активації скопійовано в буфер обміну: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Використовувати клієнт JavaScript</string>

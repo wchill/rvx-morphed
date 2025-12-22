@@ -295,9 +295,9 @@ Use cores escuras se possível, pois o aplicativo não suporta temas claros."</s
     <string name="revanced_enable_forced_miniplayer_title">Ativar mini reprodutor forçado</string>
     <string name="revanced_enable_forced_miniplayer_summary">Ativa o mini reprodutor forçado ao alternar para uma nova faixa.</string>
     <string name="revanced_enable_smooth_transition_animation_title">Ativar animação de transição suave</string>
-    <string name="revanced_enable_smooth_transition_animation_summary">"Permite animação suave quando o mini reprodutor é maximizado do estado minimizado.
+    <string name="revanced_enable_smooth_transition_animation_summary">Permite animação suave quando o mini reprodutor é maximizado do estado minimizado.
 
-Limitações: A interface das letras em tempo real pode ser quebrada para alguns usuários."</string>
+Limitações: A interface das letras em tempo real pode ser quebrada para alguns usuários.</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Ativar deslizar para dispensar o mini reprodutor</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Ativa deslizar para baixo para fechar o mini reprodutor.</string>
     <string name="revanced_enable_comments_scroll_top_title">Ativar rolar para o topo nos comentários</string>
@@ -320,6 +320,8 @@ Limitações: segmentos de patrocinadores não são exibidos na barra de busca."
     <string name="revanced_hide_comment_timestamp_and_emoji_buttons_summary">Oculta os botões de emoji e marcação de tempo ao escrever comentários.</string>
     <string name="revanced_hide_fullscreen_share_button_title">Ocultar botão Compartilhar em tela cheia</string>
     <string name="revanced_hide_fullscreen_share_button_summary">Oculta o botão Compartilhar no reprodutor de tela cheia.</string>
+    <string name="revanced_hide_comments_information_button_title">Botão Ocultar Informações</string>
+    <string name="revanced_hide_comments_information_button_summary">Oculta o botão Informações no painel de comentários.</string>
     <string name="revanced_hide_lyrics_share_button_title">Ocultar botão de Compartilhar letra da música</string>
     <string name="revanced_hide_lyrics_share_button_summary">Oculta o botão de Compartilhar letra da música.</string>
     <string name="revanced_hide_song_video_toggle_title">Ocultar alternador de Música / Vídeo</string>
@@ -521,10 +523,66 @@ Se você é um usuário de YouTube Premium, essa configuração pode não ser ne
     <string name="revanced_spoof_streaming_data_default_client_title">Cliente padrão</string>
     <string name="revanced_spoof_streaming_data_default_client_summary">Define um cliente padrão para falsificar.</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">Android Não SDK</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_music_no_sdk">Música no Android sem SDK</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">TV Legado</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simples</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_no_sdk_about_title">Faça login no Android sem SDK</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_no_sdk_about_summary">Clique aqui para ver como iniciar sessão no Android sem SDK.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_no_sdk_dialog_title">Faça login no Android sem SDK</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_no_sdk_dialog_message">"Fazer login no Android sem SDK (YouTube) segue as diretrizes fornecidas pelo Google (autorização da conta do Google - OAuth 2.0 para aplicativos Android):
+
+1. Clique em 'Obter token de autorização' para abrir a página de login no WebView.
+2. Faça login na sua Conta do Google.
+3. Os resultados do login serão exibidos em até 5 segundos.
+ ※ Clique em 'Redefinir' para remover um token de autenticação."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_no_sdk_dialog_get_authorization_token_text">Obter token de autorização</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_no_sdk_dialog_reset_text">Redefinir</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_no_sdk_toast_reset">Redefinição do token de autenticação.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_no_sdk_success_dialog_title">Logado</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_no_sdk_success_dialog_message">"Token de autenticação salvo.
+
+· O token de autenticação emitido por este processo só pode ser usado no YouTube (no RVX, é usado para buscar dados de streaming do YouTube).
+· Tokens de autenticação não utilizados por mais de 6 meses serão revogados pelos servidores do Google.
+· Se você alterar sua senha, remover um dispositivo nas configurações da conta ou desinstalar o aplicativo, será necessário emitir um novo token de autenticação."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_title">Faça login no Android VR</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_summary">Clique aqui para ver como iniciar sessão no Android VR.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_title">Faça login no Android VR</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_message">"O login no Android VR (YouTube VR) segue as diretrizes fornecidas pelo Google (autorização da conta do Google - OAuth 2.0 para aplicativos de TV e dispositivos com entrada limitada):
+
+1. Clique em 'Obter código de ativação' para gerar um código de ativação.
+2. Clique em 'Abrir site' para acessar 'https://yt.be/activate'.
+3. Insira o código de ativação.
+4. Faça login quando solicitado. Se você tiver várias Contas do Google, selecione a conta que usa com o YouTube. Se já estiver logado, pule para a próxima etapa.
+5. Após fazer login, retorne ao RVX e clique novamente em 'Fazer login no Android VR'.
+6. Clique em 'Obter token de autorização' para receber um token de autorização.
+
+※ Clique em 'Redefinir' para remover um token de autenticação ou código de ativação."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_activation_code_text">Obtenha o código de ativação</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_authorization_token_text">Obter token de autorização</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_reset_text">Redefinir</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_failed">Falha ao emitir um token de autenticação.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_failed_suggestion">Clique em Reiniciar e tente novamente.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_reset">Redefinição do token de autenticação e do código de ativação.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_title">Logado</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_message">"Token de autenticação salvo.
+
+· O token de autenticação emitido por este processo só pode ser usado no YouTube VR (no RVX, é usado para buscar dados de streaming do YouTube VR).
+· Tokens de autenticação não utilizados por mais de 6 meses serão revogados pelos servidores do Google.
+· Se você alterar sua senha, remover um dispositivo nas configurações da conta ou desinstalar o aplicativo, será necessário emitir um novo token de autenticação."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_title">Código de ativação</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_message">"Código de ativação:
+%s
+
+1. Clique em 'Abrir site' para acessar 'https://yt.be/activate'.
+2. Insira o código de ativação.
+3. Faça login quando solicitado. Se você tiver várias Contas do Google, selecione a conta que usa com o YouTube. Se já estiver logado, pule para a próxima etapa.
+4. Após fazer login, retorne ao RVX e clique novamente em 'Fazer login no Android VR'.
+5. Clique em 'Obter token de autorização' para receber um token de autorização."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_open_website_text">Abra o site</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_toast_copy">Código de ativação copiado para a área de transferência: %s.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Não foi possível obter nenhum fluxo de cliente.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Tente alterar o cliente padrão para TV.</string>
     <string name="revanced_watch_history_type_title">Tipo de histórico de exibição</string>

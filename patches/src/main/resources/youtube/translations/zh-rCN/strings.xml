@@ -275,9 +275,6 @@
     <string name="revanced_hide_web_search_results_title">隐藏网络搜索结果</string>
     <string name="revanced_hide_web_search_results_summary_on">已隐藏网络搜索结果。</string>
     <string name="revanced_hide_web_search_results_summary_off">已显示网络搜索结果。</string>
-    <string name="revanced_hide_get_premium_title">隐藏 YouTube Premium 推广</string>
-    <string name="revanced_hide_get_premium_summary_on">已隐藏 YouTube Premium 推广。</string>
-    <string name="revanced_hide_get_premium_summary_off">已显示 YouTube Premium 推广。</string>
     <!-- PreferenceScreen: Alternative thumbnails -->
     <string name="revanced_preference_screen_alt_thumbnails_title">备选缩略图</string>
     <string name="revanced_alt_thumbnail_home_title">主页标签页</string>

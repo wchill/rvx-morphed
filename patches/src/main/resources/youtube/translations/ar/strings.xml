@@ -259,9 +259,11 @@
     <string name="revanced_hide_web_search_results_title">إخفاء نتائج بحث الويب</string>
     <string name="revanced_hide_web_search_results_summary_on">تم إخفاء نتائج البحث على الويب.</string>
     <string name="revanced_hide_web_search_results_summary_off">يتم عرض نتائج البحث على الويب.</string>
-    <string name="revanced_hide_get_premium_title">إخفاء الترقية إلى YouTube Premium</string>
-    <string name="revanced_hide_get_premium_summary_on">تم إخفاء الترقية لـ YouTube Premium.</string>
-    <string name="revanced_hide_get_premium_summary_off">يتم عرض الترقية لـ YouTube Premium.</string>
+    <string name="revanced_hide_youtube_premium_promotion_title">إخفاء الترقية إلى YouTube Premium</string>
+    <string name="revanced_hide_youtube_premium_promotion_summary_on">"تم إخفاء الترقية لـ YouTube Premium.
+
+مشكلة معروفة: عند تمكين هذا الإعداد، لا يمكن النقر على رسومات YouTube."</string>
+    <string name="revanced_hide_youtube_premium_promotion_summary_off">يتم عرض الترقية لـ YouTube Premium.</string>
     <!-- PreferenceScreen: Alternative thumbnails -->
     <string name="revanced_preference_screen_alt_thumbnails_title">مصغرات فيديو بديلة</string>
     <string name="revanced_alt_thumbnail_home_title">علامة تبويب الصفحة الرئيسية</string>
@@ -2395,10 +2397,6 @@
 • مستوى الصوت الثابت غير متاح.
 • قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• في حال فشل إزالة التشويش، قد يفشل التشغيل.
-• في بعض الأحيان، قد لا يعمل الفيديو حتى بعد 10 ثوانٍ، وفي هذه الحالة، ستحتاج إلى الضغط على زر إعادة تحميل الفيديو.
-• قد يبدأ الفيديو متأخرًا."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply">"• في حال فشل إزالة التشويش، قد يفشل التشغيل.
-• قد تتطلب بعض الحسابات رمز PoToken، وفي هذه الحالة سوف تفشل عملية التشغيل.
 • في بعض الأحيان، قد لا يعمل الفيديو حتى بعد 10 ثوانٍ، وفي هذه الحالة، ستحتاج إلى الضغط على زر إعادة تحميل الفيديو.
 • قد يبدأ الفيديو متأخرًا."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• قائمة المقطع الصوتي مفقودة.
