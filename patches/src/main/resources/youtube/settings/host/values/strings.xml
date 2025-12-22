@@ -286,9 +286,11 @@ Description
     <string name="revanced_hide_web_search_results_title">Hide web search results</string>
     <string name="revanced_hide_web_search_results_summary_on">Web search results are hidden.</string>
     <string name="revanced_hide_web_search_results_summary_off">Web search results are shown.</string>
-    <string name="revanced_hide_get_premium_title">Hide YouTube Premium promotion</string>
-    <string name="revanced_hide_get_premium_summary_on">YouTube Premium promotion is hidden.</string>
-    <string name="revanced_hide_get_premium_summary_off">YouTube Premium promotion is shown.</string>
+    <string name="revanced_hide_youtube_premium_promotion_title">Hide YouTube Premium promotion</string>
+    <string name="revanced_hide_youtube_premium_promotion_summary_on">"YouTube Premium promotion is hidden.
+
+Known issue: When this setting is enabled, YouTube Doodles are not clickable."</string>
+    <string name="revanced_hide_youtube_premium_promotion_summary_off">YouTube Premium promotion is shown.</string>
 
 
     <!-- PreferenceScreen: Alternative thumbnails -->
