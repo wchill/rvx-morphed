@@ -47,6 +47,8 @@ public class Settings extends BaseSettings {
     public static final BooleanSetting HIDE_ACTION_BUTTON_LABEL = new BooleanSetting("revanced_hide_action_button_label", FALSE, true);
     public static final BooleanSetting EXTERNAL_DOWNLOADER_ACTION_BUTTON = new BooleanSetting("revanced_external_downloader_action", FALSE, true);
     public static final StringSetting EXTERNAL_DOWNLOADER_PACKAGE_NAME = new StringSetting("revanced_external_downloader_package_name", "com.deniscerri.ytdl");
+    public static final BooleanSetting REPLACE_ACTION_BUTTON_LIKE = new BooleanSetting("revanced_replace_action_button_like", FALSE, true);
+    public static final BooleanSetting REPLACE_ACTION_BUTTON_LIKE_TYPE = new BooleanSetting("revanced_replace_action_button_like_type", FALSE, true);
 
 
     // PreferenceScreen: Ads

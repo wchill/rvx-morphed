@@ -92,6 +92,15 @@
     <string name="revanced_external_downloader_not_installed_dialog_message">"%1$s is not installed.
 Please download %2$s from the website."</string>
     <string name="revanced_external_downloader_not_installed_warning">%s is not installed. Please install it.</string>
+    <string name="revanced_replace_action_button_like_title">Replace like button</string>
+    <string name="revanced_replace_action_button_like_summary">"Use a different icon and animation for the Like button.
+
+• This setting may no longer be needed once the issue is fixed on the server side."</string>
+    <string name="revanced_replace_action_button_like_type_title">Use smaller icon</string>
+    <string name="revanced_replace_action_button_like_type_summary">"Use a smaller like button.
+
+• Some users have a lower action bar (A/B testing).
+• This setting is for these users, but has not been tested."</string>
 
 
     <!-- PreferenceScreen: Ads -->
