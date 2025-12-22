@@ -57,6 +57,7 @@ import app.revanced.util.findInstructionIndicesReversed
 import app.revanced.util.findMethodOrThrow
 import app.revanced.util.fingerprint.injectLiteralInstructionBooleanCall
 import app.revanced.util.fingerprint.injectLiteralInstructionViewCall
+import app.revanced.util.fingerprint.legacyFingerprint
 import app.revanced.util.fingerprint.matchOrNull
 import app.revanced.util.fingerprint.matchOrThrow
 import app.revanced.util.fingerprint.methodCall
@@ -622,10 +623,43 @@ val playerComponentsPatch = bytecodePatch(
                 "$PLAYER_CLASS_DESCRIPTOR->enableSmoothTransitionAnimation(Z)Z"
             )
 
+            val smoothTransitionAnimationMethod =
+                smoothTransitionAnimationFingerprint.methodCall()
+
+            fun indexOfSmoothTransitionAnimation(method: Method) =
+                method.indexOfFirstInstruction {
+                    opcode == Opcode.INVOKE_VIRTUAL &&
+                            getReference<MethodReference>()?.toString() == smoothTransitionAnimationMethod
+                }
+
+            val smoothTransitionAnimationInvertedFingerprint = legacyFingerprint(
+                name = "smoothTransitionAnimationInvertedFingerprint",
+                returnType = "V",
+                accessFlags = AccessFlags.PUBLIC.value,
+                parameters = emptyList(),
+                customFingerprint = { method, _ ->
+                    indexOfSmoothTransitionAnimation(method) >= 0
+                }
+            )
+
+            smoothTransitionAnimationInvertedFingerprint
+                .methodOrThrow(smoothTransitionAnimationInvertedParentFingerprint)
+                .apply {
+                    val index = indexOfSmoothTransitionAnimation(this)
+                    val register = getInstruction<OneRegisterInstruction>(index + 1).registerA
+
+                    addInstructions(
+                        index + 2, """
+                            invoke-static {v$register}, $PLAYER_CLASS_DESCRIPTOR->enableSmoothTransitionAnimationInverted(Z)Z
+                            move-result v$register
+                            """
+                    )
+                }
+
             addSwitchPreference(
                 CategoryType.PLAYER,
                 "revanced_enable_smooth_transition_animation",
-                "false"
+                "true"
             )
         }
 
@@ -812,7 +846,7 @@ val playerComponentsPatch = bytecodePatch(
             addSwitchPreference(
                 CategoryType.PLAYER,
                 "revanced_enable_thick_seekbar",
-                "false"
+                "true"
             )
         }
 
