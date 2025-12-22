@@ -2566,7 +2566,8 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
 • Disable forced auto audio tracks may not be available.
 • Stable volume is not available.
 • Kids videos may not play when logged out or in incognito mode.
-• 1080p+, AV1, and HDR are not supported."</string>
+• 1080p+, AV1, and HDR are not supported.
+• 360° VR immersive mode is not available."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_no_sdk">• Video may stop at 1:00, or may not be available in some regions.</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Audio track menu is missing.
 • Disable forced auto audio tracks may not be available.
@@ -2574,13 +2575,11 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
 • Kids videos may not play when logged out or in incognito mode."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• If deobfuscation fails, playback may fail.
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
-• Video may start late."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply">"• If deobfuscation fails, playback may fail.
-• Some accounts may require a PoToken, in which case the playback will fail.
-• Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
-• Video may start late."</string>
+• Video may start late.
+• 360° VR immersive mode is not available."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Audio track menu is missing.
 • Kids videos may not play when logged out or in incognito mode.
+• 360° VR immersive mode is not available.
 • Since this is an unreleased client, it may stop working at any time."</string>
     <string name="revanced_spoof_streaming_data_side_effects_unknown">• Unknown</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Prioritize video quality</string>
