@@ -45,17 +45,6 @@ public class FullscreenAdsPatch {
     }
 
     /**
-     * Rest of the implementation added by patch.
-     */
-    private static void closeDialog(Object customDialog) {
-        // Casting customDialog to 'android.app.Dialog' and calling [dialog.onBackPressed()] also works with limitations.
-        // If the targetSDKVersion is 36+ and the device is running Android 16+, this method will most likely not work.
-        //
-        // So the patch call the 'onBackPressed()' method of the custom dialog class.
-        // The 'onBackPressed()' method of the customDialog class handles the OnBackInvokedDispatcher.
-    }
-
-    /**
      * Called after {@link #checkDialog(byte[])}
      *
      * @param customDialog Custom dialog which bound by litho
@@ -65,6 +54,8 @@ public class FullscreenAdsPatch {
         if (isFullscreenAds && customDialog instanceof Dialog dialog) {
             Window window = dialog.getWindow();
             if (window != null) {
+                // Set the dialog size to 0 before closing.
+                // If the dialog is not resized to 0, it will remain visible for about a second before closing.
                 WindowManager.LayoutParams params = window.getAttributes();
                 params.height = 0;
                 params.width = 0;
@@ -75,23 +66,19 @@ public class FullscreenAdsPatch {
                 // Disable dialog's background dim.
                 window.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
 
-                if (IS_YOUTUBE) {
-                    // Hide DecorView.
-                    View decorView = window.getDecorView();
-                    decorView.setVisibility(View.GONE);
+                // Restore window flags.
+                window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_UNSPECIFIED);
 
-                    // Dismiss dialog.
-                    dialog.dismiss();
-                } else {
-                    // In YouTube Music, the home feed doesn't load when the dialog is closed with [Dialog.dismiss()].
-                    // Use [Dialog.onBackPressed()] to close the dialog, even with a 0.5-second delay.
-                    closeDialog(customDialog);
-                }
+                // Restore decorView visibility.
+                window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_VISIBLE);
+            }
 
-                if (BaseSettings.DEBUG_TOAST_ON_ERROR.get()
-                        || (!IS_YOUTUBE && BaseSettings.DEBUG.get())) {
-                    Utils.showToastShort(str("revanced_fullscreen_ads_closed_toast"));
-                }
+            // Dismiss dialog.
+            dialog.dismiss();
+
+            if (BaseSettings.DEBUG_TOAST_ON_ERROR.get()
+                    || (!IS_YOUTUBE && BaseSettings.DEBUG.get())) {
+                Utils.showToastShort(str("revanced_fullscreen_ads_closed_toast"));
             }
         }
     }

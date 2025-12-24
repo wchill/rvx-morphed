@@ -148,16 +148,6 @@ fun adsPatch(
                     invoke-static {v0}, $EXTENSION_CLASS_DESCRIPTOR->checkDialog([B)V
                     """
             )
-
-            val customDialogOnBackPressedMethod = customDialogOnBackPressedFingerprint
-                .methodOrThrow(customDialogOnBackPressedParentFingerprint)
-
-            fullscreenAdsPatchFingerprint.methodOrThrow().addInstructions(
-                0, """
-                    check-cast p0, ${customDialogOnBackPressedMethod.definingClass}
-                    invoke-virtual { p0 }, $customDialogOnBackPressedMethod
-                    """
-            )
         }
 
         executeBlock()
