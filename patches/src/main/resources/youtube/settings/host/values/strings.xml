@@ -2641,7 +2641,7 @@ Playback may stutter or drop frames."</string>
     <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_title">Sign in to Android VR</string>
     <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_summary">Click here to see how to sign in to Android VR.</string>
     <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_title">Sign in to Android VR</string>
-    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_message">"Signing into Android VR (YouTube VR) follows the guidelines provided by Google (Google account authorization - OAuth 2.0 for TV and Limited-Input Device Applications):
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_message">"Signing in to Android VR (YouTube VR) follows the guidelines provided by Google (Google account authorization - OAuth 2.0 for TV and Limited-Input Device Applications):
 
 1. Click 'Get activation code' to generate an activation code.
 2. Click 'Open website' to go to 'https://yt.be/activate'.

@@ -25,8 +25,6 @@ object YouTubeClient {
     private const val CLIENT_REFERER_FORMAT_WEB = "https://www.youtube.com/watch?v=%s"
     private const val CLIENT_REFERER_FORMAT_MWEB = "https://m.youtube.com/watch?v=%s"
 
-    private const val DEVICE_MAKE_APPLE = "Apple"
-
 
     // ANDROID
     /**
@@ -161,7 +159,7 @@ object YouTubeClient {
 
     // VISION OS
     private const val CLIENT_VERSION_VISIONOS = "0.1"
-    private const val DEVICE_MAKE_VISIONOS = DEVICE_MAKE_APPLE
+    private const val DEVICE_MAKE_VISIONOS = "Apple"
     private const val DEVICE_MODEL_VISIONOS = "RealityDevice14,1"
     private const val OS_NAME_VISIONOS = "visionOS"
     private const val OS_VERSION_VISIONS = "1.3.21O771"
@@ -239,7 +237,7 @@ object YouTubeClient {
 
     // MWEB
     /**
-     * Video not playable: Paid / Movie / Private / Age-restricted.
+     * Video not playable: Paid, Movie, Private, Age-restricted.
      * 360° VR immersive mode is not available.
      */
     private const val CLIENT_VERSION_MWEB = "2.20251105.03.00"
@@ -516,12 +514,7 @@ object YouTubeClient {
             friendlyName = "TV Embedded"
         ),
 
-        /**
-         * PoToken client is currently not working.
-         * Mobile Web / Web has been temporarily removed from the available clients.
-         *
-         * TODO: Content PoToken must be generated using the '/att/get' endpoint.
-         */
+        // Unused client.
         MWEB(
             id = 2,
             clientVersion = CLIENT_VERSION_MWEB,
@@ -535,12 +528,7 @@ object YouTubeClient {
             friendlyName = "Mobile Web"
         ),
 
-        /**
-         * PoToken client is currently not working.
-         * Mobile Web / Web has been temporarily removed from the available clients.
-         *
-         * TODO: Content PoToken must be generated using the '/att/get' endpoint.
-         */
+        // Unused client.
         WEB_LEGACY(
             id = 1,
             clientVersion = CLIENT_VERSION_WEB_LEGACY,
