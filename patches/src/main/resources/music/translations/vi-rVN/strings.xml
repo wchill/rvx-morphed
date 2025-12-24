@@ -98,9 +98,9 @@ Chi tiết:
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Quảng cáo</string>
     <string name="revanced_hide_fullscreen_ads_title">Ẩn quảng cáo toàn màn hình</string>
-    <string name="revanced_hide_fullscreen_ads_summary">"Ẩn quảng cáo toàn màn hình.
+    <string name="revanced_hide_fullscreen_ads_summary">Ẩn quảng cáo toàn màn hình.
 
-Hạn chế: Đôi khi mở thẻ Trang chủ, bạn chỉ thấy một màn hình màu đen."</string>
+Hạn chế: Đôi khi mở thẻ Trang chủ, bạn chỉ thấy một màn hình màu đen.</string>
     <string name="revanced_fullscreen_ads_closed_toast">Quảng cáo toàn màn hình đã đóng.</string>
     <string name="revanced_hide_general_ads_title">Ẩn quảng cáo chung</string>
     <string name="revanced_hide_general_ads_summary">Ẩn quảng cáo xuất hiện trước khi phát.</string>

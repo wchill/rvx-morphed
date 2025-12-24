@@ -84,22 +84,19 @@
     <string name="revanced_external_downloader_not_installed_dialog_message">"%1$s 가 설치되어 있지 않습니다.
 웹사이트에서 %2$s 를 다운로드하세요."</string>
     <string name="revanced_external_downloader_not_installed_warning">%s 가 설치되지 않았습니다. 설치하세요.</string>
-    <string name="revanced_replace_action_button_like_title">\'좋아요\' 버튼 변경</string>
-    <string name="revanced_replace_action_button_like_summary">"\"좋아요\" 버튼에 다른 아이콘과 애니메이션을 사용합니다.
+    <string name="revanced_replace_action_button_like_title">좋아요 버튼 변경</string>
+    <string name="revanced_replace_action_button_like_summary">"좋아요 버튼에 다른 아이콘과 애니메이션을 사용합니다.
 
 • 서버 측에서 문제가 해결되면 이 설정은 더 이상 필요하지 않을 수 있습니다."</string>
     <string name="revanced_replace_action_button_like_type_title">더 작은 아이콘 사용</string>
-    <string name="revanced_replace_action_button_like_type_summary">"더 작은 \"좋아요\" 버튼을 사용합니다.
+    <string name="revanced_replace_action_button_like_type_summary">"더 작은 좋아요 버튼을 사용합니다.
 
-• 일부 사용자는 동작바가 더 낮습니다 (A/B 테스트).
+• 일부 사용자에게는 더 낮은 동작바가 표시됩니다 (A/B 테스트).
 • 이 설정은 이러한 사용자를 위한 것이지만 테스트되지 않았습니다."</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">광고</string>
     <string name="revanced_hide_fullscreen_ads_title">전체 화면 광고 제거</string>
-    <string name="revanced_hide_fullscreen_ads_summary">"전체 화면 광고를 숨깁니다.
-
-제한 사항:
-• 간혹 홈 피드 대신 검은색 빈 화면이 표시될 수 있습니다."</string>
+    <string name="revanced_hide_fullscreen_ads_summary">전체 화면 광고를 숨깁니다.</string>
     <string name="revanced_fullscreen_ads_closed_toast">전체 화면 광고가 닫아졌습니다.</string>
     <string name="revanced_hide_general_ads_title">일반 레이아웃 광고 제거</string>
     <string name="revanced_hide_general_ads_summary">일반 레이아웃 광고를 숨깁니다.</string>
@@ -366,7 +363,7 @@ YouTube Music의 검색 및 설정과 같은 활동은 공개되지 않으므로
     <string name="revanced_hide_settings_menu_notification_title">알림 메뉴 숨기기</string>
     <string name="revanced_hide_settings_menu_privacy_and_location_title">개인 정보 보호 및 데이터 메뉴 숨기기</string>
     <string name="revanced_hide_settings_menu_recommendations_title">맞춤 콘텐츠 메뉴 숨기기</string>
-    <string name="revanced_hide_settings_menu_paid_memberships_title">Music Premium 가입 메뉴 숨기기</string>
+    <string name="revanced_hide_settings_menu_paid_memberships_title">유료 멤버십 메뉴 숨기기</string>
     <string name="revanced_hide_settings_menu_about_title">YouTube Music 정보 메뉴 숨기기</string>
     <!-- PreferenceScreen: Video -->
     <string name="revanced_preference_screen_video_title">동영상</string>

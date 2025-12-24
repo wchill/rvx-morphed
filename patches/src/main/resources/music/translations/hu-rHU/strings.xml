@@ -51,10 +51,10 @@ Töltsd le a(z) %2$s weboldalról."</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Hirdetések</string>
     <string name="revanced_hide_fullscreen_ads_title">Teljes képernyős hirdetések elrejtése</string>
-    <string name="revanced_hide_fullscreen_ads_summary">"Teljes képernyős hirdetések elrejtése.
+    <string name="revanced_hide_fullscreen_ads_summary">Teljes képernyős hirdetések elrejtése.
 
 Limitáció;
-•Néha lehet hogy csak fekete képet látsz a kezdő képernyő helyett."</string>
+•Néha lehet hogy csak fekete képet látsz a kezdő képernyő helyett.</string>
     <string name="revanced_fullscreen_ads_closed_toast">Teljes képernyős hirdetések bezárva.</string>
     <string name="revanced_hide_general_ads_title">Általános hirdetések elrejtése</string>
     <string name="revanced_hide_general_ads_summary">Elrejti az általános hirdetéseket.</string>

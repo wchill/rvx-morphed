@@ -51,10 +51,10 @@ Harap unduh %2$s dari website."</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Iklan</string>
     <string name="revanced_hide_fullscreen_ads_title">Sembunyikan iklan layar penuh</string>
-    <string name="revanced_hide_fullscreen_ads_summary">"Menyembunyikan iklan layar penuh.
+    <string name="revanced_hide_fullscreen_ads_summary">Menyembunyikan iklan layar penuh.
 
 Keterbatasan:
-• Terkadang Anda mungkin melihat layar hitam kosong, bukan feed beranda."</string>
+• Terkadang Anda mungkin melihat layar hitam kosong, bukan feed beranda.</string>
     <string name="revanced_fullscreen_ads_closed_toast">Iklan layar penuh ditutup.</string>
     <string name="revanced_hide_general_ads_title">Sembunyikan Iklan Umum</string>
     <string name="revanced_hide_general_ads_summary">Menyembunyikan Iklan Umum.</string>

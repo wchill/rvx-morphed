@@ -2386,17 +2386,20 @@ Nota: questa impostazione potrebbe non essere necessaria se sei un utente YouTub
 • Il menù Volume Stabile è nascosto.
 • La disattivazione della traccia audio automatica forzata potrebbe non funzionare.
 • I video per bambini potrebbero non essere riprodotti se si è disconnessi o in incognito.
-• 1080p+, AV1 e HDR non funzionano."</string>
+• 1080p+, AV1 e HDR non funzionano.
+• La modalità immersiva a 360° di YouTube VR non funziona."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_no_sdk">• I video potrebbero interrompersi a 1:00 o non essere disponibili in alcune regioni.</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Il menù Traccia Audio è nascosto.
 • Il menù Volume Stabile è nascosto.
 • La disattivazione della traccia audio automatica forzata potrebbe non funzionare.
 • I video per bambini potrebbero non essere riprodotti se si è disconnessi o in incognito."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv">"• Se il deoffuscamento fallisce, la riproduzione potrebbe non funzionare.
+    <string name="revanced_spoof_streaming_data_side_effects_tv">"• La modalità immersiva a 360° di YouTube VR non funziona.
+• Se il deoffuscamento fallisce, la riproduzione potrebbe non funzionare.
 • I video potrebbero iniziare in ritardo.
 • A volte i video non vengono riprodotti neanche dopo 10 secondi, in tal caso è necessario toccare il pulsante \"Ricarica Video\"."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Il menù Traccia Audio è nascosto.
 • I video per bambini potrebbero non essere riprodotti se si è disconnessi o in incognito.
+• La modalità immersiva a 360° di YouTube VR non funziona.
 • Poichè si tratta di un client non ancora rilasciato, potrebbe smettere di funzionare in qualsiasi momento."</string>
     <string name="revanced_spoof_streaming_data_side_effects_unknown">• Sconosciuti</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Cambia cosa dare priorità nei video</string>

@@ -52,10 +52,10 @@
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">広告</string>
     <string name="revanced_hide_fullscreen_ads_title">全画面広告を非表示</string>
-    <string name="revanced_hide_fullscreen_ads_summary">"全画面広告を隠す
+    <string name="revanced_hide_fullscreen_ads_summary">全画面広告を隠す
 
 注意:
-・ホームフィードの代わりに真っ黒な画面が表示されることがあります。"</string>
+・ホームフィードの代わりに真っ黒な画面が表示されることがあります。</string>
     <string name="revanced_fullscreen_ads_closed_toast">全画面広告を閉じました。</string>
     <string name="revanced_hide_general_ads_title">一般広告を非表示</string>
     <string name="revanced_hide_general_ads_summary">一般広告を非表示にします。</string>

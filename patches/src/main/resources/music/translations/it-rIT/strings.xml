@@ -86,10 +86,10 @@ Si prega di scaricare %2$s dal sito web."</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Annunci</string>
     <string name="revanced_hide_fullscreen_ads_title">Nascondi gli annunci a schermo intero</string>
-    <string name="revanced_hide_fullscreen_ads_summary">"Nasconde gli annunci a schermo intero.
+    <string name="revanced_hide_fullscreen_ads_summary">Nasconde gli annunci a schermo intero.
 
 Limitazioni:
-• A volte potrebbe apparire una schermata nera invece della Home."</string>
+• A volte potrebbe apparire una schermata nera invece della Home.</string>
     <string name="revanced_fullscreen_ads_closed_toast">Annunci a schermo intero chiusi.</string>
     <string name="revanced_hide_general_ads_title">Nascondi annunci generici</string>
     <string name="revanced_hide_general_ads_summary">Nasconde annunci generici.</string>
