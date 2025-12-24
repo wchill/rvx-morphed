@@ -96,10 +96,10 @@ Pobierz %2$s ze strony."</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Reklamy</string>
     <string name="revanced_hide_fullscreen_ads_title">Ukryj reklamy pełnoekranowe</string>
-    <string name="revanced_hide_fullscreen_ads_summary">Ukrywa reklamy pełnoekranowe.
+    <string name="revanced_hide_fullscreen_ads_summary">"Ukrywa reklamy pełnoekranowe.
 
 Ograniczenie:
-• Czasem może pojawić się pusty czarny ekran zamiast strony głównej</string>
+• Czasem może pojawić się pusty czarny ekran zamiast strony głównej"</string>
     <string name="revanced_fullscreen_ads_closed_toast">Zamknięto pełnoekranowe reklamy</string>
     <string name="revanced_hide_general_ads_title">Ukryj ogólne reklamy</string>
     <string name="revanced_hide_general_ads_summary">Ukrywa ogólne reklamy.</string>

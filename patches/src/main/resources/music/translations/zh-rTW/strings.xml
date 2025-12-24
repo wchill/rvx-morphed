@@ -52,10 +52,10 @@
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">廣告</string>
     <string name="revanced_hide_fullscreen_ads_title">隱藏全螢幕廣告</string>
-    <string name="revanced_hide_fullscreen_ads_summary">隱藏全螢幕廣告。
+    <string name="revanced_hide_fullscreen_ads_summary">"隱藏全螢幕廣告。
 
 限制：
-•有時你可能會看到一個空白的黑畫面而不是首頁資訊。</string>
+•有時你可能會看到一個空白的黑畫面而不是首頁資訊。"</string>
     <string name="revanced_fullscreen_ads_closed_toast">全螢幕廣告已關閉。</string>
     <string name="revanced_hide_general_ads_title">隱藏一般廣告</string>
     <string name="revanced_hide_general_ads_summary">隱藏一般廣告</string>

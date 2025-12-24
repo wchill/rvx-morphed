@@ -86,10 +86,10 @@ Por favor, baixe %2$s do site."</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Anúncios</string>
     <string name="revanced_hide_fullscreen_ads_title">Ocultar anúncios em tela cheia</string>
-    <string name="revanced_hide_fullscreen_ads_summary">Oculta anúncios de tela cheia.
+    <string name="revanced_hide_fullscreen_ads_summary">"Oculta anúncios de tela cheia.
 
 Limitações:
-• Às vezes você pode ver uma tela preta em branco ao invés do feed inicial.</string>
+• Às vezes você pode ver uma tela preta em branco ao invés do feed inicial."</string>
     <string name="revanced_fullscreen_ads_closed_toast">Os anúncios em tela cheia são fechados.</string>
     <string name="revanced_hide_general_ads_title">Ocultar anúncios gerais</string>
     <string name="revanced_hide_general_ads_summary">Oculta anúncios gerais.</string>

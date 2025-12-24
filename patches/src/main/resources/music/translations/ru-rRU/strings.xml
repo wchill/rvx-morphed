@@ -87,10 +87,10 @@
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Реклама</string>
     <string name="revanced_hide_fullscreen_ads_title">Полноэкранная реклама</string>
-    <string name="revanced_hide_fullscreen_ads_summary">Скрывает полноэкранную рекламу.
+    <string name="revanced_hide_fullscreen_ads_summary">"Скрывает полноэкранную рекламу.
 
 Ограничение:
-• Иногда вместо главной ленты можно увидеть пустой черный экран.</string>
+• Иногда вместо главной ленты можно увидеть пустой черный экран."</string>
     <string name="revanced_fullscreen_ads_closed_toast">Полноэкранная реклама закрыта.</string>
     <string name="revanced_hide_general_ads_title">Скрыть рекламу общего формата</string>
     <string name="revanced_hide_general_ads_summary">Скрывает рекламу общего формата.</string>
