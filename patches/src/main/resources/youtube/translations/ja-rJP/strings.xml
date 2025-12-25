@@ -629,7 +629,6 @@ DeArrow について詳しく知るには、ここをタップしてください
     <string name="revanced_disable_translucent_status_bar_title">半透明なステータスバーを無効化</string>
     <string name="revanced_disable_translucent_status_bar_summary_on">ステータスバーを不透明にします。</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">ステータスバーを不透明にします。</string>
-    <string name="revanced_disable_translucent_status_bar_user_dialog_message">Android 12 以降を実行している一部のメーカーの ROM では、この機能を有効にすると、システムナビゲーションバーが透明になる可能性があります。</string>
     <string name="revanced_fix_hype_button_icon_title">[ハイプ] ボタンのアイコンを修正</string>
     <string name="revanced_fix_hype_button_icon_summary_on">[ハイプ] ボタンのアイコンを修正します。</string>
     <string name="revanced_fix_hype_button_icon_summary_off">[ハイプ] ボタンのアイコンを修正します。</string>
@@ -816,7 +815,7 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_replace_navigation_button_target_entry_subscriptions">登録チャンネル</string>
     <string name="revanced_replace_navigation_button_target_entry_notifications">通知</string>
     <string name="revanced_enable_translucent_navigation_bar_title">半透明のナビゲーションバーを有効化</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">ナビゲーションバー ([ホーム]、[登録チャンネル] などのボタン) を半透明にします。</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"ナビゲーションバー ([ホーム]、[登録チャンネル] などのボタン) を半透明にします。"</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">ナビゲーションバー ([ホーム]、[登録チャンネル] などのボタン) を半透明にします。</string>
     <string name="revanced_hide_navigation_bar_title">ナビゲーションバーを非表示</string>
     <string name="revanced_hide_navigation_bar_summary_on">ナビゲーションバー ([ホーム]、[登録チャンネル] などのボタン) を非表示にします。</string>

@@ -610,7 +610,6 @@
     <string name="revanced_disable_translucent_status_bar_title">تعطيل شريط الحالة الشفاف</string>
     <string name="revanced_disable_translucent_status_bar_summary_on">شريط الحالة غير شفاف.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">شريط الحالة معتم أو شفاف.</string>
-    <string name="revanced_disable_translucent_status_bar_user_dialog_message">بالنسبة لبعض الـ ROM الخاصة بالشركة المصنعة التي تعمل بنظام Android 12 أو أحدث، قد يؤدي تمكين هذه الميزة إلى جعل شريط التنقل في النظام شفافًا.</string>
     <string name="revanced_fix_hype_button_icon_title">إصلاح أيقونة زر التشجيع</string>
     <string name="revanced_fix_hype_button_icon_summary_on">يتم عرض أيقونة زر التشجيع.</string>
     <string name="revanced_fix_hype_button_icon_summary_off">تم إخفاء أيقونة زر التشجيع.</string>
@@ -796,7 +795,7 @@
     <string name="revanced_replace_navigation_button_target_entry_subscriptions">الاشتراكات</string>
     <string name="revanced_replace_navigation_button_target_entry_notifications">الإشعارات</string>
     <string name="revanced_enable_translucent_navigation_bar_title">تمكين شريط التنقل الشفاف</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">شريط التنقل شفاف.</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"شريط التنقل شفاف."</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">شريط التنقل غير شفاف.</string>
     <string name="revanced_hide_navigation_bar_title">إخفاء شريط التنقل</string>
     <string name="revanced_hide_navigation_bar_summary_on">تم إخفاء شريط التنقل.</string>

@@ -404,7 +404,7 @@ YouTube Music의 검색 및 설정과 같은 활동은 공개되지 않으므로
     <string name="revanced_ryd_estimated_like_title">추정되는 좋아요 수 표시</string>
     <string name="revanced_ryd_estimated_like_summary">좋아요 수가 숨겨진 음악에서 추정되는 좋아요 수를 표시합니다.</string>
     <string name="revanced_ryd_toast_on_connection_error_title">API를 사용할 수 없을 때 팝업 메시지 표시</string>
-    <string name="revanced_ryd_toast_on_connection_error_summary">ReturnYouTubeDislike를 사용할 수 없을 때, 팝업 메시지를 표시합니다.</string>
+    <string name="revanced_ryd_toast_on_connection_error_summary">Return YouTube Dislike를 사용할 수 없을 때, 팝업 메시지를 표시합니다.</string>
     <string name="revanced_ryd_about">정보</string>
     <string name="revanced_ryd_attribution_title">ReturnYouTubeDislike.com</string>
     <string name="revanced_ryd_attribution_summary">싫어요 수의 데이터는 Return YouTube Dislike API에 의해 제공됩니다. 자세한 내용을 보려면 여기를 탭하세요.</string>

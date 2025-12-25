@@ -627,7 +627,6 @@ Zmiany zawierają:
     <string name="revanced_disable_translucent_status_bar_title">Półprzezroczystość paska statusu</string>
     <string name="revanced_disable_translucent_status_bar_summary_on">Wyłączona</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Włączona</string>
-    <string name="revanced_disable_translucent_status_bar_user_dialog_message">Dla większości producentów ROM-ów bazujących na Androidzie 12 i wzwyż, włączenie tej opcji spowoduje stanie się systemowego paska nawigacji przezroczystym.</string>
     <string name="revanced_fix_hype_button_icon_title">Napraw widoczność ikony podbijania</string>
     <string name="revanced_fix_hype_button_icon_summary_on">Tak</string>
     <string name="revanced_fix_hype_button_icon_summary_off">Nie</string>
@@ -814,7 +813,7 @@ Stuknij tutaj, by pobrać YouTube Music.</string>
     <string name="revanced_replace_navigation_button_target_entry_subscriptions">Subskrypcje</string>
     <string name="revanced_replace_navigation_button_target_entry_notifications">Powiadomienia</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Wygląd paska nawigacji</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">Półprzezroczysty</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"Półprzezroczysty"</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">Nieprzezroczysty</string>
     <string name="revanced_hide_navigation_bar_title">Pasek nawigacji</string>
     <string name="revanced_hide_navigation_bar_summary_on">Ukryty</string>

@@ -627,7 +627,6 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요."</string>
     <string name="revanced_disable_translucent_status_bar_title">반투명 상태바 비활성화하기</string>
     <string name="revanced_disable_translucent_status_bar_summary_on">상태바가 불투명합니다.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">상태바가 불투명하거나 반투명합니다.</string>
-    <string name="revanced_disable_translucent_status_bar_user_dialog_message">Android 12+로 실행되는 일부 제조사 ROM의 경우에는 이 기능을 활성화하면 시스템 네비게이션 바가 투명해질 수 있습니다.</string>
     <string name="revanced_fix_hype_button_icon_title">Hype 버튼 아이콘 수정하기</string>
     <string name="revanced_fix_hype_button_icon_summary_on">Hype 버튼 아이콘이 표시됩니다.</string>
     <string name="revanced_fix_hype_button_icon_summary_off">Hype 버튼 아이콘이 숨겨집니다.</string>
@@ -810,7 +809,9 @@ Cookies를 사용한다고 해서 문제가 해결되는 것은 아닙니다.
     <string name="revanced_replace_navigation_button_target_entry_subscriptions">구독</string>
     <string name="revanced_replace_navigation_button_target_entry_notifications">알림</string>
     <string name="revanced_enable_translucent_navigation_bar_title">반투명 하단바 활성화하기</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">하단바가 반투명합니다.</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"하단바가 반투명합니다.
+
+알려진 문제점: 시스템 네비게이션바가 반투명해질 수 있습니다."</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">하단바가 불투명합니다.</string>
     <string name="revanced_hide_navigation_bar_title">하단바 숨기기</string>
     <string name="revanced_hide_navigation_bar_summary_on">하단바가 숨겨집니다.</string>
@@ -1947,13 +1948,13 @@ Shorts 플레이어 배경을 탭하는 경우에 UI를 숨길 수 있습니다.
     <string name="revanced_disable_hdr_video_summary_on">HDR 동영상을 비활성화합니다.</string>
     <string name="revanced_disable_hdr_video_summary_off">HDR 동영상을 활성화합니다.</string>
     <string name="revanced_disable_vp9_codec_title">VP9 코덱 비활성화하기</string>
-    <string name="revanced_disable_vp9_codec_summary_on">"VP9 코덱을 비활성화합니다.
+    <string name="revanced_disable_vp9_codec_summary_on">"동영상 코덱이 AVC (H.264) 또는 AV1으로 결정됩니다.
 
 알림:
-• 최대 해상도는 1080p입니다.
-• 동영상 재생 시 VP9보다 더 많은 인터넷 데이터가 사용됩니다.
-• HDR 동영상에는 여전히 VP9 코덱이 사용됩니다."</string>
-    <string name="revanced_disable_vp9_codec_summary_off">동영상 코덱이 VP9으로 결정됩니다.</string>
+• 최대 해상도는 1080p일 수 있습니다.
+• 동영상 재생 시 VP9보다 더 많은 인터넷 데이터가 사용될 수 있습니다.
+• HDR 동영상에는 VP9 코덱이 사용될 수 있습니다."</string>
+    <string name="revanced_disable_vp9_codec_summary_off">동영상 코덱이 AVC (H.264), VP9 또는 AV1으로 결정됩니다.</string>
     <string name="revanced_enable_opus_codec_title">OPUS 코덱 활성화하기</string>
     <string name="revanced_enable_opus_codec_summary">플레이어 응답에 OPUS 코덱이 포함된 경우에 OPUS 코덱을 활성화합니다.</string>
     <!-- PreferenceScreen: Video, PreferenceCategory: Playback speed -->
@@ -2053,8 +2054,8 @@ Shorts 플레이어 배경을 탭하는 경우에 UI를 숨길 수 있습니다.
     <string name="revanced_ryd_estimated_like_summary_on">좋아요 수가 숨겨진 동영상에서 추정되는 좋아요 수를 표시합니다.</string>
     <string name="revanced_ryd_estimated_like_summary_off">좋아요 수가 숨겨진 동영상에서 추정되는 좋아요 수를 표시하지 않습니다.</string>
     <string name="revanced_ryd_toast_on_connection_error_title">API 사용 불가 메시지 표시하기</string>
-    <string name="revanced_ryd_toast_on_connection_error_summary_on">ReturnYouTubeDislike를 사용할 수 없을 경우에 팝업 메시지를 표시합니다.</string>
-    <string name="revanced_ryd_toast_on_connection_error_summary_off">ReturnYouTubeDislike를 사용할 수 없을 경우에 팝업 메시지를 표시하지 않습니다.</string>
+    <string name="revanced_ryd_toast_on_connection_error_summary_on">Return YouTube Dislike를 사용할 수 없을 경우에 팝업 메시지를 표시합니다.</string>
+    <string name="revanced_ryd_toast_on_connection_error_summary_off">Return YouTube Dislike를 사용할 수 없을 경우에 팝업 메시지를 표시하지 않습니다.</string>
     <!-- PreferenceScreen: Return YouTube Dislike, PreferenceCategory: About -->
     <string name="revanced_ryd_about">정보</string>
     <string name="revanced_ryd_attribution_title">ReturnYouTubeDislike.com</string>

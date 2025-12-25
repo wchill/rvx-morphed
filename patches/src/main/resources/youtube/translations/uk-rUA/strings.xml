@@ -627,7 +627,6 @@
     <string name="revanced_disable_translucent_status_bar_title">Вимкнути напівпрозорість рядка стану</string>
     <string name="revanced_disable_translucent_status_bar_summary_on">Рядок стану непрозорий.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Рядок стану непрозорий чи напівпрозорий.</string>
-    <string name="revanced_disable_translucent_status_bar_user_dialog_message">Для прошивок деяких розробників Android 12+, увімкнення цієї функції може зробити панель навігації системи прозорою.</string>
     <string name="revanced_fix_hype_button_icon_title">Виправити іконку кнопки Розголос</string>
     <string name="revanced_fix_hype_button_icon_summary_on">Іконку кнопки Розголос показується.</string>
     <string name="revanced_fix_hype_button_icon_summary_off">Іконку кнопки Розголос приховано.</string>
@@ -814,7 +813,9 @@
     <string name="revanced_replace_navigation_button_target_entry_subscriptions">Підписки</string>
     <string name="revanced_replace_navigation_button_target_entry_notifications">Сповіщення</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Увімкнути напівпрозорість панелі навігації</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">Панель навігації напівпрозора.</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"Панель навігації напівпрозора.
+
+Відома проблема: Система панель навігації може бути напівпрозорою."</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">Панель навігації непрозора.</string>
     <string name="revanced_hide_navigation_bar_title">Приховати панель навігації</string>
     <string name="revanced_hide_navigation_bar_summary_on">Панель навігації приховано.</string>

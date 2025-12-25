@@ -621,7 +621,6 @@ Playlists
     <string name="revanced_disable_translucent_status_bar_title">Απενεργοποίηση διαφανούς γραμμής κατάστασης</string>
     <string name="revanced_disable_translucent_status_bar_summary_on">Η γραμμή κατάστασης δεν είναι διαφανής.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Η διαφάνεια της γραμμής κατάστασης ορίζεται αυτόματα.</string>
-    <string name="revanced_disable_translucent_status_bar_user_dialog_message">Σε ορισμένες εργοστασιακές ROM που τρέχουν Android 12+, η ενεργοποίηση αυτής της λειτουργίας μπορεί να κάνει τη γραμμή πλοήγησης του συστήματος διαφανή.</string>
     <string name="revanced_fix_hype_button_icon_title">Διόρθωση εικονιδίου κουμπιού Hype</string>
     <string name="revanced_fix_hype_button_icon_summary_on">Το εικονίδιο του κουμπί «Hype» εμφανίζεται.</string>
     <string name="revanced_fix_hype_button_icon_summary_off">Το εικονίδιο του κουμπί «Hype» δεν εμφανίζεται.</string>
@@ -807,7 +806,7 @@ Playlists
     <string name="revanced_replace_navigation_button_target_entry_subscriptions">Εγγραφές</string>
     <string name="revanced_replace_navigation_button_target_entry_notifications">Ειδοποιήσεις</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Διαφανή γραμμή πλοήγησης</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">Η γραμμή πλοήγησης είναι διαφανής.</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"Η γραμμή πλοήγησης είναι διαφανής."</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">Η γραμμή πλοήγησης δεν είναι διαφανής.</string>
     <string name="revanced_hide_navigation_bar_title">Γραμμή πλοήγησης</string>
     <string name="revanced_hide_navigation_bar_summary_on">Κρυμμένη.</string>
