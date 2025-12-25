@@ -664,7 +664,6 @@ Changes include:
     <string name="revanced_disable_translucent_status_bar_title">Disable translucent status bar</string>
     <string name="revanced_disable_translucent_status_bar_summary_on">Status bar is opaque.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Status bar is opaque or translucent.</string>
-    <string name="revanced_disable_translucent_status_bar_user_dialog_message">For some manufacturer ROMs running Android 12+, enabling this feature may make the system navigation bar transparent.</string>
 
     <string name="revanced_fix_hype_button_icon_title">Fix Hype button icon</string>
     <string name="revanced_fix_hype_button_icon_summary_on">Hype button icon is shown.</string>
@@ -866,7 +865,9 @@ To show the native playlist download button, turn on \'Spoof app version\' and c
     <string name="revanced_replace_navigation_button_target_entry_notifications">Notifications</string>
 
     <string name="revanced_enable_translucent_navigation_bar_title">Enable translucent navigation bar</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">Navigation bar is translucent.</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"Navigation bar is translucent.
+
+Known issue: System navigation bar may be translucent."</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">Navigation bar is opaque.</string>
     <string name="revanced_hide_navigation_bar_title">Hide navigation bar</string>
     <string name="revanced_hide_navigation_bar_summary_on">Navigation bar is hidden.</string>
