@@ -4,7 +4,7 @@ revanced-patcher = "21.0.0"
 #noinspection GradleDependency
 smali = "3.0.5"
 gson = "2.13.2"
-agp = "8.2.2"
+agp = "8.13.2"
 annotation = "1.9.1"
 collections4 = "4.5.0"
 desugar = "2.1.5"
