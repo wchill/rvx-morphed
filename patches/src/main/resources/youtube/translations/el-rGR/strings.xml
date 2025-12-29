@@ -806,7 +806,9 @@ Playlists
     <string name="revanced_replace_navigation_button_target_entry_subscriptions">Εγγραφές</string>
     <string name="revanced_replace_navigation_button_target_entry_notifications">Ειδοποιήσεις</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Διαφανή γραμμή πλοήγησης</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">"Η γραμμή πλοήγησης είναι διαφανής."</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"Η γραμμή πλοήγησης είναι διαφανής.
+
+Γνωστό θέμα: Η γραμμή πλοήγησης του συστήματος μπορεί να είναι επίσης διαφανής."</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">Η γραμμή πλοήγησης δεν είναι διαφανής.</string>
     <string name="revanced_hide_navigation_bar_title">Γραμμή πλοήγησης</string>
     <string name="revanced_hide_navigation_bar_summary_on">Κρυμμένη.</string>

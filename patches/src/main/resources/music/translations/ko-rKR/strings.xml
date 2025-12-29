@@ -17,7 +17,7 @@
     <string name="revanced_webview_toast_no_network">네트워크 연결상태를 확인하세요.</string>
     <string name="revanced_webview_toast_unavailable">WebView를 사용할 수 없습니다.</string>
     <!-- Shared Category -->
-    <string name="revanced_restart_first_run">레이아웃을 정상적으로 불러오기 위해 다시 시작합니다.</string>
+    <string name="revanced_restart_first_run">레이아웃을 정상적으로 로드하기 위해 다시 시작합니다.</string>
     <string name="revanced_restart_message">새로고침 및 다시 시작</string>
     <string name="revanced_settings_search_hint">설정 검색</string>
     <string name="revanced_settings_search_no_results_title">\'%s\'에 대한 검색 결과가 없습니다.</string>
@@ -602,7 +602,7 @@ YouTube Premium 사용자라면 이 설정은 필요하지 않을 수 있습니�
     <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_open_website_text">웹사이트 열기</string>
     <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_toast_copy">활성화 코드를 클립보드에 복사하였습니다: %s.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">클라이언트 스트림을 가져올 수 없습니다.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">기본 클라이언트를 TV로 변경해 보세요.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">기본 클라이언트를 TV Simply로 변경해 보세요.</string>
     <string name="revanced_watch_history_type_title">시청 기록 유형</string>
     <string name="revanced_watch_history_type_summary">"• 원본: Google 계정의 시청 기록 설정을 따르지만 DNS 또는 VPN으로 인하여 시청 기록이 작동되지 않을 수 있습니다.
 • 도메인 변경: Google 계정의 시청 기록 설정을 따릅니다.

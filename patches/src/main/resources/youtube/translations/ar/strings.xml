@@ -795,7 +795,9 @@
     <string name="revanced_replace_navigation_button_target_entry_subscriptions">الاشتراكات</string>
     <string name="revanced_replace_navigation_button_target_entry_notifications">الإشعارات</string>
     <string name="revanced_enable_translucent_navigation_bar_title">تمكين شريط التنقل الشفاف</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">"شريط التنقل شفاف."</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"شريط التنقل شفاف.
+
+مشكلة معروفة: قد يكون شريط تنقل النظام شفافًا."</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">شريط التنقل غير شفاف.</string>
     <string name="revanced_hide_navigation_bar_title">إخفاء شريط التنقل</string>
     <string name="revanced_hide_navigation_bar_summary_on">تم إخفاء شريط التنقل.</string>

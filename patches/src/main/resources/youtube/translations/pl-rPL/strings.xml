@@ -813,7 +813,9 @@ Stuknij tutaj, by pobrać YouTube Music.</string>
     <string name="revanced_replace_navigation_button_target_entry_subscriptions">Subskrypcje</string>
     <string name="revanced_replace_navigation_button_target_entry_notifications">Powiadomienia</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Wygląd paska nawigacji</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">"Półprzezroczysty"</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"Półprzezroczysty
+
+Znany problem: systemowy pasek nawigacji może być również półprzezroczysty."</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">Nieprzezroczysty</string>
     <string name="revanced_hide_navigation_bar_title">Pasek nawigacji</string>
     <string name="revanced_hide_navigation_bar_summary_on">Ukryty</string>

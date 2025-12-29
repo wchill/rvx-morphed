@@ -815,8 +815,10 @@ Cookie の使用は万能薬ではありません。
     <string name="revanced_replace_navigation_button_target_entry_subscriptions">登録チャンネル</string>
     <string name="revanced_replace_navigation_button_target_entry_notifications">通知</string>
     <string name="revanced_enable_translucent_navigation_bar_title">半透明のナビゲーションバーを有効化</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">"ナビゲーションバー ([ホーム]、[登録チャンネル] などのボタン) を半透明にします。"</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_off">ナビゲーションバー ([ホーム]、[登録チャンネル] などのボタン) を半透明にします。</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"ナビゲーションバー ([ホーム]、[登録チャンネル] などのボタン) を半透明にします。
+
+既知の問題: システムナビゲーションバーが半透明になる可能性があります。"</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_off">ナビゲーションバー ([ホーム]、[登録チャンネル] などのボタン) を半透明にします。\n\n既知の問題: システムナビゲーションバーが半透明になる可能性があります。</string>
     <string name="revanced_hide_navigation_bar_title">ナビゲーションバーを非表示</string>
     <string name="revanced_hide_navigation_bar_summary_on">ナビゲーションバー ([ホーム]、[登録チャンネル] などのボタン) を非表示にします。</string>
     <string name="revanced_hide_navigation_bar_summary_off">ナビゲーションバー ([ホーム]、[登録チャンネル] などのボタン) を非表示にします。</string>
