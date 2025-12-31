@@ -552,9 +552,9 @@ object YouTubeClient {
                 VISIONOS,
                 ANDROID_VR,
                 ANDROID_CREATOR,
-                TV,
                 TV_SIMPLY,
                 TV_LEGACY,
+                TV,
             )
             val CLIENT_ORDER_TO_USE_YOUTUBE_MUSIC: Array<ClientType> = arrayOf(
                 ANDROID_MUSIC_NO_SDK,
@@ -567,9 +567,9 @@ object YouTubeClient {
                 ANDROID_NO_SDK,
                 VISIONOS,
                 ANDROID_VR,
-                TV,
                 TV_SIMPLY,
                 TV_LEGACY,
+                TV,
             )
         }
     }
