@@ -1,8 +1,21 @@
-## 🧩 ReVanced Extended Patches
+<div align="center"> 
+<img src="assets/rvx-logo.png" alt="RVX logo" width="128">
 
+    
+## 🧩 ReVanced Extended Patches
 ReVanced Extended Patches. 
+    
+[![Static Badge](https://img.shields.io/badge/RVX_Documentation-gray?style=flat-square&logo=github)](https://github.com/inotia00/revanced-documentation#readme)   [![Static Badge](https://img.shields.io/badge/Reddit-gray?style=flat-square&logo=reddit)](https://reddit.com/r/revancedextended)   [![Static Badge](https://img.shields.io/badge/Discord-gray?style=flat-square&logo=discord)](https://discord.gg/yMnc3EywRZ)
+<br>
+[![Static Badge](https://img.shields.io/badge/Telegram-Announcements-gray?style=flat-square&logo=telegram&color=%2326A5E4)](https://t.me/revanced_extended)   [![Static Badge](https://img.shields.io/badge/Telegram-Chat-gray?style=flat-square&logo=telegram&color=%2326A5E4)](https://t.me/revanced_extended_chat)   [![Static Badge](https://img.shields.io/badge/Telegram-GitHub_Notifications-gray?style=flat-square&logo=telegram&color=%2326A5E4)](https://t.me/revanced_extended_repo)
+<br>
+[![Static Badge](https://img.shields.io/badge/Translations-YouTube-gray?style=flat-square&logo=crowdin&color=%23f5f5f5)](https://crowdin.com/project/revancedextended)   [![Static Badge](https://img.shields.io/badge/Translations-YT_Music-gray?style=flat-square&logo=crowdin&color=%23f5f5f5)](https://crowdin.com/project/revancedmusicextended)
+<br>
+</div> 
 
 See the [documentation](https://github.com/inotia00/revanced-documentation#readme) to learn how to apply patches and build ReVanced Extended apps.
+
+Report issues [here](https://github.com/inotia00/ReVanced_Extended).
 
 ## 📋 List of patches in this repository
 
@@ -120,7 +133,7 @@ See the [documentation](https://github.com/inotia00/revanced-documentation#readm
 | `Sanitize sharing links` | Adds an option to sanitize sharing links by removing tracking query parameters. | 6.20.51 ~ 8.30.54 |
 | `Settings for YouTube Music` | Applies mandatory patches to implement ReVanced Extended settings into the application. | 6.20.51 ~ 8.30.54 |
 | `SponsorBlock` | Adds options to enable and configure SponsorBlock, which can skip undesired video segments, such as non-music sections. | 6.20.51 ~ 8.30.54 |
-| `Spoof app version` | Adds options to spoof the YouTube Music client version. This can be used to restore old UI elements and features. | 6.42.55 ~ 8.30.54 |
+| `Spoof app version for lyrics` | Adds options to spoof the YouTube Music client version. This can be used to restore old lyrics UI. | 6.51.53 ~ 8.30.54 |
 | `Translations for YouTube Music` | Add translations or remove string resources. | 6.20.51 ~ 8.30.54 |
 | `Video playback` | Adds options to customize settings related to video playback, such as default video quality and playback speed. | 6.20.51 ~ 8.30.54 |
 | `Visual preferences icons for YouTube Music` | Adds icons to specific preferences in the settings. | 6.20.51 ~ 8.30.54 |

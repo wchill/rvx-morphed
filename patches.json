@@ -152,6 +152,7 @@
     "dependencies": [
       "Settings for YouTube",
       "BytecodePatch",
+      "BytecodePatch",
       "BytecodePatch"
     ],
     "compatiblePackages": {
@@ -164,6 +165,16 @@
         "20.05.46"
       ]
     },
+    "options": []
+  },
+  {
+    "name": "Change installer package name",
+    "description": "Spoof the installer package name to make it appear that the app was installed from the Google Play Store.",
+    "use": false,
+    "dependencies": [
+      "BytecodePatch"
+    ],
+    "compatiblePackages": null,
     "options": []
   },
   {
@@ -192,7 +203,9 @@
     "name": "Change package name",
     "description": "Changes the package name for Reddit to the name specified in patch options.",
     "use": false,
-    "dependencies": [],
+    "dependencies": [
+      "BytecodePatch"
+    ],
     "compatiblePackages": {
       "com.reddit.frontpage": [
         "2024.17.0",
@@ -499,7 +512,9 @@
     "name": "Custom branding name for Reddit",
     "description": "Changes the Reddit app name to the name specified in patch options.",
     "use": false,
-    "dependencies": [],
+    "dependencies": [
+      "BytecodePatch"
+    ],
     "compatiblePackages": {
       "com.reddit.frontpage": [
         "2024.17.0",
@@ -879,7 +894,7 @@
     "use": true,
     "dependencies": [
       "Settings for YouTube Music",
-      "BytecodePatch"
+      "ResourcePatch"
     ],
     "compatiblePackages": {
       "com.google.android.apps.youtube.music": [
@@ -902,7 +917,7 @@
     "use": true,
     "dependencies": [
       "Settings for YouTube",
-      "BytecodePatch"
+      "ResourcePatch"
     ],
     "compatiblePackages": {
       "com.google.android.youtube": [
@@ -1622,17 +1637,7 @@
         "8.30.54"
       ]
     },
-    "options": [
-      {
-        "key": "hideFullscreenAds",
-        "title": "Hide fullscreen ads",
-        "description": "Add an option to hide fullscreen ads.\n\nThis setting may not completely hide fullscreen ads due to server-side changes, and support for this is not provided.\n\nThis setting may cause the app to become unusable, and users may need to clear app data.",
-        "required": true,
-        "type": "kotlin.Boolean",
-        "default": false,
-        "values": null
-      }
-    ]
+    "options": []
   },
   {
     "name": "Hide ads",
@@ -1657,6 +1662,8 @@
     "dependencies": [
       "Settings for YouTube",
       "BytecodePatch",
+      "BytecodePatch",
+      "ResourcePatch",
       "BytecodePatch",
       "ResourcePatch",
       "ResourcePatch"
@@ -2093,6 +2100,7 @@
       "Settings for YouTube",
       "ResourcePatch",
       "BytecodePatch",
+      "BytecodePatch",
       "ResourcePatch"
     ],
     "compatiblePackages": {
@@ -2266,7 +2274,17 @@
         "8.30.54"
       ]
     },
-    "options": []
+    "options": [
+      {
+        "key": "swipeToDismissMiniPlayer",
+        "title": "Swipe to dismiss miniplayer",
+        "description": "Adds an option to enable swipe to dismiss the miniplayer.\n\nIf this patch option is enabled, the empty miniplayer may not show when the miniplayer is dismissed.",
+        "required": true,
+        "type": "kotlin.Boolean",
+        "default": true,
+        "values": null
+      }
+    ]
   },
   {
     "name": "Player components",
@@ -2303,7 +2321,9 @@
     "name": "Premium icon",
     "description": "Unlocks premium app icons.",
     "use": true,
-    "dependencies": [],
+    "dependencies": [
+      "BytecodePatch"
+    ],
     "compatiblePackages": {
       "com.reddit.frontpage": [
         "2024.17.0",
@@ -2640,6 +2660,7 @@
     "use": true,
     "dependencies": [
       "BytecodePatch",
+      "BytecodePatch",
       "BytecodePatch"
     ],
     "compatiblePackages": {
@@ -2968,29 +2989,6 @@
   },
   {
     "name": "Spoof app version",
-    "description": "Adds options to spoof the YouTube Music client version. This can be used to restore old UI elements and features.",
-    "use": true,
-    "dependencies": [
-      "BytecodePatch",
-      "BytecodePatch",
-      "Settings for YouTube Music",
-      "ResourcePatch"
-    ],
-    "compatiblePackages": {
-      "com.google.android.apps.youtube.music": [
-        "6.42.55",
-        "6.51.53",
-        "7.16.53",
-        "7.25.53",
-        "8.12.54",
-        "8.28.54",
-        "8.30.54"
-      ]
-    },
-    "options": []
-  },
-  {
-    "name": "Spoof app version",
     "description": "Adds options to spoof the YouTube client version. This can be used to restore old UI elements and features.",
     "use": true,
     "dependencies": [
@@ -3008,6 +3006,56 @@
       ]
     },
     "options": []
+  },
+  {
+    "name": "Spoof app version for lyrics",
+    "description": "Adds options to spoof the YouTube Music client version. This can be used to restore old lyrics UI.",
+    "use": true,
+    "dependencies": [
+      "BytecodePatch",
+      "Settings for YouTube Music",
+      "ResourcePatch"
+    ],
+    "compatiblePackages": {
+      "com.google.android.apps.youtube.music": [
+        "6.51.53",
+        "7.16.53",
+        "7.25.53",
+        "8.12.54",
+        "8.28.54",
+        "8.30.54"
+      ]
+    },
+    "options": []
+  },
+  {
+    "name": "Spoof signature",
+    "description": "Spoofs the signature of the app.",
+    "use": false,
+    "dependencies": [
+      "BytecodePatch"
+    ],
+    "compatiblePackages": null,
+    "options": [
+      {
+        "key": "packageName",
+        "title": "Package name",
+        "description": "Package name.",
+        "required": false,
+        "type": "kotlin.String",
+        "default": "",
+        "values": null
+      },
+      {
+        "key": "certificateData",
+        "title": "Certificate data",
+        "description": "Base64-encoded string of the certificate.",
+        "required": false,
+        "type": "kotlin.String",
+        "default": "",
+        "values": null
+      }
+    ]
   },
   {
     "name": "Swipe controls",
@@ -3197,7 +3245,7 @@
         "description": "A list of translations to be added for the RVX settings, separated by commas.",
         "required": true,
         "type": "kotlin.String",
-        "default": "bg-rBG, el-rGR, es-rES, fr-rFR, hu-rHU, id-rID, in, it-rIT, ja-rJP, ko-rKR, nl-rNL, pl-rPL, pt-rBR, ru-rRU, tr-rTR, uk-rUA, vi-rVN, zh-rCN, zh-rTW",
+        "default": "el-rGR, es-rES, fr-rFR, hu-rHU, id-rID, in, it-rIT, ja-rJP, ko-rKR, pl-rPL, pt-rBR, ru-rRU, tr-rTR, uk-rUA, vi-rVN, zh-rCN, zh-rTW",
         "values": null
       },
       {

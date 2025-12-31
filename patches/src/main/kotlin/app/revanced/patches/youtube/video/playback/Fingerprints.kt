@@ -35,25 +35,22 @@ internal val playbackSpeedChangedFromRecyclerViewFingerprint = legacyFingerprint
     }
 )
 
-internal val loadVideoParamsFingerprint = legacyFingerprint(
-    name = "loadVideoParamsFingerprint",
+internal val mediaLibPlayerLoadVideoFingerprint = legacyFingerprint(
+    name = "mediaLibPlayerLoadVideoFingerprint",
     returnType = "V",
-    accessFlags = AccessFlags.PUBLIC or AccessFlags.CONSTRUCTOR,
-    parameters = listOf("L"),
-    opcodes = listOf(
-        Opcode.INVOKE_INTERFACE,
-        Opcode.MOVE_RESULT,
-        Opcode.IPUT,
-        Opcode.INVOKE_INTERFACE,
-    )
+    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
+    opcodes = listOf(Opcode.CONST_HIGH16),
+    strings = listOf("Volume: %f"),
+    customFingerprint = { method, _ ->
+        indexOfPlaybackSpeedInstruction(method) >= 0
+    }
 )
 
-internal val loadVideoParamsParentFingerprint = legacyFingerprint(
-    name = "loadVideoParamsParentFingerprint",
-    returnType = "Z",
-    parameters = listOf("J"),
-    strings = listOf("LoadVideoParams.playerListener = null")
-)
+internal fun indexOfPlaybackSpeedInstruction(method: Method, startIndex: Int = 0) =
+    method.indexOfFirstInstruction(startIndex) {
+        opcode == Opcode.IGET &&
+                getReference<FieldReference>()?.type == "F"
+    }
 
 internal val qualityChangedFromRecyclerViewFingerprint = legacyFingerprint(
     name = "qualityChangedFromRecyclerViewFingerprint",

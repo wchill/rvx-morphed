@@ -259,9 +259,11 @@
     <string name="revanced_hide_web_search_results_title">إخفاء نتائج بحث الويب</string>
     <string name="revanced_hide_web_search_results_summary_on">تم إخفاء نتائج البحث على الويب.</string>
     <string name="revanced_hide_web_search_results_summary_off">يتم عرض نتائج البحث على الويب.</string>
-    <string name="revanced_hide_get_premium_title">إخفاء الترقية إلى YouTube Premium</string>
-    <string name="revanced_hide_get_premium_summary_on">تم إخفاء الترقية لـ YouTube Premium.</string>
-    <string name="revanced_hide_get_premium_summary_off">يتم عرض الترقية لـ YouTube Premium.</string>
+    <string name="revanced_hide_youtube_premium_promotion_title">إخفاء الترقية إلى YouTube Premium</string>
+    <string name="revanced_hide_youtube_premium_promotion_summary_on">"تم إخفاء الترقية لـ YouTube Premium.
+
+مشكلة معروفة: عند تمكين هذا الإعداد، لا يمكن النقر على رسومات YouTube."</string>
+    <string name="revanced_hide_youtube_premium_promotion_summary_off">يتم عرض الترقية لـ YouTube Premium.</string>
     <!-- PreferenceScreen: Alternative thumbnails -->
     <string name="revanced_preference_screen_alt_thumbnails_title">مصغرات فيديو بديلة</string>
     <string name="revanced_alt_thumbnail_home_title">علامة تبويب الصفحة الرئيسية</string>
@@ -403,18 +405,24 @@
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 قوائم التشغيل
 المتجر"</string>
+    <string name="revanced_hide_community_button_title">إخفاء زر المنتدى</string>
+    <string name="revanced_hide_community_button_summary_on">تم إخفاء زر المنتدى.</string>
+    <string name="revanced_hide_community_button_summary_off">يتم عرض زر المنتدى.</string>
+    <string name="revanced_hide_join_button_in_channel_page_title">إخفاء زر الانضمام</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_on">تم إخفاء زر الانضمام.</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_off">يتم عرض زر الانضمام.</string>
     <string name="revanced_hide_links_preview_title">إخفاء معاينة الروابط</string>
     <string name="revanced_hide_links_preview_summary_on">تم إخفاء معاينة الروابط.</string>
     <string name="revanced_hide_links_preview_summary_off">يتم عرض معاينة الروابط.</string>
     <string name="revanced_hide_members_shelf_title">إخفاء رف الأعضاء</string>
     <string name="revanced_hide_members_shelf_summary_on">تم إخفاء رف الأعضاء.</string>
     <string name="revanced_hide_members_shelf_summary_off">يتم عرض رف الأعضاء.</string>
-    <string name="revanced_hide_visit_community_button_title">إخفاء زر زيارة المجتمع</string>
-    <string name="revanced_hide_visit_community_button_summary_on">تم إخفاء زر زيارة المجتمع.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">يتم عرض زر زيارة المجتمع.</string>
-    <string name="revanced_hide_visit_store_button_title">إخفاء زر زيارة المتجر</string>
-    <string name="revanced_hide_visit_store_button_summary_on">تم إخفاء زر زيارة المتجر.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">يتم عرض زر زيارة المتجر.</string>
+    <string name="revanced_hide_store_button_title">إخفاء زر المتجر</string>
+    <string name="revanced_hide_store_button_summary_on">تم إخفاء زر المتجر.</string>
+    <string name="revanced_hide_store_button_summary_off">يتم عرض زر المتجر.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_title">إخفاء زر اشتراك</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_on">تم إخفاء زر اشتراك.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_off">يتم عرض زر اشتراك.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">مشاركات المجتمع</string>
     <string name="revanced_preference_screen_community_posts_summary">إخفاء أو عرض مشاركات المجتمع في صفحة القناة، الموجز، والفيديوهات ذات الصلة.</string>
@@ -543,7 +551,7 @@
 
 قد لا ينجح هذا الأمر مع بعض المستخدمين، إذا لم ينجح معك:
 1. انتقل إلى الإعدادات - RVX - خيارات متنوعة - Spoof Streaming Data، ثم فعّل 'استخدام عميل JavaScript'.
-2. انتقل إلى الإعدادات - RVX - خيارات متنوعة - Spoof Streaming Data، ثم غيّر 'العميل الافتراضي' إلى 'TV'."</string>
+2. انتقل إلى الإعدادات - RVX - خيارات متنوعة - Spoof Streaming Data، ثم غيّر 'العميل الافتراضي' إلى 'TV Simply'."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">"تم تمكين المقطع الصوتي التلقائي المفروض."</string>
     <string name="revanced_disable_auto_captions_title">تعطيل الترجمة التلقائية المفروضة</string>
     <string name="revanced_disable_auto_captions_summary_on">تم تعطيل الترجمة التلقائية المفروضة.</string>
@@ -560,9 +568,9 @@
     <string name="revanced_hide_floating_microphone_title">إخفاء زر الميكروفون العائم</string>
     <string name="revanced_hide_floating_microphone_summary_on">تم إخفاء زر الميكروفون العائم.</string>
     <string name="revanced_hide_floating_microphone_summary_off">يتم عرض زر الميكروفون العائم.</string>
-    <string name="revanced_hide_visual_spacers_title">إخفاء الفواصل المرئية</string>
-    <string name="revanced_hide_visual_spacers_summary_on">تم إخفاء الفواصل المرئية.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">يتم عرض الفواصل المرئية.</string>
+    <string name="revanced_hide_visual_spacer_title">إخفاء الفاصل المرئي</string>
+    <string name="revanced_hide_visual_spacer_summary_on">تم إخفاء الفاصل المرئي.</string>
+    <string name="revanced_hide_visual_spacer_summary_off">يتم عرض الفاصل المرئي.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">إزالة مربع حوار تقدير المشاهد</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"يزيل مربع حوار تقدير المشاهد. هذا لا يتجاوز القيود العمرية. إنه يقبل ذلك تلقائيًا."</string>
     <string name="revanced_change_live_ring_click_action_title">تغيير إجراء النقر على البث المباشر</string>
@@ -602,7 +610,6 @@
     <string name="revanced_disable_translucent_status_bar_title">تعطيل شريط الحالة الشفاف</string>
     <string name="revanced_disable_translucent_status_bar_summary_on">شريط الحالة غير شفاف.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">شريط الحالة معتم أو شفاف.</string>
-    <string name="revanced_disable_translucent_status_bar_user_dialog_message">بالنسبة لبعض الـ ROM الخاصة بالشركة المصنعة التي تعمل بنظام Android 12 أو أحدث، قد يؤدي تمكين هذه الميزة إلى جعل شريط التنقل في النظام شفافًا.</string>
     <string name="revanced_fix_hype_button_icon_title">إصلاح أيقونة زر التشجيع</string>
     <string name="revanced_fix_hype_button_icon_summary_on">يتم عرض أيقونة زر التشجيع.</string>
     <string name="revanced_fix_hype_button_icon_summary_off">تم إخفاء أيقونة زر التشجيع.</string>
@@ -633,6 +640,7 @@
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - استعادة علامة قائمة التشغيل القديمة</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - استعادة لوحة التحكم القديمة لسرعة التشغيل</string>
     <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - استعادة وظيفة النسخ</string>
+    <string name="revanced_spoof_app_version_target_entry_20_13_41">\"20.13.41 - استعاده عرض شريط إجراءات الفيديو بالكامل</string>
     <string name="revanced_spoof_app_version_other_item">أخرى</string>
     <string name="revanced_spoof_app_version_other_item_hint">أدخل إصدار التطبيق</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">إصدار التطبيق الوهمي غير صالح: %s.</string>
@@ -776,17 +784,20 @@
     <string name="revanced_hide_navigation_label_summary_on">تم إخفاء تسميات شريط التنقل.</string>
     <string name="revanced_hide_navigation_label_summary_off">يتم عرض تسميات شريط التنقل.</string>
     <string name="revanced_switch_create_with_notifications_button_title">تبديل أزرار الإنشاء و الإشعارات</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"تم تبديل زر الإنشاء بـزر الإشعارات.
-
-ملاحظة: يؤدي تمكين هذا أيضًا إلى إخفاء إعلانات الفيديو بالقوة."</string>
+    <string name="revanced_switch_create_with_notifications_button_summary_on">يتم تبديل زر الإنشاء بزر الإشعارات.</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">لا يتم تبديل زر الإنشاء بزر الإشعارات.</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"قد يؤدي تعطيل هذا إلى تحميل المزيد من الإعلانات من الخادم.
-
-كما لن يتم حظر الإعلانات في فيديوهات Shorts بعد الآن.
-
-إذا لم يتم تفعيل هذا الإعداد، فحاول التبديل إلى وضع التصفح المتخفي."</string>
+    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">إذا لم يكن هذا الإعداد ساري المفعول، جرّب التبديل إلى وضع التصفّح المتخفي.</string>
+    <string name="revanced_replace_navigation_button_title">استبدال زر التنقل</string>
+    <string name="revanced_replace_navigation_button_summary">تبديل زر التنقل بزر البحث.</string>
+    <string name="revanced_replace_navigation_button_target_title">تغيير زر التنقل</string>
+    <string name="revanced_replace_navigation_button_target_entry_home">الصفحة الرئيسية</string>
+    <string name="revanced_replace_navigation_button_target_entry_shorts">Shorts</string>
+    <string name="revanced_replace_navigation_button_target_entry_subscriptions">الاشتراكات</string>
+    <string name="revanced_replace_navigation_button_target_entry_notifications">الإشعارات</string>
     <string name="revanced_enable_translucent_navigation_bar_title">تمكين شريط التنقل الشفاف</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">شريط التنقل شفاف.</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"شريط التنقل شفاف.
+
+مشكلة معروفة: قد يكون شريط تنقل النظام شفافًا."</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">شريط التنقل غير شفاف.</string>
     <string name="revanced_hide_navigation_bar_title">إخفاء شريط التنقل</string>
     <string name="revanced_hide_navigation_bar_summary_on">تم إخفاء شريط التنقل.</string>
@@ -905,6 +916,11 @@
     <string name="revanced_hide_toolbar_notification_button_title">إخفاء زر الإشعارات</string>
     <string name="revanced_hide_toolbar_notification_button_summary_on">تم إخفاء زر الإشعارات.</string>
     <string name="revanced_hide_toolbar_notification_button_summary_off">يتم عرض زر الإشعارات.</string>
+    <string name="revanced_hide_toolbar_search_button_title">إخفاء زر البحث</string>
+    <string name="revanced_hide_toolbar_search_button_summary_on">"تم إخفاء زر البحث.
+
+قد لا يعمل هذا الإعداد إذا تم تمكين شريط البحث العريض."</string>
+    <string name="revanced_hide_toolbar_search_button_summary_off">يتم عرض زر البحث.</string>
     <string name="revanced_hide_search_term_thumbnail_title">إخفاء مصغرات مصطلحات البحث</string>
     <string name="revanced_hide_search_term_thumbnail_summary_on">تم إخفاء المصغرات في سجل مصطلحات البحث.</string>
     <string name="revanced_hide_search_term_thumbnail_summary_off">يتم عرض المصغرات في سجل مصطلحات البحث.</string>
@@ -1147,6 +1163,9 @@
 
 ملاحظة: قد لا تكون بعض روابط البحث المميزة التي لا تحتوي على نمط نص افتراضي مخفية."</string>
     <string name="revanced_hide_comments_highlighted_search_links_summary_off">يتم عرض روابط البحث المميزة.</string>
+    <string name="revanced_hide_comments_information_button_title">إخفاء زر المعلومات</string>
+    <string name="revanced_hide_comments_information_button_summary_on">تم إخفاء زر المعلومات.</string>
+    <string name="revanced_hide_comments_information_button_summary_off">يتم عرض زر المعلومات.</string>
     <string name="revanced_hide_live_chat_messages_title">إخفاء رسائل المحادثات المباشرة</string>
     <string name="revanced_hide_live_chat_messages_summary_on">تم إخفاء رسائل المحادثات المباشرة.\n\nينطبق هذا الإعداد على فيديوهات بث Shorts المباشر أيضًا.</string>
     <string name="revanced_hide_live_chat_messages_summary_off">يتم عرض رسائل المحادثات المباشرة.</string>
@@ -1178,7 +1197,7 @@
 
 لعرض قائمة المقطع الصوتي:
 1. انتقل إلى الإعدادات - RVX - خيارات متنوعة - Spoof Streaming Data، ثم فعّل 'استخدام عميل JavaScript'.
-2. انتقل إلى الإعدادات - RVX - خيارات متنوعة - Spoof Streaming Data، ثم غيّر 'العميل الافتراضي' إلى 'TV'."</string>
+2. انتقل إلى الإعدادات - RVX - خيارات متنوعة - Spoof Streaming Data، ثم غيّر 'العميل الافتراضي' إلى 'TV Simply'."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">إخفاء قائمة الترجمة</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">تم إخفاء قائمة الترجمة.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">يتم عرض قائمة الترجمة.</string>
@@ -1547,21 +1566,24 @@
     <string name="revanced_hide_chapters_section_title">إخفاء قسم الفصول</string>
     <string name="revanced_hide_chapters_section_summary_on">تم إخفاء قسم الفصول.</string>
     <string name="revanced_hide_chapters_section_summary_off">يتم عرض قسم الفصول.</string>
-    <string name="revanced_hide_creator_section_title">إخفاء قسم Creator</string>
-    <string name="revanced_hide_creator_section_summary_on">تم إخفاء قسم Creator.</string>
-    <string name="revanced_hide_creator_section_summary_off">يتم عرض قسم Creator.</string>
     <string name="revanced_hide_explore_podcast_section_title">إخفاء قسم استكشاف البودكاست</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">تم إخفاء قسم استكشاف البودكاست.</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">يتم عرض قسم استكشاف البودكاست.</string>
-    <string name="revanced_hide_featured_section_title">إخفاء قسم المحتوى المميز</string>
-    <string name="revanced_hide_featured_section_summary_on">تم إخفاء قسم المحتوى المميز في قسم Creator.</string>
-    <string name="revanced_hide_featured_section_summary_off">يتم عرض قسم المحتوى المميز في قسم Creator.</string>
+    <string name="revanced_hide_featured_links_section_title">إخفاء قسم الروابط المميزة</string>
+    <string name="revanced_hide_featured_links_section_summary_on">تم إخفاء قسم الروابط المميزة.</string>
+    <string name="revanced_hide_featured_links_section_summary_off">يتم عرض قسم الروابط المميزة.</string>
+    <string name="revanced_hide_featured_videos_section_title">إخفاء قسم الفيديوهات المميزة</string>
+    <string name="revanced_hide_featured_videos_section_summary_on">تم إخفاء قسم الفيديوهات المميزة.</string>
+    <string name="revanced_hide_featured_videos_section_summary_off">يتم عرض قسم الفيديوهات المميزة.</string>
     <string name="revanced_hide_how_this_was_made_section_title">إخفاء قسم كيف تم إنشاء هذا المحتوى</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">تم إخفاء قسم كيف تم إنشاء هذا المحتوى.</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">يتم عرض قسم كيف تم إنشاء هذا المحتوى.</string>
     <string name="revanced_hide_hype_points_section_title">إخفاء قسم نقاط التشجيع</string>
     <string name="revanced_hide_hype_points_section_summary_on">تم إخفاء قسم نقاط التشجيع.</string>
     <string name="revanced_hide_hype_points_section_summary_off">يتم عرض قسم نقاط التشجيع.</string>
+    <string name="revanced_hide_info_cards_section_title">إخفاء قسم بطاقات المعلومات</string>
+    <string name="revanced_hide_info_cards_section_summary_on">تم إخفاء قسم بطاقات المعلومات.</string>
+    <string name="revanced_hide_info_cards_section_summary_off">يتم عرض قسم بطاقات المعلومات.</string>
     <string name="revanced_hide_key_concepts_section_title">إخفاء قسم المفاهيم الأساسية</string>
     <string name="revanced_hide_key_concepts_section_summary_on">تم إخفاء قسم المفاهيم الأساسية.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">يتم عرض قسم المفاهيم الأساسية.</string>
@@ -1634,6 +1656,9 @@
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player -->
     <string name="revanced_preference_screen_shorts_player_title">مشغل Shorts</string>
     <string name="revanced_preference_screen_shorts_player_summary">إخفاء أو عرض مكونات مشغل Shorts.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_title">إخفاء تسمية \'مُدبلج تلقائيًا\'</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_on">تم إخفاء تسمية \'مُدبلج تلقائيًا\'.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_off">يتم عرض تسمية \'مُدبلج تلقائيًا\'.</string>
     <string name="revanced_hide_shorts_channel_bar_title">إخفاء شريط القناة</string>
     <string name="revanced_hide_shorts_channel_bar_summary_on">تم إخفاء شريط القناة.</string>
     <string name="revanced_hide_shorts_channel_bar_summary_off">يتم عرض شريط القناة.</string>
@@ -1646,15 +1671,18 @@
     <string name="revanced_hide_shorts_live_header_title">إخفاء علامة المحادثات المباشرة</string>
     <string name="revanced_hide_shorts_live_header_summary_on">تم إخفاء علامة المحادثات المباشرة.\n\nزر رجوع في العلامة لن يتم إخفاؤه.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">يتم عرض علامة المحادثات المباشرة.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">إخفاء تصنيف الترويج المدفوع</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">تم إخفاء تصنيف الترويج المدفوع.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">يتم عرض تصنيف الترويج المدفوع.</string>
+    <string name="revanced_hide_shorts_live_preview_title">إخفاء معاينة المحتوى المباشر</string>
+    <string name="revanced_hide_shorts_live_preview_summary_on">تم إخفاء معاينة المحتوى المباشر.\n\nحتى في حالة تمكين هذا الخيار، فإن البث المباشر ل Shorts لا يُزال تمامًا من سلسلة فيديوهات Shorts.</string>
+    <string name="revanced_hide_shorts_live_preview_summary_off">يتم عرض معاينة المحتوى المباشر.</string>
     <string name="revanced_hide_shorts_paused_header_title">إخفاء علامة Shorts أثناء التوقف</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">تم إخفاء علامة Shorts عند توقف الفيديو.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">يتم عرض علامة Shorts عند توقف الفيديو.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_title">إخفاء أزرار واجهة التوقف</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_on">تم إخفاء أزرار واجهة التوقف.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_off">يتم عرض أزرار واجهة التوقف.</string>
+    <string name="revanced_hide_shorts_preview_comment_title">إخفاء تعليق المعاينة</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_on">تم إخفاء تعليق المعاينة.</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_off">يتم عرض تعليق المعاينة.</string>
     <string name="revanced_hide_shorts_shopping_button_title">إخفاء زر التسوق</string>
     <string name="revanced_hide_shorts_shopping_button_summary_on">تم إخفاء زر التسوق.</string>
     <string name="revanced_hide_shorts_shopping_button_summary_off">يتم عرض زر التسوق.</string>
@@ -2351,18 +2379,10 @@
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio
 <small>(يتطلب تسجيل الدخول)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"Android <small>(No SDK)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
-<small>(بدون مصادقة)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
-<small>(المصادقة، الإجراء مطلوب)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(قديم)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
-<small>(WIP)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV <small>(Legacy)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
-<small>(بدون رمز PoToken)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(لم يصدر)</small>"</string>
@@ -2371,30 +2391,20 @@
 • قد لا يتوفر تعطيل المقطع الصوتي التلقائي المفروض.
 • مستوى الصوت الثابت غير متاح.
 • قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي.
-• 1080p+, AV1, و HDR غير مدعومة."</string>
+• 1080p+, AV1, و HDR غير مدعومة.
+• وضع الواقع الافتراضي الغامر 360° غير متوفر."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_no_sdk">• قد يتوقف الفيديو عند الدقيقة 1:00، أو قد لا يكون متاحًا في بعض المناطق.</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• قائمة المقطع الصوتي مفقودة.
-• مستوى الصوت الثابت غير متاح.
-• قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• قائمة المقطع الصوتي مفقودة.
 • قد لا يتوفر تعطيل المقطع الصوتي التلقائي المفروض.
 • مستوى الصوت الثابت غير متاح.
 • قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 غير مدعوم.
-• قد يتوقف الفيديو عند الدقيقة 1:00، أو قد لا يكون متاحًا في بعض المناطق."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• قائمة المقطع الصوتي مفقودة.
-• في حال فشل إزالة التشويش، قد يفشل التشغيل.
-• في بعض الأحيان، قد لا يعمل الفيديو حتى بعد 10 ثوانٍ، وفي هذه الحالة، ستحتاج إلى الضغط على زر إعادة تحميل الفيديو.
-• قد يبدأ الفيديو متأخرًا."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• في حال فشل إزالة التشويش، قد يفشل التشغيل.
 • في بعض الأحيان، قد لا يعمل الفيديو حتى بعد 10 ثوانٍ، وفي هذه الحالة، ستحتاج إلى الضغط على زر إعادة تحميل الفيديو.
-• قد يبدأ الفيديو متأخرًا."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• في حال فشل إزالة التشويش، قد يفشل التشغيل.
-• قد تتطلب بعض الحسابات رمز PoToken، وفي هذه الحالة سوف تفشل عملية التشغيل.
-• في بعض الأحيان، قد لا يعمل الفيديو حتى بعد 10 ثوانٍ، وفي هذه الحالة، ستحتاج إلى الضغط على زر إعادة تحميل الفيديو.
-• قد يبدأ الفيديو متأخرًا."</string>
+• قد يبدأ الفيديو متأخرًا.
+• وضع الواقع الافتراضي الغامر 360° غير متوفر."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• قائمة المقطع الصوتي مفقودة.
 • قد لا يتم تشغيل الفيديوهات المخصصة للأطفال عند تسجيل الخروج أو في وضع التصفح المتخفي.
+• وضع الواقع الافتراضي الغامر 360° غير متوفر.
 • بما أن هذا عميل غير مُصدر بعد، فمن الممكن أن يتوقف عن العمل في أي وقت."</string>
     <string name="revanced_spoof_streaming_data_side_effects_unknown">• غير معروف</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">إعطاء الأولوية لجودة الفيديو</string>
@@ -2441,45 +2451,53 @@
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">يتم عرض العميل المستخدم لجلب بيانات البث في إحصاءات تقنية.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">تم إخفاء العميل المستخدم لجلب بيانات البث في إحصاءات تقنية.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">لم يتمكن من جلب أي تدفقات عميل.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">جرب تغيير العميل الافتراضي إلى TV.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">جرّب تغيير العميل الافتراضي إلى TV Simply.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">تمكين VR AV1</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"ترميز الفيديو هو AVC (H.264)، أو VP9، أو AV1.
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_title">تمكين ترميز AV1</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_summary_on">"ترميز الفيديو هو AVC (H.264)، أو VP9، أو AV1.
 
 قد يتقطع التشغيل أو تنخفض الإطارات."</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">ترميز الفيديو هو AVC (H.264) أو VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"قد يؤدي تمكين هذا الإعداد إلى استخدام برنامج فك التشفير AV1.
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_summary_off">ترميز الفيديو هو AVC (H.264) أو VP9.</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_user_dialog_message">"قد يؤدي تمكين هذا الإعداد إلى استخدام برنامج فك التشفير AV1.
 
 قد يتقطع التشغيل أو تنخفض الإطارات."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">لمحة عن مصادقة Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">انقر لمعرفة كيفية الحصول على رمز المصادقة.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">الحصول على رمز المصادقة</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"للحصول على رمز تفويض لـ Android VR، سجّل دخولك إلى YouTube VR باستخدام رمز التفعيل:
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_title">تسجيل الدخول إلى Android VR</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_summary">انقر هنا لمعرفة كيفية تسجيل الدخول إلى Android VR.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_title">تسجيل الدخول إلى Android VR</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_message">"لتسجيل الدخول إلى Android VR (YouTube VR)، اتبع إرشادات Google (تفويض حساب جوجل - OAuth 2.0 لتطبيقات التلفزيون والأجهزة ذات الإدخال المحدود):
 
 1. انقر على 'الحصول على رمز التفعيل' لإنشاء رمز التفعيل.
 2. انقر على 'فتح الموقع' للانتقال إلى 'https://yt.be/activate'.
 3. أدخل رمز التفعيل.
 4. سجّل الدخول عند الطلب. إذا كان لديك حسابات Google متعددة، فحدد الحساب الذي تستخدمه مع YouTube. إذا كنت قد سجّلت الدخول بالفعل، فانتقل إلى الخطوة التالية.
-5. بعد تسجيل الدخول، ارجع إلى RVX وانقر على 'لمحة عن مصادقة Android VR' مرة أخرى.
+5. بعد تسجيل الدخول، ارجع إلى RVX وانقر على 'تسجيل الدخول إلى Android VR' مرة أخرى.
 6. انقر على 'الحصول على رمز المصادقة' للحصول على رمز التفويض.
+
 ※ انقر على 'إعادة تعيين' لإزالة رمز المصادقة أو رمز التفعيل."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">الحصول على رمز التفعيل</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">الحصول على رمز المصادقة</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">إعادة تعيين</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">إعادة تعيين رمز المصادقة و رمز التفعيل.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">تم حفظ رمز المصادقة.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">رمز التفعيل</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"رمز التفعيل:
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_activation_code_text">الحصول على رمز التفعيل</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_authorization_token_text">الحصول على رمز المصادقة</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_reset_text">إعادة تعيين</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_failed">فشل في إصدار رمز المصادقة.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_failed_suggestion">انقر فوق إعادة تعيين ثم حاول مرة أخرى.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_reset">إعادة تعيين رمز المصادقة و رمز التفعيل.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_title">تم تسجيل الدخول</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_message">"تم حفظ رمز المصادقة.
+
+- رمز المصادقة الصادر من خلال هذه العملية لا يمكن استخدامه إلا في YouTube VR(في RVX, يستخدم لجلب بيانات البث من YouTube VR).
+- رمز المصادقة غير مستخدم لأكثر من 6 أشهر سيتم إلغاؤه من خوادم Google.
+- إذا قمت بتغيير كلمة المرور الخاصة بك، أو ألغيت تسجيل جهاز في إعدادات حسابك، أو إلغاء تثبيت التطبيق، سوف تحتاج إلى إعادة إصدار رمز المصادقة."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_title">رمز التفعيل</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_message">"رمز التفعيل:
 %s
 
 1. انقر على 'فتح الموقع' للانتقال إلى 'https://yt.be/activate'.
 2. أدخل رمز التفعيل.
 3. سجّل الدخول عند الطلب. إذا كان لديك حسابات جوجل متعددة، فحدد الحساب الذي تستخدمه مع YouTube. إذا كنت قد سجّلت الدخول بالفعل، فانتقل إلى الخطوة التالية.
-4. بعد تسجيل الدخول، ارجع إلى RVX وانقر على 'لمحة عن مصادقة Android VR' مرة أخرى.
+4. بعد تسجيل الدخول، ارجع إلى RVX وانقر على 'تسجيل الدخول إلى Android VR' مرة أخرى.
 5. انقر على 'الحصول على رمز المصادقة' للحصول على رمز التفويض."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">فتح الموقع</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">تم نسخ رمز التفعيل إلى الحافظة: %s.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_open_website_text">فتح الموقع</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_toast_copy">تم نسخ رمز التفعيل إلى الحافظة: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">استخدام عميل JavaScript</string>
@@ -2493,7 +2511,7 @@
 
 (المتطلبات الأساسية: تفعيل كلٍّ من 'عرض زر إعادة تحميل الفيديو' و 'عرض زر إعادة تحميل الفيديو دائمًا').
 
-من بين عملاء JavaScript، يُنصح باستخدام TV."</string>
+من بين عملاء JavaScript، يُنصح باستخدام TV Simply."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">استخدام عميل JavaScript لجميع الفيديوهات</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"يتم استخدام عميل JavaScript بغض النظر عن نوع الفيديو.
 

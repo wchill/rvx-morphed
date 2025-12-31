@@ -275,9 +275,6 @@ Beschreibung
     <string name="revanced_hide_web_search_results_title">Web Suchergebnisse ausblenden</string>
     <string name="revanced_hide_web_search_results_summary_on">Web Suchergebnisse sind versteckt.</string>
     <string name="revanced_hide_web_search_results_summary_off">Web Suchergebnisse werden angezeigt.</string>
-    <string name="revanced_hide_get_premium_title">YouTube Premium Werbung ausblenden</string>
-    <string name="revanced_hide_get_premium_summary_on">YouTube Premium Werbung wird versteckt.</string>
-    <string name="revanced_hide_get_premium_summary_off">YouTube Premium Werbung wird angezeigt.</string>
     <!-- PreferenceScreen: Alternative thumbnails -->
     <string name="revanced_preference_screen_alt_thumbnails_title">Alternatives Vorschaubild</string>
     <string name="revanced_alt_thumbnail_home_title">Startseite</string>
@@ -425,12 +422,6 @@ Store"</string>
     <string name="revanced_hide_members_shelf_title">Mitgliederregal ausblenden</string>
     <string name="revanced_hide_members_shelf_summary_on">Mitgliederregal ist ausgeblendet.</string>
     <string name="revanced_hide_members_shelf_summary_off">Mitgliederregal wird angezeigt.</string>
-    <string name="revanced_hide_visit_community_button_title">Schaltfläche \'Community besuchen\' ausblenden</string>
-    <string name="revanced_hide_visit_community_button_summary_on">Schaltfläche \'Community besuchen\' ist ausgeblendet.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">Schaltfläche \'Community besuchen\' wird angezeigt.</string>
-    <string name="revanced_hide_visit_store_button_title">Schaltfläche \'Shop besuchen\' ausblenden</string>
-    <string name="revanced_hide_visit_store_button_summary_on">Schaltfläche \'Shop besuchen\' ist ausgeblendet.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">Schaltfläche \'Shop besuchen\' wird angezeigt.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Community Beiträge</string>
     <string name="revanced_preference_screen_community_posts_summary">Verstecke oder zeige Community-Beiträge im Feed und Kanal.</string>
@@ -555,8 +546,8 @@ Einschränkung: Zurück-Taste in der Symbolleiste funktioniert möglicherweise n
     <string name="revanced_disable_auto_audio_tracks_summary_on_disclaimer">"Erzwungene automatische Audiospuren sind deaktiviert.
 
 Bei einigen Benutzern funktioniert dies möglicherweise nicht. Wenn es bei Ihnen nicht funktioniert:
-1. Gehen Sie zu Einstellungen – RVX – Sonstiges – Streaming-Daten fälschen und aktivieren Sie „JavaScript-Client verwenden”.
-2. Gehen Sie zu Einstellungen – RVX – Sonstiges – Streaming-Daten fälschen und ändern Sie „Standard-Client” zu „TV”."</string>
+1. Gehen Sie zu 'Einstellungen' – 'RVX' – 'Verschiedenes' – 'Spoof Streamingdaten' und aktivieren Sie 'JavaScript-Client verwenden'.
+2. Gehen Sie zu 'Einstellungen' – 'RVX' – 'Verschiedenes' – 'Spoof Streamingdaten' und ändern Sie 'Standard-Client' in 'TV'."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">"Erzwungene automatische Audiospuren sind aktiviert."</string>
     <string name="revanced_disable_auto_captions_title">Deaktiviere erzwungene automatische Untertitel</string>
     <string name="revanced_disable_auto_captions_summary_on">Erzwungene automatische Untertitel sind deaktiviert.</string>
@@ -573,9 +564,6 @@ Bei einigen Benutzern funktioniert dies möglicherweise nicht. Wenn es bei Ihnen
     <string name="revanced_hide_floating_microphone_title">Die schwebende \'Mikrofon\' Schaltfläche ausblenden</string>
     <string name="revanced_hide_floating_microphone_summary_on">Die schwebende \'Mikrofon\' Schaltfläche ist ausgeblendet.</string>
     <string name="revanced_hide_floating_microphone_summary_off">Die schwebende \'Mikrofon\' Schaltfläche wird angezeigt.</string>
-    <string name="revanced_hide_visual_spacers_title">Visuelle Abstandhalter ausblenden</string>
-    <string name="revanced_hide_visual_spacers_summary_on">Visuelle Abstandhalter sind ausgeblendet.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">Visuelle Abstandshalter werden angezeigt.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Dialogfeld \'Zuschauerdiskretion\' entfernen</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Entfernt den Diskretionsdialog des Betrachters.
 Dies umgeht nicht die Altersbeschränkung. Es akzeptiert ihn nur automatisch."</string>
@@ -616,7 +604,6 @@ Einige serverseitige Layouts werden möglicherweise nicht zurückgesetzt.
     <string name="revanced_disable_translucent_status_bar_title">Transparente Statusleiste deaktivieren</string>
     <string name="revanced_disable_translucent_status_bar_summary_on">Statusleiste ist undurchsichtig.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Die Statusleiste ist undurchsichtig oder durchscheinend.</string>
-    <string name="revanced_disable_translucent_status_bar_user_dialog_message">Bei einigen HerstellerROMs mit Android 12+ kann das Aktivieren dieser Funktion die Navigationsleiste des Systems transparent machen.</string>
     <string name="revanced_fix_hype_button_icon_title">Fix Hype Button Symbol</string>
     <string name="revanced_fix_hype_button_icon_summary_on">Hype Button Symbol wird angezeigt.</string>
     <string name="revanced_fix_hype_button_icon_summary_off">Hype Button Symbol ist ausgeblendet.</string>
@@ -791,17 +778,9 @@ Um den Download-Button der nativen Wiedergabeliste anzuzeigen, aktivieren Sie 'S
     <string name="revanced_hide_navigation_label_summary_on">Navigationslabel ist versteckt.</string>
     <string name="revanced_hide_navigation_label_summary_off">Navigationslabel wird angezeigt.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Erstellungs- und Benachrichtigungs-Buttons tauschen</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"Die Schaltfläche \"Erstellen\" wird mit der Schaltfläche \"Benachrichtigungen\" vertauscht.
-
-Hinweis: Durch Aktivieren dieser Option wird auch die Videowerbung zwangsweise ausgeblendet."</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">Erstellen-Button ist nicht mit Benachrichtigungs-Button getauscht.</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"Das Deaktivieren kann mehr Werbung vom Server laden.
-
-Auch Werbung wird nicht mehr in Shorts blockiert.
-
-Wenn diese Einstellung nicht wirksam ist, versuchen Sie in den Inkognito-Modus zu wechseln."</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Transparente Navigationsleiste aktivieren</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">Navigationsleiste ist transparent.</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"Navigationsleiste ist transparent."</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">Navigationsleiste ist nicht transparent.</string>
     <string name="revanced_hide_navigation_bar_title">Navigationsleiste ausblenden</string>
     <string name="revanced_hide_navigation_bar_summary_on">Navigationsleiste ist ausgeblendet.</string>
@@ -1190,8 +1169,8 @@ Einschränkung: Einige markierte Suchlinks, die keinen Standard-Textstil haben, 
     <string name="revanced_hide_player_flyout_menu_audio_track_not_available">"Audiospur-Menü wird ausgeblendet.
 
 So blenden Sie das Audiospur-Menü ein:
-1. Gehen Sie zu 'Einstellungen' – 'RVX' – 'Verschiedenes' – 'Spoof Streaming-Daten' und aktivieren Sie 'JavaScript-Client verwenden'.
-2. Gehen Sie zu 'Einstellungen' – 'RVX' – 'Verschiedenes' – 'Spoof Streaming-Daten' und ändern Sie 'Standard-Client' in 'TV'."</string>
+1. Gehen Sie zu 'Einstellungen' – 'RVX' – 'Verschiedenes' – 'Spoof Streamingdaten' und aktivieren Sie 'JavaScript-Client verwenden'.
+2. Gehen Sie zu 'Einstellungen' – 'RVX' – 'Verschiedenes' – 'Spoof Streamingdaten' und ändern Sie 'Standard-Client' in 'TV'."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Untertitel-Menü ausblenden</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Untertitel-Menü wird ausgeblendet.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Untertitel-Menü wird angezeigt.</string>
@@ -1291,13 +1270,13 @@ Einschränkung: Videotitel verschwindet beim Klicken auf den Bildschirm."</strin
     <string name="revanced_hide_quick_actions_like_button_title">\'Gefällt mir\' Button ausblenden</string>
     <string name="revanced_hide_quick_actions_like_button_summary_on">\'Gefällt mir\' Button wird ausgeblendet.</string>
     <string name="revanced_hide_quick_actions_like_button_summary_off">\'Gefällt mir\' Button wird angezeigt.</string>
-    <string name="revanced_hide_quick_actions_live_chat_button_title">Verstecke Live-Chat-Schaltfläche</string>
+    <string name="revanced_hide_quick_actions_live_chat_button_title">Hide live chat button</string>
     <string name="revanced_hide_quick_actions_live_chat_button_summary_on">Live-Chat-Schaltfläche ist versteckt.</string>
     <string name="revanced_hide_quick_actions_live_chat_button_summary_off">Live-Chat-Schaltfläche wird angezeigt.</string>
     <string name="revanced_hide_quick_actions_more_button_title">Verstecke \"Mehr\" Button</string>
-    <string name="revanced_hide_quick_actions_more_button_summary_on">\"Mehr\" Button wird versteckt.</string>
-    <string name="revanced_hide_quick_actions_more_button_summary_off">Die Schaltfläche „Mehr“ wird angezeigt.</string>
-    <string name="revanced_hide_quick_actions_open_mix_playlist_button_title">Schaltfläche „Mix-Wiedergabeliste öffnen“ ausblenden</string>
+    <string name="revanced_hide_quick_actions_more_button_summary_on">\"Mehr\" Schaltfläche wird ausgeblendet.</string>
+    <string name="revanced_hide_quick_actions_more_button_summary_off">\"Mehr\" Schaltfläche wird angezeigt.</string>
+    <string name="revanced_hide_quick_actions_open_mix_playlist_button_title">Schaltfläche „Mix-Wiedergabeliste öffnen“ ausblenden.</string>
     <string name="revanced_hide_quick_actions_open_mix_playlist_button_summary_on">Mix-Playlist-Button ist ausgeblendet.</string>
     <string name="revanced_hide_quick_actions_open_mix_playlist_button_summary_off">Die Schaltfläche „Mix-Wiedergabeliste öffnen“ wird angezeigt.</string>
     <string name="revanced_hide_quick_actions_open_playlist_button_title">Verstecke Playlist Schaltfläche</string>
@@ -1310,18 +1289,18 @@ Einschränkung: Videotitel verschwindet beim Klicken auf den Bildschirm."</strin
     <string name="revanced_hide_quick_actions_share_button_summary_on">Teilen-Schaltfläche ist versteckt.</string>
     <string name="revanced_hide_quick_actions_share_button_summary_off">Teilen-Schaltfläche wird angezeigt.</string>
     <string name="revanced_quick_actions_top_margin_title">Schnelle Aktionen oberer Rand</string>
-    <string name="revanced_quick_actions_top_margin_summary">Konfigurieren Sie den Abstand von der Suchleiste auf die Meta-Leiste zwischen 0-32.</string>
+    <string name="revanced_quick_actions_top_margin_summary">Konfigurieren Sie den Abstand zwischen der Suchleiste und der Schnellaktionen, zwischen 0-32.</string>
     <string name="revanced_quick_actions_top_margin_invalid_toast">Der obere Rand der Schnellaktionen muss zwischen 0-32 liegen. Zurückgesetzt auf Standardwerte.</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Fullscreen, PreferenceCategory: Experimental flags -->
     <string name="revanced_disable_landscape_mode_title">Querformat deaktivieren</string>
-    <string name="revanced_disable_landscape_mode_summary_on">Querformat im Fullscreen Modus deaktiviert</string>
-    <string name="revanced_disable_landscape_mode_summary_off">Querformat im Fullscreen Modus aktiviert</string>
-    <string name="revanced_enable_compact_controls_overlay_title">Kompaktsteuerungs-Overlay aktivieren</string>
-    <string name="revanced_enable_compact_controls_overlay_summary_on">Kompaktsteuerungs-Overlay ist aktiviert</string>
-    <string name="revanced_enable_compact_controls_overlay_summary_off">Kompaktsteuerungs-Overlay ist deaktiviert</string>
+    <string name="revanced_disable_landscape_mode_summary_on">Querformat im Vollbild Modus deaktiviert.</string>
+    <string name="revanced_disable_landscape_mode_summary_off">Querformat im Vollbild Modus aktiviert.</string>
+    <string name="revanced_enable_compact_controls_overlay_title">Kompaktes Steuerungs-Overlay aktivieren</string>
+    <string name="revanced_enable_compact_controls_overlay_summary_on">Kompaktes Steuerungs-Overlay ist aktiviert.</string>
+    <string name="revanced_enable_compact_controls_overlay_summary_off">Kompaktes Steuerungs-Overlay ist deaktiviert.</string>
     <string name="revanced_keep_landscape_mode_title">Querformat behalten</string>
-    <string name="revanced_keep_landscape_mode_summary_on">Videos werden nach dem Ausschalten des Bildschirms und dem Ein- und Ausschalten im Querformat weiterhin abgespielt.</string>
-    <string name="revanced_keep_landscape_mode_summary_off">Videos werden im Hochformat abgespielt, nachdem der Bildschirm deaktiviert und eingeschaltet wurde.</string>
+    <string name="revanced_keep_landscape_mode_summary_on">Videos werden nach dem Aus- und Einschalten des Bildschirms weiterhin im Querformat abgespielt.</string>
+    <string name="revanced_keep_landscape_mode_summary_off">Videos werden nach dem Aus- und Einschalten des Bildschirms weiterhin im Hochformat abgespielt.</string>
     <string name="revanced_keep_landscape_mode_timeout_title">Timeout für den Wechsel zum Querformat</string>
     <string name="revanced_keep_landscape_mode_timeout_summary">Die Anzahl der Millisekunden nach dem Einschalten des Bildschirms, nachdem Querformat erzwungen wird.</string>
     <!-- PreferenceScreen: Player, PreferenceCategory: Player, PreferenceScreen: Haptic feedback -->
@@ -1360,12 +1339,12 @@ Einschränkung: Videotitel verschwindet beim Klicken auf den Bildschirm."</strin
     <string name="revanced_miniplayer_rounded_corners_title">Abgerundete Ecken aktivieren</string>
     <string name="revanced_miniplayer_rounded_corners_summary_on">Ecken sind abgerundet.</string>
     <string name="revanced_miniplayer_rounded_corners_summary_off">Ecken sind nicht abgerundet.</string>
-    <string name="revanced_miniplayer_double_tap_action_title">Aktiviere doppeltes Tippen und Pinchen um die Größe zu ändern</string>
+    <string name="revanced_miniplayer_double_tap_action_title">Aktiviere doppeltes Tippen und zusammenziehen um die Größe zu ändern</string>
     <string name="revanced_miniplayer_double_tap_action_summary_on">"Doppeltippen und mit zwei Fingern vergrößern/verkleinern ist aktiviert
 
 • Doppeltippen, um die Größe des Mini-Players zu vergrößern
 • Nochmals doppeltippen, um die ursprüngliche Größe wiederherzustellen."</string>
-    <string name="revanced_miniplayer_double_tap_action_summary_off">Doppel-Tipp-Aktion und Pinch um die Größe zu verändern, ist deaktiviert.</string>
+    <string name="revanced_miniplayer_double_tap_action_summary_off">Doppel-Tipp-Aktion und mit zwei Fingern vergrößern/verkleinern um die Größe zu verändern, ist deaktiviert.</string>
     <string name="revanced_miniplayer_drag_and_drop_title">Drag and Drop aktivieren</string>
     <string name="revanced_miniplayer_drag_and_drop_summary_on">"Drag-and-Drop ist aktiviert
 
@@ -1630,9 +1609,6 @@ Info:
     <string name="revanced_hide_shorts_live_header_title">Live-Chat-Kopfzeile ausblenden</string>
     <string name="revanced_hide_shorts_live_header_summary_on">Live-Chat-Kopfzeile wird ausgeblendet.\n\nZurück Button wird nicht ausgeblendet.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">Live-Chat-Kopfzeile wird angezeigt.\n\nZurück Button wird nicht ausgeblendet.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Verstecke Label für bezahlte Promotion</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">Label für bezahlte Promotion wird versteckt.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">Label für bezahlte Promotion wird angezeigt.</string>
     <string name="revanced_hide_shorts_paused_header_title">Pausierter Header ausblenden</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">Pausierter Header ist ausgeblendet.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">Pausierter Header wird angezeigt.</string>
@@ -2136,7 +2112,7 @@ Klicken Sie hier, um zu sehen, wie Sie einen API-Schlüssel ausgeben."</string>
     <string name="revanced_sb_guidelines_preference_title">Richtlinien anzeigen</string>
     <string name="revanced_sb_guidelines_preference_sum">Richtlinien enthalten Tipps und Regeln zum Einreichen von Segmenten</string>
     <string name="revanced_sb_guidelines_popup_title">Befolgen Sie die Richtlinien</string>
-    <string name="revanced_sb_guidelines_popup_content">Es wird empfohlen, die SponsorBlock Richtlinien zu lesen, bevor ein Segment gesendet wird</string>
+    <string name="revanced_sb_guidelines_popup_content">Es wird empfohlen, die SponsorBlock Richtlinien zu lesen, bevor ein Segment gesendet wird.</string>
     <string name="revanced_sb_guidelines_popup_already_read">Bereits gelesen</string>
     <string name="revanced_sb_guidelines_popup_open">Zeig es mir</string>
     <!-- PreferenceScreen: SponsorBlock, PreferenceCategory: General -->
@@ -2328,17 +2304,7 @@ This can be used when testing something on the MainThread."</string>
     <string name="revanced_spoof_streaming_data_default_client_title">Default client</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio
 <small>(Login required)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
-<small>(No Auth)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
-<small>(Auth, Aktion erforderlich)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(Outdated, No Auth)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
-<small>(WIP, No Auth)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
-<small>(No PoToken)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Unreleased, No Auth)</small>"</string>
@@ -2351,21 +2317,7 @@ This can be used when testing something on the MainThread."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Audio track menu is missing.
 • Stable volume is not available.
 • Kids videos may not play when logged out or in incognito mode."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Audiospurmenü fehlt.
-• Stabile Lautstärke ist nicht verfügbar.
-• Erzwungene automatische Audiospuren deaktivieren ist nicht verfügbar.
-• Kindervideos können nicht abgespielt werden, wenn sie ausgeloggt oder im Inkognito-Modus sind."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 is not supported.
-• Video may stop at 1:00, or may not be available in some regions."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Audio track menu is missing.
-• If deobfuscation fails, playback may fail.
-• Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
-• Video may start late."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• If deobfuscation fails, playback may fail.
-• Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
-• Video may start late."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• If deobfuscation fails, playback may fail.
-• Some accounts may require a PoToken, in which case the playback will fail.
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
 • Video may start late."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Audio track menu is missing.
@@ -2419,43 +2371,6 @@ Example 2:
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Du bist möglicherweise nicht eingeloggt.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">VR AV1 aktivieren</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"Der Videocodec ist AVC (H.264), VP9 oder AV1.
-
-Die Wiedergabe kann ruckeln oder Bilder auslassen."</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">Video Codec ist AVC (H.264) oder VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Durch Aktivieren dieser Einstellung wird möglicherweise die Software-AV1-Decodierung verwendet.
-
-Die Wiedergabe kann ruckeln oder Bilder auslassen."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Über Android VR Auth</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Klicken Sie hier, um zu erfahren, wie Sie einen Authentifizierungstoken erhalten.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Autorisierungs-Token erhalten</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Um ein Autorisierungs-Token für Android VR zu erhalten, sollten Sie sich bei YouTube VR einloggen, indem Sie einen Aktivierungscode verwenden:
-
-1. Klicken Sie auf 'Aktivierungs-Code', um einen Aktivierungscode zu generieren.
-2. Klicke auf \"Webseite öffnen\" um auf \"https://yt.be/activate\" zu gelangen.
-3. Gib den Aktivierungscode ein.
-4. Melde dich an, wenn du dazu aufgefordert wirst. Wenn Sie mehrere Google-Konten haben, wählen Sie das Konto aus, das Sie mit YouTube verwenden. Wenn Sie bereits angemeldet sind, springen Sie zum nächsten Schritt.
-5. Sobald Sie sich angemeldet haben, zurück zu RVX und klicken Sie erneut auf 'Über Android VR Auth'.
-6. Klicken Sie auf \"Autorisierungs-Token\" um ein Autorisierungs-Token-Token zu erhalten.
-
-※ Klicken Sie auf \"Zurücksetzen\", um einen Authentifizierungs-Token-oder Aktivierungscode zu entfernen."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Aktivierungscode erhalten</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Autorisierungs-Token erhalten</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Zurücksetzen</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Authentifizierungs-Token und Aktivierungscode zurückgesetzt.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Authentifizierungs-Token gespeichert.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Aktivierungscode</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Aktivierungscode:
-%s
-
-1. Klicken Sie auf 'Webseite öffnen' um zu 'https://yt.be/activate' zu gelangen.
-2. Geben Sie den Aktivierungscode ein.
-3. Melden Sie sich an, wenn Sie aufgefordert werden. Wenn Sie mehrere Google-Konten haben, wählen Sie das Konto, das Sie mit YouTube verwenden. Wenn Sie bereits angemeldet sind, überspringen Sie zum nächsten Schritt.
-4. Sobald Sie sich angemeldet haben, kehren Sie zu RVX zurück und klicken Sie erneut auf 'Über Android VR Auth'.
-5. Klicken Sie auf \"Autorisierungs-Token\" um ein Autorisierungs-Token-Token zu erhalten."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Webseite öffnen</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Aktivierungscode in Zwischenablage kopiert: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Use JavaScript client</string>

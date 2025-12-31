@@ -10,7 +10,7 @@ extension {
 
 android {
     namespace = "app.revanced.extension"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24
@@ -38,19 +38,13 @@ dependencies {
     compileOnly(libs.preference)
 
     implementation(libs.collections4)
-    implementation(libs.disklrucache)
     implementation(libs.gson)
-    implementation(libs.kotlinx.coroutines.core)
     implementation(libs.lang3)
-    implementation(libs.nanojson)
     implementation(libs.okhttp3)
     implementation(libs.protobuf.javalite)
 
-    implementation(libs.regex)
-    implementation(libs.retrofit)
-    implementation(libs.rxjava2)
-    implementation(libs.rxjava2.android)
-    implementation(project(":extensions:shared:j2v8"))
+    //noinspection UseTomlInstead
+    implementation("com.github.ynab:J2V8:6.2.1-16kb.2@aar")
 
     coreLibraryDesugaring(libs.desugar.jdk.libs)
     compileOnly(project(":extensions:shared:stub"))

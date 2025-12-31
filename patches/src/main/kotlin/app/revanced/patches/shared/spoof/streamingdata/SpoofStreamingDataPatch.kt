@@ -29,9 +29,7 @@ import app.revanced.util.fingerprint.definingClassOrThrow
 import app.revanced.util.fingerprint.injectLiteralInstructionBooleanCall
 import app.revanced.util.fingerprint.legacyFingerprint
 import app.revanced.util.fingerprint.matchOrThrow
-import app.revanced.util.fingerprint.methodCall
 import app.revanced.util.fingerprint.methodOrThrow
-import app.revanced.util.getNode
 import app.revanced.util.getReference
 import app.revanced.util.indexOfFirstInstructionOrThrow
 import app.revanced.util.indexOfFirstInstructionReversedOrThrow
@@ -426,13 +424,6 @@ fun spoofStreamingDataPatch(
             }
         }
 
-        playbackStartParametersFingerprint
-            .methodOrThrow()
-            .addInstruction(
-                1,
-                "invoke-static {p3}, $EXTENSION_CLASS_DESCRIPTOR->newPlayerResponseCpn(Ljava/lang/String;)V"
-            )
-
         // endregion
 
         // region JavaScript client
@@ -455,22 +446,6 @@ fun spoofStreamingDataPatch(
                 "invoke-static {}, $EXTENSION_CLASS_DESCRIPTOR->initializeJavascript()V"
             )
         }
-
-        val (brotliInputStreamClassName, brotliInputStreamMethodCall) = with(
-            brotliInputStreamFingerprint.methodOrThrow()
-        ) {
-            Pair(definingClass, methodCall())
-        }
-
-        findMethodOrThrow(EXTENSION_UTILS_CLASS_DESCRIPTOR) {
-            name == "getBrotliInputStream"
-        }.addInstructions(
-            0, """
-                new-instance v0, $brotliInputStreamClassName
-                invoke-direct {v0, p0}, $brotliInputStreamMethodCall
-                return-object v0
-                """
-        )
 
         // Copy the j2v8 library.
         with(context) {
@@ -497,7 +472,6 @@ fun spoofStreamingDataPatch(
             arrayOf(
                 ResourceGroup(
                     "raw",
-                    "po_token.html",
                     // External JavaScript for yt-dlp: https://github.com/yt-dlp/ejs
                     "astring-1.9.0.min.js",
                     "meriyah-6.1.4.min.js",
@@ -508,19 +482,15 @@ fun spoofStreamingDataPatch(
                 copyResources("shared/spoof/shared", resourceGroup)
             }
 
-            document("AndroidManifest.xml").use { document ->
-                // WebViewUtils.
-                val feature = document.createElement("uses-feature").apply {
-                    setAttribute("android:name", "android.hardware.usb.host")
-                }
-                document.getNode("manifest").appendChild(feature)
-
+            if (!isYouTube()) {
                 // Fix compile error in YouTube Music.
-                val applicationNode =
-                    document
-                        .getElementsByTagName("application")
-                        .item(0) as Element
-                applicationNode.setAttribute("android:extractNativeLibs", "true")
+                document("AndroidManifest.xml").use { document ->
+                    val applicationNode =
+                        document
+                            .getElementsByTagName("application")
+                            .item(0) as Element
+                    applicationNode.setAttribute("android:extractNativeLibs", "true")
+                }
             }
         }
 
@@ -658,19 +628,9 @@ fun spoofStreamingDataPatch(
 
         // endregion
 
-        var patchStatusArray = arrayOf(
-            "SpoofStreamingData"
-        )
-
-        if (isYouTube()) {
-            patchStatusArray += "SpoofStreamingDataYouTube"
-        }
-
-        patchStatusArray.forEach { methodName ->
-            findMethodOrThrow("$PATCHES_PATH/PatchStatus;") {
-                name == methodName
-            }.returnEarly(true)
-        }
+        findMethodOrThrow("$PATCHES_PATH/PatchStatus;") {
+            name == "SpoofStreamingData"
+        }.returnEarly(true)
 
         executeBlock()
     }

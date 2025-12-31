@@ -124,7 +124,7 @@ Descrição
     <string name="revanced_webview_toast_unavailable">O WebView não está disponível.</string>
     <string name="revanced_language_title">Idioma do RVX</string>
     <string name="revanced_language_DEFAULT">Idioma do app</string>
-    <string name="revanced_language_AM">"Aramaico
+    <string name="revanced_language_AM">"Amárico
 <small>አማርኛ</small>"</string>
     <string name="revanced_language_AR">"Árabe
 <small>العربية</small>"</string>
@@ -275,9 +275,11 @@ Descrição
     <string name="revanced_hide_web_search_results_title">Ocultar resultados da pesquisa web</string>
     <string name="revanced_hide_web_search_results_summary_on">Os resultados de pesquisa web estão ocultos.</string>
     <string name="revanced_hide_web_search_results_summary_off">Os resultados de pesquisa web serão exibidos.</string>
-    <string name="revanced_hide_get_premium_title">Ocultar promoção do YouTube Premium</string>
-    <string name="revanced_hide_get_premium_summary_on">A promoção do YouTube Premium está oculta.</string>
-    <string name="revanced_hide_get_premium_summary_off">A promoção do YouTube Premium será exibida.</string>
+    <string name="revanced_hide_youtube_premium_promotion_title">Ocultar promoções do YouTube Premium</string>
+    <string name="revanced_hide_youtube_premium_promotion_summary_on">"As promoções do YouTube Premium estão ocultas.
+
+Problema conhecido: Quando essa configuração está ativada, não é possível clicar nos Doodles do YouTube."</string>
+    <string name="revanced_hide_youtube_premium_promotion_summary_off">As promoções do YouTube Premium estão ativadas.</string>
     <!-- PreferenceScreen: Alternative thumbnails -->
     <string name="revanced_preference_screen_alt_thumbnails_title">Miniaturas alternativas</string>
     <string name="revanced_alt_thumbnail_home_title">Aba Início</string>
@@ -419,18 +421,24 @@ Toque aqui para saber mais sobre o DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Playlists
 Loja"</string>
+    <string name="revanced_hide_community_button_title">Ocultar botão Comunidade</string>
+    <string name="revanced_hide_community_button_summary_on">O botão Comunidade está oculto.</string>
+    <string name="revanced_hide_community_button_summary_off">O botão Comunidade será exibido.</string>
+    <string name="revanced_hide_join_button_in_channel_page_title">Ocultar botão Seja membro </string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_on">O botão Seja Membro está oculto.</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_off">O botão Seja Membro será exibido.</string>
     <string name="revanced_hide_links_preview_title">Ocultar pré-visualização dos links</string>
     <string name="revanced_hide_links_preview_summary_on">A pré-visualização dos links está oculta.</string>
     <string name="revanced_hide_links_preview_summary_off">A pré-visualização dos links será exibida.</string>
     <string name="revanced_hide_members_shelf_title">Ocultar prateleira de membros</string>
     <string name="revanced_hide_members_shelf_summary_on">A prateleira dos membros está oculta.</string>
     <string name="revanced_hide_members_shelf_summary_off">A prateleira dos membros será exibida.</string>
-    <string name="revanced_hide_visit_community_button_title">Ocultar botão Visitar Comunidade</string>
-    <string name="revanced_hide_visit_community_button_summary_on">O botão Visitar Comunidade está oculto.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">O botão Visitar Comunidade será exibido.</string>
-    <string name="revanced_hide_visit_store_button_title">Ocultar botão Visitar loja</string>
-    <string name="revanced_hide_visit_store_button_summary_on">O botão Visitar loja está oculto.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">O botão Visitar loja será exibido.</string>
+    <string name="revanced_hide_store_button_title">Ocultar botão Loja</string>
+    <string name="revanced_hide_store_button_summary_on">O botão Loja está oculto.</string>
+    <string name="revanced_hide_store_button_summary_off">O botão Loja será exibido.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_title">Ocultar botão Inscrever-se</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_on">O botão Inscrever-se está oculto.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_off">O botão Inscrever-se será exibido.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Publicações da comunidade</string>
     <string name="revanced_preference_screen_community_posts_summary">Ocultar ou exibir postagens na comunidade no feed e no canal.</string>
@@ -573,9 +581,9 @@ Isto pode não funcionar para alguns usuários, se não funcionar para você:
     <string name="revanced_hide_floating_microphone_title">Ocultar botão de microfone flutuante</string>
     <string name="revanced_hide_floating_microphone_summary_on">O botão do microfone flutuante está oculto.</string>
     <string name="revanced_hide_floating_microphone_summary_off">O botão do microfone flutuante será exibido.</string>
-    <string name="revanced_hide_visual_spacers_title">Ocultar espaçadores visuais</string>
-    <string name="revanced_hide_visual_spacers_summary_on">Os espaçadores visuais estão ocultos.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">Os espaçadores visuais serão exibidos.</string>
+    <string name="revanced_hide_visual_spacer_title">Ocultar espaçadores visuais</string>
+    <string name="revanced_hide_visual_spacer_summary_on">Os espaçadores visuais estão ocultos.</string>
+    <string name="revanced_hide_visual_spacer_summary_off">Os espaçadores visuais serão exibidos.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Remover o diálogo discricionário do visualizador</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Remover o diálogo discricionário de visualização.
 Isso não ignora a restrição de idade, apenas aceita isso automaticamente."</string>
@@ -614,7 +622,6 @@ Alterações incluem:
     <string name="revanced_disable_translucent_status_bar_title">Desativar barra de status transparente</string>
     <string name="revanced_disable_translucent_status_bar_summary_on">A barra de status está opaca.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">A barra de status está opaca ou transparente.</string>
-    <string name="revanced_disable_translucent_status_bar_user_dialog_message">Para as ROMs de alguns fabricantes rodando o Android 12+, ativar este recurso pode tornar a barra de navegação do sistema transparente.</string>
     <string name="revanced_fix_hype_button_icon_title">Corrigir ícone do botão ‘hype’</string>
     <string name="revanced_fix_hype_button_icon_summary_on">O ícone do botão Hypar será exibido.</string>
     <string name="revanced_fix_hype_button_icon_summary_off">O ícone do botão Hypar está oculto.</string>
@@ -645,6 +652,7 @@ Se for desativado posteriormente, é recomendável limpar os dados do aplicativo
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Restaurar o cabeçalho antigo da playlist</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Restaurar painel flutuante antigo de velocidade de reprodução</string>
     <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - Restaurar funcionalidade de Transcrição</string>
+    <string name="revanced_spoof_app_version_target_entry_20_13_41">20.13.41 - Restaurar a barra de ação de vídeo não recolhida</string>
     <string name="revanced_spoof_app_version_other_item">Outro</string>
     <string name="revanced_spoof_app_version_other_item_hint">Digite a versão do aplicativo</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Versão da falsificação do app inválida: %s.</string>
@@ -789,17 +797,18 @@ Para exibir o botão nativo para baixar a lista de reprodução, ative 'Falsific
     <string name="revanced_hide_navigation_label_summary_on">O rótulo de navegação está oculto.</string>
     <string name="revanced_hide_navigation_label_summary_off">O rótulo de navegação será exibido.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Alternar criar com notificações</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"O botão criar é alternado com o botão notificações.
-
-Nota: Ativar isso também oculta anúncios de vídeo à força."</string>
+    <string name="revanced_switch_create_with_notifications_button_summary_on">O botão Criar foi trocado com o botão Notificações.</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">O botão criar não está alternado com o botão Notificações.</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"Desativar isso pode carregar mais anúncios do servidor.
-
-Além disso, os anúncios não serão mais bloqueados no Shorts.
-
-Se essa configuração não surtir efeito, tente alternar para o modo anônimo."</string>
+    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">Se essa configuração não surtir efeito, tente alternar para o modo de navegação anônima.</string>
+    <string name="revanced_replace_navigation_button_title">Substituir botão de navegação</string>
+    <string name="revanced_replace_navigation_button_summary">Substitui o botão de navegação pelo botão de pesquisa.</string>
+    <string name="revanced_replace_navigation_button_target_title">Substituir botão de navegação</string>
+    <string name="revanced_replace_navigation_button_target_entry_home">Tela inicial</string>
+    <string name="revanced_replace_navigation_button_target_entry_shorts">Shorts</string>
+    <string name="revanced_replace_navigation_button_target_entry_subscriptions">Assinaturas</string>
+    <string name="revanced_replace_navigation_button_target_entry_notifications">Notificações</string>
     <string name="revanced_enable_translucent_navigation_bar_title">Ativar barra de navegação transparente</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">A barra de navegação está transparente.</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"A barra de navegação está transparente."</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">A barra de navegação está opaca.</string>
     <string name="revanced_hide_navigation_bar_title">Ocultar barra de navegação</string>
     <string name="revanced_hide_navigation_bar_summary_on">A barra de navegação está oculta.</string>
@@ -918,6 +927,11 @@ Aba Você → Ver canal → Menu → Configurações"</string>
     <string name="revanced_hide_toolbar_notification_button_title">Ocultar botão de notificação</string>
     <string name="revanced_hide_toolbar_notification_button_summary_on">O botão de notificação está oculto.</string>
     <string name="revanced_hide_toolbar_notification_button_summary_off">O botão de notificação será exibido.</string>
+    <string name="revanced_hide_toolbar_search_button_title">Ocultar botão de pesquisa</string>
+    <string name="revanced_hide_toolbar_search_button_summary_on">"O botão de pesquisa está oculto.
+
+Esta configuração pode não funcionar se a barra de pesquisa ampla estiver ativada."</string>
+    <string name="revanced_hide_toolbar_search_button_summary_off">O botão de pesquisa é exibido.</string>
     <string name="revanced_hide_search_term_thumbnail_title">Ocultar miniatura do termo de pesquisa</string>
     <string name="revanced_hide_search_term_thumbnail_summary_on">As miniaturas do histórico de pesquisa estão ocultas.</string>
     <string name="revanced_hide_search_term_thumbnail_summary_off">As miniaturas do histórico de pesquisa serão exibidas.</string>
@@ -1149,6 +1163,9 @@ Limitações:
 
 Limitação: Alguns links de pesquisa destacados que não possuem um estilo de texto padrão podem não ficar ocultos."</string>
     <string name="revanced_hide_comments_highlighted_search_links_summary_off">Os links de pesquisa destacados são exibidos.</string>
+    <string name="revanced_hide_comments_information_button_title">Ocultar botão de informações</string>
+    <string name="revanced_hide_comments_information_button_summary_on">O botão de informações está oculto.</string>
+    <string name="revanced_hide_comments_information_button_summary_off">O botão de informações será exibido.</string>
     <string name="revanced_hide_live_chat_messages_title">Ocultar mensagens do chat ao vivo</string>
     <string name="revanced_hide_live_chat_messages_summary_on">As mensagens do chat ao vivo estão ocultas.\n\nEssa configuração se aplica a vídeos do Shorts também.</string>
     <string name="revanced_hide_live_chat_messages_summary_off">As mensagens do chat ao vivo serão exibidas.\n\nEssa configuração se aplica a vídeos do Shorts também.</string>
@@ -1536,18 +1553,39 @@ Este recurso funciona melhor com uma conexão de Internet muito rápida."</strin
     <string name="revanced_hide_ai_generated_video_summary_section_title">Ocultar a seção de resumo de vídeo gerado por IA</string>
     <string name="revanced_hide_ai_generated_video_summary_section_summary_on">A seção de resumo de vídeo gerado por IA está oculta.</string>
     <string name="revanced_hide_ai_generated_video_summary_section_summary_off">A seção de resumo de vídeo gerado por IA será exibida.</string>
+    <string name="revanced_hide_ask_section_title">Ocultar seção de perguntas</string>
+    <string name="revanced_hide_ask_section_summary_on">A seção de perguntas está oculta.</string>
+    <string name="revanced_hide_ask_section_summary_off">A seção \"Pergunte\" é exibida.</string>
     <string name="revanced_hide_attributes_section_title">Ocultar seção de Atributos</string>
     <string name="revanced_hide_attributes_section_summary_on">As seções de lugares em destaque, jogos e música estão ocultas.</string>
     <string name="revanced_hide_attributes_section_summary_off">As seções de lugares em destaque, jogos e música serão exibidas.</string>
     <string name="revanced_hide_chapters_section_title">Ocultar seções de capítulos</string>
     <string name="revanced_hide_chapters_section_summary_on">As seções de capítulos estão ocultas.</string>
     <string name="revanced_hide_chapters_section_summary_off">As seções de capítulos serão exibidas.</string>
+    <string name="revanced_hide_explore_podcast_section_title">Ocultar Explorar a seção de podcasts</string>
+    <string name="revanced_hide_explore_podcast_section_summary_on">A seção \"Explorar podcasts\" está oculta.</string>
+    <string name="revanced_hide_explore_podcast_section_summary_off">A seção \"Explorar podcast\" é exibida.</string>
+    <string name="revanced_hide_featured_links_section_title">Ocultar seção de links em destaque</string>
+    <string name="revanced_hide_featured_links_section_summary_on">A seção de links em destaque está oculta.</string>
+    <string name="revanced_hide_featured_links_section_summary_off">A seção de links em destaque é exibida.</string>
+    <string name="revanced_hide_featured_videos_section_title">Ocultar seção de vídeos em destaque</string>
+    <string name="revanced_hide_featured_videos_section_summary_on">A seção de vídeos em destaque está oculta.</string>
+    <string name="revanced_hide_featured_videos_section_summary_off">A seção de vídeos em destaque é exibida.</string>
+    <string name="revanced_hide_how_this_was_made_section_title">Ocultar a seção \"Como este conteúdo foi criado\"</string>
+    <string name="revanced_hide_how_this_was_made_section_summary_on">A seção \"Como este conteúdo foi criado\" está oculta.</string>
+    <string name="revanced_hide_how_this_was_made_section_summary_off">A seção \"Como este conteúdo foi criado\" é exibida.</string>
     <string name="revanced_hide_hype_points_section_title">Ocultar seção de pontos de hype</string>
     <string name="revanced_hide_hype_points_section_summary_on">A seção de pontos de hype está oculta.</string>
     <string name="revanced_hide_hype_points_section_summary_off">A seção de pontos de destaque é exibida.</string>
+    <string name="revanced_hide_info_cards_section_title">Ocultar seção de cartões de informações</string>
+    <string name="revanced_hide_info_cards_section_summary_on">A seção de cartões informativos está oculta.</string>
+    <string name="revanced_hide_info_cards_section_summary_off">A seção de cartões informativos é exibida.</string>
     <string name="revanced_hide_key_concepts_section_title">Ocultar seção de conceitos principais</string>
     <string name="revanced_hide_key_concepts_section_summary_on">A seção de conceitos principais está oculta.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">A seção de conceitos principais será exibida.</string>
+    <string name="revanced_hide_subscribe_button_title">Ocultar botão de inscrição</string>
+    <string name="revanced_hide_subscribe_button_summary_on">O botão de inscrição está oculto.</string>
+    <string name="revanced_hide_subscribe_button_summary_off">O botão Inscrever-se será exibido.</string>
     <string name="revanced_hide_transcript_section_title">Ocultar seções de transcrição</string>
     <string name="revanced_hide_transcript_section_summary_on">As seções de transcrição estão ocultas.</string>
     <string name="revanced_hide_transcript_section_summary_off">As seções de transcrição serão exibidas.</string>
@@ -1611,6 +1649,9 @@ info:
     <!-- PreferenceScreen: Shorts, PreferenceCategory: Shorts, PreferenceScreen: Shorts player -->
     <string name="revanced_preference_screen_shorts_player_title">Reprodutor de shorts</string>
     <string name="revanced_preference_screen_shorts_player_summary">Ocultar ou mostrar componentes no reprodutor de shorts.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_title">Ocultar rótulo de Dublagem automática</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_on">O rótulo de dublagem automática está oculto.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_off">O rótulo de dublagem automática será exibido.</string>
     <string name="revanced_hide_shorts_channel_bar_title">Ocultar barra de canal</string>
     <string name="revanced_hide_shorts_channel_bar_summary_on">A barra do canal está oculta.</string>
     <string name="revanced_hide_shorts_channel_bar_summary_off">A barra do canal será exibida.</string>
@@ -1623,15 +1664,18 @@ info:
     <string name="revanced_hide_shorts_live_header_title">Ocultar o cabeçalho do chat ao vivo</string>
     <string name="revanced_hide_shorts_live_header_summary_on">O cabeçalho do chat ao vivo está oculto.\n\nO botão Voltar no cabeçalho não será ocultado.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">O cabeçalho do chat ao vivo será exibido.\n\nO botão Voltar no cabeçalho não será ocultado.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Ocultar rótulo de promoção paga</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">O rótulo de promoção pago está oculto.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">O rótulo de promoção pago será exibido.</string>
+    <string name="revanced_hide_shorts_live_preview_title">Ocultar prévias ao vivo</string>
+    <string name="revanced_hide_shorts_live_preview_summary_on">Prévias ao vivo estão ocultas. \n\nMesmo se for ativado, as transmissões ao vivo do Shorts não serão completamente removidas da sequência de exibição.</string>
+    <string name="revanced_hide_shorts_live_preview_summary_off">As prévias ao vivo serão exibidas.</string>
     <string name="revanced_hide_shorts_paused_header_title">Ocultar cabeçalho pausado</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">O cabeçalho pausado está oculto.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">O cabeçalho pausado será exibido.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_title">Ocultar botões de sobreposição pausados</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_on">Os botões de sobreposição pausados estão ocultos.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_off">Os botões de sobreposição pausados serão exibidos.</string>
+    <string name="revanced_hide_shorts_preview_comment_title">Ocultar prévia de comentário</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_on">A prévia do comentário está oculta.</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_off">A prévia do comentário será exibida.</string>
     <string name="revanced_hide_shorts_shopping_button_title">Ocultar botão de Compras</string>
     <string name="revanced_hide_shorts_shopping_button_summary_on">O botão de compras está oculto.</string>
     <string name="revanced_hide_shorts_shopping_button_summary_off">O botão de compras será exibido.</string>
@@ -2324,19 +2368,11 @@ Isso pode ser usado ao testar algo no MainThread."</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_creator">"Android Studio
 <small>(Login necessário)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"&lt;small&gt;(Sem SDK)&lt;/pequeno&gt;"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
-<small>(Sem Autenticação)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
-<small>(Autenticação, Ação necessária)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(Desatualizado, Sem Autenticação)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
-<small>(WIP, Sem Autenticação)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
 <small>(Legado)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simples
-<small>(Sem PoToken)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simples</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Integrada</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Não lançado, Sem Autenticação)</small>"</string>
@@ -2349,21 +2385,7 @@ Isso pode ser usado ao testar algo no MainThread."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• O menu de faixa de áudio não está disponível.
 • O volume estável não está disponível.
 • Os vídeos para crianças podem não reproduzir quando desconectado ou em modo anônimo."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• O menu de faixa de áudio não está disponível.
-• Desativar faixas de áudio automáticas forçadas não estão disponíveis.
-• O volume estável não está disponível.
-• Os vídeos para crianças podem não reproduzir quando desconectado ou em modo anônimo."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 não é suportado.
-• O vídeo pode parar em 1:00 ou não pode estar disponível em algumas regiões."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• O menu da faixa de áudio não está disponível.
-• Se a desofuscação falhar, a reprodução poderá falhar.
-• Às vezes, o vídeo não será reproduzido mesmo após 10 segundos, caso em que você precisará clicar no botão recarregar vídeo.
-• O vídeo pode começar tarde."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• Se a desofuscação falhar, a reprodução poderá falhar.
-• Às vezes, o vídeo não será reproduzido mesmo após 10 segundos, caso em que você precisará clicar no botão recarregar vídeo.
-• O vídeo pode começar tarde."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• Se a desofuscação falhar, a reprodução poderá falhar.
-• Algumas contas podem exigir um PoToken, caso em que a reprodução falhará.
 • Às vezes, o vídeo não será reproduzido mesmo após 10 segundos, caso em que você precisará clicar no botão recarregar vídeo.
 • O vídeo pode começar tarde."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• O menu de faixa de áudio não está disponível.
@@ -2417,18 +2439,18 @@ Exemplo 2:
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Tente alterar o cliente padrão para TV.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Ativar VR AV1</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"A codificação do vídeo é AVC (H.264), VP9 ou AV1.
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_title">Ativar codec AV1</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_summary_on">"A codificação do vídeo é AVC (H.264), VP9 ou AV1.
 
 A reprodução pode travar ou perder quadros."</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">O codec de vídeo é AVC (H.264) ou VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Habilitar essa configuração pode usar o software de decodificação AV1.
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_summary_off">O codec de vídeo é AVC (H.264) ou VP9.</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_user_dialog_message">"Habilitar essa configuração pode usar o software de decodificação AV1.
 
 A reprodução pode travar ou perder quadros."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Sobre o Android VR Autenticação</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Clique para ver como obter um token de autenticação.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Obter Token de autorização</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Para obter um token de autorização para Android VR, você deve entrar no YouTube VR usando um código de ativação:
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_title">Entrar no Android VR</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_summary">Clique aqui para ver como entrar no Android VR.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_title">Entrar no Android VR</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_message">"Entrar no Android VR (Youtube VR) segue as seguintes diretrizes fornecidas pelo Google (Autorização da Conta do Google - OAuth 2.0 para TV e Aplicativos para Dispositivos de Entrada Limitada):
 
 1. Clique em 'Obter código de ativação' para gerar um código de ativação.
 2. Clique em 'Abrir site' para ir para 'https://yt.be/activate'.
@@ -2438,22 +2460,29 @@ A reprodução pode travar ou perder quadros."</string>
 6. Clique em 'Obter token de autorização' para obter um token de autorização.
 
 ※ Clique em 'Redefinir' para remover um token de autenticação ou código de ativação."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Obter código de ativação</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Obter token de autorização</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Redefinir</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Token de autenticação e código de ativação redefinido.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Token de autenticação salvo.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Código de ativação</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Código de ativação:
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_activation_code_text">Obter código de ativação</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_authorization_token_text">Obter token de autorização</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_reset_text">Redefinir</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_failed">Falha ao emitir um token de autenticação.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_failed_suggestion">Clique em Redefinir e tente novamente.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_reset">Token de autenticação e código de ativação redefinidos.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_title">Conectado</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_message">"Token de autenticação salvo.
+
+- Token de autenticação emitido através deste processo só pode ser usado no YouTube VR (No RVX, é usado para buscar dados de streaming do YouTube VR).
+- Tokens de autenticação não utilizados por mais de 6 meses serão revogados pelos servidores do Google.
+- Se você mudar sua senha, desregistrar um dispositivo nas configurações da sua conta ou desinstalar o aplicativo, você precisará reemitir o token de autenticação."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_title">Código de ativação</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_message">"Código de ativação:
 %s
 
 1. Clique em 'Abrir site' para ir em 'https://yt.be/activate'.
 2. Digite o código de ativação.
 3. Faça o login quando solicitado. Se você tiver várias contas do Google, selecione a conta que você usa com o YouTube. Se você já está logado, pule para o próximo passo.
-4. Uma vez logado, retorne ao RVX e clique em 'Sobre o Android VR Autenticação' novamente.
+4. Uma vez logado, retorne ao RVX e clique em 'Entrar no Android VR' novamente.
 5. Clique em 'Obter token de autorização' para obter um token de autorização."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Abrir site</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Código de ativação copiado para a área de transferência: %s.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_open_website_text">Abrir site</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_toast_copy">Código de ativação copiado para a área de transferência: %s.</string>
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
     <string name="revanced_spoof_streaming_data_use_js_title">Usar cliente JavaScript</string>

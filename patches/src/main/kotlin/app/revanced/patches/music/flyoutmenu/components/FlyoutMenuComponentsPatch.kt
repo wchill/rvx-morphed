@@ -379,13 +379,7 @@ val flyoutMenuComponentsPatch = bytecodePatch(
         )
         addSwitchPreference(
             CategoryType.FLYOUT,
-            "revanced_hide_flyout_menu_save_episode_for_later",
-            "false",
-            false
-        )
-        addSwitchPreference(
-            CategoryType.FLYOUT,
-            "revanced_hide_flyout_menu_save_to_library",
+            "revanced_hide_flyout_menu_save_episode_for_later_save_to_library",
             "false",
             false
         )
@@ -428,6 +422,12 @@ val flyoutMenuComponentsPatch = bytecodePatch(
         addSwitchPreference(
             CategoryType.FLYOUT,
             "revanced_hide_flyout_menu_subscribe",
+            "false",
+            false
+        )
+        addSwitchPreference(
+            CategoryType.FLYOUT,
+            "revanced_hide_flyout_menu_taste_match",
             "false",
             false
         )

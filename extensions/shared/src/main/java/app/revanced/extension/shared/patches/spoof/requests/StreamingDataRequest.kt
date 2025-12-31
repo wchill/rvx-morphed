@@ -13,7 +13,9 @@ import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtil
 import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.setServerAbrStreamingUrl
 import app.revanced.extension.shared.innertube.utils.StreamingDataOuterClassUtils.setUrl
 import app.revanced.extension.shared.innertube.utils.ThrottlingParameterUtils
-import app.revanced.extension.shared.patches.auth.AuthPatch
+import app.revanced.extension.shared.patches.AppCheckPatch.IS_YOUTUBE
+import app.revanced.extension.shared.patches.auth.YouTubeAuthPatch
+import app.revanced.extension.shared.patches.auth.YouTubeVRAuthPatch
 import app.revanced.extension.shared.patches.components.ByteArrayFilterGroup
 import app.revanced.extension.shared.patches.spoof.StreamingDataOuterClassPatch.parseFrom
 import app.revanced.extension.shared.settings.BaseSettings
@@ -21,7 +23,6 @@ import app.revanced.extension.shared.utils.Logger
 import app.revanced.extension.shared.utils.StringRef.str
 import app.revanced.extension.shared.utils.Utils
 import com.google.protos.youtube.api.innertube.StreamingDataOuterClass.StreamingData
-import com.liskovsoft.youtubeapi.app.PoTokenGate
 import org.apache.commons.lang3.StringUtils
 import java.io.BufferedInputStream
 import java.io.ByteArrayOutputStream
@@ -50,7 +51,6 @@ import java.util.concurrent.TimeoutException
 class StreamingDataRequest private constructor(
     videoId: String,
     tParameter: String,
-    cpn: String,
     requestHeader: Map<String, String>,
     reasonSkipped: String,
 ) {
@@ -64,7 +64,6 @@ class StreamingDataRequest private constructor(
             fetch(
                 videoId = videoId,
                 tParameter = tParameter,
-                cpn = cpn,
                 requestHeader = requestHeader,
                 reasonSkipped = reasonSkipped,
             )
@@ -106,7 +105,6 @@ class StreamingDataRequest private constructor(
 
     companion object {
         private const val AUTHORIZATION_HEADER = "Authorization"
-        private const val VISITOR_ID_HEADER: String = "X-Goog-Visitor-Id"
         private const val MAX_MILLISECONDS_TO_WAIT_FOR_FETCH = 20 * 1000
 
         private val SPOOF_STREAMING_DATA_DEFAULT_CLIENT: ClientType =
@@ -121,6 +119,7 @@ class StreamingDataRequest private constructor(
                 "yt_live_broadcast",
                 "yt_premiere_broadcast"
             )
+        private var appendSignIn: Boolean = false
         private var lastSpoofedClient: ClientType? = null
 
         @GuardedBy("itself")
@@ -135,13 +134,14 @@ class StreamingDataRequest private constructor(
 
         @JvmStatic
         val lastSpoofedClientName: String
-            get() = lastSpoofedClient?.friendlyName ?: "Unknown"
+            get() = lastSpoofedClient?.friendlyName?.let {
+                if (appendSignIn) "$it Signed in" else it
+            } ?: "Unknown"
 
         @JvmStatic
         fun fetchRequest(
             videoId: String,
             tParameter: String,
-            cpn: String,
             fetchHeaders: Map<String, String>,
             reasonSkipped: String,
         ) {
@@ -150,7 +150,6 @@ class StreamingDataRequest private constructor(
                 StreamingDataRequest(
                     videoId,
                     tParameter,
-                    cpn,
                     fetchHeaders,
                     reasonSkipped,
                 )
@@ -172,42 +171,42 @@ class StreamingDataRequest private constructor(
 
         private fun replaceHeader(
             clientType: ClientType,
-            videoId: String,
             requestHeader: Map<String, String>,
         ): Map<String, String> {
-            if (clientType.requirePoToken) {
-                val finalRequestHeader: MutableMap<String, String> =
-                    LinkedHashMap(requestHeader.size)
-                val visitorData = PoTokenGate.getVisitorData(videoId)
-                for (key in requestHeader.keys) {
-                    val value = requestHeader[key]
-                    if (value != null) {
-                        if (key == VISITOR_ID_HEADER) {
-                            if (!visitorData.isNullOrEmpty()) {
-                                finalRequestHeader.put(VISITOR_ID_HEADER, visitorData)
-                                continue
-                            }
-                        }
-                        finalRequestHeader.put(key, value)
-                    }
-                }
-                return finalRequestHeader
-            } else if (clientType == ClientType.ANDROID_VR_AUTH &&
-                AuthPatch.isAuthorizationAvailable()
-            ) {
+            appendSignIn = false
+
+            if (clientType == ClientType.ANDROID_VR) {
                 val finalRequestHeader: MutableMap<String, String> =
                     LinkedHashMap(requestHeader.size)
                 for (key in requestHeader.keys) {
                     val value = requestHeader[key]
                     if (value != null) {
                         if (key == AUTHORIZATION_HEADER) {
-                            finalRequestHeader.put(
-                                AUTHORIZATION_HEADER,
-                                AuthPatch.getAuthorization()
-                            )
+                            if (YouTubeVRAuthPatch.isAuthorizationAvailable()) {
+                                finalRequestHeader[AUTHORIZATION_HEADER] = YouTubeVRAuthPatch.getAuthorization()
+                                appendSignIn = true
+                            }
                             continue
                         }
-                        finalRequestHeader.put(key, value)
+                        finalRequestHeader[key] = value
+                    }
+                }
+                return finalRequestHeader
+            } else if (!IS_YOUTUBE &&
+                clientType == ClientType.ANDROID_NO_SDK) {
+                val finalRequestHeader: MutableMap<String, String> =
+                    LinkedHashMap(requestHeader.size)
+                for (key in requestHeader.keys) {
+                    val value = requestHeader[key]
+                    if (value != null) {
+                        if (key == AUTHORIZATION_HEADER) {
+                            if (YouTubeAuthPatch.isAuthorizationAvailable()) {
+                                finalRequestHeader[AUTHORIZATION_HEADER] = YouTubeAuthPatch.getAuthorization()
+                                appendSignIn = true
+                            }
+                            continue
+                        }
+                        finalRequestHeader[key] = value
                     }
                 }
                 return finalRequestHeader
@@ -238,9 +237,7 @@ class StreamingDataRequest private constructor(
         }
 
         private fun getDeobfuscatedUrlArrayList(
-            clientType: ClientType,
             videoId: String,
-            cpn: String,
             streamBytes: ByteArray,
         ): Triple<ArrayList<String>?, ArrayList<String>?, String?>? {
             val startTime = System.currentTimeMillis()
@@ -261,10 +258,6 @@ class StreamingDataRequest private constructor(
 
                     val deobfuscatedAdaptiveFormatsArrayList: ArrayList<String> =
                         ArrayList(adaptiveFormatsCount)
-                    val sessionPoToken = if (clientType.requirePoToken)
-                        PoTokenGate.getWebSessionPoToken(videoId)
-                    else
-                        null
 
                     for (i in 0..<adaptiveFormatsCount) {
                         val adaptiveFormats = streamingData.getAdaptiveFormats(i)
@@ -273,10 +266,8 @@ class StreamingDataRequest private constructor(
                             val deobfuscatedUrl =
                                 ThrottlingParameterUtils.deobfuscateStreamingUrl(
                                     videoId,
-                                    cpn,
                                     adaptiveFormats.url,
                                     adaptiveFormats.signatureCipher,
-                                    sessionPoToken
                                 )
                             if (deobfuscatedUrl.isNullOrEmpty()) {
                                 Logger.printDebug { "Failed to decrypt n-sig or signatureCipher, please check if latest regular expressions are being used" }
@@ -299,10 +290,8 @@ class StreamingDataRequest private constructor(
                             val deobfuscatedUrl =
                                 ThrottlingParameterUtils.deobfuscateStreamingUrl(
                                     videoId,
-                                    cpn,
                                     formats.url,
                                     formats.signatureCipher,
-                                    sessionPoToken
                                 )
                             if (deobfuscatedUrl.isNullOrEmpty()) {
                                 Logger.printDebug { "Failed to decrypt n-sig or signatureCipher" }
@@ -318,10 +307,8 @@ class StreamingDataRequest private constructor(
                         serverAbrStreamingUrl = ThrottlingParameterUtils
                             .deobfuscateStreamingUrl(
                                 videoId,
-                                "",
                                 serverAbrStreamingUrl,
                                 null,
-                                sessionPoToken
                             )
                     }
 
@@ -364,7 +351,6 @@ class StreamingDataRequest private constructor(
             clientType: ClientType,
             videoId: String,
             tParameter: String,
-            cpn: String,
             requestHeader: Map<String, String>,
         ): HttpURLConnection? {
             val startTime = System.currentTimeMillis()
@@ -376,7 +362,6 @@ class StreamingDataRequest private constructor(
                     createJSRequestBody(
                         clientType = clientType,
                         videoId = videoId,
-                        cpn = cpn,
                         isGVS = true,
                         isInlinePlayback = SPOOF_STREAMING_DATA_USE_JS_BYPASS_FAKE_BUFFERING,
                     )
@@ -394,7 +379,7 @@ class StreamingDataRequest private constructor(
                             SPOOF_STREAMING_DATA_USE_JS_BYPASS_FAKE_BUFFERING
                         ),
                         clientType,
-                        replaceHeader(clientType, videoId, requestHeader)
+                        replaceHeader(clientType, requestHeader)
                     )
 
                 connection.setFixedLengthStreamingMode(requestBody.size)
@@ -426,7 +411,6 @@ class StreamingDataRequest private constructor(
         private fun fetch(
             videoId: String,
             tParameter: String,
-            cpn: String,
             requestHeader: Map<String, String>,
             reasonSkipped: String,
         ): StreamingData? {
@@ -450,7 +434,6 @@ class StreamingDataRequest private constructor(
                     clientType,
                     videoId,
                     tParameter,
-                    cpn,
                     requestHeader,
                 )
                 if (connection != null) {
@@ -493,9 +476,7 @@ class StreamingDataRequest private constructor(
                                                 if (clientType.requireJS) {
                                                     // ArrayList containing the deobfuscated streamingUrl
                                                     val arrayLists = getDeobfuscatedUrlArrayList(
-                                                        clientType,
                                                         videoId,
-                                                        cpn,
                                                         streamBytes
                                                     )
                                                     if (arrayLists != null) {

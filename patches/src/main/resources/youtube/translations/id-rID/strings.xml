@@ -135,6 +135,7 @@ Deskripsi
 <small>Български</small>"</string>
     <string name="revanced_language_BN">"Bengali
 <small>বাংলা</small>"</string>
+    <string name="revanced_language_CA">"Catalan"</string>
     <!-- PreferenceScreen: Ads -->
     <string name="revanced_preference_screen_ads_title">Iklan</string>
     <string name="revanced_hide_creator_store_shelf_title">Sembunyikan rak toko pembuat</string>
@@ -174,9 +175,6 @@ Deskripsi
     <string name="revanced_hide_web_search_results_title">Sembunyikan hasil pencarian web</string>
     <string name="revanced_hide_web_search_results_summary_on">Hasil pencarian web ditunjukkan.</string>
     <string name="revanced_hide_web_search_results_summary_off">Hasil pencarian web ditunjukkan.</string>
-    <string name="revanced_hide_get_premium_title">Sembunyikan promosi YouTube Premium</string>
-    <string name="revanced_hide_get_premium_summary_on">Promosi YouTube Premium disembunyikan.</string>
-    <string name="revanced_hide_get_premium_summary_off">Promosi YouTube Premium ditunjukkan.</string>
     <!-- PreferenceScreen: Alternative thumbnails -->
     <string name="revanced_preference_screen_alt_thumbnails_title">Thumbnail alternatif</string>
     <string name="revanced_alt_thumbnail_home_title">Tab beranda</string>
@@ -311,12 +309,6 @@ Toko"</string>
     <string name="revanced_hide_members_shelf_title">Sembunyikan rak anggota</string>
     <string name="revanced_hide_members_shelf_summary_on">Rak anggota disembunyikan.</string>
     <string name="revanced_hide_members_shelf_summary_off">Rak anggota ditampilkan.</string>
-    <string name="revanced_hide_visit_community_button_title">Sembunyikan tombol kunjungi komunitas</string>
-    <string name="revanced_hide_visit_community_button_summary_on">Tombol kunjungi komunitas tersembunyi.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">Tombol kunjungi komunitas ditampilkan.</string>
-    <string name="revanced_hide_visit_store_button_title">Sembunyikan tombol kunjungi toko</string>
-    <string name="revanced_hide_visit_store_button_summary_on">Tombol kunjungi toko tersembunyi.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">Tombol kunjungi toko ditampilkan.</string>
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Postingan Komunitas</string>
     <string name="revanced_preference_screen_community_posts_summary">Sembunyikan atau tampilkan postingan komunitas di feed dan saluran.</string>
@@ -447,9 +439,6 @@ Keterbatasan: Tombol Kembali pada bilah alat mungkin tidak berfungsi."</string>
     <string name="revanced_hide_floating_microphone_title">Sembunyikan tombol mikrofon mengambang</string>
     <string name="revanced_hide_floating_microphone_summary_on">Tombol mikrofon mengambang disembunyikan.</string>
     <string name="revanced_hide_floating_microphone_summary_off">Tombol mikrofon mengambang ditampilkan.</string>
-    <string name="revanced_hide_visual_spacers_title">Sembunyikan pembatas visual</string>
-    <string name="revanced_hide_visual_spacers_summary_on">Pembatas visual disembunyikan.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">Pembatas visual ditampilkan.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Hapus dialog kebijaksanaan pemirsa</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Menghapus dialog kebijaksanaan pemirsa.
 Ini tidak melewati batasan usia. Itu hanya menerimanya secara otomatis."</string>
@@ -496,9 +485,6 @@ Jika kemudian dimatikan, disarankan untuk menghapus data aplikasi untuk mencegah
     <string name="revanced_hide_navigation_label_summary_on">Label navigasi disembunyikan.</string>
     <string name="revanced_hide_navigation_label_summary_off">Label navigasi ditampilkan.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Tukar tombol buat dan pemberitahuan</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"Tombol Buat ditukar dengan tombol Notifikasi.
-
-Catatan: Mengaktifkan ini juga secara paksa menyembunyikan iklan video."</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">Tombol Buat tidak bertukar posisi dengan tombol Pemberitahuan.</string>
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Settings menu -->
     <!-- PreferenceScreen: General, PreferenceCategory: General, PreferenceScreen: Snack bar -->

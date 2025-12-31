@@ -125,8 +125,6 @@ Problemas conocidos:
     <string name="revanced_hide_flyout_menu_remove_from_library_title">Ocultar menú de eliminar de la biblioteca</string>
     <string name="revanced_hide_flyout_menu_remove_from_playlist_title">Ocultar menú de quitar de la lista de reproducción</string>
     <string name="revanced_hide_flyout_menu_report_title">Ocultar menú Denunciar</string>
-    <string name="revanced_hide_flyout_menu_save_episode_for_later_title">Ocultar menú de Guardar episodio para más tarde</string>
-    <string name="revanced_hide_flyout_menu_save_to_library_title">Ocultar menú de Guardar en biblioteca</string>
     <string name="revanced_hide_flyout_menu_save_to_playlist_title">Ocultar menú de Guardar en lista de reproducción</string>
     <string name="revanced_hide_flyout_menu_share_title">Ocultar menú de Compartir</string>
     <string name="revanced_hide_flyout_menu_shuffle_play_title">Ocultar menú de Reproducción aleatoria</string>
@@ -278,9 +276,9 @@ Preferiblemente colores oscuros, la aplicación no soporta temas claros."</strin
     <string name="revanced_enable_forced_miniplayer_title">Activar el minireproductor forzado</string>
     <string name="revanced_enable_forced_miniplayer_summary">Habilita que se fuerce el minireproductor cuando se cambia a una nueva pista.</string>
     <string name="revanced_enable_smooth_transition_animation_title">Activar animación suave de transición</string>
-    <string name="revanced_enable_smooth_transition_animation_summary">"Activa una animación suave, cuando el mini reproductor se expande después de estar minimizado.
+    <string name="revanced_enable_smooth_transition_animation_summary">Activa una animación suave, cuando el mini reproductor se expande después de estar minimizado.
 
-Limitaciones: La interfaz de letras sincronizadas puede estar rota para algunos usuarios."</string>
+Limitaciones: La interfaz de letras sincronizadas puede estar rota para algunos usuarios.</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_title">Habilitar el gesto de descarte del minireproductor</string>
     <string name="revanced_enable_swipe_to_dismiss_miniplayer_summary">Habilita que se pueda deslizar hacia abajo en el minireproductor para descartarlo.</string>
     <string name="revanced_enable_comments_scroll_top_title">Habilitar acción para desplazarse hasta arriba en los comentarios</string>
@@ -502,42 +500,9 @@ Si eres un usuario de YouTube Premium, esta opción puede ser necesaria."</strin
 
 Problemas conocidos:
 • El audio se puede trabar durante la reproducción.</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_creator">Creador de android</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android RV</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">Autentificación de Android VR (Acción necesaria)</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">Web Móvil</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV integrado</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">visionOS</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">Acerca de la autenticación de Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Pulsa para ver cómo obtener un token de autenticación.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Obtener token de autorización</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"Para obtener un token de autorización para Android VR, debes iniciar sesión en YouTube VR utilizando un código de activación:
-
-1. Pulsa en «Obtener código de activación» para generar un código de activación.
-2. Pulsa en «Abrir sitio web» para ir a «https://yt.be/activate».
-3. Introduce el código de activación.
-4. Inicia sesión cuando se te solicite. Si tienes varias cuentas de Google, selecciona la cuenta que utilizas con YouTube. Si ya has iniciado sesión, salta al siguiente paso.
-5. Una vez iniciada la sesión, vuelve a RVX y pulsa de nuevo en «Acerca de la autenticación de Android VR».
-6. Pulsa en «Obtener token de autorización» para obtener un token de autorización.
-
-※ Pulsa «Restablecer» para eliminar un token de autenticación o un código de activación."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Obtener código de activación</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Obtener token de autorización</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Restablecer</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Token de autenticación y código de activación restablecidos.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Token de autentificación guardado.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Código de activación</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Código de activación:
-%s
-
-1. Pulsa en «Abrir sitio web» para ir a «https://yt.be/activate».
-2. Introduce el código de activación.
-3. Inicia sesión cuando se te solicite. Si tienes varias cuentas de Google, selecciona la cuenta que utilizas con YouTube. Si ya has iniciado sesión, pasa al siguiente paso.
-4. Una vez que hayas iniciado sesión, vuelve a RVX y pulsa de nuevo en «Acerca de la autenticación de Android VR».
-5. Pulsa en «Obtener token de autorización» para obtener un token de autorización."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Abrir sitio web</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Código de activación copiado al portapapeles: %s.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">No se han podido obtener las transmisiones de ningún cliente.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Intente cambiar el cliente predeterminado a TV.</string>
     <string name="revanced_watch_history_type_title">Tipo de vista del historial</string>

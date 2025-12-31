@@ -286,9 +286,11 @@ Description
     <string name="revanced_hide_web_search_results_title">Hide web search results</string>
     <string name="revanced_hide_web_search_results_summary_on">Web search results are hidden.</string>
     <string name="revanced_hide_web_search_results_summary_off">Web search results are shown.</string>
-    <string name="revanced_hide_get_premium_title">Hide YouTube Premium promotion</string>
-    <string name="revanced_hide_get_premium_summary_on">YouTube Premium promotion is hidden.</string>
-    <string name="revanced_hide_get_premium_summary_off">YouTube Premium promotion is shown.</string>
+    <string name="revanced_hide_youtube_premium_promotion_title">Hide YouTube Premium promotion</string>
+    <string name="revanced_hide_youtube_premium_promotion_summary_on">"YouTube Premium promotion is hidden.
+
+Known issue: When this setting is enabled, YouTube Doodles are not clickable."</string>
+    <string name="revanced_hide_youtube_premium_promotion_summary_off">YouTube Premium promotion is shown.</string>
 
 
     <!-- PreferenceScreen: Alternative thumbnails -->
@@ -442,18 +444,24 @@ Tap here to learn more about DeArrow."</string>
     <string name="revanced_hide_channel_tab_filter_strings_hint">"Shorts
 Playlists
 Store"</string>
+    <string name="revanced_hide_community_button_title">Hide Community button</string>
+    <string name="revanced_hide_community_button_summary_on">Community button is hidden.</string>
+    <string name="revanced_hide_community_button_summary_off">Community button is shown.</string>
+    <string name="revanced_hide_join_button_in_channel_page_title">Hide Join button</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_on">Join button is hidden.</string>
+    <string name="revanced_hide_join_button_in_channel_page_summary_off">Join button is shown.</string>
     <string name="revanced_hide_links_preview_title">Hide links preview</string>
     <string name="revanced_hide_links_preview_summary_on">Links preview is hidden.</string>
     <string name="revanced_hide_links_preview_summary_off">Links preview is shown.</string>
     <string name="revanced_hide_members_shelf_title">Hide members shelf</string>
     <string name="revanced_hide_members_shelf_summary_on">Members shelf is hidden.</string>
     <string name="revanced_hide_members_shelf_summary_off">Members shelf is shown.</string>
-    <string name="revanced_hide_visit_community_button_title">Hide Visit Community button</string>
-    <string name="revanced_hide_visit_community_button_summary_on">Visit Community button is hidden.</string>
-    <string name="revanced_hide_visit_community_button_summary_off">Visit Community button is shown.</string>
-    <string name="revanced_hide_visit_store_button_title">Hide Visit store button</string>
-    <string name="revanced_hide_visit_store_button_summary_on">Visit store button is hidden.</string>
-    <string name="revanced_hide_visit_store_button_summary_off">Visit store button is shown.</string>
+    <string name="revanced_hide_store_button_title">Hide Store button</string>
+    <string name="revanced_hide_store_button_summary_on">Store button is hidden.</string>
+    <string name="revanced_hide_store_button_summary_off">Store button is shown.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_title">Hide Subscribe button</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_on">Subscribe button is hidden.</string>
+    <string name="revanced_hide_subscribe_button_in_channel_page_summary_off">Subscribe button is shown.</string>
 
     <!-- PreferenceScreen: Feed, PreferenceCategory: Feed, PreferenceScreen: Community posts -->
     <string name="revanced_preference_screen_community_posts_title">Community posts</string>
@@ -592,7 +600,7 @@ Limitation: Back button on the toolbar may not work."</string>
 
 This may not work for some users, if it doesn't work for you:
 1. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and turn on 'Use JavaScript client'.
-2. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and change 'Default client' to 'TV'."</string>
+2. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and change 'Default client' to 'TV Simply'."</string>
     <string name="revanced_disable_auto_audio_tracks_summary_off">"Forced auto audio tracks are enabled.
 
 Info: In some accounts, the original audio track is used."</string>
@@ -612,9 +620,9 @@ Info: In some accounts, the original audio track is used."</string>
     <string name="revanced_hide_floating_microphone_title">Hide floating microphone button</string>
     <string name="revanced_hide_floating_microphone_summary_on">Floating microphone button is hidden.</string>
     <string name="revanced_hide_floating_microphone_summary_off">Floating microphone button is shown.</string>
-    <string name="revanced_hide_visual_spacers_title">Hide visual spacers</string>
-    <string name="revanced_hide_visual_spacers_summary_on">Visual spacers are hidden.</string>
-    <string name="revanced_hide_visual_spacers_summary_off">Visual spacers are shown.</string>
+    <string name="revanced_hide_visual_spacer_title">Hide visual spacer</string>
+    <string name="revanced_hide_visual_spacer_summary_on">Visual spacer is hidden.</string>
+    <string name="revanced_hide_visual_spacer_summary_off">Visual spacer is shown.</string>
     <string name="revanced_remove_viewer_discretion_dialog_title">Remove viewer discretion dialog</string>
     <string name="revanced_remove_viewer_discretion_dialog_summary">"Removes the viewer discretion dialog.
 This does not bypass the age restriction. It just accepts it automatically."</string>
@@ -656,7 +664,6 @@ Changes include:
     <string name="revanced_disable_translucent_status_bar_title">Disable translucent status bar</string>
     <string name="revanced_disable_translucent_status_bar_summary_on">Status bar is opaque.</string>
     <string name="revanced_disable_translucent_status_bar_summary_off">Status bar is opaque or translucent.</string>
-    <string name="revanced_disable_translucent_status_bar_user_dialog_message">For some manufacturer ROMs running Android 12+, enabling this feature may make the system navigation bar transparent.</string>
 
     <string name="revanced_fix_hype_button_icon_title">Fix Hype button icon</string>
     <string name="revanced_fix_hype_button_icon_summary_on">Hype button icon is shown.</string>
@@ -689,6 +696,7 @@ If later turned off, it is recommended to clear the app data to prevent UI bugs.
     <string name="revanced_spoof_app_version_target_entry_19_28_42">19.28.42 - Restore old playlist header</string>
     <string name="revanced_spoof_app_version_target_entry_19_33_37">19.33.37 - Restore old playback speed flyout panel</string>
     <string name="revanced_spoof_app_version_target_entry_20_05_46">20.05.46 - Restore Transcript functionality</string>
+    <string name="revanced_spoof_app_version_target_entry_20_13_41">20.13.41 - Restore non collapsed video action bar</string>
     <string name="revanced_spoof_app_version_other_item">Other</string>
     <string name="revanced_spoof_app_version_other_item_hint">Enter the app version</string>
     <string name="revanced_spoof_app_version_target_invalid_toast">Invalid spoof app version: %s.</string>
@@ -845,18 +853,21 @@ To show the native playlist download button, turn on \'Spoof app version\' and c
     <string name="revanced_hide_navigation_label_summary_on">Navigation labels are hidden.</string>
     <string name="revanced_hide_navigation_label_summary_off">Navigation labels are shown.</string>
     <string name="revanced_switch_create_with_notifications_button_title">Swap Create and Notifications buttons</string>
-    <string name="revanced_switch_create_with_notifications_button_summary_on">"Create button is switched with Notifications button.
-
-Note: Enabling this also forcibly hides video ads."</string>
+    <string name="revanced_switch_create_with_notifications_button_summary_on">Create button is switched with Notifications button.</string>
     <string name="revanced_switch_create_with_notifications_button_summary_off">Create button is not switched with Notifications button.</string>
-    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">"Disabling this might load more ads from the server.
-
-Also, ads will no longer be blocked in Shorts.
-
-If this setting do not take effect, try switching to Incognito mode."</string>
+    <string name="revanced_switch_create_with_notifications_button_user_dialog_message">If this setting do not take effect, try switching to Incognito mode.</string>
+    <string name="revanced_replace_navigation_button_title">Replace navigation button</string>
+    <string name="revanced_replace_navigation_button_summary">Replaces the navigation button with the Search button.</string>
+    <string name="revanced_replace_navigation_button_target_title">Replace navigation button</string>
+    <string name="revanced_replace_navigation_button_target_entry_home">Home</string>
+    <string name="revanced_replace_navigation_button_target_entry_shorts">Shorts</string>
+    <string name="revanced_replace_navigation_button_target_entry_subscriptions">Subscriptions</string>
+    <string name="revanced_replace_navigation_button_target_entry_notifications">Notifications</string>
 
     <string name="revanced_enable_translucent_navigation_bar_title">Enable translucent navigation bar</string>
-    <string name="revanced_enable_translucent_navigation_bar_summary_on">Navigation bar is translucent.</string>
+    <string name="revanced_enable_translucent_navigation_bar_summary_on">"Navigation bar is translucent.
+
+Known issue: System navigation bar may be translucent."</string>
     <string name="revanced_enable_translucent_navigation_bar_summary_off">Navigation bar is opaque.</string>
     <string name="revanced_hide_navigation_bar_title">Hide navigation bar</string>
     <string name="revanced_hide_navigation_bar_summary_on">Navigation bar is hidden.</string>
@@ -981,6 +992,11 @@ You tab → View channel → Menu → Settings"</string>
     <string name="revanced_hide_toolbar_notification_button_title">Hide Notifications button</string>
     <string name="revanced_hide_toolbar_notification_button_summary_on">Notifications button is hidden.</string>
     <string name="revanced_hide_toolbar_notification_button_summary_off">Notifications button is shown.</string>
+    <string name="revanced_hide_toolbar_search_button_title">Hide Search button</string>
+    <string name="revanced_hide_toolbar_search_button_summary_on">"Search button is hidden.
+
+This setting may not work if the wide search bar is enabled."</string>
+    <string name="revanced_hide_toolbar_search_button_summary_off">Search button is shown.</string>
     <string name="revanced_hide_search_term_thumbnail_title">Hide search term thumbnails</string>
     <string name="revanced_hide_search_term_thumbnail_summary_on">Thumbnails in search term history are hidden.</string>
     <string name="revanced_hide_search_term_thumbnail_summary_off">Thumbnails in search term history are shown.</string>
@@ -1237,6 +1253,9 @@ Limitations:
 
 Limitation: Some highlighted search links that do not have a default text style may not be hidden."</string>
     <string name="revanced_hide_comments_highlighted_search_links_summary_off">Highlighted search links are shown.</string>
+    <string name="revanced_hide_comments_information_button_title">Hide information button</string>
+    <string name="revanced_hide_comments_information_button_summary_on">Information button is hidden.</string>
+    <string name="revanced_hide_comments_information_button_summary_off">Information button is shown.</string>
     <string name="revanced_hide_live_chat_messages_title">Hide live chat messages</string>
     <string name="revanced_hide_live_chat_messages_summary_on">Live chat messages are hidden.\n\nThis setting applies to Shorts live streams too.</string>
     <string name="revanced_hide_live_chat_messages_summary_off">Live chat messages are shown.</string>
@@ -1270,7 +1289,7 @@ Limitation: Some highlighted search links that do not have a default text style 
 
 To show the Audio track menu:
 1. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and turn on 'Use JavaScript client'.
-2. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and change 'Default client' to 'TV'."</string>
+2. Go to Settings - RVX - Miscellaneous - Spoof streaming data, and change 'Default client' to 'TV Simply'."</string>
     <string name="revanced_hide_player_flyout_menu_captions_title">Hide Captions menu</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_on">Captions menu is hidden.</string>
     <string name="revanced_hide_player_flyout_menu_captions_summary_off">Captions menu is shown.</string>
@@ -1658,27 +1677,30 @@ This feature works best with a very fast internet connection."</string>
     <string name="revanced_hide_chapters_section_title">Hide Chapters section</string>
     <string name="revanced_hide_chapters_section_summary_on">Chapters section is hidden.</string>
     <string name="revanced_hide_chapters_section_summary_off">Chapters section is shown.</string>
-    <string name="revanced_hide_creator_section_title">Hide Creator section</string>
-    <string name="revanced_hide_creator_section_summary_on">Creator section is hidden.</string>
-    <string name="revanced_hide_creator_section_summary_off">Creator section is shown.</string>
     <string name="revanced_hide_explore_podcast_section_title">Hide Explore the podcast section</string>
     <string name="revanced_hide_explore_podcast_section_summary_on">Explore the podcast section is hidden.</string>
     <string name="revanced_hide_explore_podcast_section_summary_off">Explore the podcast section is shown.</string>
-    <string name="revanced_hide_featured_section_title">Hide Featured content section</string>
-    <string name="revanced_hide_featured_section_summary_on">Featured content section in Creator section is hidden.</string>
-    <string name="revanced_hide_featured_section_summary_off">Featured content section in Creator section is shown.</string>
+    <string name="revanced_hide_featured_links_section_title">Hide Featured links section</string>
+    <string name="revanced_hide_featured_links_section_summary_on">Featured links section is hidden.</string>
+    <string name="revanced_hide_featured_links_section_summary_off">Featured links section is shown.</string>
+    <string name="revanced_hide_featured_videos_section_title">Hide Featured videos section</string>
+    <string name="revanced_hide_featured_videos_section_summary_on">Featured videos section is hidden.</string>
+    <string name="revanced_hide_featured_videos_section_summary_off">Featured videos section is shown.</string>
     <string name="revanced_hide_how_this_was_made_section_title">Hide How this content was made section</string>
     <string name="revanced_hide_how_this_was_made_section_summary_on">How this content was made section is hidden.</string>
     <string name="revanced_hide_how_this_was_made_section_summary_off">How this content was made section is shown.</string>
     <string name="revanced_hide_hype_points_section_title">Hide Hype points section</string>
     <string name="revanced_hide_hype_points_section_summary_on">Hype points section is hidden.</string>
     <string name="revanced_hide_hype_points_section_summary_off">Hype points section is shown.</string>
+    <string name="revanced_hide_info_cards_section_title">Hide Info cards section</string>
+    <string name="revanced_hide_info_cards_section_summary_on">Info cards section is hidden.</string>
+    <string name="revanced_hide_info_cards_section_summary_off">Info cards section is shown.</string>
     <string name="revanced_hide_key_concepts_section_title">Hide Key concepts section</string>
     <string name="revanced_hide_key_concepts_section_summary_on">Key concepts section is hidden.</string>
     <string name="revanced_hide_key_concepts_section_summary_off">Key concepts section is shown.</string>
     <string name="revanced_hide_subscribe_button_title">Hide Subscribe button</string>
-    <string name="revanced_hide_subscribe_button_summary_on">Subscribe button in Creator section is hidden.</string>
-    <string name="revanced_hide_subscribe_button_summary_off">Subscribe button in Creator section is shown.</string>
+    <string name="revanced_hide_subscribe_button_summary_on">Subscribe button is hidden.</string>
+    <string name="revanced_hide_subscribe_button_summary_off">Subscribe button is shown.</string>
     <string name="revanced_hide_transcript_section_title">Hide Transcript section</string>
     <string name="revanced_hide_transcript_section_summary_on">Transcript section is hidden.</string>
     <string name="revanced_hide_transcript_section_summary_off">Transcript section is shown.</string>
@@ -1754,6 +1776,9 @@ Side effect: Watch history shelf in the You tab may be hidden."</string>
     <string name="revanced_preference_screen_shorts_player_title">Shorts player</string>
     <string name="revanced_preference_screen_shorts_player_summary">Hide or show Shorts player components.</string>
 
+    <string name="revanced_hide_shorts_auto_dubbed_label_title">Hide Auto-dubbed label</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_on">Auto-dubbed label is hidden.</string>
+    <string name="revanced_hide_shorts_auto_dubbed_label_summary_off">Auto-dubbed label is shown.</string>
     <string name="revanced_hide_shorts_channel_bar_title">Hide channel bar</string>
     <string name="revanced_hide_shorts_channel_bar_summary_on">Channel bar is hidden.</string>
     <string name="revanced_hide_shorts_channel_bar_summary_off">Channel bar is shown.</string>
@@ -1766,15 +1791,18 @@ Side effect: Watch history shelf in the You tab may be hidden."</string>
     <string name="revanced_hide_shorts_live_header_title">Hide live chat header</string>
     <string name="revanced_hide_shorts_live_header_summary_on">Live chat header is hidden.\n\nBack button in header will not be hidden.</string>
     <string name="revanced_hide_shorts_live_header_summary_off">Live chat header is shown.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_title">Hide paid promotion label</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_on">Paid promotion label is hidden.</string>
-    <string name="revanced_hide_shorts_paid_promotion_label_summary_off">Paid promotion label is shown.</string>
+    <string name="revanced_hide_shorts_live_preview_title">Hide live preview</string>
+    <string name="revanced_hide_shorts_live_preview_summary_on">Live preview is hidden.\n\nEven if this is enabled, Shorts live streams are not completely removed from the Shorts sequence.</string>
+    <string name="revanced_hide_shorts_live_preview_summary_off">Live preview is shown.</string>
     <string name="revanced_hide_shorts_paused_header_title">Hide paused header</string>
     <string name="revanced_hide_shorts_paused_header_summary_on">Paused header is hidden.</string>
     <string name="revanced_hide_shorts_paused_header_summary_off">Paused header is shown.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_title">Hide paused overlay buttons</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_on">Paused overlay buttons are hidden.</string>
     <string name="revanced_hide_shorts_paused_overlay_buttons_summary_off">Paused overlay buttons are shown.</string>
+    <string name="revanced_hide_shorts_preview_comment_title">Hide preview comment</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_on">Preview comment is hidden.</string>
+    <string name="revanced_hide_shorts_preview_comment_summary_off">Preview comment is shown.</string>
     <string name="revanced_hide_shorts_shopping_button_title">Hide Shopping button</string>
     <string name="revanced_hide_shorts_shopping_button_summary_on">Shopping button is hidden.</string>
     <string name="revanced_hide_shorts_shopping_button_summary_off">Shopping button is shown.</string>
@@ -2526,19 +2554,11 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
 <small>(Login required)</small>"</string>
     <string name="revanced_spoof_streaming_data_client_entry_android_no_sdk">"Android
 <small>(No SDK)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr">"Android VR
-<small>(No Auth)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_android_vr_auth">"Android VR
-<small>(Auth, Action needed)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_ipados">"iPadOS
-<small>(Outdated)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_mweb">"Mobile Web
-<small>(WIP)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_android_vr">Android VR</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv">TV</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_legacy">"TV
 <small>(Legacy)</small>"</string>
-    <string name="revanced_spoof_streaming_data_client_entry_tv_simply_no_potoken">"TV Simply
-<small>(No PoToken)</small>"</string>
+    <string name="revanced_spoof_streaming_data_client_entry_tv_simply">TV Simply</string>
     <string name="revanced_spoof_streaming_data_client_entry_tv_embedded">TV Embedded</string>
     <string name="revanced_spoof_streaming_data_client_entry_visionos">"visionOS
 <small>(Unreleased)</small>"</string>
@@ -2547,30 +2567,20 @@ If you are a YouTube Premium user, this setting may not be necessary."</string>
 • Disable forced auto audio tracks may not be available.
 • Stable volume is not available.
 • Kids videos may not play when logged out or in incognito mode.
-• 1080p+, AV1, and HDR are not supported."</string>
+• 1080p+, AV1, and HDR are not supported.
+• 360° VR immersive mode is not available."</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_no_sdk">• Video may stop at 1:00, or may not be available in some regions.</string>
     <string name="revanced_spoof_streaming_data_side_effects_android_vr">"• Audio track menu is missing.
-• Stable volume is not available.
-• Kids videos may not play when logged out or in incognito mode."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_android_vr_auth">"• Audio track menu is missing.
 • Disable forced auto audio tracks may not be available.
 • Stable volume is not available.
 • Kids videos may not play when logged out or in incognito mode."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_ipados">"• AV1 is not supported.
-• Video may stop at 1:00, or may not be available in some regions."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_mweb">"• Audio track menu is missing.
-• If deobfuscation fails, playback may fail.
-• Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
-• Video may start late."</string>
     <string name="revanced_spoof_streaming_data_side_effects_tv">"• If deobfuscation fails, playback may fail.
 • Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
-• Video may start late."</string>
-    <string name="revanced_spoof_streaming_data_side_effects_tv_simply_no_potoken">"• If deobfuscation fails, playback may fail.
-• Some accounts may require a PoToken, in which case the playback will fail.
-• Sometimes the video will not play even after 10 seconds, in which case you'll need to click the reload video button.
-• Video may start late."</string>
+• Video may start late.
+• 360° VR immersive mode is not available."</string>
     <string name="revanced_spoof_streaming_data_side_effects_visionos">"• Audio track menu is missing.
 • Kids videos may not play when logged out or in incognito mode.
+• 360° VR immersive mode is not available.
 • Since this is an unreleased client, it may stop working at any time."</string>
     <string name="revanced_spoof_streaming_data_side_effects_unknown">• Unknown</string>
     <string name="revanced_spoof_streaming_data_prioritize_video_quality_title">Prioritize video quality</string>
@@ -2617,47 +2627,54 @@ Example 2:
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_on">Client used to fetch streaming data is shown in Stats for nerds.</string>
     <string name="revanced_spoof_streaming_data_stats_for_nerds_summary_off">Client used to fetch streaming data is hidden in Stats for nerds.</string>
     <string name="revanced_spoof_streaming_data_failed_forbidden">Could not fetch any client streams.</string>
-    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Try changing the default client to TV.</string>
+    <string name="revanced_spoof_streaming_data_failed_forbidden_suggestion">Try changing the default client to TV Simply.</string>
 
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: Android VR -->
     <string name="revanced_preference_category_android_vr">Android VR</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_title">Enable VR AV1</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_on">"Video codec is AVC (H.264), VP9 or AV1.
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_title">Enable AV1 codec</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_summary_on">"Video codec is AVC (H.264), VP9 or AV1.
 
 Playback may stutter or drop frames."</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_summary_off">Video codec is AVC (H.264) or VP9.</string>
-    <string name="revanced_spoof_streaming_data_vr_enable_av1_user_dialog_message">"Enabling this setting may use software AV1 decoding.
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_summary_off">Video codec is AVC (H.264) or VP9.</string>
+    <string name="revanced_spoof_streaming_data_android_vr_enable_av1_codec_user_dialog_message">"Enabling this setting may use software AV1 decoding.
 
 Playback may stutter or drop frames."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_title">About Android VR Auth</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_about_summary">Click to see how to get an authentication token.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_title">Get Authorization Token</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_message">"To get an authorization token for Android VR, you should log in to YouTube VR using an activation code:
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_title">Sign in to Android VR</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_about_summary">Click here to see how to sign in to Android VR.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_title">Sign in to Android VR</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_message">"Signing in to Android VR (YouTube VR) follows the guidelines provided by Google (Google account authorization - OAuth 2.0 for TV and Limited-Input Device Applications):
 
 1. Click 'Get activation code' to generate an activation code.
 2. Click 'Open website' to go to 'https://yt.be/activate'.
 3. Enter the activation code.
 4. Sign in when prompted. If you have multiple Google Accounts, select the account you use with YouTube. If you're already signed in, skip to the next step.
-5. Once signed in, return to RVX and click 'About Android VR Auth' again.
+5. Once signed in, return to RVX and click 'Sign in to Android VR' again.
 6. Click 'Get authorization token' to get an authorization token.
 
 ※ Click 'Reset' to remove an authentication token or activation code."</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_activation_code_text">Get activation code</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_get_authorization_token_text">Get authorization token</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_dialog_reset_text">Reset</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_reset">Authentication token and activation code reset.</string>
-    <string name="revanced_spoof_streaming_data_vr_auth_token_toast_success">Authentication token saved.</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_title">Activation code</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_message">"Activation code:
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_activation_code_text">Get activation code</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_get_authorization_token_text">Get authorization token</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_dialog_reset_text">Reset</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_failed">Failed to issue an authentication token.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_failed_suggestion">Click Reset and try again.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_toast_reset">Authentication token and activation code reset.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_title">Signed in</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_success_dialog_message">"Authentication token saved.
+
+- Authentication token issued through this process can only be used in YouTube VR (In RVX, it is used to fetch streaming data from YouTube VR).
+- Authentication token unused for more than 6 months will be revoked by Google servers.
+- If you change your password, or deregister a device in your account settings, or uninstall the app, you will need to reissue the authentication token."</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_title">Activation code</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_message">"Activation code:
 %s
 
 1. Click 'Open website' to go to 'https://yt.be/activate'.
 2. Enter the activation code.
 3. Sign in when prompted. If you have multiple Google Accounts, select the account you use with YouTube. If you're already signed in, skip to the next step.
-4. Once signed in, return to RVX and click 'About Android VR Auth' again.
+4. Once signed in, return to RVX and click 'Sign in to Android VR' again.
 5. Click 'Get authorization token' to get an authorization token."</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_dialog_open_website_text">Open website</string>
-    <string name="revanced_spoof_streaming_data_vr_activation_code_toast_copy">Activation code copied to clipboard: %s.</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_dialog_open_website_text">Open website</string>
+    <string name="revanced_spoof_streaming_data_sign_in_android_vr_activation_code_toast_copy">Activation code copied to clipboard: %s.</string>
 
     <!-- PreferenceScreen: Miscellaneous, PreferenceCategory: Miscellaneous, PreferenceScreen: Spoof streaming data, PreferenceCategory: JavaScript -->
     <string name="revanced_preference_category_js">JavaScript</string>
@@ -2672,7 +2689,7 @@ This can be easily resolved by clicking the 'Reload video button' in the player 
 
 (Prerequisites: Both 'Show reload video button' and 'Always show reload video button' are enabled)
 
-Among JavaScript clients, the recommended client is TV."</string>
+Among JavaScript clients, the recommended client is TV Simply."</string>
     <string name="revanced_spoof_streaming_data_use_js_all_title">Use JavaScript client for all videos</string>
     <string name="revanced_spoof_streaming_data_use_js_all_summary_on">"JavaScript client is used regardless of video type.
 
