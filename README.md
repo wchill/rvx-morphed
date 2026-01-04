@@ -1,10 +1,10 @@
 <div align="center"> 
 <img src="assets/rvx-logo.png" alt="RVX logo" width="128">
 
-    
+
 ## 🧩 RVX Morphed Patches
-RVX Morphed Patches. 
-    
+RVX Morphed Patches.
+
 [![Static Badge](https://img.shields.io/badge/RVX_Morphe_Documentation-gray?style=flat-square&logo=github)](https://github.com/MorpheApp/morphe-documentation#readme)   [![Static Badge](https://img.shields.io/badge/Reddit-gray?style=flat-square&logo=reddit)](https://reddit.com/r/revancedextended)   [![Static Badge](https://img.shields.io/badge/Discord-gray?style=flat-square&logo=discord)](https://discord.gg/yMnc3EywRZ)
 <br>
 </div> 
@@ -75,7 +75,7 @@ Report issues [here](https://github.com/wchill/rvx-morphed).
 | `Sanitize sharing links` | Adds an option to sanitize sharing links by removing tracking query parameters. | 19.05.36 ~ 20.05.46 |
 | `Seekbar components` | Adds options to hide or change components related to the seekbar. | 19.05.36 ~ 20.05.46 |
 | `Set Transcript Cookies` | Adds an option to set Cookies in YouTube Transcript API requests. | 19.05.36 ~ 20.05.46 |
-| `Settings for YouTube` | Applies mandatory patches to implement ReVanced Extended settings into the application. | 19.05.36 ~ 20.05.46 |
+| `Settings for YouTube` | Applies mandatory patches to implement RVX Morphed settings into the application. | 19.05.36 ~ 20.05.46 |
 | `Shorts components` | Adds options to hide or change components related to YouTube Shorts. | 19.05.36 ~ 20.05.46 |
 | `Snack bar components` | Adds options to hide or change components related to the snack bar. | 19.05.36 ~ 20.05.46 |
 | `SponsorBlock` | Adds options to enable and configure SponsorBlock, which can skip undesired video segments, such as sponsored content. | 19.05.36 ~ 20.05.46 |
@@ -127,7 +127,7 @@ Report issues [here](https://github.com/wchill/rvx-morphed).
 | `Return YouTube Dislike` | Adds an option to show the dislike count of songs using the Return YouTube Dislike API. | 6.20.51 ~ 8.30.54 |
 | `Return YouTube Username` | Adds an option to replace YouTube handles with usernames in comments using YouTube Data API v3. | 6.20.51 ~ 8.30.54 |
 | `Sanitize sharing links` | Adds an option to sanitize sharing links by removing tracking query parameters. | 6.20.51 ~ 8.30.54 |
-| `Settings for YouTube Music` | Applies mandatory patches to implement ReVanced Extended settings into the application. | 6.20.51 ~ 8.30.54 |
+| `Settings for YouTube Music` | Applies mandatory patches to implement RVX Morphed settings into the application. | 6.20.51 ~ 8.30.54 |
 | `SponsorBlock` | Adds options to enable and configure SponsorBlock, which can skip undesired video segments, such as non-music sections. | 6.20.51 ~ 8.30.54 |
 | `Spoof app version for lyrics` | Adds options to spoof the YouTube Music client version. This can be used to restore old lyrics UI. | 6.51.53 ~ 8.30.54 |
 | `Translations for YouTube Music` | Add translations or remove string resources. | 6.20.51 ~ 8.30.54 |
@@ -154,66 +154,7 @@ Report issues [here](https://github.com/wchill/rvx-morphed).
 | `Premium icon` | Unlocks premium app icons. | 2024.17.0 ~ 2025.12.1 |
 | `Remove subreddit dialog` | Adds options to remove the NSFW community warning and notifications suggestion dialogs by dismissing them automatically. | 2024.17.0 ~ 2025.12.1 |
 | `Sanitize sharing links` | Adds an option to sanitize sharing links by removing tracking query parameters. | 2024.17.0 ~ 2025.12.1 |
-| `Settings for Reddit` | Applies mandatory patches to implement ReVanced Extended settings into the application. | 2024.17.0 ~ 2025.12.1 |
+| `Settings for Reddit` | Applies mandatory patches to implement RVX Morphed settings into the application. | 2024.17.0 ~ 2025.12.1 |
 </details>
 
 
-
-## 📝 JSON Format
-
-This section explains the JSON format for the [patches.json](patches.json) file.
-
-Example:
-
-```json
-[
-  {
-    "name": "Alternative thumbnails",
-    "description": "Adds options to replace video thumbnails using the DeArrow API or image captures from the video.",
-    "use":true,
-    "compatiblePackages": {
-      "com.google.android.youtube": [
-        "19.05.36",
-        "19.16.39",
-        "19.43.41",
-        "19.44.39",
-        "19.47.53",
-        "20.05.46"
-      ]
-    },
-    "options": []
-  },
-  {
-    "name": "Bitrate default value",
-    "description": "Sets the audio quality to 'Always High' when you first install the app.",
-    "use":true,
-    "compatiblePackages": {
-      "com.google.android.apps.youtube.music": [
-        "6.20.51",
-        "6.29.59",
-        "6.42.55",
-        "6.51.53",
-        "7.16.53",
-        "7.25.53",
-        "8.12.54",
-        "8.28.54",
-        "8.30.54"
-      ]
-    },
-    "options": []
-  },
-  {
-    "name": "Hide ads",
-    "description": "Adds options to hide ads.",
-    "use":true,
-    "compatiblePackages": {
-      "com.reddit.frontpage": [
-        "2024.17.0",
-        "2025.05.1",
-        "2025.12.1"
-      ]
-    },
-    "options": []
-  }
-]
-```
