@@ -22,7 +22,7 @@ fun sharedExtensionPatch(
 ) = bytecodePatch(
     description = "sharedExtensionPatch"
 ) {
-    extendWith("extensions/shared.rve")
+    extendWith("extensions/shared.mpe")
 
     execute {
         if (classDefByOrNull { EXTENSION_UTILS_CLASS_DESCRIPTOR == it.type } == null) {

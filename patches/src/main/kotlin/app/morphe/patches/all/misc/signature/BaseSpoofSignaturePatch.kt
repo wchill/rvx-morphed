@@ -25,7 +25,7 @@ fun baseSpoofSignaturePatch(appInfoSupplier: () -> AppInfo) = bytecodePatch {
         }
     }
 
-    extendWith("extensions/all/misc/signature/spoof-signature.rve")
+    extendWith("extensions/all/misc/signature/spoof-signature.mpe")
 
     execute {
         if (replacements.size != 2) {
