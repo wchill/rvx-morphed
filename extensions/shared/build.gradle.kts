@@ -1,36 +1,5 @@
-import java.lang.Boolean.TRUE
-
 plugins {
     alias(libs.plugins.protobuf)
-}
-
-extension {
-    name = "extensions/shared.mpe"
-}
-
-android {
-    namespace = "app.morphe.extension"
-    compileSdk = 35
-
-    defaultConfig {
-        minSdk = 24
-    }
-
-    buildTypes {
-        release {
-            isMinifyEnabled = TRUE
-
-            // 'libj2v8.so' is already included in the patch.
-            ndk {
-                abiFilters.add("")
-            }
-        }
-    }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
 }
 
 dependencies {
