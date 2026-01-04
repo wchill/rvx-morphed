@@ -17,7 +17,7 @@ internal class ReadMeFileGenerator : PatchesFileGenerator {
         "| \uD83D\uDC8A Patch | \uD83D\uDCDC Description | \uD83C\uDFF9 Target Version |\n" +
                 "|:--------:|:--------------:|:-----------------:|"
 
-    override fun generate(patches: Set<Patch<*>>) {
+    override fun generate(version: String, patches: Set<Patch<*>>) {
         val rootPath = Paths.get("").toAbsolutePath().parent!!
         val readMeFilePath = "$rootPath/README.md"
 

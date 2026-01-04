@@ -18,9 +18,6 @@ dependencies {
 }
 
 tasks {
-    jar {
-        exclude("app/morphe/generator")
-    }
     register<JavaExec>("generatePatchesFiles") {
         description = "Generate patches files"
 
@@ -32,6 +29,24 @@ tasks {
     // Used by gradle-semantic-release-plugin.
     publish {
         dependsOn("generatePatchesFiles")
+    }
+}
+
+tasks {
+    jar {
+        exclude("app/morphe/generator")
+    }
+    register<JavaExec>("generatePatchesList") {
+        description = "Build patch with patch list"
+
+        dependsOn(build)
+
+        classpath = sourceSets["main"].runtimeClasspath
+        mainClass.set("app.morphe.generator.MainKt")
+    }
+    // Used by gradle-semantic-release-plugin.
+    publish {
+        dependsOn("generatePatchesList")
     }
 }
 

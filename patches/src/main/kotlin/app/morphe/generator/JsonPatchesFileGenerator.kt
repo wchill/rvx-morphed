@@ -2,20 +2,23 @@ package app.morphe.generator
 
 import app.morphe.patcher.patch.Patch
 import com.google.gson.GsonBuilder
+import com.google.gson.JsonObject
 import java.io.File
 
 typealias PackageName = String
 typealias VersionName = String
 
 internal class JsonPatchesFileGenerator : PatchesFileGenerator {
-    override fun generate(patches: Set<Patch<*>>) {
-        val patchesJson = File("../patches.json")
-        patches.sortedBy { it.name }.map {
+    @Suppress("DEPRECATION")
+    override fun generate(version: String, patches: Set<Patch<*>>) {
+        val listJson = File("../patches-list.json")
+
+        val patchesMap = patches.sortedBy { it.name }.map {
             JsonPatch(
                 it.name!!,
                 it.description,
                 it.use,
-                it.dependencies.map { dependency -> dependency.name ?: dependency.toString() },
+                it.dependencies.map { dependency -> dependency.javaClass.simpleName },
                 it.compatiblePackages?.associate { (packageName, versions) -> packageName to versions },
                 it.options.values.map { option ->
                     JsonPatch.Option(
@@ -29,11 +32,21 @@ internal class JsonPatchesFileGenerator : PatchesFileGenerator {
                     )
                 },
             )
-        }.let {
-            patchesJson.writeText(
-                GsonBuilder().serializeNulls().setPrettyPrinting().create().toJson(it)
-            )
         }
+
+        val gsonBuilder = GsonBuilder()
+            .serializeNulls()
+            .disableHtmlEscaping()
+            .setPrettyPrinting()
+            .create()
+
+        val jsonObject = JsonObject()
+        jsonObject.addProperty("version", "v$version")
+        jsonObject.add("patches", gsonBuilder.toJsonTree(patchesMap))
+
+        listJson.writeText(
+            gsonBuilder.toJson(jsonObject)
+        )
     }
 
     @Suppress("unused")
