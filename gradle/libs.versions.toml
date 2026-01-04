@@ -1,9 +1,9 @@
 [versions]
-revanced-patcher = "21.0.0"
-# Tracking https://github.com/google/smali/issues/64.
-#noinspection GradleDependency
-smali = "3.0.5"
+morphe-patcher = "1.0.0"
+# Tracking https://github.com/google/smali/issues/100.
+smali = "b6365a84f4"
 gson = "2.13.2"
+guava = "33.5.0-jre"
 agp = "8.13.2"
 annotation = "1.9.1"
 collections4 = "4.5.0"
