@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
   push:
     branches:
-      # To use Github Actions, change the branch name from `revanced-extended` to `main`
       - main
       - dev
 
@@ -14,16 +13,18 @@ jobs:
     permissions:
       contents: write
       packages: write
+      id-token: write
+      attestations: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Setup Java
         uses: actions/setup-java@v5
         with:
-          distribution: "zulu"
-          java-version: "17"
+          distribution: 'temurin'
+          java-version: '17'
 
       - name: Cache Gradle
         uses: burrunan/gradle-cache-action@v3
@@ -31,13 +32,12 @@ jobs:
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # To update `README.md` and `patches.json`, the command `./gradlew generatePatchesFiles clean` should be used instead of the command `./gradlew build clean`
-        run: ./gradlew generatePatchesFiles clean
+        run: ./gradlew :patches:buildAndroid generatePatchesList clean
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: "lts/*"
+          node-version: 'lts/*'
           cache: 'npm'
 
       - name: Install dependencies
@@ -51,6 +51,14 @@ jobs:
           fingerprint: ${{ vars.GPG_FINGERPRINT }}
 
       - name: Release
+        uses: cycjimmy/semantic-release-action@v5
+        id: release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm exec semantic-release
+
+      - name: Attest
+        if: steps.release.outputs.new_release_published == 'true'
+        uses: actions/attest-build-provenance@v3
+        with:
+          subject-name: 'RVX Morphed ${{ steps.release.outputs.new_release_git_tag }}'
+          subject-path: patches/build/libs/patches-*.mpp
