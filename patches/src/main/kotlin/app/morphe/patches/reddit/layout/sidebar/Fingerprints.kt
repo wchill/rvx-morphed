@@ -9,7 +9,6 @@ import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.Method
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
-import kotlin.or
 
 internal val communityDrawerPresenterConstructorFingerprint = legacyFingerprint(
     name = "communityDrawerPresenterConstructorFingerprint",

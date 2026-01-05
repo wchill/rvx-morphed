@@ -1,6 +1,5 @@
 package app.morphe.patches.reddit.utils.settings
 
-import app.morphe.patches.reddit.utils.extension.Constants.EXTENSION_PATH
 import app.morphe.util.fingerprint.legacyFingerprint
 import app.morphe.util.getReference
 import app.morphe.util.indexOfFirstInstruction
@@ -9,7 +8,6 @@ import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.Method
 import com.android.tools.smali.dexlib2.iface.reference.TypeReference
-import kotlin.or
 
 internal val acknowledgementsLabelBuilderFingerprint = legacyFingerprint(
     name = "acknowledgementsLabelBuilderFingerprint",
@@ -81,14 +79,6 @@ internal val redditInternalFeaturesFingerprint = legacyFingerprint(
     strings = listOf("RELEASE"),
     customFingerprint = { methodDef, _ ->
         !methodDef.definingClass.startsWith("Lcom/")
-    }
-)
-
-internal val settingsStatusLoadFingerprint = legacyFingerprint(
-    name = "settingsStatusLoadFingerprint",
-    customFingerprint = { method, _ ->
-        method.definingClass.endsWith("$EXTENSION_PATH/settings/SettingsStatus;") &&
-                method.name == "load"
     }
 )
 

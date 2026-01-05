@@ -8,8 +8,6 @@ import app.morphe.patcher.util.smali.ExternalLabel
 import app.morphe.patches.reddit.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.morphe.patches.reddit.utils.extension.Constants.PATCHES_PATH
 import app.morphe.patches.reddit.utils.patch.PatchList.HIDE_TRENDING_TODAY_SHELF
-import app.morphe.patches.reddit.utils.settings.is_2025_13_or_greater
-import app.morphe.patches.reddit.utils.settings.is_2025_40_or_greater
 import app.morphe.patches.reddit.utils.settings.is_2025_45_or_greater
 import app.morphe.patches.reddit.utils.settings.settingsPatch
 import app.morphe.patches.reddit.utils.settings.updatePatchStatus
@@ -64,30 +62,24 @@ val trendingTodayShelfPatch = bytecodePatch(
             }
         }
 
-        if (is_2025_13_or_greater) {
-            // TODO: Check this
-            searchTypeaheadListDefaultPresentationConstructorFingerprint.second.also {
-                this.mutableClassDefBy(searchTypeaheadListDefaultPresentationToStringFingerprint.mutableClassOrThrow())
-            }.method.addInstructions(
-                1, """
-                    invoke-static { p1 }, $EXTENSION_CLASS_DESCRIPTOR->removeTrendingLabel(Ljava/lang/String;)Ljava/lang/String;
-                    move-result-object p1
-                    """
-            )
-        }
+        // TODO: Check this
+        searchTypeaheadListDefaultPresentationConstructorFingerprint.second.also {
+            this.mutableClassDefBy(searchTypeaheadListDefaultPresentationToStringFingerprint.mutableClassOrThrow())
+        }.method.addInstructions(
+            1, """
+                invoke-static { p1 }, $EXTENSION_CLASS_DESCRIPTOR->removeTrendingLabel(Ljava/lang/String;)Ljava/lang/String;
+                move-result-object p1
+                """
+        )
 
         // endregion
 
         // region patch for hide trending today contents.
 
-        val trendingTodayItems = if (is_2025_40_or_greater) {
-            listOf(
-                trendingTodayItemFingerprint,
-                trendingTodayItemLegacyFingerprint
-            )
-        } else {
-            listOf(trendingTodayItemLegacyFingerprint)
-        }
+        val trendingTodayItems = listOf(
+            trendingTodayItemFingerprint,
+            trendingTodayItemLegacyFingerprint
+        )
 
         trendingTodayItems.forEach { fingerprint ->
             fingerprint.methodOrThrow().addInstructionsWithLabels(

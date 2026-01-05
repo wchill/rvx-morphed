@@ -7,7 +7,6 @@ import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.morphe.patches.reddit.utils.extension.Constants.PATCHES_PATH
 import app.morphe.patches.reddit.utils.patch.PatchList.HIDE_SIDEBAR_COMPONENTS
-import app.morphe.patches.reddit.utils.settings.is_2025_40_or_greater
 import app.morphe.patches.reddit.utils.settings.is_2025_45_or_greater
 import app.morphe.patches.reddit.utils.settings.is_2025_52_or_greater
 import app.morphe.patches.reddit.utils.settings.updatePatchStatus
@@ -30,6 +29,7 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 private const val EXTENSION_CLASS_DESCRIPTOR =
     "$PATCHES_PATH/SidebarComponentsPatch;"
 
+@Suppress("unused")
 val sidebarComponentsPatch = bytecodePatch(
     HIDE_SIDEBAR_COMPONENTS.title,
     HIDE_SIDEBAR_COMPONENTS.summary,
@@ -184,21 +184,18 @@ val sidebarComponentsPatch = bytecodePatch(
                     "RECENTLY_VISITED",
                     "hideRecentlyVisited",
                     false
-                )
-            )
-
-            if (is_2025_40_or_greater) {
-                hooks += Triple(
+                ),
+                Triple(
                     "GAMES_ON_REDDIT",
                     "hideGamesOnReddit",
                     false
-                )
-                hooks += Triple(
+                ),
+                Triple(
                     "REDDIT_PRO",
                     "hideRedditPro",
                     true
                 )
-            }
+            )
 
             hooks.forEach { (fieldName, methodNamePrefix, isRedditPro) ->
                 hideShelf(fieldName, methodNamePrefix, isRedditPro)
@@ -210,18 +207,16 @@ val sidebarComponentsPatch = bytecodePatch(
             HIDE_SIDEBAR_COMPONENTS
         )
 
-        if (is_2025_40_or_greater) {
-            updatePatchStatus(
-                "enableGamesOnRedditShelf"
-            )
-            updatePatchStatus(
-                "enableRedditProShelf"
-            )
+        updatePatchStatus(
+            "enableGamesOnRedditShelf"
+        )
+        updatePatchStatus(
+            "enableRedditProShelf"
+        )
 
-            if (is_2025_52_or_greater) {
-                updatePatchStatus("enableAboutShelf")
-                updatePatchStatus("enableResourcesShelf")
-            }
+        if (is_2025_52_or_greater) {
+            updatePatchStatus("enableAboutShelf")
+            updatePatchStatus("enableResourcesShelf")
         }
     }
 }
