@@ -8,6 +8,7 @@ dependencies {
 
     implementation(libs.collections4)
     implementation(libs.gson)
+    implementation(libs.hiddenapi)
     implementation(libs.lang3)
     implementation(libs.okhttp3)
     implementation(libs.protobuf.javalite)

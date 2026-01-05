@@ -68,5 +68,9 @@ internal enum class PatchList(
     SETTINGS_FOR_REDDIT(
         "Settings for Reddit",
         "Applies mandatory patches to implement RVX Morphed settings into the application."
-    )
+    ),
+    SPOOF_SIGNATURE(
+        "Spoof signature",
+        "Spoofs the signature of the app."
+    ),
 }
