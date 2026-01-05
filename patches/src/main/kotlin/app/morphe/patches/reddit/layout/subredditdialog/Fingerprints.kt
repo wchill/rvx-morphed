@@ -57,14 +57,33 @@ internal val nsfwAlertEmitFingerprint = legacyFingerprint(
     name = "nsfwAlertEmitFingerprint",
     returnType = "Ljava/lang/Object;",
     accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    strings = listOf("reddit://reddit/r/", "nsfwAlertDelegate"),
-    customFingerprint = { method, _ ->
-        method.name == "emit" &&
-                indexOfHasBeenVisitedInstruction(method) >= 0
+    strings = listOf("nsfwAlertDelegate"),
+    customFingerprint = { method, classDef ->
+        classDef.type.startsWith("Lcom/reddit/screens/pager/v2/") &&
+                method.name == "emit" &&
+                indexOfGetOver18Instruction(method) >= 0 &&
+                indexOfHasBeenVisitedInstruction(method) >= 0 &&
+                indexOfIsIncognitoInstruction(method) >= 0
     }
 )
 
-fun indexOfHasBeenVisitedInstruction(method: Method) =
+internal fun indexOfGetOver18Instruction(methodDef: Method) =
+    methodDef.indexOfFirstInstruction {
+        val reference = getReference<MethodReference>()
+        opcode == Opcode.INVOKE_VIRTUAL &&
+                reference?.name == "getOver18" &&
+                reference.returnType == "Ljava/lang/Boolean;"
+    }
+
+internal fun indexOfIsIncognitoInstruction(methodDef: Method) =
+    methodDef.indexOfFirstInstruction {
+        val reference = getReference<MethodReference>()
+        opcode == Opcode.INVOKE_INTERFACE &&
+                reference?.name == "isIncognito" &&
+                reference.returnType == "Z"
+    }
+
+internal fun indexOfHasBeenVisitedInstruction(method: Method) =
     method.indexOfFirstInstruction {
         val reference = getReference<MethodReference>()
         opcode == Opcode.INVOKE_VIRTUAL &&

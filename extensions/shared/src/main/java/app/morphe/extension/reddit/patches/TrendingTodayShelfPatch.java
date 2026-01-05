@@ -9,4 +9,11 @@ public final class TrendingTodayShelfPatch {
         return Settings.HIDE_TRENDING_TODAY_SHELF.get();
     }
 
+    public static String removeTrendingLabel(String label) {
+        return Settings.HIDE_TRENDING_TODAY_SHELF.get() &&
+                label != null &&
+                label.startsWith("Trending")
+                ? ""
+                : label;
+    }
 }

@@ -18,20 +18,32 @@ import app.morphe.patches.shared.extension.Constants.EXTENSION_THEME_UTILS_CLASS
 import app.morphe.patches.shared.sharedSettingFingerprint
 import app.morphe.util.findMethodOrThrow
 import app.morphe.util.fingerprint.matchOrThrow
+import app.morphe.util.fingerprint.methodCall
 import app.morphe.util.fingerprint.methodOrThrow
+import app.morphe.util.fingerprint.mutableClassOrThrow
 import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstruction
 import app.morphe.util.indexOfFirstInstructionOrThrow
 import app.morphe.util.indexOfFirstInstructionReversedOrThrow
 import app.morphe.util.indexOfFirstStringInstructionOrThrow
 import app.morphe.util.valueOrThrow
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.instruction.BuilderInstruction21c
+import com.android.tools.smali.dexlib2.iface.Method
+import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.instruction.Instruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
+import com.android.tools.smali.dexlib2.iface.reference.TypeReference
 import kotlin.io.path.exists
+import kotlin.toString
+
+private const val EXTENSION_CLASS_DESCRIPTOR =
+    "$EXTENSION_PATH/settings/ActivityHook;"
 
 private const val EXTENSION_METHOD_DESCRIPTOR =
-    "$EXTENSION_PATH/settings/ActivityHook;->initialize(Landroid/app/Activity;)V"
+    "$EXTENSION_CLASS_DESCRIPTOR->initialize(Landroid/app/Activity;)V"
 
 private lateinit var acknowledgementsLabelBuilderMethod: MutableMethod
 private lateinit var settingsStatusLoadMethod: MutableMethod
@@ -45,6 +57,18 @@ var is_2025_01_or_greater = false
 var is_2025_05_or_greater = false
     private set
 var is_2025_06_or_greater = false
+    private set
+
+var is_2025_13_or_greater = false
+    private set
+
+var is_2025_40_or_greater = false
+    private set
+
+var is_2025_45_or_greater = false
+    private set
+
+var is_2025_52_or_greater = false
     private set
 
 private val settingsBytecodePatch = bytecodePatch(
@@ -71,6 +95,10 @@ private val settingsBytecodePatch = bytecodePatch(
             is_2025_01_or_greater = 2025010 <= versionNumber
             is_2025_05_or_greater = 2025050 <= versionNumber
             is_2025_06_or_greater = 2025060 <= versionNumber
+            is_2025_13_or_greater = 2025130 <= versionNumber
+            is_2025_40_or_greater = 2025400 <= versionNumber
+            is_2025_45_or_greater = 2025450 <= versionNumber
+            is_2025_52_or_greater = 2025520 <= versionNumber
         }
 
         /**
@@ -86,46 +114,161 @@ private val settingsBytecodePatch = bytecodePatch(
             )
         }
 
-        /**
-         * Replace settings label
-         */
-        acknowledgementsLabelBuilderMethod =
-            acknowledgementsLabelBuilderFingerprint.methodOrThrow()
+        if (is_2025_40_or_greater) {
+            /**
+             * Replace settings label
+             */
 
-        /**
-         * Initialize settings activity
-         */
-        ossLicensesMenuActivityOnCreateFingerprint.matchOrThrow().let {
-            it.method.apply {
-                val insertIndex = it.instructionMatches.first().index + 1
+            // TODO: Check this
+            acknowledgementsLabelBuilderMethod = preferenceManagerFingerprint.second.also {
+                this.mutableClassDefBy(preferenceManagerParentFingerprint.mutableClassOrThrow())
+            }.method
+            /*
+            acknowledgementsLabelBuilderMethod =
+                preferenceManagerFingerprint.second.classDef
+                    .alsoResolve(context, preferenceManagerParentFingerprint)
+                    .mutableMethod
+             */
 
-                addInstructions(
-                    insertIndex, """
+            /**
+             * Initialize settings activity
+             */
+            val context = this
+            preferenceDestinationFingerprint.second.match().let {
+                it.method.apply {
+                    val targetIndex = it.instructionMatches.first().index + 2
+                    val targetRegister =
+                        getInstruction<FiveRegisterInstruction>(targetIndex).registerC
+                    val targetReference =
+                        getInstruction<ReferenceInstruction>(targetIndex).reference as MethodReference
+                    val targetClass = targetReference.definingClass
+                    val getActivityReference =
+                        context.mutableClassDefBy { classDef ->
+                            classDef.type == targetClass
+                        }.methods.find { methodDef ->
+                            methodDef.name == "getActivity"
+                        }!!.methodCall()
+
+                    val freeIndex = targetIndex + 1
+                    val freeRegister =
+                        getInstruction<OneRegisterInstruction>(freeIndex).registerA
+
+                    addInstructions(
+                        targetIndex, """
+                            invoke-static/range { p1 .. p1 }, $EXTENSION_CLASS_DESCRIPTOR->isAcknowledgment(Ljava/lang/Enum;)Z
+                            move-result v$freeRegister
+                            if-eqz v$freeRegister, :ignore
+                            invoke-virtual {v$targetRegister}, $getActivityReference
+                            move-result-object v$freeRegister
+                            invoke-static {v$freeRegister}, $EXTENSION_CLASS_DESCRIPTOR->initializeByIntent(Landroid/content/Context;)Landroid/content/Intent;
+                            move-result-object v$freeRegister
+                            invoke-virtual {v$targetRegister, v$freeRegister}, $targetClass->startActivity(Landroid/content/Intent;)V
+                            return-void
+                            :ignore
+                            nop
+                            """
+                    )
+                }
+            }
+
+            webBrowserActivityOnCreateFingerprint.methodOrThrow().let {
+                it.apply {
+                    val stringIndex = indexOfFirstInstructionOrThrow(Opcode.CONST_STRING)
+                    val freeRegister =
+                        getInstruction<OneRegisterInstruction>(stringIndex).registerA
+
+                    val insertIndex = indexOfFirstInstructionOrThrow {
+                        getReference<MethodReference>()?.toString() == "Landroid/app/Activity;->getIntent()Landroid/content/Intent;"
+                    }
+
+                    addInstructions(
+                        insertIndex, """
+                            invoke-static/range { p0 .. p0 }, $EXTENSION_CLASS_DESCRIPTOR->hook(Landroid/app/Activity;)Z
+                            move-result v$freeRegister
+                            if-eqz v$freeRegister, :ignore
+                            return-void
+                            :ignore
+                            nop
+                            """
+                    )
+                }
+            }
+        } else {
+            /**
+             * Replace settings label
+             */
+            acknowledgementsLabelBuilderMethod =
+                acknowledgementsLabelBuilderFingerprint.methodOrThrow()
+
+            /**
+             * Initialize settings activity
+             */
+            ossLicensesMenuActivityOnCreateFingerprint.matchOrThrow().let {
+                it.method.apply {
+                    val insertIndex = it.instructionMatches.first().index + 1
+
+                    addInstructions(
+                        insertIndex, """
                         invoke-static {p0}, $EXTENSION_METHOD_DESCRIPTOR
                         return-void
                         """
-                )
+                    )
+                }
             }
+
+            settingsStatusLoadMethod = settingsStatusLoadFingerprint.methodOrThrow()
+
+            findMethodOrThrow(EXTENSION_THEME_UTILS_CLASS_DESCRIPTOR) {
+                name == "setThemeColor"
+            }.addInstruction(
+                0,
+                "invoke-static {}, $EXTENSION_THEME_UTILS_CLASS_DESCRIPTOR->updateDarkModeStatus()V"
+            )
         }
-
-        settingsStatusLoadMethod = settingsStatusLoadFingerprint.methodOrThrow()
-
-        findMethodOrThrow(EXTENSION_THEME_UTILS_CLASS_DESCRIPTOR) {
-            name == "setThemeColor"
-        }.addInstruction(
-            0,
-            "invoke-static {}, $EXTENSION_THEME_UTILS_CLASS_DESCRIPTOR->updateDarkModeStatus()V"
-        )
     }
 }
 
 internal fun updateSettingsLabel(label: String) =
     acknowledgementsLabelBuilderMethod.apply {
-        val stringIndex = indexOfFirstStringInstructionOrThrow("onboardingAnalytics")
-        val insertIndex = indexOfFirstInstructionReversedOrThrow(stringIndex) {
+        fun indexOfPreferencesPresenterInstruction(methodDef: Method) =
+            methodDef.indexOfFirstInstruction {
+                opcode == Opcode.NEW_INSTANCE &&
+                        getReference<TypeReference>()?.type?.contains("checkIfShouldShowImpressumOption") == true
+            }
+
+        val predicate: Instruction.() -> Boolean = {
             opcode == Opcode.INVOKE_VIRTUAL &&
                     getReference<MethodReference>()?.name == "getString"
-        } + 2
+        }
+        var insertIndex: Int
+
+        if (is_2025_40_or_greater) {
+            val preferencesPresenterIndex =
+                indexOfPreferencesPresenterInstruction(this)
+
+            val stringIndex =
+                indexOfFirstInstructionReversedOrThrow(preferencesPresenterIndex, predicate)
+            val iconIndex =
+                indexOfFirstInstructionReversedOrThrow(stringIndex - 2, Opcode.CONST)
+            val iconRegister =
+                getInstruction<OneRegisterInstruction>(iconIndex).registerA
+
+            addInstructions(
+                iconIndex + 1, """
+                            invoke-static {}, $EXTENSION_CLASS_DESCRIPTOR->getIcon()I
+                            move-result v$iconRegister
+                            """
+            )
+
+            insertIndex =
+                indexOfFirstInstructionReversedOrThrow(preferencesPresenterIndex, predicate) + 2
+        } else {
+            val stringIndex =
+                indexOfFirstStringInstructionOrThrow("onboardingAnalytics")
+            insertIndex =
+                indexOfFirstInstructionReversedOrThrow(stringIndex, predicate) + 2
+        }
+
         val insertRegister =
             getInstruction<OneRegisterInstruction>(insertIndex - 1).registerA
 
@@ -186,6 +329,8 @@ val settingsPatch = resourcePatch(
         val settingsLabel = rvxSettingsLabel
             .valueOrThrow()
 
+        val newIcon = if (is_2025_40_or_greater) "icon_ai" else "icon_beta_planet"
+
         arrayOf(
             "preferences.xml",
             "preferences_logged_in.xml",
@@ -201,7 +346,7 @@ val settingsPatch = resourcePatch(
                     preference.readText()
                         .replace(
                             "\"@drawable/icon_text_post\" android:title=\"@string/label_acknowledgements\"",
-                            "\"@drawable/icon_beta_planet\" android:title=\"$settingsLabel\""
+                            "\"@drawable/$newIcon\" android:title=\"$settingsLabel\""
                         )
                 )
             }

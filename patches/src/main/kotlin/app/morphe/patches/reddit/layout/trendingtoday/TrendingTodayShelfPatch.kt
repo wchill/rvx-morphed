@@ -1,5 +1,6 @@
 package app.morphe.patches.reddit.layout.trendingtoday
 
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.bytecodePatch
@@ -7,10 +8,14 @@ import app.morphe.patcher.util.smali.ExternalLabel
 import app.morphe.patches.reddit.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.morphe.patches.reddit.utils.extension.Constants.PATCHES_PATH
 import app.morphe.patches.reddit.utils.patch.PatchList.HIDE_TRENDING_TODAY_SHELF
+import app.morphe.patches.reddit.utils.settings.is_2025_13_or_greater
+import app.morphe.patches.reddit.utils.settings.is_2025_40_or_greater
+import app.morphe.patches.reddit.utils.settings.is_2025_45_or_greater
 import app.morphe.patches.reddit.utils.settings.settingsPatch
 import app.morphe.patches.reddit.utils.settings.updatePatchStatus
 import app.morphe.util.fingerprint.matchOrThrow
 import app.morphe.util.fingerprint.methodOrThrow
+import app.morphe.util.fingerprint.mutableClassOrThrow
 import app.morphe.util.indexOfFirstInstructionReversedOrThrow
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
@@ -30,36 +35,63 @@ val trendingTodayShelfPatch = bytecodePatch(
     execute {
 
         // region patch for hide trending today title.
+        if (!is_2025_45_or_greater) {
+            trendingTodayTitleFingerprint.matchOrThrow().let {
+                it.method.apply {
+                    val stringIndex = it.stringMatches.first().index
+                    val relativeIndex =
+                        indexOfFirstInstructionReversedOrThrow(stringIndex, Opcode.AND_INT_LIT8)
+                    val insertIndex = indexOfFirstInstructionReversedOrThrow(
+                        relativeIndex + 1,
+                        Opcode.MOVE_OBJECT_FROM16
+                    )
+                    val insertRegister = getInstruction<TwoRegisterInstruction>(insertIndex).registerA
+                    val jumpOpcode = if (returnType == "V") Opcode.RETURN_VOID else Opcode.SGET_OBJECT
+                    var jumpIndex = indexOfFirstInstructionReversedOrThrow(jumpOpcode)
 
-        trendingTodayTitleFingerprint.matchOrThrow().let {
-            it.method.apply {
-                val stringIndex = it.stringMatches!!.first().index
-                val relativeIndex =
-                    indexOfFirstInstructionReversedOrThrow(stringIndex, Opcode.AND_INT_LIT8)
-                val insertIndex = indexOfFirstInstructionReversedOrThrow(
-                    relativeIndex + 1,
-                    Opcode.MOVE_OBJECT_FROM16
-                )
-                val insertRegister = getInstruction<TwoRegisterInstruction>(insertIndex).registerA
-                val jumpOpcode = if (returnType == "V") Opcode.RETURN_VOID else Opcode.SGET_OBJECT
-                val jumpIndex = indexOfFirstInstructionReversedOrThrow(jumpOpcode)
+                    if (jumpOpcode == Opcode.SGET_OBJECT && getInstruction(jumpIndex + 1).opcode != Opcode.RETURN_OBJECT) {
+                        jumpIndex = indexOfFirstInstructionReversedOrThrow(Opcode.RETURN_OBJECT)
+                    }
 
-                addInstructionsWithLabels(
-                    insertIndex, """
+                    addInstructionsWithLabels(
+                        insertIndex, """
                         invoke-static {}, $EXTENSION_CLASS_DESCRIPTOR->hideTrendingTodayShelf()Z
                         move-result v$insertRegister
                         if-nez v$insertRegister, :hidden
                         """, ExternalLabel("hidden", getInstruction(jumpIndex))
-                )
+                    )
+                }
             }
+        }
+
+        if (is_2025_13_or_greater) {
+            // TODO: Check this
+            searchTypeaheadListDefaultPresentationConstructorFingerprint.second.also {
+                this.mutableClassDefBy(searchTypeaheadListDefaultPresentationToStringFingerprint.mutableClassOrThrow())
+            }.method.addInstructions(
+                1, """
+                    invoke-static { p1 }, $EXTENSION_CLASS_DESCRIPTOR->removeTrendingLabel(Ljava/lang/String;)Ljava/lang/String;
+                    move-result-object p1
+                    """
+            )
         }
 
         // endregion
 
         // region patch for hide trending today contents.
 
-        trendingTodayItemFingerprint.methodOrThrow().addInstructionsWithLabels(
-            0, """
+        val trendingTodayItems = if (is_2025_40_or_greater) {
+            listOf(
+                trendingTodayItemFingerprint,
+                trendingTodayItemLegacyFingerprint
+            )
+        } else {
+            listOf(trendingTodayItemLegacyFingerprint)
+        }
+
+        trendingTodayItems.forEach { fingerprint ->
+            fingerprint.methodOrThrow().addInstructionsWithLabels(
+                0, """
                 invoke-static {}, $EXTENSION_CLASS_DESCRIPTOR->hideTrendingTodayShelf()Z
                 move-result v0
                 if-eqz v0, :ignore
@@ -67,7 +99,8 @@ val trendingTodayShelfPatch = bytecodePatch(
                 :ignore
                 nop
                 """
-        )
+            )
+        }
 
         // endregion
 

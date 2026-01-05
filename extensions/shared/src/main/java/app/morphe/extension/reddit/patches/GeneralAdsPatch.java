@@ -4,6 +4,7 @@ import com.reddit.domain.model.ILink;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import app.morphe.extension.reddit.settings.Settings;
 
@@ -20,6 +21,14 @@ public final class GeneralAdsPatch {
         }
 
         return filteredList;
+    }
+
+    public static Object hideCommentAdMap(Map<Object, Object> map, Object key, Object value) {
+        if (!hideCommentAds()) {
+            return map.put(key, value);
+        }
+
+        return map;
     }
 
     public static boolean hideCommentAds() {

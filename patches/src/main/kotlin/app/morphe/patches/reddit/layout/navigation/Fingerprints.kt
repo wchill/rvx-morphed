@@ -10,14 +10,19 @@ import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.Method
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import com.android.tools.smali.dexlib2.iface.reference.TypeReference
+import kotlin.compareTo
+import kotlin.or
+import kotlin.toString
 
 internal val bottomNavScreenFingerprint = legacyFingerprint(
     name = "bottomNavScreenFingerprint",
-    returnType = "Landroid/view/View;",
+    returnType = "L",
     accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    customFingerprint = { method, _ ->
-        method.definingClass == "Lcom/reddit/launch/bottomnav/BottomNavScreen;" &&
-                indexOfGetDimensionPixelSizeInstruction(method) >= 0
+    parameters = listOf("Landroid/content/res/Resources;"),
+    strings = listOf("answersFeatures"),
+    customFingerprint = { methodDef, _ ->
+        methodDef.definingClass == "Lcom/reddit/launch/bottomnav/BottomNavScreen;" &&
+                indexOfListBuilderInstruction(methodDef) >= 0
     }
 )
 
@@ -25,6 +30,12 @@ fun indexOfGetDimensionPixelSizeInstruction(methodDef: Method) =
     methodDef.indexOfFirstInstruction {
         opcode == Opcode.INVOKE_VIRTUAL &&
                 getReference<MethodReference>()?.toString() == "Landroid/content/res/Resources;->getDimensionPixelSize(I)I"
+    }
+
+fun indexOfListBuilderInstruction(methodDef: Method) =
+    methodDef.indexOfFirstInstruction {
+        opcode == Opcode.INVOKE_VIRTUAL &&
+                getReference<MethodReference>()?.toString() == "Lkotlin/collections/builders/ListBuilder;->build()Ljava/util/List;"
     }
 
 internal val bottomNavScreenHandlerFingerprint = legacyFingerprint(

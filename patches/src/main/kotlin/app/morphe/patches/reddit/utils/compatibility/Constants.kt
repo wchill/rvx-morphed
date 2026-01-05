@@ -11,16 +11,9 @@ internal object Constants {
         setOf(
             "2024.17.0", // This is the last version that can be patched without anti-split.
             "2025.05.1", // This was the latest version supported by the previous RVX patch.
-            "2025.12.1", // This is the latest version supported by the RVX patch.
-        )
-    )
-
-    val COMPATIBLE_PACKAGE_ARSCLIB: Pair<PackageName, Set<VersionName>?> = Pair(
-        REDDIT_PACKAGE_NAME,
-        setOf(
-            "2024.17.0", // This is the last version that can be patched without anti-split.
-            "2025.05.1", // This was the latest version supported by the previous RVX patch.
-            "2025.12.1", // This is the latest version supported by the RVX patch.
+            "2025.12.1", // This is the latest version originally supported by the RVX patch when not using arsclib.
+            "2025.40.0",
+            "2025.44.0"
         )
     )
 }

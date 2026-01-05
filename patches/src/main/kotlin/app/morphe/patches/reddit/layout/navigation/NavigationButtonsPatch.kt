@@ -3,21 +3,22 @@ package app.morphe.patches.reddit.layout.navigation
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.reddit.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.morphe.patches.reddit.utils.extension.Constants.PATCHES_PATH
 import app.morphe.patches.reddit.utils.patch.PatchList.HIDE_NAVIGATION_BUTTONS
 import app.morphe.patches.reddit.utils.settings.is_2024_26_or_greater
 import app.morphe.patches.reddit.utils.settings.is_2025_06_or_greater
+import app.morphe.patches.reddit.utils.settings.is_2025_40_or_greater
 import app.morphe.patches.reddit.utils.settings.settingsPatch
 import app.morphe.patches.reddit.utils.settings.updatePatchStatus
 import app.morphe.util.fingerprint.methodOrThrow
-import app.morphe.util.fingerprint.resolvable
-import app.morphe.util.indexOfFirstInstructionOrThrow
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
+import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
 private const val EXTENSION_CLASS_DESCRIPTOR =
     "$PATCHES_PATH/NavigationButtonsPatch;"
@@ -33,10 +34,29 @@ val navigationButtonsPatch = bytecodePatch(
 
     execute {
 
-        if (is_2024_26_or_greater) {
-            val fingerprints = mutableListOf(bottomNavScreenSetupBottomNavigationFingerprint)
+        if (!is_2024_26_or_greater) {
+            // Legacy method.
+            bottomNavScreenHandlerFingerprint.methodOrThrow().apply {
+                val targetIndex = indexOfGetItemsInstruction(this) + 1
+                val targetRegister =
+                    getInstruction<OneRegisterInstruction>(targetIndex).registerA
 
-            if (is_2025_06_or_greater) fingerprints += composeBottomNavScreenFingerprint
+                addInstructions(
+                    targetIndex + 1, """
+                            invoke-static {v$targetRegister}, $EXTENSION_CLASS_DESCRIPTOR->hideNavigationButtons(Ljava/util/List;)Ljava/util/List;
+                            move-result-object v$targetRegister
+                            """
+                )
+            }
+        } else if (!is_2025_40_or_greater) {
+            val fingerprints = if (is_2025_06_or_greater) {
+                listOf(
+                    bottomNavScreenSetupBottomNavigationFingerprint,
+                    composeBottomNavScreenFingerprint
+                )
+            } else {
+                listOf(bottomNavScreenSetupBottomNavigationFingerprint)
+            }
 
             fingerprints.forEach { fingerprint ->
                 fingerprint.methodOrThrow().apply {
@@ -53,47 +73,69 @@ val navigationButtonsPatch = bytecodePatch(
                 }
             }
         } else {
-            if (bottomNavScreenFingerprint.resolvable()) {
-                val bottomNavScreenMutableClass = with(bottomNavScreenFingerprint.methodOrThrow()) {
-                    val startIndex = indexOfGetDimensionPixelSizeInstruction(this)
-                    val targetIndex =
-                        indexOfFirstInstructionOrThrow(startIndex, Opcode.NEW_INSTANCE)
-                    val targetReference =
-                        getInstruction<ReferenceInstruction>(targetIndex).reference.toString()
+            bottomNavScreenFingerprint
+                .methodOrThrow()
+                .apply {
+                    implementation!!.instructions
+                        .withIndex()
+                        .filter { (_, instruction) ->
+                            val reference =
+                                (instruction as? ReferenceInstruction)?.reference
+                            instruction.opcode == Opcode.INVOKE_INTERFACE &&
+                                    reference is MethodReference &&
+                                    reference.toString() == "Ljava/util/List;->add(Ljava/lang/Object;)Z"
+                        }
+                        .map { (index, _) -> index }
+                        .reversed()
+                        .forEach { index ->
+                            val instruction =
+                                getInstruction<FiveRegisterInstruction>(index)
 
-                    mutableClassDefBy { it.type == targetReference }
-                }
+                            val listRegister = instruction.registerC
+                            val objectRegister = instruction.registerD
 
-                bottomNavScreenOnGlobalLayoutFingerprint.second.matchOrNull(
-                    bottomNavScreenMutableClass
-                )
-                    ?.let {
-                        it.method.apply {
-                            val startIndex = it.instructionMatches.first().index
-                            val targetRegister =
-                                getInstruction<FiveRegisterInstruction>(startIndex).registerC
-
-                            addInstruction(
-                                startIndex + 1,
-                                "invoke-static {v$targetRegister}, $EXTENSION_CLASS_DESCRIPTOR->hideNavigationButtons(Landroid/view/ViewGroup;)V"
+                            replaceInstruction(
+                                index,
+                                "invoke-static { v$listRegister, v$objectRegister }, " +
+                                        "$EXTENSION_CLASS_DESCRIPTOR->" +
+                                        "hideNavigationButtons(Ljava/util/List;Ljava/lang/Object;)V"
                             )
                         }
-                    }
-            } else {
-                // Legacy method.
-                bottomNavScreenHandlerFingerprint.methodOrThrow().apply {
-                    val targetIndex = indexOfGetItemsInstruction(this) + 1
-                    val targetRegister =
-                        getInstruction<OneRegisterInstruction>(targetIndex).registerA
 
-                    addInstructions(
-                        targetIndex + 1, """
-                            invoke-static {v$targetRegister}, $EXTENSION_CLASS_DESCRIPTOR->hideNavigationButtons(Ljava/util/List;)Ljava/util/List;
-                            move-result-object v$targetRegister
-                            """
+                    implementation!!.instructions
+                        .withIndex()
+                        .filter { (_, instruction) ->
+                            val reference =
+                                (instruction as? ReferenceInstruction)?.reference
+                            instruction.opcode == Opcode.INVOKE_DIRECT &&
+                                    reference is MethodReference &&
+                                    reference.definingClass.startsWith("Lcom/reddit/widget/bottomnav/") &&
+                                    reference.name == "<init>" &&
+                                    reference.parameterTypes.firstOrNull() == "Ljava/lang/String;"
+                        }
+                        .map { (index, _) -> index }
+                        .reversed()
+                        .forEach { index ->
+                            val instruction =
+                                getInstruction<FiveRegisterInstruction>(index)
+
+                            val objectRegister = instruction.registerC
+                            val labelRegister = instruction.registerD
+
+                            addInstruction(
+                                index + 1,
+                                "invoke-static { v$objectRegister, v$labelRegister }, " +
+                                        "$EXTENSION_CLASS_DESCRIPTOR->" +
+                                        "setNavigationMap(Ljava/lang/Object;Ljava/lang/String;)V"
+                            )
+                        }
+
+                    addInstruction(
+                        0,
+                        "invoke-static/range { p1 .. p1 }, " +
+                                "$EXTENSION_CLASS_DESCRIPTOR->setResources(Landroid/content/res/Resources;)V"
                     )
                 }
-            }
         }
 
         updatePatchStatus(

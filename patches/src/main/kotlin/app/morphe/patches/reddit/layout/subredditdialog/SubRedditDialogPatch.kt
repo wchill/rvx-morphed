@@ -15,6 +15,7 @@ import app.morphe.patches.reddit.utils.settings.is_2025_05_or_greater
 import app.morphe.patches.reddit.utils.settings.is_2025_06_or_greater
 import app.morphe.patches.reddit.utils.settings.settingsPatch
 import app.morphe.patches.reddit.utils.settings.updatePatchStatus
+import app.morphe.util.findMutableMethodOf
 import app.morphe.util.fingerprint.methodOrThrow
 import app.morphe.util.fingerprint.mutableClassOrThrow
 import app.morphe.util.getReference
@@ -24,7 +25,9 @@ import app.morphe.util.indexOfFirstInstructionReversedOrThrow
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
+import kotlin.compareTo
 
 private const val EXTENSION_CLASS_DESCRIPTOR =
     "$PATCHES_PATH/RemoveSubRedditDialogPatch;"
@@ -77,45 +80,63 @@ val subRedditDialogPatch = bytecodePatch(
         }
 
         if (is_2025_01_or_greater) {
-            nsfwAlertEmitFingerprint.methodOrThrow().apply {
-                val hasBeenVisitedIndex = indexOfHasBeenVisitedInstruction(this)
-                val hasBeenVisitedRegister =
-                    getInstruction<OneRegisterInstruction>(hasBeenVisitedIndex + 1).registerA
+            nsfwAlertEmitFingerprint
+                .methodOrThrow()
+                .apply {
+                    val hasBeenVisitedIndex = indexOfHasBeenVisitedInstruction(this)
+                    val hasBeenVisitedRegister =
+                        getInstruction<OneRegisterInstruction>(hasBeenVisitedIndex + 1).registerA
 
-                addInstructions(
-                    hasBeenVisitedIndex + 2, """
-                        invoke-static {v$hasBeenVisitedRegister}, $EXTENSION_CLASS_DESCRIPTOR->spoofHasBeenVisitedStatus(Z)Z
-                        move-result v$hasBeenVisitedRegister
-                        """
-                )
-            }
+                    addInstructions(
+                        hasBeenVisitedIndex + 2, """
+                            invoke-static {v$hasBeenVisitedRegister}, $EXTENSION_CLASS_DESCRIPTOR->spoofHasBeenVisitedStatus(Z)Z
+                            move-result v$hasBeenVisitedRegister
+                            """
+                    )
 
-            var hookCount = 0
+                    val isIncognitoIndex = indexOfIsIncognitoInstruction(this)
+                    val nsfwAlertBuilderIndex = indexOfFirstInstructionOrThrow(isIncognitoIndex) {
+                        val reference = getReference<MethodReference>()
+                        opcode == Opcode.INVOKE_VIRTUAL &&
+                                reference?.returnType == "V" &&
+                                reference.parameterTypes.firstOrNull() == "Z"
+                    }
+                    val nsfwAlertBuilderReference =
+                        getInstruction<ReferenceInstruction>(nsfwAlertBuilderIndex).reference as MethodReference
+                    val nsfwAlertBuilderClass =
+                        nsfwAlertBuilderReference.definingClass
 
-            nsfwAlertBuilderFingerprint.mutableClassOrThrow().let {
-                it.methods.forEach { method ->
-                    method.apply {
-                        val showIndex = indexOfFirstInstruction {
-                            opcode == Opcode.INVOKE_VIRTUAL &&
-                                    getReference<MethodReference>()?.name == "show"
-                        }
-                        if (showIndex >= 0) {
-                            val dialogRegister =
-                                getInstruction<OneRegisterInstruction>(showIndex + 1).registerA
+                    var hookCount = 0
 
-                            addInstruction(
-                                showIndex + 2,
-                                "invoke-static {v$dialogRegister}, $EXTENSION_CLASS_DESCRIPTOR->dismissNSFWDialog(Ljava/lang/Object;)V"
-                            )
-                            hookCount++
+                    classDefForEach { classDef ->
+                        if (classDef.type == nsfwAlertBuilderClass) {
+                            classDef.methods.forEach { method ->
+                                val showIndex = method.indexOfFirstInstruction {
+                                    opcode == Opcode.INVOKE_VIRTUAL &&
+                                            getReference<MethodReference>()?.name == "show"
+                                }
+                                if (showIndex >= 0) {
+                                    mutableClassDefBy(classDef)
+                                        .findMutableMethodOf(method)
+                                        .apply {
+                                            val dialogRegister =
+                                                getInstruction<OneRegisterInstruction>(showIndex + 1).registerA
+
+                                            addInstruction(
+                                                showIndex + 2,
+                                                "invoke-static {v$dialogRegister}, $EXTENSION_CLASS_DESCRIPTOR->dismissNSFWDialog(Ljava/lang/Object;)V"
+                                            )
+                                            hookCount++
+                                        }
+                                }
+                            }
                         }
                     }
-                }
-            }
 
-            if (hookCount == 0) {
-                throw PatchException("Failed to find hook method")
-            }
+                    if (hookCount == 0) {
+                        throw PatchException("Failed to find hook method")
+                    }
+                }
         }
 
         // Not used in latest Reddit client.

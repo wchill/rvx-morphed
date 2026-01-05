@@ -66,6 +66,7 @@ public class SettingsStatus {
     public static boolean layoutCategoryEnabled() {
         return navigationButtonsEnabled ||
                 recentlyVisitedShelfEnabled ||
+                recommendedCommunitiesShelfEnabled ||
                 screenshotPopupEnabled ||
                 subRedditDialogEnabled ||
                 toolBarButtonEnabled ||

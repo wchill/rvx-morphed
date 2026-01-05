@@ -1,14 +1,30 @@
 package app.morphe.extension.reddit.settings;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 import app.morphe.extension.reddit.settings.preference.RVXMorphedPreferenceFragment;
+import app.morphe.extension.shared.utils.ResourceUtils;
 
 @SuppressWarnings("all")
 public class ActivityHook {
+    public static int getIcon() {
+        return ResourceUtils.getDrawableIdentifier("icon_ai");
+    }
+
+    public static boolean hook(Activity activity) {
+        Intent intent = activity.getIntent();
+        if ("RVX".equals(intent.getStringExtra("com.reddit.extra.initial_url"))) {
+            initialize(activity);
+            return true;
+        }
+        return false;
+    }
+
     public static void initialize(Activity activity) {
         SettingsStatus.load();
 
@@ -30,5 +46,16 @@ public class ActivityHook {
                 .beginTransaction()
                 .replace(fragmentId, new RVXMorphedPreferenceFragment())
                 .commit();
+    }
+
+    public static boolean isAcknowledgement(Enum<?> e) {
+        return e != null && "ACKNOWLEDGEMENTS".equals(e.name());
+    }
+
+    public static Intent initializeByIntent(Context context) {
+        Intent intent = new Intent();
+        intent.setClassName(context, "com.reddit.webembed.browser.WebBrowserActivity");
+        intent.putExtra("com.reddit.extra.initial_url", "RVX");
+        return intent;
     }
 }

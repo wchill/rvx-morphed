@@ -21,6 +21,7 @@ private const val EXTENSION_METHOD_DESCRIPTOR =
             "hideRecentlyVisitedShelf(Ljava/util/List;)Ljava/util/List;"
 
 @Suppress("unused")
+@Deprecated("No longer supported on latest Reddit versions.")
 val recentlyVisitedShelfPatch = bytecodePatch(
     HIDE_RECENTLY_VISITED_SHELF.title,
     HIDE_RECENTLY_VISITED_SHELF.summary,
