@@ -1,5 +1,6 @@
 package app.morphe.patches.reddit.misc.openlink
 
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.bytecodePatch
@@ -7,9 +8,13 @@ import app.morphe.patcher.util.smali.ExternalLabel
 import app.morphe.patches.reddit.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.morphe.patches.reddit.utils.extension.Constants.PATCHES_PATH
 import app.morphe.patches.reddit.utils.patch.PatchList.OPEN_LINKS_EXTERNALLY
+import app.morphe.patches.reddit.utils.settings.is_2025_45_or_greater
 import app.morphe.patches.reddit.utils.settings.settingsPatch
 import app.morphe.patches.reddit.utils.settings.updatePatchStatus
+import app.morphe.util.fingerprint.methodOrThrow
+import app.morphe.util.fingerprint.mutableClassOrThrow
 import app.morphe.util.indexOfFirstStringInstructionOrThrow
+import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 
 private const val EXTENSION_METHOD_DESCRIPTOR =
     "$PATCHES_PATH/OpenLinksExternallyPatch;" +
@@ -40,6 +45,29 @@ val openLinksExternallyPatch = bytecodePatch(
                     return-void
                     """, ExternalLabel("dismiss", getInstruction(insertIndex))
             )
+        }
+
+        if (is_2025_45_or_greater) {
+            fbpActivityOnCreateFingerprint.methodOrThrow().addInstruction(
+                0,
+                "invoke-static/range { p0 .. p0 }, $EXTENSION_METHOD_DESCRIPTOR->" +
+                        "setActivity(Landroid/app/Activity;)V"
+            )
+
+            // TODO: Check this
+            articleConstructorFingerprint.second.also {
+                this.mutableClassDefBy(articleToStringFingerprint.mutableClassOrThrow())
+            }.method.apply {
+                val stringIndex = indexOfFirstStringInstructionOrThrow("url")
+                val nullCheckIndex = indexOfNullCheckInstruction(this, stringIndex)
+                val stringRegister = getInstruction<FiveRegisterInstruction>(nullCheckIndex).registerC
+
+                addInstruction(
+                    nullCheckIndex + 1,
+                    "invoke-static/range { v$stringRegister .. v$stringRegister }, $EXTENSION_METHOD_DESCRIPTOR->" +
+                            "openLinksExternally(Ljava/lang/String;)V"
+                )
+            }
         }
 
         updatePatchStatus(

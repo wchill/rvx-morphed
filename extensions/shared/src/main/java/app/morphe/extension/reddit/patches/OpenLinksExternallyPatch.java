@@ -4,11 +4,15 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 
+import java.lang.ref.WeakReference;
+
 import app.morphe.extension.reddit.settings.Settings;
 import app.morphe.extension.shared.utils.Logger;
+import app.morphe.extension.shared.utils.Utils;
 
 @SuppressWarnings("unused")
 public class OpenLinksExternallyPatch {
+    private static WeakReference<Activity> activityRef = new WeakReference<>(null);
 
     /**
      * Override 'CustomTabsIntent', in order to open links in the default browser.
@@ -29,5 +33,28 @@ public class OpenLinksExternallyPatch {
             Logger.printException(() -> "Can not open URL: " + uri, e);
         }
         return false;
+    }
+
+    public static void openLinksExternally(String uri) {
+        if (uri != null && Settings.OPEN_LINKS_EXTERNALLY.get()) {
+            Activity activity = activityRef.get();
+            if (activity != null && !activity.isDestroyed()) {
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(uri));
+                    activity.startActivity(intent);
+                    Utils.runOnMainThreadDelayed(() -> {
+                        activity.finish();
+                        activityRef = new WeakReference<>(null);
+                    }, 100);
+                } catch (Exception e) {
+                    Logger.printException(() -> "Can not open URL: " + uri, e);
+                }
+            }
+        }
+    }
+
+    public static void setActivity(Activity activity) {
+        activityRef = new WeakReference<>(activity);
     }
 }
