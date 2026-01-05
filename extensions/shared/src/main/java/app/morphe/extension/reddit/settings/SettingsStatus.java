@@ -2,21 +2,30 @@ package app.morphe.extension.reddit.settings;
 
 @SuppressWarnings("unused")
 public class SettingsStatus {
+    public static boolean gamesOnRedditShelfEnabled = false;
     public static boolean generalAdsEnabled = false;
     public static boolean navigationButtonsEnabled = false;
     public static boolean openLinksDirectlyEnabled = false;
     public static boolean openLinksExternallyEnabled = false;
     public static boolean recentlyVisitedShelfEnabled = false;
     public static boolean recommendedCommunitiesShelfEnabled = false;
+    public static boolean redditProShelfEnabled = false;
     public static boolean sanitizeUrlQueryEnabled = false;
     public static boolean screenshotPopupEnabled = false;
     public static boolean subRedditDialogEnabled = false;
     public static boolean toolBarButtonEnabled = false;
     public static boolean trendingTodayShelfEnabled = false;
 
+    public static void enableGamesOnRedditShelf() {
+        gamesOnRedditShelfEnabled = true;
+    }
 
     public static void enableGeneralAds() {
         generalAdsEnabled = true;
+    }
+
+    public static void enableRedditProShelf() {
+        redditProShelfEnabled = true;
     }
 
     public static void enableNavigationButtons() {
@@ -64,9 +73,11 @@ public class SettingsStatus {
     }
 
     public static boolean layoutCategoryEnabled() {
-        return navigationButtonsEnabled ||
+        return gamesOnRedditShelfEnabled ||
+                navigationButtonsEnabled ||
                 recentlyVisitedShelfEnabled ||
                 recommendedCommunitiesShelfEnabled ||
+                redditProShelfEnabled ||
                 screenshotPopupEnabled ||
                 subRedditDialogEnabled ||
                 toolBarButtonEnabled ||

@@ -17,7 +17,9 @@ public class Settings extends BaseSettings {
     public static final BooleanSetting HIDE_CHAT_BUTTON = new BooleanSetting("rvx_morphed_hide_chat_button", FALSE, true);
     public static final BooleanSetting HIDE_CREATE_BUTTON = new BooleanSetting("rvx_morphed_hide_create_button", FALSE, true);
     public static final BooleanSetting HIDE_DISCOVER_BUTTON = new BooleanSetting("rvx_morphed_hide_discover_button", FALSE, true);
+    public static final BooleanSetting HIDE_GAMES_ON_REDDIT_SHELF = new BooleanSetting("revanced_hide_games_on_reddit_shelf", FALSE);
     public static final BooleanSetting HIDE_RECENTLY_VISITED_SHELF = new BooleanSetting("rvx_morphed_hide_recently_visited_shelf", FALSE);
+    public static final BooleanSetting HIDE_REDDIT_PRO_SHELF = new BooleanSetting("revanced_hide_reddit_pro_shelf", FALSE);
     public static final BooleanSetting HIDE_RECOMMENDED_COMMUNITIES_SHELF = new BooleanSetting("rvx_morphed_hide_recommended_communities_shelf", FALSE, true);
     public static final BooleanSetting HIDE_TOOLBAR_BUTTON = new BooleanSetting("rvx_morphed_hide_toolbar_button", FALSE, true);
     public static final BooleanSetting HIDE_TRENDING_TODAY_SHELF = new BooleanSetting("rvx_morphed_hide_trending_today_shelf", FALSE, true);

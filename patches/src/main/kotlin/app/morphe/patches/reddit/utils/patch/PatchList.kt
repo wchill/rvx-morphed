@@ -33,6 +33,10 @@ internal enum class PatchList(
         "Hide recommended communities shelf",
         "Adds an option to hide the recommended communities shelves in subreddits."
     ),
+    HIDE_SIDEBAR_COMPONENTS(
+        "Hide sidebar components",
+        "Adds options to hide the sidebar components."
+    ),
     HIDE_TOOLBAR_BUTTON(
         "Hide toolbar button",
         "Adds an option to hide the r/place or Reddit recap button in the toolbar."
