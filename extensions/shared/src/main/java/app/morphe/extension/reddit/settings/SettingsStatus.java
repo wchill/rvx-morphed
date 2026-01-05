@@ -2,6 +2,7 @@ package app.morphe.extension.reddit.settings;
 
 @SuppressWarnings("unused")
 public class SettingsStatus {
+    public static boolean aboutShelfEnabled = false;
     public static boolean gamesOnRedditShelfEnabled = false;
     public static boolean generalAdsEnabled = false;
     public static boolean navigationButtonsEnabled = false;
@@ -10,11 +11,16 @@ public class SettingsStatus {
     public static boolean recentlyVisitedShelfEnabled = false;
     public static boolean recommendedCommunitiesShelfEnabled = false;
     public static boolean redditProShelfEnabled = false;
+    public static boolean resourcesShelfEnabled = false;
     public static boolean sanitizeUrlQueryEnabled = false;
     public static boolean screenshotPopupEnabled = false;
     public static boolean subRedditDialogEnabled = false;
     public static boolean toolBarButtonEnabled = false;
     public static boolean trendingTodayShelfEnabled = false;
+
+    public static void enableAboutShelf() {
+        aboutShelfEnabled = true;
+    }
 
     public static void enableGamesOnRedditShelf() {
         gamesOnRedditShelfEnabled = true;
@@ -46,6 +52,10 @@ public class SettingsStatus {
 
     public static void enableRecommendedCommunitiesShelf() {
         recommendedCommunitiesShelfEnabled = true;
+    }
+
+    public static void enableResourcesShelf() {
+        resourcesShelfEnabled = true;
     }
 
     public static void enableSubRedditDialog() {

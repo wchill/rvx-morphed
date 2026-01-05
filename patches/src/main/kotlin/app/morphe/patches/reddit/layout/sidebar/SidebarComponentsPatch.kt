@@ -9,6 +9,7 @@ import app.morphe.patches.reddit.utils.extension.Constants.PATCHES_PATH
 import app.morphe.patches.reddit.utils.patch.PatchList.HIDE_SIDEBAR_COMPONENTS
 import app.morphe.patches.reddit.utils.settings.is_2025_40_or_greater
 import app.morphe.patches.reddit.utils.settings.is_2025_45_or_greater
+import app.morphe.patches.reddit.utils.settings.is_2025_52_or_greater
 import app.morphe.patches.reddit.utils.settings.updatePatchStatus
 import app.morphe.util.findFieldFromToString
 import app.morphe.util.findMutableMethodOf
@@ -216,6 +217,11 @@ val sidebarComponentsPatch = bytecodePatch(
             updatePatchStatus(
                 "enableRedditProShelf"
             )
+
+            if (is_2025_52_or_greater) {
+                updatePatchStatus("enableAboutShelf")
+                updatePatchStatus("enableResourcesShelf")
+            }
         }
     }
 }

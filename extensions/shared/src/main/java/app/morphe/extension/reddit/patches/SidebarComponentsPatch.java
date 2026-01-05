@@ -57,7 +57,7 @@ public final class SidebarComponentsPatch {
     }
 
     private enum HeaderItem {
-        ABOUT(false),
+        ABOUT(Settings.HIDE_ABOUT_SHELF),
         COMMUNITIES(false),
         COMMUNITY_CLUBS(false),
         COMMUNITY_EVENT(false),
@@ -67,7 +67,7 @@ public final class SidebarComponentsPatch {
         MODERATING(false),
         RECENTLY_VISITED(Settings.HIDE_RECENTLY_VISITED_SHELF),
         REDDIT_PRO(Settings.HIDE_REDDIT_PRO_SHELF),
-        RESOURCES(false);
+        RESOURCES(Settings.HIDE_RESOURCES_SHELF);
 
         private final boolean enabled;
 
