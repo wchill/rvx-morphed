@@ -35,19 +35,19 @@ internal val frequentUpdatesHandlerFingerprint = legacyFingerprint(
     customFingerprint = { method, classDef ->
         classDef.type.startsWith("Lcom/reddit/screens/pager/FrequentUpdatesHandler${'$'}handleFrequentUpdates${'$'}") &&
                 method.name == "invokeSuspend" &&
-                listOfIsLoggedInInstruction(method).isNotEmpty()
+                listOfUserIsSubscriberInstruction(method).isNotEmpty()
     }
 )
 
-fun listOfIsLoggedInInstruction(method: Method) =
+internal fun listOfUserIsSubscriberInstruction(method: Method) =
     method.implementation?.instructions
         ?.withIndex()
         ?.filter { (_, instruction) ->
             val reference = (instruction as? ReferenceInstruction)?.reference
             instruction.opcode == Opcode.INVOKE_INTERFACE &&
                     reference is MethodReference &&
-                    reference.name == "isLoggedIn" &&
-                    reference.returnType == "Z"
+                    reference.name == "getUserIsSubscriber" &&
+                    reference.returnType == "Ljava/lang/Boolean;"
         }
         ?.map { (index, _) -> index }
         ?.reversed()

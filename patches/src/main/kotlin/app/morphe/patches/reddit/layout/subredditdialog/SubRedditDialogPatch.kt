@@ -50,13 +50,16 @@ val subRedditDialogPatch = bytecodePatch(
             frequentUpdatesHandlerFingerprint
                 .methodOrThrow()
                 .apply {
-                    listOfIsLoggedInInstruction(this)
-                        .forEach { index ->
+                    listOfUserIsSubscriberInstruction(this)
+                        .forEach { targetIndex ->
+                            val index =
+                                indexOfFirstInstructionReversedOrThrow(targetIndex, Opcode.IF_NEZ)
+
                             val register =
-                                getInstruction<OneRegisterInstruction>(index + 1).registerA
+                                getInstruction<OneRegisterInstruction>(index).registerA
 
                             addInstructions(
-                                index + 2, """
+                                index, """
                                     invoke-static {v$register}, $EXTENSION_CLASS_DESCRIPTOR->spoofLoggedInStatus(Z)Z
                                     move-result v$register
                                     """

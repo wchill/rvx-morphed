@@ -9,6 +9,7 @@ import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.Method
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
+import kotlin.or
 
 internal val communityDrawerPresenterConstructorFingerprint = legacyFingerprint(
     name = "communityDrawerPresenterConstructorFingerprint",
@@ -64,3 +65,25 @@ internal fun indexOfHeaderItemInstruction(
 ) = methodDef.indexOfFirstInstruction {
     getReference<FieldReference>()?.name == fieldName
 }
+
+internal val sidebarComponentsPatchFingerprint = legacyFingerprint(
+    name = "sidebarComponentsPatchFingerprint",
+    returnType = "Ljava/lang/String;",
+    accessFlags = AccessFlags.PRIVATE or AccessFlags.STATIC,
+    customFingerprint = { methodDef, _ ->
+        methodDef.definingClass.endsWith("/SidebarComponentsPatch;") &&
+                methodDef.name == "getHeaderItemName"
+    }
+)
+
+internal val headerItemUiModelToStringFingerprint = legacyFingerprint(
+    name = "headerItemUiModelToStringFingerprint",
+    returnType = "Ljava/lang/String;",
+    strings = listOf(
+        "HeaderItemUiModel(uniqueId=",
+        ", type="
+    ),
+    customFingerprint = { methodDef, _ ->
+        methodDef.name == "toString"
+    }
+)
