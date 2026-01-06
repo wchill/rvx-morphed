@@ -412,56 +412,24 @@ public final class app/morphe/patches/reddit/ad/AdsPatchKt {
 	public static final fun getAdsPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
 }
 
-public final class app/morphe/patches/reddit/layout/branding/name/CustomBrandingNamePatchKt {
-	public static final fun getCustomBrandingNamePatch ()Lapp/morphe/patcher/patch/ResourcePatch;
-}
-
-public final class app/morphe/patches/reddit/layout/branding/packagename/ChangePackageNamePatchKt {
-	public static final fun getChangePackageNamePatch ()Lapp/morphe/patcher/patch/ResourcePatch;
-}
-
 public final class app/morphe/patches/reddit/layout/communities/RecommendedCommunitiesPatchKt {
 	public static final fun getRecommendedCommunitiesPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
 }
 
 public final class app/morphe/patches/reddit/layout/navigation/FingerprintsKt {
-	public static final fun indexOfGetDimensionPixelSizeInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;)I
-	public static final fun indexOfGetItemsInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;)I
-	public static final fun indexOfSetSelectedItemTypeInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;)I
-}
-
-public final class app/morphe/patches/reddit/layout/navigation/NavigationButtonsPatchKt {
-	public static final fun getNavigationButtonsPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
-}
-
-public final class app/morphe/patches/reddit/layout/premiumicon/PremiumIconPatchKt {
-	public static final fun getPremiumIconPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
-}
-
-public final class app/morphe/patches/reddit/layout/recentlyvisited/FingerprintsKt {
-	public static final fun indexOfHeaderItemInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;)I
-}
-
-public final class app/morphe/patches/reddit/layout/recentlyvisited/RecentlyVisitedShelfPatchKt {
-	public static final fun getRecentlyVisitedShelfPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+	public static final fun indexOfListBuilderInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;)I
 }
 
 public final class app/morphe/patches/reddit/layout/screenshotpopup/ScreenshotPopupPatchKt {
 	public static final fun getScreenshotPopupPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
 }
 
-public final class app/morphe/patches/reddit/layout/subredditdialog/FingerprintsKt {
-	public static final fun indexOfHasBeenVisitedInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;)I
-	public static final fun indexOfSetBackgroundTintListInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;)I
-	public static final fun listOfIsLoggedInInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;)Ljava/util/List;
+public final class app/morphe/patches/reddit/layout/sidebar/SidebarComponentsPatchKt {
+	public static final fun getSidebarComponentsPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
 }
 
 public final class app/morphe/patches/reddit/layout/subredditdialog/SubRedditDialogPatchKt {
 	public static final fun getSubRedditDialogPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
-}
-
-public final class app/morphe/patches/reddit/layout/toolbar/ToolBarButtonPatchKt {
-	public static final fun getToolBarButtonPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
 }
 
 public final class app/morphe/patches/reddit/layout/trendingtoday/TrendingTodayShelfPatchKt {
@@ -503,17 +471,10 @@ public final class app/morphe/patches/reddit/utils/fix/signature/SpoofSignatureP
 	public static final fun getSpoofSignaturePatch ()Lapp/morphe/patcher/patch/BytecodePatch;
 }
 
-public final class app/morphe/patches/reddit/utils/resourceid/SharedResourceIdPatchKt {
-	public static final fun getNsfwDialogTitle ()J
-}
-
 public final class app/morphe/patches/reddit/utils/settings/SettingsPatchKt {
-	public static final fun getSettingsPatch ()Lapp/morphe/patcher/patch/ResourcePatch;
-	public static final fun is_2024_26_or_greater ()Z
-	public static final fun is_2024_41_or_greater ()Z
-	public static final fun is_2025_01_or_greater ()Z
-	public static final fun is_2025_05_or_greater ()Z
-	public static final fun is_2025_06_or_greater ()Z
+	public static final fun getSettingsPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+	public static final fun is_2025_45_or_greater ()Z
+	public static final fun is_2025_52_or_greater ()Z
 }
 
 public final class app/morphe/patches/shared/FingerprintsKt {

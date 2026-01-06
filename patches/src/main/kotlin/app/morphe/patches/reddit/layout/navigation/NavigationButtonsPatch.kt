@@ -22,6 +22,8 @@ import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 private const val EXTENSION_CLASS_DESCRIPTOR =
     "$PATCHES_PATH/NavigationButtonsPatch;"
 
+/*
+// FIXME: Figure out the reason why the extension code is getting invalid resource IDs.
 @Suppress("unused")
 val navigationButtonsPatch = bytecodePatch(
     HIDE_NAVIGATION_BUTTONS.title,
@@ -102,3 +104,4 @@ val navigationButtonsPatch = bytecodePatch(
         )
     }
 }
+*/
