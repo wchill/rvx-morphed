@@ -52,10 +52,9 @@ val openLinksExternallyPatch = bytecodePatch(
                         "setActivity(Landroid/app/Activity;)V"
             )
 
-            // TODO: Check this
-            articleConstructorFingerprint.second.also {
+            articleConstructorFingerprint.second.match(
                 this.mutableClassDefBy(articleToStringFingerprint.mutableClassOrThrow())
-            }.method.apply {
+            ).method.apply {
                 val stringIndex = indexOfFirstStringInstructionOrThrow("url")
                 val nullCheckIndex = indexOfNullCheckInstruction(this, stringIndex)
                 val stringRegister = getInstruction<FiveRegisterInstruction>(nullCheckIndex).registerC

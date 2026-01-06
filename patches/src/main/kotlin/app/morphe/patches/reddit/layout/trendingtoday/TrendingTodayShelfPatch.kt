@@ -62,10 +62,9 @@ val trendingTodayShelfPatch = bytecodePatch(
             }
         }
 
-        // TODO: Check this
-        searchTypeaheadListDefaultPresentationConstructorFingerprint.second.also {
-            this.mutableClassDefBy(searchTypeaheadListDefaultPresentationToStringFingerprint.mutableClassOrThrow())
-        }.method.addInstructions(
+        searchTypeaheadListDefaultPresentationConstructorFingerprint.second.match(
+            mutableClassDefBy(searchTypeaheadListDefaultPresentationToStringFingerprint.mutableClassOrThrow())
+        ).method.addInstructions(
             1, """
                 invoke-static { p1 }, $EXTENSION_CLASS_DESCRIPTOR->removeTrendingLabel(Ljava/lang/String;)Ljava/lang/String;
                 move-result-object p1

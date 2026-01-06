@@ -65,10 +65,9 @@ val adsPatch = bytecodePatch(
                 getInstruction<ReferenceInstruction>(index).reference
             }
 
-        // TODO: Check this
-        adPostSectionConstructorFingerprint.second.also {
-            this.mutableClassDefBy(adPostSectionToStringFingerprint.mutableClassOrThrow())
-        }.method.apply {
+        adPostSectionConstructorFingerprint.second.match(
+            mutableClassDefBy(adPostSectionToStringFingerprint.mutableClassOrThrow())
+        ).method.apply {
             val sectionIndex =
                 indexOfFirstStringInstructionOrThrow("sections")
             val sectionRegister =

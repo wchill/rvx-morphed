@@ -106,17 +106,10 @@ val settingsPatch = bytecodePatch(
          * Replace settings label
          */
 
-        // TODO: Check this
-        acknowledgementsLabelBuilderMethod = preferenceManagerFingerprint.second.also {
-            this.mutableClassDefBy(preferenceManagerParentFingerprint.mutableClassOrThrow())
-        }.method
+        acknowledgementsLabelBuilderMethod = preferenceManagerFingerprint.second.match(
+            mutableClassDefBy(preferenceManagerParentFingerprint.mutableClassOrThrow())
+        ).method
         updateSettingsLabel(rvxSettingsLabel.valueOrThrow())
-        /*
-        acknowledgementsLabelBuilderMethod =
-            preferenceManagerFingerprint.second.classDef
-                .alsoResolve(context, preferenceManagerParentFingerprint)
-                .mutableMethod
-         */
 
         /**
          * Initialize settings activity

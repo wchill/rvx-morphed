@@ -3,7 +3,6 @@ package app.morphe.patches.reddit.layout.sidebar
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
-import app.morphe.patcher.parametersStartsWith
 import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
@@ -126,11 +125,10 @@ val sidebarComponentsPatch = bytecodePatch(
             val communityDrawerPresenterConstructorMethod =
                 communityDrawerPresenterConstructorFingerprint.methodOrThrow()
 
-            // TODO: Check this
             val communityDrawerPresenterMethod =
-                communityDrawerPresenterFingerprint.second.also {
-                    this.mutableClassDefBy(communityDrawerPresenterConstructorFingerprint.mutableClassOrThrow())
-                }.method
+                communityDrawerPresenterFingerprint.second.match(
+                    mutableClassDefBy(communityDrawerPresenterConstructorFingerprint.mutableClassOrThrow())
+                ).method
 
             fun getDrawerField(
                 fieldName: String,
