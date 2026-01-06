@@ -9,9 +9,7 @@ import java.nio.file.Paths
 internal class ReadMeFileGenerator : PatchesFileGenerator {
     // For this exception to apply to [README.md],
     // Supported version of [app.morphe.patches.music.utils.integrations.Constants.COMPATIBLE_PACKAGE] should be empty.
-    private val exception = mapOf(
-        "com.google.android.apps.youtube.music" to "6.29.59"
-    )
+    private val exception = mapOf<String, String>()
 
     private val tableHeader =
         "| \uD83D\uDC8A Patch | \uD83D\uDCDC Description | \uD83C\uDFF9 Target Version |\n" +
@@ -42,9 +40,7 @@ internal class ReadMeFileGenerator : PatchesFileGenerator {
 
         // add a list of supported versions to a temp file
         mapOf(
-            app.morphe.patches.music.utils.compatibility.Constants.COMPATIBLE_PACKAGE to "\"COMPATIBLE_PACKAGE_MUSIC\"",
             app.morphe.patches.reddit.utils.compatibility.Constants.COMPATIBLE_PACKAGE to "\"COMPATIBLE_PACKAGE_REDDIT\"",
-            app.morphe.patches.youtube.utils.compatibility.Constants.COMPATIBLE_PACKAGE to "\"COMPATIBLE_PACKAGE_YOUTUBE\""
         ).forEach { (compatiblePackage, replaceString) ->
             compatiblePackage.let { (packageName, versions) ->
                 val supportedVersion =

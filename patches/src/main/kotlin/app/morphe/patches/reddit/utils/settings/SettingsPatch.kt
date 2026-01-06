@@ -14,7 +14,6 @@ import app.morphe.patches.reddit.utils.extension.sharedExtensionPatch
 import app.morphe.patches.reddit.utils.fix.signature.spoofSignaturePatch
 import app.morphe.patches.reddit.utils.patch.PatchList
 import app.morphe.patches.reddit.utils.patch.PatchList.SETTINGS_FOR_REDDIT
-import app.morphe.patches.shared.sharedSettingFingerprint
 import app.morphe.util.fingerprint.methodCall
 import app.morphe.util.fingerprint.methodOrThrow
 import app.morphe.util.fingerprint.mutableClassOrThrow
