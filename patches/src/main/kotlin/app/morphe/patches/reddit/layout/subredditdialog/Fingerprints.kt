@@ -17,8 +17,7 @@ internal val frequentUpdatesHandlerFingerprint = legacyFingerprint(
     opcodes = listOf(Opcode.CONST_STRING),
     customFingerprint = { method, classDef ->
         classDef.type.startsWith("Lcom/reddit/screens/pager/FrequentUpdatesHandler${'$'}handleFrequentUpdates${'$'}") &&
-                method.name == "invokeSuspend" &&
-                listOfUserIsSubscriberInstruction(method).isNotEmpty()
+                method.name == "invokeSuspend"
     }
 )
 
@@ -72,10 +71,4 @@ internal fun indexOfHasBeenVisitedInstruction(method: Method) =
         opcode == Opcode.INVOKE_VIRTUAL &&
                 reference?.name == "getHasBeenVisited" &&
                 reference.returnType == "Z"
-    }
-
-fun indexOfSetBackgroundTintListInstruction(method: Method) =
-    method.indexOfFirstInstruction {
-        opcode == Opcode.INVOKE_VIRTUAL &&
-                getReference<MethodReference>()?.name == "setBackgroundTintList"
     }

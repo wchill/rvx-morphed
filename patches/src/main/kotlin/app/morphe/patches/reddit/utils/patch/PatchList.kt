@@ -17,10 +17,6 @@ internal enum class PatchList(
         "Disable screenshot popup",
         "Adds an option to disable the popup that appears when taking a screenshot."
     ),
-    HIDE_RECENTLY_VISITED_SHELF(
-        "Hide Recently Visited shelf",
-        "Adds an option to hide the Recently Visited shelf in the sidebar."
-    ),
     HIDE_ADS(
         "Hide ads",
         "Adds options to hide ads."
@@ -60,9 +56,5 @@ internal enum class PatchList(
     SETTINGS_FOR_REDDIT(
         "Settings for Reddit",
         "Applies mandatory patches to implement RVX Morphed settings into the application."
-    ),
-    SPOOF_SIGNATURE(
-        "Spoof signature",
-        "Spoofs the signature of the app."
     ),
 }
