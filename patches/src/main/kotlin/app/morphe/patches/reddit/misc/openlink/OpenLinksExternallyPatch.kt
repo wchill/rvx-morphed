@@ -16,10 +16,8 @@ import app.morphe.util.fingerprint.mutableClassOrThrow
 import app.morphe.util.indexOfFirstStringInstructionOrThrow
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 
-private const val EXTENSION_METHOD_DESCRIPTOR =
-    "$PATCHES_PATH/OpenLinksExternallyPatch;" +
-            "->" +
-            "openLinksExternally(Landroid/app/Activity;Landroid/net/Uri;)Z"
+private const val EXTENSION_CLASS_DESCRIPTOR =
+    "$PATCHES_PATH/OpenLinksExternallyPatch;"
 
 @Suppress("unused")
 val openLinksExternallyPatch = bytecodePatch(
@@ -39,7 +37,7 @@ val openLinksExternallyPatch = bytecodePatch(
 
             addInstructionsWithLabels(
                 insertIndex, """
-                    invoke-static {p1, p2}, $EXTENSION_METHOD_DESCRIPTOR
+                    invoke-static {p1, p2}, $EXTENSION_CLASS_DESCRIPTOR->openLinksExternally(Landroid/app/Activity;Landroid/net/Uri;)Z
                     move-result v0
                     if-eqz v0, :dismiss
                     return-void
@@ -50,7 +48,7 @@ val openLinksExternallyPatch = bytecodePatch(
         if (is_2025_45_or_greater) {
             fbpActivityOnCreateFingerprint.methodOrThrow().addInstruction(
                 0,
-                "invoke-static/range { p0 .. p0 }, $EXTENSION_METHOD_DESCRIPTOR->" +
+                "invoke-static/range { p0 .. p0 }, $EXTENSION_CLASS_DESCRIPTOR->" +
                         "setActivity(Landroid/app/Activity;)V"
             )
 
@@ -64,7 +62,7 @@ val openLinksExternallyPatch = bytecodePatch(
 
                 addInstruction(
                     nullCheckIndex + 1,
-                    "invoke-static/range { v$stringRegister .. v$stringRegister }, $EXTENSION_METHOD_DESCRIPTOR->" +
+                    "invoke-static/range { v$stringRegister .. v$stringRegister }, $EXTENSION_CLASS_DESCRIPTOR->" +
                             "openLinksExternally(Ljava/lang/String;)V"
                 )
             }

@@ -74,7 +74,7 @@ val adsPatch = bytecodePatch(
             val sectionRegister =
                 getInstruction<FiveRegisterInstruction>(sectionIndex + 1).registerC
 
-            addInstructions(
+            addInstructionsWithLabels(
                 sectionIndex, """
                         invoke-static {v$sectionRegister}, $EXTENSION_CLASS_DESCRIPTOR->hideNewPostAds(Ljava/util/List;)Ljava/util/List;
                         move-result-object v$sectionRegister

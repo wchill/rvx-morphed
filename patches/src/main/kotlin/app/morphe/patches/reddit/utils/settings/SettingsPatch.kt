@@ -2,6 +2,7 @@ package app.morphe.patches.reddit.utils.settings
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.bytecodePatch
@@ -101,8 +102,8 @@ val settingsPatch = bytecodePatch(
             )
         }
 
-            /**
-             * Replace settings label
+        /**
+         * Replace settings label
          */
 
         // TODO: Check this
@@ -140,7 +141,7 @@ val settingsPatch = bytecodePatch(
                 val freeRegister =
                     getInstruction<OneRegisterInstruction>(freeIndex).registerA
 
-                addInstructions(
+                addInstructionsWithLabels(
                     targetIndex, """
                         invoke-static/range { p1 .. p1 }, $EXTENSION_CLASS_DESCRIPTOR->isAcknowledgment(Ljava/lang/Enum;)Z
                         move-result v$freeRegister
@@ -168,7 +169,7 @@ val settingsPatch = bytecodePatch(
                     getReference<MethodReference>()?.toString() == "Landroid/app/Activity;->getIntent()Landroid/content/Intent;"
                 }
 
-                addInstructions(
+                addInstructionsWithLabels(
                     insertIndex, """
                         invoke-static/range { p0 .. p0 }, $EXTENSION_CLASS_DESCRIPTOR->hook(Landroid/app/Activity;)Z
                         move-result v$freeRegister
@@ -180,6 +181,8 @@ val settingsPatch = bytecodePatch(
                 )
             }
         }
+
+        settingsStatusLoadMethod = settingsStatusLoadFingerprint.methodOrThrow()
 
         updatePatchStatus(SETTINGS_FOR_REDDIT)
     }

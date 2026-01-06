@@ -1,6 +1,6 @@
 package app.morphe.patches.reddit.utils.settings
 
-import app.morphe.patcher.Fingerprint
+import app.morphe.patches.reddit.utils.extension.Constants.EXTENSION_PATH
 import app.morphe.util.fingerprint.legacyFingerprint
 import app.morphe.util.getReference
 import app.morphe.util.indexOfFirstInstruction
@@ -9,30 +9,6 @@ import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.Method
 import com.android.tools.smali.dexlib2.iface.reference.TypeReference
-
-internal val acknowledgementsLabelBuilderFingerprint = legacyFingerprint(
-    name = "acknowledgementsLabelBuilderFingerprint",
-    returnType = "Z",
-    parameters = listOf("Landroidx/preference/Preference;"),
-    strings = listOf("onboardingAnalytics"),
-    customFingerprint = { method, _ ->
-        method.definingClass.startsWith("Lcom/reddit/screen/settings/preferences/")
-    }
-)
-
-internal val ossLicensesMenuActivityOnCreateFingerprint = legacyFingerprint(
-    name = "ossLicensesMenuActivityOnCreateFingerprint",
-    returnType = "V",
-    opcodes = listOf(
-        Opcode.IGET_BOOLEAN,
-        Opcode.IF_EQZ,
-        Opcode.INVOKE_STATIC
-    ),
-    customFingerprint = { method, _ ->
-        method.definingClass.endsWith("/OssLicensesMenuActivity;") &&
-                method.name == "onCreate"
-    }
-)
 
 internal val preferenceDestinationFingerprint = legacyFingerprint(
     name = "preferenceDestinationFingerprint",
@@ -90,5 +66,13 @@ internal val webBrowserActivityOnCreateFingerprint = legacyFingerprint(
     customFingerprint = { methodDef, _ ->
         methodDef.definingClass.endsWith("/WebBrowserActivity;") &&
                 methodDef.name == "onCreate"
+    }
+)
+
+internal val settingsStatusLoadFingerprint = legacyFingerprint(
+    name = "settingsStatusLoadFingerprint",
+    customFingerprint = { methodDef, _ ->
+        methodDef.definingClass.endsWith("$EXTENSION_PATH/settings/SettingsStatus;") &&
+                methodDef.name == "load"
     }
 )

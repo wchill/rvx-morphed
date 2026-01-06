@@ -13,9 +13,10 @@ import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 internal val customReportsFingerprint = legacyFingerprint(
     name = "customReportsFingerprint",
     returnType = "V",
-    strings = listOf("https://www.crisistextline.org/", "screenNavigator"),
-    customFingerprint = { method, _ ->
-        indexOfScreenNavigatorInstruction(method) >= 0
+    strings = listOf("https://www.crisistextline.org/"),
+    customFingerprint = { methodDef, classDef ->
+        classDef.type.contains("/customreports/") &&
+                indexOfScreenNavigatorInstruction(methodDef) >= 0
     }
 )
 

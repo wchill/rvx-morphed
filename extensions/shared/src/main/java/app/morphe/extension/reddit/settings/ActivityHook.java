@@ -48,8 +48,8 @@ public class ActivityHook {
                 .commit();
     }
 
-    public static boolean isAcknowledgement(Enum<?> e) {
-        return e != null && "ACKNOWLEDGEMENTS".equals(e.name());
+    public static boolean isAcknowledgment(Enum<?> e) {
+        return e != null && "ACKNOWLEDGMENTS".equals(e.name());
     }
 
     public static Intent initializeByIntent(Context context) {

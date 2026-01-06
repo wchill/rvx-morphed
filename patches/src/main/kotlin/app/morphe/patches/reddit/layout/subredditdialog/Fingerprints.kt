@@ -14,7 +14,7 @@ internal val frequentUpdatesHandlerFingerprint = legacyFingerprint(
     name = "frequentUpdatesHandlerFingerprint",
     returnType = "Ljava/lang/Object;",
     accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    strings = listOf("subreddit_name"),
+    opcodes = listOf(Opcode.CONST_STRING),
     customFingerprint = { method, classDef ->
         classDef.type.startsWith("Lcom/reddit/screens/pager/FrequentUpdatesHandler${'$'}handleFrequentUpdates${'$'}") &&
                 method.name == "invokeSuspend" &&

@@ -1,14 +1,18 @@
 package app.morphe.patches.reddit.layout.sidebar
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.parametersStartsWith
+import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patches.reddit.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.morphe.patches.reddit.utils.extension.Constants.PATCHES_PATH
 import app.morphe.patches.reddit.utils.patch.PatchList.HIDE_SIDEBAR_COMPONENTS
 import app.morphe.patches.reddit.utils.settings.is_2025_45_or_greater
 import app.morphe.patches.reddit.utils.settings.is_2025_52_or_greater
+import app.morphe.patches.reddit.utils.settings.settingsPatch
 import app.morphe.patches.reddit.utils.settings.updatePatchStatus
 import app.morphe.util.findFieldFromToString
 import app.morphe.util.findMutableMethodOf
@@ -34,8 +38,11 @@ val sidebarComponentsPatch = bytecodePatch(
     HIDE_SIDEBAR_COMPONENTS.title,
     HIDE_SIDEBAR_COMPONENTS.summary,
 ) {
-    execute {
+    compatibleWith(COMPATIBLE_PACKAGE)
 
+    dependsOn(settingsPatch)
+
+    execute {
         if (is_2025_45_or_greater) {
             val helperMethodName = "getHeaderItemName"
 
@@ -53,7 +60,7 @@ val sidebarComponentsPatch = bytecodePatch(
                             null, null,
                             MutableMethodImplementation(2)
                         ).toMutable().apply {
-                            addInstructions(
+                            addInstructionsWithLabels(
                                 0, """
                                 iget-object v0, p0, $headerItemField
                                 if-nez v0, :name
@@ -88,20 +95,16 @@ val sidebarComponentsPatch = bytecodePatch(
                 parameterTypes.size > 4 &&
                         accessFlags == AccessFlags.PUBLIC or AccessFlags.STATIC &&
                         returnType == "V" &&
-                        parametersStartsWith(
-                            parameterTypes,
-                            listOf(
-                                "L",
-                                "Ljava/util/List;",
-                                "Ljava/util/Collection;",
-                                headerItemUiModelClass
-                            )
-                        )
+                        parameterTypes[1].equals("Ljava/util/List;") &&
+                        parameterTypes[2].equals("Ljava/util/Collection;") &&
+                        parameterTypes[3].equals(headerItemUiModelClass)
             }
 
+            var shelfBuilderMethodFound = false
             classDefForEach handler@{ classDef ->
                 classDef.methods.forEach { method ->
                     if (method.isShelfBuilderMethod()) {
+                        shelfBuilderMethodFound = true
                         mutableClassDefBy(classDef)
                             .findMutableMethodOf(method)
                             .addInstructions(
@@ -114,6 +117,10 @@ val sidebarComponentsPatch = bytecodePatch(
                         return@handler
                     }
                 }
+            }
+
+            if (!shelfBuilderMethodFound) {
+                throw PatchException("Unable to find shelf builder method")
             }
         } else {
             val communityDrawerPresenterConstructorMethod =

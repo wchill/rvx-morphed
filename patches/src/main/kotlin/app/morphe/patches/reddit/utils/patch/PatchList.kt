@@ -37,10 +37,6 @@ internal enum class PatchList(
         "Hide sidebar components",
         "Adds options to hide the sidebar components."
     ),
-    HIDE_TOOLBAR_BUTTON(
-        "Hide toolbar button",
-        "Adds an option to hide the r/place or Reddit recap button in the toolbar."
-    ),
     HIDE_TRENDING_TODAY_SHELF(
         "Hide Trending Today shelf",
         "Adds an option to hide the Trending Today shelf from search suggestions."
@@ -52,10 +48,6 @@ internal enum class PatchList(
     OPEN_LINKS_EXTERNALLY(
         "Open links externally",
         "Adds an option to always open links in your browser instead of in the in-app-browser."
-    ),
-    PREMIUM_ICON(
-        "Premium icon",
-        "Unlocks premium app icons."
     ),
     REMOVE_SUBREDDIT_DIALOG(
         "Remove subreddit dialog",
