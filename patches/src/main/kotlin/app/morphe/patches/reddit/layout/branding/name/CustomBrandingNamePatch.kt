@@ -14,6 +14,8 @@ import java.nio.file.Files
 private const val ORIGINAL_APP_NAME = "Reddit"
 private const val APP_NAME = "RVX Reddit"
 
+/*
+// FIXME: Cannot use this patch due to apktool being unable to decode resources.
 @Suppress("unused")
 val customBrandingNamePatch = resourcePatch(
     CUSTOM_BRANDING_NAME_FOR_REDDIT.title,
@@ -75,3 +77,4 @@ val customBrandingNamePatch = resourcePatch(
         updatePatchStatus(CUSTOM_BRANDING_NAME_FOR_REDDIT)
     }
 }
+*/

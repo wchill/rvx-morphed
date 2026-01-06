@@ -16,6 +16,8 @@ private const val DEFAULT_PACKAGE_NAME_REDDIT = "$PACKAGE_NAME_REDDIT.rvx"
 
 private var redditPackageName = PACKAGE_NAME_REDDIT
 
+/*
+// FIXME: Cannot use this patch due to apktool being unable to decode resources.
 @Suppress("unused")
 val changePackageNamePatch = resourcePatch(
     CHANGE_PACKAGE_NAME.title,
@@ -112,3 +114,4 @@ val changePackageNamePatch = resourcePatch(
         }
     }
 }
+*/

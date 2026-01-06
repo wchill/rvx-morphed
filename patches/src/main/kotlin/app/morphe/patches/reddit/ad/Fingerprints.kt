@@ -9,7 +9,6 @@ import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.Method
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import com.android.tools.smali.dexlib2.iface.reference.TypeReference
-import kotlin.or
 
 internal val listingFingerprint = legacyFingerprint(
     name = "listingFingerprint",
@@ -125,34 +124,6 @@ internal val immutableListBuilderFingerprint = legacyFingerprint(
                 indexOfAutoplayVideoPreviewsOptionInstruction(methodDef) >= 0 &&
                 indexOfImmutableListBuilderInstruction(methodDef) >= 0
     }
-)
-
-internal val newAdPostFingerprint = legacyFingerprint(
-    name = "newAdPostFingerprint",
-    returnType = "L",
-    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    strings = listOf(
-        "feedElement",
-        "android_feed_freeform_render_variant",
-    ),
-    customFingerprint = { method, _ ->
-        indexOfAddArrayListInstruction(method) >= 0
-    },
-)
-
-internal val newAdPostLegacyFingerprint = legacyFingerprint(
-    name = "newAdPostLegacyFingerprint",
-    returnType = "L",
-    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    opcodes = listOf(Opcode.INVOKE_VIRTUAL),
-    strings = listOf(
-        "chain",
-        "feedElement"
-    ),
-    customFingerprint = { method, classDef ->
-        classDef.sourceFile == "AdElementConverter.kt" &&
-                indexOfAddArrayListInstruction(method) >= 0
-    },
 )
 
 internal val postDetailAdLoaderFingerprint = legacyFingerprint(

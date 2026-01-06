@@ -5,7 +5,6 @@ import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patcher.patch.resourcePatch
 import app.morphe.patcher.patch.stringOption
 import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.morphe.patches.reddit.utils.compatibility.Constants.COMPATIBLE_PACKAGE
@@ -32,13 +31,9 @@ import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import com.android.tools.smali.dexlib2.iface.reference.TypeReference
-import kotlin.io.path.exists
 
 private const val EXTENSION_CLASS_DESCRIPTOR =
     "$EXTENSION_PATH/settings/ActivityHook;"
-
-private const val EXTENSION_METHOD_DESCRIPTOR =
-    "$EXTENSION_CLASS_DESCRIPTOR->initialize(Landroid/app/Activity;)V"
 
 private lateinit var acknowledgementsLabelBuilderMethod: MutableMethod
 private lateinit var settingsStatusLoadMethod: MutableMethod
@@ -49,9 +44,30 @@ var is_2025_45_or_greater = false
 var is_2025_52_or_greater = false
     private set
 
-private val settingsBytecodePatch = bytecodePatch(
-    description = "settingsBytecodePatch"
+private const val DEFAULT_LABEL = "RVX"
+
+val settingsPatch = bytecodePatch(
+    SETTINGS_FOR_REDDIT.title,
+    SETTINGS_FOR_REDDIT.summary,
 ) {
+    compatibleWith(COMPATIBLE_PACKAGE)
+
+    dependsOn(
+        sharedExtensionPatch,
+        spoofSignaturePatch
+    )
+
+    val rvxSettingsLabel = stringOption(
+        key = "rvxSettingsLabel",
+        default = DEFAULT_LABEL,
+        values = mapOf(
+            "RVX Morphed" to "RVX Morphed",
+            "RVX" to DEFAULT_LABEL,
+        ),
+        title = "RVX settings menu name",
+        description = "The name of the RVX settings menu.",
+        required = true
+    )
 
     execute {
 
@@ -93,6 +109,7 @@ private val settingsBytecodePatch = bytecodePatch(
         acknowledgementsLabelBuilderMethod = preferenceManagerFingerprint.second.also {
             this.mutableClassDefBy(preferenceManagerParentFingerprint.mutableClassOrThrow())
         }.method
+        updateSettingsLabel(rvxSettingsLabel.valueOrThrow())
         /*
         acknowledgementsLabelBuilderMethod =
             preferenceManagerFingerprint.second.classDef
@@ -163,6 +180,8 @@ private val settingsBytecodePatch = bytecodePatch(
                 )
             }
         }
+
+        updatePatchStatus(SETTINGS_FOR_REDDIT)
     }
 }
 
@@ -225,65 +244,4 @@ internal fun updatePatchStatus(
 ) {
     updatePatchStatus(description)
     updatePatchStatus(patch)
-}
-
-private const val DEFAULT_LABEL = "RVX"
-
-val settingsPatch = resourcePatch(
-    SETTINGS_FOR_REDDIT.title,
-    SETTINGS_FOR_REDDIT.summary,
-) {
-    compatibleWith(COMPATIBLE_PACKAGE)
-
-    dependsOn(
-        sharedExtensionPatch,
-        settingsBytecodePatch,
-        spoofSignaturePatch,
-    )
-
-    val rvxSettingsLabel = stringOption(
-        key = "rvxSettingsLabel",
-        default = DEFAULT_LABEL,
-        values = mapOf(
-            "RVX Morphed" to "RVX Morphed",
-            "RVX" to DEFAULT_LABEL,
-        ),
-        title = "RVX settings menu name",
-        description = "The name of the RVX settings menu.",
-        required = true
-    )
-
-    execute {
-        /**
-         * Replace settings icon and label
-         */
-        val settingsLabel = rvxSettingsLabel
-            .valueOrThrow()
-
-        val newIcon = "icon_ai"
-
-        arrayOf(
-            "preferences.xml",
-            "preferences_logged_in.xml",
-            "preferences_logged_in_old.xml",
-        ).forEach { targetXML ->
-            val resDirectory = get("res")
-            val targetXml = resDirectory.resolve("xml").resolve(targetXML).toPath()
-
-            if (targetXml.exists()) {
-                val preference = get("res/xml/$targetXML")
-
-                preference.writeText(
-                    preference.readText()
-                        .replace(
-                            "\"@drawable/icon_text_post\" android:title=\"@string/label_acknowledgements\"",
-                            "\"@drawable/$newIcon\" android:title=\"$settingsLabel\""
-                        )
-                )
-            }
-        }
-
-        updateSettingsLabel(settingsLabel)
-        updatePatchStatus(SETTINGS_FOR_REDDIT)
-    }
 }

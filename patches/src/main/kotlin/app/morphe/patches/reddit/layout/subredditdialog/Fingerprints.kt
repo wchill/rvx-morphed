@@ -1,6 +1,5 @@
 package app.morphe.patches.reddit.layout.subredditdialog
 
-import app.morphe.patches.reddit.utils.resourceid.nsfwDialogTitle
 import app.morphe.util.fingerprint.legacyFingerprint
 import app.morphe.util.getReference
 import app.morphe.util.indexOfFirstInstruction
@@ -10,22 +9,6 @@ import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.Method
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
-
-internal val frequentUpdatesSheetScreenFingerprint = legacyFingerprint(
-    name = "frequentUpdatesSheetScreenFingerprint",
-    returnType = "Landroid/view/View;",
-    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    opcodes = listOf(
-        Opcode.CONST,
-        Opcode.INVOKE_STATIC,
-        Opcode.MOVE_RESULT_OBJECT,
-        Opcode.CHECK_CAST,
-        Opcode.IF_EQZ
-    ),
-    customFingerprint = { _, classDef ->
-        classDef.type == "Lcom/reddit/screens/pager/FrequentUpdatesSheetScreen;"
-    }
-)
 
 internal val frequentUpdatesHandlerFingerprint = legacyFingerprint(
     name = "frequentUpdatesHandlerFingerprint",
@@ -90,24 +73,6 @@ internal fun indexOfHasBeenVisitedInstruction(method: Method) =
                 reference?.name == "getHasBeenVisited" &&
                 reference.returnType == "Z"
     }
-
-internal val nsfwAlertBuilderFingerprint = legacyFingerprint(
-    name = "nsfwAlertBuilderFingerprint",
-    literals = listOf(nsfwDialogTitle),
-    customFingerprint = { method, _ ->
-        method.definingClass.startsWith("Lcom/reddit/screen/nsfw")
-    }
-)
-
-internal val redditAlertDialogsFingerprint = legacyFingerprint(
-    name = "redditAlertDialogsFingerprint",
-    returnType = "V",
-    accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    customFingerprint = { method, _ ->
-        method.definingClass.startsWith("Lcom/reddit/screen/dialog/") &&
-                indexOfSetBackgroundTintListInstruction(method) >= 0
-    }
-)
 
 fun indexOfSetBackgroundTintListInstruction(method: Method) =
     method.indexOfFirstInstruction {

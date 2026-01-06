@@ -1,5 +1,6 @@
 package app.morphe.patches.reddit.utils.settings
 
+import app.morphe.patcher.Fingerprint
 import app.morphe.util.fingerprint.legacyFingerprint
 import app.morphe.util.getReference
 import app.morphe.util.indexOfFirstInstruction

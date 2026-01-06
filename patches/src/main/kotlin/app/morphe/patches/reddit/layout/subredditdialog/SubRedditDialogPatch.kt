@@ -8,7 +8,6 @@ import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.reddit.utils.compatibility.Constants.COMPATIBLE_PACKAGE
 import app.morphe.patches.reddit.utils.extension.Constants.PATCHES_PATH
 import app.morphe.patches.reddit.utils.patch.PatchList.REMOVE_SUBREDDIT_DIALOG
-import app.morphe.patches.reddit.utils.resourceid.sharedResourceIdPatch
 import app.morphe.patches.reddit.utils.settings.settingsPatch
 import app.morphe.patches.reddit.utils.settings.updatePatchStatus
 import app.morphe.util.findMutableMethodOf
@@ -33,8 +32,7 @@ val subRedditDialogPatch = bytecodePatch(
     compatibleWith(COMPATIBLE_PACKAGE)
 
     dependsOn(
-        settingsPatch,
-        sharedResourceIdPatch,
+        settingsPatch
     )
 
     execute {
