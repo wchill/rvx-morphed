@@ -530,8 +530,8 @@ public final class app/morphe/patches/shared/extension/ExtensionHook {
 }
 
 public final class app/morphe/patches/shared/extension/SharedExtensionPatchKt {
-	public static final fun extensionHook (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lapp/morphe/patches/shared/extension/ExtensionHook;
-	public static synthetic fun extensionHook$default (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lapp/morphe/patches/shared/extension/ExtensionHook;
+	public static final fun extensionHook (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lapp/morphe/patcher/Fingerprint;)Lapp/morphe/patches/shared/extension/ExtensionHook;
+	public static synthetic fun extensionHook$default (Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lapp/morphe/patcher/Fingerprint;ILjava/lang/Object;)Lapp/morphe/patches/shared/extension/ExtensionHook;
 	public static final fun sharedExtensionPatch ([Lapp/morphe/patches/shared/extension/ExtensionHook;)Lapp/morphe/patcher/patch/BytecodePatch;
 }
 
