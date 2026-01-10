@@ -1,5 +1,5 @@
 {
-  "version": "v5.14.1",
+  "version": "5.15.1",
   "patches": [
     {
       "name": "Alternative thumbnails",
@@ -200,36 +200,6 @@
         ]
       },
       "options": []
-    },
-    {
-      "name": "Change package name",
-      "description": "Changes the package name for Reddit to the name specified in patch options.",
-      "use": false,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": [
-        {
-          "key": "packageNameReddit",
-          "title": "Package name of Reddit",
-          "description": "The name of the package to rename the app to.",
-          "required": true,
-          "type": "kotlin.String",
-          "default": "com.reddit.frontpage",
-          "values": {
-            "Clone": "com.reddit.frontpage.rvxmorphed",
-            "Default": "com.reddit.frontpage.rvx",
-            "Original": "com.reddit.frontpage"
-          }
-        }
-      ]
     },
     {
       "name": "Change player flyout menu toggles",
@@ -507,35 +477,6 @@
           "type": "kotlin.Boolean",
           "default": false,
           "values": null
-        }
-      ]
-    },
-    {
-      "name": "Custom branding name for Reddit",
-      "description": "Changes the Reddit app name to the name specified in patch options.",
-      "use": false,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": [
-        {
-          "key": "appName",
-          "title": "App name",
-          "description": "The name of the app.",
-          "required": true,
-          "type": "kotlin.String",
-          "default": "Reddit",
-          "values": {
-            "Default": "RVX Reddit",
-            "Original": "Reddit"
-          }
         }
       ]
     },
@@ -1083,13 +1024,14 @@
       "description": "Adds an option to disable the popup that appears when taking a screenshot.",
       "use": true,
       "dependencies": [
-        "ResourcePatch"
+        "BytecodePatch"
       ],
       "compatiblePackages": {
         "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
+          "2025.40.0",
+          "2025.43.0",
+          "2025.45.0",
+          "2025.52.0"
         ]
       },
       "options": []
@@ -1467,22 +1409,6 @@
       ]
     },
     {
-      "name": "Hide Recently Visited shelf",
-      "description": "Adds an option to hide the Recently Visited shelf in the sidebar.",
-      "use": true,
-      "dependencies": [
-        "ResourcePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": []
-    },
-    {
       "name": "Hide Shorts dimming",
       "description": "Removes, at compile time, the dimming effect at the top and bottom of Shorts videos.",
       "use": false,
@@ -1506,13 +1432,14 @@
       "description": "Adds an option to hide the Trending Today shelf from search suggestions.",
       "use": true,
       "dependencies": [
-        "ResourcePatch"
+        "BytecodePatch"
       ],
       "compatiblePackages": {
         "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
+          "2025.40.0",
+          "2025.43.0",
+          "2025.45.0",
+          "2025.52.0"
         ]
       },
       "options": []
@@ -1646,13 +1573,14 @@
       "description": "Adds options to hide ads.",
       "use": true,
       "dependencies": [
-        "ResourcePatch"
+        "BytecodePatch"
       ],
       "compatiblePackages": {
         "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
+          "2025.40.0",
+          "2025.43.0",
+          "2025.45.0",
+          "2025.52.0"
         ]
       },
       "options": []
@@ -1805,22 +1733,6 @@
       "options": []
     },
     {
-      "name": "Hide navigation buttons",
-      "description": "Adds options to hide buttons in the navigation bar.",
-      "use": true,
-      "dependencies": [
-        "ResourcePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": []
-    },
-    {
       "name": "Hide overlay filter",
       "description": "Removes, at compile time, the dark overlay that appears when player flyout menus are open.",
       "use": false,
@@ -1916,13 +1828,14 @@
       "description": "Adds an option to hide the recommended communities shelves in subreddits.",
       "use": true,
       "dependencies": [
-        "ResourcePatch"
+        "BytecodePatch"
       ],
       "compatiblePackages": {
         "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
+          "2025.40.0",
+          "2025.43.0",
+          "2025.45.0",
+          "2025.52.0"
         ]
       },
       "options": []
@@ -1983,6 +1896,23 @@
           "values": null
         }
       ]
+    },
+    {
+      "name": "Hide sidebar components",
+      "description": "Adds options to hide the sidebar components.",
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.reddit.frontpage": [
+          "2025.40.0",
+          "2025.43.0",
+          "2025.45.0",
+          "2025.52.0"
+        ]
+      },
+      "options": []
     },
     {
       "name": "Hook YouTube Music actions",
@@ -2122,14 +2052,15 @@
       "description": "Adds an option to skip over redirection URLs in external links.",
       "use": true,
       "dependencies": [
-        "ResourcePatch",
+        "BytecodePatch",
         "BytecodePatch"
       ],
       "compatiblePackages": {
         "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
+          "2025.40.0",
+          "2025.43.0",
+          "2025.45.0",
+          "2025.52.0"
         ]
       },
       "options": []
@@ -2139,14 +2070,15 @@
       "description": "Adds an option to always open links in your browser instead of in the in-app-browser.",
       "use": true,
       "dependencies": [
-        "ResourcePatch",
+        "BytecodePatch",
         "BytecodePatch"
       ],
       "compatiblePackages": {
         "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
+          "2025.40.0",
+          "2025.43.0",
+          "2025.45.0",
+          "2025.52.0"
         ]
       },
       "options": []
@@ -2320,22 +2252,6 @@
       "options": []
     },
     {
-      "name": "Premium icon",
-      "description": "Unlocks premium app icons.",
-      "use": true,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": []
-    },
-    {
       "name": "Remove background playback restrictions",
       "description": "Removes restrictions on background playback, including for kids videos.",
       "use": true,
@@ -2383,14 +2299,14 @@
       "description": "Adds options to remove the NSFW community warning and notifications suggestion dialogs by dismissing them automatically.",
       "use": true,
       "dependencies": [
-        "ResourcePatch",
-        "ResourcePatch"
+        "BytecodePatch"
       ],
       "compatiblePackages": {
         "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
+          "2025.40.0",
+          "2025.43.0",
+          "2025.45.0",
+          "2025.52.0"
         ]
       },
       "options": []
@@ -2580,13 +2496,14 @@
       "description": "Adds an option to sanitize sharing links by removing tracking query parameters.",
       "use": true,
       "dependencies": [
-        "ResourcePatch"
+        "BytecodePatch"
       ],
       "compatiblePackages": {
         "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
+          "2025.40.0",
+          "2025.43.0",
+          "2025.45.0",
+          "2025.52.0"
         ]
       },
       "options": []
@@ -2662,14 +2579,14 @@
       "use": true,
       "dependencies": [
         "BytecodePatch",
-        "BytecodePatch",
         "BytecodePatch"
       ],
       "compatiblePackages": {
         "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
+          "2025.40.0",
+          "2025.43.0",
+          "2025.45.0",
+          "2025.52.0"
         ]
       },
       "options": [
