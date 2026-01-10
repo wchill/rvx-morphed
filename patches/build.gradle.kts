@@ -18,21 +18,6 @@ dependencies {
 }
 
 tasks {
-    register<JavaExec>("generatePatchesFiles") {
-        description = "Generate patches files"
-
-        dependsOn(build)
-
-        classpath = sourceSets["main"].runtimeClasspath
-        mainClass.set("app.morphe.generator.MainKt")
-    }
-    // Used by gradle-semantic-release-plugin.
-    publish {
-        dependsOn("generatePatchesFiles")
-    }
-}
-
-tasks {
     jar {
         exclude("app/morphe/generator")
     }
