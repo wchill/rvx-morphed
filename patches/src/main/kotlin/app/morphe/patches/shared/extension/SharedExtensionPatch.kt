@@ -84,9 +84,9 @@ class ExtensionHook internal constructor(
 fun extensionHook(
     insertIndexResolver: ((Method) -> Int) = { 0 },
     contextRegisterResolver: (Method) -> String = { "p0" },
-    fingerprintBuilderBlock: FingerprintBuilder.() -> Unit,
+    fingerprint: Fingerprint,
 ) = ExtensionHook(
-    fingerprint(block = fingerprintBuilderBlock),
+    fingerprint,
     insertIndexResolver,
     contextRegisterResolver
 )
