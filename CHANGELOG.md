@@ -1,3 +1,10 @@
+## [5.15.2-dev.1](https://github.com/wchill/rvx-morphed/compare/v5.15.1...v5.15.2-dev.1) (2026-01-14)
+
+
+### Bug Fixes
+
+* incorrectly changed group ID from refactor causing crashes for YT/YTM ([b1dd163](https://github.com/wchill/rvx-morphed/commit/b1dd163bffd37094be851137c6725bd3e19cad09))
+
 ## [5.15.1](https://github.com/wchill/rvx-morphed/compare/v5.15.0...v5.15.1) (2026-01-10)
 
 
