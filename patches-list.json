@@ -1,5 +1,5 @@
 {
-  "version": "5.15.1",
+  "version": "5.15.2-dev.2",
   "patches": [
     {
       "name": "Alternative thumbnails",
@@ -1265,9 +1265,9 @@
           "description": "The vendor's group ID for GmsCore. Do not change this option, if you do not know what you are doing.",
           "required": true,
           "type": "kotlin.String",
-          "default": "app.morphe",
+          "default": "app.revanced",
           "values": {
-            "Morphe MicroG": "app.morphe",
+            "Morphe MicroG": "app.revanced",
             "Original MicroG": "com.google"
           }
         },
@@ -1349,9 +1349,9 @@
           "description": "The vendor's group ID for GmsCore. Do not change this option, if you do not know what you are doing.",
           "required": true,
           "type": "kotlin.String",
-          "default": "app.morphe",
+          "default": "app.revanced",
           "values": {
-            "Morphe MicroG": "app.morphe",
+            "Morphe MicroG": "app.revanced",
             "Original MicroG": "com.google"
           }
         },
