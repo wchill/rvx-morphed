@@ -1,3 +1,10 @@
+## [5.15.2-dev.2](https://github.com/wchill/rvx-morphed/compare/v5.15.2-dev.1...v5.15.2-dev.2) (2026-01-19)
+
+
+### Bug Fixes
+
+* rename all drawables to use RVX Morphed name ([49cbdbb](https://github.com/wchill/rvx-morphed/commit/49cbdbb3cb8143081ad1b5a8170e2e7485cc42ce))
+
 ## [5.15.2-dev.1](https://github.com/wchill/rvx-morphed/compare/v5.15.1...v5.15.2-dev.1) (2026-01-14)
 
 
