@@ -475,6 +475,7 @@ public final class app/morphe/patches/reddit/utils/settings/SettingsPatchKt {
 	public static final fun getSettingsPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
 	public static final fun is_2025_45_or_greater ()Z
 	public static final fun is_2025_52_or_greater ()Z
+	public static final fun is_2026_03_or_greater ()Z
 }
 
 public final class app/morphe/patches/shared/FingerprintsKt {
