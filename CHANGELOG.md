@@ -1,3 +1,10 @@
+# [5.16.0-dev.2](https://github.com/wchill/rvx-morphed/compare/v5.16.0-dev.1...v5.16.0-dev.2) (2026-01-22)
+
+
+### Bug Fixes
+
+* Fix broken settings menu in RVX YouTube ([3a87c45](https://github.com/wchill/rvx-morphed/commit/3a87c45d798e0d9fbc88355c7c6f2b28ab90765c))
+
 # [5.16.0-dev.1](https://github.com/wchill/rvx-morphed/compare/v5.15.2...v5.16.0-dev.1) (2026-01-22)
 
 
