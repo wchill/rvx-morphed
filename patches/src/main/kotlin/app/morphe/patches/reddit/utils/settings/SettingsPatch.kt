@@ -45,6 +45,9 @@ var is_2025_45_or_greater = false
 var is_2025_52_or_greater = false
     private set
 
+var is_2026_03_or_greater = false
+    private set
+
 private const val DEFAULT_LABEL = "RVX"
 
 val settingsPatch = bytecodePatch(
@@ -87,6 +90,7 @@ val settingsPatch = bytecodePatch(
 
             is_2025_45_or_greater = 2025450 <= versionNumber
             is_2025_52_or_greater = 2025520 <= versionNumber
+            is_2026_03_or_greater = 2026030 <= versionNumber
         }
 
         /**

@@ -45,7 +45,6 @@ internal val preferenceManagerParentFingerprint = legacyFingerprint(
     name = "preferenceManagerParentFingerprint",
     returnType = "V",
     accessFlags = AccessFlags.PUBLIC or AccessFlags.FINAL,
-    parameters = listOf("Landroid/os/Bundle;"),
     strings = listOf("prefs_share_contacts_painted_door")
 )
 
