@@ -1,3 +1,10 @@
+# [5.16.0-dev.1](https://github.com/wchill/rvx-morphed/compare/v5.15.2...v5.16.0-dev.1) (2026-01-22)
+
+
+### Features
+
+* Add official support for reddit versions up to 2026.03.0 ([c33eaf7](https://github.com/wchill/rvx-morphed/commit/c33eaf7edf9252761b4ee4ba70c542bd4c5c40b3))
+
 ## [5.15.2](https://github.com/wchill/rvx-morphed/compare/v5.15.1...v5.15.2) (2026-01-19)
 
 
