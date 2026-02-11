@@ -1,5 +1,5 @@
 {
-  "version": "v5.14.1",
+  "version": "5.16.2-dev.1",
   "patches": [
     {
       "name": "Alternative thumbnails",
@@ -200,36 +200,6 @@
         ]
       },
       "options": []
-    },
-    {
-      "name": "Change package name",
-      "description": "Changes the package name for Reddit to the name specified in patch options.",
-      "use": false,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": [
-        {
-          "key": "packageNameReddit",
-          "title": "Package name of Reddit",
-          "description": "The name of the package to rename the app to.",
-          "required": true,
-          "type": "kotlin.String",
-          "default": "com.reddit.frontpage",
-          "values": {
-            "Clone": "com.reddit.frontpage.rvxmorphed",
-            "Default": "com.reddit.frontpage.rvx",
-            "Original": "com.reddit.frontpage"
-          }
-        }
-      ]
     },
     {
       "name": "Change player flyout menu toggles",
@@ -507,35 +477,6 @@
           "type": "kotlin.Boolean",
           "default": false,
           "values": null
-        }
-      ]
-    },
-    {
-      "name": "Custom branding name for Reddit",
-      "description": "Changes the Reddit app name to the name specified in patch options.",
-      "use": false,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": [
-        {
-          "key": "appName",
-          "title": "App name",
-          "description": "The name of the app.",
-          "required": true,
-          "type": "kotlin.String",
-          "default": "Reddit",
-          "values": {
-            "Default": "RVX Reddit",
-            "Original": "Reddit"
-          }
         }
       ]
     },
@@ -1079,22 +1020,6 @@
       "options": []
     },
     {
-      "name": "Disable screenshot popup",
-      "description": "Adds an option to disable the popup that appears when taking a screenshot.",
-      "use": true,
-      "dependencies": [
-        "ResourcePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": []
-    },
-    {
       "name": "Disable sign in to TV popup",
       "description": "Adds an option to disable the popup asking to sign into a TV on the same local network.",
       "use": true,
@@ -1323,9 +1248,9 @@
           "description": "The vendor's group ID for GmsCore. Do not change this option, if you do not know what you are doing.",
           "required": true,
           "type": "kotlin.String",
-          "default": "app.morphe",
+          "default": "app.revanced",
           "values": {
-            "Morphe MicroG": "app.morphe",
+            "Morphe MicroG": "app.revanced",
             "Original MicroG": "com.google"
           }
         },
@@ -1407,9 +1332,9 @@
           "description": "The vendor's group ID for GmsCore. Do not change this option, if you do not know what you are doing.",
           "required": true,
           "type": "kotlin.String",
-          "default": "app.morphe",
+          "default": "app.revanced",
           "values": {
-            "Morphe MicroG": "app.morphe",
+            "Morphe MicroG": "app.revanced",
             "Original MicroG": "com.google"
           }
         },
@@ -1467,22 +1392,6 @@
       ]
     },
     {
-      "name": "Hide Recently Visited shelf",
-      "description": "Adds an option to hide the Recently Visited shelf in the sidebar.",
-      "use": true,
-      "dependencies": [
-        "ResourcePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": []
-    },
-    {
       "name": "Hide Shorts dimming",
       "description": "Removes, at compile time, the dimming effect at the top and bottom of Shorts videos.",
       "use": false,
@@ -1497,22 +1406,6 @@
           "19.44.39",
           "19.47.53",
           "20.05.46"
-        ]
-      },
-      "options": []
-    },
-    {
-      "name": "Hide Trending Today shelf",
-      "description": "Adds an option to hide the Trending Today shelf from search suggestions.",
-      "use": true,
-      "dependencies": [
-        "ResourcePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
         ]
       },
       "options": []
@@ -1637,22 +1530,6 @@
           "8.12.54",
           "8.28.54",
           "8.30.54"
-        ]
-      },
-      "options": []
-    },
-    {
-      "name": "Hide ads",
-      "description": "Adds options to hide ads.",
-      "use": true,
-      "dependencies": [
-        "ResourcePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
         ]
       },
       "options": []
@@ -1805,22 +1682,6 @@
       "options": []
     },
     {
-      "name": "Hide navigation buttons",
-      "description": "Adds options to hide buttons in the navigation bar.",
-      "use": true,
-      "dependencies": [
-        "ResourcePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": []
-    },
-    {
       "name": "Hide overlay filter",
       "description": "Removes, at compile time, the dark overlay that appears when player flyout menus are open.",
       "use": false,
@@ -1907,22 +1768,6 @@
           "8.12.54",
           "8.28.54",
           "8.30.54"
-        ]
-      },
-      "options": []
-    },
-    {
-      "name": "Hide recommended communities shelf",
-      "description": "Adds an option to hide the recommended communities shelves in subreddits.",
-      "use": true,
-      "dependencies": [
-        "ResourcePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
         ]
       },
       "options": []
@@ -2118,40 +1963,6 @@
       "options": []
     },
     {
-      "name": "Open links directly",
-      "description": "Adds an option to skip over redirection URLs in external links.",
-      "use": true,
-      "dependencies": [
-        "ResourcePatch",
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": []
-    },
-    {
-      "name": "Open links externally",
-      "description": "Adds an option to always open links in your browser instead of in the in-app-browser.",
-      "use": true,
-      "dependencies": [
-        "ResourcePatch",
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": []
-    },
-    {
       "name": "Open links externally",
       "description": "Adds an option to always open links in your browser instead of the in-app browser.",
       "use": true,
@@ -2320,22 +2131,6 @@
       "options": []
     },
     {
-      "name": "Premium icon",
-      "description": "Unlocks premium app icons.",
-      "use": true,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": []
-    },
-    {
       "name": "Remove background playback restrictions",
       "description": "Removes restrictions on background playback, including for kids videos.",
       "use": true,
@@ -2374,23 +2169,6 @@
           "19.44.39",
           "19.47.53",
           "20.05.46"
-        ]
-      },
-      "options": []
-    },
-    {
-      "name": "Remove subreddit dialog",
-      "description": "Adds options to remove the NSFW community warning and notifications suggestion dialogs by dismissing them automatically.",
-      "use": true,
-      "dependencies": [
-        "ResourcePatch",
-        "ResourcePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
         ]
       },
       "options": []
@@ -2580,22 +2358,6 @@
       "description": "Adds an option to sanitize sharing links by removing tracking query parameters.",
       "use": true,
       "dependencies": [
-        "ResourcePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": []
-    },
-    {
-      "name": "Sanitize sharing links",
-      "description": "Adds an option to sanitize sharing links by removing tracking query parameters.",
-      "use": true,
-      "dependencies": [
         "BytecodePatch",
         "ResourcePatch"
       ],
@@ -2655,37 +2417,6 @@
         ]
       },
       "options": []
-    },
-    {
-      "name": "Settings for Reddit",
-      "description": "Applies mandatory patches to implement RVX Morphed settings into the application.",
-      "use": true,
-      "dependencies": [
-        "BytecodePatch",
-        "BytecodePatch",
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.reddit.frontpage": [
-          "2024.17.0",
-          "2025.05.1",
-          "2025.12.1"
-        ]
-      },
-      "options": [
-        {
-          "key": "rvxSettingsLabel",
-          "title": "RVX settings menu name",
-          "description": "The name of the RVX settings menu.",
-          "required": true,
-          "type": "kotlin.String",
-          "default": "RVX",
-          "values": {
-            "RVX Morphed": "RVX Morphed",
-            "RVX": "RVX"
-          }
-        }
-      ]
     },
     {
       "name": "Settings for YouTube",
