@@ -13,6 +13,6 @@
         <path
             android:name="path"
             android:pathData="M 120 840 L 840 120 L 840 840 L 120 840 Z M 374.462 809.231 L 809.231 809.231 L 809.231 194 L 374.462 628.769 L 374.462 809.231 Z"
-            android:fillColor="?ytTextPrimary" />
+            android:fillColor="?attr/ytTextPrimary" />
     </group>
 </vector>
