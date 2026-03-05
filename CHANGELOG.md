@@ -1,3 +1,10 @@
+## [5.16.3-dev.1](https://github.com/wchill/rvx-morphed/compare/v5.16.2...v5.16.3-dev.1) (2026-03-05)
+
+
+### Bug Fixes
+
+* missing namespace error when patching with arsclib-decoded resources ([feae824](https://github.com/wchill/rvx-morphed/commit/feae8244e561beab48dcb741e4bb5895659a9b20))
+
 ## [5.16.2](https://github.com/wchill/rvx-morphed/compare/v5.16.1...v5.16.2) (2026-02-11)
 
 
