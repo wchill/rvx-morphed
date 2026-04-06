@@ -1,3 +1,7 @@
+## No longer maintained
+
+Many of the RVX patches have been added to Morphe already and are working on the latest versions. If you want to use a patch not in Morphe, use https://github.com/anddea/revanced-patches instead.
+
 <div align="center"> 
 <img src="assets/rvx-logo.png" alt="RVX logo" width="128">
 
